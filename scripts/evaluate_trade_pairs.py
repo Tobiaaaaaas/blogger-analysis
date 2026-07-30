@@ -32,10 +32,10 @@ INFLECTION_DATES = {
 QUALITY_WINDOW = 5
 
 
-def is_quality_signal(sig):
-    """判断信号是否为高质量：strong + explicit_action。
-    不按拐点过滤——拐点是事后标注的，博主事前不知道。"""
-    if sig.get("strength") != "strong":
+def is_valid_signal(sig):
+    """判断信号是否可用于配对：explicit_action + 非模糊。
+    保留 strong 和 moderate，仅排除 directional_vague."""
+    if sig.get("specific") == "directional_vague":
         return False
     if sig.get("specific") != "explicit_action":
         return False
@@ -115,15 +115,15 @@ def evaluate_pairs(blogger_data, market_data, quality_only=False):
     # 筛选 explicit_action 信号
     actions = [s for s in signals if s.get("specific") == "explicit_action"]
 
-    # 质量过滤
+    # 信号过滤：仅排除 directional_vague
     if quality_only:
-        actions = [s for s in actions if is_quality_signal(s)]
+        actions = [s for s in actions if is_valid_signal(s)]
 
     if not actions:
         # 降级尝试
         fallback_actions = [s for s in signals if s.get("specific") == "directional_clear"]
         if quality_only:
-            fallback_actions = [s for s in fallback_actions if is_quality_signal(s)]
+            fallback_actions = [s for s in fallback_actions if is_valid_signal(s)]
         if fallback_actions:
             actions = fallback_actions
             fallback = True

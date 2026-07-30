@@ -27,7 +27,7 @@ MARKET_FILE = os.path.join(MARKET_DIR, "market_data.json")
 
 # 验证窗口：交易日数
 WINDOWS = {
-    "T+1": 1, "T+3": 3, "T+5": 5, "T+10": 10, "T+20": 20,
+    "T+5": 5, "T+10": 10, "T+15": 15, "T+20": 20,
 }
 
 # 拐点日期（来自 market_analysis.md）— 用于质量过滤
@@ -45,14 +45,12 @@ INFLECTION_DATES = {
 QUALITY_WINDOW = 5  # 拐点对齐窗口 ±5 个交易日
 
 
-def is_quality_signal(sig):
-    """判断信号是否为高质量：strong + 明确方向（排除模糊观点）。
-    不按拐点过滤——拐点是事后标注的，博主事前不知道。
-    所有明确观点都应假设跟随并评估质量。"""
-    if sig.get("strength") != "strong":
-        return False
+def is_valid_signal(sig):
+    """判断信号是否可评估：排除模糊观点（directional_vague）。
+    保留 strong 和 moderate，保留 explicit_action 和 directional_clear。
+    所有非模糊观点都应假设跟随并评估质量。"""
     spec = sig.get("specific", "")
-    if spec not in ("explicit_action", "directional_clear"):
+    if spec == "directional_vague":
         return False
     return True
 
@@ -197,9 +195,9 @@ def aggregate_blogger(blogger_data, market_data, windows, quality_only=False):
     name = blogger_data["blogger"]
     signals = blogger_data["signals"]
 
-    # 质量过滤
+    # 信号过滤：仅排除 directional_vague（模糊观点无法验证）
     if quality_only:
-        quality_signals = [s for s in signals if is_quality_signal(s)]
+        quality_signals = [s for s in signals if is_valid_signal(s)]
         skipped = len(signals) - len(quality_signals)
     else:
         quality_signals = signals
@@ -254,7 +252,7 @@ def aggregate_blogger(blogger_data, market_data, windows, quality_only=False):
                 win_rates[wn] = round(wc / len(wv) * 100, 1)
                 avg_returns[wn] = round(wr, 2)
 
-        # 反向风险指标（核心）
+        # --- 总体统计（strong+moderate 等权）---
         risk = {}
         for wn in windows:
             wv = [r for r in sig_results if r.get(wn) is not None]
@@ -263,14 +261,21 @@ def aggregate_blogger(blogger_data, market_data, windows, quality_only=False):
             advs = [r[wn]["max_adverse"] for r in wv]
             avg_adv = sum(advs) / len(advs)
             avg_ret = sum(r[wn]["forward_return"] for r in wv) / len(wv)
-            big_adv = [a for a in advs if a < -5]
+            big_adv = [a for a in advs if a < -3]
             recoveries = [r for r in wv if r[wn]["hit_worst_then_recover"]]
+            # 加权：strong=2, moderate=1
+            weights = [2 if r.get("_strength") == "strong" else 1 for r in wv]
+            total_w = sum(weights)
+            w_adv = sum(a * w for a, w in zip(advs, weights)) / total_w if total_w > 0 else 0
+            w_ret = sum(r[wn]["forward_return"] * w for r, w in zip(wv, weights)) / total_w if total_w > 0 else 0
             risk[wn] = {
                 "avg_adverse": round(avg_adv, 2),
                 "worst_adverse": round(min(advs), 2),
-                "pct_adverse_gt5": round(len(big_adv) / len(advs) * 100, 1),
+                "pct_adverse_gt3": round(len(big_adv) / len(advs) * 100, 1),
                 "return_adverse_ratio": round(avg_ret / abs(avg_adv), 2) if avg_adv != 0 else None,
                 "pct_recover": round(len(recoveries) / len(wv) * 100, 1) if wv else 0,
+                "weighted_avg_adverse": round(w_adv, 2),
+                "weighted_avg_return": round(w_ret, 2),
             }
 
         # 严重失误
@@ -279,9 +284,11 @@ def aggregate_blogger(blogger_data, market_data, windows, quality_only=False):
         # 盈亏比
         pf = round(sum(wins) / abs(sum(losses)), 2) if losses and sum(losses) != 0 else None
 
-        return {
+        base = {
             "direction": direction_label,
             "total": total,
+            "total_strong": sum(1 for r in valid if r.get("_strength") == "strong"),
+            "total_moderate": sum(1 for r in valid if r.get("_strength") == "moderate"),
             "main_window": main_window,
             "win_rate": round(correct / total * 100, 1) if total > 0 else 0,
             "avg_return": round(sum(fwd_returns) / len(fwd_returns), 2),
@@ -301,6 +308,44 @@ def aggregate_blogger(blogger_data, market_data, windows, quality_only=False):
             ],
             "all_signals": sig_results,
         }
+
+        # --- strong-only 统计 ---
+        strong_only = [r for r in sig_results if r.get("_strength") == "strong"]
+        if strong_only and len(strong_only) < len(sig_results):
+            s_valid = [r for r in strong_only if r.get(main_window) is not None]
+            if s_valid:
+                s_fwd = [r[main_window]["forward_return"] for r in s_valid]
+                s_win_rates = {}
+                s_avg_rets = {}
+                s_risk = {}
+                for wn in windows:
+                    sw = [r for r in strong_only if r.get(wn) is not None]
+                    if sw:
+                        s_win_rates[wn] = round(sum(1 for r in sw if r[wn]["correct"]) / len(sw) * 100, 1)
+                        s_avg_rets[wn] = round(sum(r[wn]["forward_return"] for r in sw) / len(sw), 2)
+                        s_advs = [r[wn]["max_adverse"] for r in sw]
+                        s_big = [a for a in s_advs if a < -3]
+                        s_avg_adv = sum(s_advs) / len(s_advs)
+                        s_avg_ret = sum(r[wn]["forward_return"] for r in sw) / len(sw)
+                        s_risk[wn] = {
+                            "avg_adverse": round(s_avg_adv, 2),
+                            "worst_adverse": round(min(s_advs), 2),
+                            "pct_adverse_gt3": round(len(s_big) / len(s_advs) * 100, 1),
+                            "return_adverse_ratio": round(s_avg_ret / abs(s_avg_adv), 2) if s_avg_adv != 0 else None,
+                        }
+                base["strong_only"] = {
+                    "total": len(strong_only),
+                    "valid": len(s_valid),
+                    "win_rate": round(sum(1 for f in s_fwd if f > 0) / len(s_fwd) * 100, 1) if s_fwd else 0,
+                    "avg_return": round(sum(s_fwd) / len(s_fwd), 2) if s_fwd else 0,
+                    "win_rates_by_window": s_win_rates,
+                    "avg_returns_by_window": s_avg_rets,
+                    "risk_by_window": s_risk,
+                }
+        else:
+            base["strong_only"] = None
+
+        return base
 
     bull_stats = dimension_stats(bull_results, "bullish")
     bear_stats = dimension_stats(bear_results, "bearish")
@@ -323,8 +368,10 @@ def print_dimension(stat, windows, label, risk_label):
         print(f"\n  📊 {label}: 无有效信号")
         return
 
+    n_strong = stat.get("total_strong", 0)
+    n_mod = stat.get("total_moderate", 0)
     print(f"\n  {'─'*50}")
-    print(f"  📊 {label}（{stat['total']}条信号，主窗口={stat['main_window']}）")
+    print(f"  📊 {label}（总体{stat['total']}条: strong×{n_strong} moderate×{n_mod}, 主窗口={stat['main_window']}）")
     print(f"  {'─'*50}")
     print(f"  胜率: {stat['win_rate']}% | 平均收益: {stat['avg_return']:+.2f}% | 中位收益: {stat['median_return']:+.2f}%")
     print(f"  最大盈利: {stat['max_gain']:+.2f}% | 最大亏损: {stat['max_loss']:+.2f}%")
@@ -339,16 +386,35 @@ def print_dimension(stat, windows, label, risk_label):
         if wr is not None:
             print(f"  {wn:<6} {wr:>7}% {ar:>7}%")
 
-    # 反向风险（核心）
+    # 反向风险
     risk = stat.get("risk_by_window", {})
     if risk:
-        print(f"\n  🛡️ 反向风险 — {risk_label}:")
-        print(f"  {'窗口':<6} {'均不利波动':>10} {'最坏':>8} {'不利>5%':>8} {'收益/不利比':>10}")
+        print(f"\n  🛡️ 反向风险（总体）— {risk_label}:")
+        print(f"  {'窗口':<6} {'均不利':>8} {'最坏':>8} {'不利>3%':>8} {'收益/不利比':>10}")
         for wn in windows:
             r = risk.get(wn)
             if r:
                 rdr = f"{r['return_adverse_ratio']}" if r['return_adverse_ratio'] is not None else "N/A"
-                print(f"  {wn:<6} {r['avg_adverse']:>9}% {r['worst_adverse']:>7}% {r['pct_adverse_gt5']:>7}% {rdr:>10}")
+                print(f"  {wn:<6} {r['avg_adverse']:>7}% {r['worst_adverse']:>7}% {r['pct_adverse_gt3']:>7}% {rdr:>10}")
+
+    # strong-only
+    so = stat.get("strong_only")
+    if so:
+        print(f"\n  ⭐ 仅 strong 信号（{so['total']}条, 有效{so['valid']}条）:")
+        print(f"  胜率: {so['win_rate']}% | 平均收益: {so['avg_return']:+.2f}%")
+        print(f"  {'窗口':<6} {'胜率':>8} {'均收益':>8}")
+        for wn in windows:
+            wr = so["win_rates_by_window"].get(wn)
+            ar = so["avg_returns_by_window"].get(wn)
+            if wr is not None:
+                print(f"  {wn:<6} {wr:>7}% {ar:>7}%")
+        sr = so.get("risk_by_window", {})
+        if sr:
+            print(f"  {'窗口':<6} {'均不利':>8} {'最坏':>8} {'不利>3%':>8}")
+            for wn in windows:
+                r = sr.get(wn)
+                if r:
+                    print(f"  {wn:<6} {r['avg_adverse']:>7}% {r['worst_adverse']:>7}% {r['pct_adverse_gt3']:>7}%")
 
     # 严重失误明细
     if stat["severe_details"]:
