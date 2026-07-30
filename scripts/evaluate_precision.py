@@ -84,7 +84,7 @@ def find_next_trading_day(date_str, dates_list):
 
 
 def evaluate_signal(signal, market_data, windows):
-    """评估单个信号，返回各窗口的前向收益"""
+    """评估单个信号，返回各窗口的前向收益 + 风险指标"""
     index_name = signal.get("index", "上证指数")
     if index_name not in market_data:
         return None
@@ -113,7 +113,7 @@ def evaluate_signal(signal, market_data, windows):
     for win_name, win_days in windows.items():
         end_idx = start_idx + win_days
         if end_idx >= len(dates):
-            results[win_name] = None  # 数据不足
+            results[win_name] = None
             continue
 
         end_date = dates[end_idx]
@@ -126,12 +126,43 @@ def evaluate_signal(signal, market_data, windows):
         else:
             forward_return = -raw_return
 
+        # --- 风险指标：窗口内最不利波动 ---
+        # bullish（做多）：最不利方向 = 下跌，即"最大回撤"（浮亏）
+        # bearish（看空）：最不利方向 = 上涨，即"最大反向波动"（踏空/卖飞）
+        # 两者含义不同，后续按方向分别统计
+        max_adverse = 0.0  # 正值 = 不利幅度
+        worst_date = actual_date
+        worst_price = start_price
+        recovered = False  # 是否先触及最坏点再恢复到盈利
+
+        for i in range(start_idx, end_idx + 1):
+            price_i = prices[dates[i]]
+            if direction == "bullish":
+                adverse = (start_price - price_i) / start_price  # 下跌=不利
+            else:
+                adverse = (price_i - start_price) / start_price  # 上涨=不利（踏空）
+
+            if adverse > max_adverse:
+                max_adverse = adverse
+                worst_date = dates[i]
+                worst_price = price_i
+
+        hit_worst_then_recover = (
+            max_adverse > 0.01 and
+            worst_date < end_date and
+            forward_return > 0
+        )
+
         results[win_name] = {
             "end_date": end_date,
             "end_price": end_price,
             "raw_return": round(raw_return * 100, 2),
             "forward_return": round(forward_return * 100, 2),
             "correct": forward_return > 0,
+            "max_adverse": round(-max_adverse * 100, 2),  # 负数=不利方向幅度
+            "worst_date": worst_date,
+            "worst_price": worst_price,
+            "hit_worst_then_recover": hit_worst_then_recover,
         }
 
     return results
@@ -232,6 +263,40 @@ def aggregate_blogger(blogger_data, market_data, windows):
     # 严重失误（forward_return < -5%）
     severe_errors = [r for r in valid if r[main_window]["forward_return"] < -5]
 
+    # --- 风险指标：按方向分别统计 ---
+    # bullish: "最大回撤"（下跌=浮亏）
+    # bearish: "最大反向波动"（上涨=踏空/卖飞）
+    risk_by_window = {}
+    for wn in windows:
+        w_valid = [r for r in results if r.get(wn) is not None]
+        if not w_valid:
+            continue
+        bull = [r for r in w_valid if r["direction"] == "bullish"]
+        bear = [r for r in w_valid if r["direction"] == "bearish"]
+
+        def adverse_stats(signals):
+            if not signals:
+                return None
+            advs = [r[wn]["max_adverse"] for r in signals]  # 负数
+            rets = [r[wn]["forward_return"] for r in signals]
+            big_adv = [a for a in advs if a < -5]
+            recoveries = [r for r in signals if r[wn]["hit_worst_then_recover"]]
+            avg_adv = sum(advs) / len(advs)
+            avg_ret = sum(rets) / len(rets)
+            return {
+                "count": len(signals),
+                "avg_adverse": round(avg_adv, 2),
+                "worst_adverse": round(min(advs), 2),
+                "pct_adverse_gt5": round(len(big_adv) / len(advs) * 100, 1),
+                "return_adverse_ratio": round(avg_ret / abs(avg_adv), 2) if avg_adv != 0 else None,
+                "pct_recover_after_worst": round(len(recoveries) / len(signals) * 100, 1) if signals else 0,
+            }
+
+        risk_by_window[wn] = {
+            "bullish": adverse_stats(bull),  # 做多风险 = 回撤
+            "bearish": adverse_stats(bear),  # 看空风险 = 反向波动（踏空）
+        }
+
     return {
         "blogger": name,
         "total_signals": len(results),
@@ -249,6 +314,7 @@ def aggregate_blogger(blogger_data, market_data, windows):
             "max_lose_streak": max_lose_streak,
         },
         "win_rates_by_window": win_rates,
+        "risk_by_window": risk_by_window,
         "by_direction": {
             "bullish": sub_stats(bullish_results),
             "bearish": sub_stats(bearish_results),
@@ -302,6 +368,27 @@ def print_blogger_report(agg, windows):
         print(f"\n  ⚠️ 严重失误（<-5%）:")
         for err in agg["severe_error_details"]:
             print(f"    [{err['date']}] {err['direction']}: {err['evidence'][:60]}... → {err['forward_return']}%")
+
+    # 风险指标（按方向拆分）
+    if agg.get("risk_by_window"):
+        for direction, label in [("bullish", "做多回撤"), ("bearish", "看空反向波动")]:
+            print(f"\n  🛡️ 风险指标 — {label}:")
+            has_data = False
+            for wn in windows:
+                risk = agg["risk_by_window"].get(wn, {})
+                d = risk.get(direction) if risk else None
+                if d:
+                    has_data = True
+            if not has_data:
+                print(f"    （无信号）")
+                continue
+            print(f"    {'窗口':<6} {'均不利波动':>10} {'最坏':>8} {'不利>5%':>8} {'收益/不利比':>10} {'先苦后甜%':>10}")
+            for wn in windows:
+                risk = agg["risk_by_window"].get(wn, {})
+                d = risk.get(direction) if risk else None
+                if d:
+                    rdr = f"{d['return_adverse_ratio']}" if d['return_adverse_ratio'] is not None else "N/A"
+                    print(f"    {wn:<6} {d['avg_adverse']:>9}% {d['worst_adverse']:>7}% {d['pct_adverse_gt5']:>7}% {rdr:>10} {d['pct_recover_after_worst']:>9}%")
 
 
 def generate_comparison_md(all_aggs, windows):
