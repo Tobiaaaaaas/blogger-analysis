@@ -3,7 +3,8 @@
 
 用法:
   python scripts/evaluate_trade_pairs.py --blogger 顺应周期
-  python scripts/evaluate_trade_pairs.py  # 全部博主
+  python scripts/evaluate_trade_pairs.py --quality  # 仅评估高质量信号
+  python scripts/evaluate_trade_pairs.py             # 全部博主
 """
 
 import json
@@ -18,6 +19,34 @@ DATA_DIR = os.path.join(PROJECT_ROOT, "data")
 MARKET_DIR = os.path.join(DATA_DIR, "market")
 SIGNALS_DIR = os.path.join(DATA_DIR, "signals")
 MARKET_FILE = os.path.join(MARKET_DIR, "market_data.json")
+
+# 拐点日期 — 用于质量过滤
+INFLECTION_DATES = {
+    "M1": "2024-09-13", "M2": "2024-10-08", "M3": "2025-04-07",
+    "M4": "2025-11-14", "M5": "2026-03-23", "M6": "2026-05-14",
+    "M7": "2026-06-25", "M8": "2026-07-20",
+    "I1": "2024-10-18", "I2": "2024-11-08", "I5": "2025-01-13",
+    "I6": "2025-03-19", "I9": "2025-12-16", "I10": "2026-01-14",
+    "I12": "2026-03-03", "I13": "2026-06-08", "I14": "2026-06-23",
+}
+QUALITY_WINDOW = 5
+
+
+def is_quality_signal(sig):
+    """判断信号是否为高质量：strong + explicit_action + 拐点对齐"""
+    if sig.get("strength") != "strong":
+        return False
+    if sig.get("specific") != "explicit_action":
+        return False
+    try:
+        sd = datetime.strptime(sig["date"], "%Y-%m-%d")
+    except:
+        return False
+    for idate in INFLECTION_DATES.values():
+        idt = datetime.strptime(idate, "%Y-%m-%d")
+        if abs((sd - idt).days) <= QUALITY_WINDOW:
+            return True
+    return False
 
 
 def load_market_data():
@@ -85,17 +114,28 @@ def compute_holding_drawdown(entry_idx, exit_idx, dates, prices, direction):
     return round(-max_adverse * 100, 2), worst_date
 
 
-def evaluate_pairs(blogger_data, market_data):
+def evaluate_pairs(blogger_data, market_data, quality_only=False):
     """配对入场→出场信号，计算完整周期收益"""
     name = blogger_data["blogger"]
     signals = blogger_data["signals"]
 
     # 筛选 explicit_action 信号
     actions = [s for s in signals if s.get("specific") == "explicit_action"]
+
+    # 质量过滤
+    if quality_only:
+        actions = [s for s in actions if is_quality_signal(s)]
+
     if not actions:
-        # 降级：使用 directional_clear
-        actions = [s for s in signals if s.get("specific") == "directional_clear"]
-        fallback = True
+        # 降级尝试
+        fallback_actions = [s for s in signals if s.get("specific") == "directional_clear"]
+        if quality_only:
+            fallback_actions = [s for s in fallback_actions if is_quality_signal(s)]
+        if fallback_actions:
+            actions = fallback_actions
+            fallback = True
+        else:
+            return None
     else:
         fallback = False
 
@@ -263,6 +303,7 @@ def print_pair_report(result):
 def main():
     parser = argparse.ArgumentParser(description="博主配对待仓收益评估")
     parser.add_argument("--blogger", help="只分析指定博主")
+    parser.add_argument("--quality", action="store_true", help="仅评估高质量信号（strong+explicit_action+拐点对齐）")
     args = parser.parse_args()
 
     print("加载大盘数据...")
@@ -272,7 +313,7 @@ def main():
     all_bloggers = load_signals(args.blogger)
 
     for blogger_data in all_bloggers:
-        result = evaluate_pairs(blogger_data, market_data)
+        result = evaluate_pairs(blogger_data, market_data, quality_only=args.quality)
         if result:
             print_pair_report(result)
         else:

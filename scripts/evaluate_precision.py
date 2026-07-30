@@ -2,12 +2,12 @@
 博主信号精确率验证：事件研究法（Event Study）
 
 对每个博主的每次方向性判断（信号），计算后续固定窗口的市场表现，
-统计胜率、平均收益、盈亏比等指标。
+统计胜率、平均收益、反向风险等指标。
 
 用法:
   python scripts/evaluate_precision.py
-  python scripts/evaluate_precision.py --window T+20  # 指定主验证窗口
-  python scripts/evaluate_precision.py --blogger 稀豹  # 只看单个博主
+  python scripts/evaluate_precision.py --blogger 稀豹     # 只看单个博主
+  python scripts/evaluate_precision.py --quality           # 仅评估高质量信号（strong+拐点对齐）
 """
 
 import json
@@ -27,12 +27,41 @@ MARKET_FILE = os.path.join(MARKET_DIR, "market_data.json")
 
 # 验证窗口：交易日数
 WINDOWS = {
-    "T+1": 1,
-    "T+3": 3,
-    "T+5": 5,
-    "T+10": 10,
-    "T+20": 20,
+    "T+1": 1, "T+3": 3, "T+5": 5, "T+10": 10, "T+20": 20,
 }
+
+# 拐点日期（来自 market_analysis.md）— 用于质量过滤
+INFLECTION_DATES = {
+    # Major
+    "M1": "2024-09-13", "M2": "2024-10-08", "M3": "2025-04-07",
+    "M4": "2025-11-14", "M5": "2026-03-23", "M6": "2026-05-14",
+    "M7": "2026-06-25", "M8": "2026-07-20",
+    # Intermediate
+    "I1": "2024-10-18", "I2": "2024-11-08", "I5": "2025-01-13",
+    "I6": "2025-03-19", "I9": "2025-12-16", "I10": "2026-01-14",
+    "I12": "2026-03-03", "I13": "2026-06-08", "I14": "2026-06-23",
+}
+
+QUALITY_WINDOW = 5  # 拐点对齐窗口 ±5 个交易日
+
+
+def is_quality_signal(sig):
+    """判断信号是否为高质量：strong + 拐点对齐"""
+    if sig.get("strength") != "strong":
+        return False
+    spec = sig.get("specific", "")
+    if spec not in ("explicit_action", "directional_clear"):
+        return False
+    # 拐点对齐检查
+    try:
+        sd = datetime.strptime(sig["date"], "%Y-%m-%d")
+    except:
+        return False
+    for label, idate in INFLECTION_DATES.items():
+        idt = datetime.strptime(idate, "%Y-%m-%d")
+        if abs((sd - idt).days) <= QUALITY_WINDOW:
+            return True
+    return False
 
 
 def load_market_data():
@@ -168,227 +197,187 @@ def evaluate_signal(signal, market_data, windows):
     return results
 
 
-def aggregate_blogger(blogger_data, market_data, windows):
-    """汇总单个博主的信号验证结果"""
+def aggregate_blogger(blogger_data, market_data, windows, quality_only=False):
+    """汇总单个博主的信号验证结果。
+    如果 quality_only=True，仅评估 strong + 拐点对齐的高质量信号。
+    输出按看多/看空分块，聚焦反向风险。"""
     name = blogger_data["blogger"]
     signals = blogger_data["signals"]
 
+    # 质量过滤
+    if quality_only:
+        quality_signals = [s for s in signals if is_quality_signal(s)]
+        skipped = len(signals) - len(quality_signals)
+    else:
+        quality_signals = signals
+        skipped = 0
+
     results = []
-    for sig in signals:
+    for sig in quality_signals:
         r = evaluate_signal(sig, market_data, windows)
         if r:
+            # 附加元信息
+            r["_strength"] = sig.get("strength", "")
+            r["_specific"] = sig.get("specific", "")
+            r["_evidence"] = sig.get("evidence", "")
             results.append(r)
 
     if not results:
         return None
 
-    # 按主窗口（T+20）统计
-    main_window = "T+20"
-    valid = [r for r in results if r.get(main_window) is not None]
-    if not valid:
-        main_window = "T+10"
-        valid = [r for r in results if r.get(main_window) is not None]
-    if not valid:
-        main_window = "T+5"
-        valid = [r for r in results if r.get(main_window) is not None]
+    # 按方向分组（核心变更：看多/看空各自独立统计）
+    bull_results = [r for r in results if r["direction"] == "bullish"]
+    bear_results = [r for r in results if r["direction"] == "bearish"]
 
-    forward_returns = [r[main_window]["forward_return"] for r in valid]
-    correct_count = sum(1 for fr in forward_returns if fr > 0)
-    total = len(valid)
-
-    pos_returns = [fr for fr in forward_returns if fr > 0]
-    neg_returns = [fr for fr in forward_returns if fr <= 0]
-
-    # 各窗口胜率
-    win_rates = {}
-    for wn in windows:
-        w_valid = [r for r in results if r.get(wn) is not None]
-        if w_valid:
-            w_correct = sum(1 for r in w_valid if r[wn]["correct"])
-            win_rates[wn] = round(w_correct / len(w_valid) * 100, 1)
-
-    # 按方向拆分
-    bullish_results = [r for r in valid if r["direction"] == "bullish"]
-    bearish_results = [r for r in valid if r["direction"] == "bearish"]
-
-    def sub_stats(sub_results):
-        if not sub_results:
+    def dimension_stats(sig_results, direction_label):
+        """对一组同方向信号做完整统计"""
+        if not sig_results:
             return None
-        frs = [r[main_window]["forward_return"] for r in sub_results]
-        return {
-            "count": len(frs),
-            "win_rate": round(sum(1 for f in frs if f > 0) / len(frs) * 100, 1),
-            "avg_return": round(sum(frs) / len(frs), 2),
-        }
 
-    # 按强度拆分
-    strong_results = [r for r in valid if r.get("_strength") == "strong"]
-    moderate_results = [r for r in valid if r.get("_strength") == "moderate"]
+        # 找可用主窗口
+        main_window = "T+20"
+        valid = [r for r in sig_results if r.get(main_window) is not None]
+        if not valid:
+            main_window = "T+10"; valid = [r for r in sig_results if r.get(main_window) is not None]
+        if not valid:
+            main_window = "T+5"; valid = [r for r in sig_results if r.get(main_window) is not None]
+        if not valid:
+            return None
 
-    # 补充 strength 信息到 results
-    for r in results:
-        for sig in signals:
-            if sig["date"] == r["signal_date"] and sig.get("evidence") == r.get("_evidence"):
-                r["_strength"] = sig.get("strength", "moderate")
-                r["_evidence"] = sig.get("evidence", "")
-                r["_specific"] = sig.get("specific", "")
-                break
-        # 简单匹配 date
-        for sig in signals:
-            if sig["date"] == r["signal_date"]:
-                r["_strength"] = sig.get("strength", "moderate")
-                r["_evidence"] = sig.get("evidence", "")
-                r["_specific"] = sig.get("specific", "")
-                break
+        fwd_returns = [r[main_window]["forward_return"] for r in valid]
+        total = len(valid)
+        wins = [fr for fr in fwd_returns if fr > 0]
+        losses = [fr for fr in fwd_returns if fr <= 0]
+        correct = len(wins)
 
-    strong_valid = [r for r in valid if r.get("_strength") == "strong"]
-    moderate_valid = [r for r in valid if r.get("_strength") == "moderate"]
+        # 各窗口胜率 + 收益
+        win_rates = {}
+        avg_returns = {}
+        for wn in windows:
+            wv = [r for r in sig_results if r.get(wn) is not None]
+            if wv:
+                wc = sum(1 for r in wv if r[wn]["correct"])
+                wr = sum(r[wn]["forward_return"] for r in wv) / len(wv)
+                win_rates[wn] = round(wc / len(wv) * 100, 1)
+                avg_returns[wn] = round(wr, 2)
 
-    # 连续正确/错误
-    correct_seq = [1 if r[main_window]["correct"] else 0 for r in valid]
-    max_win_streak = 0
-    max_lose_streak = 0
-    current_win = 0
-    current_lose = 0
-    for c in correct_seq:
-        if c:
-            current_win += 1
-            current_lose = 0
-            max_win_streak = max(max_win_streak, current_win)
-        else:
-            current_lose += 1
-            current_win = 0
-            max_lose_streak = max(max_lose_streak, current_lose)
-
-    # 严重失误（forward_return < -5%）
-    severe_errors = [r for r in valid if r[main_window]["forward_return"] < -5]
-
-    # --- 风险指标：按方向分别统计 ---
-    # bullish: "最大回撤"（下跌=浮亏）
-    # bearish: "最大反向波动"（上涨=踏空/卖飞）
-    risk_by_window = {}
-    for wn in windows:
-        w_valid = [r for r in results if r.get(wn) is not None]
-        if not w_valid:
-            continue
-        bull = [r for r in w_valid if r["direction"] == "bullish"]
-        bear = [r for r in w_valid if r["direction"] == "bearish"]
-
-        def adverse_stats(signals):
-            if not signals:
-                return None
-            advs = [r[wn]["max_adverse"] for r in signals]  # 负数
-            rets = [r[wn]["forward_return"] for r in signals]
-            big_adv = [a for a in advs if a < -5]
-            recoveries = [r for r in signals if r[wn]["hit_worst_then_recover"]]
+        # 反向风险指标（核心）
+        risk = {}
+        for wn in windows:
+            wv = [r for r in sig_results if r.get(wn) is not None]
+            if not wv:
+                continue
+            advs = [r[wn]["max_adverse"] for r in wv]
             avg_adv = sum(advs) / len(advs)
-            avg_ret = sum(rets) / len(rets)
-            return {
-                "count": len(signals),
+            avg_ret = sum(r[wn]["forward_return"] for r in wv) / len(wv)
+            big_adv = [a for a in advs if a < -5]
+            recoveries = [r for r in wv if r[wn]["hit_worst_then_recover"]]
+            risk[wn] = {
                 "avg_adverse": round(avg_adv, 2),
                 "worst_adverse": round(min(advs), 2),
                 "pct_adverse_gt5": round(len(big_adv) / len(advs) * 100, 1),
                 "return_adverse_ratio": round(avg_ret / abs(avg_adv), 2) if avg_adv != 0 else None,
-                "pct_recover_after_worst": round(len(recoveries) / len(signals) * 100, 1) if signals else 0,
+                "pct_recover": round(len(recoveries) / len(wv) * 100, 1) if wv else 0,
             }
 
-        risk_by_window[wn] = {
-            "bullish": adverse_stats(bull),  # 做多风险 = 回撤
-            "bearish": adverse_stats(bear),  # 看空风险 = 反向波动（踏空）
+        # 严重失误
+        severe = [r for r in valid if r[main_window]["forward_return"] < -5]
+
+        # 盈亏比
+        pf = round(sum(wins) / abs(sum(losses)), 2) if losses and sum(losses) != 0 else None
+
+        return {
+            "direction": direction_label,
+            "total": total,
+            "main_window": main_window,
+            "win_rate": round(correct / total * 100, 1) if total > 0 else 0,
+            "avg_return": round(sum(fwd_returns) / len(fwd_returns), 2),
+            "median_return": round(sorted(fwd_returns)[len(fwd_returns) // 2], 2),
+            "max_gain": round(max(fwd_returns), 2),
+            "max_loss": round(min(fwd_returns), 2),
+            "profit_factor": pf,
+            "severe_errors": len(severe),
+            "win_rates_by_window": win_rates,
+            "avg_returns_by_window": avg_returns,
+            "risk_by_window": risk,
+            "severe_details": [
+                {"date": r["signal_date"], "evidence": r.get("_evidence", "")[:80],
+                 "forward_return": r[main_window]["forward_return"],
+                 "max_adverse": r[main_window]["max_adverse"]}
+                for r in severe
+            ],
+            "all_signals": sig_results,
         }
+
+    bull_stats = dimension_stats(bull_results, "bullish")
+    bear_stats = dimension_stats(bear_results, "bearish")
 
     return {
         "blogger": name,
-        "total_signals": len(results),
-        "valid_signals": total,
-        "main_window": main_window,
-        "stats": {
-            "win_rate": round(correct_count / total * 100, 1) if total > 0 else 0,
-            "avg_return": round(sum(forward_returns) / len(forward_returns), 2),
-            "median_return": round(sorted(forward_returns)[len(forward_returns) // 2], 2),
-            "max_gain": round(max(forward_returns), 2),
-            "max_loss": round(min(forward_returns), 2),
-            "profit_factor": round(sum(pos_returns) / abs(sum(neg_returns)), 2) if neg_returns and sum(neg_returns) != 0 else None,
-            "severe_errors": len(severe_errors),
-            "max_win_streak": max_win_streak,
-            "max_lose_streak": max_lose_streak,
-        },
-        "win_rates_by_window": win_rates,
-        "risk_by_window": risk_by_window,
-        "by_direction": {
-            "bullish": sub_stats(bullish_results),
-            "bearish": sub_stats(bearish_results),
-        },
-        "by_strength": {
-            "strong": sub_stats(strong_valid),
-            "moderate": sub_stats(moderate_valid),
-        },
-        "severe_error_details": [
-            {
-                "date": r["signal_date"],
-                "direction": r["direction"],
-                "evidence": r.get("_evidence", ""),
-                "forward_return": r[main_window]["forward_return"],
-            }
-            for r in severe_errors
-        ],
+        "quality_mode": quality_only,
+        "total_signals_input": len(signals),
+        "quality_signals_used": len(results),
+        "quality_skipped": skipped,
+        "bullish": bull_stats,
+        "bearish": bear_stats,
         "all_results": results,
     }
 
 
-def print_blogger_report(agg, windows):
-    """打印单个博主的详细报告"""
-    s = agg["stats"]
-    print(f"\n{'='*60}")
-    print(f"  {agg['blogger']}")
-    print(f"{'='*60}")
-    print(f"  信号总数: {agg['total_signals']} | 有效: {agg['valid_signals']} | 主窗口: {agg['main_window']}")
-    print(f"  胜率: {s['win_rate']}% | 平均收益: {s['avg_return']}% | 中位收益: {s['median_return']}%")
-    print(f"  最大盈利: {s['max_gain']}% | 最大亏损: {s['max_loss']}%")
-    if s['profit_factor']:
-        print(f"  盈亏比: {s['profit_factor']} | 严重失误(<-5%): {s['severe_errors']}次")
-    print(f"  最长连胜: {s['max_win_streak']} | 最长连败: {s['max_lose_streak']}")
+def print_dimension(stat, windows, label, risk_label):
+    """打印单个维度（看多或看空）的完整报告"""
+    if not stat:
+        print(f"\n  📊 {label}: 无有效信号")
+        return
 
-    print(f"\n  各窗口胜率:")
+    print(f"\n  {'─'*50}")
+    print(f"  📊 {label}（{stat['total']}条信号，主窗口={stat['main_window']}）")
+    print(f"  {'─'*50}")
+    print(f"  胜率: {stat['win_rate']}% | 平均收益: {stat['avg_return']:+.2f}% | 中位收益: {stat['median_return']:+.2f}%")
+    print(f"  最大盈利: {stat['max_gain']:+.2f}% | 最大亏损: {stat['max_loss']:+.2f}%")
+    pf = f"{stat['profit_factor']}" if stat['profit_factor'] else "N/A"
+    print(f"  盈亏比: {pf} | 严重失误(<-5%): {stat['severe_errors']}次")
+
+    # 各窗口胜率 + 收益
+    print(f"\n  {'窗口':<6} {'胜率':>8} {'均收益':>8}")
     for wn in windows:
-        wr = agg["win_rates_by_window"].get(wn, "N/A")
-        print(f"    {wn}: {wr}%")
+        wr = stat["win_rates_by_window"].get(wn)
+        ar = stat["avg_returns_by_window"].get(wn)
+        if wr is not None:
+            print(f"  {wn:<6} {wr:>7}% {ar:>7}%")
 
-    print(f"\n  按方向:")
-    for d, st in agg["by_direction"].items():
-        if st:
-            print(f"    {d}: {st['count']}次 胜率{st['win_rate']}% 均收益{st['avg_return']}%")
+    # 反向风险（核心）
+    risk = stat.get("risk_by_window", {})
+    if risk:
+        print(f"\n  🛡️ 反向风险 — {risk_label}:")
+        print(f"  {'窗口':<6} {'均不利波动':>10} {'最坏':>8} {'不利>5%':>8} {'收益/不利比':>10}")
+        for wn in windows:
+            r = risk.get(wn)
+            if r:
+                rdr = f"{r['return_adverse_ratio']}" if r['return_adverse_ratio'] is not None else "N/A"
+                print(f"  {wn:<6} {r['avg_adverse']:>9}% {r['worst_adverse']:>7}% {r['pct_adverse_gt5']:>7}% {rdr:>10}")
 
-    print(f"\n  按强度:")
-    for d, st in agg["by_strength"].items():
-        if st:
-            print(f"    {d}: {st['count']}次 胜率{st['win_rate']}% 均收益{st['avg_return']}%")
+    # 严重失误明细
+    if stat["severe_details"]:
+        print(f"\n  ⚠️ 严重失误:")
+        for err in stat["severe_details"]:
+            print(f"    [{err['date']}] 收益{err['forward_return']:+.2f}% 不利{err['max_adverse']}% | {err['evidence'][:60]}...")
 
-    if agg["severe_error_details"]:
-        print(f"\n  ⚠️ 严重失误（<-5%）:")
-        for err in agg["severe_error_details"]:
-            print(f"    [{err['date']}] {err['direction']}: {err['evidence'][:60]}... → {err['forward_return']}%")
 
-    # 风险指标（按方向拆分）
-    if agg.get("risk_by_window"):
-        for direction, label in [("bullish", "做多回撤"), ("bearish", "看空反向波动")]:
-            print(f"\n  🛡️ 风险指标 — {label}:")
-            has_data = False
-            for wn in windows:
-                risk = agg["risk_by_window"].get(wn, {})
-                d = risk.get(direction) if risk else None
-                if d:
-                    has_data = True
-            if not has_data:
-                print(f"    （无信号）")
-                continue
-            print(f"    {'窗口':<6} {'均不利波动':>10} {'最坏':>8} {'不利>5%':>8} {'收益/不利比':>10} {'先苦后甜%':>10}")
-            for wn in windows:
-                risk = agg["risk_by_window"].get(wn, {})
-                d = risk.get(direction) if risk else None
-                if d:
-                    rdr = f"{d['return_adverse_ratio']}" if d['return_adverse_ratio'] is not None else "N/A"
-                    print(f"    {wn:<6} {d['avg_adverse']:>9}% {d['worst_adverse']:>7}% {d['pct_adverse_gt5']:>7}% {rdr:>10} {d['pct_recover_after_worst']:>9}%")
+def print_blogger_report(agg, windows):
+    """打印单个博主的详细报告——看多/看空分块"""
+    qtag = " [仅高质量信号]" if agg.get("quality_mode") else ""
+    print(f"\n{'='*60}")
+    print(f"  {agg['blogger']}{qtag}")
+    print(f"  输入{agg['total_signals_input']}条信号 → 使用{agg['quality_signals_used']}条" +
+          (f"（过滤{agg['quality_skipped']}条非高质量）" if agg.get("quality_skipped") else ""))
+    print(f"{'='*60}")
+
+    # 看多维度
+    print_dimension(agg.get("bullish"), windows, "看多 / 抄底能力", "最大回撤（买入后最惨浮亏）")
+
+    # 看空维度
+    print_dimension(agg.get("bearish"), windows, "看空 / 逃顶能力", "最大反向波动（卖出后最大踏空）")
 
 
 def generate_comparison_md(all_aggs, windows):
@@ -503,7 +492,7 @@ def generate_comparison_md(all_aggs, windows):
 def main():
     parser = argparse.ArgumentParser(description="博主信号精确率验证")
     parser.add_argument("--blogger", help="只分析指定博主")
-    parser.add_argument("--output", default=None, help="输出文件路径")
+    parser.add_argument("--quality", action="store_true", help="仅评估高质量信号（strong+拐点对齐）")
     args = parser.parse_args()
 
     print("加载大盘数据...")
@@ -515,36 +504,13 @@ def main():
     print(f"  已加载 {len(all_bloggers)} 位博主")
 
     windows = WINDOWS
-    all_aggs = []
 
     for blogger_data in all_bloggers:
-        agg = aggregate_blogger(blogger_data, market_data, windows)
+        agg = aggregate_blogger(blogger_data, market_data, windows, quality_only=args.quality)
         if agg:
-            all_aggs.append(agg)
             print_blogger_report(agg, windows)
         else:
             print(f"\n  {blogger_data['blogger']}: 无有效信号")
-
-    if not all_aggs:
-        print("\n无有效数据")
-        return
-
-    # 生成对比报告
-    md = generate_comparison_md(all_aggs, windows)
-
-    output_path = args.output or os.path.join(REPORTS_DIR, "precision_comparison.md")
-    with open(output_path, "w", encoding="utf-8") as f:
-        f.write(md)
-    print(f"\n✅ 对比报告已保存: {output_path}")
-
-    # 简要排序
-    print("\n" + "=" * 60)
-    print("  按平均收益排序")
-    print("=" * 60)
-    for i, agg in enumerate(sorted(all_aggs, key=lambda a: a["stats"]["avg_return"], reverse=True)):
-        s = agg["stats"]
-        print(f"  {i+1}. {agg['blogger']}: 胜率{s['win_rate']}% 均收益{s['avg_return']}% "
-              f"盈亏比{s['profit_factor'] or 'N/A'} 严重失误{s['severe_errors']}次")
 
 
 if __name__ == "__main__":
