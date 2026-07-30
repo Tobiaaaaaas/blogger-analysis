@@ -1,0 +1,197 @@
+{
+  "blogger": "大盘蜂向标",
+  "signals": [
+    {
+      "date": "2026-01-09",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "红柱下午变得更长了，3个月来最长的红柱。风险远远大于机会",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-01-12",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "大盘上头，但是我不上头...长柱出现，调整大概率会到来（I10 4191年初顶前2天预警）",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-01-15",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "调整没有结束...所有反弹都是诱多，别一看涨了就头铁往里冲",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-02-02",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "行情在疯狂中结束，在绝望中产生",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-02-05",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "反弹还没结束，但是已经接近尾声了",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-02-10",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "小心，调整又要来了！…1-3天后等待市场验证",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-03-02",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "大盘没问题，没有出现卖出信号，坚定信念即可。4190区域是强压力位",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-03-03",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "大盘无忧，主力洗盘正酣！…坚定看多（I12 4197二次冲顶当日）",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-03-04",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "洗盘还没结束，大概率是下跌中继...等见底信号",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-03-19",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "1到3天，大盘将出现一个短期底！超短柱出现了...别人恐慌我贪婪（M5 3795急跌底前4天）",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-03-20",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "短期不用再恐慌！…出现过短暂的绿柱，短期是底部区域",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-03-23",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "下午或明天会有神奇时刻…别人恐慌我贪婪，绿柱出现=反弹周期开启（M5当天）",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-03-24",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "拿住！…反弹还没结束",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-05-10",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "explicit_action",
+      "evidence": "冲高可以有，但别当真，更别追高…更像是诱多（M6 4259年度顶前4天）",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-05-11",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "今天分批减到只剩2成…明天再冲高，我会把剩余的全抛掉（金茂大厦信号）",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-05-12",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "和1月13日一样，金茂大厦来了，调整大概率就来了…短线修复后继续惩罚",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-05-14",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "暴击会迟到，但不会缺席…昨天一颗糖，今天果然一巴掌（M6当天）",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-06-05",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "普涨式反弹，如果非要给个时间，我认为是明天（后承认错误：百分百胜率被终结）",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-06-08",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "明天会有盘中的反弹，但是行情没有稳定…红柱没有缩短，反而变长了",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-07-08",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "大盘还要跌…下跌周期中的反弹，都是诱多。绿柱未现，所有抄底都是飞蛾扑火",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-07-13",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "调整还没有结束！绿柱没出现…下跌周期中的任何反弹都是诱多",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-07-20",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "短期有望止跌反弹…但下跌周期没有改变，反弹是主力发糖（M8当天）",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-07-24",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "今天落袋三分之二…下跌周期中不宜重仓，反弹后小心再回落",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-07-29",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "反弹可以有，但是反转还需时日！见底绿柱至今没有出现",
+      "index": "上证指数"
+    }
+  ]
+}

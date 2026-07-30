@@ -1,0 +1,341 @@
+{
+  "blogger": "稀豹",
+  "signals": [
+    {
+      "date": "2024-09-11",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "快到底了，准备上车！",
+      "index": "上证指数"
+    },
+    {
+      "date": "2024-10-08",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "注意仓位管理",
+      "index": "上证指数"
+    },
+    {
+      "date": "2024-11-10",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "当前还是没有牛市的条件！化债非直接经济刺激，远水救不了近火",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-04-07",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "A股遭黑天鹅！后市没机会？有！",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-11-10",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "明天看涨！再创新高！",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-11-11",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "大涨将至！明天将全面上涨，阳包阴！中阳线！",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-11-12",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "大涨在即！不能放弃！下午看大涨，中阳线阳包阴",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-12-12",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "行情就此反转！跨年行情即将来临！下周重返3900",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-12-14",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "下周开始反转，下周会涨！重返3900，月底前再冲4000",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-12-15",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "明天或有大涨，一阳穿三线！包住今天所有的回落",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-01-11",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "下周或有黑天鹅但大盘仍涨，收下影线周小阳线",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-01-12",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "剑指5178！4000点就是长期慢牛的起点",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-01-13",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "明天阳包阴，中阳线！闪爆全场！主升浪奔着4317去的",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-01-14",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "上午确认中阳线，昨天看跌的人还好吗？",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-01-16",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "仓位从满仓降至八成，下周将证券止盈了结，资金加入观望",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-03-01",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "黑天鹅突袭！机会来了！这是一次低吸加码的好机会",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-03-06",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "下周行情大概率会强势突破4197，创年内新高",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-03-17",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "明天将有一根中阳线，一阳包二阴！",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-03-19",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "大盘已在60日线下运行三天，行情已步入弱势阶段！当下不仅不能轻易抄底，反要在后市反弹中寻找降本扩股的机会",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-03-20",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "上午一开盘，我就从满仓降至三成！不是不看好A股趋势，只为锁住前期收获",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-03-22",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "下周见底！下周三之前会见底！",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-03-23",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "机会来了！明天会收红盘！这波行情的机会就在明天！",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-03-24",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "大红盘！情绪底与市场底同步确认，拐点就在今天",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-05-07",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "识别量价背离，A股或有调整",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-05-11",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "今天我依然提示可能要下雨，同频的记得带好伞防范一下",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-05-14",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "下午会收中阴线！短线依然不容乐观！主力要在相对高位把追高资金都吸进来",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-05-17",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "下周大概率是这波调整的拐点",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-06-04",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "只要没守住60日线，直接在尾盘从七成降到三成！明天反抽是抽身时机",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-06-10",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "别急，A股还没止跌！",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-06-21",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "阶梯式拉升！主力高度控盘下稳步上攻，主升浪已从6月8日开始",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-06-22",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "剑指4300！倒车接人！保持兴奋感，这是机会！",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-06-23",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "全面看多！现在就是果断看涨的时候！分化转一致的特征",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-06-24",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "亮剑时刻已至！上午低点就是这波主升浪的中继底部，要直接亮剑了",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-06-25",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "下午有中阳线！这是典型的进攻时机！主升浪蓄力中",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-07-14",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "就是今天！底部将现！下午走V翻红收探底中阳线，全面看涨",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-07-15",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "明天会涨！且大概率会让人目瞪口呆，收中阳线，直接破4000",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-07-17",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "今日3745就是一次极限试探，下周会反弹，10月底前有重创年内新高的概率",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-07-19",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "3745就是底！下周会波动上行，收小周阳线",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-07-20",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "明天看涨！且会站上5日线，收中阳线！3745就是中长期战略底部",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-07-26",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "下周会收探底小周阳线，筑底节奏将完成，机会更明显",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-07-27",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "explicit_action",
+      "evidence": "明天会跌！收阴线！存量市场要长期向上必须拥抱分歧中轮动",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-07-28",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "explicit_action",
+      "evidence": "明天会有反抽，收走V翻红的阳线！但尽量也别伸手为宜",
+      "index": "上证指数"
+    }
+  ]
+}

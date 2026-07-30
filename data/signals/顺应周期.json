@@ -1,0 +1,429 @@
+{
+  "blogger": "顺应周期",
+  "signals": [
+    {
+      "date": "2024-09-09",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "今天加了一成...下个加仓在2710，2690，2670...12日前后一天肯定会有反弹",
+      "index": "上证指数"
+    },
+    {
+      "date": "2024-09-10",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "目前仓位6.5成...一个短线反弹基本要开始了...所有指数都完成了一个完整的结构",
+      "index": "上证指数"
+    },
+    {
+      "date": "2024-09-11",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "今天按策略在大盘跌到2710加了0.5成的50etf。目前总仓位7成...明天是9月12日，大盘有望反弹",
+      "index": "上证指数"
+    },
+    {
+      "date": "2024-09-13",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "explicit_action",
+      "evidence": "下次加仓点在2690。不到不动...今天早上的量还可以，下午继续维持的话说明这个位置还是有承接力的",
+      "index": "上证指数"
+    },
+    {
+      "date": "2024-10-11",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "第一波明显情绪过头，第二波才会恢复正常节奏",
+      "index": "上证指数"
+    },
+    {
+      "date": "2024-10-15",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "不到11月份中间的任何涨跌都不用去交易。贪婪必然成为韭菜",
+      "index": "上证指数"
+    },
+    {
+      "date": "2024-10-22",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "第二波高度保守大约在3400-3500。再创新高概率也是有的",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-01-09",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "explicit_action",
+      "evidence": "3150-3180区间起步，我坚信应该有一个接近100点反弹...至少三个交易日不会大跌",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-01-13",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "explicit_action",
+      "evidence": "现在我还是1成仓...计划年后2月初开始对宽基指数开始部署...等下半年大部分人悲观的时候加",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-01-14",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "这波反弹位置在黄色线附近...预计3280-3330...到这个区域位置就要谨慎了，短线可以分批落袋",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-03-16",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "如果明天能突破上轨拉出一根中阳线，短线就值得赌一把，下个目标起码是3465附近",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-03-19",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "explicit_action",
+      "evidence": "如果明天突然下跌...破了今天低点...到3390附近止跌...可以抓住最后机会抢个反弹...万一指数发力突破了3510，格局就打开了",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-03-21",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "跌破3380，必须执行纪律...3140以来的反弹已经结束...耐心等待下个大机会",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-04-03",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "explicit_action",
+      "evidence": "早盘3320附近建了1成仓位，后续看情况跌每跌10点再加0.5成...最好的是能跌到3270附近",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-04-06",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "从3320开始指数每跌10个点，就加0.5成的仓位慢慢补...该咋干就咋干，别被杂音干扰",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-04-07",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "今天买进的就当买了个1年定期存款...不要把关税和我们的股市在心理上绑的太紧...2个月前就分析过了，就在置顶的帖子里",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-04-08",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "其实真应该感谢特朗普...等我们大盘到4000，一定要谢谢他...昨天跟着我进仓今天应该都盈利了",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-04-10",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "explicit_action",
+      "evidence": "下午和明天回落到3140-3200之间直接加仓...保持底部仓位5-6成差不多...下周有望回到3300",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-11-14",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "昨天属于无量新高，有比较大的概率是诱多性质...调整到3920上方还会起来一次",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-11-17",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "explicit_action",
+      "evidence": "等第二波下跌，回3925附近，我个人打算进点仓位...再心急也要等3940",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-11-18",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "explicit_action",
+      "evidence": "目前今天进的1成仓位稍有盈利...点位已经到站了",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-12-12",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "从3820进场到3920附近清仓，整体收益远远跑赢指数最大波动...破位后...后续继续会下刀子",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-12-15",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "今年肯定不会有大的机会了...至少还要等1个月...3850暂时不应该去破掉",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-12-16",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "今天收了个中阴线，远远还没跌透...3700之前都不用转移视线...保存实力，耐心等待",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-01-12",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "explicit_action",
+      "evidence": "大盘向上操作极限空间还有100点左右...仓位重的需要逐步降一点...4250是自3815点开启以来的高点附近",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-01-14",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "调整大概到大概4100附近，休整后还会继续涨，但只适合快进快出...这里有个风险判断",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-01-15",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "4200开始的这轮调整...先回踩4034附近...再去完成这一轮行情的后半段",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-02-27",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "调整后会继续向上...下个高点在4190...落幕时间大概在3月中，点位预计4250左右",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-03-03",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "explicit_action",
+      "evidence": "破了4125，下面就是4065...下午开盘抛了钢铁，现在留下4成仓...4197不是牛市顶",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-03-19",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "这波确定开始反弹了，会告诉大家反弹的大致位置，但这次是逃命",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-03-20",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "explicit_action",
+      "evidence": "本人加了1成，如果能打到3960还会再加1成...这次反弹开始启动了",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-03-23",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "explicit_action",
+      "evidence": "3950没反弹，确实遗憾...目前管理好仓位，按既定节奏...之前有过牛市经历的，这种跌速和幅度应该会觉得正常",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-03-25",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "explicit_action",
+      "evidence": "反弹目标先看3950附近...明天是第三天，到3950，要从乐观转谨慎了",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-03-27",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "缩量上涨说明还没涨完...下周继续向3960进发...4197以来的大调并没有完成，600点是最起码的",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-05-11",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "explicit_action",
+      "evidence": "期望这波能到4250，满足下我置顶贴里的点位...早盘我再加1成银行（防御板块）",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-05-12",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "破4180=周线级别背离=向3600方向...本轮阶段高点不超过4260...看自己选择",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-05-14",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "尾盘破4180，下个节点是4110附近...本轮阶段高点大概率不会超过4260...后续重点观察3650附近...95%的人是无法相信",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-06-04",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "explicit_action",
+      "evidence": "4050-4110是不能操作，要么上到4110，要么等3985附近...希望明天变一变",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-06-05",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "破4030第一个下跌结构就已经在末端...第一个拐点离4000理论上不会太远，比较理想的是3985左右",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-06-08",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "3938不是本轮调整最低点...这个位置绝对不是一个新的上涨起点，只是一个中途驿站...接下去还有一半的路程要熬",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-06-09",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "explicit_action",
+      "evidence": "反弹随时展开...预计反抽高点大概率只能看4000附近...中线看整体调整远远没结束",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-06-22",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "成交量放大，让我不得想到科技再次出货的可能，科技要保持谨慎...分化应该快结束了",
+      "index": "创业板指"
+    },
+    {
+      "date": "2026-06-25",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "指数不断的上涨，但个股整体低迷...科技板块对市场资金的虹吸太过于强大",
+      "index": "创业板指"
+    },
+    {
+      "date": "2026-06-26",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "最晚下周应该能看到4000以下...科技要缩，老登要扩，这波杀跌还没结束...昨天明确盘中告知顶",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-07-16",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "计划在3850，3815，3795位置分别挂1成，由市场决定要不要吃点我的筹码...风浪越大鱼越贵",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-07-18",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "全是恐慌和绝望...提前挂了情绪盘单子放在3795...下周...位置大致关注3735附近，随后先看一波反弹",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-07-19",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "稍破下3745，短线反弹结构就成立...3715-3735开始的反弹方向是3820-3850",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-07-20",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "破了新低到了3735附近，结构是完美的...判断大概率反弹来了...把早盘出掉的1成短线也加到了创业板上",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-07-21",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "explicit_action",
+      "evidence": "3880附近减掉2成综指...白酒也抛了...现在仓位4成...再涨一点等他们确认是反转，我就跑了",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-07-23",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "这里只是大框架调整里的一次反弹而已...肯定去3600，100%去...震荡往下朝着3810附近去",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-07-24",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "explicit_action",
+      "evidence": "每跌25点加1成，即3785，3760，3735加1成...3820回补0.5成，成交",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-07-29",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "explicit_action",
+      "evidence": "今天3785主动买的1成创业板及其精准...这波反弹的预期是3930左右...尾盘能站稳3840",
+      "index": "创业板指"
+    },
+    {
+      "date": "2026-07-30",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "explicit_action",
+      "evidence": "0.5成主动加3220的创业板...8月7日之前都是磨底行情，耐心慢慢布局...8月7日是我们的农历立秋",
+      "index": "创业板指"
+    }
+  ]
+}

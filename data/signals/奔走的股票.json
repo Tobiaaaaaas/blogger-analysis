@@ -1,0 +1,125 @@
+{
+  "blogger": "奔走的股票",
+  "signals": [
+    {
+      "date": "2024-09-09",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "谨防下午大盘，收出长下影线，这不是见底标志（M1大底前4天，看空在底部）",
+      "index": "上证指数"
+    },
+    {
+      "date": "2024-10-08",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "大涨见顶了，会再度逼空吗？（M2脉冲顶当天喊顶，教科书级）",
+      "index": "上证指数"
+    },
+    {
+      "date": "2024-10-18",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "大行情启动，又要疯涨吗？（I1回调底当天看多，正确）",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-01-14",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "强势逼空上涨，股民要做好准备（I5年初底后1天，方向正确）",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-03-19",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "大家要系好安全带，明天谁来横刀立马，助力大盘起飞（I6反弹顶当天看多，方向错误）",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-04-08",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "各路利好汇聚，大金融突然启动，明天大盘继续上涨（M3关税底后1天，方向正确）",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-11-13",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_vague",
+      "evidence": "大格局已经确立，股民要做好准备，下午，会再创新高吗（M4阶段顶前1天看多，方向错误）",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-12-17",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "低位阳包阴，强烈的反转信号，明天大盘，会一飞冲天吗（I9年末底后1天，方向正确）",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-01-10",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_vague",
+      "evidence": "周线呈现空中加油，市场分歧加大（I10年初顶前4天看多，方向错误）",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-02-27",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_vague",
+      "evidence": "A股两大指数创出历史新高，下周能否拿下4200点（I12二次冲顶前4天看多，方向错误）",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-03-20",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "继续单边下跌，中线趋势已经改变，下周走势已经明确（M5急跌底前3天看空，方向错误）",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-05-06",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "美油价格暴跌超9%，A股明天上涨走势可期[给力][给力]（M6年度顶前8天看多，方向错误）",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-05-13",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "行情进入轧空阶段，市场情绪不够热（M6年度顶前1天看多，方向错误）",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-06-23",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "资金大幅流出，短线见顶信号出现，明天大盘，会怎样运行（M7创业板顶前2天喊顶，正确）",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-07-17",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "中短线破位，趋势开始转变，下周大盘，会怎么运行（M8调整底前3天看空，方向错误）",
+      "index": "上证指数"
+    }
+  ]
+}

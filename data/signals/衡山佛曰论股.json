@@ -1,0 +1,285 @@
+{
+  "blogger": "衡山佛曰论股",
+  "signals": [
+    {
+      "date": "2025-01-09",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "3175高概率可以确认为春节前低点了…尾市再度上收，弱反弹会延续到春节前",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-01-13",
+      "direction": "bullish",
+      "strength": "weak",
+      "specific": "directional_vague",
+      "evidence": "量缩至阶段极致，或有单日反弹。短线谨慎看涨",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-01-14",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "低位放量长阳，节前低点凸现…春节红包行情正式开启",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-03-19",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "今日最甚…地量创新高…要注意真正的回踩了（顶背离警告）",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-03-21",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "还是坚持抄底…此处抄底风险不大…3380~3390之间已到，可以进场了",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-04-03",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "灾难灾难…美国对等关税对全球经贸是沉重打击…横一段又小幅下台阶",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-11-10",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "4000之上绝无任何上行空间…年尾利润兑现，已成主流操盘思路",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-11-13",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "量未放大…无量新高（警示M4顶部风险）",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-11-14",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "收盘前跌幅加大，以最低点收市（确认4034阶段顶）",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-12-16",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "大盘本来有下跌趋势…形成一致预期酿成了大跌…跌过头可能第二天又涨回来了",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-12-17",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "explicit_action",
+      "evidence": "仓位重的可乘机高抛…明天在今天高点3880附近可以放胆地出",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-12-19",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "箱底3815再次成功得到考验…年前不会向下破3815了",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-01-10",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "目前趋势仍然非常健康良好。新高一定有",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-01-11",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "短线将在4195点附近坚决高抛…明日冲至4190~4200区域…此处坚决高抛",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-01-14",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "三天合计11.19万亿成交只推升6个指数点…放量滞涨…短期肯定转向…短期见顶信号明确",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-02-27",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "逢低以加仓为主…大市已突破4130区域…空仓投资者坚决逢低吸纳入货",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-03-02",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "大盘目前要把4190拿下已经是囊中取物…但创了新高之后可能面临短线急调",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-03-03",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "昨晚提示了创新高后要急调…4197已确认回调…科创板图形太恶劣",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-03-19",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "明日在3960~3977.5区间，可以大胆买入",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-03-20",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "放一万个心…周一一定是艳阳高照…上半年底就在3930之上了",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-03-23",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "明日3731又是生死关，守不住彻底玩完",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-03-27",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "3800一线可大胆持仓，加仓…上半年底部已基本探明",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-05-11",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "不要恐高！不要恐高！高点未到…中期上证高点在4300±50点不变",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-05-14",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "可以选择且战且退策略…边打边撤…逢高应减仓（盘中紧急提示）",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-05-15",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "上证周线穿头破脚，标志性转向K线出现，有中线见顶迹象",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-06-05",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "explicit_action",
+      "evidence": "大盘中期逐渐向淡…以防风险为主，少操作…后市越来越难琢磨",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-06-21",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "双创指数短线随时调，但中期远未见顶…双创主升浪正式开启",
+      "index": "创业板指"
+    },
+    {
+      "date": "2026-06-25",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "上证周线图形较难看了…下周高概率往下走…非主流品种应坚决减仓或清仓离场",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-06-26",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "上证玩完，3800点见…大盘已形成4258.8与4175两个高点，后市上证指数向淡",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-07-17",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "大盘已从空间上调整到位…上证探箱底3731~3800线…指数已进入安全区",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-07-18",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "周一可以在3731处大胆抄底，别被恐慌吓晕了头",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-07-20",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "三大指数已经接近下调极限区域…今天收阳已是很正常之事（M8日3741确认）",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-07-24",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "底部区间上证3721~3741…熬到了这个时间段就不要轻易割肉了",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-07-26",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "大盘底已基本探明",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-07-29",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "大底已现，可以入场扫货了",
+      "index": "上证指数"
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "blogger": "云帆观市",
+  "signals": [
+    {
+      "date": "2024-09-09",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_vague",
+      "evidence": "明天是否可以入场？大盘2700点保卫战开始，该有资金出手了？（暗示底部区域可入场）",
+      "index": "上证指数"
+    },
+    {
+      "date": "2024-09-11",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "中央汇金连续买入中证1000ETF，下半年中小创的机会可能会比较多",
+      "index": "上证指数"
+    },
+    {
+      "date": "2024-10-04",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "牛市中的任何回调都是上车的机会，现在上车A股，可能还会比车上的人成本更低，别以为现在市场很高了，很多人还没有回本呢",
+      "index": "上证指数"
+    },
+    {
+      "date": "2024-10-07",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "做好准备吧，不出意外的话明天飙涨将会是没有意外…节后两天延续大涨已经没有悬念，周四之后可能会盛极而衰来一次大波动",
+      "index": "上证指数"
+    },
+    {
+      "date": "2024-10-08",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "A股只是涨得快，并不是涨得多了，从2600点涨到3600点算多吗？只是涨太快不是涨太多，也不是牛市结束（M2脉冲顶当天仍看多）",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-03-31",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "往下的空间较为有限",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-04-07",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "大胆一点，A股不必悲观了！周二的市场将迎来大面积反弹修复…抄底的时刻该在今天而不是明天…这个位置清仓已经没有任何的意义",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-11-07",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "4000点短期就是要降低预期，不要觉得突破就站稳了",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-11-11",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "4000点就像收费站，每过一次就收费一次…缩量又代表资金开始畏高了…大盘艰难的守住了4000点",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-11-12",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "醒醒吧，还有人醒不过来呢？要么积极的切换转向防御，要么多看少动休息等待…四季度是防御不是进攻",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-03-20",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "可以看空但是现在不要做空，手里持股的就是死扛了…今天就下定决心死扛",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-03-23",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "今天割肉的恐怕要后悔了，盘后终于出利好消息了，原油开始暴跌，明天的A股将迎来曙光",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-05-07",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_vague",
+      "evidence": "个股行情（看多），未识别M6顶部风险，仍在看个股机会",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-05-11",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "当今天有不少人在跟我谈格局的时候，我知道自己该控制住贪婪了…大盘指数突破4200点，接下来刻意降温的可能性较大",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-05-12",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "短期要做一些坏的打算，不出意外的话周三的A股会继续调整…防御比进攻更为重要…先减仓锁住利润",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-05-14",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "天量下跌，高开低走放量普跌，就是有些资金摊牌出货的信号…内资净流出2000多亿，每一次新高之后第二天都是上千亿的主力资金净流出，这不是拉高出货吗？",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-06-18",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "双创疯狂拉升最终也会把自己带崩…拼命想让你往那个方向赶的时候，越是要保持谨慎",
+      "index": "创业板指"
+    },
+    {
+      "date": "2026-06-25",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "太离谱了，创业板分时黄白线拉的真离谱…这种极致的抱团，这种畸形的拉升，最终总是需要一些资金去买单的…对于很多人来讲，没有参与的价值和意义",
+      "index": "创业板指"
+    },
+    {
+      "date": "2026-07-16",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "大盘指数3900点下方是要保持做多看多的…3900点下方继续寻底，对于大盘指数3900点往下的空间并不担忧",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-07-17",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "跌吧，跌出恐慌情绪之后就快要反弹了…如果没有提前空仓或轻仓休息，现在也没有必要再去恐慌割肉…对于空仓的人可以开始考虑别人恐慌我贪婪了",
+      "index": "上证指数"
+    }
+  ]
+}

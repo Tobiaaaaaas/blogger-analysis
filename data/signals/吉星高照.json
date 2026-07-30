@@ -1,0 +1,165 @@
+{
+  "blogger": "吉星高照",
+  "signals": [
+    {
+      "date": "2024-09-09",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "大盘已进入最后的诱空，底部大致在2645区域（实际2690，偏差45点），坚定信心等待底部到来",
+      "index": "上证指数"
+    },
+    {
+      "date": "2024-09-19",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "2689点和2635点遥相呼应，很大可能成为大双底",
+      "index": "上证指数"
+    },
+    {
+      "date": "2024-10-09",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "告别疯牛，开始慢涨阶段…明日不会再大跌了，大盘会再创新高，高度4000以上",
+      "index": "上证指数"
+    },
+    {
+      "date": "2024-11-06",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "短线过热，小心诱多！今天不能追高，反而要减仓…大盘大概率会有一个小C浪",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-03-18",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "大盘随时会发动主升行情…接下来可能出现逼空行情…大三浪的启动很快就会到来",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-03-31",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "底部已经不远了…清明节前在构筑最后的底部",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-04-07",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "大盘已经到底3040就是底部…我已经把剩余的子弹都打出去了，抄底，抄底！（实际底3041，偏差仅1点）",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-11-11",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "识别多周期钝化（60min/120min/日线），警告可能开启周线级别回踩",
+      "index": "上证指数"
+    },
+    {
+      "date": "2025-12-15",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "这里就是底部…不管主力后市怎么走，都会结束调整行情，而启动跨年行情",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-01-13",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "今天要见证降龙十八涨…春节前必上4500",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-03-02",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "技术上出现了日线级别的钝化，一旦形成顶部结构，至少要调整24个交易日，目前要谨慎，不能追高",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-03-16",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "目前就是底部区域（M5喊底偏早，差5%）",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-03-23",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "3799就是大底，短中期风险已经充分释放，可以补仓了（实际3795，偏差仅4点）",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-05-07",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "识别60min/90min/120min顶背驰，逢高继续减仓。但要留60%底仓",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-05-14",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "今天冲高要减仓，不能追涨！今天是日线高九序列，风险很大（M6顶部当天早上预警）",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-06-18",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "散户高位站岗科技股，机构胜利大逃亡…等散户高位站岗，眼巴巴看着绩优蓝筹股的大行情",
+      "index": "创业板指"
+    },
+    {
+      "date": "2026-06-25",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "科技股走加速意味着冲顶，有科技股筹码的就逐级减仓…证券中报业绩肯定预增",
+      "index": "创业板指"
+    },
+    {
+      "date": "2026-07-13",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "该上车了兄弟们！…3900就是大底（M8喊底偏早，实际3741差159点）",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-07-17",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "3745是大底，风险已经充分释放，吉星高照今天抄底证券（实际3741，偏差仅4点）",
+      "index": "上证指数"
+    },
+    {
+      "date": "2026-07-29",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "科创板已经见底，大盘的双底很快构建完毕，周二是个转折点…上午10:34盘中指出大盘见底并果断抄底",
+      "index": "上证指数"
+    }
+  ]
+}
