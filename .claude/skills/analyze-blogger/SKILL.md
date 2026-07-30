@@ -145,12 +145,20 @@ cd <项目根目录> && python scripts/fetch_market_data.py
 
 #### 4.5.1 提取方向性信号
 
-提取规则（与之前相同），但要特别注意：
+**核心原则：每一条有方向性内容的帖子都应提取为信号。博主发帖就是在给跟随者传递信息。**
 
-- **`specific: "explicit_action"`** 和 **`"directional_clear"`** 的信号计入评估——无论 strong 还是 moderate，只要是明确方向判断都应假设跟随
-- **`specific: "directional_vague"`** 的信号不计入评分（"可能涨也可能跌"之类无法验证）
-- **所有非模糊信号全部评估**：拐点是事后才知道的，不按是否在拐点附近筛选
-- strong vs moderate 在报告中分开列示（按强度拆分），但不互相排除
+提取规则：
+
+- **全覆盖**：凡帖子涉及大盘方向判断（涨/跌/顶/底/反弹/回调/突破/跌破等），无论措辞强弱，一律提取
+- **不合并**：每天重复同一立场也要逐条记录——每次发帖都在影响跟随者，每条都是独立信号
+- **合理标注**：
+  - `strength: "strong"` — 措辞坚决（"一定""必将""满仓""清仓""坚决"）+ 给出具体点位/仓位
+  - `strength: "moderate"` — 有方向判断但措辞温和（"偏多""倾向于""大概率""有望"）
+  - `specific: "explicit_action"` — 给出操作指令（加仓/减仓/买入/卖出/抄底/逃顶）+ 配合个人操作
+  - `specific: "directional_clear"` — 明确方向但无操作指令（"明天看涨""调整未结束"）
+  - `specific: "directional_vague"` — 方向含糊（"可能反弹但也不排除下跌"），会被脚本排除
+- **目标信号量**：每个博主应有 80-200 条信号，而非当前的 18-53 条
+- **`specific: "directional_vague"`** 不计入评分，**其余全部计入**
 
 #### 4.5.2 运行质量过滤评估
 
@@ -228,9 +236,15 @@ cd <项目根目录> && python scripts/evaluate_trade_pairs.py --blogger <博主
 > 方法论：仅评估 strong + 拐点对齐的看多信号。
 > 核心关注：如果跟随买入，最惨会亏多少（最大回撤）？
 
-### 质量过滤
+### 信号构成
 
-输入 N 条看多信号 → 过滤后 M 条（仅排除 directional_vague，保留 strong 和 moderate）
+| 分类 | 看多 | 看空 |
+|------|:---:|:---:|
+| strong + explicit_action | X | X |
+| strong + directional_clear | X | X |
+| moderate + explicit_action | X | X |
+| moderate + directional_clear | X | X |
+| directional_vague（排除） | X | X |
 
 ### 各窗口表现
 
@@ -280,9 +294,9 @@ cd <项目根目录> && python scripts/evaluate_trade_pairs.py --blogger <博主
 > 方法论：仅评估 strong + 拐点对齐的看空信号。
 > 核心关注：如果跟随卖出，最大会踏空多少（最大反向波动）？
 
-### 质量过滤
+### 信号构成
 
-输入 N 条看空信号 → 质量过滤后 M 条
+（同看多部分，展示 strong/moderate × explicit_action/directional_clear 分布）
 
 ### 各窗口表现
 
@@ -318,11 +332,20 @@ cd <项目根目录> && python scripts/evaluate_trade_pairs.py --blogger <博主
 
 ---
 
-## 📊 信号总览（不计入评分，仅参考）
+## 📊 信号质量分布（必含）
 
-列出被质量过滤排除的信号数量及原因（非 strong / 模糊观点）。
-模棱两可或 moderate 信号不计分，仅作为了解博主日常发言风格的参考。
-同时列出博主信号频率（平均每月几条 strong 信号）作为风格特征。
+| 分类 | 数量 | 计入评分 |
+|------|:----:|:--------:|
+| strong + explicit_action | X | ✅ 权重2x |
+| strong + directional_clear | X | ✅ 权重2x |
+| moderate + explicit_action | X | ✅ 权重1x |
+| moderate + directional_clear | X | ✅ 权重1x |
+| directional_vague | X | ❌ 排除 |
+| **信号总计** | **X** | **X条计入** |
+
+帖子总数：X 条 → 提取信号 X 条（提取率 X%）。
+
+如果提取率低于 5%（帖子多但信号少），说明信号提取可能遗漏，需重新检查。
 
 ---
 
