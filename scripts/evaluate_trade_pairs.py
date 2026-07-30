@@ -33,20 +33,13 @@ QUALITY_WINDOW = 5
 
 
 def is_quality_signal(sig):
-    """判断信号是否为高质量：strong + explicit_action + 拐点对齐"""
+    """判断信号是否为高质量：strong + explicit_action。
+    不按拐点过滤——拐点是事后标注的，博主事前不知道。"""
     if sig.get("strength") != "strong":
         return False
     if sig.get("specific") != "explicit_action":
         return False
-    try:
-        sd = datetime.strptime(sig["date"], "%Y-%m-%d")
-    except:
-        return False
-    for idate in INFLECTION_DATES.values():
-        idt = datetime.strptime(idate, "%Y-%m-%d")
-        if abs((sd - idt).days) <= QUALITY_WINDOW:
-            return True
-    return False
+    return True
 
 
 def load_market_data():
