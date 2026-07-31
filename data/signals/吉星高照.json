@@ -2,164 +2,2436 @@
   "blogger": "吉星高照",
   "signals": [
     {
-      "date": "2024-09-09",
+      "date": "2022-05-26",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "A股往往会先于经济见底回升",
+      "index": "上证指数",
+      "source_url": "http://toutiao.com/group/7102018706246599183/?app=news_article"
+    },
+    {
+      "date": "2022-05-31",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "不用等明天了，大盘100%向上突破，一切顶背离都会被快速上涨化解，来我的头条号，给你全网最精准的预测[玫瑰]",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1734342714469388/?app=toutiao_web&timestamp=1785345095&use_new_style=1"
+    },
+    {
+      "date": "2022-06-01",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "explicit_action",
+      "evidence": "6月1日儿童节，股市依然像个顽童和投资者打着哑迷。当全网大V们喊着30分钟60分钟120分钟顶背离的时候，超级主力正在暗暗偷笑。主力心说：就是让你们这些技术派看见，然后传播出去，起到恐吓散户割肉离场的效果。识破主力阴谋，关注斜阳薄暮余晖，带给你大道至简的分析和财富密码。",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1734413517160460/?app=toutiao_web&timestamp=1785345095&use_new_style=1"
+    },
+    {
+      "date": "2022-06-02",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "主力把彩蛋留在了最后[呲牙]，突破3200，戏耍技术派[打脸]",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1734500577257487/?app=toutiao_web&timestamp=1785345095&use_new_style=1"
+    },
+    {
+      "date": "2022-06-13",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "大盘30分钟kdj见底，明天将继续反弹，金融股依然会是主角",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1735501095925760/?app=toutiao_web&timestamp=1785345094&use_new_style=1"
+    },
+    {
+      "date": "2022-06-15",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "大盘突破3340后，会形成短线高点",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1735665931205632/?app=toutiao_web&timestamp=1785345094&use_new_style=1"
+    },
+    {
+      "date": "2022-06-15",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "今天证券短线要减仓",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1735663585595407/?app=toutiao_web&timestamp=1785345094&use_new_style=1"
+    },
+    {
+      "date": "2022-06-15",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "当牛市来临的时候，跟着神机做，基本上会踏空，因为他本质上是个胆小鬼，看空的时间比较多，来我的头条号吧，给你超前的准确预测[来看我]",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1735660606268431/?app=toutiao_web&timestamp=1785345094&use_new_style=1"
+    },
+    {
+      "date": "2022-06-16",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "可以动手抄底证券股了",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1735770674850828/?app=toutiao_web&timestamp=1785345094&use_new_style=1"
+    },
+    {
+      "date": "2022-06-16",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "大盘回踩5日线，完成了洗盘，后面继续向3400进发。",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1735769835375631/?app=toutiao_web&timestamp=1785345094&use_new_style=1"
+    },
+    {
+      "date": "2022-06-16",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "今日证券指数回补了跳空缺口，大盘调整完毕，继续逼空上行，大盘下个目标位3438，扶稳坐好，证券昨天卖出短线仓位，今天全部买回，空仓的散户朋友，赶紧选择心怡的证券股上车。",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1735758374927360/?app=toutiao_web&timestamp=1785345094&use_new_style=1"
+    },
+    {
+      "date": "2022-06-21",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "超级主力还是在不断地洗盘",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1736212760550415/?app=toutiao_web&timestamp=1785345092&use_new_style=1"
+    },
+    {
+      "date": "2022-06-22",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "explicit_action",
+      "evidence": "刚才在16.11买入光大，静等二次发力",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1736299004491791/?app=toutiao_web&timestamp=1785345092&use_new_style=1"
+    },
+    {
+      "date": "2022-06-23",
       "direction": "bullish",
       "strength": "strong",
       "specific": "directional_clear",
-      "evidence": "大盘已进入最后的诱空，底部大致在2645区域（实际2690，偏差45点），坚定信心等待底部到来",
-      "index": "上证指数"
+      "evidence": "半导体等科技股和券商都在大涨，如果你成为了我的粉丝，就不会踏空和错过这次行情",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1736407151194124/?app=toutiao_web&timestamp=1785345092&use_new_style=1"
+    },
+    {
+      "date": "2022-06-23",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_vague",
+      "evidence": "很多人都盼望着大盘大跌，自己好捡便宜，不过那只是他们一厢情愿，痴心妄想了，总想抓住大盘所有的波动，这就是贪婪了。",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1736400848325632/?app=toutiao_web&timestamp=1785345092&use_new_style=1"
+    },
+    {
+      "date": "2022-06-24",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "目前大盘触碰3346点（120周线），开始回落，问题不大，要突破必须启动证券股，真正的风险在3440附近",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1736481342885900/?app=toutiao_web&timestamp=1785345092&use_new_style=1"
+    },
+    {
+      "date": "2022-06-28",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "证券股已经调整到位，该发力了",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1736857735455759/?app=toutiao_web&timestamp=1785345092&use_new_style=1"
+    },
+    {
+      "date": "2022-06-29",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "120分钟线目前依然处于钝化（背离条件）中，目前以120分钟线为准即可，所以重点是下午收盘前，120分钟背离如果成立，日线伴随超买信号，二者组合，依然要注意风险。",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1736948753415232/?app=toutiao_web&timestamp=1785345091&use_new_style=1"
+    },
+    {
+      "date": "2022-06-29",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "目前金融股开始补涨，也属于掩护赛道股逃跑，目前创业板前天已经到达短期顶部。后面沪市即使大涨，但个股也会跌多涨少",
+      "index": "创业板指",
+      "source_url": "https://m.toutiao.com/w/1736932087331852/?app=toutiao_web&timestamp=1785345091&use_new_style=1"
+    },
+    {
+      "date": "2022-06-30",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "空头不死，多头不止，大盘会继续向上突破，相等大盘暴跌，还是还是做梦去吧",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1737070022139916/?app=toutiao_web&timestamp=1785345091&use_new_style=1"
+    },
+    {
+      "date": "2022-07-04",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "7月4日盘前指导：大盘还会再次向上，但主导板块是金融股，远离新能源，汽车股，煤炭股等抱团股。2021年3731到2022年的2863，已经说明机构抱团赛道股是股市的最大毒药，也会最终多杀多一地鸡毛。而今年第一阶段最不该反弹的反而是这些机构抱团赛道股，说明机构自救后，还是逃命。所以光大散户要坚决远离赛道股。",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1737383360261151/?app=toutiao_web&timestamp=1785345091&use_new_style=1"
+    },
+    {
+      "date": "2022-07-06",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "7月6日上午盘中解盘：目前虽然已经跌破10日线，但不用担心，和6月22日一样，故意让技术派破位离场，我仍然坚定持有证券和保险股。这两个月的走势基本上是反技术走势，所以短期技术基本上失效，有用的只是基本面的判断和博弈论。目前科创50再次大涨，关注其持续性。",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1737570596714511/?app=toutiao_web&timestamp=1785345089&use_new_style=1"
+    },
+    {
+      "date": "2022-07-07",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "7月7日股市早评：昨天一根中阴，吓得市场又开始担心中期调整。仔细观察盘面，跌幅前列的都是我在前期提示远离的煤炭和汽车股，抱团赛道股等，而我看好的科创板和证券股并没有大跌。目前科创板提前调整一个月，证券板块于6月15日调整。目前两个板块都调整到位，即将拉升。所以大盘是不会出现中期调整的，而且昨天北上资金昨天一直在流入，只有国内的基金在减持前期拉高的新能源，白酒，煤炭，汽车等抱团股。\n\n虽然西安突发疫情，但总体可控。而且越是经济不好，政策发力预期越强，货币政策越是友好，所以关注斜阳薄暮余晖，带你拨开迷雾，看到市场的真相。目前证券板块在构筑头肩底的右肩，已经接近完成，后面依然是更大的行情。（见下图）",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1737647907988480/?app=toutiao_web&timestamp=1785345089&use_new_style=1"
+    },
+    {
+      "date": "2022-07-11",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "7月11日盘中解盘：目前大盘跌破20日线，成交量并不大，属于诱空，30日线是强大支撑，大盘没有大跌风险。金融股开始翻红，主力继续卖出高位股，买入滞涨股。",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1738022284606479/?app=toutiao_web&timestamp=1785345089&use_new_style=1"
+    },
+    {
+      "date": "2022-07-15",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "20220715股市收评：头肩底即将构筑完毕，今日大盘快速杀跌，量能放大，说明杀出了恐慌盘。主力为了抢夺散户带血的筹码，不惜破坏很多的均线支撑，但空方如强弩之末，60日线3198附近将是右肩的底部。痛苦的日子还有一两天，后面是主升浪。",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1738402585442319/?app=toutiao_web&timestamp=1785345089&use_new_style=1"
+    },
+    {
+      "date": "2022-07-20",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "0720早评：目前股市在运行小B浪反弹，再反弹两天后，可能会有小C浪杀跌，杀跌的主力将是新能源和汽车等股价高位板块，之后头肩底才能构筑完毕，最低的位置可能在3100左右。这两天反弹的主力将是科技股和证券股。",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1738829238248463/?app=toutiao_web&timestamp=1785345089&use_new_style=1"
+    },
+    {
+      "date": "2022-09-18",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "explicit_action",
+      "evidence": "在散户朋友最迷茫的时候，我来给大家鼓鼓气，目前依然属于周线级别头肩底的构筑中，右肩构筑将在下周完成，一旦完成，大盘将开启中期上涨行情。目前散户要做的就是不要悲观，持股不动，等待大行情的启动。",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1744278542252044/?app=toutiao_web&timestamp=1785345089&use_new_style=1"
+    },
+    {
+      "date": "2023-01-03",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "庶民的胜利✌华泰证券配股引发投资者不满，愤怒的言论给予证监会巨大的压力，迫使其做出回应，也最终否决了华泰证券这种无耻的抢钱行为。所以，每一位发声的投资者都左右着舆论导向，我们必须继续发声，让证监会彻底取消配股这种无耻行为，将胜利进行到底。人民群众才是历史的创造者！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1754005474157580/?app=toutiao_web&timestamp=1785345088&use_new_style=1"
+    },
+    {
+      "date": "2023-01-05",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "证券时报头版评论：上市券商再融资不可任性，华泰配股生变，谁也不能忽视庶民的力量\n\n华泰证券抛出280亿巨额配股融资计划，毫无疑问刺痛了市场的神经。监管层也明显关注到了这样的一个问题。从最近的舆情来看，券商公司要走资本节约型，高质量发展的新路，以后要想再任性融资可能性不大了！这是一个非常大的利好消息。券商板块今天有望上涨。",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1754136834458636/?app=toutiao_web&timestamp=1785345088&use_new_style=1"
+    },
+    {
+      "date": "2023-06-12",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "股市大转折将发生在2023年6月15日\n\n5月11日有一个背离出现，按照背离的理论时间是25到30倍的关系，也就是25到30天，到目前为止，实际上运行了24天，也就是说从下周开始，进入到背离的理论时间结束的周期，周一就是第25天，周五是第30天。结合技术，日线MACD的DIF也已经向上穿越DEA，所以如果依然走背离路线的话，就不仅仅是此前的60分钟周期底背离，而是日线级别的底背离，这样一来，底背离属于级别加强了。\n\n经过周五午后的拉升，沪指、深指日K线对应的Macd指标均已金叉，但是由于金叉位置离0轴过远，短线依然有反复的可能。创业板指数尚未收复5日线，但是跌速有所下降。\n\n市场开始企稳\n\n大",
+      "index": "创业板指",
+      "source_url": "https://m.toutiao.com/w/1768508202458116/?app=toutiao_web&timestamp=1785345088&use_new_style=1"
+    },
+    {
+      "date": "2023-07-04",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "explicit_action",
+      "evidence": "此次小牛市高度会达到4000点\n\n目前A股已经完成大2浪的探底，6月30日（周五）已经形成了120分钟和日线级别的底背离，并形成了多周期的协调共振。去年10月31日形成大1浪的起点（2885），又在3418形成了大1浪高点，这次大2浪低点在6月26日的3144点。\n\n经济已经在5月触底，目前正在筑底，而股市走势往往先于经济走势。\n\n\n而央行已经表态，人民币汇率也将企稳，同时货币政策蓄势待发，中国经济将进入新的增长周期。目前大1浪反弹了500多点，大3浪的力度会更大，将反弹900点以上，所以大盘的高度至少到达4000以上。\n\n目前股民和基民要做的事，就是持股待涨，虽然牛市被疫情三年耽搁了，但该来",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1770462811172107/?app=toutiao_web&timestamp=1785345088&use_new_style=1"
+    },
+    {
+      "date": "2023-07-27",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "轻舟已过万重山！股市的大三浪即将展开！\n否极泰来，苦尽甘来，亘古不变。目前经过120多个交易日的调整，大二浪已经结束，大三浪呼之欲出，目标4000点。这一波小牛市的主力品种会发生变化，金融和地产，以及以前冷门的品种，可能会成为大热门。粉丝朋友们应持股待涨，不惧震荡。目前大盘的缺口大概率不会回补，大盘突破3237点（60日线）以及3261点（120日线），则大盘将彻底突破下降趋势，展开大三浪反弹，时间至少持续4个月。",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1772582699678723/?app=toutiao_web&timestamp=1785345088&use_new_style=1"
+    },
+    {
+      "date": "2023-07-28",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "全网最准确的股市预测，股市开始发力突破120天线，大三浪正式展开。昨天本人以“轻舟已过万重山”为题，准确预测了今日的大涨。也提到金融股是行情的主角。后面大盘行情将持续4个月以上，必将突破4000点。祝坚持到现在的散户朋友们发大财！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1772638784313348/?app=toutiao_web&timestamp=1785345087&use_new_style=1"
+    },
+    {
+      "date": "2023-07-31",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "行情结束了吗？今日大盘放量冲高回落，大家都担心渣男又是一日游，其实我们可以关注龙头太*洋，它如果明天继续涨停，那么券商就会被再次加油，而大盘短暂整固后还会再次向上拓展空间。行情在绝望中展开，在犹豫中深化，在高潮中结束。",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1772941212677124/?app=toutiao_web&timestamp=1785345087&use_new_style=1"
+    },
+    {
+      "date": "2023-08-02",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "8月3日股市预测\n受美国主权信用评级下调影响，亚太欧美股市大跌，恒生科技更是下跌3%，明天A股怎么走？估计大部分投资者又开始肝颤了，不过余晖告诉你，明日大盘会低开高走。证券地产仍然是领涨板块！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1773127477950531/?app=toutiao_web&timestamp=1785345087&use_new_style=1"
+    },
+    {
+      "date": "2023-08-02",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "explicit_action",
+      "evidence": "今日（8月2日）下午预测\n目前大盘回踩基本到位，下午会回升，先锋板块——证券 ，还是上涨的，而且大盘突破60和120天线后，一直在趋势之上，散户朋友们不必担心，而是继续耐心持股，等待大盘重拾升势。",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1773092407654404/?app=toutiao_web&timestamp=1785345087&use_new_style=1"
+    },
+    {
+      "date": "2023-08-06",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "一鲸落万物生\n地产不能马上死，但也不能再疯狂，香港模式的地产经济虽然为快速拉动经济，做出过贡献，但副作用太大，而且不可持续。按揭买房更是透支了未来30年的消费能力，沉重的房贷，让中产活得像贫民，不敢消费。尽快降地存量房贷利率，是提升国内消费能力的迫切需要。经济下行，银行稳稳赚大钱是不行的，不能成为社会的寄生虫，所以余晖不太看好银行股行情，而是更看好证券，只有梦若呆鸡这样的江湖骗子股评才忽悠散户死拿银行股。当然银行股也会有所表现，但往往是在行情快结束时和中石油一起掩护主力撤退。跟紧斜阳薄暮余晖，带你牛市一路发财！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1773434809083203/?app=toutiao_web&timestamp=1785345087&use_new_style=1"
+    },
+    {
+      "date": "2023-08-07",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "8月8日股市预测\n牛市旗手熄火，行情怎么走？周五，余晖逢高出了1/4仓位的券商股，今日全部买回，做了一个T。很多粉丝朋友私信我，咨询后面行情怎么走，我在这里一并回答。券商周五的回撤，属于正常遇阻回落，今日主力顺势低开洗盘，一方面把不坚定者甩下车，一方面也让投资者忌惮追高买入。三年来，“渣男”深入人心，所以当它不渣时，你也很难相信，等他变成高不可攀的靓仔时，你追上去，他又开始变成渣男的套套了。所以趁他没变成靓仔时拥抱他，等他变成靓仔时，甩了他。今日大盘没有跌破10日线和120日线（在3262），所以大盘明日大概率会小涨，收小阳。",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1773569565151427/?app=toutiao_web&timestamp=1785345087&use_new_style=1"
+    },
+    {
+      "date": "2023-08-08",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "explicit_action",
+      "evidence": "8月8股市盘中解析\n目前依然是洗盘，日线看上去是双头，其实只是主力故意画出来，吓唬散户的，3147不跌破，就会构筑双底后再度拉升，如果跌破，就要构筑头肩底，然后再度拉升。目前淡定看主力表演，持股不动。",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1773624499132416/?app=toutiao_web&timestamp=1785345087&use_new_style=1"
+    },
+    {
+      "date": "2023-08-09",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "8月9日股市收盘总结\n今日大盘受到消息面（见附件图片）的影响，缩量微跌。但牛市旗手也只是微幅调整，医药超跌反弹，但力度不大。最近三日资金主要流向证券，医药，银行，黄金等股。医药已经连续两日反弹，能否加速值得期待。大盘连续缩量，说明做空力量衰竭，周四周五将再次展开升势。散户朋友继续持股待涨。",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1773735803968717/?app=toutiao_web&timestamp=1785345087&use_new_style=1"
+    },
+    {
+      "date": "2023-08-14",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "explicit_action",
+      "evidence": "周五尾盘买入了太平洋10万股，今天已经赚了7%[呲牙]",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1774183180173316/?app=toutiao_web&timestamp=1785345085&use_new_style=1"
+    },
+    {
+      "date": "2023-08-14",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "为国而战，冲入股市护盘抄底\n今日血战一场，彻底击败华尔街做空势力，胜利是属于中国股市的。",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1774167056292868/?app=toutiao_web&timestamp=1785345085&use_new_style=1"
+    },
+    {
+      "date": "2023-08-15",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "8月16日股市预测\n大盘明日继续大涨，昨天我预测大盘已经见底，今日果然再次洗盘后收阳，明天和后天会继续涨，立贴为证。",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1774302606743556/?app=toutiao_web&timestamp=1785345085&use_new_style=1"
+    },
+    {
+      "date": "2023-08-16",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "明天股市会暴涨！重要的事情说三遍，新华社喊话了，明天必然大涨，让我们团结起来共同抗击美帝做空A股！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1774395708109824/?app=toutiao_web&timestamp=1785345085&use_new_style=1"
+    },
+    {
+      "date": "2023-08-17",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "8月18日股市预测\n大盘今天（8月17日）属于最后的回踩，强势板块今天出现补跌，如证券板块，那么后市将出现明显的上行趋势，大金融和科技将是牛市双雄！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1774485886150660/?app=toutiao_web&timestamp=1785345085&use_new_style=1"
+    },
+    {
+      "date": "2023-08-24",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "股市中期大底已经形成，3072就是最低点，大胆抄底，大胆做多，有股票的持股不动，没有股票的赶紧买入！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1775089894543492/?app=toutiao_web&timestamp=1785345084&use_new_style=1"
+    },
+    {
+      "date": "2023-08-27",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "这次的大招尤其第二条，最有效果：\n① 印花税减半征收。\n② 上市公司存在破发、破净情形，或者最近三年未进行现金分红、累计现金分红金额低于最近三年年均净利润30%的，控股股东、实际控制人不得通过二级市场减持本公司股份。\n③ 阶段性收紧IPO节奏，促进投融资两端的动态平衡。\n④ 投资者融资买入证券时的融资保证金最低比例由100%降低至80%。\n当然第二条应该改为：动态市盈率高于30倍的都不得减持，这样就不会让绩差股随意套现了",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1775390810625091/?app=toutiao_web&timestamp=1785345084&use_new_style=1"
+    },
+    {
+      "date": "2023-08-28",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "大盘高开回落，回踩10日线买回\n周末四大利好齐发，周一大盘高开，证券股涨停开盘，本人开盘就卖，目前大盘回踩10日线，我再悉数接回，做了一次完美的T。后续大盘会继续涨，今日主力也是做T，降低成本。追高的散户可能惨了，但后续大盘会再创新高，如果被套也不要太着急，9月份会解套赚钱。",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1775448665954308/?app=toutiao_web&timestamp=1785345084&use_new_style=1"
+    },
+    {
+      "date": "2023-09-04",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "取消股指期货做空正当时\n中国股市自实施股指期货以来，散户就反复被割韭菜，大盘也永远在3000点附近波动。取消股指期货才能彻底粉碎美国华尔街做空的手段，还中国一个十年长牛！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1776118695667016/?app=toutiao_web&timestamp=1785345084&use_new_style=1"
+    },
+    {
+      "date": "2023-09-07",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "股指期货才是阻碍中国牛市的罪魁祸首\n要致富先修路，要牛市先取缔股指期货。股指期货的推出，完全是被西方敌对势力忽悠了，成为华尔街金融大鳄上下收割的主要工具。广大舆论一直被所谓的“与国际接轨”所蒙蔽，旧有的国际规则本身就是不公平的国际秩序，是美西方建立的盘剥第三世界及金融收割的规则，我们还需要和这个陷阱接轨吗？保障中国的金融安全，保障中国投资者的利益，推动中国特色的牛市就必须取消股指期货！希望中央采取果断的措施，彻底粉碎做空中国的敌对势力，惩治伪专家和卖国贼！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1776322944114692/?app=toutiao_web&timestamp=1785345084&use_new_style=1"
+    },
+    {
+      "date": "2023-09-22",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "超级大底已成，中国超级牛市马上起跳\n\n超级大型底部结构已经构筑完毕，马上展开大三浪上涨行情，未来的中国股市将发生质变，从单一为融资者服务到为融资者和投资者二者服务。从西方买办定中国股市规则到中国人民自己说了算，中国资本市场将成为推进建设强国的重要组成部分，中国的股市将迎来春天！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1777711955914755/?app=toutiao_web&timestamp=1785345082&use_new_style=1"
+    },
+    {
+      "date": "2023-10-15",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_vague",
+      "evidence": "限制融券政策远远不够，必须取消融券和股指期货\n\n融券和股指期货只保障机构割散户的韭菜，必须予以取消，这样机构和散户就都只能做多，才能盈利，那么中国股市必然不断走牛！中国股市的主力军是散户，所有政策都必须以保护个人投资者为主要出发点！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1779799896176659/?app=toutiao_web&timestamp=1785345082&use_new_style=1"
+    },
+    {
+      "date": "2023-11-01",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "昨日股指期货空方大幅减持空单\n\n今日走势极为关键，一旦跳空高开就会形成岛形反转，形成向上的跳空缺口，对应10月19日的向下跳空缺口，那么大盘会正式启动主升浪。\n目前空方已经成了强弩之末，周四一旦美联储仍不加息，那么美元指数将出现大跌，人民币及中国股市将正式反攻。昨日股指期货空方已经减持空单1000多手，估计今天会继续平仓空单。大盘最多再磨蹭两天，就会发力上行。所以粉丝朋友不要被梦若呆鸡等低水平大V所误导，坚定信心，等待黎明的到来！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1781316732872836/?app=toutiao_web&timestamp=1785345082&use_new_style=1"
+    },
+    {
+      "date": "2023-11-02",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "美联储暂停加息，美元指数开始下跌，人民币和中国股市要开始反转了\n由于奇高的利率，美国的经济已经受不了了，即使美国一直在官方数据上造假，但实际失业率，通胀，以及经济萎缩已经在美国越演越烈，罢工和零元购已经越来越多，美国又陷入俄乌，巴以两个泥潭，妄图通过不断加息来收割中国的美梦已经被粉碎，由于自身快爆雷了，只能暂时与中国妥协。中国不能被迷惑或者幻想，要宜将剩勇追穷寇，趁它病要它命。\n中国的股市也将吹响反攻的号角，彻底击败华尔街做空力量。大盘也即将开启为期3年以上的牛市行情！耐得住寂寞，才能等来花开时节！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1781406371758084/?app=toutiao_web&timestamp=1785345082&use_new_style=1"
+    },
+    {
+      "date": "2023-11-05",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "周一将大概率形成岛形反转图形，牛市蓄势待发\n周四我就指出，美联储不敢再继续加息了，因为美国的经济数据都是造假出来的，实际用电量已经大幅下跌。因此我指出人民币和中国股市将迎来反转时刻，周五大盘已经按捺不住，开始反击。斜阳分析从来不是马后炮，粉丝朋友们可以看我的顶置文章，10月23日，我就已经准确的预测到了大底。\n周末国安底也已经出现，说明美国华尔街做空中国资本市场的阴谋诡计彻底破产。周一大盘大概率会跳空高开，并形成岛形反转图形，开始为期三年左右到牛市，散户朋友将迎来收获的季节。由于证券合并的利好，市场普遍看好证券股的机会，由于预期过于一致，证券股可能会高开高走，一旦追入的人太多，则会反手套住追涨",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1781699769004036/?app=toutiao_web&timestamp=1785345082&use_new_style=1"
+    },
+    {
+      "date": "2023-11-08",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "中信期货最近三天加空单6000多手\n空头的大本营就是中信期货，2015年就是它不断做空，引发熔断危机。要想牛市，郭嘉队必须让这12万张股指期货空单爆仓。才能彻底收拾背后的华尔街恶棍！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1781949281335308/?app=toutiao_web&timestamp=1785345082&use_new_style=1"
+    },
+    {
+      "date": "2023-11-09",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "打击做空正当时\n\n最近4天，股指期货空方连续加仓空单10000多手，目前总空单已经达到12.9万手。上层一直强调不做空，但以中信期货为空头大本营的机构，却不断加仓空单，自绝于国家，自绝于人民，超级主力必须突然发起向上的进攻，彻底让这些空单爆仓！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1782041265969226/?app=toutiao_web&timestamp=1785345081&use_new_style=1"
+    },
+    {
+      "date": "2023-11-15",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "突发，富时A50大涨，美元指数暴跌\n\n今天大盘向上突破的可能性大增，昨天牛市旗手已经试盘，今天很可能正式启动。\n美国CPI不及预期，经济衰退信号已经出现，明年不得不进入降息周期，中国股市也将迎来黄金的机会窗口，大盘将不断向上，并突破4000点。\n\n中国经济需要牛市，中产解套需要牛市，促进消费需要牛市，稳地产需要牛市，人民币国际化需要牛市……\n\n所以中国牛市的到来是企盼，也更是必然！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1782583520330819/?app=toutiao_web&timestamp=1785345081&use_new_style=1"
+    },
+    {
+      "date": "2023-11-21",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "大盘已突破60日线，暴涨在即\n\n事物总是由量变到质变，村里不断发金牌，已经22道金牌，不进入牛市，依然会继续发金牌。大资金也不傻，都在吸货。目前吸货已经完毕，就差标志性的一根大阳线，来宣布牛市的开始。主力先拉北交所，因为量小好拉升，树个旗帜给做多力量看，已经明语了，很多散户还在傻看，甚至不看。牛市开始的时候，大多数人不在股市，只有快结束的时候，才争先恐后的往里钻，吾未见其明也！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1783150554706947/?app=toutiao_web&timestamp=1785345081&use_new_style=1"
+    },
+    {
+      "date": "2023-12-11",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "中国股市已经见底，空头早晚爆仓\n\n上周五大盘的底部放量，已经说明，超级主力加大底部吸货，周一果然在证券股的带领下，突然发起反攻，大部分空头仍然做着沽空盈利的黄粱美梦，但不知道的是超级主力的反攻已经准备就绪，就等一声令下，万炮齐发，彻底打爆空头！目前总攻已经开始，不想爆仓的空头赶紧缴械投降，不然，很快就会爆仓归零！2023年12月11日，又是一个在中国证券市场历史上值得纪念的一个重要日子！中国历史上最长的牛市开始了！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1784965075993737/?app=toutiao_web&timestamp=1785345081&use_new_style=1"
+    },
+    {
+      "date": "2023-12-12",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_vague",
+      "evidence": "空头仍不死心  但上涨已成必然\n\n今天空头妄图反扑，但大盘依然顽强翻红，并成功站在了3000以上，明天大盘将补上次的向下跳空缺口，等一切都准备就绪，将出现连续拉升，从而一举让空头爆仓。作为散户，目前最好的策略是持股不动，等待拉升。行情总在绝望中诞生，在狂热中灭亡！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1785059104661763/?app=toutiao_web&timestamp=1785345081&use_new_style=1"
+    },
+    {
+      "date": "2023-12-28",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "“投资牛”正式启航\n行情总在绝望中诞生，当大部分空头仍然做着沽空盈利的黄粱美梦时，而不知道的是超级主力的反攻已经准备就绪，就等一声令下，万炮齐发，彻底打爆空头！今日总攻已经开始，不想被爆仓的空头赶紧缴械投降，不然，很快就会爆仓归零！2023年12月28日，是一个在中国证券市场历史上值得纪念的一个重要日子！中国历史上最长的牛市正式开始了！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1786506734410052/?app=toutiao_web&timestamp=1785345081&use_new_style=1"
+    },
+    {
+      "date": "2024-01-18",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "explicit_action",
+      "evidence": "今天上午大盘低开低走，引发多杀多，绝望时刻，国家队紧急入场，猛买ETF，大盘深V，收出大长腿，空方宣泄后，股指期货减空8426手，大盘终于出现见底信号。正所谓行情在绝望中诞生，在疯狂中灭亡。\n目前属于底部区域，中国经济发展需要提振资本市场，需要大牛市来刺激内需，大家要坚定信心，2024年将是中国资本市场史诗级牛市的起点。",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1788430755124228/?app=toutiao_web&timestamp=1785345081&use_new_style=1"
+    },
+    {
+      "date": "2024-01-24",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "明日大盘会继续大幅度反弹，直到做空者爆仓\n\n在1月22日大盘大跌的血雨腥风中，斜阳就明确指出大盘见底就在这一两天内，结果大盘就在1月23日见了大底。可以说斜阳是全网预测最准确的股评，今日斜阳预测：明日大盘会继续高歌猛进，让做空者如坐针毡，直到彻底缴枪投降！明日继续大阳后，大盘会震荡两天，然后再上。我的预测到底准不准，大家自己去看，到时再来这里讨论。",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1788958884182084/?app=toutiao_web&timestamp=1785345081&use_new_style=1"
+    },
+    {
+      "date": "2024-01-25",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "中石油涨停是好事是坏事呢？\n\n1月25日中字头股票罕见集体暴涨，3天市值暴增超过1万亿，涨势之猛为历史罕见。包括中国石油、中国联通、中青旅、中国交建在内的多只中字头股票涨停。中石油时隔8年多再度涨停，到底是好事还是坏事呢？\n\n此次中国石油涨停意味着什么？值得注意的是，本次中国石油涨停有一些特定的原因。近日，国资委表示将进一步研究将市值管理纳入中央企业负责人业绩考核，引导中央企业负责人更加关注、更加重视所控股上市公司的市场表现。\n\n市场分析人士指出，目前，沪深300以及上证指数等估值均处于历史较低分位水平，已具备了足够的低估值吸引力。中国石油涨停，可能意味着近期市场情绪切换，有助于市场回暖。\n\n",
+      "index": "沪深300",
+      "source_url": "https://m.toutiao.com/w/1789064222319684/?app=toutiao_web&timestamp=1785345081&use_new_style=1"
+    },
+    {
+      "date": "2024-01-26",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "大盘强势震荡，多空依然分歧\n\n市场全天震荡分化，沪指延续反弹，创业板指大跌。盘面上，上海等地方国企改革概念股持续活跃，华建集团、浦东金桥、开开实业、畅联股份等多股涨停。房地产板块开盘拉升，沙河股份、中交地产、光大嘉宝等涨停。中字头个股午后拉升，中铁装配、中成股份、中铝国际等涨停，中国石油涨超6%。下跌方面，半导体板块陷入调整，盛美上海跌超10%。CRO概念股午后集体跳水，药明康德跌停。总体上个股跌多涨少，全市场超3000只个股下跌。沪深两市今日成交额8287亿，较上个交易日缩量628亿。板块方面，PEEK材料、海南、房地产、上海国资等板块涨幅居前，CRO、半导体、MR、BC电池等板块跌幅居前。",
+      "index": "创业板指",
+      "source_url": "https://m.toutiao.com/w/1789136805924883/?app=toutiao_web&timestamp=1785345080&use_new_style=1"
+    },
+    {
+      "date": "2024-02-01",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "explicit_action",
+      "evidence": "沪市率先见底，创业板今天见底\n\n2月第一天各个市场指数终于见底，沪市走出了60分钟的头肩底形态，创业板则是第一个底，后面反弹后，创业板大概率还会有个回撤，但曙光已经初露，春节后的市场将百花齐放，满园春色，个人投资者还要持股待涨！",
+      "index": "创业板指",
+      "source_url": "https://m.toutiao.com/w/1789674148724800/?app=toutiao_web&timestamp=1785345080&use_new_style=1"
+    },
+    {
+      "date": "2024-02-05",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "谁在大力做空中国股市谋利?",
+      "index": "上证指数",
+      "source_url": "http://toutiao.com/group/7332052239899197952/?app=news_article"
+    },
+    {
+      "date": "2024-02-06",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "明日大盘会继续大幅度反弹，直到做空者爆仓\n\n昨天我已经精准预测大盘已经到底，并写了到底是谁在恶意做空，有兴趣的朋友可以翻看我昨天的文章并明确指明中国必将反击美国金融霸权，结果今天就是百股涨停，各个指数大涨。一天大涨并不能让空头绝望，必须继续大涨，才能彻底打怕空头，让他们空杀空，明天预测大盘继续大涨，让想拿钱回家过年的散户如愿以偿，春节后会继续大涨，让空头彻底绝望！[呲牙]",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1790155729632395/?app=toutiao_web&timestamp=1785345080&use_new_style=1"
+    },
+    {
+      "date": "2024-02-07",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "明天大盘会继续大涨\n\n为什么？因为那个不作为乱作为的村长被免了，真是喜大普奔[呲牙]",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1790237734967300/?app=toutiao_web&timestamp=1785345080&use_new_style=1"
+    },
+    {
+      "date": "2024-02-07",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "explicit_action",
+      "evidence": "严禁融券T+0，确保投资公平性\n\n通市值的比例为0.14%。整体来说，在证监会结合市场情况对融券业务采取一系列加强举措后，现阶段融券业务已处于较低的规模水平。\n\n目前市场上的券源主要来自两个方面：一是自营盘自有券；二是外部投资者借券。外部投资者借券采用中央结算模式，都需要通过中证金转融券。此次监管暂停新增证券公司转融券规模影响多大？\n\n来自华创证券金融行业首席分析师徐康数据显示，此前调研数据来看，转融券规模作为融券券源的占比在80%左右，此次以现转融券余额为上限，依法暂停新增证券公司转融券规模，意味着转融券规模设置“封顶值”在800余亿元的上限，同时，部分公募基金发声“审慎稳妥推进存量转融通证",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1790191450980612/?app=toutiao_web&timestamp=1785345080&use_new_style=1"
+    },
+    {
+      "date": "2024-02-13",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "富时A50小涨，富时A50三倍做空中国大跌\n\n过年期间国外市场仍然开市，针对中国股市，多空双方依然争夺激烈。但这次空方显然没有得逞，节后继续震荡上行已成必然，如果空方不及时缴枪，那后面只能是越亏越多，直到爆仓😁",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1790761897914452/?app=toutiao_web&timestamp=1785345080&use_new_style=1"
+    },
+    {
+      "date": "2024-02-16",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "香港股市大涨，痛击做空者\n\n今天大年初七，大陆股市依然休市，但香港股市今天以一根大阳线，痛击做空H股的敌对势力，为下周大A的良好开盘奠定了坚实的基础！\n后续大A要资金有资金，要政策有政策，管叫华尔街金融巨鳄们爆仓中国资本市场！散户朋友们更要坚定信心！龙年牛市一飞冲天！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1791035171395780/?app=toutiao_web&timestamp=1785345080&use_new_style=1"
+    },
+    {
+      "date": "2024-02-21",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "以2月大阳线反包1月大阴线，透露何种信号？\n2月还没走完，月线已经反包了1月的阴线，股指期货空头也是不断减仓。换帅已经表明了态度，国家需要牛市，而且这次牛市的主题就是金融强国。\n这两天不少博主都大喊要调整，而我节前就坚定指出大盘必然7连阳。这份自信就是基于对行情本质的理解。\n短期大盘会继续冲高到3000点，然后微调后，会继续冲到3134，也就是牛熊分界线。这里会有一定的争夺，因为空方并不死心，但最终中国股市必然进入到牛市，目前本年高度至少到达3500，如果政策积极支持，到达4000点，也不是不可能！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1791479661636611/?app=toutiao_web&timestamp=1785345080&use_new_style=1"
+    },
+    {
+      "date": "2024-02-22",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "市场过热，量能萎缩，小心风险\n\n今天大盘依然是普涨，但主线不明显，属于个股补涨阶段。目前市场没有大的风险，但短线有回调的可能。\n1、今天量能萎缩，而3000点附近有巨大的套牢盘，不放量是冲不上去的；\n2、今天最高2988，没有突破昨天的2994，显示主力信心不足；\n3、前期拉动大盘的主力军，石油、煤炭、银行等大盘股涨幅过高过快，有内在调整要求；\n4、今天大盘日线已进入高7序列，调整随时会展开；\n5、大多数股股价依然没有回到3000点附近，大部分散户属于套牢状态，主力不解放他们，就不能说进入牛市。\n\n综上，大盘不突破250天年线，就不能说大盘已经进入牛市。目前散户还是不要无脑追高，要观察两天，等",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1791590030130179/?app=toutiao_web&timestamp=1785345078&use_new_style=1"
+    },
+    {
+      "date": "2024-03-17",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "大盘将会进入到主升浪阶段\n虽然大盘最近两周一直踯躅不前，但3050点牢不可破，而且周五证监会又出文呵护市场。虽然利空方面小日本要加息，但影响可以忽略不计。日本虽然将自己的利率从负数提高到0.2%以下，但其经济体量太小，和美国加息不可同日而语。预计周一低开一点后会高走，证券股和半导体股才是未来主线。香港恒生指数月线大双底，日线延上升趋势线走好。大A的总攻时间也已经快到了！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1793772559593483/?app=toutiao_web&timestamp=1785345078&use_new_style=1"
+    },
+    {
+      "date": "2024-03-18",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "不能再犹豫，大盘下午会发力上攻\n昨天已经做出了全网最准确的预判，今日大盘会发力上攻，上午主力故意快速回落，就是要洗掉不坚定的散户，牛市里，主力总是完成盘中洗盘，经验不深的散户往往中招。\n目前就是要持股不动，没买入的散户赶紧全仓杀入，大盘暴涨的阶段马上开始，看好半导体和券商！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1793838288787539/?app=toutiao_web&timestamp=1785345078&use_new_style=1"
+    },
+    {
+      "date": "2024-03-26",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "倒春寒，挡不住股市的春天\n中国股市的腐败，侵蚀了大厦的根基，拟上市公司（多融资，多募集部分20%奖励给保荐机构），保荐机构（券商，包装业绩，上市后反手融券做空，再坑接盘新股的股民），公募基金（拿基民的钱推高新股价格），加上无良的会计师事务所以及律所，形成了一个无底的收割机，疯狂收割中国中产阶级，然后很多上市公司老板，转移资产到海外。这种对中国经济抽血的行为已经进行20多年了，使得中国经济的国内消费能力越来越差。数千亿，数万亿的资金跑到了海外。吴村长上任后终于对腐败说不，中国该止血了，中国股市该止血了！\n打击中国资本市场腐败，严惩被后的恶势力，才能还中国资本市场一个朗朗乾坤。短期虽然利空市场，但",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1794542720303107/?app=toutiao_web&timestamp=1785345077&use_new_style=1"
+    },
+    {
+      "date": "2024-03-27",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "股市加速赶底，热点将要切换\n今天有4719家个股绿盘收跌，仅589家个股红盘收涨，市场呈现“普跌格局”，涨停45家，跌停达到了65家，市场有明显的“加速赶底”的迹象。从股指期货上看，今天的数据，并不是完全在加空，而是呈现明显的结构特征。把两者的数据加起来，对代表中小盘股的IC、IM合计加空2483手，对代表大盘蓝筹股的IF、IH实际上减空1115手。\n近期的上面的倾向很明显，“量化指增选股需要对标成分股60%”、“公募不得参与游资炒作标的”等等，这些都有利于大盘蓝筹。这次调整结束后，市场的主线板块将切换到大盘蓝筹股包括大金融，半导体科技股等。这次的下跌，主力大幅减仓前期涨幅过高的中小盘股票，并",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1794685966556180/?app=toutiao_web&timestamp=1785345077&use_new_style=1"
+    },
+    {
+      "date": "2024-03-31",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "不在沉默中爆发，就在沉默中死亡\n下周的行情格外重要，周末传来券商收购股权的消息：3月29日晚间，长江证券发布公告称，湖北国资旗下长江产业投资集团有限公司（以下简称“长江产业集团”）与湖北能源、三峡资本当天签署《股份转让协议》，长江产业集团拟通过协议转让方式以8.2元/股的价格分别受让湖北能源、三峡资本持有的上市公司约5.3亿股和约3.33亿股股份，占长江证券股份总数的比例分别为9.58%和6.02%。\n以3月29日长江证券收盘价（5.13元/股）计算，此次长江产业集团出手收购相当于溢价了近60%。\n如此大的溢价，就看周一能不能掀起券商的涨停潮。最近浙商证券并购国都证券，方正证券与平安证券合并，",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1795040400861188/?app=toutiao_web&timestamp=1785345077&use_new_style=1"
+    },
+    {
+      "date": "2024-04-08",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "股市最后的洗盘\n今天股市低开，证券，有色，半导体都狠狠洗了一把，但也是启动大行情的前夜。散户目前就是持股不动，静等花开。没进场的散户，就是要敢于抄底。突破3200的行情这周展开！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1795730852287491/?app=toutiao_web&timestamp=1785345077&use_new_style=1"
+    },
+    {
+      "date": "2024-04-09",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "股市大盘已出现三只乌鸦，很可怕吗？\n昨日股市探底回升，午后再次回落，深成指和创业板率先补掉缺口，沪指还留下一个4点左右的缺口，这给短线的市场增加了一份悬念，但基本上可能确认，明天这个缺口是必补，这个缺口本身就没有多大意义，深成指和创业板还有下跌空间，但也不大。\n\n个股走势比较惨烈。许多人被盘中的冲高坑了一把，当然你敢于抄底而不追高，短线即便被套，也不会有多大问题，只是输点时间而已。\n\n大盘的转势将发生在下半周，热点也将出现切换，这两天接着金价大涨，主力猛拉黄金和有色股票，中字头（包括中石油，中国船舶等），以及银行股，但它们的风险已经越来越大，黄金也是在高位击鼓传花，主力明显是在诱多，把散户从低",
+      "index": "创业板指",
+      "source_url": "https://m.toutiao.com/w/1795780595419140/?app=toutiao_web&timestamp=1785345077&use_new_style=1"
+    },
+    {
+      "date": "2024-04-15",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "坚定信念，打击华尔街做空，中国股市将走出独立牛市！\n今天香港股市和A股大盘又遭敌对势力恶意做空，关键时刻，中字头和证券股亮明态度，明确告诉大家目前就是底部区域，3000点保卫战必胜！\n目前散户朋友不要跟风割肉，而要死拿低位股，相信国运和郭嘉队！守得云开见月明，静等花开富贵来！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1796375536683075/?app=toutiao_web&timestamp=1785345075&use_new_style=1"
+    },
+    {
+      "date": "2024-04-17",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "股市做空已经是强弩之末\n倒春寒挡不住中国股市的春天，新国九条刮骨疗毒，短期虽痛，但长期奠定了股市长牛的基础。最近两天不良机构绑架散户做人质，拼命做空，妄图裹挟社会舆论，以达到反对村里政策的阴险目的。但村里早已看破，辟谣后拉动中字头和大金融，打击做空机构。我们坚信中国“重构牛”即将出发，中国股市的春天必将到来！中国的资本市场必将崛起！相信的请点赞！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1796548692593801/?app=toutiao_web&timestamp=1785345075&use_new_style=1"
+    },
+    {
+      "date": "2024-04-22",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "最精准的预测：热点将出现切换\n今日大盘又是冲高回落，而且前期大热的中石油和中海油都出现明显下跌，说明前期大热的周期股和银行股都会回落，而前期不涨的证券，科技，消费等板块将出现补涨。四月只是平稳过渡月，真正的大涨要在五一后了！正所谓：好饭不怕晚！该来的都会来！突破250天线（年线），大盘才会正式开启“反腐牛”，也叫“重构牛”！如果你相信等待9年后的中国股市，终将迎来它的伟大转折，就点赞表达吧！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1797034903125108/?app=toutiao_web&timestamp=1785345075&use_new_style=1"
+    },
+    {
+      "date": "2024-04-24",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "香港的牛市已经开始了，大A的牛市还会远吗？\n香港股市最近三天每天都大涨2%左右，率先吹响牛市的号角！大A已经调整24个交易日，以时间换空间，调整已到尾声。五一前大A的反弹已经压抑不住，但大的行情要等到五一之后了，但该来的总会来，既然已经等待了9年，就不在乎再多等几日！黎明前的黑暗，总是最难熬的，坚持一下，也就见到曙光了！相信牛市的点赞表达！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1797226097463308/?app=toutiao_web&timestamp=1785345075&use_new_style=1"
+    },
+    {
+      "date": "2024-04-29",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "美日勾结联合做空亚洲金融市场\n最近日元大幅贬值，有人说是美国缺血，拿日本进补，而事实的真相是日本故意贬值，带崩亚洲货币，做空亚洲金融市场！美日可谓是沆瀣一气，狼狈为奸。 今日港股收出放量的上影线，说明有部分资金已经跑路了。\n\n 2月5日我预测了牛市，又在4月22预测了热点切换和站上年线，今天我对股市的所有预测都一一应验，不信，你去看我以往的文章！5月将是红色的，但前期大涨的石油、煤炭、有色还是远离，主要去追逐半导体，房地产，证券等没涨的板块！\n虽然前途是光明的，但道路是曲折的。今日大盘有点过热，明天可能会迎来盘中震荡，短线不能追高了！逢大盘回调可分批建仓，虽然美日作妖但中国的“金融强国”牛势不",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1797677730866180/?app=toutiao_web&timestamp=1785345074&use_new_style=1"
+    },
+    {
+      "date": "2024-05-06",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "A股：盘中洗盘已经结束\n大盘进入高开低走，盘中快速洗盘，接下来会继续大涨，并突破3200",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1798283030298634/?app=toutiao_web&timestamp=1785345074&use_new_style=1"
+    },
+    {
+      "date": "2024-05-16",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "A股：洗盘结束，明天启动上升行情\n这两天主力疯狂打压证券股，就是因为大多数股民看好国联证券复牌，主力反其道而行之，就是要彻底浇灭散户对证券股的希望。\n这两天主力疯狂拉升银行和地产股，就是吸引散户去接盘，地产这个夜壶又被用起来了，但由于刹车太猛，熄火后很难再启动，而且龙国城镇化已经67%，离发达国家的70%已经所差无几。发长期国债让央行购买，就是放水信号，进一步降低存款利率就是逼着银行储蓄出来买房，但老百姓不一定买账，最终钱会流入股市，从而推动牛市启航！目前香港股市的牛市已经开始，就是从美国和其他国家涌入的热钱。水涨了，船也就高了！不以人的意志而转移，光大散户朋友，要持股待涨，守得云开见月明！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1799200484804612/?app=toutiao_web&timestamp=1785345072&use_new_style=1"
+    },
+    {
+      "date": "2024-05-17",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "A股：大盘尾盘突然拉升，大力出奇迹",
+      "index": "上证指数",
+      "source_url": "http://toutiao.com/group/7369869401954320931/?app=news_article"
+    },
+    {
+      "date": "2024-05-17",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "地产股不断诱多，坚决不参与\n最近地产股屁股还没擦干净，就从ICU进入了KTV，散户要坚决远离，持有的散户只要解套也要坚决把筹码还给主力！龙国股市搞不好就在于嘴上喊价值投资，实际上是炒作！可悲！更可耻！尿壶又拿起来了，希望散户们长长记性，这次要是被地产股套牢，估计就直接等退市了。",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1799276211136516/?app=toutiao_web&timestamp=1785345072&use_new_style=1"
+    },
+    {
+      "date": "2024-05-18",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_vague",
+      "evidence": "救地产是开错药方吃错药！\n\n昨天下午14：00后房地产传来4大利好：\n\n1、商业贷款利率不设下限；\n2、公积金贷款利率下调至2.85%；\n3、首付比例首套房下调到15%，二套房下调到25%\n4、央行用3000亿资金兜底，购买已建设完毕未出售的商品房作为保障房。\n\n大盘闻讯，众多地产股涨停，连马上就要爆雷的万老大也涨停了，真是刚出ICU，就进KTV呀[呲牙]\n\n不过散户千万别上头，这些措施也就是对I",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1799395689456707/?app=toutiao_web&timestamp=1785345072&use_new_style=1"
+    },
+    {
+      "date": "2024-05-18",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "房地产政策频出，该抄底房市了吗？",
+      "index": "上证指数",
+      "source_url": "http://toutiao.com/group/7370146792245150260/?app=news_article"
+    },
+    {
+      "date": "2024-05-23",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "只是洗盘而已，顶部都是放巨量的，还是来看看我的头条吧，全网最准确的预判[呲牙]",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1799853166918659/?app=toutiao_web&timestamp=1785345072&use_new_style=1"
+    },
+    {
+      "date": "2024-06-03",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "A股：开始抄底！\n加速赶底，逼出带血的筹码！这是主力的阴谋也是主力的阳谋。散户现在就是咬紧牙关，坚决持股不动。黎明已经不远！红六月会出乎意料！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1800815319538700/?app=toutiao_web&timestamp=1785345071&use_new_style=1"
+    },
+    {
+      "date": "2024-07-07",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "7月是大盘的转折月，熊市终将结束\n目前绝大多数个股已经跌破大盘2635点时的价格，因为有高高在上的中石油，中国移动，四大银行粉饰太平，所以指数依然在2900之上。目前80%的个股已经跌到2440的位置，已经跌透了，也跌到位了。下周这些80%的个股会出现反转，而大盘指数只会B浪反弹，而涨势良好的大盘股可能出现阴跌，大盘B浪反弹后，会出现两种情况：第一种走C浪杀跌，即80%的个股再次下杀，但不创新低，构筑日线级别双底结构，而20%的大盘股和强势股开始大幅补跌，大盘指数将补2867缺口，会在2798到2855区间止跌；第二种是乐观走势，C浪失败，大盘不创新低，跌到2930附近止跌。\n        ",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1803913258335258/?app=toutiao_web&timestamp=1785345071&use_new_style=1"
+    },
+    {
+      "date": "2024-07-08",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "A股：黎明前的黑暗，42公里的马拉松还剩最后2公里，坚持到胜利！\n\n今天4000家股票大跌，个股早已跌到2400点的价位了，而护盘主力无聊地拉住最后几块遮羞布（四大银行，中石油等），继续粉饰太平。散户则叫天天不应，叫地地不灵。一切都显得那么无奈与苍凉，下杀，下杀，再下杀，逼迫散户割下一块块带血的肉…\n惨烈的画面再次上演，又到下跌的最后时刻了，余晖只能提醒你，战胜恐惧，不要倒在黎明前的黑暗里，美帝国主义和买办们不断做空，但郭嘉队在积聚力量，巅峰对决就在今明两天！胜利属于中国！胜利属于中国的2亿股民！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1804016060504068/?app=toutiao_web&timestamp=1785345071&use_new_style=1"
+    },
+    {
+      "date": "2024-07-09",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "B浪反弹马上开始\n今日V型发转，正式宣布A浪杀跌结束了，马上开始B浪反弹，高度先看3070。\n        目前绝大多数个股已经跌破大盘2635点时的价格，因为有高高在上的中石油，中国移动，四大银行粉饰太平，所以指数依然在2900之上。目前80%的个股已经跌到2440的位置，已经跌透了，也跌到位了。这些80%的个股会出现反转，而大盘指数只会展开B浪反弹，而涨势良好的大盘股可能出现阴跌，大盘B浪反弹后，会出现两种情况：第一种走C浪杀跌，即80%的个股再次下杀，但不创新低，构筑日线级别双底结构，而20%的大盘股和强势股开始大幅补跌，大盘指数将补2867缺口，会在2798到2855区间止跌；第二种",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1804102597741580/?app=toutiao_web&timestamp=1785345071&use_new_style=1"
+    },
+    {
+      "date": "2024-07-25",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "A股：底部往往在不经意中产生\n\n目前A股不顾三中全会利好，一个劲儿地赶底，昨天终于到底，收了一颗十字星。昨晚美国股市暴跌，人民币汇率大幅上涨0.33%，富时A50上涨。金融战已经接近尾声，美国将不得不降息认输。\n中国股市是唯一没有泡沫的资本市场，必将被再次抄底。中国的牛市早晚到来，大概率在11月份，因为各长期均线掉头向上需要时间。短期大盘反弹已经属于箭在弦上，不得不发。坚持就是胜利，散户依然要坚信国运和国家的实力，咬定青山不放松。当然也不能盲目相信“上海爷叔”之流的江湖骗子！因为谁都知道否极泰来的道理，不用谁来装大神，算命式地预测。中国牛市必将到来，中国资本市场必将崛起！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1805506007751680/?app=toutiao_web&timestamp=1785345071&use_new_style=1"
+    },
+    {
+      "date": "2024-08-06",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "A股：不要恐慌，大盘今天止跌\n欧美日韩股市暴跌，是因为它们涨的太高，充满泡沫，中国股市一直在3000点以下潜水，所以没有大跌风险 ，广大散户朋友不要恐慌，目前富时A50期货指数已经企稳翻红，说明今天A股市场将迎来止跌，后半周将迎来大反弹。",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1806589956882442/?app=toutiao_web&timestamp=1785345071&use_new_style=1"
+    },
+    {
+      "date": "2024-08-07",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "explicit_action",
+      "evidence": "#赛事答题赢现金#答题赢现金>抢到奥运吉祥物“弗里吉”玩偶后加价500元卖出，是否侵犯奥林匹克标志专有权?和我一起答题赢奖励！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1806704200861696/?app=toutiao_web&timestamp=1785345069&use_new_style=1"
+    },
+    {
+      "date": "2024-08-15",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "A股：今天大盘的涨势正如我昨天预测的\n今年2月5日，我就预测了2635的低点时刻，昨晚我再次出手，告诉大家今天就是转折时刻，必将大涨。今天的2839.39将成为未来十年的底，一轮大牛市会在不知不觉中展开。“金融强国牛”会奔驰向上至少两年，能坚持到现在的散户都是好样的，你们现在唯一要做的就是别从牛背上掉下来，抓紧牛角，不惧震荡，持股待涨！未来属于你们，财富属于你们，你们的执着与坚韧终将得到回报！祝贺你们！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1807428162896906/?app=toutiao_web&timestamp=1785345069&use_new_style=1"
+    },
+    {
+      "date": "2024-08-24",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "explicit_action",
+      "evidence": "很好治理，卖出的票不退票，然后当天突然增加10万张门票，搞几次就可以让黄牛血亏离场[大笑]",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1808244504900618/?app=toutiao_web&timestamp=1785345069&use_new_style=1"
+    },
+    {
+      "date": "2024-09-09",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "A股：大盘已进入最后的诱空\n\n美国将在9月17日左右宣布降息，大盘这两天会加速诱空，以达到甩人下车的目的。目前大盘股加速补跌，指数还处于加速阶段，底部大致在2645区域。现阶段要坚定信心，等待底部的到来！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1809698096575684/?app=toutiao_web&timestamp=1785345069&use_new_style=1"
     },
     {
       "date": "2024-09-19",
       "direction": "bullish",
       "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "A股：美联储降息50个基点，霉国金融战彻底失败，大A爆发在即\n\n昨天我已经在盘中精确预测了低点，让有弹药的散户抓紧抄底，今晨美联储宣布降息50个基点，彻底认输。根据历史经验，龙国的牛市高潮往往发生在霉国降息的中后期，所以今年这是转势之年，大的高潮应该在2025年的下半年！不过2689点和2635点遥相呼应，很大可能成为大双底。\n今日大盘如果高开很多，后面还会跌下来补缺口，昨天短线抄底的，可以高抛。如果做中长线的，就没有必要操作，坚持持股到明年年底。\n前方的路虽然还有坎坷，但最黑暗的时刻已经过去，祝贺挺过来的你！股海斜阳余晖也将陪伴你穿越熊牛！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1810576281143299/?app=toutiao_web&timestamp=1785345068&use_new_style=1"
+    },
+    {
+      "date": "2024-09-26",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "A股：今天又有重大消息传来，所以又双怒涨\n你昨天大盘冲高回落，不少人认为大盘要补跳空缺口，但盘中又传来重大消息：中共中央政治局9月26日召开会议，分析研究当前经济形势，会议强调，要加大财政货币政策逆周期调节力度，保证必要的财政支出，切实做好基层“三保”工作。要发行使用好超长期特别国债和地方政府专项债，更好发挥政府投资带动作用。要降低存款准备金率，实施有力度的降息。要促进房地产市场止跌回稳，对商品房建设要严控增量、优化存量、提高质量，加大“白名单”项目贷款投放力度，支持盘活存量闲置土地。要回应群众关切，调整住房限购政策，降低存量房贷利率，抓紧完善土地、财税、金融等政策，推动构建房地产发展新模式。",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1811242073367616/?app=toutiao_web&timestamp=1785345068&use_new_style=1"
+    },
+    {
+      "date": "2024-09-27",
+      "direction": "bearish",
+      "strength": "moderate",
       "specific": "directional_clear",
-      "evidence": "2689点和2635点遥相呼应，很大可能成为大双底",
-      "index": "上证指数"
+      "evidence": "A股：行情过于火爆，交易系统瘫痪\n今天又是火爆的一天，早上刚冲高回落，新能源和科技股又冲上去了，交易系统居然买不上，报单也不能及时撤单，真是活久见。\n      目前广大股民一致要求：取消国庆假期，让大盘接着涨[呲牙]\n早盘我就发文章指出：大盘必然超过3170点才能展开真正意义上的调整，所以广大散户就接着奏乐接着舞！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1811319457316868/?app=toutiao_web&timestamp=1785345068&use_new_style=1"
     },
     {
       "date": "2024-10-09",
-      "direction": "bullish",
-      "strength": "moderate",
+      "direction": "bearish",
+      "strength": "strong",
       "specific": "directional_clear",
-      "evidence": "告别疯牛，开始慢涨阶段…明日不会再大跌了，大盘会再创新高，高度4000以上",
-      "index": "上证指数"
+      "evidence": "大盘告别疯牛，开始慢涨阶段\n疯狂的牛终于被泼了一盆冷水，开始冷静下来，快牛行情结束了。明日大盘不会再大跌了，明天会探底企稳，后续该开始慢牛行情！大盘会再创新高，高度4000以上。谁领风骚呢？拭目以待！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1812438810211332/?app=toutiao_web&timestamp=1785345068&use_new_style=1"
+    },
+    {
+      "date": "2024-10-16",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "准到令人发指！股市斜阳余晖最近一连串对于股市走势判断的文章确实给力！\n从9月18日精准预测让大家抄底，到10月3日提醒大家不要疯狂追涨，再到今天告诉你牛市依旧在，几度夕阳红。",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1813080622676036/?app=toutiao_web&timestamp=1785345067&use_new_style=1"
+    },
+    {
+      "date": "2024-10-17",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "A股：牛市还在吗？\n十一假期有多狂热，现在就有多失落！三根阳线改变信仰，几个阴线怀疑人生。这是大多数股民的写照，也造成了他们追涨杀跌的操作方式，从而牛市也赚不到钱。\n牛市还在吗？大多数人已经认为一波流的牛市已经凉凉了，剩下的人也是开始怀疑自己。明白了这波牛市的底层逻辑，你也就不会动摇。它就是：发展新质生产力离不开繁荣的资本市场。记住这句话就足够了。谁是主线呢？当然是科技与金融！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1813153119584323/?app=toutiao_web&timestamp=1785345067&use_new_style=1"
+    },
+    {
+      "date": "2024-10-23",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "准到令人发指！股海斜阳余晖最近一连串对于股市走势判断的文章确实给力\n从9月18日精准预测让大家抄底，到10月3日提醒大家不要疯狂追涨，再到今天告诉你牛市才刚起步。股海斜阳余晖每次在重要转折点都能把握股市的脉搏。如果你感兴趣，可以翻阅我2月5日和6日的文章，精准抓住大势的转折点。\n就目前的股市而言，大盘可以回撤，但向上攻击不会停止，3674也不是年内的高点，这个月就可能拿下，11月份会更精彩，不必焦虑朋友们，也不要过度追涨热门板块，牛市板块轮动的规律就是从涨的高的板块流向没有涨的板块，你只要握住优质股票（不退市），你就会得到属于你自己的稳稳的幸福！股海斜阳能够赚钱，就是有敏锐的判断能力，借助周期",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1813654592661507/?app=toutiao_web&timestamp=1785345067&use_new_style=1"
+    },
+    {
+      "date": "2024-10-27",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "美交所延长交易时间，这明显是在倒逼，而这恰恰会促使中国股市大涨！[大笑]",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1814027968887808/?app=toutiao_web&timestamp=1785345067&use_new_style=1"
+    },
+    {
+      "date": "2024-10-29",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "A股：大盘在3100到3300区间内震荡，就是为了消耗获利盘，震荡结束后，将开始新的大涨。目前霉国大选的结果以及降息的预期都可能干扰龙国股市的上涨节奏，但金融“核武器”还没有使用，所以空方也不敢造次。耐心持股就好！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1814243193324547/?app=toutiao_web&timestamp=1785345067&use_new_style=1"
     },
     {
       "date": "2024-11-06",
       "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "A股：短线过热，小心诱多！\n虽然表面看大盘最近两日表现不错，但涨的确是杂乱无章，敌人打炮，是进攻还是撤退，主要是看炮声是否杂乱。目前看主力一顿乱涨，显然是要撤退。大盘大概率会有一个小C浪，今天不能追高，反而要减仓。\n当然长线看，牛市还在，只是要回避短线的调整。",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1814926801275140/?app=toutiao_web&timestamp=1785345067&use_new_style=1"
+    },
+    {
+      "date": "2024-11-18",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "大盘已经企稳，慢牛行情启动\n前半个月游资主导的反弹结束了，因为牛鬼蛇神都疯狂上涨，反而是价值投资被忽略了。目前上面还是鼓励价值投资，周末出台了市值管理的指导意见。\n炒股还是要听上面的话，不能冒险炒风险股。\n虽然大部分股评认为牛市已经结束，我却认为未来的牛市一定属于绩优蓝筹股，绩差股和造假股终究会退市。那么本轮牛市也一定是结构性牛市，不会一起大涨，投资者还是要抓住绩优科技股和金融股这两条主线，实现收益最大化。3674一定会被踩在脚下！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1816027340866569/?app=toutiao_web&timestamp=1785345065&use_new_style=1"
+    },
+    {
+      "date": "2024-12-01",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "A股已经转势并进入牛市初期\n牛市的初期都会经历百转千回，但不要被日线所迷惑，看看月线指标，你会发现，各指数都已经金叉，而且上证指数已经突破所有月线均线的压制。\n虽然上涨的节奏受外部和政策的干扰，但大势不可挡，更不要杞人忧天。\n对于散户，没有信息没有技术，做好的策略就是锁仓不动。不然只会被主力骗线，变成鸡飞蛋打。所以余晖不太频繁预测每天的走势，因为不可控，但把握大趋势才是重点！跨年度的牛市正在展开，祝大家财源滚滚！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1817197935559691/?app=toutiao_web&timestamp=1785345065&use_new_style=1"
+    },
+    {
+      "date": "2024-12-09",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "14来再提适度宽松货币政策和积极的财政政策\n大A的牛市稳了，明天高开高走，打爆空头！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1817975433650185/?app=toutiao_web&timestamp=1785345065&use_new_style=1"
+    },
+    {
+      "date": "2025-02-07",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "准到令人发指！股海斜阳余晖最近一连串对于股市走势判断的文章确实给力\n从去年9月18日精准预测让大家抄底，到去年10月3日提醒大家不要疯狂追涨，再到昨天告诉你证券股要发力，大盘会突破趋势3284。股海斜阳余晖每次在重要转折点都能把握股市的脉搏。如果你感兴趣，可以翻阅我2月6日的文章，精准抓住大势的转折点。\n就目前的股市而言，大盘可以回撤，但向上攻击不会停止，去年的3674也不是最高点，后面两个月就会拿下，3月份会更精彩，不必焦虑朋友们，也不要过度追涨热门板块，牛市板块轮动的规律就是从涨的高的板块流向没有涨的板块，你只要握住优质股票（不退市），你就会得到属于你自己的稳稳的幸福！股海斜阳能够赚钱，就",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1823392168371203/?app=toutiao_web&timestamp=1785345065&use_new_style=1"
+    },
+    {
+      "date": "2025-02-10",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "大部分大V都认为明天市场向下调整，可我却不认同\n\n谈谈我自己的想法：\n\n1. 关于\"大指标股反弹掩护出货\"的认知偏差\n-反驳逻辑：  \n  银行板块PB估值0.52处于历史极值（10年分位点2.3%），保险资金配置需求刚性（测算Q1险资权益仓位需提升1.2pct至13.5%），其反弹本质是估值修复而非掩护出货。中证银行指数与题材股走势呈现-0.73的强负相关性，当银行板块启动时，反而会吸引配置型资金入场形成市场宽度扩展。  \n  更重要的是，当前上证50ETF期权持仓量PCR降至0.68，表明机构正在建立多头保护头寸，这与2019年2月突破前夜的市场结构高度相似。\n2. 关于\"技术面受压与量能",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1823678759941120/?app=toutiao_web&timestamp=1785345064&use_new_style=1"
+    },
+    {
+      "date": "2025-02-13",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "大盘为何突然跳水，又要大跌了吗？\n**量能放大暗藏玄机 尾盘跳水释放三大信号**\n\n周三A股市场呈现冲高回落态势，早盘指数震荡上行，午后一度逼近3350点关口，但尾盘半小时突发跳水，三大指数集体翻绿。尽管指数收跌，但两市成交额突破1.8万亿元，创下近三个月新高。这种放量震荡的走势，既透露出市场分歧加大的信号，也隐含着主力资金调仓换股的深层逻辑。\n\n**一、资金面现重大转折**\n盘后数据显示，北向资金全天净流入35亿元，但内资机构却呈现单边流出态势，主力资金净流出规模高达420亿元，创下年内第三大单日流出纪录。这种内外资的明显分化，反映出市场参与者对当前位置存在认知差异。值得关注的是，虽然指数出",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1823933649480707/?app=toutiao_web&timestamp=1785345064&use_new_style=1"
+    },
+    {
+      "date": "2025-02-15",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "财政部划转三大AMC股权至中央汇金的核心利好\n2025年2月14日，财政部宣布将其持有的中国信达（58%股权）、长城资产（73.53%股权）、东方资产（71.55%股权）无偿划转至中央汇金投资有限责任公司（以下简称“中央汇金”），划转完成后，财政部不再持有上述公司股份，中央汇金成为其控股股东。同时，中国证券金融股份有限公司（中证金）66.7%股权也被划转至中央汇金。同日，申万宏源、东兴证券、信达证券等券商公告实际控制人变更为中央汇金，后者旗下券商牌照增至7张（包括银河证券、中金公司、中信建投等），标志着国有金融资本管理体制改革迈出关键一步。\n\n**核心利好解析**：  \n1. 国有金融资本管理",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1824105057773706/?app=toutiao_web&timestamp=1785345064&use_new_style=1"
+    },
+    {
+      "date": "2025-02-15",
+      "direction": "bullish",
       "strength": "moderate",
       "specific": "directional_clear",
-      "evidence": "短线过热，小心诱多！今天不能追高，反而要减仓…大盘大概率会有一个小C浪",
-      "index": "上证指数"
+      "evidence": "#伊朗说将积极应对美国“极限施压”#伊朗是自作聪明，明明自己是个棋子，非要幻想当棋手，故意抛弃叙利亚，但绥靖政策换来的是更大的羞辱[呲牙][呲牙][呲牙]",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1824091846006788/?app=toutiao_web&timestamp=1785345064&use_new_style=1"
+    },
+    {
+      "date": "2025-02-21",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "大盘会继续盘升向上，不要追逐热点\n\n最近科技中的机器人和软件一直猛涨，但金融和蓝筹股一直按兵不动，所以大部分股评都认为大盘已经见顶，短期看调整。但股海斜阳余晖则认为，大盘的主力军还没有发力，只是游资提前发力，大盘依然处于牛市的初期。板块也会形成轮动，所以买入你自己看得懂的股票，不要盲目羡慕别人，耐心持股，也会迎来你自己的股票大涨！千万不能东追西逐，到头来还是竹篮打水一场空！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1824636374380547/?app=toutiao_web&timestamp=1785345064&use_new_style=1"
+    },
+    {
+      "date": "2025-02-22",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_vague",
+      "evidence": "马克龙妄图祸水东引\n\n近期，法国总统马克龙在多个场合公开呼吁美国调整其全球战略重心，试图将美国的注意力从欧洲转向印太地区，尤其是针对中国。这一举动引发了广泛关注和讨论。马克龙不仅在社交平台上向特朗普喊话，强调“不能在普京面前示弱”，还在CNN的采访中直言不讳地表示，“美国的首要威胁是中国，应该优先应对主要矛盾”。这些言论表面上看似是为了维护美国的利益，实则暗藏玄机，透露出马克龙试图“祸水东引”的战",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1824765544965123/?app=toutiao_web&timestamp=1785345064&use_new_style=1"
+    },
+    {
+      "date": "2025-02-25",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "2月26日大盘展望及证券板块资金解析：主力减空单释放积极信号，大三浪行情启动在即\n\n 一、主力资金动向与大盘趋势研判  \n1. **期货空单大幅缩减释放积极信号**  \n  尽管用户提供的搜索结果中未直接提及“主力机构期货空单减少8400手”的具体数据，但从近期市场资金流向和政策导向来看，主力资金的调仓动作已显露出对后市的乐观预期。例如，2024年9月券商板块曾获主力资金单日净流入超16亿元，而2025年2月科技板块（如计算机、电子）持续吸引资金加仓，显示主力资金正逐步从防御性板块转向进攻性赛道。结合技术面分析，当前沪指在突破3000点后虽面临短期震荡（如2月25日跌破3350点支撑），但中长",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1825039905610755/?app=toutiao_web&timestamp=1785345062&use_new_style=1"
+    },
+    {
+      "date": "2025-02-26",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "中国要给世界立规矩\n应对贸易战其实很简单，中国应该明确向世界声明，任何国家对中国发起贸易战或金融战或生物战等同于对中国发动军事战争，中国将用武力给予毁灭性打击！中国应马上对美国进行武力打击！消灭帝国主义！用武力敲开市场！这才是西方列强听得懂的语言！[发怒][发怒]",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1825120974512256/?app=toutiao_web&timestamp=1785345062&use_new_style=1"
+    },
+    {
+      "date": "2025-03-06",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "大盘如我所预测，高开高走，已经涨40点\n虽然上方有一定压力，但是大盘在科技和金融的双轮驱动下，会突破前高站上3400点，大家积极加仓！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1825824150971396/?app=toutiao_web&timestamp=1785345061&use_new_style=1"
+    },
+    {
+      "date": "2025-03-08",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "大盘周评：120分钟K线技术钝化，大盘下周要大跌？\n近期市场对沪指120分钟K线钝化现象存在担忧，但从资金面、政策导向及板块轮动逻辑看，当前市场更倾向于蓄势而非转向。技术钝化通常被视为短期动能减弱的信号，但需结合宏观环境综合判断。3月以来，A股日均成交额稳定在1.4万亿以上（如3月8日成交1.62万亿），量能充沛表明市场活跃度未减。历史上，高位钝化后若量能持续放大，往往伴随突破而非回调。例如，3月5日沪指突破3340点后，尽管半导体等板块资金流出，但银行、通信设备等权重板块接力护盘，显示市场结构性支撑强劲。\n**数据佐证**：3月8日主力资金净流入47.66亿元，其中沪深300成份股净流入23",
+      "index": "沪深300",
+      "source_url": "https://m.toutiao.com/w/1826007126536267/?app=toutiao_web&timestamp=1785345061&use_new_style=1"
+    },
+    {
+      "date": "2025-03-08",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "【澳大利亚对中国有多重要？】\n\n一、澳大利亚资源禀赋对中国核心利益的战略价值\n澳大利亚大陆蕴藏的矿产资源结构与中国工业化进程存在高度互补性。根据美国地质调查局（USGS）2023年数据，该国铁矿石储量达230亿吨，占全球总量的28.5%，且平均品位达62%以上。仅2022年对华出口量就达7.3亿吨，支撑着中国钢铁工业61%的原料需求。在新能源领域，澳大利亚锂矿icon产量占全球46%，其格林布什icon矿山单矿储量就达1.65亿吨锂辉石icon，掌握着全球电动汽车icon产业链的命脉。\n\n铀矿icon资源方面，澳大利亚已探明储量达178万吨，占全球总量的31%。其奥林匹克坝矿区铀储量足够支撑中",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1826001469531219/?app=toutiao_web&timestamp=1785345061&use_new_style=1"
+    },
+    {
+      "date": "2025-03-09",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "明天股市开盘，周末的股评大多看调整 而股海斜阳余晖却不这么认为，短期大盘在此来回震荡，原因有三个：\n1、特朗普三板斧，等他出招完，避免这个神经病影响到股市；\n2、主力高低切换，在科技股上出货，买入白酒，金融，锂矿等低位股；\n3、等待保险公募基金机构投资者吸筹入场；\n目前大盘已经属于震荡末期，下周将向上突破，股海斜阳余晖立场鲜明，不像大多数的股评，模棱两可，整天“如果…就…”\n我在去年9月18日精准抓到转折点，不信的看我的顶置文章，股海斜阳余晖自炒股以来，每次牛市的启动点和出货点都准确抓到，相信我的朋友就点关注，我会在关键时刻提醒大家进场或离场！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1826082045366276/?app=toutiao_web&timestamp=1785345061&use_new_style=1"
+    },
+    {
+      "date": "2025-03-10",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_vague",
+      "evidence": "大盘在酝酿一波大行情\n周一大盘利用技术派对120分钟顶部钝化的恐惧，又狠狠的洗了一把，收集了大量的廉价筹码 ，下午又快速拉起，完成了一次完美的洗盘。\n最低处没有回补3月6日的跳空缺口，说明大盘依然处于强势。主力在启动行情之前，都会狠狠地往下踹一脚，今天就是完成这一动作，明天大盘将出现中阳或大阳线！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1826204207963331/?app=toutiao_web&timestamp=1785345060&use_new_style=1"
+    },
+    {
+      "date": "2025-03-11",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "大盘会低开高走，不要担心\n\n受昨晚美国股市大跌影响，A股主力借机故意洗盘，低开来恐吓散户，但现在已经是黎明前的黑暗，今天大盘低开高走没有悬念！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1826259805420746/?app=toutiao_web&timestamp=1785345060&use_new_style=1"
+    },
+    {
+      "date": "2025-03-12",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "explicit_action",
+      "evidence": "不断高抛低吸，利润越来越大！\n积小胜为大胜[呲牙]",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1826365877167108/?app=toutiao_web&timestamp=1785345060&use_new_style=1"
+    },
+    {
+      "date": "2025-03-13",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "午评：大盘将向下回踩30日均线，蓝筹股很安全，但题材股还是很危险的，尤其是概念股和科技股！回踩后下周会启动向上的行情！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1826451892362252/?app=toutiao_web&timestamp=1785345060&use_new_style=1"
+    },
+    {
+      "date": "2025-03-14",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "准到令人发指！股海斜阳余晖最近一连串对于股市走势判断的文章确实给力\n从去年9月18日精准预测让大家抄底，到今年1月13日提醒大家要转折了，再到最近几天一直在告诉大家不要恐惧顶部钝化，这只是主力诱骗技术派的道具，大盘一定会选择向上变盘。股海斜阳余晖每次在重要转折点都能把握股市的脉搏。如果你感兴趣，可以翻阅我最近的文章，精准抓住大势的转折点。\n就目前的股市而言，大盘可以回撤，但向上攻击不会停止，3月份会更精彩，朋友们也不要过度追涨热门板块，牛市板块轮动的规律就是从涨的高的板块流向没有涨的板块，你只要握住优质股票（不退市），你就会得到属于你自己的稳稳的幸福！股海斜阳能够赚钱，就是有敏锐的判断能力，借",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1826540591308868/?app=toutiao_web&timestamp=1785345060&use_new_style=1"
+    },
+    {
+      "date": "2025-03-15",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "股市的春天也已经来到，科技股依然是主线之一，但会出现一定的回撤，因为大部分科技股还处于投入阶段，业绩并不好，科技股震荡整理时间大致在1到2个月。其他绩优蓝筹股股将会出现轮动上涨，比如金融，消费，地产等。\n\n最近央行一直逼着银行卖出长期债券，目的是要银行支持实体，开启新一轮的信贷周期。例如，今天金融监管总局就发文鼓励银行加大消费贷的投放。周五股市消费股大涨，如：白酒大涨5.62%，保险大涨5.36%，商业商场4.13%，家电上涨2.44%，汽车上涨2.91%。\n后期随着刺激政策加码，地产股也会一跃而起！牛市的春天已经来临，关注我不迷路！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1826626176054464/?app=toutiao_web&timestamp=1785345060&use_new_style=1"
+    },
+    {
+      "date": "2025-03-16",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "消费股要爆发，股市要井喷！\n周末又出大利好：中共中央办公厅、国务院办公厅印发《提振消费专项行动方案》，总结概括为：拓宽财产性收入渠道。多措并举稳住股市，打通耐心资本入市的堵点，打击上市造假；加快落实强制带薪休制度，让老百姓有时间消费！面对外围的关税大战，加强内循环显然是唯一出路！股市大涨，中产才能有钱消费，内需才能提振！中国资本市场的牛市才能长远！关注我不迷路！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1826763254265868/?app=toutiao_web&timestamp=1785345058&use_new_style=1"
     },
     {
       "date": "2025-03-18",
       "direction": "bullish",
       "strength": "moderate",
+      "specific": "directional_vague",
+      "evidence": "注意⚠️注意⚠️大盘随时会发动主升行情\n大盘在趋势线附近蓄势已久，横有多长，竖有多高。接下来可能出现逼空行情，请粉丝朋友们坐好扶好！科技股在这波行情中会涨得很少，而传统蓝筹，消费，金融，地产，有色等会大幅上涨！股海斜阳余晖在去年2月5日，9月18日，和3月4日，都精准的抓到了转折点，可以说是全网最准确的股评！不信的，可以看我的顶置文章。当然能屡次精准预测到启动点的人，实操是不会差的，这一点不用黑粉",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1826883605608523/?app=toutiao_web&timestamp=1785345058&use_new_style=1"
+    },
+    {
+      "date": "2025-03-19",
+      "direction": "bullish",
+      "strength": "moderate",
       "specific": "directional_clear",
-      "evidence": "大盘随时会发动主升行情…接下来可能出现逼空行情…大三浪的启动很快就会到来",
-      "index": "上证指数"
+      "evidence": "顶部钝化消失叠加美联储议息落地，A股或迎蓝筹股引领的上涨周期",
+      "index": "上证指数",
+      "source_url": "http://toutiao.com/group/7483495835074855424/?app=news_article"
+    },
+    {
+      "date": "2025-03-20",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "持股如钓鱼，要耐心\n最近三日大盘连续高位震荡，让散户心里又开始打鼓，到底是要大跌了呢？还是在洗盘？股市斜阳余晖最近几篇文章一直在指出：主力在高低切换，抛掉高位的板块，如科技股；买入低位的蓝筹股，如保险，白酒，有色等。\n今天美联储宣布维持利率不变，多港股和A股来说，偏利空。但美国国债的利息太庞大了，死要面子活受罪，美国支撑不了多久就会降息。这个时候就是比耐心，看谁先眨眼。目前也是散户最难熬的时候，因为主力故意布迷阵，让散户也看不清方向，加上3只乌鸦的形态，让看空的声音成为市场主流。而股海斜阳余晖多年来，很少出现大方向的问题，你可以看看我顶置的文章，就知道股海斜阳余晖的实力。目前就是黎明前的黑暗，",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1827100949482524/?app=toutiao_web&timestamp=1785345058&use_new_style=1"
+    },
+    {
+      "date": "2025-03-21",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "2025年3月21日股评：30分钟K线“低9”信号确认底部，下周或迎大涨行情  \n\n**今日市场回顾**  \n2025年3月21日，A股三大指数集体低开低走。开盘后市场情绪偏谨慎，机器人、AI穿戴、三胎等题材股走弱，但中药、深海科技等板块逆势走强，显示资金在结构性分化中寻找机会。从技术面看，尽管早盘低开，但30分钟K线周期已出现关键的“低9”信号，结合多周期指标共振，市场短期调整或已到位，下周有望开启新一轮反弹。  \n\n一、技术面触底信号明确\n1. **30分钟K线“低9”释放反转信号**  \n   “低9”是TD序列（Tom Demark Sequential）中的重要反转信号，通常出现在下",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1827213767045132/?app=toutiao_web&timestamp=1785345058&use_new_style=1"
+    },
+    {
+      "date": "2025-03-21",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "大跌不要慌了神\n这几天股海斜阳余晖不断提醒大家，主力要在科技股上出货，今天科技股跌得最狠，当然蓝筹股也跟着洗盘，但已经到位，大家不要担心，下周大盘就会再次启动向上的行情 ，目前还是低吸蓝筹股，被套的只要不是科技股，都可以继续持有，不要把宝贵的筹码交给主力。",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1827182963782723/?app=toutiao_web&timestamp=1785345058&use_new_style=1"
+    },
+    {
+      "date": "2025-03-28",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "【深度解析】李嘉诚商业帝国再陷\"卖国\"争议：起底长和系损害国家利益的六大罪证\n\n在长和实业拟将旗下百亿级港口资产售予美国贝莱德财团之际，中国商务部研究院专家白明3月26日发文痛批\"在商不言商\"现象，直指这场涉及国家战略安全的交易已突破商业底线。这并非李嘉诚商业帝国首次触碰国家利益红线，通过梳理其近十年资本运作轨迹，六大铁证昭示着这位昔日\"超人\"的资本原罪：\n\n一、千亿资产腾挪术掏空实体经济\n2015年长和系重组案中，和记黄埔与长江实业通过开曼群岛架构转移价值2135亿港元的境内资产（据港交所披露易数据），涉及内地21个重点港口、13个能源项目。这种离岸架构设计使得核心资产控制权实质性转移至境外",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1827802553609216/?app=toutiao_web&timestamp=1785345057&use_new_style=1"
+    },
+    {
+      "date": "2025-03-29",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "政策红利叠加流动性宽松预期，A股4月或迎加速上行拐点",
+      "index": "上证指数",
+      "source_url": "http://toutiao.com/group/7487106451677250088/?app=news_article"
+    },
+    {
+      "date": "2025-03-30",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "**券商并购潮点燃板块引擎 金融科技融合引领大盘突破**\n\n继东方财富、指南针之后，A股即将迎来第三家互联网券商！湘财股份吸收合并大智慧的重组方案落地，不仅开创了非同一控制主体跨界整合的先例，更释放出券商行业供给侧改革的强烈信号。历史经验表明，券商板块历来是牛市行情的\"旗手\"，而当前行业并购加速、政策红利释放、估值处于历史低位三大逻辑共振，券商板块有望成为引领大盘突破的关键引擎。\n\n**政策东风催化行业整合 并购重组进入快车道**  \n证监会近期明确表态\"支持头部券商通过并购重组做优做强\"，2023年以来已有中金收购中投证券、平安证券与方正证券整合等6起重大并购案例，行业集中度CR10提升至5",
+      "index": "沪深300",
+      "source_url": "https://m.toutiao.com/w/1827983232947200/?app=toutiao_web&timestamp=1785345057&use_new_style=1"
+    },
+    {
+      "date": "2025-03-31",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "**揭露“凸教授归来”的欺诈面具：一场对投资者的背叛与愚弄**\n\n      在信息爆炸的时代，财经自媒体本应是投资者获取知识、规避风险的窗口，然而某些账号却以“权威”之名行欺骗之实。头条号“凸教授归来”长期以哗众取宠的言论误导股民，通过编造数据、虚构预测、操纵舆论，将投资者的信任践踏为流量与利益的垫脚石。今日，我们需以事实为剑，撕开其虚伪的面具，还市场一片清明。\n\n一、罪行昭彰：列举“凸教授归来”的四大恶行**  \n1. **伪造数据，虚构市场趋势**  \n   - 其宣称“独家内幕消息”“精准预测大盘走势”，却多次被证实数据来源不明，甚至篡改历史K线图以佐证其观点。例如，2024年某月宣称",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1828113334463564/?app=toutiao_web&timestamp=1785345055&use_new_style=1"
+    },
+    {
+      "date": "2025-03-31",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "十字星收盘，明天还有回踩，但底部已经不远了\n今天上午10：58分，股海斜阳余晖精准的预测了大盘探底的位置3318点附近，并明确告诉投资者大盘多头主力会在这个位置反击，并精准预测了大盘下午收盘会是十字星形态，不信的可以回看我的上一篇文章。\n今天A股指数虽然没有大跌，但个股却是暴跌，只是主力拉银行股掩盖了盘面的惨烈。明天大盘会低开回踩后反弹收阳。清明节前的本周在构筑最后的底部，节后等大洋彼岸的毛衣战利空出尽，大盘也就会开始真正的上攻行情。目前市场上散户的心态已经崩溃，这也就体现了股市的残酷性，在启动行情前，把大多数散户踹下车。跟随股海斜阳余晖的老粉丝们则会坚定的持股，因为他们知道余晖的实力，去年的",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1828097303732236/?app=toutiao_web&timestamp=1785345057&use_new_style=1"
     },
     {
       "date": "2025-03-31",
       "direction": "bullish",
       "strength": "moderate",
       "specific": "directional_clear",
-      "evidence": "底部已经不远了…清明节前在构筑最后的底部",
-      "index": "上证指数"
+      "evidence": "主力凶相毕露，今日大盘回踩收星\n今天主力突然发力狠砸，就是让散户交出带血的筹码。大盘会回踩3328，最狠回到3318，这里是120天线和60天线的支撑区域，跌到这里，多头会反击。",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1828076794276108/?app=toutiao_web&timestamp=1785345057&use_new_style=1"
+    },
+    {
+      "date": "2025-04-01",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "13：00以后券商大盘股遭到大单抛售\n真正的多空对决已经到来\n空方已经用尽全力打压股指，企图捞取最后的带血的筹码，但多方彻底的反击也箭在弦上，神仙打架，散户只能观望。但要坚信国运，中国的资本市场不怕倒春寒，仍会迎来万紫千红的春天！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1828175751174144/?app=toutiao_web&timestamp=1785345055&use_new_style=1"
+    },
+    {
+      "date": "2025-04-03",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "千呼万唤始出来，高频交易终于受限\n割韭菜利器终于被限制了，不然别说散户，就是游资也是被它割残。券商为了蝇头小利，也是一直睁一只眼闭一只眼。但今天沪深交易所终于迫于压力，开始限制高频交易了，只是非要推迟到7月7日才实行，看来是要给券商一个缓冲期，亲儿子是不一样呀。如果再取消股指期货，那那大盘就会一飞冲天啦（当然是开玩笑呢[呲牙]）",
+      "index": "沪深300",
+      "source_url": "https://m.toutiao.com/w/1828394399044682/?app=toutiao_web&timestamp=1785345055&use_new_style=1"
+    },
+    {
+      "date": "2025-04-04",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "关税战来了反而是好事，为什么？\n\n特朗普发动关税战，自作聪明，实际上是自毁长城，中国可以趁机加速人民币国际化，取代美国成为世界最大消费国。中国向世界输出人民币，人民币将彻底取代美元地位。\n\n 一、美国关税政策重创美元信用，加速全球“去美元化”进程\n\n美国特朗普政府于2025年4月2日宣布实施“对等关税”政策，对包括中国、欧盟、日韩等主要贸易伙伴征收10%至49%的关税，此举引发全球市场剧烈震荡。国际货币基金组织（IMF）预测，该政策将导致2025年全球经济产出减少0.8%，2026年降幅扩大至1.3%。更为深远的是，美国滥用关税武器已严重动摇国际社会对美元体系的信任：  \n- **美元指数与市",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1828427750620372/?app=toutiao_web&timestamp=1785345055&use_new_style=1"
+    },
+    {
+      "date": "2025-04-05",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "关税战升级 未来中国股市怎么走？\n\n美股三大指数昨日继续大幅下跌，标普500指数跌了5.97%，创下2020年3月以来最大单日跌幅；本周收跌9.1%，创2020年3月以来最大单周跌幅。纳指也跌了5.82%。纳斯达克指数较历史高点下跌超20%，正式进入技术性熊市。特斯拉、波音、苹果等制造业龙头股普遍重挫超7%-10%。这场暴跌看似偶然，实则是特朗普政府高举“关税大棒”引发的系统性风险集中爆发。\n\n历史总是惊人相似——1930年胡佛总统签署《斯穆特-霍利关税法》后，美国同样经历了股市崩盘、经济衰退与国际资本逃离的噩梦。而今天，特朗普正在将美国推向一场更危险的“胡佛式陷阱”。\n\n一、历史镜像：胡佛关",
+      "index": "沪深300",
+      "source_url": "https://m.toutiao.com/w/1828551772564492/?app=toutiao_web&timestamp=1785345054&use_new_style=1"
+    },
+    {
+      "date": "2025-04-07",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "睡觉前告诉我的粉丝，不要过于焦虑，大盘已经见底，目前富时A50已经大涨3%。美国不放过中国，所以中国必然反击，短期的下跌不能阻挡中国股市的崛起，最恶劣的时刻已经过去，团结起来到明天！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1828756567228489/?app=toutiao_web&timestamp=1785345054&use_new_style=1"
+    },
+    {
+      "date": "2025-04-07",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_vague",
+      "evidence": "大盘已经到底3040就是底部\n一竿子干到底，大盘底部已经出现。\n受关税战影响，大A低开低走，但转折已经不远了，同志们坚持住。已经补了去年9月的向上跳空缺口3187，大盘底部马上出现，坚持住！我已经把剩余的子弹都打出去了，抄底，抄底！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1828723965498569/?app=toutiao_web&timestamp=1785345054&use_new_style=1"
     },
     {
       "date": "2025-04-07",
       "direction": "bullish",
       "strength": "strong",
       "specific": "explicit_action",
-      "evidence": "大盘已经到底3040就是底部…我已经把剩余的子弹都打出去了，抄底，抄底！（实际底3041，偏差仅1点）",
-      "index": "上证指数"
+      "evidence": "天的股市是天王山决战\n一开盘美股期指就跌了4%，三倍做空中国富时A50大涨18%。华尔街巨鳄虎视眈眈，准备做空中国股市，郭嘉队也已经准备好弹药。开盘和盘中要较量几个回合，我相信我的国一定能够取胜，小散们就老老实实看神仙打架即可。场内的持股不动，场外的逢低逐级买入。\n今日大盘阶段性见底的概率极大！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1828702462816268/?app=toutiao_web&timestamp=1785345054&use_new_style=1"
     },
     {
-      "date": "2025-11-11",
+      "date": "2025-04-11",
       "direction": "bearish",
-      "strength": "strong",
+      "strength": "moderate",
       "specific": "directional_clear",
-      "evidence": "识别多周期钝化（60min/120min/日线），警告可能开启周线级别回踩",
-      "index": "上证指数"
+      "evidence": "特朗普已经输了，他已经没有了底牌\n中国股市怎么走？\n最近这一周股市剧烈波动，大家的眼球都被关税战所吸引，目前特朗普的政策已经动摇了美元和美债的根基，昨日美国迎来了股票、美债、和美元下跌的的三重奏。\n中国的资本市场经受住了危机的考验，虽然短期节奏被打乱，但不改中长期向上的趋势！昨日出现的跳空缺口，结合周一的跳空缺口，已经形成了岛型反转的K线组合。那么下周将在利好的配合下，向上突破。至于什么利好？我会在明天股评里告诉大家。如果你同意我的观点，请点赞支持！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1829086237670464/?app=toutiao_web&timestamp=1785345053&use_new_style=1"
     },
     {
-      "date": "2025-12-15",
+      "date": "2025-05-06",
       "direction": "bullish",
       "strength": "strong",
       "specific": "directional_clear",
-      "evidence": "这里就是底部…不管主力后市怎么走，都会结束调整行情，而启动跨年行情",
-      "index": "上证指数"
+      "evidence": "5月6日大盘高举高打，全天不做深幅回调，属于普涨，只有银行板块回落。明日大盘面临突破趋势线，只有突破60日和120日线后，才能重新回到上涨趋势中。明日重点关注证券股，只有证券股启动大涨，大盘才是真涨。一旦收盘突破3328，大盘将进入大三浪。",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1831368836621340/?app=toutiao_web&timestamp=1785345053&use_new_style=1"
+    },
+    {
+      "date": "2025-05-14",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "准到令人发指：大盘果然突破3400点\n昨日大部分股评都看顶部，而股海斜阳余晖坚定指出，前几日的震荡只是大盘突破前的蓄势，今日必上3400点。\n\n**一、大盘突破3400点，成交量释放积极信号**  \n今日（2025年5月14日），A股市场迎来关键转折点，上证指数成功突破3400点整数关口，全天成交额显著放大至1.55万亿元，较前一交易日增长超千亿元。这一突破标志着市场短期平衡被打破，技术面上确认了“大三浪”主升行情的启动。根据波浪理论，第三浪通常具备涨幅最大、资金参与度最高、情绪最乐观的特征。从历史经验看，第三浪的领涨板块往往与政策支持、产业趋势紧密相关，而今日市场表现正契合这一规律。  \n\n",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1832080057886720/?app=toutiao_web&timestamp=1785345051&use_new_style=1"
+    },
+    {
+      "date": "2025-05-17",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "一片看空声音中，冲锋号将在下周吹响\n\n5月以来，A股在政策与资金的合力下已现筑底信号。上周三大金融板块（银行、保险、券商）集体异动试盘，保险指数单日暴涨6.92%，红塔证券、中国人保等个股涨停，单日成交额突破2000亿元，释放主力资金抢筹信号。尽管周四周五市场短暂压盘回落，但周末政策端再出重组利好，叠加救市资金持续流入，预计下周将开启新一轮上升行情。\n\n **救市资金持续发力，流动性宽松托底市场**\n5月救市政策密集落地：央行降准0.5%释放1万亿长期资金，险资投资试点扩容600亿，叠加股票投资风险因子下调10%，释放超2000亿增量资金。北向资金单周净流入超118亿元，重点加仓金融与科技板块",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1832359955917852/?app=toutiao_web&timestamp=1785345051&use_new_style=1"
+    },
+    {
+      "date": "2025-06-13",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "悬念留给下周，股指期货昨日减空2000手，今日依然是小幅震荡，下周将向上突破。目前机构在等美国降息，可以说是万事俱备只欠东风！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1834765529348172/?app=toutiao_web&timestamp=1785345051&use_new_style=1"
+    },
+    {
+      "date": "2025-06-14",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "explicit_action",
+      "evidence": "周末重大利好！证监会发布的《期货市场程序化交易管理规定（试行）》，通过七大核心举措构建了系统化的监管框架：明确定义程序化与高频交易、实施事前报告与持续核查、严格系统接入管理（如禁止期货公司向客户开放系统管理权限）、规范主机托管与席位分配（对问题客户限制托管服务）、强化实时监测与风险管理（交易所可建立报撤单收费与交易限额制度）、明确监管职责分工（行政监管与自律管理结合）、设定严格处罚措施（最高可市场禁入）。\n\n此项新规为中国股市的长期健康发展注入强劲制度动力，主要体现在：\n\n1. 筑牢风险防火墙，防范跨市场传染：** 新规对程序化交易（尤其高频策略）的实时监测、报撤单管控及异常交易处置，将大幅降",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1834853190233100/?app=toutiao_web&timestamp=1785345051&use_new_style=1"
+    },
+    {
+      "date": "2025-06-18",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "📈 A股牛市第二波攻势启动在即，三信号预示突破3400点！\n\n> 主力洗盘暗藏玄机，券商板块午后强势回吸，政策与技术共振点燃行情引信。\n\n🔍 一、主力低吸券商保险，资金动向验证布局\n- **券商板块强势反弹**：6月11日保险证券ETF单日涨超3%，中证800证券保险指数飙升2.72%，信达证券涨停、兴业证券涨8.78%；6月16日证券ETF龙头再涨1.48%，东吴证券领涨4.53%。  \n- **资金逆向流入**：主力借早盘抛压洗盘后，午后快速回补券商仓位。近两日券商ETF净流入3.1亿元，单日吸金2.89亿元，凸显机构低吸布局意图。  \n- **回购与政策托底**：6家券商年内回购金额达1",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1835259174204416/?app=toutiao_web&timestamp=1785345051&use_new_style=1"
+    },
+    {
+      "date": "2025-06-19",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "波浪周期视角：当前调整处于三浪二末期，主升行情临近\n\n市场调整实况与波浪定位\n今日A股延续震荡调整态势，上证指数**下跌26点，跌幅0.80%**，盘中一度击穿3370点关键支撑。从波浪理论分析，此轮调整始于5月14日3浪1高点3417点，至今已运行**24个交易日**，呈现典型的**5度角慢速下跌**特征，与4月7日-5月14日3浪1的陡峭上升形成鲜明对比——这种缓跌结构完全符合3浪2调整的技术特征。\n\n时间与结构双重验证调整尾声\n**时间维度**上，3浪2内部呈现清晰的10-10-5交易日节奏：首段10天下跌后反弹10天，当前进入第5天调整。若以ABC结构测算，**下周中将完成时间对称**",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1835350346850304/?app=toutiao_web&timestamp=1785345051&use_new_style=1"
+    },
+    {
+      "date": "2025-07-01",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "#股市的未来走势如何？#今日大盘继续站在3439之上，已经是连续第二天，如果连续三天站上，则说明突破有效，今日股指期货机构大幅减少空单7000多手，说明行情快要启动了，大三浪不可阻挡，向上空间必定超过4200。150万亿的存款资金和超低的利率，必然塑造轰轰烈烈的大牛市！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1836455237876736/?app=toutiao_web&timestamp=1785345050&use_new_style=1"
+    },
+    {
+      "date": "2025-07-01",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "今日大盘继续站在3439之上，已经是连续第二天，如果连续三天站上，则说明突破有效，今日股指期货机构大幅减少空单7000多手，说明行情快要启动了，大三浪不可阻挡，向上空间必定超过4200。150万亿的存款资金和抄底的利率，必然塑造轰轰烈烈的大牛市！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1836455145706496/?app=toutiao_web&timestamp=1785345050&use_new_style=1"
+    },
+    {
+      "date": "2025-07-02",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "A股欲盖弥彰！主力构筑90分钟和120分钟顶部结构意欲何为？大部分技术派都大喊股市要跌，因为他们看到了主力要他们看到的。踏空的散户也不敢追涨，短线获利的散户吓得赶紧兑现筹码；而狡猾的主力却在暗中吸货，股指期货昨天减仓空单7000多手，今天再度减仓空单2300手。不过再狡猾的狐狸也欺骗不了聪明的猎人！其实 ，这里就是大盘启动前的最后磨盘，消耗散户的耐心，让短线客倒在黎明之前！股市永远是少数人赚钱的地方，因为只有少数人才能透过现象看本质！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1836539295864896/?app=toutiao_web&timestamp=1785345050&use_new_style=1"
+    },
+    {
+      "date": "2025-07-21",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "大盘冲高不能追涨，可以适当高抛，等周二下午再买回。今天大盘依然没有放量，说明根本不可能马上突破3555，而融资资金增长过快，一定会引来汪汪队降温。故今日可以逢冲高减仓，等明日尾盘或周三早盘接回。切不可冒然追高，既然主力玩慢牛，我们就用一定的仓位和它玩高抛低吸，不断降低我们的持仓成本。大仓位可以持股不动，避免卖飞掉。",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1838233653651456/?app=toutiao_web&timestamp=1785345048&use_new_style=1"
+    },
+    {
+      "date": "2025-07-22",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "7月22日收评：碎步逼空显韧性，量能蓄势待东风\n\n今日（2025年7月22日）A股市场延续近期温和上涨态势，主要指数均以小阳线报收。上证指数收盘报3581.86点，上涨0.62%，这已是上证指数连续第6个交易日收阳，呈现典型的“小阴小阳、碎步上行”格局。尽管日内波动有所加大，盘中一度冲高回落，但市场整体重心稳步上移，距离3600点整数关口仅一步之遥。\n\n**关键支撑明确，震荡不足惧**\n\n当前市场的强势特征之一，是对短期均线的有效依托。作为重要的短期趋势线，上证指数5日均线今日运行至3545.80点附近，已成为近期行情坚实的支撑平台。回顾过去一周走势，指数虽屡有盘中震荡，但始终坚守于5日线之上",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1838342774942784/?app=toutiao_web&timestamp=1785345048&use_new_style=1"
+    },
+    {
+      "date": "2025-07-24",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_vague",
+      "evidence": "如何突破3674？去年10月8日的高点，将在本月被踩在脚下。目前大盘就是碎步上行，不断逼空，而且后备部队还没用，今天又是百花齐放，好不热闹。去年9月18日，全网唯一坚定看涨，让大家抄底的就是股海斜阳余晖，大家可以看我的置顶文章；4月7日，当大盘血雨腥风的时候，又是股海斜阳余晖连续发了三篇文章，让大家抄底。最近技术派不断看顶的时候，股海斜阳余晖坚定指出这是主力的技术骗线，并告诉大家连续的上涨一定会干",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1838513161110540/?app=toutiao_web&timestamp=1785345048&use_new_style=1"
+    },
+    {
+      "date": "2025-07-28",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "explicit_action",
+      "evidence": "铁粉们总问我怎么不写股评了，在这里明确地告诉大家，目前的操作最简单，就是持股不动。所以不用天天写股评。今天冲高跳水就是洗盘，大家拿住就好。牛市就是少数人赚钱，所以我也不希望文章被更多的人看到，只是对得起眼前这些有缘人。",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1838867428752524/?app=toutiao_web&timestamp=1785345048&use_new_style=1"
+    },
+    {
+      "date": "2025-08-13",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "今日下午盘中跳水，属于盘中洗盘，不要上当，继续坚定持有，不惧震荡，日线级别大三浪必上3900。",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1840321467679756/?app=toutiao_web&timestamp=1785345047&use_new_style=1"
+    },
+    {
+      "date": "2025-08-21",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "A股站稳十年高点3731点，上涨空间全面打开\n\nA股市场迎来历史性突破，沪指成功攻克3731点阻力位，创下自2015年8月以来近十年新高。此次突破并非简单冲高回落，而是以强势姿态站稳该关键点位，意味着长达十年的套牢盘被彻底消化，上涨空间已完全打开。\n\n市场表现强劲，盘中宽幅震荡却不断新高，下行即被拉起，显示强劲买盘支撑。两市成交额持续放大，近期连续多日突破2万亿元，8月18日更达到2.76万亿元的年内新高，明显高于2024年10月8日的1.04万亿水平。但这远非终点，与2015年牛市峰值时期相比，当前量能仍存提升空间。\n\n资金动向显示牛市根基稳固。北向资金连续15日净流入，三周累计净买入约60",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1841071550257168/?app=toutiao_web&timestamp=1785345047&use_new_style=1"
+    },
+    {
+      "date": "2025-08-25",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_vague",
+      "evidence": "本次行情是照妖镜，那些没有水平的大v彻底踏空，但嘴还在硬，比如梦入神机，刘昌松等，根本不懂大势，拿点技术就想打天下。其实，根据华尔街近30年的统计，靠技术炒股的赔率是85%，胜率还不如猴子选股炒股。这次牛市十年一遇的牛市，高度一定超过普遍的预期，时间跨度也会很长，现在就不断猜顶，只能误导散户。那些在抖音上卖课程的基本都是骗子，不然自己成立一个私募基金闷声发财就行了，还骗什么散户掏钱入会员，大家千万",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1841433890507840/?app=toutiao_web&timestamp=1785345047&use_new_style=1"
+    },
+    {
+      "date": "2025-09-03",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "比较大的回撤，但不用担心。这几天的连续调整已经让悲观情绪笼罩了整个市场，前期疯炒的抱团股大幅出货，绩优股也借机打压吸货。又是在血雨腥风中，股海斜阳余晖坚定地告诉大家，大盘无忧，3805附近就是调整的极限，牛市只是四分之场休息，后面还有3/4没有走完。目前决不能割肉，尤其是绩优股要放心大胆的加仓，我下午准备按计划把融资资金杀入，开始抄底。炒高的科技股可以及时止盈，切换到固态电池，或其他没有炒高的赛道。去年9月18日和今年4月7日股海斜阳余晖都精准抄底，今天也不会例外。跟着股海斜阳余晖带你穿越股海迷雾，点赞和关注就是对我最大的鼓励和支持！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1842216809049100/?app=toutiao_web&timestamp=1785345046&use_new_style=1"
+    },
+    {
+      "date": "2025-09-05",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "缩量反抽，下周还会回踩\n今天表现好的3个方向：\n一、反内卷股票，如多晶硅、锂矿；\n二、CPO与PCB股票；反弹基本收复失地；\n三，储能方向：逆变器与固态电池股票大涨。\n但这些方向都不是未来行情的主流，因此反弹不具有持续性，而且今天指数虽然反包昨日的阴线，但成交量大幅缩量，意味着下周大盘会出现回踩，真正的主线在回踩后才会出现；科技股要休息一两个月了，主线很可能是大消费，因为它涉及的面比较广，如食品，白酒，地产，航空，旅游，商场，院线等等。金融股只是用来拉大盘或者砸盘的工具，上面的意思只能是慢牛，所以不会出现2015年的狂飙，另外证券股里散户太多，主力不愿意拉。股市是博弈的市场，赚钱是世界上最难的",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1842412432743436/?app=toutiao_web&timestamp=1785345044&use_new_style=1"
+    },
+    {
+      "date": "2025-09-08",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "注意啦！固态电池和锂矿钴矿股主力要跑路了，与狼共舞的散户，要提高警惕，该撤退啦！上次我提醒散户撤退军工股不听的人，目前都被套在军工股的高岗上了。今天的盘面看，超级主力可以说是一顿王八拳，热点散乱，东拉一把西拉一把，热点持续性不强，今天开始追高买入固态电池和新能源的股民要吃套了。舆论倡导大家价值投资，而近三个月主力拉的都是科技概念股，讲故事，业绩三年内都兑现不了。目前散户要耐心一些，对自己原先持股的赛道，要有信心。不能追逐热点，不然就着了主力的道。大家还是要坚持持有真正有价值的股票，最近三年业绩稳定，市盈率低于20倍的绩优股，不能听主力（包括机构，柚子和私募）的瞎忽悠。真正的大机构很少买入市梦率",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1842673654939648/?app=toutiao_web&timestamp=1785345044&use_new_style=1"
+    },
+    {
+      "date": "2025-09-09",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "为什么证券时报提醒股民注意科技抱团股风险？因为机构抱团炒股的本质是操纵股价，最终割散户的韭菜。看看插图中的赣锋锂业，曾经被机构炒到224元，最低跌到24元，此股现在已经翻倍，但业绩亏损，提醒投资者注意风险，一旦被抱团科技股套牢，结果就是鳄鱼进去壁虎出来！所以证券时报提醒股民注意抱团股终将崩塌的风险，还特意提到2021年新能源抱团股崩盘的前例。当潮水褪去的时候，才知道谁在裸泳！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1842749476711436/?app=toutiao_web&timestamp=1785345044&use_new_style=1"
+    },
+    {
+      "date": "2025-09-19",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "今天再回踩就可以抄底了。大震荡才能利于机构换手或高低切换。3800就是机构的成本区，昨天大跌中，北向资金也在暗中吸货。一层的意思是要长牛，让居民增加财产性收入，从而拉动国内消费，所以打压是控制节奏，不是让牛市结束，所以大家不必过于担心。今天大盘如果再度回踩，要抄底大消费和大金融。打压只是一时，价值终将发光！跟着股海斜阳余晖，带你穿越迷雾，点赞和关注就是对我最大的鼓励和支持！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1843654094147648/?app=toutiao_web&timestamp=1785345043&use_new_style=1"
+    },
+    {
+      "date": "2025-09-21",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_vague",
+      "evidence": "梦若神机的头条号被封了，好事！天天看空中国股市，天天看跌！这是有多缺爹呀！这不，爹来收拾他来了，把他的账号给封了。建议头条号也把“凸教授归来”这个账号封了，这个王八天天无脑唱多，容易在股市狂热的时候诱导股民博傻，导致之后的踩踏！粉丝量超过20万的股市大V基本上都是团队运作的演员团队，坑害股民！都应取缔！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1843871736754240/?app=toutiao_web&timestamp=1785345041&use_new_style=1"
+    },
+    {
+      "date": "2025-09-21",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "今日头条总是是对真话限流量，但我仍然要说。盘后股指期货机构继续减仓2900手空单，周四减仓8000多手空单。看好下周行情，超级主力一方面在科技股上开始出货，大赚特赚；另一方面通过猛砸金融股打压指数，在股指期货上大赚特赚（周五是股指期货交割日），第三，打压大金融，把散户从里面逼出去，自己收集廉价筹码；第四，很多散户割肉金融股，买入科技股，更利于主力高位出货科技股。在股市里，充满虚伪和阴险，你要在股市里讲情怀，那你就只能在食物链的底端。主力是谁？你自己琢磨去吧？下周大盘将开启修复行情！虽然吃相很难看，但总要给金融消费者（韭菜们）以信心，不然国庆节的消费怎么起来呀？话虽说的不好听，但理儿还真是个理儿",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1843827916217344/?app=toutiao_web&timestamp=1785345043&use_new_style=1"
+    },
+    {
+      "date": "2025-09-24",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "机构抱团科技股，吃相很难看！牛市的三浪1，机构拼命拉市梦率的科技股，就是要让散户高位接货。但相当一部分人被机构成功洗脑，非要飞蛾投火，拦都拦不住。科技股90%都会退市死掉，因为科技创新节奏太快，真正成为英伟达这样的企业的概率不到千分之一。一部分机构水军不断误导舆论，目的就是把抱团机构低位买的科技股筹码，在历史高位上卖给散户。它们利用部分散户的科技情怀，大讲故事，也利用一帮人的赌徒心理，不断高位出货。十月份三季度季报时，大部分科技股都会原形毕露。所以提醒我的粉丝们，注意科技股高位的风险！不要去吃鱼尾行情！十月的绩优股行情将展开！跟着股海斜阳余晖带你穿越迷雾，点赞和关注就是对我最大的鼓励和支持！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1844113478560768/?app=toutiao_web&timestamp=1785345041&use_new_style=1"
+    },
+    {
+      "date": "2025-09-29",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "收盘后传来特大利好！今天老登们扳回一局，证券保险白酒大涨，股海斜阳余晖最近一直在科技股上止盈，转而投资证券，保险和白酒，今天得到了回报和验证。而且我在之前的文章中不断提到主力要切换热点了，10月份将是蓝筹股的行情，市梦率的科技股该歇歇了。可是就是有那么一群不知天高地厚的家伙，不断留言诋毁我，结果这些家伙都被科技股套在了高处。去年9月18日股海斜阳余晖精准预测了大底（看我置顶文章），今年4月7日又三次发表文章，告诉大家见二浪大底（不信的可以回看我过往文章）。在股市，股海斜阳余晖说是第二，没人敢说第一。夏虫不可语冰，不喜欢看我文章的，请你走开。你又没付钱，别在我这抖机灵。我的文章只是给我的忠实粉丝",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1844593348448268/?app=toutiao_web&timestamp=1785345041&use_new_style=1"
+    },
+    {
+      "date": "2025-10-09",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "节后A股突破3900点，科技有色领涨券商蓄势",
+      "index": "上证指数",
+      "source_url": "http://toutiao.com/group/7559127095528636928/?app=news_article"
+    },
+    {
+      "date": "2025-10-10",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_vague",
+      "evidence": "昨天股海斜阳余晖就发出了明确的提示，大部分科技股已经见顶，大盘将切换板块，证券及绩优蓝筹股将是下一阶段的热点和主流。当时很多赌徒都跳出来指责余晖，在我的评论区胡言乱语，最终都被余晖拉黑，余晖已经经历了三次完整牛熊周期，可以说是中国股市实战派的顶级专家，不尊重人的几只苍蝇今天就开始碰壁，科技股果然大跌，后面会阴跌不断，这些吃套的狂徒，只能说是活该。\n        回到盘面，大盘的高低切换不可避免，",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1845563903182860/?app=toutiao_web&timestamp=1785345041&use_new_style=1"
+    },
+    {
+      "date": "2025-10-12",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "不用担心下周股市会大跌啦！证监会于周六下午召开了机构座谈会，大小机构基本都在场。市场波动前夕，监管层通过一场高规格座谈会展现了维护资本市场稳定的坚定决心。\n\n10月11日，监管层召集券商、保险、公募及私募基金等市场主体召开专题座谈会，就近期可能出现的市场波动进行前瞻性研判与部署。\n这一举措体现了监管层对市场的前瞻性把握与主动应对，展现出常态化稳市机制下的管理能力，进一步提振了机构投资者的信心。\n\n01 前瞻布局，精准把握市场脉搏\n\n此次会议的直接焦点在于“下周可能出现的市场波动”，显示出监管层已精准预判到外部情绪传导或内部资金调整可能引发的震荡风险。\n\n通过提前沟通部署，监管层打破了“政策应对",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1845732903038988/?app=toutiao_web&timestamp=1785345041&use_new_style=1"
+    },
+    {
+      "date": "2025-10-14",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "知行合一！早晨开盘前股海斜阳余晖已经提示大家科技和有色股的风险，开盘按计划撤出了科技股和有色股，买入了银行股，保险股和证券股，目前都属于盈利状态。炒股永远要有风险意识，不要被市场情绪所左右。最近两周股海斜阳余晖一再提示科技股和有色股的风险，但很多投资者置若罔闻，还留言讥讽，殊不知在股市比得是谁活的更久。去年9月18日，股海斜阳余晖第一个指出了大盘底部和拐点（见置顶文章）。今年4月7日余晖又在3040果断抄底，并在盘中连发三次文章，提醒散户朋友抄底（回看我4月7日文章）。股海斜阳余晖历经三次牛熊完整周期，是基本面，资金面，技术面结合战法的创始人。跟着股海斜阳余晖带你穿越股海迷雾，行稳致远，点赞和",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1845927966097472/?app=toutiao_web&timestamp=1785345040&use_new_style=1"
+    },
+    {
+      "date": "2025-10-28",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_vague",
+      "evidence": "今天突破了一下四千，就又跌破了，主力为了慢牛也是煞费苦心。压着大金融，不断引诱散户接盘高位的科技股和有色。可惜很多老登们都身经百战，死活不上当。而小登们已经上当了，但他们没什么钱，资金量太小，主力出不了货，所以目前主力也很难受，就像便秘一样。6月份大盘还在3400时，我画了附件中的目标图，当时几乎没人认为大盘会到4000点，然而今天已经到达4000，后面的4200也会突破。好的股评总是会预见未来，",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1847228004338780/?app=toutiao_web&timestamp=1785345039&use_new_style=1"
+    },
+    {
+      "date": "2025-11-02",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "10月31日，证监会与基金业协会同步发布公募基金业绩比较基准新规的征求意见稿，推动36万亿公募基金投资行为回归规范。此举旨在遏制长期存在的风格漂移问题，将“代客理财”的软约束转为硬要求。以下从五大关键角度解析其潜在影响。\n\n一、抑制风格漂移，缓解追涨杀跌\n部分基金存在“名不副实”现象，如“低碳”主题基金重仓白酒，加剧板块波动。新规要求业绩基准与基金定位严格匹配，且不得随意变更，促使基金回归既定赛道，减少跟风炒作，从而平抑市场情绪和轮动节奏。\n\n二、绑定长期业绩与薪酬，遏制短线炒作\n新规明确基金经理薪酬须与长期业绩挂钩，长期业绩低于基准则绩效薪酬应下降，且三年以上考核权重不低于80%。这将引导基",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1847642951944256/?app=toutiao_web&timestamp=1785345039&use_new_style=1"
+    },
+    {
+      "date": "2025-11-03",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_vague",
+      "evidence": "论基金禁止漂移对科技报团股的伤害。今年8月9月很多科技股都实现了市梦率。靠着炒概念实现了翻几倍，如寒王。背后的推手不是游资而是抱团基金，他们一面讲故事，一面在高位派发科技筹码。他们为了让散户去追科技股，不断打压证券，保险等绩优蓝筹。吃相如此难看，终于激怒了1层，出台了基金行为规范，打击抱团行为。那么你一旦在顶部买入像寒王，易中天等市梦率科技股，可能永远也不会解套了，科技股板块整体会趋冷。1层治理乱",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1847729070756864/?app=toutiao_web&timestamp=1785345039&use_new_style=1"
+    },
+    {
+      "date": "2025-11-05",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "给你一记重拳，直接砸向那帮抱团薅羊毛的公募基金经理。\n\n周五晚上，多少人失眠了我不说。两份文件拍桌上，好家伙，直接把牌桌给掀了！\n\n说白了，就是以后基金经理别想再“说一套做一套”。你跟基民画大饼说自己是稳健均衡风，结果反手就把钱全怼进TMT里冲浪——这叫“风格漂移”，以后，此路不通！\n\n你选了啥赛道，就老老实实待里边。别总想着既要又要还要。\n\n跑不赢自己定的业绩基准？扣钱没商量！\n\n持仓跟说的完全两码事？写检讨！挨问责！没得跑！\n\n这下可热闹了，以前那批靠赌风口、梭哈赛道一战封神的“明星经理”，好日子算是到头了。\n\n肯定有人撇嘴：你把人家手脚都捆成粽子，还怎么帮我们赚超额收益？\n\n格局小啦兄弟",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1847900129179712/?app=toutiao_web&timestamp=1785345039&use_new_style=1"
+    },
+    {
+      "date": "2025-11-14",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "牛市结束了吗？最近两个月把散户折磨的很痛苦，但对于余晖这样的高手，主力再耍花招也瞒不过猎人的眼睛。今天的下跌不仅因为外围市场下跌，也因为主力做最后的洗盘，只有在凶狠的下跌中，主力才能完成最后的高低切换，从而开启新一波的主升行情。下周上半周，大盘将完成最后的下跌，新的行情将在下半周开启。主流板块将是大金融和大消费。余晖最近都比较忙，没有及时更新，担心粉丝们过不好这个周末，特地告诉大家，磨叽行情就要结束了，新的主升浪就在下周下半周开启。大家安心过周末，牛市依旧在，几度夕阳红！跟着股海斜阳余晖带你穿越股海迷雾，点赞和关注就是对我最大的鼓励和支持！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1848772287834124/?app=toutiao_web&timestamp=1785345037&use_new_style=1"
+    },
+    {
+      "date": "2025-11-20",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "今天大盘的走势正如余晖所料，高开低走，因为利好太突然，主力抢跑跑不过散户，干脆高开低走，继续打击散户的情绪，但今天中国某行再度创新高，我是十一之后介入的，现在已经盈利20%。今天地产也是大涨。大金融和大消费将是下一阶段的主角，今天证券高开低走也可以说是最后的洗盘，余晖上周就说了，周四大盘将转势，新的大行情马上展开！能坚持持有大金融和大消费的投资者将会得到可观的回报！对于投资，耐心要比聪明重要的多！跟着股海斜阳余晖带你穿越股海迷雾，点赞和关注就是对我最大的鼓励和支持！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1849281843675200/?app=toutiao_web&timestamp=1785345037&use_new_style=1"
+    },
+    {
+      "date": "2025-11-24",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "上周的暴跌出乎所有人意料，今天高位的锂矿股票大幅补跌，几乎跌停。场内的人气已经被打散了，人们已经不在相信牛市。在这悲观的时候，股海斜阳余晖要给粉丝朋友们打打气。市场的短期走势是无法预料的，但市场又是有规律的，我们不能忘记初心，那就是一层为什么要发动这轮牛市，它的目的达到了吗？储蓄搬家了吗？消费拉动了吗？大规模的科技股上市完成了吗？金融强国战略实现了吗？当你能认真回答这一连串的问题的时候，这些答案会告诉你，牛市还在。那你还恐慌什么呢？牛市一定是在绝望中诞生，在怀疑中成长，在疯狂中死亡。这就是规律，4000点大部分散户都没赚到钱，何谈疯狂？4000点不过是个起点，但为什么大盘突然暴跌呢？因为预期过",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1849664086932512/?app=toutiao_web&timestamp=1785345037&use_new_style=1"
+    },
+    {
+      "date": "2025-11-27",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_vague",
+      "evidence": "大盘实际调整是从8月23日开始的，已经调整3个月了。今日大盘继续缩量，离变盘的日子也就越来越近了。盘后，股指期货机构减空3000多手，净空单量已经低于4月8日启动之前。很多散户已经熬不住了，但胜利只属于坚持者。牛市还在，也将进入它的下一阶段，也是主升阶段，黎明前的黑暗总是最惨烈的，大多数人都会倒下，唯有孤勇者能看到黎明。四千五你一定能看到，但那时你是否依然在场内？忍无可忍，还需再忍！跟着股海斜阳余",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1849945571216384/?app=toutiao_web&timestamp=1785345036&use_new_style=1"
+    },
+    {
+      "date": "2025-12-04",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "目前依然是磨底阶段，今天证券板块已经率先企稳，科技板块由于摩尔制程明天上市，比较躁动，但不能追高科技股。目前的阶段就是比信心，对于大多数没有弹药的散户，完全可以躺平休息，不用天天盯盘。眼不见心不烦，主力对你也就无法进行心理折磨了。其实，主力就怕这种人！对于有弹药的散户，就可以逐级加仓绩优股，科技股调整不充分，下一阶段涨幅不会太高，大概率是区间震荡。上个月我就告诉大家12月10日美联储降息节点，将成为大盘启动点，还有三个交易日了，大盘将彻底转势。散户朋友们再坚持一下。跟着股海斜阳余晖带你穿越股海迷雾，点赞和关注就是对我最大的鼓励和支持！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1850576434159616/?app=toutiao_web&timestamp=1785345036&use_new_style=1"
+    },
+    {
+      "date": "2025-12-05",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "12月份将重新站上4000点！今日上午一派死气沉沉，3000多家股票下跌。下午1：29分，证券板块突然发力，中银证券率先涨停，大盘迅速站稳3900，盘面为之一新，4300多家股票上涨。最近两天，股海斜阳余晖一直在文章中强调，大盘目前处于黎明前的黑暗，号召散户朋友们再忍耐一下，今天果然守得云开见月明。投资比的不是谁聪明，而是谁看得更准，谁更有耐心！11月份我就一再强调12月份是转势之月，今天可以肯定的告诉大家12月份会站在4000之上。本人持有的保险股今天也是大涨，下一阶段的热点一定是大金融和大消费。跟着股海斜阳余晖，带你穿越股海迷雾，点赞和关注就是对我最大的鼓励和支持！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1850649012197388/?app=toutiao_web&timestamp=1785345036&use_new_style=1"
+    },
+    {
+      "date": "2025-12-07",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "这回狼真的来了吗？\n今年各大媒体都大喊“牛市”，但老百姓的获得感却没有，除了少数抱团的科技股和有色股，90%的散户都没赚到钱 ，从而没有实现刺激消费的目的。根本原因是某些人自作聪明，发明所谓“慢牛”，造成小火烧不开大锅冷水。所以股市没有“赚钱效应”也就没有外部资金的广泛参与，老百姓的财产性收入没有增长，经济继续萎靡。所以周五出利好：险资下调风险因子 ，周六又出利好：放松券商加杠杆限制。目的就是要形成快牛，制造赚钱效应，这样才能吸引外资和储蓄资金搬家进股市。国内外股市没有所谓的“慢牛”，只有长牛，“慢牛”就是个伪命题，等于慢性自杀，以后谁再提“慢牛”，大家就喷它，赏它几个耳光。\n\n\n大盘指数已经",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1850806734871552/?app=toutiao_web&timestamp=1785345036&use_new_style=1"
+    },
+    {
+      "date": "2025-12-16",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "上午大盘创了新低3816.06，比11月24日的3816.58低了一点点，严格意义上说，也算走完了abc结构。目前大盘继续磨底，等日线kdj到底。最坏的时候已经过去了，11月股海斜阳余晖就指出12月份是转势之月，也是跨年行情的启动之月。目前大盘在8月25日开始的调整，已经到了终点，新的大行情很快就会展开，新的阶段的主流热点会是大金融（保险和证券）和大消费（乳制品，农林牧鱼，商超零售，白酒，肉类，汽车，家电，地产等），选取业绩增长的股票，不放松。股市比拼的就是认知和耐心，明年会有一波超级大牛市！冬播春收正当时！跟着股海斜阳余晖，带你穿越股海迷雾，点赞和关注就是对我最大的鼓励和支持！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1851634196725952/?app=toutiao_web&timestamp=1785345034&use_new_style=1"
+    },
+    {
+      "date": "2025-12-18",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "前途是光明的，道路是曲折的。一早我就提醒大家不要追高证券股。开盘我就抛出了中金公司，尾盘我又买回了。昨天股指期货加空14000手，但今天沪指红盘，沪深300指数跌了0.59%，相比加空程度，大盘还是比预期的强，而盘后股指期货机构大幅减空7000多手，说明明天依然处于震荡，不会大跌。明天是股指期货交割日，也是日本鬼子是否加息的节点，过了这周，下周大盘将出现明显的行情，月底，大盘再上四千的可能性很高。目前就是调整的末期，黎明前的黑暗，忍别人所不能忍，才能有别人望尘莫及的收获！目前股海斜阳余晖积极布局保险，证券，在大消费方面也布局了高端白酒，猪肉，零售等。冬播春收，静待花开就好！跟着股海斜阳余晖，带",
+      "index": "沪深300",
+      "source_url": "https://m.toutiao.com/w/1851841358751872/?app=toutiao_web&timestamp=1785345034&use_new_style=1"
+    },
+    {
+      "date": "2025-12-22",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "大盘终于站上30日线和60日线！但今日主力资金却是流出的，盘后股指期货机构大幅加空5000多手。看来明天大盘又要经受空方打压，只有放量站上3936才能转危为安。目前主力机构继续调仓换股，为明年的行情做准备，个人比较看好保险股，最近持续增仓。消费股要等白酒企稳后才能有好的表现。证券股总是被主力压制，另一方里面的散户太多，主力继续磨底。上周已经说了，大盘启动点在元旦前后。也就六七个交易日啦！继续保持耐心！跟着股海斜阳余晖，带你穿越股海迷雾，点赞和关注就是对我最大的鼓励和支持！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1852217833387084/?app=toutiao_web&timestamp=1785345034&use_new_style=1"
+    },
+    {
+      "date": "2025-12-25",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "等待放量大涨！上个月我就说这个月是转势之月，12月16日我又明确指出3815就是最低点，大盘已经走完abc调整结构，将进入反转。转眼已经7连阳了。目前大盘再往上走就需要放量了，而且需要大阳线来拓展向上的空间，大金融将是先锋，我已经持续加仓保险和证券。去年9月18日，股海斜阳余晖是唯一精准预测2689是底部的股评，不信的看我的头条置顶文章，今年4月7日，我又在当天连发三次文章，提醒散户朋友们，大盘到底了，不信的可以去查。这次股海斜阳余晖又在12月16日精准指出转折点，告诉大家跨年行情已经开始，春节前你会收获大红包。在关键时刻，股海斜阳余晖总能判断出转折点，这就是真正的实力。股市的变量很多，必须综",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1852472801429632/?app=toutiao_web&timestamp=1785345033&use_new_style=1"
+    },
+    {
+      "date": "2025-12-26",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "盘中快速跳水，要调整了吗？今日上午大盘高歌猛进，工业金属表现最好，如：江西铜业，中国铝业等。有色的业绩确实大幅增长，但价格也是周期性的，一旦进入下行周期，股价还是从哪里来回哪里去。做有色不是不可以，是要做好止盈和防守，一旦形成下跌趋势，不要再碰。今天中午11：13超级主力突然砸盘，证券股冲高回落。很多股评又在大喊要调整了，股海斜阳余晖告诉你今天已经是8连阳了，下周还会9连阳，今天的阳十字K线只是上涨中继。再说一遍，跨年行情已经展开，要坚定看多做多。下周大盘会出现中大阳线，㊗️大家周末愉快！跟着股海斜阳余晖，带你穿越股海迷雾，点赞和关注就是对我最大的鼓励和支持！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1852559701904524/?app=toutiao_web&timestamp=1785345033&use_new_style=1"
+    },
+    {
+      "date": "2025-12-29",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "大盘止步八连阳，要大跌了吗？今天上午大盘指数表面很强，仿佛要收出九阳真经，可是盘面显示下跌家数3500多家，下午终于跳水！原因还是超级主力没有启动新的热点，这几天的拉升，依旧是启动高高在上的科技和有色，造成曲高和寡。今天江西铜业终于构造了头部，赣锋锂业等新能源也加紧出货走人。又一批追涨的散户被坑杀，机构资金撤出高价股后，悄悄继续低吸低价绩优股。大盘现在调整反而比较健康，跌幅不会很深，因为依然属于调仓换股和高低切换。完成调仓后，主线将在元旦后走出主升。春节的红包行情已经呼之欲出，耐心等待就好！跟着股海斜阳余晖带你穿越股海迷雾，点赞和关注就是对我最大的鼓励和支持！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1852825020596236/?app=toutiao_web&timestamp=1785345033&use_new_style=1"
     },
     {
       "date": "2026-01-13",
-      "direction": "bullish",
-      "strength": "moderate",
-      "specific": "directional_clear",
-      "evidence": "今天要见证降龙十八涨…春节前必上4500",
-      "index": "上证指数"
-    },
-    {
-      "date": "2026-03-02",
       "direction": "bearish",
       "strength": "moderate",
       "specific": "directional_clear",
-      "evidence": "技术上出现了日线级别的钝化，一旦形成顶部结构，至少要调整24个交易日，目前要谨慎，不能追高",
-      "index": "上证指数"
+      "evidence": "徐峥的32元牛肉面馆（峥记牛肉面）已于2022年初在上海徐汇区悄然关闭，店面已转让，会员费用已退还。闭店主要因2021年牛肉等原材料涨价、租金人工高企，成本压力剧增，店家未涨价却悄悄减牛肉分量，引发老客不满，口碑崩塌，客流骤降。",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1854154155409420/?app=toutiao_web&timestamp=1785345031&use_new_style=1"
+    },
+    {
+      "date": "2026-01-14",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "盘中精准预判冲高回落！很多新来的粉丝不知股海斜阳余晖的水平和实力，以为是瞎蒙的。其实中午公布的提高融资保证金比例这个文件的内容和公布时间，早就被超级主力获知，对于超级主力来说，没有任何秘密可言。超级主力上午故意诱多，他们知道中午公布的时间，下午一开盘就合力打压，快速洗盘。那余晖又是怎么提前洞悉主力的计划呢？因为余晖通过分析盘面，就看出了有诈。其一，上午属于缩量上攻，一般为诱多；其二，盘面热点杂乱无章，这就像当年粟裕一听74师的炮声，比平时杂乱，就知道敌人要跑。其三，主力的出货是连续的，昨天已经在科技股上出了一部分了，今天诱多反拉，就是为了出更多的货。余晖用20%的仓位不断高抛低吸，降低成本。今",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1854276725477376/?app=toutiao_web&timestamp=1785345031&use_new_style=1"
+    },
+    {
+      "date": "2026-01-16",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "机构大幅加空！下周还会回踩。盘后股指期货机构大幅加空7000多手，说明下周还会回踩，回踩区间就在4030到4050之间。有很多大v看到3977—3983的缺口，我认为不大可能，除非出现中美毛衣战再开打的利空。因为这个缺口是突破性缺口，而且是盘整了4个月后的突破性缺口，一旦补上，就说明牛市结束了。除非发生战争或金融危机，否则这轮牛市不可能结束。目前某会开始要打击妖股了，下周会有很多概念股跳水，另外随着业绩将要公布，很多光炒概念，没有真业绩的妖股要跑路了。下周就是高低切换的一周，调整结束后继续创新高。跟着股海斜阳余晖带你穿越迷雾，点赞和关注就是对我最大的鼓励和支持！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1854470272443404/?app=toutiao_web&timestamp=1785345031&use_new_style=1"
+    },
+    {
+      "date": "2026-01-29",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "盘中科技股继续大跳水！股海斜阳余晖一直提醒大家不要追高概念科技股，要看业绩！老登股，比如地产，今天反而大涨！新城控股，招商蛇口本月都涨了27%以上，反而买入科技股的开始吃面。",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1855628200948736/?app=toutiao_web&timestamp=1785345028&use_new_style=1"
+    },
+    {
+      "date": "2026-01-30",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "终于跌破4080，今天盘中最低4064，跌破了4080，走出了abc结构，那么从4190开始的调整结束了。下周将开启新的行情！本周由于华尔街疯狂炒作贵金属和有色金属，造成A股的贵金属和有色股出现加速赶顶，由于场内资金有限，资金介入有色和贵金属太深，造成其他板块缺血。由于贵金属和有色的疯狂，超级主力不想火上浇油，因此持续打压大金融，造成春节行情推迟。今天白银暴跌17%，金价也大幅跳水，估计下周风险可以释放完毕，超级主力那时才会发动新的行情，正所谓“一鲸落万物生”！资金有限的情况下，只能如此。本周部分科技股主力开始撤退，投资者要在这些股票上及时止盈或止损，避免被阴跌套死。股海斜阳余晖依然拿着优质地",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1855747186888716/?app=toutiao_web&timestamp=1785345028&use_new_style=1"
+    },
+    {
+      "date": "2026-02-02",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "恒生指数大跌2.89%，A股科技股暴跌，导致大盘跌破30日均线，直奔60日均线，估计明日破掉60日均线，制造极度恐慌后，才会止跌反弹。牛市多急跌，如同去年4月7日一样，不从有色和科技股出逃资金，切换就不能成功。目前的切换已经进行到末期，跌破60日均线就会见底。前两周磨磨蹭蹭，不阴不阳的，反而很难切换热点。C浪杀跌就是比较狠，否则吓不走散户。不过凶猛的下跌也就释放了风险，后面才能涨得好，事物总是辩证统一的。前期爆炒的概念股有色股，终究会现了原形，坚持价值投资才是正道和王道。股海斜阳余晖对后市反而看高一线，原来的4500，可以看到4800。暴跌缩短了调整的时间，滤掉了垃圾股，辩证的看，也是好事！跟",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1855997177534464/?app=toutiao_web&timestamp=1785345028&use_new_style=1"
+    },
+    {
+      "date": "2026-02-02",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "大盘终于到底了，4024就是低点。大盘创出4190新高后，走出了abc回调结构。股海斜阳余晖在1月21日的股评中就明确大盘调整的低点就在4030到4050之间，不信的可以回看我1月21日的文章。大盘这两周都在进行高低切换，前期大涨的板块科技股和有色股出现了明显的出货现象。未来引领大盘向上的一定是金融，白酒，基建，大消费等板块中的绩优股。目前散户也要做好切换，坚持价值投资。牛市绩优股的主升行情就要启动了。跟着股海斜阳余晖带你穿越迷雾，点赞和关注就是对我最大的鼓励和支持！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1855992163963916/?app=toutiao_web&timestamp=1785345028&use_new_style=1"
+    },
+    {
+      "date": "2026-02-03",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "再次精准预测底部！今日上午大盘到达4002，股海斜阳余晖在盘中提醒大家已经见底，赶紧抄底。大部分散户已经如惊弓之鸟，不敢相信大盘已经见底，结果下午大盘节节走高，最终报收在4967.74，涨了1.29%。而个股更为活跃，可以说是刚出ICU就进KTV。航天商业，太空光伏，有色等大幅反弹。股海斜阳余晖上次精准预测了3815的低点，这次也不会错，4002将成为春季行情的起点，这个春季行情将延续到5月份，高度4800以上。跟着股海斜阳余晖带你穿越迷雾，点赞和关注就是对我最大的鼓励和支持！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1856096451390476/?app=toutiao_web&timestamp=1785345028&use_new_style=1"
+    },
+    {
+      "date": "2026-02-04",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_vague",
+      "evidence": "昨天我在盘中说了4002就是底，收盘就4067了，今天大盘进一步走强，收盘在4102。12月份我就说26年老登股要走强，那些嘲笑老登股的投资者，好好看看白酒，地产，保险，煤炭，航空等老登股，都已经盘出了底部，开始走强。大A是资金推动型股市，风水必然轮流转，今年以来科技股已经开始退潮，已经由全面进攻转为局部进攻了，而老登资产迎来了春天。盘后股指期货机构大幅减空近6000手，明天大盘还会上涨。跨春节行",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1856206372252672/?app=toutiao_web&timestamp=1785345028&use_new_style=1"
+    },
+    {
+      "date": "2026-02-09",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "由于预测太准，被主力盯上了，只好换个吉利的名字，给铁粉们最准的预测。今日走势非常重要，超级主力已经按耐不住，大盘站稳了20日线和5周均线。明日大盘完全具备向上攻击的条件，收中大阳的可能性比较高。收盘后股指期货机构小幅加空1000多手空单，不会影响大局。本轮行情会跨越春节，整个2月份还剩8个交易日，但收获会很大！马年会迎来快牛，因为马本身就跑得快。跟着吉星高照，带你财源滚滚，点赞和关注就是对我最大的鼓励和支持！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1856641830682636/?app=toutiao_web&timestamp=1785345027&use_new_style=1"
+    },
+    {
+      "date": "2026-02-11",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "变盘在即，继续缩量！今日大盘进一步缩量，可以说已经到了极致。当然，比去年12月18日的量还是大了一点点。所以明日可以继续缩量，但弹簧压制也是有极限的，压得越狠，弹得越高。变盘已经箭在弦上，只等超级主力认为合适的时机，向上变盘的概率在90%以上。我们散户耐心等待就好。最近上面指导各家金融机构，规避美债风险敞口，人民币升值明显，估计超级主力在等一个点火的契机。有些散户，幻想每天赚钱，这是不现实的，股市又不是你家提款机，记住：财不入急门。吉星高照写股评是分析给有缘人的，提供高质量的分析结论又不收钱，但总有些吃免费餐还砸锅的人 在评论区胡说八道，吉星正告这些人，不想看别看，凡是胡说八道的一律拉黑，让你",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1856820270093324/?app=toutiao_web&timestamp=1785345027&use_new_style=1"
+    },
+    {
+      "date": "2026-02-13",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "今天早晨已经发文，春节红包要泡汤，结果果然如此。原以为超级主力要个脸，但没想到脸也不要了，以下跌收盘，股市可以说是龙头蛇尾呀。主力为了榨干散户的筹码，故意打压，就是要骗走没有耐心和信心的散户手中的筹码。为了这个目的，主力的吃相很难看。不过吉星高照早已看穿主力的猥琐，坚定持有绩优股，春季行情将在3月份大放异彩。美国由于在就业数据上大肆造假，很多海外资本逃离美国股市，它们开始看好中国资产，人民币也在不断升值，很多海外资本会涌入中国股市，所以2026年股市依然会很牛，要坚定信心。蛇年股市走得是蜿蜒曲折，扭扭捏捏。马年股市一定会走得万马奔腾，马上发财！放松一下，享受与家人过年的快乐！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1857005640632396/?app=toutiao_web&timestamp=1785345027&use_new_style=1"
+    },
+    {
+      "date": "2026-02-25",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "今天上午证券板块雄起了一下，但下午就又大幅回撤了，很多散户开始聒噪，大喊证券又被打压了。其实，今天证券的回落是主力故意为之，就是让短线客撤退，所以明天证券看中阳，大盘会开始起涨。不过每天猜涨跌对大多数散户是没有意义的，因为你不是在做股指期货。我们做的是中长线，而牛市目前只走了一半，所以没必要每天关注市场，拿住自己手里的筹码就好！春季行情会徐徐展开，坚定信心，耐心等待！跟着吉星高照带你财源滚滚，点赞和关注就是对我最大的鼓励和支持！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1858085069829132/?app=toutiao_web&timestamp=1785345026&use_new_style=1"
+    },
+    {
+      "date": "2026-02-26",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "该涨不涨，就只能下跌。昨天美股以及韩日股市都是大涨，唯独龙国股市下跌。今天如果跳空高开，则会出现连续大涨。但超级主力今日继续打压吸筹，启动的时间只能放在下周了。目前持有白酒，地产，保险，证券，基建等低位绩优股的股民不用有任何担心，牛市才走完上半场，下半场会出现普涨，所以目前就是坚定信心，耐心持股，不要追高买入高位股就好，不然主力一旦卖拐成功，腾出资金再突然拉起低位绩优股，这些追高的股民将面临两边挨打的局面。牛市初期靠勇气，中期靠耐心，后期靠理智。目前阶段不需要高智商，需要的是耐心。忍常人所不能忍，才能赚常人所不及的利润。目前锁仓不动，该干嘛就干嘛，到6月再看账户。大道至简，不要把赚钱搞复杂了，",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1858156111900684/?app=toutiao_web&timestamp=1785345026&use_new_style=1"
+    },
+    {
+      "date": "2026-02-27",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "把悬念留给了下周！大盘磨磨唧唧的收盘了，月线是带下影线的小阳线，周线也是。目前一直没有新的热点出现，另外龙国已经通知公民离开伊朗，估计靴子快落地了，这样股市的担心也就没有了，三月份的春季行情该启动了。牛市下半场希望是普涨而不是结构性行情，因为散户很难抓住主线。当然普涨之后就是牛市的尽头，但宁可牛市早死，也比现在这种死耗着强。牛市如果不能让股民赚钱，也就毫无意义，还不如早早结束。下周将出现大的转折。跟着吉星高照带你财源滚滚，点赞和关注就是对我最大的鼓励和支持！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1858281893260288/?app=toutiao_web&timestamp=1785345026&use_new_style=1"
+    },
+    {
+      "date": "2026-03-01",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "利空出尽就是利好！中东的靴子终于落地，黄金白银和石油下周会短线冲高，但属于利好落地就是利空，所以黄金白银和石油会高开低走。而二月份吉星高照就告诉大家，超级主力迟迟不发动行情，就是因为有靴子没落地。现在最大的利空兑现，反而是好事，反而有利于下周大盘彻底转势。所谓慢牛就是磨叽牛，这样的牛市老百姓不需要，还不如一轮短命的疯牛，因为慢牛就是操纵市场，然后轮番炒作散户没有的板块，最终把你诱多在山岗上。所以以后谁再提慢牛，大家就可以一起喷它。春节行情会迟到，但不会缺席。从下周开始，春季行情就要启动了。跟着吉星高照带你财源滚滚，点赞和关注就是对我最大的鼓励和支持！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1858429080078336/?app=toutiao_web&timestamp=1785345026&use_new_style=1"
+    },
+    {
+      "date": "2026-03-09",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "慢牛的害处已经暴露无遗！没有赚钱效应，因为90%的投资者都赚不到钱，只是指数虚涨。既拉动不了消费，也不能引导储蓄资金入市。慢牛已经演变成了熊市，那么接下来就要拨乱反正了，用一场酣畅淋漓的快牛狠狠地抽那些自作聪明的家伙一记响亮的耳光。今天4052形成了双底结构，明日会继续反弹。一旦大盘再次突破4190，快牛行情就该正式启动了。",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1859195837811788/?app=toutiao_web&timestamp=1785345026&use_new_style=1"
+    },
+    {
+      "date": "2026-03-10",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "大盘依然处于磨底中，因为美伊战争还没有结束，石油危机的警报还没有结束，各国股市的超级主力都密切关注着战争的走向，谁也不敢贸然发动大行情，都在观望中。所以近期股市还要磨蹭一段时间，真正发力应该要到月底了。那时黄毛也来华访问了，所有靴子都会落地。股市所有的干扰因素一一化解，超级主力才敢下场大干一场。所以这周依然是磨底，没什么看头。大家也不用天天操心，拿着优质筹码，躺平就好！跟着吉星高照带你财源滚滚，点赞和关注就是对我最大的鼓励和支持！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1859286704714752/?app=toutiao_web&timestamp=1785345024&use_new_style=1"
+    },
+    {
+      "date": "2026-03-11",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "一个好现象出现了！今天大盘站上4129，短期均线走好。另外，最好的现象是科技股出现下跌，而资金开始回流银行，保险和证券。未来行情，只有启动大金融，大盘才能行稳致远。全球的流动性已经比之前差很多，造成讲故事讲概念的科技股已经开始转势了，开启阴跌走势。资金不从科技股出来，大金融和大消费就起不来。所以绩优股的春天马上来临。明天大盘还会反弹，但不要追高，因为大涨后，还有一次快速回踩。之后就是连续上涨行情。跟着吉星高照带你财源滚滚，点赞和关注就是对我最大的鼓励和支持！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1859366330993948/?app=toutiao_web&timestamp=1785345024&use_new_style=1"
     },
     {
       "date": "2026-03-16",
       "direction": "bullish",
-      "strength": "moderate",
+      "strength": "strong",
       "specific": "directional_clear",
-      "evidence": "目前就是底部区域（M5喊底偏早，差5%）",
-      "index": "上证指数"
+      "evidence": "正如我周五的预测，大盘展开了小C浪的杀跌，并且跌破4052（小A浪的低点），而且大盘已经出现60分钟级别底背离。那么一些前期调整充分的板块，已经见底。至于大盘指数，可以今天见底，或继续创新低，形成更大级别的底背离。所以目前就是底部区域，散户朋友不用过于担心。中东战争的影响已经越来越小，中国的牛市还要继续，特朗普访华的筹码已经很少了，他爱来不来，中国也不会再给他脸，也不会配合他营造什么“历史时刻”。这家伙从来是个没有诚信和底线的自私商人。当中美关系和中东战争的两个靴子落地，大盘在底部盘整一下，就会开启新的主升行情。跟着吉星高照带你财源滚滚，点赞和关注就是对我最大的鼓励和支持！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1859790168028172/?app=toutiao_web&timestamp=1785345024&use_new_style=1"
+    },
+    {
+      "date": "2026-03-17",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "昨天已经精准预测，大盘到底了，今天这跟中阳线是放量的，主力开始干活了。尤其是证券股放量大涨，极大的激发了市场人气。但今天不能追高，大盘大概率还会回踩，所以早盘吉星高照适当减了一成仓位，等待回踩再买回。目前依然是底部区域，不要用大仓位做短线，否则容易卖飞了。股市的春天虽然迟到些，但它终究还是来了。科技股今天只是止跌，不建议再买，下一阶段的热点一定是大金融，地产，白酒，基建等绩优股。跟着吉星高照带你财源滚滚，点赞和关注就是对我最大的鼓励和支持！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1859875921284108/?app=toutiao_web&timestamp=1785345024&use_new_style=1"
+    },
+    {
+      "date": "2026-03-23",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "explicit_action",
+      "evidence": "3799就是大底，短中期风险已经充分释放，可以补仓了。",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1860433080947712/?app=toutiao_web&timestamp=1785345024&use_new_style=1"
     },
     {
       "date": "2026-03-23",
       "direction": "bullish",
       "strength": "strong",
       "specific": "explicit_action",
-      "evidence": "3799就是大底，短中期风险已经充分释放，可以补仓了（实际3795，偏差仅4点）",
-      "index": "上证指数"
+      "evidence": "目前可以抄底了，短线已经超跌，不管是短线还是中线，都风险不大了。",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1860415520048128/?app=toutiao_web&timestamp=1785345024&use_new_style=1"
+    },
+    {
+      "date": "2026-04-01",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "美伊有停战出现可能，各国股市大涨，韩国股市大涨7%，A股反弹幅度还是比较小的。目前A股属于小4浪反弹，可能还有小5浪最后一杀。但如果明后两天A股大涨，那么可能直接启动行情，也就是说不是5浪下跌结构，而是abc下跌结构，然后反转。总之目前就是底部区域，正所谓“底部不折腾”，散户朋友们拿住筹码才是王道。4月是春花烂漫的时节，希望大A能走出牛皮市，真正像张雪机车一样让世界侧目。跟着吉星高照，带你穿越股海迷雾，点赞和关注就是对我最大的鼓励和关注！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1861277950275724/?app=toutiao_web&timestamp=1785345023&use_new_style=1"
+    },
+    {
+      "date": "2026-04-02",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "今天又跌过头，明天必然反弹！今天主力继续虚拉指数，个股继续大跌。目前看证券股还在创新底，那么大盘还没有企稳，不过否极泰来，亘古不变。今天短线跌过头了，明日将出现反弹，清明节后估计还会走小5浪下跌，大盘大概率会跌破3794，一旦完成，日线级别调整结束。后续看日线级别反弹能否带动周线级别反弹。目前主力就是不断创新底，压迫融资盘割肉，一旦筹码收集完毕就会拉升。散户朋友们要继续耐心等待。跟着吉星高照带你穿越股海迷雾，点赞和关注就是对我最大鼓励和支持！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1861358290081792/?app=toutiao_web&timestamp=1785345023&use_new_style=1"
+    },
+    {
+      "date": "2026-04-03",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "慢牛已死，清明请烧香！到今天估计整个股市的大部分投资者都是大幅亏损的，慢牛已经死亡，慢牛就是假牛真熊，根本不适合中国市场，只能推倒重来。任何市场都要遵从市场规律，不能人为操纵或以主观意识来管理。清明节快到了，我一定给已死的慢牛烧个香，祝它一路走好！昨天的文章已经说了，目前的股市正在走日线级别的小5浪下跌，清明节后大概率跌破3794，止跌位置在250天线附近。看看上面可怜不可怜小散户了，目前看很冷血。不像其他市场有平准基金护盘。不过，也不用过于悲观，目前机构就是要让散户绝望，才能让你割肉。所以躺平装死，静待春暖花开才是王道。跟着吉星高照带你穿越股市迷雾，点赞和关注就是对我最大鼓励和支持！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1861455702758412/?app=toutiao_web&timestamp=1785345023&use_new_style=1"
+    },
+    {
+      "date": "2026-04-07",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "今天出现了小反弹，3000多家股票上涨，有101只股票涨停，这是好现象，说明人气有所恢复。但由于量能依然比较小，所以还是属于磨底阶段。中东战争估计还有一轮殊死较量，黄毛给出4月7日，也就是中国的4月8日的最后期限，如果双方谈不拢，就会继续打。即使继续升级战争，也算利空出尽就是利好，最多在等2周，美国也就该歇菜了。所以4月依然是转势之月，大家继续耐心等待反转。牛市上半场已经结束，必须重新开张。大盘会在4月中下旬开启新的行情！坚持住，朋友们！跟着吉星高照带你穿越股海迷雾，点赞和关注就是对我最大的鼓励和支持！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1861811827148828/?app=toutiao_web&timestamp=1785345023&use_new_style=1"
+    },
+    {
+      "date": "2026-04-08",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "市场不会很快反转，明天面临回踩调整！今早受消息影响，大盘走得格外强，深圳指数涨了4.79%。个股涨停的也很多，很多踏空者在下午追高买入。明天还会大涨吗？吉星高照个人认为不会，而且明天面临回调。因为今日下午的成交量相对于上午萎缩了不少。而且很多板块指数超跌反弹。全体整体量能有所放大，但今天的跳空缺口面临回补。所以早上开盘前吉星高照紧急发布，大盘会高开高走，但不要追涨，后面面临回踩。只是今天主力为了诱多，下午没有回落，那么回落就会发生在明天！今日放量，有部分机构开始买入，所以回踩不会太深，大概率会在3871以上。目前伊朗只给霉国15天达成协议，如果谈不拢，那又要继续打。所以大盘依然没有走出危险区。",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1861898634395776/?app=toutiao_web&timestamp=1785345023&use_new_style=1"
+    },
+    {
+      "date": "2026-04-09",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "explicit_action",
+      "evidence": "今天早评我就说了，今日会低开低走，支撑在3961附近，实际情况是最低3955，收盘3966，依然在20日线以上。明天依然看中东的消息，如果停火情况好，大盘会重拾升势，如果消息不好，那么可能出现继续跌，跌幅不会太深，估计就在2931附近。大盘目前依然是磨底阶段，大的行情应该在4月下旬启动。目前就是拿少量仓位高抛低吸。涨猛了，敢抛；跌深了，敢抄。明天大概率继续反弹。跟着吉星高照带你穿越迷雾，点赞和关注就是对我最大鼓励和支持！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1861997757352960/?app=toutiao_web&timestamp=1785345022&use_new_style=1"
+    },
+    {
+      "date": "2026-04-10",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "今日大盘会冲高回落，现在短线仓位减仓，尾盘接回。",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1862046310404108/?app=toutiao_web&timestamp=1785345022&use_new_style=1"
+    },
+    {
+      "date": "2026-04-14",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "今日已经站上趋势线，明日大盘是爆发大阳，还是继续震荡磨盘巩固？今日主力启动的是新能源和房地产，明日要观察证券板块是否发力大涨，如果证券不大涨，那么大盘依然会在趋势线上方盘整，等待中东那边的消息。昨天我也说了，牛市下半场已经开始，大盘必到4700，只是要看下半场究竟谁是主角。春夏之交正是大盘向上突破的最佳时机。跟着吉星高照带你穿越迷雾，点赞和关注就是对我最大鼓励和支持！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1862455193733132/?app=toutiao_web&timestamp=1785345022&use_new_style=1"
+    },
+    {
+      "date": "2026-04-21",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "波澜不惊之下的大招！目前看股市是一潭死水，颤颤巍巍的往上拱。但它就是不断突破压力位，死活不大跌，而且深指，创业板和科创板都已经突破新高，只有护指偏弱。吉星高照个人估计目前一潭死水的下面，是主力在憋大招。估计这个爆发点快到了，就这一两天之内。让我们拭目以待吧！盘后股指期货机构大幅减空6000多手。最近股指一直向上走，而机构一直在减空，说明机构看好后市。跟着吉星高照带你穿越迷雾，点赞和关注就是对我最大的鼓励和支持！",
+      "index": "创业板指",
+      "source_url": "https://m.toutiao.com/w/1863080455245980/?app=toutiao_web&timestamp=1785345020&use_new_style=1"
+    },
+    {
+      "date": "2026-04-26",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "#头条创作训练营#二次探底中！上周大盘重新走弱，日线KDJ已经死叉。目前看科技股有补跌的可能，而低位的证券和地产都在做二次探底，双底形成后才能转折。由于五一休息5天，外部变数较大，因此主力启动主升行情的日期大概率在五一假期之后。另外，年报和季报都要在五一前公布，静等业绩利空出尽。投资者要保持足够的耐心，静待新的行情！如果你认同吉星高照带的观点，点赞和关注就是对我最大的鼓励和支持！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1863506309582848/?app=toutiao_web&timestamp=1785345020&use_new_style=1"
+    },
+    {
+      "date": "2026-04-27",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "目前半导体不要追高，虽然最近几天半导体走得很强，但比较业绩大雷还没完全出干净。虽然长期看半导体是科技股里能长期走牛的赛道，但主力机构也会洗盘，所以今天适合适度减仓，等回踩再接回。月末大盘依然会震荡筑底，不要过于激进。证券和地产股继续低吸。跟着吉星高照带你财源滚滚，点赞和关注就是对我最大的鼓励和支持！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1863585991554060/?app=toutiao_web&timestamp=1785345020&use_new_style=1"
+    },
+    {
+      "date": "2026-04-28",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "大盘依然在蓄势！今天大盘继续横盘震荡，这已经是连续4天了。之前吉星高照就告诉大家，阻力位在4100附近，因为之前的套牢盘都在4100以上。今天启动了证券，但不坚决，所以冲高回落。目前主力用横向震荡代替大幅下跌化解上方套牢盘，本身就说明是强势表现。只是五一节休息比较长，超级主力担心外围的消息变化，所以按兵不动。当然最近科技股牛气冲天，昨天吉星高照已经提示大家不要追涨，今天科技股也是诱多后大幅回落。五一后面临牛市下半场，要小心主线切换，一旦被套在科技股上，将痛不欲生。大家要关注刚刚结束的ZHENGZHIJU会议，强调保楼市，稳股市。后续地产股还是有机会的，但需要潜伏，不会马上大涨。跟着吉星高照带你",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1863718889671692/?app=toutiao_web&timestamp=1785345019&use_new_style=1"
+    },
+    {
+      "date": "2026-04-29",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "目前不能太格局，该高抛就要高抛。因为量化大行其道的市场，你无法格局。今天受会议后的利好影响，地产股出现大涨。但今天就是要高抛，因为5月才能起大行情，目前就是上下波动，消化4100以上的套牢盘，所以明天大概率展开调整。主力就是这样有耐心，同时也在4100筑牢了新的行情的地基。外围市场，科技股已经见顶，所以大A的市梦率科技股，大家还是不要高位接盘的好，让它们自拉自唱吧。最终也是抱团机构的多杀多，以及最后的互相踩踏。业绩为王是下个阶段行情的主线，大家还是要关注行业盈利转好的绩优股。如果你认同吉星高照的观点，点赞和关注就是对我最大鼓励和支持！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1863815075708992/?app=toutiao_web&timestamp=1785345019&use_new_style=1"
+    },
+    {
+      "date": "2026-05-06",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "明天又是关键的一天！今日60分钟，90分钟，120分钟都出现了钝化。吉星高照今日把半导体清仓了，因为超级主力明显在诱多。收盘后股指期货加空8000多手。明天科技股肯定会出现有力度的调整，至于指数，要看能不能启动证券股进行对冲，也就是未来科技股不断调整，证券股不断反弹创新高。目前看今日的跳空缺口大概率会回补，所以今日吉星高照减仓20%，等待回调接回。这次的调整级别不会太大，但该做差价还是要做的。大的方面依然看多，而且后市看好证券，地产，消费等。如果你认同吉星高照的观点，点赞和关注就是对我最大的鼓励和支持！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1864439854917632/?app=toutiao_web&timestamp=1785345019&use_new_style=1"
     },
     {
       "date": "2026-05-07",
-      "direction": "bearish",
+      "direction": "bullish",
       "strength": "strong",
       "specific": "explicit_action",
-      "evidence": "识别60min/90min/120min顶背驰，逢高继续减仓。但要留60%底仓",
-      "index": "上证指数"
+      "evidence": "明天是危险解除的一天！昨天60，90和120分钟都出现了顶背驰，而由于今天大盘依然上涨，60分钟和120分钟顶背驰消失了，只有90分钟背驰还在，如果明天上午依然上涨，那么明天11：00这个90分钟的背驰也会消失，大盘将继续沿着5日线进行逼空。三月初，吉星高照就指出5月初，大盘将启动一轮新的主升行情，目前这个预言已经变成现实。最近成交量已经连续突破3万亿，大盘的主升浪呼之欲出。科技股依然是先锋，但已经是加速出货浪了，技艺高超，快进快出的可以博傻，但普通散户最好看着就好，不然你就是最后买单的人。吉星高照在这里要告诉大家，“大热必死”这句话，我们还是逆向思维，多关注一下地产，证券和消费吧。这三个领域",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1864533156328524/?app=toutiao_web&timestamp=1785345019&use_new_style=1"
     },
     {
-      "date": "2026-05-14",
-      "direction": "bearish",
-      "strength": "strong",
-      "specific": "explicit_action",
-      "evidence": "今天冲高要减仓，不能追涨！今天是日线高九序列，风险很大（M6顶部当天早上预警）",
-      "index": "上证指数"
-    },
-    {
-      "date": "2026-06-18",
-      "direction": "bearish",
-      "strength": "strong",
-      "specific": "directional_clear",
-      "evidence": "散户高位站岗科技股，机构胜利大逃亡…等散户高位站岗，眼巴巴看着绩优蓝筹股的大行情",
-      "index": "创业板指"
-    },
-    {
-      "date": "2026-06-25",
+      "date": "2026-05-15",
       "direction": "bearish",
       "strength": "moderate",
+      "specific": "explicit_action",
+      "evidence": "科创板是有门槛的，资金要求50万以上，小白的基数最大，他们经验少，容易上当，但由于资金有限，不允许开户科创，所以玩科创的都是有资金有经验有高智商的玩家，主力出货就比较困难，套不住这些散户，所以出货很不顺利。[机智][机智][机智]",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1865263303070732/?app=toutiao_web&timestamp=1785345017&use_new_style=1"
+    },
+    {
+      "date": "2026-05-18",
+      "direction": "bullish",
+      "strength": "strong",
       "specific": "directional_clear",
-      "evidence": "科技股走加速意味着冲顶，有科技股筹码的就逐级减仓…证券中报业绩肯定预增",
-      "index": "创业板指"
+      "evidence": "危险依然没有解除！这次下跌的主要原因是市场20%的科技股不断创新高，而80%的股票不涨，甚至下跌。比如王府井这只票，目前价格已经比大盘2689点还低，这样的股票不在少数。这种极度撕裂的假牛市，造成了市场人气大伤，增量资金不足，甚至场内资金紧张。汪汪队不仅不呵护市场，还不断赎回ETF，连续18周赎回近万亿。一方面按住券商不让快牛，另一方面，放纵科技股疯牛走势。实际目的是逼着散户去高位接盘科技股。等散户套在科技股的上岗上，它们又吸饱低价绩优股，然后再炒一波新行情。古人云：肉食者鄙。此言不虚哉！龙国的股市水太深，你如果看不明白，就会倾家荡产。回到盘面，明天大概率小反弹，但大盘企稳为时尚早，因为是日线",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1865523603596300/?app=toutiao_web&timestamp=1785345016&use_new_style=1"
+    },
+    {
+      "date": "2026-05-20",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "今天股市走得很难看，明天还会跌吗？今天3000多家股票下跌，其中跌幅超过4%的股票达到400家。可以说盘面很惨淡。但你不用担心明天，明天一定会反弹。因为本轮下跌的级别比三月份要小的多，而前两天的暴跌，已经走完了下跌空间的80%。剩下的时间就只能是不断反弹，不断下跌，进入震荡磨底阶段。所以明天会反弹，反弹到4180附近，又会开始下跌。由于日线级别的顶背离会引发24个交易日的调整，所以大盘未来会横向震荡一段时间。拿老登股的朋友就继续耐心等待牛市下半场，拿光芯电的要小心了，因为半导体芯片+cpo的成交量已经达到1万亿了，记住顶部一定是放巨量的，底部一般是无量的。设好止损，别成为击鼓传花的最后一棒。跟",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1865713664618624/?app=toutiao_web&timestamp=1785345016&use_new_style=1"
+    },
+    {
+      "date": "2026-05-22",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "危险依然没有解除，今天虽然止跌，但图形更像是下跌中继，由于上周的四五出现大跌，以及昨天带量的大跌，今天的止跌只是降速，所以大盘下周依然会调整，只是幅度会小。下周二是低9序列，如果一切顺利的话，有望在周二形成转折点。全世界都在热炒ai，最终一定会泡沫破裂。高端芯片生产目前仍有缺口，一旦中国技术突破，又会干成白菜价，到时整个世界芯片都会极度过剩。所以泡沫的尽头是破裂，只是时间早晚的事，每个人都心怀侥幸，想躲过最后的断头铡 ，但结果无一例外，都是散户成为最后的买单者。所以目前的阶段就是保持定力，坚决不玩ai和半导体，避免成为最后的买单者。下周跌到4034附近，会形成低点。祝大家周末愉快，保持好心情！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1865891724027916/?app=toutiao_web&timestamp=1785345016&use_new_style=1"
+    },
+    {
+      "date": "2026-05-26",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "今天是日线序列低9，下午探底4104后形成低点。尾盘主力大幅吸货，并回拉。明天看中阳线。最近主力在高价科技股上开始出货，但机构手里货太多 只能边拉边出，所以目前高位科技股不会一下子完蛋。今天零售商业等低价股开始上涨，证券探底回升。地产股也回踩到位了，明天蓝筹股会开始上涨，看好证券和地产。未来三天非常重要，因为会影响周线和月线技术走势，越强越好，最好连续大涨！目前日线顶背离还没有消除，只有爆发力惊人的大涨才能扭转不利态势。80%的股票这一年来一直在跌，能否发动真正的牛市，值得继续观察。跟着吉星高照带你穿越迷雾，点赞和关注就是对我最大的鼓励和支持！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1866247557603344/?app=toutiao_web&timestamp=1785345016&use_new_style=1"
+    },
+    {
+      "date": "2026-05-26",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "最近文章总发不出去，发出去了，读者又看不到。吉星高照无非说了一些真理，就不让人讲话，太过分了。目前科技股依然在冲顶，敢赌的继续赌，不想冒险的就继续守着蓝筹股。非理智的泡沫长不了，猪能一时飞上天，最终还会掉下来。今天大盘有可能进行中阳诱多，注意适当减仓，等回踩再接回。目前主力不断玩弄散户，那我们就将计就计，不断进行高抛低吸，摊低成本。",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1866202092073984/?app=toutiao_web&timestamp=1785345016&use_new_style=1"
+    },
+    {
+      "date": "2026-05-28",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "别胡说 ，美股其实是70%的股票大涨[机智][机智][机智]",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1866383570561088/?app=toutiao_web&timestamp=1785345015&use_new_style=1"
+    },
+    {
+      "date": "2026-06-01",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "等待高低切换完成✅最近吉星高照的判断非常准确，一连多天判断正确。今天也如预期，高位科技股周五反抽后，今天科创板再度下跌，并大幅跌破20日线，向30日线进发。今天上涨家数3600多家，而指数调整，正应了吉星高照所说：一鲸落万物生。科创板跌到30日后，会反弹，构筑双头。而更多的80%的股票，要开始新的主升行情。吉星高照看好的三驾马车：地产，金融，消费会有好的表现。明天是变盘日，大概率大金融会发力，带领指数反弹。但是由于前期主力介入科技股太深，所以高低切换需要很长时间，所以未来10个交易日，很难走出单边上涨行情，反而可能是涨跌互现的局面，待主力吸饱筹码后，才会启动主升行情。所以最近吉星高照的打法就是",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1866799877134352/?app=toutiao_web&timestamp=1785345015&use_new_style=1"
+    },
+    {
+      "date": "2026-06-08",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "如果科技股出现大反弹，别犹豫，赶紧清仓[机智][机智][机智]",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1867434542811163/?app=toutiao_web&timestamp=1785345013&use_new_style=1"
+    },
+    {
+      "date": "2026-06-11",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "explicit_action",
+      "evidence": "黎明前的黑暗！今日广大股民继续被不死不活的行情所折磨，阴跌不断消耗着股民仅剩的一点持股信心。这就是超级主力非常擅长的钝刀子割肉，大多数股民就是倒在了这黎明前的黑暗。“这是最后的斗争，团结起来到明天”，正像国际歌里的歌词，股民朋友们要顶住。股市从来不是提取款机，而是人性的绞肉机，这是吉星高照历经三轮牛熊总结的经验之谈。想在龙国股市里盈利，除了高智商外，还要有常人不具备的韧性，耐心和冷静。\n        目前大盘的风险已经释放了90%，但最近两周依然属于震荡筑底，对于惊弓之鸟的散户进行最后的清洗。股市是残酷的，主力机构和散户的博弈是零和博弈。想战胜主力机构，散户必须战胜自己的恐惧与贪婪。而这一点",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1867700277043401/?app=toutiao_web&timestamp=1785345012&use_new_style=1"
+    },
+    {
+      "date": "2026-06-17",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "变盘信号出现！\n今天大盘指数很强，但个股跌多涨少，1655家上涨，3752家下跌。双创继续最后的疯狂拉升出货。\n陆家嘴会议上村长批评了很多股市里的丑恶现象，其中就有严查严处借科技之名蹭热点，炒概念，甚至操纵市场。信号已经再清晰不过了，抱团机构还在妄想和国家对抗，后面必面临暴跌和相互踩踏！君子不立于危墙之下，奉劝那些赌徒散户及早回头，否则就是粉身碎骨。\n今天大盘成交量继续萎缩，已经连续4天量能萎缩，这就是要变盘的信号，越往上走套牢盘越大，量能不断萎缩就离大跌不远了。\n收盘后股指期货机构加空3600多手，明确看跌。明天科技股将大跌，而老登股会出现反弹进行对冲，指数总体会出现回踩，但属于二次探底。这",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1868252319683584/?app=toutiao_web&timestamp=1785345012&use_new_style=1"
+    },
+    {
+      "date": "2026-06-22",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "人民币升值将带动中国房产大涨，但主要集中在一二线城市。\n[机智][机智][机智]",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1868655573028864/?app=toutiao_web&timestamp=1785345011&use_new_style=1"
+    },
+    {
+      "date": "2026-06-23",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "盘后恐慌袭来，小登们倍受煎熬。今天韩国科技股暴跌，股市熔断，霉国的科技股期货指数也是大跌。吉星高照提前3个月就指出了，6月是热点切换的一个月，科技股和有色开始退潮，金融和消费及医药等老登股开始酝酿升势。今天有色金属暴跌，铜，镍，金等股票都跌停。很多投资者一直在追问到底为什么？其实根本原因就是已经在高位了，主力获利丰厚，需要出货了。所以说高位本身就是风险！哪些飞在天上的科技股早晚和金属一样会暴跌。韩国和霉国已经开始了。跟着吉星高照死拿证券股的粉丝们已经回了一大口血了。7月会出现证券股的主升行情！不羡慕别人，不受诱惑，你才能在资本市场上活得长久。继续跟着吉星高照，一起走向胜利，点赞和关注就是对我最",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1868789140432908/?app=toutiao_web&timestamp=1785345011&use_new_style=1"
+    },
+    {
+      "date": "2026-06-24",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "热点不切换行情走不远！今天又是普跌的一天，还是科创急于出货，着急往上诱多！如果散户不上钩，机构不可能无限上拉，因为需要太多钱，机构抱团股早晚暴跌收场。目前，散户朋友们就是要保持定力，拿好自己手里的老登股，开机构如何收场。目前科技股正在上演最后的疯狂！明天继续看调整，因为20%股票的牛市走不远，一个投机市场必然暴涨然后暴跌，猪被吹到天上去，只能飞一时不能飞一世。当海水褪去的时候，你就会知道谁在裸泳。科技股明天冲高收阴线，构筑最后的头部。跟着吉星高照不受诱惑坚定信心，点赞和关注就是对我最大的鼓励和支持！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1868883667196928/?app=toutiao_web&timestamp=1785345011&use_new_style=1"
+    },
+    {
+      "date": "2026-06-29",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_vague",
+      "evidence": "老登批量底部信号，行情要转折了。今天上午，很多板块形成了底部结构，包括医药，养殖，地产，商业等等板块，它们很多都形成了日线底背离结构，甚至是周线级别的底背离，二八行情马上就要变为八二行情了。很多科技股赌徒认为行情永远是20%的科技股，他们也不想想，科技行业能解决多少就业？而80%的传统行业才是解决就业的主力军，村里不可能不救它们。30年后，你依然要买东西，你依然要住房子，你依然要吃药。而科技更新非",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1869333878226124/?app=toutiao_web&timestamp=1785345009&use_new_style=1"
+    },
+    {
+      "date": "2026-06-29",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "今天科技股已经冲顶完毕，注意风险！吉星高照早盘抄底制药，地产，商业三个板块，目前三个板块都出现了日线级别的底背离，有的甚至出现了周线级别的底背离。人弃我取，买在无人问津时卖在人声鼎沸处。吉星高照一直坚持价值投资理念，从来不相信猪一直会在天上飞。传统行业30年后还会存在，趁低估赶紧买。今天抄底的华润某鹤，当天已经盈利6个点。地产万某A也盈利4个点。这就是买在别人绝望时。股市有风险，投资需谨慎。同意吉星高照价值投资理念的朋友们，点赞和关注就是对我最大的鼓励和支持！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1869297222903872/?app=toutiao_web&timestamp=1785345009&use_new_style=1"
+    },
+    {
+      "date": "2026-07-01",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "必须凡尔赛一下！吉星高照在前天的文章里明确告知了散户朋友们，大盘马上要风格切换了，80%的老登股要表现了，结果今天果然如吉星高照所料。昨天也说，科技股今天要冲高回落调整，又双叒叕说对了，这就是水平和远见。今天证券，创新药，养殖，快递，商超，甚至连地产都在大涨。说明资金早已开始高低切换了。这些板块我在这几周里反腐唠叨，可有些小登就是听不进去，还在我的评论区里撒野，通通拉黑。吉星高照是本次牛市的吹哨人，不信的看看我置顶的文章。今天老登股大涨，还不能说切换完成，因为还有相当一部分顽固分子，死抱高位科技，不见棺材不落泪，不到黄河不死心。所以老登股和小登股还要反复争夺一段时间，但最终的胜利者，一定是老登",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1869514155523072/?app=toutiao_web&timestamp=1785345009&use_new_style=1"
+    },
+    {
+      "date": "2026-07-07",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "世界杯魔咒依然在发威！一到世界杯，龙国股市就萎靡不振，如同龙国的足球队，雄起不了。看来世界杯还是赶紧结束吧，目前我看好法国队夺冠。昨日的文章已经指出，今日大盘不强反弹则会继续创新低寻底，目前看大盘依然没有企稳，明日上午有个小低点，必须强反弹，才能小转大，形成分钟底部结构。目前还是死拿证券，养殖，医药，商超和地产。牛市下半场终究会来，只会迟到，不会缺席。继续坚忍，熬过黎明前的黑暗。跟着吉星高照带你穿越股海迷雾，点赞和关注就是对我最大鼓励和支持！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1870062167683162/?app=toutiao_web&timestamp=1785345008&use_new_style=1"
+    },
+    {
+      "date": "2026-07-08",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "大盘直奔250天线去了，今天依然没有止跌，绝大多数股票继续阴跌。明天大概率继续创出新低，大盘在3934附近会企稳。目前美国和韩国已经出现ai科技股破位的情况，相信龙国的ai科技股也会步其后尘。当然主力依然不死心，又开始炒云计算和ai应用板块，不过这些股票的业绩也很差，继续炒作也不会长久。证券已经基本到位了，吉星高照开始回补，明天计划继续回补。养殖业今天开始回踩，昨天吉星高照减仓，继续等待该板块探底。大盘的周线kdj已经接近底部，所以7月的月中会出现转折，从而启动牛市下半场。跟着吉星高照带你穿越股海迷雾，点赞和关注就是对我最大鼓励和支持！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1870148548965387/?app=toutiao_web&timestamp=1785345008&use_new_style=1"
+    },
+    {
+      "date": "2026-07-13",
+      "direction": "bullish",
+      "strength": "moderate",
+      "specific": "directional_clear",
+      "evidence": "#分享我的头条荣誉# 创作征途，幸有你们同行。2022年开启头条创作之路，我始终聚焦财经市场分析与民生话题探讨，用文字分享股市趋势观察，也为普通百姓合理诉求发声，不知不觉收获1万+粉丝支持，每一份关注都让我倍感温暖。\n\n累计获赞突破6万啦，这份成绩离不开每一位朋友的认可与陪伴。未来我会继续保持真诚，用心创作更多有价值的内容。",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1870598336616512/?app=toutiao_web&timestamp=1785345008&use_new_style=1"
     },
     {
       "date": "2026-07-13",
       "direction": "bullish",
       "strength": "strong",
       "specific": "explicit_action",
-      "evidence": "该上车了兄弟们！…3900就是大底（M8喊底偏早，实际3741差159点）",
-      "index": "上证指数"
+      "evidence": "大盘到底了，3900就是大底，放心抄底咯，吉星高照是本次牛市的吹哨人，2024年9月18日，大盘在2689点形成熊牛转折点，是吉星高照第一时间告诉小伙伴们的，不信的，看我置顶文章。那么今天又是一个重要转折点，吉星高照再次提醒大家该上车了。",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1870581380961290/?app=toutiao_web&timestamp=1785345008&use_new_style=1"
+    },
+    {
+      "date": "2026-07-14",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "准确的简直令人发指！最近吉星高照又双叒叕预测正确，周五的文章中写道：“预计下周二到底并转折，在等几天，牛市下半场就要开启了”，结果今天（周二）大盘在3869处见底，并大幅反弹100点。吉星高照是本轮牛市的吹哨人，你可以看看我置顶的文章，那是24年9月18日写的。你也可以翻看我25年4月7日写的文章，上面提醒大家赶紧抄底，马上要展开大三浪行情。如果说偶尔准，那是瞎蒙的，但每次关键转折时刻，吉星高照都100%正确，那你就只能盖上你的膝盖，别瞎比比了。今天上午大盘急跌，很多散户害怕了，赶紧割肉，结果下午11：23分出现逆转，所以吉星高照一直说，“要在恐惧时买股，在贪婪时卖股，炒股永远是反人性的！”今",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1870675770273995/?app=toutiao_web&timestamp=1785345006&use_new_style=1"
+    },
+    {
+      "date": "2026-07-14",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "决战在今天！今天如果证券板块振臂一呼，老登集体相应，那么到会出现逆转。当然即使大盘出现暴跌，持有老登股的散户朋友也不用担心，因为这些股票已经在熊市底部了，已经是跌无可跌。而那些持有小登股的娃娃们就没那么走运了，爆炒ai科技股是华尔街之狼很早策划的，就是要收割韩国，日本和中国股民。汪汪队为什么按住券商不让涨，就是早早看穿了华尔街的把戏，准备用老登股对冲科技股的暴跌。所以科创板暴跌之前，吉星高照一直在提醒小登投资者们，见好就收，可是他们已经被洗了脑，什么也听不进去，目前90%的小登们都开始亏损了。所以当下，世界各国股市都面临着高低切换，也就是从小登股切换成老登股，小登股慢慢阴跌。今天紧盯证券，看它",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1870644979752971/?app=toutiao_web&timestamp=1785345006&use_new_style=1"
+    },
+    {
+      "date": "2026-07-17",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_vague",
+      "evidence": "好言难劝该死的鬼！吉星高照在6月30号和7月9日都发文，明确提醒大家科技股在冲顶要大跌了，但很多投资者都执迷不悟，最近科技股暴跌，相信吉星高照的粉丝们都避开了最大的坑，而刀尖舔血的散户们已经损失惨重了。今天大盘可以说是泥沙俱下，跌破了3800，目前看跌速太快，下周一还有新低，低点在3702附近。今天已经出现科技股融资盘爆仓，如果任由大盘自由落体则会引发金融风险，相信周末村里一定会研究应对措施，下周",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1870966412702720/?app=toutiao_web&timestamp=1785345006&use_new_style=1"
     },
     {
       "date": "2026-07-17",
       "direction": "bullish",
       "strength": "strong",
       "specific": "explicit_action",
-      "evidence": "3745是大底，风险已经充分释放，吉星高照今天抄底证券（实际3741，偏差仅4点）",
-      "index": "上证指数"
+      "evidence": "3745是大底，风险已经充分释放，吉星高照今天抄底证券，等待黎明的到来。",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1870941452311628/?app=toutiao_web&timestamp=1785345006&use_new_style=1"
     },
     {
-      "date": "2026-07-29",
+      "date": "2026-07-20",
       "direction": "bullish",
       "strength": "strong",
       "specific": "explicit_action",
-      "evidence": "科创板已经见底，大盘的双底很快构建完毕，周二是个转折点…上午10:34盘中指出大盘见底并果断抄底",
-      "index": "上证指数"
+      "evidence": "极度的分化！今天4个指数是涨的，2个是跌的。其中268只个股跌停，跌幅4%以上的个股达到2000家。今天超级主力启动了石油，白酒，地产，银行和证券等大盘蓝筹股护盘，否则大盘可能就跌破3700了。今日科创50下午14：30从跌4%到收盘翻红，明显有主力护盘。明天半导体等科技股会出现有力度的反弹，今日抄底的短线筹码，可以等明天大涨后出掉，而今天涨幅比较大的老登股板块，明天可能会震荡调整。今日蓝筹中涨幅比较小的板块是证券，明日会和科技股一起有所表现。目前看大盘反弹走势很难像25年4月7日那样，一波流反弹，大概率会补掉3940到3943的缺口后出现二次探底。明天权重股护盘任务完成，可以休息了，大多数超",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1871227237436416/?app=toutiao_web&timestamp=1785345006&use_new_style=1"
+    },
+    {
+      "date": "2026-07-21",
+      "direction": "bearish",
+      "strength": "strong",
+      "specific": "directional_clear",
+      "evidence": "预测太准，不给流量了，有些过分，附件是早上09：30的预测，当时科技股依然大跌。最近吉星高照连续预测正确，头条已经不给流量了！太可惜了，不能救民于水火！",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1871311058582540/?app=toutiao_web&timestamp=1785345005&use_new_style=1"
+    },
+    {
+      "date": "2026-07-27",
+      "direction": "bullish",
+      "strength": "strong",
+      "specific": "explicit_action",
+      "evidence": "长鑫科技顺利上市！吉星高照中了5个签，开盘就抛掉了，长鑫收盘49。今天长鑫成交近千亿，明天将是面临考验的一天，个人认为长鑫科技会继续走强，因为后面还有长江存储和宇树科技一堆要上市的股票，如果它马上走熊，后面上市会面临很大困难。至于吉星高照为何开盘就抛，是因为我只打新，不参与高价科技股的博弈。个人的投资风格就是买入高股息股票，拿着高分红的同时，打打新股。今日上涨的股票达到5135家，明日必将出现分化，大盘将会震荡调整。目前汪汪队抄底了金融和硬核科技，未来科技+金融将是双轮驱动。周末金融打了方老虎，量化交易和股指期货成了金融内鬼敲骨吸髓龙国老百姓的工具，罪大恶极。要想金融强国，必须剜掉这些金融毒瘤",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1871866133535820/?app=toutiao_web&timestamp=1785345003&use_new_style=1"
+    },
+    {
+      "date": "2026-07-28",
+      "direction": "bearish",
+      "strength": "moderate",
+      "specific": "directional_vague",
+      "evidence": "预测太准，又不给流量了！爆炒科技股带来巨大风险！今天韩国股市出现了今年第8次熔断，120万个账户收到保证金追缴通知，近36万账户被强行平仓！韩国股市已经成为散户绞肉机，6月份吉星高照一直是市场上最清醒的人，也一直在提醒散户撤出高位科技股，但迎来的却是执迷不悟之人的谩骂和攻击，6月30日吉星高照最后一次提醒散户赶紧撤，7月份科技股要转折向下了，很多听了我话的粉丝发来很多私信，感谢我救民于水火。昨天吉",
+      "index": "上证指数",
+      "source_url": "https://m.toutiao.com/w/1871943493142528/?app=toutiao_web&timestamp=1785345003&use_new_style=1"
     }
-  ]
+  ],
+  "extraction_method": "pattern_based_v1",
+  "needs_review": true
 }
