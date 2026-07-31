@@ -30,6 +30,21 @@ WINDOWS = {
     "T+5": 5, "T+10": 10, "T+15": 15, "T+20": 20,
 }
 
+# 长窗口（仅用于 long time_horizon 信号）
+WINDOWS_LONG = {
+    "T+40": 40, "T+60": 60,
+}
+
+# 时间维度窗口权重 — 根据信号的 time_horizon 分配各窗口权重
+# 权重越高，该窗口的表现越影响综合评分
+TIME_HORIZON_WEIGHTS = {
+    "intraday":    {"T+5": 1.0, "T+10": 0.3, "T+15": 0.0, "T+20": 0.0},
+    "short":       {"T+5": 1.0, "T+10": 0.6, "T+15": 0.2, "T+20": 0.0},
+    "medium":      {"T+5": 0.6, "T+10": 1.0, "T+15": 1.0, "T+20": 0.6},
+    "long":        {"T+5": 0.2, "T+10": 0.4, "T+15": 0.7, "T+20": 1.0},
+    "unspecified": {"T+5": 0.6, "T+10": 0.8, "T+15": 1.0, "T+20": 1.0},
+}
+
 # 拐点日期（来自 market_analysis.md）— 用于质量过滤
 INFLECTION_DATES = {
     # Major
@@ -46,11 +61,13 @@ QUALITY_WINDOW = 5  # 拐点对齐窗口 ±5 个交易日
 
 
 def is_valid_signal(sig):
-    """判断信号是否可评估：排除模糊观点（directional_vague）。
+    """判断信号是否可评估：排除模糊观点和描述性语言。
+    - directional_vague: 骑墙派，无明确方向
+    - descriptive: 描述性语言（有方向词但无预测意图），v7新增
     保留 strong 和 moderate，保留 explicit_action 和 directional_clear。
-    所有非模糊观点都应假设跟随并评估质量。"""
+    所有非模糊、预测性观点都应假设跟随并评估质量。"""
     spec = sig.get("specific", "")
-    if spec == "directional_vague":
+    if spec in ("directional_vague", "descriptive"):
         return False
     return True
 
@@ -195,22 +212,42 @@ def aggregate_blogger(blogger_data, market_data, windows, quality_only=False):
     name = blogger_data["blogger"]
     signals = blogger_data["signals"]
 
-    # 信号过滤：仅排除 directional_vague（模糊观点无法验证）
+    # 信号过滤：排除 directional_vague（模糊观点）和 descriptive（描述性）
     if quality_only:
-        quality_signals = [s for s in signals if is_valid_signal(s)]
-        skipped = len(signals) - len(quality_signals)
+        quality_signals = []
+        excluded_vague = 0
+        excluded_descriptive = 0
+        for s in signals:
+            spec = s.get("specific", "")
+            if spec == "directional_vague":
+                excluded_vague += 1
+            elif spec == "descriptive":
+                excluded_descriptive += 1
+            else:
+                quality_signals.append(s)
+        skipped = excluded_vague + excluded_descriptive
     else:
         quality_signals = signals
         skipped = 0
+        excluded_vague = 0
+        excluded_descriptive = 0
 
     results = []
     for sig in quality_signals:
         r = evaluate_signal(sig, market_data, windows)
         if r:
+            # For long-horizon signals, also evaluate extended windows (T+40, T+60)
+            if sig.get("time_horizon") == "long":
+                lr = evaluate_signal(sig, market_data, WINDOWS_LONG)
+                if lr:
+                    for wn in WINDOWS_LONG:
+                        r[wn] = lr.get(wn)
             # 附加元信息
             r["_strength"] = sig.get("strength", "")
             r["_specific"] = sig.get("specific", "")
             r["_evidence"] = sig.get("evidence", "")
+            r["_time_horizon"] = sig.get("time_horizon", "unspecified")
+            r["_predictive"] = sig.get("predictive", True)
             results.append(r)
 
     if not results:
@@ -345,6 +382,98 @@ def aggregate_blogger(blogger_data, market_data, windows, quality_only=False):
         else:
             base["strong_only"] = None
 
+        # --- v7: Time horizon analysis ---
+        # Time horizon distribution
+        horizon_dist = {"intraday": 0, "short": 0, "medium": 0, "long": 0, "unspecified": 0}
+        for r in sig_results:
+            h = r.get("_time_horizon", "unspecified")
+            if h in horizon_dist:
+                horizon_dist[h] += 1
+        base["time_horizon_distribution"] = horizon_dist
+
+        # Horizon-weighted composite win rate
+        weighted_wins = 0.0
+        weighted_total = 0.0
+        for r in sig_results:
+            h = r.get("_time_horizon", "unspecified")
+            weights = TIME_HORIZON_WEIGHTS.get(h, TIME_HORIZON_WEIGHTS["unspecified"])
+            for wn in WINDOWS:
+                w = weights.get(wn, 0)
+                if w > 0 and r.get(wn) is not None:
+                    weighted_total += w
+                    if r[wn]["correct"]:
+                        weighted_wins += w
+        if weighted_total > 0:
+            base["horizon_weighted_win_rate"] = round(weighted_wins / weighted_total * 100, 1)
+        else:
+            base["horizon_weighted_win_rate"] = None
+
+        # Horizon-weighted avg return
+        weighted_ret = 0.0
+        weighted_ret_total = 0.0
+        for r in sig_results:
+            h = r.get("_time_horizon", "unspecified")
+            weights = TIME_HORIZON_WEIGHTS.get(h, TIME_HORIZON_WEIGHTS["unspecified"])
+            for wn in WINDOWS:
+                w = weights.get(wn, 0)
+                if w > 0 and r.get(wn) is not None:
+                    weighted_ret_total += w
+                    weighted_ret += r[wn]["forward_return"] * w
+        if weighted_ret_total > 0:
+            base["horizon_weighted_avg_return"] = round(weighted_ret / weighted_ret_total, 2)
+        else:
+            base["horizon_weighted_avg_return"] = None
+
+        # Optimal window identification — which window has the best win rate
+        best_window = None
+        best_wr = 0
+        for wn in WINDOWS:
+            wr = base["win_rates_by_window"].get(wn, 0)
+            if wr > best_wr:
+                best_wr = wr
+                best_window = wn
+        base["optimal_window"] = best_window
+        base["optimal_window_win_rate"] = best_wr
+
+        # Decay pattern: "rising" (T+5→T+20 increasing), "falling" (decreasing), "hump" (peak in middle), "flat"
+        wrs = [base["win_rates_by_window"].get(wn, 0) for wn in WINDOWS]
+        if wrs[0] < wrs[1] < wrs[2] < wrs[3]:
+            base["decay_pattern"] = "rising"  # 长线型
+        elif wrs[0] > wrs[1] > wrs[2] > wrs[3]:
+            base["decay_pattern"] = "falling"  # 短线型
+        elif max(wrs) == wrs[1] or max(wrs) == wrs[2]:
+            base["decay_pattern"] = "hump"  # 波段型
+        else:
+            base["decay_pattern"] = "mixed"
+
+        # --- v7: Long-window evaluation (T+40, T+60) for long-horizon signals only ---
+        long_signals = [r for r in sig_results if r.get("_time_horizon") == "long"]
+        if long_signals and len(long_signals) >= 5:  # Need at least 5 for meaningful stats
+            long_window_stats = {}
+            for wn, wn_days in WINDOWS_LONG.items():
+                wv = [r for r in long_signals if r.get(wn) is not None]
+                if wv:
+                    wc = sum(1 for r in wv if r[wn]["correct"])
+                    wr = round(wc / len(wv) * 100, 1)
+                    ar = round(sum(r[wn]["forward_return"] for r in wv) / len(wv), 2)
+                    advs = [r[wn]["max_adverse"] for r in wv]
+                    long_window_stats[wn] = {
+                        "count": len(wv),
+                        "win_rate": wr,
+                        "avg_return": ar,
+                        "avg_adverse": round(sum(advs) / len(advs), 2),
+                        "worst_adverse": round(min(advs), 2),
+                    }
+            if long_window_stats:
+                base["long_window_stats"] = {
+                    "signal_count": len(long_signals),
+                    "windows": long_window_stats,
+                }
+            else:
+                base["long_window_stats"] = None
+        else:
+            base["long_window_stats"] = None
+
         return base
 
     bull_stats = dimension_stats(bull_results, "bullish")
@@ -356,6 +485,8 @@ def aggregate_blogger(blogger_data, market_data, windows, quality_only=False):
         "total_signals_input": len(signals),
         "quality_signals_used": len(results),
         "quality_skipped": skipped,
+        "excluded_vague": excluded_vague,
+        "excluded_descriptive": excluded_descriptive,
         "bullish": bull_stats,
         "bearish": bear_stats,
         "all_results": results,
@@ -416,6 +547,35 @@ def print_dimension(stat, windows, label, risk_label):
                 if r:
                     print(f"  {wn:<6} {r['avg_adverse']:>7}% {r['worst_adverse']:>7}% {r['pct_adverse_gt3']:>7}%")
 
+    # v7: Time horizon distribution
+    hdist = stat.get("time_horizon_distribution", {})
+    if hdist:
+        total_h = sum(hdist.values())
+        if total_h > 0:
+            print(f"\n  ⏱️ 时间维度分布 (v7):")
+            parts = []
+            for h in ["intraday", "short", "medium", "long", "unspecified"]:
+                c = hdist.get(h, 0)
+                if c > 0:
+                    parts.append(f"{h}={c}({c*100//total_h}%)")
+            print(f"  {' | '.join(parts)}")
+            hwr = stat.get("horizon_weighted_win_rate")
+            hret = stat.get("horizon_weighted_avg_return")
+            if hwr is not None:
+                print(f"  时间加权胜率: {hwr}% | 时间加权均收益: {hret:+.2f}%")
+            opt_win = stat.get("optimal_window")
+            opt_wr = stat.get("optimal_window_win_rate")
+            decay = stat.get("decay_pattern", "?")
+            if opt_win:
+                print(f"  最优窗口: {opt_win} ({opt_wr}%) | 衰减模式: {decay}")
+
+    # v7: Long window stats
+    lws = stat.get("long_window_stats")
+    if lws:
+        print(f"\n  🔭 长线信号扩展窗口（{lws['signal_count']}条 long-horizon 信号）:")
+        for wn, ws in lws.get("windows", {}).items():
+            print(f"    {wn}: 胜率{ws['win_rate']}% 均收益{ws['avg_return']:+.2f}% 均不利{ws['avg_adverse']}% 最坏{ws['worst_adverse']}%")
+
     # 严重失误明细
     if stat["severe_details"]:
         print(f"\n  ⚠️ 严重失误:")
@@ -428,8 +588,13 @@ def print_blogger_report(agg, windows):
     qtag = " [仅高质量信号]" if agg.get("quality_mode") else ""
     print(f"\n{'='*60}")
     print(f"  {agg['blogger']}{qtag}")
-    print(f"  输入{agg['total_signals_input']}条信号 → 使用{agg['quality_signals_used']}条" +
-          (f"（过滤{agg['quality_skipped']}条非高质量）" if agg.get("quality_skipped") else ""))
+    excl_parts = []
+    if agg.get("excluded_vague", 0):
+        excl_parts.append(f"vague={agg['excluded_vague']}")
+    if agg.get("excluded_descriptive", 0):
+        excl_parts.append(f"descriptive={agg['excluded_descriptive']}")
+    excl_str = f"（过滤: {', '.join(excl_parts)}）" if excl_parts else ""
+    print(f"  输入{agg['total_signals_input']}条信号 → 使用{agg['quality_signals_used']}条{excl_str}")
     print(f"{'='*60}")
 
     # 看多维度

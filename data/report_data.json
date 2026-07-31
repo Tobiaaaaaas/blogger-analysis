@@ -12,76 +12,77 @@
       "following": "2"
     },
     "signal_dist": {
-      "strong_explicit": 260,
-      "strong_clear": 167,
-      "moderate_explicit": 52,
-      "moderate_clear": 409,
-      "vague": 17,
-      "total": 905,
-      "valid": 888,
-      "bullish": 537,
-      "bearish": 368
+      "strong_explicit": 289,
+      "strong_clear": 208,
+      "moderate_explicit": 54,
+      "moderate_clear": 458,
+      "vague": 120,
+      "descriptive": 34,
+      "total": 1163,
+      "valid": 1009,
+      "bullish": 725,
+      "bearish": 438
     },
     "precision": {
       "bullish": {
-        "total": 503,
-        "strong": 246,
-        "moderate": 257,
-        "win_rate": 67.2,
-        "avg_return": 1.47,
+        "total": 590,
+        "strong": 295,
+        "moderate": 295,
+        "win_rate": 68.0,
+        "avg_return": 1.62,
         "max_gain": 23.26,
         "max_loss": -19.37,
-        "profit_factor": 2.5,
-        "severe_errors": 32,
+        "profit_factor": 2.73,
+        "severe_errors": 35,
         "win_rates": {
           "T+5": 59.3,
-          "T+10": 63.8,
-          "T+15": 66.4,
-          "T+20": 67.2
+          "T+10": 63.6,
+          "T+15": 66.6,
+          "T+20": 68.0
         },
         "avg_returns": {
-          "T+5": 0.49,
-          "T+10": 0.83,
-          "T+15": 1.17,
-          "T+20": 1.47
+          "T+5": 0.47,
+          "T+10": 0.85,
+          "T+15": 1.2,
+          "T+20": 1.62
         },
         "risk": {
           "T+5": {
-            "weighted_avg_adverse": -1.08,
+            "weighted_avg_adverse": -1.09,
             "worst_adverse": -10.78,
             "pct_adverse_gt3": 8.1,
             "reward_risk_ratio": 0
           },
           "T+10": {
-            "weighted_avg_adverse": -1.62,
+            "weighted_avg_adverse": -1.59,
             "worst_adverse": -14.71,
-            "pct_adverse_gt3": 14.8,
+            "pct_adverse_gt3": 15.0,
             "reward_risk_ratio": 0
           },
           "T+15": {
-            "weighted_avg_adverse": -1.99,
+            "weighted_avg_adverse": -1.97,
             "worst_adverse": -15.54,
-            "pct_adverse_gt3": 20.4,
+            "pct_adverse_gt3": 21.0,
             "reward_risk_ratio": 0
           },
           "T+20": {
-            "weighted_avg_adverse": -2.25,
+            "weighted_avg_adverse": -2.21,
             "worst_adverse": -21.58,
-            "pct_adverse_gt3": 26.0,
+            "pct_adverse_gt3": 26.3,
             "reward_risk_ratio": 0
           }
         },
         "strong_win_rates": {
           "T+5": 61.1,
-          "T+10": 65.6,
-          "T+15": 66.5,
-          "T+20": 68.7
+          "T+10": 64.7,
+          "T+15": 66.7,
+          "T+20": 68.5
         },
         "strong_avg_returns": {
-          "T+5": 0.65,
-          "T+10": 1.03,
-          "T+15": 1.42,
-          "T+20": 1.78
+          "T+5": 0.58,
+          "T+10": 0.99,
+          "T+15": 1.43,
+          "T+20": 1.86
         },
         "strong_risk": {
           "T+5": {
@@ -90,15 +91,15 @@
           },
           "T+10": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 17.0
+            "pct_adverse_gt3": 17.5
           },
           "T+15": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 21.9
+            "pct_adverse_gt3": 23.0
           },
           "T+20": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 26.8
+            "pct_adverse_gt3": 27.5
           }
         },
         "severe_details": [
@@ -133,84 +134,115 @@
             "max_adverse": -7.93
           }
         ],
-        "strong_total": 262
+        "time_horizon_distribution": {
+          "intraday": 70,
+          "short": 393,
+          "medium": 109,
+          "long": 35,
+          "unspecified": 18
+        },
+        "horizon_weighted_win_rate": 62.6,
+        "horizon_weighted_avg_return": 0.77,
+        "optimal_window": "T+20",
+        "optimal_window_win_rate": 68.0,
+        "decay_pattern": "rising",
+        "long_window_stats": {
+          "signal_count": 35,
+          "windows": {
+            "T+40": {
+              "count": 32,
+              "win_rate": 71.9,
+              "avg_return": 3.16,
+              "avg_adverse": -2.83,
+              "worst_adverse": -9.45
+            },
+            "T+60": {
+              "count": 31,
+              "win_rate": 71.0,
+              "avg_return": 4.83,
+              "avg_adverse": -3.39,
+              "worst_adverse": -9.45
+            }
+          }
+        },
+        "strong_total": 317
       },
       "bearish": {
-        "total": 332,
-        "strong": 151,
-        "moderate": 181,
-        "win_rate": 30.7,
-        "avg_return": -1.58,
-        "max_gain": 11.39,
-        "max_loss": -12.5,
-        "profit_factor": 0.35,
-        "severe_errors": 57,
+        "total": 354,
+        "strong": 163,
+        "moderate": 191,
+        "win_rate": 31.1,
+        "avg_return": -1.51,
+        "max_gain": 17.01,
+        "max_loss": -17.09,
+        "profit_factor": 0.38,
+        "severe_errors": 59,
         "win_rates": {
-          "T+5": 36.6,
-          "T+10": 34.4,
-          "T+15": 34.1,
-          "T+20": 30.7
+          "T+5": 37.2,
+          "T+10": 34.8,
+          "T+15": 35.1,
+          "T+20": 31.1
         },
         "avg_returns": {
-          "T+5": -0.49,
-          "T+10": -0.83,
-          "T+15": -1.15,
-          "T+20": -1.58
+          "T+5": -0.5,
+          "T+10": -0.82,
+          "T+15": -1.08,
+          "T+20": -1.51
         },
         "risk": {
           "T+5": {
-            "weighted_avg_adverse": -1.65,
+            "weighted_avg_adverse": -1.68,
             "worst_adverse": -8.66,
-            "pct_adverse_gt3": 14.4,
+            "pct_adverse_gt3": 14.8,
             "reward_risk_ratio": 0
           },
           "T+10": {
-            "weighted_avg_adverse": -2.43,
+            "weighted_avg_adverse": -2.48,
             "worst_adverse": -14.37,
-            "pct_adverse_gt3": 27.2,
+            "pct_adverse_gt3": 26.9,
             "reward_risk_ratio": 0
           },
           "T+15": {
-            "weighted_avg_adverse": -3.13,
+            "weighted_avg_adverse": -3.14,
             "worst_adverse": -14.7,
-            "pct_adverse_gt3": 43.2,
+            "pct_adverse_gt3": 42.8,
             "reward_risk_ratio": 0
           },
           "T+20": {
-            "weighted_avg_adverse": -3.74,
-            "worst_adverse": -14.89,
-            "pct_adverse_gt3": 52.1,
+            "weighted_avg_adverse": -3.76,
+            "worst_adverse": -17.09,
+            "pct_adverse_gt3": 52.5,
             "reward_risk_ratio": 0
           }
         },
         "strong_win_rates": {
-          "T+5": 36.2,
-          "T+10": 34.2,
-          "T+15": 37.4,
-          "T+20": 32.5
+          "T+5": 37.3,
+          "T+10": 35.3,
+          "T+15": 38.3,
+          "T+20": 31.9
         },
         "strong_avg_returns": {
-          "T+5": -0.58,
-          "T+10": -0.97,
-          "T+15": -1.12,
-          "T+20": -1.46
+          "T+5": -0.61,
+          "T+10": -0.94,
+          "T+15": -0.99,
+          "T+20": -1.41
         },
         "strong_risk": {
           "T+5": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 20.9
+            "pct_adverse_gt3": 22.0
           },
           "T+10": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 32.9
+            "pct_adverse_gt3": 31.8
           },
           "T+15": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 47.1
+            "pct_adverse_gt3": 45.5
           },
           "T+20": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 54.3
+            "pct_adverse_gt3": 55.2
           }
         },
         "severe_details": [
@@ -219,12 +251,6 @@
             "evidence": "老手说股：（5）\n明天大A就要开盘了，节后怎么走？可以看2月1日的文章，已经讲得非常清楚。从港股这2天表现来看（比大A提前开盘），基本上是朝着我讲的思路走的。\n",
             "forward_return": -6.18,
             "max_adverse": -10.6
-          },
-          {
-            "date": "2025-04-04",
-            "evidence": "老手说股：（2）\n今年的4月份，多事之秋！\n美国昨天刚宣布加征关税，按照对等原则，我国也宣布对原产于美国的所有进口商品加征34%关税。作为中国人，没有理由不支持",
-            "forward_return": -8.25,
-            "max_adverse": -8.25
           },
           {
             "date": "2025-04-04",
@@ -239,20 +265,57 @@
             "max_adverse": -8.25
           },
           {
-            "date": "2025-04-06",
-            "evidence": "老手说股：（1）\n美中两国全面互相加征高额关税之后，意味着两国全面脱钩了。\n美国为什么要这么干？网上的解读各种各样，我也简单讲几句。\n不要把特朗普和贝森特，等，",
-            "forward_return": -8.25,
-            "max_adverse": -8.25
+            "date": "2025-04-08",
+            "evidence": "4月8日收评：明天看跌",
+            "forward_return": -6.25,
+            "max_adverse": -6.56
+          },
+          {
+            "date": "2025-04-08",
+            "evidence": "老手说股：（1）\n消息早报，来看下我所关注的。\n①欧美股市普遍下跌，道指上下震荡巨大，K线是红螺旋桨，短期有可能止跌，纳斯达克直接收涨。\n②黄金跌至3000下方",
+            "forward_return": -6.25,
+            "max_adverse": -6.56
           }
         ],
-        "strong_total": 165
+        "time_horizon_distribution": {
+          "intraday": 34,
+          "short": 245,
+          "medium": 68,
+          "long": 23,
+          "unspecified": 14
+        },
+        "horizon_weighted_win_rate": 34.2,
+        "horizon_weighted_avg_return": -0.86,
+        "optimal_window": "T+5",
+        "optimal_window_win_rate": 37.2,
+        "decay_pattern": "mixed",
+        "long_window_stats": {
+          "signal_count": 23,
+          "windows": {
+            "T+40": {
+              "count": 23,
+              "win_rate": 21.7,
+              "avg_return": -4.83,
+              "avg_adverse": -7.2,
+              "worst_adverse": -34.03
+            },
+            "T+60": {
+              "count": 22,
+              "win_rate": 18.2,
+              "avg_return": -5.47,
+              "avg_adverse": -8.88,
+              "worst_adverse": -47.79
+            }
+          }
+        },
+        "strong_total": 180
       }
     },
     "pairs": {
       "blogger": "TL阳光",
       "fallback": false,
-      "total_actions": 312,
-      "total_trades": 77,
+      "total_actions": 343,
+      "total_trades": 78,
       "open_position": {
         "entry_date": "2026-07-27",
         "entry_price": 3858.245,
@@ -262,13 +325,13 @@
         "floating_return": -0.77
       },
       "summary": {
-        "win_rate": 44.2,
+        "win_rate": 44.9,
         "avg_return": 0.03,
         "avg_holding_days": 2.8,
         "max_gain": 4.17,
         "max_loss": -5.88,
-        "avg_max_drawdown": -0.59,
-        "profit_factor": 1.06
+        "avg_max_drawdown": -0.58,
+        "profit_factor": 1.07
       },
       "trades": [
         {
@@ -576,19 +639,19 @@
           "is_win": false
         },
         {
-          "entry_date": "2025-08-10",
-          "entry_actual": "2025-08-11",
-          "entry_price": 3647.547,
-          "entry_evidence": "老手涚股：（1）\n家人们，经常会刷到有的友友在等，或者有的博主也经常性讲到，炒股的最高境界是等，那么他们到底在等什么呢？\n等什么，等机会，等合适的买点，这里也分",
+          "entry_date": "2025-08-08",
+          "entry_actual": "2025-08-08",
+          "entry_price": 3635.128,
+          "entry_evidence": "老手说股：（2）\n今天我讲讲如何看大盘日线。\n大部分交易软件上会显示均线，成交量，以及MACD，呈现上中下布局。\n日线，就是移动平均线，如5日线，就是5天的平均",
           "exit_date": "2025-08-14",
           "exit_actual": "2025-08-14",
           "exit_price": 3666.443,
           "exit_evidence": "老手说股：（4）\n大盘上午走势如我早述所讲，高开冲高回落，已经收盘了，讲讲呗。\n3700不会那么轻易过。\n观点很直接，这个位置追风险很大。\n实事求是讲，大盘从6",
-          "holding_days": 3,
-          "return_pct": 0.52,
-          "annualized": 54.35,
+          "holding_days": 4,
+          "return_pct": 0.86,
+          "annualized": 71.67,
           "max_drawdown": -0.0,
-          "worst_date": "2025-08-11",
+          "worst_date": "2025-08-08",
           "is_win": true
         },
         {
@@ -612,6 +675,22 @@
           "entry_actual": "2025-08-18",
           "entry_price": 3728.027,
           "entry_evidence": "老手说股：（6）\n家人们，今天将有数篇文章陆续发出，个人觉得，今天的一些文章将指明未来的方向。\n如这篇。\n题目叫，酒茅将成过去，寒寒引领未来。\n一个时代有一个时",
+          "exit_date": "2025-08-16",
+          "exit_actual": "2025-08-18",
+          "exit_price": 3728.027,
+          "exit_evidence": "老手说股：（5）\n整整10年啦，是时候掀3700附近的大箱体上沿了。\n首先，3700一带，准确讲是3600至3700之间，是怎么产生的。就不得不讲2015年的配",
+          "holding_days": 0,
+          "return_pct": 0.0,
+          "annualized": 0,
+          "max_drawdown": -0.0,
+          "worst_date": "2025-08-18",
+          "is_win": false
+        },
+        {
+          "entry_date": "2025-08-18",
+          "entry_actual": "2025-08-18",
+          "entry_price": 3728.027,
+          "entry_evidence": "老手说股：（9）\n有友友经常来问“女\"字，它是技术的一种，通常用3根均线形成组合。\n5线/10线/15线。为一组。\n5线/10线/20线。为一组。\n5线/10线",
           "exit_date": "2025-08-24",
           "exit_actual": "2025-08-25",
           "exit_price": 3883.562,
@@ -704,6 +783,22 @@
           "is_win": false
         },
         {
+          "entry_date": "2025-09-18",
+          "entry_actual": "2025-09-18",
+          "entry_price": 3831.656,
+          "entry_evidence": "老手说股：（2）\n家人们，老婆在股市上挣钱后，每天都很开心，每天都要与我交流股票，她的进步很大。\n昨天她与我讲，自己手中的股票，哪怕再不好，也不要抱怨，既然选择",
+          "exit_date": "2025-09-21",
+          "exit_actual": "2025-09-22",
+          "exit_price": 3828.576,
+          "exit_evidence": "老手说股：（1）\n家人们，上午好。\n周五收盘对上证的分析结论，后市调整的可能性加大。昨天（周六）对科创板的分析结果也是调整，且时间不会短。\n根据这种情况，必须把",
+          "holding_days": 2,
+          "return_pct": -0.08,
+          "annualized": -9.64,
+          "max_drawdown": -0.3,
+          "worst_date": "2025-09-19",
+          "is_win": false
+        },
+        {
           "entry_date": "2025-09-22",
           "entry_actual": "2025-09-22",
           "entry_price": 3828.576,
@@ -720,20 +815,20 @@
           "is_win": true
         },
         {
-          "entry_date": "2025-09-30",
-          "entry_actual": "2025-09-30",
-          "entry_price": 3882.777,
-          "entry_evidence": "老手说股：（1）\n欧美股市一片红，美道指恢复上涨。\n黄金再创历史新高，突破了3850。\n新加坡A50和香港恒生期指上涨，纳斯达克中国金龙指数收涨。\n外围市场表现",
+          "entry_date": "2025-09-29",
+          "entry_actual": "2025-09-29",
+          "entry_price": 3862.532,
+          "entry_evidence": "老手说股：（1）\n家人们，早上好。新的交易周又开始了，由于十一长假，本周只有2个交易日，短是短了些，可是本周非常重要，因为本周结束，不仅是关周线，还有月线，以及",
           "exit_date": "2025-10-14",
           "exit_actual": "2025-10-14",
           "exit_price": 3865.229,
           "exit_evidence": "老手说股：（3）\n收盘了，讲下个人其中一个账户的操作。\n早间清仓了50E后，开仓300E，这2个性质（波动）差不多。\n创E是10月10日建仓的，今天上午已经盈利",
-          "holding_days": 4,
-          "return_pct": -0.45,
-          "annualized": -24.83,
-          "max_drawdown": -0.45,
-          "worst_date": "2025-10-14",
-          "is_win": false
+          "holding_days": 5,
+          "return_pct": 0.07,
+          "annualized": 3.58,
+          "max_drawdown": -0.0,
+          "worst_date": "2025-09-29",
+          "is_win": true
         },
         {
           "entry_date": "2025-10-17",
@@ -851,7 +946,7 @@
           "entry_date": "2026-01-16",
           "entry_actual": "2026-01-16",
           "entry_price": 4101.913,
-          "entry_evidence": "老手说股：（1）\n家人们，有友友经常留言，让我讲讲个股，或者板块。\n①容易违规。\n②我与你买同样的股票，因为操作手法不同，会出现我挣钱，你亏钱的可能性。\n③个人",
+          "entry_evidence": "老手说股：（3）\n家人们，今天讲讲创业板。\n来看月线，非常有辨识度，从2010年有创业板以来，历史上2次大顶。\n注，我已经在做历史大顶的研究分析了，有友友留言，",
           "exit_date": "2026-01-30",
           "exit_actual": "2026-01-30",
           "exit_price": 4117.948,
@@ -1044,30 +1139,14 @@
           "entry_actual": "2026-03-31",
           "entry_price": 3891.861,
           "entry_evidence": "老手说股：（4）\n家人们，大盘冲高回落，如果今天追涨，恐怕要吃亏呀。\n个人的思路很清晰，高抛低吸，只要有利润，不管多少，先止盈再说，不讲格局，如果捂股，那么只有",
-          "exit_date": "2026-04-02",
-          "exit_actual": "2026-04-02",
-          "exit_price": 3919.285,
-          "exit_evidence": "老手说股：（2）\n家人们，我要纠正大家一个误区，现在仍是牛市，亦或者牛转熊期，牛的余威仍在，且许多人还等着大盘创新高呢。\n熊市，是我提出来的，现在还不是真正意义",
-          "holding_days": 2,
-          "return_pct": 0.7,
-          "annualized": 142.24,
-          "max_drawdown": -0.0,
-          "worst_date": "2026-03-31",
-          "is_win": true
-        },
-        {
-          "entry_date": "2026-04-03",
-          "entry_actual": "2026-04-03",
-          "entry_price": 3880.097,
-          "entry_evidence": "老手说股：（4）\n家人们，这就是大A，没错，印象中的大A，这么多年了，还是这个大A，只是韭菜割了一茬又一茬，而我，也不再年轻。\n在大A面前，有脾气也会变得没脾气",
           "exit_date": "2026-04-10",
           "exit_actual": "2026-04-10",
           "exit_price": 3986.225,
           "exit_evidence": "是3800至4200，4000点是中轴，4000之下较为安全，越跌越买，4000之上风险较高，原则上4000以上，有盈利可以持股观望，买就风险大于机会。什么时候",
-          "holding_days": 4,
-          "return_pct": 2.74,
-          "annualized": 447.41,
-          "max_drawdown": -0.0,
+          "holding_days": 7,
+          "return_pct": 2.42,
+          "annualized": 136.9,
+          "max_drawdown": -0.3,
           "worst_date": "2026-04-03",
           "is_win": true
         },
@@ -1095,7 +1174,7 @@
           "exit_date": "2026-04-13",
           "exit_actual": "2026-04-13",
           "exit_price": 3988.558,
-          "exit_evidence": "老手说股：（5）\n家人们，不是我不回答你们的提问，实在是我也不知道。\n你们如果没有系统学习我的交易体系，是很难理解的，炒股不是主要靠判断。\n当下，中长期看空。\n",
+          "exit_evidence": "老手说股：（6）\n家人们，今天的大盘比想象中的强，扛住了外围消息面的不利局面。\n账户①，空仓。\n账户③，新建300E。\n账户②，止盈300E，新建中化。\n考虑到",
           "holding_days": 0,
           "return_pct": 0.0,
           "annualized": 0,
@@ -1152,20 +1231,20 @@
           "is_win": true
         },
         {
-          "entry_date": "2026-04-22",
-          "entry_actual": "2026-04-22",
-          "entry_price": 4106.258,
-          "entry_evidence": "老手说股：（5）\n家人们，大盘继续反弹新高，深成指和创业板继续这轮牛市新高，可我手中股票不涨。[捂脸]\n账户①，继续持有每月定投股，白药和维维。\n账户②，开盘止",
+          "entry_date": "2026-04-21",
+          "entry_actual": "2026-04-21",
+          "entry_price": 4085.077,
+          "entry_evidence": "老手说股：（4）\n家人们，大盘继续震荡上行，可是赚钱效应一般。\n账户①，继续持有5年每月定投买入计划。短线无操作。\n账户②，下跌时加仓300E，上涨时卖出了昨天",
           "exit_date": "2026-04-27",
           "exit_actual": "2026-04-27",
           "exit_price": 4086.344,
           "exit_evidence": "老手说股：（2）\n家人们，今天我也看到了有位自然人在今年一季度花重金成了某头部证券的前10大流通股的股东。\n为此，我又仔细看了该股。\n证券也是周期股，熊市收益下",
-          "holding_days": 3,
-          "return_pct": -0.48,
-          "annualized": -33.53,
-          "max_drawdown": -0.64,
+          "holding_days": 4,
+          "return_pct": 0.03,
+          "annualized": 1.97,
+          "max_drawdown": -0.13,
           "worst_date": "2026-04-24",
-          "is_win": false
+          "is_win": true
         },
         {
           "entry_date": "2026-04-28",
@@ -1504,7 +1583,21 @@
           "is_win": false
         }
       ]
-    }
+    },
+    "blogger_time_horizon": {
+      "distribution": {
+        "intraday": 126,
+        "short": 698,
+        "medium": 207,
+        "long": 76,
+        "unspecified": 56
+      },
+      "total": 1163,
+      "blogger_type": "短线交易型",
+      "short_pct": 70.9,
+      "long_pct": 6.5
+    },
+    "extraction_method": "pattern_based_v2"
   },
   "云帆观市": {
     "blogger": "云帆观市",
@@ -1519,76 +1612,77 @@
       "following": "3"
     },
     "signal_dist": {
-      "strong_explicit": 160,
-      "strong_clear": 101,
-      "moderate_explicit": 20,
-      "moderate_clear": 149,
-      "vague": 17,
-      "total": 447,
-      "valid": 430,
-      "bullish": 316,
-      "bearish": 131
+      "strong_explicit": 168,
+      "strong_clear": 96,
+      "moderate_explicit": 14,
+      "moderate_clear": 110,
+      "vague": 291,
+      "descriptive": 84,
+      "total": 763,
+      "valid": 388,
+      "bullish": 551,
+      "bearish": 212
     },
     "precision": {
       "bullish": {
-        "total": 297,
-        "strong": 187,
-        "moderate": 110,
-        "win_rate": 57.2,
-        "avg_return": 1.75,
+        "total": 279,
+        "strong": 193,
+        "moderate": 86,
+        "win_rate": 58.1,
+        "avg_return": 1.89,
         "max_gain": 25.28,
         "max_loss": -23.39,
-        "profit_factor": 2.13,
-        "severe_errors": 23,
+        "profit_factor": 2.28,
+        "severe_errors": 20,
         "win_rates": {
-          "T+5": 56.9,
-          "T+10": 53.0,
-          "T+15": 58.1,
-          "T+20": 57.2
+          "T+5": 58.5,
+          "T+10": 53.7,
+          "T+15": 59.5,
+          "T+20": 58.1
         },
         "avg_returns": {
-          "T+5": 0.49,
-          "T+10": 0.79,
-          "T+15": 1.11,
-          "T+20": 1.75
+          "T+5": 0.53,
+          "T+10": 0.87,
+          "T+15": 1.29,
+          "T+20": 1.89
         },
         "risk": {
           "T+5": {
-            "weighted_avg_adverse": -1.38,
+            "weighted_avg_adverse": -1.39,
             "worst_adverse": -10.78,
-            "pct_adverse_gt3": 12.5,
+            "pct_adverse_gt3": 13.6,
             "reward_risk_ratio": 0
           },
           "T+10": {
-            "weighted_avg_adverse": -2.12,
+            "weighted_avg_adverse": -2.15,
             "worst_adverse": -14.26,
-            "pct_adverse_gt3": 21.7,
+            "pct_adverse_gt3": 21.6,
             "reward_risk_ratio": 0
           },
           "T+15": {
-            "weighted_avg_adverse": -2.68,
+            "weighted_avg_adverse": -2.65,
             "worst_adverse": -21.05,
-            "pct_adverse_gt3": 29.2,
+            "pct_adverse_gt3": 27.5,
             "reward_risk_ratio": 0
           },
           "T+20": {
-            "weighted_avg_adverse": -3.0,
+            "weighted_avg_adverse": -2.9,
             "worst_adverse": -23.39,
-            "pct_adverse_gt3": 36.0,
+            "pct_adverse_gt3": 33.3,
             "reward_risk_ratio": 0
           }
         },
         "strong_win_rates": {
-          "T+5": 59.3,
-          "T+10": 54.6,
-          "T+15": 59.2,
-          "T+20": 58.3
+          "T+5": 59.7,
+          "T+10": 54.7,
+          "T+15": 60.1,
+          "T+20": 59.1
         },
         "strong_avg_returns": {
-          "T+5": 0.62,
-          "T+10": 0.81,
-          "T+15": 1.03,
-          "T+20": 1.85
+          "T+5": 0.59,
+          "T+10": 0.82,
+          "T+15": 1.22,
+          "T+20": 2.01
         },
         "strong_risk": {
           "T+5": {
@@ -1597,24 +1691,18 @@
           },
           "T+10": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 23.2
+            "pct_adverse_gt3": 22.9
           },
           "T+15": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 30.4
+            "pct_adverse_gt3": 28.8
           },
           "T+20": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 34.8
+            "pct_adverse_gt3": 32.6
           }
         },
         "severe_details": [
-          {
-            "date": "2024-08-15",
-            "evidence": "A股：央行出手，反弹了，放量了，大阳线来了！股民：该涨涨了！",
-            "forward_return": -5.57,
-            "max_adverse": -5.57
-          },
           {
             "date": "2024-08-16",
             "evidence": "A股：不容易，太不容易了！下周站上这一位置，资金才可能进场！",
@@ -1622,111 +1710,124 @@
             "max_adverse": -6.09
           },
           {
-            "date": "2024-08-16",
-            "evidence": "A股：刚刚，最高检发声！全球股市大涨，A股独立行情，太急人了！",
-            "forward_return": -6.09,
-            "max_adverse": -6.09
-          },
-          {
-            "date": "2024-08-19",
-            "evidence": "A股：重磅，社保发声了！股民：反弹吧，再不涨就没有时间了！",
-            "forward_return": -6.1,
-            "max_adverse": -6.55
-          },
-          {
             "date": "2024-12-09",
             "evidence": "今天的A股将会备受关注，由于周末突发黑天鹅，今天周一走势成为了关键，给股民朋友说几点核心内容：\n\n\n1、周末市场最大的黑天鹅就是叙利亚局势，很多人对此有担忧，担",
             "forward_return": -9.8,
             "max_adverse": -10.43
+          },
+          {
+            "date": "2024-12-24",
+            "evidence": "A股：财政部重磅发声，三大指数集体大涨，股民：明天重回3400点",
+            "forward_return": -5.3,
+            "max_adverse": -6.86
+          },
+          {
+            "date": "2024-12-30",
+            "evidence": "A股：缩量上涨，股民：真稳！明天重磅数据落地，会超预期吗？",
+            "forward_return": -5.22,
+            "max_adverse": -7.24
+          },
+          {
+            "date": "2025-03-10",
+            "evidence": "A股：缩量探底回升，盘后一则消息引起关注，明天将会这样走！",
+            "forward_return": -6.55,
+            "max_adverse": -8.01
           }
         ],
-        "strong_total": 195
+        "time_horizon_distribution": {
+          "intraday": 88,
+          "short": 150,
+          "medium": 22,
+          "long": 4,
+          "unspecified": 24
+        },
+        "horizon_weighted_win_rate": 54.5,
+        "horizon_weighted_avg_return": 0.8,
+        "optimal_window": "T+15",
+        "optimal_window_win_rate": 59.5,
+        "decay_pattern": "hump",
+        "long_window_stats": null,
+        "strong_total": 202
       },
       "bearish": {
-        "total": 117,
-        "strong": 58,
-        "moderate": 59,
-        "win_rate": 39.3,
-        "avg_return": -1.68,
+        "total": 90,
+        "strong": 52,
+        "moderate": 38,
+        "win_rate": 37.8,
+        "avg_return": -2.12,
         "max_gain": 6.58,
         "max_loss": -21.51,
-        "profit_factor": 0.41,
+        "profit_factor": 0.37,
         "severe_errors": 22,
         "win_rates": {
-          "T+5": 52.8,
-          "T+10": 41.0,
-          "T+15": 45.5,
-          "T+20": 39.3
+          "T+5": 53.6,
+          "T+10": 40.6,
+          "T+15": 46.3,
+          "T+20": 37.8
         },
         "avg_returns": {
-          "T+5": -0.29,
-          "T+10": -0.56,
-          "T+15": -1.26,
-          "T+20": -1.68
+          "T+5": -0.38,
+          "T+10": -0.7,
+          "T+15": -1.52,
+          "T+20": -2.12
         },
         "risk": {
           "T+5": {
-            "weighted_avg_adverse": -1.52,
+            "weighted_avg_adverse": -1.63,
             "worst_adverse": -21.37,
-            "pct_adverse_gt3": 13.0,
+            "pct_adverse_gt3": 13.4,
             "reward_risk_ratio": 0
           },
           "T+10": {
-            "weighted_avg_adverse": -2.58,
+            "weighted_avg_adverse": -2.82,
             "worst_adverse": -29.06,
-            "pct_adverse_gt3": 22.1,
+            "pct_adverse_gt3": 24.0,
             "reward_risk_ratio": 0
           },
           "T+15": {
-            "weighted_avg_adverse": -3.72,
+            "weighted_avg_adverse": -4.07,
             "worst_adverse": -29.06,
-            "pct_adverse_gt3": 34.7,
+            "pct_adverse_gt3": 35.8,
             "reward_risk_ratio": 0
           },
           "T+20": {
-            "weighted_avg_adverse": -4.6,
+            "weighted_avg_adverse": -5.02,
             "worst_adverse": -29.06,
-            "pct_adverse_gt3": 48.7,
+            "pct_adverse_gt3": 50.0,
             "reward_risk_ratio": 0
           }
         },
         "strong_win_rates": {
-          "T+5": 54.7,
-          "T+10": 44.4,
-          "T+15": 48.4,
-          "T+20": 36.2
+          "T+5": 52.5,
+          "T+10": 44.8,
+          "T+15": 52.6,
+          "T+20": 38.5
         },
         "strong_avg_returns": {
-          "T+5": -0.09,
-          "T+10": -0.47,
-          "T+15": -1.41,
-          "T+20": -2.09
+          "T+5": -0.13,
+          "T+10": -0.43,
+          "T+15": -1.35,
+          "T+20": -2.18
         },
         "strong_risk": {
           "T+5": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 14.1
+            "pct_adverse_gt3": 13.6
           },
           "T+10": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 23.8
+            "pct_adverse_gt3": 24.1
           },
           "T+15": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 37.1
+            "pct_adverse_gt3": 36.8
           },
           "T+20": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 53.4
+            "pct_adverse_gt3": 50.0
           }
         },
         "severe_details": [
-          {
-            "date": "2024-09-04",
-            "evidence": "A股：加息，衰退，暴跌！全球“风声鹤唳”，A股就必须站起来！",
-            "forward_return": -15.57,
-            "max_adverse": -25.34
-          },
           {
             "date": "2024-09-06",
             "evidence": "国泰君安拟吸收合并海通证券，三个意义很明显：\n\n一是两大千亿市值合并，合并后一加一等于二的话，那体量至少也和中信证券差不多，可能就不再是中信一家独大；\n\n二是上",
@@ -1750,25 +1851,44 @@
             "evidence": "A股：大盘四连阳了，走势却有些不对，明天开始新一轮下跌吗？",
             "forward_return": -20.85,
             "max_adverse": -26.95
+          },
+          {
+            "date": "2024-09-25",
+            "evidence": "A股：爆量了，长上影线，是空中加油还是出货？明天将会这样走！",
+            "forward_return": -12.77,
+            "max_adverse": -20.49
           }
         ],
-        "strong_total": 66
+        "time_horizon_distribution": {
+          "intraday": 20,
+          "short": 54,
+          "medium": 9,
+          "long": 4,
+          "unspecified": 13
+        },
+        "horizon_weighted_win_rate": 48.6,
+        "horizon_weighted_avg_return": -0.76,
+        "optimal_window": "T+5",
+        "optimal_window_win_rate": 53.6,
+        "decay_pattern": "mixed",
+        "long_window_stats": null,
+        "strong_total": 62
       }
     },
     "pairs": {
       "blogger": "云帆观市",
       "fallback": false,
-      "total_actions": 180,
-      "total_trades": 34,
+      "total_actions": 182,
+      "total_trades": 28,
       "open_position": null,
       "summary": {
-        "win_rate": 41.2,
-        "avg_return": 0.32,
-        "avg_holding_days": 11.1,
+        "win_rate": 39.3,
+        "avg_return": 0.21,
+        "avg_holding_days": 14.4,
         "max_gain": 11.18,
         "max_loss": -5.0,
-        "avg_max_drawdown": -1.56,
-        "profit_factor": 1.36
+        "avg_max_drawdown": -1.88,
+        "profit_factor": 1.23
       },
       "trades": [
         {
@@ -1776,48 +1896,16 @@
           "entry_actual": "2024-07-02",
           "entry_price": 2997.011,
           "entry_evidence": "A股：好消息，大盘冲了3000点；坏消息，消费者们还敢进场吗？",
-          "exit_date": "2024-07-11",
-          "exit_actual": "2024-07-11",
-          "exit_price": 2970.387,
-          "exit_evidence": "A股：转融通做空暂停，国家队资金也要出货了？股民：这么明显！",
-          "holding_days": 7,
-          "return_pct": -0.89,
-          "annualized": -27.47,
-          "max_drawdown": -2.49,
-          "worst_date": "2024-07-08",
-          "is_win": false
-        },
-        {
-          "entry_date": "2024-07-12",
-          "entry_actual": "2024-07-12",
-          "entry_price": 2971.295,
-          "entry_evidence": "A股：最新消息，500亿险资已入市抄底！股民：再坚持下，等反弹！",
-          "exit_date": "2024-08-21",
-          "exit_actual": "2024-08-21",
-          "exit_price": 2856.584,
-          "exit_evidence": "A股：注意，开始出货了！是好事还是坏事？给所有股民朋友提个醒",
-          "holding_days": 28,
-          "return_pct": -3.86,
-          "annualized": -29.84,
-          "max_drawdown": -4.06,
-          "worst_date": "2024-08-14",
-          "is_win": false
-        },
-        {
-          "entry_date": "2024-09-09",
-          "entry_actual": "2024-09-09",
-          "entry_price": 2736.488,
-          "entry_evidence": "A股：尾盘爆拉！2635到2726点已不足百点，明天是否可以入场？",
           "exit_date": "2024-09-25",
           "exit_actual": "2024-09-25",
           "exit_price": 2896.306,
           "exit_evidence": "A股：爆量了，长上影线，是空中加油还是出货？明天将会这样走！",
-          "holding_days": 10,
-          "return_pct": 5.84,
-          "annualized": 318.03,
-          "max_drawdown": -1.18,
+          "holding_days": 59,
+          "return_pct": -3.36,
+          "annualized": -13.58,
+          "max_drawdown": -9.77,
           "worst_date": "2024-09-13",
-          "is_win": true
+          "is_win": false
         },
         {
           "entry_date": "2024-09-26",
@@ -1840,31 +1928,15 @@
           "entry_actual": "2024-09-30",
           "entry_price": 3336.497,
           "entry_evidence": "真是万万没有想到，今天新闻联播用了近四十秒再次报道A股，这下全国人民都知道A股是牛市大涨了：\n\n1、今天的A股大涨上了新闻联播，上一次新闻联播报道A股还是在20",
-          "exit_date": "2024-10-29",
-          "exit_actual": "2024-10-29",
-          "exit_price": 3286.407,
-          "exit_evidence": "A股：放量下跌，跳水出货，行情结束了？炒作降温信号已经出现！",
-          "holding_days": 16,
-          "return_pct": -1.5,
-          "annualized": -21.2,
-          "max_drawdown": -5.01,
-          "worst_date": "2024-10-17",
-          "is_win": false
-        },
-        {
-          "entry_date": "2024-11-01",
-          "entry_actual": "2024-11-01",
-          "entry_price": 3272.014,
-          "entry_evidence": "证监会和上交所最新消息，两大利好和两大利空，周末情绪会继续发酵，对于下周的行情影响几何？说说自己的看法：\n\n1、第一大消息，10月非农就业人数为1.2万人，事前",
           "exit_date": "2024-12-25",
           "exit_actual": "2024-12-25",
           "exit_price": 3393.35,
           "exit_evidence": "今天的A股，全靠自己表现，大盘已到3400点重要关口，不得不突破，主要说几点大家关心的问题：\n\n1、由于圣诞节原因，美股昨晚提前休市，但这不妨碍美股市场继续反弹",
-          "holding_days": 38,
-          "return_pct": 3.71,
-          "annualized": 27.31,
-          "max_drawdown": -0.37,
-          "worst_date": "2024-11-26",
+          "holding_days": 57,
+          "return_pct": 1.7,
+          "annualized": 7.76,
+          "max_drawdown": -5.01,
+          "worst_date": "2024-10-17",
           "is_win": true
         },
         {
@@ -1888,30 +1960,14 @@
           "entry_actual": "2025-02-11",
           "entry_price": 3318.057,
           "entry_evidence": "今天的A股，主力资金直接摊牌了，股民散户的幻想开始破灭了？当利好充分释放的时候，很明显主力资金再一次的提前抢跑兑现了，短期行情到顶了吗？给所有股民朋友说说自己的",
-          "exit_date": "2025-02-13",
-          "exit_actual": "2025-02-13",
-          "exit_price": 3332.483,
-          "exit_evidence": "A股：刚刚，最高检发声！内资主力大幅出货，大风浪要来了吗？",
-          "holding_days": 2,
-          "return_pct": 0.43,
-          "annualized": 72.74,
-          "max_drawdown": -0.0,
-          "worst_date": "2025-02-11",
-          "is_win": true
-        },
-        {
-          "entry_date": "2025-02-15",
-          "entry_actual": "2025-02-17",
-          "entry_price": 3355.83,
-          "entry_evidence": "A股周末炸裂的消息，上交所原副总被查，股民：A股市场涨不起来的原因很明显。中央汇金大动作，股市真的要变天了？给所有股民朋友的提醒：\n\n1、A股市场周五尾盘拉升可",
           "exit_date": "2025-03-01",
           "exit_actual": "2025-03-03",
           "exit_price": 3316.925,
           "exit_evidence": "周末，证监会出手了，A股市场重磅数据超预期，关注度较高的四大消息汇集，下周的A股是修复反弹还是继续大跌？给所有股民朋友的详细分析：\n\n1、周末，证监会发声释放了",
-          "holding_days": 10,
-          "return_pct": -1.16,
-          "annualized": -25.46,
-          "max_drawdown": -1.16,
+          "holding_days": 14,
+          "return_pct": -0.03,
+          "annualized": -0.61,
+          "max_drawdown": -0.03,
           "worst_date": "2025-03-03",
           "is_win": false
         },
@@ -1932,51 +1988,19 @@
           "is_win": false
         },
         {
-          "entry_date": "2025-04-10",
-          "entry_actual": "2025-04-10",
-          "entry_price": 3223.638,
-          "entry_evidence": "A股：行情有些不对劲了，全球股市大涨，A股市场却想要出货跳水？",
-          "exit_date": "2025-05-09",
-          "exit_actual": "2025-05-09",
-          "exit_price": 3341.999,
-          "exit_evidence": "A股：银行掩护主力资金出货，散户做好准备，要回补缺口了吗？",
-          "holding_days": 18,
-          "return_pct": 3.67,
-          "annualized": 65.67,
-          "max_drawdown": -0.0,
-          "worst_date": "2025-04-10",
-          "is_win": true
-        },
-        {
-          "entry_date": "2025-05-14",
-          "entry_actual": "2025-05-14",
-          "entry_price": 3403.948,
-          "entry_evidence": "今天的A股，有点不对劲了，最大的问题就是缩量，股民朋友需要小心谨慎，外围股市持续上涨，A股始终走自己的独立行情，情绪可能会越来越低迷：\n\n1、今天是5月14日，",
-          "exit_date": "2025-05-22",
-          "exit_actual": "2025-05-22",
-          "exit_price": 3380.189,
-          "exit_evidence": "A股：不用等收盘了，主力被看穿了，股民：继续拉银行掩护出货！",
-          "holding_days": 6,
-          "return_pct": -0.7,
-          "annualized": -25.49,
-          "max_drawdown": -1.07,
-          "worst_date": "2025-05-16",
-          "is_win": false
-        },
-        {
-          "entry_date": "2025-05-27",
-          "entry_actual": "2025-05-27",
-          "entry_price": 3340.687,
-          "entry_evidence": "今天的A股，有点不寻常了，还会再次跳水吗？某队神秘资金出手稳定情绪，股民朋友需要密切关注这一个信号：\n\n1、今天大盘指数开盘保持窄幅震荡，从分时走势来看，代表权",
+          "entry_date": "2025-04-13",
+          "entry_actual": "2025-04-14",
+          "entry_price": 3262.808,
+          "entry_evidence": "周末吵疯了，看到一条最为炸裂的消息，美国对部分商品免征“对等关税”，这是不是美国关税要放松的信号？中国产品是否包含在内？对我们是不是大利好？市场的争议非常的多，",
           "exit_date": "2025-06-14",
           "exit_actual": "2025-06-16",
           "exit_price": 3388.729,
           "exit_evidence": "周末A股休市不交易，股民散户心系市场，尤其是看到中东局势又紧张升级了，不出意外的话，下周A股将会有更大级别的波动了吗？在A股市场开市交易之前，所有的情绪变化都只",
-          "holding_days": 13,
-          "return_pct": 1.44,
-          "annualized": 31.89,
-          "max_drawdown": -0.02,
-          "worst_date": "2025-05-28",
+          "holding_days": 41,
+          "return_pct": 3.86,
+          "annualized": 26.21,
+          "max_drawdown": -0.0,
+          "worst_date": "2025-04-14",
           "is_win": true
         },
         {
@@ -2316,7 +2340,21 @@
           "is_win": false
         }
       ]
-    }
+    },
+    "blogger_time_horizon": {
+      "distribution": {
+        "intraday": 244,
+        "short": 332,
+        "medium": 53,
+        "long": 12,
+        "unspecified": 122
+      },
+      "total": 763,
+      "blogger_type": "短线交易型",
+      "short_pct": 75.5,
+      "long_pct": 1.6
+    },
+    "extraction_method": "pattern_based_v2"
   },
   "凸教授": {
     "blogger": "凸教授",
@@ -2331,111 +2369,100 @@
       "following": "0"
     },
     "signal_dist": {
-      "strong_explicit": 376,
-      "strong_clear": 105,
-      "moderate_explicit": 26,
-      "moderate_clear": 143,
-      "vague": 49,
-      "total": 699,
-      "valid": 650,
-      "bullish": 516,
-      "bearish": 183
+      "strong_explicit": 405,
+      "strong_clear": 104,
+      "moderate_explicit": 24,
+      "moderate_clear": 134,
+      "vague": 249,
+      "descriptive": 48,
+      "total": 964,
+      "valid": 667,
+      "bullish": 720,
+      "bearish": 244
     },
     "precision": {
       "bullish": {
-        "total": 487,
-        "strong": 373,
-        "moderate": 114,
-        "win_rate": 39.2,
-        "avg_return": -0.25,
+        "total": 512,
+        "strong": 404,
+        "moderate": 108,
+        "win_rate": 40.8,
+        "avg_return": -0.14,
         "max_gain": 19.89,
         "max_loss": -10.21,
-        "profit_factor": 0.85,
+        "profit_factor": 0.92,
         "severe_errors": 23,
         "win_rates": {
-          "T+5": 35.5,
-          "T+10": 37.5,
-          "T+15": 40.8,
-          "T+20": 39.2
+          "T+5": 36.8,
+          "T+10": 38.8,
+          "T+15": 42.1,
+          "T+20": 40.8
         },
         "avg_returns": {
-          "T+5": -0.41,
-          "T+10": -0.21,
-          "T+15": -1.0,
-          "T+20": -0.25
+          "T+5": -0.37,
+          "T+10": -0.17,
+          "T+15": -0.88,
+          "T+20": -0.14
         },
         "risk": {
           "T+5": {
-            "weighted_avg_adverse": -1.22,
+            "weighted_avg_adverse": -1.21,
             "worst_adverse": -18.21,
             "pct_adverse_gt3": 4.1,
             "reward_risk_ratio": 0
           },
           "T+10": {
-            "weighted_avg_adverse": -1.69,
+            "weighted_avg_adverse": -1.67,
             "worst_adverse": -20.26,
             "pct_adverse_gt3": 9.2,
             "reward_risk_ratio": 0
           },
           "T+15": {
-            "weighted_avg_adverse": -2.68,
+            "weighted_avg_adverse": -2.61,
             "worst_adverse": -20.26,
-            "pct_adverse_gt3": 52.5,
+            "pct_adverse_gt3": 50.1,
             "reward_risk_ratio": 0
           },
           "T+20": {
-            "weighted_avg_adverse": -2.96,
+            "weighted_avg_adverse": -2.9,
             "worst_adverse": -20.26,
-            "pct_adverse_gt3": 55.6,
+            "pct_adverse_gt3": 53.7,
             "reward_risk_ratio": 0
           }
         },
         "strong_win_rates": {
-          "T+5": 42.1,
-          "T+10": 45.3,
-          "T+15": 50.1,
-          "T+20": 47.7
+          "T+5": 42.8,
+          "T+10": 46.0,
+          "T+15": 50.5,
+          "T+20": 48.5
         },
         "strong_avg_returns": {
-          "T+5": -0.17,
-          "T+10": 0.12,
-          "T+15": -0.27,
-          "T+20": 0.33
+          "T+5": -0.15,
+          "T+10": 0.14,
+          "T+15": -0.22,
+          "T+20": 0.38
         },
         "strong_risk": {
           "T+5": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 4.8
+            "pct_adverse_gt3": 4.7
           },
           "T+10": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 9.4
+            "pct_adverse_gt3": 9.2
           },
           "T+15": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 42.1
+            "pct_adverse_gt3": 40.3
           },
           "T+20": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 46.1
+            "pct_adverse_gt3": 44.8
           }
         },
         "severe_details": [
           {
             "date": "2023-03-06",
-            "evidence": "A股：中午收盘，创业板见底反弹，下午带领大盘共振翻红！",
-            "forward_return": -8.49,
-            "max_adverse": -8.49
-          },
-          {
-            "date": "2023-03-06",
             "evidence": "大家早上好，周末欧美股市全线上涨！关于今日A股的行情，我再提示一遍，防止有的人没有看到：\n\n1、周末利好消息频频，欧美股市集体上涨，这对今日A股的行情会产生一定",
-            "forward_return": -8.49,
-            "max_adverse": -8.49
-          },
-          {
-            "date": "2023-04-26",
-            "evidence": "A股：中午收盘，主板下跌，创业板大涨，又是幺蛾子惹的祸！",
             "forward_return": -8.49,
             "max_adverse": -8.49
           },
@@ -2450,86 +2477,129 @@
             "evidence": "中午收盘，不啰嗦，直奔主题：\n\n1、上午创业板大涨3.28%，已经率先发起进攻，下午上证指数就会启动，正式向上突破，全天拉出一根中阳线。\n\n2、截止到中午收盘为",
             "forward_return": -8.49,
             "max_adverse": -8.49
+          },
+          {
+            "date": "2024-08-15",
+            "evidence": "明日，将继续大涨！今天市场打了一个漂亮的反攻战，让所有看空的人无地自容，但是很可惜，那些看空的人还在嘴硬，他们说这是诱多，他们说这是主力的圈套，他们说明天是股指",
+            "forward_return": -5.57,
+            "max_adverse": -5.57
+          },
+          {
+            "date": "2024-10-08",
+            "evidence": "哈哈哈，千股涨停，创业板暴涨近20%，你们见过吗？各位，凸教授告诉你们的“疯牛”行情有没有来？那种涨到可以让人发疯的行情，我有没有骗你们？\n\n收工，开盘即收盘，",
+            "forward_return": -10.21,
+            "max_adverse": -20.26
           }
         ],
-        "strong_total": 373
+        "time_horizon_distribution": {
+          "intraday": 101,
+          "short": 320,
+          "medium": 44,
+          "long": 10,
+          "unspecified": 38
+        },
+        "horizon_weighted_win_rate": 36.5,
+        "horizon_weighted_avg_return": -0.53,
+        "optimal_window": "T+15",
+        "optimal_window_win_rate": 42.1,
+        "decay_pattern": "hump",
+        "long_window_stats": {
+          "signal_count": 10,
+          "windows": {
+            "T+40": {
+              "count": 10,
+              "win_rate": 40.0,
+              "avg_return": -1.33,
+              "avg_adverse": -4.28,
+              "worst_adverse": -8.2
+            },
+            "T+60": {
+              "count": 10,
+              "win_rate": 30.0,
+              "avg_return": -1.34,
+              "avg_adverse": -5.34,
+              "worst_adverse": -8.2
+            }
+          }
+        },
+        "strong_total": 404
       },
       "bearish": {
-        "total": 162,
-        "strong": 108,
-        "moderate": 54,
-        "win_rate": 77.2,
-        "avg_return": 1.13,
+        "total": 154,
+        "strong": 105,
+        "moderate": 49,
+        "win_rate": 76.0,
+        "avg_return": 1.05,
         "max_gain": 8.49,
         "max_loss": -17.05,
-        "profit_factor": 2.21,
+        "profit_factor": 2.07,
         "severe_errors": 12,
         "win_rates": {
-          "T+5": 77.2,
-          "T+10": 78.4,
-          "T+15": 78.4,
-          "T+20": 77.2
+          "T+5": 76.0,
+          "T+10": 77.3,
+          "T+15": 77.3,
+          "T+20": 76.0
         },
         "avg_returns": {
-          "T+5": 0.86,
-          "T+10": 0.81,
-          "T+15": 2.15,
-          "T+20": 1.13
+          "T+5": 0.81,
+          "T+10": 0.77,
+          "T+15": 2.03,
+          "T+20": 1.05
         },
         "risk": {
           "T+5": {
-            "weighted_avg_adverse": -0.75,
+            "weighted_avg_adverse": -0.76,
             "worst_adverse": -5.37,
-            "pct_adverse_gt3": 3.7,
+            "pct_adverse_gt3": 3.9,
             "reward_risk_ratio": 0
           },
           "T+10": {
-            "weighted_avg_adverse": -1.01,
+            "weighted_avg_adverse": -1.04,
             "worst_adverse": -6.29,
-            "pct_adverse_gt3": 7.4,
+            "pct_adverse_gt3": 7.8,
             "reward_risk_ratio": 0
           },
           "T+15": {
-            "weighted_avg_adverse": -1.46,
+            "weighted_avg_adverse": -1.5,
             "worst_adverse": -27.53,
-            "pct_adverse_gt3": 11.7,
+            "pct_adverse_gt3": 12.3,
             "reward_risk_ratio": 0
           },
           "T+20": {
-            "weighted_avg_adverse": -1.75,
+            "weighted_avg_adverse": -1.81,
             "worst_adverse": -27.53,
-            "pct_adverse_gt3": 15.4,
+            "pct_adverse_gt3": 16.2,
             "reward_risk_ratio": 0
           }
         },
         "strong_win_rates": {
-          "T+5": 70.4,
-          "T+10": 72.2,
-          "T+15": 73.1,
-          "T+20": 70.4
+          "T+5": 69.5,
+          "T+10": 71.4,
+          "T+15": 72.4,
+          "T+20": 69.5
         },
         "strong_avg_returns": {
-          "T+5": 0.61,
-          "T+10": 0.51,
-          "T+15": 1.49,
-          "T+20": 0.62
+          "T+5": 0.57,
+          "T+10": 0.47,
+          "T+15": 1.39,
+          "T+20": 0.57
         },
         "strong_risk": {
           "T+5": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 4.6
+            "pct_adverse_gt3": 4.8
           },
           "T+10": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 10.2
+            "pct_adverse_gt3": 10.5
           },
           "T+15": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 16.7
+            "pct_adverse_gt3": 17.1
           },
           "T+20": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 20.4
+            "pct_adverse_gt3": 21.0
           }
         },
         "severe_details": [
@@ -2564,14 +2634,27 @@
             "max_adverse": -8.25
           }
         ],
-        "strong_total": 108
+        "time_horizon_distribution": {
+          "intraday": 25,
+          "short": 83,
+          "medium": 19,
+          "long": 2,
+          "unspecified": 25
+        },
+        "horizon_weighted_win_rate": 78.8,
+        "horizon_weighted_avg_return": 1.24,
+        "optimal_window": "T+10",
+        "optimal_window_win_rate": 77.3,
+        "decay_pattern": "hump",
+        "long_window_stats": null,
+        "strong_total": 105
       }
     },
     "pairs": {
       "blogger": "凸教授",
       "fallback": false,
-      "total_actions": 402,
-      "total_trades": 49,
+      "total_actions": 429,
+      "total_trades": 48,
       "open_position": {
         "entry_date": "2026-05-14",
         "entry_price": 4177.918,
@@ -2581,12 +2664,12 @@
         "floating_return": -8.36
       },
       "summary": {
-        "win_rate": 42.9,
-        "avg_return": 0.6,
-        "avg_holding_days": 8.1,
+        "win_rate": 43.8,
+        "avg_return": 0.61,
+        "avg_holding_days": 8.3,
         "max_gain": 10.15,
         "max_loss": -6.06,
-        "avg_max_drawdown": -0.83,
+        "avg_max_drawdown": -0.85,
         "profit_factor": 2.47
       },
       "trades": [
@@ -2675,22 +2758,6 @@
           "entry_actual": "2024-06-03",
           "entry_price": 3078.489,
           "entry_evidence": "晚上复盘，今天晚上我再次对券商和新能源汽车这两个板块进行重点分析。\n\n我曾在1月27日的时候对这两个板块进行过重点分析，当时还在春节假期中间，所以我文章的题目是",
-          "exit_date": "2023-04-11",
-          "exit_actual": "2024-06-03",
-          "exit_price": 3078.489,
-          "exit_evidence": "A股：中午收盘，大盘震荡调整，耐心持股等风来！",
-          "holding_days": 0,
-          "return_pct": 0.0,
-          "annualized": 0,
-          "max_drawdown": -0.0,
-          "worst_date": "2024-06-03",
-          "is_win": false
-        },
-        {
-          "entry_date": "2023-04-12",
-          "entry_actual": "2024-06-03",
-          "entry_price": 3078.489,
-          "entry_evidence": "大家早上好，调整结束，今日大盘将开启加速上涨。关于今日A股的行情，我再强调几句，防止有人没有看到。\n\n1、通过两天的震荡调整，大盘已经具备再次上攻的动能，今日大",
           "exit_date": "2023-04-26",
           "exit_actual": "2024-06-03",
           "exit_price": 3078.489,
@@ -2783,10 +2850,10 @@
           "is_win": false
         },
         {
-          "entry_date": "2024-03-18",
+          "entry_date": "2024-03-19",
           "entry_actual": "2024-06-03",
           "entry_price": 3078.489,
-          "entry_evidence": "中午收盘，不啰嗦，直奔主题：\n\n1、上午大盘震荡上攻，不要着急，下午大盘还会加速上攻，今天会收出一根中阳线。\n\n2、今日领涨的板块就是券商和人工智能，这两个板块",
+          "entry_evidence": "夜已深，关于明日A股的行情，我再强调几点，防止有人没有看到：\n\n1、今天最大的消息就是日本央行宣布17年来首次加息，负利率时代终结。这就意味着，一旦加息周期开启",
           "exit_date": "2024-04-12",
           "exit_actual": "2024-06-03",
           "exit_price": 3078.489,
@@ -3375,7 +3442,21 @@
           "is_win": true
         }
       ]
-    }
+    },
+    "blogger_time_horizon": {
+      "distribution": {
+        "intraday": 191,
+        "short": 562,
+        "medium": 79,
+        "long": 22,
+        "unspecified": 110
+      },
+      "total": 964,
+      "blogger_type": "短线交易型",
+      "short_pct": 78.1,
+      "long_pct": 2.3
+    },
+    "extraction_method": "pattern_based_v2"
   },
   "吉星高照": {
     "blogger": "吉星高照",
@@ -3390,81 +3471,82 @@
       "following": "583"
     },
     "signal_dist": {
-      "strong_explicit": 97,
-      "strong_clear": 83,
-      "moderate_explicit": 19,
-      "moderate_clear": 52,
-      "vague": 19,
-      "total": 270,
-      "valid": 251,
-      "bullish": 167,
-      "bearish": 103
+      "strong_explicit": 99,
+      "strong_clear": 80,
+      "moderate_explicit": 17,
+      "moderate_clear": 39,
+      "vague": 96,
+      "descriptive": 19,
+      "total": 350,
+      "valid": 235,
+      "bullish": 217,
+      "bearish": 133
     },
     "precision": {
       "bullish": {
-        "total": 149,
-        "strong": 115,
-        "moderate": 34,
-        "win_rate": 30.2,
-        "avg_return": -0.8,
+        "total": 142,
+        "strong": 114,
+        "moderate": 28,
+        "win_rate": 31.0,
+        "avg_return": -0.74,
         "max_gain": 19.89,
         "max_loss": -8.81,
-        "profit_factor": 0.63,
+        "profit_factor": 0.65,
         "severe_errors": 15,
         "win_rates": {
-          "T+5": 30.3,
-          "T+10": 30.1,
-          "T+15": 33.3,
-          "T+20": 30.2
+          "T+5": 30.9,
+          "T+10": 31.3,
+          "T+15": 34.3,
+          "T+20": 31.0
         },
         "avg_returns": {
           "T+5": -0.57,
-          "T+10": -0.36,
-          "T+15": -1.45,
-          "T+20": -0.8
+          "T+10": -0.32,
+          "T+15": -1.42,
+          "T+20": -0.74
         },
         "risk": {
           "T+5": {
-            "weighted_avg_adverse": -1.44,
+            "weighted_avg_adverse": -1.45,
             "worst_adverse": -7.66,
-            "pct_adverse_gt3": 8.4,
+            "pct_adverse_gt3": 9.4,
             "reward_risk_ratio": 0
           },
           "T+10": {
-            "weighted_avg_adverse": -1.9,
+            "weighted_avg_adverse": -1.89,
             "worst_adverse": -7.97,
-            "pct_adverse_gt3": 12.4,
+            "pct_adverse_gt3": 12.9,
             "reward_risk_ratio": 0
           },
           "T+15": {
-            "weighted_avg_adverse": -3.19,
-            "worst_adverse": -9.63,
-            "pct_adverse_gt3": 58.0,
+            "weighted_avg_adverse": -3.15,
+            "worst_adverse": -9.62,
+            "pct_adverse_gt3": 57.3,
             "reward_risk_ratio": 0
           },
           "T+20": {
-            "weighted_avg_adverse": -3.59,
-            "worst_adverse": -9.63,
-            "pct_adverse_gt3": 61.7,
+            "weighted_avg_adverse": -3.53,
+            "worst_adverse": -9.62,
+            "pct_adverse_gt3": 60.6,
             "reward_risk_ratio": 0
           }
         },
         "strong_win_rates": {
           "T+5": 33.6,
           "T+10": 33.3,
-          "T+15": 35.7,
-          "T+20": 32.2
+          "T+15": 36.0,
+          "T+20": 32.5
         },
         "strong_avg_returns": {
-          "T+5": -0.41,
-          "T+10": -0.27,
-          "T+15": -1.37,
-          "T+20": -0.74
+          "T+5": -0.42,
+          "T+10": -0.26,
+          "T+15": -1.41,
+          "T+20": -0.75
         },
         "strong_risk": {
           "T+5": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 8.4
+            "pct_adverse_gt3": 9.2
           },
           "T+10": {
             "weighted_avg_adverse": 0,
@@ -3472,11 +3554,11 @@
           },
           "T+15": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 54.8
+            "pct_adverse_gt3": 54.4
           },
           "T+20": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 58.3
+            "pct_adverse_gt3": 57.9
           }
         },
         "severe_details": [
@@ -3511,84 +3593,115 @@
             "max_adverse": -5.57
           }
         ],
+        "time_horizon_distribution": {
+          "intraday": 27,
+          "short": 76,
+          "medium": 17,
+          "long": 12,
+          "unspecified": 18
+        },
+        "horizon_weighted_win_rate": 29.5,
+        "horizon_weighted_avg_return": -0.84,
+        "optimal_window": "T+15",
+        "optimal_window_win_rate": 34.3,
+        "decay_pattern": "hump",
+        "long_window_stats": {
+          "signal_count": 12,
+          "windows": {
+            "T+40": {
+              "count": 11,
+              "win_rate": 18.2,
+              "avg_return": -4.12,
+              "avg_adverse": -5.45,
+              "worst_adverse": -8.01
+            },
+            "T+60": {
+              "count": 11,
+              "win_rate": 18.2,
+              "avg_return": -4.62,
+              "avg_adverse": -6.43,
+              "worst_adverse": -8.01
+            }
+          }
+        },
         "strong_total": 120
       },
       "bearish": {
-        "total": 92,
-        "strong": 57,
-        "moderate": 35,
-        "win_rate": 64.1,
-        "avg_return": 0.38,
+        "total": 82,
+        "strong": 56,
+        "moderate": 26,
+        "win_rate": 59.8,
+        "avg_return": 0.14,
         "max_gain": 8.49,
         "max_loss": -8.25,
-        "profit_factor": 1.26,
+        "profit_factor": 1.08,
         "severe_errors": 11,
         "win_rates": {
-          "T+5": 61.1,
-          "T+10": 59.6,
-          "T+15": 65.6,
-          "T+20": 64.1
+          "T+5": 56.5,
+          "T+10": 56.0,
+          "T+15": 61.4,
+          "T+20": 59.8
         },
         "avg_returns": {
-          "T+5": 0.24,
-          "T+10": 0.28,
-          "T+15": 0.98,
-          "T+20": 0.38
+          "T+5": 0.1,
+          "T+10": 0.14,
+          "T+15": 0.65,
+          "T+20": 0.14
         },
         "risk": {
           "T+5": {
-            "weighted_avg_adverse": -1.22,
+            "weighted_avg_adverse": -1.28,
             "worst_adverse": -13.03,
-            "pct_adverse_gt3": 8.4,
+            "pct_adverse_gt3": 9.4,
             "reward_risk_ratio": 0
           },
           "T+10": {
-            "weighted_avg_adverse": -1.66,
+            "weighted_avg_adverse": -1.76,
             "worst_adverse": -13.03,
-            "pct_adverse_gt3": 17.0,
+            "pct_adverse_gt3": 19.0,
             "reward_risk_ratio": 0
           },
           "T+15": {
-            "weighted_avg_adverse": -1.99,
+            "weighted_avg_adverse": -2.11,
             "worst_adverse": -13.03,
-            "pct_adverse_gt3": 21.5,
+            "pct_adverse_gt3": 24.1,
             "reward_risk_ratio": 0
           },
           "T+20": {
-            "weighted_avg_adverse": -2.36,
+            "weighted_avg_adverse": -2.52,
             "worst_adverse": -13.03,
-            "pct_adverse_gt3": 29.3,
+            "pct_adverse_gt3": 32.9,
             "reward_risk_ratio": 0
           }
         },
         "strong_win_rates": {
-          "T+5": 51.7,
-          "T+10": 52.5,
-          "T+15": 58.6,
-          "T+20": 56.1
+          "T+5": 50.8,
+          "T+10": 51.7,
+          "T+15": 57.9,
+          "T+20": 55.4
         },
         "strong_avg_returns": {
-          "T+5": -0.05,
-          "T+10": -0.02,
-          "T+15": 0.44,
-          "T+20": -0.04
+          "T+5": -0.08,
+          "T+10": -0.05,
+          "T+15": 0.38,
+          "T+20": -0.09
         },
         "strong_risk": {
           "T+5": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 8.3
+            "pct_adverse_gt3": 8.5
           },
           "T+10": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 20.3
+            "pct_adverse_gt3": 20.7
           },
           "T+15": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 25.9
+            "pct_adverse_gt3": 26.3
           },
           "T+20": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 35.1
+            "pct_adverse_gt3": 35.7
           }
         },
         "severe_details": [
@@ -3623,7 +3736,38 @@
             "max_adverse": -5.12
           }
         ],
-        "strong_total": 60
+        "time_horizon_distribution": {
+          "intraday": 10,
+          "short": 49,
+          "medium": 8,
+          "long": 9,
+          "unspecified": 9
+        },
+        "horizon_weighted_win_rate": 58.7,
+        "horizon_weighted_avg_return": 0.3,
+        "optimal_window": "T+15",
+        "optimal_window_win_rate": 61.4,
+        "decay_pattern": "hump",
+        "long_window_stats": {
+          "signal_count": 9,
+          "windows": {
+            "T+40": {
+              "count": 9,
+              "win_rate": 44.4,
+              "avg_return": -0.82,
+              "avg_adverse": -4.55,
+              "worst_adverse": -11.26
+            },
+            "T+60": {
+              "count": 9,
+              "win_rate": 44.4,
+              "avg_return": -1.11,
+              "avg_adverse": -5.79,
+              "worst_adverse": -14.6
+            }
+          }
+        },
+        "strong_total": 59
       }
     },
     "pairs": {
@@ -3641,12 +3785,12 @@
       },
       "summary": {
         "win_rate": 34.8,
-        "avg_return": 1.05,
-        "avg_holding_days": 14.0,
+        "avg_return": 1.07,
+        "avg_holding_days": 14.2,
         "max_gain": 23.68,
         "max_loss": -6.78,
-        "avg_max_drawdown": -1.33,
-        "profit_factor": 2.23
+        "avg_max_drawdown": -1.34,
+        "profit_factor": 2.31
       },
       "trades": [
         {
@@ -3958,15 +4102,15 @@
           "entry_actual": "2026-05-07",
           "entry_price": 4180.092,
           "entry_evidence": "明天是危险解除的一天！昨天60，90和120分钟都出现了顶背驰，而由于今天大盘依然上涨，60分钟和120分钟顶背驰消失了，只有90分钟背驰还在，如果明天上午依然",
-          "exit_date": "2026-05-15",
-          "exit_actual": "2026-05-15",
-          "exit_price": 4135.389,
-          "exit_evidence": "科创板是有门槛的，资金要求50万以上，小白的基数最大，他们经验少，容易上当，但由于资金有限，不允许开户科创，所以玩科创的都是有资金有经验有高智商的玩家，主力出货",
-          "holding_days": 6,
-          "return_pct": -1.07,
-          "annualized": -36.34,
-          "max_drawdown": -1.07,
-          "worst_date": "2026-05-15",
+          "exit_date": "2026-05-20",
+          "exit_actual": "2026-05-20",
+          "exit_price": 4162.185,
+          "exit_evidence": "今天股市走得很难看，明天还会跌吗？今天3000多家股票下跌，其中跌幅超过4%的股票达到400家。可以说盘面很惨淡。但你不用担心明天，明天一定会反弹。因为本轮下跌",
+          "holding_days": 9,
+          "return_pct": -0.43,
+          "annualized": -11.33,
+          "max_drawdown": -1.16,
+          "worst_date": "2026-05-18",
           "is_win": false
         },
         {
@@ -4018,7 +4162,21 @@
           "is_win": false
         }
       ]
-    }
+    },
+    "blogger_time_horizon": {
+      "distribution": {
+        "intraday": 54,
+        "short": 185,
+        "medium": 35,
+        "long": 29,
+        "unspecified": 47
+      },
+      "total": 350,
+      "blogger_type": "短线交易型",
+      "short_pct": 68.3,
+      "long_pct": 8.3
+    },
+    "extraction_method": "pattern_based_v2"
   },
   "大盘蜂向标": {
     "blogger": "大盘蜂向标",
@@ -4033,93 +4191,94 @@
       "following": "1"
     },
     "signal_dist": {
-      "strong_explicit": 18,
-      "strong_clear": 42,
+      "strong_explicit": 19,
+      "strong_clear": 43,
       "moderate_explicit": 2,
-      "moderate_clear": 32,
-      "vague": 5,
-      "total": 99,
-      "valid": 94,
-      "bullish": 63,
-      "bearish": 36
+      "moderate_clear": 35,
+      "vague": 12,
+      "descriptive": 5,
+      "total": 116,
+      "valid": 99,
+      "bullish": 75,
+      "bearish": 41
     },
     "precision": {
       "bullish": {
-        "total": 57,
-        "strong": 37,
-        "moderate": 20,
-        "win_rate": 40.4,
-        "avg_return": -0.65,
+        "total": 64,
+        "strong": 41,
+        "moderate": 23,
+        "win_rate": 42.2,
+        "avg_return": -0.42,
         "max_gain": 7.73,
         "max_loss": -6.58,
-        "profit_factor": 0.67,
+        "profit_factor": 0.76,
         "severe_errors": 12,
         "win_rates": {
-          "T+5": 53.3,
-          "T+10": 44.1,
-          "T+15": 49.1,
-          "T+20": 40.4
+          "T+5": 49.3,
+          "T+10": 43.9,
+          "T+15": 53.1,
+          "T+20": 42.2
         },
         "avg_returns": {
-          "T+5": -0.36,
-          "T+10": -0.18,
-          "T+15": -0.26,
-          "T+20": -0.65
+          "T+5": -0.43,
+          "T+10": -0.24,
+          "T+15": -0.06,
+          "T+20": -0.42
         },
         "risk": {
           "T+5": {
-            "weighted_avg_adverse": -1.49,
+            "weighted_avg_adverse": -1.62,
             "worst_adverse": -6.65,
-            "pct_adverse_gt3": 11.7,
+            "pct_adverse_gt3": 14.9,
             "reward_risk_ratio": 0
           },
           "T+10": {
-            "weighted_avg_adverse": -2.06,
-            "worst_adverse": -7.52,
-            "pct_adverse_gt3": 27.1,
+            "weighted_avg_adverse": -2.16,
+            "worst_adverse": -7.61,
+            "pct_adverse_gt3": 28.8,
             "reward_risk_ratio": 0
           },
           "T+15": {
-            "weighted_avg_adverse": -2.58,
-            "worst_adverse": -7.52,
-            "pct_adverse_gt3": 36.8,
+            "weighted_avg_adverse": -2.63,
+            "worst_adverse": -7.61,
+            "pct_adverse_gt3": 37.5,
             "reward_risk_ratio": 0
           },
           "T+20": {
-            "weighted_avg_adverse": -3.53,
+            "weighted_avg_adverse": -3.48,
             "worst_adverse": -8.05,
-            "pct_adverse_gt3": 52.6,
+            "pct_adverse_gt3": 51.6,
             "reward_risk_ratio": 0
           }
         },
         "strong_win_rates": {
-          "T+5": 60.5,
-          "T+10": 44.7,
-          "T+15": 51.4,
-          "T+20": 35.1
+          "T+5": 57.1,
+          "T+10": 42.9,
+          "T+15": 53.7,
+          "T+20": 34.1
         },
         "strong_avg_returns": {
-          "T+5": -0.26,
-          "T+10": -0.03,
-          "T+15": -0.28,
-          "T+20": -0.72
+          "T+5": -0.35,
+          "T+10": -0.08,
+          "T+15": -0.26,
+          "T+20": -0.65
         },
         "strong_risk": {
           "T+5": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 15.8
+            "pct_adverse_gt3": 19.0
           },
           "T+10": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 23.7
+            "pct_adverse_gt3": 26.2
           },
           "T+15": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 35.1
+            "pct_adverse_gt3": 36.6
           },
           "T+20": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 51.4
+            "pct_adverse_gt3": 51.2
           }
         },
         "severe_details": [
@@ -4154,84 +4313,97 @@
             "max_adverse": -8.04
           }
         ],
-        "strong_total": 38
+        "time_horizon_distribution": {
+          "intraday": 7,
+          "short": 42,
+          "medium": 10,
+          "long": 1,
+          "unspecified": 7
+        },
+        "horizon_weighted_win_rate": 47.5,
+        "horizon_weighted_avg_return": -0.32,
+        "optimal_window": "T+15",
+        "optimal_window_win_rate": 53.1,
+        "decay_pattern": "hump",
+        "long_window_stats": null,
+        "strong_total": 42
       },
       "bearish": {
-        "total": 26,
-        "strong": 16,
+        "total": 23,
+        "strong": 13,
         "moderate": 10,
-        "win_rate": 53.8,
-        "avg_return": 0.02,
+        "win_rate": 56.5,
+        "avg_return": 0.29,
         "max_gain": 6.58,
         "max_loss": -11.38,
-        "profit_factor": 1.01,
-        "severe_errors": 3,
+        "profit_factor": 1.22,
+        "severe_errors": 2,
         "win_rates": {
-          "T+5": 38.7,
-          "T+10": 44.4,
-          "T+15": 46.2,
-          "T+20": 53.8
+          "T+5": 34.5,
+          "T+10": 45.8,
+          "T+15": 43.5,
+          "T+20": 56.5
         },
         "avg_returns": {
-          "T+5": -0.43,
-          "T+10": -0.52,
-          "T+15": -0.92,
-          "T+20": 0.02
+          "T+5": -0.68,
+          "T+10": -0.55,
+          "T+15": -0.96,
+          "T+20": 0.29
         },
         "risk": {
           "T+5": {
-            "weighted_avg_adverse": -1.74,
+            "weighted_avg_adverse": -1.81,
             "worst_adverse": -6.77,
-            "pct_adverse_gt3": 12.9,
+            "pct_adverse_gt3": 13.8,
             "reward_risk_ratio": 0
           },
           "T+10": {
-            "weighted_avg_adverse": -2.39,
+            "weighted_avg_adverse": -2.47,
             "worst_adverse": -6.77,
-            "pct_adverse_gt3": 29.6,
+            "pct_adverse_gt3": 29.2,
             "reward_risk_ratio": 0
           },
           "T+15": {
-            "weighted_avg_adverse": -2.94,
+            "weighted_avg_adverse": -2.98,
             "worst_adverse": -11.78,
-            "pct_adverse_gt3": 46.2,
+            "pct_adverse_gt3": 43.5,
             "reward_risk_ratio": 0
           },
           "T+20": {
-            "weighted_avg_adverse": -3.19,
+            "weighted_avg_adverse": -3.2,
             "worst_adverse": -14.89,
-            "pct_adverse_gt3": 46.2,
+            "pct_adverse_gt3": 43.5,
             "reward_risk_ratio": 0
           }
         },
         "strong_win_rates": {
-          "T+5": 35.0,
-          "T+10": 35.3,
-          "T+15": 37.5,
-          "T+20": 43.8
+          "T+5": 27.8,
+          "T+10": 28.6,
+          "T+15": 30.8,
+          "T+20": 38.5
         },
         "strong_avg_returns": {
-          "T+5": -0.54,
-          "T+10": -0.86,
-          "T+15": -0.8,
-          "T+20": -0.07
+          "T+5": -0.97,
+          "T+10": -1.27,
+          "T+15": -1.18,
+          "T+20": 0.05
         },
         "strong_risk": {
           "T+5": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 15.0
+            "pct_adverse_gt3": 16.7
           },
           "T+10": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 41.2
+            "pct_adverse_gt3": 42.9
           },
           "T+15": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 56.2
+            "pct_adverse_gt3": 61.5
           },
           "T+20": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 56.2
+            "pct_adverse_gt3": 61.5
           }
         },
         "severe_details": [
@@ -4242,25 +4414,32 @@
             "max_adverse": -5.54
           },
           {
-            "date": "2026-04-02",
-            "evidence": "上午市场情绪很差，因为草盘手川川又变卦了，赶在我们开盘前控盘，导致原油大幅拉升。\n结果就是石油板块走强，个股走弱。\n\n这两天还有一次逃命的机会，然后去破前两天说",
-            "forward_return": -6.15,
-            "max_adverse": -6.15
-          },
-          {
             "date": "2026-04-15",
             "evidence": "昨天出现超长柱，看下今天市场的表现吧。\n\n上证、深指，创业板如期下雨了，区别在毛毛雨和中小雨，涨跌比一目了然\n\n接下来会小雨转大雨，还是雨转晴？\n1、从今天的恐",
             "forward_return": -11.38,
             "max_adverse": -14.89
           }
         ],
-        "strong_total": 22
+        "time_horizon_distribution": {
+          "intraday": 2,
+          "short": 17,
+          "medium": 8,
+          "long": 1,
+          "unspecified": 4
+        },
+        "horizon_weighted_win_rate": 42.1,
+        "horizon_weighted_avg_return": -0.47,
+        "optimal_window": "T+20",
+        "optimal_window_win_rate": 56.5,
+        "decay_pattern": "mixed",
+        "long_window_stats": null,
+        "strong_total": 20
       }
     },
     "pairs": {
       "blogger": "大盘蜂向标",
       "fallback": false,
-      "total_actions": 20,
+      "total_actions": 21,
       "total_trades": 3,
       "open_position": {
         "entry_date": "2026-06-15",
@@ -4329,7 +4508,21 @@
           "is_win": true
         }
       ]
-    }
+    },
+    "blogger_time_horizon": {
+      "distribution": {
+        "intraday": 10,
+        "short": 67,
+        "medium": 21,
+        "long": 2,
+        "unspecified": 16
+      },
+      "total": 116,
+      "blogger_type": "短线交易型",
+      "short_pct": 66.4,
+      "long_pct": 1.7
+    },
+    "extraction_method": "pattern_based_v2"
   },
   "奔走的股票": {
     "blogger": "奔走的股票",
@@ -4345,92 +4538,93 @@
     },
     "signal_dist": {
       "strong_explicit": 14,
-      "strong_clear": 243,
+      "strong_clear": 219,
       "moderate_explicit": 5,
-      "moderate_clear": 333,
-      "vague": 0,
-      "total": 595,
-      "valid": 595,
-      "bullish": 360,
-      "bearish": 235
+      "moderate_clear": 310,
+      "vague": 1,
+      "descriptive": 105,
+      "total": 654,
+      "valid": 548,
+      "bullish": 401,
+      "bearish": 253
     },
     "precision": {
       "bullish": {
-        "total": 354,
-        "strong": 150,
-        "moderate": 204,
-        "win_rate": 56.2,
-        "avg_return": 1.03,
+        "total": 318,
+        "strong": 129,
+        "moderate": 189,
+        "win_rate": 56.9,
+        "avg_return": 1.12,
         "max_gain": 21.55,
         "max_loss": -8.81,
-        "profit_factor": 1.77,
-        "severe_errors": 30,
+        "profit_factor": 1.85,
+        "severe_errors": 28,
         "win_rates": {
-          "T+5": 52.1,
-          "T+10": 53.1,
-          "T+15": 55.2,
-          "T+20": 56.2
+          "T+5": 52.6,
+          "T+10": 55.0,
+          "T+15": 56.7,
+          "T+20": 56.9
         },
         "avg_returns": {
-          "T+5": 0.25,
-          "T+10": 0.58,
-          "T+15": 0.65,
-          "T+20": 1.03
+          "T+5": 0.31,
+          "T+10": 0.6,
+          "T+15": 0.7,
+          "T+20": 1.12
         },
         "risk": {
           "T+5": {
-            "weighted_avg_adverse": -1.12,
+            "weighted_avg_adverse": -1.16,
             "worst_adverse": -8.27,
             "pct_adverse_gt3": 8.4,
             "reward_risk_ratio": 0
           },
           "T+10": {
-            "weighted_avg_adverse": -1.69,
+            "weighted_avg_adverse": -1.72,
             "worst_adverse": -9.18,
-            "pct_adverse_gt3": 17.9,
+            "pct_adverse_gt3": 17.7,
             "reward_risk_ratio": 0
           },
           "T+15": {
-            "weighted_avg_adverse": -2.29,
+            "weighted_avg_adverse": -2.35,
             "worst_adverse": -9.63,
-            "pct_adverse_gt3": 31.0,
+            "pct_adverse_gt3": 29.5,
             "reward_risk_ratio": 0
           },
           "T+20": {
-            "weighted_avg_adverse": -2.66,
+            "weighted_avg_adverse": -2.71,
             "worst_adverse": -9.63,
-            "pct_adverse_gt3": 36.4,
+            "pct_adverse_gt3": 35.2,
             "reward_risk_ratio": 0
           }
         },
         "strong_win_rates": {
-          "T+5": 46.7,
-          "T+10": 49.0,
-          "T+15": 52.0,
-          "T+20": 50.0
+          "T+5": 40.5,
+          "T+10": 46.2,
+          "T+15": 48.8,
+          "T+20": 45.0
         },
         "strong_avg_returns": {
-          "T+5": 0.06,
-          "T+10": 0.09,
-          "T+15": -0.01,
-          "T+20": 0.17
+          "T+5": -0.26,
+          "T+10": -0.28,
+          "T+15": -0.49,
+          "T+20": -0.17
         },
         "strong_risk": {
           "T+5": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 7.9
+            "pct_adverse_gt3": 9.9
           },
           "T+10": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 17.2
+            "pct_adverse_gt3": 20.0
           },
           "T+15": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 34.0
+            "pct_adverse_gt3": 37.2
           },
           "T+20": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 38.7
+            "pct_adverse_gt3": 41.9
           }
         },
         "severe_details": [
@@ -4465,84 +4659,97 @@
             "max_adverse": -6.55
           }
         ],
-        "strong_total": 153
+        "time_horizon_distribution": {
+          "intraday": 7,
+          "short": 173,
+          "medium": 32,
+          "long": 2,
+          "unspecified": 110
+        },
+        "horizon_weighted_win_rate": 55.0,
+        "horizon_weighted_avg_return": 0.58,
+        "optimal_window": "T+20",
+        "optimal_window_win_rate": 56.9,
+        "decay_pattern": "rising",
+        "long_window_stats": null,
+        "strong_total": 132
       },
       "bearish": {
-        "total": 219,
-        "strong": 98,
-        "moderate": 121,
-        "win_rate": 42.0,
-        "avg_return": -1.24,
+        "total": 208,
+        "strong": 96,
+        "moderate": 112,
+        "win_rate": 43.3,
+        "avg_return": -1.16,
         "max_gain": 8.81,
         "max_loss": -22.78,
-        "profit_factor": 0.46,
-        "severe_errors": 31,
+        "profit_factor": 0.5,
+        "severe_errors": 29,
         "win_rates": {
-          "T+5": 47.6,
-          "T+10": 46.0,
-          "T+15": 43.0,
-          "T+20": 42.0
+          "T+5": 48.6,
+          "T+10": 47.0,
+          "T+15": 44.1,
+          "T+20": 43.3
         },
         "avg_returns": {
-          "T+5": -0.03,
-          "T+10": -0.36,
-          "T+15": -0.53,
-          "T+20": -1.24
+          "T+5": -0.01,
+          "T+10": -0.31,
+          "T+15": -0.45,
+          "T+20": -1.16
         },
         "risk": {
           "T+5": {
             "weighted_avg_adverse": -1.17,
             "worst_adverse": -20.49,
-            "pct_adverse_gt3": 4.8,
+            "pct_adverse_gt3": 4.6,
             "reward_risk_ratio": 0
           },
           "T+10": {
             "weighted_avg_adverse": -1.96,
             "worst_adverse": -28.43,
-            "pct_adverse_gt3": 17.7,
+            "pct_adverse_gt3": 17.2,
             "reward_risk_ratio": 0
           },
           "T+15": {
             "weighted_avg_adverse": -2.68,
             "worst_adverse": -28.43,
-            "pct_adverse_gt3": 30.5,
+            "pct_adverse_gt3": 29.6,
             "reward_risk_ratio": 0
           },
           "T+20": {
-            "weighted_avg_adverse": -3.47,
+            "weighted_avg_adverse": -3.5,
             "worst_adverse": -28.43,
-            "pct_adverse_gt3": 42.9,
+            "pct_adverse_gt3": 42.8,
             "reward_risk_ratio": 0
           }
         },
         "strong_win_rates": {
-          "T+5": 42.2,
-          "T+10": 43.6,
-          "T+15": 41.4,
-          "T+20": 38.8
+          "T+5": 40.4,
+          "T+10": 43.9,
+          "T+15": 40.2,
+          "T+20": 38.5
         },
         "strong_avg_returns": {
-          "T+5": -0.23,
-          "T+10": -0.66,
-          "T+15": -1.01,
-          "T+20": -1.58
+          "T+5": -0.26,
+          "T+10": -0.69,
+          "T+15": -1.09,
+          "T+20": -1.63
         },
         "strong_risk": {
           "T+5": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 3.9
+            "pct_adverse_gt3": 4.0
           },
           "T+10": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 18.8
+            "pct_adverse_gt3": 19.4
           },
           "T+15": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 34.3
+            "pct_adverse_gt3": 34.0
           },
           "T+20": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 48.0
+            "pct_adverse_gt3": 49.0
           }
         },
         "severe_details": [
@@ -4560,7 +4767,7 @@
           },
           {
             "date": "2024-08-30",
-            "evidence": "A股收评：一个大型诱多现场，中小主力玩闪现，大主力义无反顾",
+            "evidence": "A股：冲高回落，是主力的阴谋吗？下周（9月2-6日）大盘走势预判",
             "forward_return": -22.78,
             "max_adverse": -22.78
           },
@@ -4577,7 +4784,20 @@
             "max_adverse": -26.18
           }
         ],
-        "strong_total": 104
+        "time_horizon_distribution": {
+          "intraday": 2,
+          "short": 100,
+          "medium": 42,
+          "long": 0,
+          "unspecified": 80
+        },
+        "horizon_weighted_win_rate": 45.5,
+        "horizon_weighted_avg_return": -0.4,
+        "optimal_window": "T+5",
+        "optimal_window_win_rate": 48.6,
+        "decay_pattern": "falling",
+        "long_window_stats": null,
+        "strong_total": 101
       }
     },
     "pairs": {
@@ -4652,7 +4872,21 @@
           "is_win": true
         }
       ]
-    }
+    },
+    "blogger_time_horizon": {
+      "distribution": {
+        "intraday": 9,
+        "short": 274,
+        "medium": 76,
+        "long": 10,
+        "unspecified": 285
+      },
+      "total": 654,
+      "blogger_type": "混合型",
+      "short_pct": 43.3,
+      "long_pct": 1.5
+    },
+    "extraction_method": "pattern_based_v2"
   },
   "来自股市的猩猩": {
     "blogger": "来自股市的猩猩",
@@ -4667,93 +4901,94 @@
       "following": "414"
     },
     "signal_dist": {
-      "strong_explicit": 50,
-      "strong_clear": 156,
+      "strong_explicit": 51,
+      "strong_clear": 199,
       "moderate_explicit": 8,
-      "moderate_clear": 346,
-      "vague": 5,
-      "total": 565,
-      "valid": 560,
-      "bullish": 342,
-      "bearish": 223
+      "moderate_clear": 453,
+      "vague": 57,
+      "descriptive": 73,
+      "total": 841,
+      "valid": 711,
+      "bullish": 525,
+      "bearish": 316
     },
     "precision": {
       "bullish": {
-        "total": 324,
-        "strong": 147,
-        "moderate": 177,
-        "win_rate": 61.1,
-        "avg_return": 1.58,
+        "total": 425,
+        "strong": 186,
+        "moderate": 239,
+        "win_rate": 62.1,
+        "avg_return": 1.54,
         "max_gain": 23.65,
         "max_loss": -23.39,
-        "profit_factor": 2.2,
-        "severe_errors": 32,
+        "profit_factor": 2.24,
+        "severe_errors": 36,
         "win_rates": {
-          "T+5": 60.2,
-          "T+10": 61.6,
-          "T+15": 63.6,
-          "T+20": 61.1
+          "T+5": 61.0,
+          "T+10": 61.7,
+          "T+15": 64.3,
+          "T+20": 62.1
         },
         "avg_returns": {
-          "T+5": 0.41,
-          "T+10": 0.89,
-          "T+15": 1.32,
-          "T+20": 1.58
+          "T+5": 0.4,
+          "T+10": 0.83,
+          "T+15": 1.22,
+          "T+20": 1.54
         },
         "risk": {
           "T+5": {
-            "weighted_avg_adverse": -1.28,
+            "weighted_avg_adverse": -1.25,
             "worst_adverse": -10.97,
-            "pct_adverse_gt3": 12.2,
+            "pct_adverse_gt3": 10.5,
             "reward_risk_ratio": 0
           },
           "T+10": {
-            "weighted_avg_adverse": -1.9,
+            "weighted_avg_adverse": -1.89,
             "worst_adverse": -14.26,
-            "pct_adverse_gt3": 22.5,
+            "pct_adverse_gt3": 20.8,
             "reward_risk_ratio": 0
           },
           "T+15": {
             "weighted_avg_adverse": -2.4,
             "worst_adverse": -21.05,
-            "pct_adverse_gt3": 29.7,
+            "pct_adverse_gt3": 28.3,
             "reward_risk_ratio": 0
           },
           "T+20": {
-            "weighted_avg_adverse": -2.92,
+            "weighted_avg_adverse": -2.86,
             "worst_adverse": -23.39,
-            "pct_adverse_gt3": 35.2,
+            "pct_adverse_gt3": 33.6,
             "reward_risk_ratio": 0
           }
         },
         "strong_win_rates": {
-          "T+5": 58.8,
-          "T+10": 61.6,
-          "T+15": 60.5,
-          "T+20": 57.8
+          "T+5": 55.4,
+          "T+10": 58.9,
+          "T+15": 59.7,
+          "T+20": 54.8
         },
         "strong_avg_returns": {
-          "T+5": 0.53,
-          "T+10": 1.3,
-          "T+15": 1.86,
-          "T+20": 1.93
+          "T+5": 0.37,
+          "T+10": 1.07,
+          "T+15": 1.55,
+          "T+20": 1.62
         },
         "strong_risk": {
           "T+5": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 18.3
+            "pct_adverse_gt3": 17.1
           },
           "T+10": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 27.8
+            "pct_adverse_gt3": 28.4
           },
           "T+15": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 36.1
+            "pct_adverse_gt3": 36.6
           },
           "T+20": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 43.5
+            "pct_adverse_gt3": 44.1
           }
         },
         "severe_details": [
@@ -4776,96 +5011,109 @@
             "max_adverse": -12.16
           },
           {
-            "date": "2026-02-21",
-            "evidence": "2月21日A股周末早评：昨夜外围全面反弹，富时A50大涨",
-            "forward_return": -5.73,
-            "max_adverse": -7.39
-          },
-          {
             "date": "2026-02-22",
             "evidence": "A股周末策略：下周A股三方向\n\n今天是星期天，到下周二，A股正式开盘！经历了一个漫长的假期， A股终于要开盘了，大家一定是摩拳擦掌的状态！那么A股下一周方向方面",
             "forward_return": -5.73,
             "max_adverse": -7.39
+          },
+          {
+            "date": "2026-02-23",
+            "evidence": "A股周末总评：明天A股就要开盘了，对于本周的行情，我再重点分享几个观点\n\n第一，从上证指数周K线图来看，上证指数周线级别目前处于非常清晰的周线五浪结构之后的震荡",
+            "forward_return": -5.73,
+            "max_adverse": -7.39
           }
         ],
-        "strong_total": 154
+        "time_horizon_distribution": {
+          "intraday": 107,
+          "short": 205,
+          "medium": 53,
+          "long": 4,
+          "unspecified": 73
+        },
+        "horizon_weighted_win_rate": 62.3,
+        "horizon_weighted_avg_return": 0.73,
+        "optimal_window": "T+15",
+        "optimal_window_win_rate": 64.3,
+        "decay_pattern": "hump",
+        "long_window_stats": null,
+        "strong_total": 195
       },
       "bearish": {
-        "total": 204,
-        "strong": 48,
-        "moderate": 156,
-        "win_rate": 36.3,
-        "avg_return": -1.23,
+        "total": 250,
+        "strong": 51,
+        "moderate": 199,
+        "win_rate": 34.8,
+        "avg_return": -1.16,
         "max_gain": 19.37,
         "max_loss": -21.43,
-        "profit_factor": 0.5,
-        "severe_errors": 36,
+        "profit_factor": 0.52,
+        "severe_errors": 44,
         "win_rates": {
-          "T+5": 41.2,
-          "T+10": 39.9,
-          "T+15": 36.8,
-          "T+20": 36.3
+          "T+5": 41.1,
+          "T+10": 42.0,
+          "T+15": 37.0,
+          "T+20": 34.8
         },
         "avg_returns": {
-          "T+5": -0.32,
-          "T+10": -0.56,
-          "T+15": -0.85,
-          "T+20": -1.23
+          "T+5": -0.22,
+          "T+10": -0.49,
+          "T+15": -0.74,
+          "T+20": -1.16
         },
         "risk": {
           "T+5": {
-            "weighted_avg_adverse": -1.52,
+            "weighted_avg_adverse": -1.46,
             "worst_adverse": -8.7,
-            "pct_adverse_gt3": 12.5,
+            "pct_adverse_gt3": 12.1,
             "reward_risk_ratio": 0
           },
           "T+10": {
-            "weighted_avg_adverse": -2.37,
+            "weighted_avg_adverse": -2.28,
             "worst_adverse": -15.94,
-            "pct_adverse_gt3": 28.6,
+            "pct_adverse_gt3": 26.3,
             "reward_risk_ratio": 0
           },
           "T+15": {
-            "weighted_avg_adverse": -3.29,
+            "weighted_avg_adverse": -3.14,
             "worst_adverse": -18.28,
-            "pct_adverse_gt3": 41.1,
+            "pct_adverse_gt3": 38.9,
             "reward_risk_ratio": 0
           },
           "T+20": {
-            "weighted_avg_adverse": -3.92,
+            "weighted_avg_adverse": -3.79,
             "worst_adverse": -21.43,
-            "pct_adverse_gt3": 48.0,
+            "pct_adverse_gt3": 46.4,
             "reward_risk_ratio": 0
           }
         },
         "strong_win_rates": {
-          "T+5": 45.1,
-          "T+10": 35.3,
-          "T+15": 28.6,
-          "T+20": 27.1
+          "T+5": 48.1,
+          "T+10": 37.0,
+          "T+15": 30.8,
+          "T+20": 29.4
         },
         "strong_avg_returns": {
-          "T+5": -0.3,
-          "T+10": -1.09,
-          "T+15": -1.8,
-          "T+20": -2.55
+          "T+5": -0.26,
+          "T+10": -1.02,
+          "T+15": -1.63,
+          "T+20": -2.12
         },
         "strong_risk": {
           "T+5": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 23.5
+            "pct_adverse_gt3": 24.1
           },
           "T+10": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 39.2
+            "pct_adverse_gt3": 37.0
           },
           "T+15": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 53.1
+            "pct_adverse_gt3": 50.0
           },
           "T+20": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 60.4
+            "pct_adverse_gt3": 56.9
           }
         },
         "severe_details": [
@@ -4876,8 +5124,20 @@
             "max_adverse": -5.13
           },
           {
+            "date": "2025-07-23",
+            "evidence": "7月23日早评：A股5连阳，今天怎么走？会调整吗？",
+            "forward_return": -5.13,
+            "max_adverse": -5.13
+          },
+          {
             "date": "2025-07-25",
             "evidence": "纯技术贴：白酒板块今天为什么调整？老手分享白酒板块的几个看法",
+            "forward_return": -6.46,
+            "max_adverse": -6.46
+          },
+          {
+            "date": "2025-07-25",
+            "evidence": "午评： A股早盘震荡走弱，调整要开始了吗？老手讲三个应对锦囊",
             "forward_return": -6.46,
             "max_adverse": -6.46
           },
@@ -4886,27 +5146,28 @@
             "evidence": "午评： A股临近午盘快速回落，如何解读？老手说有3个信号",
             "forward_return": -7.94,
             "max_adverse": -7.94
-          },
-          {
-            "date": "2025-07-29",
-            "evidence": "午评： A股早盘窄幅震荡，一盘面特征出现，接下来市场怎么走？",
-            "forward_return": -7.17,
-            "max_adverse": -7.59
-          },
-          {
-            "date": "2025-07-31",
-            "evidence": "午评： A股早盘如期调整，调整能否一步到位？听听老手怎么说",
-            "forward_return": -7.57,
-            "max_adverse": -8.69
           }
         ],
-        "strong_total": 52
+        "time_horizon_distribution": {
+          "intraday": 66,
+          "short": 111,
+          "medium": 49,
+          "long": 1,
+          "unspecified": 42
+        },
+        "horizon_weighted_win_rate": 38.7,
+        "horizon_weighted_avg_return": -0.58,
+        "optimal_window": "T+10",
+        "optimal_window_win_rate": 42.0,
+        "decay_pattern": "hump",
+        "long_window_stats": null,
+        "strong_total": 55
       }
     },
     "pairs": {
       "blogger": "来自股市的猩猩",
       "fallback": false,
-      "total_actions": 58,
+      "total_actions": 59,
       "total_trades": 7,
       "open_position": {
         "entry_date": "2026-07-13",
@@ -5039,7 +5300,21 @@
           "is_win": false
         }
       ]
-    }
+    },
+    "blogger_time_horizon": {
+      "distribution": {
+        "intraday": 200,
+        "short": 353,
+        "medium": 102,
+        "long": 7,
+        "unspecified": 179
+      },
+      "total": 841,
+      "blogger_type": "短线交易型",
+      "short_pct": 65.8,
+      "long_pct": 0.8
+    },
+    "extraction_method": "pattern_based_v2"
   },
   "梦若神机": {
     "blogger": "梦若神机",
@@ -5054,99 +5329,106 @@
       "following": "653"
     },
     "signal_dist": {
-      "strong_explicit": 68,
-      "strong_clear": 19,
+      "strong_explicit": 95,
+      "strong_clear": 25,
       "moderate_explicit": 4,
-      "moderate_clear": 3,
-      "vague": 9,
-      "total": 103,
-      "valid": 94,
-      "bullish": 59,
-      "bearish": 44
+      "moderate_clear": 1,
+      "vague": 31,
+      "descriptive": 3,
+      "total": 159,
+      "valid": 125,
+      "bullish": 92,
+      "bearish": 67
     },
     "precision": {
       "bullish": {
-        "total": 33,
-        "strong": 31,
+        "total": 44,
+        "strong": 42,
         "moderate": 2,
-        "win_rate": 24.2,
-        "avg_return": -2.92,
+        "win_rate": 22.7,
+        "avg_return": -2.95,
         "max_gain": 1.22,
         "max_loss": -8.81,
-        "profit_factor": 0.06,
-        "severe_errors": 11,
+        "profit_factor": 0.05,
+        "severe_errors": 15,
         "win_rates": {
-          "T+5": 27.5,
+          "T+5": 26.8,
           "T+10": 20.0,
-          "T+15": 20.0,
-          "T+20": 24.2
+          "T+15": 18.9,
+          "T+20": 22.7
         },
         "avg_returns": {
-          "T+5": -1.17,
-          "T+10": -2.18,
-          "T+15": -2.81,
-          "T+20": -2.92
+          "T+5": -1.21,
+          "T+10": -2.28,
+          "T+15": -2.84,
+          "T+20": -2.95
         },
         "risk": {
           "T+5": {
-            "weighted_avg_adverse": -2.07,
+            "weighted_avg_adverse": -2.15,
             "worst_adverse": -5.81,
-            "pct_adverse_gt3": 27.5,
+            "pct_adverse_gt3": 32.4,
             "reward_risk_ratio": 0
           },
           "T+10": {
-            "weighted_avg_adverse": -3.54,
+            "weighted_avg_adverse": -3.6,
             "worst_adverse": -6.91,
             "pct_adverse_gt3": 60.0,
             "reward_risk_ratio": 0
           },
           "T+15": {
-            "weighted_avg_adverse": -4.56,
+            "weighted_avg_adverse": -4.57,
             "worst_adverse": -8.47,
-            "pct_adverse_gt3": 67.5,
+            "pct_adverse_gt3": 67.9,
             "reward_risk_ratio": 0
           },
           "T+20": {
-            "weighted_avg_adverse": -5.1,
+            "weighted_avg_adverse": -5.12,
             "worst_adverse": -9.58,
-            "pct_adverse_gt3": 75.8,
+            "pct_adverse_gt3": 75.0,
             "reward_risk_ratio": 0
           }
         },
         "strong_win_rates": {
-          "T+5": 25.5,
+          "T+5": 25.0,
           "T+10": 19.0,
-          "T+15": 18.9,
-          "T+20": 25.8
+          "T+15": 17.6,
+          "T+20": 23.8
         },
         "strong_avg_returns": {
           "T+5": -1.28,
-          "T+10": -2.24,
-          "T+15": -2.84,
-          "T+20": -2.85
+          "T+10": -2.35,
+          "T+15": -2.89,
+          "T+20": -2.91
         },
         "strong_risk": {
           "T+5": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 29.8
+            "pct_adverse_gt3": 33.8
           },
           "T+10": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 59.5
+            "pct_adverse_gt3": 60.3
           },
           "T+15": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 67.6
+            "pct_adverse_gt3": 68.6
           },
           "T+20": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 77.4
+            "pct_adverse_gt3": 76.2
           }
         },
         "severe_details": [
           {
             "date": "2026-06-19",
             "evidence": "诸位听好，下周一盘面没有悬念，还死扛在高位抱团科技股里的散户，真该瑟瑟发抖了。不要心存幻想，觉得AI、算力可以一直涨上天，资本的狂欢从来没有永不落幕的宴席。今日",
+            "forward_return": -8.81,
+            "max_adverse": -9.58
+          },
+          {
+            "date": "2026-06-19",
+            "evidence": "兄弟们，说句实在的，现在市场真的太明显了！全网人人都喊科技是主线，连新手散户都扎堆往里冲。傻子都知道的机会，绝对不是好机会，这是股市万年不变的道理。\n\n所有人狂",
             "forward_return": -8.81,
             "max_adverse": -9.58
           },
@@ -5167,112 +5449,132 @@
             "evidence": "不出意外，明天高位科技股延续下跌是板上钉钉。大势已经走弱，这种爆炒许久的高位主线，不可能短短一两天调整就彻底企稳反转。很多人还心存侥幸，觉得跌两天就要反弹捞一把",
             "forward_return": -5.89,
             "max_adverse": -8.33
-          },
-          {
-            "date": "2026-06-24",
-            "evidence": "神鸡心里话，劝各位散户别硬冲高位科技\n奉劝还想着抄底高位科技股的散户，千万别脑子一热冲动进场。现在不少科技票经过连续爆炒，估值早就飘上天，业绩根本撑不起股价，获",
-            "forward_return": -5.93,
-            "max_adverse": -8.43
           }
         ],
-        "strong_total": 51
+        "time_horizon_distribution": {
+          "intraday": 21,
+          "short": 36,
+          "medium": 15,
+          "long": 2,
+          "unspecified": 2
+        },
+        "horizon_weighted_win_rate": 21.9,
+        "horizon_weighted_avg_return": -2.03,
+        "optimal_window": "T+5",
+        "optimal_window_win_rate": 26.8,
+        "decay_pattern": "mixed",
+        "long_window_stats": null,
+        "strong_total": 73
       },
       "bearish": {
-        "total": 24,
-        "strong": 22,
-        "moderate": 2,
-        "win_rate": 70.8,
-        "avg_return": 3.2,
+        "total": 26,
+        "strong": 25,
+        "moderate": 1,
+        "win_rate": 65.4,
+        "avg_return": 2.65,
         "max_gain": 8.81,
         "max_loss": -1.09,
-        "profit_factor": 19.01,
+        "profit_factor": 14.05,
         "severe_errors": 0,
         "win_rates": {
-          "T+5": 50.0,
-          "T+10": 66.7,
-          "T+15": 66.7,
-          "T+20": 70.8
+          "T+5": 45.0,
+          "T+10": 61.8,
+          "T+15": 58.6,
+          "T+20": 65.4
         },
         "avg_returns": {
-          "T+5": 0.24,
-          "T+10": 1.14,
-          "T+15": 2.1,
-          "T+20": 3.2
+          "T+5": -0.04,
+          "T+10": 0.84,
+          "T+15": 1.62,
+          "T+20": 2.65
         },
         "risk": {
           "T+5": {
-            "weighted_avg_adverse": -1.26,
-            "worst_adverse": -3.46,
-            "pct_adverse_gt3": 11.8,
+            "weighted_avg_adverse": -1.55,
+            "worst_adverse": -7.05,
+            "pct_adverse_gt3": 17.5,
             "reward_risk_ratio": 0
           },
           "T+10": {
-            "weighted_avg_adverse": -1.62,
+            "weighted_avg_adverse": -1.86,
             "worst_adverse": -5.15,
-            "pct_adverse_gt3": 23.3,
+            "pct_adverse_gt3": 29.4,
             "reward_risk_ratio": 0
           },
           "T+15": {
-            "weighted_avg_adverse": -1.9,
+            "weighted_avg_adverse": -2.18,
             "worst_adverse": -5.15,
-            "pct_adverse_gt3": 25.9,
+            "pct_adverse_gt3": 34.5,
             "reward_risk_ratio": 0
           },
           "T+20": {
-            "weighted_avg_adverse": -2.03,
+            "weighted_avg_adverse": -2.32,
             "worst_adverse": -5.15,
-            "pct_adverse_gt3": 29.2,
+            "pct_adverse_gt3": 38.5,
             "reward_risk_ratio": 0
           }
         },
         "strong_win_rates": {
-          "T+5": 48.4,
-          "T+10": 63.0,
-          "T+15": 62.5,
-          "T+20": 68.2
+          "T+5": 44.7,
+          "T+10": 59.4,
+          "T+15": 55.6,
+          "T+20": 64.0
         },
         "strong_avg_returns": {
-          "T+5": 0.18,
-          "T+10": 0.84,
-          "T+15": 1.88,
-          "T+20": 2.86
+          "T+5": -0.07,
+          "T+10": 0.57,
+          "T+15": 1.4,
+          "T+20": 2.52
         },
         "strong_risk": {
           "T+5": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 12.9
+            "pct_adverse_gt3": 18.4
           },
           "T+10": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 25.9
+            "pct_adverse_gt3": 31.2
           },
           "T+15": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 29.2
+            "pct_adverse_gt3": 37.0
           },
           "T+20": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 31.8
+            "pct_adverse_gt3": 40.0
           }
         },
         "severe_details": [],
-        "strong_total": 34
+        "time_horizon_distribution": {
+          "intraday": 5,
+          "short": 26,
+          "medium": 4,
+          "long": 5,
+          "unspecified": 6
+        },
+        "horizon_weighted_win_rate": 56.8,
+        "horizon_weighted_avg_return": 0.74,
+        "optimal_window": "T+20",
+        "optimal_window_win_rate": 65.4,
+        "decay_pattern": "mixed",
+        "long_window_stats": null,
+        "strong_total": 44
       }
     },
     "pairs": {
       "blogger": "梦若神机",
       "fallback": false,
-      "total_actions": 72,
-      "total_trades": 17,
+      "total_actions": 99,
+      "total_trades": 18,
       "open_position": null,
       "summary": {
-        "win_rate": 23.5,
-        "avg_return": -0.57,
-        "avg_holding_days": 2.4,
+        "win_rate": 22.2,
+        "avg_return": -0.56,
+        "avg_holding_days": 2.2,
         "max_gain": 2.12,
-        "max_loss": -2.14,
-        "avg_max_drawdown": -0.98,
-        "profit_factor": 0.34
+        "max_loss": -2.43,
+        "avg_max_drawdown": -0.94,
+        "profit_factor": 0.33
       },
       "trades": [
         {
@@ -5308,18 +5610,18 @@
           "is_win": false
         },
         {
-          "entry_date": "2026-06-05",
-          "entry_actual": "2026-06-05",
-          "entry_price": 4027.736,
-          "entry_evidence": "今天属实亏得窝火，原本持仓亏幅可控，早盘盘面小幅回暖，被盘面回暖的假象引诱，一时贪心选择加仓补仓，万万没料到午后市场风云突变，大盘接连跳水下行，持仓市值接连缩水",
+          "entry_date": "2026-06-04",
+          "entry_actual": "2026-06-04",
+          "entry_price": 4057.781,
+          "entry_evidence": "股市强者恒强，格局决定收益\n\n当下市场最鲜明的特征，便是强者恒强。所有人都念叨科技股估值太高、风险过大，纷纷观望不敢入场，可行情依旧逆势走高，不断突破众人的固有",
           "exit_date": "2026-06-08",
           "exit_actual": "2026-06-08",
           "exit_price": 3959.338,
           "exit_evidence": "太真实了，早盘那波反弹明明给了逃命窗口，一念之差没走，直接被打回原形，这腿真能拍断！估计不止神机，一堆人跟我一样，眼睁睁看着浮盈变浮亏，心态瞬间炸了。\n\n现在这",
-          "holding_days": 1,
-          "return_pct": -1.7,
-          "annualized": -98.66,
-          "max_drawdown": -1.7,
+          "holding_days": 2,
+          "return_pct": -2.43,
+          "annualized": -95.47,
+          "max_drawdown": -2.43,
           "worst_date": "2026-06-08",
           "is_win": false
         },
@@ -5523,7 +5825,7 @@
           "exit_date": "2026-07-23",
           "exit_actual": "2026-07-23",
           "exit_price": 3876.777,
-          "exit_evidence": "兄弟们，炒股头号大忌就是明明判断出错、踩坑被套，还硬着头皮嘴硬不肯认亏，这点我跟很多人不一样，错了我坦然承认。回头复盘，当初进场创新药本质就是变相追在了阶段性相",
+          "exit_evidence": "兄弟们，大家有没有留意一个很现实的盘面现象？最近能扛住调整、走出一波行情的，基本全是处在绝对低位的板块、低位个股。\n\n创新药之前拉了一波，随后一路震荡回调；白酒",
           "holding_days": 3,
           "return_pct": 2.12,
           "annualized": 482.7,
@@ -5536,19 +5838,49 @@
           "entry_actual": "2026-07-23",
           "entry_price": 3876.777,
           "entry_evidence": "兄弟们，说句掏心窝子的，创新药妥妥就是股市里的渣男！拿着它就像和渣男纠缠，越守越煎熬，不断消耗本金和心态，看不到半点回馈，最好的办法就是直接一刀两断。\n\n今天我",
+          "exit_date": "2026-07-23",
+          "exit_actual": "2026-07-23",
+          "exit_price": 3876.777,
+          "exit_evidence": "兄弟们，这次清仓创新药我内心拉扯了好久，做这个决定真的经过巨大的心理斗争，不是一时冲动随便割的。\n\n说实在的，放弃坚守许久的板块心里挺不是滋味，但我也是实打实看",
+          "holding_days": 0,
+          "return_pct": 0.0,
+          "annualized": 0,
+          "max_drawdown": -0.0,
+          "worst_date": "2026-07-23",
+          "is_win": false
+        },
+        {
+          "entry_date": "2026-07-27",
+          "entry_actual": "2026-07-27",
+          "entry_price": 3858.245,
+          "entry_evidence": "我清楚创新药迎来反弹，大家不用反复提醒我。今日大涨又如何，仅仅只是修复周五的跌幅，并没有走出突破性行情。退一步来讲，就算我明天再度进场参与，也不吃亏。\n\n但我明",
           "exit_date": "2026-07-28",
           "exit_actual": "2026-07-28",
           "exit_price": 3813.315,
           "exit_evidence": "不要抱有任何幻想，下午还会继续跌，特别是高位科技股。泥沙俱下已经是定局，大盘走弱的环境下，想要指望老登股走出独立行情基本不现实。如今市场资金偏好十分清晰，并没有",
-          "holding_days": 3,
-          "return_pct": -1.64,
-          "annualized": -75.0,
-          "max_drawdown": -1.64,
+          "holding_days": 1,
+          "return_pct": -1.16,
+          "annualized": -94.78,
+          "max_drawdown": -1.16,
           "worst_date": "2026-07-28",
           "is_win": false
         }
       ]
-    }
+    },
+    "blogger_time_horizon": {
+      "distribution": {
+        "intraday": 31,
+        "short": 76,
+        "medium": 29,
+        "long": 10,
+        "unspecified": 13
+      },
+      "total": 159,
+      "blogger_type": "短线交易型",
+      "short_pct": 67.3,
+      "long_pct": 6.3
+    },
+    "extraction_method": "pattern_based_v2"
   },
   "稀豹": {
     "blogger": "稀豹",
@@ -5563,93 +5895,94 @@
       "following": "73"
     },
     "signal_dist": {
-      "strong_explicit": 89,
-      "strong_clear": 79,
+      "strong_explicit": 92,
+      "strong_clear": 85,
       "moderate_explicit": 1,
-      "moderate_clear": 64,
-      "vague": 29,
-      "total": 262,
+      "moderate_clear": 55,
+      "vague": 412,
+      "descriptive": 13,
+      "total": 658,
       "valid": 233,
-      "bullish": 183,
-      "bearish": 79
+      "bullish": 444,
+      "bearish": 214
     },
     "precision": {
       "bullish": {
         "total": 159,
-        "strong": 124,
-        "moderate": 35,
+        "strong": 129,
+        "moderate": 30,
         "win_rate": 30.2,
-        "avg_return": -1.08,
+        "avg_return": -1.1,
         "max_gain": 20.7,
         "max_loss": -8.81,
         "profit_factor": 0.53,
-        "severe_errors": 21,
+        "severe_errors": 23,
         "win_rates": {
-          "T+5": 28.4,
+          "T+5": 29.0,
           "T+10": 28.7,
-          "T+15": 30.8,
+          "T+15": 32.1,
           "T+20": 30.2
         },
         "avg_returns": {
-          "T+5": -0.7,
-          "T+10": -0.52,
-          "T+15": -1.85,
-          "T+20": -1.08
+          "T+5": -0.67,
+          "T+10": -0.5,
+          "T+15": -1.81,
+          "T+20": -1.1
         },
         "risk": {
           "T+5": {
-            "weighted_avg_adverse": -1.41,
+            "weighted_avg_adverse": -1.42,
             "worst_adverse": -9.38,
             "pct_adverse_gt3": 3.1,
             "reward_risk_ratio": 0
           },
           "T+10": {
-            "weighted_avg_adverse": -1.98,
+            "weighted_avg_adverse": -1.99,
             "worst_adverse": -10.01,
-            "pct_adverse_gt3": 11.9,
+            "pct_adverse_gt3": 13.1,
             "reward_risk_ratio": 0
           },
           "T+15": {
-            "weighted_avg_adverse": -3.37,
+            "weighted_avg_adverse": -3.38,
             "worst_adverse": -10.01,
-            "pct_adverse_gt3": 62.3,
+            "pct_adverse_gt3": 61.6,
             "reward_risk_ratio": 0
           },
           "T+20": {
-            "weighted_avg_adverse": -3.82,
+            "weighted_avg_adverse": -3.87,
             "worst_adverse": -10.01,
-            "pct_adverse_gt3": 64.8,
+            "pct_adverse_gt3": 64.2,
             "reward_risk_ratio": 0
           }
         },
         "strong_win_rates": {
-          "T+5": 32.3,
-          "T+10": 32.0,
-          "T+15": 34.7,
-          "T+20": 34.7
+          "T+5": 31.8,
+          "T+10": 30.8,
+          "T+15": 34.9,
+          "T+20": 33.3
         },
         "strong_avg_returns": {
           "T+5": -0.61,
-          "T+10": -0.33,
-          "T+15": -1.64,
-          "T+20": -0.94
+          "T+10": -0.36,
+          "T+15": -1.68,
+          "T+20": -1.03
         },
         "strong_risk": {
           "T+5": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 3.1
+            "pct_adverse_gt3": 3.0
           },
           "T+10": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 12.0
+            "pct_adverse_gt3": 13.1
           },
           "T+15": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 57.3
+            "pct_adverse_gt3": 58.1
           },
           "T+20": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 60.5
+            "pct_adverse_gt3": 61.2
           }
         },
         "severe_details": [
@@ -5684,67 +6017,80 @@
             "max_adverse": -8.49
           }
         ],
-        "strong_total": 128
+        "time_horizon_distribution": {
+          "intraday": 64,
+          "short": 81,
+          "medium": 8,
+          "long": 4,
+          "unspecified": 6
+        },
+        "horizon_weighted_win_rate": 28.5,
+        "horizon_weighted_avg_return": -0.81,
+        "optimal_window": "T+15",
+        "optimal_window_win_rate": 32.1,
+        "decay_pattern": "hump",
+        "long_window_stats": null,
+        "strong_total": 133
       },
       "bearish": {
         "total": 69,
-        "strong": 39,
-        "moderate": 30,
-        "win_rate": 76.8,
-        "avg_return": 1.64,
+        "strong": 43,
+        "moderate": 26,
+        "win_rate": 73.9,
+        "avg_return": 1.39,
         "max_gain": 8.49,
-        "max_loss": -6.41,
-        "profit_factor": 3.27,
-        "severe_errors": 2,
+        "max_loss": -8.06,
+        "profit_factor": 2.53,
+        "severe_errors": 3,
         "win_rates": {
-          "T+5": 76.8,
+          "T+5": 75.4,
           "T+10": 79.7,
-          "T+15": 73.9,
-          "T+20": 76.8
+          "T+15": 71.0,
+          "T+20": 73.9
         },
         "avg_returns": {
-          "T+5": 1.02,
-          "T+10": 0.79,
-          "T+15": 2.41,
-          "T+20": 1.64
+          "T+5": 0.97,
+          "T+10": 0.89,
+          "T+15": 2.13,
+          "T+20": 1.39
         },
         "risk": {
           "T+5": {
-            "weighted_avg_adverse": -0.69,
+            "weighted_avg_adverse": -0.74,
             "worst_adverse": -2.91,
             "pct_adverse_gt3": 0.0,
             "reward_risk_ratio": 0
           },
           "T+10": {
-            "weighted_avg_adverse": -0.92,
+            "weighted_avg_adverse": -0.96,
             "worst_adverse": -4.55,
             "pct_adverse_gt3": 2.9,
             "reward_risk_ratio": 0
           },
           "T+15": {
-            "weighted_avg_adverse": -1.22,
-            "worst_adverse": -6.33,
-            "pct_adverse_gt3": 10.1,
+            "weighted_avg_adverse": -1.37,
+            "worst_adverse": -7.96,
+            "pct_adverse_gt3": 11.6,
             "reward_risk_ratio": 0
           },
           "T+20": {
-            "weighted_avg_adverse": -1.48,
-            "worst_adverse": -7.09,
-            "pct_adverse_gt3": 14.5,
+            "weighted_avg_adverse": -1.72,
+            "worst_adverse": -8.27,
+            "pct_adverse_gt3": 17.4,
             "reward_risk_ratio": 0
           }
         },
         "strong_win_rates": {
-          "T+5": 61.5,
-          "T+10": 69.2,
-          "T+15": 61.5,
-          "T+20": 66.7
+          "T+5": 62.8,
+          "T+10": 72.1,
+          "T+15": 60.5,
+          "T+20": 65.1
         },
         "strong_avg_returns": {
-          "T+5": 0.67,
-          "T+10": 0.44,
-          "T+15": 1.58,
-          "T+20": 1.35
+          "T+5": 0.68,
+          "T+10": 0.7,
+          "T+15": 1.37,
+          "T+20": 1.06
         },
         "strong_risk": {
           "T+5": {
@@ -5753,15 +6099,15 @@
           },
           "T+10": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 2.6
+            "pct_adverse_gt3": 2.3
           },
           "T+15": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 15.4
+            "pct_adverse_gt3": 16.3
           },
           "T+20": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 20.5
+            "pct_adverse_gt3": 23.3
           }
         },
         "severe_details": [
@@ -5776,15 +6122,34 @@
             "evidence": "夜深了，今晚和大家聊点特别的。会不会思考，决定一个人一生的高度！这句话我深以为然，有感而发：\n\n因为在相同起点下，有人一生只能当牛马，有人却能乘风直上，与同期者",
             "forward_return": -5.09,
             "max_adverse": -6.33
+          },
+          {
+            "date": "2026-05-27",
+            "evidence": "中午收盘，休息时间有限，及时给大家3点提醒！\n1、迎风而立的大旗　\n别慌！下午会走V翻红！收大长腿红盘！同时上午虽普跌，行情却很惊人，因为创业板直接创下了历史新",
+            "forward_return": -8.06,
+            "max_adverse": -8.06
           }
         ],
-        "strong_total": 40
+        "time_horizon_distribution": {
+          "intraday": 23,
+          "short": 35,
+          "medium": 4,
+          "long": 2,
+          "unspecified": 6
+        },
+        "horizon_weighted_win_rate": 77.7,
+        "horizon_weighted_avg_return": 1.29,
+        "optimal_window": "T+10",
+        "optimal_window_win_rate": 79.7,
+        "decay_pattern": "hump",
+        "long_window_stats": null,
+        "strong_total": 44
       }
     },
     "pairs": {
       "blogger": "稀豹",
       "fallback": false,
-      "total_actions": 90,
+      "total_actions": 93,
       "total_trades": 16,
       "open_position": {
         "entry_date": "2026-06-30",
@@ -6061,7 +6426,21 @@
           "is_win": false
         }
       ]
-    }
+    },
+    "blogger_time_horizon": {
+      "distribution": {
+        "intraday": 308,
+        "short": 291,
+        "medium": 23,
+        "long": 14,
+        "unspecified": 22
+      },
+      "total": 658,
+      "blogger_type": "短线交易型",
+      "short_pct": 91.0,
+      "long_pct": 2.1
+    },
+    "extraction_method": "pattern_based_v2"
   },
   "衡山佛曰论股": {
     "blogger": "衡山佛曰论股",
@@ -6076,102 +6455,97 @@
       "following": "222"
     },
     "signal_dist": {
-      "strong_explicit": 132,
-      "strong_clear": 246,
-      "moderate_explicit": 39,
-      "moderate_clear": 183,
-      "vague": 64,
-      "total": 664,
-      "valid": 600,
-      "bullish": 352,
-      "bearish": 312
+      "strong_explicit": 145,
+      "strong_clear": 292,
+      "moderate_explicit": 35,
+      "moderate_clear": 137,
+      "vague": 220,
+      "descriptive": 120,
+      "total": 949,
+      "valid": 609,
+      "bullish": 504,
+      "bearish": 445
     },
     "precision": {
       "bullish": {
-        "total": 305,
-        "strong": 200,
-        "moderate": 105,
-        "win_rate": 61.6,
-        "avg_return": 1.1,
+        "total": 308,
+        "strong": 232,
+        "moderate": 76,
+        "win_rate": 59.4,
+        "avg_return": 0.99,
         "max_gain": 18.5,
-        "max_loss": -12.85,
-        "profit_factor": 1.95,
-        "severe_errors": 31,
+        "max_loss": -23.39,
+        "profit_factor": 1.81,
+        "severe_errors": 29,
         "win_rates": {
-          "T+5": 56.6,
-          "T+10": 62.0,
-          "T+15": 64.6,
-          "T+20": 61.6
+          "T+5": 54.3,
+          "T+10": 59.8,
+          "T+15": 63.7,
+          "T+20": 59.4
         },
         "avg_returns": {
-          "T+5": 0.24,
-          "T+10": 0.6,
-          "T+15": 0.93,
-          "T+20": 1.1
+          "T+5": 0.2,
+          "T+10": 0.52,
+          "T+15": 0.82,
+          "T+20": 0.99
         },
         "risk": {
           "T+5": {
-            "weighted_avg_adverse": -1.07,
-            "worst_adverse": -9.38,
-            "pct_adverse_gt3": 8.4,
+            "weighted_avg_adverse": -1.19,
+            "worst_adverse": -9.92,
+            "pct_adverse_gt3": 11.2,
             "reward_risk_ratio": 0
           },
           "T+10": {
-            "weighted_avg_adverse": -1.6,
-            "worst_adverse": -10.01,
-            "pct_adverse_gt3": 16.3,
+            "weighted_avg_adverse": -1.73,
+            "worst_adverse": -14.26,
+            "pct_adverse_gt3": 18.0,
             "reward_risk_ratio": 0
           },
           "T+15": {
-            "weighted_avg_adverse": -1.98,
-            "worst_adverse": -18.42,
-            "pct_adverse_gt3": 19.8,
+            "weighted_avg_adverse": -2.15,
+            "worst_adverse": -21.05,
+            "pct_adverse_gt3": 22.2,
             "reward_risk_ratio": 0
           },
           "T+20": {
-            "weighted_avg_adverse": -2.43,
-            "worst_adverse": -18.42,
-            "pct_adverse_gt3": 26.9,
+            "weighted_avg_adverse": -2.62,
+            "worst_adverse": -23.39,
+            "pct_adverse_gt3": 29.2,
             "reward_risk_ratio": 0
           }
         },
         "strong_win_rates": {
-          "T+5": 56.2,
-          "T+10": 59.2,
-          "T+15": 63.5,
-          "T+20": 59.0
+          "T+5": 54.1,
+          "T+10": 58.0,
+          "T+15": 63.0,
+          "T+20": 58.6
         },
         "strong_avg_returns": {
-          "T+5": 0.27,
-          "T+10": 0.46,
-          "T+15": 0.89,
-          "T+20": 1.08
+          "T+5": 0.18,
+          "T+10": 0.41,
+          "T+15": 0.78,
+          "T+20": 0.97
         },
         "strong_risk": {
           "T+5": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 9.0
+            "pct_adverse_gt3": 11.6
           },
           "T+10": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 18.4
+            "pct_adverse_gt3": 19.7
           },
           "T+15": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 22.2
+            "pct_adverse_gt3": 23.8
           },
           "T+20": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 27.5
+            "pct_adverse_gt3": 29.3
           }
         },
         "severe_details": [
-          {
-            "date": "2025-03-07",
-            "evidence": "3.7日收盘数据盘点：\n1.指数\n上证3372.55，-8.55，-0.25%\n创指2205.3，-29.38，-1.31%\n科创1107.6，-13.96，-",
-            "forward_return": -8.18,
-            "max_adverse": -8.18
-          },
           {
             "date": "2025-03-10",
             "evidence": "如果你说我删了文，那你看哪天文章断过，除了周六周日有时不发文。我从未删文，另一个，去年不就是几个大波段吗？\n2635~3174，3174~2689，\n2689∽",
@@ -6181,6 +6555,12 @@
           {
             "date": "2025-03-10",
             "evidence": "炒股不要被那些鼓吹“我已连xx天看对”的人给骗，那不是高手，那是扯蛋能手。试问大盘涨1~2个指数点与跌1~2个指数有区别吗。那涨2点还是跌2点可进场？还是要退场",
+            "forward_return": -6.55,
+            "max_adverse": -8.01
+          },
+          {
+            "date": "2025-03-10",
+            "evidence": "很多兄弟确实喜欢与我较真，\n他压根不相信股市是可以预测的。\n他更不相信这衡山佛曰竟然去年一年头到年尾言对。总想到有什么猫腻，可查当天见高点、低点前后及当时，就是",
             "forward_return": -6.55,
             "max_adverse": -8.01
           },
@@ -6197,84 +6577,115 @@
             "max_adverse": -18.42
           }
         ],
-        "strong_total": 212
+        "time_horizon_distribution": {
+          "intraday": 95,
+          "short": 143,
+          "medium": 25,
+          "long": 28,
+          "unspecified": 34
+        },
+        "horizon_weighted_win_rate": 57.4,
+        "horizon_weighted_avg_return": 0.33,
+        "optimal_window": "T+15",
+        "optimal_window_win_rate": 63.7,
+        "decay_pattern": "hump",
+        "long_window_stats": {
+          "signal_count": 28,
+          "windows": {
+            "T+40": {
+              "count": 22,
+              "win_rate": 54.5,
+              "avg_return": 3.34,
+              "avg_adverse": -2.95,
+              "worst_adverse": -8.01
+            },
+            "T+60": {
+              "count": 20,
+              "win_rate": 90.0,
+              "avg_return": 4.91,
+              "avg_adverse": -3.36,
+              "worst_adverse": -8.01
+            }
+          }
+        },
+        "strong_total": 244
       },
       "bearish": {
-        "total": 250,
-        "strong": 144,
-        "moderate": 106,
-        "win_rate": 35.6,
-        "avg_return": -1.17,
+        "total": 251,
+        "strong": 164,
+        "moderate": 87,
+        "win_rate": 33.9,
+        "avg_return": -1.24,
         "max_gain": 8.81,
         "max_loss": -21.43,
-        "profit_factor": 0.5,
+        "profit_factor": 0.48,
         "severe_errors": 39,
         "win_rates": {
-          "T+5": 39.6,
-          "T+10": 37.3,
-          "T+15": 38.5,
-          "T+20": 35.6
+          "T+5": 37.1,
+          "T+10": 34.3,
+          "T+15": 37.1,
+          "T+20": 33.9
         },
         "avg_returns": {
-          "T+5": -0.24,
-          "T+10": -0.44,
-          "T+15": -0.82,
-          "T+20": -1.17
+          "T+5": -0.33,
+          "T+10": -0.6,
+          "T+15": -0.92,
+          "T+20": -1.24
         },
         "risk": {
           "T+5": {
-            "weighted_avg_adverse": -1.27,
+            "weighted_avg_adverse": -1.32,
             "worst_adverse": -6.17,
-            "pct_adverse_gt3": 8.5,
+            "pct_adverse_gt3": 9.6,
             "reward_risk_ratio": 0
           },
           "T+10": {
-            "weighted_avg_adverse": -2.01,
+            "weighted_avg_adverse": -2.08,
             "worst_adverse": -14.04,
-            "pct_adverse_gt3": 23.6,
+            "pct_adverse_gt3": 25.7,
             "reward_risk_ratio": 0
           },
           "T+15": {
-            "weighted_avg_adverse": -2.75,
+            "weighted_avg_adverse": -2.85,
             "worst_adverse": -17.83,
-            "pct_adverse_gt3": 39.7,
+            "pct_adverse_gt3": 42.1,
             "reward_risk_ratio": 0
           },
           "T+20": {
-            "weighted_avg_adverse": -3.42,
+            "weighted_avg_adverse": -3.53,
             "worst_adverse": -21.43,
-            "pct_adverse_gt3": 48.8,
+            "pct_adverse_gt3": 51.4,
             "reward_risk_ratio": 0
           }
         },
         "strong_win_rates": {
-          "T+5": 42.1,
-          "T+10": 40.9,
-          "T+15": 39.2,
-          "T+20": 33.3
+          "T+5": 40.3,
+          "T+10": 36.9,
+          "T+15": 37.6,
+          "T+20": 31.7
         },
         "strong_avg_returns": {
-          "T+5": -0.12,
-          "T+10": -0.33,
-          "T+15": -0.78,
-          "T+20": -1.27
+          "T+5": -0.21,
+          "T+10": -0.52,
+          "T+15": -0.9,
+          "T+20": -1.36
         },
         "strong_risk": {
           "T+5": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 10.1
+            "pct_adverse_gt3": 11.0
           },
           "T+10": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 22.7
+            "pct_adverse_gt3": 23.9
           },
           "T+15": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 37.2
+            "pct_adverse_gt3": 39.4
           },
           "T+20": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 47.9
+            "pct_adverse_gt3": 50.0
           }
         },
         "severe_details": [
@@ -6291,12 +6702,6 @@
             "max_adverse": -5.72
           },
           {
-            "date": "2025-06-20",
-            "evidence": "跌一程横一程 缓慢下行趋势已成形",
-            "forward_return": -5.2,
-            "max_adverse": -5.2
-          },
-          {
             "date": "2025-07-04",
             "evidence": "今日午评（7.4日）：\n上午一改前几日缩量上行态势，变为放量上行。今天半日成交了8627亿，同比增量708亿。大大化解了前几日连续缩量顶背离的隐忧，现在指数又变",
             "forward_return": -7.72,
@@ -6307,16 +6712,53 @@
             "evidence": "有大佬背书，这两天机器人概念走得就是强。黄仁勋说：中国的开源Ai是推动全球进步的催化剂，下一波浪潮是机器人。不过，这个板块短期不经充分调整，上升空间有限。\n无量",
             "forward_return": -5.13,
             "max_adverse": -5.13
+          },
+          {
+            "date": "2025-07-26",
+            "evidence": "#股市向上还有空间吗？#\n从周线看，大盘三年筑底非常扎实，形完非常完美。我大概在去年底回答一位粉丝问题时，提到过图中D区运行时间还远远不够，2024年底不会突破",
+            "forward_return": -7.94,
+            "max_adverse": -7.94
           }
         ],
-        "strong_total": 165
+        "time_horizon_distribution": {
+          "intraday": 74,
+          "short": 113,
+          "medium": 23,
+          "long": 37,
+          "unspecified": 36
+        },
+        "horizon_weighted_win_rate": 37.3,
+        "horizon_weighted_avg_return": -0.51,
+        "optimal_window": "T+5",
+        "optimal_window_win_rate": 37.1,
+        "decay_pattern": "hump",
+        "long_window_stats": {
+          "signal_count": 37,
+          "windows": {
+            "T+40": {
+              "count": 31,
+              "win_rate": 41.9,
+              "avg_return": -1.55,
+              "avg_adverse": -4.83,
+              "worst_adverse": -11.26
+            },
+            "T+60": {
+              "count": 29,
+              "win_rate": 20.7,
+              "avg_return": -3.07,
+              "avg_adverse": -6.11,
+              "worst_adverse": -14.14
+            }
+          }
+        },
+        "strong_total": 192
       }
     },
     "pairs": {
       "blogger": "衡山佛曰论股",
       "fallback": false,
-      "total_actions": 171,
-      "total_trades": 49,
+      "total_actions": 180,
+      "total_trades": 46,
       "open_position": {
         "entry_date": "2026-07-29",
         "entry_price": 3828.469,
@@ -6326,12 +6768,12 @@
         "floating_return": 0.0
       },
       "summary": {
-        "win_rate": 44.9,
-        "avg_return": 0.06,
-        "avg_holding_days": 3.7,
+        "win_rate": 47.8,
+        "avg_return": 0.07,
+        "avg_holding_days": 3.9,
         "max_gain": 6.17,
         "max_loss": -4.03,
-        "avg_max_drawdown": -0.72,
+        "avg_max_drawdown": -0.76,
         "profit_factor": 1.1
       },
       "trades": [
@@ -6436,30 +6878,14 @@
           "entry_actual": "2025-09-05",
           "entry_price": 3812.514,
           "entry_evidence": "#你认为接下来股市是什么走势#承接上文（链接发于本文下）下，谈谈本周周线走势。\n记得上周上证收了一根长长的吊颈阳线，连涨四周后吊颈线，我提示预示本周高概率变盘，",
-          "exit_date": "2025-09-06",
-          "exit_actual": "2025-09-08",
-          "exit_price": 3826.841,
-          "exit_evidence": "是再杀没人接盘，因而暂时主力不抛而以买进为主，这叫典型震荡出货，从图形显示出来就是反复筑顶。",
-          "holding_days": 1,
-          "return_pct": 0.38,
-          "annualized": 157.34,
-          "max_drawdown": -0.0,
-          "worst_date": "2025-09-05",
-          "is_win": true
-        },
-        {
-          "entry_date": "2025-09-08",
-          "entry_actual": "2025-09-08",
-          "entry_price": 3826.841,
-          "entry_evidence": "今日午评（9.8）：\n早盘放量冲高，再回落震荡。机器人相关概念股与电池股走强，而上周五大幅回抽的通讯设备\\CPO\\PCB\\半导体芯片则大幅杀跌，全挂到跌幅榜上。",
           "exit_date": "2025-09-15",
           "exit_actual": "2025-09-15",
           "exit_price": 3860.504,
           "exit_evidence": "可以当黑粉，但不许胡说八道。我问你1.2635是当天早上未开市前发文喊炒底不？\n2.3174是前三天就喊3180将面临重大阻力，要撤了不？\n3.2689时，前1",
-          "holding_days": 5,
-          "return_pct": 0.88,
-          "annualized": 55.49,
-          "max_drawdown": -0.51,
+          "holding_days": 6,
+          "return_pct": 1.26,
+          "annualized": 69.11,
+          "max_drawdown": -0.14,
           "worst_date": "2025-09-09",
           "is_win": true
         },
@@ -6611,7 +7037,7 @@
           "entry_date": "2025-11-21",
           "entry_actual": "2025-11-21",
           "entry_price": 3834.891,
-          "entry_evidence": "美股昨夜也玩大幅高开大幅下跌。达子财报再好，也到出货季。昨日白天美股盘前达子可是大涨+5%的，正式开盘时也是稳在+5%，美纳指与道指可是大幅高开1~2%，前一小",
+          "entry_evidence": "3830~3838区间可以大胆进场，搏个反抽，3900再抛给市场。",
           "exit_date": "2025-12-04",
           "exit_actual": "2025-12-04",
           "exit_price": 3875.793,
@@ -6720,22 +7146,6 @@
           "is_win": false
         },
         {
-          "entry_date": "2026-01-14",
-          "entry_actual": "2026-01-14",
-          "entry_price": 4126.093,
-          "entry_evidence": "现在可以问会调到哪儿的问题了，初步看4000点。这只初步想法，要等收盘收在哪儿，在发正式预测。//@怀瑜握瑾999:接下来怎么看，在哪个位置进场",
-          "exit_date": "2026-01-16",
-          "exit_actual": "2026-01-16",
-          "exit_price": 4101.913,
-          "exit_evidence": "股市中午简评：\n早盘借结构性降再贷款利率利好高开，瞬间冲高后就快速回落。表明调整趋势已成。\n上证最高4140，盘中最高涨+25.5，收4103.45，-9.15",
-          "holding_days": 2,
-          "return_pct": -0.59,
-          "annualized": -52.32,
-          "max_drawdown": -0.59,
-          "worst_date": "2026-01-16",
-          "is_win": false
-        },
-        {
           "entry_date": "2026-01-17",
           "entry_actual": "2026-01-19",
           "entry_price": 4114.0,
@@ -6750,22 +7160,6 @@
           "max_drawdown": -0.01,
           "worst_date": "2026-01-20",
           "is_win": true
-        },
-        {
-          "entry_date": "2026-01-27",
-          "entry_actual": "2026-01-27",
-          "entry_price": 4139.904,
-          "entry_evidence": "原来罚单不断地发，露头就打！私募浩坤昇发收北交所1号罚单。“抬拉股价，反向交易”被查。唉，难怪这两天个股跌得那么惨。连发多道金牌打击恶炒，给股市降温。胳博扭不过",
-          "exit_date": "2026-01-30",
-          "exit_actual": "2026-01-30",
-          "exit_price": 4117.948,
-          "exit_evidence": "你不信我，要另立。可我1.11发文短线急涨至4190~4200坚决高抛，而大盘就刚好走到4190就下去了。我1.14日说4060~4070区间会迎来反抽，但反抽",
-          "holding_days": 3,
-          "return_pct": -0.53,
-          "annualized": -36.03,
-          "max_drawdown": -0.53,
-          "worst_date": "2026-01-30",
-          "is_win": false
         },
         {
           "entry_date": "2026-01-30",
@@ -6887,7 +7281,7 @@
           "exit_date": "2026-03-23",
           "exit_actual": "2026-03-23",
           "exit_price": 3813.283,
-          "exit_evidence": "#如何看待当下的股市？#如跌破3731，出中阳也没用，第二天照砸，现在最关键看GJD和机构到底对3731还守不守，还要不要，明日见分晓。看高层怎么说，当前就剩赌",
+          "exit_evidence": "下方只剩下3731支撑，跌穿这个点位，代表从去年8月中旬突破3731关口后买入的137万亿天量资金已悉数套牢。只是在3800点上下买入的尚处浅套之中而已。\n周午",
           "holding_days": 1,
           "return_pct": -3.63,
           "annualized": -99.99,
@@ -6912,6 +7306,22 @@
           "is_win": false
         },
         {
+          "entry_date": "2026-03-24",
+          "entry_actual": "2026-03-24",
+          "entry_price": 3881.28,
+          "entry_evidence": "反正几年没套过，昨天重套一天，今天解套，好人就是天相着我，看盘准，选个股抄底也不懒呀。不是我水平高，都是夭相着我。[笑哭]你要做好人，别做杠精，别人辛辛苦苦写文",
+          "exit_date": "2026-03-26",
+          "exit_actual": "2026-03-26",
+          "exit_price": 3889.084,
+          "exit_evidence": "机会是跌出来的没错，但3731~3800是绝对不能跌破了。3731一旦跌破，就必须不计成本清仓的。股指越逼近3731，就越危险。同时如果守住，获利也最丰厚。//",
+          "holding_days": 2,
+          "return_pct": 0.2,
+          "annualized": 28.8,
+          "max_drawdown": -0.0,
+          "worst_date": "2026-03-24",
+          "is_win": true
+        },
+        {
           "entry_date": "2026-03-27",
           "entry_actual": "2026-03-27",
           "entry_price": 3913.724,
@@ -6919,7 +7329,7 @@
           "exit_date": "2026-03-30",
           "exit_actual": "2026-03-30",
           "exit_price": 3923.287,
-          "exit_evidence": "有关于中东战事依然紧张，原油也仍在100元之上的101.589，和美股预期仍将加速下跌等诸多利空暂且不表。\n单就A股这奇特走势，不能刮目相看，仔细端详一番。\n上",
+          "exit_evidence": "3.30日（周一）午间快评：\n特朗谱编造利好，还是对A股\\港股\\日韩股市产生了波动。\n当消息放出特朗谱表示伊朗已同意他15点计划大部分内容时，盘面出现明显拉升，",
           "holding_days": 1,
           "return_pct": 0.24,
           "annualized": 84.97,
@@ -6979,31 +7389,15 @@
           "entry_date": "2026-06-03",
           "entry_actual": "2026-06-03",
           "entry_price": 4083.974,
-          "entry_evidence": "有人反复不断问港股，因为跌怕了，对昨日单日大涨是否一日游？是否重回下行趋势？\n我的回答是：港股昨日大阳，今日虽回调，但并未完全吞食昨日成果，恒生科技昨日涨+4.",
-          "exit_date": "2026-06-03",
-          "exit_actual": "2026-06-03",
-          "exit_price": 4083.974,
-          "exit_evidence": "这种股图形彻底走坏，资金连续不计成本出货中，最后也是对倒出货，制造假放量。唯一不同的时，你看低位放量，事实他引进一个专帮人出货的过桥资金，损失由协议补。",
-          "holding_days": 0,
-          "return_pct": 0.0,
-          "annualized": 0,
-          "max_drawdown": -0.0,
-          "worst_date": "2026-06-03",
-          "is_win": false
-        },
-        {
-          "entry_date": "2026-06-05",
-          "entry_actual": "2026-06-05",
-          "entry_price": 4027.736,
-          "entry_evidence": "北证50暴涨近+7%，未知消息面有何异动，但北证自见高点以来，单日暴涨已经发生过6次，今天是第7次，暴涨完之后，第二天也就悄无声息了。\n这次如果没重大消息，估计",
+          "entry_evidence": "6.3日（周三）午间快评：\n我在盘中快评文章下发现有人说要灭我这股神，然后又删掉了。正如这大盘瞬息万变，我估计这位网友对我突然又转多，表达调侃之意，因为他是不相",
           "exit_date": "2026-06-06",
           "exit_actual": "2026-06-08",
           "exit_price": 3959.338,
           "exit_evidence": "网友：准确率应该有六成，有一定的借鉴作用[比心]\n回复：去年高点算准了吧，是去年八月底九月初发出的年内高点3998以内。结果4034。\n去年底推算今年中期高点4",
-          "holding_days": 1,
-          "return_pct": -1.7,
-          "annualized": -98.66,
-          "max_drawdown": -1.7,
+          "holding_days": 3,
+          "return_pct": -3.05,
+          "annualized": -92.6,
+          "max_drawdown": -3.05,
           "worst_date": "2026-06-08",
           "is_win": false
         },
@@ -7120,7 +7514,21 @@
           "is_win": false
         }
       ]
-    }
+    },
+    "blogger_time_horizon": {
+      "distribution": {
+        "intraday": 235,
+        "short": 345,
+        "medium": 78,
+        "long": 113,
+        "unspecified": 178
+      },
+      "total": 949,
+      "blogger_type": "短线交易型",
+      "short_pct": 61.1,
+      "long_pct": 11.9
+    },
+    "extraction_method": "pattern_based_v2"
   },
   "顺应周期": {
     "blogger": "顺应周期",
@@ -7133,101 +7541,114 @@
       "following": "0"
     },
     "signal_dist": {
-      "strong_explicit": 142,
-      "strong_clear": 60,
-      "moderate_explicit": 51,
-      "moderate_clear": 394,
-      "vague": 19,
-      "total": 666,
-      "valid": 647,
-      "bullish": 354,
-      "bearish": 312
+      "strong_explicit": 167,
+      "strong_clear": 64,
+      "moderate_explicit": 44,
+      "moderate_clear": 383,
+      "vague": 48,
+      "descriptive": 150,
+      "total": 856,
+      "valid": 658,
+      "bullish": 455,
+      "bearish": 401
     },
     "precision": {
       "bullish": {
-        "total": 321,
-        "strong": 103,
-        "moderate": 218,
-        "win_rate": 69.2,
-        "avg_return": 2.53,
+        "total": 316,
+        "strong": 115,
+        "moderate": 201,
+        "win_rate": 69.0,
+        "avg_return": 2.88,
         "max_gain": 41.11,
         "max_loss": -9.15,
-        "profit_factor": 3.49,
+        "profit_factor": 3.79,
         "severe_errors": 20,
         "win_rates": {
-          "T+5": 59.6,
-          "T+10": 59.2,
-          "T+15": 67.2,
-          "T+20": 69.2
+          "T+5": 57.5,
+          "T+10": 58.3,
+          "T+15": 67.1,
+          "T+20": 69.0
         },
         "avg_returns": {
-          "T+5": 0.65,
-          "T+10": 1.14,
-          "T+15": 1.91,
-          "T+20": 2.53
+          "T+5": 0.67,
+          "T+10": 1.13,
+          "T+15": 2.24,
+          "T+20": 2.88
         },
         "risk": {
           "T+5": {
-            "weighted_avg_adverse": -0.95,
+            "weighted_avg_adverse": -0.94,
             "worst_adverse": -9.74,
-            "pct_adverse_gt3": 8.3,
+            "pct_adverse_gt3": 9.1,
             "reward_risk_ratio": 0
           },
           "T+10": {
-            "weighted_avg_adverse": -1.45,
+            "weighted_avg_adverse": -1.42,
             "worst_adverse": -15.77,
-            "pct_adverse_gt3": 16.8,
+            "pct_adverse_gt3": 16.9,
             "reward_risk_ratio": 0
           },
           "T+15": {
-            "weighted_avg_adverse": -1.69,
+            "weighted_avg_adverse": -1.63,
             "worst_adverse": -15.77,
-            "pct_adverse_gt3": 21.2,
+            "pct_adverse_gt3": 21.4,
             "reward_risk_ratio": 0
           },
           "T+20": {
-            "weighted_avg_adverse": -2.0,
+            "weighted_avg_adverse": -1.91,
             "worst_adverse": -15.77,
-            "pct_adverse_gt3": 25.9,
+            "pct_adverse_gt3": 24.7,
             "reward_risk_ratio": 0
           }
         },
         "strong_win_rates": {
-          "T+5": 65.4,
-          "T+10": 65.4,
-          "T+15": 73.1,
-          "T+20": 76.7
+          "T+5": 67.8,
+          "T+10": 67.8,
+          "T+15": 74.1,
+          "T+20": 78.3
         },
         "strong_avg_returns": {
-          "T+5": 1.25,
-          "T+10": 1.84,
-          "T+15": 3.21,
-          "T+20": 3.48
+          "T+5": 1.48,
+          "T+10": 2.01,
+          "T+15": 3.71,
+          "T+20": 3.93
         },
         "strong_risk": {
           "T+5": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 5.6
+            "pct_adverse_gt3": 4.2
           },
           "T+10": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 11.2
+            "pct_adverse_gt3": 9.3
           },
           "T+15": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 12.5
+            "pct_adverse_gt3": 12.1
           },
           "T+20": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 19.4
+            "pct_adverse_gt3": 19.1
           }
         },
         "severe_details": [
           {
             "date": "2024-08-15",
-            "evidence": "关注我的人，看我的文章知道为什么使劲提示，低吸，低吸，低吸。把自己的成本做低是8月中旬的任务，而不是图利润，图的是足够低的成本。",
+            "evidence": "说一下下午吧\n回顾下早上，挺有意思的是，先往下刺破了箱体1个点，然后用力又过猛把上沿也刺破了1个点，大概主力是为了想增加点人气，但同时也说明目前主力做多信心还不",
             "forward_return": -5.57,
             "max_adverse": -5.57
+          },
+          {
+            "date": "2024-08-15",
+            "evidence": "2888已经刺破了，虽然只有1点，但也拿出了态度，同时验证今天早盘所说，箱体破了[大金牙]\n接下去看2888今天收盘不能能站稳。",
+            "forward_return": -5.57,
+            "max_adverse": -5.57
+          },
+          {
+            "date": "2024-08-19",
+            "evidence": "今天如果按预期先向下，那么最快下午开始指数走势相对会乐观些，今天早上又会产生一个比较好的低吸点。",
+            "forward_return": -6.1,
+            "max_adverse": -6.55
           },
           {
             "date": "2024-08-19",
@@ -7240,98 +7661,117 @@
             "evidence": "大盘还是回到了该走的周期轨道上，消息，政策都不可能改变运行规律。明白的人跟我一起，继续耐心等待，乐观点，空间先看3150-3230点之间是否形成第二波牛浪，时间",
             "forward_return": -6.81,
             "max_adverse": -6.81
-          },
-          {
-            "date": "2024-12-24",
-            "evidence": "今天是传统的变盘时间点，今天大盘能一鼓作气站上3390以上，那么就会新的📈趋势。否则先等到1月7日再说。",
-            "forward_return": -5.3,
-            "max_adverse": -6.86
-          },
-          {
-            "date": "2025-03-07",
-            "evidence": "再补充一点只有冲上3420并站稳，那么从3140开始就是一个新的结构起点。末端的说法就是错误了，也不是没概率，但这样似乎太急，不利于后期，但尊重市场最终选择，怎",
-            "forward_return": -8.18,
-            "max_adverse": -8.18
           }
         ],
-        "strong_total": 109
+        "time_horizon_distribution": {
+          "intraday": 39,
+          "short": 153,
+          "medium": 61,
+          "long": 17,
+          "unspecified": 82
+        },
+        "horizon_weighted_win_rate": 62.7,
+        "horizon_weighted_avg_return": 1.72,
+        "optimal_window": "T+20",
+        "optimal_window_win_rate": 69.0,
+        "decay_pattern": "rising",
+        "long_window_stats": {
+          "signal_count": 17,
+          "windows": {
+            "T+40": {
+              "count": 14,
+              "win_rate": 71.4,
+              "avg_return": 2.01,
+              "avg_adverse": -3.93,
+              "worst_adverse": -9.84
+            },
+            "T+60": {
+              "count": 14,
+              "win_rate": 78.6,
+              "avg_return": 3.04,
+              "avg_adverse": -4.67,
+              "worst_adverse": -9.84
+            }
+          }
+        },
+        "strong_total": 120
       },
       "bearish": {
-        "total": 287,
-        "strong": 88,
-        "moderate": 199,
-        "win_rate": 33.8,
-        "avg_return": -1.92,
+        "total": 290,
+        "strong": 106,
+        "moderate": 184,
+        "win_rate": 32.8,
+        "avg_return": -1.63,
         "max_gain": 8.81,
         "max_loss": -32.55,
-        "profit_factor": 0.35,
-        "severe_errors": 44,
+        "profit_factor": 0.39,
+        "severe_errors": 38,
         "win_rates": {
-          "T+5": 38.4,
-          "T+10": 40.3,
-          "T+15": 34.9,
-          "T+20": 33.8
+          "T+5": 35.1,
+          "T+10": 38.5,
+          "T+15": 33.6,
+          "T+20": 32.8
         },
         "avg_returns": {
-          "T+5": -0.56,
-          "T+10": -0.81,
-          "T+15": -1.53,
-          "T+20": -1.92
+          "T+5": -0.52,
+          "T+10": -0.73,
+          "T+15": -1.39,
+          "T+20": -1.63
         },
         "risk": {
           "T+5": {
-            "weighted_avg_adverse": -1.48,
+            "weighted_avg_adverse": -1.44,
             "worst_adverse": -21.89,
-            "pct_adverse_gt3": 6.4,
+            "pct_adverse_gt3": 5.6,
             "reward_risk_ratio": 0
           },
           "T+10": {
-            "weighted_avg_adverse": -2.38,
-            "worst_adverse": -27.51,
-            "pct_adverse_gt3": 21.2,
+            "weighted_avg_adverse": -2.34,
+            "worst_adverse": -26.95,
+            "pct_adverse_gt3": 21.1,
             "reward_risk_ratio": 0
           },
           "T+15": {
-            "weighted_avg_adverse": -3.65,
+            "weighted_avg_adverse": -3.61,
             "worst_adverse": -65.71,
-            "pct_adverse_gt3": 38.1,
+            "pct_adverse_gt3": 38.0,
             "reward_risk_ratio": 0
           },
           "T+20": {
-            "weighted_avg_adverse": -4.54,
+            "weighted_avg_adverse": -4.31,
             "worst_adverse": -65.71,
-            "pct_adverse_gt3": 50.5,
+            "pct_adverse_gt3": 51.4,
             "reward_risk_ratio": 0
           }
         },
         "strong_win_rates": {
-          "T+5": 30.4,
-          "T+10": 28.1,
-          "T+15": 19.3,
-          "T+20": 14.8
+          "T+5": 30.0,
+          "T+10": 28.7,
+          "T+15": 19.8,
+          "T+20": 16.0
         },
         "strong_avg_returns": {
-          "T+5": -0.96,
-          "T+10": -1.56,
-          "T+15": -3.04,
-          "T+20": -3.54
+          "T+5": -0.93,
+          "T+10": -1.53,
+          "T+15": -3.07,
+          "T+20": -3.53
         },
         "strong_risk": {
           "T+5": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 6.5
+            "pct_adverse_gt3": 6.4
           },
           "T+10": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 22.5
+            "pct_adverse_gt3": 22.2
           },
           "T+15": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 42.0
+            "pct_adverse_gt3": 43.4
           },
           "T+20": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 63.6
+            "pct_adverse_gt3": 64.2
           }
         },
         "severe_details": [
@@ -7342,38 +7782,69 @@
             "max_adverse": -8.81
           },
           {
-            "date": "2024-08-30",
-            "evidence": "收盘，下午回落了些，那就说明不是牛市。😂\n等复盘后周末分析下9月份行情",
-            "forward_return": -22.78,
-            "max_adverse": -22.78
-          },
-          {
-            "date": "2024-09-02",
-            "evidence": "果然还要继续下探，没什么好说的。\n等待上证把最后一段的结构完成。",
-            "forward_return": -15.93,
-            "max_adverse": -24.15
-          },
-          {
-            "date": "2024-09-03",
-            "evidence": "银行调整的也差不多了。",
-            "forward_return": -17.8,
-            "max_adverse": -24.5
-          },
-          {
             "date": "2024-09-04",
             "evidence": "恒指在周一清仓了以后，先看15000-16000之间。",
             "forward_return": -15.57,
             "max_adverse": -25.34
+          },
+          {
+            "date": "2024-09-06",
+            "evidence": "今晚美股也可能大跌。\n下周要检验执行力了的时候了[灵光一闪]",
+            "forward_return": -15.75,
+            "max_adverse": -26.18
+          },
+          {
+            "date": "2024-09-06",
+            "evidence": "自恒生清仓后，我现在仓位是3成。\n指数到达预期的2750，我会加2成仓。剩余的，每跌10点加0.5成。就这样的计划了。",
+            "forward_return": -15.75,
+            "max_adverse": -26.18
+          },
+          {
+            "date": "2024-09-09",
+            "evidence": "从2850开始操作以来总体还是赚的，主要原因得益于恒指（恒指在，上周一全部清仓），创业板小亏。\n\n今天在上证2740新开了两个宽基指数50etf和科创50etf",
+            "forward_return": -32.55,
+            "max_adverse": -65.71
           }
         ],
-        "strong_total": 92
+        "time_horizon_distribution": {
+          "intraday": 28,
+          "short": 147,
+          "medium": 41,
+          "long": 17,
+          "unspecified": 72
+        },
+        "horizon_weighted_win_rate": 34.6,
+        "horizon_weighted_avg_return": -1.0,
+        "optimal_window": "T+10",
+        "optimal_window_win_rate": 38.5,
+        "decay_pattern": "hump",
+        "long_window_stats": {
+          "signal_count": 17,
+          "windows": {
+            "T+40": {
+              "count": 14,
+              "win_rate": 28.6,
+              "avg_return": -4.03,
+              "avg_adverse": -5.62,
+              "worst_adverse": -12.75
+            },
+            "T+60": {
+              "count": 14,
+              "win_rate": 7.1,
+              "avg_return": -5.57,
+              "avg_adverse": -7.03,
+              "worst_adverse": -14.76
+            }
+          }
+        },
+        "strong_total": 110
       }
     },
     "pairs": {
       "blogger": "顺应周期",
       "fallback": false,
-      "total_actions": 193,
-      "total_trades": 47,
+      "total_actions": 211,
+      "total_trades": 46,
       "open_position": {
         "entry_date": "2026-07-27",
         "entry_price": 3858.245,
@@ -7383,13 +7854,13 @@
         "floating_return": -0.77
       },
       "summary": {
-        "win_rate": 59.6,
-        "avg_return": 0.42,
-        "avg_holding_days": 5.6,
-        "max_gain": 10.88,
+        "win_rate": 54.3,
+        "avg_return": 0.32,
+        "avg_holding_days": 5.7,
+        "max_gain": 7.01,
         "max_loss": -6.12,
-        "avg_max_drawdown": -0.73,
-        "profit_factor": 1.73
+        "avg_max_drawdown": -0.76,
+        "profit_factor": 1.54
       },
       "trades": [
         {
@@ -7457,18 +7928,18 @@
           "is_win": false
         },
         {
-          "entry_date": "2024-09-10",
-          "entry_actual": "2024-09-10",
-          "entry_price": 2744.192,
-          "entry_evidence": "目前仓位6.5成，往上有利润，往下继续加仓。跌破不了2710，6.5成暂时不动了。\n\n我的操作策略是哪怕跌到2550都有仓位可加。[捂脸]这次比上一波的从285",
+          "entry_date": "2024-09-09",
+          "entry_actual": "2024-09-09",
+          "entry_price": 2736.488,
+          "entry_evidence": "现在基本上没什么技术性可言，至少也是个短期周期结构，非要挤一点那就是创业板还没创个新低。\n我自己执行计划，该加仓就加仓了，现在六成。",
           "exit_date": "2024-09-23",
           "exit_actual": "2024-09-23",
           "exit_price": 2748.918,
           "exit_evidence": "收盘，没有上到2765以上，早上减仓正确的，接下来看回踩位置。\n预计回踩在2690-2705。这个位置打算加仓回来。",
-          "holding_days": 7,
-          "return_pct": 0.17,
-          "annualized": 6.39,
-          "max_drawdown": -1.46,
+          "holding_days": 8,
+          "return_pct": 0.45,
+          "annualized": 15.35,
+          "max_drawdown": -1.18,
           "worst_date": "2024-09-13",
           "is_win": true
         },
@@ -7509,15 +7980,31 @@
           "entry_actual": "2024-09-25",
           "entry_price": 2896.306,
           "entry_evidence": "收盘，预料中的走势，10点30就明确要回补下方就近的缺口，等缺口补完在看形势是否补仓。\n2860附近。今天的量过于巨大，接下去的策略稍加谨慎些。还没到11月，都",
+          "exit_date": "2024-09-25",
+          "exit_actual": "2024-09-25",
+          "exit_price": 2896.306,
+          "exit_evidence": "到了一个风险极高的区域自然会通知，和之前3140一样，会苦口婆心喊的减仓，清仓。不过那时候肯定没几个人信[捂脸]",
+          "holding_days": 0,
+          "return_pct": 0.0,
+          "annualized": 0,
+          "max_drawdown": -0.0,
+          "worst_date": "2024-09-25",
+          "is_win": false
+        },
+        {
+          "entry_date": "2024-09-26",
+          "entry_actual": "2024-09-26",
+          "entry_price": 3000.953,
+          "entry_evidence": "收盘3000，不得不承认非常猛，似乎是抢着进来，我现在还有一成仓，并不代表不看好后市。\n我自己的操作计划，合适位置会加仓。",
           "exit_date": "2025-01-09",
           "exit_actual": "2025-01-09",
           "exit_price": 3211.393,
           "exit_evidence": "下午怎么走？\n\n看5分钟的结构。下午或者明天打到紫线位置附近，短线上还是存在可操作性，正常情况下下周会到红色线附近，大盘指数大概有1.5-2%的空间，适合短线选",
-          "holding_days": 70,
-          "return_pct": 10.88,
-          "annualized": 45.03,
+          "holding_days": 69,
+          "return_pct": 7.01,
+          "annualized": 28.09,
           "max_drawdown": -0.0,
-          "worst_date": "2024-09-25",
+          "worst_date": "2024-09-26",
           "is_win": true
         },
         {
@@ -7640,7 +8127,7 @@
           "exit_date": "2025-04-18",
           "exit_actual": "2025-04-18",
           "exit_price": 3276.73,
-          "exit_evidence": "我说3230，3233止跌，我说3260，就3262止跌。下次我要无情的加2-3点把指数蒙的更准确些[耶]\n\n提前过周末吧，3:00之前要是能跌破3252闭眼加",
+          "exit_evidence": "今天是缩量调整，权重轮着护盘，和我想象的一样，gj意志力是一定要补缺口的，今天来看反而是好事。如果下周某一天突然放量补缺口那就要小心了，如果市场按我这样的运行节",
           "holding_days": 2,
           "return_pct": 0.02,
           "annualized": 2.83,
@@ -7685,30 +8172,14 @@
           "entry_actual": "2025-05-14",
           "entry_price": 3403.948,
           "entry_evidence": "再回头看看给大家分享的板块思路，不知道有多少人跟着我的节奏。\n\n本人自3040以来，中途加过仓，调过一次仓，把科创调到的创业板，也是完美的，现在继续五成仓位。\n",
-          "exit_date": "2025-05-14",
-          "exit_actual": "2025-05-14",
-          "exit_price": 3403.948,
-          "exit_evidence": "大盘目前走势还不错。\n没有见顶信号。\n继续持股不动。",
-          "holding_days": 0,
-          "return_pct": 0.0,
-          "annualized": 0,
-          "max_drawdown": -0.0,
-          "worst_date": "2025-05-14",
-          "is_win": false
-        },
-        {
-          "entry_date": "2025-05-15",
-          "entry_actual": "2025-05-15",
-          "entry_price": 3380.821,
-          "entry_evidence": "开盘前瞻\n\n目前大盘上升趋势保持良好，3430附近可能会有一次短暂的调整。对于中线持仓可以忽略不计。\n\n有人问还能不能加仓，如果仓位轻可以，保持5成仓左右。方向",
           "exit_date": "2025-05-20",
           "exit_actual": "2025-05-20",
           "exit_price": 3380.478,
           "exit_evidence": "中线仓位上我计划逐步降到1-2成左右，但不会空仓。",
-          "holding_days": 3,
-          "return_pct": -0.01,
-          "annualized": -0.85,
-          "max_drawdown": -0.4,
+          "holding_days": 4,
+          "return_pct": -0.69,
+          "annualized": -35.33,
+          "max_drawdown": -1.07,
           "worst_date": "2025-05-16",
           "is_win": false
         },
@@ -7861,16 +8332,16 @@
           "entry_actual": "2025-07-09",
           "entry_price": 3493.05,
           "entry_evidence": "大盘通过下午一次小跳水，把早盘的预期兑现了。\n今天减了2成仓位，全部来自创业板，我个人只保留权重。\n\n等待大盘还会继续创新高。\n站稳3500。\n[大金牙]",
-          "exit_date": "2025-07-10",
-          "exit_actual": "2025-07-10",
-          "exit_price": 3509.682,
-          "exit_evidence": "大盘再破新高。\n继续持股观望。",
-          "holding_days": 1,
-          "return_pct": 0.48,
-          "annualized": 231.03,
+          "exit_date": "2025-07-09",
+          "exit_actual": "2025-07-09",
+          "exit_price": 3493.05,
+          "exit_evidence": "把手上非权重的减仓或者清掉。",
+          "holding_days": 0,
+          "return_pct": 0.0,
+          "annualized": 0,
           "max_drawdown": -0.0,
           "worst_date": "2025-07-09",
-          "is_win": true
+          "is_win": false
         },
         {
           "entry_date": "2025-07-10",
@@ -7893,16 +8364,16 @@
           "entry_actual": "2025-07-11",
           "entry_price": 3510.177,
           "entry_evidence": "回顾下2个月前的思路。\n\n3550是否真成为顶，目前还不能确定，等指标发出信号，才确定。但至少也是个次高点或次次高点。\n\n若真如我中午所预言的那样，那么，随后至",
-          "exit_date": "2025-07-14",
-          "exit_actual": "2025-07-14",
-          "exit_price": 3519.65,
-          "exit_evidence": "上周分别在3520，3540卖出2单，现在还有5成，打算3560-3600，每10点减1成，直至清仓。若3620以后再往前飞奔，那就超过我的认知。",
-          "holding_days": 1,
-          "return_pct": 0.27,
-          "annualized": 97.22,
+          "exit_date": "2025-07-11",
+          "exit_actual": "2025-07-11",
+          "exit_price": 3510.177,
+          "exit_evidence": "今天午评被限流了，总体一颗红心两手准备，今天继续持有，有向3600的气势，清仓没有必要。",
+          "holding_days": 0,
+          "return_pct": 0.0,
+          "annualized": 0,
           "max_drawdown": -0.0,
           "worst_date": "2025-07-11",
-          "is_win": true
+          "is_win": false
         },
         {
           "entry_date": "2025-07-16",
@@ -8053,31 +8524,15 @@
           "entry_actual": "2026-04-07",
           "entry_price": 3890.165,
           "entry_evidence": "我在置顶贴里说过今年最好的机会在3600上下50点，没有意外事件的情况下，耐心等待，最快4月底、晚点5，6月份，但迟早都会有，等到了也是逐步加仓。若4月底空间没",
-          "exit_date": "2026-04-15",
-          "exit_actual": "2026-04-15",
-          "exit_price": 4027.21,
-          "exit_evidence": "上次说过我曾用过大量数据回测过。任何指标成功率都基本在50%，什么金叉，死叉，背离，双头还有指标叠加等等等等。所以要在股市里长期生存下来，第一要素是风险，第二要",
-          "holding_days": 6,
-          "return_pct": 3.52,
-          "annualized": 328.08,
-          "max_drawdown": -0.0,
-          "worst_date": "2026-04-07",
-          "is_win": true
-        },
-        {
-          "entry_date": "2026-04-15",
-          "entry_actual": "2026-04-15",
-          "entry_price": 4027.21,
-          "entry_evidence": "我的1成可能就是大家的满仓，我赚2%可能就是你们的20%，所以我的操作风格寻找确定性的机会。如果本金不够大50万以内，有实力，那么多做做短线，特别是大盘震荡期反",
           "exit_date": "2026-04-24",
           "exit_actual": "2026-04-24",
           "exit_price": 4079.9,
           "exit_evidence": "市场机构主力通过抱团，把资金成功引到大科技，也终于实现了初步围剿，那么出货也不是一天就能完成，所以接下去时间更多的应该是震荡走势，预计最近几天基本会在4050-",
-          "holding_days": 7,
-          "return_pct": 1.31,
-          "annualized": 59.67,
+          "holding_days": 13,
+          "return_pct": 4.88,
+          "annualized": 151.71,
           "max_drawdown": -0.0,
-          "worst_date": "2026-04-15",
+          "worst_date": "2026-04-07",
           "is_win": true
         },
         {
@@ -8145,7 +8600,21 @@
           "is_win": false
         }
       ]
-    }
+    },
+    "blogger_time_horizon": {
+      "distribution": {
+        "intraday": 72,
+        "short": 322,
+        "medium": 137,
+        "long": 51,
+        "unspecified": 274
+      },
+      "total": 856,
+      "blogger_type": "混合型",
+      "short_pct": 46.0,
+      "long_pct": 6.0
+    },
+    "extraction_method": "pattern_based_v2"
   },
   "鸟瞰股市": {
     "blogger": "鸟瞰股市",
@@ -8160,93 +8629,94 @@
       "following": "4999"
     },
     "signal_dist": {
-      "strong_explicit": 107,
-      "strong_clear": 160,
+      "strong_explicit": 111,
+      "strong_clear": 177,
       "moderate_explicit": 4,
-      "moderate_clear": 15,
-      "vague": 5,
-      "total": 291,
-      "valid": 286,
-      "bullish": 135,
-      "bearish": 156
+      "moderate_clear": 13,
+      "vague": 60,
+      "descriptive": 7,
+      "total": 372,
+      "valid": 305,
+      "bullish": 163,
+      "bearish": 209
     },
     "precision": {
       "bullish": {
-        "total": 130,
-        "strong": 122,
-        "moderate": 8,
-        "win_rate": 30.8,
-        "avg_return": -0.87,
+        "total": 134,
+        "strong": 127,
+        "moderate": 7,
+        "win_rate": 31.3,
+        "avg_return": -0.92,
         "max_gain": 61.36,
         "max_loss": -10.21,
-        "profit_factor": 0.72,
-        "severe_errors": 34,
+        "profit_factor": 0.7,
+        "severe_errors": 37,
         "win_rates": {
-          "T+5": 34.1,
-          "T+10": 31.3,
-          "T+15": 38.5,
-          "T+20": 30.8
+          "T+5": 35.3,
+          "T+10": 31.9,
+          "T+15": 38.1,
+          "T+20": 31.3
         },
         "avg_returns": {
-          "T+5": -0.43,
-          "T+10": -0.4,
-          "T+15": -0.97,
-          "T+20": -0.87
+          "T+5": -0.37,
+          "T+10": -0.45,
+          "T+15": -1.02,
+          "T+20": -0.92
         },
         "risk": {
           "T+5": {
-            "weighted_avg_adverse": -1.8,
+            "weighted_avg_adverse": -1.82,
             "worst_adverse": -18.21,
-            "pct_adverse_gt3": 13.6,
+            "pct_adverse_gt3": 14.0,
             "reward_risk_ratio": 0
           },
           "T+10": {
-            "weighted_avg_adverse": -2.64,
+            "weighted_avg_adverse": -2.66,
             "worst_adverse": -20.26,
             "pct_adverse_gt3": 26.7,
             "reward_risk_ratio": 0
           },
           "T+15": {
-            "weighted_avg_adverse": -3.92,
+            "weighted_avg_adverse": -3.97,
             "worst_adverse": -20.26,
-            "pct_adverse_gt3": 60.8,
+            "pct_adverse_gt3": 60.4,
             "reward_risk_ratio": 0
           },
           "T+20": {
-            "weighted_avg_adverse": -4.55,
+            "weighted_avg_adverse": -4.62,
             "worst_adverse": -20.26,
-            "pct_adverse_gt3": 64.6,
+            "pct_adverse_gt3": 64.2,
             "reward_risk_ratio": 0
           }
         },
         "strong_win_rates": {
-          "T+5": 35.5,
-          "T+10": 32.5,
-          "T+15": 40.2,
-          "T+20": 32.8
+          "T+5": 36.4,
+          "T+10": 32.8,
+          "T+15": 39.4,
+          "T+20": 33.1
         },
         "strong_avg_returns": {
-          "T+5": -0.4,
-          "T+10": -0.36,
-          "T+15": -0.82,
-          "T+20": -0.77
+          "T+5": -0.34,
+          "T+10": -0.43,
+          "T+15": -0.91,
+          "T+20": -0.84
         },
         "strong_risk": {
           "T+5": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 14.5
+            "pct_adverse_gt3": 14.7
           },
           "T+10": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 28.5
+            "pct_adverse_gt3": 28.1
           },
           "T+15": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 59.0
+            "pct_adverse_gt3": 59.1
           },
           "T+20": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 63.1
+            "pct_adverse_gt3": 63.0
           }
         },
         "severe_details": [
@@ -8281,84 +8751,97 @@
             "max_adverse": -8.49
           }
         ],
-        "strong_total": 124
+        "time_horizon_distribution": {
+          "intraday": 61,
+          "short": 70,
+          "medium": 2,
+          "long": 0,
+          "unspecified": 3
+        },
+        "horizon_weighted_win_rate": 36.0,
+        "horizon_weighted_avg_return": -0.42,
+        "optimal_window": "T+15",
+        "optimal_window_win_rate": 38.1,
+        "decay_pattern": "hump",
+        "long_window_stats": null,
+        "strong_total": 129
       },
       "bearish": {
-        "total": 147,
-        "strong": 136,
-        "moderate": 11,
-        "win_rate": 60.5,
-        "avg_return": 0.17,
-        "max_gain": 9.95,
-        "max_loss": -41.11,
-        "profit_factor": 1.06,
-        "severe_errors": 20,
+        "total": 162,
+        "strong": 152,
+        "moderate": 10,
+        "win_rate": 61.7,
+        "avg_return": 0.01,
+        "max_gain": 10.16,
+        "max_loss": -48.35,
+        "profit_factor": 1.0,
+        "severe_errors": 22,
         "win_rates": {
-          "T+5": 59.2,
-          "T+10": 56.7,
-          "T+15": 60.0,
-          "T+20": 60.5
+          "T+5": 58.7,
+          "T+10": 59.4,
+          "T+15": 60.6,
+          "T+20": 61.7
         },
         "avg_returns": {
-          "T+5": 0.13,
-          "T+10": -0.44,
-          "T+15": 0.45,
-          "T+20": 0.17
+          "T+5": 0.21,
+          "T+10": -0.23,
+          "T+15": 0.57,
+          "T+20": 0.01
         },
         "risk": {
           "T+5": {
-            "weighted_avg_adverse": -1.4,
+            "weighted_avg_adverse": -1.35,
             "worst_adverse": -10.84,
-            "pct_adverse_gt3": 11.8,
+            "pct_adverse_gt3": 10.8,
             "reward_risk_ratio": 0
           },
           "T+10": {
-            "weighted_avg_adverse": -2.38,
+            "weighted_avg_adverse": -2.25,
             "worst_adverse": -64.91,
-            "pct_adverse_gt3": 16.7,
+            "pct_adverse_gt3": 15.8,
             "reward_risk_ratio": 0
           },
           "T+15": {
-            "weighted_avg_adverse": -3.65,
+            "weighted_avg_adverse": -3.56,
             "worst_adverse": -65.6,
-            "pct_adverse_gt3": 26.7,
+            "pct_adverse_gt3": 26.1,
             "reward_risk_ratio": 0
           },
           "T+20": {
-            "weighted_avg_adverse": -4.8,
-            "worst_adverse": -65.6,
-            "pct_adverse_gt3": 34.7,
+            "weighted_avg_adverse": -5.26,
+            "worst_adverse": -65.93,
+            "pct_adverse_gt3": 34.0,
             "reward_risk_ratio": 0
           }
         },
         "strong_win_rates": {
-          "T+5": 58.2,
-          "T+10": 55.4,
-          "T+15": 58.3,
-          "T+20": 58.8
+          "T+5": 58.0,
+          "T+10": 58.7,
+          "T+15": 59.4,
+          "T+20": 60.5
         },
         "strong_avg_returns": {
-          "T+5": 0.11,
-          "T+10": -0.5,
-          "T+15": 0.33,
-          "T+20": 0.06
+          "T+5": 0.21,
+          "T+10": -0.25,
+          "T+15": 0.5,
+          "T+20": -0.08
         },
         "strong_risk": {
           "T+5": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 12.1
+            "pct_adverse_gt3": 10.8
           },
           "T+10": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 17.3
+            "pct_adverse_gt3": 16.1
           },
           "T+15": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 27.3
+            "pct_adverse_gt3": 26.5
           },
           "T+20": {
             "weighted_avg_adverse": 0,
-            "pct_adverse_gt3": 36.0
+            "pct_adverse_gt3": 34.9
           }
         },
         "severe_details": [
@@ -8381,25 +8864,38 @@
             "max_adverse": -24.15
           },
           {
+            "date": "2024-09-02",
+            "evidence": "今日股市收盘简评（周一，9月2日）\n\n        一、收盘综述\n       今日三大股指大跌。\n       至收盘，其中沪指跌1.10%，深成指跌2.1",
+            "forward_return": -48.35,
+            "max_adverse": -65.93
+          },
+          {
             "date": "2024-09-04",
             "evidence": "明日大盘走势预测（周四，9月5日）\n\n       今日受外围市场大跌的影响，三大股指至收盘小幅下跌。\n\n         从三大股指的日K线走势图看出，沪指破",
             "forward_return": -15.57,
             "max_adverse": -25.34
-          },
-          {
-            "date": "2024-09-05",
-            "evidence": "今日股市收盘简评（周四，9月5日）\n\n\n        一、收盘综述\n       今日三大股指震荡整理，小幅反弹。\n       至收盘，其中沪指涨0.14%",
-            "forward_return": -37.75,
-            "max_adverse": -62.99
           }
         ],
-        "strong_total": 143
+        "time_horizon_distribution": {
+          "intraday": 79,
+          "short": 77,
+          "medium": 3,
+          "long": 1,
+          "unspecified": 9
+        },
+        "horizon_weighted_win_rate": 59.9,
+        "horizon_weighted_avg_return": 0.29,
+        "optimal_window": "T+20",
+        "optimal_window_win_rate": 61.7,
+        "decay_pattern": "rising",
+        "long_window_stats": null,
+        "strong_total": 159
       }
     },
     "pairs": {
       "blogger": "鸟瞰股市",
       "fallback": false,
-      "total_actions": 111,
+      "total_actions": 115,
       "total_trades": 27,
       "open_position": {
         "entry_date": "2026-07-21",
@@ -8852,6 +9348,20 @@
           "is_win": false
         }
       ]
-    }
+    },
+    "blogger_time_horizon": {
+      "distribution": {
+        "intraday": 160,
+        "short": 183,
+        "medium": 7,
+        "long": 1,
+        "unspecified": 21
+      },
+      "total": 372,
+      "blogger_type": "短线交易型",
+      "short_pct": 92.2,
+      "long_pct": 0.3
+    },
+    "extraction_method": "pattern_based_v2"
   }
 }

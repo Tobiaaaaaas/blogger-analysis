@@ -140,6 +140,69 @@ VAGUE_PATTERNS = [
     r"短线.*震荡.*中线.*看好", r"短期.*调整.*长期.*向好",  # mixed signals
 ]
 
+# Predictive intent patterns — distinguishes prediction from mere description
+# A post with direction words but NO predictive marker is "descriptive" (excluded)
+PREDICTIVE_PATTERNS = [
+    # Explicit forward-looking markers
+    r"预计", r"预判", r"预测", r"预期", r"预见",
+    r"认为", r"觉得", r"判断", r"估计",
+    r"目标\d", r"目标位", r"目标价", r"看到\d+",
+    r"有望", r"大概率", r"很可能", r"极有可能", r"概率.*[大高]",
+    r"将(?!军|领|近|于|计|被|要|会|来|信)",  # 将 as future marker
+    r"(?<!委|员|机|议|协|公|大|商|同|理|学)会(?!议|员|计|所|馆|展|费|话|谈|客|长)",  # 会=will
+    r"应该.*[涨跌反弹回调]", r"应当",
+    r"趋于", r"倾向", r"偏向", r"势必",
+    # Time-anchored predictions (inherently predictive)
+    r"明天", r"明日", r"今天", r"今日",
+    r"下周[一二三四五六日]?", r"本周[一二三四五六日]?", r"这周",
+    r"本月", r"下月", r"年底", r"年末", r"明年", r"下半年",
+    r"接下来", r"接下[来去]", r"后面[几些]",
+    r"即将", r"马上", r"立刻", r"很快", r"就要",
+    r"早盘", r"午盘", r"尾盘", r"盘中", r"日内", r"午后",
+    # Action words (implicitly predictive — you act on future expectations)
+    r"买入", r"卖出", r"加[仓满重]", r"减[仓半]", r"建仓", r"清仓", r"补仓", r"砍仓",
+    r"入场", r"离场", r"进场", r"出场",
+    r"抄底", r"逃顶", r"满仓", r"空仓",
+    r"止盈", r"止损",
+    # Directional look-ahead
+    r"看[涨跌多空]", r"看好", r"看[好高]",
+    r"准备.*[买进卖出加减清满]", r"打算.*[买进卖]",
+    r"建议.*[买进卖加减持观望仓]",
+    r"可以.*[买进卖加减仓入场离场抄底逃顶]",
+    r"值得.*[买进关注]",
+]
+
+# Time horizon patterns — identifies the blogger's intended prediction timescale
+TIME_HORIZON_PATTERNS = {
+    "intraday": [
+        r"盘中", r"日内", r"尾盘", r"午盘", r"午后",
+        r"收盘前", r"下午盘", r"早盘首", r"开盘后",
+        r"今天下午", r"今日午后",
+    ],
+    "short": [
+        r"明天", r"明日", r"今天(?!下午|午后)", r"今日(?!午后|下午)",
+        r"短线", r"超短", r"次日", r"隔日", r"明后天",
+        r"这一两天", r"近[一两]天", r"短[期线].*[看判预]",
+        r"明天.*[涨跌阳阴]", r"明日.*[涨跌阳阴]",
+    ],
+    "medium": [
+        r"本周", r"下周", r"这周", r"近期", r"短期",
+        r"接下来", r"接下[来去]", r"后面[几些]天",
+        r"这波", r"本轮", r"这轮",
+        r"最近", r"这几天", r"近[几些]天",
+        r"周.*级别", r"周.*行情",
+    ],
+    "long": [
+        r"牛市", r"熊市", r"下半年", r"明年", r"年底", r"年末",
+        r"长期", r"中长[期线]", r"趋势", r"大周期", r"主升浪",
+        r"未来几个[月周]", r"未来数月", r"季度",
+        r"本轮牛市", r"本轮熊市",
+        r"今年", r"全年", r"年度", r"年终",
+        r"月.*级别", r"月.*行情",
+        r"大底", r"大顶", r"历史.*[底顶]",
+    ],
+}
+
 
 def match_any(content, patterns):
     """Check if content matches any of the given regex patterns."""
@@ -164,36 +227,37 @@ def get_matched_patterns(content, patterns):
     return matched
 
 
+def detect_time_horizon(content):
+    """Detect the intended time horizon of a directional signal.
+    Returns one of: intraday, short, medium, long, unspecified.
+    Priority: intraday > short > medium > long (most specific wins).
+    """
+    for horizon in ["intraday", "short", "medium", "long"]:
+        if match_any(content, TIME_HORIZON_PATTERNS[horizon]):
+            return horizon
+    return "unspecified"
+
+
+def is_predictive(content):
+    """Check if the directional language is predictive (forward-looking)
+    rather than merely descriptive (reporting what already happened).
+    """
+    return match_any(content, PREDICTIVE_PATTERNS)
+
+
 def extract_signals_for_post(post):
     """Extract directional signal(s) from a single post.
     Returns a dict or None if no direction found.
+
+    v7: adds 'predictive' (bool) and 'time_horizon' (str) fields.
+    Descriptive posts (direction words but no predictive intent) are
+    extracted but marked as excluded from scoring.
     """
     content = post.get("content", "")
     if not content:
         return None
 
-    # Check for vague/hedging first
-    if match_any(content, VAGUE_PATTERNS):
-        # Still might have a directional lean
-        is_bullish = match_any(content, ALL_BULLISH)
-        is_bearish = match_any(content, ALL_BEARISH)
-        if not is_bullish and not is_bearish:
-            return None
-        # If vague but has direction, mark as directional_vague
-        direction = "bullish" if is_bullish and not is_bearish else ("bearish" if is_bearish and not is_bullish else "neutral")
-        if direction == "neutral":
-            return None
-        return {
-            "date": post.get("publish_date", "")[:10],
-            "direction": direction,
-            "strength": "moderate",
-            "specific": "directional_vague",
-            "evidence": content[:200],
-            "index": "上证指数",
-            "source_url": post.get("url", ""),
-        }
-
-    # Determine direction
+    # Determine direction first
     is_strong_bullish = match_any(content, STRONG_BULLISH_PATTERNS)
     is_moderate_bullish = match_any(content, MODERATE_BULLISH_PATTERNS)
     is_strong_bearish = match_any(content, STRONG_BEARISH_PATTERNS)
@@ -224,9 +288,24 @@ def extract_signals_for_post(post):
         else:
             return None  # truly ambiguous
 
-    # Determine specific
-    is_action = match_any(content, EXPLICIT_ACTION_PATTERNS)
-    specific = "explicit_action" if is_action else "directional_clear"
+    # Check predictive intent (v7)
+    predictive = is_predictive(content)
+
+    # Check for vague/hedging
+    is_vague = match_any(content, VAGUE_PATTERNS)
+
+    # Determine specific category
+    if is_vague:
+        specific = "directional_vague"
+    elif not predictive:
+        specific = "descriptive"  # v7: direction words but no forward-looking intent
+    else:
+        # Predictive + not vague → normal signal
+        is_action = match_any(content, EXPLICIT_ACTION_PATTERNS)
+        specific = "explicit_action" if is_action else "directional_clear"
+
+    # Detect time horizon (v7)
+    time_horizon = detect_time_horizon(content)
 
     # Determine index
     index = "上证指数"
@@ -235,7 +314,7 @@ def extract_signals_for_post(post):
     elif "沪深300" in content or "沪深" in content:
         index = "沪深300"
 
-    # Extract evidence (first 2-3 sentences that contain the signal)
+    # Extract evidence
     evidence = content[:300]
 
     return {
@@ -243,6 +322,8 @@ def extract_signals_for_post(post):
         "direction": direction,
         "strength": strength,
         "specific": specific,
+        "predictive": predictive,
+        "time_horizon": time_horizon,
         "evidence": evidence,
         "index": index,
         "source_url": post.get("url", ""),
@@ -270,19 +351,30 @@ def process_blogger(blogger_name):
         if sig:
             signals.append(sig)
 
-    # Deduplicate: same date + same direction + same strength → keep only first
+    # Deduplicate: same date + same direction + same strength + same time_horizon → keep first
+    # Different time horizons on same day are genuinely different signals (e.g., short vs long view)
     seen = set()
     deduped = []
     for s in signals:
-        key = (s["date"], s["direction"], s["strength"])
+        key = (s["date"], s["direction"], s["strength"], s.get("time_horizon", "unspecified"))
         if key not in seen:
             seen.add(key)
             deduped.append(s)
         else:
             # Keep the one with higher specific level
             for i, existing in enumerate(deduped):
-                if (existing["date"], existing["direction"], existing["strength"]) == key:
-                    if s["specific"] == "explicit_action" and existing["specific"] != "explicit_action":
+                ek = (existing["date"], existing["direction"], existing["strength"], existing.get("time_horizon", "unspecified"))
+                if ek == key:
+                    # Prefer predictive over descriptive, explicit_action over directional_clear
+                    s_rank = 0
+                    if s.get("predictive", True): s_rank += 10
+                    if s["specific"] == "explicit_action": s_rank += 5
+                    elif s["specific"] == "directional_clear": s_rank += 3
+                    e_rank = 0
+                    if existing.get("predictive", True): e_rank += 10
+                    if existing["specific"] == "explicit_action": e_rank += 5
+                    elif existing["specific"] == "directional_clear": e_rank += 3
+                    if s_rank > e_rank:
                         deduped[i] = s
                     break
 
@@ -294,17 +386,30 @@ def process_blogger(blogger_name):
     strong = [s for s in deduped if s["strength"] == "strong"]
     explicit = [s for s in deduped if s["specific"] == "explicit_action"]
     vague = [s for s in deduped if s["specific"] == "directional_vague"]
+    descriptive = [s for s in deduped if s["specific"] == "descriptive"]
+    predictive_signals = [s for s in deduped if s.get("predictive", True)]
+    # Time horizon distribution
+    horizons = {"intraday": 0, "short": 0, "medium": 0, "long": 0, "unspecified": 0}
+    for s in deduped:
+        h = s.get("time_horizon", "unspecified")
+        if h in horizons:
+            horizons[h] += 1
+
+    valid_count = len(deduped) - len(vague) - len(descriptive)
 
     print(f"\n  {blogger_name}: {total} posts → {len(deduped)} signals (deduped from {len(signals)} raw)")
     print(f"    看多: {len(bullish)} | 看空: {len(bearish)}")
     print(f"    strong: {len(strong)} | moderate: {len(deduped) - len(strong)}")
-    print(f"    explicit_action: {len(explicit)} | directional_clear: {len(deduped) - len(explicit) - len(vague)} | directional_vague: {len(vague)}")
+    print(f"    explicit_action: {len(explicit)} | directional_clear: {len(deduped) - len(explicit) - len(vague) - len(descriptive)} | directional_vague: {len(vague)} | descriptive: {len(descriptive)}")
+    print(f"    有效信号(计入评分): {valid_count} | 排除: vague={len(vague)} descriptive={len(descriptive)}")
+    print(f"    时间维度: 日内{horizons['intraday']} 短线{horizons['short']} 中线{horizons['medium']} 长线{horizons['long']} 未指定{horizons['unspecified']}")
 
     # Write signals
     output = {
         "blogger": blogger_name,
         "signals": deduped,
-        "extraction_method": "pattern_based_v1",
+        "extraction_method": "pattern_based_v2",
+        "v7_features": ["predictive_detection", "time_horizon_tagging", "descriptive_filtering"],
         "needs_review": True,
     }
 

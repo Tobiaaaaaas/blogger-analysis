@@ -16,12 +16,15 @@ WINDOWS = {"T+5": 5, "T+10": 10, "T+15": 15, "T+20": 20}
 def get_signal_dist(signals):
     cats = {
         'strong_explicit': 0, 'strong_clear': 0,
-        'moderate_explicit': 0, 'moderate_clear': 0, 'vague': 0,
+        'moderate_explicit': 0, 'moderate_clear': 0,
+        'vague': 0, 'descriptive': 0,
     }
     bull = bear = 0
     for s in signals:
         if s['specific'] == 'directional_vague':
             cats['vague'] += 1
+        elif s['specific'] == 'descriptive':
+            cats['descriptive'] += 1
         elif s['strength'] == 'strong' and s['specific'] == 'explicit_action':
             cats['strong_explicit'] += 1
         elif s['strength'] == 'strong' and s['specific'] == 'directional_clear':
@@ -36,7 +39,7 @@ def get_signal_dist(signals):
             bear += 1
     total = len(signals)
     cats['total'] = total
-    cats['valid'] = total - cats['vague']
+    cats['valid'] = total - cats['vague'] - cats['descriptive']
     cats['bullish'] = bull
     cats['bearish'] = bear
     return cats
@@ -45,6 +48,36 @@ def get_signal_dist(signals):
 def fmt_pct(v):
     if v is None: return 'N/A'
     return f"{v:+.2f}%"
+
+
+def compute_blogger_horizon(signals):
+    """Compute blogger-level time horizon summary from all signals."""
+    dist = {"intraday": 0, "short": 0, "medium": 0, "long": 0, "unspecified": 0}
+    for s in signals:
+        h = s.get("time_horizon", "unspecified")
+        if h in dist:
+            dist[h] += 1
+    total = sum(dist.values())
+    if total == 0:
+        return None
+    # Classification
+    short_pct = (dist["intraday"] + dist["short"]) / total * 100
+    long_pct = dist["long"] / total * 100
+    if short_pct >= 60:
+        blogger_type = "短线交易型"
+    elif long_pct >= 15:
+        blogger_type = "长线趋势型"
+    elif dist["medium"] / total >= 0.4:
+        blogger_type = "中线波段型"
+    else:
+        blogger_type = "混合型"
+    return {
+        "distribution": dist,
+        "total": total,
+        "blogger_type": blogger_type,
+        "short_pct": round(short_pct, 1),
+        "long_pct": round(long_pct, 1),
+    }
 
 
 def generate_blogger_data(blogger_data, market_data):
@@ -81,6 +114,9 @@ def generate_blogger_data(blogger_data, market_data):
         'signal_dist': dist,
         'precision': {},
         'pairs': pairs,
+        # v7: blogger-level time horizon summary (aggregated from all signals)
+        'blogger_time_horizon': compute_blogger_horizon(signals),
+        'extraction_method': blogger_data.get('extraction_method', 'unknown'),
     }
 
     if precision:
@@ -111,6 +147,14 @@ def generate_blogger_data(blogger_data, market_data):
                 'strong_avg_returns': {},
                 'strong_risk': {},
                 'severe_details': dim.get('severe_details', [])[:5],
+                # v7 fields
+                'time_horizon_distribution': dim.get('time_horizon_distribution', {}),
+                'horizon_weighted_win_rate': dim.get('horizon_weighted_win_rate'),
+                'horizon_weighted_avg_return': dim.get('horizon_weighted_avg_return'),
+                'optimal_window': dim.get('optimal_window'),
+                'optimal_window_win_rate': dim.get('optimal_window_win_rate'),
+                'decay_pattern': dim.get('decay_pattern'),
+                'long_window_stats': dim.get('long_window_stats'),
             }
 
             for w in WINDOWS:

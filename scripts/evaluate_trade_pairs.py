@@ -33,9 +33,9 @@ QUALITY_WINDOW = 5
 
 
 def is_valid_signal(sig):
-    """判断信号是否可用于配对：explicit_action + 非模糊。
-    保留 strong 和 moderate，仅排除 directional_vague."""
-    if sig.get("specific") == "directional_vague":
+    """判断信号是否可用于配对：explicit_action + 非模糊 + 非描述性。
+    保留 strong 和 moderate，仅排除 directional_vague 和 descriptive."""
+    if sig.get("specific") in ("directional_vague", "descriptive"):
         return False
     if sig.get("specific") != "explicit_action":
         return False
