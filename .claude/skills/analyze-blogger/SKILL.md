@@ -53,8 +53,8 @@ cd <项目根目录> && python scripts/scrape_toutiao.py <帖子链接>
 - `specific`: explicit_action / directional_clear / directional_vague / descriptive
   - `explicit_action` — 给出操作指令（加仓/减仓/买入/卖出/抄底/逃顶）+ 配合个人操作
   - `directional_clear` — 明确方向但无操作指令（"明天看涨""调整未结束"）
-  - `directional_vague` — **v8 职责扩大**：骑墙（"可能涨也可能跌"）+ 弱信号（"可能有点偏多""边走边看倾向多"）。两者都被排除
-  - `descriptive` — 有方向词但无预测意图，会被排除
+  - `directional_vague` — 骑墙+弱信号，不符合"明确方向预测"的提取原则，不提取
+  - `descriptive` — 有方向词但无预测意图，不符合提取原则，不提取
 - `predictive`: true / false
 - `time_horizon`: intraday / short / medium / long / unspecified
   - `intraday` — 博主的判断仅针对当日（"下午拉""尾盘跳水""今天收阳"）
@@ -152,7 +152,7 @@ cd <项目根目录> && python scripts/fetch_market_data.py
 一个博主在顶部看空极准，不代表他在底部看多也可靠。评估时必须将看多（抄底）和看空（逃顶）作为两个独立维度分别评分。跟随者需要知道：**这个博主告诉我"什么时候买"靠谱，还是告诉我"什么时候卖"靠谱？**
 
 **原则 6（v10 重写）：拐点线段领先性因子（return）**
-评估不再使用固定 T+N 窗口，也不使用"拐点附近/趋势段"二值分类。市场的自然结构是拐点之间的线段。每条信号用 **return 因子**（剩余空间比例）连续缩放得分：
+评估不再使用固定 T+N 窗口，也不使用"拐点附近/趋势段"二值分类。市场的自然结构是拐点之间的线段。每条信号用 **return 因子**（潜在最大收益）连续缩放得分：
 
 ```
 return = |下一个拐点价格 - 信号参考价格| / |信号参考价格|
@@ -161,7 +161,6 @@ score = strength_base × direction_sign × return
 
 - **return**：距下一拐点还需涨/跌的百分比。return 越大 → 领先性越强 → 赏罚越重。return 趋近 0 → 末期跟风无价值 → 得分趋近 0
 - 方向对 = +，方向错 = -；strength_base = 2(strong) 或 1(moderate)
-- `time_horizon = intraday` 或 `short` 的超短线直接过滤
 
 核心逻辑：
 - 上升段：刚离开底部看多 → 多加分（领先性高）；接近顶部看多 → 少加分（末期跟风）；刚离开底部看空 → 多扣分；接近顶部看空 → 少扣分
@@ -169,7 +168,7 @@ score = strength_base × direction_sign × return
 
 #### 4.3 拐点线段评估（打分制）
 
-> **v10 重大变更**：弃用 T+N 窗口快照和"拐点附近/趋势段"二值分类，改为连续 return 因子（剩余空间比例）。离下一拐点越远，判断越有领先性，赏罚越重。
+> **v10 重大变更**：弃用 T+N 窗口快照和"拐点附近/趋势段"二值分类，改为连续 return 因子（潜在最大收益）。
 
 ##### 4.3.1 线段模型
 
@@ -180,7 +179,7 @@ score = strength_base × direction_sign × return
 
 ##### 4.3.2 return 因子计算
 
-对每条信号，计算它在该线段中的**剩余空间比例**：
+对每条信号，计算它在该线段中的**潜在最大收益**：
 
 ```
 return = |下一拐点价格 - 信号参考价格| / |信号参考价格|
