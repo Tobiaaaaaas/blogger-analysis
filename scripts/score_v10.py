@@ -1,5 +1,5 @@
 """
-v10 scoring: match signals to posts for publish_time, compute room-based scores.
+v10 scoring: match signals to posts for publish_time, compute ret-based scores.
 Usage: python scripts/score_v10.py --blogger 大盘蜂向标
 """
 import json, sys, os
@@ -119,15 +119,15 @@ def main():
         if not seg: continue
 
         start_p, end_p = seg[3], seg[7]
-        room = abs(end_p - ref_p) / abs(ref_p) if ref_p else 0
-        if room < 0:
-            room = 0
+        ret = abs(end_p - ref_p) / abs(ref_p) if ref_p else 0
+        if ret < 0:
+            ret = 0
 
         sd = seg[8]
         correct = (sd == 'rising' and direction == 'bullish') or (sd == 'falling' and direction == 'bearish')
         dsign = 1 if correct else -1
         sbase = 2 if strength == 'strong' else 1
-        score = sbase * dsign * room
+        score = sbase * dsign * ret
 
         if direction == 'bullish': results['total_bull'] += score
         else: results['total_bear'] += score
@@ -136,13 +136,13 @@ def main():
             bdt = datetime.strptime(bdate, '%Y-%m-%d'); sdt = datetime.strptime(d, '%Y-%m-%d')
             if abs((sdt-bdt).days) <= 1 and direction == 'bullish':
                 results['bottom_bull'] += score
-                bottom_details.append((d, pt, bl, strength, room, score, ref_label, f'{seg[0]}-{seg[4]}', sd, ev[:60]))
+                bottom_details.append((d, pt, bl, strength, ret, score, ref_label, f'{seg[0]}-{seg[4]}', sd, ev[:60]))
                 break
         for tl, tdate in tops.items():
             tdt = datetime.strptime(tdate, '%Y-%m-%d'); sdt = datetime.strptime(d, '%Y-%m-%d')
             if abs((sdt-tdt).days) <= 1 and direction == 'bearish':
                 results['top_bear'] += score
-                top_details.append((d, pt, tl, strength, room, score, ref_label, f'{seg[0]}-{seg[4]}', sd, ev[:60]))
+                top_details.append((d, pt, tl, strength, ret, score, ref_label, f'{seg[0]}-{seg[4]}', sd, ev[:60]))
                 break
 
         sk = f'{seg[0]}-{seg[4]}'
@@ -161,11 +161,11 @@ def main():
 
     print('\n=== BOTTOM DETAILS ===')
     for b in bottom_details:
-        print(f'{b[0]} {b[1]:>6} @{b[2]} {b[3]} seg={b[7]} {b[8]} ref={b[6]} room={b[4]:.2f} score={b[5]:+.2f} | {b[9]}')
+        print(f'{b[0]} {b[1]:>6} @{b[2]} {b[3]} seg={b[7]} {b[8]} ref={b[6]} ret={b[4]:.2f} score={b[5]:+.2f} | {b[9]}')
 
     print('\n=== TOP DETAILS ===')
     for t in top_details:
-        print(f'{t[0]} {t[1]:>6} @{t[2]} {t[3]} seg={t[7]} {t[8]} ref={t[6]} room={t[4]:.2f} score={t[5]:+.2f} | {t[9]}')
+        print(f'{t[0]} {t[1]:>6} @{t[2]} {t[3]} seg={t[7]} {t[8]} ref={t[6]} ret={t[4]:.2f} score={t[5]:+.2f} | {t[9]}')
 
     print('\n=== BY SEGMENT ===')
     for sk, sv in sorted(by_seg.items()):
