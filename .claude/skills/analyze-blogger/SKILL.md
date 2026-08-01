@@ -108,7 +108,7 @@ cd <项目根目录> && python scripts/fetch_market_data.py
 
 - 获取**上证综指**日线数据（含开盘/收盘/最高/最低/成交量）
 - 默认覆盖当年全年 + 前后缓冲
-- 输出到 `data/market_data.json`
+- 输出到 `data/market/market_data.json`
 
 如果已有当天数据，可以跳过。
 

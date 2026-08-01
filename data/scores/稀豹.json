@@ -1,0 +1,302 @@
+{
+  "blogger": "稀豹",
+  "scoring_version": "v10 (14-score)",
+  "signals_total": 498,
+  "signals_scored": 441,
+  "last_segment_unscored": 51,
+  "no_price": 4,
+  "no_segment": 2,
+  "scores": {
+    "综合": {
+      "total": -12.81,
+      "count": 441,
+      "avg_pct": -2.91
+    },
+    "上升段": {
+      "total": -7.97,
+      "count": 322,
+      "avg_pct": -2.48
+    },
+    "下降段": {
+      "total": -4.84,
+      "count": 119,
+      "avg_pct": -4.07
+    },
+    "抄底": {
+      "total": 0.58,
+      "count": 12,
+      "avg_pct": 4.81
+    },
+    "逃顶": {
+      "total": 0.0,
+      "count": 0,
+      "avg_pct": 0.0
+    },
+    "看多": {
+      "total": 5.8,
+      "count": 300,
+      "avg_pct": 1.93
+    },
+    "看空": {
+      "total": -18.62,
+      "count": 141,
+      "avg_pct": -13.2
+    }
+  },
+  "segments": {
+    "I10→I11": {
+      "direction": "falling",
+      "start_label": "I10",
+      "end_label": "I11",
+      "total": 27,
+      "bull": 23,
+      "bear": 4,
+      "score": -0.62
+    },
+    "I11→I12": {
+      "direction": "rising",
+      "start_label": "I11",
+      "end_label": "I12",
+      "total": 24,
+      "bull": 24,
+      "bear": 0,
+      "score": 0.51
+    },
+    "I12→M5": {
+      "direction": "falling",
+      "start_label": "I12",
+      "end_label": "M5",
+      "total": 20,
+      "bull": 19,
+      "bear": 1,
+      "score": -1.7
+    },
+    "I13→I14": {
+      "direction": "rising",
+      "start_label": "I13",
+      "end_label": "I14",
+      "total": 15,
+      "bull": 8,
+      "bear": 7,
+      "score": 0.01
+    },
+    "I14→now": {
+      "direction": "falling",
+      "start_label": "I14",
+      "end_label": "?",
+      "total": 51,
+      "bull": 36,
+      "bear": 15,
+      "score": 0.0
+    },
+    "I2→I3": {
+      "direction": "falling",
+      "start_label": "I2",
+      "end_label": "I3",
+      "total": 2,
+      "bull": 0,
+      "bear": 2,
+      "score": 0.07
+    },
+    "I9→I10": {
+      "direction": "rising",
+      "start_label": "I9",
+      "end_label": "I10",
+      "total": 31,
+      "bull": 25,
+      "bear": 6,
+      "score": 1.1
+    },
+    "M3→M4": {
+      "direction": "rising",
+      "start_label": "M3",
+      "end_label": "M4",
+      "total": 214,
+      "bull": 113,
+      "bear": 101,
+      "score": -11.36
+    },
+    "M4→I9": {
+      "direction": "falling",
+      "start_label": "M4",
+      "end_label": "I9",
+      "total": 39,
+      "bull": 37,
+      "bear": 2,
+      "score": -1.03
+    },
+    "M5→M6": {
+      "direction": "rising",
+      "start_label": "M5",
+      "end_label": "M6",
+      "total": 38,
+      "bull": 24,
+      "bear": 14,
+      "score": 1.77
+    },
+    "M6→I13": {
+      "direction": "falling",
+      "start_label": "M6",
+      "end_label": "I13",
+      "total": 31,
+      "bull": 27,
+      "bear": 4,
+      "score": -1.56
+    }
+  },
+  "inflection_details": {
+    "I11": {
+      "signals": [
+        {
+          "date": "2026-02-02",
+          "time": "11:30",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0032,
+          "short_return": 0.0215,
+          "score": 0.0215,
+          "ref": "2026-02-02 收盘",
+          "evidence": "本周上半周的震荡，不仅不是本轮趋势的终结，反而是新一轮上攻行情的起点阶段，自然是积极布局跟进后市向上方向的绝佳时机。"
+        },
+        {
+          "date": "2026-02-02",
+          "time": "16:00",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0101,
+          "short_return": 0.0144,
+          "score": -0.0101,
+          "ref": "2026-02-03 开盘",
+          "evidence": "当前不仅不是恐惧的时刻，反而是龙游浅滩，蓄势待飞的关键节点。"
+        },
+        {
+          "date": "2026-02-03",
+          "time": "11:39",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0318,
+          "short_return": 0.0085,
+          "score": 0.0318,
+          "ref": "2026-02-03 收盘",
+          "evidence": "下午不论涨跌，都是本周先抑后扬的拐点信号！"
+        },
+        {
+          "date": "2026-02-03",
+          "time": "15:00",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0326,
+          "short_return": 0.0092,
+          "score": 0.0326,
+          "ref": "2026-02-04 开盘",
+          "evidence": "明确观点，明天就三个字，中阳线！因为今天就是本周先抑后扬的关键转折！"
+        },
+        {
+          "date": "2026-02-04",
+          "time": "11:35",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0231,
+          "short_return": 0.0,
+          "score": 0.0231,
+          "ref": "2026-02-04 收盘",
+          "evidence": "下午依然有较高概率，站上5日先收红盘！"
+        },
+        {
+          "date": "2026-02-04",
+          "time": "15:15",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0299,
+          "short_return": 0.0067,
+          "score": 0.0299,
+          "ref": "2026-02-05 开盘",
+          "evidence": "还没涨完，明天接着涨！只是这波行情，以小阳碎步拉着时间换空间，效果一样！"
+        }
+      ],
+      "total_score": 0.13,
+      "signal_count": 6,
+      "avg_score_pct": 2.15
+    },
+    "I9": {
+      "signals": [
+        {
+          "date": "2025-12-15",
+          "time": "11:30",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0134,
+          "short_return": 0.0006,
+          "score": -0.0134,
+          "ref": "2025-12-15 收盘",
+          "evidence": "今天最终会收红盘！再次实现A股的一枝独秀，即全球股市下跌，独A股上涨！"
+        },
+        {
+          "date": "2025-12-15",
+          "time": "19:58",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0118,
+          "short_return": 0.0023,
+          "score": -0.0118,
+          "ref": "2025-12-16 开盘",
+          "evidence": "先明确观点，明天或有大涨，一阳穿三线！包住今天所有的回落！"
+        }
+      ],
+      "total_score": -0.03,
+      "signal_count": 2,
+      "avg_score_pct": -1.26
+    },
+    "M5": {
+      "signals": [
+        {
+          "date": "2026-03-22",
+          "time": "14:08",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0282,
+          "short_return": 0.0069,
+          "score": -0.0282,
+          "ref": "2026-03-23 开盘(非交易日)",
+          "evidence": "至此明确观点，下周行情会先震荡后上扬，最终站上5日线，收周阳线！"
+        },
+        {
+          "date": "2026-03-23",
+          "time": "15:02",
+          "direction": "bullish",
+          "strength": "strong",
+          "return": 0.1063,
+          "short_return": 0.0214,
+          "score": 0.2127,
+          "ref": "2026-03-24 开盘",
+          "evidence": "明确观点，明天会收红盘！并且这波行情的机会，就在明天！"
+        },
+        {
+          "date": "2026-03-24",
+          "time": "11:34",
+          "direction": "bullish",
+          "strength": "strong",
+          "return": 0.0973,
+          "short_return": 0.013,
+          "score": 0.1946,
+          "ref": "2026-03-24 收盘",
+          "evidence": "因此我现在就可以提前判断，昨天的3794，就是本轮短中期行情的底部！"
+        },
+        {
+          "date": "2026-03-24",
+          "time": "15:02",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0942,
+          "short_return": 0.0102,
+          "score": 0.0942,
+          "ref": "2026-03-25 开盘",
+          "evidence": "这是情绪底与市场底的同步确认，直指这波行情的拐点就在今天！"
+        }
+      ],
+      "total_score": 0.47,
+      "signal_count": 4,
+      "avg_score_pct": 11.83
+    }
+  }
+}

@@ -1,0 +1,588 @@
+{
+  "blogger": "梦若神机",
+  "scoring_version": "v10 (14-score)",
+  "signals_total": 630,
+  "signals_scored": 501,
+  "last_segment_unscored": 109,
+  "no_price": 14,
+  "no_segment": 6,
+  "scores": {
+    "综合": {
+      "total": 1.99,
+      "count": 501,
+      "avg_pct": 0.4
+    },
+    "上升段": {
+      "total": 9.32,
+      "count": 307,
+      "avg_pct": 3.04
+    },
+    "下降段": {
+      "total": -7.33,
+      "count": 194,
+      "avg_pct": -3.78
+    },
+    "抄底": {
+      "total": 1.61,
+      "count": 26,
+      "avg_pct": 6.19
+    },
+    "逃顶": {
+      "total": 0.38,
+      "count": 8,
+      "avg_pct": 4.75
+    },
+    "看多": {
+      "total": 6.05,
+      "count": 362,
+      "avg_pct": 1.67
+    },
+    "看空": {
+      "total": -4.06,
+      "count": 139,
+      "avg_pct": -2.92
+    }
+  },
+  "segments": {
+    "I10→I11": {
+      "direction": "falling",
+      "start_label": "I10",
+      "end_label": "I11",
+      "total": 16,
+      "bull": 15,
+      "bear": 1,
+      "score": -0.62
+    },
+    "I11→I12": {
+      "direction": "rising",
+      "start_label": "I11",
+      "end_label": "I12",
+      "total": 40,
+      "bull": 26,
+      "bear": 14,
+      "score": 0.52
+    },
+    "I12→M5": {
+      "direction": "falling",
+      "start_label": "I12",
+      "end_label": "M5",
+      "total": 59,
+      "bull": 59,
+      "bear": 0,
+      "score": -5.61
+    },
+    "I13→I14": {
+      "direction": "rising",
+      "start_label": "I13",
+      "end_label": "I14",
+      "total": 42,
+      "bull": 7,
+      "bear": 35,
+      "score": -1.14
+    },
+    "I14→now": {
+      "direction": "falling",
+      "start_label": "I14",
+      "end_label": "?",
+      "total": 109,
+      "bull": 25,
+      "bear": 84,
+      "score": 0.0
+    },
+    "I1→I2": {
+      "direction": "rising",
+      "start_label": "I1",
+      "end_label": "I2",
+      "total": 1,
+      "bull": 0,
+      "bear": 1,
+      "score": -0.07
+    },
+    "I9→I10": {
+      "direction": "rising",
+      "start_label": "I9",
+      "end_label": "I10",
+      "total": 44,
+      "bull": 43,
+      "bear": 1,
+      "score": 3.65
+    },
+    "M2→I1": {
+      "direction": "falling",
+      "start_label": "M2",
+      "end_label": "I1",
+      "total": 1,
+      "bull": 1,
+      "bear": 0,
+      "score": 0.04
+    },
+    "M3→M4": {
+      "direction": "rising",
+      "start_label": "M3",
+      "end_label": "M4",
+      "total": 1,
+      "bull": 1,
+      "bear": 0,
+      "score": 0.2
+    },
+    "M4→I9": {
+      "direction": "falling",
+      "start_label": "M4",
+      "end_label": "I9",
+      "total": 61,
+      "bull": 53,
+      "bear": 8,
+      "score": -0.85
+    },
+    "M5→M6": {
+      "direction": "rising",
+      "start_label": "M5",
+      "end_label": "M6",
+      "total": 179,
+      "bull": 120,
+      "bear": 59,
+      "score": 6.16
+    },
+    "M6→I13": {
+      "direction": "falling",
+      "start_label": "M6",
+      "end_label": "I13",
+      "total": 57,
+      "bull": 37,
+      "bear": 20,
+      "score": -0.28
+    }
+  },
+  "inflection_details": {
+    "I11": {
+      "signals": [
+        {
+          "date": "2026-02-02",
+          "time": "20:05",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0101,
+          "short_return": 0.0144,
+          "score": -0.0101,
+          "ref": "2026-02-03 开盘",
+          "evidence": "神机未退，只为奔赴4500点的确定性"
+        },
+        {
+          "date": "2026-02-03",
+          "time": "15:44",
+          "direction": "bullish",
+          "strength": "strong",
+          "return": 0.0326,
+          "short_return": 0.0092,
+          "score": 0.0651,
+          "ref": "2026-02-04 开盘",
+          "evidence": "神机澄清：清仓绝非看空，4500点目标坚信不疑，仅为调仓换股"
+        },
+        {
+          "date": "2026-02-03",
+          "time": "15:50",
+          "direction": "bullish",
+          "strength": "strong",
+          "return": 0.0326,
+          "short_return": 0.0092,
+          "score": 0.0651,
+          "ref": "2026-02-04 开盘",
+          "evidence": "神机继续看好大盘上4500点。大家不要以讹传讹，说神机空仓了。清仓空仓是为了更好的满仓。今天下午就满上了，大家一起继续奋"
+        },
+        {
+          "date": "2026-02-04",
+          "time": "15:18",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0299,
+          "short_return": 0.0067,
+          "score": 0.0299,
+          "ref": "2026-02-05 开盘",
+          "evidence": "先抑后扬藏转机，神机静候证券大阳起稳升"
+        }
+      ],
+      "total_score": 0.15,
+      "signal_count": 4,
+      "avg_score_pct": 3.75
+    },
+    "I12": {
+      "signals": [
+        {
+          "date": "2026-03-02",
+          "time": "08:11",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": 0.0109,
+          "short_return": 0.0167,
+          "score": 0.0167,
+          "ref": "2026-03-02 开盘",
+          "evidence": "盘前预判：今日A股将迎来极端分化行情，高位科技股无疑是全天重灾区，资金集中出逃引发大幅下挫。"
+        }
+      ],
+      "total_score": 0.02,
+      "signal_count": 1,
+      "avg_score_pct": 1.67
+    },
+    "I13": {
+      "signals": [
+        {
+          "date": "2026-06-07",
+          "time": "08:45",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0027,
+          "short_return": 0.0181,
+          "score": 0.0181,
+          "ref": "2026-06-08 开盘(非交易日)",
+          "evidence": "首先明确观点：明日A股基本不存在暴跌基础。……指数大概率小幅低开后逐步震荡企稳，半导体板块也会迎来情绪修复。当下无需过度"
+        },
+        {
+          "date": "2026-06-07",
+          "time": "10:35",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0027,
+          "short_return": 0.0181,
+          "score": 0.0181,
+          "ref": "2026-06-08 开盘(非交易日)",
+          "evidence": "明日盘面走势，神机早已看得通透。开盘必然是恐慌情绪主导，大幅低开在所难免，这不过是主力惯用的洗盘伎俩，刻意制造恐慌，吓出"
+        },
+        {
+          "date": "2026-06-07",
+          "time": "16:45",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0027,
+          "short_return": 0.0181,
+          "score": 0.0181,
+          "ref": "2026-06-08 开盘(非交易日)",
+          "evidence": "依我判断，明日大盘大概率低开高走。早盘受外盘影响小幅低开后，资金会逐步回流，市场快速消化负面情绪。奉劝大家别被杂音左右，"
+        },
+        {
+          "date": "2026-06-07",
+          "time": "19:20",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0027,
+          "short_return": 0.0181,
+          "score": 0.0181,
+          "ref": "2026-06-08 开盘(非交易日)",
+          "evidence": "明天不用多想，重点先看韩国股市的盘面表现。只要韩股能探底回升、稳住走势，那咱们A股就完全不用担心，科技板块大概率也会同步"
+        },
+        {
+          "date": "2026-06-08",
+          "time": "09:02",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.06,
+          "short_return": 0.0181,
+          "score": 0.06,
+          "ref": "2026-06-08 开盘",
+          "evidence": "急跌之后必有回弹，此刻盲目出逃，反倒容易卖在地板价，白白错失后续修复行情。与其慌慌张张追着止损，不如稳稳卧倒持仓，静观盘"
+        }
+      ],
+      "total_score": 0.13,
+      "signal_count": 5,
+      "avg_score_pct": 2.65
+    },
+    "I14": {
+      "signals": [
+        {
+          "date": "2026-06-22",
+          "time": "15:25",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": 0.0052,
+          "short_return": 0.0114,
+          "score": -0.0052,
+          "ref": "2026-06-23 开盘",
+          "evidence": "科技股这一轮下跌，才刚刚拉开序幕。"
+        }
+      ],
+      "total_score": -0.01,
+      "signal_count": 1,
+      "avg_score_pct": -0.52
+    },
+    "I9": {
+      "signals": [
+        {
+          "date": "2025-12-15",
+          "time": "07:34",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0128,
+          "short_return": 0.0013,
+          "score": -0.0128,
+          "ref": "2025-12-15 开盘",
+          "evidence": "今天低开高走的概率很大。"
+        },
+        {
+          "date": "2025-12-16",
+          "time": "10:18",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0957,
+          "short_return": 0.0135,
+          "score": 0.0957,
+          "ref": "2025-12-16 收盘",
+          "evidence": "神机认为上午就是主力故意为之，下午又会V型反转。"
+        },
+        {
+          "date": "2025-12-16",
+          "time": "10:26",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0957,
+          "short_return": 0.0135,
+          "score": 0.0957,
+          "ref": "2025-12-16 收盘",
+          "evidence": "今天上午的大跌就是为了下午的大涨，明天的更大涨，后天的更更大涨。"
+        },
+        {
+          "date": "2025-12-17",
+          "time": "07:52",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0964,
+          "short_return": 0.0178,
+          "score": 0.0964,
+          "ref": "2025-12-17 开盘",
+          "evidence": "今天很大概率会反弹。"
+        },
+        {
+          "date": "2025-12-17",
+          "time": "16:55",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0865,
+          "short_return": 0.0086,
+          "score": 0.0865,
+          "ref": "2025-12-18 开盘",
+          "evidence": "近期不会卖出一支股票。毕竟这个位置离神机的4500还很远。"
+        }
+      ],
+      "total_score": 0.36,
+      "signal_count": 5,
+      "avg_score_pct": 7.23
+    },
+    "M4": {
+      "signals": [
+        {
+          "date": "2025-11-14",
+          "time": "15:23",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": 0.0433,
+          "short_return": 0.0122,
+          "score": 0.0433,
+          "ref": "2025-11-17 开盘",
+          "evidence": "神机对大盘的走势非常失望。4000已经割了很多人20~30个点了。"
+        }
+      ],
+      "total_score": 0.04,
+      "signal_count": 1,
+      "avg_score_pct": 4.33
+    },
+    "M5": {
+      "signals": [
+        {
+          "date": "2026-03-22",
+          "time": "08:27",
+          "direction": "bullish",
+          "strength": "strong",
+          "return": 0.0282,
+          "short_return": 0.0069,
+          "score": -0.0563,
+          "ref": "2026-03-23 开盘(非交易日)",
+          "evidence": "周一剧本已定：大幅低开、放量下杀，逼出最后恐慌盘，完成筹码交换。别被早盘杀跌吓倒，这是黎明前最后一洗。抛压枯竭后，资金快"
+        },
+        {
+          "date": "2026-03-22",
+          "time": "10:29",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0282,
+          "short_return": 0.0069,
+          "score": -0.0282,
+          "ref": "2026-03-23 开盘(非交易日)",
+          "evidence": "明天大概率低开高走，修复情绪，让那些盲目看空的好好看看，什么才是真正的市场节奏！"
+        },
+        {
+          "date": "2026-03-22",
+          "time": "16:32",
+          "direction": "bullish",
+          "strength": "strong",
+          "return": 0.0282,
+          "short_return": 0.0069,
+          "score": -0.0563,
+          "ref": "2026-03-23 开盘(非交易日)",
+          "evidence": "明天看反弹收红，稳住节奏，吃肉行情就在眼前。"
+        },
+        {
+          "date": "2026-03-23",
+          "time": "08:24",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0907,
+          "short_return": 0.0069,
+          "score": 0.0907,
+          "ref": "2026-03-23 开盘",
+          "evidence": "耐心等待放量杀跌后的反弹机会。"
+        },
+        {
+          "date": "2026-03-23",
+          "time": "09:11",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0907,
+          "short_return": 0.0069,
+          "score": 0.0907,
+          "ref": "2026-03-23 开盘",
+          "evidence": "只要放量杀跌一出现，后面必有修复反弹。现在不追、不慌、不割肉，耐心等放量拐点，机会就在恐慌之后。"
+        },
+        {
+          "date": "2026-03-23",
+          "time": "15:30",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.1063,
+          "short_return": 0.0214,
+          "score": 0.1063,
+          "ref": "2026-03-24 开盘",
+          "evidence": "熬过低谷，才有高峰。稳住，我们等反弹，等反转，等柳暗花明那一天！"
+        },
+        {
+          "date": "2026-03-24",
+          "time": "06:26",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.1063,
+          "short_return": 0.0214,
+          "score": 0.1063,
+          "ref": "2026-03-24 开盘",
+          "evidence": "今天A股大概率反弹修复。"
+        },
+        {
+          "date": "2026-03-24",
+          "time": "06:47",
+          "direction": "bullish",
+          "strength": "strong",
+          "return": 0.1063,
+          "short_return": 0.0214,
+          "score": 0.2127,
+          "ref": "2026-03-24 开盘",
+          "evidence": "今天坚定看反弹！"
+        },
+        {
+          "date": "2026-03-24",
+          "time": "08:43",
+          "direction": "bullish",
+          "strength": "strong",
+          "return": 0.1063,
+          "short_return": 0.0214,
+          "score": 0.2127,
+          "ref": "2026-03-24 开盘",
+          "evidence": "从今天起，神机正式宣布：只看多，不看空，立场坚定不动摇！"
+        },
+        {
+          "date": "2026-03-24",
+          "time": "11:43",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0973,
+          "short_return": 0.013,
+          "score": 0.0973,
+          "ref": "2026-03-24 收盘",
+          "evidence": "短期再难，不改中长期向上格局。"
+        },
+        {
+          "date": "2026-03-24",
+          "time": "15:05",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0942,
+          "short_return": 0.0102,
+          "score": 0.0942,
+          "ref": "2026-03-25 开盘",
+          "evidence": "我还是老思路：继续持股待涨，咬定青山不放松。"
+        },
+        {
+          "date": "2026-03-24",
+          "time": "18:18",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0942,
+          "short_return": 0.0102,
+          "score": 0.0942,
+          "ref": "2026-03-25 开盘",
+          "evidence": "明天继续看涨，拿稳就行！"
+        }
+      ],
+      "total_score": 0.96,
+      "signal_count": 12,
+      "avg_score_pct": 8.04
+    },
+    "M6": {
+      "signals": [
+        {
+          "date": "2026-05-13",
+          "time": "16:29",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": 0.0007,
+          "short_return": 0.0284,
+          "score": 0.0284,
+          "ref": "2026-05-14 开盘",
+          "evidence": "科技板块一路单边拉升，估值早就严重透支，高位获利盘堆积如山，资金分歧越来越大，随时都会迎来一波深度大调整。"
+        },
+        {
+          "date": "2026-05-14",
+          "time": "10:12",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": 0.0598,
+          "short_return": 0.0111,
+          "score": 0.0598,
+          "ref": "2026-05-14 收盘",
+          "evidence": "此番回落并非趋势彻底终结，仅仅只是短期技术性调整而已。"
+        },
+        {
+          "date": "2026-05-14",
+          "time": "12:03",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": 0.0598,
+          "short_return": 0.0111,
+          "score": 0.0598,
+          "ref": "2026-05-14 收盘",
+          "evidence": "如今盘面大幅走弱，当下最要紧的便是管住双手，切勿盲目进场操作。眼下市场跌多涨少，贸然布局极易被套亏损，此刻最佳策略便是静"
+        },
+        {
+          "date": "2026-05-14",
+          "time": "15:02",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": 0.059,
+          "short_return": 0.0102,
+          "score": 0.059,
+          "ref": "2026-05-15 开盘",
+          "evidence": "我早就反复提醒，本轮调整远没到尽头，短期下跌趋势早已板上钉钉，别被丁点反弹迷了眼。明日乃至接下来一周，市场依旧难逃调整格"
+        },
+        {
+          "date": "2026-05-15",
+          "time": "08:55",
+          "direction": "bearish",
+          "strength": "strong",
+          "return": 0.059,
+          "short_return": 0.0102,
+          "score": 0.118,
+          "ref": "2026-05-15 开盘",
+          "evidence": "别再纠结当天盘面会怎么走，不用猜来猜去，行情走势就一个字：跌，两个字：大跌。"
+        }
+      ],
+      "total_score": 0.32,
+      "signal_count": 5,
+      "avg_score_pct": 6.5
+    }
+  }
+}
