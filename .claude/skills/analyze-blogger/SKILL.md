@@ -250,7 +250,7 @@ score = strength_base × max(return, short_return)
 ⑭ 看空平均分 = (⑦ / bearish 有效信号数)
 ```
 
-> 所有 time_horizon 均参与评分。仅当窗口交易日数据不足时 score = 0。
+> 最后一段（最新拐点之后）return 无法计算 → score = 0。short_return 所需的 3 日数据不足时 score = 0。
 
 拐点类型判定：
 - **底部拐点**：M1(2690)、M3(3041)、M5(3795)、M8(3741)、I1(3153)、I3(3227)、I5(3141)、I9(3816)、I11(4003)、I13(3928)
