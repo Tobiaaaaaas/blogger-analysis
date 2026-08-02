@@ -1,26 +1,26 @@
 {
   "blogger": "大盘蜂向标",
-  "scoring_version": "v10 (14-score)",
+  "scoring_version": "v10 (10-score)",
   "signals_total": 201,
-  "signals_scored": 177,
-  "last_segment_unscored": 21,
+  "signals_scored": 188,
+  "last_segment_unscored": 10,
   "no_price": 3,
   "no_segment": 0,
   "scores": {
     "综合": {
-      "total": 2.54,
-      "count": 177,
-      "avg_pct": 1.43
+      "total": 3.03,
+      "count": 188,
+      "avg_pct": 1.61
     },
     "上升段": {
-      "total": 1.18,
+      "total": 1.21,
       "count": 92,
-      "avg_pct": 1.29
+      "avg_pct": 1.32
     },
     "下降段": {
-      "total": 1.35,
-      "count": 85,
-      "avg_pct": 1.59
+      "total": 1.82,
+      "count": 96,
+      "avg_pct": 1.89
     },
     "抄底": {
       "total": 0.61,
@@ -31,16 +31,6 @@
       "total": 0.35,
       "count": 7,
       "avg_pct": 5.02
-    },
-    "看多": {
-      "total": 1.39,
-      "count": 83,
-      "avg_pct": 1.67
-    },
-    "看空": {
-      "total": 1.15,
-      "count": 94,
-      "avg_pct": 1.22
     }
   },
   "segments": {
@@ -60,7 +50,7 @@
       "total": 31,
       "bull": 18,
       "bear": 13,
-      "score": 0.1
+      "score": 0.11
     },
     "I12→M5": {
       "direction": "falling",
@@ -80,14 +70,14 @@
       "bear": 5,
       "score": -0.17
     },
-    "I14→now": {
+    "I14→M8": {
       "direction": "falling",
       "start_label": "I14",
-      "end_label": "?",
-      "total": 21,
-      "bull": 6,
-      "bear": 15,
-      "score": 0.0
+      "end_label": "M8",
+      "total": 11,
+      "bull": 1,
+      "bear": 10,
+      "score": 0.47
     },
     "I9→I10": {
       "direction": "rising",
@@ -105,7 +95,7 @@
       "total": 45,
       "bull": 28,
       "bear": 17,
-      "score": 1.32
+      "score": 1.34
     },
     "M6→I13": {
       "direction": "falling",
@@ -115,6 +105,15 @@
       "bull": 22,
       "bear": 7,
       "score": -0.54
+    },
+    "M8→now": {
+      "direction": "rising",
+      "start_label": "M8",
+      "end_label": "?",
+      "total": 10,
+      "bull": 5,
+      "bear": 5,
+      "score": 0.0
     }
   },
   "inflection_details": {
@@ -221,7 +220,7 @@
           "direction": "bullish",
           "strength": "moderate",
           "return": 0.0299,
-          "short_return": 0.0067,
+          "short_return": 0.0118,
           "score": 0.0299,
           "ref": "2026-02-05 开盘",
           "evidence": "我认为明天会继续反弹。"
@@ -250,7 +249,7 @@
           "direction": "bearish",
           "strength": "moderate",
           "return": 0.0766,
-          "short_return": 0.0066,
+          "short_return": 0.0032,
           "score": 0.0766,
           "ref": "2026-03-05 开盘",
           "evidence": "洗盘还没结束，大概率是下跌中继。"

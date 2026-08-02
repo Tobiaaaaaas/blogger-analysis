@@ -1,0 +1,1004 @@
+{
+  "classifications": [
+    {
+      "idx": 1000,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1001,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1002,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1003,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1004,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1005,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1006,
+      "time_horizon": "unspecified"
+    },
+    {
+      "idx": 1007,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1008,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1009,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1010,
+      "time_horizon": "medium"
+    },
+    {
+      "idx": 1011,
+      "time_horizon": "medium"
+    },
+    {
+      "idx": 1012,
+      "time_horizon": "unspecified"
+    },
+    {
+      "idx": 1013,
+      "time_horizon": "unspecified"
+    },
+    {
+      "idx": 1014,
+      "time_horizon": "unspecified"
+    },
+    {
+      "idx": 1015,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1016,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1017,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1018,
+      "time_horizon": "unspecified"
+    },
+    {
+      "idx": 1019,
+      "time_horizon": "unspecified"
+    },
+    {
+      "idx": 1020,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1021,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1022,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1023,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1024,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1025,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1026,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1027,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1028,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1029,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1030,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1031,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1032,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1033,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1034,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1035,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1036,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1037,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1038,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1039,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1040,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1041,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1042,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1043,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1044,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1045,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1046,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1047,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1048,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1049,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1050,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1051,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1052,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1053,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1054,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1055,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1056,
+      "time_horizon": "medium"
+    },
+    {
+      "idx": 1057,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1058,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1059,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1060,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1061,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1062,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1063,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1064,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1065,
+      "time_horizon": "medium"
+    },
+    {
+      "idx": 1066,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1067,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1068,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1069,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1070,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1071,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1072,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1073,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1074,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1075,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1076,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1077,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1078,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1079,
+      "time_horizon": "medium"
+    },
+    {
+      "idx": 1080,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1081,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1082,
+      "time_horizon": "unspecified"
+    },
+    {
+      "idx": 1083,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1084,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1085,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1086,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1087,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1088,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1089,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1090,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1091,
+      "time_horizon": "medium"
+    },
+    {
+      "idx": 1092,
+      "time_horizon": "medium"
+    },
+    {
+      "idx": 1093,
+      "time_horizon": "medium"
+    },
+    {
+      "idx": 1094,
+      "time_horizon": "medium"
+    },
+    {
+      "idx": 1095,
+      "time_horizon": "medium"
+    },
+    {
+      "idx": 1096,
+      "time_horizon": "medium"
+    },
+    {
+      "idx": 1097,
+      "time_horizon": "unspecified"
+    },
+    {
+      "idx": 1098,
+      "time_horizon": "unspecified"
+    },
+    {
+      "idx": 1099,
+      "time_horizon": "medium"
+    },
+    {
+      "idx": 1100,
+      "time_horizon": "unspecified"
+    },
+    {
+      "idx": 1101,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1102,
+      "time_horizon": "medium"
+    },
+    {
+      "idx": 1103,
+      "time_horizon": "unspecified"
+    },
+    {
+      "idx": 1104,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1105,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1106,
+      "time_horizon": "unspecified"
+    },
+    {
+      "idx": 1107,
+      "time_horizon": "unspecified"
+    },
+    {
+      "idx": 1108,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1109,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1110,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1111,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1112,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1113,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1114,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1115,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1116,
+      "time_horizon": "unspecified"
+    },
+    {
+      "idx": 1117,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1118,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1119,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1120,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1121,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1122,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1123,
+      "time_horizon": "unspecified"
+    },
+    {
+      "idx": 1124,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1125,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1126,
+      "time_horizon": "medium"
+    },
+    {
+      "idx": 1127,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1128,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1129,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1130,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1131,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1132,
+      "time_horizon": "unspecified"
+    },
+    {
+      "idx": 1133,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1134,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1135,
+      "time_horizon": "unspecified"
+    },
+    {
+      "idx": 1136,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1137,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1138,
+      "time_horizon": "unspecified"
+    },
+    {
+      "idx": 1139,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1140,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1141,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1142,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1143,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1144,
+      "time_horizon": "unspecified"
+    },
+    {
+      "idx": 1145,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1146,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1147,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1148,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1149,
+      "time_horizon": "unspecified"
+    },
+    {
+      "idx": 1150,
+      "time_horizon": "unspecified"
+    },
+    {
+      "idx": 1151,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1152,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1153,
+      "time_horizon": "unspecified"
+    },
+    {
+      "idx": 1154,
+      "time_horizon": "medium"
+    },
+    {
+      "idx": 1155,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1156,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1157,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1158,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1159,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1160,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1161,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1162,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1163,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1164,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1165,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1166,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1167,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1168,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1169,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1170,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1171,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1172,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1173,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1174,
+      "time_horizon": "medium"
+    },
+    {
+      "idx": 1175,
+      "time_horizon": "unspecified"
+    },
+    {
+      "idx": 1176,
+      "time_horizon": "medium"
+    },
+    {
+      "idx": 1177,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1178,
+      "time_horizon": "unspecified"
+    },
+    {
+      "idx": 1179,
+      "time_horizon": "unspecified"
+    },
+    {
+      "idx": 1180,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1181,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1182,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1183,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1184,
+      "time_horizon": "medium"
+    },
+    {
+      "idx": 1185,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1186,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1187,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1188,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1189,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1190,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1191,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1192,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1193,
+      "time_horizon": "unspecified"
+    },
+    {
+      "idx": 1194,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1195,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1196,
+      "time_horizon": "unspecified"
+    },
+    {
+      "idx": 1197,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1198,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1199,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1200,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1201,
+      "time_horizon": "unspecified"
+    },
+    {
+      "idx": 1202,
+      "time_horizon": "unspecified"
+    },
+    {
+      "idx": 1203,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1204,
+      "time_horizon": "unspecified"
+    },
+    {
+      "idx": 1205,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1206,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1207,
+      "time_horizon": "unspecified"
+    },
+    {
+      "idx": 1208,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1209,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1210,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1211,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1212,
+      "time_horizon": "unspecified"
+    },
+    {
+      "idx": 1213,
+      "time_horizon": "unspecified"
+    },
+    {
+      "idx": 1214,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1215,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1216,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1217,
+      "time_horizon": "unspecified"
+    },
+    {
+      "idx": 1218,
+      "time_horizon": "medium"
+    },
+    {
+      "idx": 1219,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1220,
+      "time_horizon": "unspecified"
+    },
+    {
+      "idx": 1221,
+      "time_horizon": "unspecified"
+    },
+    {
+      "idx": 1222,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1223,
+      "time_horizon": "medium"
+    },
+    {
+      "idx": 1224,
+      "time_horizon": "unspecified"
+    },
+    {
+      "idx": 1225,
+      "time_horizon": "medium"
+    },
+    {
+      "idx": 1226,
+      "time_horizon": "medium"
+    },
+    {
+      "idx": 1227,
+      "time_horizon": "unspecified"
+    },
+    {
+      "idx": 1228,
+      "time_horizon": "medium"
+    },
+    {
+      "idx": 1229,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1230,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1231,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1232,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1233,
+      "time_horizon": "unspecified"
+    },
+    {
+      "idx": 1234,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1235,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1236,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1237,
+      "time_horizon": "unspecified"
+    },
+    {
+      "idx": 1238,
+      "time_horizon": "unspecified"
+    },
+    {
+      "idx": 1239,
+      "time_horizon": "unspecified"
+    },
+    {
+      "idx": 1240,
+      "time_horizon": "unspecified"
+    },
+    {
+      "idx": 1241,
+      "time_horizon": "long"
+    },
+    {
+      "idx": 1242,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1243,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1244,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1245,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1246,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1247,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1248,
+      "time_horizon": "short"
+    },
+    {
+      "idx": 1249,
+      "time_horizon": "short"
+    }
+  ]
+}

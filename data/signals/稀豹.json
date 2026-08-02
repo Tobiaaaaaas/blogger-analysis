@@ -15,8 +15,8 @@
   "scored_bullish": {
     "strong": 105,
     "moderate": 236,
-    "short": 207,
-    "medium": 70,
+    "short": 203,
+    "medium": 74,
     "long": 28,
     "unspecified": 36
   },
@@ -425,7 +425,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "medium",
       "evidence": "今天又没跌破3332，行情仍在多空分水岭的上方，下周是有见底反弹概率的！",
       "publish_time": "2025-06-20 15:58"
     },
@@ -1649,7 +1649,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "medium",
       "evidence": "但我却从下午的行情看出，本周已结束调整！明天看涨！收中阳线！",
       "publish_time": "2025-11-04 15:13"
     },
@@ -1697,7 +1697,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "medium",
       "evidence": "中国股市今日下跌！但在众股皆跌下，却展现了硬气抗跌的逆势风骨！所以下周震荡上攻已是大概率！",
       "publish_time": "2025-11-07 15:16"
     },
@@ -2769,7 +2769,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "medium",
       "evidence": "A股今日上涨！收光脚小阳线！明确观点，这才是止跌反转信号！下周行情大概率会强势突破4197，创年内新高！",
       "publish_time": "2026-03-06 15:43"
     },

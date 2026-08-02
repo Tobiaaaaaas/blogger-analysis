@@ -2,15 +2,15 @@
   "blogger": "来自股市的猩猩",
   "scoring_version": "v10 (14-score)",
   "signals_total": 726,
-  "signals_scored": 667,
-  "last_segment_unscored": 57,
+  "signals_scored": 705,
+  "last_segment_unscored": 19,
   "no_price": 2,
   "no_segment": 0,
   "scores": {
     "综合": {
-      "total": -4.01,
-      "count": 667,
-      "avg_pct": -0.6
+      "total": -2.33,
+      "count": 705,
+      "avg_pct": -0.33
     },
     "上升段": {
       "total": -0.76,
@@ -18,29 +18,29 @@
       "avg_pct": -0.16
     },
     "下降段": {
-      "total": -3.25,
-      "count": 198,
-      "avg_pct": -1.64
+      "total": -1.58,
+      "count": 236,
+      "avg_pct": -0.67
     },
     "抄底": {
-      "total": 1.39,
-      "count": 26,
-      "avg_pct": 5.34
+      "total": 1.43,
+      "count": 28,
+      "avg_pct": 5.1
     },
     "逃顶": {
-      "total": 0.34,
-      "count": 13,
-      "avg_pct": 2.59
+      "total": 0.7,
+      "count": 17,
+      "avg_pct": 4.11
     },
     "看多": {
-      "total": 7.05,
-      "count": 362,
-      "avg_pct": 1.95
+      "total": 6.7,
+      "count": 372,
+      "avg_pct": 1.8
     },
     "看空": {
-      "total": -11.06,
-      "count": 305,
-      "avg_pct": -3.63
+      "total": -9.03,
+      "count": 333,
+      "avg_pct": -2.71
     }
   },
   "segments": {
@@ -80,14 +80,14 @@
       "bear": 3,
       "score": 0.43
     },
-    "I14→now": {
+    "I14→M8": {
       "direction": "falling",
       "start_label": "I14",
-      "end_label": "?",
-      "total": 57,
-      "bull": 26,
-      "bear": 31,
-      "score": 0.0
+      "end_label": "M8",
+      "total": 38,
+      "bull": 10,
+      "bear": 28,
+      "score": 1.68
     },
     "I9→I10": {
       "direction": "rising",
@@ -133,6 +133,15 @@
       "bull": 29,
       "bear": 16,
       "score": -0.1
+    },
+    "M8→now": {
+      "direction": "rising",
+      "start_label": "M8",
+      "end_label": "?",
+      "total": 19,
+      "bull": 16,
+      "bear": 3,
+      "score": 0.0
     }
   },
   "inflection_details": {
@@ -290,7 +299,7 @@
           "direction": "bullish",
           "strength": "moderate",
           "return": 0.0476,
-          "short_return": 0.0062,
+          "short_return": 0.0116,
           "score": 0.0476,
           "ref": "2026-06-10 开盘",
           "evidence": "既然短线处于强势的状态当中，预计明天市场还能维持这种短线强势的惯性。"
@@ -312,11 +321,55 @@
           "score": -0.0052,
           "ref": "2026-06-23 开盘",
           "evidence": "明天上证指数或者会出现明显低开的走势。"
+        },
+        {
+          "date": "2026-06-23",
+          "time": "07:59",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": 0.0993,
+          "short_return": 0.0114,
+          "score": 0.0993,
+          "ref": "2026-06-23 开盘",
+          "evidence": "认为短线注意震荡回落的可能性在增加。"
+        },
+        {
+          "date": "2026-06-23",
+          "time": "11:35",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": 0.089,
+          "short_return": 0.0,
+          "score": 0.089,
+          "ref": "2026-06-23 收盘",
+          "evidence": "市场今天大概率会出现调整。"
+        },
+        {
+          "date": "2026-06-23",
+          "time": "19:23",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": 0.0854,
+          "short_return": 0.0154,
+          "score": 0.0854,
+          "ref": "2026-06-24 开盘",
+          "evidence": "所以今天的K线理论上来说，意味着短线继续调整的概率更大一些。"
+        },
+        {
+          "date": "2026-06-24",
+          "time": "18:57",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": 0.0883,
+          "short_return": 0.0186,
+          "score": 0.0883,
+          "ref": "2026-06-25 开盘",
+          "evidence": "预计明天上证指数可能会在今天的高点和低点范围之内窄幅波动，形成小K线十字星的走势。"
         }
       ],
-      "total_score": -0.01,
-      "signal_count": 1,
-      "avg_score_pct": -0.52
+      "total_score": 0.36,
+      "signal_count": 5,
+      "avg_score_pct": 7.14
     },
     "I9": {
       "signals": [
@@ -578,8 +631,8 @@
           "direction": "bearish",
           "strength": "moderate",
           "return": 0.0007,
-          "short_return": 0.0284,
-          "score": 0.0284,
+          "short_return": 0.0293,
+          "score": 0.0293,
           "ref": "2026-05-14 开盘",
           "evidence": "接下来震荡休整的概率大。"
         },
@@ -619,7 +672,36 @@
       ],
       "total_score": 0.23,
       "signal_count": 6,
-      "avg_score_pct": 3.9
+      "avg_score_pct": 3.91
+    },
+    "M8": {
+      "signals": [
+        {
+          "date": "2026-07-19",
+          "time": "09:27",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0134,
+          "short_return": 0.0199,
+          "score": 0.0199,
+          "ref": "2026-07-20 开盘(非交易日)",
+          "evidence": "有望走出小幅止跌反弹的阳线。"
+        },
+        {
+          "date": "2026-07-19",
+          "time": "16:45",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0134,
+          "short_return": 0.0199,
+          "score": 0.0199,
+          "ref": "2026-07-20 开盘(非交易日)",
+          "evidence": "对于下一周A股整体行情来看，我认为沪指周K线收阳线的概率比较大。"
+        }
+      ],
+      "total_score": 0.04,
+      "signal_count": 2,
+      "avg_score_pct": 1.99
     }
   }
 }

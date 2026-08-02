@@ -1,5 +1,5 @@
 """
-v10 scoring: 14 scores (7 total + 7 average %) with A/B/C/D + short_return.
+v10 scoring: 10 scores (5 total + 5 average %) with A/B/C/D + short_return.
 Usage: python scripts/score_v10.py --blogger 大盘蜂向标
 
 Sources:
@@ -41,7 +41,7 @@ INFLECTIONS = [
     ("2026-05-14", "顶", 4178, 4259, "M6"),
     ("2026-06-08", "底", 3959, 3928, "I13"),
     ("2026-06-23", "顶", 4106, 4175, "I14"),
-    # M8 (2026-07-20, 3741) 待确认, not yet in zigzag chain
+    ("2026-07-20", "底", 3741, 3741, "M8"),   # 暂定 — zigzag 未确认，反弹突破 3891 后正式确认
 ]
 
 # All已知拐点 for 抄底/逃顶 ±1 day filtering
@@ -55,7 +55,7 @@ BOTTOM_DATES = {
     "2026-02-03": "I11",
     "2026-03-23": "M5",
     "2026-06-08": "I13",
-    "2026-07-20": "M8",   # 待确认
+    "2026-07-20": "M8",   # 暂定 — zigzag 未确认
 }
 
 TOP_DATES = {
@@ -108,32 +108,37 @@ def load_prices():
 
 
 def get_ref_price(date_str, pub_time_str, prices, sorted_dates):
-    """Determine signal reference price per SKILL.md §4.3.2."""
+    """Determine signal reference price per SKILL.md §4.3.2.
+
+    Returns (price, label, ref_date) where ref_date is the T-day (trading day
+    the reference price corresponds to).  ref_date is used as the 3-day window
+    start for short_return computation.
+    """
     if date_str in prices:
         if pub_time_str:
             try:
                 h, m = map(int, pub_time_str.split(":"))
                 if h < 9 or (h == 9 and m < 30):
-                    return prices[date_str]["open"], f"{date_str} 开盘"
+                    return prices[date_str]["open"], f"{date_str} 开盘", date_str
                 elif h >= 15:
                     dt = datetime.strptime(date_str, "%Y-%m-%d")
                     for offset in range(1, 15):
                         nd = (dt + timedelta(days=offset)).strftime("%Y-%m-%d")
                         if nd in prices:
-                            return prices[nd]["open"], f"{nd} 开盘"
-                    return prices[date_str]["close"], f"{date_str} 收盘(fb)"
+                            return prices[nd]["open"], f"{nd} 开盘", nd
+                    return prices[date_str]["close"], f"{date_str} 收盘(fb)", date_str
                 else:
-                    return prices[date_str]["close"], f"{date_str} 收盘"
+                    return prices[date_str]["close"], f"{date_str} 收盘", date_str
             except (ValueError, TypeError):
                 pass
-        return prices[date_str]["close"], f"{date_str} 收盘(def)"
+        return prices[date_str]["close"], f"{date_str} 收盘(def)", date_str
     else:
         dt = datetime.strptime(date_str, "%Y-%m-%d")
         for offset in range(1, 15):
             nd = (dt + timedelta(days=offset)).strftime("%Y-%m-%d")
             if nd in prices:
-                return prices[nd]["open"], f"{nd} 开盘(非交易日)"
-        return None, "NO PRICE"
+                return prices[nd]["open"], f"{nd} 开盘(非交易日)", nd
+        return None, "NO PRICE", None
 
 
 def get_3d_extreme_prices(date_str, prices, sorted_dates):
@@ -177,7 +182,7 @@ def in_date_range(signal_date, target_date, days=1):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="v10 14-score evaluation")
+    parser = argparse.ArgumentParser(description="v10 10-score evaluation")
     parser.add_argument("--blogger", required=True, help="Blogger name")
     args = parser.parse_args()
     blogger = args.blogger
@@ -197,16 +202,11 @@ def main():
     score_falling = 0.0
     score_bottom = 0.0
     score_top = 0.0
-    score_bull = 0.0
-    score_bear = 0.0
-
     cnt_all = 0
     cnt_rising = 0
     cnt_falling = 0
     cnt_bottom = 0
     cnt_top = 0
-    cnt_bull = 0
-    cnt_bear = 0
 
     no_price = 0
     no_segment = 0
@@ -237,7 +237,7 @@ def main():
 
         ev = s.get("evidence", "")[:80]
 
-        ref_p, ref_label = get_ref_price(date_str, pub_time, prices, sorted_dates)
+        ref_p, ref_label, ref_date = get_ref_price(date_str, pub_time, prices, sorted_dates)
         if ref_p is None:
             no_price += 1
             continue
@@ -265,7 +265,7 @@ def main():
             return_val = 0
 
         sbase = 2 if strength == "strong" else 1
-        high_3d, low_3d = get_3d_extreme_prices(date_str, prices, sorted_dates)
+        high_3d, low_3d = get_3d_extreme_prices(ref_date, prices, sorted_dates)
         short_return = 0.0
         is_rising = (seg["direction"] == "rising")
 
@@ -304,8 +304,6 @@ def main():
             score_falling += score
 
         if direction == "bullish":
-            cnt_bull += 1
-            score_bull += score
             for bd, blabel in BOTTOM_DATES.items():
                 if in_date_range(date_str, bd, 1):
                     cnt_bottom += 1
@@ -320,8 +318,6 @@ def main():
                     })
                     break
         else:
-            cnt_bear += 1
-            score_bear += score
             for td, tlabel in TOP_DATES.items():
                 if in_date_range(date_str, td, 1):
                     cnt_top += 1
@@ -357,8 +353,6 @@ def main():
         "下降段": {"total": round(score_falling, 2),"count": cnt_falling,"avg_pct": avg_pct(score_falling, cnt_falling)},
         "抄底":   {"total": round(score_bottom, 2), "count": cnt_bottom, "avg_pct": avg_pct(score_bottom, cnt_bottom)},
         "逃顶":   {"total": round(score_top, 2),    "count": cnt_top,    "avg_pct": avg_pct(score_top, cnt_top)},
-        "看多":   {"total": round(score_bull, 2),   "count": cnt_bull,   "avg_pct": avg_pct(score_bull, cnt_bull)},
-        "看空":   {"total": round(score_bear, 2),   "count": cnt_bear,   "avg_pct": avg_pct(score_bear, cnt_bear)},
     }
 
     # ── Terminal output ──
@@ -366,9 +360,9 @@ def main():
           f"{last_segment} last-segment(score=0), {no_price} no-price, {no_segment} no-segment")
 
     print(f"\n{'='*70}")
-    print(f"📊 14 SCORES — {blogger}")
+    print(f"10 SCORES -- {blogger}")
     print(f"{'='*70}")
-    print(f"{'维度':<8} {'总得分':>10} {'信号数量':>8} {'平均分':>10}")
+    print(f"{'Dim':<8} {'Total':>10} {'Count':>8} {'Avg':>10}")
     print(f"{'-'*40}")
     for dim, d in scores.items():
         print(f"{dim:<8} {d['total']:>+10.2f} {d['count']:>8} {d['avg_pct']:>+9.2f}%")
@@ -376,7 +370,7 @@ def main():
 
     # Segment details
     print(f"\n{'='*70}")
-    print("📈 BY SEGMENT")
+    print("BY SEGMENT")
     print(f"{'='*70}")
     for sk in sorted(by_seg.keys()):
         sv = by_seg[sk]
@@ -395,7 +389,7 @@ def main():
         total_at = sum(x["score"] for x in sigs_at)
         avg_at = total_at / len(sigs_at) * 100 if sigs_at else 0
         is_bottom = any(label == bl for bl in BOTTOM_DATES.values())
-        tag = "🔻抄底" if is_bottom else "🔺逃顶"
+        tag = "[BOTTOM]" if is_bottom else "[TOP]"
         print(f"\n{tag} {label}: {len(sigs_at)} signals, total={total_at:+.2f}, avg={avg_at:+.1f}%")
         for sig in sorted(sigs_at, key=lambda x: x["date"]):
             print(f"    {sig['date']} {sig['time']:>5} {sig['strength']:>8} "
@@ -430,7 +424,7 @@ def main():
 
     output = {
         "blogger": blogger,
-        "scoring_version": "v10 (14-score)",
+        "scoring_version": "v10 (10-score)",
         "signals_total": len(signals),
         "signals_scored": cnt_all,
         "last_segment_unscored": last_segment,
@@ -446,7 +440,7 @@ def main():
     out_path = os.path.join(out_dir, f"{blogger}.json")
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
-    print(f"\n✅ JSON output: {out_path}")
+    print(f"\nJSON output: {out_path}")
 
 
 if __name__ == "__main__":

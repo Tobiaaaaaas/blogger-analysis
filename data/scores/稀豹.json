@@ -2,30 +2,30 @@
   "blogger": "稀豹",
   "scoring_version": "v10 (14-score)",
   "signals_total": 498,
-  "signals_scored": 441,
-  "last_segment_unscored": 51,
+  "signals_scored": 475,
+  "last_segment_unscored": 17,
   "no_price": 4,
   "no_segment": 2,
   "scores": {
     "综合": {
-      "total": -12.81,
-      "count": 441,
-      "avg_pct": -2.91
+      "total": -14.64,
+      "count": 475,
+      "avg_pct": -3.08
     },
     "上升段": {
-      "total": -7.97,
+      "total": -7.95,
       "count": 322,
-      "avg_pct": -2.48
+      "avg_pct": -2.47
     },
     "下降段": {
-      "total": -4.84,
-      "count": 119,
-      "avg_pct": -4.07
+      "total": -6.69,
+      "count": 153,
+      "avg_pct": -4.37
     },
     "抄底": {
-      "total": 0.58,
-      "count": 12,
-      "avg_pct": 4.81
+      "total": 0.6,
+      "count": 13,
+      "avg_pct": 4.59
     },
     "逃顶": {
       "total": 0.0,
@@ -33,14 +33,14 @@
       "avg_pct": 0.0
     },
     "看多": {
-      "total": 5.8,
-      "count": 300,
-      "avg_pct": 1.93
+      "total": 3.4,
+      "count": 326,
+      "avg_pct": 1.04
     },
     "看空": {
-      "total": -18.62,
-      "count": 141,
-      "avg_pct": -13.2
+      "total": -18.04,
+      "count": 149,
+      "avg_pct": -12.11
     }
   },
   "segments": {
@@ -60,7 +60,7 @@
       "total": 24,
       "bull": 24,
       "bear": 0,
-      "score": 0.51
+      "score": 0.52
     },
     "I12→M5": {
       "direction": "falling",
@@ -80,14 +80,14 @@
       "bear": 7,
       "score": 0.01
     },
-    "I14→now": {
+    "I14→M8": {
       "direction": "falling",
       "start_label": "I14",
-      "end_label": "?",
-      "total": 51,
-      "bull": 36,
-      "bear": 15,
-      "score": 0.0
+      "end_label": "M8",
+      "total": 34,
+      "bull": 26,
+      "bear": 8,
+      "score": -1.85
     },
     "I2→I3": {
       "direction": "falling",
@@ -142,6 +142,15 @@
       "bull": 27,
       "bear": 4,
       "score": -1.56
+    },
+    "M8→now": {
+      "direction": "rising",
+      "start_label": "M8",
+      "end_label": "?",
+      "total": 17,
+      "bull": 10,
+      "bear": 7,
+      "score": 0.0
     }
   },
   "inflection_details": {
@@ -208,7 +217,7 @@
           "direction": "bullish",
           "strength": "moderate",
           "return": 0.0299,
-          "short_return": 0.0067,
+          "short_return": 0.0118,
           "score": 0.0299,
           "ref": "2026-02-05 开盘",
           "evidence": "还没涨完，明天接着涨！只是这波行情，以小阳碎步拉着时间换空间，效果一样！"
@@ -237,7 +246,7 @@
           "direction": "bullish",
           "strength": "moderate",
           "return": 0.0118,
-          "short_return": 0.0023,
+          "short_return": 0.0038,
           "score": -0.0118,
           "ref": "2025-12-16 开盘",
           "evidence": "先明确观点，明天或有大涨，一阳穿三线！包住今天所有的回落！"
@@ -297,6 +306,24 @@
       "total_score": 0.47,
       "signal_count": 4,
       "avg_score_pct": 11.83
+    },
+    "M8": {
+      "signals": [
+        {
+          "date": "2026-07-19",
+          "time": "14:08",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0134,
+          "short_return": 0.0199,
+          "score": 0.0199,
+          "ref": "2026-07-20 开盘(非交易日)",
+          "evidence": "3745就是底！下周会波动上行，收小周阳线！过程中大概率不是标准的反转走势，但筑底迹象却会愈发明显！"
+        }
+      ],
+      "total_score": 0.02,
+      "signal_count": 1,
+      "avg_score_pct": 1.99
     }
   }
 }

@@ -1,0 +1,31 @@
+{
+  "blogger": "衡山佛曰论股",
+  "extraction_time": "2026-08-01 18:49:19",
+  "model": "deepseek-v4-flash",
+  "total_posts": 2380,
+  "pre_2024_06": 0,
+  "evaluation_posts": 2380,
+  "not_extracted": {
+    "no_market_topic": 136,
+    "pure_description": 338,
+    "directional_vague": 77,
+    "other_index_sector": 233,
+    "other": 258
+  },
+  "scored_bullish": {
+    "strong": 46,
+    "moderate": 471,
+    "short": 447,
+    "medium": 29,
+    "long": 41,
+    "unspecified": 0
+  },
+  "scored_bearish": {
+    "strong": 102,
+    "moderate": 708,
+    "short": 651,
+    "medium": 36,
+    "long": 123,
+    "unspecified": 0
+  }
+}

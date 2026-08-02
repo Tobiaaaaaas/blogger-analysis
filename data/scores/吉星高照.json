@@ -2,45 +2,45 @@
   "blogger": "吉星高照",
   "scoring_version": "v10 (14-score)",
   "signals_total": 361,
-  "signals_scored": 306,
-  "last_segment_unscored": 34,
+  "signals_scored": 329,
+  "last_segment_unscored": 11,
   "no_price": 4,
   "no_segment": 17,
   "scores": {
     "综合": {
-      "total": 11.51,
-      "count": 306,
-      "avg_pct": 3.76
+      "total": 11.41,
+      "count": 329,
+      "avg_pct": 3.47
     },
     "上升段": {
-      "total": 13.79,
+      "total": 13.89,
       "count": 210,
-      "avg_pct": 6.57
+      "avg_pct": 6.61
     },
     "下降段": {
-      "total": -2.29,
-      "count": 96,
-      "avg_pct": -2.38
+      "total": -2.48,
+      "count": 119,
+      "avg_pct": -2.09
     },
     "抄底": {
-      "total": 3.9,
+      "total": 3.91,
       "count": 24,
-      "avg_pct": 16.26
+      "avg_pct": 16.28
     },
     "逃顶": {
-      "total": 0.14,
-      "count": 3,
-      "avg_pct": 4.51
+      "total": 0.38,
+      "count": 6,
+      "avg_pct": 6.38
     },
     "看多": {
-      "total": 12.43,
-      "count": 243,
-      "avg_pct": 5.11
+      "total": 11.61,
+      "count": 257,
+      "avg_pct": 4.52
     },
     "看空": {
-      "total": -0.92,
-      "count": 63,
-      "avg_pct": -1.46
+      "total": -0.2,
+      "count": 72,
+      "avg_pct": -0.28
     }
   },
   "segments": {
@@ -60,7 +60,7 @@
       "total": 15,
       "bull": 13,
       "bear": 2,
-      "score": 0.27
+      "score": 0.28
     },
     "I12→M5": {
       "direction": "falling",
@@ -78,16 +78,16 @@
       "total": 10,
       "bull": 5,
       "bear": 5,
-      "score": 0.06
+      "score": 0.07
     },
-    "I14→now": {
+    "I14→M8": {
       "direction": "falling",
       "start_label": "I14",
-      "end_label": "?",
-      "total": 34,
-      "bull": 25,
+      "end_label": "M8",
+      "total": 23,
+      "bull": 14,
       "bear": 9,
-      "score": 0.0
+      "score": -0.1
     },
     "I1→I2": {
       "direction": "rising",
@@ -114,7 +114,7 @@
       "total": 2,
       "bull": 2,
       "bear": 0,
-      "score": 0.08
+      "score": 0.07
     },
     "I4→I5": {
       "direction": "falling",
@@ -141,7 +141,7 @@
       "total": 17,
       "bull": 17,
       "bear": 0,
-      "score": -1.35
+      "score": -1.45
     },
     "I9→I10": {
       "direction": "rising",
@@ -186,7 +186,7 @@
       "total": 40,
       "bull": 25,
       "bear": 15,
-      "score": 1.0
+      "score": 1.09
     },
     "M6→I13": {
       "direction": "falling",
@@ -195,7 +195,16 @@
       "total": 25,
       "bull": 13,
       "bear": 12,
-      "score": 0.2
+      "score": 0.19
+    },
+    "M8→now": {
+      "direction": "rising",
+      "start_label": "M8",
+      "end_label": "?",
+      "total": 11,
+      "bull": 11,
+      "bear": 0,
+      "score": 0.0
     }
   },
   "inflection_details": {
@@ -207,15 +216,15 @@
           "direction": "bullish",
           "strength": "moderate",
           "return": 0.0041,
-          "short_return": 0.0323,
-          "score": 0.0323,
+          "short_return": 0.0379,
+          "score": 0.0379,
           "ref": "2024-10-18 开盘",
           "evidence": "牛市还在吗？大多数人已经认为一波流的牛市已经凉凉了，剩下的人也是开始怀疑自己。明白了这波牛市的底层逻辑，你也就不会动摇。"
         }
       ],
-      "total_score": 0.03,
+      "total_score": 0.04,
       "signal_count": 1,
-      "avg_score_pct": 3.23
+      "avg_score_pct": 3.79
     },
     "I10": {
       "signals": [
@@ -287,7 +296,7 @@
           "direction": "bullish",
           "strength": "strong",
           "return": 0.0299,
-          "short_return": 0.0067,
+          "short_return": 0.0118,
           "score": 0.0599,
           "ref": "2026-02-05 开盘",
           "evidence": "盘后股指期货机构大幅减空近6000手，明天大盘还会上涨。跨春节行情已经展开。今天是立春，股市的春天也开始了！"
@@ -338,7 +347,7 @@
           "direction": "bullish",
           "strength": "strong",
           "return": 0.0476,
-          "short_return": 0.0062,
+          "short_return": 0.0116,
           "score": 0.0953,
           "ref": "2026-06-10 开盘",
           "evidence": "目前，大盘的主跌阶段已经告一段落，下一步回踩确认后，将展开比较大的行情，点位看4500。大盘将在7月和8月迎来高潮。"
@@ -348,6 +357,24 @@
       "signal_count": 4,
       "avg_score_pct": 3.74
     },
+    "I14": {
+      "signals": [
+        {
+          "date": "2026-06-24",
+          "time": "21:05",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": 0.0883,
+          "short_return": 0.0186,
+          "score": 0.0883,
+          "ref": "2026-06-25 开盘",
+          "evidence": "明天继续看调整，因为20%股票的牛市走不远"
+        }
+      ],
+      "total_score": 0.09,
+      "signal_count": 1,
+      "avg_score_pct": 8.83
+    },
     "I9": {
       "signals": [
         {
@@ -356,7 +383,7 @@
           "direction": "bullish",
           "strength": "moderate",
           "return": 0.0118,
-          "short_return": 0.0023,
+          "short_return": 0.0038,
           "score": -0.0118,
           "ref": "2025-12-16 开盘",
           "evidence": "不过股海斜阳余晖要指出，这里就是底部，目前主力在积极调仓，只是底部目前有两种走势，一种是杀破3816，形成abc结构，另"
@@ -378,7 +405,7 @@
           "direction": "bullish",
           "strength": "moderate",
           "return": 0.0964,
-          "short_return": 0.0141,
+          "short_return": 0.0178,
           "score": 0.0964,
           "ref": "2025-12-17 开盘",
           "evidence": "今日大盘已经走出了c浪杀跌，科技股属于继续出货的阶段。上证指数离120日线（3777）的支撑只有47个点，考虑到本周五是"
@@ -389,7 +416,7 @@
           "direction": "bullish",
           "strength": "moderate",
           "return": 0.0865,
-          "short_return": 0.0086,
+          "short_return": 0.0156,
           "score": 0.0865,
           "ref": "2025-12-18 开盘",
           "evidence": "技术方面，11月11日形成了顶背离，而今天收盘形成了30分钟，60分钟和120分钟的底背离。对应的反弹周期是12个至15"
@@ -451,7 +478,7 @@
           "direction": "bullish",
           "strength": "moderate",
           "return": 0.3037,
-          "short_return": 0.0299,
+          "short_return": 0.0418,
           "score": 0.3037,
           "ref": "2025-04-08 开盘",
           "evidence": "大盘已经见底，目前富时A50已经大涨3%。美国不放过中国，所以中国必然反击，短期的下跌不能阻挡中国股市的崛起，最恶劣的时"
@@ -462,7 +489,7 @@
           "direction": "bullish",
           "strength": "moderate",
           "return": 0.2971,
-          "short_return": 0.0365,
+          "short_return": 0.0412,
           "score": 0.2971,
           "ref": "2025-04-09 开盘",
           "evidence": "明天大盘会继续反弹，3040点就是本次调整的底部"
@@ -531,8 +558,8 @@
           "direction": "bearish",
           "strength": "moderate",
           "return": 0.0007,
-          "short_return": 0.0284,
-          "score": 0.0284,
+          "short_return": 0.0293,
+          "score": 0.0293,
           "ref": "2026-05-14 开盘",
           "evidence": "明天科技股要大幅调整了，当然由于科技股的权重很大，所以明天大盘指数向下调整的可能性极大。"
         },
@@ -550,7 +577,36 @@
       ],
       "total_score": 0.11,
       "signal_count": 2,
-      "avg_score_pct": 5.28
+      "avg_score_pct": 5.32
+    },
+    "M7": {
+      "signals": [
+        {
+          "date": "2026-06-25",
+          "time": "21:51",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": 0.0873,
+          "short_return": 0.0174,
+          "score": 0.0873,
+          "ref": "2026-06-26 开盘",
+          "evidence": "估计明天冲高回落。"
+        },
+        {
+          "date": "2026-06-26",
+          "time": "12:20",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": 0.0711,
+          "short_return": 0.0,
+          "score": 0.0711,
+          "ref": "2026-06-26 收盘",
+          "evidence": "科技股真正的调整要来了。"
+        }
+      ],
+      "total_score": 0.16,
+      "signal_count": 2,
+      "avg_score_pct": 7.92
     }
   }
 }

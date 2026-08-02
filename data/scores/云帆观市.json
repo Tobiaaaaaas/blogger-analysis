@@ -2,45 +2,45 @@
   "blogger": "云帆观市",
   "scoring_version": "v10 (14-score)",
   "signals_total": 1312,
-  "signals_scored": 1156,
-  "last_segment_unscored": 50,
+  "signals_scored": 1183,
+  "last_segment_unscored": 23,
   "no_price": 3,
   "no_segment": 103,
   "scores": {
     "综合": {
-      "total": 29.98,
-      "count": 1156,
-      "avg_pct": 2.59
+      "total": 30.84,
+      "count": 1183,
+      "avg_pct": 2.61
     },
     "上升段": {
-      "total": 39.74,
+      "total": 39.69,
       "count": 828,
-      "avg_pct": 4.8
+      "avg_pct": 4.79
     },
     "下降段": {
-      "total": -9.76,
-      "count": 328,
-      "avg_pct": -2.98
+      "total": -8.85,
+      "count": 355,
+      "avg_pct": -2.49
     },
     "抄底": {
-      "total": 5.43,
+      "total": 5.44,
       "count": 51,
-      "avg_pct": 10.65
+      "avg_pct": 10.66
     },
     "逃顶": {
-      "total": 0.69,
-      "count": 14,
-      "avg_pct": 4.94
+      "total": 0.83,
+      "count": 16,
+      "avg_pct": 5.22
     },
     "看多": {
-      "total": 41.98,
-      "count": 820,
-      "avg_pct": 5.12
+      "total": 42.0,
+      "count": 832,
+      "avg_pct": 5.05
     },
     "看空": {
-      "total": -12.0,
-      "count": 336,
-      "avg_pct": -3.57
+      "total": -11.16,
+      "count": 351,
+      "avg_pct": -3.18
     }
   },
   "segments": {
@@ -80,14 +80,14 @@
       "bear": 17,
       "score": -0.64
     },
-    "I14→now": {
+    "I14→M8": {
       "direction": "falling",
       "start_label": "I14",
-      "end_label": "?",
-      "total": 50,
-      "bull": 21,
-      "bear": 29,
-      "score": 0.0
+      "end_label": "M8",
+      "total": 27,
+      "bull": 12,
+      "bear": 15,
+      "score": 0.58
     },
     "I1→I2": {
       "direction": "rising",
@@ -105,7 +105,7 @@
       "total": 50,
       "bull": 49,
       "bear": 1,
-      "score": -2.11
+      "score": -2.04
     },
     "I3→I4": {
       "direction": "rising",
@@ -114,7 +114,7 @@
       "total": 33,
       "bull": 33,
       "bear": 0,
-      "score": 1.36
+      "score": 1.31
     },
     "I4→I5": {
       "direction": "falling",
@@ -123,7 +123,7 @@
       "total": 60,
       "bull": 58,
       "bear": 2,
-      "score": -4.03
+      "score": -3.93
     },
     "I5→I6": {
       "direction": "rising",
@@ -159,7 +159,7 @@
       "total": 20,
       "bull": 19,
       "bear": 1,
-      "score": -0.47
+      "score": -0.3
     },
     "M3→M4": {
       "direction": "rising",
@@ -196,6 +196,15 @@
       "bull": 8,
       "bear": 41,
       "score": 1.3
+    },
+    "M8→now": {
+      "direction": "rising",
+      "start_label": "M8",
+      "end_label": "?",
+      "total": 23,
+      "bull": 9,
+      "bear": 14,
+      "score": 0.0
     }
   },
   "inflection_details": {
@@ -218,8 +227,8 @@
           "direction": "bullish",
           "strength": "moderate",
           "return": 0.0041,
-          "short_return": 0.0323,
-          "score": 0.0323,
+          "short_return": 0.0379,
+          "score": 0.0379,
           "ref": "2024-10-18 开盘",
           "evidence": "所以周五会不会有资金有所行动？今天会不会是故意砸盘出其不意？一切皆有可能，目的就是要让散户不看好割肉离场。"
         },
@@ -251,7 +260,7 @@
           "direction": "bullish",
           "strength": "moderate",
           "return": 0.0714,
-          "short_return": 0.003,
+          "short_return": 0.0082,
           "score": 0.0714,
           "ref": "2024-10-21 开盘",
           "evidence": "A股：散户割肉了，主力净流入了，又放量大涨，今天是新的开始！"
@@ -262,7 +271,7 @@
           "direction": "bullish",
           "strength": "moderate",
           "return": 0.0714,
-          "short_return": 0.003,
+          "short_return": 0.0082,
           "score": 0.0714,
           "ref": "2024-10-21 开盘",
           "evidence": "现在是要走慢牛，所以适当的回落一下也是没有什么问题的。"
@@ -273,7 +282,7 @@
           "direction": "bullish",
           "strength": "moderate",
           "return": 0.0714,
-          "short_return": 0.003,
+          "short_return": 0.0082,
           "score": 0.0714,
           "ref": "2024-10-21 开盘",
           "evidence": "这说明市场分歧还是很大，这个时间点市场有分歧是正常的，分歧意味着后市还有向上的预期。"
@@ -284,7 +293,7 @@
           "direction": "bullish",
           "strength": "moderate",
           "return": 0.0714,
-          "short_return": 0.003,
+          "short_return": 0.0082,
           "score": 0.0714,
           "ref": "2024-10-21 开盘",
           "evidence": "所以接下来一定是一边洗盘一边拉升，直到让很多散户提早下车然后再连读暴涨，最后再逼着那些下车的散户追高接盘。"
@@ -314,7 +323,7 @@
       ],
       "total_score": 0.79,
       "signal_count": 10,
-      "avg_score_pct": 7.85
+      "avg_score_pct": 7.91
     },
     "I10": {
       "signals": [
@@ -397,7 +406,7 @@
           "direction": "bullish",
           "strength": "moderate",
           "return": 0.0299,
-          "short_return": 0.0067,
+          "short_return": 0.0118,
           "score": 0.0299,
           "ref": "2026-02-05 开盘",
           "evidence": "我觉得已经证明了我说的指数依旧是慢牛的观点。"
@@ -495,7 +504,7 @@
           "direction": "bullish",
           "strength": "moderate",
           "return": 0.0564,
-          "short_return": 0.0055,
+          "short_return": 0.0168,
           "score": 0.0564,
           "ref": "2024-11-28 开盘",
           "evidence": "A股：今天放量重回3300点，牛还在，先别走？这次反弹不一样！"
@@ -528,7 +537,7 @@
           "direction": "bullish",
           "strength": "moderate",
           "return": 0.0606,
-          "short_return": 0.0209,
+          "short_return": 0.0254,
           "score": 0.0606,
           "ref": "2024-11-29 开盘",
           "evidence": "对于明天周五的市场来说，下午提前跳水释放了抛压，明天就还有冲高的动力"
@@ -615,7 +624,7 @@
           "direction": "bullish",
           "strength": "moderate",
           "return": 0.0964,
-          "short_return": 0.0141,
+          "short_return": 0.0178,
           "score": 0.0964,
           "ref": "2025-12-17 开盘",
           "evidence": "明天A股市场看涨的信念越来越强，明天周三若能实现我的反弹预期"
@@ -659,7 +668,7 @@
           "direction": "bullish",
           "strength": "moderate",
           "return": 0.0865,
-          "short_return": 0.0086,
+          "short_return": 0.0156,
           "score": 0.0865,
           "ref": "2025-12-18 开盘",
           "evidence": "明天行情将会这样走！"
@@ -670,7 +679,7 @@
           "direction": "bullish",
           "strength": "moderate",
           "return": 0.0865,
-          "short_return": 0.0086,
+          "short_return": 0.0156,
           "score": 0.0865,
           "ref": "2025-12-18 开盘",
           "evidence": "目前的行情只要敢于在缩量悲观的时候出手，至少风险不会太大"
@@ -710,7 +719,7 @@
           "direction": "bullish",
           "strength": "strong",
           "return": 0.3037,
-          "short_return": 0.0299,
+          "short_return": 0.0418,
           "score": 0.6074,
           "ref": "2025-04-08 开盘",
           "evidence": "大胆一点，A股不必悲观了！周二的市场将迎来大面积反弹修复，这就是我的明确观点。"
@@ -743,7 +752,7 @@
           "direction": "bullish",
           "strength": "moderate",
           "return": 0.2971,
-          "short_return": 0.0365,
+          "short_return": 0.0412,
           "score": 0.2971,
           "ref": "2025-04-09 开盘",
           "evidence": "突发重磅消息，上交所召开机构座谈会，中欧盘后通话了，A股利好多到数不过来，欧美股市反弹大涨，人民币汇率大幅贬值下，周三的"
@@ -929,8 +938,8 @@
           "direction": "bearish",
           "strength": "moderate",
           "return": 0.0007,
-          "short_return": 0.0284,
-          "score": 0.0284,
+          "short_return": 0.0293,
+          "score": 0.0293,
           "ref": "2026-05-14 开盘",
           "evidence": "可创业板指数拉的越是疯狂，背后代表的就是抱团越极端，而行情一旦极端下去，最后结果一定是走向另外一个极端：要么是牺牲指数，"
         },
@@ -1003,7 +1012,36 @@
       ],
       "total_score": 0.43,
       "signal_count": 10,
-      "avg_score_pct": 4.33
+      "avg_score_pct": 4.34
+    },
+    "M7": {
+      "signals": [
+        {
+          "date": "2026-06-26",
+          "time": "10:29",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": 0.0711,
+          "short_return": 0.0,
+          "score": 0.0711,
+          "ref": "2026-06-26 收盘",
+          "evidence": "指数黑色星期五应该是避免不了的了，但是个股今天会有明显变化；"
+        },
+        {
+          "date": "2026-06-26",
+          "time": "15:28",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": 0.0709,
+          "short_return": 0.0117,
+          "score": 0.0709,
+          "ref": "2026-06-29 开盘",
+          "evidence": "下周预计会有一个风格平衡的过程，当然不会立刻完成风格切换，但是经历了本周的极端之后，下周预计会有一些资金往中小盘慢慢过渡"
+        }
+      ],
+      "total_score": 0.14,
+      "signal_count": 2,
+      "avg_score_pct": 7.1
     }
   }
 }

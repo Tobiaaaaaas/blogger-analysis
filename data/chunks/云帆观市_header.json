@@ -1,0 +1,31 @@
+{
+  "blogger": "云帆观市",
+  "extraction_time": "2026-08-01 19:48:35",
+  "model": "deepseek-v4-flash",
+  "total_posts": 2399,
+  "pre_2024_06": 0,
+  "evaluation_posts": 2399,
+  "not_extracted": {
+    "no_market_topic": 37,
+    "pure_description": 291,
+    "directional_vague": 502,
+    "other_index_sector": 133,
+    "other": 123
+  },
+  "scored_bullish": {
+    "strong": 52,
+    "moderate": 883,
+    "short": 606,
+    "medium": 80,
+    "long": 137,
+    "unspecified": 112
+  },
+  "scored_bearish": {
+    "strong": 4,
+    "moderate": 373,
+    "short": 250,
+    "medium": 31,
+    "long": 21,
+    "unspecified": 75
+  }
+}
