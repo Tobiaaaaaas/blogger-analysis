@@ -18,6 +18,8 @@ PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
 
 # Inflection Points (from market_analysis.md)
 INFLECTIONS = [
+    ("2024-06-03", "顶", 3086, 3097, "M0"),   # market data start — pre-M1 decline
+    ("2024-09-13", "底", 2690, 2690, "M1"),   # manual Major — 两年大底
     ("2024-10-08", "顶", 3490, 3674, "M2"),
     ("2024-10-18", "底", 3262, 3153, "I1"),
     ("2024-11-08", "顶", 3452, 3510, "I2"),
