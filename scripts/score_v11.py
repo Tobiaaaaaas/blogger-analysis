@@ -197,6 +197,7 @@ def main():
         "start_label": "", "end_label": "",
     })
     inflection_signals = defaultdict(list)
+    equity_records = []  # for equity curve simulation
 
     last_inf = INFLECTIONS[-1]
 
@@ -271,6 +272,39 @@ def main():
             else:
                 ret = (avg_c / ref_p - 1) * 100  # percentage
                 score = dir_sign * ret * sbase
+
+        # Record for equity curve simulation
+        th_offsets = TH_WINDOW.get(th)
+        if th_offsets:
+            # Find the last trading day of the window
+            try:
+                idx = sorted_dates.index(ref_date)
+            except ValueError:
+                idx = None
+                for i, d in enumerate(sorted_dates):
+                    if d >= ref_date:
+                        idx = i; break
+            if idx is not None:
+                max_off = max(th_offsets)
+                exit_day_idx = idx + max_off
+                exit_date = sorted_dates[min(exit_day_idx, len(sorted_dates)-1)] if exit_day_idx < len(sorted_dates) else None
+            else:
+                exit_date = None
+        else:
+            exit_date = None
+
+        equity_records.append({
+            "publish_time": pt,
+            "date": date_str,
+            "ref_date": ref_date,
+            "ref_price": ref_p,
+            "direction": direction,
+            "strength": strength,
+            "time_horizon": th,
+            "exit_date": exit_date,
+            "ret": ret,        # percentage
+            "score": score,    # percentage
+        })
 
         # Accumulate (score=0 signals excluded from averages/win rates)
         is_effective = (score != 0)
@@ -405,6 +439,141 @@ def main():
         if d["count"] > 0:
             print(f"{th:<14} {d['count']:>6} {d['total']:>+10.2f}% {d['avg_pct']:>+9.2f}% {d['win_rate']:>9.1f}%")
 
+    # ── Equity curve simulation ──
+    def simulate_equity(records, prices, sorted_dates, signal_filter=None):
+        recs = [r for r in records if signal_filter is None or r["direction"] == signal_filter]
+        if not recs:
+            return [], {}
+        recs = sorted(recs, key=lambda r: r["publish_time"])
+
+        cash = 1.0
+        pos = None  # None or {"direction": "long"/"short", "size": 0.5/1.0, "entry_price": float, "exit_date": str}
+        nav_series = []
+        trades = []
+
+        first_date = recs[0]["date"]
+        last_date = max(r.get("exit_date", sorted_dates[-1]) or sorted_dates[-1] for r in recs)
+
+        signal_idx = 0
+        for day in sorted_dates:
+            if day < first_date: continue
+            if day > last_date: break
+
+            while signal_idx < len(recs) and recs[signal_idx]["date"] <= day:
+                r = recs[signal_idx]
+                if r["date"] != day:
+                    signal_idx += 1; continue
+
+                r_dir = "long" if r["direction"] == "bullish" else "short"
+                r_size = 1.0 if r["strength"] == "strong" else 0.5
+                r_exit = r.get("exit_date")
+
+                if pos is None:
+                    pos = {"direction": r_dir, "size": r_size, "entry_price": r["ref_price"], "exit_date": r_exit}
+                elif pos["direction"] == r_dir:
+                    # Same direction: size = max, refresh exit
+                    if r_size > pos["size"]:
+                        pos["size"] = r_size
+                    pos_exit = pos.get("exit_date") or ""
+                    if r_exit and (not pos_exit or r_exit > pos_exit):
+                        pos["exit_date"] = r_exit
+                else:
+                    # Reverse: close old at today's close, open new
+                    close_price = prices.get(day, {}).get("close")
+                    if close_price and pos["entry_price"] > 0:
+                        if pos["direction"] == "long":
+                            old_ret = (close_price / pos["entry_price"] - 1) * 100
+                        else:
+                            old_ret = (1 - close_price / pos["entry_price"]) * 100
+                        cash *= (1 + old_ret * pos["size"] / 100)
+                        trades.append({"exit_date": day, "direction": pos["direction"], "size": pos["size"], "return_pct": round(old_ret, 4)})
+                    pos = {"direction": r_dir, "size": r_size, "entry_price": r["ref_price"], "exit_date": r_exit}
+                signal_idx += 1
+
+            if pos and pos.get("exit_date") == day:
+                close_price = prices.get(day, {}).get("close")
+                if close_price and pos["entry_price"] > 0:
+                    if pos["direction"] == "long":
+                        trade_ret = (close_price / pos["entry_price"] - 1) * 100
+                    else:
+                        trade_ret = (1 - close_price / pos["entry_price"]) * 100
+                    cash *= (1 + trade_ret * pos["size"] / 100)
+                    trades.append({"exit_date": day, "direction": pos["direction"], "size": pos["size"], "return_pct": round(trade_ret, 4)})
+                pos = None
+
+            nav = cash
+            if pos and pos["entry_price"] > 0:
+                close_price = prices.get(day, {}).get("close")
+                if close_price:
+                    if pos["direction"] == "long":
+                        unrealized = (close_price / pos["entry_price"] - 1)
+                    else:
+                        unrealized = (1 - close_price / pos["entry_price"])
+                    nav = cash * (1 + unrealized * pos["size"])
+            nav_series.append((day, round(nav, 6)))
+
+        if not nav_series: return [], {}
+        navs = [n for _, n in nav_series]
+        total_return = (navs[-1] - 1.0) * 100
+        n_days = len(navs)
+        annual_return = ((navs[-1] / 1.0) ** (252 / max(n_days, 1)) - 1) * 100
+
+        peak = navs[0]; peak_date = nav_series[0][0]
+        max_dd = 0; dd_start = dd_end = ""
+        for d, n in nav_series:
+            if n > peak: peak = n; peak_date = d
+            dd = (n - peak) / peak * 100
+            if dd < max_dd: max_dd = dd; dd_start = peak_date; dd_end = d
+
+        trade_rets = [t["return_pct"] for t in trades]
+        max_loss_streak = max_win_streak = cur_loss = cur_win = 0
+        loss_start = win_start = loss_end = win_end = ""
+        for i, tr in enumerate(trade_rets):
+            exit_d = trades[i].get("exit_date", "")
+            if tr < 0:
+                cur_loss += 1; cur_win = 0
+                if cur_loss == 1: loss_start = exit_d
+                if cur_loss > max_loss_streak: max_loss_streak = cur_loss; loss_end = exit_d
+            else:
+                cur_win += 1; cur_loss = 0
+                if cur_win == 1: win_start = exit_d
+                if cur_win > max_win_streak: max_win_streak = cur_win; win_end = exit_d
+
+        avg_tr = sum(trade_rets) / len(trade_rets) if trade_rets else 0
+        std_tr = (sum((r - avg_tr)**2 for r in trade_rets) / max(len(trade_rets)-1, 1))**0.5 if len(trade_rets) > 1 else 0
+        sharpe = avg_tr / std_tr if std_tr > 0 else 0
+
+        return nav_series, {
+            "total_return": round(total_return, 2), "annual_return": round(annual_return, 2),
+            "max_drawdown": round(max_dd, 2),
+            "max_drawdown_dates": [dd_start, dd_end] if max_dd < 0 else [],
+            "max_loss_streak": max_loss_streak,
+            "max_loss_streak_dates": [loss_start, loss_end] if max_loss_streak > 0 else [],
+            "max_win_streak": max_win_streak,
+            "max_win_streak_dates": [win_start, win_end] if max_win_streak > 0 else [],
+            "sharpe_like": round(sharpe, 2), "trade_count": len(trades),
+            "signal_count": len(recs), "avg_trade_return": round(avg_tr, 2),
+        }
+
+    nav_all, risk_all = simulate_equity(equity_records, prices, sorted_dates)
+    nav_bull, risk_bull = simulate_equity(equity_records, prices, sorted_dates, "bullish")
+    nav_bear, risk_bear = simulate_equity(equity_records, prices, sorted_dates, "bearish")
+
+    benchmark_nav = []
+    if nav_all:
+        first_day = nav_all[0][0]; last_day = nav_all[-1][0]
+        if first_day in prices:
+            base_price = prices[first_day]["close"]
+            for day, _ in nav_all:
+                if day in prices:
+                    benchmark_nav.append((day, round(prices[day]["close"] / base_price, 6)))
+        bench_return = round((benchmark_nav[-1][1] - 1.0) * 100, 2) if benchmark_nav else 0
+        risk_all["benchmark_return"] = bench_return
+        risk_all["alpha"] = round(risk_all.get("total_return", 0) - bench_return, 2)
+
+    equity_output = {"overall": nav_all, "bullish_only": nav_bull, "bearish_only": nav_bear, "benchmark": benchmark_nav}
+    risk_output = {"overall": risk_all, "bullish": risk_bull, "bearish": risk_bear}
+
     # JSON output (write first to survive terminal encoding errors)
     segments_output = {}
     for sk in sorted(by_seg.keys()):
@@ -436,6 +605,8 @@ def main():
         "no_segment": no_segment,
         "scores": scores,
         "time_horizon_scores": th_scores,
+        "equity_curve": equity_output,
+        "risk_metrics": risk_output,
         "segments": segments_output,
         "inflection_details": inflection_output,
     }
