@@ -478,7 +478,7 @@ def main():
                     if r_exit and (not pos_exit or r_exit > pos_exit):
                         pos["exit_date"] = r_exit
                 else:
-                    # Reverse: close old at today's close, open new
+                    # Reverse: close old at today's close, stay in cash
                     close_price = prices.get(day, {}).get("close")
                     if close_price and pos["entry_price"] > 0:
                         if pos["direction"] == "long":
@@ -487,7 +487,7 @@ def main():
                             old_ret = (1 - close_price / pos["entry_price"]) * 100
                         cash *= (1 + old_ret * pos["size"] / 100)
                         trades.append({"exit_date": day, "direction": pos["direction"], "size": pos["size"], "return_pct": round(old_ret, 4)})
-                    pos = {"direction": r_dir, "size": r_size, "entry_price": r["ref_price"], "exit_date": r_exit}
+                    pos = None
                 signal_idx += 1
 
             if pos and pos.get("exit_date") == day:

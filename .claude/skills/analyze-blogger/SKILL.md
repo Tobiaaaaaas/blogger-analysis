@@ -50,7 +50,7 @@ cd <项目根目录> && python scripts/scrape_toutiao.py <帖子链接>
 
 - `direction`: bullish / bearish
 - `strength`: strong / moderate
-  - `strong` — 措辞坚决（"一定""必将""满仓""清仓""坚决"）+ 给出具体点位/仓位
+  - `strong` — 措辞坚决（"一定""必将""满仓""清仓""坚决"）
   - `moderate` — 有方向判断但措辞温和（"偏多""倾向于""大概率""有望"）
 - `time_horizon`: short / medium / long / unspecified
   - `short` — 3天内预测（T ~ T+2，"明天涨""下午反弹"，包括日内）
@@ -59,6 +59,7 @@ cd <项目根目录> && python scripts/scrape_toutiao.py <帖子链接>
   - `unspecified` — 无明确时间范围
 
 > **time_horizon 标注原理**：LLM 必须通过理解帖子的完整语义来判断时间维度，**不能依赖关键词匹配**。LLM 必须理解整个帖子的信号针对的预判周期，不能按照一句话以偏概全。当帖子同时包含不同级别的时间信息时，以信号针对的预判周期来标注该帖子的 time_horizon。
+> **平仓信号**：博主的平仓信号本身表达方向观点。若博主之前持有多头仓位，发出平仓信号则等效于 bearish（卖出/减仓）；若之前持有空头仓位，发出平仓信号则等效于 bullish（买入回补/加仓）。
 - `evidence`: 帖子原文（关键句，≤300字）
 - `publish_time`: 帖子发布时间（YYYY-MM-DD HH:MM 格式），用于判定参考价格
 
@@ -207,8 +208,6 @@ score = direction_sign × return × strength_base
 - bearish + 均价跌了 → 正分（看空对了）
 - bearish + 均价涨了 → 负分（看空错了）
 
-> **平仓信号的翻译**：博主的平仓/减仓信号（如"清仓""止盈""出局"）本身不表达方向观点。在模拟权益曲线时，若博主之前持有多头仓位，发出平仓信号则等效于 bearish（卖出）；若之前持有空头仓位，发出平仓信号则等效于 bullish（买入回补）。
-
 ##### 4.3.4 共 14 个分数（7 个总得分 + 7 个平均分）
 
 **总得分：**
@@ -278,7 +277,7 @@ score = direction_sign × return × strength_base
    - strong 信号 → 满仓（size=1.0）；moderate 信号 → 半仓（size=0.5）
    - 当前无仓位 → 按信号方向开仓，entry_price = ref_price，exit_date = T + th 窗口最后一天
    - 当前有仓位 + 同向信号 → 不额外开仓。若新信号的 size > 当前仓位则升级；若新信号的 exit_date 更晚则刷新到期日
-   - 当前有仓位 + 反向信号 → 以当日收盘价平掉旧仓（计入交易盈亏），再按新信号方向开仓
+   - 当前有仓位 + 反向信号 → 以当日收盘价平掉旧仓（计入交易盈亏）
    - 到期平仓 → 以到期日收盘价平仓，计入交易盈亏
    - 每日权益 = 现金 + 持仓市值（按当日收盘价按持仓比例估值）
    - 基准曲线：同期买入持有上证综指，从第一笔信号日持有到最后一笔信号日
