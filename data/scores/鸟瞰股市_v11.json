@@ -1,0 +1,610 @@
+{
+  "blogger": "鸟瞰股市",
+  "scoring_version": "v11 (time_horizon-windowed single formula)",
+  "signals_total": 601,
+  "signals_scored": 411,
+  "score_zero": 59,
+  "no_price": 2,
+  "no_segment": 128,
+  "scores": {
+    "综合": {
+      "total": 19.83,
+      "count": 411,
+      "avg_pct": 0.05,
+      "win_rate": 57.42
+    },
+    "上升段": {
+      "total": 87.89,
+      "count": 268,
+      "avg_pct": 0.33,
+      "win_rate": 64.93
+    },
+    "下降段": {
+      "total": -68.06,
+      "count": 143,
+      "avg_pct": -0.48,
+      "win_rate": 43.36
+    },
+    "抄底": {
+      "total": 29.71,
+      "count": 21,
+      "avg_pct": 1.41,
+      "win_rate": 95.24
+    },
+    "逃顶": {
+      "total": 5.83,
+      "count": 5,
+      "avg_pct": 1.17,
+      "win_rate": 80.0
+    },
+    "看多": {
+      "total": 28.41,
+      "count": 374,
+      "avg_pct": 0.08,
+      "win_rate": 59.63
+    },
+    "看空": {
+      "total": -8.57,
+      "count": 37,
+      "avg_pct": -0.23,
+      "win_rate": 35.14
+    }
+  },
+  "time_horizon_scores": {
+    "short": {
+      "count": 335,
+      "total": -0.32,
+      "avg_pct": -0.0,
+      "win_rate": 56.12
+    },
+    "weekly": {
+      "count": 75,
+      "total": 15.11,
+      "avg_pct": 0.2,
+      "win_rate": 61.33
+    },
+    "biweekly": {
+      "count": 2,
+      "total": 5.04,
+      "avg_pct": 2.52,
+      "win_rate": 100.0
+    },
+    "monthly": {
+      "count": 0,
+      "total": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "intraday": {
+      "count": 0,
+      "total": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "long": {
+      "count": 17,
+      "total": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "unspecified": {
+      "count": 42,
+      "total": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    }
+  },
+  "segments": {
+    "I1->I2": {
+      "direction": "rising",
+      "start_label": "I1",
+      "end_label": "I2",
+      "total": 30,
+      "bull": 28,
+      "bear": 2,
+      "score": 5.43
+    },
+    "I10->I11": {
+      "direction": "falling",
+      "start_label": "I10",
+      "end_label": "I11",
+      "total": 14,
+      "bull": 13,
+      "bear": 1,
+      "score": -1.25
+    },
+    "I11->I12": {
+      "direction": "rising",
+      "start_label": "I11",
+      "end_label": "I12",
+      "total": 14,
+      "bull": 12,
+      "bear": 2,
+      "score": 2.39
+    },
+    "I12->M5": {
+      "direction": "falling",
+      "start_label": "I12",
+      "end_label": "M5",
+      "total": 14,
+      "bull": 13,
+      "bear": 1,
+      "score": -7.19
+    },
+    "I13->I14": {
+      "direction": "rising",
+      "start_label": "I13",
+      "end_label": "I14",
+      "total": 10,
+      "bull": 9,
+      "bear": 1,
+      "score": 8.54
+    },
+    "I14->M8": {
+      "direction": "falling",
+      "start_label": "I14",
+      "end_label": "M8",
+      "total": 19,
+      "bull": 18,
+      "bear": 1,
+      "score": -5.59
+    },
+    "I2->I3": {
+      "direction": "falling",
+      "start_label": "I2",
+      "end_label": "I3",
+      "total": 20,
+      "bull": 19,
+      "bear": 1,
+      "score": -8.84
+    },
+    "I3->I4": {
+      "direction": "rising",
+      "start_label": "I3",
+      "end_label": "I4",
+      "total": 15,
+      "bull": 14,
+      "bear": 1,
+      "score": 3.94
+    },
+    "I4->I5": {
+      "direction": "falling",
+      "start_label": "I4",
+      "end_label": "I5",
+      "total": 37,
+      "bull": 36,
+      "bear": 1,
+      "score": -24.34
+    },
+    "I5->I6": {
+      "direction": "rising",
+      "start_label": "I5",
+      "end_label": "I6",
+      "total": 68,
+      "bull": 61,
+      "bear": 7,
+      "score": 12.33
+    },
+    "I6->M3": {
+      "direction": "falling",
+      "start_label": "I6",
+      "end_label": "M3",
+      "total": 21,
+      "bull": 20,
+      "bear": 1,
+      "score": -18.75
+    },
+    "I9->I10": {
+      "direction": "rising",
+      "start_label": "I9",
+      "end_label": "I10",
+      "total": 11,
+      "bull": 4,
+      "bear": 7,
+      "score": -1.15
+    },
+    "M2->I1": {
+      "direction": "falling",
+      "start_label": "M2",
+      "end_label": "I1",
+      "total": 14,
+      "bull": 9,
+      "bear": 5,
+      "score": 2.18
+    },
+    "M3->M4": {
+      "direction": "rising",
+      "start_label": "M3",
+      "end_label": "M4",
+      "total": 126,
+      "bull": 121,
+      "bear": 5,
+      "score": 48.44
+    },
+    "M4->I9": {
+      "direction": "falling",
+      "start_label": "M4",
+      "end_label": "I9",
+      "total": 1,
+      "bull": 1,
+      "bear": 0,
+      "score": 0.22
+    },
+    "M5->M6": {
+      "direction": "rising",
+      "start_label": "M5",
+      "end_label": "M6",
+      "total": 32,
+      "bull": 27,
+      "bear": 5,
+      "score": 6.54
+    },
+    "M6->I13": {
+      "direction": "falling",
+      "start_label": "M6",
+      "end_label": "I13",
+      "total": 17,
+      "bull": 17,
+      "bear": 0,
+      "score": -4.51
+    },
+    "M8->now": {
+      "direction": "rising",
+      "start_label": "M8",
+      "end_label": "?",
+      "total": 8,
+      "bull": 8,
+      "bear": 0,
+      "score": 0.0
+    }
+  },
+  "inflection_details": {
+    "I1": {
+      "signals": [
+        {
+          "date": "2024-10-17",
+          "time": "16:49",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 3.344,
+          "score": 3.344,
+          "ref": "2024-10-18 open",
+          "evidence": "明日大概率是：三大股指继续震荡下跌，后市逐步企稳，小幅反弹，红盘报收。"
+        },
+        {
+          "date": "2024-10-18",
+          "time": "15:08",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.291,
+          "score": 0.291,
+          "ref": "2024-10-21 open",
+          "evidence": "展望后市，大盘走势短期趋于乐观。"
+        }
+      ],
+      "total_score": 3.63,
+      "signal_count": 2,
+      "avg_score_pct": 181.75
+    },
+    "I10": {
+      "signals": [
+        {
+          "date": "2026-01-13",
+          "time": "16:02",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": -0.6067,
+          "score": 0.6067,
+          "ref": "2026-01-14 open",
+          "evidence": "明日大概率是：大盘继续震荡调整，阴线收盘。"
+        },
+        {
+          "date": "2026-01-14",
+          "time": "15:48",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": 0.0799,
+          "score": -0.0799,
+          "ref": "2026-01-15 open",
+          "evidence": "明日大概率是：大盘继续震荡调整，至收盘，阴线报收。"
+        }
+      ],
+      "total_score": 0.53,
+      "signal_count": 2,
+      "avg_score_pct": 26.34
+    },
+    "I11": {
+      "signals": [
+        {
+          "date": "2026-02-02",
+          "time": "15:40",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.9408,
+          "score": 0.9408,
+          "ref": "2026-02-03 open",
+          "evidence": "明日大概率是：大盘探底回升，至收盘，股指小幅上涨，红盘报收。"
+        },
+        {
+          "date": "2026-02-03",
+          "time": "16:13",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.4073,
+          "score": 0.4073,
+          "ref": "2026-02-04 open",
+          "evidence": "明日大概率是：大盘前市横盘震荡，后市股指逐步走高，至收盘，股指小幅反弹，红盘报收。"
+        },
+        {
+          "date": "2026-02-04",
+          "time": "16:07",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.3232,
+          "score": 0.3232,
+          "ref": "2026-02-05 open",
+          "evidence": "明天大概率是：大盘前市横盘震荡，后市股指逐步走高，至收盘，大盘再次收出一根阳线，红盘报收。"
+        }
+      ],
+      "total_score": 1.67,
+      "signal_count": 3,
+      "avg_score_pct": 55.71
+    },
+    "I13": {
+      "signals": [
+        {
+          "date": "2026-06-07",
+          "time": "08:42",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 1.2396,
+          "score": 1.2396,
+          "ref": "2026-06-08 open(non-trading)",
+          "evidence": "笔者仍斗胆预测，明日大概率是：前市大盘大幅低开，甚至开盘直接跌破4000点，后市股指探底企稳，逐步回升，至收盘，股指小幅"
+        },
+        {
+          "date": "2026-06-08",
+          "time": "16:24",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.4832,
+          "score": 0.4832,
+          "ref": "2026-06-09 open",
+          "evidence": "如果没有重大利空， 明日大概率是：大盘低位震荡企稳，股指逐步走高，至收盘，股指小幅上涨，红盘报收。"
+        },
+        {
+          "date": "2026-06-09",
+          "time": "15:52",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.4716,
+          "score": 0.4716,
+          "ref": "2026-06-10 open",
+          "evidence": "如果没有重大利空，明日大概率是：大盘冲高回补上方缺口后回落，横盘震荡，至收盘，股指小幅上涨，红盘报收。"
+        }
+      ],
+      "total_score": 2.19,
+      "signal_count": 3,
+      "avg_score_pct": 73.15
+    },
+    "I14": {
+      "signals": [
+        {
+          "date": "2026-06-22",
+          "time": "15:41",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": -0.9906,
+          "score": 0.9906,
+          "ref": "2026-06-23 open",
+          "evidence": "明日大概率是：大盘冲高回落横盘震荡，至收盘，股指小幅下跌，阴线报收。"
+        }
+      ],
+      "total_score": 0.99,
+      "signal_count": 1,
+      "avg_score_pct": 99.06
+    },
+    "I3": {
+      "signals": [
+        {
+          "date": "2024-11-26",
+          "time": "15:06",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 3.6972,
+          "score": 3.6972,
+          "ref": "2024-11-27 open",
+          "evidence": "展望后市，大盘在3200点至3300点之间继续震荡整理的概率较大，有效跌破3200点的概率很小。"
+        },
+        {
+          "date": "2024-11-26",
+          "time": "16:29",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 1.8475,
+          "score": 1.8475,
+          "ref": "2024-11-27 open",
+          "evidence": "综合起来看，行情暂时还不宜悲观。后市大盘还是在3200点至3300点之间震荡整理的可能性最大。明日大概率是：大盘前市继续"
+        },
+        {
+          "date": "2024-11-27",
+          "time": "15:07",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.6176,
+          "score": 0.6176,
+          "ref": "2024-11-28 open",
+          "evidence": "因此大盘短期很难有效跌破3200点。    即使短线跌破3200点，那也是空头陷阱。"
+        },
+        {
+          "date": "2024-11-27",
+          "time": "16:31",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.6176,
+          "score": 0.6176,
+          "ref": "2024-11-28 open",
+          "evidence": "明日大概率是：三大股指前市震荡整理，后市逐步企稳小幅反弹，红盘报收。"
+        },
+        {
+          "date": "2024-11-28",
+          "time": "16:26",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2024-11-29 open",
+          "evidence": "笔者倾向于第二种走势。"
+        }
+      ],
+      "total_score": 6.78,
+      "signal_count": 5,
+      "avg_score_pct": 135.6
+    },
+    "I5": {
+      "signals": [
+        {
+          "date": "2025-01-13",
+          "time": "17:25",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 2.1969,
+          "score": 2.1969,
+          "ref": "2025-01-14 open",
+          "evidence": "明日大概率是：大盘围绕今日收盘点位上下震荡整理，收盘小幅反弹，红盘报收。"
+        },
+        {
+          "date": "2025-01-14",
+          "time": "15:09",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": -0.1827,
+          "score": -0.1827,
+          "ref": "2025-01-15 open",
+          "evidence": "大盘在底部放量大阳后，宣告了本轮调整已经结束，股指3140.98点将成为本轮行情调整的低点。后市继续看好。"
+        },
+        {
+          "date": "2025-01-14",
+          "time": "17:19",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 1.0271,
+          "score": 1.0271,
+          "ref": "2025-01-15 open",
+          "evidence": "大盘后市即使震荡，那再跌破3140.98点的概率很小很小。在春节前这段时间，大盘横盘震荡，股指逐步走高的概率很大。"
+        }
+      ],
+      "total_score": 3.04,
+      "signal_count": 3,
+      "avg_score_pct": 101.38
+    },
+    "M2": {
+      "signals": [
+        {
+          "date": "2024-10-08",
+          "time": "15:03",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": -4.0142,
+          "score": 4.0142,
+          "ref": "2024-10-09 open",
+          "evidence": "笔者认为今日沪指最高点3674.40点将成为短期的高点。后市在一段时间内，大盘大概率是上下震荡整理，充分消化获利盘、解套"
+        },
+        {
+          "date": "2024-10-09",
+          "time": "16:33",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": -0.2958,
+          "score": 0.2958,
+          "ref": "2024-10-10 open",
+          "evidence": "笔者认为，如果政策面没有重大变化，那即使明日反弹，后面几个交易日沪指回补这个缺口的概率也很大。"
+        }
+      ],
+      "total_score": 4.31,
+      "signal_count": 2,
+      "avg_score_pct": 215.5
+    },
+    "M3": {
+      "signals": [
+        {
+          "date": "2025-04-08",
+          "time": "15:06",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 5.2945,
+          "score": 5.2945,
+          "ref": "2025-04-09 open",
+          "evidence": "展望后市，大盘企稳概率很大。如果没有新的突发利空，那昨日的低点3040.69点，有望成为相当长时间内的低点。"
+        },
+        {
+          "date": "2025-04-08",
+          "time": "16:01",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 3.4153,
+          "score": 3.4153,
+          "ref": "2025-04-09 open",
+          "evidence": "明日大概率是：大盘继续震荡反弹，红盘报收。"
+        }
+      ],
+      "total_score": 8.71,
+      "signal_count": 2,
+      "avg_score_pct": 435.49
+    },
+    "M5": {
+      "signals": [
+        {
+          "date": "2026-03-24",
+          "time": "15:23",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.4953,
+          "score": 0.4953,
+          "ref": "2026-03-25 open",
+          "evidence": "排除有重磅消息影响外，明日大概率是：大盘缩量震荡，整固底部，至收盘，小幅上涨，红盘报收。"
+        }
+      ],
+      "total_score": 0.5,
+      "signal_count": 1,
+      "avg_score_pct": 49.53
+    },
+    "M8": {
+      "signals": [
+        {
+          "date": "2026-07-19",
+          "time": "09:00",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 1.3424,
+          "score": 1.3424,
+          "ref": "2026-07-20 open(non-trading)",
+          "evidence": "因此，明日大概率是：大盘震荡回升，大幅反弹。至收盘，股指大涨，红盘报收。"
+        },
+        {
+          "date": "2026-07-20",
+          "time": "15:25",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 1.5013,
+          "score": 1.5013,
+          "ref": "2026-07-21 open",
+          "evidence": "明日大概率是：大盘震荡反弹，个股普涨。至收盘，股指小幅上涨，红盘报收。"
+        },
+        {
+          "date": "2026-07-21",
+          "time": "15:15",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.3387,
+          "score": 0.3387,
+          "ref": "2026-07-22 open",
+          "evidence": "明日大概率是：大盘横盘震荡，消化短线获利盘。至收盘，股指小幅上涨，再收红盘。"
+        }
+      ],
+      "total_score": 3.18,
+      "signal_count": 3,
+      "avg_score_pct": 106.08
+    }
+  }
+}

@@ -1,0 +1,441 @@
+{
+  "blogger": "大盘蜂向标",
+  "scoring_version": "v11 (time_horizon-windowed single formula)",
+  "signals_total": 201,
+  "signals_scored": 77,
+  "score_zero": 121,
+  "no_price": 3,
+  "no_segment": 0,
+  "scores": {
+    "综合": {
+      "total": 7.1,
+      "count": 77,
+      "avg_pct": 0.09,
+      "win_rate": 50.65
+    },
+    "上升段": {
+      "total": 2.81,
+      "count": 42,
+      "avg_pct": 0.07,
+      "win_rate": 52.38
+    },
+    "下降段": {
+      "total": 4.29,
+      "count": 35,
+      "avg_pct": 0.12,
+      "win_rate": 48.57
+    },
+    "抄底": {
+      "total": 4.44,
+      "count": 6,
+      "avg_pct": 0.74,
+      "win_rate": 83.33
+    },
+    "逃顶": {
+      "total": 1.98,
+      "count": 3,
+      "avg_pct": 0.66,
+      "win_rate": 66.67
+    },
+    "看多": {
+      "total": -1.59,
+      "count": 30,
+      "avg_pct": -0.05,
+      "win_rate": 50.0
+    },
+    "看空": {
+      "total": 8.7,
+      "count": 47,
+      "avg_pct": 0.19,
+      "win_rate": 51.06
+    }
+  },
+  "time_horizon_scores": {
+    "short": {
+      "count": 67,
+      "total": 1.95,
+      "avg_pct": 0.03,
+      "win_rate": 50.75
+    },
+    "weekly": {
+      "count": 8,
+      "total": 4.99,
+      "avg_pct": 0.62,
+      "win_rate": 50.0
+    },
+    "biweekly": {
+      "count": 3,
+      "total": 0.17,
+      "avg_pct": 0.06,
+      "win_rate": 33.33
+    },
+    "monthly": {
+      "count": 0,
+      "total": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "intraday": {
+      "count": 33,
+      "total": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "long": {
+      "count": 1,
+      "total": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "unspecified": {
+      "count": 86,
+      "total": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    }
+  },
+  "segments": {
+    "I10->I11": {
+      "direction": "falling",
+      "start_label": "I10",
+      "end_label": "I11",
+      "total": 29,
+      "bull": 4,
+      "bear": 25,
+      "score": 4.25
+    },
+    "I11->I12": {
+      "direction": "rising",
+      "start_label": "I11",
+      "end_label": "I12",
+      "total": 31,
+      "bull": 18,
+      "bear": 13,
+      "score": -0.68
+    },
+    "I12->M5": {
+      "direction": "falling",
+      "start_label": "I12",
+      "end_label": "M5",
+      "total": 27,
+      "bull": 5,
+      "bear": 22,
+      "score": 1.82
+    },
+    "I13->I14": {
+      "direction": "rising",
+      "start_label": "I13",
+      "end_label": "I14",
+      "total": 8,
+      "bull": 3,
+      "bear": 5,
+      "score": -2.43
+    },
+    "I14->M8": {
+      "direction": "falling",
+      "start_label": "I14",
+      "end_label": "M8",
+      "total": 11,
+      "bull": 1,
+      "bear": 10,
+      "score": 1.5
+    },
+    "I9->I10": {
+      "direction": "rising",
+      "start_label": "I9",
+      "end_label": "I10",
+      "total": 8,
+      "bull": 3,
+      "bear": 5,
+      "score": -0.83
+    },
+    "M5->M6": {
+      "direction": "rising",
+      "start_label": "M5",
+      "end_label": "M6",
+      "total": 45,
+      "bull": 28,
+      "bear": 17,
+      "score": 4.91
+    },
+    "M6->I13": {
+      "direction": "falling",
+      "start_label": "M6",
+      "end_label": "I13",
+      "total": 29,
+      "bull": 22,
+      "bear": 7,
+      "score": -3.28
+    },
+    "M8->now": {
+      "direction": "rising",
+      "start_label": "M8",
+      "end_label": "?",
+      "total": 10,
+      "bull": 5,
+      "bear": 5,
+      "score": 0.0
+    }
+  },
+  "inflection_details": {
+    "I10": {
+      "signals": [
+        {
+          "date": "2026-01-15",
+          "time": "16:41",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2026-01-16 open",
+          "evidence": "在我这里没有那么多弯弯绕绕，只有简单明了的预判：没有结束。"
+        },
+        {
+          "date": "2026-01-15",
+          "time": "19:37",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": 0.082,
+          "score": -0.082,
+          "ref": "2026-01-16 open",
+          "evidence": "所以，我预判明天充其量就是个弱反，下周继续调整。"
+        }
+      ],
+      "total_score": -0.08,
+      "signal_count": 2,
+      "avg_score_pct": -4.1
+    },
+    "I11": {
+      "signals": [
+        {
+          "date": "2026-02-02",
+          "time": "12:56",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2026-02-02 close",
+          "evidence": "我的判断是：下午如果再杀，可能和周五一样，会引发反弹，但性质是诱多。"
+        },
+        {
+          "date": "2026-02-02",
+          "time": "13:54",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2026-02-02 close",
+          "evidence": "这里即使不是今天最低点，也是次低点。"
+        },
+        {
+          "date": "2026-02-02",
+          "time": "14:49",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 1.1492,
+          "score": 1.1492,
+          "ref": "2026-02-02 close",
+          "evidence": "但是短线情绪冰点已经出现，明天看反弹。"
+        },
+        {
+          "date": "2026-02-03",
+          "time": "12:08",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.3494,
+          "score": 0.3494,
+          "ref": "2026-02-03 close",
+          "evidence": "从早盘的数据看，目前红柱还比较短，说明短期暂时无忧，还能再弹。"
+        },
+        {
+          "date": "2026-02-03",
+          "time": "22:39",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2026-02-04 open",
+          "evidence": "我个人倾向于继续涨。"
+        },
+        {
+          "date": "2026-02-04",
+          "time": "10:50",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": -0.5111,
+          "score": -0.5111,
+          "ref": "2026-02-04 close",
+          "evidence": "所以我维持昨天的观点：短期反弹大概率延续。"
+        },
+        {
+          "date": "2026-02-04",
+          "time": "21:56",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.3232,
+          "score": 0.3232,
+          "ref": "2026-02-05 open",
+          "evidence": "我认为明天会继续反弹。"
+        }
+      ],
+      "total_score": 1.31,
+      "signal_count": 7,
+      "avg_score_pct": 18.72
+    },
+    "I12": {
+      "signals": [
+        {
+          "date": "2026-03-04",
+          "time": "12:57",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2026-03-04 close",
+          "evidence": "绿柱或超短柱没有出现，说明企稳还需时日。"
+        },
+        {
+          "date": "2026-03-04",
+          "time": "17:59",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2026-03-05 open",
+          "evidence": "洗盘还没结束，大概率是下跌中继。"
+        }
+      ],
+      "total_score": 0.0,
+      "signal_count": 2,
+      "avg_score_pct": 0.0
+    },
+    "I13": {
+      "signals": [
+        {
+          "date": "2026-06-07",
+          "time": "19:45",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2026-06-08 open(non-trading)",
+          "evidence": "美股极端暴跌之后，A股上涨的概率竟"
+        }
+      ],
+      "total_score": 0.0,
+      "signal_count": 1,
+      "avg_score_pct": 0.0
+    },
+    "M5": {
+      "signals": [
+        {
+          "date": "2026-03-23",
+          "time": "12:50",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 1.6307,
+          "score": 1.6307,
+          "ref": "2026-03-23 close",
+          "evidence": "下午或明天会有神奇时刻吗？我认为：概率较大！"
+        },
+        {
+          "date": "2026-03-23",
+          "time": "19:10",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2026-03-24 open",
+          "evidence": "绿柱出现，意味着什么？1、意味着反弹周期开启，95%的概率。2、意味着恐慌指数的1买出现，当前及以下位置机会大于风险。"
+        },
+        {
+          "date": "2026-03-24",
+          "time": "13:05",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2026-03-24 close",
+          "evidence": "拿好筹码，别松手。"
+        },
+        {
+          "date": "2026-03-24",
+          "time": "17:23",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2026-03-25 open",
+          "evidence": "不是股神的我就说一句：拿住！"
+        }
+      ],
+      "total_score": 1.63,
+      "signal_count": 4,
+      "avg_score_pct": 40.77
+    },
+    "M6": {
+      "signals": [
+        {
+          "date": "2026-05-13",
+          "time": "12:24",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": -1.3501,
+          "score": 1.3501,
+          "ref": "2026-05-13 close",
+          "evidence": "今天大盘没问题，接下来怎么走？第三句话：再来一巴掌。"
+        },
+        {
+          "date": "2026-05-14",
+          "time": "13:01",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": -0.7094,
+          "score": 0.7094,
+          "ref": "2026-05-14 close",
+          "evidence": "结合目前恐慌指数的数据看，我的判断是：1、短线又有糖；2、然后再给一巴掌。"
+        },
+        {
+          "date": "2026-05-14",
+          "time": "18:37",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2026-05-15 open",
+          "evidence": "暴击会迟到，但不会缺席。"
+        }
+      ],
+      "total_score": 2.06,
+      "signal_count": 3,
+      "avg_score_pct": 68.65
+    },
+    "M8": {
+      "signals": [
+        {
+          "date": "2026-07-20",
+          "time": "18:37",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 1.5013,
+          "score": 1.5013,
+          "ref": "2026-07-21 open",
+          "evidence": "这两个积极信号表明，科技短期有止跌反弹的需求，从而带动大盘止跌反弹。"
+        },
+        {
+          "date": "2026-07-21",
+          "time": "12:36",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2026-07-21 close",
+          "evidence": "只要cpo、存储科技止跌，大盘有70%的概率就会止跌反弹。"
+        }
+      ],
+      "total_score": 1.5,
+      "signal_count": 2,
+      "avg_score_pct": 75.06
+    }
+  }
+}

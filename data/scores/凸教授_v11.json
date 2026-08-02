@@ -1,0 +1,661 @@
+{
+  "blogger": "凸教授",
+  "scoring_version": "v11 (time_horizon-windowed single formula)",
+  "signals_total": 973,
+  "signals_scored": 335,
+  "score_zero": 497,
+  "no_price": 0,
+  "no_segment": 141,
+  "scores": {
+    "综合": {
+      "total": 151.71,
+      "count": 335,
+      "avg_pct": 0.45,
+      "win_rate": 63.28
+    },
+    "上升段": {
+      "total": 215.15,
+      "count": 262,
+      "avg_pct": 0.82,
+      "win_rate": 70.61
+    },
+    "下降段": {
+      "total": -63.44,
+      "count": 73,
+      "avg_pct": -0.87,
+      "win_rate": 36.99
+    },
+    "抄底": {
+      "total": 40.27,
+      "count": 16,
+      "avg_pct": 2.52,
+      "win_rate": 100.0
+    },
+    "逃顶": {
+      "total": 0.0,
+      "count": 0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "看多": {
+      "total": 150.27,
+      "count": 330,
+      "avg_pct": 0.46,
+      "win_rate": 63.33
+    },
+    "看空": {
+      "total": 1.43,
+      "count": 5,
+      "avg_pct": 0.29,
+      "win_rate": 60.0
+    }
+  },
+  "time_horizon_scores": {
+    "short": {
+      "count": 252,
+      "total": 75.85,
+      "avg_pct": 0.3,
+      "win_rate": 63.89
+    },
+    "weekly": {
+      "count": 83,
+      "total": 75.86,
+      "avg_pct": 0.91,
+      "win_rate": 61.45
+    },
+    "biweekly": {
+      "count": 0,
+      "total": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "monthly": {
+      "count": 0,
+      "total": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "intraday": {
+      "count": 235,
+      "total": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "long": {
+      "count": 42,
+      "total": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "unspecified": {
+      "count": 220,
+      "total": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    }
+  },
+  "segments": {
+    "I1->I2": {
+      "direction": "rising",
+      "start_label": "I1",
+      "end_label": "I2",
+      "total": 49,
+      "bull": 49,
+      "bear": 0,
+      "score": 14.75
+    },
+    "I10->I11": {
+      "direction": "falling",
+      "start_label": "I10",
+      "end_label": "I11",
+      "total": 23,
+      "bull": 23,
+      "bear": 0,
+      "score": -1.21
+    },
+    "I11->I12": {
+      "direction": "rising",
+      "start_label": "I11",
+      "end_label": "I12",
+      "total": 26,
+      "bull": 25,
+      "bear": 1,
+      "score": -0.37
+    },
+    "I12->M5": {
+      "direction": "falling",
+      "start_label": "I12",
+      "end_label": "M5",
+      "total": 30,
+      "bull": 30,
+      "bear": 0,
+      "score": -5.13
+    },
+    "I13->I14": {
+      "direction": "rising",
+      "start_label": "I13",
+      "end_label": "I14",
+      "total": 1,
+      "bull": 1,
+      "bear": 0,
+      "score": 0.0
+    },
+    "I2->I3": {
+      "direction": "falling",
+      "start_label": "I2",
+      "end_label": "I3",
+      "total": 32,
+      "bull": 32,
+      "bear": 0,
+      "score": -21.3
+    },
+    "I3->I4": {
+      "direction": "rising",
+      "start_label": "I3",
+      "end_label": "I4",
+      "total": 21,
+      "bull": 21,
+      "bear": 0,
+      "score": 14.25
+    },
+    "I4->I5": {
+      "direction": "falling",
+      "start_label": "I4",
+      "end_label": "I5",
+      "total": 44,
+      "bull": 44,
+      "bear": 0,
+      "score": -14.15
+    },
+    "I5->I6": {
+      "direction": "rising",
+      "start_label": "I5",
+      "end_label": "I6",
+      "total": 82,
+      "bull": 82,
+      "bear": 0,
+      "score": 12.08
+    },
+    "I6->M3": {
+      "direction": "falling",
+      "start_label": "I6",
+      "end_label": "M3",
+      "total": 28,
+      "bull": 28,
+      "bear": 0,
+      "score": -9.73
+    },
+    "I9->I10": {
+      "direction": "rising",
+      "start_label": "I9",
+      "end_label": "I10",
+      "total": 26,
+      "bull": 26,
+      "bear": 0,
+      "score": 1.11
+    },
+    "M2->I1": {
+      "direction": "falling",
+      "start_label": "M2",
+      "end_label": "I1",
+      "total": 24,
+      "bull": 24,
+      "bear": 0,
+      "score": -16.63
+    },
+    "M3->M4": {
+      "direction": "rising",
+      "start_label": "M3",
+      "end_label": "M4",
+      "total": 349,
+      "bull": 340,
+      "bear": 9,
+      "score": 157.31
+    },
+    "M4->I9": {
+      "direction": "falling",
+      "start_label": "M4",
+      "end_label": "I9",
+      "total": 25,
+      "bull": 25,
+      "bear": 0,
+      "score": 4.59
+    },
+    "M5->M6": {
+      "direction": "rising",
+      "start_label": "M5",
+      "end_label": "M6",
+      "total": 67,
+      "bull": 67,
+      "bear": 0,
+      "score": 16.03
+    },
+    "M6->I13": {
+      "direction": "falling",
+      "start_label": "M6",
+      "end_label": "I13",
+      "total": 5,
+      "bull": 5,
+      "bear": 0,
+      "score": 0.13
+    }
+  },
+  "inflection_details": {
+    "I1": {
+      "signals": [
+        {
+          "date": "2024-10-17",
+          "time": "11:29",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2024-10-17 close",
+          "evidence": "已经差不多了，快要压不住了，各位，耐心持股，好事将至！"
+        },
+        {
+          "date": "2024-10-17",
+          "time": "15:04",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 3.344,
+          "score": 3.344,
+          "ref": "2024-10-18 open",
+          "evidence": "如果是按照这种规律的话，明日周五，大盘又该震荡收阳了，而且阳线还不会小"
+        },
+        {
+          "date": "2024-10-18",
+          "time": "11:32",
+          "direction": "bullish",
+          "strength": "strong",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2024-10-18 close",
+          "evidence": "截止到下周五收盘前，主力要给所有的人解套，现在不管多少人骂我，也无法改变我的观点！"
+        },
+        {
+          "date": "2024-10-18",
+          "time": "15:10",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.8153,
+          "score": 0.8153,
+          "ref": "2024-10-21 open",
+          "evidence": "从今天开始直到下周五结束，大盘会一路震荡上涨，中间阴阳交替出现，趋势保持向上，直到大盘再次回到3600点左右。"
+        }
+      ],
+      "total_score": 4.16,
+      "signal_count": 4,
+      "avg_score_pct": 103.98
+    },
+    "I11": {
+      "signals": [
+        {
+          "date": "2026-02-02",
+          "time": "15:01",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2026-02-03 open",
+          "evidence": "暴力杀跌，必然会有暴力反弹，凸教授继续满仓券商➕科技，继续坚定做多！"
+        },
+        {
+          "date": "2026-02-02",
+          "time": "20:24",
+          "direction": "bullish",
+          "strength": "strong",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2026-02-03 open",
+          "evidence": "不管别人怎么做，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！"
+        },
+        {
+          "date": "2026-02-03",
+          "time": "14:58",
+          "direction": "bullish",
+          "strength": "strong",
+          "return": 0.3494,
+          "score": 0.6989,
+          "ref": "2026-02-03 close",
+          "evidence": "凸教授昨天明确指出，暴力杀跌，必然会有暴力反弹，今天明显反弹的还不够，那么明天就继续反攻，凸教授继续满仓持股，坚定做多！"
+        },
+        {
+          "date": "2026-02-03",
+          "time": "20:27",
+          "direction": "bullish",
+          "strength": "strong",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2026-02-04 open",
+          "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！"
+        },
+        {
+          "date": "2026-02-04",
+          "time": "20:28",
+          "direction": "bullish",
+          "strength": "strong",
+          "return": 0.3232,
+          "score": 0.6465,
+          "ref": "2026-02-05 open",
+          "evidence": "明日大盘将会在券商板块的带动下，继续反攻！"
+        }
+      ],
+      "total_score": 1.35,
+      "signal_count": 5,
+      "avg_score_pct": 26.91
+    },
+    "I13": {
+      "signals": [
+        {
+          "date": "2026-06-08",
+          "time": "11:28",
+          "direction": "bullish",
+          "strength": "strong",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2026-06-08 close",
+          "evidence": "凸教授坚定做多，左手券商，右手科技，继续满仓持股，经过今天的下跌之后，全球大的拐点即将来临，A股将王者归来！"
+        }
+      ],
+      "total_score": 0.0,
+      "signal_count": 1,
+      "avg_score_pct": 0.0
+    },
+    "I3": {
+      "signals": [
+        {
+          "date": "2024-11-26",
+          "time": "11:29",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2024-11-26 close",
+          "evidence": "各位，上午大盘缩量震荡，走势良好，目前已经万事俱备，只欠东风了！都给我牢牢的拿住筹码，看我，借 东 风！"
+        },
+        {
+          "date": "2024-11-26",
+          "time": "15:34",
+          "direction": "bullish",
+          "strength": "strong",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2024-11-27 open",
+          "evidence": "你要问我是变盘向上还是向下的话，我这里，答案只有一个，那就是变盘向上！"
+        },
+        {
+          "date": "2024-11-26",
+          "time": "21:21",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 1.8475,
+          "score": 1.8475,
+          "ref": "2024-11-27 open",
+          "evidence": "明日大盘只有两种走势：一是继续震荡，浪费时间（类似于10月30日）；二是结束震荡，直接上攻（类似于11月4日）。"
+        },
+        {
+          "date": "2024-11-27",
+          "time": "11:35",
+          "direction": "bullish",
+          "strength": "strong",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2024-11-27 close",
+          "evidence": "空头，大势已去！各位，不要心慌，一切都在计划之中，都给我拿着筹码，安心等待主攻！"
+        },
+        {
+          "date": "2024-11-27",
+          "time": "15:11",
+          "direction": "bullish",
+          "strength": "strong",
+          "return": 0.6176,
+          "score": 1.2352,
+          "ref": "2024-11-28 open",
+          "evidence": "从明天开始，大盘也将正式开启加速上涨周期！而大盘这里一旦加速上涨，就是剑指3600点！"
+        },
+        {
+          "date": "2024-11-27",
+          "time": "21:33",
+          "direction": "bullish",
+          "strength": "strong",
+          "return": 0.6176,
+          "score": 1.2352,
+          "ref": "2024-11-28 open",
+          "evidence": "排除消息面影响，明日大盘继续上攻，复制11月5日大盘走势，再次拉出一根中大阳线， 两市个股百花齐放，轮番上涨，赚钱效应爆"
+        },
+        {
+          "date": "2024-11-28",
+          "time": "15:17",
+          "direction": "bullish",
+          "strength": "strong",
+          "return": 1.8574,
+          "score": 3.7148,
+          "ref": "2024-11-29 open",
+          "evidence": "明日周五，本周最后一个交易日，也是本月最后一个交易日，大盘收红，没有悬念！一旦明日大盘收红，上证指数12月开门红，没有悬"
+        },
+        {
+          "date": "2024-11-28",
+          "time": "21:33",
+          "direction": "bullish",
+          "strength": "strong",
+          "return": 1.8574,
+          "score": 3.7148,
+          "ref": "2024-11-29 open",
+          "evidence": "大盘这里已经没有下跌的空间，后面只有华山一条路，涨，任何盲目看空的行为，都将遭到无情的打脸！明日周五，本周最后一个交易日"
+        }
+      ],
+      "total_score": 11.75,
+      "signal_count": 8,
+      "avg_score_pct": 146.84
+    },
+    "I5": {
+      "signals": [
+        {
+          "date": "2025-01-12",
+          "time": "21:07",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2025-01-13 open(non-trading)",
+          "evidence": "放心吧，后面一定会有反弹，我觉得市场已经跌的很极限了，接下来，反弹随时都会到来！"
+        },
+        {
+          "date": "2025-01-13",
+          "time": "21:16",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 2.1969,
+          "score": 2.1969,
+          "ref": "2025-01-14 open",
+          "evidence": "排除消息免影响，明日大盘即有可能迎来全面反攻，拉出一根中阳线，我们期待的超跌反弹行情，也将会逐步拉开帷幕。"
+        },
+        {
+          "date": "2025-01-14",
+          "time": "15:07",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2025-01-15 open",
+          "evidence": "所以，既然节前主力愿意拉起来给大家解套，那么你也不要考虑大盘后面是否会继续下跌的问题了，只要是给你拉起来了，你就可以逢高"
+        },
+        {
+          "date": "2025-01-14",
+          "time": "21:30",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0085,
+          "score": 0.0085,
+          "ref": "2025-01-15 open",
+          "evidence": "既然今日市场量价关系非常健康，市场分歧不大，那么明日大盘会继续震荡上攻，节前行情，今天只是刚刚开始，大家不用心急。"
+        }
+      ],
+      "total_score": 2.21,
+      "signal_count": 4,
+      "avg_score_pct": 55.13
+    },
+    "I9": {
+      "signals": [
+        {
+          "date": "2025-12-15",
+          "time": "20:27",
+          "direction": "bullish",
+          "strength": "strong",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2025-12-16 open",
+          "evidence": "凸教授极为坚定，不然的话，我也不可能从3000点，一路满仓持股至今。虽然每一次回调和震荡都非常难熬，但凸教授依然会坚持下"
+        },
+        {
+          "date": "2025-12-16",
+          "time": "20:27",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2025-12-17 open",
+          "evidence": "但是不管怎样，只要大趋势没有走坏，只要大方向没有改变，凸教授就会一直坚持下去，哪怕再次承受更多的震荡与折磨。"
+        },
+        {
+          "date": "2025-12-17",
+          "time": "20:25",
+          "direction": "bullish",
+          "strength": "strong",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2025-12-18 open",
+          "evidence": "么说，不管别人怎么做，此时此刻，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不"
+        }
+      ],
+      "total_score": 0.0,
+      "signal_count": 3,
+      "avg_score_pct": 0.0
+    },
+    "M3": {
+      "signals": [
+        {
+          "date": "2025-04-06",
+          "time": "21:10",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2025-04-07 open(non-trading)",
+          "evidence": "如果，我是说如果，3300点受不住，凸教授将砸锅卖铁，筹集资金，加仓买入，为国护盘！"
+        },
+        {
+          "date": "2025-04-07",
+          "time": "11:33",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2025-04-07 close",
+          "evidence": "下午大盘会继续震荡，不排除向上拉升的可能，最恐慌时刻已经过去。"
+        },
+        {
+          "date": "2025-04-07",
+          "time": "15:07",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 2.9432,
+          "score": 2.9432,
+          "ref": "2025-04-08 open",
+          "evidence": "暴跌之后必有急反，各位，千万不要在最低点割肉，明日大盘将企稳反攻，最困难时刻，信心远比黄金更重要！"
+        },
+        {
+          "date": "2025-04-07",
+          "time": "21:07",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 2.9432,
+          "score": 2.9432,
+          "ref": "2025-04-08 open",
+          "evidence": "排除消息面影响，明日周二，大盘止跌企稳，反身向上，最困难时刻，信心远比黄金更重要，此时此刻，不割肉，才是对自己最大的负责"
+        },
+        {
+          "date": "2025-04-08",
+          "time": "11:30",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 1.2648,
+          "score": 1.2648,
+          "ref": "2025-04-08 close",
+          "evidence": "一旦今日大盘能够企稳，那么明天必有一根大阳线！"
+        },
+        {
+          "date": "2025-04-08",
+          "time": "15:03",
+          "direction": "bullish",
+          "strength": "strong",
+          "return": 3.4153,
+          "score": 6.8305,
+          "ref": "2025-04-09 open",
+          "evidence": "排除消息面影响，明日周三，大盘将拉出一根大阳线，明天甚至会出现千股涨停的情况，注意，我这里说的不是百股涨停，而是千股涨停"
+        },
+        {
+          "date": "2025-04-08",
+          "time": "21:05",
+          "direction": "bullish",
+          "strength": "strong",
+          "return": 3.4153,
+          "score": 6.8305,
+          "ref": "2025-04-09 open",
+          "evidence": "排除消息面影响，明日大盘绝地反击，上证指数将在券商板块的带动，拉出一根大阳线，两市个股百花齐放，明天有望出现千股涨停的壮"
+        }
+      ],
+      "total_score": 20.81,
+      "signal_count": 7,
+      "avg_score_pct": 297.32
+    },
+    "M5": {
+      "signals": [
+        {
+          "date": "2026-03-22",
+          "time": "20:19",
+          "direction": "bullish",
+          "strength": "strong",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2026-03-23 open(non-trading)",
+          "evidence": "不管别人怎么说，不管别人怎么做，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不"
+        },
+        {
+          "date": "2026-03-23",
+          "time": "20:23",
+          "direction": "bullish",
+          "strength": "strong",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2026-03-24 open",
+          "evidence": "不管别人怎么说，不管别人怎么做，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不"
+        },
+        {
+          "date": "2026-03-24",
+          "time": "11:28",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2026-03-24 close",
+          "evidence": "只要基础逻辑没有改变，只要国家还需要牛市来刺激经济，我就一定会坚守下去，直到满意为止！"
+        },
+        {
+          "date": "2026-03-24",
+          "time": "20:29",
+          "direction": "bullish",
+          "strength": "strong",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2026-03-25 open",
+          "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！"
+        }
+      ],
+      "total_score": 0.0,
+      "signal_count": 4,
+      "avg_score_pct": 0.0
+    }
+  }
+}

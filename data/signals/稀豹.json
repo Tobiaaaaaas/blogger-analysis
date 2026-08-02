@@ -15,20 +15,24 @@
   "scored_bullish": {
     "strong": 105,
     "moderate": 236,
-    "long": 33,
-    "medium": 94,
-    "short": 128,
-    "intraday": 84,
-    "unspecified": 2
+    "intraday": 149,
+    "short": 166,
+    "weekly": 79,
+    "biweekly": 1,
+    "monthly": 8,
+    "long": 51,
+    "unspecified": 44
   },
   "scored_bearish": {
     "strong": 25,
     "moderate": 132,
-    "long": 2,
-    "medium": 30,
-    "short": 84,
-    "intraday": 39,
-    "unspecified": 2
+    "intraday": 149,
+    "short": 166,
+    "weekly": 79,
+    "biweekly": 1,
+    "monthly": 8,
+    "long": 51,
+    "unspecified": 44
   },
   "signals": [
     {
@@ -51,7 +55,7 @@
       "post_n": 0,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "long",
       "evidence": "当前仍无出现牛市的条件！",
       "publish_time": "2024-11-10 13:03"
     },
@@ -59,7 +63,7 @@
       "post_n": 14,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "long",
       "evidence": "没有牛市！何时有？后面会讲。",
       "publish_time": "2024-11-24 18:56"
     },
@@ -75,7 +79,7 @@
       "post_n": 9,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "short",
       "evidence": "五浪杀跌即将开启！",
       "publish_time": "2025-05-23 11:58"
     },
@@ -91,7 +95,7 @@
       "post_n": 7,
       "direction": "bearish",
       "strength": "strong",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "下周A股剧本已经出来了！五浪杀跌开启，第一站3316，第二站3200！",
       "publish_time": "2025-05-25 13:21"
     },
@@ -99,7 +103,7 @@
       "post_n": 6,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "unspecified",
       "evidence": "五浪杀跌已经开启！观点不变！",
       "publish_time": "2025-05-26 11:46"
     },
@@ -107,7 +111,7 @@
       "post_n": 5,
       "direction": "bearish",
       "strength": "strong",
-      "time_horizon": "medium",
+      "time_horizon": "long",
       "evidence": "不要幻想，五浪杀跌已经开启！这是我停更两年，于上周五上午，A股下跌前，明确提出的第一个观点，3316必破！破完剑指3200！",
       "publish_time": "2025-05-26 15:14"
     },
@@ -115,7 +119,7 @@
       "post_n": 4,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "unspecified",
       "evidence": "不仅五周均线会破，3316也是必破，无非就是时间问题。",
       "publish_time": "2025-05-27 11:36"
     },
@@ -131,7 +135,7 @@
       "post_n": 2,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "60日线撑不住，行情大概率会向下变盘！",
       "publish_time": "2025-05-28 11:43"
     },
@@ -139,7 +143,7 @@
       "post_n": 1,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "unspecified",
       "evidence": "主力不为上攻，为得就是要砸出一个钻石坑！",
       "publish_time": "2025-05-28 15:14"
     },
@@ -147,7 +151,7 @@
       "post_n": 0,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "小心，真要跌了，不开玩笑！",
       "publish_time": "2025-05-29 01:15"
     },
@@ -155,7 +159,7 @@
       "post_n": 14,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "不用等明天，因为上午笑嘻嘻，下午可能就要哭哈哈了！",
       "publish_time": "2025-05-29 11:30"
     },
@@ -163,7 +167,7 @@
       "post_n": 13,
       "direction": "bearish",
       "strength": "strong",
-      "time_horizon": "medium",
+      "time_horizon": "intraday",
       "evidence": "别把今日上涨当反转，3316必破不变！",
       "publish_time": "2025-05-29 15:03"
     },
@@ -179,7 +183,7 @@
       "post_n": 11,
       "direction": "bearish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "weekly",
       "evidence": "下周行情大概率会有崩跌！直接让本周末被诱多行情勾进场的资金，全部被迫站岗！",
       "publish_time": "2025-05-30 15:40"
     },
@@ -195,7 +199,7 @@
       "post_n": 7,
       "direction": "bearish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "weekly",
       "evidence": "明天股市就开盘了！本周行情或有崩跌！",
       "publish_time": "2025-06-02 14:16"
     },
@@ -203,7 +207,7 @@
       "post_n": 6,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "monthly",
       "evidence": "记住，日内久盘必跌！散户稍有不慎，就会掉入主力编织的认知陷阱之中。所以，这里依然提醒大家，要小心！要谨慎！这里依然是短中期相对高位，宁错过，不做错！",
       "publish_time": "2025-06-03 11:37"
     },
@@ -219,7 +223,7 @@
       "post_n": 3,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "unspecified",
       "evidence": "行情反转了吗？早着呢！仍在箱体内运行！",
       "publish_time": "2025-06-04 11:31"
     },
@@ -227,7 +231,7 @@
       "post_n": 2,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "unspecified",
       "evidence": "而我对这波行情的核心方向判断，是在5月23日上午，提醒大家要小心，后续行情或有五浪杀跌！",
       "publish_time": "2025-06-04 15:07"
     },
@@ -235,7 +239,7 @@
       "post_n": 1,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "long",
       "evidence": "到走出牛市的条件，如此当然要宁踏空，不做错！以空仓或底仓看戏，耐心等待主力的绝杀，出现深坑后再奋力杀入，甚至满仓或满杠杆进攻，准确率才更高！",
       "publish_time": "2025-06-05 11:33"
     },
@@ -243,7 +247,7 @@
       "post_n": 0,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "A股三连阳！行情要大涨？不会！一文让你看懂现在为何还要等待！",
       "publish_time": "2025-06-05 15:32"
     },
@@ -251,7 +255,7 @@
       "post_n": 14,
       "direction": "bearish",
       "strength": "strong",
-      "time_horizon": "medium",
+      "time_horizon": "unspecified",
       "evidence": "3316必破！",
       "publish_time": "2025-06-06 11:32"
     },
@@ -259,7 +263,7 @@
       "post_n": 13,
       "direction": "bearish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "weekly",
       "evidence": "收盘！立帖为证！下周将向3316点方向调整！给股民4点提醒！",
       "publish_time": "2025-06-06 15:31"
     },
@@ -275,7 +279,7 @@
       "post_n": 11,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "这种量价背离的情况是比较危险的，因为两市除上证指数微涨0.04%外，其余指数全跌。关键是2105家下跌家数，虽略高于2013家上涨家数，但总体涨跌数是相对均衡的。这预示着周五显然有不少散户跟风入市，主力却隐忍不发！",
       "publish_time": "2025-06-08 12:45"
     },
@@ -299,7 +303,7 @@
       "post_n": 8,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "unspecified",
+      "time_horizon": "long",
       "evidence": "这行情没法做，谁爱做谁做，我空仓到底！因为我的系统提示我，现在远远没有达到全面牛市条件，各类资金都无法提前形成做多合力。",
       "publish_time": "2025-06-10 11:30"
     },
@@ -307,7 +311,7 @@
       "post_n": 7,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "从中期趋势来看，这波行情与3月中旬的冲顶回落很像，且在周线上还形成了阳线右肩十字星！后市行情看跌！",
       "publish_time": "2025-06-10 15:29"
     },
@@ -323,7 +327,7 @@
       "post_n": 5,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "monthly",
       "evidence": "一旦冲顶失败，比如明天没能接续今天的强势，未能破掉3417。那么，不论后续主力护盘表现多明显，下一根月线，大概率就是一个吃人的月阴线了！",
       "publish_time": "2025-06-11 15:18"
     },
@@ -331,7 +335,7 @@
       "post_n": 4,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "intraday",
       "evidence": "今天我将拿起铁盖子，再次将其死死按住（严肃脸）！若不信，等收盘过来验证（鼻孔一张），且看今天到底是红还是绿（嘴角一拎）！",
       "publish_time": "2025-06-12 11:29"
     },
@@ -355,7 +359,7 @@
       "post_n": 1,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "intraday",
       "evidence": "今天或有中阴线！甚至昨晚还提示，别等黑天鹅在头顶盘旋时，你还在市场里裸奔！",
       "publish_time": "2025-06-13 11:32"
     },
@@ -363,7 +367,7 @@
       "post_n": 0,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "weekly",
       "evidence": "行情还是没有跌充分，下周接着跌！等行情跌透后，我必空翻多！",
       "publish_time": "2025-06-13 15:07"
     },
@@ -379,7 +383,7 @@
       "post_n": 10,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "unspecified",
       "evidence": "当前情况很清晰！行情在 6月底之前只要没跌透，市场又没出大利好，在思路上就要偏防守！",
       "publish_time": "2025-06-17 11:34"
     },
@@ -395,7 +399,7 @@
       "post_n": 8,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "我说了，继续看空今天！重点是有无放量下跌！",
       "publish_time": "2025-06-18 11:31"
     },
@@ -427,7 +431,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "intraday",
       "evidence": "今天又没跌破3332，行情仍在多空分水岭的上方，下周是有见底反弹概率的！",
       "publish_time": "2025-06-20 15:58"
     },
@@ -435,7 +439,7 @@
       "post_n": 0,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "weekly",
       "evidence": "下周上半周多半持续缩量，相对高位中若有缩量反弹，诱多占大概率！",
       "publish_time": "2025-06-22 13:08"
     },
@@ -459,7 +463,7 @@
       "post_n": 12,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "后续如不能持续补量，或没再出利好，A股就会急着让我上车。让我上车，很简单，一句话，3332见！",
       "publish_time": "2025-06-24 11:30"
     },
@@ -467,7 +471,7 @@
       "post_n": 11,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "这种消息推动的冲顶，只是皮球行情！弹得越高，砸得越重！",
       "publish_time": "2025-06-24 15:05"
     },
@@ -475,7 +479,7 @@
       "post_n": 10,
       "direction": "bearish",
       "strength": "strong",
-      "time_horizon": "medium",
+      "time_horizon": "monthly",
       "evidence": "这次也一样，中期趋势必跌！我偏要说这么绝对，因为市场从不为侥幸者改写剧本",
       "publish_time": "2025-06-25 11:31"
     },
@@ -483,7 +487,7 @@
       "post_n": 9,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "long",
+      "time_horizon": "unspecified",
       "evidence": "真正的牛头行情，是先跌后涨，在存量市场中，只会...",
       "publish_time": "2025-06-25 15:10"
     },
@@ -507,7 +511,7 @@
       "post_n": 6,
       "direction": "bearish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "weekly",
       "evidence": "中期趋势大顶快要出现了！时间节点就在未来4个行情日内，也就是7月3日收盘前出现！",
       "publish_time": "2025-06-27 11:33"
     },
@@ -515,7 +519,7 @@
       "post_n": 5,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "monthly",
       "evidence": "但这里我要明确告诉大家，接下来的行情，或将步入最后的冲高！虽然可能有短线机会，但中期大顶却即将显现！",
       "publish_time": "2025-06-27 15:21"
     },
@@ -523,7 +527,7 @@
       "post_n": 2,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "weekly",
       "evidence": "但要注意，对短线却有利空！因为分红有除权除息操作，净资产也相应减少，且半年报还会在下周启动，会强化期间的抛压力度。",
       "publish_time": "2025-06-29 14:09"
     },
@@ -563,7 +567,7 @@
       "post_n": 12,
       "direction": "bearish",
       "strength": "strong",
-      "time_horizon": "medium",
+      "time_horizon": "short",
       "evidence": "明天股市行情确定性预判！看空！冲高回落，收绿盘十字星！同时开启中期调整！",
       "publish_time": "2025-07-01 20:14"
     },
@@ -595,7 +599,7 @@
       "post_n": 7,
       "direction": "bearish",
       "strength": "strong",
-      "time_horizon": "medium",
+      "time_horizon": "short",
       "evidence": "今日高点3463.62就是中期大顶！明天将开启中期调整，第一目标3332！",
       "publish_time": "2025-07-03 15:08"
     },
@@ -603,7 +607,7 @@
       "post_n": 6,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "intraday",
       "evidence": "所以即便我看中阴线，结果哪怕今天涨出大阳线，我也理应得到一些尊重",
       "publish_time": "2025-07-03 22:46"
     },
@@ -619,7 +623,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "weekly",
       "evidence": "下周一收盘前若不破5日线，有望冲击3540！",
       "publish_time": "2025-07-10 15:23"
     },
@@ -627,7 +631,7 @@
       "post_n": 2,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "long",
       "evidence": "我在指数仓位上都会空仓到底！这直接表明了我仍然保持看空观点，但这种看空是暂时的，长期趋势我坚定看涨！",
       "publish_time": "2025-07-10 23:30"
     },
@@ -643,7 +647,7 @@
       "post_n": 0,
       "direction": "bearish",
       "strength": "strong",
-      "time_horizon": "medium",
+      "time_horizon": "monthly",
       "evidence": "我坚定看空！并预判7月会收月阴线！",
       "publish_time": "2025-07-11 15:04"
     },
@@ -651,7 +655,7 @@
       "post_n": 13,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "monthly",
       "evidence": "但我却明确预判，七月会收出一根，有仙人指路寓意的，带长上影线的月阴线！",
       "publish_time": "2025-07-13 14:38"
     },
@@ -659,7 +663,7 @@
       "post_n": 11,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "unspecified",
       "evidence": "但就这一波行情，我一定要看主力到底能忍到什么时候。",
       "publish_time": "2025-07-14 15:07"
     },
@@ -683,7 +687,7 @@
       "post_n": 6,
       "direction": "bearish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "unspecified",
       "evidence": "3555.22就是顶！估计没人敢有这个判断，毕竟A股强势逼空的表现太过强劲，让人不敢轻言见顶！我敢！",
       "publish_time": "2025-07-16 11:30"
     },
@@ -707,7 +711,7 @@
       "post_n": 3,
       "direction": "bearish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "A股3555.22就是顶！只是主力很会玩，让市场再现反弹幻觉！但即便再冲顶也会跌下来！",
       "publish_time": "2025-07-17 15:30"
     },
@@ -731,7 +735,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "下周目标就是要站稳3700！",
       "publish_time": "2025-08-15 15:14"
     },
@@ -739,7 +743,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "下周将会站上3700，冲击十年高点3731！",
       "publish_time": "2025-08-17 13:38"
     },
@@ -747,7 +751,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "unspecified",
       "evidence": "上涨空间被进一步扩张到3880！",
       "publish_time": "2025-08-18 11:42"
     },
@@ -811,7 +815,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "下周怎么走？加速上攻！剑指3880！",
       "publish_time": "2025-08-22 15:12"
     },
@@ -819,7 +823,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "weekly",
       "evidence": "下周一旦跳空高开，不宜追涨！守住仓位享受收益即可。",
       "publish_time": "2025-08-23 03:52"
     },
@@ -827,7 +831,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "下周看涨！冲破3880！但两市依然会分化，且行情大概率会冲高回落，最终收小周阳线！",
       "publish_time": "2025-08-24 13:32"
     },
@@ -907,7 +911,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "下周就会突破3900！",
       "publish_time": "2025-08-29 15:25"
     },
@@ -915,7 +919,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "且在下周会突破3900！",
       "publish_time": "2025-08-29 20:10"
     },
@@ -923,7 +927,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "下周行情走势还是涨！",
       "publish_time": "2025-08-30 21:42"
     },
@@ -931,7 +935,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "下周A股方向会反转下跌吗？不会，明确看涨！收第五根周阳线！并在突破3900时，释放强势信号",
       "publish_time": "2025-08-31 14:09"
     },
@@ -939,7 +943,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "本周突破3900的概率极大，突破时间就在上半周。",
       "publish_time": "2025-09-01 11:30"
     },
@@ -971,7 +975,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "biweekly",
       "evidence": "下午会走V翻红！但出大阳线的概率已不高，且要提醒的是，3900是个必须征服的点位，征服是必然结果，可现在其过程已坠入时间维度。...后市大概率也需半个月的时间，为突破3900在休息中蓄力。",
       "publish_time": "2025-09-03 11:30"
     },
@@ -1003,7 +1007,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "long",
       "evidence": "诸将听令！A股信号已明！...左握证券，右提光伏，接回半导体，统以六成仓，随我冲锋擒牛，奔赴3900！起兵！冲啊！",
       "publish_time": "2025-09-05 09:38"
     },
@@ -1011,7 +1015,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "intraday",
       "evidence": "昨天我说了，今天会探底回升，收止跌阳线！上午正是先抑后扬收红盘的走势，而昨天提到的底，就是昨日低点附近，与今天上午低点3745.31已经很近了。因此实已完成探底，表明短线已跌不下去，下午自然会收止跌阳线！站上20日线后，再往上挺一挺！",
       "publish_time": "2025-09-05 11:31"
     },
@@ -1019,7 +1023,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "因此今早9点38分，我策马而出，势若猛豹，以六成重仓，看向3900...也是我看下周奔赴3900的原因。",
       "publish_time": "2025-09-05 15:10"
     },
@@ -1067,7 +1071,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "long",
       "evidence": "A股也会顺势突破3900！",
       "publish_time": "2025-09-10 11:30"
     },
@@ -1107,7 +1111,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "weekly",
       "evidence": "下周A股必破3900！",
       "publish_time": "2025-09-12 15:34"
     },
@@ -1115,7 +1119,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "下周行情将会直接步入主升浪前夕！",
       "publish_time": "2025-09-14 14:08"
     },
@@ -1195,7 +1199,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "long",
       "evidence": "大概率会在10月中旬前后突破3900。",
       "publish_time": "2025-09-19 23:38"
     },
@@ -1203,7 +1207,7 @@
       "post_n": 3,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "下周方向会震荡偏空！收周阴线！",
       "publish_time": "2025-09-21 14:08"
     },
@@ -1283,7 +1287,7 @@
       "post_n": 7,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "weekly",
       "evidence": "明确观点，下周还有一跌，但却会迎来逢低机会！",
       "publish_time": "2025-09-26 15:12"
     },
@@ -1291,7 +1295,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "short",
       "evidence": "节后或有大行情！但这必须要有一个前提，而这前提恰恰就在下周登场！",
       "publish_time": "2025-09-28 14:08"
     },
@@ -1299,7 +1303,7 @@
       "post_n": 3,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "intraday",
       "evidence": "今天下午会收小阴线！这个观点是比较大胆的，原因不止是上午大盘的翻红，以及此刻两市的全面普涨。",
       "publish_time": "2025-09-29 11:30"
     },
@@ -1307,7 +1311,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "medium",
+      "time_horizon": "long",
       "evidence": "诸君！备战3900，剑指4000！出发！",
       "publish_time": "2025-10-08 14:08"
     },
@@ -1323,7 +1327,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "intraday",
       "evidence": "看涨今天，但A股会从今日起，先涨后跌，必破3900，但随后会小幅回落收小阳线！...下午大概率会如我在昨天所言，出现小幅回落，但最终在3900上方以中阳线收盘。",
       "publish_time": "2025-10-09 11:36"
     },
@@ -1339,7 +1343,7 @@
       "post_n": 12,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "intraday",
       "evidence": "下午没有反转！收绿盘！昨天我就说了，明确看空今天！...就等着短线把送财童子收割完，而咱们也抱着底仓，耐心等待捡拾更便宜的筹码，再陪A股奔赴4000点则可。",
       "publish_time": "2025-10-10 11:32"
     },
@@ -1347,7 +1351,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "我预判下周会止跌上涨！...后市当然是冲击4000点的主力军。...A股终将在时间的推动下，掀掉牌桌！让坚守者通吃全场！",
       "publish_time": "2025-10-10 15:27"
     },
@@ -1355,7 +1359,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "下周行情会缩量止跌，震荡反转上涨。...下周止跌上涨，大概率会变成止跌反弹，核心方向就是止跌！",
       "publish_time": "2025-10-11 13:50"
     },
@@ -1363,7 +1367,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "下周会止跌反弹！收周阴线！...长期趋势上攻空间已被撕裂的3900打开，只是触发短线调整的同时又遇宏观利空，加深了短线调整的空间和时间而已，大方向都是要涨的。",
       "publish_time": "2025-10-12 14:08"
     },
@@ -1371,7 +1375,7 @@
       "post_n": 7,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "intraday",
       "evidence": "下午会回落！保持假中阳线收盘！...大盘仍有二次回踩确认3800的需求，如果到时将其跌破再看3780，但若到时守住了3800，短线才更易出现反弹，甚至从反弹转为反转。",
       "publish_time": "2025-10-13 11:33"
     },
@@ -1387,7 +1391,7 @@
       "post_n": 5,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "intraday",
       "evidence": "今天下午会收绿盘！对此我在昨天大幅低开，又疯狂反抽的背景下，已明确看空今天收绿盘，看得就是昨日走势不是反弹，是反抽！",
       "publish_time": "2025-10-14 11:32"
     },
@@ -1403,7 +1407,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "intraday",
       "evidence": "下午会收红盘！大概率会保持红十字星！...上午虽震荡，但其实已经止跌了！",
       "publish_time": "2025-10-15 11:32"
     },
@@ -1419,7 +1423,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "intraday",
       "evidence": "今天明确看涨！中阳线！或创新高！...下午更有望拉动大盘收出中阳线。其中大盘的涨幅起码得接近0.6%才算，因此下午自然不排除创新高。",
       "publish_time": "2025-10-16 11:31"
     },
@@ -1427,7 +1431,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "long",
       "evidence": "明天有中阳线突袭！...该来的一定会来，今天没出的中阳线，会在明天出现！...A股的恐怖潜力会逐步爆发，有效切换到慢牛和长牛的长期上涨格局。以此将4000点踩在脚下，只是时间问题。",
       "publish_time": "2025-10-16 15:42"
     },
@@ -1443,7 +1447,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "下周看涨！或报复性上攻！",
       "publish_time": "2025-10-19 13:52"
     },
@@ -1499,7 +1503,7 @@
       "post_n": 1,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "intraday",
       "evidence": "下午会收小阴线！对此昨天收盘我就说了，没跌到位，今天接着跌！结果上午全面下跌！但别慌，短线跌完后还会涨回来！",
       "publish_time": "2025-10-23 11:30"
     },
@@ -1507,7 +1511,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "intraday",
       "evidence": "全天仍有震荡，但方向看涨，最终收红盘！盘中如有极端情况，我还会直接满仓！",
       "publish_time": "2025-10-23 15:04"
     },
@@ -1531,7 +1535,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "下周看涨！冲高回落，收小周阳线！",
       "publish_time": "2025-10-26 14:09"
     },
@@ -1611,7 +1615,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "weekly",
       "evidence": "好戏将在下周开场",
       "publish_time": "2025-10-31 15:38"
     },
@@ -1619,7 +1623,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "下周好戏要开场了！先明确观点，下周看涨！缩量上攻，再冲4000，收周中阳线！",
       "publish_time": "2025-11-02 14:08"
     },
@@ -1675,7 +1679,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "intraday",
       "evidence": "上午高开高走，重返4000，中阳线！而我昨天就给了六个字，没涨够，接着涨！",
       "publish_time": "2025-11-06 11:31"
     },
@@ -1699,7 +1703,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "intraday",
       "evidence": "中国股市今日下跌！但在众股皆跌下，却展现了硬气抗跌的逆势风骨！所以下周震荡上攻已是大概率！",
       "publish_time": "2025-11-07 15:16"
     },
@@ -1707,7 +1711,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "unspecified",
       "evidence": "因此明确观点，现在绝非保持谨慎之时，依然是低调者持股待涨，能者积极寻找更多先机的黄金时点！",
       "publish_time": "2025-11-09 14:13"
     },
@@ -1715,7 +1719,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "short",
       "evidence": "今日会收红盘！但问题不在这里，而在主力多半已完成高频换手！所以我放句话在这里，如果有人害怕今天，明天腿都能拍肿！",
       "publish_time": "2025-11-10 11:31"
     },
@@ -1755,7 +1759,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "一波酣畅淋漓的大涨就在眼前！不能放弃！现在已不是黎明前的黑暗，而是破晓在即的凌晨，星光已开始闪烁，坚守终会等来震撼人心的绽放！",
       "publish_time": "2025-11-12 15:25"
     },
@@ -1811,7 +1815,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "unspecified",
       "evidence": "千金难买牛回头！方向看涨不...止跌后横盘蓄力。二是暴力反弹！但无论哪一种走势，都是新一轮行情的起点！",
       "publish_time": "2025-11-21 11:33"
     },
@@ -1819,7 +1823,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "long",
       "evidence": "我说了，方向不改，得沉住气，拿稳底仓，耐心等待，这比什么都重要！因为行情一定会回来，熬过去，必是峰回路转的趋势馈赠！",
       "publish_time": "2025-11-22 13:55"
     },
@@ -1827,7 +1831,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "下周有大涨！周线阳包阴！月线七连阳！",
       "publish_time": "2025-11-23 14:08"
     },
@@ -1907,7 +1911,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "weekly",
       "evidence": "我已看见了下周的大涨！",
       "publish_time": "2025-11-28 15:02"
     },
@@ -1923,7 +1927,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "下周看涨！重返3900！站上60日线后回补缺口！",
       "publish_time": "2025-11-30 14:08"
     },
@@ -1987,7 +1991,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "下周会大涨！高开高走，收周大阳线！",
       "publish_time": "2025-12-07 14:08"
     },
@@ -2059,7 +2063,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "short",
       "evidence": "明确观点，跨年行情即将来临！",
       "publish_time": "2025-12-12 15:01"
     },
@@ -2067,7 +2071,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "下周会涨！重返3900，站上五周均线，收周小阳线！这是第一步，第二步是月底前再冲4000，挑战新高！",
       "publish_time": "2025-12-14 14:08"
     },
@@ -2091,7 +2095,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "本周会重返3900，站上五周均线，收周小阳线！",
       "publish_time": "2025-12-19 15:00"
     },
@@ -2099,7 +2103,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "下周看涨！还有一根周阳线，会站上十周均线，完成本轮行情的反转形态！过程未必丝滑，但方向我无比笃定！",
       "publish_time": "2025-12-21 14:08"
     },
@@ -2147,7 +2151,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "unspecified",
       "evidence": "周一站上3900，周二冲高回落巩固一天，周三下午直接再创新高，已让行情有了冲击4000的基础。",
       "publish_time": "2025-12-24 15:03"
     },
@@ -2155,7 +2159,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "intraday",
       "evidence": "下午最终会收小阳线！这是确定性预判！",
       "publish_time": "2025-12-25 11:30"
     },
@@ -2163,7 +2167,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "明天大概率就是连续站稳的第三天，而后下周三之前，有望直接回到4000点。",
       "publish_time": "2025-12-25 15:15"
     },
@@ -2179,7 +2183,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "下周重返 4000已无悬念。",
       "publish_time": "2025-12-26 15:40"
     },
@@ -2187,7 +2191,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "下周就一个字，涨！不止会收第三根周阳线，且会重返4000，挑战新高！",
       "publish_time": "2025-12-28 14:08"
     },
@@ -2267,7 +2271,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "medium",
+      "time_horizon": "long",
       "evidence": "明确观点！明天继续中阳线逼空！这种行情十年一遇，十三连阳更为 世纪奇观，如果这都不敢看涨，什么时候才能亮剑！",
       "publish_time": "2026-01-06 15:42"
     },
@@ -2275,7 +2279,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "这里明观点，这次大盘大概率会止步十五连阳，等待蓄力完成后，再重新朝着4317出发。",
       "publish_time": "2026-01-07 16:04"
     },
@@ -2283,7 +2287,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "明确观点，这波行情还未结束，下周还有新高！但大概率会以先抑后扬消化分歧！",
       "publish_time": "2026-01-08 15:29"
     },
@@ -2291,7 +2295,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "下周突破是大概率，但破后能够快速站稳必须要打一个问号。",
       "publish_time": "2026-01-09 15:32"
     },
@@ -2299,7 +2303,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "下周有两个潜在黑天鹅！但大盘仍涨，会收下影线周小阳线！这是确定性预判！",
       "publish_time": "2026-01-11 14:08"
     },
@@ -2339,7 +2343,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "medium",
+      "time_horizon": "intraday",
       "evidence": "下午没有反转！中阳线会扎扎实实的落地！不仅如此，本周还有新高，因为这波行情依然在主升加速阶段！",
       "publish_time": "2026-01-14 11:30"
     },
@@ -2363,7 +2367,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "unspecified",
       "evidence": "这波行情到头了吗？远远没有！只是需时间消化投机风气",
       "publish_time": "2026-01-16 15:25"
     },
@@ -2371,7 +2375,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "下周大概率会冲高回落再冲高，最终收周小阳线。",
       "publish_time": "2026-01-18 14:08"
     },
@@ -2387,7 +2391,7 @@
       "post_n": 0,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天会收阴线！这也是我昨天的明确预判，当时给的原话是：“明天会有窄幅震荡，或将回踩五周均线止跌，最终会收小阴线。但到时反而是一次较好的进攻机会！”",
       "publish_time": "2026-01-20 11:30"
     },
@@ -2451,7 +2455,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "明确观点，下周看涨，再收周小阳线！",
       "publish_time": "2026-01-25 14:08"
     },
@@ -2539,7 +2543,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "本周上半周的震荡，不仅不是本轮趋势的终结，反而是新一轮上攻行情的起点阶段，自然是积极布局跟进后市向上方向的绝佳时机。",
       "publish_time": "2026-02-02 11:30"
     },
@@ -2547,7 +2551,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "unspecified",
       "evidence": "当前不仅不是恐惧的时刻，反而是龙游浅滩，蓄势待飞的关键节点。",
       "publish_time": "2026-02-02 16:00"
     },
@@ -2555,7 +2559,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "下午不论涨跌，都是本周先抑后扬的拐点信号！",
       "publish_time": "2026-02-03 11:39"
     },
@@ -2611,7 +2615,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "long",
       "evidence": "当前的震荡，恰恰是行情启动前的蓄力，这才是大方向。因此，握紧筹码，静待风来就是当下的最优解。",
       "publish_time": "2026-02-06 15:42"
     },
@@ -2619,7 +2623,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "下周会冲高回落，收小周阳线！冲高是行情本质的回归，回落则是春节前最后一周的自然走势。这是下周行情大概率的节奏，细节或有误差，但总的方向我是比较笃定的。",
       "publish_time": "2026-02-08 14:08"
     },
@@ -2643,7 +2647,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天会收小阳线！此判断在昨天收盘已明确，当时我的原话是：“明天还有一涨，再创新高，但最终大概率是冲高回落的小阳线！”... 但这里明确观点，下午还是会翻红收小阳线！",
       "publish_time": "2026-02-10 11:34"
     },
@@ -2659,7 +2663,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天最终会收中阳线！这是我在昨天给的明确观点，而当时的原话是：“明天方向还会上涨！且大概率有中阳线！”这里直接升级成，下午会收中阳线！",
       "publish_time": "2026-02-11 11:30"
     },
@@ -2667,7 +2671,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "short",
       "evidence": "至于节后有更大概率会走主升浪的原因，我已在中午详尽分享，不赘述，... 节后主升已是水到渠成级的大概率事件。",
       "publish_time": "2026-02-11 15:00"
     },
@@ -2675,7 +2679,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "先明确观点，本周方向看涨！收小周阳线！这是确定性预判！",
       "publish_time": "2026-02-23 14:08"
     },
@@ -2691,7 +2695,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "long",
       "evidence": "所以不仅明天行情稳了，这波短线反转上攻，大概率也会稳稳延续，以此夯实长期慢牛的格局。",
       "publish_time": "2026-02-24 20:06"
     },
@@ -2715,7 +2719,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "intraday",
       "evidence": "但不论怎么震，都要拿稳筹码，因为今天的大利好，大概率会在下周成为各方专业资金水下吸筹的暗线。",
       "publish_time": "2026-02-27 15:00"
     },
@@ -2739,7 +2743,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "unspecified",
+      "time_horizon": "intraday",
       "evidence": "但今日A股却展现出了极强的韧性，这本身就是一种强势信号。",
       "publish_time": "2026-03-02 15:04"
     },
@@ -2771,7 +2775,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "intraday",
       "evidence": "A股今日上涨！收光脚小阳线！明确观点，这才是止跌反转信号！下周行情大概率会强势突破4197，创年内新高！",
       "publish_time": "2026-03-06 15:43"
     },
@@ -2779,7 +2783,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "因此即便现在缺少人气主线的助攻，下周A股仍能具备极强的抗跌与避险属性。",
       "publish_time": "2026-03-07 11:14"
     },
@@ -2795,7 +2799,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "因此明确观点，下周大概率会先抑后扬，收周阳线！",
       "publish_time": "2026-03-08 14:08"
     },
@@ -2803,7 +2807,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "本周大概率会先抑后扬，收周阳线。",
       "publish_time": "2026-03-09 15:01"
     },
@@ -2811,7 +2815,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "short",
       "evidence": "至此，大势已定，人心将归，而我们期待多时的主升浪，即将开场！静待花开！",
       "publish_time": "2026-03-10 15:15"
     },
@@ -2819,7 +2823,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "medium",
+      "time_horizon": "unspecified",
       "evidence": "古巨阳，直接杵碎4197，一举扭转近一段时间以来的市场预期，彻底引爆情绪。",
       "publish_time": "2026-03-11 15:08"
     },
@@ -2835,7 +2839,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "long",
       "evidence": "就如A股，趋势向上无疑！尽管不能百分百看对每一次短线，但只要保持定力，自能穿越波动，抓住趋势红利！",
       "publish_time": "2026-03-12 15:13"
     },
@@ -2851,7 +2855,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "medium",
+      "time_horizon": "long",
       "evidence": "别被这根中阴线骗了！这是主力擅长手法，即借情绪对外部利空的忌惮，强行洗盘！一天的下跌说明不了任何问题，但向上变盘的方向，虽迟必到！",
       "publish_time": "2026-03-13 15:33"
     },
@@ -2859,7 +2863,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "明确观点，下周会收周阳线！冲高回落再冲高，最终站稳5周均线！这是确定性观点！",
       "publish_time": "2026-03-15 14:08"
     },
@@ -2883,7 +2887,7 @@
       "post_n": 10,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "unspecified",
       "evidence": "行情既已弱势，当下不仅不能轻易抄底，反要在后市反弹中，寻找降本扩股的",
       "publish_time": "2026-03-19 15:01"
     },
@@ -2899,7 +2903,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "至此明确观点，下周行情会先震荡后上扬，最终站上5日线，收周阳线！",
       "publish_time": "2026-03-22 14:08"
     },
@@ -2923,7 +2927,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "medium",
+      "time_horizon": "monthly",
       "evidence": "因此我现在就可以提前判断，昨天的3794，就是本轮短中期行情的底部！",
       "publish_time": "2026-03-24 11:34"
     },
@@ -2931,7 +2935,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "unspecified",
       "evidence": "这是情绪底与市场底的同步确认，直指这波行情的拐点就在今天！",
       "publish_time": "2026-03-24 15:02"
     },
@@ -2939,7 +2943,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午目标很简单，就是让今天成为站上5日线的第一天！至此明确观点，下午会将上午还未回补的缺口部分，交给明天。但最终不仅会保持中阳线，还有较高概率站上5日线收盘！",
       "publish_time": "2026-03-25 11:30"
     },
@@ -2971,7 +2975,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "下周看涨！周中阳线！回补上方缺口，打开重返4000的趋势通道！这是下周大概率会走的方向！",
       "publish_time": "2026-03-29 14:08"
     },
@@ -2987,7 +2991,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "我对后市甚至本周内的向上方向，反而更加笃定！",
       "publish_time": "2026-03-31 15:26"
     },
@@ -2995,7 +2999,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "medium",
+      "time_horizon": "long",
       "evidence": "大方向必涨！小方向的曲折，皆是刻意洗盘，吸筹蓄势的戏码。",
       "publish_time": "2026-04-01 15:00"
     },
@@ -3027,7 +3031,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "大概率会以一根探底的中阳线，直接阳包阴！",
       "publish_time": "2026-04-09 15:00"
     },
@@ -3035,7 +3039,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "下周站稳4000是起步，重返60线才是目标！",
       "publish_time": "2026-04-10 15:11"
     },
@@ -3043,7 +3047,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "long",
+      "time_horizon": "unspecified",
       "evidence": "要对经济复苏的必然到来，保持坚定的信心，这样才能拿住，不被短期情绪和老韭菜干扰，直到周期启动，稳稳坐上主升浪的大车。",
       "publish_time": "2026-04-11 14:15"
     },
@@ -3051,7 +3055,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "下周会有大批墙头草把腿拍肿！... 当前，明明有了确切的反转信号",
       "publish_time": "2026-04-12 14:08"
     },
@@ -3091,7 +3095,7 @@
       "post_n": 11,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "intraday",
       "evidence": "昨天看空今天，说盘中或有中阴线，最终收在5日线上方！",
       "publish_time": "2026-04-17 15:07"
     },
@@ -3099,7 +3103,7 @@
       "post_n": 9,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "我昨天的观点是，本周会冲高回落，收周阴线，期间大概率会先站上60日线，再下杀洗盘。",
       "publish_time": "2026-04-20 14:12"
     },
@@ -3107,7 +3111,7 @@
       "post_n": 8,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "明确观点，本周会收周阴线！",
       "publish_time": "2026-05-05 14:08"
     },
@@ -3139,7 +3143,7 @@
       "post_n": 4,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "long",
       "evidence": "明天或有中阴线，好好洗一把，把墙头草洗走，稳住长期慢牛格局。",
       "publish_time": "2026-05-07 15:00"
     },
@@ -3155,7 +3159,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "short",
       "evidence": "所以今天过后，行情大概率会再创新高，而后再横盘震荡消化分析，重新选择下一轮的短线方向。",
       "publish_time": "2026-05-08 15:00"
     },
@@ -3163,7 +3167,7 @@
       "post_n": 1,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "这波短线的结局，不论大盘是否创新高，都有回头确认4000的需求。",
       "publish_time": "2026-05-08 19:33"
     },
@@ -3171,7 +3175,7 @@
       "post_n": 0,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "weekly",
       "evidence": "不论下周有无新高，都是强弩之末，结构性承压，战略性洗盘就是大概率事件，最终会收周阴线。",
       "publish_time": "2026-05-10 14:08"
     },
@@ -3179,7 +3183,7 @@
       "post_n": 14,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "intraday",
       "evidence": "但今天我依然提示可能要下雨，同频的记得带好伞防范一下",
       "publish_time": "2026-05-11 11:14"
     },
@@ -3187,7 +3191,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "long",
+      "time_horizon": "unspecified",
       "evidence": "但我却丝毫不改对趋势的坚守看多！",
       "publish_time": "2026-05-12 11:30"
     },
@@ -3243,7 +3247,7 @@
       "post_n": 5,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "weekly",
       "evidence": "明确观点，下周会先抑后扬，探底回升收周阴线！同时下周大概率也是这波调整的拐点！",
       "publish_time": "2026-05-17 14:08"
     },
@@ -3251,7 +3255,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "本周大概率就是这波短线调整的尾声！",
       "publish_time": "2026-05-18 11:32"
     },
@@ -3267,7 +3271,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "medium",
+      "time_horizon": "short",
       "evidence": "明天就一句话，大涨，再来一根中阳线！而且我还要告诉大家，这波短线调整已经结束，从现在到到本月底期间，还会再创新高！",
       "publish_time": "2026-05-19 15:00"
     },
@@ -3315,7 +3319,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "下周不得了了！",
       "publish_time": "2026-05-22 15:00"
     },
@@ -3323,7 +3327,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "下周确定性看涨！整体会震荡上攻，最终重返4200，收周大阳线！",
       "publish_time": "2026-05-24 14:08"
     },
@@ -3379,7 +3383,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "unspecified",
       "evidence": "企稳反弹乃至反转才是大势所趋。",
       "publish_time": "2026-05-28 11:30"
     },
@@ -3403,7 +3407,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "medium",
+      "time_horizon": "intraday",
       "evidence": "今天已对60日线，完成了二次确认，一波大行情正在来的路上，这点我看的定定的，而六月，也是值得所有股民期待的！",
       "publish_time": "2026-05-29 15:01"
     },
@@ -3419,7 +3423,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "weekly",
       "evidence": "因此下周依然看涨，会收周阳线。",
       "publish_time": "2026-05-31 14:19"
     },
@@ -3427,7 +3431,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "第一，六月依然有较大概率出现一波大行情。第二，本周大概率会涨上来，收一根漂亮的周阳线！",
       "publish_time": "2026-06-01 11:24"
     },
@@ -3443,7 +3447,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "unspecified",
       "evidence": "A股当前形势与大盘的圆弧底，充满诱惑力，让我蠢蠢欲动！",
       "publish_time": "2026-06-03 11:31"
     },
@@ -3459,7 +3463,7 @@
       "post_n": 0,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "别急，A股还没止跌！对此早在上周四收盘我就说了，要减仓！且要全链性减到三成底仓",
       "publish_time": "2026-06-10 14:57"
     },
@@ -3475,7 +3479,7 @@
       "post_n": 12,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "weekly",
       "evidence": "下周加速洗盘，再突然反过来回手掏的可能性，自然非常高。",
       "publish_time": "2026-06-12 15:01"
     },
@@ -3483,7 +3487,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "至此明确观点，下周会在震荡中收出周中阳线！",
       "publish_time": "2026-06-14 14:08"
     },
@@ -3491,7 +3495,7 @@
       "post_n": 10,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "weekly",
       "evidence": "明后两天行情整体会有所调整，可能会有最后一洗，下半周再涨回来。",
       "publish_time": "2026-06-15 11:00"
     },
@@ -3555,7 +3559,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "monthly",
       "evidence": "即在今年七月，A股大概率会开启一波，不输今年三月到五月的主升浪！",
       "publish_time": "2026-06-21 14:08"
     },
@@ -3571,7 +3575,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "medium",
+      "time_horizon": "intraday",
       "evidence": "立帖为证！直接上重点，听好了，不仅从今天到6月底，行情会在震荡中整体上扬，且还会与今年7月共同构建一波主升浪！剑指4300！",
       "publish_time": "2026-06-22 15:00"
     },
@@ -3579,7 +3583,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "medium",
+      "time_horizon": "unspecified",
       "evidence": "别犹豫！不论短线是否震荡，现在都是果断看涨的时候！",
       "publish_time": "2026-06-23 11:30"
     },
@@ -3595,7 +3599,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "intraday",
       "evidence": "今天就是摸底的一天，是要赶人走的！所以这里我强势提醒大家，上午低点就是底，要直接亮剑了！",
       "publish_time": "2026-06-24 11:30"
     },
@@ -3603,7 +3607,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "medium",
+      "time_horizon": "unspecified",
       "evidence": "就一句话，这波行情我已看到了4300！",
       "publish_time": "2026-06-24 15:07"
     },
@@ -3699,7 +3703,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "所以下周不论是否有震荡，向上概率都更大。重点是这波主升浪的二浪起点，很可能就在下周！",
       "publish_time": "2026-07-05 14:08"
     },
@@ -3715,7 +3719,7 @@
       "post_n": 9,
       "direction": "bearish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "intraday",
       "evidence": "如果下午大盘不能收回4005，那就真有危险了！...短中线可无视一切，直接清光。",
       "publish_time": "2026-07-07 11:30"
     },
@@ -3731,7 +3735,7 @@
       "post_n": 7,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "intraday",
       "evidence": "包括今天在内，短期所有反弹都是观望机会！",
       "publish_time": "2026-07-08 11:30"
     },
@@ -3763,7 +3767,7 @@
       "post_n": 1,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "下周会收周阴线！探缺口，出新低！构建趋势级W底！这是下周的大概率方向！",
       "publish_time": "2026-07-12 14:08"
     },
@@ -3771,7 +3775,7 @@
       "post_n": 0,
       "direction": "bearish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "intraday",
       "evidence": "所以别指望下午能走V，今天就是杀跌的一天，全天大绿盘是跑不了的！",
       "publish_time": "2026-07-13 11:31"
     },
@@ -3779,7 +3783,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "long",
       "evidence": "接下来的行情方向，虽然不能排除短线依然有震荡，但大方向会在震荡中逐步上行，已成了高确定性事件。",
       "publish_time": "2026-07-13 15:00"
     },
@@ -3787,7 +3791,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "medium",
+      "time_horizon": "intraday",
       "evidence": "就是今天！底部将现！股市行情随时能迎来惊天反转！因此这里我毫不含糊，全面看涨！",
       "publish_time": "2026-07-14 11:32"
     },
@@ -3827,7 +3831,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "weekly",
       "evidence": "即在目前环境下，一旦下周降息，则必有大涨！",
       "publish_time": "2026-07-16 15:04"
     },
@@ -3835,7 +3839,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "接下来不仅下周会反弹，后市也将逐步震荡上攻。甚至今年10月底之前，还有重创年内新高的概率！",
       "publish_time": "2026-07-17 20:32"
     },
@@ -3843,7 +3847,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "3745就是底！下周会波动上行，收小周阳线！过程中大概率不是标准的反转走势，但筑底迹象却会愈发明显！",
       "publish_time": "2026-07-19 14:08"
     },
@@ -3859,7 +3863,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "long",
+      "time_horizon": "unspecified",
       "evidence": "所以即便现在，我说3745就是底，也没任何毛病，我又没说它是极限...",
       "publish_time": "2026-07-20 15:04"
     },
@@ -3867,7 +3871,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "intraday",
       "evidence": "我说了，今天会站上5日线，收中阳线！就这一句话，我敢断言，全网敢说，且非乱说的人，不超一手之数！",
       "publish_time": "2026-07-21 11:30"
     },
@@ -3875,7 +3879,7 @@
       "post_n": 2,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "所以在大涨过后，会有更多求稳的短线资金，会...",
       "publish_time": "2026-07-21 15:04"
     },
@@ -3883,7 +3887,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "但不论怎么走，大概率都会在两市跌大于涨的情况下，最终收小阳线。",
       "publish_time": "2026-07-22 11:30"
     },
@@ -3923,7 +3927,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "至此下周的答案，已呼之欲出！无非就是一根探底上扬的周阳线罢了！",
       "publish_time": "2026-07-24 15:01"
     },
@@ -3931,7 +3935,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "weekly",
       "evidence": "明确观点，下周会收探底小周阳线，虽不改震荡格局，但下周却有更明显的机会！",
       "publish_time": "2026-07-26 14:08"
     },
@@ -3979,7 +3983,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "short",
       "evidence": "仍要保持耐心，但子弹要在明天上膛了，原因是这波行情，已经到了再现浩荡趋势的边缘！",
       "publish_time": "2026-07-29 15:00"
     },
@@ -4003,7 +4007,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "intraday",
       "evidence": "下午将再次大涨！站上10日线收大红盘！而上午的冲高回落，正是后市能否拿到结果的分水岭！因此这篇内容较特别，我就是要告诉大家，现在的核心就两个字，进攻！",
       "publish_time": "2026-07-31 11:33"
     },
@@ -4011,7 +4015,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "unspecified",
       "evidence": "中国股市全面上攻！虽有小幅冲高回落，最终没站上10日线，但依然值得掌声与欢呼！而我也不会泼冷水，因为煎熬等待的股民们，已隐隐看到了黎明的破晓！值得期待！",
       "publish_time": "2026-07-31 15:15"
     }

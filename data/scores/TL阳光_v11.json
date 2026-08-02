@@ -1,0 +1,762 @@
+{
+  "blogger": "TL阳光",
+  "scoring_version": "v11 (time_horizon-windowed single formula)",
+  "signals_total": 1500,
+  "signals_scored": 864,
+  "score_zero": 621,
+  "no_price": 11,
+  "no_segment": 0,
+  "scores": {
+    "综合": {
+      "total": 108.25,
+      "count": 864,
+      "avg_pct": 0.13,
+      "win_rate": 51.5
+    },
+    "上升段": {
+      "total": 75.17,
+      "count": 642,
+      "avg_pct": 0.12,
+      "win_rate": 51.87
+    },
+    "下降段": {
+      "total": 33.08,
+      "count": 222,
+      "avg_pct": 0.15,
+      "win_rate": 50.45
+    },
+    "抄底": {
+      "total": 15.06,
+      "count": 11,
+      "avg_pct": 1.37,
+      "win_rate": 90.91
+    },
+    "逃顶": {
+      "total": 23.31,
+      "count": 16,
+      "avg_pct": 1.46,
+      "win_rate": 68.75
+    },
+    "看多": {
+      "total": 172.84,
+      "count": 525,
+      "avg_pct": 0.33,
+      "win_rate": 62.29
+    },
+    "看空": {
+      "total": -64.59,
+      "count": 339,
+      "avg_pct": -0.19,
+      "win_rate": 34.81
+    }
+  },
+  "time_horizon_scores": {
+    "short": {
+      "count": 730,
+      "total": 3.73,
+      "avg_pct": 0.01,
+      "win_rate": 49.73
+    },
+    "weekly": {
+      "count": 89,
+      "total": 33.82,
+      "avg_pct": 0.38,
+      "win_rate": 56.18
+    },
+    "biweekly": {
+      "count": 0,
+      "total": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "monthly": {
+      "count": 51,
+      "total": 70.69,
+      "avg_pct": 1.39,
+      "win_rate": 62.75
+    },
+    "intraday": {
+      "count": 186,
+      "total": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "long": {
+      "count": 233,
+      "total": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "unspecified": {
+      "count": 200,
+      "total": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    }
+  },
+  "segments": {
+    "I10->I11": {
+      "direction": "falling",
+      "start_label": "I10",
+      "end_label": "I11",
+      "total": 48,
+      "bull": 40,
+      "bear": 8,
+      "score": 2.99
+    },
+    "I11->I12": {
+      "direction": "rising",
+      "start_label": "I11",
+      "end_label": "I12",
+      "total": 50,
+      "bull": 30,
+      "bear": 20,
+      "score": -9.57
+    },
+    "I12->M5": {
+      "direction": "falling",
+      "start_label": "I12",
+      "end_label": "M5",
+      "total": 70,
+      "bull": 13,
+      "bear": 57,
+      "score": 11.26
+    },
+    "I13->I14": {
+      "direction": "rising",
+      "start_label": "I13",
+      "end_label": "I14",
+      "total": 34,
+      "bull": 20,
+      "bear": 14,
+      "score": 0.56
+    },
+    "I14->M8": {
+      "direction": "falling",
+      "start_label": "I14",
+      "end_label": "M8",
+      "total": 75,
+      "bull": 29,
+      "bear": 46,
+      "score": 4.54
+    },
+    "I5->I6": {
+      "direction": "rising",
+      "start_label": "I5",
+      "end_label": "I6",
+      "total": 168,
+      "bull": 106,
+      "bear": 62,
+      "score": -3.66
+    },
+    "I6->M3": {
+      "direction": "falling",
+      "start_label": "I6",
+      "end_label": "M3",
+      "total": 46,
+      "bull": 21,
+      "bear": 25,
+      "score": 13.23
+    },
+    "I9->I10": {
+      "direction": "rising",
+      "start_label": "I9",
+      "end_label": "I10",
+      "total": 58,
+      "bull": 40,
+      "bear": 18,
+      "score": -7.17
+    },
+    "M3->M4": {
+      "direction": "rising",
+      "start_label": "M3",
+      "end_label": "M4",
+      "total": 608,
+      "bull": 469,
+      "bear": 139,
+      "score": 80.51
+    },
+    "M4->I9": {
+      "direction": "falling",
+      "start_label": "M4",
+      "end_label": "I9",
+      "total": 49,
+      "bull": 27,
+      "bear": 22,
+      "score": 16.11
+    },
+    "M5->M6": {
+      "direction": "rising",
+      "start_label": "M5",
+      "end_label": "M6",
+      "total": 175,
+      "bull": 75,
+      "bear": 100,
+      "score": 9.76
+    },
+    "M6->I13": {
+      "direction": "falling",
+      "start_label": "M6",
+      "end_label": "I13",
+      "total": 73,
+      "bull": 22,
+      "bear": 51,
+      "score": -15.05
+    },
+    "M8->now": {
+      "direction": "rising",
+      "start_label": "M8",
+      "end_label": "?",
+      "total": 35,
+      "bull": 15,
+      "bear": 20,
+      "score": 0.0
+    }
+  },
+  "inflection_details": {
+    "I10": {
+      "signals": [
+        {
+          "date": "2026-01-13",
+          "time": "16:21",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": -0.6067,
+          "score": 0.6067,
+          "ref": "2026-01-14 open",
+          "evidence": "1月13日收评：明天看跌"
+        }
+      ],
+      "total_score": 0.61,
+      "signal_count": 1,
+      "avg_score_pct": 60.67
+    },
+    "I11": {
+      "signals": [
+        {
+          "date": "2026-02-02",
+          "time": "11:41",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2026-02-02 close",
+          "evidence": "个人的观点不变，大盘第一次调整至30线附近，再往下空间有限。"
+        },
+        {
+          "date": "2026-02-02",
+          "time": "16:17",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.9408,
+          "score": 0.9408,
+          "ref": "2026-02-03 open",
+          "evidence": "2月2日收评：明天看涨"
+        },
+        {
+          "date": "2026-02-03",
+          "time": "11:45",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.3494,
+          "score": 0.3494,
+          "ref": "2026-02-03 close",
+          "evidence": "从这几天大盘的走势来看，仍是上涨过程中的一次调整，调整结束，后市改写4190是大概率的事，至少我不怀疑。"
+        },
+        {
+          "date": "2026-02-03",
+          "time": "21:08",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2026-02-04 open",
+          "evidence": "综上所述，春节前以震荡为主，春节后将恢复上涨，大盘将再创新高。"
+        },
+        {
+          "date": "2026-02-04",
+          "time": "11:43",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": -0.5111,
+          "score": -0.5111,
+          "ref": "2026-02-04 close",
+          "evidence": "短期看，大盘应该不会坏到哪里去。"
+        }
+      ],
+      "total_score": 0.78,
+      "signal_count": 5,
+      "avg_score_pct": 15.58
+    },
+    "I12": {
+      "signals": [
+        {
+          "date": "2026-03-03",
+          "time": "09:11",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2026-03-03 open",
+          "evidence": "讲到了这里，再去想想现在的大盘，大概率快了，也会走上证券，恒生科技一样的走势。"
+        },
+        {
+          "date": "2026-03-03",
+          "time": "16:00",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": 0.4268,
+          "score": -0.4268,
+          "ref": "2026-03-04 open",
+          "evidence": "3月3日收评：明天看跌"
+        },
+        {
+          "date": "2026-03-03",
+          "time": "21:17",
+          "direction": "bearish",
+          "strength": "strong",
+          "return": -4.1994,
+          "score": 8.3987,
+          "ref": "2026-03-04 open",
+          "evidence": "这次只是牛转熊的预演，但预演也会很惨烈。数月后才是真跌，家人们，一定记住，仓位重的，等调整过后重回4200附近要选择清仓"
+        },
+        {
+          "date": "2026-03-04",
+          "time": "08:47",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2026-03-04 open",
+          "evidence": "大A这轮下跌，很好计算。4197x0.9=3777点，附近。"
+        },
+        {
+          "date": "2026-03-04",
+          "time": "10:58",
+          "direction": "bearish",
+          "strength": "strong",
+          "return": 0.5537,
+          "score": -1.1074,
+          "ref": "2026-03-04 close",
+          "evidence": "上证，今天的反抽很弱，明天仍会继续下。"
+        },
+        {
+          "date": "2026-03-04",
+          "time": "11:52",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2026-03-04 close",
+          "evidence": "现在，大盘4000点都没破，根本没到绝望时。"
+        }
+      ],
+      "total_score": 6.86,
+      "signal_count": 6,
+      "avg_score_pct": 114.41
+    },
+    "I14": {
+      "signals": [
+        {
+          "date": "2026-06-23",
+          "time": "19:13",
+          "direction": "bearish",
+          "strength": "strong",
+          "return": -5.805,
+          "score": 11.61,
+          "ref": "2026-06-24 open",
+          "evidence": "这轮牛市，对于我而言已经于2026年3月彻底结束。接下来的3年，我会耐心等，等到我看得懂的时候再中长线进场抄底，然后再捂"
+        },
+        {
+          "date": "2026-06-24",
+          "time": "19:47",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2026-06-25 open",
+          "evidence": "现在随着美元走强，大A未来会不会受到影响，值得警惕。"
+        }
+      ],
+      "total_score": 11.61,
+      "signal_count": 2,
+      "avg_score_pct": 580.5
+    },
+    "I6": {
+      "signals": [
+        {
+          "date": "2025-03-18",
+          "time": "15:44",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": -0.7039,
+          "score": 0.7039,
+          "ref": "2025-03-19 open",
+          "evidence": "3月18日收评：明天看跌"
+        }
+      ],
+      "total_score": 0.7,
+      "signal_count": 1,
+      "avg_score_pct": 70.39
+    },
+    "I9": {
+      "signals": [
+        {
+          "date": "2025-12-15",
+          "time": "11:41",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2025-12-15 close",
+          "evidence": "个人的观点非常明确，大盘这个位置不具备进一步深跌的可能性，随着110线的抬升，今天已经至3804点，与11月24日阶段性"
+        },
+        {
+          "date": "2025-12-16",
+          "time": "13:50",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2025-12-16 close",
+          "evidence": "那为什么牛市没有结束？条件不具备。牛市结束，不单是技术上，还有政策上，资金上，基本面上，等综合因素，即使是技术上，也没有"
+        },
+        {
+          "date": "2025-12-17",
+          "time": "11:45",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2025-12-17 close",
+          "evidence": "大盘这个位置不具备进一步深跌的可能性，随着110线的抬升，今天已经至3804点，与11月24日阶段性低点3816点形成双"
+        }
+      ],
+      "total_score": 0.0,
+      "signal_count": 3,
+      "avg_score_pct": 0.0
+    },
+    "M3": {
+      "signals": [
+        {
+          "date": "2025-04-08",
+          "time": "06:40",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 5.6415,
+          "score": 5.6415,
+          "ref": "2025-04-08 open",
+          "evidence": "个人判断，这种情况大概率会发生在本周下半段。"
+        }
+      ],
+      "total_score": 5.64,
+      "signal_count": 1,
+      "avg_score_pct": 564.15
+    },
+    "M4": {
+      "signals": [
+        {
+          "date": "2025-11-14",
+          "time": "15:54",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": -3.5434,
+          "score": 3.5434,
+          "ref": "2025-11-17 open",
+          "evidence": "综合来看，大盘上涨乏力，从3040涨至4034点，已经有近1000点的上涨，涨幅为32.69%，对照历史上每次阶段性上涨"
+        },
+        {
+          "date": "2025-11-14",
+          "time": "16:35",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": -0.8949,
+          "score": 0.8949,
+          "ref": "2025-11-17 open",
+          "evidence": "11月14日收评：下周一看跌"
+        }
+      ],
+      "total_score": 4.44,
+      "signal_count": 2,
+      "avg_score_pct": 221.91
+    },
+    "M5": {
+      "signals": [
+        {
+          "date": "2026-03-23",
+          "time": "13:01",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2026-03-23 close",
+          "evidence": "这波A杀后，B浪反弹还会到4000点上方的"
+        },
+        {
+          "date": "2026-03-23",
+          "time": "14:01",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 1.6307,
+          "score": 1.6307,
+          "ref": "2026-03-23 close",
+          "evidence": "明天探底，大概率迎反弹。"
+        },
+        {
+          "date": "2026-03-23",
+          "time": "16:25",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 1.3275,
+          "score": 1.3275,
+          "ref": "2026-03-24 open",
+          "evidence": "3月23日收评：明天看涨"
+        },
+        {
+          "date": "2026-03-23",
+          "time": "19:13",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 1.3275,
+          "score": 1.3275,
+          "ref": "2026-03-24 open",
+          "evidence": "恭喜今天敢于逆市抄底的友友，明天吃肉。"
+        },
+        {
+          "date": "2026-03-24",
+          "time": "08:54",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2026-03-24 open",
+          "evidence": "大盘反弹大概率会见4000，如果当时有消息面配合，不排除一鼓作气冲到4197附近。"
+        },
+        {
+          "date": "2026-03-24",
+          "time": "11:49",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2026-03-24 close",
+          "evidence": "个人观点，3794大概率是阶段性底部，在市往下空间有限，大盘可能已经在反弹的路上了。"
+        },
+        {
+          "date": "2026-03-24",
+          "time": "16:49",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.4953,
+          "score": 0.4953,
+          "ref": "2026-03-25 open",
+          "evidence": "好了，大盘明天将开启筑阶段性底的过程，震荡是常态，就看你们怎么把握了，天堂，地狱，一念之间！"
+        }
+      ],
+      "total_score": 4.78,
+      "signal_count": 7,
+      "avg_score_pct": 68.3
+    },
+    "M6": {
+      "signals": [
+        {
+          "date": "2026-05-14",
+          "time": "11:46",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": -0.7094,
+          "score": 0.7094,
+          "ref": "2026-05-14 close",
+          "evidence": "今天的大盘也没什么好讲的，放量大跌，有资金出逃，就看明天能不能反包，如果继续下跌，那么3794的上涨结束，未来进入调整"
+        },
+        {
+          "date": "2026-05-14",
+          "time": "15:24",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": -0.6873,
+          "score": 0.6873,
+          "ref": "2026-05-15 open",
+          "evidence": "没有赚钱效应的市场怎么可能吸引增量，现在的上涨是存量加杠杆，是逼存量放弃老登，而去拥抱所谓的明天（光），这样的市场能好，"
+        },
+        {
+          "date": "2026-05-14",
+          "time": "16:04",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2026-05-15 open",
+          "evidence": "这轮牛市大涨的光，一旦转熊，大部分股票也会如长安一样，长期是哪里来回哪里去，下轮牛市可能大盘至6000点，这些所谓的光，"
+        },
+        {
+          "date": "2026-05-14",
+          "time": "16:44",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": -0.6873,
+          "score": 0.6873,
+          "ref": "2026-05-15 open",
+          "evidence": "5月14日收评：明天看跌"
+        },
+        {
+          "date": "2026-05-14",
+          "time": "18:00",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2026-05-15 open",
+          "evidence": "我想问，哪有牛市利用震荡套住一波又一波人的。而这一波套住的人是站在光里的人。市场上参与的人，或者板块皆套住了人，我想问，"
+        },
+        {
+          "date": "2026-05-14",
+          "time": "20:04",
+          "direction": "bearish",
+          "strength": "strong",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2026-05-15 open",
+          "evidence": "个人于4197附近已经逃顶，下次的重仓点就在3000点附近，在没有到3000点附近时，就是等。"
+        },
+        {
+          "date": "2026-05-15",
+          "time": "10:07",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2026-05-15 close",
+          "evidence": "大盘仍然是震荡模式。当下，别轻易接飞刀，等下方的向上缺口一一补完，别人恐惧，又讲要又跌至3700，3500，你不慌不忙上"
+        },
+        {
+          "date": "2026-05-15",
+          "time": "14:58",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": -0.5112,
+          "score": 0.5112,
+          "ref": "2026-05-15 close",
+          "evidence": "对于下周怎么走？如果从均线的角度，并没有形成5线/10线/15线/30线的多头排列，外加MACD顶背离，个人的观点，继续"
+        },
+        {
+          "date": "2026-05-15",
+          "time": "15:47",
+          "direction": "bearish",
+          "strength": "strong",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2026-05-18 open",
+          "evidence": "个人的观点始终不变，大盘今年上半年是构筑历史大顶，即出货，下半年将彻底走熊。"
+        }
+      ],
+      "total_score": 2.6,
+      "signal_count": 9,
+      "avg_score_pct": 28.84
+    },
+    "M7": {
+      "signals": [
+        {
+          "date": "2026-06-26",
+          "time": "11:54",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": 0.9417,
+          "score": -0.9417,
+          "ref": "2026-06-26 close",
+          "evidence": "后市2次探底已经是大概率的事，将再次考验233线和250年线的支撑。"
+        },
+        {
+          "date": "2026-06-26",
+          "time": "13:30",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": 0.9417,
+          "score": -0.9417,
+          "ref": "2026-06-26 close",
+          "evidence": "大盘3月20日第一次跌破120线后，我就发文讲过，历史上如果出现跌破120线，那么250年线后市必破"
+        },
+        {
+          "date": "2026-06-26",
+          "time": "14:49",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2026-06-26 close",
+          "evidence": "今天的大阴棒穿头破脚，一下子击穿55线/60线/89线/110线/120线/144线，是空头力量非常强的一种，表示中期又"
+        },
+        {
+          "date": "2026-06-26",
+          "time": "16:29",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": -0.0409,
+          "score": 0.0409,
+          "ref": "2026-06-29 open",
+          "evidence": "下周大概率要继续收阴，未来往下寻求60周线的支撑"
+        },
+        {
+          "date": "2026-06-26",
+          "time": "16:52",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": 1.6613,
+          "score": -1.6613,
+          "ref": "2026-06-29 open",
+          "evidence": "下周一看跌"
+        },
+        {
+          "date": "2026-06-26",
+          "time": "19:31",
+          "direction": "bearish",
+          "strength": "moderate",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2026-06-29 open",
+          "evidence": "耐心等3年，大盘到3000点时再来，我从4197点时就反反复复讲"
+        }
+      ],
+      "total_score": -3.5,
+      "signal_count": 6,
+      "avg_score_pct": -58.4
+    },
+    "M8": {
+      "signals": [
+        {
+          "date": "2026-07-20",
+          "time": "11:23",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.851,
+          "score": 0.851,
+          "ref": "2026-07-20 close",
+          "evidence": "大盘暂时企稳，后市将开启反弹，注意的是3800会有反复，因为现在人心不稳。考虑到233线和250线仍处于上行之中，多头的"
+        },
+        {
+          "date": "2026-07-20",
+          "time": "16:09",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 1.5013,
+          "score": 1.5013,
+          "ref": "2026-07-21 open",
+          "evidence": "这个位置，个人短期不看空。"
+        },
+        {
+          "date": "2026-07-20",
+          "time": "16:30",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 1.5013,
+          "score": 1.5013,
+          "ref": "2026-07-21 open",
+          "evidence": "7月20日收评：明天看涨"
+        }
+      ],
+      "total_score": 3.85,
+      "signal_count": 3,
+      "avg_score_pct": 128.45
+    }
+  }
+}
