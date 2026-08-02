@@ -15,22 +15,16 @@
   "scored_bullish": {
     "strong": 2,
     "moderate": 87,
-    "intraday": 14,
-    "short": 27,
-    "weekly": 3,
-    "biweekly": 0,
-    "monthly": 0,
+    "short": 41,
+    "medium": 3,
     "long": 0,
     "unspecified": 45
   },
   "scored_bearish": {
     "strong": 9,
     "moderate": 103,
-    "intraday": 19,
-    "short": 40,
-    "weekly": 5,
-    "biweekly": 3,
-    "monthly": 0,
+    "short": 59,
+    "medium": 8,
     "long": 1,
     "unspecified": 44
   },
@@ -63,7 +57,7 @@
       "post_n": 7,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "先说观点：今天有风险了，但不大。",
       "publish_time": "2026-01-08 12:27"
     },
@@ -119,7 +113,7 @@
       "post_n": 13,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "所以，我预判明天充其量就是个弱反，下周继续调整。",
       "publish_time": "2026-01-15 19:37"
     },
@@ -135,7 +129,7 @@
       "post_n": 11,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "所以，今天我的马前炮观点仍然是：调整还没完，所有反弹都是“诱多”，别一看涨了或利好，就头铁往里冲。",
       "publish_time": "2026-01-16 16:10"
     },
@@ -143,7 +137,7 @@
       "post_n": 9,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周大概率要打4100点保卫战了。... 所以，还是那句话：长期看是慢牛，但短期调整没有结束。",
       "publish_time": "2026-01-17 15:12"
     },
@@ -159,7 +153,7 @@
       "post_n": 5,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天仍然不变。... 从今天收盘来看，红柱虽然变短了，但是还不够，不符合调整结束的标准。",
       "publish_time": "2026-01-20 20:15"
     },
@@ -175,7 +169,7 @@
       "post_n": 2,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "biweekly",
+      "time_horizon": "medium",
       "evidence": "接下来大盘可能再次复制上一波调整走势，出现7-10天，200点左右的螺旋式调整。",
       "publish_time": "2026-01-26 18:05"
     },
@@ -183,7 +177,7 @@
       "post_n": 1,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "biweekly",
+      "time_horizon": "medium",
       "evidence": "市场极有可能在4160-4190之间形成双顶，完成下杀，初步估计，调整周期大概10-14天。",
       "publish_time": "2026-01-26 21:14"
     },
@@ -191,7 +185,7 @@
       "post_n": 0,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "biweekly",
+      "time_horizon": "medium",
       "evidence": "初步估计，时间10天左右，调整空间200点。",
       "publish_time": "2026-01-27 10:29"
     },
@@ -199,7 +193,7 @@
       "post_n": 14,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "对于今天的收阳，中午的文章已经分析和预判过，所以，在我看来，只是收阳，仅此而已。",
       "publish_time": "2026-01-27 17:51"
     },
@@ -207,7 +201,7 @@
       "post_n": 13,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天这根小阳线大概率是诱多，接下来还会出现更大亏钱效应。",
       "publish_time": "2026-01-27 21:01"
     },
@@ -255,7 +249,7 @@
       "post_n": 4,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "我们再来看下今天恐慌指数的信号，从图看出，今天的红柱大幅缩短，意味着今天,如果调整到位，至少是个小的黄金坑;如果盘中出现反弹，反弹过后，则还有坑。",
       "publish_time": "2026-01-30 11:13"
     },
@@ -263,7 +257,7 @@
       "post_n": 3,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "从恐慌指数可以看出，上午红柱已经变短，意味着虽然调整还不够透，但是机会已经开始大于风险了，这就是规律传递出来的信号。",
       "publish_time": "2026-01-30 12:24"
     },
@@ -271,7 +265,7 @@
       "post_n": 2,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "通过对比可以发现：1、红柱已经较短了，但是和历史上底部的红柱对比，还不够短。说明没有跌透。2、下午红柱的高度比中午的稍长。说明性质为诱多。",
       "publish_time": "2026-01-30 16:13"
     },
@@ -287,7 +281,7 @@
       "post_n": 0,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "综合以上三个维度，由于今天的柱体比较短，机会已经大于风险了，但是时间和空间都不够，我估计接下来会螺旋式调整，即下周先弱反弹诱多，然后再杀一波，直到三个条件都满足。",
       "publish_time": "2026-01-30 19:52"
     },
@@ -295,7 +289,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "我的判断是：下午如果再杀，可能和周五一样，会引发反弹，但性质是诱多。",
       "publish_time": "2026-02-02 12:56"
     },
@@ -303,7 +297,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "这里即使不是今天最低点，也是次低点。",
       "publish_time": "2026-02-02 13:54"
     },
@@ -367,7 +361,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午看反弹，但是接下来的上涨要谨慎。",
       "publish_time": "2026-02-05 12:53"
     },
@@ -383,7 +377,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "第二步：今天正在实现（预判今天上涨）。",
       "publish_time": "2026-02-06 10:57"
     },
@@ -399,7 +393,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "周末的利好，一定程度改变了短期走势，周一上涨的概率较大。",
       "publish_time": "2026-02-07 17:25"
     },
@@ -527,7 +521,7 @@
       "post_n": 1,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "上午的大涨，没有改变调整周期，只是礼貌性反弹，而非反转。",
       "publish_time": "2026-02-24 12:46"
     },
@@ -535,7 +529,7 @@
       "post_n": 0,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "短线的反弹很难改变调整周期，谁又能保证，今天和昨天冰火两重天的港股，不会在A股上演？",
       "publish_time": "2026-02-24 19:58"
     },
@@ -559,7 +553,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的突破，是2买。",
       "publish_time": "2026-02-27 16:24"
     },
@@ -567,7 +561,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的红柱没有变长，所以，给市场一些时间消化利空。",
       "publish_time": "2026-03-02 12:49"
     },
@@ -655,7 +649,7 @@
       "post_n": 7,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的恐慌指数显示，绿柱没出现，说明调整还未结束。",
       "publish_time": "2026-03-13 15:52"
     },
@@ -663,7 +657,7 @@
       "post_n": 6,
       "direction": "bearish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天调整结束了吗？未结束，远未结束！",
       "publish_time": "2026-03-13 18:05"
     },
@@ -775,7 +769,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "短期不用再恐慌！1、因为昨天出现了超短柱，今天上午下跌最狠的时候，出现过短暂的绿柱，说明短期是底部区域。",
       "publish_time": "2026-03-20 13:03"
     },
@@ -863,7 +857,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天大盘能低开高走，根本原因在于，目前处于恐慌指数的反弹周期，过程虽然颠簸，但不改变结果。",
       "publish_time": "2026-03-27 17:56"
     },
@@ -887,7 +881,7 @@
       "post_n": 4,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "1、上午的那波冲高，长柱出现，做好反弹Game over的准备，接下来的反弹，是诱多。2、昨天中午我提示千万别追涨，后面还会有一次下蹲，破掉3875。",
       "publish_time": "2026-03-31 12:52"
     },
@@ -895,7 +889,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "既然只凉了一半，那等这波小级别调整走完，下半周或下周初，大盘还会再给一次逃顶的机会",
       "publish_time": "2026-03-31 23:15"
     },
@@ -903,7 +897,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的红柱比昨天短，意味着3月23日以来的反弹周期得以延续，利好改变了短期A股的走势。",
       "publish_time": "2026-04-01 12:56"
     },
@@ -935,7 +929,7 @@
       "post_n": 10,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "之前预判至少会再跌破一次3875，想不到来得这么快。期待下午的不破不立。",
       "publish_time": "2026-04-03 12:49"
     },
@@ -943,7 +937,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "本周，大概率重上3900！",
       "publish_time": "2026-04-06 18:01"
     },
@@ -959,7 +953,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "比如绿柱出现，反弹的概率超过95%，就像3月23日绿柱出线，到今天反弹了200点，中间的任何下跌都是洗盘。",
       "publish_time": "2026-04-08 21:20"
     },
@@ -999,7 +993,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "从今天恐慌指数看，4026守住的概率大。",
       "publish_time": "2026-04-17 12:35"
     },
@@ -1103,7 +1097,7 @@
       "post_n": 4,
       "direction": "bearish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "上午如期跳水，下午反抽，大盘调整结束了吗？我不学其他博主模棱两可，我的回答是：没有！",
       "publish_time": "2026-05-08 15:51"
     },
@@ -1127,7 +1121,7 @@
       "post_n": 12,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "上午的盘面验证了，金茂大厦来了，调整大概率就来了！",
       "publish_time": "2026-05-12 12:41"
     },
@@ -1199,7 +1193,7 @@
       "post_n": 0,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "本周没问题，风暴在下周。……下周才可能出现超长柱，然后再杀一波，风险在下周。",
       "publish_time": "2026-05-20 19:55"
     },
@@ -1215,7 +1209,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "不用恐慌，可以开始打土豪、分田地了。因为，上午盘中出现过短暂的绿柱。",
       "publish_time": "2026-05-22 12:16"
     },
@@ -1223,7 +1217,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的反弹，开心归开心，接下来的反弹之路会不平坦，会有反复。",
       "publish_time": "2026-05-22 19:14"
     },
@@ -1431,7 +1425,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天发糖，是基于数据变化得出的大概率预判。",
       "publish_time": "2026-06-12 12:51"
     },
@@ -1479,7 +1473,7 @@
       "post_n": 13,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "从上午的数据看，今天绿柱大概率出不来！",
       "publish_time": "2026-07-13 12:51"
     },
@@ -1495,7 +1489,7 @@
       "post_n": 11,
       "direction": "bearish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天大跌，调整结束了吗？我的回答是：还、没、有。",
       "publish_time": "2026-07-13 22:27"
     },
@@ -1575,7 +1569,7 @@
       "post_n": 11,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "所以我估计下周一会有个冲高走势，由于绿柱没有出现，暂时当一个弱反弹，反弹过后小心再回落。",
       "publish_time": "2026-07-24 19:12"
     },
@@ -1599,7 +1593,7 @@
       "post_n": 7,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "比如昨天大盘暴涨，满屏都是“牛回速归”。在人人欢呼的喧嚣里，老师却像个格格不入的“异类”。，判断今天下跌概率超过75%。",
       "publish_time": "2026-07-28 20:06"
     },

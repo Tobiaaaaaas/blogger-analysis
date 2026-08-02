@@ -2,96 +2,96 @@
   "blogger": "顺应周期",
   "scoring_version": "v11 (time_horizon-windowed single formula)",
   "signals_total": 1201,
-  "signals_scored": 316,
-  "score_zero": 719,
+  "signals_scored": 994,
+  "score_zero": 41,
   "no_price": 8,
   "no_segment": 157,
   "scores": {
     "综合": {
-      "total": 6.59,
-      "count": 316,
-      "avg_pct": 0.02,
-      "win_rate": 52.85
+      "total": 206.24,
+      "count": 994,
+      "avg_pct": 0.21,
+      "win_rate": 53.42
     },
     "上升段": {
-      "total": -16.17,
-      "count": 230,
-      "avg_pct": -0.07,
-      "win_rate": 53.04
+      "total": 105.83,
+      "count": 713,
+      "avg_pct": 0.15,
+      "win_rate": 52.88
     },
     "下降段": {
-      "total": 22.76,
-      "count": 86,
-      "avg_pct": 0.26,
-      "win_rate": 52.33
+      "total": 100.41,
+      "count": 281,
+      "avg_pct": 0.36,
+      "win_rate": 54.8
     },
     "抄底": {
-      "total": 1.31,
-      "count": 6,
-      "avg_pct": 0.22,
-      "win_rate": 50.0
+      "total": 102.71,
+      "count": 30,
+      "avg_pct": 3.42,
+      "win_rate": 86.67
     },
     "逃顶": {
-      "total": 10.33,
-      "count": 6,
-      "avg_pct": 1.72,
-      "win_rate": 83.33
+      "total": 44.59,
+      "count": 19,
+      "avg_pct": 2.35,
+      "win_rate": 78.95
     },
     "看多": {
-      "total": 68.65,
-      "count": 177,
-      "avg_pct": 0.39,
-      "win_rate": 63.28
+      "total": 636.2,
+      "count": 542,
+      "avg_pct": 1.17,
+      "win_rate": 71.22
     },
     "看空": {
-      "total": -62.06,
-      "count": 139,
-      "avg_pct": -0.45,
-      "win_rate": 39.57
+      "total": -429.96,
+      "count": 452,
+      "avg_pct": -0.95,
+      "win_rate": 32.08
     }
   },
   "time_horizon_scores": {
     "short": {
-      "count": 186,
-      "total": -7.66,
-      "avg_pct": -0.04,
-      "win_rate": 49.46
+      "count": 433,
+      "total": -10.33,
+      "avg_pct": -0.02,
+      "win_rate": 53.58
     },
     "weekly": {
-      "count": 95,
-      "total": 34.65,
-      "avg_pct": 0.36,
-      "win_rate": 62.11
+      "count": 0,
+      "total": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
     },
     "biweekly": {
-      "count": 16,
-      "total": 10.71,
-      "avg_pct": 0.67,
-      "win_rate": 56.25
+      "count": 0,
+      "total": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
     },
     "monthly": {
-      "count": 20,
-      "total": -31.12,
-      "avg_pct": -1.56,
-      "win_rate": 35.0
+      "count": 0,
+      "total": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
     },
     "intraday": {
-      "count": 247,
+      "count": 0,
       "total": 0.0,
       "avg_pct": 0.0,
       "win_rate": 0.0
     },
     "long": {
-      "count": 54,
-      "total": 0.0,
-      "avg_pct": 0.0,
-      "win_rate": 0.0
+      "count": 74,
+      "total": -34.18,
+      "avg_pct": -0.46,
+      "win_rate": 37.84
     },
     "unspecified": {
       "count": 418,
-      "total": 0.0,
-      "avg_pct": 0.0,
-      "win_rate": 0.0
+      "total": 170.0,
+      "avg_pct": 0.41,
+      "win_rate": 48.09
     }
   },
   "segments": {
@@ -102,7 +102,7 @@
       "total": 5,
       "bull": 4,
       "bear": 1,
-      "score": 0.0
+      "score": 0.8
     },
     "I10->I11": {
       "direction": "falling",
@@ -111,7 +111,7 @@
       "total": 28,
       "bull": 19,
       "bear": 9,
-      "score": -2.36
+      "score": 3.37
     },
     "I11->I12": {
       "direction": "rising",
@@ -120,7 +120,7 @@
       "total": 37,
       "bull": 32,
       "bear": 5,
-      "score": -0.15
+      "score": -44.94
     },
     "I12->M5": {
       "direction": "falling",
@@ -129,7 +129,7 @@
       "total": 50,
       "bull": 18,
       "bear": 32,
-      "score": 5.81
+      "score": 44.03
     },
     "I13->I14": {
       "direction": "rising",
@@ -138,7 +138,7 @@
       "total": 24,
       "bull": 10,
       "bear": 14,
-      "score": -1.85
+      "score": -33.0
     },
     "I14->M8": {
       "direction": "falling",
@@ -147,7 +147,7 @@
       "total": 48,
       "bull": 18,
       "bear": 30,
-      "score": 20.13
+      "score": 41.96
     },
     "I2->I3": {
       "direction": "falling",
@@ -156,7 +156,7 @@
       "total": 9,
       "bull": 2,
       "bear": 7,
-      "score": -3.81
+      "score": -8.65
     },
     "I3->I4": {
       "direction": "rising",
@@ -165,7 +165,7 @@
       "total": 4,
       "bull": 0,
       "bear": 4,
-      "score": 0.67
+      "score": 3.67
     },
     "I4->I5": {
       "direction": "falling",
@@ -174,7 +174,7 @@
       "total": 30,
       "bull": 16,
       "bear": 14,
-      "score": 5.64
+      "score": 41.62
     },
     "I5->I6": {
       "direction": "rising",
@@ -183,7 +183,7 @@
       "total": 92,
       "bull": 45,
       "bear": 47,
-      "score": 0.42
+      "score": 33.75
     },
     "I6->M3": {
       "direction": "falling",
@@ -192,7 +192,7 @@
       "total": 26,
       "bull": 17,
       "bear": 9,
-      "score": -0.0
+      "score": -15.09
     },
     "I9->I10": {
       "direction": "rising",
@@ -201,7 +201,7 @@
       "total": 54,
       "bull": 26,
       "bear": 28,
-      "score": 1.44
+      "score": -54.14
     },
     "M3->M4": {
       "direction": "rising",
@@ -210,7 +210,7 @@
       "total": 406,
       "bull": 237,
       "bear": 169,
-      "score": -14.28
+      "score": 192.04
     },
     "M4->I9": {
       "direction": "falling",
@@ -219,7 +219,7 @@
       "total": 71,
       "bull": 36,
       "bear": 35,
-      "score": -2.41
+      "score": -13.43
     },
     "M5->M6": {
       "direction": "rising",
@@ -228,7 +228,7 @@
       "total": 84,
       "bull": 47,
       "bear": 37,
-      "score": -2.38
+      "score": 6.05
     },
     "M6->I13": {
       "direction": "falling",
@@ -237,7 +237,7 @@
       "total": 33,
       "bull": 14,
       "bear": 19,
-      "score": -0.23
+      "score": 6.61
     },
     "M8->now": {
       "direction": "rising",
@@ -257,8 +257,8 @@
           "time": "12:16",
           "direction": "bearish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": -0.0349,
+          "score": 0.0349,
           "ref": "2026-01-15 close",
           "evidence": "首先确定的事情前几天堆积巨量筹码未来市场肯定要花较长时间去洗的，因为很多人已经站岗，这也正好符合今年还有机会跌到3700"
         },
@@ -273,9 +273,9 @@
           "evidence": "今天下午大概率先📉4090也就差不多，接着会弱反一段，随后再去4034附近。这是我认为近期调整的一个节奏。"
         }
       ],
-      "total_score": 0.08,
+      "total_score": 0.11,
       "signal_count": 2,
-      "avg_score_pct": 3.77
+      "avg_score_pct": 5.51
     },
     "I11": {
       "signals": [
@@ -294,8 +294,8 @@
           "time": "14:08",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 2.8092,
+          "score": 2.8092,
           "ref": "2026-02-02 close",
           "evidence": "4028成为向4250进发的起点是可以成立的。"
         },
@@ -304,8 +304,8 @@
           "time": "15:54",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 1.8651,
+          "score": 1.8651,
           "ref": "2026-02-03 open",
           "evidence": "但有一点可以放心，4190不是终点。"
         },
@@ -314,8 +314,8 @@
           "time": "13:01",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 1.2683,
+          "score": 1.2683,
           "ref": "2026-02-03 close",
           "evidence": "反弹启动，先反弹几日，看4080。"
         },
@@ -324,8 +324,8 @@
           "time": "10:32",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 0.0222,
+          "score": 0.0222,
           "ref": "2026-02-04 close",
           "evidence": "这波反弹从时间和空间上还是有信心，所以我一下上了4成，随后T掉2成，拿下点利润，现在4成在场内。2成用来冲，2成用来防守"
         },
@@ -340,9 +340,9 @@
           "evidence": "明天估计先触一下4115附近，短暂洗盘后，最后看冲4120，上了就有希望4250。"
         }
       ],
-      "total_score": 0.64,
+      "total_score": 6.6,
       "signal_count": 6,
-      "avg_score_pct": 10.63
+      "avg_score_pct": 110.05
     },
     "I12": {
       "signals": [
@@ -351,8 +351,8 @@
           "time": "10:23",
           "direction": "bearish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": -4.9186,
+          "score": 4.9186,
           "ref": "2026-03-03 close",
           "evidence": "这种📉有点意外，不排除故意乘乱再洗，有摸不着头脑，先看4125的支撑情况，支撑不住又要回4000点。"
         },
@@ -361,8 +361,8 @@
           "time": "11:12",
           "direction": "bearish",
           "strength": "moderate",
-          "return": -1.3773,
-          "score": 1.3773,
+          "return": -2.5364,
+          "score": 2.5364,
           "ref": "2026-03-03 close",
           "evidence": "按计划到3月中旬左右，差不多要开始撤退了，指数大概在4250-4260。能玩的时间不多了，空间也不多，但4250不是最终"
         },
@@ -371,8 +371,8 @@
           "time": "12:22",
           "direction": "bearish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": -4.9186,
+          "score": 4.9186,
           "ref": "2026-03-03 close",
           "evidence": "从技术面看，日线已经出现背离，短线不宜再盲目乐观。这本身也符合周期末端的特征。接下来，除非一根中阳线就能彻底化解风险，无"
         },
@@ -381,8 +381,8 @@
           "time": "14:57",
           "direction": "bearish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": -0.4391,
+          "score": 0.4391,
           "ref": "2026-03-03 close",
           "evidence": "按午评的技术形态走了，有点难看，看来谨慎是对的，破了4125，下面就是4065。在之后的特殊日子维稳下，3040开始的这"
         },
@@ -391,8 +391,8 @@
           "time": "15:31",
           "direction": "bearish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 0.4268,
+          "score": -0.4268,
           "ref": "2026-03-04 open",
           "evidence": "今天石油石化涨停，历史上这两个涨停是有是有顶部信号参考。从技术层面看，大盘通过穿头破脚的形式破了4125，那么4065至"
         },
@@ -401,15 +401,15 @@
           "time": "12:28",
           "direction": "bearish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 0.5537,
+          "score": -0.5537,
           "ref": "2026-03-04 close",
           "evidence": "早盘4065开始的反弹，相对比较弱，跳空缺口也没补，再破4065也就顺其自然，本波段最后一道防线在4000点附近。破40"
         }
       ],
-      "total_score": 1.38,
+      "total_score": 11.83,
       "signal_count": 6,
-      "avg_score_pct": 22.96
+      "avg_score_pct": 197.2
     },
     "I4": {
       "signals": [
@@ -418,8 +418,8 @@
           "time": "12:37",
           "direction": "bearish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 0.4906,
+          "score": -0.4906,
           "ref": "2024-12-09 close",
           "evidence": "今天10点夜盘买空了，这个诱多上个星期就计划必须要拿下，安全边际也高。"
         },
@@ -428,8 +428,8 @@
           "time": "17:01",
           "direction": "bearish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": -6.9045,
+          "score": 6.9045,
           "ref": "2024-12-11 open",
           "evidence": "空单虽然被套了，我相信不久不紧能解套还要双倍补偿我"
         },
@@ -444,9 +444,9 @@
           "evidence": "这个月的顶基本确定了。做多的朋友在等等，等机会大点再上。不到周线缺口，都没有安全感。"
         }
       ],
-      "total_score": 7.35,
+      "total_score": 13.76,
       "signal_count": 3,
-      "avg_score_pct": 244.98
+      "avg_score_pct": 458.78
     },
     "I5": {
       "signals": [
@@ -455,8 +455,8 @@
           "time": "10:03",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 3.6884,
+          "score": 3.6884,
           "ref": "2025-01-14 close",
           "evidence": "大盘第一步要先重回3205，必须站稳。才会有更高的点。"
         },
@@ -465,8 +465,8 @@
           "time": "11:09",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 3.6884,
+          "score": 3.6884,
           "ref": "2025-01-14 close",
           "evidence": "3150开始的反弹我个人偏向积极向上，原因北证50做了方向性指导。曾经许下的100点反弹，或许能实现，结构的需要，缓和的"
         },
@@ -475,8 +475,8 @@
           "time": "12:50",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 3.6884,
+          "score": 3.6884,
           "ref": "2025-01-14 close",
           "evidence": "现在这波反弹理性的人挺多的，所以反弹的高点，最好能接近3300，改变下大部分人的观点再下来，最好能反弹出大喊牛市的[捂脸"
         },
@@ -501,9 +501,9 @@
           "evidence": "这波反弹位置在黄色线附近，可以超出黄色线一些，预计3280-3330，很人都看到3280附近，但市场往往会选择出其不意。"
         }
       ],
-      "total_score": -0.18,
+      "total_score": 10.88,
       "signal_count": 5,
-      "avg_score_pct": -3.68
+      "avg_score_pct": 217.62
     },
     "I6": {
       "signals": [
@@ -512,8 +512,8 @@
           "time": "09:48",
           "direction": "bearish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": -3.5096,
+          "score": 3.5096,
           "ref": "2025-03-20 close",
           "evidence": "破3314了，那么往第二种方向概率就大了，注意3390附近一点的机会。"
         },
@@ -538,9 +538,9 @@
           "evidence": "所以就像中午说的，这波回调估计得持续到明天盘中。随着时间推移，如果大盘再跌到下轨3390附近，差不多就可以考虑小仓位试试"
         }
       ],
-      "total_score": 1.8,
+      "total_score": 5.31,
       "signal_count": 3,
-      "avg_score_pct": 59.87
+      "avg_score_pct": 176.86
     },
     "I9": {
       "signals": [
@@ -566,8 +566,8 @@
           "time": "10:08",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 8.3265,
+          "score": 8.3265,
           "ref": "2025-04-07 close",
           "evidence": "坚信有第二波那么大结构已经出来了。但仓位不要太大。3000-3100附近持有中长线3-5成够了。"
         },
@@ -576,8 +576,8 @@
           "time": "10:42",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 8.3265,
+          "score": 8.3265,
           "ref": "2025-04-07 close",
           "evidence": "如果再到3000点附近，我会加到5成，基本很长一段时间这个仓位就不会动了，再到2800附近，就砸锅卖铁满仓了。"
         },
@@ -586,8 +586,8 @@
           "time": "12:15",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 6.8824,
+          "score": 6.8824,
           "ref": "2025-04-08 close",
           "evidence": "大盘从3040点涨30%，差不多到4000点左右。……这跟我之前判断的差不多：科创50不太可能再创新高，但大盘和港股还有"
         },
@@ -596,8 +596,8 @@
           "time": "12:32",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 1.2648,
+          "score": 1.2648,
           "ref": "2025-04-08 close",
           "evidence": "从短线看，因为是新构筑的低点结构，今天还是比较难跨过3150，但也就难个几天，后期这个位置肯定会上，短线比较大的压力应该"
         },
@@ -606,8 +606,8 @@
           "time": "16:27",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 8.7678,
+          "score": 8.7678,
           "ref": "2025-04-09 open",
           "evidence": "第二波的节奏不会像第一波那么快的走完，会慢慢的前进，最快也要明年，这个是结构和周期决定。想获得利润，耐心持有就行，如果后"
         },
@@ -616,8 +616,8 @@
           "time": "20:42",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 8.7678,
+          "score": 8.7678,
           "ref": "2025-04-09 open",
           "evidence": "如果一切顺利的话，大盘接下来会在3150这个点位附近晃悠一阵子，想彻底走出这个位置，估计没那么快，接下来第一个要过的坎儿"
         },
@@ -626,15 +626,15 @@
           "time": "22:09",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 8.7678,
+          "score": 8.7678,
           "ref": "2025-04-09 open",
           "evidence": "等我们大盘到4000，一定要谢谢他还有他的八辈子祖宗。"
         }
       ],
-      "total_score": 0.0,
+      "total_score": 51.1,
       "signal_count": 7,
-      "avg_score_pct": 0.0
+      "avg_score_pct": 730.05
     },
     "M4": {
       "signals": [
@@ -643,15 +643,15 @@
           "time": "09:31",
           "direction": "bearish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": -3.2527,
+          "score": 3.2527,
           "ref": "2025-11-14 close",
           "evidence": "昨天属于无量新高，有比较大的概率是诱多性质。"
         }
       ],
-      "total_score": 0.0,
+      "total_score": 3.25,
       "signal_count": 1,
-      "avg_score_pct": 0.0
+      "avg_score_pct": 325.27
     },
     "M5": {
       "signals": [
@@ -660,8 +660,8 @@
           "time": "09:15",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": -0.755,
+          "score": -0.755,
           "ref": "2026-03-23 open",
           "evidence": "今天大盘预计低位在3920附近，浮动二三十点很正常，看到很多人惊慌，不用过于担心，一笔反弹大概率是有的，无非是能提升到什"
         },
@@ -670,8 +670,8 @@
           "time": "09:53",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 7.3842,
+          "score": 7.3842,
           "ref": "2026-03-23 close",
           "evidence": "我喜欢这种恐慌，最低3866，比预期低了100点，守住一小时即可。"
         },
@@ -680,8 +680,8 @@
           "time": "10:08",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 7.3842,
+          "score": 7.3842,
           "ref": "2026-03-23 close",
           "evidence": "右侧想博的要等回3950\n我的风格左侧，3866送的100点我肯定是要加仓至少要T一次。"
         },
@@ -690,8 +690,8 @@
           "time": "09:14",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 1.3275,
+          "score": 1.3275,
           "ref": "2026-03-24 open",
           "evidence": "3750-3800这个区间位置会反弹机会，今天视情况会把昨天3800进的仓位T一成出来。大框架里调整还没完成。"
         },
@@ -700,8 +700,8 @@
           "time": "10:33",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 5.4584,
+          "score": 5.4584,
           "ref": "2026-03-24 close",
           "evidence": "这波反弹理论上要到3950，弱一点3900，再弱就是3850，一个反弹肯定是有的。"
         },
@@ -710,8 +710,8 @@
           "time": "10:51",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 5.4584,
+          "score": 5.4584,
           "ref": "2026-03-24 close",
           "evidence": "3850又被压下来了，但从15分钟结构看，还是有希望升级到3900的反弹。"
         },
@@ -720,8 +720,8 @@
           "time": "11:38",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 0.5012,
+          "score": 0.5012,
           "ref": "2026-03-24 close",
           "evidence": "下午比较简单，只要维持在3830上方运行，那么3900还是很有希望去的。"
         },
@@ -730,15 +730,15 @@
           "time": "14:19",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 5.4584,
+          "score": 5.4584,
           "ref": "2026-03-24 close",
           "evidence": "守住3830，先给5天的反弹时间。"
         }
       ],
-      "total_score": 0.0,
+      "total_score": 32.22,
       "signal_count": 8,
-      "avg_score_pct": 0.0
+      "avg_score_pct": 402.72
     },
     "M6": {
       "signals": [
@@ -747,8 +747,8 @@
           "time": "11:24",
           "direction": "bearish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": -3.341,
+          "score": 3.341,
           "ref": "2026-05-14 close",
           "evidence": "从中线周期角度看，后续重点观察3650附近（95%的人是无法相信），当然，如果中途出现重大突发事件或系统性风险，市场也存"
         },
@@ -757,15 +757,15 @@
           "time": "11:53",
           "direction": "bearish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 0.2441,
+          "score": -0.2441,
           "ref": "2026-05-15 close",
           "evidence": "第一阶段的调整目标没这么快完成，4200上不去，还要压下来，下周再看。下午震荡回落为主。"
         }
       ],
-      "total_score": 0.0,
+      "total_score": 3.1,
       "signal_count": 2,
-      "avg_score_pct": 0.0
+      "avg_score_pct": 154.84
     },
     "M7": {
       "signals": [
@@ -774,8 +774,8 @@
           "time": "12:07",
           "direction": "bearish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": -4.9333,
+          "score": 4.9333,
           "ref": "2026-06-26 close",
           "evidence": "这波杀📉还没结束，接下去破4000再说吧。"
         },
@@ -784,15 +784,15 @@
           "time": "12:22",
           "direction": "bearish",
           "strength": "moderate",
-          "return": 0.2648,
-          "score": -0.2648,
+          "return": -2.2996,
+          "score": 2.2996,
           "ref": "2026-06-26 close",
           "evidence": "最晚下周应该能看到4000以下，这2天放假做做功课。"
         }
       ],
-      "total_score": -0.26,
+      "total_score": 7.23,
       "signal_count": 2,
-      "avg_score_pct": -13.24
+      "avg_score_pct": 361.64
     },
     "M8": {
       "signals": [
@@ -811,8 +811,8 @@
           "time": "14:34",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.9738,
-          "score": 0.9738,
+          "return": 1.756,
+          "score": 1.756,
           "ref": "2026-07-20 open(non-trading)",
           "evidence": "短线上，下周稍破下3745，短线反弹结构就成立，极端点到3715，所以3715-3735开始的反弹方向是3820-385"
         },
@@ -871,8 +871,8 @@
           "time": "11:12",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 0.1301,
+          "score": 0.1301,
           "ref": "2026-07-21 close",
           "evidence": "这次不是一日游，别看双创今天这么猛，向上还有空间。"
         },
@@ -881,15 +881,15 @@
           "time": "12:17",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 0.1301,
+          "score": 0.1301,
           "ref": "2026-07-21 close",
           "evidence": "短线看3820是个小关口，预计下午就能过去，突破3820资金还会跟进，大盘反弹目标在3885左右。"
         }
       ],
-      "total_score": 0.97,
+      "total_score": 2.02,
       "signal_count": 9,
-      "avg_score_pct": 10.82
+      "avg_score_pct": 22.4
     }
   }
 }

@@ -2,52 +2,52 @@
   "blogger": "鸟瞰股市",
   "scoring_version": "v11 (time_horizon-windowed single formula)",
   "signals_total": 601,
-  "signals_scored": 411,
-  "score_zero": 59,
+  "signals_scored": 470,
+  "score_zero": 0,
   "no_price": 2,
   "no_segment": 128,
   "scores": {
     "综合": {
-      "total": 19.83,
-      "count": 411,
-      "avg_pct": 0.05,
-      "win_rate": 57.42
+      "total": 87.03,
+      "count": 470,
+      "avg_pct": 0.19,
+      "win_rate": 60.21
     },
     "上升段": {
-      "total": 87.89,
-      "count": 268,
-      "avg_pct": 0.33,
-      "win_rate": 64.93
+      "total": 199.38,
+      "count": 313,
+      "avg_pct": 0.64,
+      "win_rate": 69.65
     },
     "下降段": {
-      "total": -68.06,
-      "count": 143,
-      "avg_pct": -0.48,
-      "win_rate": 43.36
+      "total": -112.35,
+      "count": 157,
+      "avg_pct": -0.72,
+      "win_rate": 41.4
     },
     "抄底": {
-      "total": 29.71,
-      "count": 21,
-      "avg_pct": 1.41,
-      "win_rate": 95.24
+      "total": 34.93,
+      "count": 22,
+      "avg_pct": 1.59,
+      "win_rate": 100.0
     },
     "逃顶": {
-      "total": 5.83,
+      "total": 6.77,
       "count": 5,
-      "avg_pct": 1.17,
+      "avg_pct": 1.35,
       "win_rate": 80.0
     },
     "看多": {
-      "total": 28.41,
-      "count": 374,
-      "avg_pct": 0.08,
-      "win_rate": 59.63
+      "total": 115.5,
+      "count": 429,
+      "avg_pct": 0.27,
+      "win_rate": 62.94
     },
     "看空": {
-      "total": -8.57,
-      "count": 37,
-      "avg_pct": -0.23,
-      "win_rate": 35.14
+      "total": -28.47,
+      "count": 41,
+      "avg_pct": -0.69,
+      "win_rate": 31.71
     }
   },
   "time_horizon_scores": {
@@ -58,16 +58,16 @@
       "win_rate": 56.12
     },
     "weekly": {
-      "count": 75,
-      "total": 15.11,
-      "avg_pct": 0.2,
-      "win_rate": 61.33
+      "count": 0,
+      "total": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
     },
     "biweekly": {
-      "count": 2,
-      "total": 5.04,
-      "avg_pct": 2.52,
-      "win_rate": 100.0
+      "count": 0,
+      "total": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
     },
     "monthly": {
       "count": 0,
@@ -83,15 +83,15 @@
     },
     "long": {
       "count": 17,
-      "total": 0.0,
-      "avg_pct": 0.0,
-      "win_rate": 0.0
+      "total": 13.11,
+      "avg_pct": 0.77,
+      "win_rate": 76.47
     },
     "unspecified": {
       "count": 42,
-      "total": 0.0,
-      "avg_pct": 0.0,
-      "win_rate": 0.0
+      "total": 23.02,
+      "avg_pct": 0.55,
+      "win_rate": 66.67
     }
   },
   "segments": {
@@ -102,7 +102,7 @@
       "total": 30,
       "bull": 28,
       "bear": 2,
-      "score": 5.43
+      "score": 14.46
     },
     "I10->I11": {
       "direction": "falling",
@@ -156,7 +156,7 @@
       "total": 20,
       "bull": 19,
       "bear": 1,
-      "score": -8.84
+      "score": -6.08
     },
     "I3->I4": {
       "direction": "rising",
@@ -165,7 +165,7 @@
       "total": 15,
       "bull": 14,
       "bear": 1,
-      "score": 3.94
+      "score": -11.62
     },
     "I4->I5": {
       "direction": "falling",
@@ -174,7 +174,7 @@
       "total": 37,
       "bull": 36,
       "bear": 1,
-      "score": -24.34
+      "score": -51.8
     },
     "I5->I6": {
       "direction": "rising",
@@ -183,7 +183,7 @@
       "total": 68,
       "bull": 61,
       "bear": 7,
-      "score": 12.33
+      "score": 39.17
     },
     "I6->M3": {
       "direction": "falling",
@@ -192,7 +192,7 @@
       "total": 21,
       "bull": 20,
       "bear": 1,
-      "score": -18.75
+      "score": -29.81
     },
     "I9->I10": {
       "direction": "rising",
@@ -201,7 +201,7 @@
       "total": 11,
       "bull": 4,
       "bear": 7,
-      "score": -1.15
+      "score": 2.61
     },
     "M2->I1": {
       "direction": "falling",
@@ -210,7 +210,7 @@
       "total": 14,
       "bull": 9,
       "bear": 5,
-      "score": 2.18
+      "score": -6.34
     },
     "M3->M4": {
       "direction": "rising",
@@ -219,7 +219,7 @@
       "total": 126,
       "bull": 121,
       "bear": 5,
-      "score": 48.44
+      "score": 135.86
     },
     "M4->I9": {
       "direction": "falling",
@@ -411,8 +411,8 @@
           "time": "15:06",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 3.6972,
-          "score": 3.6972,
+          "return": 4.3846,
+          "score": 4.3846,
           "ref": "2024-11-27 open",
           "evidence": "展望后市，大盘在3200点至3300点之间继续震荡整理的概率较大，有效跌破3200点的概率很小。"
         },
@@ -451,15 +451,15 @@
           "time": "16:26",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 2.7677,
+          "score": 2.7677,
           "ref": "2024-11-29 open",
           "evidence": "笔者倾向于第二种走势。"
         }
       ],
-      "total_score": 6.78,
+      "total_score": 10.23,
       "signal_count": 5,
-      "avg_score_pct": 135.6
+      "avg_score_pct": 204.7
     },
     "I5": {
       "signals": [
@@ -478,8 +478,8 @@
           "time": "15:09",
           "direction": "bullish",
           "strength": "moderate",
-          "return": -0.1827,
-          "score": -0.1827,
+          "return": 1.1605,
+          "score": 1.1605,
           "ref": "2025-01-15 open",
           "evidence": "大盘在底部放量大阳后，宣告了本轮调整已经结束，股指3140.98点将成为本轮行情调整的低点。后市继续看好。"
         },
@@ -488,15 +488,15 @@
           "time": "17:19",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 1.0271,
-          "score": 1.0271,
+          "return": 1.1605,
+          "score": 1.1605,
           "ref": "2025-01-15 open",
           "evidence": "大盘后市即使震荡，那再跌破3140.98点的概率很小很小。在春节前这段时间，大盘横盘震荡，股指逐步走高的概率很大。"
         }
       ],
-      "total_score": 3.04,
+      "total_score": 4.52,
       "signal_count": 3,
-      "avg_score_pct": 101.38
+      "avg_score_pct": 150.6
     },
     "M2": {
       "signals": [
@@ -505,8 +505,8 @@
           "time": "15:03",
           "direction": "bearish",
           "strength": "moderate",
-          "return": -4.0142,
-          "score": 4.0142,
+          "return": -4.9571,
+          "score": 4.9571,
           "ref": "2024-10-09 open",
           "evidence": "笔者认为今日沪指最高点3674.40点将成为短期的高点。后市在一段时间内，大盘大概率是上下震荡整理，充分消化获利盘、解套"
         },
@@ -521,9 +521,9 @@
           "evidence": "笔者认为，如果政策面没有重大变化，那即使明日反弹，后面几个交易日沪指回补这个缺口的概率也很大。"
         }
       ],
-      "total_score": 4.31,
+      "total_score": 5.25,
       "signal_count": 2,
-      "avg_score_pct": 215.5
+      "avg_score_pct": 262.64
     },
     "M3": {
       "signals": [
@@ -532,8 +532,8 @@
           "time": "15:06",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 5.2945,
-          "score": 5.2945,
+          "return": 5.588,
+          "score": 5.588,
           "ref": "2025-04-09 open",
           "evidence": "展望后市，大盘企稳概率很大。如果没有新的突发利空，那昨日的低点3040.69点，有望成为相当长时间内的低点。"
         },
@@ -548,9 +548,9 @@
           "evidence": "明日大概率是：大盘继续震荡反弹，红盘报收。"
         }
       ],
-      "total_score": 8.71,
+      "total_score": 9.0,
       "signal_count": 2,
-      "avg_score_pct": 435.49
+      "avg_score_pct": 450.16
     },
     "M5": {
       "signals": [

@@ -15,23 +15,17 @@
   "scored_bullish": {
     "strong": 138,
     "moderate": 258,
-    "intraday": 89,
-    "short": 159,
-    "weekly": 43,
-    "biweekly": 0,
-    "monthly": 4,
-    "long": 42,
+    "short": 248,
+    "medium": 43,
+    "long": 46,
     "unspecified": 59
   },
   "scored_bearish": {
     "strong": 52,
     "moderate": 182,
-    "intraday": 38,
-    "short": 121,
-    "weekly": 28,
-    "biweekly": 1,
-    "monthly": 1,
-    "long": 11,
+    "short": 159,
+    "medium": 29,
+    "long": 12,
     "unspecified": 34
   },
   "signals": [
@@ -95,7 +89,7 @@
       "post_n": 10,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "都在说十一月份大A会大涨。结果昨天就开始开门黑，这是什么道理？印象中十月份就牛了10月8号一天，还是冲高回落。十一月真的会有行情吗？",
       "publish_time": "2024-11-02 16:07"
     },
@@ -103,7 +97,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "有什么怕的，上午怎么跌，下午就怎么涨。",
       "publish_time": "2025-06-22 14:12"
     },
@@ -119,7 +113,7 @@
       "post_n": 13,
       "direction": "bearish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "大盘会继续向下调整，这一个星期会跌破3922。",
       "publish_time": "2025-11-17 07:23"
     },
@@ -127,7 +121,7 @@
       "post_n": 3,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天大盘很大概率继续调整，又是防守板块向上的一天。",
       "publish_time": "2025-11-18 08:01"
     },
@@ -143,7 +137,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "神机认为10点半以后，主力就会大幅买入，指数拉升。",
       "publish_time": "2025-11-20 10:02"
     },
@@ -175,7 +169,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "神机认为开盘如果大跌就是机会，一定会V起来的，一定会的。",
       "publish_time": "2025-11-21 07:30"
     },
@@ -183,7 +177,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "所以今天的剧本低开高走。神机就是这么认为的。",
       "publish_time": "2025-11-21 08:58"
     },
@@ -191,7 +185,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "当然神机认为卖盘已经接近衰竭，下午要反弹了，一定会大力反弹的。",
       "publish_time": "2025-11-21 12:11"
     },
@@ -199,7 +193,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "但唯一可以确信的是，下周不会再这么杀了，会有一波弱反弹。",
       "publish_time": "2025-11-21 16:23"
     },
@@ -207,7 +201,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "神机认为这波调整已经结束，至少是接近尾声。昨天那种暗无天日的恐慌已经宣泄了所有的看空盘。下周一开始大A开始轻装上阵，强力反弹。",
       "publish_time": "2025-11-22 06:34"
     },
@@ -239,7 +233,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "马上开盘，今天会阳包阴，收复上周五的失地。神机认为短期的调整已经宣告结束，新的一轮行情从今天开始，不谈远的，年前站上4200点没啥问题。",
       "publish_time": "2025-11-24 07:48"
     },
@@ -247,7 +241,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "坚信下午会拉上去。",
       "publish_time": "2025-11-24 12:16"
     },
@@ -295,7 +289,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "昨晚美股继续上涨，A50也上涨，今天的大A估计会延续上涨。",
       "publish_time": "2025-11-26 07:18"
     },
@@ -311,7 +305,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天会涨，而且是大涨。",
       "publish_time": "2025-11-26 10:08"
     },
@@ -319,7 +313,7 @@
       "post_n": 2,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "这种高位科技权重股只是越拉越虚，带崩大盘。所以下午小微股一定要起来，易中天不能太猛，这样行情才会持续。",
       "publish_time": "2025-11-26 12:34"
     },
@@ -327,7 +321,7 @@
       "post_n": 0,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天指数不好看，但个股会有表现",
       "publish_time": "2025-11-27 07:29"
     },
@@ -335,7 +329,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "神机认为下周一是开门红的概率挺大。整个大盘已经调整了差不多两个月，幅度达到15%，很多个股下跌了20到30个点，有些甚至跌了40来个点。神机觉得12月份会是筑底反转的一个月。大家一定要充满信心。",
       "publish_time": "2025-11-29 09:15"
     },
@@ -343,7 +337,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "这个星期大盘站上4000点。",
       "publish_time": "2025-12-01 15:27"
     },
@@ -359,7 +353,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "神机继续坚持自己的观点，这个星期大盘站上4000点。",
       "publish_time": "2025-12-02 10:50"
     },
@@ -383,7 +377,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "不畏浮云遮望眼，昨天明显是假摔，今天就会阳包阴。",
       "publish_time": "2025-12-03 09:03"
     },
@@ -463,7 +457,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午会更上一层楼。",
       "publish_time": "2025-12-08 11:20"
     },
@@ -487,7 +481,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "神机继续看涨。周末这么大的利好，况且是长期的利好，不可能就涨一两天，至少一两个月。所以年前就不要过于担心了，估计就是震荡上行的行情。神机反正不会卖出一股，顶多是调仓。这就是神机的信仰。今天依然看涨，涨就一个字。",
       "publish_time": "2025-12-09 09:19"
     },
@@ -495,7 +489,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "怕什么，下午就会涨起来。神机对目前的市场非常有信心，后续还会择时加大仓位。人生的机会寥寥，这一次神机绝不错过。下午指数会全红，看空者哭去吧。",
       "publish_time": "2025-12-09 11:43"
     },
@@ -519,7 +513,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "神机坚定看好大A，不会在乎短期的波动。神机永远相信，一个股民承受不了30%的损失，那3倍的涨幅就与你彻底无缘。下午看V型反转。",
       "publish_time": "2025-12-10 10:06"
     },
@@ -535,7 +529,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "新的一轮大行情要来了，就从明天开始。今天主力完成最后一次洗盘，最后一次吸筹，尾盘疯狂拉升，这就是变盘，变盘向上突破。",
       "publish_time": "2025-12-10 16:37"
     },
@@ -543,7 +537,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "不过没关系，跟昨天一样，下午继续V型反转。神机一股不卖，坚持到底。",
       "publish_time": "2025-12-11 10:47"
     },
@@ -591,7 +585,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天低开高走的概率很大。",
       "publish_time": "2025-12-15 07:34"
     },
@@ -599,7 +593,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "神机认为上午就是主力故意为之，下午又会V型反转。",
       "publish_time": "2025-12-16 10:18"
     },
@@ -607,7 +601,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天上午的大跌就是为了下午的大涨，明天的更大涨，后天的更更大涨。",
       "publish_time": "2025-12-16 10:26"
     },
@@ -615,7 +609,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天很大概率会反弹。",
       "publish_time": "2025-12-17 07:52"
     },
@@ -631,7 +625,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "大A开盘会受其影响，低开，但不要慌，会阴转晴。",
       "publish_time": "2025-12-18 07:59"
     },
@@ -639,7 +633,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "不过没有关系，大A不会受到多大影响，今天会很坚挺，很大可能会收阳。",
       "publish_time": "2025-12-18 08:18"
     },
@@ -655,7 +649,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "神机此时只想说还要上，一定会上。各位粉丝千万不要被最近的不好的走势吓到。最黑暗的时光已经过去，光明即将到来，给自己多点耐心，你一定会有收获。神机认为今天会是大阳，特别大的阳。",
       "publish_time": "2025-12-19 08:59"
     },
@@ -663,7 +657,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午还要涨，神机说的。让那些质疑全都见鬼去吧。神机更加坚定自己的观点，大盘很快就会向4000点进攻，6个月之内站上4500点。",
       "publish_time": "2025-12-19 12:46"
     },
@@ -671,7 +665,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "看来周一大A的科技板块要开始新的一波行情了。神机相信科技的号角已经吹响，下周大盘要直冲云霄了。",
       "publish_time": "2025-12-20 10:09"
     },
@@ -679,7 +673,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "神机断言下周一开始就会连续上涨，涨的让看空者怀疑人生，做多者盆满钵满。神机还是坚持自己的判断，新年伊始会是牛市，4500是最低的要求，5100不是梦，6000也是有可能。",
       "publish_time": "2025-12-20 14:13"
     },
@@ -695,7 +689,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下个星期大盘会冲上4000点。神机从没有说过周一站上4000。大盘没有那么虎，只有歪解神机意思的人才虎。反正神机认为下周直至月底，钱途一片光明，坚定看涨，不接受反驳。",
       "publish_time": "2025-12-21 16:40"
     },
@@ -727,7 +721,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "重点就是大盘还要涨，下午会涨的更高。神机不止一次地告诉过你们，一年之内大盘至少上4500，5000也不是奢望，6000也可以适当展望。当然说5000，6000太过遥远，那么12月底站上4000很快就可以见到。",
       "publish_time": "2025-12-23 12:40"
     },
@@ -743,7 +737,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "神机掐指一算，下午还要涨，明天还要涨，估计要涨到元旦后。4000点离我们越来越近，4500点也唾手可得。",
       "publish_time": "2025-12-24 12:17"
     },
@@ -767,7 +761,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "大盘一点问题都没有，开盘就是洗盘而已。神机可以很自信地说，4500点以下的下跌都是震荡洗盘，不必担心。上行趋势已成，不要一惊一乍。现在你们要做的就是坐等4000，盼望4500。在此之前，啥也不干，只需要握紧手中的低位筹码。今天继续收阳，拭目以待。",
       "publish_time": "2025-12-25 10:15"
     },
@@ -775,7 +769,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "12月份还剩最后4个交易日，神机早前说过元旦前站上4000点，现在只有一步之遥。神机相信没有人会怀疑4000点上不去，大多数人都是在憧憬4500点了。神机作为坚定的多头，不到4500不回头，到了也不一定回头，且行且看吧。",
       "publish_time": "2025-12-25 16:01"
     },
@@ -783,7 +777,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "4000点指日可待，4500点还会久吗？神机是全网唯一一个说元旦前大盘冲上4000点的人。",
       "publish_time": "2025-12-26 10:44"
     },
@@ -791,7 +785,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "神机不知道发生了什么，但神机知道下午就会涨上去。",
       "publish_time": "2025-12-26 12:22"
     },
@@ -799,7 +793,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "神机可以预见元旦前很可能还有3连阳，势不可挡。这几天趁着外资不在，国某队疯狂吸筹。下周外资回来就要追高买入了。所以下个星期的三天时间，大盘会加速上涨，实现2025的一个完美的收官之战。",
       "publish_time": "2025-12-26 15:38"
     },
@@ -807,7 +801,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "周末又有大利好，下周4000点稳了。",
       "publish_time": "2025-12-27 12:36"
     },
@@ -823,7 +817,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "神机认为4000点会站上去。今天下午冲高回落，放大量，这是主力放大招，洗盘而已。不出意外，明天疯狂拉伸，拭目以待。",
       "publish_time": "2025-12-29 16:25"
     },
@@ -847,7 +841,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "神机说下午大盘还会拉红，你们会相信吗？不管你们相不相信，神机认为下午大盘就是会红，而且会大红。",
       "publish_time": "2025-12-30 12:24"
     },
@@ -983,7 +977,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今日低开高走，脑机接口与AI成领涨核心，坚定持股待涨",
       "publish_time": "2026-01-19 09:12"
     },
@@ -1015,7 +1009,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今日盘面暗藏玄机，明日大涨可期",
       "publish_time": "2026-01-22 16:18"
     },
@@ -1103,7 +1097,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天反而大概率逆势拉一根大阳线",
       "publish_time": "2026-02-06 08:42"
     },
@@ -1111,7 +1105,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今日A股触底反弹拉阳线",
       "publish_time": "2026-02-06 08:46"
     },
@@ -1119,7 +1113,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下午，继续看反弹！下周，整体反弹周！节前红包行情，稳的！",
       "publish_time": "2026-02-06 12:04"
     },
@@ -1127,7 +1121,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下午看反弹，下周有红包",
       "publish_time": "2026-02-06 12:06"
     },
@@ -1135,7 +1129,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "神鸡继续坚定持有，下周就等证券大涨吃大肉！",
       "publish_time": "2026-02-06 16:24"
     },
@@ -1143,7 +1137,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周一大盘高开是大概率，甚至高开高走都有可能，节前这波肉，基本是稳稳吃到嘴了。",
       "publish_time": "2026-02-07 08:05"
     },
@@ -1151,7 +1145,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周一高开稳了，节前红包到手，神机乐开花",
       "publish_time": "2026-02-07 08:07"
     },
@@ -1167,7 +1161,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "外围这么给力，咱们大A今天肯定不会落后，高开稳了，大概率是普涨行情，多数个股都会飘红。",
       "publish_time": "2026-02-09 08:17"
     },
@@ -1223,7 +1217,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今日A股必涨，证券领衔，空头彻底哑火！",
       "publish_time": "2026-02-12 07:29"
     },
@@ -1231,7 +1225,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天大盘，必涨！",
       "publish_time": "2026-02-12 07:44"
     },
@@ -1239,7 +1233,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天大盘，大概率直接上涨！趋势已定，谁也挡不住！",
       "publish_time": "2026-02-12 08:41"
     },
@@ -1247,7 +1241,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "早盘15分钟急杀，已经把今天的剧本写死：低开高走、震荡向上。今天是节前最后取现窗口，该跑的资金开盘就砸完了，后面只剩轻装上阵。抛压衰竭，买盘逐步回补，指数只会慢慢抬、稳稳收。不追高、不恐慌，稳住收红就是节前最大胜利，持股安心过年。",
       "publish_time": "2026-02-12 10:09"
     },
@@ -1255,7 +1249,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "美股大涨、A50走强！下周二A股开门红，神机证券股必爆发！",
       "publish_time": "2026-02-21 07:52"
     },
@@ -1263,7 +1257,7 @@
       "post_n": 6,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "利空突袭！券商盼涨落空，下周A股注定风雨兼程",
       "publish_time": "2026-02-21 12:20"
     },
@@ -1327,7 +1321,7 @@
       "post_n": 3,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天剧本我直接给你写好：受消息刺激，CPO开盘集体往上冲，给你一种要主升浪的错觉；紧接着就是获利盘砸盘、一路往下走，高开低走套牢追高盘；尾盘就是比谁跑得快，跑慢的直接站岗。",
       "publish_time": "2026-02-26 07:07"
     },
@@ -1335,7 +1329,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘探底回升、直接翻红是大概率！",
       "publish_time": "2026-02-26 11:33"
     },
@@ -1383,7 +1377,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "神鸡认为，下午市场大概率走出微型反转，逐步企稳回升；即便下午反弹力度有限，明天也会迎来艳阳高照，行情全面修复。",
       "publish_time": "2026-03-02 10:36"
     },
@@ -1399,7 +1393,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "神机判定：今日A股探底回升、强力反弹，权重稳盘、超跌板块集体修复，赚钱效应显著回暖。",
       "publish_time": "2026-03-03 08:20"
     },
@@ -1415,7 +1409,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今日开盘先恐慌后拉升，此时切勿割肉！",
       "publish_time": "2026-03-04 06:35"
     },
@@ -1447,7 +1441,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "A股今日必反弹，4500点近在眼前",
       "publish_time": "2026-03-05 06:36"
     },
@@ -1479,7 +1473,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今日A股低开高走，探底回升可期",
       "publish_time": "2026-03-06 06:53"
     },
@@ -1511,7 +1505,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "红盘定调，下周百花齐放",
       "publish_time": "2026-03-06 15:21"
     },
@@ -1559,7 +1553,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大概率震荡向上、收小阳/十字星。",
       "publish_time": "2026-03-10 12:48"
     },
@@ -1599,7 +1593,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "神机重磅收评:放量洗盘见真章，下周艳阳冲4500！",
       "publish_time": "2026-03-13 15:10"
     },
@@ -1607,7 +1601,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "神机收评:大跌我也痛！但这是终极洗盘，下周必起飞！",
       "publish_time": "2026-03-13 15:29"
     },
@@ -1615,7 +1609,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "神机明确判断：下周A股必定企稳反攻，阳线拉起！",
       "publish_time": "2026-03-14 07:05"
     },
@@ -1623,7 +1617,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "神机还是这句话：下周晴天一片，不必心忧！",
       "publish_time": "2026-03-14 10:15"
     },
@@ -1679,7 +1673,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "上午杀跌洗出恐慌盘，下午V型反转收大阳",
       "publish_time": "2026-03-16 11:29"
     },
@@ -1687,7 +1681,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天A股必定逆势拉出大阳！只剩下下午半天时间，我丝毫不怀疑，下午就是全线反转、暴力拉升的时刻",
       "publish_time": "2026-03-16 12:34"
     },
@@ -1703,7 +1697,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的V型反转只是开始，后面大盘还会继续大涨，目标点位直指4500点！",
       "publish_time": "2026-03-16 15:30"
     },
@@ -1735,7 +1729,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天就是最后一跌，明天必拉大阳！",
       "publish_time": "2026-03-17 15:47"
     },
@@ -1759,7 +1753,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午科技股将继续大反攻，反弹趋势已经彻底确立",
       "publish_time": "2026-03-18 11:18"
     },
@@ -1783,7 +1777,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "盘面信号已现，不用等下午，马上就要微型反转！",
       "publish_time": "2026-03-19 10:32"
     },
@@ -1791,7 +1785,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天大概率就是最后一跌，不出意外，下午或是明天，今天丢掉的点位、利润，都会加倍返还。",
       "publish_time": "2026-03-19 12:05"
     },
@@ -1823,7 +1817,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下午就是生死线！证券继续扛、指数稳住红盘、个股集体反弹，那这波调整直接结束，下周直接起飞，咱们坚守全值了！",
       "publish_time": "2026-03-20 12:02"
     },
@@ -1831,7 +1825,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "今天怎么跌下去，下周就怎么涨回来。",
       "publish_time": "2026-03-20 16:45"
     },
@@ -1839,7 +1833,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周一主力突然反手做多的概率，真的不小。",
       "publish_time": "2026-03-21 09:49"
     },
@@ -1887,7 +1881,7 @@
       "post_n": 0,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "后面大概率就是慢慢阴跌之路，别抱幻想，别盲目抄底。至少今天，别抱任何希望，后面还会跌。",
       "publish_time": "2026-03-23 11:41"
     },
@@ -1911,7 +1905,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天A股大概率反弹修复。",
       "publish_time": "2026-03-24 06:26"
     },
@@ -1919,7 +1913,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天坚定看反弹！",
       "publish_time": "2026-03-24 06:47"
     },
@@ -2047,7 +2041,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "神机明确观点：下周一A股不会被外围带崩，低开高走是大概率，全天收出阳线，又是一个妥妥的艳阳天，拿稳筹码别轻易被洗出去！",
       "publish_time": "2026-03-28 16:46"
     },
@@ -2095,7 +2089,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "神机依旧维持观点：今天A股大概率又是低开高走。外围扰动只会影响开盘，改不了内资节奏。指数低开反而是给资金低吸机会，不必跟着恐慌割肉。",
       "publish_time": "2026-03-31 06:36"
     },
@@ -2143,7 +2137,7 @@
       "post_n": 9,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天很大概率还要翻绿，这种冲高回落的盘面，看着热闹，实则杀机四伏。",
       "publish_time": "2026-04-01 10:20"
     },
@@ -2271,7 +2265,7 @@
       "post_n": 1,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "神机研判:散户心存幻想，下周跌势不止",
       "publish_time": "2026-04-04 15:32"
     },
@@ -2287,7 +2281,7 @@
       "post_n": 14,
       "direction": "bearish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周行情，不用多想，铁定惨烈。……周二低开是跑不了了，高位股、成长股会被按在地上摩擦。",
       "publish_time": "2026-04-04 18:26"
     },
@@ -2319,7 +2313,7 @@
       "post_n": 2,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天大A大概率会有一波弱反弹……这种弱反，尽量不参与，半毛风险都别去冒！……明天一个利空下来，直接被闷杀。",
       "publish_time": "2026-04-07 09:03"
     },
@@ -2327,7 +2321,7 @@
       "post_n": 1,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天这盘面，说白了就是个弱反弹，根本不值得上头。……大概率就是追高吃套，明天一个利空下来，直接被闷杀。",
       "publish_time": "2026-04-07 10:50"
     },
@@ -2335,7 +2329,7 @@
       "post_n": 0,
       "direction": "bearish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天就是诱多弱反弹，千万别手痒！……明天就是最后通牒，谈崩就是大暴跌，这种时候还敢往里冲，不是蠢是什么？",
       "publish_time": "2026-04-07 11:37"
     },
@@ -2439,7 +2433,7 @@
       "post_n": 2,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天受利空影响，市场大概率要调整，别抱太高幻想。",
       "publish_time": "2026-04-09 09:14"
     },
@@ -2447,7 +2441,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "我不仅看好今天下午的修复行情，更看好后面整体走势。",
       "publish_time": "2026-04-09 10:24"
     },
@@ -2463,7 +2457,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天怎么跌下去，明天就会怎么涨回来，神鸡敢拍着胸脯说，明天必定艳阳高照，大阳反包走起！",
       "publish_time": "2026-04-09 11:49"
     },
@@ -2479,7 +2473,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天怎么跌下去，明天就给我拉出一根放量大阳！",
       "publish_time": "2026-04-09 15:08"
     },
@@ -2599,7 +2593,7 @@
       "post_n": 3,
       "direction": "bearish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天开盘只有一个字：跌，而且大概率是大跌，没有任何悬念。",
       "publish_time": "2026-04-13 06:35"
     },
@@ -2647,7 +2641,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今日大A气势如虹，长阳可期，大涨两点亦不为过。",
       "publish_time": "2026-04-14 06:20"
     },
@@ -2695,7 +2689,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今日大盘将迎来决定性、突破性上涨，盘面全面回暖。",
       "publish_time": "2026-04-15 09:09"
     },
@@ -2703,7 +2697,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天下午大盘铁定直线V起来，力度只会比上午跌得更猛！",
       "publish_time": "2026-04-15 11:37"
     },
@@ -2727,7 +2721,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天下午怎么跌的，明天必定怎么涨回去！",
       "publish_time": "2026-04-15 18:10"
     },
@@ -2735,7 +2729,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天市场必涨！",
       "publish_time": "2026-04-16 06:27"
     },
@@ -2751,7 +2745,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午的行情无需质疑，大盘必将更上一层楼，继续向上突破。",
       "publish_time": "2026-04-16 11:55"
     },
@@ -2775,7 +2769,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午行情必将V型反转，主板必将强势翻红，收复失地。",
       "publish_time": "2026-04-17 10:21"
     },
@@ -2791,7 +2785,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "今天大盘只是小幅下跌、小幅调整，根本不用慌，这就是典型的蓄力洗盘，把不坚定的筹码清出去，就是为了下周能更顺畅地往上冲！",
       "publish_time": "2026-04-17 15:08"
     },
@@ -2799,7 +2793,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "昨夜外围全线大涨，利好已经明牌，下周一行情只会更强势，神机继续吃肉赚钱是板上钉钉。",
       "publish_time": "2026-04-18 06:26"
     },
@@ -2807,7 +2801,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周一，不用怀疑，高开高走是唯一剧本，多头情绪彻底引爆，行情主升浪正式开启！",
       "publish_time": "2026-04-18 13:53"
     },
@@ -2879,7 +2873,7 @@
       "post_n": 14,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天这种跟涨反跌的独立走弱信号，传递出强烈的风险警示，短期趋势不容乐观。",
       "publish_time": "2026-04-21 10:15"
     },
@@ -2951,7 +2945,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "我清晰预判到，午后市场必定迎来微型反转，绝不会一直跌下去。",
       "publish_time": "2026-04-23 12:42"
     },
@@ -2975,7 +2969,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天大盘必定会拉出一根中阳线，彻底收复失地，扭转弱势情绪。",
       "publish_time": "2026-04-24 06:14"
     },
@@ -2983,7 +2977,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天大盘必定全线反弹，强势收复昨天所有失地，不给空头留半点余地！",
       "publish_time": "2026-04-24 09:08"
     },
@@ -2991,7 +2985,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午坚决看反弹、看修复、看深V拉起。短期调整已经走完，情绪即将快速回暖。",
       "publish_time": "2026-04-24 11:33"
     },
@@ -2999,7 +2993,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "神鸡明确预判，下周一大盘必定高开高走，直接开启强势拉升模式，拿好手里的筹码，坐等主力抬轿吃肉，节后行情只会更强势！",
       "publish_time": "2026-04-24 15:07"
     },
@@ -3007,7 +3001,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周还有四个交易日，大概率就是行情回暖、迎来丰收的阶段。现阶段这种上下拉扯的宽幅震荡，完全不是行情走弱，就是主力刻意的强势洗盘。",
       "publish_time": "2026-04-24 16:16"
     },
@@ -3015,7 +3009,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "我神鸡的观点始终明确，下周坚决看涨，拿稳手里的筹码，别倒在黎明前，坐等下周行情起飞就对了！",
       "publish_time": "2026-04-24 18:15"
     },
@@ -3023,7 +3017,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "神机精准预判，下周一大A铁定高开高走，全线爆发迎来百股涨停、百花齐放的狂欢局面，市场做多情绪直接拉满！",
       "publish_time": "2026-04-25 06:20"
     },
@@ -3039,7 +3033,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "我神机坚定看好下周整体行情，蓄力过后市场必将迎来强势反弹，多头行情一触即发，大家坐稳筹码，静待拉升即可！",
       "publish_time": "2026-04-26 09:57"
     },
@@ -3047,7 +3041,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "担心个锤子！大A今天铁定要反弹，就算外围市场不涨，咱们A股也得走出独立上涨行情，这就是我的核心观点！",
       "publish_time": "2026-04-27 07:37"
     },
@@ -3055,7 +3049,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "我神机明确表态，今天大A反弹是板上钉钉的事，而且反弹力度绝对不会小！前期调整已经跌透了，根本没有继续下跌的空间，眼下就是持股待涨的最好时机！",
       "publish_time": "2026-04-27 09:08"
     },
@@ -3087,7 +3081,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘必然会走出微型反转，把失地给咱们收回来，耐心等着就行，后市绝对给大家惊喜！",
       "publish_time": "2026-04-28 12:09"
     },
@@ -3095,7 +3089,7 @@
       "post_n": 5,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "神机明确判断，今日大盘大概率继续走跌。",
       "publish_time": "2026-04-29 06:58"
     },
@@ -3135,7 +3129,7 @@
       "post_n": 0,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天指数很难走出强势反弹行情。盘面大概率维持弱势震荡格局，分化会进一步加剧。",
       "publish_time": "2026-04-30 06:13"
     },
@@ -3175,7 +3169,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "有了这个利好撑腰，节后A股彻底稳了，五月份全线大涨行情板上钉钉！节前我就反复强调要坚定满仓，现在看来完全判断正确，接下来市场必将一路走高，根本没有回调的机会！",
       "publish_time": "2026-05-02 07:27"
     },
@@ -3191,7 +3185,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "放眼整个五月，神机极度看好，行情环境只会越来越好。",
       "publish_time": "2026-05-02 13:54"
     },
@@ -3231,7 +3225,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "神机不说多余的废话，今天就两个字：大涨！",
       "publish_time": "2026-05-06 08:15"
     },
@@ -3335,7 +3329,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "记住神鸡的判断，下周一大概率低开高走，直接开启反攻行情！",
       "publish_time": "2026-05-15 15:02"
     },
@@ -3343,7 +3337,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周一走势早已被我拿捏得死死的。开盘受利空影响顺势低开洗盘，完成最后一波恐慌筹码收割，随后资金进场托底，直接走出低开高走的强势格局。",
       "publish_time": "2026-05-15 18:16"
     },
@@ -3351,7 +3345,7 @@
       "post_n": 5,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周一行情我看得明明白白，别再瞎冲瞎跟风！科技板块铁定要接着往下调整，根本撑不住盘面，高位炒作早就透支完了，资金早就偷偷跑路，谁还往里凑谁就是站岗接盘！",
       "publish_time": "2026-05-16 12:25"
     },
@@ -3367,7 +3361,7 @@
       "post_n": 3,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "所以实话实说，今天大盘压根没有走强的底气，整体就是震荡走弱的格局。",
       "publish_time": "2026-05-18 09:10"
     },
@@ -3375,7 +3369,7 @@
       "post_n": 2,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "这周的行情我压根不看好，整体氛围太弱了，处处都是不确定性，没必要在里面硬扛、赌运气。",
       "publish_time": "2026-05-18 11:35"
     },
@@ -3407,7 +3401,7 @@
       "post_n": 13,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "我早就提醒过，调整根本没结束，千万别心存侥幸。昨天就直言今天会跌得更凶，走势完全被我说中。",
       "publish_time": "2026-05-19 11:00"
     },
@@ -3431,7 +3425,7 @@
       "post_n": 10,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "明天很可能直接一锅闷杀，套住追高的所有人！神鸡坚持自己的判断：大盘根本没有调整到位，现在的企稳都是假象，今天很大概率就是下跌中继，后面还会继续下探走弱。",
       "publish_time": "2026-05-19 15:36"
     },
@@ -3439,7 +3433,7 @@
       "post_n": 9,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "对于短期行情，神鸡依旧坚决不看好。我不会像普通散户那样，被下午一波拉升就冲昏头脑、盲目乐观。始终保持冷静理性，不被盘面情绪裹挟。真心提醒各位，一定要谨慎控仓、小心应对，这轮调整远远没有走完，这一次4000点，大概率是要跌破探一探的。",
       "publish_time": "2026-05-19 17:51"
     },
@@ -3447,7 +3441,7 @@
       "post_n": 8,
       "direction": "bearish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "神机坚定认为，今天A股必然会跌，甚至出现大跌。当下市场下跌趋势已经完全形成，趋势力量极强，根本难以轻易逆转。",
       "publish_time": "2026-05-20 06:07"
     },
@@ -3471,7 +3465,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今日盘面极大概率走出强势阳包阴大反转形态",
       "publish_time": "2026-05-22 08:07"
     },
@@ -3487,7 +3481,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午行情大概率还会继续修复",
       "publish_time": "2026-05-22 11:39"
     },
@@ -3495,7 +3489,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午必定大涨，而且要大涨特涨！",
       "publish_time": "2026-05-22 12:28"
     },
@@ -3503,7 +3497,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "笃定预判下周一行情将延续强势攻势，多头势头不减，新一轮上涨行情蓄势待发",
       "publish_time": "2026-05-22 15:03"
     },
@@ -3511,7 +3505,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周整体盘面必然震荡走高，手中持仓个股也会顺势发力上攻。",
       "publish_time": "2026-05-22 17:40"
     },
@@ -3519,7 +3513,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周妥妥还是科技股的主场，行情势头肉眼可见向好。",
       "publish_time": "2026-05-23 14:13"
     },
@@ -3535,7 +3529,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "本周市场更大概率是震荡上行，科技股领衔结构性行情，板块轮动加快。",
       "publish_time": "2026-05-25 08:23"
     },
@@ -3551,7 +3545,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午盘面大有看点，V型反转大概率上演，指数和个股都会逐步回暖、震荡回升。",
       "publish_time": "2026-05-26 11:50"
     },
@@ -3567,7 +3561,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天芯片半导体为首的科技板块必定再度发力大涨。",
       "publish_time": "2026-05-27 08:45"
     },
@@ -3575,7 +3569,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "午后我依旧看好行情走V型反转，尾盘会逐步收回跌幅",
       "publish_time": "2026-05-27 11:33"
     },
@@ -3591,7 +3585,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "上午跌下去，下午必然强势拉升走出V型反转，这一点神机笃定无疑。",
       "publish_time": "2026-05-28 11:45"
     },
@@ -3607,7 +3601,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "上午凶狠砸盘洗盘，下午大概率就要原路收复失地！",
       "publish_time": "2026-05-29 11:40"
     },
@@ -3615,7 +3609,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "按照这个走势来看，下周一大概率会迎来一波反弹。",
       "publish_time": "2026-05-29 15:14"
     },
@@ -3631,7 +3625,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "按照市场轮动节奏和资金回流趋势来看，今天盘面大概率开启修复反弹。",
       "publish_time": "2026-06-01 07:54"
     },
@@ -3647,7 +3641,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘会延续反弹态势，CPO作为科技主线，后续必然持续发力，震荡走高、再创阶段新高！",
       "publish_time": "2026-06-02 11:36"
     },
@@ -3711,7 +3705,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "记住我的核心观点：科技不会集体崩盘，下周只会极致分化！并非所有科技股都会大跌，跌幅大小，完全取决于你的持仓涨幅。近一年涨幅三倍以下的个股，根本无大跌风险，周一顶多跟随大盘情绪杀跌三四个点，属于正常洗盘，无需过度恐慌。",
       "publish_time": "2026-06-06 11:43"
     },
@@ -3767,7 +3761,7 @@
       "post_n": 4,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "现在这盘面太明显：高位科技抛压根本没出清，反弹全是减仓机会，承接弱得一塌糊涂。上午拉上去站不住，下午大概率继续震荡走弱，没量没接力，多头根本抬不起头。",
       "publish_time": "2026-06-08 11:37"
     },
@@ -3887,7 +3881,7 @@
       "post_n": 14,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周行情大概率全线分化回落，科技股、老登股双双回调，追高的人全部被套。",
       "publish_time": "2026-06-12 17:32"
     },
@@ -3895,7 +3889,7 @@
       "post_n": 13,
       "direction": "bearish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周大A不用抱有任何幻想，行情绝对好不起来，妥妥的跌跌不休！",
       "publish_time": "2026-06-13 08:53"
     },
@@ -3919,7 +3913,7 @@
       "post_n": 10,
       "direction": "bearish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "不出意外，下周一科技板块将会迎来集中大跌！",
       "publish_time": "2026-06-13 13:34"
     },
@@ -3951,7 +3945,7 @@
       "post_n": 6,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "科技股行情已经阶段性落幕了。接下来科技股至少要调整一周以上，哪怕今日盘面短暂冲高，也只是诱多行情，改变不了后续回落的结局。",
       "publish_time": "2026-06-15 08:22"
     },
@@ -3967,7 +3961,7 @@
       "post_n": 2,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天涨上去的空间，大概率明天就会逐步跌回来。",
       "publish_time": "2026-06-15 15:13"
     },
@@ -4015,7 +4009,7 @@
       "post_n": 1,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "这周的极致抱团行情，大概率就是科技这波行情的尾声，下周市场大概率迎来一轮深度调整。",
       "publish_time": "2026-06-19 07:17"
     },
@@ -4023,7 +4017,7 @@
       "post_n": 14,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周一盘面没有悬念，还死扛在高位抱团科技股里的散户，真该瑟瑟发抖了。",
       "publish_time": "2026-06-19 19:05"
     },
@@ -4031,7 +4025,7 @@
       "post_n": 13,
       "direction": "bearish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周科技迎来一轮大幅回调已是定数，无需抱有侥幸。",
       "publish_time": "2026-06-20 08:03"
     },
@@ -4151,7 +4145,7 @@
       "post_n": 6,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天大盘高开几乎板上钉钉，可究竟是高开高走延续行情，还是经典高开套人，我更偏向后者。",
       "publish_time": "2026-06-25 07:10"
     },
@@ -4175,7 +4169,7 @@
       "post_n": 0,
       "direction": "bearish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "神鸡直接把话撂这，今天科技股大跌，基本就是百分之百的事情！别抱有任何幻想，行情早就定死了。",
       "publish_time": "2026-06-26 08:23"
     },
@@ -4183,7 +4177,7 @@
       "post_n": 14,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "今天只是开始，下周科技股大概率会迎来持续大跌。",
       "publish_time": "2026-06-26 12:20"
     },
@@ -4215,7 +4209,7 @@
       "post_n": 9,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "今天扛住不跌，下周一还能扛住吗？高位获利盘这么大，补跌只是早晚的事。",
       "publish_time": "2026-06-26 16:21"
     },
@@ -4223,7 +4217,7 @@
       "post_n": 8,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "昨夜美股半导体全线大跌，下周一A股半导体板块基本在劫难逃，这点神机提前讲透。",
       "publish_time": "2026-06-27 09:58"
     },
@@ -4231,7 +4225,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "神机直言，当下正是空仓、轻仓布局者的绝佳窗口期，下周可分批低吸基本面扎实的绩优老登龙头。",
       "publish_time": "2026-06-27 10:05"
     },
@@ -4279,7 +4273,7 @@
       "post_n": 13,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天开始，科技股大概率迎来大幅调整，利好兑现就是最大的利空。",
       "publish_time": "2026-06-29 08:04"
     },
@@ -4287,7 +4281,7 @@
       "post_n": 12,
       "direction": "bearish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天科技股必然大幅分化、杀跌调整，情绪直接兑现回落。大盘也会被科技带偏，整体行情偏弱。",
       "publish_time": "2026-06-29 08:19"
     },
@@ -4327,7 +4321,7 @@
       "post_n": 7,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "不用抱有任何幻想，今天靠资金硬拉上去的涨幅，明天大概率原样吐回去。千万别被短暂的红盘迷惑，不要盲目加仓追高！短线趋势依旧偏弱，诱多结束就是新一轮调整，守住仓位、管住手，明天盘面自然见证结果。",
       "publish_time": "2026-06-29 17:50"
     },
@@ -4343,7 +4337,7 @@
       "post_n": 2,
       "direction": "bearish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "听好了，今天就是高位科技的阶段性顶！连日暴涨的AI、机器人、高位科技票，彻底结束狂欢行情，从今日起正式开启回调杀跌模式。",
       "publish_time": "2026-07-01 08:59"
     },
@@ -4351,7 +4345,7 @@
       "post_n": 1,
       "direction": "bearish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "在神鸡看来，本轮调整不在今天下午，大概率就在明天！现在盘面已经明显过火，指数疯涨、情绪亢奋，这全是诱多信号。",
       "publish_time": "2026-07-01 11:57"
     },
@@ -4375,7 +4369,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天大盘要是敢继续砸、敢继续跌，神鸡直接把剩下五成仓全部打进去！",
       "publish_time": "2026-07-02 06:22"
     },
@@ -4415,7 +4409,7 @@
       "post_n": 5,
       "direction": "bearish",
       "strength": "strong",
-      "time_horizon": "biweekly",
+      "time_horizon": "medium",
       "evidence": "这轮大跌从今日起正式开启，调整周期远比大家想象的久。千万不要脑子一热去抄底抢反弹，这次调整绝非一日两日就能结束，保守预估至少要持续半个月。",
       "publish_time": "2026-07-02 15:39"
     },
@@ -4423,7 +4417,7 @@
       "post_n": 4,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "按照这个节奏，咱们大A今日大概率延续跟随调整态势，科技题材依旧是重灾区，短期很难翻身。",
       "publish_time": "2026-07-03 06:15"
     },
@@ -4463,7 +4457,7 @@
       "post_n": 13,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "等后续主力底仓基本抛售干净，半导体、CPO这类高位标的，马上就会开启持续下杀的走势，很大概率下周就能见到。",
       "publish_time": "2026-07-10 15:25"
     },
@@ -4471,7 +4465,7 @@
       "post_n": 11,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "在我看来，今日回落仅仅只是铺垫，下周才会迎来半导体、CPO真正意义上的大跌行情，眼下这点调整不过是开胃小菜，后续抛压集中释放之后，高位抱团的风险才会彻底暴露，咱们静静等候盘面印证就好。",
       "publish_time": "2026-07-10 16:12"
     },
@@ -4495,7 +4489,7 @@
       "post_n": 6,
       "direction": "bearish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "霍尔木兹海峡再度封锁，美伊摩擦彻底升级，今天A股大盘几乎注定低开走弱，盘面绝不会好看。",
       "publish_time": "2026-07-13 08:55"
     },
@@ -4503,7 +4497,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "但我依旧不会动摇原有判断，坚信下午板块有望走出绝地反击。",
       "publish_time": "2026-07-13 11:03"
     },
@@ -4527,7 +4521,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "神机我直接把下午行情预判摆在这，午后创新药大概率集体爆发，带动大盘走出一波全面反弹，多数个股都会跟着修复回血。",
       "publish_time": "2026-07-14 12:46"
     },
@@ -4535,7 +4529,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "恐慌盘全部割肉离场后，抛压也就彻底出清，不出意外下午市场会走出V型反转行情。",
       "publish_time": "2026-07-17 10:42"
     },
@@ -4543,7 +4537,7 @@
       "post_n": 1,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "照这个情况来看，下周一开盘很大概率还要迎来一波下杀，大家提前做好心理建设，别到时候再度大跌又瞬间破防。",
       "publish_time": "2026-07-17 17:35"
     },
@@ -4591,7 +4585,7 @@
       "post_n": 1,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午要是半导体再放量杀，那今天的反弹就是虚的，明天大概率继续下探！",
       "publish_time": "2026-07-20 12:15"
     },
@@ -4631,7 +4625,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周大概率会迎来极致缩量的量窒息行情，恐慌盘彻底出清之后，就是绝佳入场窗口，到时候我直接全仓进场布局。",
       "publish_time": "2026-07-23 18:45"
     },
@@ -4639,7 +4633,7 @@
       "post_n": 5,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天大A大概率跟着承压下行。",
       "publish_time": "2026-07-24 06:03"
     },
@@ -4663,7 +4657,7 @@
       "post_n": 2,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天盘面很难乐观，大概率又是一片哀嚎。",
       "publish_time": "2026-07-24 08:45"
     },
@@ -4695,7 +4689,7 @@
       "post_n": 12,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "按照这个态势来看，下周一很大概率还要继续下探。不要幻想短期能够企稳反弹，现阶段任何抄底想法都要压下去。",
       "publish_time": "2026-07-24 15:06"
     },
@@ -4719,7 +4713,7 @@
       "post_n": 9,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "隔夜美股盘面看得很清楚，道指依靠传统蓝筹稳住收红，但是科技赛道彻底分裂，存储芯片全线崩盘。美光、SK海力士、西部数据大幅下挫，费城半导体指数明显走弱。不用多说，情绪传导之下，下周一A股半导体、算力、光模块压力巨大，开局很难乐观。",
       "publish_time": "2026-07-25 07:08"
     },
@@ -4727,7 +4721,7 @@
       "post_n": 7,
       "direction": "bearish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "兄弟们，神机提前清仓规避风险，大盘转头就开启新一轮下跌，提前预判市场风险可不是随口说说。有句话大家听着可能不舒服，下周大盘还要继续下探，核心拖累就是半导体、CPO这两大高位科技赛道，外围存储板块大跌已经提前释放利空，补跌行情躲不开。",
       "publish_time": "2026-07-25 12:24"
     },
@@ -4759,7 +4753,7 @@
       "post_n": 2,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天市场大概率会迎来一轮弱势小幅反弹，但所有股民一定要保持清醒，绝对不要盲目追高。这只是下跌途中的短暂修复，并非反转信号，结构性风险依旧没有完全释放。",
       "publish_time": "2026-07-27 08:53"
     },
@@ -4775,7 +4769,7 @@
       "post_n": 0,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天上午大盘走出一波反弹，在神鸡看来，这仅仅是下跌途中诱多的把戏，并非行情企稳反转。",
       "publish_time": "2026-07-27 10:34"
     },
@@ -4791,7 +4785,7 @@
       "post_n": 10,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "在我看来，当下大盘整体调整周期并未结束，今天这波拉升仅仅是下跌途中的短期反弹，并非市场彻底反转的信号，大家千万不要被单日阳线冲昏头脑，盲目看多加仓。",
       "publish_time": "2026-07-27 11:46"
     },
@@ -4799,7 +4793,7 @@
       "post_n": 11,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "在我看来，当下大盘整体调整周期并未结束，今天这波拉升仅仅是下跌途中的短期反弹，并非市场彻底反转的信号，大家千万不要被单日阳线冲昏头脑，盲目看多加仓。",
       "publish_time": "2026-07-27 11:46"
     },
@@ -4879,7 +4873,7 @@
       "post_n": 13,
       "direction": "bearish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "不要抱有任何幻想，下午还会继续跌，特别是高位科技股。泥沙俱下已经是定局，大盘走弱的环境下，想要指望老登股走出独立行情基本不现实。",
       "publish_time": "2026-07-28 12:33"
     },
@@ -4991,7 +4985,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午有望由半导体带动大盘走出绝地反击，复刻V型反转行情",
       "publish_time": "2026-07-30 12:38"
     },
@@ -5015,7 +5009,7 @@
       "post_n": 13,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "上午选择全部清仓，准备等待下午盘中回落，或是下周一出现回调之后，再度满仓接回。",
       "publish_time": "2026-07-31 10:01"
     },
@@ -5023,7 +5017,7 @@
       "post_n": 10,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "在我看来，半导体倘若下午没有出现跳水行情，下周一开盘大概率迎来低开。",
       "publish_time": "2026-07-31 11:52"
     },
@@ -5031,7 +5025,7 @@
       "post_n": 8,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "半导体早盘已经出现一波回落，预期午后调整行情延续，这轮调整大概率会走出三波下探节奏。早盘完成第一跌，下午迎来第二跌，等到下周一再完成最后一跌，调整空间基本充分",
       "publish_time": "2026-07-31 12:02"
     },
@@ -5039,7 +5033,7 @@
       "post_n": 6,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "以当前盘面走势来看，下周一低开基本已成定局。",
       "publish_time": "2026-07-31 15:08"
     },
@@ -5047,7 +5041,7 @@
       "post_n": 5,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "按照节奏，下周一开盘大概率还有一跌，调整充分之后，就是再度进场时机。",
       "publish_time": "2026-07-31 15:11"
     },
@@ -5055,7 +5049,7 @@
       "post_n": 2,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "隔夜美股存储芯片上演冲高回落，获利资金集中兑现，外围情绪转弱，下周一大A半导体恐怕凶多吉少。",
       "publish_time": "2026-08-01 06:07"
     },

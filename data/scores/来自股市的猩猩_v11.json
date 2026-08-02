@@ -2,66 +2,66 @@
   "blogger": "来自股市的猩猩",
   "scoring_version": "v11 (time_horizon-windowed single formula)",
   "signals_total": 726,
-  "signals_scored": 315,
-  "score_zero": 407,
+  "signals_scored": 714,
+  "score_zero": 8,
   "no_price": 2,
   "no_segment": 0,
   "scores": {
     "综合": {
-      "total": -6.08,
-      "count": 315,
-      "avg_pct": -0.02,
-      "win_rate": 46.03
+      "total": 32.91,
+      "count": 714,
+      "avg_pct": 0.05,
+      "win_rate": 49.86
     },
     "上升段": {
-      "total": -7.75,
-      "count": 207,
-      "avg_pct": -0.04,
-      "win_rate": 41.55
+      "total": 20.81,
+      "count": 483,
+      "avg_pct": 0.04,
+      "win_rate": 45.96
     },
     "下降段": {
-      "total": 1.67,
-      "count": 108,
-      "avg_pct": 0.02,
-      "win_rate": 54.63
+      "total": 12.1,
+      "count": 231,
+      "avg_pct": 0.05,
+      "win_rate": 58.01
     },
     "抄底": {
-      "total": 5.86,
-      "count": 9,
-      "avg_pct": 0.65,
-      "win_rate": 88.89
+      "total": 35.82,
+      "count": 31,
+      "avg_pct": 1.16,
+      "win_rate": 87.1
     },
     "逃顶": {
-      "total": 11.04,
-      "count": 11,
-      "avg_pct": 1.0,
-      "win_rate": 100.0
+      "total": 21.68,
+      "count": 17,
+      "avg_pct": 1.28,
+      "win_rate": 88.24
     },
     "看多": {
-      "total": 11.56,
-      "count": 138,
-      "avg_pct": 0.08,
-      "win_rate": 58.7
+      "total": 115.22,
+      "count": 383,
+      "avg_pct": 0.3,
+      "win_rate": 61.36
     },
     "看空": {
-      "total": -17.65,
-      "count": 177,
-      "avg_pct": -0.1,
-      "win_rate": 36.16
+      "total": -82.31,
+      "count": 331,
+      "avg_pct": -0.25,
+      "win_rate": 36.56
     }
   },
   "time_horizon_scores": {
     "short": {
-      "count": 279,
-      "total": -9.53,
-      "avg_pct": -0.03,
-      "win_rate": 44.09
+      "count": 566,
+      "total": 5.91,
+      "avg_pct": 0.01,
+      "win_rate": 48.76
     },
     "weekly": {
-      "count": 38,
-      "total": 3.45,
-      "avg_pct": 0.09,
-      "win_rate": 57.89
+      "count": 0,
+      "total": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
     },
     "biweekly": {
       "count": 0,
@@ -76,22 +76,22 @@
       "win_rate": 0.0
     },
     "intraday": {
-      "count": 287,
+      "count": 0,
       "total": 0.0,
       "avg_pct": 0.0,
       "win_rate": 0.0
     },
     "long": {
       "count": 2,
-      "total": 0.0,
-      "avg_pct": 0.0,
-      "win_rate": 0.0
+      "total": 1.95,
+      "avg_pct": 0.97,
+      "win_rate": 100.0
     },
     "unspecified": {
       "count": 118,
-      "total": 0.0,
-      "avg_pct": 0.0,
-      "win_rate": 0.0
+      "total": 22.08,
+      "avg_pct": 0.19,
+      "win_rate": 47.46
     }
   },
   "segments": {
@@ -102,7 +102,7 @@
       "total": 38,
       "bull": 30,
       "bear": 8,
-      "score": 1.7
+      "score": 9.22
     },
     "I11->I12": {
       "direction": "rising",
@@ -111,7 +111,7 @@
       "total": 38,
       "bull": 26,
       "bear": 12,
-      "score": -1.74
+      "score": 0.22
     },
     "I12->M5": {
       "direction": "falling",
@@ -120,7 +120,7 @@
       "total": 38,
       "bull": 37,
       "bear": 1,
-      "score": -20.58
+      "score": -39.6
     },
     "I13->I14": {
       "direction": "rising",
@@ -129,7 +129,7 @@
       "total": 19,
       "bull": 16,
       "bear": 3,
-      "score": 6.7
+      "score": 8.72
     },
     "I14->M8": {
       "direction": "falling",
@@ -138,7 +138,7 @@
       "total": 38,
       "bull": 10,
       "bear": 28,
-      "score": 2.01
+      "score": 4.14
     },
     "I9->I10": {
       "direction": "rising",
@@ -147,7 +147,7 @@
       "total": 72,
       "bull": 33,
       "bear": 39,
-      "score": 1.36
+      "score": 27.74
     },
     "M3->M4": {
       "direction": "rising",
@@ -156,7 +156,7 @@
       "total": 235,
       "bull": 88,
       "bear": 147,
-      "score": -10.98
+      "score": -60.79
     },
     "M4->I9": {
       "direction": "falling",
@@ -165,7 +165,7 @@
       "total": 77,
       "bull": 56,
       "bear": 21,
-      "score": 13.42
+      "score": 26.7
     },
     "M5->M6": {
       "direction": "rising",
@@ -174,7 +174,7 @@
       "total": 105,
       "bull": 47,
       "bear": 58,
-      "score": -4.24
+      "score": 38.86
     },
     "M6->I13": {
       "direction": "falling",
@@ -183,7 +183,7 @@
       "total": 45,
       "bull": 29,
       "bear": 16,
-      "score": 5.12
+      "score": 11.64
     },
     "M8->now": {
       "direction": "rising",
@@ -230,8 +230,8 @@
           "time": "07:53",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": -0.4366,
+          "score": -0.4366,
           "ref": "2026-02-02 open",
           "evidence": "预计今天的走势不会太差，如果今天早盘因为外围市场的影响，出现较为明显的低开，且低开的幅度足够大的话 ，比如说低开在406"
         },
@@ -240,8 +240,8 @@
           "time": "14:08",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 1.1492,
+          "score": 1.1492,
           "ref": "2026-02-02 close",
           "evidence": "下午市场跌幅超过2%的时候，我赶紧发视频告诉大家：不用慌，基本已经调整到位。目前看来，我的观点得到了市场的验证。今天下午"
         },
@@ -250,8 +250,8 @@
           "time": "07:34",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 0.9408,
+          "score": 0.9408,
           "ref": "2026-02-03 open",
           "evidence": "预计今天上证指数将会在这两个点位附近获得止跌，产生反弹。"
         },
@@ -260,8 +260,8 @@
           "time": "10:11",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 0.3494,
+          "score": 0.3494,
           "ref": "2026-02-03 close",
           "evidence": "今天早盘高开之后，我基本上可以确认短线反弹的基调已经确认。"
         },
@@ -280,8 +280,8 @@
           "time": "07:54",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 0.4073,
+          "score": 0.4073,
           "ref": "2026-02-04 open",
           "evidence": "个人倾向于今天上证指数或者还能再小幅度的收一颗阳线。"
         },
@@ -290,8 +290,8 @@
           "time": "10:37",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 0.0222,
+          "score": 0.0222,
           "ref": "2026-02-04 close",
           "evidence": "上证指数15分钟图依然保持了强劲的分时长波拉，而这种长波拉升，目前还没有停下来的迹象，所以接下来继续看多上证指数。"
         },
@@ -306,9 +306,9 @@
           "evidence": "我在今天中午1:30的时候，在直播当中明确告诉大家，不仅对于今天下午的走势看多，而且看多明天的走势，而且看多整个春节长假"
         }
       ],
-      "total_score": -0.16,
+      "total_score": 2.27,
       "signal_count": 8,
-      "avg_score_pct": -2.02
+      "avg_score_pct": 28.38
     },
     "I13": {
       "signals": [
@@ -317,8 +317,8 @@
           "time": "07:21",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 1.5367,
+          "score": 1.5367,
           "ref": "2026-06-08 open(non-trading)",
           "evidence": "那么在这种情况下，A股周一就会出现较大概率的低开情况，那么低开之后，市场会怎么走呢？"
         },
@@ -343,9 +343,9 @@
           "evidence": "既然短线处于强势的状态当中，预计明天市场还能维持这种短线强势的惯性。"
         }
       ],
-      "total_score": 0.95,
+      "total_score": 2.49,
       "signal_count": 3,
-      "avg_score_pct": 31.83
+      "avg_score_pct": 83.05
     },
     "I14": {
       "signals": [
@@ -374,8 +374,8 @@
           "time": "11:35",
           "direction": "bearish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 0.1509,
+          "score": -0.1509,
           "ref": "2026-06-23 close",
           "evidence": "市场今天大概率会出现调整。"
         },
@@ -384,8 +384,8 @@
           "time": "19:23",
           "direction": "bearish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": -0.0973,
+          "score": 0.0973,
           "ref": "2026-06-24 open",
           "evidence": "所以今天的K线理论上来说，意味着短线继续调整的概率更大一些。"
         },
@@ -400,9 +400,9 @@
           "evidence": "预计明天上证指数可能会在今天的高点和低点范围之内窄幅波动，形成小K线十字星的走势。"
         }
       ],
-      "total_score": 2.7,
+      "total_score": 2.65,
       "signal_count": 5,
-      "avg_score_pct": 54.08
+      "avg_score_pct": 53.01
     },
     "I9": {
       "signals": [
@@ -411,8 +411,8 @@
           "time": "07:59",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": -0.2863,
+          "score": -0.2863,
           "ref": "2025-12-15 open",
           "evidence": "A股今天如果选择往上走的话，小幅度收阳线的话，那么超短线市场可能还会继续往上走一段。"
         },
@@ -421,8 +421,8 @@
           "time": "10:14",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 0.8456,
+          "score": 0.8456,
           "ref": "2025-12-16 close",
           "evidence": "预计上午的第2个小时有望出现探底回升的走势。"
         },
@@ -441,8 +441,8 @@
           "time": "08:14",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 1.4787,
+          "score": 1.4787,
           "ref": "2025-12-17 open",
           "evidence": "第二， A股昨天全线调整，但是今天预计市场指数止跌反弹的可能性相对较大。据我观察，上证指数今天或者能够收一颗缩量的小阳星"
         },
@@ -451,8 +451,8 @@
           "time": "10:18",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 0.2262,
+          "score": 0.2262,
           "ref": "2025-12-17 close",
           "evidence": "据我观察，大盘今天守住3816点没有问题！从今天早盘的情况来看，很显然主力是想要在3800点上方构筑防线的。今天市场早盘"
         },
@@ -461,15 +461,15 @@
           "time": "13:49",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 0.2262,
+          "score": 0.2262,
           "ref": "2025-12-17 close",
           "evidence": "午后指数的异动拉升说明什么问题？这其实表明了一个观点，那就是主力在3800点防守的决心。而一旦主力表达出了这个观点，市场"
         }
       ],
-      "total_score": 0.85,
+      "total_score": 3.34,
       "signal_count": 6,
-      "avg_score_pct": 14.09
+      "avg_score_pct": 55.6
     },
     "M4": {
       "signals": [
@@ -478,8 +478,8 @@
           "time": "07:57",
           "direction": "bearish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 0.0207,
+          "score": -0.0207,
           "ref": "2025-11-13 open",
           "evidence": "对于今天市场整体的走势，我个人认为震荡偏回落的概率大。我认为上证指数或者收出一颗小实体的阴线。短线市场的强支撑点在392"
         },
@@ -488,8 +488,8 @@
           "time": "07:57",
           "direction": "bearish",
           "strength": "moderate",
-          "return": -3.4827,
-          "score": 3.4827,
+          "return": -3.2865,
+          "score": 3.2865,
           "ref": "2025-11-14 open",
           "evidence": "预计今天市场不会出现明显调整，全天震荡收小阴的概率较大。但是整体下个交易周预计短线震荡回落的概率较大。"
         },
@@ -508,15 +508,15 @@
           "time": "14:09",
           "direction": "bearish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": -3.2527,
+          "score": 3.2527,
           "ref": "2025-11-14 close",
           "evidence": "所以个人认为目前对于指数来说，我个人倾向于指数回到箱体低点3922点附近的概率相对较大。"
         }
       ],
-      "total_score": 4.06,
+      "total_score": 7.1,
       "signal_count": 4,
-      "avg_score_pct": 101.5
+      "avg_score_pct": 177.4
     },
     "M5": {
       "signals": [
@@ -525,8 +525,8 @@
           "time": "10:18",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 4.8633,
+          "score": 4.8633,
           "ref": "2026-03-23 open(non-trading)",
           "evidence": "这种特征往往就具备最后一跌的可能性。"
         },
@@ -535,8 +535,8 @@
           "time": "15:36",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.1197,
-          "score": 0.1197,
+          "return": 1.0689,
+          "score": 1.0689,
           "ref": "2026-03-23 open(non-trading)",
           "evidence": "整体来看，对于下一周的行情，我维持反弹的判断。"
         },
@@ -545,8 +545,8 @@
           "time": "08:17",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": -0.755,
+          "score": -0.755,
           "ref": "2026-03-23 open",
           "evidence": "对于今天市场行情的走势，我维持相对乐观的判断，我认为今天市场反弹的概率相对较大。"
         },
@@ -565,8 +565,8 @@
           "time": "19:30",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 1.3275,
+          "score": 1.3275,
           "ref": "2026-03-24 open",
           "evidence": "所以今天市场一口气跌到这个重要支撑点的时候，我认为市场大概率也会无例"
         },
@@ -575,8 +575,8 @@
           "time": "08:32",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 1.3275,
+          "score": 1.3275,
           "ref": "2026-03-24 open",
           "evidence": "预计今天指数将会高开反弹。反弹的第1压力点3906点。反弹的第2压力"
         },
@@ -585,8 +585,8 @@
           "time": "11:34",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 5.4584,
+          "score": 5.4584,
           "ref": "2026-03-24 close",
           "evidence": "还记得昨天市场一片惨淡的时候，很多朋友对于市场的走势表现得非常的悲观，但是我当时就明确告诉大家，坚定看在这个位置产生反弹"
         },
@@ -595,8 +595,8 @@
           "time": "15:08",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 0.4953,
+          "score": 0.4953,
           "ref": "2026-03-25 open",
           "evidence": "今天真的是太不容易了，市场连续调整之后，今天终于迎来了久违的反弹。最终上证指数涨1.78%深证成指涨1.43%，创业板指"
         },
@@ -605,15 +605,15 @@
           "time": "18:47",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 4.9901,
+          "score": 4.9901,
           "ref": "2026-03-25 open",
           "evidence": "一旦调整结束，市场依然有望，走出止跌企稳的走势。"
         }
       ],
-      "total_score": 1.75,
+      "total_score": 20.41,
       "signal_count": 9,
-      "avg_score_pct": 19.45
+      "avg_score_pct": 226.74
     },
     "M6": {
       "signals": [
@@ -642,8 +642,8 @@
           "time": "19:11",
           "direction": "bearish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": -5.1178,
+          "score": 5.1178,
           "ref": "2026-05-14 open",
           "evidence": "接下来震荡休整的概率大。"
         },
@@ -652,8 +652,8 @@
           "time": "07:48",
           "direction": "bearish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": -2.5346,
+          "score": 2.5346,
           "ref": "2026-05-14 open",
           "evidence": "据我判断，今天上证指数或者会出现冲高回落的实体小阴线走势。"
         },
@@ -678,9 +678,9 @@
           "evidence": "据我判断，接下来纳指掉头向下的概率大。"
         }
       ],
-      "total_score": 2.91,
+      "total_score": 10.57,
       "signal_count": 6,
-      "avg_score_pct": 48.57
+      "avg_score_pct": 176.11
     },
     "M8": {
       "signals": [
@@ -699,8 +699,8 @@
           "time": "16:45",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.9738,
-          "score": 0.9738,
+          "return": 1.756,
+          "score": 1.756,
           "ref": "2026-07-20 open(non-trading)",
           "evidence": "对于下一周A股整体行情来看，我认为沪指周K线收阳线的概率比较大。"
         },
@@ -709,8 +709,8 @@
           "time": "08:17",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 1.3424,
+          "score": 1.3424,
           "ref": "2026-07-20 open",
           "evidence": "有利好消息加持的情况下，预计A股今天能够产生一定程度的反弹。"
         },
@@ -719,8 +719,8 @@
           "time": "11:34",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 1.2191,
+          "score": 1.2191,
           "ref": "2026-07-20 close",
           "evidence": "从今天上午收盘的情况来看，市场指数果然还是实现了我预期当中的及时反弹走势。"
         },
@@ -739,15 +739,15 @@
           "time": "08:09",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 1.5013,
+          "score": 1.5013,
           "ref": "2026-07-21 open",
           "evidence": "指数今天或者还能走出一颗小幅反弹的实体阳线。"
         }
       ],
-      "total_score": 2.48,
+      "total_score": 7.32,
       "signal_count": 6,
-      "avg_score_pct": 41.25
+      "avg_score_pct": 122.0
     }
   }
 }

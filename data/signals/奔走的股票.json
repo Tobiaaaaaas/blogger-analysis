@@ -15,22 +15,16 @@
   "scored_bullish": {
     "strong": 2,
     "moderate": 128,
-    "intraday": 43,
-    "short": 58,
-    "weekly": 19,
-    "biweekly": 0,
-    "monthly": 0,
+    "short": 101,
+    "medium": 19,
     "long": 1,
     "unspecified": 9
   },
   "scored_bearish": {
     "strong": 4,
     "moderate": 52,
-    "intraday": 18,
-    "short": 17,
-    "weekly": 11,
-    "biweekly": 0,
-    "monthly": 0,
+    "short": 35,
+    "medium": 11,
     "long": 0,
     "unspecified": 10
   },
@@ -39,7 +33,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周的大盘，会怎么走？我做个大胆预判",
       "publish_time": "2024-06-01 15:34"
     },
@@ -63,7 +57,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "大反攻要来了？下午大盘，会怎么走",
       "publish_time": "2024-06-04 11:40"
     },
@@ -79,7 +73,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "没必要悲观失望！下午大盘，会这样走",
       "publish_time": "2024-06-05 11:57"
     },
@@ -87,7 +81,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "直接说重点！下周（7月8-12日）大盘，将迎来强劲反弹",
       "publish_time": "2024-07-05 14:46"
     },
@@ -95,7 +89,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "做好准备！下周（7月15-19日），拥抱大盘大反弹",
       "publish_time": "2024-07-12 14:52"
     },
@@ -111,7 +105,7 @@
       "post_n": 14,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "A股：做好准备吧，只有大跌才有机会，下午大盘会怎么走",
       "publish_time": "2024-07-30 11:07"
     },
@@ -135,7 +129,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "A股：是大突破前的蓄势，还是反弹结束？下午大盘怎么走",
       "publish_time": "2024-08-01 11:24"
     },
@@ -151,7 +145,7 @@
       "post_n": 9,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "A股：海外风高浪急，反弹结束了吗？下午能否逆风翻盘",
       "publish_time": "2024-08-02 11:18"
     },
@@ -159,7 +153,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "A股：是大涨前的回踩，还是反弹结束？下周（8月5-9日）走势预判",
       "publish_time": "2024-08-02 14:45"
     },
@@ -183,7 +177,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "A股：连续倒车接人，你上车了没？下午大盘怎么走",
       "publish_time": "2024-08-05 11:04"
     },
@@ -199,7 +193,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "A股：实在看不下去了！下午大盘，能否扬眉吐气",
       "publish_time": "2024-08-06 11:28"
     },
@@ -215,7 +209,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "A股：如期反弹！下午大盘，能否再硬气一些",
       "publish_time": "2024-08-07 11:27"
     },
@@ -271,7 +265,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "A股：不用再瞎猜了，下周（8月19-23日）大盘，机会难得",
       "publish_time": "2024-08-16 14:21"
     },
@@ -287,7 +281,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "A股：曙光乍现！下午大盘，能否一阳改三观",
       "publish_time": "2024-08-23 11:45"
     },
@@ -295,7 +289,7 @@
       "post_n": 3,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "谨防下午大盘，收出长下影线，这不是见底标志",
       "publish_time": "2024-09-09 11:13"
     },
@@ -311,7 +305,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "不要再瞎猜了！下周（9月18-20日）大盘，将会出现大变盘",
       "publish_time": "2024-09-13 14:40"
     },
@@ -335,7 +329,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "万事具备，下周（9月23-27日），开启报复性反弹",
       "publish_time": "2024-09-21 10:07"
     },
@@ -359,7 +353,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "黄毛回来也不怕，就是强！下午大盘会怎么表演",
       "publish_time": "2024-11-07 11:38"
     },
@@ -391,7 +385,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "A股：大家做好准备吧，下午大盘，会这样运行",
       "publish_time": "2024-11-12 11:47"
     },
@@ -407,7 +401,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "A股：大佬们回来了，大涨有希望了？下午大盘会怎么走",
       "publish_time": "2024-11-13 11:56"
     },
@@ -423,7 +417,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "A股：大佬们集体拉升，有些话不得不说了！下午大盘会怎么走",
       "publish_time": "2024-11-14 11:41"
     },
@@ -439,7 +433,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "A股：看不下去了，有些话不得不说了，下午大盘会这样运行",
       "publish_time": "2024-11-15 11:36"
     },
@@ -455,7 +449,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "A股：是主力化妆潜逃，还是倒车接人？下周大盘怎么运行",
       "publish_time": "2024-11-16 11:47"
     },
@@ -487,7 +481,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "好像跌不下去了？下午大盘，会翻身向上吗",
       "publish_time": "2024-11-19 11:49"
     },
@@ -519,7 +513,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "如此不顾一切的砸盘，为了什么？下午大盘能否好转",
       "publish_time": "2024-11-22 11:48"
     },
@@ -535,7 +529,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "高开震荡，是停车接人吗？下午大盘能否鲤鱼翻身",
       "publish_time": "2024-11-25 11:21"
     },
@@ -551,7 +545,7 @@
       "post_n": 0,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "大家做好准备吧，防备下午大盘，会有大动作",
       "publish_time": "2024-11-26 11:46"
     },
@@ -567,7 +561,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "午盘直线拉升，强到拒绝调整，大盘下午会怎么运行",
       "publish_time": "2024-12-12 11:45"
     },
@@ -583,7 +577,7 @@
       "post_n": 7,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "股民要做好心理准备，断奶之后的大盘，下周会不会一泻千里",
       "publish_time": "2024-12-14 15:26"
     },
@@ -607,7 +601,7 @@
       "post_n": 3,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "大风险正在迫近，下午大盘会怎么运行",
       "publish_time": "2024-12-17 11:51"
     },
@@ -623,7 +617,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "再现普涨行情，大盘下午会不会暴涨",
       "publish_time": "2024-12-20 11:58"
     },
@@ -631,7 +625,7 @@
       "post_n": 9,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "要警惕下周大盘，进入大区间震荡主跌阶段",
       "publish_time": "2024-12-20 18:32"
     },
@@ -663,7 +657,7 @@
       "post_n": 13,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "看上去又要大跌了吗？下午大盘，能否止跌回升",
       "publish_time": "2025-01-03 12:05"
     },
@@ -671,7 +665,7 @@
       "post_n": 12,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "再度暴跌，股民亏惨了，下周的大盘还有希望吗",
       "publish_time": "2025-01-03 15:04"
     },
@@ -687,7 +681,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "大利好正在路上，股民期盼大涨解套，下周大盘会让你走吗",
       "publish_time": "2025-01-04 15:40"
     },
@@ -711,7 +705,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘，能否绝地反击",
       "publish_time": "2025-01-07 11:52"
     },
@@ -735,7 +729,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘，能否嗨起来",
       "publish_time": "2025-01-09 11:34"
     },
@@ -751,7 +745,7 @@
       "post_n": 1,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘会大幅震荡",
       "publish_time": "2025-01-10 11:48"
     },
@@ -759,7 +753,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "种种迹象表明，主力下周要放个大招",
       "publish_time": "2025-01-10 14:48"
     },
@@ -815,7 +809,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午耐心等待，报复性反弹到来",
       "publish_time": "2025-03-24 11:45"
     },
@@ -831,7 +825,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "牛市旗手蠢蠢欲动，下午能否激情大涨",
       "publish_time": "2025-03-26 11:46"
     },
@@ -839,7 +833,7 @@
       "post_n": 5,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "警惕下午大盘跳水",
       "publish_time": "2025-03-27 11:50"
     },
@@ -847,7 +841,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "历史又要重演了，下午大盘会大逆转吗",
       "publish_time": "2025-03-28 11:44"
     },
@@ -855,7 +849,7 @@
       "post_n": 1,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "外盘跌麻了，下周迎接短线最后一跌？",
       "publish_time": "2025-03-29 14:43"
     },
@@ -895,7 +889,7 @@
       "post_n": 14,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "股民们要提前准备好，下周大盘，会大幅回调吗",
       "publish_time": "2025-07-26 15:21"
     },
@@ -903,7 +897,7 @@
       "post_n": 12,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "大盘突然跳水，下午会持续吗",
       "publish_time": "2025-07-28 11:53"
     },
@@ -919,7 +913,7 @@
       "post_n": 8,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "再创新高诱多，股民朋友做好准备，谨防下午大盘跳水",
       "publish_time": "2025-07-30 11:47"
     },
@@ -935,7 +929,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "为什么突然大跌？股民们做好准备，下午会尾市偷袭",
       "publish_time": "2025-07-31 11:46"
     },
@@ -943,7 +937,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "短线回调结束了吗？股民们准备好，下午大盘会大涨吗",
       "publish_time": "2025-08-01 11:47"
     },
@@ -951,7 +945,7 @@
       "post_n": 1,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "外盘风云突变，股民们做好准备，下周大盘会加速下跌吗",
       "publish_time": "2025-08-02 15:37"
     },
@@ -967,7 +961,7 @@
       "post_n": 5,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "高位大幅缩量千亿，大盘见顶迹象明显，谨防下周大调整",
       "publish_time": "2025-08-08 15:33"
     },
@@ -975,7 +969,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "大利好掩护出货？股民们准备好，下午大盘还会尾市拉升吗",
       "publish_time": "2025-08-29 11:47"
     },
@@ -983,7 +977,7 @@
       "post_n": 13,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "股民准备好，下周大盘要调整了吗？",
       "publish_time": "2025-08-29 15:03"
     },
@@ -999,7 +993,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "主力资金巨幅净流出，股民们准备好，下午大盘会尾市拉升吗",
       "publish_time": "2025-09-02 11:47"
     },
@@ -1023,7 +1017,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "突发暴跌的原因是什么？股民们准备好，下午大盘会逆转吗",
       "publish_time": "2025-09-04 11:59"
     },
@@ -1039,7 +1033,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "反弹如期而至，股民们要准备好，下午大盘，会大涨吗",
       "publish_time": "2025-09-05 11:52"
     },
@@ -1047,7 +1041,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "再现牛市风采，大反转来了吗，下周大盘会继续暴涨吗",
       "publish_time": "2025-09-05 15:47"
     },
@@ -1055,7 +1049,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "大老虎被查，下周大盘，会持续大涨吗",
       "publish_time": "2025-09-06 16:37"
     },
@@ -1063,7 +1057,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "大主力强势护盘，股民们准备好，下午大盘，会突然大涨吗",
       "publish_time": "2025-09-08 11:52"
     },
@@ -1079,7 +1073,7 @@
       "post_n": 13,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "本轮反弹已经结束，下周的大盘，会加速下跌吗",
       "publish_time": "2025-09-26 15:40"
     },
@@ -1087,7 +1081,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "如果不是牛市，现在是什么行情？下周大盘会怎么走",
       "publish_time": "2025-09-27 15:51"
     },
@@ -1111,7 +1105,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "持续强势上涨，股民们要准备好，下午大盘，会一骑绝尘吗",
       "publish_time": "2025-09-30 11:35"
     },
@@ -1119,7 +1113,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "假期市场情绪高涨，下周大盘，会向上突破，再创新高吗",
       "publish_time": "2025-10-07 15:18"
     },
@@ -1127,7 +1121,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "暴力拉升，喜迎开门红，下午大盘，能否拿下四千点",
       "publish_time": "2025-10-09 11:51"
     },
@@ -1143,7 +1137,7 @@
       "post_n": 1,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "风云突变，股民们要做好准备，下午大盘，会加速下跌吗",
       "publish_time": "2025-10-10 11:49"
     },
@@ -1151,7 +1145,7 @@
       "post_n": 0,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "多头陷阱完成，下周大盘，会大跌吗",
       "publish_time": "2025-10-10 15:14"
     },
@@ -1159,7 +1153,7 @@
       "post_n": 6,
       "direction": "bearish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "A股：大盘已经见顶，个股也反弹完毕，下周迎接风暴洗礼",
       "publish_time": "2025-10-31 15:28"
     },
@@ -1175,7 +1169,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周大盘会这样走",
       "publish_time": "2025-11-08 14:27"
     },
@@ -1207,7 +1201,7 @@
       "post_n": 11,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "调整这么快结束了吗？股民们要做好准备，谨防下午出现大幅回落",
       "publish_time": "2026-01-08 11:41"
     },
@@ -1215,7 +1209,7 @@
       "post_n": 9,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "A股呈现疯牛状态，股民们准备好，警惕下午出现跳水",
       "publish_time": "2026-01-09 11:43"
     },
@@ -1231,7 +1225,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "市场热度大幅降低，调整结束了吗，下午，A股将会迎来反弹",
       "publish_time": "2026-01-15 11:54"
     },
@@ -1247,7 +1241,7 @@
       "post_n": 12,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "大利好没带来大涨，股民们要做准备了，A股下午将迎来变盘",
       "publish_time": "2026-01-16 11:42"
     },
@@ -1263,7 +1257,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "震荡幅度加大，下午A股，确立触底反弹格局",
       "publish_time": "2026-01-20 11:56"
     },
@@ -1271,7 +1265,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "A股进入崭新阶段，主力资金回流，下午A股，会这样运行",
       "publish_time": "2026-01-21 11:39"
     },
@@ -1279,7 +1273,7 @@
       "post_n": 2,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "市场信号十分明确，股民要做好准备，下午A股，需要谨慎",
       "publish_time": "2026-01-22 11:41"
     },
@@ -1295,7 +1289,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "个股进入补涨阶段，调控和机会并存，下午A股，走势已经确立",
       "publish_time": "2026-01-23 11:48"
     },
@@ -1303,7 +1297,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "压力和活力并存，股民要准备好，下周A股，有创新高能力",
       "publish_time": "2026-01-24 14:44"
     },
@@ -1319,7 +1313,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "A股大幅探底回升，上攻又要开始了吗？下午走势已显现",
       "publish_time": "2026-02-06 11:45"
     },
@@ -1327,7 +1321,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "外盘大涨，春节红包行情稳了，下周A股，会向上突破吗",
       "publish_time": "2026-02-07 14:22"
     },
@@ -1351,7 +1345,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午，八连阳可期",
       "publish_time": "2026-02-12 11:44"
     },
@@ -1359,7 +1353,7 @@
       "post_n": 3,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "警惕下午大幅回落",
       "publish_time": "2026-02-24 11:39"
     },
@@ -1391,7 +1385,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "大级别反弹来了，目标位在哪里，下午会怎么运行",
       "publish_time": "2026-04-08 11:20"
     },
@@ -1415,7 +1409,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "中期底部确立，下周，是新行情过渡期，会大涨吗",
       "publish_time": "2026-04-10 15:24"
     },
@@ -1423,7 +1417,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "盘面有一个细节，市场趋势基本确立，下午会怎么走",
       "publish_time": "2026-04-14 11:36"
     },
@@ -1447,7 +1441,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "主力做多情绪高涨，股民要准备好，下午会这样运行",
       "publish_time": "2026-04-16 11:52"
     },
@@ -1455,7 +1449,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "A股：本周大幅上涨，市场在升温，下周走势已经明牌",
       "publish_time": "2026-04-17 15:20"
     },
@@ -1463,7 +1457,7 @@
       "post_n": 8,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "A股：有两个重要因素，影响走势，大跌要开始了吗，下午怎么运行",
       "publish_time": "2026-04-21 11:44"
     },
@@ -1479,7 +1473,7 @@
       "post_n": 6,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "A股：盘面有个特殊现象，股民要准备好，谨防下午跳水",
       "publish_time": "2026-04-22 11:40"
     },
@@ -1503,7 +1497,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "盘中急杀见底，大反弹要来了吗，下午大盘，会这样运行",
       "publish_time": "2026-06-02 11:47"
     },
@@ -1511,7 +1505,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "股民们准备好，大反弹已展开，下午大盘，会怎么运行",
       "publish_time": "2026-06-03 11:50"
     },
@@ -1519,7 +1513,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "大盘强势上攻，个股的春天要来吗？下午会持续大涨吗",
       "publish_time": "2026-06-05 11:55"
     }

@@ -15,24 +15,18 @@
   "scored_bullish": {
     "strong": 2,
     "moderate": 543,
-    "intraday": 2,
-    "short": 418,
-    "weekly": 92,
-    "biweekly": 3,
-    "monthly": 0,
+    "short": 378,
+    "medium": 88,
     "long": 18,
-    "unspecified": 68
+    "unspecified": 61
   },
   "scored_bearish": {
     "strong": 0,
     "moderate": 56,
-    "intraday": 2,
-    "short": 418,
-    "weekly": 92,
-    "biweekly": 3,
-    "monthly": 0,
-    "long": 18,
-    "unspecified": 68
+    "short": 42,
+    "medium": 7,
+    "long": 0,
+    "unspecified": 7
   },
   "signals": [
     {
@@ -95,7 +89,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "由ST新规引发的恐慌性下跌，已经告一段落。后市大概率是逐步修复指标后大盘将再次上行。",
       "publish_time": "2024-06-05 11:36"
     },
@@ -111,7 +105,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "后市大盘大概率是震荡整理，构建新的底部后，开始第二轮上涨。",
       "publish_time": "2024-06-11 15:12"
     },
@@ -135,7 +129,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "展望大盘后市，大概率是逐步震荡回升。",
       "publish_time": "2024-06-12 15:07"
     },
@@ -159,7 +153,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "沪指后市大概率是在此位置磨出底部，修复短期均线后再展开升势。",
       "publish_time": "2024-06-13 15:06"
     },
@@ -175,7 +169,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "沪指后市大概率是在此位置反复震荡整理，形成短期底部后，再开始第二轮上涨。",
       "publish_time": "2024-06-14 15:08"
     },
@@ -207,7 +201,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "在这里如果有一根长阳拔起，沪指才能彻底扭转震荡整理的局面。",
       "publish_time": "2024-06-18 11:34"
     },
@@ -327,7 +321,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "展望后市，应该说大盘最困难的时候已经过去，沪指会慢慢走出底部。",
       "publish_time": "2024-07-02 15:08"
     },
@@ -383,7 +377,7 @@
       "post_n": 12,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "由于昨日涨幅较大，消息面也没见什么利好，因此今日三大股指震荡整理，收出阴线的概率较大。",
       "publish_time": "2024-07-10 11:37"
     },
@@ -407,7 +401,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "由于量能不足，恐怕后市沪指将围绕5日均线上下震荡，构筑短期底部，再试图攻克3000点。",
       "publish_time": "2024-07-12 11:35"
     },
@@ -415,7 +409,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "后市沪指大概率是围绕5日均线上下震荡，构筑短期底部后，再上攻3000点。",
       "publish_time": "2024-07-12 15:06"
     },
@@ -439,7 +433,7 @@
       "post_n": 0,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "biweekly",
+      "time_horizon": "medium",
       "evidence": "就目前的量能，沪指恐怕还要在3000点之下震荡一段时间。",
       "publish_time": "2024-07-16 15:04"
     },
@@ -575,7 +569,7 @@
       "post_n": 4,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "展望后市，大盘大概率是在2900点上下，将再次开启磨人磨底、震荡整理的走势，对此投资者要有足够的耐心。",
       "publish_time": "2024-08-02 15:03"
     },
@@ -615,7 +609,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "展望后市，三大股指大概率是在目前点位震荡整理，形成短期底部后，重新向上。",
       "publish_time": "2024-08-07 15:05"
     },
@@ -703,7 +697,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "展望后市，沪指底部已经形成，沪指大概率是逐步震荡向上。",
       "publish_time": "2024-08-19 15:03"
     },
@@ -743,7 +737,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "展望后市，三大股指在此横盘震荡构造底部的概率较大。",
       "publish_time": "2024-08-23 15:04"
     },
@@ -759,7 +753,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "展望后市，沪指大概率在此构造底部，随着沪指逐步走好，深成指和创指也会随之走好。",
       "publish_time": "2024-08-26 15:06"
     },
@@ -775,7 +769,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "展望后市，沪指大概率还是在2839点上下震荡整理，构造短期底部。",
       "publish_time": "2024-08-27 15:03"
     },
@@ -935,7 +929,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "今日收出实体阳线后，昨日沪指最低点2689.7点，大概率就是本轮沪指调整的低点。展望后市，大盘将在震荡中逐步走高。最差的走势也是横盘震荡，构造底部。",
       "publish_time": "2024-09-19 15:06"
     },
@@ -967,7 +961,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "展望后市，大盘底部基本探明，后市大概率是横盘震荡，逐步走出底部，向上拓展空间。",
       "publish_time": "2024-09-23 15:04"
     },
@@ -1031,7 +1025,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "展望后市，在一系列利好政策支持下，大盘仍有上行空间。在消化获利盘、解套盘、恐高盘后，大盘将继续向上拓展空间。",
       "publish_time": "2024-09-27 15:06"
     },
@@ -1063,7 +1057,7 @@
       "post_n": 14,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "biweekly",
+      "time_horizon": "medium",
       "evidence": "笔者认为今日沪指最高点3674.40点将成为短期的高点。后市在一段时间内，大盘大概率是上下震荡整理，充分消化获利盘、解套盘、恐高盘后，大盘才能向上继续拓展空间。",
       "publish_time": "2024-10-08 15:03"
     },
@@ -1095,7 +1089,7 @@
       "post_n": 10,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "后市大概率还要震荡调整整固，只要大盘维持在3200点上方，那就属于强势调整。",
       "publish_time": "2024-10-10 15:03"
     },
@@ -1119,7 +1113,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "展望后市，今日大幅反弹后，扭转了大盘几乎垂直向下调整的恶劣态势。后市大盘有望横盘震荡形成短期平台，再确定突破方向。",
       "publish_time": "2024-10-14 15:04"
     },
@@ -1191,7 +1185,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "至收盘，三大股指都站在5日、10日均线上方，后市仍可乐观。",
       "publish_time": "2024-10-21 15:06"
     },
@@ -1207,7 +1201,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "展望后市，人气已经被激活，场外资金不断涌入，大盘将继续向上拓展空间。",
       "publish_time": "2024-10-22 15:09"
     },
@@ -1223,7 +1217,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "展望后市，由于人气旺盛，大盘仍然向好。",
       "publish_time": "2024-10-23 15:06"
     },
@@ -1255,7 +1249,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "展望后市，股指技术面向好，量能向好，人气向好，大盘仍将震荡向上。",
       "publish_time": "2024-10-25 15:09"
     },
@@ -1303,7 +1297,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "展望后市，大盘震荡调整后，将再次站上3300点。",
       "publish_time": "2024-10-30 15:09"
     },
@@ -1367,7 +1361,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "今日上涨后，从三大股指的日K线走势图看出，三大股指都是向上突破。并且量价配合理想，后市大盘将继续震荡向上。",
       "publish_time": "2024-11-05 15:06"
     },
@@ -1383,7 +1377,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "从量能来看，后市大盘大概率还是震荡向上的走势。",
       "publish_time": "2024-11-06 15:10"
     },
@@ -1399,7 +1393,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "后市大盘很有希望再冲10月8日的高点，即沪指3674.40点。",
       "publish_time": "2024-11-07 15:09"
     },
@@ -1423,7 +1417,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "后市大盘将会继续震荡向上。",
       "publish_time": "2024-11-11 15:04"
     },
@@ -1495,7 +1489,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "这说明基本探明底部，后市将会继续反弹。",
       "publish_time": "2024-11-19 15:10"
     },
@@ -1559,7 +1553,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "展望后市，大盘在3200点至3300点之间继续震荡整理的概率较大，有效跌破3200点的概率很小。",
       "publish_time": "2024-11-26 15:06"
     },
@@ -1615,7 +1609,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "今日收盘后，从三大股指的日K线走势图看出，各项技术指标向好，后市仍值得期待。",
       "publish_time": "2024-12-02 15:05"
     },
@@ -1751,7 +1745,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "后市沪指在20日均线上方，继续震荡整理后将会再展升势。",
       "publish_time": "2024-12-16 15:06"
     },
@@ -1807,7 +1801,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "展望后市，大盘在震荡磨底后，大概率是向上突破。",
       "publish_time": "2024-12-20 15:07"
     },
@@ -1847,7 +1841,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "后市大盘会继续向上。",
       "publish_time": "2024-12-26 15:07"
     },
@@ -1863,7 +1857,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "后市大盘大概率是震荡向上。",
       "publish_time": "2024-12-27 15:07"
     },
@@ -1911,7 +1905,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "但后市大盘继续大跌的概率很低，大概率是围绕3200点震荡磨出底部。",
       "publish_time": "2025-01-06 15:07"
     },
@@ -1927,7 +1921,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "后市大概率是：大盘在3200点上下震荡磨底构筑底部。",
       "publish_time": "2025-01-07 15:04"
     },
@@ -1959,7 +1953,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "总体看来，大盘后市大概率还是在3200点上下构筑底部后，再向上拓展空间。",
       "publish_time": "2025-01-09 15:03"
     },
@@ -1975,7 +1969,7 @@
       "post_n": 3,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "展望后市，今日大盘尾盘加速下跌，并以全日最低点收盘，说明大盘还有下跌动能。",
       "publish_time": "2025-01-10 15:09"
     },
@@ -2007,7 +2001,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "大盘在底部放量大阳后，宣告了本轮调整已经结束，股指3140.98点将成为本轮行情调整的低点。后市继续看好。",
       "publish_time": "2025-01-14 15:09"
     },
@@ -2015,7 +2009,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "biweekly",
+      "time_horizon": "medium",
       "evidence": "大盘后市即使震荡，那再跌破3140.98点的概率很小很小。在春节前这段时间，大盘横盘震荡，股指逐步走高的概率很大。",
       "publish_time": "2025-01-14 17:19"
     },
@@ -2039,7 +2033,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "展望后市，大盘底部已经探明，在反复夯实底部后，股指将逐步上行。",
       "publish_time": "2025-01-16 15:05"
     },
@@ -2111,7 +2105,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "今日反弹后，节前还有下周一最后一个交易日，红盘迎接新年的概率很大。",
       "publish_time": "2025-01-24 15:04"
     },
@@ -2151,7 +2145,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "今日大涨后，后市继续向好。",
       "publish_time": "2025-02-06 15:09"
     },
@@ -2167,7 +2161,7 @@
       "post_n": 5,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "但是我们的股市向来是牛短熊长，连续两个交易日大涨后，后市将迎来震荡消化行情。",
       "publish_time": "2025-02-07 15:06"
     },
@@ -2311,7 +2305,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "对于后市，笔者继续谨慎看多。",
       "publish_time": "2025-02-20 15:06"
     },
@@ -2359,7 +2353,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "从大盘形态上来看，股指继续在上升通道内运行，各短期均线呈多头排列，后市继续看好。",
       "publish_time": "2025-02-26 15:08"
     },
@@ -2391,7 +2385,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "但笔者认为，只要没有实质性重大利空，今日的大跌恐怕就是一步到位，下周一有望开启反弹行情。",
       "publish_time": "2025-02-28 15:10"
     },
@@ -2487,7 +2481,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "笔者认为，后市大盘将继续震荡向上。",
       "publish_time": "2025-03-14 15:04"
     },
@@ -2503,7 +2497,7 @@
       "post_n": 12,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "这个震荡消化不是几个交易日就能完成的。后市股指大概率还要回踩3400点。",
       "publish_time": "2025-03-17 15:05"
     },
@@ -2519,7 +2513,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "展望后市，经过充分震荡整理后，大盘会冲击下一个整数关3500点。",
       "publish_time": "2025-03-18 15:04"
     },
@@ -2535,7 +2529,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "在3400点上方窄幅震荡整理，有利于后市股指向上拓展空间。大盘顽强的震荡了三个交易日，收出三根十字星。从权重股的护盘来看，主力不愿大盘再破3400点。震荡了三个交易日，大盘将会选择突破方向。向上突破是大概率。",
       "publish_time": "2025-03-19 15:03"
     },
@@ -2575,7 +2569,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "从技术面看，大盘调整基本到位。后市大盘将在3500点上方，再震荡几个交易日后，将再次站上3400点。",
       "publish_time": "2025-03-24 15:07"
     },
@@ -2591,7 +2585,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "笔者认为，后市跌破3300点概率很小。大盘就是围绕前期震荡整理的中枢3350点震荡整理。震荡几个交易日后，大盘会再上3400点。",
       "publish_time": "2025-03-25 15:03"
     },
@@ -2639,7 +2633,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "笔者认为，大盘调接近尾声。后市大盘再次回试60日均线的支撑力度后，调整将会结束。",
       "publish_time": "2025-03-31 15:07"
     },
@@ -2655,7 +2649,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "大盘止跌企稳迹象明显。后市大概率继续围绕3350点震荡整理几个交易日后，再向上突破。",
       "publish_time": "2025-04-01 15:05"
     },
@@ -2687,7 +2681,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "笔者对于下周一的走势偏向乐观。",
       "publish_time": "2025-04-03 15:09"
     },
@@ -2703,7 +2697,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "展望后市，大盘企稳概率很大。如果没有新的突发利空，那昨日的低点3040.69点，有望成为相当长时间内的低点。",
       "publish_time": "2025-04-08 15:06"
     },
@@ -2719,7 +2713,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "估计有这么多维稳力量，大盘最困难的时候应该过去了。笔者对于后市走势还是偏乐观。",
       "publish_time": "2025-04-09 15:03"
     },
@@ -2735,7 +2729,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "展望后市，最困难的时候已经过去，大盘在震荡消化获利盘后，将逐步震荡向上，回补上方巨大的缺口。",
       "publish_time": "2025-04-10 15:04"
     },
@@ -2751,7 +2745,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "后市大盘将会继续震荡向上，回补上方的巨大跳空缺口。",
       "publish_time": "2025-04-11 15:03"
     },
@@ -2783,7 +2777,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "笔者一直认为，在3300点下方，机会大于风险，对于后市走势仍可谨慎乐观。",
       "publish_time": "2025-04-15 15:05"
     },
@@ -2807,7 +2801,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "大盘已经回补了上方缺口的大部分，后市全部回补缺口是大概率事件。",
       "publish_time": "2025-04-17 15:05"
     },
@@ -2823,7 +2817,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "但笔者认为，由于股指还在低位，上方缺口并没有完全回补，后市机会大于风险。",
       "publish_time": "2025-04-18 15:07"
     },
@@ -2839,7 +2833,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "展望后市，大盘继续走高，全部回补上方缺口的概率很大。",
       "publish_time": "2025-04-21 15:05"
     },
@@ -2887,7 +2881,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "因此后市大盘大概率是继续震荡向上。",
       "publish_time": "2025-04-24 15:09"
     },
@@ -2903,7 +2897,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "展望后市，大盘缓慢向上，逐步回补上方全部缺口的可能性最大。",
       "publish_time": "2025-04-25 15:04"
     },
@@ -2951,7 +2945,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "今日收盘后，大盘已经摆脱了圆弧顶形态向上突破，后市继续看好。",
       "publish_time": "2025-05-06 15:08"
     },
@@ -2983,7 +2977,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "在3400点下方，笔者继续看好后市。",
       "publish_time": "2025-05-08 15:06"
     },
@@ -3015,7 +3009,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "笔者认为，后市经过震荡后，大盘将会收复3400点。",
       "publish_time": "2025-05-12 15:02"
     },
@@ -3031,7 +3025,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "展望后市：由于外部环境变好，技术指标向好，政策面向好。因此，大盘将会继续震荡上行。",
       "publish_time": "2025-05-13 15:03"
     },
@@ -3047,7 +3041,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "在外部环境逐步变好，政策面向好的情况下，后市在巩固在3400点后，大盘将会继续向上拓展空间。",
       "publish_time": "2025-05-14 15:04"
     },
@@ -3055,7 +3049,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "这里的调整是为后市站稳在3400点上方奠定基础。",
       "publish_time": "2025-05-15 15:03"
     },
@@ -3071,7 +3065,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "大盘连续调整两个交易日后，再下调的空间已经十分有限。后市经过震荡整理后，大盘会再次冲击3400点。",
       "publish_time": "2025-05-16 15:07"
     },
@@ -3087,7 +3081,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "由于3350点上下是前期震荡中枢区域，大盘下调的空间已经十分有限。后市在夯实3350点后，大盘还会慢慢向上爬。",
       "publish_time": "2025-05-19 15:05"
     },
@@ -3103,7 +3097,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "展望后市，在外部环境变好，政策面向好，大盘股指还在3400点下方的情况下，以看多为主。",
       "publish_time": "2025-05-20 15:04"
     },
@@ -3151,7 +3145,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "笔者认为这是止跌企稳的信号。大盘继续下探的概率很低，后市逐步震荡向上是大概率。",
       "publish_time": "2025-05-26 15:07"
     },
@@ -3183,7 +3177,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "今日的阳线至关重要，因为这根阳线大概率扭转了大盘的下跌趋势。短期底部已经探明，后市继续上行的概率很大。",
       "publish_time": "2025-05-29 15:03"
     },
@@ -3199,7 +3193,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "展望后市，大盘大概率是在60日均线上方企稳构成底部。反弹行情寄希望于节后了。",
       "publish_time": "2025-05-30 15:04"
     },
@@ -3215,7 +3209,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "由于大盘还在3400点下方，股指并不高，继续看好后市。",
       "publish_time": "2025-06-03 15:06"
     },
@@ -3247,7 +3241,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "从技术面看，大盘继续站在各短期均线上方，股指已经形成了一个圆弧底，后市继续看好。",
       "publish_time": "2025-06-05 15:03"
     },
@@ -3311,7 +3305,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "从技术面看，大盘重回上升通道，股指站在各短期均线上方，各短期均线呈多头排列，后市继续谨慎看多。",
       "publish_time": "2025-06-11 15:08"
     },
@@ -3399,7 +3393,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "后市大盘有望挑战前期高点3439.05点。",
       "publish_time": "2025-06-24 15:03"
     },
@@ -3423,7 +3417,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "笔者认为，后市即使继续调整，大盘也很难跌破3400点了。3400点将成为大盘的支撑。",
       "publish_time": "2025-06-26 15:04"
     },
@@ -3431,7 +3425,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "但笔者认为，指数向下的空间十分有限，后市大盘不会跌破3400点。",
       "publish_time": "2025-06-27 15:04"
     },
@@ -3479,7 +3473,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "整体来看，近六个交易日，股指呈横盘震荡格局，这有利于后市上攻3500点。",
       "publish_time": "2025-07-02 15:07"
     },
@@ -3495,7 +3489,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "目前大盘技术指标向好，量价配合理想，大盘小碎步慢慢逼近3500点。笔者继续看好后市。",
       "publish_time": "2025-07-03 15:05"
     },
@@ -3511,7 +3505,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周大盘将再次冲击3500点。",
       "publish_time": "2025-07-04 15:07"
     },
@@ -3527,7 +3521,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "目前的震荡，有利于大盘再次冲击3500点。笔者继续看好后市。",
       "publish_time": "2025-07-07 15:04"
     },
@@ -3591,7 +3585,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "从技术面看，大盘走势还是十分的健康，量价配合也比较理想。笔者继续谨慎看多后市。",
       "publish_time": "2025-07-14 15:06"
     },
@@ -3639,7 +3633,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "经过震荡整固后，3500点将成为大盘的重要支撑点。笔者继续看好后市。",
       "publish_time": "2025-07-17 15:03"
     },
@@ -3687,7 +3681,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "笔者认为这轮行情并没有结束，后市大盘要上试10月8日的高点3674.40点后，才有望展开深度调整。",
       "publish_time": "2025-07-23 15:33"
     },
@@ -3695,7 +3689,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "后市大概率将上试10月8日的高点3674.40点。",
       "publish_time": "2025-07-24 15:30"
     },

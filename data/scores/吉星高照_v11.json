@@ -2,96 +2,96 @@
   "blogger": "吉星高照",
   "scoring_version": "v11 (time_horizon-windowed single formula)",
   "signals_total": 361,
-  "signals_scored": 167,
-  "score_zero": 172,
+  "signals_scored": 333,
+  "score_zero": 6,
   "no_price": 4,
   "no_segment": 17,
   "scores": {
     "综合": {
-      "total": 39.69,
-      "count": 167,
-      "avg_pct": 0.24,
-      "win_rate": 52.69
+      "total": 118.08,
+      "count": 333,
+      "avg_pct": 0.35,
+      "win_rate": 55.26
     },
     "上升段": {
-      "total": 43.11,
-      "count": 102,
-      "avg_pct": 0.42,
-      "win_rate": 53.92
+      "total": 65.57,
+      "count": 217,
+      "avg_pct": 0.3,
+      "win_rate": 55.3
     },
     "下降段": {
-      "total": -3.41,
-      "count": 65,
-      "avg_pct": -0.05,
-      "win_rate": 50.77
+      "total": 52.51,
+      "count": 116,
+      "avg_pct": 0.45,
+      "win_rate": 55.17
     },
     "抄底": {
-      "total": 34.78,
-      "count": 14,
-      "avg_pct": 2.48,
-      "win_rate": 100.0
+      "total": 92.8,
+      "count": 28,
+      "avg_pct": 3.31,
+      "win_rate": 92.86
     },
     "逃顶": {
-      "total": 4.38,
-      "count": 4,
-      "avg_pct": 1.09,
+      "total": 11.85,
+      "count": 6,
+      "avg_pct": 1.97,
       "win_rate": 100.0
     },
     "看多": {
-      "total": 46.6,
-      "count": 119,
-      "avg_pct": 0.39,
-      "win_rate": 57.98
+      "total": 125.13,
+      "count": 261,
+      "avg_pct": 0.48,
+      "win_rate": 58.24
     },
     "看空": {
-      "total": -6.91,
-      "count": 48,
-      "avg_pct": -0.14,
-      "win_rate": 39.58
+      "total": -7.05,
+      "count": 72,
+      "avg_pct": -0.1,
+      "win_rate": 44.44
     }
   },
   "time_horizon_scores": {
     "short": {
-      "count": 95,
-      "total": 23.05,
-      "avg_pct": 0.24,
-      "win_rate": 55.79
+      "count": 119,
+      "total": 27.04,
+      "avg_pct": 0.23,
+      "win_rate": 55.46
     },
     "weekly": {
-      "count": 51,
-      "total": 17.06,
-      "avg_pct": 0.33,
-      "win_rate": 45.1
+      "count": 0,
+      "total": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
     },
     "biweekly": {
-      "count": 13,
-      "total": 13.08,
-      "avg_pct": 1.01,
-      "win_rate": 53.85
+      "count": 0,
+      "total": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
     },
     "monthly": {
-      "count": 12,
-      "total": -13.5,
-      "avg_pct": -1.13,
-      "win_rate": 41.67
+      "count": 0,
+      "total": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
     },
     "intraday": {
-      "count": 24,
+      "count": 0,
       "total": 0.0,
       "avg_pct": 0.0,
       "win_rate": 0.0
     },
     "long": {
-      "count": 62,
-      "total": 0.0,
-      "avg_pct": 0.0,
-      "win_rate": 0.0
+      "count": 74,
+      "total": 72.53,
+      "avg_pct": 0.98,
+      "win_rate": 59.46
     },
     "unspecified": {
       "count": 83,
-      "total": 0.0,
-      "avg_pct": 0.0,
-      "win_rate": 0.0
+      "total": -20.27,
+      "avg_pct": -0.24,
+      "win_rate": 45.78
     }
   },
   "segments": {
@@ -102,7 +102,7 @@
       "total": 7,
       "bull": 5,
       "bear": 2,
-      "score": 3.79
+      "score": -0.56
     },
     "I10->I11": {
       "direction": "falling",
@@ -111,7 +111,7 @@
       "total": 17,
       "bull": 11,
       "bear": 6,
-      "score": 4.36
+      "score": 13.23
     },
     "I11->I12": {
       "direction": "rising",
@@ -120,7 +120,7 @@
       "total": 15,
       "bull": 13,
       "bear": 2,
-      "score": -9.67
+      "score": -24.43
     },
     "I12->M5": {
       "direction": "falling",
@@ -129,7 +129,7 @@
       "total": 10,
       "bull": 7,
       "bear": 3,
-      "score": -3.88
+      "score": -8.48
     },
     "I13->I14": {
       "direction": "rising",
@@ -138,7 +138,7 @@
       "total": 10,
       "bull": 5,
       "bear": 5,
-      "score": 1.12
+      "score": 0.96
     },
     "I14->M8": {
       "direction": "falling",
@@ -147,7 +147,7 @@
       "total": 23,
       "bull": 14,
       "bear": 9,
-      "score": -11.55
+      "score": -12.13
     },
     "I2->I3": {
       "direction": "falling",
@@ -156,7 +156,7 @@
       "total": 1,
       "bull": 1,
       "bear": 0,
-      "score": 0.0
+      "score": 3.18
     },
     "I3->I4": {
       "direction": "rising",
@@ -165,7 +165,7 @@
       "total": 2,
       "bull": 2,
       "bear": 0,
-      "score": -2.95
+      "score": -2.58
     },
     "I4->I5": {
       "direction": "falling",
@@ -174,7 +174,7 @@
       "total": 3,
       "bull": 3,
       "bear": 0,
-      "score": 0.0
+      "score": -19.67
     },
     "I5->I6": {
       "direction": "rising",
@@ -183,7 +183,7 @@
       "total": 30,
       "bull": 29,
       "bear": 1,
-      "score": -5.96
+      "score": -96.53
     },
     "I6->M3": {
       "direction": "falling",
@@ -192,7 +192,7 @@
       "total": 17,
       "bull": 17,
       "bear": 0,
-      "score": -12.43
+      "score": -12.34
     },
     "I9->I10": {
       "direction": "rising",
@@ -201,7 +201,7 @@
       "total": 17,
       "bull": 15,
       "bear": 2,
-      "score": 27.29
+      "score": 44.16
     },
     "M2->I1": {
       "direction": "falling",
@@ -210,7 +210,7 @@
       "total": 2,
       "bull": 2,
       "bear": 0,
-      "score": 0.0
+      "score": 16.68
     },
     "M3->M4": {
       "direction": "rising",
@@ -219,7 +219,7 @@
       "total": 89,
       "bull": 76,
       "bear": 13,
-      "score": 28.55
+      "score": 123.99
     },
     "M4->I9": {
       "direction": "falling",
@@ -228,7 +228,7 @@
       "total": 21,
       "bull": 19,
       "bear": 2,
-      "score": 5.65
+      "score": 53.42
     },
     "M5->M6": {
       "direction": "rising",
@@ -237,7 +237,7 @@
       "total": 40,
       "bull": 25,
       "bear": 15,
-      "score": 1.2
+      "score": 15.69
     },
     "M6->I13": {
       "direction": "falling",
@@ -246,7 +246,7 @@
       "total": 25,
       "bull": 13,
       "bear": 12,
-      "score": 14.44
+      "score": 18.61
     },
     "M8->now": {
       "direction": "rising",
@@ -266,15 +266,15 @@
           "time": "17:32",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 5.2923,
+          "score": 5.2923,
           "ref": "2024-10-18 open",
           "evidence": "牛市还在吗？大多数人已经认为一波流的牛市已经凉凉了，剩下的人也是开始怀疑自己。明白了这波牛市的底层逻辑，你也就不会动摇。"
         }
       ],
-      "total_score": 0.0,
+      "total_score": 5.29,
       "signal_count": 1,
-      "avg_score_pct": 0.0
+      "avg_score_pct": 529.23
     },
     "I10": {
       "signals": [
@@ -300,8 +300,8 @@
           "time": "14:00",
           "direction": "bullish",
           "strength": "strong",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 2.8092,
+          "score": 5.6185,
           "ref": "2026-02-02 close",
           "evidence": "大盘终于到底了，4024就是低点。...未来引领大盘向上的一定是金融，白酒，基建，大消费等板块中的绩优股。...牛市绩优"
         },
@@ -310,8 +310,8 @@
           "time": "15:20",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 1.8651,
+          "score": 1.8651,
           "ref": "2026-02-03 open",
           "evidence": "股海斜阳余晖对后市反而看高一线，原来的4500，可以看到4800。"
         },
@@ -330,8 +330,8 @@
           "time": "18:07",
           "direction": "bullish",
           "strength": "strong",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 0.9456,
+          "score": 1.8912,
           "ref": "2026-02-04 open",
           "evidence": "4002将成为春季行情的起点，这个春季行情将延续到5月份，高度4800以上。"
         },
@@ -346,9 +346,9 @@
           "evidence": "盘后股指期货机构大幅减空近6000手，明天大盘还会上涨。跨春节行情已经展开。今天是立春，股市的春天也开始了！"
         }
       ],
-      "total_score": 1.35,
+      "total_score": 10.72,
       "signal_count": 5,
-      "avg_score_pct": 26.91
+      "avg_score_pct": 214.4
     },
     "I13": {
       "signals": [
@@ -357,8 +357,8 @@
           "time": "09:25",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 3.4169,
-          "score": 3.4169,
+          "return": 4.0707,
+          "score": 4.0707,
           "ref": "2026-06-08 open(non-trading)",
           "evidence": "大盘转折就在下周上半周。"
         },
@@ -367,8 +367,8 @@
           "time": "12:48",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 3.4169,
-          "score": 3.4169,
+          "return": 4.0707,
+          "score": 4.0707,
           "ref": "2026-06-08 open(non-trading)",
           "evidence": "大盘转折就在下周上半周。"
         },
@@ -377,8 +377,8 @@
           "time": "15:46",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 3.4169,
-          "score": 3.4169,
+          "return": 4.0707,
+          "score": 4.0707,
           "ref": "2026-06-08 open(non-trading)",
           "evidence": "大盘转折就在下周上半周。"
         },
@@ -387,15 +387,15 @@
           "time": "21:02",
           "direction": "bullish",
           "strength": "strong",
-          "return": 0.0,
-          "score": 0.0,
+          "return": -0.0738,
+          "score": -0.1477,
           "ref": "2026-06-10 open",
           "evidence": "目前，大盘的主跌阶段已经告一段落，下一步回踩确认后，将展开比较大的行情，点位看4500。大盘将在7月和8月迎来高潮。"
         }
       ],
-      "total_score": 10.25,
+      "total_score": 12.06,
       "signal_count": 4,
-      "avg_score_pct": 256.27
+      "avg_score_pct": 301.61
     },
     "I14": {
       "signals": [
@@ -421,8 +421,8 @@
           "time": "19:10",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 6.4221,
+          "score": 6.4221,
           "ref": "2025-12-16 open",
           "evidence": "不过股海斜阳余晖要指出，这里就是底部，目前主力在积极调仓，只是底部目前有两种走势，一种是杀破3816，形成abc结构，另"
         },
@@ -431,8 +431,8 @@
           "time": "11:32",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 7.4433,
+          "score": 7.4433,
           "ref": "2025-12-16 close",
           "evidence": "目前大盘在8月25日开始的调整，已经到了终点，新的大行情很快就会展开，新的阶段的主流热点会是大金融（保险和证券）和大消费"
         },
@@ -451,15 +451,15 @@
           "time": "19:45",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 4.3567,
-          "score": 4.3567,
+          "return": 4.9824,
+          "score": 4.9824,
           "ref": "2025-12-18 open",
           "evidence": "技术方面，11月11日形成了顶背离，而今天收盘形成了30分钟，60分钟和120分钟的底背离。对应的反弹周期是12个至15"
         }
       ],
-      "total_score": 5.84,
+      "total_score": 20.33,
       "signal_count": 4,
-      "avg_score_pct": 145.88
+      "avg_score_pct": 508.16
     },
     "M3": {
       "signals": [
@@ -468,8 +468,8 @@
           "time": "08:42",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": -1.5697,
+          "score": -1.5697,
           "ref": "2025-04-07 open",
           "evidence": "今日大盘阶段性见底的概率极大！"
         },
@@ -524,9 +524,9 @@
           "evidence": "明天大盘会继续反弹，3040点就是本次调整的底部"
         }
       ],
-      "total_score": 15.35,
+      "total_score": 13.78,
       "signal_count": 6,
-      "avg_score_pct": 255.82
+      "avg_score_pct": 229.66
     },
     "M5": {
       "signals": [
@@ -535,8 +535,8 @@
           "time": "09:48",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 7.3842,
+          "score": 7.3842,
           "ref": "2026-03-23 close",
           "evidence": "目前可以抄底了，短线已经超跌，不管是短线还是中线，都风险不大了。"
         },
@@ -545,8 +545,8 @@
           "time": "14:27",
           "direction": "bullish",
           "strength": "strong",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 7.3842,
+          "score": 14.7683,
           "ref": "2026-03-23 close",
           "evidence": "3799就是大底，短中期风险已经充分释放，可以补仓了。"
         },
@@ -555,8 +555,8 @@
           "time": "22:11",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 1.3275,
+          "score": 1.3275,
           "ref": "2026-03-24 open",
           "evidence": "今天到底是一次性到底，还是A浪杀跌，都应该抄底做反弹，所以今天下午到尾盘，吉星高照都不断加仓，等周线一笔反弹再减仓。"
         },
@@ -571,9 +571,9 @@
           "evidence": "所以明天重点关注量能，必须放量大涨才能化解危机。3750到3800是主力机构的成本区，除非彻底进入熊市，否则主力一定会发"
         }
       ],
-      "total_score": 0.5,
+      "total_score": 23.98,
       "signal_count": 4,
-      "avg_score_pct": 12.38
+      "avg_score_pct": 599.38
     },
     "M6": {
       "signals": [
@@ -592,15 +592,15 @@
           "time": "07:06",
           "direction": "bearish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": -2.5346,
+          "score": 2.5346,
           "ref": "2026-05-14 open",
           "evidence": "今天冲高要减仓，不能追涨!今天是日线高九序列，风险很大，而且科技股已经在冲顶了，所以不要追涨，而是要逢高减仓。"
         }
       ],
-      "total_score": 2.53,
+      "total_score": 5.07,
       "signal_count": 2,
-      "avg_score_pct": 126.73
+      "avg_score_pct": 253.46
     },
     "M7": {
       "signals": [
@@ -619,15 +619,15 @@
           "time": "12:20",
           "direction": "bearish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": -4.9333,
+          "score": 4.9333,
           "ref": "2026-06-26 close",
           "evidence": "科技股真正的调整要来了。"
         }
       ],
-      "total_score": 0.82,
+      "total_score": 5.75,
       "signal_count": 2,
-      "avg_score_pct": 40.87
+      "avg_score_pct": 287.53
     },
     "M8": {
       "signals": [
@@ -636,8 +636,8 @@
           "time": "07:32",
           "direction": "bullish",
           "strength": "strong",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 1.756,
+          "score": 3.5121,
           "ref": "2026-07-20 open",
           "evidence": "本周确定见底，唯一不能确定的是反弹节奏。本次见底反弹是一直向上，还是反弹到3920后，再度回踩。大A迟迟不发动牛市下半场"
         },
@@ -656,8 +656,8 @@
           "time": "07:54",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 1.5013,
+          "score": 1.5013,
           "ref": "2026-07-21 open",
           "evidence": "今天将迎来大多数股票的反弹！昨天3000多家股票下跌，跌停的达到268家，今日大多数股票将会止跌反弹，尤其科技股会出现有"
         },
@@ -666,15 +666,15 @@
           "time": "09:32",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 0.1301,
+          "score": 0.1301,
           "ref": "2026-07-21 close",
           "evidence": "今天将迎来大多数股票的反弹！昨天3000多家股票下跌，跌停的达到268家，今日大多数股票将会止跌反弹，尤其科技股会出现有"
         }
       ],
-      "total_score": 1.5,
+      "total_score": 6.64,
       "signal_count": 4,
-      "avg_score_pct": 37.53
+      "avg_score_pct": 166.12
     }
   }
 }

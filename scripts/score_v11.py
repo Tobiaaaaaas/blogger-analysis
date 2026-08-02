@@ -53,15 +53,12 @@ TOP_DATES = {
 }
 
 # time_horizon -> (window_offset_start, window_size)
-# window_offset_start: number of trading days AFTER T to start
+# Offsets from T (list of trading day offsets to sample)
 TH_WINDOW = {
-    "intraday": None,      # score = 0
-    "unspecified": None,   # score = 0
-    "long": None,          # score = 0
-    "short": (0, 3),       # T, T+1, T+2
-    "weekly": (4, 3),      # T+4, T+5, T+6
-    "biweekly": (9, 3),    # T+9, T+10, T+11
-    "monthly": (20, 3),    # T+20, T+21, T+22
+    "short": [0, 1, 2],                # T, T+1, T+2
+    "medium": [5, 10, 15],             # T+5, T+10, T+15 (sampled)
+    "long": [20, 21, 22],              # T+20, T+21, T+22
+    "unspecified": [20, 21, 22],       # T+20, T+21, T+22
 }
 
 VALID_TH = set(TH_WINDOW.keys())
@@ -127,8 +124,8 @@ def get_ref_price(date_str, pub_time_str, prices, sorted_dates):
         return None, "NO PRICE", None
 
 
-def avg_close(ref_date, offset_start, window_size, prices, sorted_dates):
-    """Average close of [ref_date+offset_start, ..., ref_date+offset_start+window_size-1] trading days."""
+def sampled_close_avg(ref_date, offsets, prices, sorted_dates):
+    """Average close at specific trading day offsets from ref_date. offsets = list of ints."""
     try:
         idx = sorted_dates.index(ref_date)
     except ValueError:
@@ -143,11 +140,11 @@ def avg_close(ref_date, offset_start, window_size, prices, sorted_dates):
                     continue
         else:
             return None
-    start = idx + offset_start
-    end = start + window_size
     closes = []
-    for i in range(start, min(end, len(sorted_dates))):
-        closes.append(prices[sorted_dates[i]]["close"])
+    for offset in offsets:
+        i = idx + offset
+        if 0 <= i < len(sorted_dates):
+            closes.append(prices[sorted_dates[i]]["close"])
     return sum(closes) / len(closes) if closes else None
 
 
@@ -261,13 +258,12 @@ def main():
         # Compute score based on time_horizon
         winfo = TH_WINDOW.get(th)
         if winfo is None:
-            # intraday / unspecified / long → score = 0
+            # long → score = 0
             score = 0.0
             ret = 0.0
             score_zero += 1
         else:
-            offset_start, window_size = winfo
-            avg_c = avg_close(ref_date, offset_start, window_size, prices, sorted_dates)
+            avg_c = sampled_close_avg(ref_date, winfo, prices, sorted_dates)
             if avg_c is None:
                 score = 0.0
                 ret = 0.0
@@ -376,7 +372,7 @@ def main():
 
     # Per time_horizon scores
     th_scores = {}
-    for th in ["short", "weekly", "biweekly", "monthly", "intraday", "long", "unspecified"]:
+    for th in ["short", "medium", "long", "unspecified"]:
         a = th_acc[th]
         th_scores[th] = {
             "count": a["cnt"],
@@ -404,7 +400,7 @@ def main():
     print(f"{'='*70}")
     print(f"{'th':<14} {'Count':>6} {'Total':>10} {'Avg':>10} {'WinRate':>10}")
     print(f"{'-'*52}")
-    for th in ["short", "weekly", "biweekly", "monthly", "intraday", "long", "unspecified"]:
+    for th in ["short", "medium", "long", "unspecified"]:
         d = th_scores[th]
         if d["count"] > 0:
             print(f"{th:<14} {d['count']:>6} {d['total']:>+10.2f}% {d['avg_pct']:>+9.2f}% {d['win_rate']:>9.1f}%")

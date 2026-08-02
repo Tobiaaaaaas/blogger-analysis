@@ -52,13 +52,10 @@ cd <项目根目录> && python scripts/scrape_toutiao.py <帖子链接>
 - `strength`: strong / moderate
   - `strong` — 措辞坚决（"一定""必将""满仓""清仓""坚决"）+ 给出具体点位/仓位
   - `moderate` — 有方向判断但措辞温和（"偏多""倾向于""大概率""有望"）
-- `time_horizon`: intraday / short / weekly / biweekly / monthly / long / unspecified
-  - `intraday` — 日内预测（仅针对当日 T）
-  - `short` — 3天内预测（T ~ T+2，"明天涨""周初反弹"）
-  - `weekly` — 1周后预测（"下周""这周后半段"）
-  - `biweekly` — 2周后预测（"月中""未来两周"）
-  - `monthly` — 1月后预测（"下个月""未来一个月"）
-  - `long` — 更远的预测（"下半年""牛市""趋势""明年"）
+- `time_horizon`: short / medium / long / unspecified
+  - `short` — 3天内预测（T ~ T+2，"明天涨""下午反弹"，包括日内）
+  - `medium` — 预测周期 T+3 到 1 个月（"下周""月中""月底前"）
+  - `long` — 预测周期 1 个月及以上（"下个月""下半年""牛市""明年"）
   - `unspecified` — 无明确时间范围
 
 > **time_horizon 标注原理**：LLM 必须通过理解帖子的完整语义来判断时间维度，**不能依赖关键词匹配**。LLM 必须理解整个帖子的信号针对的预判周期，不能按照一句话以偏概全。当帖子同时包含不同级别的时间信息时，以信号针对的预判周期来标注该帖子的 time_horizon。
@@ -83,22 +80,16 @@ cd <项目根目录> && python scripts/scrape_toutiao.py <帖子链接>
   "scored_bullish": {
     "strong": 0,
     "moderate": 0,
-    "intraday": 0,
     "short": 0,
-    "weekly": 0,
-    "biweekly": 0,
-    "monthly": 0,
+    "medium": 0,
     "long": 0,
     "unspecified": 0
   },
   "scored_bearish": {
     "strong": 0,
     "moderate": 0,
-    "intraday": 0,
     "short": 0,
-    "weekly": 0,
-    "biweekly": 0,
-    "monthly": 0,
+    "medium": 0,
     "long": 0,
     "unspecified": 0
   },
@@ -192,15 +183,12 @@ return = avg_close(window) / P_ref - 1
 
 | time_horizon | 窗口 | 含义 |
 |:---|:---|:---|
-| intraday | — | score = 0（日内判断不进入评分） |
-| unspecified | — | score = 0（无明确时间范围，不可评估） |
-| long | — | score = 0（时间跨度过长，无法用短期价格验证） |
 | short | T, T+1, T+2 | 3 个交易日内 |
-| weekly | T+4, T+5, T+6 | 1 周后的 3 个交易日 |
-| biweekly | T+9, T+10, T+11 | 2 周后的 3 个交易日 |
-| monthly | T+20, T+21, T+22 | 1 月后的 3 个交易日 |
+| medium | T+5, T+10, T+15 | 约 1/2/3 周后各取 1 个交易日 |
+| long | T+20, T+21, T+22 | 1 月后的 3 个交易日 |
+| unspecified | T+20, T+21, T+22 | 无明确时间范围，按月度窗口评估 |
 
-> 例：信号 time_horizon = weekly，T = 5/16（周一）。window = [5/20(周五), 5/23(周一), 5/24(周二)]。
+> 例：信号 time_horizon = medium，T = 5/16（周一）。window = [T+10=5/30(周五), 6/2(周一), 6/3(周二)]。
 > avg = (4050+4060+4040)/3 = 4050，ref = 4000，return = 4050/4000 - 1 = +1.25%。
 
 **打分公式**：
@@ -245,7 +233,7 @@ score = direction_sign × return × strength_base
 ⑭ 看空平均分 = (⑦ / bearish 有效信号数)
 ```
 
-> score = 0 的信号（intraday / long / unspecified）不计入平均分和胜率的分母。
+> 所有 time_horizon 均参与评分。仅当窗口交易日数据不足时 score = 0。
 
 拐点类型判定：
 - **底部拐点**：M1(2690)、M3(3041)、M5(3795)、M8(3741)、I1(3153)、I3(3227)、I5(3141)、I9(3816)、I11(4003)、I13(3928)
@@ -277,10 +265,9 @@ score = direction_sign × return × strength_base
    | time_horizon | 信号数 | 总得分 | 平均分 | 胜率 |
    |:---|:---:|:---:|:---:|:---:|
    | short | X | +X% | +X% | X% |
-   | weekly | X | +X% | +X% | X% |
-   | biweekly | X | +X% | +X% | X% |
-   | monthly | X | +X% | +X% | X% |
-   | (intraday/long/unspecified = score 0) | X | 0 | 0 | — |
+   | medium | X | +X% | +X% | X% |
+   | long | X | +X% | +X% | X% |
+   | unspecified | X | +X% | +X% | X% |
    ```
 4. **逐拐点分析**：每个 Major + Intermediate 拐点列出信号数量、总得分、平均分、代表性信号（见 §5 模板）
 
@@ -362,12 +349,9 @@ score = direction_sign × return × strength_base
               │     └── moderate：X 条（X%）
               │
               └── ⏱️ 按时间跨度拆解：
-                    ├── long（更远）：X 条
-                    ├── monthly（1月后）：X 条
-                    ├── biweekly（2周后）：X 条
-                    ├── weekly（1周后）：X 条
-                    ├── short（3天内）：X 条
-                    ├── intraday（日内）：X 条
+                    ├── long（1月及以上）：X 条
+                    ├── medium（T+3 到 1 月）：X 条
+                    ├── short（3天内，含日内）：X 条
                     └── unspecified（无明确时间范围）：X 条
 ```
 
@@ -403,7 +387,8 @@ score = direction_sign × return × strength_base
 | weekly | X | +X% | +X% | X% |
 | biweekly | X | +X% | +X% | X% |
 | monthly | X | +X% | +X% | X% |
-| (intraday/long/unspecified = score 0) | X | 0 | 0 | — |
+| unspecified | X | +X% | +X% | X% |
+| (intraday/long = score 0) | X | 0 | 0 | — |
 ```
 
 ---

@@ -15,23 +15,17 @@
   "scored_bullish": {
     "strong": 52,
     "moderate": 883,
-    "intraday": 141,
-    "short": 465,
-    "weekly": 80,
-    "biweekly": 0,
-    "monthly": 28,
-    "long": 109,
+    "short": 606,
+    "medium": 80,
+    "long": 137,
     "unspecified": 112
   },
   "scored_bearish": {
     "strong": 4,
     "moderate": 373,
-    "intraday": 53,
-    "short": 197,
-    "weekly": 31,
-    "biweekly": 0,
-    "monthly": 12,
-    "long": 9,
+    "short": 250,
+    "medium": 31,
+    "long": 21,
     "unspecified": 75
   },
   "signals": [
@@ -71,7 +65,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的A股调整基本到位，做好拉升的准备！",
       "publish_time": "2024-07-03 11:54"
     },
@@ -87,7 +81,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周的A股要绝地反击！",
       "publish_time": "2024-07-07 20:05"
     },
@@ -103,7 +97,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天收阳线是没什么问题的，只是别高开太多就行，828股民英雄纪念碑还历历在目，大家都懂！",
       "publish_time": "2024-07-11 08:53"
     },
@@ -143,7 +137,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "A股：刚刚，证监会最新消息！“还券”已开始，下周继续逼空！",
       "publish_time": "2024-07-12 15:53"
     },
@@ -167,7 +161,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "预计午后市场会慢慢自我开始修复。",
       "publish_time": "2024-07-18 09:54"
     },
@@ -183,7 +177,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "神秘资金“买爆了”，大盘周线两连阳，股民：3000点下周见",
       "publish_time": "2024-07-19 15:35"
     },
@@ -199,7 +193,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天大盘没那么容易跌破2900点，开盘低开就有资金出手拉升指数，就是温水煮青蛙，不会持续大跌下去，总得有资金抵抗一下，让大家缓一缓。",
       "publish_time": "2024-07-24 09:47"
     },
@@ -215,7 +209,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天要挺住，准备反击！",
       "publish_time": "2024-07-25 09:10"
     },
@@ -263,7 +257,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的A股将强势逼空上涨",
       "publish_time": "2024-07-31 11:06"
     },
@@ -311,7 +305,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "这一周A股只要扛住了全球波动压力，那对于A股来说就真的见底了。",
       "publish_time": "2024-08-05 22:43"
     },
@@ -327,7 +321,7 @@
       "post_n": 7,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "A股今天可能也会压力挺大",
       "publish_time": "2024-08-07 08:24"
     },
@@ -431,7 +425,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "确定转折，下周是时候涨了，利好总在周末发！证监会也行动",
       "publish_time": "2024-08-24 10:04"
     },
@@ -463,7 +457,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "暴涨！久违了的大阳线，发生了什么？A股阶段性见底信号！",
       "publish_time": "2024-08-30 11:52"
     },
@@ -471,7 +465,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "放量反弹，9月的A股要开始逆袭了吗？",
       "publish_time": "2024-08-30 16:09"
     },
@@ -495,7 +489,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "A股：破了，2800点保卫战开始！今天缩量涨个股，见底了吗？",
       "publish_time": "2024-09-03 11:33"
     },
@@ -535,7 +529,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "A股：跌麻了，让暴风雨来的更猛烈一些吧！下周将要加速见底了？",
       "publish_time": "2024-09-06 15:44"
     },
@@ -575,7 +569,7 @@
       "post_n": 3,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的大盘还要创新低吗？情绪有点不对劲！",
       "publish_time": "2024-09-13 11:35"
     },
@@ -583,7 +577,7 @@
       "post_n": 1,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "2703点表明了态度，下周将直面人性的恐惧！",
       "publish_time": "2024-09-13 15:38"
     },
@@ -623,7 +617,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "现在短期的超跌反弹底部已经确立，是否是中期的底部还需要进一步观察，所以短期不必担心会有大跌出现；今天的上涨情绪可能不及昨天，但是反弹的时间还没有结束。",
       "publish_time": "2024-09-20 09:41"
     },
@@ -631,7 +625,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "尾盘爆拉，天量成交！大盘三连阳，下周将迎来真正的大涨？",
       "publish_time": "2024-09-20 15:48"
     },
@@ -783,7 +777,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "牛市中的任何回调都是上车的机会，港股市场已经给我们演示过了，下周A股开盘就照着走就行了",
       "publish_time": "2024-10-04 11:02"
     },
@@ -815,7 +809,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "10月大盘将再创新高",
       "publish_time": "2024-10-05 21:51"
     },
@@ -823,7 +817,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "不出意外的话就是没有意外，10月8号A股开盘将会出现这样的场景",
       "publish_time": "2024-10-06 16:44"
     },
@@ -855,7 +849,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "节后两天延续大涨已经没有悬念，10号也就是本周四之后的行情就不好说了，短期可能会盛极而衰，来一次大波动了",
       "publish_time": "2024-10-07 22:45"
     },
@@ -903,7 +897,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "看好今天市场开始反弹修复，现在的上涨我是不希望再次出现疯涨了，慢一点，稳一点，涨一点，久一点就好。",
       "publish_time": "2024-10-10 08:15"
     },
@@ -943,7 +937,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "我认为下周将会止跌反弹，开启二次上涨。",
       "publish_time": "2024-10-12 23:31"
     },
@@ -959,7 +953,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "关于这周的行情，止跌修复反弹的概率会比较大",
       "publish_time": "2024-10-14 10:42"
     },
@@ -1007,7 +1001,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "11月份美联储再次降息之后，A股下一波普遍性的行情开启概率较大，现在开始的就是整体慢牛，局部趋势行情。",
       "publish_time": "2024-10-17 13:45"
     },
@@ -1015,7 +1009,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "所以周五会不会有资金有所行动？今天会不会是故意砸盘出其不意？一切皆有可能，目的就是要让散户不看好割肉离场。",
       "publish_time": "2024-10-17 22:44"
     },
@@ -1023,7 +1017,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "因此，今天可能情绪波动会很刺激，幅度也可能会多变，但相信今天会有反转，也必须得涨，必须要反人性。",
       "publish_time": "2024-10-18 06:00"
     },
@@ -1127,7 +1121,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "试入场然后就会开始高位套人，再然后就是剧烈洗盘，最后等到11月份再开启一波加速为主，到12月份风格再慢慢切回到权重蓝筹可能性较大，也就是年底流动性紧张的时候资金又抱团高股息。",
       "publish_time": "2024-10-21 17:03"
     },
@@ -1151,7 +1145,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "做好准备吧，别被洗出去了，深交所发声全网测试，中金已经行动，不出意外的话，A股本周就要有突破了",
       "publish_time": "2024-10-22 13:39"
     },
@@ -1263,7 +1257,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "我只能跟大家说指数完全不用担心，但下周市场情绪需要警惕3个方面",
       "publish_time": "2024-10-26 23:20"
     },
@@ -1271,7 +1265,7 @@
       "post_n": 2,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周不宜再开新仓，短线随时做好情绪兑现的准备",
       "publish_time": "2024-10-27 12:39"
     },
@@ -1287,7 +1281,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天大概率还是成长风格领先为主，权重主要是控盘指数，今年剩余的时间里，只管逢低做多就对了，现在机构行动较慢是因为考虑较多，11月8号之后，那就是机构们集体的表演周期了。",
       "publish_time": "2024-10-28 07:19"
     },
@@ -1303,7 +1297,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "3300点已经不再是一个阻碍，而是成为了主力资金冲刺下一阶段的一个新的台阶。",
       "publish_time": "2024-10-28 14:08"
     },
@@ -1351,7 +1345,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "中期看多大方向不动摇",
       "publish_time": "2024-10-29 23:05"
     },
@@ -1407,7 +1401,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "目前A股主要是震荡中完成洗盘和建仓，也是在等待11月份的几个重磅事件落地。持续的震荡跌不下去，那最终的目标就是要走向上突破为主。",
       "publish_time": "2024-11-01 10:21"
     },
@@ -1431,7 +1425,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天缩量市场还能够实现普涨，就是说明现在市场已经进入惜售的状态，卖盘压力明显减少，多头行情随时都会爆发",
       "publish_time": "2024-11-04 14:15"
     },
@@ -1471,7 +1465,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "大盘指数今天算是真正意义上的突破",
       "publish_time": "2024-11-05 19:15"
     },
@@ -1487,7 +1481,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天大盘如预期的一样，突破了3400点",
       "publish_time": "2024-11-06 10:26"
     },
@@ -1503,7 +1497,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "这周定能站稳3400点，11月和12月这两个月将会是今年最后一波行情的关键时期",
       "publish_time": "2024-11-07 10:25"
     },
@@ -1511,7 +1505,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的确是走出了逼空上涨的走势，成交额会再一次突破两万亿，四千多只个股集体上涨说明逼空行情正在展开。",
       "publish_time": "2024-11-07 14:31"
     },
@@ -1543,7 +1537,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午主力资金可能会借助权重开始突袭指数了。",
       "publish_time": "2024-11-08 10:32"
     },
@@ -1559,7 +1553,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周做好反包准备",
       "publish_time": "2024-11-08 15:30"
     },
@@ -1567,7 +1561,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周A股市场见真章！",
       "publish_time": "2024-11-08 17:48"
     },
@@ -1655,7 +1649,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天A股三大指数集体低开，但是低开之后都能够收涨，尤其是大盘盘整一度下跌调整，最后还是涨上来了，这就说明牛市里的调整其实幅度是不大的，很多调整都是日内完成，很多低吸机会也都是在日内出现。",
       "publish_time": "2024-11-11 17:30"
     },
@@ -1663,7 +1657,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天开盘三大指数继续上涨翻红，和我预判的是完全一致的，最近很多人看空市场，但是我坚定的看多，昨天低开高走，今天开盘大盘继续冲",
       "publish_time": "2024-11-12 10:16"
     },
@@ -1671,7 +1665,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "是我觉得今天指数低开之后稍微消化一下恐慌盘，分时可能就会有拉升了，但是属于那种震荡拉升，并非是逼空大涨为主，指数还是慢慢来比较好。",
       "publish_time": "2024-11-13 06:32"
     },
@@ -1735,7 +1729,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天如果不跌破20日均线的话其实就说明短期回调的幅度有限，只需要耐心等待震荡之后的下一波上涨就可以了。",
       "publish_time": "2024-11-15 14:04"
     },
@@ -1743,7 +1737,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "我觉得下周短线交易应该会慢慢恢复。",
       "publish_time": "2024-11-16 22:54"
     },
@@ -1751,7 +1745,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天主要是稳指数，很多人可能会对题材继续悲观，但我认为反而可以逆势做先手了，因为指数稳住之后，题材还是轮动上涨。",
       "publish_time": "2024-11-18 10:16"
     },
@@ -1791,7 +1785,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "纳指金龙中国指数已经有率先止跌信号，今天的A股市场止跌反弹的概率很大。",
       "publish_time": "2024-11-19 06:59"
     },
@@ -1799,7 +1793,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的指数虽然和昨天一样冲高后又回落了，但是我认为还是会再拉起来，今天就是坚定的等待市场反弹修复。",
       "publish_time": "2024-11-19 10:25"
     },
@@ -1807,7 +1801,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的A股经历这样的探底回升之后，我觉得一切都已经是明牌了，大家悬着的心也可以放下了，如果说之前追高了，那么就需要耐心，等待反弹修复再去考虑去留的问题",
       "publish_time": "2024-11-19 14:26"
     },
@@ -1871,7 +1865,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "从下周开始，对于非短线交易的选手来讲，其实没有割肉的意义，对于短线选手来讲，可以观察止跌信号，最好是12月份开始下一轮布局。",
       "publish_time": "2024-11-22 21:24"
     },
@@ -1895,7 +1889,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天市场可能是缩量探底回升小阳线的走势。",
       "publish_time": "2024-11-25 07:37"
     },
@@ -1951,7 +1945,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "A股：今天放量重回3300点，牛还在，先别走？这次反弹不一样！",
       "publish_time": "2024-11-27 15:52"
     },
@@ -1983,7 +1977,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天盘前的早盘点评已经明确说了今天收周线还有月线的日子，必须要看涨，大家都不看好的时候，那就不是绝望的时候。",
       "publish_time": "2024-11-29 10:11"
     },
@@ -2023,7 +2017,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的A股，就是要完成逼空，机构今天的觉悟也是很高的，尽管汇率最高贬值跌破7.28关口，尽管恒指一度翻绿，但这影响不了A股向上突破的决心，当大盘冲上3400点的时候，会有很多人改变对于A股市场的看法",
       "publish_time": "2024-12-02 14:04"
     },
@@ -2055,7 +2049,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天大盘果然和我上午盘中说的一样，在午盘收盘之前就有突袭拉升了，没看观点的可以去看上一篇内容。",
       "publish_time": "2024-12-05 11:35"
     },
@@ -2087,7 +2081,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的A股终于变盘向上了，还有谁不服气的吗？有人敢在3227带你回升的时候就给你们说一定要突破3400点的吗？",
       "publish_time": "2024-12-06 11:37"
     },
@@ -2095,7 +2089,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "压的精神，下周跟风资金进来，题材的机会就会增加。",
       "publish_time": "2024-12-06 14:06"
     },
@@ -2103,7 +2097,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "A股：稳了，放量突破，留给空头的时间不多了，下周没有意外！",
       "publish_time": "2024-12-06 15:21"
     },
@@ -2151,7 +2145,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "上周观望踏空的，现在可以忽略指数波动，积极寻找分歧做多的机会，顺周期里金融，周期，消费还有医药，科技里目前强势的是人工智能还有机器人，半导体还有消费电子属于中期方向。",
       "publish_time": "2024-12-09 10:16"
     },
@@ -2159,7 +2153,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "能够走出突破说明大方向是震荡向上做多的趋势，但是突破之后加速大涨，这不符合上面要的慢节奏，更何况这周靴子还没有落地，多空都是焦灼的状态，不可能直接加速了。",
       "publish_time": "2024-12-09 11:41"
     },
@@ -2167,7 +2161,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "我觉得完全是没有必要这样想，因为大盘指数从最低的3227点反弹以来，到今天上午最高3426点，是不是有近两百个点的反弹幅度？",
       "publish_time": "2024-12-09 14:17"
     },
@@ -2199,7 +2193,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天A股大涨是没有悬念的",
       "publish_time": "2024-12-10 07:24"
     },
@@ -2231,7 +2225,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天大概率象征性的反抽护盘拉升",
       "publish_time": "2024-12-11 07:34"
     },
@@ -2239,7 +2233,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "所以我今天早上也说了，今天反抽上涨是没有问题的，但是今天大概率会是缩量上涨为主。",
       "publish_time": "2024-12-11 10:09"
     },
@@ -2263,7 +2257,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的A股有望继续把稳股市发挥到极致，现在就是慢牛行情",
       "publish_time": "2024-12-12 06:56"
     },
@@ -2327,7 +2321,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "但对于下周走势来讲，因为有预期的存在，下周不看大跌，看慢涨修复，继续做消费，AI还有机器人这三个方向。",
       "publish_time": "2024-12-15 11:25"
     },
@@ -2335,7 +2329,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "现在市场在预期下周的降准以及LPR利率，包括美联储降息等，所以还不至于失控。",
       "publish_time": "2024-12-15 22:13"
     },
@@ -2343,7 +2337,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "政策所有的利好都释放出明年会超预期，那么就要等到跨年还有春季行情的到来，至少手里要有一定的筹码。今天就是持股等待。",
       "publish_time": "2024-12-16 11:35"
     },
@@ -2359,7 +2353,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "第三，今天权重股的反弹，意味着年底的维稳行情正式展开了，不要觉得会持续大跌，这是不允许的，现在就是稳定等到明年政策逐步落实落地，到时候还会有一波春季行情。",
       "publish_time": "2024-12-17 10:16"
     },
@@ -2367,7 +2361,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "3350点的位置是有一定的强支撑的，今天盘中最低回踩3359点位置开始拉升，这种拉升不是增量资金入场，而是某队资金开始出手了，某队利用券商控盘，带动指数拉升。",
       "publish_time": "2024-12-17 14:06"
     },
@@ -2391,7 +2385,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天收阳是没问题的，下一步就等降息，还有国内的降准落地吧。",
       "publish_time": "2024-12-18 11:45"
     },
@@ -2399,7 +2393,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天市场反弹上涨，相信很多股民朋友还是信心不足，但是今天市场有几个明显的信号：一是内资在大幅流出之后，今天午后开始转为净流入了...二是氛围，虽然是缩量的，但是短线交易氛围回暖的还是比较快的...也说明当前想要大跌是不现实的。",
       "publish_time": "2024-12-18 14:04"
     },
@@ -2423,7 +2417,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天A股市场如期上涨，开盘之后一路震荡走高，这是延续了昨天低开高走的走势，也是实现本周先抑后扬的目标。",
       "publish_time": "2024-12-20 11:40"
     },
@@ -2447,7 +2441,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "我认为下周A股是要向上变盘突破，时间点是下周三之前，跨年行情的两个方向就是围绕科技还有消费为主。",
       "publish_time": "2024-12-22 15:13"
     },
@@ -2543,7 +2537,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天保持继续上涨概率很大。",
       "publish_time": "2024-12-25 07:39"
     },
@@ -2559,7 +2553,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "总的来说，下周市场还有高点，下周后半周需要警惕短期压力。",
       "publish_time": "2024-12-27 14:28"
     },
@@ -2575,7 +2569,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天开盘指数低开高走，但是出现了4000多家公司待涨的情况，微盘股早盘一个急跌超出3%的跌幅，很明显还是因为周末央行的讲话。",
       "publish_time": "2024-12-30 10:14"
     },
@@ -2607,7 +2601,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "指数今天虽然不强，但记住我们说的今天是个股的修复开始。",
       "publish_time": "2025-01-02 10:12"
     },
@@ -2623,7 +2617,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天总该会给大家缓缓的机会，但如果是缩量反弹的话，后面就需要看是否会有持续放量的延续了，量能跟不上的话，反弹很容易再一次引起资金逢高离场的抛压。",
       "publish_time": "2025-01-03 07:37"
     },
@@ -2671,7 +2665,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天震荡调整的话，周五小阳线反弹的可能性就比较高了。",
       "publish_time": "2025-01-09 14:24"
     },
@@ -2679,7 +2673,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "当今天大盘指数不破3140点低点的话，那么后面两天就是在半年线上方止跌的走势，意味着变盘随时会来到。",
       "publish_time": "2025-01-13 14:20"
     },
@@ -2687,7 +2681,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "周线两连阴之后本周收阳为主；",
       "publish_time": "2025-01-14 10:17"
     },
@@ -2759,7 +2753,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "这周预计还是会以一根阳线为主；",
       "publish_time": "2025-01-20 10:20"
     },
@@ -2775,7 +2769,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的A股，会涨得让人目瞪口呆吗？盘前的利好已经刷屏，持股的股民会比较开心，观望的股民或许又错过了一些机会",
       "publish_time": "2025-01-21 07:54"
     },
@@ -2839,7 +2833,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "本周先抑后扬的走势，目前来看已经是得到了验证了，今天本周最后一个交易日，这周交易时间虽然不多，但是节后整体表现还算是符合预期",
       "publish_time": "2025-02-07 10:10"
     },
@@ -2863,7 +2857,7 @@
       "post_n": 0,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周，准备迎接更大的风浪！",
       "publish_time": "2025-02-07 15:50"
     },
@@ -2895,7 +2889,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天突破60日均线压力不大",
       "publish_time": "2025-02-10 10:22"
     },
@@ -2903,7 +2897,7 @@
       "post_n": 9,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天会再次迎来惊魂跳水吗？",
       "publish_time": "2025-02-10 11:50"
     },
@@ -2975,7 +2969,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天会有局部科技开始修复，会带动市场氛围。",
       "publish_time": "2025-02-14 10:34"
     },
@@ -2991,7 +2985,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "社融数据开门红给股市带来好的预期，这个利好虽然周五已经提前有所反应，但对于下周以及接下来的走势意义还是比较大的。",
       "publish_time": "2025-02-15 16:00"
     },
@@ -3007,7 +3001,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "大盘指数本周是要尝试突破3400点的，对于主力资金来说，现在是要所有板块都轮动涨一遍，最终资金再次回归到主线。",
       "publish_time": "2025-02-17 15:23"
     },
@@ -3015,7 +3009,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "心上继续看好A股市场春季躁动趋势性的行情，2月份和3月份，这两个月是今年行情的关键，也是政策密集发布的重要月份，主力资金也不太可能过早的结束行情，更多的是蓄势等待机会。",
       "publish_time": "2025-02-18 10:36"
     },
@@ -3039,7 +3033,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的A股，主力资金基本上明牌了，开盘就逼空上涨，目的是什么？恐慌性的跳水给股民营造出要连续大跌的假象，大多数股民朋友都被吓到了，实际上现在的A股走的还是有迹可循的",
       "publish_time": "2025-02-19 10:27"
     },
@@ -3071,7 +3065,7 @@
       "post_n": 5,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "总的来说，指数在3400点上方预计会继续震荡洗盘蓄势为主，可以考虑分歧或者调整时候再加，冲高就慢慢减，从4月份开始，要防止机构资金集中兑现调仓。",
       "publish_time": "2025-02-22 11:23"
     },
@@ -3111,7 +3105,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "券商尾盘急速拉升！股民做好准备，要突破了！",
       "publish_time": "2025-02-26 15:18"
     },
@@ -3127,7 +3121,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "本周突破3400点的希望还是比较大的，至少今天午后拉回来了，这次预判又对应上了。",
       "publish_time": "2025-02-27 14:24"
     },
@@ -3159,7 +3153,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "这周是捕捉机会的关键阶段，就算是做多不积极，但至少也会有护盘的资金出手。",
       "publish_time": "2025-03-03 10:21"
     },
@@ -3183,7 +3177,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "连续两天的回调，今天市场缩量反弹为主，当量能回到1.5万亿以内，意味着市场距离止跌企稳也就不远了。",
       "publish_time": "2025-03-04 10:14"
     },
@@ -3191,7 +3185,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "面对美股科技股的大跌，亚太市场的集体调整，为什么今天的A股可以低开高走硬气一回？主要是这几个方面：",
       "publish_time": "2025-03-04 14:05"
     },
@@ -3199,7 +3193,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "关键是科技的情绪再次爆发，新股民开户资金的入场，或许题材概念唱戏还会维持下去，维稳行情下，这周重点做个股反弹的机会。",
       "publish_time": "2025-03-04 21:44"
     },
@@ -3207,7 +3201,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "目前的A股还是可以看做是60日线附近震荡洗盘，我觉得这周的A股市场跌不下去，更多的是洗盘为主，还是重视题材个股的机会。",
       "publish_time": "2025-03-05 10:24"
     },
@@ -3247,7 +3241,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "所以下周很有可能超预期走强。",
       "publish_time": "2025-03-08 22:47"
     },
@@ -3295,7 +3289,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天大盘指数直接突破3380点，一根阳线反包昨天的阴线，走势上不是又回到了趋势上涨了吗？",
       "publish_time": "2025-03-14 10:17"
     },
@@ -3375,7 +3369,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周有转机？",
       "publish_time": "2025-03-21 22:14"
     },
@@ -3391,7 +3385,7 @@
       "post_n": 2,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "这周的个股表现预计会比较复杂，分化可能会比较明显，业绩预期好的相对抗跌，没有业绩支撑的概念股，很可能会跌回原点",
       "publish_time": "2025-03-24 10:23"
     },
@@ -3399,7 +3393,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天能否上演大反攻？",
       "publish_time": "2025-03-24 11:46"
     },
@@ -3423,7 +3417,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天上涨的可能性很大，原因就是昨天的极致缩量叠加主力资金普遍拉升权重蓝筹护盘，这是逼迫持有小微盘股的股民恐慌割肉，然后把资金转移到银行，石油，煤炭等高股息红利资产。",
       "publish_time": "2025-03-26 10:18"
     },
@@ -3447,7 +3441,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周大利空落地兑现，A股能否绝地反击？",
       "publish_time": "2025-03-28 15:52"
     },
@@ -3455,7 +3449,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "大盘指数不破60日均线的前提下，就说明护盘资金一直都在稳定市场，只要中期均线不破，后面就是震荡以时间换取空间。",
       "publish_time": "2025-03-31 10:16"
     },
@@ -3463,7 +3457,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "现在就在等待4月初的靴子落地，等待空头资金出清，A股开始迎来正式的反弹修复。",
       "publish_time": "2025-03-31 14:34"
     },
@@ -3487,7 +3481,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "所以今天真的大幅低开之后，或许还会再一次上演低开高走的独立行情，大家觉得A股今天能否扛得住呢？",
       "publish_time": "2025-04-03 07:45"
     },
@@ -3495,7 +3489,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的A股，开盘及最低点3319点开始拉升，无惧关税利空低开高走，释放了什么信号？全球贸易战波动加剧，A股今天若能够走出独立行情，至少已经亮明了态度",
       "publish_time": "2025-04-03 10:23"
     },
@@ -3511,7 +3505,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "所以对A股下周的表现应该有信心和信念。",
       "publish_time": "2025-04-06 07:46"
     },
@@ -3519,7 +3513,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天可以有恐惧，但不要割肉，持仓的大家可以直接关闭账户了，空仓的朋友可以考虑抄底了",
       "publish_time": "2025-04-07 10:11"
     },
@@ -3535,7 +3529,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的A股，将会出现反弹，但股民还是不太敢抄底，你知道是为什么吗？",
       "publish_time": "2025-04-08 10:24"
     },
@@ -3559,7 +3553,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "说实话，今天的A股市场还会有所承压，但是要相信相信的力量，也要相信现在救市稳定股市的决心，信念和仓位要一起坚持",
       "publish_time": "2025-04-09 07:21"
     },
@@ -3607,7 +3601,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的A股表现算不上是最强的，但确是最有韧性的，因为不管外围市场涨跌，A股现在就是一步步按照自己的筑底节奏走出反弹。",
       "publish_time": "2025-04-11 14:00"
     },
@@ -3679,7 +3673,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天大金融里的银行，保险，券商都开盘走强，这或许意味着大金融在今天可能要继续护盘稳定指数了。",
       "publish_time": "2025-04-18 10:17"
     },
@@ -3687,7 +3681,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周的股市可能要开始轻指数重个股了，指数会继续保持稳定，地量之后，个股预计开始逐步活跃。",
       "publish_time": "2025-04-18 22:29"
     },
@@ -3719,7 +3713,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "不出意外的话，今天大盘指数可能会保持十一连阳的走势",
       "publish_time": "2025-04-22 10:20"
     },
@@ -3783,7 +3777,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天市场大概率会出现这几个特点：（1）一是大盘指数保持低开震荡走高的情况，指数大涨的可能性不大，但是低开又出现了日内低点，盘中拉升的可能性较大；",
       "publish_time": "2025-04-29 10:09"
     },
@@ -3863,7 +3857,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天A股高开之后能否实现大涨了。",
       "publish_time": "2025-05-13 08:34"
     },
@@ -3871,7 +3865,7 @@
       "post_n": 0,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "但5月份A股市场的结构性行情不会改变，重点是在题材个股的轮动上涨中，指数向上空间有限，个股活力无限。",
       "publish_time": "2025-05-13 10:19"
     },
@@ -3879,7 +3873,7 @@
       "post_n": 13,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的A股，有点不对劲了，最大的问题就是缩量，股民朋友需要小心谨慎，外围股市持续上涨，A股始终走自己的独立行情，情绪可能会越来越低迷",
       "publish_time": "2025-05-14 10:21"
     },
@@ -3887,7 +3881,7 @@
       "post_n": 10,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天A股情绪不太对，3400点冲上容易守住难，不管你是否看好后市，短期可能都必须接受一个事实",
       "publish_time": "2025-05-15 10:25"
     },
@@ -3911,7 +3905,7 @@
       "post_n": 4,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的A股，股民散户又会感到失望，大盘指数低开在5日均线下方，走势越来越不对劲了，股民朋友需要做好准备",
       "publish_time": "2025-05-19 10:16"
     },
@@ -3943,7 +3937,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天是大盘指数最有希望突破3400点的一天",
       "publish_time": "2025-05-22 10:17"
     },
@@ -3959,7 +3953,7 @@
       "post_n": 5,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周的A股面临考验",
       "publish_time": "2025-05-23 22:03"
     },
@@ -3967,7 +3961,7 @@
       "post_n": 1,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "午后资金不继续拉升银行，那么接下来出现跳水的可能性就不大。",
       "publish_time": "2025-05-27 10:21"
     },
@@ -3983,7 +3977,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "大盘连续缩量震荡之后，距离变盘的时间点越来越近了，股民朋友是时候做好准备了：...那么6月份的上半场或许对应的就是机会交替了。",
       "publish_time": "2025-05-28 22:20"
     },
@@ -3999,7 +3993,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的A股要涨了，散户终于松了一口气，6月份的第一个交易日，主力资金想要取得开门红，但股民散户关注点不能有误：1、今天是6月份的第一个交易日，主力资金是要把A股三大指数拉红的",
       "publish_time": "2025-06-03 10:06"
     },
@@ -4015,7 +4009,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的A股很强势，是不是觉得有些意外？主力资金态度明确了，接下来给所有股民朋友说几点：1、A股市场三大指数今天再次出现反弹上涨，大盘指数走势较强，指数牛市是提前到来了吗？",
       "publish_time": "2025-06-04 14:29"
     },
@@ -4023,7 +4017,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "鉴于6月份的两大事件（美联储议息会议以及陆家嘴论坛），我觉得大家有持股等待的意义存在，至少可以在靴子落地之前保持相对乐观的态度。",
       "publish_time": "2025-06-04 23:13"
     },
@@ -4055,7 +4049,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "参考港股恒生指数的表现，大盘还有创业板突破5月份的高点也不会太久。",
       "publish_time": "2025-06-10 10:24"
     },
@@ -4063,7 +4057,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "不出意外的话，今天要下决心突破了吗？",
       "publish_time": "2025-06-10 11:41"
     },
@@ -4111,7 +4105,7 @@
       "post_n": 9,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的A股资金再次拉升银行板块了，不出意外的话，大盘分时将会有再次跳水的可能？关键还得是券商板块的走势：",
       "publish_time": "2025-06-12 10:27"
     },
@@ -4143,7 +4137,7 @@
       "post_n": 5,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的大盘指数还是调整了，正如昨天给大家分析的一样，大盘60分钟走势混沌之后，技术指标已经开始往下，今天开盘半小时没有出现放量拉升突破，最终会导致60分钟级别继续调整出现。",
       "publish_time": "2025-06-13 10:22"
     },
@@ -4159,7 +4153,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "A股：大盘放量收在3377.00点，不出意外的话，下周将要迎来转机了",
       "publish_time": "2025-06-13 15:54"
     },
@@ -4167,7 +4161,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "大盘指数在3360点附近存在一定的支撑，下周三前后是再一次的变盘时间点，不必放大外部利空对于A股本身的影响，关键还得看主力资金控盘的节奏水平。",
       "publish_time": "2025-06-14 15:24"
     },
@@ -4215,7 +4209,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天大盘指数探底回升的可能性较大",
       "publish_time": "2025-06-19 10:30"
     },
@@ -4231,7 +4225,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天最强也是弱反弹为主，不排除主力资金盘中会继续加大市场的波动",
       "publish_time": "2025-06-20 10:04"
     },
@@ -4239,7 +4233,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "股民朋友做好准备，反弹一触即发，今天的走势没有悬念！",
       "publish_time": "2025-06-20 11:42"
     },
@@ -4263,7 +4257,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "A股市场今天比想象中的要强势一些，虽然说今天开盘是低开的，但这种低开大家心理都有准备，所以也没有那么的担心和恐慌，在外部利空持续释放下，一定的低开反而可以加速恐慌情绪的释放，更有利于A股早日探底回升。",
       "publish_time": "2025-06-23 10:05"
     },
@@ -4279,7 +4273,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的A股没有走出低开低走，也没有走出冲高回落后跳水，低开高走的走势让一些看空或者等待大跌的资金有些失望了，可以感受到市场还是一致的认为A股的反弹是诱多，看到大家如此一致的偏空思维，我觉得今天的上涨才是最应该的。",
       "publish_time": "2025-06-23 22:37"
     },
@@ -4303,7 +4297,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "对于今天来讲，大盘指数我认为不需要涨得太快，也不需要涨得太多，慢慢的涨才是正常的，因为加速上涨就代表跟风盘入场积极性比较高，市场里如果跟风盘多了，那么筹码就不稳定了，比较容易出现较大的波动。",
       "publish_time": "2025-06-24 13:57"
     },
@@ -4351,7 +4345,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天涨或跌都能够接受，因为A股大盘指数三天涨百点，指数涨得太快，券商就要主动控制节奏了，今天若调整是否是正常的表现？完全是技术上的一种修正，做多的趋势是不会改变的",
       "publish_time": "2025-06-26 10:03"
     },
@@ -4375,7 +4369,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "A股今天想不涨都难，踏空资金最后要后悔了，为什么这样说？今天银行再次创新高了，券商盘中也跟随拉升了，大盘指数也要奔着继续创年内新高去了",
       "publish_time": "2025-06-27 10:06"
     },
@@ -4383,7 +4377,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周的股市将要继续上涨了吗？",
       "publish_time": "2025-06-28 08:21"
     },
@@ -4455,7 +4449,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "空头资金将会再一次的失望了？主力资金风格切换进行中，人人都想着今天周四的A股要有大跌，但是今天券商反弹涨上来了，创业板继续补涨了，个股赚钱的效应还会回来。",
       "publish_time": "2025-07-03 10:25"
     },
@@ -4479,7 +4473,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "看来主力资金今天的重点是大盘指数了，大盘指数继续收涨的可能性较大。",
       "publish_time": "2025-07-04 11:34"
     },
@@ -4487,7 +4481,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "突破3500点的话也没有关系，主力做了试探之后，不管下周如何洗盘，最终还是要站上的，这点可以参考当初是如何站稳3400点的。",
       "publish_time": "2025-07-04 13:55"
     },
@@ -4503,7 +4497,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周关注券商，光伏行业自律逻辑驱动，半导体芯片，顺周期里金融，有色等经济复苏预期相关方向。",
       "publish_time": "2025-07-05 12:09"
     },
@@ -4527,7 +4521,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "上周试探了3500点压力，本周依旧看大盘指数再次冲击3500点。",
       "publish_time": "2025-07-07 15:53"
     },
@@ -4543,7 +4537,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的市场整体不悲观，美股新高那么久了也该有补跌出现，西落东升也总有出现的时候，现在美关税威胁影响投资者对于美股的预期，反观对于A股也是一个机会。",
       "publish_time": "2025-07-08 08:29"
     },
@@ -4591,7 +4585,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "大盘重回3500点，创下了去年11月份以来的新高，延续了趋势上涨的节奏。",
       "publish_time": "2025-07-09 10:35"
     },
@@ -4607,7 +4601,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天再次站上3500点，更能说明主力要上涨的决心",
       "publish_time": "2025-07-10 11:34"
     },
@@ -4647,7 +4641,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周大盘会试探突破3555.22点位置，突破此点位之后不会继续大涨，而是每涨一个新高点位就继续巩固，下周重点是创业板补涨了，所以重点看科技成长风格。",
       "publish_time": "2025-07-12 09:27"
     },
@@ -4655,7 +4649,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天能够修复反弹收涨，那么本周指数还会再创新高，主力这种逼空的势头还是比较旺盛的，大盘指数新高之后，接下来就是创业板上涨，两大指数会不断交替突破前期高点。",
       "publish_time": "2025-07-14 10:43"
     },
@@ -4703,7 +4697,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "我觉得今天A股理应走出修复反弹行情，一方面是大盘昨天在3483.38点走出探底回升的走势，下方十日均线短线支撑有效，3500点下方有资金护盘抄底，所以短线容易修复反弹。",
       "publish_time": "2025-07-16 07:04"
     },
@@ -4711,7 +4705,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天A股市场开盘之后的表现来看，走势是符合预期的，因为昨天收盘之后复盘给大家说了今天理应是反弹修复的表现。",
       "publish_time": "2025-07-16 10:35"
     },
@@ -4759,7 +4753,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "要站上5周均线，下周就要有新的高度了，本周震荡小涨的方式代替本该有的调整，市场的强势已经不言而喻。",
       "publish_time": "2025-07-18 10:18"
     },
@@ -4767,7 +4761,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "中午追了资金稳定一下大盘指数，下周大盘指数创新高的同时，创业板指数也会和大盘交替上涨，大小盘现在是轮动上涨，但是整体风格是偏向于中小创为主。",
       "publish_time": "2025-07-18 14:02"
     },
@@ -4775,7 +4769,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "上周大盘指数能够以震荡偏强的走势代替调整，就证明这周各大指数是奔着创新高而去的，所以现在大方向上主力资金已经释放的信号很明确了。",
       "publish_time": "2025-07-21 10:14"
     },
@@ -4903,7 +4897,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "周五盘后，证监会释放了重要信号，股民朋友终于可以放心的过周末了，下周的A股行情基本上算是稳了",
       "publish_time": "2025-07-25 22:45"
     },
@@ -4927,7 +4921,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "大盘指数即便有震荡调整，也不会有较深...的推动下，短期降温之后，后面中期的趋势还是保持涨价上涨为主。",
       "publish_time": "2025-07-28 10:38"
     },
@@ -4935,7 +4929,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "所以这周的A股市场波动可能会大一些，但是远没有到行情结束的时候",
       "publish_time": "2025-07-28 11:50"
     },
@@ -5031,7 +5025,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天大盘指数可以说是7月份以来真正意义的回调整理，但行情并没有结束，回头就是机会",
       "publish_time": "2025-07-31 10:19"
     },
@@ -5055,7 +5049,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "八月份的第一个交易日开门红的概率很大，结构性的行情在8月份会继续延续下去",
       "publish_time": "2025-07-31 20:58"
     },
@@ -5063,7 +5057,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "基本确定了，8月开门红没有悬念，但是短期震荡调整意图也明显，需要注意的是，调整不是证明3636.17点就是顶部，调整是为了在3600点巩固蓄势，为了震荡之后再创年内新高",
       "publish_time": "2025-08-01 10:32"
     },
@@ -5071,7 +5065,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "大盘指数想要进一步的深度回调的可能性也不大，创业板也会保持窄幅震荡整理，大盘和创业板收盘红盘的概率还是很高的，依旧还是认为8月份可以实现开门红。",
       "publish_time": "2025-08-01 11:36"
     },
@@ -5079,7 +5073,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "不出意外的话，下周将会这样走！",
       "publish_time": "2025-08-01 15:36"
     },
@@ -5103,7 +5097,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周可能全球金融市场都都会进入一个交替反弹的走势。",
       "publish_time": "2025-08-02 10:07"
     },
@@ -5167,7 +5161,7 @@
       "post_n": 5,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天上午大盘指数连续多次冲击3600点，但是现在也面临两方面的问题：一方面是3600点的整数位置心理压力依旧是很大，很多资金会担心3600点上方的套牢盘压力；另一方面则是成交额始终没有明显放量，尽管今天成交额有所放大，但是这个量能还不会快速的突破。昨天缩量代表抛压盘不大，主力可以缩量上涨，但是今天如果 放量不明显，又赶在3600点附近，可能只能维持窄幅震荡。",
       "publish_time": "2025-08-05 11:58"
     },
@@ -5231,7 +5225,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天大金融板块早盘拉升，就说明今天指数突破前高任务就完成了，后面就是继续洗盘再继续突破新的高度。",
       "publish_time": "2025-08-07 10:12"
     },
@@ -5303,7 +5297,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "大盘指数今天再创年内新高了，这说明趋势上不应该去看空，这一轮主力资金的目标是奔着突破前期高点3674点而去的。",
       "publish_time": "2025-08-11 11:34"
     },
@@ -5439,7 +5433,7 @@
       "post_n": 8,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "因为会让大家再次陷入跌不下去的假象（实际上还是只拉指数），会有人迫不及待的去加仓和抄底，然后下周再一次调整，可能又是套牢一批。",
       "publish_time": "2025-08-14 17:12"
     },
@@ -5471,7 +5465,7 @@
       "post_n": 4,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "不出意外的话，今天盘后又会有一批空转多的人，周末情绪发酵一下，大家对股市行情深信不疑，下周开盘再有一群人冲进去，结果可能就会是历史重演了。",
       "publish_time": "2025-08-15 14:23"
     },
@@ -5487,7 +5481,7 @@
       "post_n": 1,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周大盘指数周线大概率要收出一根阴线，A股市场赚钱效应出现强分歧",
       "publish_time": "2025-08-16 10:32"
     },
@@ -5495,7 +5489,7 @@
       "post_n": 0,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周的市场真的会高举高打吗？情绪往往太过于一致的时候，结果就是一个超乎意外的大分歧出现",
       "publish_time": "2025-08-17 11:14"
     },
@@ -5503,7 +5497,7 @@
       "post_n": 14,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天A股市场整体冲高回落的可能性较大，维持这周大盘指数周线收阴线的观点。",
       "publish_time": "2025-08-18 10:10"
     },
@@ -5511,7 +5505,7 @@
       "post_n": 13,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天还是要防止午后情绪过盛之后的变脸，这周周线冲高回落的阴线保持不变。",
       "publish_time": "2025-08-18 11:31"
     },
@@ -5543,7 +5537,7 @@
       "post_n": 9,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的A股不对劲了，主力资金也不掩饰了，看着最近越来越火的情绪，主动降温开始了",
       "publish_time": "2025-08-19 10:11"
     },
@@ -5623,7 +5617,7 @@
       "post_n": 11,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "如果说今天市场的状态不做改变的话，后面的市场情绪会越来越弱，终究会因为指数和情绪背离，而给大家一个深刻的教训。",
       "publish_time": "2025-08-21 19:09"
     },
@@ -5663,7 +5657,7 @@
       "post_n": 2,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "这种降温不一定像去年10月8日之后那样去走，但是很多股民散户的体...盘，那历史还是有望重演的。",
       "publish_time": "2025-08-26 10:26"
     },
@@ -5719,7 +5713,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "周末炸裂的三大利好消息，村里发话了，阿里系也有大动作，下周的A股要突破3900点了？",
       "publish_time": "2025-08-30 10:27"
     },
@@ -5743,7 +5737,7 @@
       "post_n": 10,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "因为情绪一旦太高涨，当本周过了重要的时间节点之后，情绪的较大落差或者急剧转变，就容易给A股市场带来较为明显的冲击影响。",
       "publish_time": "2025-09-01 14:42"
     },
@@ -5807,7 +5801,7 @@
       "post_n": 13,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "连续两天个股普跌之后，今天A股市场开盘后个股有一定的弱势修复，但是指数出现了快速的不跌，这说明很多小盘股开始抗跌了，但是指数还没有止跌企稳。",
       "publish_time": "2025-09-04 10:15"
     },
@@ -5815,7 +5809,7 @@
       "post_n": 11,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "大盘指数已经跌破了20日均线，这意味着趋势明显走弱，后面即便遇到支撑拉升，也仅仅是中期调整中的反弹，不管你现在是满仓还是空仓，听我主要说几点；",
       "publish_time": "2025-09-04 13:38"
     },
@@ -5831,7 +5825,7 @@
       "post_n": 6,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的A股市场走势很明确，就是连续多日普跌之后，走出的一个市场反弹修复，这个修复没有改变市场的调整格局，主要是为了缓解市场的恐慌情绪；",
       "publish_time": "2025-09-05 14:00"
     },
@@ -5879,7 +5873,7 @@
       "post_n": 10,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "整个9月份基本上就是维持震荡调整的格局，这个位置指数要歇一歇，主力资金出货的出货，调仓的调仓，股民散户最好也是提前为四季度的行情做准备。",
       "publish_time": "2025-09-08 14:21"
     },
@@ -5903,7 +5897,7 @@
       "post_n": 5,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "在昨天的分析中，已经非常明确的说出了今天市场是要调整的，尽管很多人不希望市场下跌调整，但事实是A股从9月初释放调整信号之后，一直都没有结束调整。",
       "publish_time": "2025-09-09 11:26"
     },
@@ -5919,7 +5913,7 @@
       "post_n": 2,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "对于大盘指数来讲，盘中跌破3800点，后面还会反复往3800点下方找支撑为主。",
       "publish_time": "2025-09-09 19:05"
     },
@@ -5927,7 +5921,7 @@
       "post_n": 1,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "整个A股市场的震荡调整并非结束，9月份的量能可能很难再次整体放大，基本上是维持震荡为主，控制仓位且高低切换才是正确的方式。",
       "publish_time": "2025-09-10 10:16"
     },
@@ -5991,7 +5985,7 @@
       "post_n": 5,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天是周五了，从现在的市场情绪来看，我觉得3900点无论突破与否，对大多数人来讲依旧是意义不大，因为9月份的A股震荡调整周期并没有结束。",
       "publish_time": "2025-09-12 14:17"
     },
@@ -6079,7 +6073,7 @@
       "post_n": 0,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "但我觉得今天的走势是极限的诱多表现",
       "publish_time": "2025-09-18 11:44"
     },
@@ -6087,7 +6081,7 @@
       "post_n": 14,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天下午A股市场的跳水走低是最为直接的证明",
       "publish_time": "2025-09-18 14:15"
     },
@@ -6143,7 +6137,7 @@
       "post_n": 4,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "A股的进攻期已经过去，下一阶段是先要做好防守才是关键",
       "publish_time": "2025-09-22 10:13"
     },
@@ -6191,7 +6185,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的大盘指数最低在3804.33点开始拉升，A股市场震荡调整是否已经结束？情绪并不是太兴奋，走势也会变得比较复杂，给所有股民朋友说几点：1、今天大盘指数低开之后震荡拉升了，盘中最低3804.33点，昨天是3800点失而复得，今天再次低开在3800点附近后拉升，说明短期3800点是有一些资金要在这个位置做支撑的。",
       "publish_time": "2025-09-24 10:33"
     },
@@ -6199,7 +6193,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天上午各大指数震荡之后拉升翻红，指数修复的还是不错，创业板指数在权重的带动下继续创新高，大盘指数也是稳住了3800点；指数今天会单边持续的拉升吗？在市场整体缩量的情况下，上午指数表现出了一定的顽强，午后",
       "publish_time": "2025-09-24 11:51"
     },
@@ -6223,7 +6217,7 @@
       "post_n": 5,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "A股市场已经进入节前休息模式了，今天缩量很明显。这两天高位个股需要谨慎了，指数波动也会加大，股民需要做好市场随时出现大波动的准备",
       "publish_time": "2025-09-26 10:24"
     },
@@ -6247,7 +6241,7 @@
       "post_n": 1,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的A股有些不对劲了，大盘最低3809点之后震荡拉升，午后会出现大跳水吗？做好迎接震荡行情的准备",
       "publish_time": "2025-09-29 11:42"
     },
@@ -6255,7 +6249,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "节前拉升金融股的意图很明显，主要是这几点：1、节前交易信心本身就不足，所以成交额一直比较低迷，上周五和今天市场本身抛压可能会比较大，所以也不能让指数一直跌下去，今天主力资金拉升券商还有保险，有刻意稳定指数的意义；",
       "publish_time": "2025-09-29 13:55"
     },
@@ -6271,7 +6265,7 @@
       "post_n": 13,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的行情也就这样了，没有什么好期待的了，大盘指数窄幅震荡偏弱",
       "publish_time": "2025-09-30 10:13"
     },
@@ -6335,7 +6329,7 @@
       "post_n": 2,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "就今天来讲，整体就是一个震荡调整分歧日为主，也是获利资金高位兑现的一天。",
       "publish_time": "2025-10-10 10:25"
     },
@@ -6351,7 +6345,7 @@
       "post_n": 0,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "大盘指数在3900点之前震荡了差不多六周的时间，昨天刚刚突破创十年新高，今天又再次跌破，接下来大盘预计会在3900点附近上下震荡。",
       "publish_time": "2025-10-10 14:39"
     },
@@ -6359,7 +6353,7 @@
       "post_n": 14,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周的A股可能会出现恐慌情绪了",
       "publish_time": "2025-10-11 12:52"
     },
@@ -6383,7 +6377,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天会有反弹修复",
       "publish_time": "2025-10-15 10:12"
     },
@@ -6399,7 +6393,7 @@
       "post_n": 0,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "这种缩量拉指数的行为，很有可能会导致午后市场出现跳水下跌",
       "publish_time": "2025-10-16 11:33"
     },
@@ -6431,7 +6425,7 @@
       "post_n": 11,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的A股集体大跌了，不过还没有释放恐慌量，这说明跌的还不够充分，股民散户不要有太多的幻想",
       "publish_time": "2025-10-17 12:07"
     },
@@ -6463,7 +6457,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周的A股会迎来反弹的机会，股民散户是抢反弹还是趁机继续兑现离场？",
       "publish_time": "2025-10-19 12:45"
     },
@@ -6479,7 +6473,7 @@
       "post_n": 5,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "本周五之前，A股大概率会选择涨跌震荡为主，重要会议大概周四晚上就会有结果了，周五看看市场是否会有变盘信号出现。",
       "publish_time": "2025-10-20 12:17"
     },
@@ -6503,7 +6497,7 @@
       "post_n": 1,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "不能说已经彻底企稳。本周是会议维稳阶段，下周到月底又会面临一些重要事件靴子落地兑现，所以仓位也不用着急立刻打出去",
       "publish_time": "2025-10-21 15:20"
     },
@@ -6527,7 +6521,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "A股：大盘最高点收盘在3950点，不出意外的话，下周见4000点？",
       "publish_time": "2025-10-24 15:49"
     },
@@ -6535,7 +6529,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "盘后，利好消息不断，央行最新发声，下周A股要剑指4000点了？",
       "publish_time": "2025-10-24 19:37"
     },
@@ -6551,7 +6545,7 @@
       "post_n": 13,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "利好高开冲高，大盘指数4000点近在咫尺，但今天的盘面会再次分化和短期切换，也就是指数新高背后是再一次的短期畏高避险，注意科技里的兑现资金对于今天情绪的冲击：",
       "publish_time": "2025-10-27 10:20"
     },
@@ -6647,7 +6641,7 @@
       "post_n": 6,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "这周的目标任务就是回补3950点以及3926点这两个缺口，然后在3900点附近找支撑，进一步再反弹上涨。",
       "publish_time": "2025-11-03 10:03"
     },
@@ -6719,7 +6713,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的A股开始不一样了，低开高走直接翻红了，原因是什么？符合做多的两个条件基本上达成，短期股民散户会迎来反弹的机会，但依旧要记住市场还是属于风格切换周期内",
       "publish_time": "2025-11-05 11:44"
     },
@@ -6751,7 +6745,7 @@
       "post_n": 5,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "维持对4000点短期要继续反复震荡的观点，今天虽然收盘在4000点上方，但是还不是直接站稳，多空争夺还会反复为主。",
       "publish_time": "2025-11-06 16:03"
     },
@@ -6767,7 +6761,7 @@
       "post_n": 3,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的A股如果收盘不能站上4000点的话，同样不能说站稳了，至少连续三个交易日收盘在4000点上方才能够站稳。",
       "publish_time": "2025-11-07 10:15"
     },
@@ -6775,7 +6769,7 @@
       "post_n": 2,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的A股市场最大的问题就是又缩量了，量能不稳定，那么4000点就不会稳定，所以今天要继续盘整震荡了。",
       "publish_time": "2025-11-07 12:03"
     },
@@ -6791,7 +6785,7 @@
       "post_n": 0,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "A股：沪指再次失守4000点，下周将会有暴风雨？股民做好准备",
       "publish_time": "2025-11-07 15:45"
     },
@@ -6895,7 +6889,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周指数和个股都会有反弹机会，但能够想到下周的反弹会有很多资金想着离场，事实得接受，年底就是这种预期不高的行情了；",
       "publish_time": "2025-11-21 10:09"
     },
@@ -6927,7 +6921,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周看反弹也是反抽为主",
       "publish_time": "2025-11-22 09:52"
     },
@@ -6935,7 +6929,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周的A股我本身也是不悲观的，即便没有美股市场的反弹，下周的A股也该有反抽出现了",
       "publish_time": "2025-11-22 18:24"
     },
@@ -6943,7 +6937,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "别再割肉了，这周会有反弹修复",
       "publish_time": "2025-11-24 10:19"
     },
@@ -6967,7 +6961,7 @@
       "post_n": 6,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "目前还是维持短期个股看涨修复，但是中期趋势偏谨慎的态度",
       "publish_time": "2025-11-24 16:43"
     },
@@ -7007,7 +7001,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "本周各大指数会有反弹，维持反弹目标是60日均线的观点",
       "publish_time": "2025-11-26 10:28"
     },
@@ -7031,7 +7025,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "本周各大指数周线反弹收阳线，这也是符合预期的",
       "publish_time": "2025-11-28 16:06"
     },
@@ -7047,7 +7041,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "我认为下周的券商还是有超跌反弹的机会的，券商还需要稳住带动大盘指数冲击3900点",
       "publish_time": "2025-11-30 16:57"
     },
@@ -7063,7 +7057,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天可以放量突破，就说明短期大盘指数可以看高一线，按照上周给大家分析的目标，本周大盘指数是要回补上方3927点的缺口的",
       "publish_time": "2025-12-01 11:42"
     },
@@ -7135,7 +7129,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "不要割肉，不要割肉，再说还是不要割肉！A股市场的情绪冰点是在昨天，今天看反弹修复的观点不变",
       "publish_time": "2025-12-05 10:23"
     },
@@ -7151,7 +7145,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周准备迎接回补上方缺口。",
       "publish_time": "2025-12-05 14:32"
     },
@@ -7159,7 +7153,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周的A股市场能否继续看高一线？不用再猜了，直接说自己的观点：",
       "publish_time": "2025-12-05 15:49"
     },
@@ -7167,7 +7161,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周有美联储降息，有12月的重要会议，有消费数据要发布，所以科技成长，大金融，高股息红利以及消费等都有事件驱动，这就是大类的机会。",
       "publish_time": "2025-12-07 21:38"
     },
@@ -7207,7 +7201,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "等待12月20日之后，各方面应该都会比较明朗了，那之后大家的感受应该会好很多，现在可能就是控制好仓位，不要轻易追涨，持股低位的就耐心等待即可。",
       "publish_time": "2025-12-10 14:30"
     },
@@ -7239,7 +7233,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的A股会有反弹修复，但是科技股也有不小的考验，为什么要这样说？一觉醒来，美股道指再创新高，但是美股AI科技股再一次出现了泡沫担忧，这种情绪会有一定的传导，主要说几点：1、盘前消息面的影响：昨天晚上公布了中央经济工作会议的全文内容，细节比较多，也做了解读，整体宽松的政策变化不大，方向也明了，对于大多数资金来讲，后续的持股目标更加清晰了，所以也算是利好；",
       "publish_time": "2025-12-12 08:22"
     },
@@ -7255,7 +7249,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天大盘指数若成功收阳线，算是指数三连阴之后的反弹修复，这个节奏和上周非常的类似，因为上周五的阳线反弹，也是之前三连阴回调后的结果；从走势上大家会发现，现在指数看似没有规律，实际上又是有资金无形之间的兜底，连续调整几天之后，大盘指数就得有反弹涨一下，而反弹一两天，又会有阻力回调；所以，按照这个预期来讲的话，行情算是稳定住了吗？",
       "publish_time": "2025-12-12 14:21"
     },
@@ -7263,7 +7257,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "大盘精准回踩3850点拉升，不出意外的话，下周行情会这样走",
       "publish_time": "2025-12-12 15:40"
     },
@@ -7271,7 +7265,7 @@
       "post_n": 2,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周的A股市场持续反弹和普涨可能性不大，尤其是还有19号日本央行加息的担忧，股指期货交割日等，做反弹套利就不能贪婪；年底的鸡肋时间还没有结束，现在控制仓位还是比较重要",
       "publish_time": "2025-12-12 21:08"
     },
@@ -7303,7 +7297,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的A股要涨了，也该涨了。",
       "publish_time": "2025-12-17 07:41"
     },
@@ -7311,7 +7305,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的A股会收涨，会验证我的预判观点，今天不要在意市场缩量，普跌之后的缩量反弹上涨，说明还会继续反弹",
       "publish_time": "2025-12-17 10:23"
     },
@@ -7319,7 +7313,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的A股午后直线拉升，中阳线反包昨天的阴线，我今天坚定看涨的观点得到了验证",
       "publish_time": "2025-12-17 14:09"
     },
@@ -7391,7 +7385,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天盘中的走势也是比较关键，本身有两大担忧的因素存在，大部分人对于今天的股市信心不足，但我觉得应该在谨慎中多一些乐观因素存在",
       "publish_time": "2025-12-19 08:28"
     },
@@ -7415,7 +7409,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "大盘指数今天突破了3900点，这是从3815点之后，连续三天反弹上涨的突破",
       "publish_time": "2025-12-19 14:32"
     },
@@ -7423,7 +7417,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "不出意外的话，下周行情要果断突破了？",
       "publish_time": "2025-12-19 15:50"
     },
@@ -7527,7 +7521,7 @@
       "post_n": 0,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天大盘指数有保险护盘，或许不会波动太大，但是很多个股上午没有太多资金做多，下午基本上就很难涨上去了，所以今天又是操作空间不大的一天；",
       "publish_time": "2025-12-25 10:25"
     },
@@ -7543,7 +7537,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "反转就意味着指数的趋势再次向好，尽管说现在两市的成交额放量不明显，但是走势上重回趋势，中期就可以相对乐观一些了。",
       "publish_time": "2025-12-25 14:47"
     },
@@ -7575,7 +7569,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "大盘指数强硬拉红，八连阳之后，下周将要实现年终目标！",
       "publish_time": "2025-12-26 15:50"
     },
@@ -7591,7 +7585,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的大盘指数目标比较明确，这是奔着9连阳走的，上周五大盘指数盘中出现跳水后拉回，已经释放出了无论如何都要把指数拉上去的意图；尽管说从上周五开始就有一些资金兑现，个股情绪开始衰退，但是指数的连阳节奏没有被破坏，所以4000点的年终目标依旧不变；",
       "publish_time": "2025-12-29 10:19"
     },
@@ -7655,7 +7649,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天大盘指数还会被控盘收涨",
       "publish_time": "2025-12-31 10:28"
     },
@@ -7671,7 +7665,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天A股市场的目标很明确，大盘指数就是要以上涨红盘收官，日线级别走出11连阳的走势",
       "publish_time": "2025-12-31 14:24"
     },
@@ -7695,7 +7689,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的大盘指数要冲击4000点了，压力点位在哪里？节后资金回流的速度比较明显",
       "publish_time": "2026-01-05 10:16"
     },
@@ -7703,7 +7697,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "大盘指数重回4000点，高盛释放利好消息，节前所有的铺垫都是为了今天的突破",
       "publish_time": "2026-01-05 11:41"
     },
@@ -7759,7 +7753,7 @@
       "post_n": 11,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天大概率冲高回落高位震荡为主",
       "publish_time": "2026-01-07 10:14"
     },
@@ -7807,7 +7801,7 @@
       "post_n": 4,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "不用等收盘了，今天指数不会大涨，分时还需防备再次跳水出现",
       "publish_time": "2026-01-08 11:53"
     },
@@ -7823,7 +7817,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天大盘指数若中阳线收盘，那下周就是奔着突破4200点去的，一旦今天冲高回落守不住4100点，那下周就要进行必要的回踩。不过，大盘指数最终的趋势还是向上",
       "publish_time": "2026-01-09 10:21"
     },
@@ -7831,7 +7825,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "大盘指数如果今天中阳线收盘的话，那么下周就是4200点的目标，如果说今天冲高回落守不住4100点的话，...",
       "publish_time": "2026-01-09 11:53"
     },
@@ -7839,7 +7833,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "收盘既然已经站上4100点，那么下周就可以继续看高一线",
       "publish_time": "2026-01-09 15:11"
     },
@@ -7903,7 +7897,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天可以说是连阳之后首次明确降温，影响只是局部涨多了的题材，并不会导致行情因此而终结。",
       "publish_time": "2026-01-13 14:51"
     },
@@ -7911,7 +7905,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "连阳之后的首阴只是分歧不是结束，今天的A股用实际表现证明了我的观点",
       "publish_time": "2026-01-14 10:14"
     },
@@ -7975,7 +7969,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "还是那句话：4100点下方的筹码要多拿一些。大盘指数连续3个交易日盘中跌破4100点，但是最终都在拉升，市场情绪最恐慌的时候没有出现大跌，这就突出了A股市场一个字：稳。",
       "publish_time": "2026-01-19 10:26"
     },
@@ -8031,7 +8025,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "大盘指数高位震荡不破4100点，说明并非是想让指数趋势破位，只是要控制上涨的幅度。下方20日均线趋势继续向上，说明中期趋势继续保持强势。",
       "publish_time": "2026-01-22 10:23"
     },
@@ -8063,7 +8057,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "不出意外的话，下周要突破了！",
       "publish_time": "2026-01-23 16:05"
     },
@@ -8071,7 +8065,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周的A股风格预计会偏均衡一些，这周是题材概念最强，下周价值蓝筹会修复，题材也会继续轮动，大盘指数还会冲高。",
       "publish_time": "2026-01-24 10:01"
     },
@@ -8103,7 +8097,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天港股恒生指数中阳线突破，大盘指数中阳线突破创新高还会远吗？",
       "publish_time": "2026-01-28 11:53"
     },
@@ -8159,7 +8153,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今日的A股也将出现反弹修复，不出意外的话，市场正在慢慢恢复理性",
       "publish_time": "2026-02-03 08:54"
     },
@@ -8223,7 +8217,7 @@
       "post_n": 8,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "不过现在A股的震荡调整还不能说结束，预计下周三前后市场或许会逐步进入节前企稳阶段。",
       "publish_time": "2026-02-06 07:55"
     },
@@ -8255,7 +8249,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "从盘后指数期货走势来看，下周A股以及港股包括日韩指数都可能会出现集体上涨。",
       "publish_time": "2026-02-06 23:44"
     },
@@ -8287,7 +8281,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "大盘指数今天开始窄幅震荡，接下来的市场将会没有惊喜也没有惊吓，春节之前保持平稳度过，守住4100点是主要目标",
       "publish_time": "2026-02-10 11:54"
     },
@@ -8327,7 +8321,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "美股市场大跌可能会导致A股市场低开，但是低开之后大概率会有护盘资金出手，今天A股市场低开之后震荡走高的可能性较大。",
       "publish_time": "2026-02-13 08:02"
     },
@@ -8359,7 +8353,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天有望震荡反弹再次收涨，日线收出一根突破阳线为主；",
       "publish_time": "2026-02-25 10:01"
     },
@@ -8407,7 +8401,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周A股就会进入会议维稳周期，所以我不认为会持续大跌",
       "publish_time": "2026-02-28 23:36"
     },
@@ -8431,7 +8425,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "短期确实容易造成负面情绪，但是中期趋势依旧不变，这种急跌对于操作指数来讲，反而是机会",
       "publish_time": "2026-03-03 10:23"
     },
@@ -8471,7 +8465,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的A股高开反弹上涨，符合预期走势；这样的走势也是短期的一个重要转折点，至少证明A股市场受到冲击的影响正在减弱，回到原有节奏是大概率；",
       "publish_time": "2026-03-05 11:45"
     },
@@ -8479,7 +8473,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天全球大多数金融市场都出现了一定的反弹，大盘指数最终也是红盘报收，虽然说日线再收十字星，但是收盘站上了4100点，意味着大盘指数的趋势还在延续；",
       "publish_time": "2026-03-05 15:27"
     },
@@ -8495,7 +8489,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天是缩量上涨，成交额没有放大，但是个股却是超4000只普涨，缩量上涨代表还要继续反弹，因为前面放量普跌已经让恐慌释放了；",
       "publish_time": "2026-03-06 11:29"
     },
@@ -8503,7 +8497,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天大盘指数如预期收涨，日内最高涨到4129点，验证了我说的缩量上涨还有高点的观点，昨天可以看做是个股反弹修复的第一日，今天个股上涨修复的力度再次加强；",
       "publish_time": "2026-03-06 15:15"
     },
@@ -8535,7 +8529,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天，见证历史了，原油开盘暴涨突破110美元，全球股市再现黑色星期一，A股今天完成探底回升扭转吗？",
       "publish_time": "2026-03-09 09:58"
     },
@@ -8551,7 +8545,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天全球金融市场有望迎来情绪修复反弹上涨；",
       "publish_time": "2026-03-10 07:24"
     },
@@ -8583,7 +8577,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "从中期趋势的角度来看，接下来的行情还是螺旋式震荡上涨为主，市场的分歧是短暂的，现在还是属于信心和情绪修复阶段；",
       "publish_time": "2026-03-11 11:45"
     },
@@ -8599,7 +8593,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "对于大盘指数来讲，今天下午走出震荡回升的可能性很大，我认为今天不会允许大盘指数再单边的下跌；",
       "publish_time": "2026-03-16 11:55"
     },
@@ -8615,7 +8609,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天该反弹了，大盘指数重回4100点，金融和地产等顺周期爆发，接下来行情将会这样走：",
       "publish_time": "2026-03-17 10:28"
     },
@@ -8623,7 +8617,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天大盘指数探底回升的希望很大，A股已经进入了明显的超跌状态，情绪拐点随时会出现",
       "publish_time": "2026-03-18 10:25"
     },
@@ -8655,7 +8649,7 @@
       "post_n": 8,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "低开基本上是定局，也意味着今天大盘指数可能会再次考验4000点附近的支撑；",
       "publish_time": "2026-03-19 07:33"
     },
@@ -8703,7 +8697,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周是不是可以有真正的超跌反弹了？",
       "publish_time": "2026-03-20 15:21"
     },
@@ -8815,7 +8809,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "这说明今天可以不用恐慌了；",
       "publish_time": "2026-03-27 09:58"
     },
@@ -8855,7 +8849,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "朋友们，这个消息出现之后，今天的A股不得大涨庆祝一下？",
       "publish_time": "2026-03-31 10:17"
     },
@@ -8863,7 +8857,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "A股市场4月份开门红可期，关键是国产人工智能替代的机会是越来越高了！",
       "publish_time": "2026-03-31 22:58"
     },
@@ -8871,7 +8865,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天量化交易还会有，但整体会收敛，加上外围局势反转共振，整体反弹上涨可能性较大；",
       "publish_time": "2026-04-01 07:16"
     },
@@ -8879,7 +8873,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的A股再跌就说不过去了，必须要涨",
       "publish_time": "2026-04-01 10:21"
     },
@@ -8919,7 +8913,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "我认为今天的A股存在探底回升的表现，但这并不意味着A股就会摆脱短期震荡的走势；",
       "publish_time": "2026-04-03 10:24"
     },
@@ -8935,7 +8929,7 @@
       "post_n": 13,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "不用等收盘了，A股各大指数已经开始出现跳水，不出意外的话，午后个股可能会面临大面积回落，紧急说几点：",
       "publish_time": "2026-04-07 11:35"
     },
@@ -8999,7 +8993,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天大盘指数重新回到4000点，再一次证明指数大跌探底是绝佳的抄底时机，不管遇到什么黑天鹅，只要指数出现挖坑行为，那就是黄金坑；",
       "publish_time": "2026-04-10 10:10"
     },
@@ -9079,7 +9073,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "接下来两天美伊双方很可能会在巴继续下一轮的谈判，这对于股市还有股民散户来讲绝对是大利好消息了；",
       "publish_time": "2026-04-15 08:37"
     },
@@ -9095,7 +9089,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "现在全球股市不再像3月份那样精神高度紧...民散户也尽量保持一定仓位多看少动，继续做好美伊多次谈判的心理准备；而操作上可以不用那么悲观了，低位持股就继续躺平，短线在熟悉的板块和个股上可以继续做差价；",
       "publish_time": "2026-04-15 11:56"
     },
@@ -9175,7 +9169,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周A股大概率还有反弹空间，但是当美伊真的同时宣布结束战争的时候，那我觉得是利好预期兑现成利空的可能性较大；总的来说，下周还能继续做多看多，继续顺势而为，但要注意情绪和消息兑现变化；",
       "publish_time": "2026-04-17 22:06"
     },
@@ -9183,7 +9177,7 @@
       "post_n": 1,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "这个周末，大家看到的都是利好消息，全网也都在谈利好，但这反而可能是下周很多人开始亏钱的关键；",
       "publish_time": "2026-04-18 10:33"
     },
@@ -9199,7 +9193,7 @@
       "post_n": 14,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周若真出现技术性震荡调整，那也不意外",
       "publish_time": "2026-04-19 22:15"
     },
@@ -9207,7 +9201,7 @@
       "post_n": 12,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "A股市场本周都将要出现回调",
       "publish_time": "2026-04-20 11:45"
     },
@@ -9215,7 +9209,7 @@
       "post_n": 11,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "本周A股市场会有回调，大概率周三之前大家就会看到",
       "publish_time": "2026-04-20 13:59"
     },
@@ -9223,7 +9217,7 @@
       "post_n": 9,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "本周A股是要回调的，而且时间点就是周三之前",
       "publish_time": "2026-04-21 10:03"
     },
@@ -9255,7 +9249,7 @@
       "post_n": 5,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的行情没啥预期期待了",
       "publish_time": "2026-04-22 07:31"
     },
@@ -9279,7 +9273,7 @@
       "post_n": 14,
       "direction": "bearish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "A股放量普跌，今天的放量不是洗盘，而是典型的出货方式，现在你相信本周主力资金是在诱多了吗？",
       "publish_time": "2026-04-23 11:42"
     },
@@ -9311,7 +9305,7 @@
       "post_n": 8,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "对于下周个股的表现是偏悲观一些，指数则是谨慎乐观为主；",
       "publish_time": "2026-04-24 15:30"
     },
@@ -9543,7 +9537,7 @@
       "post_n": 13,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "依旧认为当前防御比进攻更为重要，也就是说我不认为现在是适合无脑追涨的时候，这个观点从周一开始提出，这周可能都不会改变；",
       "publish_time": "2026-05-13 11:46"
     },
@@ -9575,7 +9569,7 @@
       "post_n": 9,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天又是一个天量，不过是天量下跌，这种高开低走放量普跌的表现，就是有些资金摊牌出货的信号；",
       "publish_time": "2026-05-14 11:34"
     },
@@ -9631,7 +9625,7 @@
       "post_n": 1,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周A股市场再次进入敏感时间窗口，可能会再次进入维稳... 但市场板块会进入快速轮动，一旦科技主线调整，市场就是轮动风格了；",
       "publish_time": "2026-05-16 17:32"
     },
@@ -9639,7 +9633,7 @@
       "post_n": 0,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周行情怎么看？全球股市开始出现高位巨震，波动率开始加大，A股和美股市场的走势比较重要：... 如果说反弹赚钱效应不能扩散的话，那依旧是需要控制仓位，要熬过一段艰难的调整周期；",
       "publish_time": "2026-05-17 16:37"
     },
@@ -9671,7 +9665,7 @@
       "post_n": 13,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "这种震荡的走势对于今天的市场情绪非常不利，只会导致市场避险情绪增加；",
       "publish_time": "2026-05-21 11:39"
     },
@@ -9687,7 +9681,7 @@
       "post_n": 11,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天一路跌破4100点，也跌破20日趋势支撑线，下方直接开始考验60日均线的支撑，我...",
       "publish_time": "2026-05-21 15:18"
     },
@@ -9767,7 +9761,7 @@
       "post_n": 14,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的A股明显的不对劲，要谨防下午会出现跳水",
       "publish_time": "2026-05-25 11:31"
     },
@@ -9815,7 +9809,7 @@
       "post_n": 4,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天大盘指数又是出现一根明显的阴线调整；这种走势简直是完美复刻，每次放量阴线出现之后，缩量上涨修复，然后就是放量下跌，出货信号太过于明显",
       "publish_time": "2026-05-27 14:36"
     },
@@ -9831,7 +9825,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "A股今天也将迎来反弹修复",
       "publish_time": "2026-06-01 10:14"
     },
@@ -9855,7 +9849,7 @@
       "post_n": 12,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "6月份的行情不会比5月份要好，我已经多次给大家做好心理提醒了，聪明的人应该都知道该怎么办了；",
       "publish_time": "2026-06-02 11:27"
     },
@@ -9863,7 +9857,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "大盘指数从4258点回调以来，跌幅超200多点，走势上是跌破60日均线之后探底回升，昨天和今天都跌破了60日均线，但收盘都站上来了；所以，从走势上来讲，这个位置的大盘指数不去过分看空，昨天也给大家说了60日均线附近，就是抄底大盘指数的一个位置；",
       "publish_time": "2026-06-02 15:19"
     },
@@ -9887,7 +9881,7 @@
       "post_n": 7,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "果然，创业板下午跳水了，午后创业板指数震荡往下走，这就是今天下午市场的变化；",
       "publish_time": "2026-06-03 14:13"
     },
@@ -9919,7 +9913,7 @@
       "post_n": 1,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "大盘指数和创业板指数今天集体下跌，下午各大指数再次出现了一波分时跳水，幅度虽然没有昨天那么大，但能够看出来每天都得跳一下；",
       "publish_time": "2026-06-04 15:27"
     },
@@ -9943,7 +9937,7 @@
       "post_n": 11,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周A股科技抱团将再迎暴风雨冲击",
       "publish_time": "2026-06-06 08:35"
     },
@@ -9959,7 +9953,7 @@
       "post_n": 8,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天大盘指数低开悬念不大；考虑到上周五下跌收盘在4027点，距离4000点并不远，今天可能开盘直接跌破4000点；",
       "publish_time": "2026-06-08 06:50"
     },
@@ -9999,7 +9993,7 @@
       "post_n": 14,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "6月多魔咒，总有人喜欢剑走偏锋，那就看个人造化了，该说的我已经都说了，剩下的就交给时间了；",
       "publish_time": "2026-06-10 10:21"
     },
@@ -10007,7 +10001,7 @@
       "post_n": 13,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "但我还是坚持6月份休息为主的策略，没有必要去为了短期的博弈而让自己陷入更大的风险中；",
       "publish_time": "2026-06-10 11:44"
     },
@@ -10111,7 +10105,7 @@
       "post_n": 8,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "指数黑色星期五应该是避免不了的了，但是个股今天会有明显变化；",
       "publish_time": "2026-06-26 10:29"
     },
@@ -10119,7 +10113,7 @@
       "post_n": 5,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周预计会有一个风格平衡的过程，当然不会立刻完成风格切换，但是经历了本周的极端之后，下周预计会有一些资金往中小盘慢慢过渡；",
       "publish_time": "2026-06-26 15:28"
     },
@@ -10135,7 +10129,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "对于下周的A股市场来讲，一方面是低位板块预计继续轮动反弹上涨为主，另一方面则是率先下跌调整的硬科技股，伴随着业绩的落地，有望会率先反弹",
       "publish_time": "2026-07-05 17:14"
     },
@@ -10159,7 +10153,7 @@
       "post_n": 13,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "现在有不少科技股，7月份一周的时间都跌了二三十个点，",
       "publish_time": "2026-07-09 11:23"
     },
@@ -10175,7 +10169,7 @@
       "post_n": 5,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天A股三大指数集体下跌，科创50指数还有创业板指数出现了大跌，这两大指数大跌，不用多说什么，一定是抱团硬科技股出现大跌了；",
       "publish_time": "2026-07-10 15:23"
     },
@@ -10183,7 +10177,7 @@
       "post_n": 3,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "这个消息对于下周的金融市场情绪预计会产生一定的影响；",
       "publish_time": "2026-07-12 15:15"
     },
@@ -10207,7 +10201,7 @@
       "post_n": 12,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "对比今天的大盘指数表现来看，跌的虽然比较多，但是今天明显缩量，市场恐慌量还没有释放，所以很难说底部已经出现；",
       "publish_time": "2026-07-13 17:42"
     },
@@ -10215,7 +10209,7 @@
       "post_n": 11,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "所以，今天A股市场...",
       "publish_time": "2026-07-14 06:53"
     },
@@ -10239,7 +10233,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的A股市场最终出现反弹拉升，算是和我上午十点多发文讲的两点对应上了：",
       "publish_time": "2026-07-14 13:22"
     },
@@ -10255,7 +10249,7 @@
       "post_n": 5,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "整个7月份基本上就是抱团高位科技股出货的，低估值修复的行情为主，记住这才是重点，不要被出货途中的诱多所吸引，也不要被底部的诱空洗出去；",
       "publish_time": "2026-07-15 11:31"
     },
@@ -10271,7 +10265,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的A股低开之后有意高走，抱团硬科技股的情绪短期已经到了冰点，短期看反弹，主要说几点：",
       "publish_time": "2026-07-16 10:18"
     },
@@ -10311,7 +10305,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "而且我也说了今天大跌之后，经过恐慌情绪发酵，下周或许就会转折出现反弹修复；",
       "publish_time": "2026-07-17 14:27"
     },
@@ -10351,7 +10345,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "A股今日各大指数探底回升，已经连续两天探底回升下影线，短期要反弹修复的信号很明显",
       "publish_time": "2026-07-21 11:19"
     },
@@ -10367,7 +10361,7 @@
       "post_n": 6,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "A股周四怎么看？今天市场震荡分歧依旧会比较大，这些消息将会影响市场情绪",
       "publish_time": "2026-07-23 08:03"
     },
@@ -10383,7 +10377,7 @@
       "post_n": 0,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "周五开盘之前，全是大消息，今天的A股情绪可能会再次承压，股民散户要做好准备",
       "publish_time": "2026-07-24 07:18"
     },
@@ -10407,7 +10401,7 @@
       "post_n": 12,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天大概率就要跌破2万亿了，面对越来越低迷的成交量，那就等极致缩量之后的地量地价吧",
       "publish_time": "2026-07-24 14:04"
     },
@@ -10519,7 +10513,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "8月份这种极端风格会缓和，板块之间也会更加平衡一些；",
       "publish_time": "2026-07-31 11:53"
     },
@@ -10527,7 +10521,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周科技股有修复机会，老登也有轮动继续上涨表现，8月份预计会是科技和老登之间风格再平衡；",
       "publish_time": "2026-08-01 15:33"
     }

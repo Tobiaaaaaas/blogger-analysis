@@ -15,22 +15,16 @@
   "scored_bullish": {
     "strong": 510,
     "moderate": 446,
-    "intraday": 270,
-    "short": 300,
-    "weekly": 103,
-    "biweekly": 0,
-    "monthly": 2,
-    "long": 46,
+    "short": 570,
+    "medium": 103,
+    "long": 48,
     "unspecified": 235
   },
   "scored_bearish": {
     "strong": 0,
     "moderate": 17,
-    "intraday": 5,
-    "short": 6,
-    "weekly": 2,
-    "biweekly": 0,
-    "monthly": 0,
+    "short": 11,
+    "medium": 2,
     "long": 0,
     "unspecified": 4
   },
@@ -39,7 +33,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "这个周末，消息面相对平静，下周大盘也将迎来关键的反转行情。注意，我这里用的是反转，而不是反弹，反转行情，就意味着大盘要去突破3200点，开启一段连续的上涨行情。",
       "publish_time": "2024-06-02 09:36"
     },
@@ -47,7 +41,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "凸教授认为，下周的变盘节点在周三，周三大盘将彻底结束调整，并反身向上进攻，注意，这里是反转，而不是反弹。到时候，所有股票都会一起涨。",
       "publish_time": "2024-06-02 21:12"
     },
@@ -119,7 +113,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘将探底回升，今天收出一根长下影线。",
       "publish_time": "2024-06-11 11:28"
     },
@@ -127,7 +121,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "凸教授明确指出，端午节后，我将全面看多，重点就是券商和人工智能这两个板块，大家一定要给与足够的重视。",
       "publish_time": "2024-06-11 15:06"
     },
@@ -135,7 +129,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午的盘面不用担心，大盘已经企稳，只要科技股开始反攻，大盘就跌不下去，最多就是再缩量震荡一天。",
       "publish_time": "2024-06-12 11:28"
     },
@@ -151,7 +145,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "在经历了一个月的震荡调整之后，大盘在今天已经调整结束，接下来，就是连续的反攻。注意，后面的行情是反转，而不是反弹，反转意味着大盘将开启新一轮的上涨！",
       "publish_time": "2024-06-12 21:18"
     },
@@ -159,7 +153,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "以人工智能为首的科技股，下午将继续上涨，与此同时，券商板块也会开始逐步发力，并带领上证指数翻红！",
       "publish_time": "2024-06-13 11:35"
     },
@@ -183,7 +177,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "凸教授昨天明确指出，今日大盘继续上涨，以券商为首的大金融，以人工智能为首的大科技，是支撑市场上涨的左膀右臂，大家一定要拿住筹码，不要乱动。",
       "publish_time": "2024-06-14 11:32"
     },
@@ -191,7 +185,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周起飞。",
       "publish_time": "2024-06-14 15:00"
     },
@@ -207,7 +201,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "凸教授维持昨日的观点，维持上午低开震荡，下午拉升的观点不变。",
       "publish_time": "2024-06-17 11:27"
     },
@@ -231,7 +225,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午，大盘还会继续震荡上攻",
       "publish_time": "2024-06-18 11:26"
     },
@@ -255,7 +249,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "对于下午的盘面，凸教授没有任何担心的地方，大盘随时都可以上攻，我继续维持看涨的观点不变。",
       "publish_time": "2024-06-19 11:38"
     },
@@ -295,7 +289,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "所以，下午大盘必须要干起来，就给主力的时间不多了。",
       "publish_time": "2024-06-21 11:30"
     },
@@ -311,7 +305,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "A股：周末三大利好，下周不涨，天理难容！",
       "publish_time": "2024-06-23 08:32"
     },
@@ -327,7 +321,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘就会止跌企稳，并反身向上进攻，虽然市场信心极度脆弱，但是上涨趋势并未改变，盲目割肉只会让你错上加错。",
       "publish_time": "2024-06-24 11:31"
     },
@@ -351,7 +345,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "已经非常极限了，反转就在下午，到时候会有一股神秘资金进场拉盘，最后时刻，不要把肉割在坑里。",
       "publish_time": "2024-06-25 11:35"
     },
@@ -359,7 +353,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "所以，本周大盘继续下跌的概率极小，凸教授明确指出，本周大盘会企稳反攻，周线收阳，本周后三天，大盘应该都以上涨为主。",
       "publish_time": "2024-06-25 21:41"
     },
@@ -367,7 +361,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "记住凸教授说的话，从今天开始，大盘先连涨三天！",
       "publish_time": "2024-06-26 15:03"
     },
@@ -383,7 +377,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "所以，下午大盘没有下跌的理由，本轮调整已经在昨天彻底结束，大家不用害怕，现在就是要握紧筹码，等待市场的再次上攻！",
       "publish_time": "2024-06-27 11:34"
     },
@@ -407,7 +401,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘继续上攻，今日大盘上涨幅度会超过1.74%，迎来一根久违的大阳线！",
       "publish_time": "2024-06-28 11:30"
     },
@@ -415,7 +409,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "虽然今天被恶意做空了，但是大盘的趋势没有改变，这里就是大底，大家要坚定信心！",
       "publish_time": "2024-06-28 15:06"
     },
@@ -431,7 +425,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "七月份将峰回路转，苦尽甘来！",
       "publish_time": "2024-06-30 21:03"
     },
@@ -439,7 +433,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘就会重新回到上涨的趋势中。",
       "publish_time": "2024-07-01 11:34"
     },
@@ -447,7 +441,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "monthly",
+      "time_horizon": "long",
       "evidence": "七月开门红，寓意七月全月红。",
       "publish_time": "2024-07-01 15:21"
     },
@@ -463,7 +457,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘会继续拉升，今天的盘面和昨天基本一致。",
       "publish_time": "2024-07-02 11:31"
     },
@@ -487,7 +481,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘会结束震荡，并再次向上进攻，今日大盘将拉出四连阳，并重返3000点之上。",
       "publish_time": "2024-07-03 11:33"
     },
@@ -527,7 +521,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "本轮调整，下周是第八周，从概率学的角度来看，下周大盘再跌的概率极小。",
       "publish_time": "2024-07-07 21:03"
     },
@@ -535,7 +529,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘就会结束震荡，并向上拉升翻红。",
       "publish_time": "2024-07-08 11:28"
     },
@@ -559,7 +553,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘会继续震荡上攻。",
       "publish_time": "2024-07-10 11:32"
     },
@@ -575,7 +569,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘还将继续震荡走高，从昨天证监会暂停转融券业务就可以看出，国家已经限制做空，其目的就是为了拉升股市。",
       "publish_time": "2024-07-11 11:32"
     },
@@ -599,7 +593,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘会继续震荡拉升，券商和人工智能则会再次“翘”起来！",
       "publish_time": "2024-07-12 11:30"
     },
@@ -607,7 +601,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "别的咱们先不说，下周大盘将会重返3000点，我们拭目以待！",
       "publish_time": "2024-07-14 08:03"
     },
@@ -615,7 +609,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "排除消息面影响，明日大盘继续震荡上攻，下周三之前，重返3000点之上，此时此刻，你唯一需要做的，就是握紧筹码，等待爆发。",
       "publish_time": "2024-07-14 21:01"
     },
@@ -623,7 +617,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "大盘本周的走势只有上涨一条路，凸教授在昨天晚上也明确指出：今日大盘会继续震荡上攻，本周三之前，上证指数将重返3000点之上，此时此刻，你唯一需要做的，就是握紧筹码，等待爆发。",
       "publish_time": "2024-07-15 11:27"
     },
@@ -631,7 +625,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "排除消息面影响，明日大盘继续震荡上攻，本周三之前，上证指数将重返3000点之上，此时此刻，你唯一需要做的，就是握紧筹码，等待爆发。",
       "publish_time": "2024-07-15 15:24"
     },
@@ -639,7 +633,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "本周三之前，上证指数将重返3000点之上，此时此刻，你唯一需要做的，就是握紧筹码，等待爆发。",
       "publish_time": "2024-07-15 21:28"
     },
@@ -663,7 +657,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘就一个字，涨！",
       "publish_time": "2024-07-17 11:36"
     },
@@ -671,7 +665,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周，大盘将正式突破3000点！",
       "publish_time": "2024-07-19 15:42"
     },
@@ -679,7 +673,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周大盘将突破3000点，迎来一波强势上涨！",
       "publish_time": "2024-07-21 09:46"
     },
@@ -687,7 +681,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "可以肯定的是，本周大盘突破3000点是板上钉钉的事情",
       "publish_time": "2024-07-22 15:11"
     },
@@ -703,7 +697,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "凸教授在周末明确指出，本周大盘突破3000点，是板上钉钉的事情，今天是周二，所以，未来三个交易日，大盘必然会出一根大阳线",
       "publish_time": "2024-07-23 11:37"
     },
@@ -751,7 +745,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天上午的盘面没有问题，下午大盘会在券商和人工智能这两个板块的带领下，继续反攻！",
       "publish_time": "2024-08-06 11:35"
     },
@@ -759,7 +753,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "A股从今天开始，后面将一路震荡上涨，我们拭目以待。",
       "publish_time": "2024-08-06 22:35"
     },
@@ -767,7 +761,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘会进一步向上拉升。",
       "publish_time": "2024-08-07 11:31"
     },
@@ -791,7 +785,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘将会在券商板块的带动下，继续向上进攻，请大家耐心持股，等待爆发！",
       "publish_time": "2024-08-08 11:29"
     },
@@ -799,7 +793,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今日大盘将高开高走，继续向上进攻！",
       "publish_time": "2024-08-09 08:30"
     },
@@ -839,7 +833,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周大盘没什么说的，趋势已经走出来了，就是慢慢的震荡向上，在这个过程中，涨幅最快的应该就是我强调的券商和人工智能这两个板块。",
       "publish_time": "2024-08-18 08:33"
     },
@@ -887,7 +881,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周一，人工智能和券商板块，还将继续上攻。",
       "publish_time": "2024-08-30 15:05"
     },
@@ -919,7 +913,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周市场的整体节奏依然会在银行和其它板块个股之间，来回做跷跷板行情。不过可以肯定的是，银行板块下周还将一路震荡下行；而ST板块，券商板块，以人工智能为首的科技股，下周还将一路震荡上行。",
       "publish_time": "2024-09-06 15:06"
     },
@@ -927,7 +921,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "至于上证指数，下周不管创不创新低，不管涨不涨，你都不用去纠结，因为最终，大盘一定是会涨上来的。",
       "publish_time": "2024-09-08 12:46"
     },
@@ -935,7 +929,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午这两个板块将继续无视指数，继续震荡上行。",
       "publish_time": "2024-09-09 11:33"
     },
@@ -951,7 +945,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "凸教授认为，下午市场会出现难得的合力，银行和其它板块个股之间不再出现跷跷板现象，而是一起上攻，带领大盘由绿翻红，今天收盘的时候，两市上涨个股的家数将会超过下跌的家数。",
       "publish_time": "2024-09-10 11:47"
     },
@@ -967,7 +961,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午没什么说的，券商和以人工智能为首的科技股，下午会陆续反攻，节奏跟昨天下午基本上一致，今天收盘的时候，市场个股上涨的家数会比下跌的家数多。",
       "publish_time": "2024-09-11 11:23"
     },
@@ -983,7 +977,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "凸教授认为，下午以人工智能为首的科技股，将继续反攻，而节奏上稍慢的券商板块也该启动了，银行板块弱反抽，反抽之后继续下跌。",
       "publish_time": "2024-09-12 11:42"
     },
@@ -999,7 +993,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "根据今日港股高开高走的表现来看，明天大盘收红的概率很大。",
       "publish_time": "2024-09-17 10:21"
     },
@@ -1007,7 +1001,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午市场会继续维持缩量震荡的状态，券商板块会小幅异动拉升，带动上证指数翻红，尾盘个股上涨的家数会比上午多一点。",
       "publish_time": "2024-09-18 11:37"
     },
@@ -1023,7 +1017,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘会维持震荡的格局，但券商和人工智能板块，会继续反攻，其中人工智能板块反攻的力度要强于券商板块。",
       "publish_time": "2024-09-19 11:32"
     },
@@ -1047,7 +1041,7 @@
       "post_n": 12,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "本周大盘缩量震荡，底部形态逐渐清晰，下一步，市场还将继续缩量磨底，大盘连续拉升的概率不大，更多的是小阴小阳磨出一个“圆弧底”，时间短则一个月，长则两个月。",
       "publish_time": "2024-09-20 15:15"
     },
@@ -1063,7 +1057,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘会维持震荡的格局",
       "publish_time": "2024-09-23 11:34"
     },
@@ -1079,7 +1073,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "政策已经非常明显了，下午大盘将进一步拉升，大量的个股也都将反攻，坚持就是胜利！",
       "publish_time": "2024-09-24 11:30"
     },
@@ -1095,7 +1089,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘会维持震荡，即便是上证指数有所回落，也不会影响个股的节奏，尤其是以人工智能为首的科技股，下午还将继续反攻。",
       "publish_time": "2024-09-25 11:30"
     },
@@ -1103,7 +1097,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "大盘今日冲高回落，不用担心，这是典型的“仙人指路”，今天大盘这根上影线直接解放了近一年的套牢盘，后面一段时间，大盘会在这里反复震荡，消化套牢筹码。",
       "publish_time": "2024-09-25 16:23"
     },
@@ -1127,7 +1121,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "各位，今日大盘再次大涨，个股全面爆发，有没有一种“疯牛”的味道？",
       "publish_time": "2024-09-27 15:14"
     },
@@ -1151,7 +1145,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "节后还将有更大的行情！",
       "publish_time": "2024-09-30 15:17"
     },
@@ -1199,7 +1193,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘会继续横盘震荡，尾盘上勾，总之，现在拿着筹码就对了。",
       "publish_time": "2024-10-09 11:30"
     },
@@ -1231,7 +1225,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "什么都不要说，什么都不要问，凸教授没有让你们卖出，就坚决不卖，下午大盘继续往上干！你们就看好了，等后面大盘突破4000点的时候，那些卖出股票的会怎么样！",
       "publish_time": "2024-10-10 11:27"
     },
@@ -1287,7 +1281,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天下午，你就会看到第二次反攻正式开启了！",
       "publish_time": "2024-10-14 11:22"
     },
@@ -1359,7 +1353,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "截止到下周五收盘前，主力要给所有的人解套，现在不管多少人骂我，也无法改变我的观点！",
       "publish_time": "2024-10-18 11:32"
     },
@@ -1367,7 +1361,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "从今天开始直到下周五结束，大盘会一路震荡上涨，中间阴阳交替出现，趋势保持向上，直到大盘再次回到3600点左右。",
       "publish_time": "2024-10-18 15:10"
     },
@@ -1375,7 +1369,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周A股将再次起飞！",
       "publish_time": "2024-10-20 08:07"
     },
@@ -1391,7 +1385,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "截止到本周五之前，主力要给所有的散户解套！",
       "publish_time": "2024-10-21 11:32"
     },
@@ -1423,7 +1417,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午市场会迎来爆发。",
       "publish_time": "2024-10-22 11:28"
     },
@@ -1495,7 +1489,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "最后再说一句，下午券商板块有可能暴走呦，哈哈哈哈！",
       "publish_time": "2024-10-25 11:30"
     },
@@ -1503,7 +1497,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周行情会更加精彩！",
       "publish_time": "2024-10-25 15:07"
     },
@@ -1511,7 +1505,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "我可以斩钉截铁的告诉各位，下周大盘继续上攻！",
       "publish_time": "2024-10-27 12:09"
     },
@@ -1519,7 +1513,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午继续涨，各位，一定要握紧筹码啊！",
       "publish_time": "2024-10-28 11:32"
     },
@@ -1559,7 +1553,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天账户再次获利回吐，凸教授也没什么说的，只能是继续持股，满仓看涨。",
       "publish_time": "2024-10-29 15:04"
     },
@@ -1575,7 +1569,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "但是凸教授认为，今天下午，大盘是可以V起来的，尾盘甚至可以翻红。",
       "publish_time": "2024-10-30 11:34"
     },
@@ -1623,7 +1617,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘就一个字，涨！让我们一起见证奇迹！",
       "publish_time": "2024-11-01 11:31"
     },
@@ -1631,7 +1625,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "最后，下周的行情不用担心，凸教授依然会满仓持股，一股不卖，相信我回吐的利润，一定会非常快的弥补回来，科技板块依然是绝对的主线！我们拭目以待！！",
       "publish_time": "2024-11-03 09:49"
     },
@@ -1639,7 +1633,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘会继续震荡上行，记住凸教授说的市场主线，分为明线和暗线。",
       "publish_time": "2024-11-04 11:32"
     },
@@ -1671,7 +1665,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午没什么说的，就一个字，涨！让那些空仓的继续踏空去吧，牛市不敢持股，那还玩个鸡毛！",
       "publish_time": "2024-11-05 11:32"
     },
@@ -1679,7 +1673,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "开弓没有回头箭！今日主力迈着六亲不认的步伐，拉出一根大阳线，彻底击碎了空头们的幻想。",
       "publish_time": "2024-11-05 16:37"
     },
@@ -1695,7 +1689,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "最后，整个盘面没有任何问题，只要银行板块这只“弱鸡”，后面不过分的砸牌，那么下午大盘还会继续上攻。",
       "publish_time": "2024-11-06 11:29"
     },
@@ -1703,7 +1697,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "最后时刻，靴子落地，主力借刀杀人，大量散户夺路而逃！今日大盘尾盘突然放量杀跌，在短短30分钟之内，大盘从上涨0.55%直线跳水，一直杀跌到-0.55%的位置，跌幅一度达到1.10%。最后时刻，大盘突然跳水，这不是坏事，反而是好事！",
       "publish_time": "2024-11-06 15:10"
     },
@@ -1711,7 +1705,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "凸教授认为，今日市场放量，依然是散户卖，主力进，随着大盘的不断震荡上攻，散户会越来越少，主力手中的筹码会越来越多，后面大盘还会继续上攻。",
       "publish_time": "2024-11-06 22:00"
     },
@@ -1719,7 +1713,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘还将继续逼空上涨！",
       "publish_time": "2024-11-07 11:32"
     },
@@ -1751,7 +1745,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘，要么直接拉起，要么继续震荡，震荡过后，还会继续上攻。",
       "publish_time": "2024-11-08 11:29"
     },
@@ -1759,7 +1753,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "良性回调，安心持股，下周科技股或将再次全面爆发！",
       "publish_time": "2024-11-08 15:06"
     },
@@ -1767,7 +1761,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周大盘将上冲3600点！",
       "publish_time": "2024-11-10 09:30"
     },
@@ -1791,7 +1785,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "大盘本周将继续震荡上攻，目标点位3600点。",
       "publish_time": "2024-11-11 21:32"
     },
@@ -1799,7 +1793,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午，券商这厮，定会单骑救主！",
       "publish_time": "2024-11-12 11:31"
     },
@@ -1815,7 +1809,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "凸教授既不认为大盘会A杀，也不认为大盘会有C浪杀跌，凸教授认为，今日大盘...牛市，永不套人，牛市，必须全程持股。",
       "publish_time": "2024-11-12 21:36"
     },
@@ -1823,7 +1817,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午带着大盘继续上呗，可别让我看不起你啊！",
       "publish_time": "2024-11-13 11:31"
     },
@@ -1847,7 +1841,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午看券商板块表演！",
       "publish_time": "2024-11-14 11:32"
     },
@@ -1855,7 +1849,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "别看今天跌得很凶，但是市场没有问题，大盘很快就会迎来全面反攻。",
       "publish_time": "2024-11-14 15:08"
     },
@@ -1871,7 +1865,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "大盘下午拉起，下周一反包，该干嘛干嘛，一首《将进酒》送给大家！",
       "publish_time": "2024-11-15 11:32"
     },
@@ -1887,7 +1881,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "大家不要泄气，行情远远没有结束，下周让你们看到什么是真正的反攻！",
       "publish_time": "2024-11-15 15:44"
     },
@@ -2055,7 +2049,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "从下周开始，大盘将再次迎来主升浪！",
       "publish_time": "2024-11-29 15:06"
     },
@@ -2063,7 +2057,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周大盘将迎来主升浪行情",
       "publish_time": "2024-12-01 13:33"
     },
@@ -2087,7 +2081,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘就一个字，涨！",
       "publish_time": "2024-12-03 11:38"
     },
@@ -2135,7 +2129,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周主力还会乘胜追击，再下一城！",
       "publish_time": "2024-12-06 15:11"
     },
@@ -2143,7 +2137,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周大盘既可以加速向上拉升，也可以继续震荡着慢慢向上，但不管怎样，其最终的结果都要向3500靠拢。",
       "publish_time": "2024-12-08 11:43"
     },
@@ -2151,7 +2145,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "不管是快节奏，还是慢节奏，都不影响大盘本周继续震荡向上的格局。",
       "publish_time": "2024-12-09 11:32"
     },
@@ -2175,7 +2169,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今日大盘若是高开低走，那就是洗盘；今日大盘若是高开高走，那便是诱多！",
       "publish_time": "2024-12-10 11:32"
     },
@@ -2207,7 +2201,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "凸教授认为，本周后两个交易日，大盘将再次上攻，去冲击3500点。",
       "publish_time": "2024-12-11 15:06"
     },
@@ -2223,7 +2217,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午，券商板块会继续发力，带领市场再次进攻！",
       "publish_time": "2024-12-12 11:29"
     },
@@ -2231,7 +2225,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今日大盘继续震荡上攻，符合昨日预判，明天大盘将向3500点发起进攻。",
       "publish_time": "2024-12-12 15:05"
     },
@@ -2247,7 +2241,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "大盘低开跳水，这是非常明显的洗盘，又是熟悉的味道，今天这一砸，很多人又要丢盔弃甲，夺路而逃了！",
       "publish_time": "2024-12-13 11:24"
     },
@@ -2255,7 +2249,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "这样走反而有利于下周的行情。",
       "publish_time": "2024-12-13 15:26"
     },
@@ -2319,7 +2313,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "凸教授认为，昨夜美股暴跌是因为美联储降息不及预期，对我们的影响不大，上午震荡消化一下，下午就可以慢慢企稳上攻了。",
       "publish_time": "2024-12-19 11:30"
     },
@@ -2343,7 +2337,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "凸教授昨日预判，今日大盘将继续震荡上涨，并重返3400点之上，凸教授昨日预判，今日以人工智能为首的科技股将继续大涨！各位，不要怂，就是一个字，干！",
       "publish_time": "2024-12-20 11:29"
     },
@@ -2407,7 +2401,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘会进一步拉升，但是作为权重占比最大的银行板块，一直压制盘面，所以今日大盘大涨的可能性不大，收盘只要站上3400点就行了。",
       "publish_time": "2024-12-27 11:38"
     },
@@ -2423,7 +2417,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午市场情绪会比上午好，我会继续满仓持股。",
       "publish_time": "2024-12-30 11:37"
     },
@@ -2431,7 +2425,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今日大盘继续缩量，缩量就没有问题，后面大盘将继续慢慢震荡向上。",
       "publish_time": "2024-12-30 15:03"
     },
@@ -2583,7 +2577,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今日大盘继续慢慢震荡向上，但是节奏很慢，不过整体上节前的反攻行情还并未结束，下周大盘还会继续上攻，我会继续满仓持股，耐心等待。",
       "publish_time": "2025-01-17 15:06"
     },
@@ -2591,7 +2585,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "明日也就是下周一，大盘还将继续震荡上涨，直到某一天大盘出现了非常明显的放量，市场出现了明显的分歧，上涨才会停止。",
       "publish_time": "2025-01-19 21:03"
     },
@@ -2631,7 +2625,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周一，最后一个交易日，我认为大盘上攻的概率还是非常大的，总不能让我账户连亏四天吧！",
       "publish_time": "2025-01-24 15:19"
     },
@@ -2647,7 +2641,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "我还是那个观点，节后行情最差也要比节前强！",
       "publish_time": "2025-01-27 15:12"
     },
@@ -2679,7 +2673,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "不出意外的话，下午大盘就会结束震荡，开始拉升。",
       "publish_time": "2025-02-05 11:27"
     },
@@ -2703,7 +2697,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘会进一步震荡走高，彻底反包昨天的阴线，今天会收出一根中阳线。",
       "publish_time": "2025-02-06 11:26"
     },
@@ -2727,7 +2721,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天下午的跳水，不仅不是行情结束的信号，它反而预示着后面的行情会更大，更强！",
       "publish_time": "2025-02-07 15:04"
     },
@@ -2735,7 +2729,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "明日周一，大盘会全天震荡，最终以小阴或小阳收盘，明天市场走势，总体上以震荡为主。从下周二开始，大盘将继续向上进攻，下周大盘的目标点位是3400点！",
       "publish_time": "2025-02-09 12:21"
     },
@@ -2743,7 +2737,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周市场目标为3400。",
       "publish_time": "2025-02-09 21:12"
     },
@@ -2751,7 +2745,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "排除消息面影响，今日周一，大盘全天横盘震荡，蓄势待发，从本周二开始，大盘会再次震荡上，本周大盘目标，剑指3400点。",
       "publish_time": "2025-02-10 11:31"
     },
@@ -2775,7 +2769,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘最差的走势，也就是横盘震荡，跟昨天市场节奏一致，今天再横盘震荡一天，如果节奏快的话，不排除下午券商板块，会突然发力。",
       "publish_time": "2025-02-11 11:25"
     },
@@ -2799,7 +2793,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "我依然认为大盘下午会拉起来，我依然认为今天大盘会收出一根中阳线！",
       "publish_time": "2025-02-12 11:36"
     },
@@ -2807,7 +2801,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "今天和明天，大盘都会以震荡为主，从下周一开始，主力会继续拉升，我们继续持股，耐心等待即可！",
       "publish_time": "2025-02-13 11:25"
     },
@@ -2823,7 +2817,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "一旦明日大盘，盘中出现快速杀跌，不要问，不要说，子弹上膛，火力全开！",
       "publish_time": "2025-02-13 21:20"
     },
@@ -2831,7 +2825,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "接下来，大盘将会继续震荡上攻，如果节奏快的话，不排除尾盘突然拉升的可能。",
       "publish_time": "2025-02-14 11:31"
     },
@@ -2839,7 +2833,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "从下周一开始，大盘要直接起飞了！",
       "publish_time": "2025-02-14 15:03"
     },
@@ -2847,7 +2841,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "明天，也就是下周一，大盘将再次向上突破。",
       "publish_time": "2025-02-16 21:08"
     },
@@ -2855,7 +2849,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "放心，下午大盘跌不下去，反而，会随时直线上攻！",
       "publish_time": "2025-02-17 11:29"
     },
@@ -2895,7 +2889,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘会进一步震荡拉升，完成今天中阳反包的任务。",
       "publish_time": "2025-02-19 11:27"
     },
@@ -2919,7 +2913,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘即将拉升，注意券商板块，请各位满仓持股，坐稳扶好！",
       "publish_time": "2025-02-20 11:24"
     },
@@ -2943,7 +2937,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午没什么好说的，大盘继续震荡上攻，如果，我是说如果，下午券商板块集体暴走，那么大盘将直接站上3400点！",
       "publish_time": "2025-02-21 11:31"
     },
@@ -2951,7 +2945,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "继续满仓持股，下周继续打爆空头！这一周真是太爽了，满仓持续大口吃肉，年后这波利润也已经突破了百万，简直是爽歪歪！现在的盘面，外面那些踏空的人根本不敢进来，他们越不敢买，越不敢进，大盘就不会跌！",
       "publish_time": "2025-02-21 15:03"
     },
@@ -2967,7 +2961,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "目前大盘震荡向上的趋势没有改变，今年牛市的格局没有改变，券商和人工智能主线地位没有改变。下午大盘，会继续维持横盘震荡的格局，这里下跌的概率，几乎为0。所以，我们继续满仓持股，坚定做多！",
       "publish_time": "2025-02-24 11:30"
     },
@@ -2991,7 +2985,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘将继续震荡拉升，今天将会收出中阳线！",
       "publish_time": "2025-02-25 11:30"
     },
@@ -3015,7 +3009,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "从今天开始，大盘将连涨三天，强势突破3400点！",
       "publish_time": "2025-02-26 11:32"
     },
@@ -3039,7 +3033,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午，大盘会下探回收，并翻红上攻，完成连涨三天的目标！",
       "publish_time": "2025-02-27 11:32"
     },
@@ -3055,7 +3049,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘就会拉起来，放心，大盘跌不下去，明天市场开始正式进攻！",
       "publish_time": "2025-03-10 11:28"
     },
@@ -3079,7 +3073,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天咱们A股低开震荡过后，依然会拉起来！",
       "publish_time": "2025-03-11 08:12"
     },
@@ -3087,7 +3081,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "我还是那句话，今天大盘没有问题，下午大盘就会干起来，让你们看看，什么是中国红！",
       "publish_time": "2025-03-11 11:28"
     },
@@ -3119,7 +3113,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "大盘一旦突破3400点，说明新一轮的进攻正式开启，下午大盘会继续逼空上涨，今天会收出一根光头光脚的大阳线！",
       "publish_time": "2025-03-14 11:28"
     },
@@ -3127,7 +3121,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "仰天长啸，下周大盘将加速上攻3500点！今日大盘终于迎来了突破，这个强势突破，也意味着行情正式打开，下周大盘将加速向上进攻，各位，一定要坐稳扶好了！",
       "publish_time": "2025-03-14 15:02"
     },
@@ -3135,7 +3129,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "只要踏空人员，没有追涨进场，那么盘面就不会有任何风险，下周大盘将向3500点发起进攻！",
       "publish_time": "2025-03-16 21:07"
     },
@@ -3143,7 +3137,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "只要之前踏空人员，本周没有追涨进场，那么盘面就不会有任何风险，本周大盘将继续震荡向上，目标剑指3500点！",
       "publish_time": "2025-03-17 11:28"
     },
@@ -3151,7 +3145,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "只要之前踏空人员，本周没有追涨进场，那么盘面就不会有任何风险，本周大盘将继续震荡向上，目标剑指3500点！",
       "publish_time": "2025-03-17 15:01"
     },
@@ -3183,7 +3177,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午，泡一壶好茶，且等主力干爆空头！凸教授笑而不语，凸教授满仓持股，凸教授坚定做多！",
       "publish_time": "2025-03-19 11:30"
     },
@@ -3199,7 +3193,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘最差的走势就是继续震荡，但凸教授认为，下午大盘向上进攻的概率极大，大家一定要拿好筹码！",
       "publish_time": "2025-03-20 11:25"
     },
@@ -3207,7 +3201,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "特别提示：本周五是变盘日，大盘变盘向上。",
       "publish_time": "2025-03-20 21:13"
     },
@@ -3215,7 +3209,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘有极大的概率会V起来，这里算是一次极致洗盘，不管别人怎么做，凸教授依然是满仓持股，坚决不卖！",
       "publish_time": "2025-03-21 11:36"
     },
@@ -3223,7 +3217,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "不要怕，下周大盘如果不上3400点，我宣布3400点之下，永久停更！",
       "publish_time": "2025-03-21 17:02"
     },
@@ -3231,7 +3225,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周，大盘将迅速反攻，重返3400点之上，并再创新高，且看主力再次打爆空头！",
       "publish_time": "2025-03-23 08:27"
     },
@@ -3247,7 +3241,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘会继续以震荡为主，虽然个股表现弱势，但是大盘已经有了企稳的迹象，今天全天应该会收出一颗止跌企稳的十字星。",
       "publish_time": "2025-03-24 11:38"
     },
@@ -3279,7 +3273,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "如果本周五收盘，大盘不站上3400点的话，我就要永远跟大家说再见了",
       "publish_time": "2025-03-25 17:25"
     },
@@ -3319,7 +3313,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "各位，再忍耐一下，黎明很快就会到来，还没有哪一个主力，能让凸教授缴械投降，下午大盘就会拉起来！",
       "publish_time": "2025-03-31 11:31"
     },
@@ -3335,7 +3329,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘还会继续震荡拉升，反攻从昨天下午已经开启，今日大盘会拉出一根中阳线，大家不要着急，耐心持股即可。",
       "publish_time": "2025-04-01 11:28"
     },
@@ -3375,7 +3369,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下午大盘会继续缩量震荡，反攻行情要等到节后了，今天主要是消化昨夜的利空消息。",
       "publish_time": "2025-04-03 11:34"
     },
@@ -3383,7 +3377,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "最后的利空也已经落地，各位不用担心，清明节后，大盘将逐步展开反攻，最困难时刻，信心远比黄金更重要！",
       "publish_time": "2025-04-03 15:07"
     },
@@ -3407,7 +3401,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘会继续震荡，不排除向上拉升的可能，最恐慌时刻已经过去。",
       "publish_time": "2025-04-07 11:33"
     },
@@ -3455,7 +3449,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "排除消息面影响，今日大盘绝地反击，上证指数将在券商板块的带动，拉出一根大阳线，两市个股百花齐放，今天有望出现千股涨停的壮丽景象！",
       "publish_time": "2025-04-09 11:38"
     },
@@ -3479,7 +3473,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘会继续震荡，不排除尾盘再次拉升的可能，不管美国采取什么行动，都已经无法影响A股，我们的地盘，我们自己说了算！",
       "publish_time": "2025-04-10 11:33"
     },
@@ -3503,7 +3497,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘会继续震荡拉升，今日大盘将再拉一根中阳线，个股将继续上涨，百花齐放，此时此刻，耐心持股，才是对自己最大的负责！",
       "publish_time": "2025-04-11 11:24"
     },
@@ -3511,7 +3505,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周一大盘将高举高打，满仓持股的，你们就偷着乐吧！",
       "publish_time": "2025-04-11 15:02"
     },
@@ -3527,7 +3521,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘会继续震荡上攻，此时此刻，应当继续满仓持股，不要被其它声音影响心态，反攻行情还远没有结束。",
       "publish_time": "2025-04-14 11:31"
     },
@@ -3543,7 +3537,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘要么继续震荡，要么直接拉起，至于下跌的概率，几乎为0。",
       "publish_time": "2025-04-15 11:31"
     },
@@ -3599,7 +3593,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘要么维持震荡，要么继续震荡上攻，至于下跌的可能性，几乎为0。所以，此时此刻，你应当继续满仓持股，不动如山。",
       "publish_time": "2025-04-21 11:30"
     },
@@ -3615,7 +3609,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘要么横盘震荡，要么继续上攻，至于下跌的可能性，几乎为0。此时此刻，你应当继续满仓持股，坚定看涨，不动如山。",
       "publish_time": "2025-04-22 11:33"
     },
@@ -3647,7 +3641,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "快的话明天，慢的话下周一，你会见到一根标志性的中阳线。",
       "publish_time": "2025-04-24 11:26"
     },
@@ -3663,7 +3657,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "凸教授昨天晚上明确指出：排除消息面影响，今日周五，本周最后一个交易日，大盘上攻3330点，上证指数强势回补上方缺口，收中阳线！",
       "publish_time": "2025-04-25 11:26"
     },
@@ -3695,7 +3689,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘要么继续横盘震荡，要么开始慢慢震荡往上爬，随着散户的离场，市场的抛压会越来越小，盘面也会越来越轻，一点点资金就可以将大盘拉起来。",
       "publish_time": "2025-04-29 11:29"
     },
@@ -3711,7 +3705,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "一旦今日大盘收中阳线，那么五一节后，上证指数喜迎开门红，没有悬念！",
       "publish_time": "2025-04-30 11:29"
     },
@@ -3719,7 +3713,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "各位，五一节后，行情会有一个全新的开始，凸教授是满仓持股过节，仓位和板块你们都知道，祝大家五一节快乐！",
       "publish_time": "2025-04-30 15:04"
     },
@@ -3743,7 +3737,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午没什么说的，大盘继续震荡拉升，完成今日高开高走，收中阳线的任务。凸教授继续满仓持股，继续坚定做多。",
       "publish_time": "2025-05-06 11:29"
     },
@@ -3775,7 +3769,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "那么本周五，大盘必会拉出一根大阳线！",
       "publish_time": "2025-05-07 20:51"
     },
@@ -3783,7 +3777,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘还会进一步拉升。此时此刻，应当继续满仓持股，坚定做多。……下午大盘还会继续震荡上涨，此时此刻，请像爱护眼睛一样，爱护你手中的筹码。",
       "publish_time": "2025-05-08 11:25"
     },
@@ -3871,7 +3865,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "上证指数确认“岛形反转”，本周大盘只有一个字，涨！",
       "publish_time": "2025-05-14 11:33"
     },
@@ -3919,7 +3913,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "今天的盘面，走的不错，银行调整，个股开始企稳反攻，这盘面，还说啥呢，下周个股将直接起飞了！",
       "publish_time": "2025-05-16 15:11"
     },
@@ -3935,7 +3929,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘会结束震荡，然后慢慢向上推升，全天收出一根小阳线！我们继续满仓持股，坚定做多！",
       "publish_time": "2025-05-19 11:31"
     },
@@ -3951,7 +3945,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘还会继续震荡走高，注意券商板块，这个家伙快要压不住了，一旦券商板块爆发，今天上证指数将拉出一根中阳线！",
       "publish_time": "2025-05-20 11:38"
     },
@@ -3975,7 +3969,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘要么继续震荡，要么向上突破3400点，至于下跌的概率，几乎为0。",
       "publish_time": "2025-05-21 11:28"
     },
@@ -3999,7 +3993,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "由于上午的洗盘已经结束，下午就三个字，干起来！",
       "publish_time": "2025-05-22 11:33"
     },
@@ -4023,7 +4017,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘会继续震荡拉升，这里你们会看到一个大盘的技术现象，就是上证指数各级别指标全部背离，比如1分钟，5分钟，甚至30分钟都开始背离。",
       "publish_time": "2025-05-23 11:31"
     },
@@ -4039,7 +4033,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘就会再次拉起来，今天大盘会收出一根带上下影线的红色十字星，放心吧各位，今天一旦收十字星，明天的行情就稳了。",
       "publish_time": "2025-05-26 11:31"
     },
@@ -4063,7 +4057,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "虽然临近中午收盘的时候，大盘再次小幅跳水，大家也不用担心，下午大盘就会再次拉起来，凸教授再强调一遍，大盘下方3316点的缺口不会回补！",
       "publish_time": "2025-05-27 11:28"
     },
@@ -4087,7 +4081,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午没什么说的，大盘根本没有下跌的理由，这里最差的走势就是继续震荡，但凸教授认为，反攻行情一触即发，大盘随时都会突然拉升。",
       "publish_time": "2025-05-28 11:26"
     },
@@ -4127,7 +4121,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "今天上午大盘整体上以震荡调整为主，个股出现普遍回调，回调幅度基本上为昨天上涨的一半，节前主力选择休息，并没有着急向上进攻。凸教授昨天收盘后明确指出：“今日周五，本周最后一个交易日，同时也是端午节前最后一个交易日，大盘可以横盘震荡一天，节后再去进攻。”",
       "publish_time": "2025-05-30 11:31"
     },
@@ -4135,7 +4129,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "还有一天就要开盘了，节后行情一定不会差，我就不信我会一直做过山车。",
       "publish_time": "2025-06-01 20:41"
     },
@@ -4175,7 +4169,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "接下来，你只需要记住三点：1、主力已经洗盘完毕，后面即将迎来一大波主攻行情。2、后面重点拉升的板块，一个是券商，另一个是人工智能。3、让那些看空的人都踏空去吧，只要他们不空翻多，都给我牢牢的拿住筹码！下午没什么说的，就是三个字，干起来！",
       "publish_time": "2025-06-04 11:27"
     },
@@ -4199,7 +4193,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午没什么说的，大盘跌不下去，最差的走势就是横盘震荡，如果节奏快的话，大盘随时都会拉起来，3400点已是囊中之物，探囊可得了！",
       "publish_time": "2025-06-05 11:28"
     },
@@ -4215,7 +4209,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "大家不要担心，下午大盘最差的走势就是继续震荡，至于下跌的概率，几乎为0！",
       "publish_time": "2025-06-06 11:28"
     },
@@ -4223,7 +4217,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周一，大盘将强势突破3400点了，终于要迎来大口回血，大口吃肉的日子了！",
       "publish_time": "2025-06-06 15:01"
     },
@@ -4231,7 +4225,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "各位，下周大盘将向上完成突破，请一定要持股，持股，再持股！",
       "publish_time": "2025-06-08 20:46"
     },
@@ -4239,7 +4233,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "另外再说一句，下午大盘跌不下来，我说过，大盘这里要么震荡，要么上涨，至于下跌的可能性，几乎为0。",
       "publish_time": "2025-06-09 11:31"
     },
@@ -4287,7 +4281,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "上午大盘平开震荡走高，虽然临近中午收盘有点回落，但大家不用担心，下午大盘跌不下去，大盘还将继续震荡上攻。",
       "publish_time": "2025-06-11 11:28"
     },
@@ -4303,7 +4297,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午，大盘要么震荡，要么继续上攻，不要奢望大盘会跌下来，没有这种可能。",
       "publish_time": "2025-06-12 11:26"
     },
@@ -4319,7 +4313,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "大盘全天震荡，彻底消化上周五的突发事件，如果节奏快的话，明天下午，大盘就会向上反攻！",
       "publish_time": "2025-06-15 20:42"
     },
@@ -4351,7 +4345,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘随时都会迎来大涨，各位，一定要满仓持股，坚定做多。",
       "publish_time": "2025-06-17 11:22"
     },
@@ -4383,7 +4377,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "如果不出意外的话，下午大盘会再次拉起，今天又将收出一根大长腿！",
       "publish_time": "2025-06-19 11:28"
     },
@@ -4399,7 +4393,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "各位，不用着急，下午大盘就会拉起来，一旦今天下午拉起来，那么下周的行情，你们懂的！",
       "publish_time": "2025-06-20 11:31"
     },
@@ -4407,7 +4401,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "行情走到今天，很多人已经非常悲观了，但是在凸教授看来，市场不仅没有风险，反而机会非常大，我是现在没有钱了，如果有钱，我会毫不犹豫的买进去。总之，不管别人怎么说，我会一直满仓持股下去，直到账户迎来真正的爆发！",
       "publish_time": "2025-06-21 10:57"
     },
@@ -4447,7 +4441,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午，大盘最差的走势就是横盘震荡，但凸教授认为，下午大盘还将继续逼空上攻，开弓没有回头箭，就让那些看空的人，踏空的人，后面追涨去吧！",
       "publish_time": "2025-06-24 11:25"
     },
@@ -4463,7 +4457,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "最后再说一句，今日大盘突破3400点，是新一轮行情的开启，并不是行情的结束，不要在乎一两天的波动，这次行情很大，很长，各位，有没有信心跟我一起，满仓持股，勇敢的做多下去？",
       "publish_time": "2025-06-24 20:58"
     },
@@ -4471,7 +4465,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘要么震荡，要么继续往上干，除此之外，不会有第三种走势。各位，行情已经启动，不要想着离场，都给我死死的拿住筹码，凸教授继续满仓持股，坚定做多，重点就是券商➕科技。",
       "publish_time": "2025-06-25 11:30"
     },
@@ -4487,7 +4481,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "“今日周四，大盘先震荡，然后继续上攻，回调是不可能的，你以为主力会倒车接人？别开玩笑了！”",
       "publish_time": "2025-06-26 08:26"
     },
@@ -4495,7 +4489,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘会继续向上进攻，凸教授再强调一遍，这里没有任何风险，继续满仓持股，坚定做多！",
       "publish_time": "2025-06-26 11:31"
     },
@@ -4503,7 +4497,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "所以，在连续大涨了三天之后，今天来了一个小小的震荡，是非常合情合理的，明天周五，大盘最好再震荡一天，那么下周，就又可以往上干了！",
       "publish_time": "2025-06-26 15:08"
     },
@@ -4535,7 +4529,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周，大盘将再次向上发起进攻，主线依然是券商和以人工智能为首的科技股，而我的账户，也终将迎来大口吃肉的时刻，我们拭目以待！",
       "publish_time": "2025-06-28 16:02"
     },
@@ -4575,7 +4569,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘最差的走势就是横盘震荡，节奏快的话，反攻随时都会到来，大家不用担心！",
       "publish_time": "2025-07-01 11:24"
     },
@@ -4655,7 +4649,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "今日大盘出现经典的“仙人指路”K线，预示着下周大盘就要彻底起飞了！",
       "publish_time": "2025-07-04 15:03"
     },
@@ -4663,7 +4657,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "凸教授认为，下周市场的赚钱效应将会非常火爆，而我的账户也将在下周正式的扭亏为盈。换句话说，下周券商和科技股，都将迎来大反攻，我们拭目以待！",
       "publish_time": "2025-07-05 11:14"
     },
@@ -4679,7 +4673,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "本周二开始，大盘将再次向上进攻，向上进攻，向上进攻。",
       "publish_time": "2025-07-07 11:30"
     },
@@ -4703,7 +4697,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "各位，上午大盘高开震荡走高，这里没什么好说的，就是一个字，涨！主力上周五向上试盘之后，今天开始来真的了，大家一定要握紧筹码！",
       "publish_time": "2025-07-08 11:17"
     },
@@ -4727,7 +4721,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "凸教授继续满仓持股，坚定做多，下午大盘就会再次拉起，大盘这里下跌的概率为0，概率为0！",
       "publish_time": "2025-07-09 11:25"
     },
@@ -4751,7 +4745,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "上午大盘低开震荡走高，券商板块已经蠢蠢欲动，下午各大板块即将形成共振，而大盘也将顺势拉起，再创新高！",
       "publish_time": "2025-07-10 11:26"
     },
@@ -4783,7 +4777,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周大盘将直接加速上冲3600点了，新来的朋友，请收藏留证，凸教授把话撂这了，到时候如果没有上3600点，你们随时拉黑我！",
       "publish_time": "2025-07-11 15:05"
     },
@@ -4815,7 +4809,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "从本周二开始，大盘将再次向上进攻，一旦大盘再次上攻，目标就是3674点。",
       "publish_time": "2025-07-14 14:55"
     },
@@ -4831,7 +4825,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "本周大盘上攻3600点的目标不变！",
       "publish_time": "2025-07-15 11:25"
     },
@@ -4855,7 +4849,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘要么继续横盘震荡，要么直接上攻，除此之外，没有第三种走势。",
       "publish_time": "2025-07-16 11:25"
     },
@@ -4879,7 +4873,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "大盘下跌的的概率为0，下午大盘随时都会拉起来，让那些看空的人，继续踏空去吧！",
       "publish_time": "2025-07-17 11:22"
     },
@@ -4895,7 +4889,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "大量个股下午都会陆续反攻，我们继续满仓持股，满仓持股！",
       "publish_time": "2025-07-18 11:25"
     },
@@ -4903,7 +4897,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周大盘突破3600点，已经没有任何悬念！我们继续满仓持股，继续回血，继续吃肉！",
       "publish_time": "2025-07-18 15:08"
     },
@@ -4919,7 +4913,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "凸教授昨天明确指出，今日周一，大盘继续震荡上攻，3555点不仅会被踩在脚下，本周大盘还将突破3600点。",
       "publish_time": "2025-07-21 11:29"
     },
@@ -4935,7 +4929,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今日周二，大盘向上强势冲击3600点，两市个股上涨家数，将再次超过4000家，市场赚钱效应，将会非常火爆。",
       "publish_time": "2025-07-21 20:46"
     },
@@ -4943,7 +4937,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘要么横盘震荡，要么继续上攻，我还是那句话，大盘这里下跌的概率几乎为0，几乎为0！",
       "publish_time": "2025-07-22 11:25"
     },
@@ -4967,7 +4961,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "突破3600点，意味着行情正式启动，大量个股都将在下午陆续爆发，大家一定要牢牢拿住筹码，千万不要卖飞了！",
       "publish_time": "2025-07-23 11:26"
     },
@@ -4991,7 +4985,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午没什么说的，大盘会继续上攻，全天收出一根中阳线，个股也会轮流爆发，我们继续满仓持股，坚定做多！",
       "publish_time": "2025-07-24 11:15"
     },
@@ -5015,7 +5009,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘就会再次拉起来，大量的个股下午都会上涨翻红，咱们继续满仓持股，坚定做多。",
       "publish_time": "2025-07-25 11:31"
     },
@@ -5023,7 +5017,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "嘿嘿，我有种强烈的预感，下周一，整个股市都会爆起来，跟我一起满仓持股的朋友们，你们就等着吃大肉吧！",
       "publish_time": "2025-07-25 15:05"
     },
@@ -5031,7 +5025,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "所以，根据我本周账户的表现情况来看，行情还远远没有结束，甚至连开始都谈不上，凸教授对下周的行情充满信心！下周，轮也该轮到我吃大肉了！",
       "publish_time": "2025-07-26 08:07"
     },
@@ -5047,7 +5041,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘要么继续震荡，要么直接上攻，我还是那句话，大盘这里下跌的概率为0，上涨远远没有结束，大家都给我继续满仓持股，等待爆发。",
       "publish_time": "2025-07-28 11:33"
     },
@@ -5087,7 +5081,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘要么继续震荡，今天收一颗红色十字星，要么直接反攻，收一根反包大阳线，大盘这里继续下跌的概率几乎为0！",
       "publish_time": "2025-08-01 11:29"
     },
@@ -5095,7 +5089,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "没什么好说的，没有人比凸教授更加看好大盘，咱们继续满仓持股，主线依旧是券商➕科技，如果下周你们没有吃到肉，都来我家吃饭！",
       "publish_time": "2025-08-01 15:34"
     },
@@ -5103,7 +5097,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "凸教授明确告诉大家，下周A股只有一个字，那就是涨！我还是那句话，如果下周你们没有吃到肉，那么全部都来我家吃饭！",
       "publish_time": "2025-08-02 18:04"
     },
@@ -5119,7 +5113,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "凸教授再强调一遍，本周大盘只有一个字，涨！如果本周你们没有吃到肉，到时候都来我家吃饭。咱们继续满仓持股，坚定做多！",
       "publish_time": "2025-08-04 11:22"
     },
@@ -5143,7 +5137,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘将继续逼空上涨，完成今天的大阳线，我们拭目以待！",
       "publish_time": "2025-08-05 11:32"
     },
@@ -5231,7 +5225,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘要么维持横盘震荡，要么直接上攻，至于下跌的可能性，几乎为零，我们继续满仓持股，坚决做多。",
       "publish_time": "2025-08-11 11:30"
     },
@@ -5239,7 +5233,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "明天大盘会继续上攻，本周五之前，大盘将突破3700点！",
       "publish_time": "2025-08-11 15:04"
     },
@@ -5255,7 +5249,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "各位，大盘本周的目标是突破3700点，3674点很快就会突破，让我们多点耐心，等待市场的全面爆发。",
       "publish_time": "2025-08-12 11:30"
     },
@@ -5279,7 +5273,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘还会进一步拉升，大家不用担心，到时候所有的股票都会上涨，哪怕你手中的票现在一动不动，后面都会补涨。",
       "publish_time": "2025-08-13 11:24"
     },
@@ -5287,7 +5281,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "恭喜各位，从今天开始，中国股市将正式迎来一轮超级大牛市，这波牛市，是史无前例的！",
       "publish_time": "2025-08-13 15:05"
     },
@@ -5303,7 +5297,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午，大盘要么在3700点附近横盘震荡，要么直接突破，至于下跌的概率，依然为零。",
       "publish_time": "2025-08-14 11:32"
     },
@@ -5327,7 +5321,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘要么横盘震荡，要么直接上攻，至于下跌的概率，依然为零。",
       "publish_time": "2025-08-15 11:26"
     },
@@ -5335,7 +5329,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "不要以为行情接近了尾声，行情只是刚刚开始而已，下周，会有更大的惊喜等待着大家，让我们继续勇往直前。",
       "publish_time": "2025-08-15 15:05"
     },
@@ -5343,7 +5337,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "凸教授说了，突破3674点，不是行情的结束，而是行情的开始，我会继续满仓持股，下周，让我们继续乘风破浪，勇往直前！",
       "publish_time": "2025-08-16 21:08"
     },
@@ -5359,7 +5353,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘要么横盘震荡，要么继续上攻，至于下跌的可能性，依然为零，咱们继续满仓持股，继续坚定做多！",
       "publish_time": "2025-08-18 11:29"
     },
@@ -5383,7 +5377,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘会继续震荡上攻，完成今天的中阳线，不要考虑下跌的可能性，这里下跌的概率，依然为零。",
       "publish_time": "2025-08-19 11:27"
     },
@@ -5407,7 +5401,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘要么继续横盘震荡，要么直接上攻，至于下跌的概率，依然为零！不要跟我说什么风险，凸教授再强调一遍，大盘这里没有任何风险。",
       "publish_time": "2025-08-20 11:31"
     },
@@ -5431,7 +5425,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午，就一句话，干起来，今日大盘将突破3800点，个股也会紧跟其后，我们继续满仓持股，坚定做多！",
       "publish_time": "2025-08-22 11:30"
     },
@@ -5439,7 +5433,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "各位，好好过周末吧，咱们继续满仓持股，坚定做多，下周的行情，会让你们爽到爆！",
       "publish_time": "2025-08-22 15:07"
     },
@@ -5463,7 +5457,7 @@
       "post_n": 0,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "缩量代表安全，放量代表风险，从今天开始，市场的博弈难度开始增大，凸教授也会从今天开始，逐步注意市场的风险。",
       "publish_time": "2025-08-25 11:35"
     },
@@ -5487,7 +5481,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘会强势突破3900点，我们继续满仓持股，坚定做多，凸教授再强调一遍，大盘这里下跌的概率几乎为零。",
       "publish_time": "2025-08-27 11:25"
     },
@@ -5527,7 +5521,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "排除消息面影响，明日周五，大盘全天震荡，收十字星，从下周一开始，一段崭新的行情将再次开启！一旦行情再次展开，大盘目标剑指4000点！",
       "publish_time": "2025-09-04 15:01"
     },
@@ -5535,7 +5529,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘依然会维持震荡的格局，今天会收出一颗缩量的红色十字星。",
       "publish_time": "2025-09-05 11:27"
     },
@@ -5543,7 +5537,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今日大盘重返3800点之上，强势完成反包，虽然大量个股涨幅并不大，但是本轮调整已经确定结束，从下周开始，新一轮的行情将正式开启！",
       "publish_time": "2025-09-05 15:01"
     },
@@ -5559,7 +5553,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今日周一，大盘全天震荡，收十字星，休息一天，从本周二开始，大盘将再次向上进攻。一旦大盘再次向上进攻，目标就是剑指4000点！",
       "publish_time": "2025-09-08 11:30"
     },
@@ -5583,7 +5577,7 @@
       "post_n": 10,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘会进一步调整，不出意外的话，今日大盘应该要砸出一根中阴线，砸破3800点，彻底清理最后一批技术派人员。",
       "publish_time": "2025-09-09 11:28"
     },
@@ -5607,7 +5601,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘会继续震荡，今天的走势就是全天震荡，再收一颗十字星，大家不要心急，调整已经接近了尾声。",
       "publish_time": "2025-09-10 11:29"
     },
@@ -5671,7 +5665,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘会继续横盘震荡，今天的节奏就是以震荡为主，大家不要着急，主力没人任何出货的痕迹，我们继续满仓持股，等待上涨。",
       "publish_time": "2025-09-15 11:30"
     },
@@ -5695,7 +5689,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "凸教授昨天晚上明确指出：“从本周三开始，大盘将再次向上进攻，一旦再次进攻，就是剑指4000点！”",
       "publish_time": "2025-09-16 11:28"
     },
@@ -5719,7 +5713,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘会进一步震荡上涨，新一轮的反攻已经开始，各位，我们继续满仓持股，坚定做多！",
       "publish_time": "2025-09-17 11:29"
     },
@@ -5743,7 +5737,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午怎么办？还能怎么办？既然主力满肚子坏水，那么咱们就继续满仓持股，不达目标，绝不罢休！",
       "publish_time": "2025-09-18 11:29"
     },
@@ -5759,7 +5753,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "凸教授昨天明确指出：今日大盘将止跌企稳，中阳反包！不管别人怎么说，凸教授这里依然是满仓持股，绝不看空！",
       "publish_time": "2025-09-19 11:27"
     },
@@ -5775,7 +5769,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘会继续维持震荡的格局，大家应该多一点耐心，行情都说等出来的，而不是追出来的，咱们继续满仓持股。",
       "publish_time": "2025-09-22 11:31"
     },
@@ -5799,7 +5793,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘会横盘震荡，今天下跌的幅度已经够了，接下来，就是慢慢企稳，市场进入反攻倒计时。",
       "publish_time": "2025-09-23 11:30"
     },
@@ -5823,7 +5817,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘要么继续横盘震荡，要么直接上攻，至于下跌的可能性，几乎为0。",
       "publish_time": "2025-09-24 11:31"
     },
@@ -5847,7 +5841,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘会继续震荡上攻，尤其是券商板块，这里已经具备了再次爆发的条件，我们继续满仓持股，坚定做多。",
       "publish_time": "2025-09-25 11:30"
     },
@@ -5871,7 +5865,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘要么横盘震荡，要么进一步向上进攻，至于下跌的可能性，几乎为零！",
       "publish_time": "2025-10-09 11:29"
     },
@@ -5895,7 +5889,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘会继续震荡，将散户想要进场的热情压下去，一旦散户再次多转空，那么大盘就会再次向上进攻。",
       "publish_time": "2025-10-10 11:29"
     },
@@ -5903,7 +5897,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "继续满仓持股，坚定做多！各位，安心过周末，下周大盘将上攻4000点，科技股回调过后，还将继续创新高，下周券商板块，要带领大盘正式向上进攻了！",
       "publish_time": "2025-10-10 15:01"
     },
@@ -5911,7 +5905,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "凸教授始终满仓持股，坚定做多。4月7日那天，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2025-10-12 20:19"
     },
@@ -5919,7 +5913,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘要么横盘震荡，要么直接反攻，接下来的重点就是券商板块，一旦券商板块带头上攻，不排除下午大盘翻红的可能。",
       "publish_time": "2025-10-13 11:29"
     },
@@ -5935,7 +5929,7 @@
       "post_n": 6,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘会进一步震荡回落，全天收出一根小阴线。",
       "publish_time": "2025-10-14 11:28"
     },
@@ -5967,7 +5961,7 @@
       "post_n": 1,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘会继续震荡回落，全天最终收出一根小阴线。",
       "publish_time": "2025-10-16 11:31"
     },
@@ -5983,7 +5977,7 @@
       "post_n": 14,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘会继续维持震荡的格局，尾盘稍有拉升，最终全天会收出一根带下影线的小阴线。",
       "publish_time": "2025-10-17 11:36"
     },
@@ -5999,7 +5993,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘要么横盘震荡，要么继续反攻，至于下跌的可能性，几乎为零。",
       "publish_time": "2025-10-20 11:30"
     },
@@ -6015,7 +6009,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘要么横盘震荡，要么继续上攻，至于下跌的可能性，依然为零。",
       "publish_time": "2025-10-21 11:27"
     },
@@ -6039,7 +6033,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘要么继续震荡，要么直接上攻，至于下跌的可能性，依然为零。",
       "publish_time": "2025-10-22 11:29"
     },
@@ -6079,7 +6073,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘要么继续震荡，要么直接上攻，至于下跌的可能性，依然为零。",
       "publish_time": "2025-10-24 11:29"
     },
@@ -6087,7 +6081,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "周末一旦有重磅利好消息，那么下周一，大盘将高开高走，一飞冲天！凸教授还是那句话，不管别人怎么说，不管别人怎么做，凸教授始终满仓持股，坚定做多。",
       "publish_time": "2025-10-24 15:01"
     },
@@ -6095,7 +6089,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘要么震荡，要么继续上攻，至于下跌的可能性，依然为零。",
       "publish_time": "2025-10-27 11:24"
     },
@@ -6111,7 +6105,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘要么震荡，要么继续上攻，至于下跌的可能性依然为零。",
       "publish_time": "2025-10-29 11:28"
     },
@@ -6119,7 +6113,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "从明天开始，大盘将连续上攻，本周大盘将重返4000点之上，并再创新高！",
       "publish_time": "2025-11-05 15:03"
     },
@@ -6127,7 +6121,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘要么横盘震荡，要么继续上攻，至于下跌的可能性，依然为零。",
       "publish_time": "2025-11-06 11:29"
     },
@@ -6143,7 +6137,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "但我认为，下午大盘依然会干起来，并再创新高，至于下跌的可能性，依然为零！",
       "publish_time": "2025-11-07 11:30"
     },
@@ -6151,7 +6145,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "祝大家周末愉快，下周的大盘，会有惊喜。",
       "publish_time": "2025-11-07 15:04"
     },
@@ -6199,7 +6193,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2025-11-23 19:54"
     },
@@ -6207,7 +6201,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘要么继续横盘震荡，要么直接反攻，至于下跌的可能性，几乎为零。",
       "publish_time": "2025-11-24 11:27"
     },
@@ -6223,7 +6217,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2025-11-24 20:21"
     },
@@ -6231,7 +6225,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘要么横盘震荡，要么继续反攻，至于下跌的可能性，依然为零。",
       "publish_time": "2025-11-25 11:28"
     },
@@ -6247,7 +6241,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2025-11-25 20:21"
     },
@@ -6255,7 +6249,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘继续震荡上攻，这里下跌的可能性几乎为零。",
       "publish_time": "2025-11-26 11:30"
     },
@@ -6295,7 +6289,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "么说，不管别人怎么做，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2025-11-30 20:23"
     },
@@ -6303,7 +6297,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "么说，不管别人怎么做，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2025-12-01 20:42"
     },
@@ -6319,7 +6313,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "凸教授从3000点，满仓持股到今天，中间历经了无数挫折，但我退缩了吗？",
       "publish_time": "2025-12-04 11:26"
     },
@@ -6327,7 +6321,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "凸教授昨天明确指出：“最近两天，主力很明显在赶人下车，从今天开始，市场将迎来全面反攻！”",
       "publish_time": "2025-12-05 14:57"
     },
@@ -6335,7 +6329,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "不管别人怎么说，不管别人怎么做，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2025-12-07 20:22"
     },
@@ -6343,7 +6337,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2025-12-08 20:29"
     },
@@ -6351,7 +6345,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2025-12-09 20:34"
     },
@@ -6359,7 +6353,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2025-12-10 20:46"
     },
@@ -6367,7 +6361,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "不管别人怎么说，不管别人怎么做，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2025-12-11 20:34"
     },
@@ -6375,7 +6369,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "按照涨两天，跌三天的节奏，下周一没有悬念，最少还有一根中大阳线，而且是要突破3936点的！各位，行情没有任何问题，安心持股，愉快过周末",
       "publish_time": "2025-12-12 15:04"
     },
@@ -6383,7 +6377,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "不管别人怎么说，不管别人怎么做，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2025-12-14 20:24"
     },
@@ -6407,7 +6401,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "么说，不管别人怎么做，此时此刻，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2025-12-17 20:25"
     },
@@ -6415,7 +6409,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "不管别人怎么说，不管别人怎么做，此时此刻，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2025-12-18 20:26"
     },
@@ -6423,7 +6417,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2025-12-21 20:25"
     },
@@ -6439,7 +6433,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2025-12-23 20:23"
     },
@@ -6447,7 +6441,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2025-12-24 20:23"
     },
@@ -6471,7 +6465,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2025-12-28 20:26"
     },
@@ -6479,7 +6473,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "不管别人怎么说，不管别人怎么做，此时此刻，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2025-12-29 20:44"
     },
@@ -6487,7 +6481,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2025-12-30 20:21"
     },
@@ -6503,7 +6497,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-01-05 21:02"
     },
@@ -6527,7 +6521,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "别人怎么说，不管别人怎么做，此时此刻，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-01-06 20:24"
     },
@@ -6535,7 +6529,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午没什么说的，大盘跌不下去，券商板块还在压盘，没什么好担心的。",
       "publish_time": "2026-01-07 11:23"
     },
@@ -6543,7 +6537,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "怎么说，不管别人怎么做，此时此刻，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-01-07 20:25"
     },
@@ -6567,7 +6561,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "怎么说，不管别人怎么做，此时此刻，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-01-11 20:47"
     },
@@ -6599,7 +6593,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "怎么说，不管别人怎么做，此时此刻，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-01-13 20:25"
     },
@@ -6623,7 +6617,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "不管别人怎么做，此时此刻，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-01-14 20:25"
     },
@@ -6663,7 +6657,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "别人怎么说，不管别人怎么做，此时此刻，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-01-18 20:34"
     },
@@ -6679,7 +6673,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "不管别人怎么做，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-01-19 20:27"
     },
@@ -6687,7 +6681,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-01-20 20:25"
     },
@@ -6711,7 +6705,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天大盘虽然涨幅并不大，但是整体节奏正在回到之前的趋势中，尤其是大量的个股，最近两天都在反攻，这是非常好的现象。",
       "publish_time": "2026-01-23 15:00"
     },
@@ -6751,7 +6745,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "不管别人怎么做，此时此刻，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-01-27 20:29"
     },
@@ -6767,7 +6761,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "不管别人怎么做，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-02-01 20:27"
     },
@@ -6783,7 +6777,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "不管别人怎么做，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-02-02 20:24"
     },
@@ -6799,7 +6793,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-02-03 20:27"
     },
@@ -6887,7 +6881,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "“今日周二，A股马年首秀，大盘必将高开高走，那些节前空仓的人，根本不敢追涨买入！”",
       "publish_time": "2026-02-24 11:28"
     },
@@ -6903,7 +6897,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "我看到很多人说，今天大盘会跌，这些人根本不懂逻辑，今天大盘只有上涨这一条路。跌是不可能的，今天如果跌，那么前期上涨的基础逻辑就要全部被推翻，今天如果跌，也可以断定后面没行情了。",
       "publish_time": "2026-02-25 11:27"
     },
@@ -6919,7 +6913,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "1、今天大跌是不可能的，今天如果收中阴线，那么前两天的上涨就不应该存在，这在逻辑上是行不通的。",
       "publish_time": "2026-02-26 11:28"
     },
@@ -6943,7 +6937,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "3、至于下午是逼空上涨，还是继续横盘震荡，看主力心情，但想要大跌，几乎不可能。",
       "publish_time": "2026-02-27 11:29"
     },
@@ -6951,7 +6945,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "既然该走的人都走了，接下来大盘就会向上突破，可以肯定的是，下周大盘向上突破4200点，已经没有任何悬念了。",
       "publish_time": "2026-02-27 15:03"
     },
@@ -6959,7 +6953,7 @@
       "post_n": 3,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "二是美伊战争爆发，肯定是黑天鹅，虽然早有预期，但是对金融市场还是有影响的，下周一，咱们A股肯定会跳一下。",
       "publish_time": "2026-02-28 17:27"
     },
@@ -7047,7 +7041,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "不管别人怎么说，不管别人怎么做，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-03-05 20:19"
     },
@@ -7055,7 +7049,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘会进一步震荡拉升，今天盘后会有一个重要会议，到时候应该会有利好消息出台。",
       "publish_time": "2026-03-06 11:29"
     },
@@ -7063,7 +7057,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "下周，大盘向上突破，不会再有任何阻力了，除非有更大的黑天鹅出现。",
       "publish_time": "2026-03-06 15:00"
     },
@@ -7087,7 +7081,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "不管别人怎么说，不管别人怎么做，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-03-09 20:19"
     },
@@ -7183,7 +7177,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今日大盘会止跌企稳，正式反攻！",
       "publish_time": "2026-03-17 11:30"
     },
@@ -7199,7 +7193,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "如果今天砸不下去，基本上可以肯定后面也不会砸下去了，这一次因为黑天鹅导致的下跌，也算是彻底结束了。",
       "publish_time": "2026-03-18 11:30"
     },
@@ -7207,7 +7201,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今天的低点4023点，就是本轮大盘调整的最低点。",
       "publish_time": "2026-03-18 15:00"
     },
@@ -7223,7 +7217,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "如果今天大盘，在重大利空之下，依然砸不破4000点，那么后面4000点就不可能再破了。",
       "publish_time": "2026-03-19 11:29"
     },
@@ -7231,7 +7225,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "不管别人怎么说，不管别人怎么做，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-03-22 20:19"
     },
@@ -7239,7 +7233,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "不管别人怎么说，不管别人怎么做，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-03-23 20:23"
     },
@@ -7255,7 +7249,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-03-24 20:29"
     },
@@ -7279,7 +7273,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘再次拉起来的概率非常大，各位不用担心，耐心等待就行了。",
       "publish_time": "2026-03-26 11:25"
     },
@@ -7287,7 +7281,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "明天包括下周一，大盘应该向上，并回补上方缺口。",
       "publish_time": "2026-03-26 14:59"
     },
@@ -7295,7 +7289,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-03-26 20:23"
     },
@@ -7303,7 +7297,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今日周五，本周最后一个交易日，大盘将再次向上反攻，市场会保持进二退一的节奏，逐步修复黑天鹅导致的下跌。",
       "publish_time": "2026-03-27 11:27"
     },
@@ -7311,7 +7305,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "进二退一，大盘走势非常不错，下周上证指数就会去回补上方缺口。",
       "publish_time": "2026-03-27 15:01"
     },
@@ -7319,7 +7313,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-03-29 20:21"
     },
@@ -7343,7 +7337,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-03-30 20:22"
     },
@@ -7351,7 +7345,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "我认为下午大盘再次拉起来的概率极大，大家不要慌张，继续耐心持股！",
       "publish_time": "2026-03-31 11:38"
     },
@@ -7359,7 +7353,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "既然上周四跌，周五和本周一涨，本周二跌，那么明后两天，大盘都应该是以上涨为主了，还是进二退一的节奏。",
       "publish_time": "2026-03-31 15:00"
     },
@@ -7367,7 +7361,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-03-31 20:22"
     },
@@ -7375,7 +7369,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘就会去回补上方缺口，我们继续满仓持股，继续坚定做多！",
       "publish_time": "2026-04-01 11:30"
     },
@@ -7391,7 +7385,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-04-01 20:22"
     },
@@ -7415,7 +7409,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-04-07 20:18"
     },
@@ -7439,7 +7433,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-04-08 20:31"
     },
@@ -7479,7 +7473,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-04-12 20:21"
     },
@@ -7487,7 +7481,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-04-13 20:34"
     },
@@ -7511,7 +7505,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘就会拉起来，上证指数这里下跌的概率，几乎为零！",
       "publish_time": "2026-04-15 11:27"
     },
@@ -7551,7 +7545,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-04-19 20:19"
     },
@@ -7559,7 +7553,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘要么横扫震荡，要么继续上攻，至于下跌的可能性，几乎为零。",
       "publish_time": "2026-04-20 11:25"
     },
@@ -7575,7 +7569,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-04-20 20:22"
     },
@@ -7583,7 +7577,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘跌不下去，今天最差的走势就是横盘震荡一天，好的话，下午大盘就可以直接拉起来！",
       "publish_time": "2026-04-21 11:30"
     },
@@ -7599,7 +7593,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘会继续震荡走高，今天会再次拉出一根中阳线！",
       "publish_time": "2026-04-22 11:30"
     },
@@ -7615,7 +7609,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "A股节后必创新高！就算是天王老子来了，这也是板上钉钉的事情！",
       "publish_time": "2026-04-28 15:56"
     },
@@ -7623,7 +7617,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "节前的震荡，就是为了节后的拉升，等所有业绩落地，你们会看到，什么是真正的百花齐放！",
       "publish_time": "2026-04-29 11:24"
     },
@@ -7639,7 +7633,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "市场没有任何问题，下午大盘要么横盘震荡，要么继续向上进攻，至于下跌的可能性，几乎为零。",
       "publish_time": "2026-04-30 11:30"
     },
@@ -7647,7 +7641,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "weekly",
+      "time_horizon": "medium",
       "evidence": "节后的A股将会轻装上阵，上证指数也将突破4200点，迎来全面加速上涨！",
       "publish_time": "2026-04-30 15:04"
     },
@@ -7655,7 +7649,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "不管别人怎么说，不管别人怎么做，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-05-05 20:25"
     },
@@ -7663,7 +7657,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "今日大盘将高开高走，上证指数将会在券商板块的带动下，拉出一根中阳线！一旦上证指数突破4200点，你们会知道，什么才是真正的百花齐放！",
       "publish_time": "2026-05-06 11:30"
     },
@@ -7711,7 +7705,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午，大盘要么横盘震荡，要么继续逼空上涨，至于下跌的可能性，依然为零！",
       "publish_time": "2026-05-11 11:29"
     },
@@ -7727,7 +7721,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "我始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-05-11 20:17"
     },
@@ -7735,7 +7729,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午没什么说的，基本上就是维持震荡的格局，这是主力在给你们时间卖出股票，是走是留，你随意，反正我一股不卖！",
       "publish_time": "2026-05-12 11:29"
     },
@@ -7751,7 +7745,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-05-12 20:52"
     },
@@ -7759,7 +7753,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘要么维持横盘震荡，要么直接上攻，至于下跌的可能性，依然为零！",
       "publish_time": "2026-05-13 11:29"
     },
@@ -7775,7 +7769,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "下午大盘要么继续震荡，要么V型反转，完成盘中甩人的动作",
       "publish_time": "2026-05-14 11:27"
     },
@@ -7783,7 +7777,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "我不相信牛市就此结束了，我不相信趋势改变了，我更不相信主力会前功尽弃。所以主力，你可以洗盘，你可以震仓，但是你想要以这种方式把我赶出去，门都没有！啥都不说了，凸教授今天很难受，但凸教授绝不退缩，我会继续满仓持股，一股不卖！",
       "publish_time": "2026-05-14 20:22"
     },
@@ -7799,7 +7793,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "此刻，不管别人怎么说，不管别人怎么做，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-05-24 20:20"
     },
@@ -7815,7 +7809,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "intraday",
+      "time_horizon": "short",
       "evidence": "凸教授坚定做多，左手券商，右手科技，继续满仓持股，经过今天的下跌之后，全球大的拐点即将来临，A股将王者归来！",
       "publish_time": "2026-06-08 11:28"
     }

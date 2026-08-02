@@ -2,28 +2,28 @@
   "blogger": "奔走的股票",
   "scoring_version": "v11 (time_horizon-windowed single formula)",
   "signals_total": 186,
-  "signals_scored": 81,
-  "score_zero": 67,
+  "signals_scored": 148,
+  "score_zero": 0,
   "no_price": 0,
   "no_segment": 38,
   "scores": {
     "综合": {
-      "total": 8.65,
-      "count": 81,
-      "avg_pct": 0.11,
-      "win_rate": 60.49
+      "total": 2.57,
+      "count": 148,
+      "avg_pct": 0.02,
+      "win_rate": 54.73
     },
     "上升段": {
-      "total": 6.75,
-      "count": 49,
-      "avg_pct": 0.14,
-      "win_rate": 61.22
+      "total": -0.53,
+      "count": 74,
+      "avg_pct": -0.01,
+      "win_rate": 58.11
     },
     "下降段": {
-      "total": 1.89,
-      "count": 32,
-      "avg_pct": 0.06,
-      "win_rate": 59.38
+      "total": 3.1,
+      "count": 74,
+      "avg_pct": 0.04,
+      "win_rate": 51.35
     },
     "抄底": {
       "total": 3.82,
@@ -38,30 +38,30 @@
       "win_rate": 50.0
     },
     "看多": {
-      "total": 11.77,
-      "count": 57,
-      "avg_pct": 0.21,
-      "win_rate": 68.42
+      "total": 16.04,
+      "count": 103,
+      "avg_pct": 0.16,
+      "win_rate": 62.14
     },
     "看空": {
-      "total": -3.12,
-      "count": 24,
-      "avg_pct": -0.13,
-      "win_rate": 41.67
+      "total": -13.46,
+      "count": 45,
+      "avg_pct": -0.3,
+      "win_rate": 37.78
     }
   },
   "time_horizon_scores": {
     "short": {
-      "count": 58,
-      "total": 7.49,
-      "avg_pct": 0.13,
-      "win_rate": 63.79
+      "count": 109,
+      "total": -0.59,
+      "avg_pct": -0.01,
+      "win_rate": 51.38
     },
     "weekly": {
-      "count": 23,
-      "total": 1.16,
-      "avg_pct": 0.05,
-      "win_rate": 52.17
+      "count": 0,
+      "total": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
     },
     "biweekly": {
       "count": 0,
@@ -76,22 +76,22 @@
       "win_rate": 0.0
     },
     "intraday": {
-      "count": 51,
+      "count": 0,
       "total": 0.0,
       "avg_pct": 0.0,
       "win_rate": 0.0
     },
     "long": {
       "count": 1,
-      "total": 0.0,
-      "avg_pct": 0.0,
-      "win_rate": 0.0
+      "total": 1.39,
+      "avg_pct": 1.39,
+      "win_rate": 100.0
     },
     "unspecified": {
       "count": 15,
-      "total": 0.0,
-      "avg_pct": 0.0,
-      "win_rate": 0.0
+      "total": 0.72,
+      "avg_pct": 0.05,
+      "win_rate": 66.67
     }
   },
   "segments": {
@@ -102,7 +102,7 @@
       "total": 4,
       "bull": 4,
       "bear": 0,
-      "score": 3.14
+      "score": 2.96
     },
     "I10->I11": {
       "direction": "falling",
@@ -111,7 +111,7 @@
       "total": 11,
       "bull": 6,
       "bear": 5,
-      "score": -1.65
+      "score": -1.37
     },
     "I11->I12": {
       "direction": "rising",
@@ -120,7 +120,7 @@
       "total": 8,
       "bull": 6,
       "bear": 2,
-      "score": 1.07
+      "score": 1.16
     },
     "I12->M5": {
       "direction": "falling",
@@ -138,7 +138,7 @@
       "total": 23,
       "bull": 21,
       "bear": 2,
-      "score": -4.39
+      "score": 4.09
     },
     "I4->I5": {
       "direction": "falling",
@@ -147,7 +147,7 @@
       "total": 26,
       "bull": 13,
       "bear": 13,
-      "score": 2.38
+      "score": -1.17
     },
     "I5->I6": {
       "direction": "rising",
@@ -165,7 +165,7 @@
       "total": 9,
       "bull": 7,
       "bear": 2,
-      "score": 3.77
+      "score": 1.22
     },
     "I9->I10": {
       "direction": "rising",
@@ -174,7 +174,7 @@
       "total": 3,
       "bull": 0,
       "bear": 3,
-      "score": -1.11
+      "score": -2.6
     },
     "M3->M4": {
       "direction": "rising",
@@ -183,7 +183,7 @@
       "total": 39,
       "bull": 25,
       "bear": 14,
-      "score": -4.44
+      "score": -13.07
     },
     "M4->I9": {
       "direction": "falling",
@@ -201,7 +201,7 @@
       "total": 15,
       "bull": 12,
       "bear": 3,
-      "score": 5.83
+      "score": 8.75
     },
     "M6->I13": {
       "direction": "falling",
@@ -210,7 +210,7 @@
       "total": 3,
       "bull": 3,
       "bear": 0,
-      "score": 0.0
+      "score": -1.45
     }
   },
   "inflection_details": {
