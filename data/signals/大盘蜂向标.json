@@ -22,21 +22,13 @@
   },
   "scored_bearish": {
     "strong": 9,
-    "moderate": 103,
-    "short": 40,
+    "moderate": 102,
+    "short": 39,
     "medium": 12,
     "long": 1,
     "unspecified": 59
   },
   "signals": [
-    {
-      "post_n": 11,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "本周四和周五，再次出现长柱，预示着新一轮收割即将开始，下周二之前A股的斩杀线要来了。",
-      "publish_time": "2025-12-28 20:58"
-    },
     {
       "post_n": 9,
       "direction": "bullish",
