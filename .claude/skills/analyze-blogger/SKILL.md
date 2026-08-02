@@ -54,7 +54,7 @@ cd <项目根目录> && python scripts/scrape_toutiao.py <帖子链接>
   - `moderate` — 有方向判断但措辞温和（"偏多""倾向于""大概率""有望"）
 - `time_horizon`: short / medium / long / unspecified
   - `short` — 3天内预测（T ~ T+2，"明天涨""下午反弹"，包括日内）
-  - `medium` — 预测周期 T+3 到 1 个月（"下周""月中""月底前"）
+  - `medium` — 预测周期 T+3 到 1 个月，更关注 1-2 周（"下周""月中""月底前"）
   - `long` — 预测周期 1 个月及以上（"下个月""下半年""牛市""明年"）
   - `unspecified` — 无明确时间范围
 
