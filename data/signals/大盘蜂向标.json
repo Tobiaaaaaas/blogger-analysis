@@ -15,18 +15,18 @@
   "scored_bullish": {
     "strong": 2,
     "moderate": 87,
-    "short": 41,
-    "medium": 3,
+    "short": 35,
+    "medium": 4,
     "long": 0,
-    "unspecified": 45
+    "unspecified": 50
   },
   "scored_bearish": {
     "strong": 9,
     "moderate": 103,
-    "short": 59,
-    "medium": 8,
+    "short": 40,
+    "medium": 12,
     "long": 1,
-    "unspecified": 44
+    "unspecified": 59
   },
   "signals": [
     {
@@ -73,7 +73,7 @@
       "post_n": 5,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "调整即将到来，不要接最后一棒，只需一根阴线，足以让节后的利润归零。",
       "publish_time": "2026-01-09 17:42"
     },
@@ -81,7 +81,7 @@
       "post_n": 4,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "长柱出现，调整大概率会到来。",
       "publish_time": "2026-01-12 17:58"
     },
@@ -129,7 +129,7 @@
       "post_n": 11,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "所以，今天我的马前炮观点仍然是：调整还没完，所有反弹都是“诱多”，别一看涨了或利好，就头铁往里冲。",
       "publish_time": "2026-01-16 16:10"
     },
@@ -153,7 +153,7 @@
       "post_n": 5,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "今天仍然不变。... 从今天收盘来看，红柱虽然变短了，但是还不够，不符合调整结束的标准。",
       "publish_time": "2026-01-20 20:15"
     },
@@ -161,7 +161,7 @@
       "post_n": 3,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "这也是我认为大盘接下来将【不再温柔】的重要原因。",
       "publish_time": "2026-01-26 12:44"
     },
@@ -201,7 +201,7 @@
       "post_n": 13,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "今天这根小阳线大概率是诱多，接下来还会出现更大亏钱效应。",
       "publish_time": "2026-01-27 21:01"
     },
@@ -313,7 +313,7 @@
       "post_n": 9,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "unspecified",
+      "time_horizon": "medium",
       "evidence": "我的答案是：没有。周末分享过了，大概调整到春节前一周，3930到3960的区间。",
       "publish_time": "2026-02-02 16:37"
     },
@@ -393,7 +393,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "short",
       "evidence": "周末的利好，一定程度改变了短期走势，周一上涨的概率较大。",
       "publish_time": "2026-02-07 17:25"
     },
@@ -417,7 +417,7 @@
       "post_n": 2,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "大盘即将再次出现调整！",
       "publish_time": "2026-02-10 23:15"
     },
@@ -441,7 +441,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "unspecified",
+      "time_horizon": "medium",
       "evidence": "指数不是黑周四，个股黑周四。节前反转的概率只有10%。",
       "publish_time": "2026-02-11 21:34"
     },
@@ -505,7 +505,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "unspecified",
+      "time_horizon": "medium",
       "evidence": "节前这一跌，把包袱卸了，把幻想砸了，把节后空间留出来了。",
       "publish_time": "2026-02-13 20:36"
     },
@@ -521,7 +521,7 @@
       "post_n": 1,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "上午的大涨，没有改变调整周期，只是礼貌性反弹，而非反转。",
       "publish_time": "2026-02-24 12:46"
     },
@@ -561,7 +561,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "今天的红柱没有变长，所以，给市场一些时间消化利空。",
       "publish_time": "2026-03-02 12:49"
     },
@@ -633,7 +633,7 @@
       "post_n": 9,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "反弹结束，新一轮的调整要来了。",
       "publish_time": "2026-03-11 22:04"
     },
@@ -641,7 +641,7 @@
       "post_n": 8,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "我昨天的观点很明确，新一轮的调整要来了，这是基于恐慌指数的判断。",
       "publish_time": "2026-03-12 21:40"
     },
@@ -649,7 +649,7 @@
       "post_n": 7,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "今天的恐慌指数显示，绿柱没出现，说明调整还未结束。",
       "publish_time": "2026-03-13 15:52"
     },
@@ -657,7 +657,7 @@
       "post_n": 6,
       "direction": "bearish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "今天调整结束了吗？未结束，远未结束！",
       "publish_time": "2026-03-13 18:05"
     },
@@ -825,7 +825,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "1、反弹还没结束。2、两天涨了100多点，而且是普涨，短期会有震荡。",
       "publish_time": "2026-03-25 19:07"
     },
@@ -857,7 +857,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "今天大盘能低开高走，根本原因在于，目前处于恐慌指数的反弹周期，过程虽然颠簸，但不改变结果。",
       "publish_time": "2026-03-27 17:56"
     },
@@ -945,7 +945,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "接下来反弹还会继续吗？我的判断是：会。因为恐慌指数的红柱还没变长。",
       "publish_time": "2026-04-08 12:44"
     },
@@ -953,7 +953,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "比如绿柱出现，反弹的概率超过95%，就像3月23日绿柱出线，到今天反弹了200点，中间的任何下跌都是洗盘。",
       "publish_time": "2026-04-08 21:20"
     },
@@ -1049,7 +1049,7 @@
       "post_n": 1,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "medium",
       "evidence": "节前还有四个交易日，按照A股的德性，长假前资金避险情绪会升温，增量资金进场意愿低，很难撬动指数走出大的反弹行情。",
       "publish_time": "2026-04-24 21:07"
     },
@@ -1089,7 +1089,7 @@
       "post_n": 6,
       "direction": "bearish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "medium",
       "evidence": "4190的跳水一幕，会再次上演吗？会，大概率会，快的话明天，最晚下周一。",
       "publish_time": "2026-05-07 18:57"
     },
@@ -1097,7 +1097,7 @@
       "post_n": 4,
       "direction": "bearish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "上午如期跳水，下午反抽，大盘调整结束了吗？我不学其他博主模棱两可，我的回答是：没有！",
       "publish_time": "2026-05-08 15:51"
     },
@@ -1105,7 +1105,7 @@
       "post_n": 3,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "unspecified",
+      "time_horizon": "short",
       "evidence": "周末美股上涨，会让A股短暂冲高；冲高，可以有；但别当真，更别追高。",
       "publish_time": "2026-05-10 12:51"
     },
@@ -1137,7 +1137,7 @@
       "post_n": 9,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "今天大盘没问题，接下来怎么走？第三句话：再来一巴掌。",
       "publish_time": "2026-05-13 12:24"
     },
@@ -1177,7 +1177,7 @@
       "post_n": 3,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "所以，接下来的剧本，大概是这样——跌多了，给你一颗糖；吃完糖，继续震荡寻底。这里没有V型反转，只有“跌多了反弹”。",
       "publish_time": "2026-05-18 18:37"
     },
@@ -1185,7 +1185,7 @@
       "post_n": 2,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "在恐慌指数的定义中，只要1买或1卖转2买没有出现，调整就没结束。就是说，下跌周期中的任何反弹都是为再次下跌做准备，即使明天涨，也还是下跌周期的反弹，谈不上反转。",
       "publish_time": "2026-05-19 20:22"
     },
@@ -1217,7 +1217,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "今天的反弹，开心归开心，接下来的反弹之路会不平坦，会有反复。",
       "publish_time": "2026-05-22 19:14"
     },
@@ -1353,7 +1353,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "市场很快会迎来普涨式反弹，请拭目以待。",
       "publish_time": "2026-06-03 18:10"
     },
@@ -1409,7 +1409,7 @@
       "post_n": 9,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "所以，接下来的一切反弹，还是主力的“糖”，除非绿柱再度出现。",
       "publish_time": "2026-06-10 18:03"
     },
@@ -1489,7 +1489,7 @@
       "post_n": 11,
       "direction": "bearish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "今天大跌，调整结束了吗？我的回答是：还、没、有。",
       "publish_time": "2026-07-13 22:27"
     },
@@ -1497,7 +1497,7 @@
       "post_n": 10,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "unspecified",
+      "time_horizon": "medium",
       "evidence": "只要绿柱没有出现，下跌周期就会延续，调整就没结束。这是对中期走势的判断。",
       "publish_time": "2026-07-14 12:31"
     },

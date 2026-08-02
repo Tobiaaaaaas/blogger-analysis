@@ -15,18 +15,18 @@
   "scored_bullish": {
     "strong": 510,
     "moderate": 446,
-    "short": 570,
-    "medium": 103,
+    "short": 503,
+    "medium": 112,
     "long": 48,
-    "unspecified": 235
+    "unspecified": 293
   },
   "scored_bearish": {
     "strong": 0,
     "moderate": 17,
     "short": 11,
-    "medium": 2,
-    "long": 0,
-    "unspecified": 4
+    "medium": 1,
+    "long": 2,
+    "unspecified": 3
   },
   "signals": [
     {
@@ -65,7 +65,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "long",
+      "time_horizon": "unspecified",
       "evidence": "小级别服从大趋势，大盘目前的趋势依然是震荡向上的，本次变盘，不是反弹，而是反转，一旦变盘信号出现，大盘接下来将突破3200点，剑指3300点！",
       "publish_time": "2024-06-04 21:56"
     },
@@ -425,7 +425,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "long",
+      "time_horizon": "medium",
       "evidence": "七月份将峰回路转，苦尽甘来！",
       "publish_time": "2024-06-30 21:03"
     },
@@ -441,7 +441,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "long",
+      "time_horizon": "medium",
       "evidence": "七月开门红，寓意七月全月红。",
       "publish_time": "2024-07-01 15:21"
     },
@@ -1041,7 +1041,7 @@
       "post_n": 12,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "long",
       "evidence": "本周大盘缩量震荡，底部形态逐渐清晰，下一步，市场还将继续缩量磨底，大盘连续拉升的概率不大，更多的是小阴小阳磨出一个“圆弧底”，时间短则一个月，长则两个月。",
       "publish_time": "2024-09-20 15:15"
     },
@@ -1049,7 +1049,7 @@
       "post_n": 11,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "unspecified",
+      "time_horizon": "long",
       "evidence": "在银行板块没有调整到位之前，不要奢望上证指数会有好的表现，大盘还会继续缩量，小阴小阳继续磨底，这个过程至少要持续一个月以上。",
       "publish_time": "2024-09-22 08:52"
     },
@@ -1097,7 +1097,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "大盘今日冲高回落，不用担心，这是典型的“仙人指路”，今天大盘这根上影线直接解放了近一年的套牢盘，后面一段时间，大盘会在这里反复震荡，消化套牢筹码。",
       "publish_time": "2024-09-25 16:23"
     },
@@ -1105,7 +1105,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "unspecified",
+      "time_horizon": "long",
       "evidence": "三大喜讯，热泪盈眶，准备迎接“疯牛”时代！",
       "publish_time": "2024-09-26 15:10"
     },
@@ -1113,7 +1113,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "unspecified",
+      "time_horizon": "long",
       "evidence": "“疯牛”已经在路上，请各位在思想上一定要调整过来，这波“疯牛”行情会诞生出很多十倍大牛股",
       "publish_time": "2024-09-27 11:31"
     },
@@ -1129,7 +1129,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "unspecified",
+      "time_horizon": "long",
       "evidence": "凸教授可以明确的告诉各位，这一次，是真的，而且这一次的行情，将会是史无前例的“疯牛”行情！",
       "publish_time": "2024-09-29 10:07"
     },
@@ -1137,7 +1137,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "long",
+      "time_horizon": "medium",
       "evidence": "行情一旦启动，谁都挡不住，在大趋势面前，所有的技术都不堪一击，继续大胆持股，坚定持股！持股过节，持股过节，持股过节，重要的事情说三遍！节后行情还将继续延续，此时行情正猛，不用着急下车！",
       "publish_time": "2024-09-30 11:30"
     },
@@ -1553,7 +1553,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "今天账户再次获利回吐，凸教授也没什么说的，只能是继续持股，满仓看涨。",
       "publish_time": "2024-10-29 15:04"
     },
@@ -1705,7 +1705,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "凸教授认为，今日市场放量，依然是散户卖，主力进，随着大盘的不断震荡上攻，散户会越来越少，主力手中的筹码会越来越多，后面大盘还会继续上攻。",
       "publish_time": "2024-11-06 22:00"
     },
@@ -1849,7 +1849,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "别看今天跌得很凶，但是市场没有问题，大盘很快就会迎来全面反攻。",
       "publish_time": "2024-11-14 15:08"
     },
@@ -1897,7 +1897,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "medium",
       "evidence": "排除消息面影响，明日大盘止跌企稳，下周二之前，必出中大阳线！下周一旦大盘再次上攻，上证指数将突破3500点，剑指3600点！",
       "publish_time": "2024-11-17 21:29"
     },
@@ -2425,7 +2425,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "今日大盘继续缩量，缩量就没有问题，后面大盘将继续慢慢震荡向上。",
       "publish_time": "2024-12-30 15:03"
     },
@@ -2577,7 +2577,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "medium",
       "evidence": "今日大盘继续慢慢震荡向上，但是节奏很慢，不过整体上节前的反攻行情还并未结束，下周大盘还会继续上攻，我会继续满仓持股，耐心等待。",
       "publish_time": "2025-01-17 15:06"
     },
@@ -2721,7 +2721,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "今天下午的跳水，不仅不是行情结束的信号，它反而预示着后面的行情会更大，更强！",
       "publish_time": "2025-02-07 15:04"
     },
@@ -3361,7 +3361,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "medium",
       "evidence": "清明节前最后一个交易日，大盘继续缩量震荡，节后开始正式向上进攻，如果节奏快的话，不排除明日尾盘，主力偷袭拉升的可能。",
       "publish_time": "2025-04-02 21:02"
     },
@@ -3385,7 +3385,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "unspecified",
+      "time_horizon": "short",
       "evidence": "所以，A股崩不了，周一大幅低开后，会第一时间迅速拉起来，关键时刻，信心远比黄金更重要，大家不用慌张！",
       "publish_time": "2025-04-05 09:38"
     },
@@ -3705,7 +3705,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "medium",
       "evidence": "一旦今日大盘收中阳线，那么五一节后，上证指数喜迎开门红，没有悬念！",
       "publish_time": "2025-04-30 11:29"
     },
@@ -4401,7 +4401,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "行情走到今天，很多人已经非常悲观了，但是在凸教授看来，市场不仅没有风险，反而机会非常大，我是现在没有钱了，如果有钱，我会毫不犹豫的买进去。总之，不管别人怎么说，我会一直满仓持股下去，直到账户迎来真正的爆发！",
       "publish_time": "2025-06-21 10:57"
     },
@@ -5281,7 +5281,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "long",
       "evidence": "恭喜各位，从今天开始，中国股市将正式迎来一轮超级大牛市，这波牛市，是史无前例的！",
       "publish_time": "2025-08-13 15:05"
     },
@@ -5537,7 +5537,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "medium",
       "evidence": "今日大盘重返3800点之上，强势完成反包，虽然大量个股涨幅并不大，但是本轮调整已经确定结束，从下周开始，新一轮的行情将正式开启！",
       "publish_time": "2025-09-05 15:01"
     },
@@ -5553,7 +5553,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "medium",
       "evidence": "今日周一，大盘全天震荡，收十字星，休息一天，从本周二开始，大盘将再次向上进攻。一旦大盘再次向上进攻，目标就是剑指4000点！",
       "publish_time": "2025-09-08 11:30"
     },
@@ -5737,7 +5737,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "下午怎么办？还能怎么办？既然主力满肚子坏水，那么咱们就继续满仓持股，不达目标，绝不罢休！",
       "publish_time": "2025-09-18 11:29"
     },
@@ -6193,7 +6193,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2025-11-23 19:54"
     },
@@ -6289,7 +6289,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "么说，不管别人怎么做，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2025-11-30 20:23"
     },
@@ -6297,7 +6297,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "么说，不管别人怎么做，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2025-12-01 20:42"
     },
@@ -6329,7 +6329,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "不管别人怎么说，不管别人怎么做，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2025-12-07 20:22"
     },
@@ -6337,7 +6337,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2025-12-08 20:29"
     },
@@ -6345,7 +6345,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2025-12-09 20:34"
     },
@@ -6353,7 +6353,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2025-12-10 20:46"
     },
@@ -6361,7 +6361,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "不管别人怎么说，不管别人怎么做，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2025-12-11 20:34"
     },
@@ -6377,7 +6377,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "不管别人怎么说，不管别人怎么做，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2025-12-14 20:24"
     },
@@ -6401,7 +6401,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "么说，不管别人怎么做，此时此刻，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2025-12-17 20:25"
     },
@@ -6409,7 +6409,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "不管别人怎么说，不管别人怎么做，此时此刻，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2025-12-18 20:26"
     },
@@ -6417,7 +6417,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2025-12-21 20:25"
     },
@@ -6433,7 +6433,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2025-12-23 20:23"
     },
@@ -6441,7 +6441,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2025-12-24 20:23"
     },
@@ -6465,7 +6465,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2025-12-28 20:26"
     },
@@ -6473,7 +6473,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "不管别人怎么说，不管别人怎么做，此时此刻，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2025-12-29 20:44"
     },
@@ -6481,7 +6481,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2025-12-30 20:21"
     },
@@ -6497,7 +6497,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-01-05 21:02"
     },
@@ -6521,7 +6521,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "别人怎么说，不管别人怎么做，此时此刻，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-01-06 20:24"
     },
@@ -6537,7 +6537,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "怎么说，不管别人怎么做，此时此刻，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-01-07 20:25"
     },
@@ -6561,7 +6561,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "怎么说，不管别人怎么做，此时此刻，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-01-11 20:47"
     },
@@ -6593,7 +6593,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "怎么说，不管别人怎么做，此时此刻，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-01-13 20:25"
     },
@@ -6617,7 +6617,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "不管别人怎么做，此时此刻，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-01-14 20:25"
     },
@@ -6657,7 +6657,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "别人怎么说，不管别人怎么做，此时此刻，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-01-18 20:34"
     },
@@ -6673,7 +6673,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "不管别人怎么做，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-01-19 20:27"
     },
@@ -6681,7 +6681,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-01-20 20:25"
     },
@@ -6705,7 +6705,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "今天大盘虽然涨幅并不大，但是整体节奏正在回到之前的趋势中，尤其是大量的个股，最近两天都在反攻，这是非常好的现象。",
       "publish_time": "2026-01-23 15:00"
     },
@@ -6745,7 +6745,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "不管别人怎么做，此时此刻，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-01-27 20:29"
     },
@@ -6761,7 +6761,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "不管别人怎么做，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-02-01 20:27"
     },
@@ -6777,7 +6777,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "不管别人怎么做，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-02-02 20:24"
     },
@@ -6793,7 +6793,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-02-03 20:27"
     },
@@ -7041,7 +7041,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "不管别人怎么说，不管别人怎么做，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-03-05 20:19"
     },
@@ -7081,7 +7081,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "不管别人怎么说，不管别人怎么做，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-03-09 20:19"
     },
@@ -7225,7 +7225,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "不管别人怎么说，不管别人怎么做，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-03-22 20:19"
     },
@@ -7233,7 +7233,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "不管别人怎么说，不管别人怎么做，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-03-23 20:23"
     },
@@ -7249,7 +7249,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-03-24 20:29"
     },
@@ -7289,7 +7289,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-03-26 20:23"
     },
@@ -7313,7 +7313,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-03-29 20:21"
     },
@@ -7337,7 +7337,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-03-30 20:22"
     },
@@ -7361,7 +7361,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-03-31 20:22"
     },
@@ -7385,7 +7385,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-04-01 20:22"
     },
@@ -7409,7 +7409,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-04-07 20:18"
     },
@@ -7433,7 +7433,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-04-08 20:31"
     },
@@ -7473,7 +7473,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-04-12 20:21"
     },
@@ -7481,7 +7481,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-04-13 20:34"
     },
@@ -7545,7 +7545,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-04-19 20:19"
     },
@@ -7569,7 +7569,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-04-20 20:22"
     },
@@ -7649,7 +7649,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "不管别人怎么说，不管别人怎么做，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-05-05 20:25"
     },
@@ -7721,7 +7721,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "我始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-05-11 20:17"
     },
@@ -7745,7 +7745,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-05-12 20:52"
     },
@@ -7793,7 +7793,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "此刻，不管别人怎么说，不管别人怎么做，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-05-24 20:20"
     },
@@ -7801,7 +7801,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "不管明天大盘走势如何，都请你再给自己一点时间，给市场一点时间。",
       "publish_time": "2026-05-31 20:22"
     },
@@ -7809,7 +7809,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "strong",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "凸教授坚定做多，左手券商，右手科技，继续满仓持股，经过今天的下跌之后，全球大的拐点即将来临，A股将王者归来！",
       "publish_time": "2026-06-08 11:28"
     }

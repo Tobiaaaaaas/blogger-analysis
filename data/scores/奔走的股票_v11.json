@@ -8,22 +8,22 @@
   "no_segment": 38,
   "scores": {
     "综合": {
-      "total": -1.54,
+      "total": -12.94,
       "count": 148,
-      "avg_pct": -0.01,
-      "win_rate": 52.7
+      "avg_pct": -0.09,
+      "win_rate": 49.32
     },
     "上升段": {
-      "total": -1.22,
+      "total": -6.74,
       "count": 74,
-      "avg_pct": -0.02,
-      "win_rate": 55.41
+      "avg_pct": -0.09,
+      "win_rate": 54.05
     },
     "下降段": {
-      "total": -0.32,
+      "total": -6.2,
       "count": 74,
-      "avg_pct": -0.0,
-      "win_rate": 50.0
+      "avg_pct": -0.08,
+      "win_rate": 44.59
     },
     "抄底": {
       "total": 3.82,
@@ -38,30 +38,30 @@
       "win_rate": 50.0
     },
     "看多": {
-      "total": 10.63,
+      "total": 1.56,
       "count": 103,
-      "avg_pct": 0.1,
-      "win_rate": 61.17
+      "avg_pct": 0.02,
+      "win_rate": 56.31
     },
     "看空": {
-      "total": -12.17,
+      "total": -14.5,
       "count": 45,
-      "avg_pct": -0.27,
+      "avg_pct": -0.32,
       "win_rate": 33.33
     }
   },
   "time_horizon_scores": {
     "short": {
-      "count": 109,
-      "total": -0.59,
-      "avg_pct": -0.01,
-      "win_rate": 51.38
+      "count": 117,
+      "total": -2.53,
+      "avg_pct": -0.02,
+      "win_rate": 49.57
     },
     "medium": {
-      "count": 23,
-      "total": -3.07,
-      "avg_pct": -0.13,
-      "win_rate": 47.83
+      "count": 24,
+      "total": -4.57,
+      "avg_pct": -0.19,
+      "win_rate": 45.83
     },
     "long": {
       "count": 1,
@@ -70,10 +70,10 @@
       "win_rate": 100.0
     },
     "unspecified": {
-      "count": 15,
-      "total": 0.72,
-      "avg_pct": 0.05,
-      "win_rate": 66.67
+      "count": 6,
+      "total": -7.24,
+      "avg_pct": -1.21,
+      "win_rate": 50.0
     }
   },
   "segments": {
@@ -120,7 +120,7 @@
       "total": 23,
       "bull": 21,
       "bear": 2,
-      "score": 2.89
+      "score": -4.85
     },
     "I4->I5": {
       "direction": "falling",
@@ -129,7 +129,7 @@
       "total": 26,
       "bull": 13,
       "bear": 13,
-      "score": -3.65
+      "score": -1.79
     },
     "I5->I6": {
       "direction": "rising",
@@ -165,7 +165,7 @@
       "total": 39,
       "bull": 25,
       "bear": 14,
-      "score": -13.03
+      "score": -18.54
     },
     "M4->I9": {
       "direction": "falling",

@@ -15,18 +15,18 @@
   "scored_bullish": {
     "strong": 1,
     "moderate": 389,
-    "short": 301,
-    "medium": 23,
-    "long": 2,
-    "unspecified": 64
+    "short": 285,
+    "medium": 27,
+    "long": 3,
+    "unspecified": 75
   },
   "scored_bearish": {
     "strong": 0,
     "moderate": 336,
-    "short": 267,
-    "medium": 15,
+    "short": 234,
+    "medium": 19,
     "long": 0,
-    "unspecified": 54
+    "unspecified": 83
   },
   "signals": [
     {
@@ -73,7 +73,7 @@
       "post_n": 9,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "如果接下来市场出现震荡，整固，调整的行情，我认为市场调整的终极目标位有可能会到达3400点附近。",
       "publish_time": "2025-07-24 08:06"
     },
@@ -241,7 +241,7 @@
       "post_n": 6,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "但是我们可以看到30分钟级别压力线依然非常清晰。那么也就是说上证指数在当前这个点位从30分钟级别来看，是不适合做抄底加法的。因为我们要防止接下来还会有一个下跌的c浪。而下跌c浪的目标位可能在3542点。",
       "publish_time": "2025-07-31 14:09"
     },
@@ -385,7 +385,7 @@
       "post_n": 14,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "unspecified",
       "evidence": "个人认为仓位上不再加仓。当然没跌破5日线也可以留着。但是整体来看，要保留比较大的空余仓位，还是要防止市场出现一次像上周星期四那样的阴线调整。我认为接下来市场的第1支撑点将会出现在3583点附近。",
       "publish_time": "2025-08-08 14:10"
     },
@@ -513,7 +513,7 @@
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "medium",
       "evidence": "大盘接下来问题并不会很大。但短线向上的空间基本上也已经很小。预计大盘明天还会是一个窄幅震荡的走势。明天窄幅震荡之后，下周一或者二还能够小幅度的再上冲。",
       "publish_time": "2025-08-14 14:16"
     },
@@ -761,7 +761,7 @@
       "post_n": 6,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "对于指数整体的观点，我个人认为接下来调整的概率是相对偏大的。",
       "publish_time": "2025-08-27 10:09"
     },
@@ -809,7 +809,7 @@
       "post_n": 13,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "对于大盘接下来的走势，依然维持相对谨慎的观点。",
       "publish_time": "2025-08-29 14:06"
     },
@@ -921,7 +921,7 @@
       "post_n": 13,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "我们要小心，接下来市场在“放量涨不动”的情况下，出现掉头向下的可能性。",
       "publish_time": "2025-09-09 07:52"
     },
@@ -1113,7 +1113,7 @@
       "post_n": 3,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "medium",
       "evidence": "从周线级别来看，上证指数出现了周线级别“两阴夹一阳”的走势。对比前期历史上涨的高度，以及近期调整的时间和空间来看，上证指数接下来再震荡调整一个交易周的概率比较大",
       "publish_time": "2025-09-21 16:49"
     },
@@ -1137,7 +1137,7 @@
       "post_n": 11,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "那么这种情况下我们还是要考虑指数，接下来会向下去寻找支撑。也就是说去寻找日线级别前期地点9月4号的低点3732点的支撑。",
       "publish_time": "2025-09-22 13:59"
     },
@@ -1153,7 +1153,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "unspecified",
+      "time_horizon": "medium",
       "evidence": "我个人的判断是主力不会防守3800点，而是会选择防守更为有利的点位3732点 “在3732点附近构筑双底”之后，节后再往上去做一个拉升，这样更加的合理。",
       "publish_time": "2025-09-23 10:39"
     },
@@ -1225,7 +1225,7 @@
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "大盘指数目前没有问题，接下来我还是看探底回升的走势。",
       "publish_time": "2025-09-26 10:17"
     },
@@ -1249,7 +1249,7 @@
       "post_n": 7,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "在这种情况下，个人认为指数整体接下来将会进入到大周期的横向箱体震荡盘整。箱体的高点在3900点附近，箱体的低点在3732点附近。",
       "publish_time": "2025-09-28 15:40"
     },
@@ -1297,7 +1297,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "unspecified",
+      "time_horizon": "medium",
       "evidence": "市场偏强震荡节后开门红？",
       "publish_time": "2025-09-30 15:15"
     },
@@ -1321,7 +1321,7 @@
       "post_n": 0,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "那么接下来我们要防止市场突破3900点之后，“回踩确认3900点”这样的一个走势。",
       "publish_time": "2025-10-09 14:35"
     },
@@ -1377,7 +1377,7 @@
       "post_n": 0,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "对于指数，我个人的观点是接下来继续震荡调整的概率相对偏大一些。",
       "publish_time": "2025-10-15 10:05"
     },
@@ -1833,7 +1833,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "short",
       "evidence": "如果两个交易日都能稳在5日线的上方，那么在第3个交易日，市场将会展开向上破新高的动作。而且预计市场新的高点可能会出现在4065点附近。",
       "publish_time": "2025-11-07 14:04"
     },
@@ -1921,7 +1921,7 @@
       "post_n": 6,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "但是我认为接下来几个交易日市场指数回到箱体低点3922点还是相对大概率的事件。",
       "publish_time": "2025-11-14 10:26"
     },
@@ -2201,7 +2201,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "short",
       "evidence": "据我观察，接下来上证指数只要突破本周星期四的高点3895点，那么短线或者也能够迎来一个小型的向上加速走势。",
       "publish_time": "2025-11-29 07:26"
     },
@@ -2353,7 +2353,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "medium",
+      "time_horizon": "short",
       "evidence": "12月5日A股早评：今天或向上变盘",
       "publish_time": "2025-12-05 06:41"
     },
@@ -2385,7 +2385,7 @@
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "所以，如果我的推断成立的话，接下来上证指数很有可能在短期之内重新回到4000点附近。",
       "publish_time": "2025-12-06 13:35"
     },
@@ -2489,7 +2489,7 @@
       "post_n": 3,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "对于A股近期走势的判断，个人认为，进入到震荡回落阶段的概率相对较大。",
       "publish_time": "2025-12-12 07:36"
     },
@@ -2521,7 +2521,7 @@
       "post_n": 13,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "而据我观察，美股接下来进入到阶段调整的阶段，是大概率事件。",
       "publish_time": "2025-12-15 14:24"
     },
@@ -2529,7 +2529,7 @@
       "post_n": 7,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "所以接下来A股大概率向下寻找支撑，而最近的支撑点在3816点附近。",
       "publish_time": "2025-12-16 06:40"
     },
@@ -2593,7 +2593,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "medium",
       "evidence": "个人认为问题不大，还记得在今天中午的时候，我就明确告诉大家，对于明天市场走势的判断是，明天可能收一颗震荡的十字星。可能还会出现微幅调整的情况，但是一旦明天收出震荡十字星之后，后一个交易日，市场大概率能够再上行。也就是说，在下周星期一的时候，我们应该能够看到比较明显的上行的阳线。",
       "publish_time": "2025-12-18 14:03"
     },
@@ -2665,7 +2665,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "unspecified",
+      "time_horizon": "long",
       "evidence": "而一旦这个横向盘整的过程完成的话，市场指数再往上走一个新的月线级别的上涨浪，应该是问题不大。",
       "publish_time": "2025-12-22 18:23"
     },
@@ -2713,7 +2713,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "3900点上方，我们就可以看多，而一旦接下来跌破3900点，这个时候我们就要注意市场有可能会再次回到3816点附近。",
       "publish_time": "2025-12-24 14:05"
     },
@@ -2897,7 +2897,7 @@
       "post_n": 13,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "medium",
       "evidence": "我认为这个点位短时间内，甚至本周以内可能无法突破。这是我要讲的第1个重要的观点。第2个重要的观点是，接下来10连阳之后出阴线的概率比昨天又更大了一些。",
       "publish_time": "2025-12-30 14:27"
     },
@@ -3025,7 +3025,7 @@
       "post_n": 6,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "因为接下来我们大概率是可以等到连续阳线之后的首根阴线的调整的。",
       "publish_time": "2026-01-09 13:51"
     },
@@ -3129,7 +3129,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "既然指数能够在当前点位稳住，那么暂时就不宜过度的紧张了，上证指数接下来或者会走出在4098点上方。横向盘整的走势我的意思是说，市场指数不会大涨，但是也不会大跌，而是开始横着走。",
       "publish_time": "2026-01-15 10:02"
     },
@@ -3193,7 +3193,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "据我观察，A股整体来说，向上变盘的概率更大一些，如果向上变盘的话，市场短期的目标位。可以看到4190点附近，或者略微超过4190点，到达4192点附近。",
       "publish_time": "2026-01-18 13:16"
     },
@@ -3201,7 +3201,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "medium",
       "evidence": "如果今天A股向下跌的话，将会跌破10日以及近期日线级别上升支撑线，那么全周大概率就会向下走。反之A股如果今天震荡上行，则全周都有望维持上涨态势。",
       "publish_time": "2026-01-19 07:56"
     },
@@ -3545,7 +3545,7 @@
       "post_n": 14,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "这里我个人的观点是倾向于市场接下来是震荡偏弱的状态，不过这种偏弱，不是说市场要大幅度的调整 ，而是说市场可能会震荡回落，但是并不会出现深跌的情况。",
       "publish_time": "2026-02-10 10:29"
     },
@@ -3585,7 +3585,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "那么这就证明主力在这个位置并不想让市场的技术形态变坏，市场的主力，接下来还想继续往上走。",
       "publish_time": "2026-02-12 10:34"
     },
@@ -3601,7 +3601,7 @@
       "post_n": 3,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "unspecified",
+      "time_horizon": "medium",
       "evidence": "对于节后的走势，我个人倾向于市场可能会走箱体走势。箱体的高点是在最近的高点，4142点附近，箱体的低点是近期的低点，4002点附近。",
       "publish_time": "2026-02-13 07:11"
     },
@@ -3625,7 +3625,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "medium",
       "evidence": "假设接下来A股也调整34个交易日，据此判断，接下来或者还有10个交易日的样子，市场指数可能会见到阶段调整结束的拐点。",
       "publish_time": "2026-02-23 13:38"
     },
@@ -3849,7 +3849,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "这种低点抬高的走势，预示着接下来上证指数上行的可能性正在增加。",
       "publish_time": "2026-03-13 07:58"
     },
@@ -3881,7 +3881,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "所以上证指数在周一开盘的时候，就有望获得支撑，从而产生反弹。",
       "publish_time": "2026-03-15 14:31"
     },
@@ -4201,7 +4201,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "如果一切理想的情况下，市场指数接下来反弹的目标位，或者可以到达4000点附近。",
       "publish_time": "2026-03-31 07:57"
     },
@@ -4353,7 +4353,7 @@
       "post_n": 4,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "接下来市场会出现震荡调整。",
       "publish_time": "2026-04-09 11:30"
     },
@@ -4361,7 +4361,7 @@
       "post_n": 3,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "对于接下来的走势，我依然维持震荡的判断。",
       "publish_time": "2026-04-09 15:27"
     },
@@ -4377,7 +4377,7 @@
       "post_n": 14,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "预计接下来震荡调整的概率大。",
       "publish_time": "2026-04-10 07:51"
     },
@@ -4433,7 +4433,7 @@
       "post_n": 9,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "据我观察，接下来美股调整的概率大。",
       "publish_time": "2026-04-14 07:42"
     },
@@ -4465,7 +4465,7 @@
       "post_n": 0,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "整体来说，控制仓位，不盲目追高，然后呢，如果市场接下来有显著低点等待低吸的机会。",
       "publish_time": "2026-04-15 11:40"
     },
@@ -4649,7 +4649,7 @@
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "预计周一的时候，市场或许有温和反弹。",
       "publish_time": "2026-04-25 08:54"
     },
@@ -4665,7 +4665,7 @@
       "post_n": 14,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "unspecified",
+      "time_horizon": "medium",
       "evidence": "据我观察和判断，从 A股三大指数的周K线图来分析 A股节前最后一个交易周，周K线收阴线的概率相对偏大。",
       "publish_time": "2026-04-26 15:33"
     },
@@ -4713,7 +4713,7 @@
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "unspecified",
+      "time_horizon": "medium",
       "evidence": "单从成交量的角度来看， A股节后的行情是比较乐观的。",
       "publish_time": "2026-05-01 07:43"
     },
@@ -4809,7 +4809,7 @@
       "post_n": 10,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "如果能够稳住，则市场指数或者还能再小幅度的上行，而如果一旦回到4197点下方，则形成假突破，一旦假突破的话，接下来指",
       "publish_time": "2026-05-12 07:52"
     },
@@ -4873,7 +4873,7 @@
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "unspecified",
+      "time_horizon": "short",
       "evidence": "做空动能充分释放之后，隔天市场有望走出探底回升的行情。",
       "publish_time": "2026-05-14 19:11"
     },
@@ -4881,7 +4881,7 @@
       "post_n": 7,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "据我判断，接下来纳指掉头向下的概率大。",
       "publish_time": "2026-05-15 08:11"
     },
@@ -4897,7 +4897,7 @@
       "post_n": 13,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "接下来大概率美股将进入到波段调整走势。",
       "publish_time": "2026-05-17 16:08"
     },
@@ -4937,7 +4937,7 @@
       "post_n": 4,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "对于当前的反弹，大家降低期待，同时控制仓位。并且如果接下来有明显反弹的话，可以趁着反弹做一点差价。",
       "publish_time": "2026-05-19 11:35"
     },
@@ -4961,7 +4961,7 @@
       "post_n": 13,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "对于接下来市场走势，个人倾向于震荡回落的概率大。",
       "publish_time": "2026-05-20 11:45"
     },
@@ -4977,7 +4977,7 @@
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "市场接下来大概率会走小双底的走势，小双底的第一目标位在4107点附近。",
       "publish_time": "2026-05-21 11:43"
     },
@@ -5001,7 +5001,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "市场如期反弹，接下来反弹大概率还能持续。",
       "publish_time": "2026-05-22 11:47"
     },
@@ -5017,7 +5017,7 @@
       "post_n": 8,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "持续连续大涨之后，接下来震荡回落的概率相对偏大。",
       "publish_time": "2026-05-24 19:16"
     },
@@ -5025,7 +5025,7 @@
       "post_n": 6,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "如果接下来市场再次出现走弱的走势。那么我们就要小心市场的支撑点，可能要到4000点整数关口附近。",
       "publish_time": "2026-05-25 07:44"
     },
@@ -5049,7 +5049,7 @@
       "post_n": 0,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "接下来到底市场会怎么走呢？是不是直接震荡",
       "publish_time": "2026-05-26 11:48"
     },
@@ -5097,7 +5097,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "所以既然主力想守4061点，那么短期我们就往上看。",
       "publish_time": "2026-05-28 18:53"
     },
@@ -5305,7 +5305,7 @@
       "post_n": 2,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "medium",
       "evidence": "预计今天A股或者会走出高开震荡的十字星走势，或者有比较明显的... 第六，从今天开始，整体市场或者会进入到3~5天的横向震荡周期。",
       "publish_time": "2026-06-16 07:47"
     },
@@ -5345,7 +5345,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "个人认为沪指周一或者能够走出震荡偏强的走势。",
       "publish_time": "2026-06-21 08:43"
     },
@@ -5425,7 +5425,7 @@
       "post_n": 3,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "短期市场的走势会相对偏弱。",
       "publish_time": "2026-06-29 07:49"
     },
@@ -5433,7 +5433,7 @@
       "post_n": 14,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "而这种放巨量大涨，往往因为成交量放得过于巨大，导致第2天成交量可能不足，从而导致调。",
       "publish_time": "2026-06-29 18:57"
     },
@@ -5537,7 +5537,7 @@
       "post_n": 13,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "预计接下来还会震荡走弱。",
       "publish_time": "2026-07-08 19:22"
     },
@@ -5569,7 +5569,7 @@
       "post_n": 13,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "unspecified",
+      "time_horizon": "short",
       "evidence": "预计大阴线的情况下，下个交易日惯性下跌的可能性较大。",
       "publish_time": "2026-07-12 07:59"
     },
@@ -5689,7 +5689,7 @@
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "既然已经摆脱单向调整走势的可能性，那么接下来震荡反弹的可能性就在增加。",
       "publish_time": "2026-07-20 19:10"
     },
@@ -5705,7 +5705,7 @@
       "post_n": 10,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "unspecified",
+      "time_horizon": "short",
       "evidence": "这样的单日科技暴走行情，对于做多能量的消耗是肉眼可见的。隔天往往出现做多动能不足，或者后续乏力的情况。所以隔天的低开震荡或者冲高回落，就成为自然而然。",
       "publish_time": "2026-07-21 18:27"
     },
@@ -5713,7 +5713,7 @@
       "post_n": 8,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "个人认为，接下来市场二次探底的概率相对偏大。",
       "publish_time": "2026-07-22 08:14"
     },
@@ -5769,7 +5769,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "个人认为周一出现逆转上涨走势的可能性相对是比较大的。",
       "publish_time": "2026-07-26 20:20"
     },
@@ -5785,7 +5785,7 @@
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "unspecified",
+      "time_horizon": "short",
       "evidence": "这样的走势一般情况下，隔天惯性上涨的概率相对较大。",
       "publish_time": "2026-07-27 18:31"
     },
@@ -5809,7 +5809,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "但实际上反弹已经是一触即发的状态。",
       "publish_time": "2026-07-29 11:32"
     },

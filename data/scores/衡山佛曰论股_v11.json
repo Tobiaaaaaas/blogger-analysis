@@ -2,78 +2,78 @@
   "blogger": "衡山佛曰论股",
   "scoring_version": "v11 (time_horizon-windowed single formula)",
   "signals_total": 1327,
-  "signals_scored": 1307,
-  "score_zero": 3,
+  "signals_scored": 1258,
+  "score_zero": 53,
   "no_price": 12,
   "no_segment": 0,
   "scores": {
     "综合": {
-      "total": -134.42,
-      "count": 1307,
-      "avg_pct": -0.1,
-      "win_rate": 46.52
+      "total": -203.32,
+      "count": 1258,
+      "avg_pct": -0.16,
+      "win_rate": 47.77
     },
     "上升段": {
-      "total": -170.12,
-      "count": 893,
-      "avg_pct": -0.19,
-      "win_rate": 43.67
+      "total": -261.02,
+      "count": 871,
+      "avg_pct": -0.3,
+      "win_rate": 44.89
     },
     "下降段": {
-      "total": 35.7,
-      "count": 414,
-      "avg_pct": 0.09,
-      "win_rate": 52.66
+      "total": 57.71,
+      "count": 387,
+      "avg_pct": 0.15,
+      "win_rate": 54.26
     },
     "抄底": {
-      "total": 12.68,
-      "count": 21,
-      "avg_pct": 0.6,
-      "win_rate": 76.19
+      "total": 30.64,
+      "count": 20,
+      "avg_pct": 1.53,
+      "win_rate": 90.0
     },
     "逃顶": {
-      "total": 31.58,
+      "total": 62.56,
       "count": 43,
-      "avg_pct": 0.73,
+      "avg_pct": 1.45,
       "win_rate": 69.77
     },
     "看多": {
-      "total": 18.06,
-      "count": 499,
-      "avg_pct": 0.04,
-      "win_rate": 58.52
+      "total": 47.35,
+      "count": 487,
+      "avg_pct": 0.1,
+      "win_rate": 58.93
     },
     "看空": {
-      "total": -152.48,
-      "count": 808,
-      "avg_pct": -0.19,
-      "win_rate": 39.11
+      "total": -250.66,
+      "count": 771,
+      "avg_pct": -0.33,
+      "win_rate": 40.73
     }
   },
   "time_horizon_scores": {
     "short": {
-      "count": 1088,
-      "total": -85.16,
-      "avg_pct": -0.08,
-      "win_rate": 45.77
+      "count": 744,
+      "total": -68.96,
+      "avg_pct": -0.09,
+      "win_rate": 47.04
     },
     "medium": {
-      "count": 63,
-      "total": -8.15,
-      "avg_pct": -0.13,
-      "win_rate": 49.21
+      "count": 155,
+      "total": 23.48,
+      "avg_pct": 0.15,
+      "win_rate": 46.45
     },
     "long": {
-      "count": 164,
-      "total": -41.1,
-      "avg_pct": -0.25,
-      "win_rate": 48.17
+      "count": 255,
+      "total": -70.2,
+      "avg_pct": -0.28,
+      "win_rate": 50.2
     },
     "unspecified": {
-      "count": 0,
-      "total": 0.0,
-      "avg_pct": 0.0,
-      "win_rate": 0.0
+      "count": 161,
+      "total": -87.63,
+      "avg_pct": -0.54,
+      "win_rate": 31.68
     }
   },
   "segments": {
@@ -84,7 +84,7 @@
       "total": 42,
       "bull": 5,
       "bear": 37,
-      "score": -2.71
+      "score": -3.47
     },
     "I11->I12": {
       "direction": "rising",
@@ -93,7 +93,7 @@
       "total": 78,
       "bull": 30,
       "bear": 48,
-      "score": 67.48
+      "score": 39.83
     },
     "I12->M5": {
       "direction": "falling",
@@ -102,7 +102,7 @@
       "total": 67,
       "bull": 30,
       "bear": 37,
-      "score": -17.04
+      "score": 18.4
     },
     "I13->I14": {
       "direction": "rising",
@@ -111,7 +111,7 @@
       "total": 61,
       "bull": 15,
       "bear": 46,
-      "score": -34.63
+      "score": -4.47
     },
     "I14->M8": {
       "direction": "falling",
@@ -120,7 +120,7 @@
       "total": 81,
       "bull": 26,
       "bear": 55,
-      "score": 32.07
+      "score": 66.91
     },
     "I5->I6": {
       "direction": "rising",
@@ -129,7 +129,7 @@
       "total": 70,
       "bull": 53,
       "bear": 17,
-      "score": 2.56
+      "score": 3.55
     },
     "I6->M3": {
       "direction": "falling",
@@ -138,7 +138,7 @@
       "total": 20,
       "bull": 13,
       "bear": 7,
-      "score": 1.37
+      "score": -19.34
     },
     "I9->I10": {
       "direction": "rising",
@@ -147,7 +147,7 @@
       "total": 79,
       "bull": 52,
       "bear": 27,
-      "score": 12.02
+      "score": -1.23
     },
     "M3->M4": {
       "direction": "rising",
@@ -156,7 +156,7 @@
       "total": 433,
       "bull": 117,
       "bear": 316,
-      "score": -185.89
+      "score": -265.09
     },
     "M4->I9": {
       "direction": "falling",
@@ -165,7 +165,7 @@
       "total": 101,
       "bull": 38,
       "bear": 63,
-      "score": 6.91
+      "score": -30.39
     },
     "M5->M6": {
       "direction": "rising",
@@ -174,7 +174,7 @@
       "total": 131,
       "bull": 90,
       "bear": 41,
-      "score": -26.68
+      "score": -35.8
     },
     "M6->I13": {
       "direction": "falling",
@@ -183,7 +183,7 @@
       "total": 106,
       "bull": 17,
       "bear": 89,
-      "score": 15.09
+      "score": 25.59
     },
     "M8->now": {
       "direction": "rising",
@@ -273,8 +273,8 @@
           "time": "11:13",
           "direction": "bearish",
           "strength": "moderate",
-          "return": -0.0753,
-          "score": 0.0753,
+          "return": 0.6681,
+          "score": -0.6681,
           "ref": "2026-01-15 close",
           "evidence": "4190~4200是短顶，4300是中顶"
         },
@@ -283,8 +283,8 @@
           "time": "13:13",
           "direction": "bearish",
           "strength": "strong",
-          "return": -0.0349,
-          "score": 0.0698,
+          "return": -0.0753,
+          "score": 0.1506,
           "ref": "2026-01-15 close",
           "evidence": "今天第三根阴，代表空头已完全掌控局面，给多头反扑的一丝念头都没有留，正式确认短期调整已开始。甚至有可能转化为中期调整。"
         },
@@ -303,15 +303,15 @@
           "time": "22:52",
           "direction": "bearish",
           "strength": "moderate",
-          "return": -0.417,
-          "score": 0.417,
+          "return": -0.2785,
+          "score": 0.2785,
           "ref": "2026-01-16 open",
           "evidence": "上证应该还是4100上下震荡，春节前估计都受限于4190~4200区域。"
         }
       ],
-      "total_score": 1.89,
+      "total_score": 1.09,
       "signal_count": 11,
-      "avg_score_pct": 17.21
+      "avg_score_pct": 9.93
     },
     "I11": {
       "signals": [
@@ -337,8 +337,8 @@
           "time": "12:59",
           "direction": "bearish",
           "strength": "moderate",
-          "return": -0.4391,
-          "score": 0.4391,
+          "return": -0.4861,
+          "score": 0.4861,
           "ref": "2026-03-03 close",
           "evidence": "大的机会已不多。这确实是一波最后的诱多行情。"
         },
@@ -363,9 +363,9 @@
           "evidence": "明天可能油气股下调与科技和其它权重股上行作对冲，如不是这样，则大盘彻底完结。"
         }
       ],
-      "total_score": -0.41,
+      "total_score": -0.37,
       "signal_count": 3,
-      "avg_score_pct": -13.82
+      "avg_score_pct": -12.25
     },
     "I14": {
       "signals": [
@@ -458,8 +458,8 @@
           "time": "12:49",
           "direction": "bearish",
           "strength": "moderate",
-          "return": -0.7693,
-          "score": 0.7693,
+          "return": -4.1908,
+          "score": 4.1908,
           "ref": "2025-03-19 close",
           "evidence": "大致判断，A股二、三季度行情会趋向寡淡。即不涨也不跌。"
         },
@@ -484,9 +484,9 @@
           "evidence": "我猜明天会先往下检测3380~3390的支撑，明天会在下跌中补量。拭目以待。"
         }
       ],
-      "total_score": 3.34,
+      "total_score": 6.76,
       "signal_count": 3,
-      "avg_score_pct": 111.18
+      "avg_score_pct": 225.23
     },
     "I9": {
       "signals": [
@@ -495,8 +495,8 @@
           "time": "12:35",
           "direction": "bullish",
           "strength": "moderate",
-          "return": -0.3512,
-          "score": -0.3512,
+          "return": 6.35,
+          "score": 6.35,
           "ref": "2025-12-15 close",
           "evidence": "受外围影响明显，今天上午显著调整之中，涨跌比2618：2...0一带强势支撑还在。即便后半周破了，3800平台也不会轻易"
         },
@@ -531,9 +531,9 @@
           "evidence": "综合判断：A股今天应该会短暂走稳，盘整过后仍会伺机向上反抽，但3850~3860一线已构成压力，收盘再站上有点难。所以仓"
         }
       ],
-      "total_score": 3.45,
+      "total_score": 10.15,
       "signal_count": 4,
-      "avg_score_pct": 86.3
+      "avg_score_pct": 253.82
     },
     "M4": {
       "signals": [
@@ -542,8 +542,8 @@
           "time": "00:13",
           "direction": "bearish",
           "strength": "strong",
-          "return": -0.8949,
-          "score": 1.7898,
+          "return": -3.3651,
+          "score": 6.7302,
           "ref": "2025-11-17 open(non-trading)",
           "evidence": "我只说今年4000附近就是高点，4000之上绝无任何可拓展的空间。"
         },
@@ -552,15 +552,15 @@
           "time": "21:28",
           "direction": "bearish",
           "strength": "strong",
-          "return": -0.8949,
-          "score": 1.7898,
+          "return": -2.8519,
+          "score": 5.7038,
           "ref": "2025-11-17 open(non-trading)",
           "evidence": "所以，我一直坚决4000点是中短期行情的结束，绝不是大牛市的开始。4000之上，不可能走加速。"
         }
       ],
-      "total_score": 3.58,
+      "total_score": 12.43,
       "signal_count": 2,
-      "avg_score_pct": 178.98
+      "avg_score_pct": 621.7
     },
     "M5": {
       "signals": [
@@ -569,8 +569,8 @@
           "time": "14:34",
           "direction": "bullish",
           "strength": "moderate",
-          "return": -0.755,
-          "score": -0.755,
+          "return": 4.8633,
+          "score": 4.8633,
           "ref": "2026-03-23 open(non-trading)",
           "evidence": "上半年低点在3930辶上。现在仍处高位反复筑顶阶段，还没这么快下来，筑顶还需很长时间。"
         },
@@ -589,8 +589,8 @@
           "time": "18:43",
           "direction": "bullish",
           "strength": "moderate",
-          "return": -0.755,
-          "score": -0.755,
+          "return": 0.1005,
+          "score": 0.1005,
           "ref": "2026-03-23 open(non-trading)",
           "evidence": "如果战事预期在走向结束，那么将迎来全球共振式大反弹。别看美股这两天跌得凶。感觉港股\\A股\\美股都将按次序轮番进入反弹周期"
         },
@@ -639,8 +639,8 @@
           "time": "19:02",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.4953,
-          "score": 0.4953,
+          "return": 1.0519,
+          "score": 1.0519,
           "ref": "2026-03-25 open",
           "evidence": "那还有补3955.7的缺口与冲击4000任务要完成的。即便冲击4000再下来，还会在3800一线返身向上，反复冲击400"
         },
@@ -649,15 +649,15 @@
           "time": "23:50",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.4953,
-          "score": 0.4953,
+          "return": 4.9901,
+          "score": 4.9901,
           "ref": "2026-03-25 open",
           "evidence": "我估什这次砸到3800，能保大盘三个月的太平环境，大涨大跌短期都没有。"
         }
       ],
-      "total_score": 1.62,
+      "total_score": 13.15,
       "signal_count": 9,
-      "avg_score_pct": 18.02
+      "avg_score_pct": 146.08
     },
     "M6": {
       "signals": [
@@ -793,8 +793,8 @@
           "time": "16:08",
           "direction": "bearish",
           "strength": "moderate",
-          "return": -2.0875,
-          "score": 2.0875,
+          "return": -6.5899,
+          "score": 6.5899,
           "ref": "2026-06-26 open",
           "evidence": "如果我说上证今年只维持在3731~4300±50区间震荡，5.14日上证从4258.8已转为中期调整；唯有双创进入了牛市"
         },
@@ -803,8 +803,8 @@
           "time": "16:45",
           "direction": "bearish",
           "strength": "moderate",
-          "return": -0.8173,
-          "score": 0.8173,
+          "return": -6.5899,
+          "score": 6.5899,
           "ref": "2026-06-26 open",
           "evidence": "当前上证是典型的高位震荡，上行空间极为有限，5.14日的4258.8就"
         },
@@ -823,8 +823,8 @@
           "time": "06:40",
           "direction": "bearish",
           "strength": "moderate",
-          "return": -2.0875,
-          "score": 2.0875,
+          "return": -0.8173,
+          "score": 0.8173,
           "ref": "2026-06-26 open",
           "evidence": "如果上证今天不涨反跌20来点，那周线则很不好看，提防上证变盘向下。今天不会大跌，但技术走势决定下周的方向。"
         },
@@ -833,8 +833,8 @@
           "time": "09:43",
           "direction": "bearish",
           "strength": "moderate",
-          "return": 0.9417,
-          "score": -0.9417,
+          "return": -4.9333,
+          "score": 4.9333,
           "ref": "2026-06-26 close",
           "evidence": "周线收阴或收长上影小红星K线概率大增，这形态都不是好形态，上证指数向淡越来越明显。"
         },
@@ -863,8 +863,8 @@
           "time": "13:01",
           "direction": "bearish",
           "strength": "moderate",
-          "return": -0.3511,
-          "score": 0.3511,
+          "return": -4.9333,
+          "score": 4.9333,
           "ref": "2026-06-26 close",
           "evidence": "如果我说上证今年只维持在3731~4300±50区间震荡，5.14日上证从4258.8已转为中期调整；唯有双创进入了牛市"
         },
@@ -879,9 +879,9 @@
           "evidence": "上证玩完，3800点见，双创牛市未结束，后市仍将上行"
         }
       ],
-      "total_score": 12.0,
+      "total_score": 31.46,
       "signal_count": 9,
-      "avg_score_pct": 133.3
+      "avg_score_pct": 349.55
     },
     "M8": {
       "signals": [
@@ -910,15 +910,15 @@
           "time": "12:03",
           "direction": "bullish",
           "strength": "strong",
-          "return": 0.1301,
-          "score": 0.2601,
+          "return": 0.0,
+          "score": 0.0,
           "ref": "2026-07-21 close",
           "evidence": "见底了没？翻翻这两天我的发了文在指明底部时，坚定不坚定？"
         }
       ],
-      "total_score": 3.1,
+      "total_score": 2.84,
       "signal_count": 3,
-      "avg_score_pct": 103.46
+      "avg_score_pct": 94.79
     }
   }
 }

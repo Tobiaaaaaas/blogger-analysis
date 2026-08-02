@@ -2,78 +2,78 @@
   "blogger": "TL阳光",
   "scoring_version": "v11 (time_horizon-windowed single formula)",
   "signals_total": 1500,
-  "signals_scored": 1457,
-  "score_zero": 28,
+  "signals_scored": 1452,
+  "score_zero": 33,
   "no_price": 11,
   "no_segment": 0,
   "scores": {
     "综合": {
-      "total": 576.76,
-      "count": 1457,
-      "avg_pct": 0.4,
-      "win_rate": 54.22
+      "total": 692.4,
+      "count": 1452,
+      "avg_pct": 0.48,
+      "win_rate": 55.51
     },
     "上升段": {
-      "total": 442.69,
-      "count": 1112,
-      "avg_pct": 0.4,
-      "win_rate": 54.5
+      "total": 540.43,
+      "count": 1109,
+      "avg_pct": 0.49,
+      "win_rate": 55.73
     },
     "下降段": {
-      "total": 134.07,
-      "count": 345,
-      "avg_pct": 0.39,
-      "win_rate": 53.33
+      "total": 151.97,
+      "count": 343,
+      "avg_pct": 0.44,
+      "win_rate": 54.81
     },
     "抄底": {
-      "total": 45.85,
+      "total": 60.01,
       "count": 19,
-      "avg_pct": 2.41,
-      "win_rate": 89.47
+      "avg_pct": 3.16,
+      "win_rate": 94.74
     },
     "逃顶": {
-      "total": 60.47,
+      "total": 69.88,
       "count": 27,
-      "avg_pct": 2.24,
-      "win_rate": 77.78
+      "avg_pct": 2.59,
+      "win_rate": 85.19
     },
     "看多": {
-      "total": 772.41,
-      "count": 895,
-      "avg_pct": 0.86,
-      "win_rate": 65.25
+      "total": 910.03,
+      "count": 894,
+      "avg_pct": 1.02,
+      "win_rate": 66.44
     },
     "看空": {
-      "total": -195.65,
-      "count": 562,
-      "avg_pct": -0.35,
-      "win_rate": 36.65
+      "total": -217.63,
+      "count": 558,
+      "avg_pct": -0.39,
+      "win_rate": 37.99
     }
   },
   "time_horizon_scores": {
     "short": {
-      "count": 916,
-      "total": 10.1,
+      "count": 693,
+      "total": 6.55,
       "avg_pct": 0.01,
-      "win_rate": 50.33
+      "win_rate": 51.66
     },
     "medium": {
-      "count": 89,
-      "total": 48.82,
-      "avg_pct": 0.55,
-      "win_rate": 59.55
+      "count": 170,
+      "total": 82.63,
+      "avg_pct": 0.49,
+      "win_rate": 55.29
     },
     "long": {
-      "count": 284,
-      "total": 351.13,
-      "avg_pct": 1.24,
-      "win_rate": 58.45
+      "count": 259,
+      "total": 378.45,
+      "avg_pct": 1.46,
+      "win_rate": 60.23
     },
     "unspecified": {
-      "count": 200,
-      "total": 166.7,
-      "avg_pct": 0.83,
-      "win_rate": 55.0
+      "count": 367,
+      "total": 224.77,
+      "avg_pct": 0.61,
+      "win_rate": 53.95
     }
   },
   "segments": {
@@ -84,7 +84,7 @@
       "total": 48,
       "bull": 40,
       "bear": 8,
-      "score": 4.16
+      "score": 8.47
     },
     "I11->I12": {
       "direction": "rising",
@@ -93,7 +93,7 @@
       "total": 50,
       "bull": 30,
       "bear": 20,
-      "score": -2.49
+      "score": 18.03
     },
     "I12->M5": {
       "direction": "falling",
@@ -102,7 +102,7 @@
       "total": 70,
       "bull": 13,
       "bear": 57,
-      "score": 87.56
+      "score": 107.95
     },
     "I13->I14": {
       "direction": "rising",
@@ -111,7 +111,7 @@
       "total": 34,
       "bull": 20,
       "bear": 14,
-      "score": -4.57
+      "score": 3.27
     },
     "I14->M8": {
       "direction": "falling",
@@ -120,7 +120,7 @@
       "total": 75,
       "bull": 29,
       "bear": 46,
-      "score": 32.9
+      "score": 41.05
     },
     "I5->I6": {
       "direction": "rising",
@@ -129,7 +129,7 @@
       "total": 168,
       "bull": 106,
       "bear": 62,
-      "score": -54.46
+      "score": -96.69
     },
     "I6->M3": {
       "direction": "falling",
@@ -138,7 +138,7 @@
       "total": 46,
       "bull": 21,
       "bear": 25,
-      "score": -4.79
+      "score": -10.47
     },
     "I9->I10": {
       "direction": "rising",
@@ -147,7 +147,7 @@
       "total": 58,
       "bull": 40,
       "bear": 18,
-      "score": 31.79
+      "score": 34.24
     },
     "M3->M4": {
       "direction": "rising",
@@ -156,7 +156,7 @@
       "total": 608,
       "bull": 469,
       "bear": 139,
-      "score": 557.32
+      "score": 661.59
     },
     "M4->I9": {
       "direction": "falling",
@@ -165,7 +165,7 @@
       "total": 49,
       "bull": 27,
       "bear": 22,
-      "score": 23.18
+      "score": 16.24
     },
     "M5->M6": {
       "direction": "rising",
@@ -174,7 +174,7 @@
       "total": 175,
       "bull": 75,
       "bear": 100,
-      "score": -88.71
+      "score": -83.5
     },
     "M6->I13": {
       "direction": "falling",
@@ -183,7 +183,7 @@
       "total": 73,
       "bull": 22,
       "bear": 51,
-      "score": -8.93
+      "score": -11.28
     },
     "M8->now": {
       "direction": "rising",
@@ -240,8 +240,8 @@
           "time": "11:45",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.3494,
-          "score": 0.3494,
+          "return": 1.2683,
+          "score": 1.2683,
           "ref": "2026-02-03 close",
           "evidence": "从这几天大盘的走势来看，仍是上涨过程中的一次调整，调整结束，后市改写4190是大概率的事，至少我不怀疑。"
         },
@@ -250,8 +250,8 @@
           "time": "21:08",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.9456,
-          "score": 0.9456,
+          "return": 1.5224,
+          "score": 1.5224,
           "ref": "2026-02-04 open",
           "evidence": "综上所述，春节前以震荡为主，春节后将恢复上涨，大盘将再创新高。"
         },
@@ -266,9 +266,9 @@
           "evidence": "短期看，大盘应该不会坏到哪里去。"
         }
       ],
-      "total_score": 4.53,
+      "total_score": 6.03,
       "signal_count": 5,
-      "avg_score_pct": 90.68
+      "avg_score_pct": 120.59
     },
     "I12": {
       "signals": [
@@ -388,8 +388,8 @@
           "time": "11:41",
           "direction": "bullish",
           "strength": "moderate",
-          "return": -0.3512,
-          "score": -0.3512,
+          "return": 6.35,
+          "score": 6.35,
           "ref": "2025-12-15 close",
           "evidence": "个人的观点非常明确，大盘这个位置不具备进一步深跌的可能性，随着110线的抬升，今天已经至3804点，与11月24日阶段性"
         },
@@ -408,15 +408,15 @@
           "time": "11:45",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.2262,
-          "score": 0.2262,
+          "return": 6.1901,
+          "score": 6.1901,
           "ref": "2025-12-17 close",
           "evidence": "大盘这个位置不具备进一步深跌的可能性，随着110线的抬升，今天已经至3804点，与11月24日阶段性低点3816点形成双"
         }
       ],
-      "total_score": 7.32,
+      "total_score": 19.98,
       "signal_count": 3,
-      "avg_score_pct": 243.94
+      "avg_score_pct": 666.11
     },
     "M3": {
       "signals": [
@@ -442,8 +442,8 @@
           "time": "15:54",
           "direction": "bearish",
           "strength": "moderate",
-          "return": -2.8519,
-          "score": 2.8519,
+          "return": -3.3651,
+          "score": 3.3651,
           "ref": "2025-11-17 open",
           "evidence": "综合来看，大盘上涨乏力，从3040涨至4034点，已经有近1000点的上涨，涨幅为32.69%，对照历史上每次阶段性上涨"
         },
@@ -458,9 +458,9 @@
           "evidence": "11月14日收评：下周一看跌"
         }
       ],
-      "total_score": 3.75,
+      "total_score": 4.26,
       "signal_count": 2,
-      "avg_score_pct": 187.34
+      "avg_score_pct": 213.0
     },
     "M5": {
       "signals": [
@@ -556,8 +556,8 @@
           "time": "15:24",
           "direction": "bearish",
           "strength": "moderate",
-          "return": -0.6873,
-          "score": 0.6873,
+          "return": -2.4168,
+          "score": 2.4168,
           "ref": "2026-05-15 open",
           "evidence": "没有赚钱效应的市场怎么可能吸引增量，现在的上涨是存量加杠杆，是逼存量放弃老登，而去拥抱所谓的明天（光），这样的市场能好，"
         },
@@ -632,9 +632,9 @@
           "evidence": "个人的观点始终不变，大盘今年上半年是构筑历史大顶，即出货，下半年将彻底走熊。"
         }
       ],
-      "total_score": 14.85,
+      "total_score": 16.58,
       "signal_count": 9,
-      "avg_score_pct": 165.05
+      "avg_score_pct": 184.27
     },
     "M7": {
       "signals": [
@@ -653,8 +653,8 @@
           "time": "13:30",
           "direction": "bearish",
           "strength": "moderate",
-          "return": 0.9417,
-          "score": -0.9417,
+          "return": -4.9333,
+          "score": 4.9333,
           "ref": "2026-06-26 close",
           "evidence": "大盘3月20日第一次跌破120线后，我就发文讲过，历史上如果出现跌破120线，那么250年线后市必破"
         },
@@ -663,8 +663,8 @@
           "time": "14:49",
           "direction": "bearish",
           "strength": "moderate",
-          "return": 0.9417,
-          "score": -0.9417,
+          "return": -0.3511,
+          "score": 0.3511,
           "ref": "2026-06-26 close",
           "evidence": "今天的大阴棒穿头破脚，一下子击穿55线/60线/89线/110线/120线/144线，是空头力量非常强的一种，表示中期又"
         },
@@ -699,9 +699,9 @@
           "evidence": "耐心等3年，大盘到3000点时再来，我从4197点时就反反复复讲"
         }
       ],
-      "total_score": 1.19,
+      "total_score": 8.36,
       "signal_count": 6,
-      "avg_score_pct": 19.82
+      "avg_score_pct": 139.28
     },
     "M8": {
       "signals": [

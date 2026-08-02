@@ -2,33 +2,33 @@
   "blogger": "稀豹",
   "scoring_version": "v11 (time_horizon-windowed single formula)",
   "signals_total": 498,
-  "signals_scored": 481,
-  "score_zero": 9,
+  "signals_scored": 479,
+  "score_zero": 11,
   "no_price": 4,
   "no_segment": 2,
   "scores": {
     "综合": {
-      "total": -152.93,
-      "count": 481,
+      "total": -154.6,
+      "count": 479,
       "avg_pct": -0.32,
-      "win_rate": 44.28
+      "win_rate": 44.05
     },
     "上升段": {
-      "total": -45.76,
+      "total": -58.86,
       "count": 331,
-      "avg_pct": -0.14,
-      "win_rate": 48.64
+      "avg_pct": -0.18,
+      "win_rate": 48.04
     },
     "下降段": {
-      "total": -107.17,
-      "count": 150,
-      "avg_pct": -0.71,
-      "win_rate": 34.67
+      "total": -95.75,
+      "count": 148,
+      "avg_pct": -0.65,
+      "win_rate": 35.14
     },
     "抄底": {
-      "total": 26.82,
+      "total": 16.92,
       "count": 15,
-      "avg_pct": 1.79,
+      "avg_pct": 1.13,
       "win_rate": 80.0
     },
     "逃顶": {
@@ -38,42 +38,42 @@
       "win_rate": 0.0
     },
     "看多": {
-      "total": 18.31,
-      "count": 326,
-      "avg_pct": 0.06,
-      "win_rate": 51.84
+      "total": 13.68,
+      "count": 325,
+      "avg_pct": 0.04,
+      "win_rate": 52.0
     },
     "看空": {
-      "total": -171.24,
-      "count": 155,
-      "avg_pct": -1.1,
-      "win_rate": 28.39
+      "total": -168.29,
+      "count": 154,
+      "avg_pct": -1.09,
+      "win_rate": 27.27
     }
   },
   "time_horizon_scores": {
     "short": {
-      "count": 310,
-      "total": -37.18,
+      "count": 307,
+      "total": -35.33,
       "avg_pct": -0.12,
-      "win_rate": 45.81
+      "win_rate": 46.58
     },
     "medium": {
-      "count": 80,
-      "total": 12.14,
-      "avg_pct": 0.15,
-      "win_rate": 46.25
+      "count": 89,
+      "total": 3.34,
+      "avg_pct": 0.04,
+      "win_rate": 42.7
     },
     "long": {
-      "count": 59,
-      "total": -31.8,
-      "avg_pct": -0.54,
-      "win_rate": 38.98
+      "count": 38,
+      "total": -21.11,
+      "avg_pct": -0.56,
+      "win_rate": 36.84
     },
     "unspecified": {
-      "count": 43,
-      "total": -96.08,
-      "avg_pct": -2.23,
-      "win_rate": 25.58
+      "count": 58,
+      "total": -101.51,
+      "avg_pct": -1.75,
+      "win_rate": 27.59
     }
   },
   "segments": {
@@ -84,7 +84,7 @@
       "total": 27,
       "bull": 23,
       "bear": 4,
-      "score": 0.01
+      "score": 0.13
     },
     "I11->I12": {
       "direction": "rising",
@@ -93,7 +93,7 @@
       "total": 24,
       "bull": 24,
       "bear": 0,
-      "score": -27.93
+      "score": -27.51
     },
     "I12->M5": {
       "direction": "falling",
@@ -111,7 +111,7 @@
       "total": 15,
       "bull": 8,
       "bear": 7,
-      "score": -19.87
+      "score": -17.58
     },
     "I14->M8": {
       "direction": "falling",
@@ -120,7 +120,7 @@
       "total": 34,
       "bull": 26,
       "bear": 8,
-      "score": -36.91
+      "score": -22.69
     },
     "I2->I3": {
       "direction": "falling",
@@ -138,7 +138,7 @@
       "total": 31,
       "bull": 25,
       "bear": 6,
-      "score": 34.52
+      "score": 34.64
     },
     "M3->M4": {
       "direction": "rising",
@@ -147,7 +147,7 @@
       "total": 214,
       "bull": 113,
       "bear": 101,
-      "score": -93.76
+      "score": -95.83
     },
     "M4->I9": {
       "direction": "falling",
@@ -165,7 +165,7 @@
       "total": 38,
       "bull": 24,
       "bear": 14,
-      "score": 59.28
+      "score": 45.42
     },
     "M6->I13": {
       "direction": "falling",
@@ -174,7 +174,7 @@
       "total": 31,
       "bull": 27,
       "bear": 4,
-      "score": -28.22
+      "score": -31.14
     },
     "M8->now": {
       "direction": "rising",
@@ -214,8 +214,8 @@
           "time": "11:39",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 1.3712,
-          "score": 1.3712,
+          "return": 0.3494,
+          "score": 0.3494,
           "ref": "2026-02-03 close",
           "evidence": "下午不论涨跌，都是本周先抑后扬的拐点信号！"
         },
@@ -250,9 +250,9 @@
           "evidence": "还没涨完，明天接着涨！只是这波行情，以小阳碎步拉着时间换空间，效果一样！"
         }
       ],
-      "total_score": 6.04,
+      "total_score": 5.02,
       "signal_count": 6,
-      "avg_score_pct": 100.65
+      "avg_score_pct": 83.62
     },
     "I9": {
       "signals": [
@@ -308,8 +308,8 @@
           "time": "11:34",
           "direction": "bullish",
           "strength": "strong",
-          "return": 5.4584,
-          "score": 10.9168,
+          "return": 1.0189,
+          "score": 2.0378,
           "ref": "2026-03-24 close",
           "evidence": "因此我现在就可以提前判断，昨天的3794，就是本轮短中期行情的底部！"
         },
@@ -324,9 +324,9 @@
           "evidence": "这是情绪底与市场底的同步确认，直指这波行情的拐点就在今天！"
         }
       ],
-      "total_score": 18.66,
+      "total_score": 9.78,
       "signal_count": 4,
-      "avg_score_pct": 466.56
+      "avg_score_pct": 244.59
     },
     "M8": {
       "signals": [

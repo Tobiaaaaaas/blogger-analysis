@@ -2,78 +2,78 @@
   "blogger": "梦若神机",
   "scoring_version": "v11 (time_horizon-windowed single formula)",
   "signals_total": 630,
-  "signals_scored": 589,
-  "score_zero": 18,
+  "signals_scored": 578,
+  "score_zero": 30,
   "no_price": 14,
   "no_segment": 6,
   "scores": {
     "综合": {
-      "total": 222.84,
-      "count": 589,
-      "avg_pct": 0.38,
-      "win_rate": 54.67
+      "total": 292.6,
+      "count": 578,
+      "avg_pct": 0.51,
+      "win_rate": 57.79
     },
     "上升段": {
-      "total": 186.77,
-      "count": 339,
-      "avg_pct": 0.55,
-      "win_rate": 59.0
+      "total": 238.43,
+      "count": 328,
+      "avg_pct": 0.73,
+      "win_rate": 63.41
     },
     "下降段": {
-      "total": 36.07,
+      "total": 54.16,
       "count": 250,
-      "avg_pct": 0.14,
-      "win_rate": 48.8
+      "avg_pct": 0.22,
+      "win_rate": 50.4
     },
     "抄底": {
-      "total": 39.52,
+      "total": 52.25,
       "count": 29,
-      "avg_pct": 1.36,
-      "win_rate": 79.31
+      "avg_pct": 1.8,
+      "win_rate": 86.21
     },
     "逃顶": {
-      "total": 79.79,
+      "total": 86.33,
       "count": 24,
-      "avg_pct": 3.32,
+      "avg_pct": 3.6,
       "win_rate": 87.5
     },
     "看多": {
-      "total": 228.38,
+      "total": 244.89,
       "count": 377,
-      "avg_pct": 0.61,
-      "win_rate": 62.33
+      "avg_pct": 0.65,
+      "win_rate": 64.19
     },
     "看空": {
-      "total": -5.53,
-      "count": 212,
-      "avg_pct": -0.03,
-      "win_rate": 41.04
+      "total": 47.7,
+      "count": 201,
+      "avg_pct": 0.24,
+      "win_rate": 45.77
     }
   },
   "time_horizon_scores": {
     "short": {
-      "count": 397,
-      "total": -16.86,
-      "avg_pct": -0.04,
-      "win_rate": 51.13
+      "count": 337,
+      "total": -4.34,
+      "avg_pct": -0.01,
+      "win_rate": 52.52
     },
     "medium": {
-      "count": 66,
-      "total": 20.56,
-      "avg_pct": 0.31,
-      "win_rate": 56.06
+      "count": 83,
+      "total": 17.48,
+      "avg_pct": 0.21,
+      "win_rate": 59.04
     },
     "long": {
-      "count": 57,
-      "total": 76.02,
-      "avg_pct": 1.33,
-      "win_rate": 56.14
+      "count": 33,
+      "total": 75.17,
+      "avg_pct": 2.28,
+      "win_rate": 63.64
     },
     "unspecified": {
-      "count": 90,
-      "total": 143.13,
-      "avg_pct": 1.59,
-      "win_rate": 55.56
+      "count": 157,
+      "total": 204.28,
+      "avg_pct": 1.3,
+      "win_rate": 55.41
     }
   },
   "segments": {
@@ -84,7 +84,7 @@
       "total": 1,
       "bull": 0,
       "bear": 1,
-      "score": -2.85
+      "score": -3.62
     },
     "I10->I11": {
       "direction": "falling",
@@ -93,7 +93,7 @@
       "total": 16,
       "bull": 15,
       "bear": 1,
-      "score": 1.96
+      "score": 0.34
     },
     "I11->I12": {
       "direction": "rising",
@@ -102,7 +102,7 @@
       "total": 40,
       "bull": 26,
       "bear": 14,
-      "score": 19.97
+      "score": 11.24
     },
     "I12->M5": {
       "direction": "falling",
@@ -111,7 +111,7 @@
       "total": 59,
       "bull": 59,
       "bear": 0,
-      "score": -113.05
+      "score": -130.2
     },
     "I13->I14": {
       "direction": "rising",
@@ -120,7 +120,7 @@
       "total": 42,
       "bull": 7,
       "bear": 35,
-      "score": -14.94
+      "score": 25.16
     },
     "I14->M8": {
       "direction": "falling",
@@ -129,7 +129,7 @@
       "total": 59,
       "bull": 15,
       "bear": 44,
-      "score": 98.47
+      "score": 134.78
     },
     "I9->I10": {
       "direction": "rising",
@@ -138,7 +138,7 @@
       "total": 44,
       "bull": 43,
       "bear": 1,
-      "score": 87.89
+      "score": 86.8
     },
     "M2->I1": {
       "direction": "falling",
@@ -165,7 +165,7 @@
       "total": 61,
       "bull": 53,
       "bear": 8,
-      "score": 45.77
+      "score": 39.92
     },
     "M5->M6": {
       "direction": "rising",
@@ -174,7 +174,7 @@
       "total": 179,
       "bull": 120,
       "bear": 59,
-      "score": 99.98
+      "score": 120.19
     },
     "M6->I13": {
       "direction": "falling",
@@ -183,7 +183,7 @@
       "total": 57,
       "bull": 37,
       "bear": 20,
-      "score": 2.67
+      "score": 9.07
     },
     "M8->now": {
       "direction": "rising",
@@ -250,15 +250,15 @@
           "time": "08:11",
           "direction": "bearish",
           "strength": "moderate",
-          "return": -5.5534,
-          "score": 5.5534,
+          "return": -0.5432,
+          "score": 0.5432,
           "ref": "2026-03-02 open",
           "evidence": "盘前预判：今日A股将迎来极端分化行情，高位科技股无疑是全天重灾区，资金集中出逃引发大幅下挫。"
         }
       ],
-      "total_score": 5.55,
+      "total_score": 0.54,
       "signal_count": 1,
-      "avg_score_pct": 555.34
+      "avg_score_pct": 54.32
     },
     "I13": {
       "signals": [
@@ -307,15 +307,15 @@
           "time": "09:02",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 1.2396,
-          "score": 1.2396,
+          "return": 1.5367,
+          "score": 1.5367,
           "ref": "2026-06-08 open",
           "evidence": "急跌之后必有回弹，此刻盲目出逃，反倒容易卖在地板价，白白错失后续修复行情。与其慌慌张张追着止损，不如稳稳卧倒持仓，静观盘"
         }
       ],
-      "total_score": 6.2,
+      "total_score": 6.5,
       "signal_count": 5,
-      "avg_score_pct": 123.96
+      "avg_score_pct": 129.9
     },
     "I14": {
       "signals": [
@@ -324,8 +324,8 @@
           "time": "15:25",
           "direction": "bearish",
           "strength": "moderate",
-          "return": -0.9906,
-          "score": 0.9906,
+          "return": -6.8423,
+          "score": 6.8423,
           "ref": "2026-06-23 open",
           "evidence": "科技股这一轮下跌，才刚刚拉开序幕。"
         },
@@ -334,8 +334,8 @@
           "time": "11:10",
           "direction": "bearish",
           "strength": "moderate",
-          "return": 0.1509,
-          "score": -0.1509,
+          "return": -1.3258,
+          "score": 1.3258,
           "ref": "2026-06-23 close",
           "evidence": "一旦高位科技这波行情宣告落幕，资金集中出逃，势必会拖累场内绝大多数个股跟随调整，调整周期不会太短，短期很难快速反弹修复。"
         },
@@ -400,9 +400,9 @@
           "evidence": "依神机判断，不出意外明天科技板块就要开启暴跌模式，别觉得我危言耸听。"
         }
       ],
-      "total_score": 33.66,
+      "total_score": 40.98,
       "signal_count": 8,
-      "avg_score_pct": 420.7
+      "avg_score_pct": 512.3
     },
     "I9": {
       "signals": [
@@ -451,15 +451,15 @@
           "time": "16:55",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 6.6785,
-          "score": 6.6785,
+          "return": 3.035,
+          "score": 3.035,
           "ref": "2025-12-18 open",
           "evidence": "近期不会卖出一支股票。毕竟这个位置离神机的4500还很远。"
         }
       ],
-      "total_score": 9.56,
+      "total_score": 5.92,
       "signal_count": 5,
-      "avg_score_pct": 191.24
+      "avg_score_pct": 118.37
     },
     "M4": {
       "signals": [
@@ -515,8 +515,8 @@
           "time": "08:24",
           "direction": "bullish",
           "strength": "moderate",
-          "return": -0.755,
-          "score": -0.755,
+          "return": 4.8633,
+          "score": 4.8633,
           "ref": "2026-03-23 open",
           "evidence": "耐心等待放量杀跌后的反弹机会。"
         },
@@ -525,8 +525,8 @@
           "time": "09:11",
           "direction": "bullish",
           "strength": "moderate",
-          "return": -0.755,
-          "score": -0.755,
+          "return": 4.8633,
+          "score": 4.8633,
           "ref": "2026-03-23 open",
           "evidence": "只要放量杀跌一出现，后面必有修复反弹。现在不追、不慌、不割肉，耐心等放量拐点，机会就在恐慌之后。"
         },
@@ -535,8 +535,8 @@
           "time": "15:30",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 1.3275,
-          "score": 1.3275,
+          "return": 6.3254,
+          "score": 6.3254,
           "ref": "2026-03-24 open",
           "evidence": "熬过低谷，才有高峰。稳住，我们等反弹，等反转，等柳暗花明那一天！"
         },
@@ -601,9 +601,9 @@
           "evidence": "明天继续看涨，拿稳就行！"
         }
       ],
-      "total_score": 13.62,
+      "total_score": 29.86,
       "signal_count": 12,
-      "avg_score_pct": 113.53
+      "avg_score_pct": 248.82
     },
     "M6": {
       "signals": [
@@ -612,8 +612,8 @@
           "time": "16:29",
           "direction": "bearish",
           "strength": "moderate",
-          "return": -2.5346,
-          "score": 2.5346,
+          "return": -5.1178,
+          "score": 5.1178,
           "ref": "2026-05-14 open",
           "evidence": "科技板块一路单边拉升，估值早就严重透支，高位获利盘堆积如山，资金分歧越来越大，随时都会迎来一波深度大调整。"
         },
@@ -622,8 +622,8 @@
           "time": "10:12",
           "direction": "bearish",
           "strength": "moderate",
-          "return": -0.7094,
-          "score": 0.7094,
+          "return": -3.341,
+          "score": 3.341,
           "ref": "2026-05-14 close",
           "evidence": "此番回落并非趋势彻底终结，仅仅只是短期技术性调整而已。"
         },
@@ -632,8 +632,8 @@
           "time": "12:03",
           "direction": "bearish",
           "strength": "moderate",
-          "return": -0.7094,
-          "score": 0.7094,
+          "return": -3.341,
+          "score": 3.341,
           "ref": "2026-05-14 close",
           "evidence": "如今盘面大幅走弱，当下最要紧的便是管住双手，切勿盲目进场操作。眼下市场跌多涨少，贸然布局极易被套亏损，此刻最佳策略便是静"
         },
@@ -658,9 +658,9 @@
           "evidence": "别再纠结当天盘面会怎么走，不用猜来猜去，行情走势就一个字：跌，两个字：大跌。"
         }
       ],
-      "total_score": 6.02,
+      "total_score": 13.86,
       "signal_count": 5,
-      "avg_score_pct": 120.31
+      "avg_score_pct": 277.23
     },
     "M7": {
       "signals": [
@@ -689,8 +689,8 @@
           "time": "08:21",
           "direction": "bearish",
           "strength": "strong",
-          "return": -6.5899,
-          "score": 13.1798,
+          "return": -0.8173,
+          "score": 1.6346,
           "ref": "2026-06-26 open",
           "evidence": "别心存侥幸，今天的开盘跳水只是开端，绝非终点！"
         },
@@ -709,8 +709,8 @@
           "time": "12:20",
           "direction": "bearish",
           "strength": "moderate",
-          "return": -0.3511,
-          "score": 0.3511,
+          "return": 0.9417,
+          "score": -0.9417,
           "ref": "2026-06-26 close",
           "evidence": "今天只是开始，下周科技股大概率会迎来持续大跌。"
         },
@@ -719,8 +719,8 @@
           "time": "12:23",
           "direction": "bearish",
           "strength": "strong",
-          "return": 0.9417,
-          "score": -1.8833,
+          "return": -4.9333,
+          "score": 9.8667,
           "ref": "2026-06-26 close",
           "evidence": "我把话放这里，当下大盘已经有效跌破趋势线，整体大势彻底走弱。唯独科技股高位悬空、高高在上，风险完全透支，我没有任何理由看"
         },
@@ -729,8 +729,8 @@
           "time": "15:22",
           "direction": "bearish",
           "strength": "moderate",
-          "return": 1.6613,
-          "score": -1.6613,
+          "return": -4.8015,
+          "score": 4.8015,
           "ref": "2026-06-29 open",
           "evidence": "所以老登股短期还有调整空间，必须跌透、情绪充分释放，才会有像样修复。坚守我的观点，现在多看少动，别着急抄底任何方向，耐心"
         },
@@ -739,8 +739,8 @@
           "time": "15:24",
           "direction": "bearish",
           "strength": "moderate",
-          "return": -4.8015,
-          "score": 4.8015,
+          "return": 1.6613,
+          "score": -1.6613,
           "ref": "2026-06-29 open",
           "evidence": "今天的下跌仅仅只是科技调整的开端，后面漫长阴跌路才刚刚拉开序幕。"
         },
@@ -749,15 +749,15 @@
           "time": "16:21",
           "direction": "bearish",
           "strength": "moderate",
-          "return": -0.8742,
-          "score": 0.8742,
+          "return": 1.6613,
+          "score": -1.6613,
           "ref": "2026-06-29 open",
           "evidence": "今天扛住不跌，下周一还能扛住吗？高位获利盘这么大，补跌只是早晚的事。"
         }
       ],
-      "total_score": 31.2,
+      "total_score": 27.58,
       "signal_count": 9,
-      "avg_score_pct": 346.66
+      "avg_score_pct": 306.4
     },
     "M8": {
       "signals": [
@@ -786,8 +786,8 @@
           "time": "07:06",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.0,
-          "score": 0.0,
+          "return": 1.3424,
+          "score": 1.3424,
           "ref": "2026-07-20 open",
           "evidence": "今天开盘，那些之前不敢动手的资金，大概率会蜂拥入场抢筹！"
         },
@@ -796,15 +796,15 @@
           "time": "08:17",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 1.5013,
-          "score": 1.5013,
+          "return": 0.0,
+          "score": 0.0,
           "ref": "2026-07-21 open",
           "evidence": "不出意外，等高位筹码充分换手、资金重新聚焦新质生产力之后，这波被错杀的低位科技股，大概率会迎来一波暴力修复反弹"
         }
       ],
-      "total_score": 5.53,
+      "total_score": 5.37,
       "signal_count": 4,
-      "avg_score_pct": 138.21
+      "avg_score_pct": 134.24
     }
   }
 }

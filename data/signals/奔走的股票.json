@@ -15,18 +15,18 @@
   "scored_bullish": {
     "strong": 2,
     "moderate": 128,
-    "short": 101,
+    "short": 109,
     "medium": 19,
     "long": 1,
-    "unspecified": 9
+    "unspecified": 1
   },
   "scored_bearish": {
     "strong": 4,
     "moderate": 52,
     "short": 35,
-    "medium": 11,
+    "medium": 12,
     "long": 0,
-    "unspecified": 10
+    "unspecified": 9
   },
   "signals": [
     {
@@ -377,7 +377,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "unspecified",
+      "time_horizon": "short",
       "evidence": "行情已经完全明朗，不要再犹豫不决！周二大盘走势预判",
       "publish_time": "2024-11-11 15:11"
     },
@@ -393,7 +393,7 @@
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "unspecified",
+      "time_horizon": "short",
       "evidence": "A股：情况发生重大变化，做好迎接变盘准备，周三大盘走势预判",
       "publish_time": "2024-11-12 15:27"
     },
@@ -425,7 +425,7 @@
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "unspecified",
+      "time_horizon": "short",
       "evidence": "A股：是正常回调，还是撕破脸了？周五大盘走势预判",
       "publish_time": "2024-11-14 15:05"
     },
@@ -457,7 +457,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "unspecified",
+      "time_horizon": "short",
       "evidence": "A股：大利好来了，周一大盘会怎么走？给大家提个醒",
       "publish_time": "2024-11-17 14:40"
     },
@@ -465,7 +465,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "unspecified",
+      "time_horizon": "short",
       "evidence": "A股：大家做好心理准备吧，这次要来真的了？周二大盘走势预判",
       "publish_time": "2024-11-18 15:17"
     },
@@ -489,7 +489,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "unspecified",
+      "time_horizon": "short",
       "evidence": "是超跌反弹，还是要大反攻？周三大盘反弹高度在哪里",
       "publish_time": "2024-11-19 15:07"
     },
@@ -497,7 +497,7 @@
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "unspecified",
+      "time_horizon": "short",
       "evidence": "周四大盘，会不会再现逼空行情，我说几点个人看法",
       "publish_time": "2024-11-20 15:13"
     },
@@ -505,7 +505,7 @@
       "post_n": 8,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "unspecified",
+      "time_horizon": "short",
       "evidence": "股民们要注意了，周五要变盘了，要做好心理准备",
       "publish_time": "2024-11-21 15:06"
     },
@@ -537,7 +537,7 @@
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "unspecified",
+      "time_horizon": "short",
       "evidence": "这是又要起飞的节奏，周二大盘会反弹吗？高度在哪里",
       "publish_time": "2024-11-25 15:14"
     },
@@ -553,7 +553,7 @@
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "unspecified",
+      "time_horizon": "short",
       "evidence": "情绪修复完毕，大戏要开演了，周四大盘又要唱哪出",
       "publish_time": "2024-12-11 15:11"
     },
@@ -641,7 +641,7 @@
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "一股力量正在汇集，反弹一触即发",
       "publish_time": "2024-12-25 15:08"
     },
@@ -921,7 +921,7 @@
       "post_n": 6,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "short",
+      "time_horizon": "unspecified",
       "evidence": "短线看，空间不大，充其量到3700点左右，周线三重大顶，单靠现在的资金量，是远远不够的",
       "publish_time": "2025-07-30 21:38"
     },
@@ -1089,7 +1089,7 @@
       "post_n": 11,
       "direction": "bearish",
       "strength": "moderate",
-      "time_horizon": "unspecified",
+      "time_horizon": "medium",
       "evidence": "大盘实际已经破位，股民们要准备好，应对节前走势变化",
       "publish_time": "2025-09-28 15:08"
     },
