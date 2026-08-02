@@ -8,22 +8,22 @@
   "no_segment": 6,
   "scores": {
     "综合": {
-      "total": 230.34,
+      "total": 222.84,
       "count": 589,
-      "avg_pct": 0.39,
-      "win_rate": 54.84
+      "avg_pct": 0.38,
+      "win_rate": 54.67
     },
     "上升段": {
-      "total": 189.48,
+      "total": 186.77,
       "count": 339,
-      "avg_pct": 0.56,
+      "avg_pct": 0.55,
       "win_rate": 59.0
     },
     "下降段": {
-      "total": 40.86,
+      "total": 36.07,
       "count": 250,
-      "avg_pct": 0.16,
-      "win_rate": 49.2
+      "avg_pct": 0.14,
+      "win_rate": 48.8
     },
     "抄底": {
       "total": 39.52,
@@ -32,21 +32,21 @@
       "win_rate": 79.31
     },
     "逃顶": {
-      "total": 83.58,
+      "total": 79.79,
       "count": 24,
-      "avg_pct": 3.48,
+      "avg_pct": 3.32,
       "win_rate": 87.5
     },
     "看多": {
-      "total": 217.0,
+      "total": 228.38,
       "count": 377,
-      "avg_pct": 0.58,
-      "win_rate": 62.6
+      "avg_pct": 0.61,
+      "win_rate": 62.33
     },
     "看空": {
-      "total": 13.33,
+      "total": -5.53,
       "count": 212,
-      "avg_pct": 0.06,
+      "avg_pct": -0.03,
       "win_rate": 41.04
     }
   },
@@ -57,29 +57,11 @@
       "avg_pct": -0.04,
       "win_rate": 51.13
     },
-    "weekly": {
-      "count": 0,
-      "total": 0.0,
-      "avg_pct": 0.0,
-      "win_rate": 0.0
-    },
-    "biweekly": {
-      "count": 0,
-      "total": 0.0,
-      "avg_pct": 0.0,
-      "win_rate": 0.0
-    },
-    "monthly": {
-      "count": 0,
-      "total": 0.0,
-      "avg_pct": 0.0,
-      "win_rate": 0.0
-    },
-    "intraday": {
-      "count": 0,
-      "total": 0.0,
-      "avg_pct": 0.0,
-      "win_rate": 0.0
+    "medium": {
+      "count": 66,
+      "total": 20.56,
+      "avg_pct": 0.31,
+      "win_rate": 56.06
     },
     "long": {
       "count": 57,
@@ -120,7 +102,7 @@
       "total": 40,
       "bull": 26,
       "bear": 14,
-      "score": 17.16
+      "score": 19.97
     },
     "I12->M5": {
       "direction": "falling",
@@ -129,7 +111,7 @@
       "total": 59,
       "bull": 59,
       "bear": 0,
-      "score": -114.91
+      "score": -113.05
     },
     "I13->I14": {
       "direction": "rising",
@@ -138,7 +120,7 @@
       "total": 42,
       "bull": 7,
       "bear": 35,
-      "score": -5.73
+      "score": -14.94
     },
     "I14->M8": {
       "direction": "falling",
@@ -147,7 +129,7 @@
       "total": 59,
       "bull": 15,
       "bear": 44,
-      "score": 105.29
+      "score": 98.47
     },
     "I9->I10": {
       "direction": "rising",
@@ -156,7 +138,7 @@
       "total": 44,
       "bull": 43,
       "bear": 1,
-      "score": 92.97
+      "score": 87.89
     },
     "M2->I1": {
       "direction": "falling",
@@ -183,7 +165,7 @@
       "total": 61,
       "bull": 53,
       "bear": 8,
-      "score": 45.7
+      "score": 45.77
     },
     "M5->M6": {
       "direction": "rising",
@@ -192,7 +174,7 @@
       "total": 179,
       "bull": 120,
       "bear": 59,
-      "score": 91.21
+      "score": 99.98
     },
     "M6->I13": {
       "direction": "falling",
@@ -201,7 +183,7 @@
       "total": 57,
       "bull": 37,
       "bear": 20,
-      "score": 2.57
+      "score": 2.67
     },
     "M8->now": {
       "direction": "rising",
@@ -727,8 +709,8 @@
           "time": "12:20",
           "direction": "bearish",
           "strength": "moderate",
-          "return": -2.2996,
-          "score": 2.2996,
+          "return": -0.3511,
+          "score": 0.3511,
           "ref": "2026-06-26 close",
           "evidence": "今天只是开始，下周科技股大概率会迎来持续大跌。"
         },
@@ -767,15 +749,15 @@
           "time": "16:21",
           "direction": "bearish",
           "strength": "moderate",
-          "return": -2.7214,
-          "score": 2.7214,
+          "return": -0.8742,
+          "score": 0.8742,
           "ref": "2026-06-29 open",
           "evidence": "今天扛住不跌，下周一还能扛住吗？高位获利盘这么大，补跌只是早晚的事。"
         }
       ],
-      "total_score": 34.99,
+      "total_score": 31.2,
       "signal_count": 9,
-      "avg_score_pct": 388.83
+      "avg_score_pct": 346.66
     },
     "M8": {
       "signals": [

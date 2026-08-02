@@ -8,46 +8,46 @@
   "no_segment": 103,
   "scores": {
     "综合": {
-      "total": 229.82,
+      "total": 208.8,
       "count": 1193,
-      "avg_pct": 0.19,
-      "win_rate": 54.74
+      "avg_pct": 0.18,
+      "win_rate": 54.23
     },
     "上升段": {
-      "total": 262.17,
+      "total": 249.47,
       "count": 844,
-      "avg_pct": 0.31,
-      "win_rate": 56.99
+      "avg_pct": 0.3,
+      "win_rate": 56.64
     },
     "下降段": {
-      "total": -32.35,
+      "total": -40.66,
       "count": 349,
-      "avg_pct": -0.09,
-      "win_rate": 49.28
+      "avg_pct": -0.12,
+      "win_rate": 48.42
     },
     "抄底": {
-      "total": 95.23,
+      "total": 93.95,
       "count": 53,
-      "avg_pct": 1.8,
-      "win_rate": 96.23
+      "avg_pct": 1.77,
+      "win_rate": 94.34
     },
     "逃顶": {
-      "total": 28.03,
+      "total": 25.93,
       "count": 16,
-      "avg_pct": 1.75,
+      "avg_pct": 1.62,
       "win_rate": 75.0
     },
     "看多": {
-      "total": 396.0,
+      "total": 382.19,
       "count": 835,
-      "avg_pct": 0.47,
-      "win_rate": 63.35
+      "avg_pct": 0.46,
+      "win_rate": 62.75
     },
     "看空": {
-      "total": -166.17,
+      "total": -173.39,
       "count": 358,
-      "avg_pct": -0.46,
-      "win_rate": 34.64
+      "avg_pct": -0.48,
+      "win_rate": 34.36
     }
   },
   "time_horizon_scores": {
@@ -57,29 +57,11 @@
       "avg_pct": 0.05,
       "win_rate": 54.05
     },
-    "weekly": {
-      "count": 0,
-      "total": 0.0,
-      "avg_pct": 0.0,
-      "win_rate": 0.0
-    },
-    "biweekly": {
-      "count": 0,
-      "total": 0.0,
-      "avg_pct": 0.0,
-      "win_rate": 0.0
-    },
-    "monthly": {
-      "count": 0,
-      "total": 0.0,
-      "avg_pct": 0.0,
-      "win_rate": 0.0
-    },
-    "intraday": {
-      "count": 0,
-      "total": 0.0,
-      "avg_pct": 0.0,
-      "win_rate": 0.0
+    "medium": {
+      "count": 101,
+      "total": -13.48,
+      "avg_pct": -0.13,
+      "win_rate": 52.48
     },
     "long": {
       "count": 143,
@@ -102,7 +84,7 @@
       "total": 64,
       "bull": 63,
       "bear": 1,
-      "score": 26.37
+      "score": 25.99
     },
     "I10->I11": {
       "direction": "falling",
@@ -111,7 +93,7 @@
       "total": 31,
       "bull": 27,
       "bear": 4,
-      "score": 2.61
+      "score": 2.11
     },
     "I11->I12": {
       "direction": "rising",
@@ -120,7 +102,7 @@
       "total": 34,
       "bull": 33,
       "bear": 1,
-      "score": -36.72
+      "score": -33.87
     },
     "I12->M5": {
       "direction": "falling",
@@ -129,7 +111,7 @@
       "total": 36,
       "bull": 28,
       "bear": 8,
-      "score": -9.79
+      "score": -10.76
     },
     "I13->I14": {
       "direction": "rising",
@@ -147,7 +129,7 @@
       "total": 27,
       "bull": 12,
       "bear": 15,
-      "score": 4.96
+      "score": 3.22
     },
     "I2->I3": {
       "direction": "falling",
@@ -156,7 +138,7 @@
       "total": 50,
       "bull": 49,
       "bear": 1,
-      "score": -0.47
+      "score": -1.43
     },
     "I3->I4": {
       "direction": "rising",
@@ -165,7 +147,7 @@
       "total": 33,
       "bull": 33,
       "bear": 0,
-      "score": -28.19
+      "score": -29.52
     },
     "I4->I5": {
       "direction": "falling",
@@ -174,7 +156,7 @@
       "total": 60,
       "bull": 58,
       "bear": 2,
-      "score": -90.12
+      "score": -87.02
     },
     "I5->I6": {
       "direction": "rising",
@@ -183,7 +165,7 @@
       "total": 81,
       "bull": 73,
       "bear": 8,
-      "score": 9.05
+      "score": 9.04
     },
     "I6->M3": {
       "direction": "falling",
@@ -192,7 +174,7 @@
       "total": 24,
       "bull": 22,
       "bear": 2,
-      "score": -24.85
+      "score": -25.51
     },
     "I9->I10": {
       "direction": "rising",
@@ -201,7 +183,7 @@
       "total": 78,
       "bull": 56,
       "bear": 22,
-      "score": 40.2
+      "score": 40.16
     },
     "M2->I1": {
       "direction": "falling",
@@ -210,7 +192,7 @@
       "total": 20,
       "bull": 19,
       "bear": 1,
-      "score": 54.15
+      "score": 53.72
     },
     "M3->M4": {
       "direction": "rising",
@@ -219,7 +201,7 @@
       "total": 413,
       "bull": 234,
       "bear": 179,
-      "score": 191.45
+      "score": 179.45
     },
     "M4->I9": {
       "direction": "falling",
@@ -228,7 +210,7 @@
       "total": 58,
       "bull": 38,
       "bear": 20,
-      "score": 27.61
+      "score": 23.96
     },
     "M5->M6": {
       "direction": "rising",
@@ -237,7 +219,7 @@
       "total": 106,
       "bull": 77,
       "bear": 29,
-      "score": 53.83
+      "score": 52.04
     },
     "M6->I13": {
       "direction": "falling",
@@ -246,7 +228,7 @@
       "total": 49,
       "bull": 8,
       "bear": 41,
-      "score": 3.56
+      "score": 1.05
     },
     "M8->now": {
       "direction": "rising",
@@ -588,8 +570,8 @@
           "time": "10:17",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 0.984,
-          "score": 0.984,
+          "return": -0.1363,
+          "score": -0.1363,
           "ref": "2025-01-14 close",
           "evidence": "周线两连阴之后本周收阳为主；"
         },
@@ -604,9 +586,9 @@
           "evidence": "明天指数预计就会涨幅放缓，甚至还会有小幅调整震荡，但明天的震荡应该是洗盘为主，毕竟还有大量的踏空资金等待进场。"
         }
       ],
-      "total_score": 2.34,
+      "total_score": 1.22,
       "signal_count": 3,
-      "avg_score_pct": 77.9
+      "avg_score_pct": 40.55
     },
     "I6": {
       "signals": [
@@ -709,8 +691,8 @@
           "time": "07:46",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 2.7492,
-          "score": 2.7492,
+          "return": 2.5908,
+          "score": 2.5908,
           "ref": "2025-04-07 open(non-trading)",
           "evidence": "所以对A股下周的表现应该有信心和信念。"
         },
@@ -765,9 +747,9 @@
           "evidence": "突发重磅消息，上交所召开机构座谈会，中欧盘后通话了，A股利好多到数不过来，欧美股市反弹大涨，人民币汇率大幅贬值下，周三的"
         }
       ],
-      "total_score": 17.58,
+      "total_score": 17.42,
       "signal_count": 6,
-      "avg_score_pct": 292.96
+      "avg_score_pct": 290.32
     },
     "M4": {
       "signals": [
@@ -910,8 +892,8 @@
           "time": "11:46",
           "direction": "bearish",
           "strength": "moderate",
-          "return": -3.0471,
-          "score": 3.0471,
+          "return": -2.7947,
+          "score": 2.7947,
           "ref": "2026-05-13 close",
           "evidence": "依旧认为当前防御比进攻更为重要，也就是说我不认为现在是适合无脑追涨的时候，这个观点从周一开始提出，这周可能都不会改变；"
         },
@@ -996,9 +978,9 @@
           "evidence": "调整没有结束；高位震荡反复调整还会延续；"
         }
       ],
-      "total_score": 19.15,
+      "total_score": 18.89,
       "signal_count": 10,
-      "avg_score_pct": 191.46
+      "avg_score_pct": 188.93
     },
     "M7": {
       "signals": [
@@ -1017,15 +999,15 @@
           "time": "15:28",
           "direction": "bearish",
           "strength": "moderate",
-          "return": -2.7214,
-          "score": 2.7214,
+          "return": -0.8742,
+          "score": 0.8742,
           "ref": "2026-06-29 open",
           "evidence": "下周预计会有一个风格平衡的过程，当然不会立刻完成风格切换，但是经历了本周的极端之后，下周预计会有一些资金往中小盘慢慢过渡"
         }
       ],
-      "total_score": 1.78,
+      "total_score": -0.07,
       "signal_count": 2,
-      "avg_score_pct": 88.98
+      "avg_score_pct": -3.38
     },
     "M8": {
       "signals": [

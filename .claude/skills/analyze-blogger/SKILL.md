@@ -184,7 +184,7 @@ return = avg_close(window) / P_ref - 1
 | time_horizon | 窗口 | 含义 |
 |:---|:---|:---|
 | short | T, T+1, T+2 | 3 个交易日内 |
-| medium | T+5, T+10, T+15 | 约 1/2/3 周后各取 1 个交易日 |
+| medium | T+5 ~ T+10 | 约 1-2 周后的 6 个交易日 |
 | long | T+20, T+21, T+22 | 1 月后的 3 个交易日 |
 | unspecified | T+20, T+21, T+22 | 无明确时间范围，按月度窗口评估 |
 

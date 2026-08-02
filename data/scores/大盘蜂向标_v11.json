@@ -8,22 +8,22 @@
   "no_segment": 0,
   "scores": {
     "综合": {
-      "total": 41.25,
+      "total": 40.3,
       "count": 186,
       "avg_pct": 0.22,
-      "win_rate": 53.76
+      "win_rate": 52.69
     },
     "上升段": {
-      "total": 40.38,
+      "total": 40.02,
       "count": 97,
-      "avg_pct": 0.42,
+      "avg_pct": 0.41,
       "win_rate": 55.67
     },
     "下降段": {
-      "total": 0.86,
+      "total": 0.28,
       "count": 89,
-      "avg_pct": 0.01,
-      "win_rate": 51.69
+      "avg_pct": 0.0,
+      "win_rate": 49.44
     },
     "抄底": {
       "total": 26.0,
@@ -32,22 +32,22 @@
       "win_rate": 92.31
     },
     "逃顶": {
-      "total": 14.52,
+      "total": 13.73,
       "count": 7,
-      "avg_pct": 2.07,
-      "win_rate": 100.0
+      "avg_pct": 1.96,
+      "win_rate": 85.71
     },
     "看多": {
-      "total": 9.42,
+      "total": 9.06,
       "count": 86,
       "avg_pct": 0.11,
       "win_rate": 53.49
     },
     "看空": {
-      "total": 31.82,
+      "total": 31.24,
       "count": 100,
-      "avg_pct": 0.32,
-      "win_rate": 54.0
+      "avg_pct": 0.31,
+      "win_rate": 52.0
     }
   },
   "time_horizon_scores": {
@@ -57,29 +57,11 @@
       "avg_pct": 0.02,
       "win_rate": 52.0
     },
-    "weekly": {
-      "count": 0,
-      "total": 0.0,
-      "avg_pct": 0.0,
-      "win_rate": 0.0
-    },
-    "biweekly": {
-      "count": 0,
-      "total": 0.0,
-      "avg_pct": 0.0,
-      "win_rate": 0.0
-    },
-    "monthly": {
-      "count": 0,
-      "total": 0.0,
-      "avg_pct": 0.0,
-      "win_rate": 0.0
-    },
-    "intraday": {
-      "count": 0,
-      "total": 0.0,
-      "avg_pct": 0.0,
-      "win_rate": 0.0
+    "medium": {
+      "count": 11,
+      "total": 10.27,
+      "avg_pct": 0.93,
+      "win_rate": 63.64
     },
     "long": {
       "count": 1,
@@ -102,7 +84,7 @@
       "total": 29,
       "bull": 4,
       "bear": 25,
-      "score": 7.94
+      "score": 7.98
     },
     "I11->I12": {
       "direction": "rising",
@@ -111,7 +93,7 @@
       "total": 31,
       "bull": 18,
       "bear": 13,
-      "score": -9.49
+      "score": -8.87
     },
     "I12->M5": {
       "direction": "falling",
@@ -156,7 +138,7 @@
       "total": 45,
       "bull": 28,
       "bear": 17,
-      "score": 59.87
+      "score": 58.88
     },
     "M6->I13": {
       "direction": "falling",
@@ -165,7 +147,7 @@
       "total": 29,
       "bull": 22,
       "bear": 7,
-      "score": -6.58
+      "score": -7.2
     },
     "M8->now": {
       "direction": "rising",
@@ -195,15 +177,15 @@
           "time": "19:37",
           "direction": "bearish",
           "strength": "moderate",
-          "return": -0.4967,
-          "score": 0.4967,
+          "return": 0.2967,
+          "score": -0.2967,
           "ref": "2026-01-16 open",
           "evidence": "所以，我预判明天充其量就是个弱反，下周继续调整。"
         }
       ],
-      "total_score": 0.78,
+      "total_score": -0.02,
       "signal_count": 2,
-      "avg_score_pct": 38.76
+      "avg_score_pct": -0.91
     },
     "I11": {
       "signals": [

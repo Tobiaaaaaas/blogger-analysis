@@ -8,21 +8,21 @@
   "no_segment": 0,
   "scores": {
     "综合": {
-      "total": -135.85,
+      "total": -134.42,
       "count": 1307,
       "avg_pct": -0.1,
-      "win_rate": 46.67
+      "win_rate": 46.52
     },
     "上升段": {
-      "total": -170.61,
+      "total": -170.12,
       "count": 893,
       "avg_pct": -0.19,
-      "win_rate": 43.9
+      "win_rate": 43.67
     },
     "下降段": {
-      "total": 34.76,
+      "total": 35.7,
       "count": 414,
-      "avg_pct": 0.08,
+      "avg_pct": 0.09,
       "win_rate": 52.66
     },
     "抄底": {
@@ -32,19 +32,19 @@
       "win_rate": 76.19
     },
     "逃顶": {
-      "total": 37.36,
+      "total": 31.58,
       "count": 43,
-      "avg_pct": 0.87,
+      "avg_pct": 0.73,
       "win_rate": 69.77
     },
     "看多": {
-      "total": 19.72,
+      "total": 18.06,
       "count": 499,
       "avg_pct": 0.04,
-      "win_rate": 58.92
+      "win_rate": 58.52
     },
     "看空": {
-      "total": -155.57,
+      "total": -152.48,
       "count": 808,
       "avg_pct": -0.19,
       "win_rate": 39.11
@@ -57,29 +57,11 @@
       "avg_pct": -0.08,
       "win_rate": 45.77
     },
-    "weekly": {
-      "count": 0,
-      "total": 0.0,
-      "avg_pct": 0.0,
-      "win_rate": 0.0
-    },
-    "biweekly": {
-      "count": 0,
-      "total": 0.0,
-      "avg_pct": 0.0,
-      "win_rate": 0.0
-    },
-    "monthly": {
-      "count": 0,
-      "total": 0.0,
-      "avg_pct": 0.0,
-      "win_rate": 0.0
-    },
-    "intraday": {
-      "count": 0,
-      "total": 0.0,
-      "avg_pct": 0.0,
-      "win_rate": 0.0
+    "medium": {
+      "count": 63,
+      "total": -8.15,
+      "avg_pct": -0.13,
+      "win_rate": 49.21
     },
     "long": {
       "count": 164,
@@ -102,7 +84,7 @@
       "total": 42,
       "bull": 5,
       "bear": 37,
-      "score": -1.9
+      "score": -2.71
     },
     "I11->I12": {
       "direction": "rising",
@@ -111,7 +93,7 @@
       "total": 78,
       "bull": 30,
       "bear": 48,
-      "score": 67.28
+      "score": 67.48
     },
     "I12->M5": {
       "direction": "falling",
@@ -120,7 +102,7 @@
       "total": 67,
       "bull": 30,
       "bear": 37,
-      "score": -15.69
+      "score": -17.04
     },
     "I13->I14": {
       "direction": "rising",
@@ -129,7 +111,7 @@
       "total": 61,
       "bull": 15,
       "bear": 46,
-      "score": -33.4
+      "score": -34.63
     },
     "I14->M8": {
       "direction": "falling",
@@ -138,7 +120,7 @@
       "total": 81,
       "bull": 26,
       "bear": 55,
-      "score": 35.35
+      "score": 32.07
     },
     "I5->I6": {
       "direction": "rising",
@@ -147,7 +129,7 @@
       "total": 70,
       "bull": 53,
       "bear": 17,
-      "score": 3.13
+      "score": 2.56
     },
     "I6->M3": {
       "direction": "falling",
@@ -156,7 +138,7 @@
       "total": 20,
       "bull": 13,
       "bear": 7,
-      "score": 2.29
+      "score": 1.37
     },
     "I9->I10": {
       "direction": "rising",
@@ -165,7 +147,7 @@
       "total": 79,
       "bull": 52,
       "bear": 27,
-      "score": 13.98
+      "score": 12.02
     },
     "M3->M4": {
       "direction": "rising",
@@ -174,7 +156,7 @@
       "total": 433,
       "bull": 117,
       "bear": 316,
-      "score": -190.52
+      "score": -185.89
     },
     "M4->I9": {
       "direction": "falling",
@@ -183,7 +165,7 @@
       "total": 101,
       "bull": 38,
       "bear": 63,
-      "score": 6.65
+      "score": 6.91
     },
     "M5->M6": {
       "direction": "rising",
@@ -192,7 +174,7 @@
       "total": 131,
       "bull": 90,
       "bear": 41,
-      "score": -26.09
+      "score": -26.68
     },
     "M6->I13": {
       "direction": "falling",
@@ -201,7 +183,7 @@
       "total": 106,
       "bull": 17,
       "bear": 89,
-      "score": 8.07
+      "score": 15.09
     },
     "M8->now": {
       "direction": "rising",
@@ -811,8 +793,8 @@
           "time": "16:08",
           "direction": "bearish",
           "strength": "moderate",
-          "return": -4.0021,
-          "score": 4.0021,
+          "return": -2.0875,
+          "score": 2.0875,
           "ref": "2026-06-26 open",
           "evidence": "如果我说上证今年只维持在3731~4300±50区间震荡，5.14日上证从4258.8已转为中期调整；唯有双创进入了牛市"
         },
@@ -841,8 +823,8 @@
           "time": "06:40",
           "direction": "bearish",
           "strength": "moderate",
-          "return": -4.0021,
-          "score": 4.0021,
+          "return": -2.0875,
+          "score": 2.0875,
           "ref": "2026-06-26 open",
           "evidence": "如果上证今天不涨反跌20来点，那周线则很不好看，提防上证变盘向下。今天不会大跌，但技术走势决定下周的方向。"
         },
@@ -881,8 +863,8 @@
           "time": "13:01",
           "direction": "bearish",
           "strength": "moderate",
-          "return": -2.2996,
-          "score": 2.2996,
+          "return": -0.3511,
+          "score": 0.3511,
           "ref": "2026-06-26 close",
           "evidence": "如果我说上证今年只维持在3731~4300±50区间震荡，5.14日上证从4258.8已转为中期调整；唯有双创进入了牛市"
         },
@@ -897,9 +879,9 @@
           "evidence": "上证玩完，3800点见，双创牛市未结束，后市仍将上行"
         }
       ],
-      "total_score": 17.77,
+      "total_score": 12.0,
       "signal_count": 9,
-      "avg_score_pct": 197.5
+      "avg_score_pct": 133.3
     },
     "M8": {
       "signals": [

@@ -56,7 +56,7 @@ TOP_DATES = {
 # Offsets from T (list of trading day offsets to sample)
 TH_WINDOW = {
     "short": [0, 1, 2],                # T, T+1, T+2
-    "medium": [5, 10, 15],             # T+5, T+10, T+15 (sampled)
+    "medium": [5, 6, 7, 8, 9, 10],     # T+5 ~ T+10 (6 consecutive)
     "long": [20, 21, 22],              # T+20, T+21, T+22
     "unspecified": [20, 21, 22],       # T+20, T+21, T+22
 }

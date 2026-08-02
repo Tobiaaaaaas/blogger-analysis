@@ -8,46 +8,46 @@
   "no_segment": 157,
   "scores": {
     "综合": {
-      "total": 206.24,
+      "total": 182.03,
       "count": 994,
-      "avg_pct": 0.21,
-      "win_rate": 53.42
+      "avg_pct": 0.18,
+      "win_rate": 53.22
     },
     "上升段": {
-      "total": 105.83,
+      "total": 93.92,
       "count": 713,
-      "avg_pct": 0.15,
-      "win_rate": 52.88
+      "avg_pct": 0.13,
+      "win_rate": 52.45
     },
     "下降段": {
-      "total": 100.41,
+      "total": 88.12,
       "count": 281,
-      "avg_pct": 0.36,
-      "win_rate": 54.8
+      "avg_pct": 0.31,
+      "win_rate": 55.16
     },
     "抄底": {
-      "total": 102.71,
+      "total": 102.05,
       "count": 30,
-      "avg_pct": 3.42,
+      "avg_pct": 3.4,
       "win_rate": 86.67
     },
     "逃顶": {
-      "total": 44.59,
+      "total": 40.6,
       "count": 19,
-      "avg_pct": 2.35,
+      "avg_pct": 2.14,
       "win_rate": 78.95
     },
     "看多": {
-      "total": 636.2,
+      "total": 620.83,
       "count": 542,
-      "avg_pct": 1.17,
-      "win_rate": 71.22
+      "avg_pct": 1.15,
+      "win_rate": 70.66
     },
     "看空": {
-      "total": -429.96,
+      "total": -438.79,
       "count": 452,
-      "avg_pct": -0.95,
-      "win_rate": 32.08
+      "avg_pct": -0.97,
+      "win_rate": 32.3
     }
   },
   "time_horizon_scores": {
@@ -57,29 +57,11 @@
       "avg_pct": -0.02,
       "win_rate": 53.58
     },
-    "weekly": {
-      "count": 0,
-      "total": 0.0,
-      "avg_pct": 0.0,
-      "win_rate": 0.0
-    },
-    "biweekly": {
-      "count": 0,
-      "total": 0.0,
-      "avg_pct": 0.0,
-      "win_rate": 0.0
-    },
-    "monthly": {
-      "count": 0,
-      "total": 0.0,
-      "avg_pct": 0.0,
-      "win_rate": 0.0
-    },
-    "intraday": {
-      "count": 0,
-      "total": 0.0,
-      "avg_pct": 0.0,
-      "win_rate": 0.0
+    "medium": {
+      "count": 111,
+      "total": 56.55,
+      "avg_pct": 0.51,
+      "win_rate": 61.26
     },
     "long": {
       "count": 74,
@@ -111,7 +93,7 @@
       "total": 28,
       "bull": 19,
       "bear": 9,
-      "score": 3.37
+      "score": 1.93
     },
     "I11->I12": {
       "direction": "rising",
@@ -120,7 +102,7 @@
       "total": 37,
       "bull": 32,
       "bear": 5,
-      "score": -44.94
+      "score": -35.5
     },
     "I12->M5": {
       "direction": "falling",
@@ -129,7 +111,7 @@
       "total": 50,
       "bull": 18,
       "bear": 32,
-      "score": 44.03
+      "score": 38.22
     },
     "I13->I14": {
       "direction": "rising",
@@ -138,7 +120,7 @@
       "total": 24,
       "bull": 10,
       "bear": 14,
-      "score": -33.0
+      "score": -33.62
     },
     "I14->M8": {
       "direction": "falling",
@@ -147,7 +129,7 @@
       "total": 48,
       "bull": 18,
       "bear": 30,
-      "score": 41.96
+      "score": 32.96
     },
     "I2->I3": {
       "direction": "falling",
@@ -156,7 +138,7 @@
       "total": 9,
       "bull": 2,
       "bear": 7,
-      "score": -8.65
+      "score": -8.53
     },
     "I3->I4": {
       "direction": "rising",
@@ -165,7 +147,7 @@
       "total": 4,
       "bull": 0,
       "bear": 4,
-      "score": 3.67
+      "score": 4.01
     },
     "I4->I5": {
       "direction": "falling",
@@ -174,7 +156,7 @@
       "total": 30,
       "bull": 16,
       "bear": 14,
-      "score": 41.62
+      "score": 42.97
     },
     "I5->I6": {
       "direction": "rising",
@@ -183,7 +165,7 @@
       "total": 92,
       "bull": 45,
       "bear": 47,
-      "score": 33.75
+      "score": 31.63
     },
     "I6->M3": {
       "direction": "falling",
@@ -192,7 +174,7 @@
       "total": 26,
       "bull": 17,
       "bear": 9,
-      "score": -15.09
+      "score": -13.29
     },
     "I9->I10": {
       "direction": "rising",
@@ -201,7 +183,7 @@
       "total": 54,
       "bull": 26,
       "bear": 28,
-      "score": -54.14
+      "score": -53.73
     },
     "M3->M4": {
       "direction": "rising",
@@ -210,7 +192,7 @@
       "total": 406,
       "bull": 237,
       "bear": 169,
-      "score": 192.04
+      "score": 173.49
     },
     "M4->I9": {
       "direction": "falling",
@@ -219,7 +201,7 @@
       "total": 71,
       "bull": 36,
       "bear": 35,
-      "score": -13.43
+      "score": -12.43
     },
     "M5->M6": {
       "direction": "rising",
@@ -228,7 +210,7 @@
       "total": 84,
       "bull": 47,
       "bear": 37,
-      "score": 6.05
+      "score": 5.24
     },
     "M6->I13": {
       "direction": "falling",
@@ -237,7 +219,7 @@
       "total": 33,
       "bull": 14,
       "bear": 19,
-      "score": 6.61
+      "score": 6.29
     },
     "M8->now": {
       "direction": "rising",
@@ -361,8 +343,8 @@
           "time": "11:12",
           "direction": "bearish",
           "strength": "moderate",
-          "return": -2.5364,
-          "score": 2.5364,
+          "return": -0.4861,
+          "score": 0.4861,
           "ref": "2026-03-03 close",
           "evidence": "按计划到3月中旬左右，差不多要开始撤退了，指数大概在4250-4260。能玩的时间不多了，空间也不多，但4250不是最终"
         },
@@ -407,9 +389,9 @@
           "evidence": "早盘4065开始的反弹，相对比较弱，跳空缺口也没补，再破4065也就顺其自然，本波段最后一道防线在4000点附近。破40"
         }
       ],
-      "total_score": 11.83,
+      "total_score": 9.78,
       "signal_count": 6,
-      "avg_score_pct": 197.2
+      "avg_score_pct": 163.03
     },
     "I4": {
       "signals": [
@@ -784,15 +766,15 @@
           "time": "12:22",
           "direction": "bearish",
           "strength": "moderate",
-          "return": -2.2996,
-          "score": 2.2996,
+          "return": -0.3511,
+          "score": 0.3511,
           "ref": "2026-06-26 close",
           "evidence": "最晚下周应该能看到4000以下，这2天放假做做功课。"
         }
       ],
-      "total_score": 7.23,
+      "total_score": 5.28,
       "signal_count": 2,
-      "avg_score_pct": 361.64
+      "avg_score_pct": 264.22
     },
     "M8": {
       "signals": [
@@ -811,8 +793,8 @@
           "time": "14:34",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 1.756,
-          "score": 1.756,
+          "return": 1.0993,
+          "score": 1.0993,
           "ref": "2026-07-20 open(non-trading)",
           "evidence": "短线上，下周稍破下3745，短线反弹结构就成立，极端点到3715，所以3715-3735开始的反弹方向是3820-385"
         },
@@ -887,9 +869,9 @@
           "evidence": "短线看3820是个小关口，预计下午就能过去，突破3820资金还会跟进，大盘反弹目标在3885左右。"
         }
       ],
-      "total_score": 2.02,
+      "total_score": 1.36,
       "signal_count": 9,
-      "avg_score_pct": 22.4
+      "avg_score_pct": 15.11
     }
   }
 }

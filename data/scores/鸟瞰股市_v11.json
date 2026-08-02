@@ -8,45 +8,45 @@
   "no_segment": 128,
   "scores": {
     "综合": {
-      "total": 87.03,
+      "total": 64.73,
       "count": 470,
-      "avg_pct": 0.19,
-      "win_rate": 60.21
+      "avg_pct": 0.14,
+      "win_rate": 59.57
     },
     "上升段": {
-      "total": 199.38,
+      "total": 180.8,
       "count": 313,
-      "avg_pct": 0.64,
-      "win_rate": 69.65
+      "avg_pct": 0.58,
+      "win_rate": 68.37
     },
     "下降段": {
-      "total": -112.35,
+      "total": -116.06,
       "count": 157,
-      "avg_pct": -0.72,
-      "win_rate": 41.4
+      "avg_pct": -0.74,
+      "win_rate": 42.04
     },
     "抄底": {
-      "total": 34.93,
+      "total": 33.3,
       "count": 22,
-      "avg_pct": 1.59,
+      "avg_pct": 1.51,
       "win_rate": 100.0
     },
     "逃顶": {
-      "total": 6.77,
+      "total": 7.03,
       "count": 5,
-      "avg_pct": 1.35,
+      "avg_pct": 1.41,
       "win_rate": 80.0
     },
     "看多": {
-      "total": 115.5,
+      "total": 93.94,
       "count": 429,
-      "avg_pct": 0.27,
-      "win_rate": 62.94
+      "avg_pct": 0.22,
+      "win_rate": 62.24
     },
     "看空": {
-      "total": -28.47,
+      "total": -29.21,
       "count": 41,
-      "avg_pct": -0.69,
+      "avg_pct": -0.71,
       "win_rate": 31.71
     }
   },
@@ -57,29 +57,11 @@
       "avg_pct": -0.0,
       "win_rate": 56.12
     },
-    "weekly": {
-      "count": 0,
-      "total": 0.0,
-      "avg_pct": 0.0,
-      "win_rate": 0.0
-    },
-    "biweekly": {
-      "count": 0,
-      "total": 0.0,
-      "avg_pct": 0.0,
-      "win_rate": 0.0
-    },
-    "monthly": {
-      "count": 0,
-      "total": 0.0,
-      "avg_pct": 0.0,
-      "win_rate": 0.0
-    },
-    "intraday": {
-      "count": 0,
-      "total": 0.0,
-      "avg_pct": 0.0,
-      "win_rate": 0.0
+    "medium": {
+      "count": 77,
+      "total": 28.93,
+      "avg_pct": 0.38,
+      "win_rate": 66.23
     },
     "long": {
       "count": 17,
@@ -102,7 +84,7 @@
       "total": 30,
       "bull": 28,
       "bear": 2,
-      "score": 14.46
+      "score": 13.23
     },
     "I10->I11": {
       "direction": "falling",
@@ -156,7 +138,7 @@
       "total": 20,
       "bull": 19,
       "bear": 1,
-      "score": -6.08
+      "score": -7.22
     },
     "I3->I4": {
       "direction": "rising",
@@ -165,7 +147,7 @@
       "total": 15,
       "bull": 14,
       "bear": 1,
-      "score": -11.62
+      "score": -11.12
     },
     "I4->I5": {
       "direction": "falling",
@@ -174,7 +156,7 @@
       "total": 37,
       "bull": 36,
       "bear": 1,
-      "score": -51.8
+      "score": -51.4
     },
     "I5->I6": {
       "direction": "rising",
@@ -183,7 +165,7 @@
       "total": 68,
       "bull": 61,
       "bear": 7,
-      "score": 39.17
+      "score": 36.78
     },
     "I6->M3": {
       "direction": "falling",
@@ -192,7 +174,7 @@
       "total": 21,
       "bull": 20,
       "bear": 1,
-      "score": -29.81
+      "score": -32.17
     },
     "I9->I10": {
       "direction": "rising",
@@ -210,7 +192,7 @@
       "total": 14,
       "bull": 9,
       "bear": 5,
-      "score": -6.34
+      "score": -6.96
     },
     "M3->M4": {
       "direction": "rising",
@@ -219,7 +201,7 @@
       "total": 126,
       "bull": 121,
       "bear": 5,
-      "score": 135.86
+      "score": 120.39
     },
     "M4->I9": {
       "direction": "falling",
@@ -411,8 +393,8 @@
           "time": "15:06",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 4.3846,
-          "score": 4.3846,
+          "return": 4.5721,
+          "score": 4.5721,
           "ref": "2024-11-27 open",
           "evidence": "展望后市，大盘在3200点至3300点之间继续震荡整理的概率较大，有效跌破3200点的概率很小。"
         },
@@ -457,9 +439,9 @@
           "evidence": "笔者倾向于第二种走势。"
         }
       ],
-      "total_score": 10.23,
+      "total_score": 10.42,
       "signal_count": 5,
-      "avg_score_pct": 204.7
+      "avg_score_pct": 208.45
     },
     "I5": {
       "signals": [
@@ -478,8 +460,8 @@
           "time": "15:09",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 1.1605,
-          "score": 1.1605,
+          "return": 0.2003,
+          "score": 0.2003,
           "ref": "2025-01-15 open",
           "evidence": "大盘在底部放量大阳后，宣告了本轮调整已经结束，股指3140.98点将成为本轮行情调整的低点。后市继续看好。"
         },
@@ -488,15 +470,15 @@
           "time": "17:19",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 1.1605,
-          "score": 1.1605,
+          "return": 0.2003,
+          "score": 0.2003,
           "ref": "2025-01-15 open",
           "evidence": "大盘后市即使震荡，那再跌破3140.98点的概率很小很小。在春节前这段时间，大盘横盘震荡，股指逐步走高的概率很大。"
         }
       ],
-      "total_score": 4.52,
+      "total_score": 2.6,
       "signal_count": 3,
-      "avg_score_pct": 150.6
+      "avg_score_pct": 86.58
     },
     "M2": {
       "signals": [
@@ -505,8 +487,8 @@
           "time": "15:03",
           "direction": "bearish",
           "strength": "moderate",
-          "return": -4.9571,
-          "score": 4.9571,
+          "return": -5.2163,
+          "score": 5.2163,
           "ref": "2024-10-09 open",
           "evidence": "笔者认为今日沪指最高点3674.40点将成为短期的高点。后市在一段时间内，大盘大概率是上下震荡整理，充分消化获利盘、解套"
         },
@@ -521,9 +503,9 @@
           "evidence": "笔者认为，如果政策面没有重大变化，那即使明日反弹，后面几个交易日沪指回补这个缺口的概率也很大。"
         }
       ],
-      "total_score": 5.25,
+      "total_score": 5.51,
       "signal_count": 2,
-      "avg_score_pct": 262.64
+      "avg_score_pct": 275.61
     },
     "M3": {
       "signals": [
@@ -532,8 +514,8 @@
           "time": "15:06",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 5.588,
-          "score": 5.588,
+          "return": 5.6836,
+          "score": 5.6836,
           "ref": "2025-04-09 open",
           "evidence": "展望后市，大盘企稳概率很大。如果没有新的突发利空，那昨日的低点3040.69点，有望成为相当长时间内的低点。"
         },
@@ -548,9 +530,9 @@
           "evidence": "明日大概率是：大盘继续震荡反弹，红盘报收。"
         }
       ],
-      "total_score": 9.0,
+      "total_score": 9.1,
       "signal_count": 2,
-      "avg_score_pct": 450.16
+      "avg_score_pct": 454.95
     },
     "M5": {
       "signals": [

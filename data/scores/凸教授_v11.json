@@ -8,27 +8,27 @@
   "no_segment": 141,
   "scores": {
     "综合": {
-      "total": 843.72,
+      "total": 832.55,
       "count": 832,
-      "avg_pct": 1.01,
-      "win_rate": 65.62
+      "avg_pct": 1.0,
+      "win_rate": 65.14
     },
     "上升段": {
-      "total": 999.55,
+      "total": 982.74,
       "count": 621,
-      "avg_pct": 1.61,
-      "win_rate": 74.72
+      "avg_pct": 1.58,
+      "win_rate": 74.07
     },
     "下降段": {
-      "total": -155.83,
+      "total": -150.19,
       "count": 211,
-      "avg_pct": -0.74,
+      "avg_pct": -0.71,
       "win_rate": 38.86
     },
     "抄底": {
-      "total": 119.55,
+      "total": 117.17,
       "count": 36,
-      "avg_pct": 3.32,
+      "avg_pct": 3.25,
       "win_rate": 97.22
     },
     "逃顶": {
@@ -38,15 +38,15 @@
       "win_rate": 0.0
     },
     "看多": {
-      "total": 839.9,
+      "total": 831.43,
       "count": 822,
-      "avg_pct": 1.02,
-      "win_rate": 65.82
+      "avg_pct": 1.01,
+      "win_rate": 65.33
     },
     "看空": {
-      "total": 3.82,
+      "total": 1.12,
       "count": 10,
-      "avg_pct": 0.38,
+      "avg_pct": 0.11,
       "win_rate": 50.0
     }
   },
@@ -57,29 +57,11 @@
       "avg_pct": 0.3,
       "win_rate": 63.04
     },
-    "weekly": {
-      "count": 0,
-      "total": 0.0,
-      "avg_pct": 0.0,
-      "win_rate": 0.0
-    },
-    "biweekly": {
-      "count": 0,
-      "total": 0.0,
-      "avg_pct": 0.0,
-      "win_rate": 0.0
-    },
-    "monthly": {
-      "count": 0,
-      "total": 0.0,
-      "avg_pct": 0.0,
-      "win_rate": 0.0
-    },
-    "intraday": {
-      "count": 0,
-      "total": 0.0,
-      "avg_pct": 0.0,
-      "win_rate": 0.0
+    "medium": {
+      "count": 83,
+      "total": 89.74,
+      "avg_pct": 1.08,
+      "win_rate": 62.65
     },
     "long": {
       "count": 42,
@@ -102,7 +84,7 @@
       "total": 49,
       "bull": 49,
       "bear": 0,
-      "score": 49.32
+      "score": 47.47
     },
     "I10->I11": {
       "direction": "falling",
@@ -120,7 +102,7 @@
       "total": 26,
       "bull": 25,
       "bear": 1,
-      "score": -76.52
+      "score": -73.82
     },
     "I12->M5": {
       "direction": "falling",
@@ -129,7 +111,7 @@
       "total": 30,
       "bull": 30,
       "bear": 0,
-      "score": -86.42
+      "score": -83.72
     },
     "I13->I14": {
       "direction": "rising",
@@ -147,7 +129,7 @@
       "total": 32,
       "bull": 32,
       "bear": 0,
-      "score": -7.17
+      "score": -10.29
     },
     "I3->I4": {
       "direction": "rising",
@@ -156,7 +138,7 @@
       "total": 21,
       "bull": 21,
       "bear": 0,
-      "score": 9.5
+      "score": 12.13
     },
     "I4->I5": {
       "direction": "falling",
@@ -165,7 +147,7 @@
       "total": 44,
       "bull": 44,
       "bear": 0,
-      "score": -83.95
+      "score": -77.28
     },
     "I5->I6": {
       "direction": "rising",
@@ -174,7 +156,7 @@
       "total": 82,
       "bull": 82,
       "bear": 0,
-      "score": 32.91
+      "score": 42.33
     },
     "I6->M3": {
       "direction": "falling",
@@ -183,7 +165,7 @@
       "total": 28,
       "bull": 28,
       "bear": 0,
-      "score": -26.96
+      "score": -25.24
     },
     "I9->I10": {
       "direction": "rising",
@@ -210,7 +192,7 @@
       "total": 349,
       "bull": 340,
       "bear": 9,
-      "score": 854.21
+      "score": 826.33
     },
     "M4->I9": {
       "direction": "falling",
@@ -219,7 +201,7 @@
       "total": 25,
       "bull": 25,
       "bear": 0,
-      "score": 31.17
+      "score": 28.84
     },
     "M5->M6": {
       "direction": "rising",
@@ -228,7 +210,7 @@
       "total": 67,
       "bull": 67,
       "bear": 0,
-      "score": 82.41
+      "score": 80.59
     },
     "M6->I13": {
       "direction": "falling",
@@ -278,15 +260,15 @@
           "time": "15:10",
           "direction": "bullish",
           "strength": "moderate",
-          "return": 2.7909,
-          "score": 2.7909,
+          "return": 0.4097,
+          "score": 0.4097,
           "ref": "2024-10-21 open",
           "evidence": "从今天开始直到下周五结束，大盘会一路震荡上涨，中间阴阳交替出现，趋势保持向上，直到大盘再次回到3600点左右。"
         }
       ],
-      "total_score": 12.3,
+      "total_score": 9.92,
       "signal_count": 4,
-      "avg_score_pct": 307.51
+      "avg_score_pct": 247.98
     },
     "I11": {
       "signals": [

@@ -8,22 +8,22 @@
   "no_segment": 38,
   "scores": {
     "综合": {
-      "total": 2.57,
+      "total": -1.54,
       "count": 148,
-      "avg_pct": 0.02,
-      "win_rate": 54.73
+      "avg_pct": -0.01,
+      "win_rate": 52.7
     },
     "上升段": {
-      "total": -0.53,
+      "total": -1.22,
       "count": 74,
-      "avg_pct": -0.01,
-      "win_rate": 58.11
+      "avg_pct": -0.02,
+      "win_rate": 55.41
     },
     "下降段": {
-      "total": 3.1,
+      "total": -0.32,
       "count": 74,
-      "avg_pct": 0.04,
-      "win_rate": 51.35
+      "avg_pct": -0.0,
+      "win_rate": 50.0
     },
     "抄底": {
       "total": 3.82,
@@ -38,16 +38,16 @@
       "win_rate": 50.0
     },
     "看多": {
-      "total": 16.04,
+      "total": 10.63,
       "count": 103,
-      "avg_pct": 0.16,
-      "win_rate": 62.14
+      "avg_pct": 0.1,
+      "win_rate": 61.17
     },
     "看空": {
-      "total": -13.46,
+      "total": -12.17,
       "count": 45,
-      "avg_pct": -0.3,
-      "win_rate": 37.78
+      "avg_pct": -0.27,
+      "win_rate": 33.33
     }
   },
   "time_horizon_scores": {
@@ -57,29 +57,11 @@
       "avg_pct": -0.01,
       "win_rate": 51.38
     },
-    "weekly": {
-      "count": 0,
-      "total": 0.0,
-      "avg_pct": 0.0,
-      "win_rate": 0.0
-    },
-    "biweekly": {
-      "count": 0,
-      "total": 0.0,
-      "avg_pct": 0.0,
-      "win_rate": 0.0
-    },
-    "monthly": {
-      "count": 0,
-      "total": 0.0,
-      "avg_pct": 0.0,
-      "win_rate": 0.0
-    },
-    "intraday": {
-      "count": 0,
-      "total": 0.0,
-      "avg_pct": 0.0,
-      "win_rate": 0.0
+    "medium": {
+      "count": 23,
+      "total": -3.07,
+      "avg_pct": -0.13,
+      "win_rate": 47.83
     },
     "long": {
       "count": 1,
@@ -111,7 +93,7 @@
       "total": 11,
       "bull": 6,
       "bear": 5,
-      "score": -1.37
+      "score": -1.62
     },
     "I11->I12": {
       "direction": "rising",
@@ -120,7 +102,7 @@
       "total": 8,
       "bull": 6,
       "bear": 2,
-      "score": 1.16
+      "score": 1.78
     },
     "I12->M5": {
       "direction": "falling",
@@ -138,7 +120,7 @@
       "total": 23,
       "bull": 21,
       "bear": 2,
-      "score": 4.09
+      "score": 2.89
     },
     "I4->I5": {
       "direction": "falling",
@@ -147,7 +129,7 @@
       "total": 26,
       "bull": 13,
       "bear": 13,
-      "score": -1.17
+      "score": -3.65
     },
     "I5->I6": {
       "direction": "rising",
@@ -165,7 +147,7 @@
       "total": 9,
       "bull": 7,
       "bear": 2,
-      "score": 1.22
+      "score": 1.72
     },
     "I9->I10": {
       "direction": "rising",
@@ -183,7 +165,7 @@
       "total": 39,
       "bull": 25,
       "bear": 14,
-      "score": -13.07
+      "score": -13.03
     },
     "M4->I9": {
       "direction": "falling",
@@ -201,7 +183,7 @@
       "total": 15,
       "bull": 12,
       "bear": 3,
-      "score": 8.75
+      "score": 7.39
     },
     "M6->I13": {
       "direction": "falling",
