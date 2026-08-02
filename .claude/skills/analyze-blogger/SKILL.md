@@ -173,7 +173,7 @@ cd <项目根目录> && python scripts/fetch_market_data.py
 
 ##### 4.3.3 return 因子与打分规则
 
-**return 因子**：根据信号的 `time_horizon` 确定一个 3 日平均收盘价窗口，计算其相对于信号参考价的变动百分比。
+**return 因子**：根据信号的 `time_horizon` 确定采样窗口，计算其平均收盘价相对于信号参考价的变动百分比。
 
 ```
 return = avg_close(window) / P_ref - 1
@@ -188,8 +188,8 @@ return = avg_close(window) / P_ref - 1
 | long | T+20, T+21, T+22 | 1 月后的 3 个交易日 |
 | unspecified | T+20, T+21, T+22 | 无明确时间范围，按月度窗口评估 |
 
-> 例：信号 time_horizon = medium，T = 5/16（周一）。window = [T+10=5/30(周五), 6/2(周一), 6/3(周二)]。
-> avg = (4050+4060+4040)/3 = 4050，ref = 4000，return = 4050/4000 - 1 = +1.25%。
+> 例：信号 time_horizon = short，T = 5/16（周一）。window = [5/16(周一), 5/17(周二), 5/18(周三)]。
+> avg = (4010+4020+3980)/3 = 4003，ref = 4000，return = 4003/4000 - 1 = +0.08%。
 
 **打分公式**：
 
@@ -384,11 +384,9 @@ score = direction_sign × return × strength_base
 | time_horizon | 信号数 | 总得分 | 平均分 | 胜率 |
 |:---|:---:|:---:|:---:|:---:|
 | short | X | +X% | +X% | X% |
-| weekly | X | +X% | +X% | X% |
-| biweekly | X | +X% | +X% | X% |
-| monthly | X | +X% | +X% | X% |
+| medium | X | +X% | +X% | X% |
+| long | X | +X% | +X% | X% |
 | unspecified | X | +X% | +X% | X% |
-| (intraday/long = score 0) | X | 0 | 0 | — |
 ```
 
 ---
