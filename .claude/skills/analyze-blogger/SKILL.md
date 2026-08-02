@@ -145,7 +145,7 @@ cd <项目根目录> && python scripts/fetch_market_data.py
 评估时必须将抄底和逃顶作为两个独立维度分别评分，不可合成"综合评估"。跟随者需要知道：**这个博主告诉我"什么时候买"靠谱，还是告诉我"什么时候卖"靠谱？**
 
 **原则 4：信号打分核心逻辑：**
-每条信号独立评分，不依赖线段方向或拐点接近度。score = direction_sign × return × strength_base。详见 §4.3.3。
+v10 双因子打分体系。return 衡量到下一拐点的潜在收益，short_return 衡量 3 日短线反向机会。信号根据线段方向和信号方向归入 A/B/C/D 四种场景之一。详见 §4.3.3。
 
 #### 4.3 拐点线段评估（打分制）
 
@@ -174,39 +174,55 @@ cd <项目根目录> && python scripts/fetch_market_data.py
 
 ##### 4.3.3 return 因子与打分规则
 
-**return 因子**：根据信号的 `time_horizon` 确定采样窗口，计算其平均收盘价相对于信号参考价的变动百分比。
+**return 因子**：信号所在线段中到下一拐点的潜在最大收益。
 
 ```
-return = avg_close(window) / P_ref - 1
+return = |下一拐点价格 - 信号参考价格| / |信号参考价格|
 ```
 
-`window` 由 `time_horizon` 决定（`T` 为参考价对应的交易日，见 §4.3.2）：
+**下一拐点价格**：由 zigzag 拐点识别时确定的点位，不可更改。
+- 顶部拐点 → 该拐点交易日的最高价
+- 底部拐点 → 该拐点交易日的最低价
 
-| time_horizon | 窗口 | 含义 |
-|:---|:---|:---|
-| short | T, T+1, T+2 | 3 个交易日内 |
-| medium | T+5 ~ T+10 | 约 1-2 周后的 6 个交易日 |
-| long | T+20, T+21, T+22 | 1 月后的 3 个交易日 |
-| unspecified | T+20, T+21, T+22 | 无明确时间范围，按月度窗口评估 |
+**short_return 因子**：从 **T 日**（含 T 日）开始连续 3 个交易日的平均收盘价相对于信号参考价的变动百分比。
 
-> 例：信号 time_horizon = short，T = 5/16（周一）。window = [5/16(周一), 5/17(周二), 5/18(周三)]。
-> avg = (4010+4020+3980)/3 = 4003，ref = 4000，return = 4003/4000 - 1 = +0.08%。
+```
+short_return = |avg_close(T, T+1, T+2) / P_ref - 1|
+```
+
+`avg_close` 取 T 日（含）起连续 3 个交易日收盘价的算术平均，四个场景统一使用。
+
+`strength_base = 2`（strong）或 `1`（moderate）。
 
 **打分公式**：
 
+**A — 上升段 + 看多**（奖励型）：
 ```
-direction_sign = +1 (bullish) / -1 (bearish)
-strength_base = 2 (strong) / 1 (moderate)
-score = direction_sign × return × strength_base
+short_return = |3日均价 / 信号参考价 - 1|
+score = strength_base × max(return, short_return)
 ```
 
-> 注：分数以百分比表示（return 和 score 均已 ×100）。
+**B — 上升段 + 看空**（惩罚调整型）：
+```
+short_return = |3日均价 / 信号参考价 - 1|
+如果 short_return > 1.5%: score = +strength_base × short_return
+如果 short_return ≤ 1.5%: score = -strength_base × return
+```
 
-**公式的自然含义**：
-- bullish + 均价涨了 → 正分（看多对了）
-- bullish + 均价跌了 → 负分（看多错了）
-- bearish + 均价跌了 → 正分（看空对了）
-- bearish + 均价涨了 → 负分（看空错了）
+**C — 下降段 + 看多**（惩罚调整型）：
+```
+short_return = |3日均价 / 信号参考价 - 1|
+如果 short_return > 1.5%: score = +strength_base × short_return
+如果 short_return ≤ 1.5%: score = -strength_base × return
+```
+
+**D — 下降段 + 看空**（奖励型）：
+```
+short_return = |3日均价 / 信号参考价 - 1|
+score = strength_base × max(return, short_return)
+```
+
+> 注：分数以百分比表示（return 和 short_return 均已 ×100）。
 
 ##### 4.3.4 共 14 个分数（7 个总得分 + 7 个平均分）
 
@@ -214,7 +230,7 @@ score = direction_sign × return × strength_base
 
 ```
 ① 综合总得分 = 所有信号的 score 之和（score=0 的信号不参与）
-② 上升段总得分 = 所有上升段内信号的 score 之和（线段方向由 zigzag 事后确定，仅用于统计分组）
+② 上升段总得分 = 所有上升段内信号的 score 之和
 ③ 下降段总得分 = 所有下降段内信号的 score 之和
 ④ 抄底总得分 = 底部拐点 ±1天（共三个交易日）内信号的 score 之和
 ⑤ 逃顶总得分 = 顶部拐点 ±1天（共三个交易日）内信号的 score 之和
@@ -241,7 +257,7 @@ score = direction_sign × return × strength_base
 - **顶部拐点**：M2(3674)、M4(4034)、M6(4259)、M7(4380)、I2(3510)、I4(3495)、I6(3439)、I10(4191)、I12(4197)、I14(4175)
 （I7、I8、I15 非上证拐点，视 market_analysis.md 的具体定义判定）
 
-> 注：线段方向（上升/下降）和拐点归属（抄底/逃顶）均由 zigzag 事后确定，**不参与打分公式**，仅用于统计分组——回答"博主在什么市场环境中表现更好"。
+> 注：线段方向（上升/下降）由 zigzag 事后确定，参与 return 因子计算和 A/B/C/D 公式判定。拐点归属（抄底/逃顶）仅用于统计分组——回答"博主在拐点处表现如何"。
 
 ##### 4.3.5 报告中的呈现
 
@@ -316,7 +332,7 @@ score = direction_sign × return × strength_base
 
 评估流程分两步：
 
-1. **拐点线段评估（§4.3）**：所有信号按 time_horizon 对应窗口打分，产出 14 个分数（7 总得分 + 7 平均分）+ 按 time_horizon 分组得分
+1. **拐点线段评估（§4.3）**：所有信号按 A/B/C/D 公式打分（return + short_return 双因子），产出 14 个分数（7 总得分 + 7 平均分）+ 按 time_horizon 分组得分 + 权益曲线与风险指标
 2. **LLM 定性分析（§4.1-4.2）**：对照拐点逐条分析博主的代表性判断，引用原文，给出 nuanced 评价
 
 互相验证：线段打分提供量化框架，LLM 定性提供深度解读。如有矛盾（如分数高但 LLM 发现博主只是喊口号），以 LLM 定性为准并解释原因。
@@ -333,7 +349,7 @@ score = direction_sign × return × strength_base
 > 评估时间：YYYY-MM-DD | 平台：今日头条
 > 帖子数量：N 条 | 时间跨度：YYYY-MM-DD ~ YYYY-MM-DD
 > 粉丝：X | 信号数量：N 条
-> 方法论版本：v11（LLM全量读取 + time_horizon 窗口化纯前向打分）
+> 方法论版本：v11（LLM全量读取 + A/B/C/D 双因子打分 + 权益曲线模拟）
 
 ---
 
