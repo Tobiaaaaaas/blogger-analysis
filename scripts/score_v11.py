@@ -231,7 +231,6 @@ def main():
             continue
 
         sbase = 2 if strength == "strong" else 1
-        dir_sign = 1 if direction == "bullish" else -1
 
         # Find segment (pure statistical grouping)
         seg = find_segment(date_str)
@@ -258,22 +257,49 @@ def main():
             seg_key = f"{seg['start_label']}->{seg['end_label']}"
             is_rising = (seg["direction"] == "rising")
 
-        # Compute score based on time_horizon
-        winfo = TH_WINDOW.get(th)
-        if winfo is None:
-            # long → score = 0
+        # v10 A/B/C/D scoring with return (inflection) + short_return (3d avg close)
+        if seg is None:
+            # Last segment: no next inflection → return cannot be computed
             score = 0.0
             ret = 0.0
+            short_r = 0.0
             score_zero += 1
         else:
-            avg_c = sampled_close_avg(ref_date, winfo, prices, sorted_dates)
-            if avg_c is None:
+            # return = |next_inflection_extreme - ref_price| / |ref_price|
+            return_val = abs(seg["end_extreme"] - ref_p) / abs(ref_p) * 100  # percentage
+            if return_val < 0:
+                return_val = 0
+
+            # short_return = 3-day avg close vs ref
+            avg_c_3d = sampled_close_avg(ref_date, [0, 1, 2], prices, sorted_dates)
+            if avg_c_3d is None:
                 score = 0.0
                 ret = 0.0
+                short_r = 0.0
                 score_zero += 1
             else:
-                ret = (avg_c / ref_p - 1) * 100  # percentage
-                score = dir_sign * ret * sbase
+                short_r = abs(avg_c_3d / ref_p - 1) * 100  # percentage
+
+                # A/B/C/D formulas
+                if is_rising and direction == "bullish":
+                    # A: rising + bullish → reward
+                    score = sbase * max(return_val, short_r)
+                elif is_rising and direction == "bearish":
+                    # B: rising + bearish → penalty-adjusted
+                    if short_r > 1.5:
+                        score = sbase * short_r
+                    else:
+                        score = -sbase * return_val
+                elif not is_rising and direction == "bullish":
+                    # C: falling + bullish → penalty-adjusted
+                    if short_r > 1.5:
+                        score = sbase * short_r
+                    else:
+                        score = -sbase * return_val
+                else:
+                    # D: falling + bearish → reward
+                    score = sbase * max(return_val, short_r)
+                ret = return_val
 
         # Record for equity curve simulation
         th_offsets = TH_WINDOW.get(th)
@@ -449,7 +475,7 @@ def main():
         recs = sorted(recs, key=lambda r: r["publish_time"])
 
         cash = 1.0
-        pos = None  # None or {"direction": "long"/"short", "size": 0.5/1.0, "entry_price": float, "exit_date": str}
+        pos = None  # None or {"direction": "long"/"short", "entry_price": float, "exit_date": str}
         nav_series = []
         trades = []
 
@@ -467,15 +493,11 @@ def main():
                     signal_idx += 1; continue
 
                 r_dir = "long" if r["direction"] == "bullish" else "short"
-                r_size = 1.0 if r["strength"] == "strong" else 0.5
                 r_exit = r.get("exit_date")
 
                 if pos is None:
-                    pos = {"direction": r_dir, "size": r_size, "entry_price": r["ref_price"], "exit_date": r_exit}
+                    pos = {"direction": r_dir, "entry_price": r["ref_price"], "exit_date": r_exit}
                 elif pos["direction"] == r_dir:
-                    # Same direction: size = max, refresh exit
-                    if r_size > pos["size"]:
-                        pos["size"] = r_size
                     pos_exit = pos.get("exit_date") or ""
                     if r_exit and (not pos_exit or r_exit > pos_exit):
                         pos["exit_date"] = r_exit
@@ -487,8 +509,8 @@ def main():
                             old_ret = (close_price / pos["entry_price"] - 1) * 100
                         else:
                             old_ret = (1 - close_price / pos["entry_price"]) * 100
-                        cash *= (1 + old_ret * pos["size"] / 100)
-                        trades.append({"exit_date": day, "direction": pos["direction"], "size": pos["size"], "return_pct": round(old_ret, 4)})
+                        cash *= (1 + old_ret / 100)
+                        trades.append({"exit_date": day, "direction": pos["direction"], "return_pct": round(old_ret, 4)})
                     pos = None
                 signal_idx += 1
 
@@ -499,8 +521,8 @@ def main():
                         trade_ret = (close_price / pos["entry_price"] - 1) * 100
                     else:
                         trade_ret = (1 - close_price / pos["entry_price"]) * 100
-                    cash *= (1 + trade_ret * pos["size"] / 100)
-                    trades.append({"exit_date": day, "direction": pos["direction"], "size": pos["size"], "return_pct": round(trade_ret, 4)})
+                    cash *= (1 + trade_ret / 100)
+                    trades.append({"exit_date": day, "direction": pos["direction"], "return_pct": round(trade_ret, 4)})
                 pos = None
 
             nav = cash
@@ -511,7 +533,7 @@ def main():
                         unrealized = (close_price / pos["entry_price"] - 1)
                     else:
                         unrealized = (1 - close_price / pos["entry_price"])
-                    nav = cash * (1 + unrealized * pos["size"])
+                    nav = cash * (1 + unrealized)
             nav_series.append((day, round(nav, 6)))
 
         if not nav_series: return [], {}
