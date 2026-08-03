@@ -268,7 +268,7 @@ def main():
     report.append(f"- **适合什么类型的跟随者**：<!-- LLM_ANALYSIS -->")
     report.append("")
 
-    out_path = os.path.join(PROJECT_ROOT, "reports", f"{blogger}_analysis.md")
+    out_path = os.path.join(PROJECT_ROOT, "reports", "bloggers", f"{blogger}_analysis.md")
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
     with open(out_path, "w", encoding="utf-8") as f:
         f.write("\n".join(report))
