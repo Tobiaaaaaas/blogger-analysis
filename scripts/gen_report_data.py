@@ -187,7 +187,12 @@ def main():
     blogger = args.blogger
 
     sig_d = load_json("data", "signals", f"{blogger}.json")
-    score_d = load_json("data", "scores", f"{blogger}.json")
+    # Try _v11 first, fall back to non-suffixed
+    score_path = os.path.join(PROJECT_ROOT, "data", "scores", f"{blogger}_v11.json")
+    if not os.path.exists(score_path):
+        score_path = os.path.join(PROJECT_ROOT, "data", "scores", f"{blogger}.json")
+    with open(score_path, encoding="utf-8") as f:
+        score_d = json.load(f)
     posts_d = load_json("data", "posts", f"{blogger}.json")
 
     ui = posts_d.get("user_info", {})
@@ -203,10 +208,10 @@ def main():
     report = []
     report.append(f"# {blogger} 大盘分析能力评估")
     report.append("")
-    report.append(f"> 评估时间：2026-08-01 | 平台：今日头条")
+    report.append(f"> 评估时间：2026-08-03 | 平台：今日头条")
     report.append(f"> 帖子数量：{total_posts} 条 | 时间跨度：{earliest} ~ {latest}")
     report.append(f"> 粉丝：{followers} | 信号数量：{sig_count} 条")
-    report.append(f"> 方法论版本：v10（LLM全量读取 + 拐点线段 return/short_return 双因子 + 发布时间定价）")
+    report.append(f"> 方法论版本：v11（LLM全量读取 + A/B/C/D 双因子打分，3日均价 short_return）")
     report.append("")
     report.append("---")
     report.append("")

@@ -1,16 +1,20 @@
 """
-爬取今日头条博主"顺应周期"的帖子 — v4
+爬取今日头条博主帖子 — v5
 策略：全部在Playwright内完成
 1. 渲染用户主页
 2. 用 page.evaluate() 在浏览器内调用 feed API（自带签名）
 3. 翻页获取大量帖子
 4. 页面内提取内容兜底
+
+Usage:
+  python scripts/scrape_toutiao.py <帖子链接> [--name <博主名>]
 """
 
 import json
 import sys
 import time
 import os
+import argparse
 from playwright.sync_api import sync_playwright
 from datetime import datetime
 
@@ -18,9 +22,6 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
 DATA_DIR = os.path.join(PROJECT_ROOT, "data", "posts")
 os.makedirs(DATA_DIR, exist_ok=True)
-OUTPUT_FILE = os.path.join(DATA_DIR, "posts.json")
-DEFAULT_POST_URL = "https://www.toutiao.com/w/1872013328886923/"
-POST_URL = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_POST_URL
 
 user_info = {}
 all_posts = []
@@ -116,9 +117,9 @@ def parse_items(data):
             (f"https://www.toutiao.com/w/{post_id}/" if post_id else "")
         )
 
-        # 提取用户信息
+        # 提取用户信息（API返回的用户名优先级最高，始终覆盖）
         user_data = item.get("user", {})
-        if user_data and not user_info.get("name"):
+        if user_data and user_data.get("name"):
             user_info["name"] = user_data.get("name", "")
             user_info["user_id"] = str(user_data.get("id", ""))
             user_info["description"] = user_data.get("desc", "")
@@ -137,9 +138,20 @@ def parse_items(data):
 
 
 def main():
+    parser = argparse.ArgumentParser(description="爬取今日头条博主全部帖子")
+    parser.add_argument("url", nargs="?", default="", help="博主任意帖子链接")
+    parser.add_argument("--name", "-n", default="", help="博主名称（可选，不提供则自动检测）")
+    args = parser.parse_args()
+
+    post_url = args.url or "https://www.toutiao.com/w/1872013328886923/"
+    explicit_name = args.name.strip() if args.name else ""
+
     print("=" * 60)
-    print("今日头条帖子爬虫 v4 - 浏览器内API调用")
+    print("今日头条帖子爬虫 v5 - 浏览器内API调用")
     print("=" * 60)
+
+    # OUTPUT_FILE is computed after we detect the name
+    output_file = None
 
     with sync_playwright() as p:
         browser = p.chromium.launch(
@@ -157,8 +169,15 @@ def main():
 
         # === 步骤1: 加载帖子页面，提取token ===
         print("\n[1] 加载帖子页面...")
-        page.goto(POST_URL, timeout=30000, wait_until="domcontentloaded")
-        time.sleep(5)
+        page.goto(post_url, timeout=30000, wait_until="domcontentloaded")
+        time.sleep(3)
+
+        # 等待用户主页链接出现
+        try:
+            page.wait_for_selector('a[href*="/c/user/token/"]', timeout=10000)
+        except:
+            pass
+        time.sleep(2)
 
         # 获取用户主页链接
         profile_href = page.evaluate("""
@@ -182,10 +201,7 @@ def main():
         token = profile_href.split("/c/user/token/")[1].split("/")[0].split("?")[0] if profile_href else ""
         print(f"  Token: {token[:60]}...")
 
-        # 获取用户信息
-        page_title = page.evaluate("() => document.title")
-        if "顺应周期" in page_title:
-            user_info["name"] = "顺应周期"
+        # 从页面标题获取博主名（仅作后备，API数据更可靠会覆盖）
 
         # === 步骤2: 访问用户主页 ===
         print("\n[2] 访问用户主页...")
@@ -197,7 +213,7 @@ def main():
         print("\n[3] 浏览器内API翻页获取帖子...")
         seen_ids = set()
         max_behot_time = 0
-        target = 3000
+        target = 5000
         max_pages = 200
 
         empty_streak = 0  # 连续空页计数
@@ -286,9 +302,16 @@ def main():
         print("\n[5] 保存结果...")
         times = [p["publish_time"] for p in all_posts if p["publish_time"]]
 
+        # Determine output filename: explicit --name > auto-detected name > fallback
+        blogger_name = explicit_name or user_info.get("name", "").strip()
+        if blogger_name:
+            output_file = os.path.join(DATA_DIR, f"{blogger_name}.json")
+        else:
+            output_file = os.path.join(DATA_DIR, "posts.json")
+
         result = {
             "scrape_time": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-            "source_url": POST_URL,
+            "source_url": post_url,
             "user_info": user_info,
             "total_posts": len(all_posts),
             "time_range": {
@@ -298,7 +321,7 @@ def main():
             "posts": sorted(all_posts, key=lambda x: x["publish_time"], reverse=True),
         }
 
-        with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        with open(output_file, "w", encoding="utf-8") as f:
             json.dump(result, f, ensure_ascii=False, indent=2)
 
         print(f"\n{'=' * 60}")
@@ -308,7 +331,7 @@ def main():
         print(f"帖子数: {len(all_posts)}")
         if times:
             print(f"时间: {datetime.fromtimestamp(min(times)).strftime('%Y-%m-%d')} ~ {datetime.fromtimestamp(max(times)).strftime('%Y-%m-%d')}")
-        print(f"结果: {OUTPUT_FILE}")
+        print(f"结果: {output_file}")
         print(f"{'=' * 60}")
 
         browser.close()

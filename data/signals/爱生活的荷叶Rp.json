@@ -1,0 +1,915 @@
+{
+  "blogger": "爱生活的荷叶Rp",
+  "extraction_time": "2026-08-04 00:27:26",
+  "model": "deepseek-v4-flash",
+  "total_posts": 140,
+  "pre_2024_06": 0,
+  "evaluation_posts": 140,
+  "not_extracted": {
+    "no_market_topic": 6,
+    "pure_description": 7,
+    "directional_vague": 6,
+    "other_index_sector": 10,
+    "other": 1
+  },
+  "scored_bullish": {
+    "strong": 5,
+    "moderate": 64,
+    "long": 3,
+    "medium": 27,
+    "short": 35,
+    "intraday": 3,
+    "unspecified": 1
+  },
+  "scored_bearish": {
+    "strong": 1,
+    "moderate": 40,
+    "long": 0,
+    "medium": 13,
+    "short": 28,
+    "intraday": 0,
+    "unspecified": 0
+  },
+  "signals": [
+    {
+      "post_n": 4,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "不出意外，自12月30日起大盘会连续阴线回调6个交易日到1月9日探底。",
+      "publish_time": "2025-12-29 05:54"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "如果明天开盘低开50个点以上，则意味着连续大跌开始，至1月9日探底。",
+      "publish_time": "2025-12-29 21:02"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "元旦节后的一周是持续回调的一周，先看是3816-3815连线支撑是否有效。周四周五或许有大幅跳空低开探底。",
+      "publish_time": "2026-01-02 11:20"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "如果大幅度低开，则深度回调开始。",
+      "publish_time": "2026-01-05 16:31"
+    },
+    {
+      "post_n": 13,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天是变盘窗口期，主力大概率会开盘闷杀散户，他们连续诱多任务完成了。",
+      "publish_time": "2026-01-06 16:05"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "从4100开始每隔50个点就是相对压力位。到了4700，满仓重仓的开始逐步减仓，看4800。",
+      "publish_time": "2026-01-07 04:21"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天支撑依次看4070-4056-4036,重点继续看4040-4036的支撑是否有效，只要不跌破，回调就不会向下扩展，依然能反弹出次高点。",
+      "publish_time": "2026-01-07 21:56"
+    },
+    {
+      "post_n": 9,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下周一旦跌破4036趋势线支撑，主力目的就是去回补下面的4024和3977这两个缺口。",
+      "publish_time": "2026-01-08 22:38"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下周一如果突破4120继续阳线，则进一步打开上升空间。",
+      "publish_time": "2026-01-09 17:41"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "自25年12.17日最低点3815.84反弹至今，连红14个交易日，完成突破反转，完美走势3815.84+985=4800.84",
+      "publish_time": "2026-01-12 22:37"
+    },
+    {
+      "post_n": 4,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天开始的这波回调，回调支撑区域我看4000-4050。",
+      "publish_time": "2026-01-13 17:35"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "我个人觉得大盘在震荡筑顶。反弹压力依旧为4150。",
+      "publish_time": "2026-01-15 19:20"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "预期下周后半周将在4050左右结束回调，开始新的上涨📈。",
+      "publish_time": "2026-01-15 23:16"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "下午会有拉升。一旦盘中破了4096指数就形成底背离，破了4096后，无论下跌有多少都会形成底背离，那么4190下跌的B浪反弹将开启。",
+      "publish_time": "2026-01-16 13:56"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "等下周反弹过了4120就可以确认4190的A浪下跌结束，开启B浪反弹。周一开盘最多再震荡一下就走出B浪反弹。",
+      "publish_time": "2026-01-16 18:40"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "C浪回调的最低点应该出在下下周，也就是一月底这个周的某一天，然后主升起飞迎接春节到来！",
+      "publish_time": "2026-01-17 22:29"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天周一开盘就很简单了，看大盘震荡出新低后走B浪反弹还是震荡不出新低就直接走B浪反弹。",
+      "publish_time": "2026-01-18 16:24"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天上午大盘突破了4120，那么可以说4090就是4190A浪下跌的最低点了。B浪也得走小3浪反弹，或者上下震荡横盘。震荡反弹到周四开始C浪回调。",
+      "publish_time": "2026-01-19 11:15"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "long",
+      "evidence": "今年上半年我至少看大盘到4700-4800区域。",
+      "publish_time": "2026-01-19 17:44"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大盘b浪主要是震荡，时间较长，空间较小。跌-横-跌结构目前还不会改变。周中，大盘要先看4140的压力是否能突破了。",
+      "publish_time": "2026-01-20 15:14"
+    },
+    {
+      "post_n": 9,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天按计划冲高减仓。",
+      "publish_time": "2026-01-21 16:28"
+    },
+    {
+      "post_n": 8,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天是继续震荡回调还是开盘大幅度低开杀出恐慌盘，让我们拭目以待。如果破了4100，接下来的支撑区域就在4034这个前期高点附近，最低一般也不会破4000点(大盘回调的0.5分位附近)",
+      "publish_time": "2026-01-22 15:44"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "但大盘2小时级别下周要先回调一下了，系统出现了2小时变盘时间信号。下周重要支撑位再4110，不破就没有任何问题。",
+      "publish_time": "2026-01-23 16:18"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "只要不破0.5分位，大盘都将轰轰烈烈开启主升浪，大家就可以喜气洋洋迎春节！",
+      "publish_time": "2026-01-26 16:12"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天4130不破先看反弹。只要不是4160之上快速拉起就还要走回调。",
+      "publish_time": "2026-01-27 17:47"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "在接下来的不长时间内，以上证指数为参考标的的A股市场如果打破此“阴阳十字星交替”走势，拉升出一根“中大阳线”形态，则必然会引燃涨势！",
+      "publish_time": "2026-01-28 17:29"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天无论是否新高，大盘都将开始走回调了，除非一根中大阳线直接拉起来。",
+      "publish_time": "2026-01-29 21:32"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大盘继续下跌的空间并不大，不排除4064有可能是春节前的最低点这一可能。下周一上午继续看反弹，今天跳空缺口即是压力位，压力位之下下周一下午继续看回调。",
+      "publish_time": "2026-01-30 16:07"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周最低点应该就是出现在2月4日周三立春日，预计即使再新低一点，最低点也就在4056附近，然后开启春节和元宵节行情。然后大盘振荡上行整个2月份和3月上旬。",
+      "publish_time": "2026-01-30 21:02"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "自4170的C浪下跌，基本上包含5个小子浪，今天将基本结束C3的下跌，4046是4190下跌的0.382分位，是一重要支撑，前期高点4034和4024缺口都是重要支撑，然后开启C4的反弹。明天主要看C4反弹，压力位在缺口附近。",
+      "publish_time": "2026-02-02 14:31"
+    },
+    {
+      "post_n": 11,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "该信号告诉我们，如果本周C5结束后开始日线上涨，需要本周上涨必须突破今日高点4103，该顶部信号才能消失，否则，下周也不可能突破4103高点了，这样的话春节前就很难有行情了。春季行情得要变成春节后才启动了。",
+      "publish_time": "2026-02-02 16:43"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天砸权重压大盘，个股反弹。大盘C4反弹修复日线乖离率：今天在4100附近，明天下降为4095附近，也就是说C4反弹很难补掉上面缺口,更不用说反转了。然后进行C5回调。",
+      "publish_time": "2026-02-03 13:35"
+    },
+    {
+      "post_n": 9,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "C5回调本周肯定会有，回调是否有新低不确定。本周剩余2天时间留意突然跳水。",
+      "publish_time": "2026-02-04 15:40"
+    },
+    {
+      "post_n": 8,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天大盘c5回调没有结束，预期下周一结束。回调空间不大，双底的可能比较大，即使破了前低4002点也没有多大空间，3991、3977和3960缺口都是支撑看上涨。",
+      "publish_time": "2026-02-05 16:07"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "C5还没有结束，下周一完成。下周一继续回调，能不能过今天的低点4030形成双底有待验证。下周一二次探底后春节前走上升。",
+      "publish_time": "2026-02-06 16:21"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周大盘就是主力发过年红包的一个过程。周一大盘震荡、结束自4190的C浪回调。周二中大阳线拉起来，周三至周五震荡向上，看4170附近。",
+      "publish_time": "2026-02-08 12:34"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "今天高开且补了4117缺口，宣布了4190的下跌结束了。",
+      "publish_time": "2026-02-09 14:50"
+    },
+    {
+      "post_n": 4,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "预计本周高点将在周四出现，周五期指交割日看回调。",
+      "publish_time": "2026-02-10 12:29"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天反弹即使出新高也会顶背离，开始回调，回调在一个交易日内会完成，然后周五继续反弹。",
+      "publish_time": "2026-02-11 16:00"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "我个人觉得上证指数4122应该不是自4142开始的回调的最低点，回调应该还没有完全到位，只有跌破4122，继续下行一点，大盘自4142下跌的结构才能完美。",
+      "publish_time": "2026-02-12 16:06"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "但3815向上ABC的C浪上涨不变。C浪至少能到4377。行情主要在3月份出现。",
+      "publish_time": "2026-02-13 16:08"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "我是坚信不疑看好三月份的。",
+      "publish_time": "2026-02-19 15:03"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大盘周二即使受周边行情的影响低开(仅仅是有这个可能而已)也会低开高走，反弹收阳线。",
+      "publish_time": "2026-02-22 14:04"
+    },
+    {
+      "post_n": 13,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "本人看好大盘低开反弹后再下跌，回调到前期低点4029或者4002附近形成双底结构。",
+      "publish_time": "2026-02-23 14:11"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "如果明天受情绪利好影响，明天高开高走收阳线也是有可能的。",
+      "publish_time": "2026-02-23 18:04"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "因此明天在沪深300护盘的情况下，中小盘股将继续下行。",
+      "publish_time": "2026-02-24 19:03"
+    },
+    {
+      "post_n": 8,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天预计上证要震荡回调。",
+      "publish_time": "2026-02-25 17:42"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "否则震荡上涨的趋势不会改变。",
+      "publish_time": "2026-02-26 13:11"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "我个人是看好4070支撑继续上涨。大行情在3—5月份。",
+      "publish_time": "2026-02-27 11:10"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "周一，大A即使受影响低开也会低开高走，大家没有担心的必要。",
+      "publish_time": "2026-03-01 10:33"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "大盘即使突破4190往上也没有太大空间，4300+-20个点区域就会出现严重顶背离。大盘要回调修复，修复的空间应该不太小。",
+      "publish_time": "2026-03-02 12:08"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "明天突破4190没有任何悬念了，将会出现强反弹。",
+      "publish_time": "2026-03-02 17:46"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "今日首先看4170附近区域支撑，只要不跌破，会直接突破4190、甚至突破一下4200. 站上4190后，向上空间不大，但在4190之上会震荡比较长的时间，预计能到3月中旬，顶部区域我看4300+-20。",
+      "publish_time": "2026-03-03 09:33"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天应该是受外盘影响新低一下再拉起来。",
+      "publish_time": "2026-03-04 15:48"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大盘补完缺口后的震荡，只要不新低昨日低点4055，震荡后，就能继续反攻4197。",
+      "publish_time": "2026-03-05 12:00"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下周前半周应该继续反弹。",
+      "publish_time": "2026-03-06 14:38"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "周一开盘看4055与4085趋势线支撑继续上涨，支撑位置在4110左右。",
+      "publish_time": "2026-03-08 21:37"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天收盘没有站上3815和4085趋势线。明后天继续看反弹。",
+      "publish_time": "2026-03-09 19:08"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大盘形成双针探底形态，短时间内也是强支撑看涨。",
+      "publish_time": "2026-03-10 11:28"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天股指期货大幅减空，看空情绪降低，明天大盘将继续震荡上涨。",
+      "publish_time": "2026-03-11 17:51"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下周看3040-4002趋势线支撑震荡上涨，突破4150后一段拉升就开始了。",
+      "publish_time": "2026-03-13 16:19"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "周二周三才是上涨变盘时间窗口。",
+      "publish_time": "2026-03-14 14:51"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "从今日盘面看，本周上半周反包拉升概率在增大。",
+      "publish_time": "2026-03-16 13:19"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "总结今天就一句话，证券板块和大盘明天将继续震荡上行。",
+      "publish_time": "2026-03-17 11:52"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天大盘收盘在3040-3815趋势线线之下，明天继续震荡反弹，只要不能站稳趋势线之上，反弹后大概率还要回测前低4002。",
+      "publish_time": "2026-03-18 16:10"
+    },
+    {
+      "post_n": 11,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "大盘跌到4023后的反弹，本周如果不能重新站稳红线(点位在4085左右)，大盘必然会去3950，然后从3950再起一轮去红线附近。",
+      "publish_time": "2026-03-19 01:28"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下周周初探底一下后将进行短线2天左右的反弹，然后继续回调探底。",
+      "publish_time": "2026-03-20 16:11"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周初的反弹压力位大约不会超过本周周阴线的0.5分位，然后继续回调下来震荡到3900-3850区间后必定有大级别的反弹到4100+_10区间。也就是有200多个点的反弹空间在四月份出现。",
+      "publish_time": "2026-03-21 12:33"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "3850区域支撑有大反弹。大盘应该要反弹修补下跌乖离率到4024(本周的点位)，该点位每周会逐步下移。大盘转折点很快就会到来，不能过分看空，也不要割肉。",
+      "publish_time": "2026-03-23 13:02"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "我个人觉得自4197的下跌A浪就基本上结束了。然后就要开展B浪反弹，震荡反弹10个交易日(两周或者跨三周)，反弹200个点，补了跳空低开缺口达到4000点上下。然后继续进行C浪回调形成双底或新低一点到3775左右。然后还会开启一轮轰轰烈烈的暴涨行情。",
+      "publish_time": "2026-03-23 23:41"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "大盘震荡筑底。没有看盘的必要了，月底3月31日看一下月线和季线收盘在哪里就可以了。",
+      "publish_time": "2026-03-24 16:25"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "我是积极看3800-4800这1000个点的主升浪的。",
+      "publish_time": "2026-03-25 20:58"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "我个人认为今天即使补了缺口，3876也是会支撑继续反弹去补上缺口。",
+      "publish_time": "2026-03-26 15:54"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "大盘接下来上证要继续震荡反弹去补3955的缺口和修补周线乖离率",
+      "publish_time": "2026-03-28 09:12"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "本轮自3794的反弹高点通常情况能到3995点，乐观点能见到4095点。",
+      "publish_time": "2026-03-31 17:31"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "大盘应该继续震荡上涨。",
+      "publish_time": "2026-04-01 16:22"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天预计收阳线，创出本周新高。",
+      "publish_time": "2026-04-02 22:16"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "3850以上继续B浪上涨看3995。",
+      "publish_time": "2026-04-03 12:44"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "我是看自3794的反弹还没有走完的，还需要震荡上涨。",
+      "publish_time": "2026-04-07 11:25"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "站稳3936就继续第一目标看涨至4197下跌到3794的0.5分位3995点。总体上还是上下震荡式上涨，不会直线上涨的。",
+      "publish_time": "2026-04-08 11:36"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "大盘依托3956支撑震荡后依然还可以再上。",
+      "publish_time": "2026-04-10 11:22"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "受巴基斯坦谈判曲折消息影响，下周大盘低开低走后继续上涨的概率很大。",
+      "publish_time": "2026-04-12 14:42"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "总体预计本周是震荡上行，是否站稳要观察一下。",
+      "publish_time": "2026-04-13 16:42"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天4000-3990区域支撑看涨出新高，压力位60日线或者4062缺口附近。",
+      "publish_time": "2026-04-15 18:03"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "个人观点，如果明天冲高，能减仓的建议减仓。",
+      "publish_time": "2026-04-16 19:08"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周主要要看3794和3871趋势线支撑了，如果支撑住会继续上涨，支撑不住就奔着第二只脚去了。",
+      "publish_time": "2026-04-17 11:12"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "如果大盘在区间内波动到月底，那么最迟30日，就要果断上车，否则五一假期开盘就来不及了。4月30日前关注3950和3900支撑。不破就坚决上车。",
+      "publish_time": "2026-04-19 10:54"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "如果大盘在区间内波动到月底，那么最迟30日，就要果断上车，否则五一icon假期开盘就来不及了。4月30日前关注3950和3900支撑。不破就坚决上车。",
+      "publish_time": "2026-04-21 11:07"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "只要有效破掉4086，大盘就要走回调了。",
+      "publish_time": "2026-04-22 20:50"
+    },
+    {
+      "post_n": 9,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "从4114的这一波A浪回调大概率到下周了，点位应该在4022左右支撑B浪反弹。",
+      "publish_time": "2026-04-24 11:14"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天依托4050继续震荡反弹。",
+      "publish_time": "2026-04-27 20:35"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天四浪调整到位后依靠趋势线支撑进行5浪反弹。5浪出新高应该过4114点，但不一定过4197点。",
+      "publish_time": "2026-04-29 10:43"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大概率小幅高开后高位震荡；很难暴力大涨，也不会大跌；资金偏向落袋为安，以窄幅横盘、平稳收小阳 / 十字星收官为主。",
+      "publish_time": "2026-04-29 16:08"
+    },
+    {
+      "post_n": 4,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "大概率今天就是阶段顶了。",
+      "publish_time": "2026-04-30 12:45"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "今天在昨日下午低点4144支撑有效的前提下可以冲4180和4200,如果破了4144则继续高位震荡。",
+      "publish_time": "2026-05-07 09:22"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "下午我个人是下午继续看反弹的。",
+      "publish_time": "2026-05-19 13:02"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下周初看ABC三浪反弹到4155压力位置，时间下周二。然后开始继续下探新低到周四4055，最多到4040-4030。",
+      "publish_time": "2026-05-29 20:36"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "早盘中反弹到4080是不够的，下午应该以4050为支撑反弹接近4098-4100才可以。",
+      "publish_time": "2026-06-04 13:30"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "本周五或者下周一大变盘，如果下破4032就是做多的机会。大变盘后摸到4200就减仓。",
+      "publish_time": "2026-06-05 08:27"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "支撑就在3911-3900区域，主力的生命线。三天内站不上33周线4022就要考虑减仓。我个人认为用不了多长时间就能站上去的。",
+      "publish_time": "2026-06-08 13:13"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "现在第二次破年线了，大盘蕴含极大风险，应该减仓，目前我是总仓位5成，不再考虑加了",
+      "publish_time": "2026-07-16 15:59"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下周一二顺势跌一下，120分钟和日线大资金入场信号就出现了。周二变盘窗口必反弹。",
+      "publish_time": "2026-07-18 11:12"
+    },
+    {
+      "post_n": 8,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "所以大盘在9月7日之前下跌是主旋律。9月7日前绝大多数时间是属于喝茶看戏的时间。因此，我个人认为不宜在这期间去接飞刀。",
+      "publish_time": "2026-07-18 21:36"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "大盘破了头部的3794这个颈线位置，也就意味着大盘脱离了头部区域。脱离头部区域后的大盘，超级主力会如同3040开始的持续上涨形成头部那样反过来操作用持续下跌来尽快脱离顶部区域",
+      "publish_time": "2026-07-19 12:46"
+    },
+    {
+      "post_n": 6,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "现在大盘尚未出现明确的收复信号。在这个关键节点上，需要把风险控制放在首位，保持格外谨慎的态度",
+      "publish_time": "2026-07-27 13:25"
+    },
+    {
+      "post_n": 5,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "核心预判：明天（7.28）小变盘窗口，向下变盘概率更高（约65%），向上修复属于小概率（35%）",
+      "publish_time": "2026-07-27 23:01"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "1.周一低开低走，闷杀今天诱多买入盘，甚至杀恐慌盘。2.周一收盘在3800之下，打开下跌空间。3.阶段底将出现在周二尾盘",
+      "publish_time": "2026-08-01 03:54"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "1.周一低开至少30点，然后大阴线100点以上砸盘。2.周二高开后再砸出比周一低30-50个点来。3.周三高开30个点以上走反弹",
+      "publish_time": "2026-08-01 19:18"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "八月份反弹不会有多大反弹高度，反弹震荡横盘后会再跌的。",
+      "publish_time": "2026-08-02 20:44"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "根据我们的预判，明天下午将见阶段低点。这里可以买入第一批仓位，防止周三8月5日这个变盘窗口跳空高开踏空，博弈八月反弹。",
+      "publish_time": "2026-08-03 16:17"
+    }
+  ]
+}
