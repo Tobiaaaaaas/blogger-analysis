@@ -1,0 +1,175 @@
+{
+  "blogger": "实盘指龙",
+  "scoring_version": "v11 (time_horizon-windowed single formula)",
+  "signals_total": 14,
+  "signals_scored": 0,
+  "score_zero": 8,
+  "no_price": 6,
+  "no_segment": 0,
+  "scores": {
+    "综合": {
+      "total": 0.0,
+      "count": 0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "上升段": {
+      "total": 0.0,
+      "count": 0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "下降段": {
+      "total": 0.0,
+      "count": 0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "抄底": {
+      "total": 0.0,
+      "count": 0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "逃顶": {
+      "total": 0.0,
+      "count": 0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "看多": {
+      "total": 0.0,
+      "count": 0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "看空": {
+      "total": 0.0,
+      "count": 0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    }
+  },
+  "time_horizon_scores": {
+    "short": {
+      "count": 5,
+      "total": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "medium": {
+      "count": 3,
+      "total": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "long": {
+      "count": 0,
+      "total": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "unspecified": {
+      "count": 0,
+      "total": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    }
+  },
+  "equity_curve": {
+    "overall": [
+      [
+        "2026-07-27",
+        1.012954
+      ],
+      [
+        "2026-07-28",
+        1.001158
+      ],
+      [
+        "2026-07-29",
+        1.005137
+      ]
+    ],
+    "bullish_only": [
+      [
+        "2026-07-27",
+        1.012954
+      ],
+      [
+        "2026-07-28",
+        1.001158
+      ],
+      [
+        "2026-07-29",
+        1.005137
+      ]
+    ],
+    "bearish_only": [],
+    "benchmark": [
+      [
+        "2026-07-27",
+        1.0
+      ],
+      [
+        "2026-07-28",
+        0.988355
+      ],
+      [
+        "2026-07-29",
+        0.992283
+      ]
+    ]
+  },
+  "risk_metrics": {
+    "overall": {
+      "total_return": 0.51,
+      "annual_return": 53.79,
+      "max_drawdown": -1.16,
+      "max_drawdown_dates": [
+        "2026-07-27",
+        "2026-07-28"
+      ],
+      "max_loss_streak": 0,
+      "max_loss_streak_dates": [],
+      "max_win_streak": 0,
+      "max_win_streak_dates": [],
+      "sharpe_like": 0,
+      "trade_count": 0,
+      "signal_count": 8,
+      "avg_trade_return": 0,
+      "benchmark_return": -0.77,
+      "alpha": 1.28
+    },
+    "bullish": {
+      "total_return": 0.51,
+      "annual_return": 53.79,
+      "max_drawdown": -1.16,
+      "max_drawdown_dates": [
+        "2026-07-27",
+        "2026-07-28"
+      ],
+      "max_loss_streak": 0,
+      "max_loss_streak_dates": [],
+      "max_win_streak": 0,
+      "max_win_streak_dates": [],
+      "sharpe_like": 0,
+      "trade_count": 0,
+      "signal_count": 8,
+      "avg_trade_return": 0
+    },
+    "bearish": {}
+  },
+  "segments": {
+    "M8->now": {
+      "direction": "rising",
+      "start_label": "M8",
+      "end_label": "?",
+      "total": 8,
+      "bull": 8,
+      "bear": 0,
+      "score": 0.0
+    }
+  },
+  "inflection_details": {}
+}
