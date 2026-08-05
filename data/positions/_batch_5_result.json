@@ -1,0 +1,132 @@
+[
+  {
+    "date": "2026-07-20",
+    "publish_time": "2026-07-20 14:53",
+    "post_id": "1871215759933450",
+    "description": "减1成银行，调仓到双创",
+    "positions": {"000016": -1, "399006": 0.5, "000688": 0.5},
+    "unmapped": {},
+    "total_units": 0.0,
+    "confidence": "inferred"
+  },
+  {
+    "date": "2026-07-20",
+    "publish_time": "2026-07-20 15:09",
+    "post_id": "1871216774221834",
+    "description": "把早盘出掉的1成短线加到创业板",
+    "positions": {"399006": 1},
+    "unmapped": {},
+    "total_units": 1.0,
+    "confidence": "inferred"
+  },
+  {
+    "date": "2026-07-21",
+    "publish_time": "2026-07-21 10:25",
+    "post_id": "1871289469748235",
+    "description": "3760加进1成综指etf，现在8成",
+    "positions": {"000300": 1},
+    "unmapped": {},
+    "total_units": 1.0,
+    "confidence": "inferred"
+  },
+  {
+    "date": "2026-07-21",
+    "publish_time": "2026-07-21 10:36",
+    "post_id": "1871290196456459",
+    "description": "目前仓位：1证券，1保险，1白酒，1双创，1创业板，3上证综指，共8成仓",
+    "positions": {"000016": 3, "399006": 1.5, "000688": 0.5, "000300": 3},
+    "unmapped": {},
+    "total_units": 8.0,
+    "confidence": "explicit"
+  },
+  {
+    "date": "2026-07-22",
+    "publish_time": "2026-07-22 10:01",
+    "post_id": "1871378565232650",
+    "description": "3880附近减掉2成综指，现在仓位：1证券，1保险，1白酒，1双创，1创业板，1上证综指，共6成仓",
+    "positions": {"000016": 3, "399006": 1.5, "000688": 0.5, "000300": 1},
+    "unmapped": {},
+    "total_units": 6.0,
+    "confidence": "explicit"
+  },
+  {
+    "date": "2026-07-22",
+    "publish_time": "2026-07-22 10:25",
+    "post_id": "1871380074058890",
+    "description": "双创减掉了",
+    "positions": {"399006": -0.5, "000688": -0.5},
+    "unmapped": {},
+    "total_units": -1.0,
+    "confidence": "inferred"
+  },
+  {
+    "date": "2026-07-22",
+    "publish_time": "2026-07-22 10:37",
+    "post_id": "1871380859048970",
+    "description": "白酒也抛了，现在仓位4成：1证券，1保险，1创业板，1上证综指",
+    "positions": {"000016": 2, "399006": 1, "000300": 1},
+    "unmapped": {},
+    "total_units": 4.0,
+    "confidence": "explicit"
+  },
+  {
+    "date": "2026-07-24",
+    "publish_time": "2026-07-24 14:03",
+    "post_id": "1871575019491339",
+    "description": "3820回补0.5成，成交",
+    "positions": {"000300": 0.5},
+    "unmapped": {},
+    "total_units": 0.5,
+    "confidence": "inferred"
+  },
+  {
+    "date": "2026-07-26",
+    "publish_time": "2026-07-26 15:13",
+    "post_id": "1871760585527499",
+    "description": "目前仓位是3成宽基+2成的金融",
+    "positions": {"000300": 3, "000016": 2},
+    "unmapped": {},
+    "total_units": 5.0,
+    "confidence": "partial"
+  },
+  {
+    "date": "2026-07-27",
+    "publish_time": "2026-07-27 16:47",
+    "post_id": "1871857102296073",
+    "description": "当前仓位：1证券，1保险，1上证综指etf，3创业板etf，仓位6成比较合适",
+    "positions": {"000016": 2, "000300": 1, "399006": 3},
+    "unmapped": {},
+    "total_units": 6.0,
+    "confidence": "explicit"
+  },
+  {
+    "date": "2026-07-28",
+    "publish_time": "2026-07-28 14:58",
+    "post_id": "1871940865881226",
+    "description": "尾盘买进1成科创50，仓位7成",
+    "positions": {"000688": 1},
+    "unmapped": {},
+    "total_units": 1.0,
+    "confidence": "inferred"
+  },
+  {
+    "date": "2026-07-29",
+    "publish_time": "2026-07-29 13:56",
+    "post_id": "1872027534363657",
+    "description": "今天3785主动买的1成创业板",
+    "positions": {"399006": 1},
+    "unmapped": {},
+    "total_units": 1.0,
+    "confidence": "inferred"
+  },
+  {
+    "date": "2026-07-30",
+    "publish_time": "2026-07-30 10:49",
+    "post_id": "1872106396637194",
+    "description": "0.5成主动加3220的创业板",
+    "positions": {"399006": 0.5},
+    "unmapped": {},
+    "total_units": 0.5,
+    "confidence": "inferred"
+  }
+]

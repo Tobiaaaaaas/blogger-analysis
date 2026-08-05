@@ -1,0 +1,92 @@
+[
+  {
+    "date": "2026-03-09",
+    "publish_time": "2026-03-09 14:22",
+    "post_id": "1859164255374347",
+    "description": "早盘集合竞价补了1成仓恒科，决定先不做T",
+    "positions": {},
+    "unmapped": {"恒生科技": 1.0},
+    "total_units": 1.0,
+    "confidence": "inferred"
+  },
+  {
+    "date": "2026-03-13",
+    "publish_time": "2026-03-13 12:57",
+    "post_id": "1859521483675851",
+    "description": "持有银行2成一直未动，剩余仓位在恒科（数量未明），曾在恒科做T至4950点位",
+    "positions": {"000016": 2.0},
+    "unmapped": {},
+    "total_units": 2.0,
+    "confidence": "partial"
+  },
+  {
+    "date": "2026-03-20",
+    "publish_time": "2026-03-20 11:42",
+    "post_id": "1860149928783946",
+    "description": "在3984附近加仓1成（沪深300），若到3960计划再加1成",
+    "positions": {"000300": 1.0},
+    "unmapped": {},
+    "total_units": 1.0,
+    "confidence": "inferred"
+  },
+  {
+    "date": "2026-03-23",
+    "publish_time": "2026-03-23 14:19",
+    "post_id": "1860432563596427",
+    "description": "当前总仓位7成，计划3800附近再加1成，之后每跌50点加0.5成至3600满仓",
+    "positions": {},
+    "unmapped": {},
+    "total_units": 7.0,
+    "confidence": "partial"
+  },
+  {
+    "date": "2026-04-01",
+    "publish_time": "2026-04-01 10:53",
+    "post_id": "1861234972172298",
+    "description": "在3950减掉1成，计划等4000附近再减一次",
+    "positions": {},
+    "unmapped": {},
+    "total_units": null,
+    "confidence": "inferred"
+  },
+  {
+    "date": "2026-04-08",
+    "publish_time": "2026-04-08 13:29",
+    "post_id": "1861878976117963",
+    "description": "减掉1成，当前总仓位5成，若到4000点计划再减1成",
+    "positions": {},
+    "unmapped": {},
+    "total_units": 5.0,
+    "confidence": "partial"
+  },
+  {
+    "date": "2026-04-10",
+    "publish_time": "2026-04-10 09:50",
+    "post_id": "1862046374190218",
+    "description": "在4000点减掉1成，当前总仓位4成",
+    "positions": {},
+    "unmapped": {},
+    "total_units": 4.0,
+    "confidence": "partial"
+  },
+  {
+    "date": "2026-04-10",
+    "publish_time": "2026-04-10 11:04",
+    "post_id": "1862051033323594",
+    "description": "清掉3800附近进的全部仓位，回到底仓（未明确底仓数量）",
+    "positions": {},
+    "unmapped": {},
+    "total_units": null,
+    "confidence": "partial"
+  },
+  {
+    "date": "2026-04-15",
+    "publish_time": "2026-04-15 10:39",
+    "post_id": "1862502482535435",
+    "description": "在恒科4970减掉1成，当前总仓位3成：银行2成、恒科1成",
+    "positions": {"000016": 2.0},
+    "unmapped": {"恒生科技": 1.0},
+    "total_units": 3.0,
+    "confidence": "explicit"
+  }
+]

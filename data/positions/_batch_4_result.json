@@ -1,0 +1,102 @@
+[
+  {
+    "date": "2026-06-17",
+    "publish_time": "2026-06-17 12:19",
+    "post_id": "1868216348507145",
+    "description": "加仓1成(药/000905), 非完整仓位报告, 仅记录交易动作",
+    "positions": {"000905": 1.0},
+    "unmapped": {},
+    "total_units": 1.0,
+    "confidence": "partial"
+  },
+  {
+    "date": "2026-06-18",
+    "publish_time": "2026-06-18 10:56",
+    "post_id": "1868301732592650",
+    "description": "2成药, 3成金融",
+    "positions": {"000016": 3.0, "000905": 2.0},
+    "unmapped": {},
+    "total_units": 5.0,
+    "confidence": "explicit"
+  },
+  {
+    "date": "2026-07-07",
+    "publish_time": "2026-07-07 15:13",
+    "post_id": "1870039233295435",
+    "description": "银行1, 保险1, 券商1, 药2",
+    "positions": {"000016": 3.0, "000905": 2.0},
+    "unmapped": {},
+    "total_units": 5.0,
+    "confidence": "explicit"
+  },
+  {
+    "date": "2026-07-13",
+    "publish_time": "2026-07-13 14:59",
+    "post_id": "1870581947029705",
+    "description": "减1成创新药(000905)换成白酒(000016)",
+    "positions": {"000016": 4.0, "000905": 1.0},
+    "unmapped": {},
+    "total_units": 5.0,
+    "confidence": "partial"
+  },
+  {
+    "date": "2026-07-13",
+    "publish_time": "2026-07-13 15:03",
+    "post_id": "1870582203477065",
+    "description": "银行1, 保险1, 券商1, 药1, 酒1",
+    "positions": {"000016": 4.0, "000905": 1.0},
+    "unmapped": {},
+    "total_units": 5.0,
+    "confidence": "explicit"
+  },
+  {
+    "date": "2026-07-14",
+    "publish_time": "2026-07-14 11:28",
+    "post_id": "1870659272639563",
+    "description": "3870点进1成宽基(000300), 后面下跌还会加",
+    "positions": {"000016": 4.0, "000905": 1.0, "000300": 1.0},
+    "unmapped": {},
+    "total_units": 6.0,
+    "confidence": "partial"
+  },
+  {
+    "date": "2026-07-15",
+    "publish_time": "2026-07-15 10:08",
+    "post_id": "1870744829274329",
+    "description": "3975点卖出昨日3870进的1成宽基(000300), 其它仓位不变",
+    "positions": {"000016": 4.0, "000905": 1.0},
+    "unmapped": {},
+    "total_units": 5.0,
+    "confidence": "partial"
+  },
+  {
+    "date": "2026-07-15",
+    "publish_time": "2026-07-15 13:43",
+    "post_id": "1870758372320523",
+    "description": "减1成创新药(000905), 仓位降至4成",
+    "positions": {"000016": 4.0},
+    "unmapped": {},
+    "total_units": 4.0,
+    "confidence": "explicit"
+  },
+  {
+    "date": "2026-07-17",
+    "publish_time": "2026-07-17 13:10",
+    "post_id": "1870937062994956",
+    "description": "被动吃进2成宽基(000300), 挂单在3815和3795附近成交",
+    "positions": {"000016": 4.0, "000300": 2.0},
+    "unmapped": {},
+    "total_units": 6.0,
+    "confidence": "partial"
+  },
+  {
+    "date": "2026-07-20",
+    "publish_time": "2026-07-20 10:03",
+    "post_id": "1871197526252554",
+    "description": "3820点减掉上周五3795进的1成宽基(000300), 短线宽基还剩2成",
+    "positions": {"000016": 4.0, "000300": 2.0},
+    "unmapped": {},
+    "total_units": 6.0,
+    "confidence": "partial"
+  }
+]

@@ -1,0 +1,2012 @@
+{
+  "extraction_meta": {
+    "blogger": "顺应周期",
+    "total_posts": null,
+    "simulation_start": "2026-06-01",
+    "simulation_end": "2026-07-30",
+    "position_snapshots_extracted": 43,
+    "timeline_events": 25,
+    "dates_with_intraday_changes": 15,
+    "confidence_breakdown": {
+      "explicit": 11,
+      "inferred": 19,
+      "partial": 13
+    },
+    "avg_update_interval_days": 3.5,
+    "max_gap_days": 20,
+    "gap_periods": [
+      {
+        "start": "2026-06-18",
+        "end": "2026-07-08",
+        "days": 20
+      }
+    ],
+    "mapped_exposures_pct": 97.8,
+    "unmapped_exposures_pct": 2.2,
+    "unmapped_items": [
+      "恒科"
+    ]
+  },
+  "position_snapshots": [
+    {
+      "date": "2026-06-08",
+      "publish_time": "2026-06-08 09:42",
+      "post_id": "1867390953383947",
+      "description": "低开至3938，送了50个点，开盘我加了3成，现在一共7成，这三成短线，随时可能走。",
+      "positions": {},
+      "unmapped": {},
+      "total_units": 7.0,
+      "confidence": "partial",
+      "_effective_date": "2026-06-08",
+      "_price_type": "intraday",
+      "_intraday_seq": 1,
+      "_intraday_total": 1
+    },
+    {
+      "date": "2026-06-12",
+      "publish_time": "2026-06-12 11:01",
+      "post_id": "1867758234958987",
+      "description": "我调整下仓位，把银行的三成仓位移1成到创新药，1成到券商。这样我的仓位覆盖了大金融和创新药，基本长时间不会动。",
+      "positions": {
+        "000016": 2.0,
+        "000905": 1.0,
+        "000300": 4.0
+      },
+      "unmapped": {},
+      "total_units": 7.0,
+      "confidence": "inferred",
+      "_effective_date": "2026-06-12",
+      "_price_type": "intraday",
+      "_intraday_seq": 1,
+      "_intraday_total": 1
+    },
+    {
+      "date": "2026-06-18",
+      "publish_time": "2026-06-18 10:56",
+      "post_id": "1868301732592650",
+      "description": "昨天虽然加了1成药，但金融板块今天集体杀跌，确实令人心碎。我现在的配比2成药，3成金融，有没发现现在炒股越来越难，除了科技和有色意外，令人头疼。",
+      "positions": {
+        "000016": 3.0,
+        "000905": 2.0
+      },
+      "unmapped": {},
+      "total_units": 5.0,
+      "confidence": "explicit",
+      "_effective_date": "2026-06-18",
+      "_price_type": "intraday",
+      "_intraday_seq": 1,
+      "_intraday_total": 1
+    },
+    {
+      "date": "2026-07-07",
+      "publish_time": "2026-07-07 15:13",
+      "post_id": "1870039233295435",
+      "description": "我持有银行1，保险1，券商1，药2。已经代表我对这些板块的看法，及仓位大小代表重视程度。",
+      "positions": {
+        "000016": 3.0,
+        "000905": 2.0
+      },
+      "unmapped": {},
+      "total_units": 5.0,
+      "confidence": "explicit",
+      "_effective_date": "2026-07-08",
+      "_price_type": "open",
+      "_intraday_seq": 1,
+      "_intraday_total": 1
+    },
+    {
+      "date": "2026-07-13",
+      "publish_time": "2026-07-13 14:59",
+      "post_id": "1870581947029705",
+      "description": "我调整了下仓位把创新药减掉一成换成了还在低位的白酒，创新药盈了近20%够喝好几壶酒了",
+      "positions": {
+        "000016": 4.0,
+        "000905": 1.0
+      },
+      "unmapped": {},
+      "total_units": 5.0,
+      "confidence": "inferred",
+      "_effective_date": "2026-07-13",
+      "_price_type": "intraday",
+      "_intraday_seq": 1,
+      "_intraday_total": 1
+    },
+    {
+      "date": "2026-07-13",
+      "publish_time": "2026-07-13 15:03",
+      "post_id": "1870582203477065",
+      "description": "我现在仓位银行1，保险1，券商1，药1，酒1。目前唯一亏钱的是保险",
+      "positions": {
+        "000016": 4.0,
+        "000905": 1.0
+      },
+      "unmapped": {},
+      "total_units": 5.0,
+      "confidence": "explicit",
+      "_effective_date": "2026-07-14",
+      "_price_type": "open",
+      "_intraday_seq": 1,
+      "_intraday_total": 2
+    },
+    {
+      "date": "2026-07-14",
+      "publish_time": "2026-07-14 11:28",
+      "post_id": "1870659272639563",
+      "description": "3870进了一成宽基，后面下跌还会加",
+      "positions": {
+        "000016": 4.0,
+        "000905": 1.0,
+        "000300": 1.0
+      },
+      "unmapped": {},
+      "total_units": 6.0,
+      "confidence": "inferred",
+      "_effective_date": "2026-07-14",
+      "_price_type": "intraday",
+      "_intraday_seq": 2,
+      "_intraday_total": 2
+    },
+    {
+      "date": "2026-07-15",
+      "publish_time": "2026-07-15 10:08",
+      "post_id": "1870744829274329",
+      "description": "我在3975点，把昨天3870进的1成出了。1天2.5个点，知足了，其它仓位不变。接下去继续盯盘",
+      "positions": {
+        "000016": 4.0,
+        "000905": 1.0
+      },
+      "unmapped": {},
+      "total_units": 5.0,
+      "confidence": "inferred",
+      "_effective_date": "2026-07-15",
+      "_price_type": "intraday",
+      "_intraday_seq": 1,
+      "_intraday_total": 2
+    },
+    {
+      "date": "2026-07-15",
+      "publish_time": "2026-07-15 13:43",
+      "post_id": "1870758372320523",
+      "description": "我把1成创新药减了，把仓位降到4成，先落袋，现在创新药被大众关注度太高了。",
+      "positions": {
+        "000016": 4.0
+      },
+      "unmapped": {},
+      "total_units": 4.0,
+      "confidence": "inferred",
+      "_effective_date": "2026-07-15",
+      "_price_type": "intraday",
+      "_intraday_seq": 2,
+      "_intraday_total": 2
+    },
+    {
+      "date": "2026-07-17",
+      "publish_time": "2026-07-17 13:10",
+      "post_id": "1870937062994956",
+      "description": "瞄了一眼，指数完全在预期范围内（3845-3810）无需恐慌。被动吃进了2成，情绪下极端破一下3800，短期不会去3700。",
+      "positions": {
+        "000016": 4.0,
+        "000300": 3.0
+      },
+      "unmapped": {},
+      "total_units": 7.0,
+      "confidence": "inferred",
+      "_effective_date": "2026-07-17",
+      "_price_type": "intraday",
+      "_intraday_seq": 1,
+      "_intraday_total": 1
+    },
+    {
+      "date": "2026-07-20",
+      "publish_time": "2026-07-20 10:03",
+      "post_id": "1871197526252554",
+      "description": "在3820减掉了上周五3795进的1成仓，短线宽基还剩2成，继续盯盘。",
+      "positions": {
+        "000016": 4.0,
+        "000300": 2.0
+      },
+      "unmapped": {},
+      "total_units": 6.0,
+      "confidence": "inferred",
+      "_effective_date": "2026-07-20",
+      "_price_type": "intraday",
+      "_intraday_seq": 1,
+      "_intraday_total": 2
+    },
+    {
+      "date": "2026-07-20",
+      "publish_time": "2026-07-20 14:53",
+      "post_id": "1871215759933450",
+      "description": "我先减掉1成银行，银行够努力了，调仓到双创上。",
+      "positions": {
+        "000016": 3.0,
+        "000300": 2.0,
+        "399006": 0.5,
+        "000688": 0.5
+      },
+      "unmapped": {},
+      "total_units": 6.0,
+      "confidence": "inferred",
+      "_effective_date": "2026-07-20",
+      "_price_type": "intraday",
+      "_intraday_seq": 2,
+      "_intraday_total": 2
+    },
+    {
+      "date": "2026-07-20",
+      "publish_time": "2026-07-20 15:39",
+      "post_id": "1871218321556480",
+      "description": "今天把盈利的1成仓全部加到了高弹性的创业板上，收盘刚刚好把周五被动买进的亏损部分抹平，也就是说我现在短线仓位是在大盘3800，创业板在3445。",
+      "positions": {
+        "000016": 3.0,
+        "000300": 2.0,
+        "399006": 1.5,
+        "000688": 0.5
+      },
+      "unmapped": {},
+      "total_units": 7.0,
+      "confidence": "inferred",
+      "_effective_date": "2026-07-21",
+      "_price_type": "open",
+      "_intraday_seq": 1,
+      "_intraday_total": 3
+    },
+    {
+      "date": "2026-07-21",
+      "publish_time": "2026-07-21 10:25",
+      "post_id": "1871289469748235",
+      "description": "来压压惊，3760，加进1成综指etf现在8成。",
+      "positions": {},
+      "unmapped": {},
+      "total_units": 8.0,
+      "confidence": "partial",
+      "_effective_date": "2026-07-21",
+      "_price_type": "intraday",
+      "_intraday_seq": 2,
+      "_intraday_total": 3
+    },
+    {
+      "date": "2026-07-21",
+      "publish_time": "2026-07-21 10:36",
+      "post_id": "1871290196456459",
+      "description": "我现在仓位 1证券，1保险，1白酒，1双创 1创业板，3上证综指。",
+      "positions": {
+        "000016": 3.0,
+        "000300": 3.0,
+        "399006": 1.5,
+        "000688": 0.5
+      },
+      "unmapped": {},
+      "total_units": 8.0,
+      "confidence": "explicit",
+      "_effective_date": "2026-07-21",
+      "_price_type": "intraday",
+      "_intraday_seq": 3,
+      "_intraday_total": 3
+    },
+    {
+      "date": "2026-07-22",
+      "publish_time": "2026-07-22 10:01",
+      "post_id": "1871378565232650",
+      "description": "3880附近减掉2成综指。现在仓位 1证券，1保险，1白酒，1双创 1创业板，1上证综指。",
+      "positions": {
+        "000016": 3.0,
+        "000300": 1.0,
+        "399006": 1.5,
+        "000688": 0.5
+      },
+      "unmapped": {},
+      "total_units": 6.0,
+      "confidence": "explicit",
+      "_effective_date": "2026-07-22",
+      "_price_type": "intraday",
+      "_intraday_seq": 1,
+      "_intraday_total": 4
+    },
+    {
+      "date": "2026-07-22",
+      "publish_time": "2026-07-22 10:25",
+      "post_id": "1871380074058890",
+      "description": "双创减掉了，收益已经很满意了，风险放在第一，没必要去获取极致的收益。",
+      "positions": {
+        "000016": 3.0,
+        "000300": 1.0,
+        "399006": 1.0
+      },
+      "unmapped": {},
+      "total_units": 5.0,
+      "confidence": "inferred",
+      "_effective_date": "2026-07-22",
+      "_price_type": "intraday",
+      "_intraday_seq": 2,
+      "_intraday_total": 4
+    },
+    {
+      "date": "2026-07-22",
+      "publish_time": "2026-07-22 10:37",
+      "post_id": "1871380859048970",
+      "description": "白酒也抛了，白酒收益一般8%。现在仓位4成。1证券，1保险，1创业板，1上证综指。",
+      "positions": {
+        "000016": 2.0,
+        "000300": 1.0,
+        "399006": 1.0
+      },
+      "unmapped": {},
+      "total_units": 4.0,
+      "confidence": "explicit",
+      "_effective_date": "2026-07-22",
+      "_price_type": "intraday",
+      "_intraday_seq": 3,
+      "_intraday_total": 4
+    },
+    {
+      "date": "2026-07-22",
+      "publish_time": "2026-07-22 10:51",
+      "post_id": "1871381749429257",
+      "description": "科创50昨天一天基本就涨完了，短线可玩性已经不高。继续跟踪下上证走势，正常情况下，还有一周时间可以维持反弹，暂时保留2成仓位宽基。",
+      "positions": {},
+      "unmapped": {},
+      "total_units": 2.0,
+      "confidence": "partial",
+      "_effective_date": "2026-07-22",
+      "_price_type": "intraday",
+      "_intraday_seq": 4,
+      "_intraday_total": 4
+    },
+    {
+      "date": "2026-07-24",
+      "publish_time": "2026-07-24 14:03",
+      "post_id": "1871575019491339",
+      "description": "3820回补0.5成，成交。3810回补0.5成，先挂着。",
+      "positions": {},
+      "unmapped": {},
+      "total_units": 2.5,
+      "confidence": "partial",
+      "_effective_date": "2026-07-24",
+      "_price_type": "intraday",
+      "_intraday_seq": 1,
+      "_intraday_total": 1
+    },
+    {
+      "date": "2026-07-26",
+      "publish_time": "2026-07-26 15:13",
+      "post_id": "1871760585527499",
+      "description": "上周大盘走势还是很简单，很纯粹。目前仓位是3成宽基+2成的金融。",
+      "positions": {
+        "000300": 3.0,
+        "000016": 2.0
+      },
+      "unmapped": {},
+      "total_units": 5.0,
+      "confidence": "explicit",
+      "_effective_date": "2026-07-27",
+      "_price_type": "open",
+      "_intraday_seq": 1,
+      "_intraday_total": 1
+    },
+    {
+      "date": "2026-07-27",
+      "publish_time": "2026-07-27 16:47",
+      "post_id": "1871857102296073",
+      "description": "当前仓位：1证券 1保险 1上证综指etf 3创业板etf。本来今下午打算在3815进1成科创50，后来放弃了，仓位6成比较合适。",
+      "positions": {
+        "000016": 2.0,
+        "000300": 1.0,
+        "399006": 3.0
+      },
+      "unmapped": {},
+      "total_units": 6.0,
+      "confidence": "explicit",
+      "_effective_date": "2026-07-28",
+      "_price_type": "open",
+      "_intraday_seq": 1,
+      "_intraday_total": 2
+    },
+    {
+      "date": "2026-07-28",
+      "publish_time": "2026-07-28 14:58",
+      "post_id": "1871940865881226",
+      "description": "大盘力保3800不失，尾盘买进1成科创50，仓位7成。",
+      "positions": {
+        "000016": 2.0,
+        "000300": 1.0,
+        "399006": 3.0,
+        "000688": 1.0
+      },
+      "unmapped": {},
+      "total_units": 7.0,
+      "confidence": "inferred",
+      "_effective_date": "2026-07-28",
+      "_price_type": "intraday",
+      "_intraday_seq": 2,
+      "_intraday_total": 2
+    },
+    {
+      "date": "2026-07-29",
+      "publish_time": "2026-07-29 13:56",
+      "post_id": "1872027534363657",
+      "description": "今天3785主动买的1成创业板及其精准，回血不少。尾盘能站稳3840，那就不会再有太大的折腾了",
+      "positions": {
+        "000016": 2.0,
+        "000300": 1.0,
+        "399006": 4.0,
+        "000688": 1.0
+      },
+      "unmapped": {},
+      "total_units": 8.0,
+      "confidence": "inferred",
+      "_effective_date": "2026-07-29",
+      "_price_type": "intraday",
+      "_intraday_seq": 1,
+      "_intraday_total": 1
+    },
+    {
+      "date": "2026-07-30",
+      "publish_time": "2026-07-30 10:49",
+      "post_id": "1872106396637194",
+      "description": "太墨迹了，0.5成主动加3220的创业板。用0.5继续挂在3170。",
+      "positions": {
+        "000016": 2.0,
+        "000300": 1.0,
+        "399006": 4.5,
+        "000688": 1.0
+      },
+      "unmapped": {},
+      "total_units": 8.5,
+      "confidence": "inferred",
+      "_effective_date": "2026-07-30",
+      "_price_type": "open",
+      "_intraday_seq": 1,
+      "_intraday_total": 1
+    }
+  ],
+  "nav_series": {
+    "portfolio": [
+      {
+        "date": "2026-06-01",
+        "nav": 1.0,
+        "daily_return_pct": 0.0,
+        "position_pct": 0.0,
+        "cash_pct": 100.0,
+        "positions_detail": {},
+        "intraday_changes": 0
+      },
+      {
+        "date": "2026-06-02",
+        "nav": 1.0,
+        "daily_return_pct": 0.0,
+        "position_pct": 0.0,
+        "cash_pct": 100.0,
+        "positions_detail": {},
+        "intraday_changes": 0
+      },
+      {
+        "date": "2026-06-03",
+        "nav": 1.0,
+        "daily_return_pct": 0.0,
+        "position_pct": 0.0,
+        "cash_pct": 100.0,
+        "positions_detail": {},
+        "intraday_changes": 0
+      },
+      {
+        "date": "2026-06-04",
+        "nav": 1.0,
+        "daily_return_pct": 0.0,
+        "position_pct": 0.0,
+        "cash_pct": 100.0,
+        "positions_detail": {},
+        "intraday_changes": 0
+      },
+      {
+        "date": "2026-06-05",
+        "nav": 1.0,
+        "daily_return_pct": 0.0,
+        "position_pct": 0.0,
+        "cash_pct": 100.0,
+        "positions_detail": {},
+        "intraday_changes": 0
+      },
+      {
+        "date": "2026-06-08",
+        "nav": 1.0,
+        "daily_return_pct": 0.0,
+        "position_pct": 70.0,
+        "cash_pct": 30.0,
+        "positions_detail": {},
+        "intraday_changes": 1
+      },
+      {
+        "date": "2026-06-09",
+        "nav": 1.0,
+        "daily_return_pct": 0.0,
+        "position_pct": 70.0,
+        "cash_pct": 30.0,
+        "positions_detail": {},
+        "intraday_changes": 0
+      },
+      {
+        "date": "2026-06-10",
+        "nav": 1.0,
+        "daily_return_pct": 0.0,
+        "position_pct": 70.0,
+        "cash_pct": 30.0,
+        "positions_detail": {},
+        "intraday_changes": 0
+      },
+      {
+        "date": "2026-06-11",
+        "nav": 1.0,
+        "daily_return_pct": 0.0,
+        "position_pct": 70.0,
+        "cash_pct": 30.0,
+        "positions_detail": {},
+        "intraday_changes": 0
+      },
+      {
+        "date": "2026-06-12",
+        "nav": 1.0,
+        "daily_return_pct": 0.0,
+        "position_pct": 70.0,
+        "cash_pct": 30.0,
+        "positions_detail": {
+          "000016": 2.0,
+          "000905": 1.0,
+          "000300": 4.0
+        },
+        "intraday_changes": 1
+      },
+      {
+        "date": "2026-06-15",
+        "nav": 1.016596,
+        "daily_return_pct": 1.6596,
+        "position_pct": 70.0,
+        "cash_pct": 30.0,
+        "positions_detail": {
+          "000016": 2.0,
+          "000905": 1.0,
+          "000300": 4.0
+        },
+        "intraday_changes": 0
+      },
+      {
+        "date": "2026-06-16",
+        "nav": 1.015492,
+        "daily_return_pct": -0.1086,
+        "position_pct": 70.0,
+        "cash_pct": 30.0,
+        "positions_detail": {
+          "000016": 2.0,
+          "000905": 1.0,
+          "000300": 4.0
+        },
+        "intraday_changes": 0
+      },
+      {
+        "date": "2026-06-17",
+        "nav": 1.022263,
+        "daily_return_pct": 0.6667,
+        "position_pct": 70.0,
+        "cash_pct": 30.0,
+        "positions_detail": {
+          "000016": 2.0,
+          "000905": 1.0,
+          "000300": 4.0
+        },
+        "intraday_changes": 0
+      },
+      {
+        "date": "2026-06-18",
+        "nav": 1.023256,
+        "daily_return_pct": 0.0972,
+        "position_pct": 50.0,
+        "cash_pct": 50.0,
+        "positions_detail": {
+          "000016": 3.0,
+          "000905": 2.0
+        },
+        "intraday_changes": 1
+      },
+      {
+        "date": "2026-06-22",
+        "nav": 1.036668,
+        "daily_return_pct": 1.3107,
+        "position_pct": 50.0,
+        "cash_pct": 50.0,
+        "positions_detail": {
+          "000016": 3.0,
+          "000905": 2.0
+        },
+        "intraday_changes": 0
+      },
+      {
+        "date": "2026-06-23",
+        "nav": 1.023596,
+        "daily_return_pct": -1.261,
+        "position_pct": 50.0,
+        "cash_pct": 50.0,
+        "positions_detail": {
+          "000016": 3.0,
+          "000905": 2.0
+        },
+        "intraday_changes": 0
+      },
+      {
+        "date": "2026-06-24",
+        "nav": 1.029023,
+        "daily_return_pct": 0.5302,
+        "position_pct": 50.0,
+        "cash_pct": 50.0,
+        "positions_detail": {
+          "000016": 3.0,
+          "000905": 2.0
+        },
+        "intraday_changes": 0
+      },
+      {
+        "date": "2026-06-25",
+        "nav": 1.034767,
+        "daily_return_pct": 0.5582,
+        "position_pct": 50.0,
+        "cash_pct": 50.0,
+        "positions_detail": {
+          "000016": 3.0,
+          "000905": 2.0
+        },
+        "intraday_changes": 0
+      },
+      {
+        "date": "2026-06-26",
+        "nav": 1.021976,
+        "daily_return_pct": -1.2362,
+        "position_pct": 50.0,
+        "cash_pct": 50.0,
+        "positions_detail": {
+          "000016": 3.0,
+          "000905": 2.0
+        },
+        "intraday_changes": 0
+      },
+      {
+        "date": "2026-06-29",
+        "nav": 1.033609,
+        "daily_return_pct": 1.1384,
+        "position_pct": 50.0,
+        "cash_pct": 50.0,
+        "positions_detail": {
+          "000016": 3.0,
+          "000905": 2.0
+        },
+        "intraday_changes": 0
+      },
+      {
+        "date": "2026-06-30",
+        "nav": 1.038363,
+        "daily_return_pct": 0.4599,
+        "position_pct": 50.0,
+        "cash_pct": 50.0,
+        "positions_detail": {
+          "000016": 3.0,
+          "000905": 2.0
+        },
+        "intraday_changes": 0
+      },
+      {
+        "date": "2026-07-01",
+        "nav": 1.037873,
+        "daily_return_pct": -0.0472,
+        "position_pct": 50.0,
+        "cash_pct": 50.0,
+        "positions_detail": {
+          "000016": 3.0,
+          "000905": 2.0
+        },
+        "intraday_changes": 0
+      },
+      {
+        "date": "2026-07-02",
+        "nav": 1.022567,
+        "daily_return_pct": -1.4748,
+        "position_pct": 50.0,
+        "cash_pct": 50.0,
+        "positions_detail": {
+          "000016": 3.0,
+          "000905": 2.0
+        },
+        "intraday_changes": 0
+      },
+      {
+        "date": "2026-07-03",
+        "nav": 1.025771,
+        "daily_return_pct": 0.3133,
+        "position_pct": 50.0,
+        "cash_pct": 50.0,
+        "positions_detail": {
+          "000016": 3.0,
+          "000905": 2.0
+        },
+        "intraday_changes": 0
+      },
+      {
+        "date": "2026-07-06",
+        "nav": 1.026364,
+        "daily_return_pct": 0.0578,
+        "position_pct": 50.0,
+        "cash_pct": 50.0,
+        "positions_detail": {
+          "000016": 3.0,
+          "000905": 2.0
+        },
+        "intraday_changes": 0
+      },
+      {
+        "date": "2026-07-07",
+        "nav": 1.019231,
+        "daily_return_pct": -0.695,
+        "position_pct": 50.0,
+        "cash_pct": 50.0,
+        "positions_detail": {
+          "000016": 3.0,
+          "000905": 2.0
+        },
+        "intraday_changes": 0
+      },
+      {
+        "date": "2026-07-08",
+        "nav": 1.016276,
+        "daily_return_pct": -0.2899,
+        "position_pct": 50.0,
+        "cash_pct": 50.0,
+        "positions_detail": {
+          "000016": 3.0,
+          "000905": 2.0
+        },
+        "intraday_changes": 1
+      },
+      {
+        "date": "2026-07-09",
+        "nav": 1.030465,
+        "daily_return_pct": 1.3962,
+        "position_pct": 50.0,
+        "cash_pct": 50.0,
+        "positions_detail": {
+          "000016": 3.0,
+          "000905": 2.0
+        },
+        "intraday_changes": 0
+      },
+      {
+        "date": "2026-07-10",
+        "nav": 1.022765,
+        "daily_return_pct": -0.7472,
+        "position_pct": 50.0,
+        "cash_pct": 50.0,
+        "positions_detail": {
+          "000016": 3.0,
+          "000905": 2.0
+        },
+        "intraday_changes": 0
+      },
+      {
+        "date": "2026-07-13",
+        "nav": 1.009571,
+        "daily_return_pct": -1.2901,
+        "position_pct": 50.0,
+        "cash_pct": 50.0,
+        "positions_detail": {
+          "000016": 4.0,
+          "000905": 1.0
+        },
+        "intraday_changes": 1
+      },
+      {
+        "date": "2026-07-14",
+        "nav": 1.017153,
+        "daily_return_pct": 0.751,
+        "position_pct": 60.0,
+        "cash_pct": 40.0,
+        "positions_detail": {
+          "000016": 4.0,
+          "000905": 1.0,
+          "000300": 1.0
+        },
+        "intraday_changes": 2
+      },
+      {
+        "date": "2026-07-15",
+        "nav": 1.016955,
+        "daily_return_pct": -0.0195,
+        "position_pct": 40.0,
+        "cash_pct": 60.0,
+        "positions_detail": {
+          "000016": 4.0
+        },
+        "intraday_changes": 2
+      },
+      {
+        "date": "2026-07-16",
+        "nav": 1.008324,
+        "daily_return_pct": -0.8487,
+        "position_pct": 40.0,
+        "cash_pct": 60.0,
+        "positions_detail": {
+          "000016": 4.0
+        },
+        "intraday_changes": 0
+      },
+      {
+        "date": "2026-07-17",
+        "nav": 0.997707,
+        "daily_return_pct": -1.053,
+        "position_pct": 70.0,
+        "cash_pct": 30.0,
+        "positions_detail": {
+          "000016": 4.0,
+          "000300": 3.0
+        },
+        "intraday_changes": 1
+      },
+      {
+        "date": "2026-07-20",
+        "nav": 1.014304,
+        "daily_return_pct": 1.6635,
+        "position_pct": 60.0,
+        "cash_pct": 40.0,
+        "positions_detail": {
+          "000016": 3.0,
+          "000300": 2.0,
+          "399006": 0.5,
+          "000688": 0.5
+        },
+        "intraday_changes": 2
+      },
+      {
+        "date": "2026-07-21",
+        "nav": 1.043064,
+        "daily_return_pct": 2.8354,
+        "position_pct": 80.0,
+        "cash_pct": 20.0,
+        "positions_detail": {
+          "000016": 3.0,
+          "000300": 3.0,
+          "399006": 1.5,
+          "000688": 0.5
+        },
+        "intraday_changes": 3
+      },
+      {
+        "date": "2026-07-22",
+        "nav": 1.037184,
+        "daily_return_pct": -0.5637,
+        "position_pct": 20.0,
+        "cash_pct": 80.0,
+        "positions_detail": {
+          "000016": 1.0,
+          "000300": 0.5,
+          "399006": 0.5
+        },
+        "intraday_changes": 4
+      },
+      {
+        "date": "2026-07-23",
+        "nav": 1.037004,
+        "daily_return_pct": -0.0173,
+        "position_pct": 20.0,
+        "cash_pct": 80.0,
+        "positions_detail": {
+          "000016": 1.0,
+          "000300": 0.5,
+          "399006": 0.5
+        },
+        "intraday_changes": 0
+      },
+      {
+        "date": "2026-07-24",
+        "nav": 1.033987,
+        "daily_return_pct": -0.291,
+        "position_pct": 25.0,
+        "cash_pct": 75.0,
+        "positions_detail": {
+          "000016": 1.25,
+          "000300": 0.62,
+          "399006": 0.62
+        },
+        "intraday_changes": 1
+      },
+      {
+        "date": "2026-07-27",
+        "nav": 1.037125,
+        "daily_return_pct": 0.3035,
+        "position_pct": 50.0,
+        "cash_pct": 50.0,
+        "positions_detail": {
+          "000300": 3.0,
+          "000016": 2.0
+        },
+        "intraday_changes": 1
+      },
+      {
+        "date": "2026-07-28",
+        "nav": 1.009425,
+        "daily_return_pct": -2.6708,
+        "position_pct": 70.0,
+        "cash_pct": 30.0,
+        "positions_detail": {
+          "000016": 2.0,
+          "000300": 1.0,
+          "399006": 3.0,
+          "000688": 1.0
+        },
+        "intraday_changes": 2
+      },
+      {
+        "date": "2026-07-29",
+        "nav": 1.013375,
+        "daily_return_pct": 0.3912,
+        "position_pct": 80.0,
+        "cash_pct": 20.0,
+        "positions_detail": {
+          "000016": 2.0,
+          "000300": 1.0,
+          "399006": 4.0,
+          "000688": 1.0
+        },
+        "intraday_changes": 1
+      }
+    ],
+    "benchmarks": {
+      "000300_CSI300": [
+        {
+          "date": "2026-06-01",
+          "nav": 1.0
+        },
+        {
+          "date": "2026-06-02",
+          "nav": 1.014513
+        },
+        {
+          "date": "2026-06-03",
+          "nav": 1.019519
+        },
+        {
+          "date": "2026-06-04",
+          "nav": 1.012487
+        },
+        {
+          "date": "2026-06-05",
+          "nav": 0.994357
+        },
+        {
+          "date": "2026-06-08",
+          "nav": 0.973036
+        },
+        {
+          "date": "2026-06-09",
+          "nav": 0.991238
+        },
+        {
+          "date": "2026-06-10",
+          "nav": 0.980252
+        },
+        {
+          "date": "2026-06-11",
+          "nav": 0.974848
+        },
+        {
+          "date": "2026-06-12",
+          "nav": 0.986183
+        },
+        {
+          "date": "2026-06-15",
+          "nav": 1.009797
+        },
+        {
+          "date": "2026-06-16",
+          "nav": 1.008252
+        },
+        {
+          "date": "2026-06-17",
+          "nav": 1.017986
+        },
+        {
+          "date": "2026-06-18",
+          "nav": 1.020095
+        },
+        {
+          "date": "2026-06-22",
+          "nav": 1.044465
+        },
+        {
+          "date": "2026-06-23",
+          "nav": 1.015509
+        },
+        {
+          "date": "2026-06-24",
+          "nav": 1.020388
+        },
+        {
+          "date": "2026-06-25",
+          "nav": 1.0363
+        },
+        {
+          "date": "2026-06-26",
+          "nav": 1.004947
+        },
+        {
+          "date": "2026-06-29",
+          "nav": 1.017065
+        },
+        {
+          "date": "2026-06-30",
+          "nav": 1.027905
+        },
+        {
+          "date": "2026-07-01",
+          "nav": 1.023682
+        },
+        {
+          "date": "2026-07-02",
+          "nav": 0.993402
+        },
+        {
+          "date": "2026-07-03",
+          "nav": 0.99957
+        },
+        {
+          "date": "2026-07-06",
+          "nav": 0.999534
+        },
+        {
+          "date": "2026-07-07",
+          "nav": 0.989267
+        },
+        {
+          "date": "2026-07-08",
+          "nav": 0.981685
+        },
+        {
+          "date": "2026-07-09",
+          "nav": 1.006618
+        },
+        {
+          "date": "2026-07-10",
+          "nav": 0.986898
+        },
+        {
+          "date": "2026-07-13",
+          "nav": 0.969268
+        },
+        {
+          "date": "2026-07-14",
+          "nav": 0.990142
+        },
+        {
+          "date": "2026-07-15",
+          "nav": 0.988136
+        },
+        {
+          "date": "2026-07-16",
+          "nav": 0.969898
+        },
+        {
+          "date": "2026-07-17",
+          "nav": 0.934941
+        },
+        {
+          "date": "2026-07-20",
+          "nav": 0.949232
+        },
+        {
+          "date": "2026-07-21",
+          "nav": 0.978319
+        },
+        {
+          "date": "2026-07-22",
+          "nav": 0.973781
+        },
+        {
+          "date": "2026-07-23",
+          "nav": 0.976002
+        },
+        {
+          "date": "2026-07-24",
+          "nav": 0.959733
+        },
+        {
+          "date": "2026-07-27",
+          "nav": 0.970722
+        },
+        {
+          "date": "2026-07-28",
+          "nav": 0.943287
+        },
+        {
+          "date": "2026-07-29",
+          "nav": 0.949632
+        }
+      ],
+      "000001_SH": [],
+      "equal_weight_6": [
+        {
+          "date": "2026-06-01",
+          "nav": 1.0
+        },
+        {
+          "date": "2026-06-02",
+          "nav": 1.012809
+        },
+        {
+          "date": "2026-06-03",
+          "nav": 1.034946
+        },
+        {
+          "date": "2026-06-04",
+          "nav": 1.053961
+        },
+        {
+          "date": "2026-06-05",
+          "nav": 1.051502
+        },
+        {
+          "date": "2026-06-08",
+          "nav": 1.017249
+        },
+        {
+          "date": "2026-06-09",
+          "nav": 1.010632
+        },
+        {
+          "date": "2026-06-10",
+          "nav": 0.992285
+        },
+        {
+          "date": "2026-06-11",
+          "nav": 0.970976
+        },
+        {
+          "date": "2026-06-12",
+          "nav": 0.957545
+        },
+        {
+          "date": "2026-06-15",
+          "nav": 0.978965
+        },
+        {
+          "date": "2026-06-16",
+          "nav": 1.007522
+        },
+        {
+          "date": "2026-06-17",
+          "nav": 1.054361
+        },
+        {
+          "date": "2026-06-18",
+          "nav": 1.117042
+        },
+        {
+          "date": "2026-06-22",
+          "nav": 1.209129
+        },
+        {
+          "date": "2026-06-23",
+          "nav": 1.275633
+        },
+        {
+          "date": "2026-06-24",
+          "nav": 1.367485
+        },
+        {
+          "date": "2026-06-25",
+          "nav": 1.493225
+        },
+        {
+          "date": "2026-06-26",
+          "nav": 1.586611
+        },
+        {
+          "date": "2026-06-29",
+          "nav": 1.716778
+        },
+        {
+          "date": "2026-06-30",
+          "nav": 1.8983
+        },
+        {
+          "date": "2026-07-01",
+          "nav": 1.8983
+        },
+        {
+          "date": "2026-07-02",
+          "nav": 1.818088
+        },
+        {
+          "date": "2026-07-03",
+          "nav": 1.745123
+        },
+        {
+          "date": "2026-07-06",
+          "nav": 1.667706
+        },
+        {
+          "date": "2026-07-07",
+          "nav": 1.576143
+        },
+        {
+          "date": "2026-07-08",
+          "nav": 1.476355
+        },
+        {
+          "date": "2026-07-09",
+          "nav": 1.436629
+        },
+        {
+          "date": "2026-07-10",
+          "nav": 1.36014
+        },
+        {
+          "date": "2026-07-13",
+          "nav": 1.247155
+        },
+        {
+          "date": "2026-07-14",
+          "nav": 1.164844
+        },
+        {
+          "date": "2026-07-15",
+          "nav": 1.073406
+        },
+        {
+          "date": "2026-07-16",
+          "nav": 0.963489
+        },
+        {
+          "date": "2026-07-17",
+          "nav": 0.819234
+        },
+        {
+          "date": "2026-07-20",
+          "nav": 0.698385
+        },
+        {
+          "date": "2026-07-21",
+          "nav": 0.626536
+        },
+        {
+          "date": "2026-07-22",
+          "nav": 0.555451
+        },
+        {
+          "date": "2026-07-23",
+          "nav": 0.489621
+        },
+        {
+          "date": "2026-07-24",
+          "nav": 0.424117
+        },
+        {
+          "date": "2026-07-27",
+          "nav": 0.373827
+        },
+        {
+          "date": "2026-07-28",
+          "nav": 0.316759
+        },
+        {
+          "date": "2026-07-29",
+          "nav": 0.269751
+        }
+      ]
+    }
+  },
+  "summary": {
+    "simulation_period": "2026-06-01 ~ 2026-07-29",
+    "trading_days": 42,
+    "performance": {
+      "total_return_pct": 1.34,
+      "annualized_return_pct": 8.3,
+      "benchmark_csi300_return_pct": -5.04,
+      "benchmark_sh_return_pct": 0.0,
+      "benchmark_basket_return_pct": -73.02,
+      "alpha_vs_csi300_pct": 6.37,
+      "alpha_vs_basket_pct": 74.36,
+      "information_ratio_vs_csi300": 2.27,
+      "best_day_pct": 2.84,
+      "worst_day_pct": -2.67,
+      "winning_day_pct": 39.0,
+      "avg_win_day_pct": 0.88,
+      "avg_loss_day_pct": -0.79,
+      "profit_factor": 1.12
+    },
+    "risk": {
+      "max_drawdown_pct": -3.92,
+      "max_drawdown_dates": {
+        "peak": "2026-06-30",
+        "trough": "2026-07-17"
+      },
+      "volatility_annualized_pct": 15.49,
+      "downside_deviation_pct": 11.24,
+      "sortino_ratio": 0.56,
+      "var_95_daily_pct": -1.29,
+      "longest_losing_streak_days": 3,
+      "longest_winning_streak_days": 3
+    },
+    "position": {
+      "max_position_pct": 80.0,
+      "min_position_pct": 0.0,
+      "avg_position_pct": 48.2,
+      "position_volatility_pct": 22.6,
+      "days_full_invested": 0,
+      "days_above_70pct": 2,
+      "days_below_30pct": 8
+    },
+    "turnover": {
+      "total_position_changes": 13,
+      "intraday_change_days": 6,
+      "avg_holding_days": 3.2,
+      "annualized_turnover_rate": 78.0
+    }
+  },
+  "trade_log": [
+    {
+      "trade_id": 1,
+      "type": "open",
+      "date": "2026-06-08",
+      "publish_time": "2026-06-08 09:42",
+      "intraday_seq": "1/1",
+      "entry_positions": {},
+      "entry_description": "空仓",
+      "exit_positions": {},
+      "exit_description": "空仓",
+      "entry_nav": 1.0,
+      "exit_nav": 1.0,
+      "holding_days": 0,
+      "return_pct": 0.0,
+      "description": "低开至3938，送了50个点，开盘我加了3成，现在一共7成，这三成短线，随时可能走。",
+      "confidence": "partial",
+      "was_intraday": false
+    },
+    {
+      "trade_id": 2,
+      "type": "open",
+      "date": "2026-06-12",
+      "publish_time": "2026-06-12 11:01",
+      "intraday_seq": "1/1",
+      "entry_positions": {},
+      "entry_description": "空仓",
+      "exit_positions": {
+        "000016": 2.0,
+        "000905": 1.0,
+        "000300": 4.0
+      },
+      "exit_description": "2上证50+4沪深300+1中证500",
+      "entry_nav": 1.0,
+      "exit_nav": 1.0,
+      "holding_days": 0,
+      "return_pct": 0.0,
+      "description": "我调整下仓位，把银行的三成仓位移1成到创新药，1成到券商。这样我的仓位覆盖了大金融和创新药，基本长时间不会动。",
+      "confidence": "inferred",
+      "was_intraday": false
+    },
+    {
+      "trade_id": 3,
+      "type": "rebalance",
+      "date": "2026-06-18",
+      "publish_time": "2026-06-18 10:56",
+      "intraday_seq": "1/1",
+      "entry_positions": {
+        "000016": 2.0,
+        "000905": 1.0,
+        "000300": 4.0
+      },
+      "entry_description": "2上证50+4沪深300+1中证500",
+      "exit_positions": {
+        "000016": 3.0,
+        "000905": 2.0
+      },
+      "exit_description": "3上证50+2中证500",
+      "entry_nav": 1.022263,
+      "exit_nav": 1.023256,
+      "holding_days": 5,
+      "return_pct": 2.33,
+      "description": "昨天虽然加了1成药，但金融板块今天集体杀跌，确实令人心碎。我现在的配比2成药，3成金融，有没发现现在炒股越来越难，除了科技和有色意外，令人头疼。",
+      "confidence": "explicit",
+      "was_intraday": false
+    },
+    {
+      "trade_id": 4,
+      "type": "rebalance",
+      "date": "2026-07-13",
+      "publish_time": "2026-07-13 14:59",
+      "intraday_seq": "1/1",
+      "entry_positions": {
+        "000016": 3.0,
+        "000905": 2.0
+      },
+      "entry_description": "3上证50+2中证500",
+      "exit_positions": {
+        "000016": 4.0,
+        "000905": 1.0
+      },
+      "exit_description": "4上证50+1中证500",
+      "entry_nav": 1.022765,
+      "exit_nav": 1.009571,
+      "holding_days": 17,
+      "return_pct": -1.24,
+      "description": "我调整了下仓位把创新药减掉一成换成了还在低位的白酒，创新药盈了近20%够喝好几壶酒了",
+      "confidence": "inferred",
+      "was_intraday": false
+    },
+    {
+      "trade_id": 5,
+      "type": "rebalance",
+      "date": "2026-07-14",
+      "publish_time": "2026-07-14 11:28",
+      "intraday_seq": "2/2",
+      "entry_positions": {
+        "000016": 4.0,
+        "000905": 1.0
+      },
+      "entry_description": "4上证50+1中证500",
+      "exit_positions": {
+        "000016": 4.0,
+        "000905": 1.0,
+        "000300": 1.0
+      },
+      "exit_description": "4上证50+1沪深300+1中证500",
+      "entry_nav": 1.017153,
+      "exit_nav": 1.017153,
+      "holding_days": 2,
+      "return_pct": -0.55,
+      "description": "3870进了一成宽基，后面下跌还会加",
+      "confidence": "inferred",
+      "was_intraday": true
+    },
+    {
+      "trade_id": 6,
+      "type": "rebalance",
+      "date": "2026-07-15",
+      "publish_time": "2026-07-15 10:08",
+      "intraday_seq": "1/2",
+      "entry_positions": {
+        "000016": 4.0,
+        "000905": 1.0,
+        "000300": 1.0
+      },
+      "entry_description": "4上证50+1沪深300+1中证500",
+      "exit_positions": {
+        "000016": 4.0,
+        "000905": 1.0
+      },
+      "exit_description": "4上证50+1中证500",
+      "entry_nav": 1.017153,
+      "exit_nav": 1.016955,
+      "holding_days": 2,
+      "return_pct": 0.73,
+      "description": "我在3975点，把昨天3870进的1成出了。1天2.5个点，知足了，其它仓位不变。接下去继续盯盘",
+      "confidence": "inferred",
+      "was_intraday": true
+    },
+    {
+      "trade_id": 7,
+      "type": "rebalance",
+      "date": "2026-07-15",
+      "publish_time": "2026-07-15 13:43",
+      "intraday_seq": "2/2",
+      "entry_positions": {
+        "000016": 4.0,
+        "000905": 1.0
+      },
+      "entry_description": "4上证50+1中证500",
+      "exit_positions": {
+        "000016": 4.0
+      },
+      "exit_description": "4上证50",
+      "entry_nav": 1.016955,
+      "exit_nav": 1.016955,
+      "holding_days": 1,
+      "return_pct": -0.02,
+      "description": "我把1成创新药减了，把仓位降到4成，先落袋，现在创新药被大众关注度太高了。",
+      "confidence": "inferred",
+      "was_intraday": true
+    },
+    {
+      "trade_id": 8,
+      "type": "rebalance",
+      "date": "2026-07-17",
+      "publish_time": "2026-07-17 13:10",
+      "intraday_seq": "1/1",
+      "entry_positions": {
+        "000016": 4.0
+      },
+      "entry_description": "4上证50",
+      "exit_positions": {
+        "000016": 4.0,
+        "000300": 3.0
+      },
+      "exit_description": "4上证50+3沪深300",
+      "entry_nav": 1.008324,
+      "exit_nav": 0.997707,
+      "holding_days": 3,
+      "return_pct": -1.91,
+      "description": "瞄了一眼，指数完全在预期范围内（3845-3810）无需恐慌。被动吃进了2成，情绪下极端破一下3800，短期不会去3700。",
+      "confidence": "inferred",
+      "was_intraday": false
+    },
+    {
+      "trade_id": 9,
+      "type": "rebalance",
+      "date": "2026-07-20",
+      "publish_time": "2026-07-20 10:03",
+      "intraday_seq": "1/2",
+      "entry_positions": {
+        "000016": 4.0,
+        "000300": 3.0
+      },
+      "entry_description": "4上证50+3沪深300",
+      "exit_positions": {
+        "000016": 4.0,
+        "000300": 2.0
+      },
+      "exit_description": "4上证50+2沪深300",
+      "entry_nav": 0.997707,
+      "exit_nav": 1.014304,
+      "holding_days": 2,
+      "return_pct": 0.59,
+      "description": "在3820减掉了上周五3795进的1成仓，短线宽基还剩2成，继续盯盘。",
+      "confidence": "inferred",
+      "was_intraday": true
+    },
+    {
+      "trade_id": 10,
+      "type": "rebalance",
+      "date": "2026-07-20",
+      "publish_time": "2026-07-20 14:53",
+      "intraday_seq": "2/2",
+      "entry_positions": {
+        "000016": 4.0,
+        "000300": 2.0
+      },
+      "entry_description": "4上证50+2沪深300",
+      "exit_positions": {
+        "000016": 3.0,
+        "000300": 2.0,
+        "399006": 0.5,
+        "000688": 0.5
+      },
+      "exit_description": "3上证50+2沪深300+0.5科创50+0.5创业板指",
+      "entry_nav": 1.014304,
+      "exit_nav": 1.014304,
+      "holding_days": 1,
+      "return_pct": 1.66,
+      "description": "我先减掉1成银行，银行够努力了，调仓到双创上。",
+      "confidence": "inferred",
+      "was_intraday": true
+    },
+    {
+      "trade_id": 11,
+      "type": "rebalance",
+      "date": "2026-07-21",
+      "publish_time": "2026-07-20 15:39",
+      "intraday_seq": "1/3",
+      "entry_positions": {
+        "000016": 3.0,
+        "000300": 2.0,
+        "399006": 0.5,
+        "000688": 0.5
+      },
+      "entry_description": "3上证50+2沪深300+0.5科创50+0.5创业板指",
+      "exit_positions": {
+        "000016": 3.0,
+        "000300": 2.0,
+        "399006": 1.5,
+        "000688": 0.5
+      },
+      "exit_description": "3上证50+2沪深300+0.5科创50+1.5创业板指",
+      "entry_nav": 1.014304,
+      "exit_nav": 1.043064,
+      "holding_days": 2,
+      "return_pct": 4.55,
+      "description": "今天把盈利的1成仓全部加到了高弹性的创业板上，收盘刚刚好把周五被动买进的亏损部分抹平，也就是说我现在短线仓位是在大盘3800，创业板在3445。",
+      "confidence": "inferred",
+      "was_intraday": true
+    },
+    {
+      "trade_id": 12,
+      "type": "rebalance",
+      "date": "2026-07-21",
+      "publish_time": "2026-07-21 10:25",
+      "intraday_seq": "2/3",
+      "entry_positions": {
+        "000016": 3.0,
+        "000300": 2.0,
+        "399006": 1.5,
+        "000688": 0.5
+      },
+      "entry_description": "3上证50+2沪深300+0.5科创50+1.5创业板指",
+      "exit_positions": {
+        "000016": 3.43,
+        "000300": 2.29,
+        "399006": 1.71,
+        "000688": 0.57
+      },
+      "exit_description": "3.43上证50+2.29沪深300+0.57科创50+1.71创业板指",
+      "entry_nav": 1.043064,
+      "exit_nav": 1.043064,
+      "holding_days": 1,
+      "return_pct": 2.84,
+      "description": "来压压惊，3760，加进1成综指etf现在8成。",
+      "confidence": "partial",
+      "was_intraday": true
+    },
+    {
+      "trade_id": 13,
+      "type": "rebalance",
+      "date": "2026-07-21",
+      "publish_time": "2026-07-21 10:36",
+      "intraday_seq": "3/3",
+      "entry_positions": {
+        "000016": 3.43,
+        "000300": 2.29,
+        "399006": 1.71,
+        "000688": 0.57
+      },
+      "entry_description": "3.43上证50+2.29沪深300+0.57科创50+1.71创业板指",
+      "exit_positions": {
+        "000016": 3.0,
+        "000300": 3.0,
+        "399006": 1.5,
+        "000688": 0.5
+      },
+      "exit_description": "3上证50+3沪深300+0.5科创50+1.5创业板指",
+      "entry_nav": 1.043064,
+      "exit_nav": 1.043064,
+      "holding_days": 1,
+      "return_pct": 2.84,
+      "description": "我现在仓位 1证券，1保险，1白酒，1双创 1创业板，3上证综指。",
+      "confidence": "explicit",
+      "was_intraday": true
+    },
+    {
+      "trade_id": 14,
+      "type": "rebalance",
+      "date": "2026-07-22",
+      "publish_time": "2026-07-22 10:01",
+      "intraday_seq": "1/4",
+      "entry_positions": {
+        "000016": 3.0,
+        "000300": 3.0,
+        "399006": 1.5,
+        "000688": 0.5
+      },
+      "entry_description": "3上证50+3沪深300+0.5科创50+1.5创业板指",
+      "exit_positions": {
+        "000016": 3.0,
+        "000300": 1.0,
+        "399006": 1.5,
+        "000688": 0.5
+      },
+      "exit_description": "3上证50+1沪深300+0.5科创50+1.5创业板指",
+      "entry_nav": 1.043064,
+      "exit_nav": 1.037184,
+      "holding_days": 2,
+      "return_pct": 2.26,
+      "description": "3880附近减掉2成综指。现在仓位 1证券，1保险，1白酒，1双创 1创业板，1上证综指。",
+      "confidence": "explicit",
+      "was_intraday": true
+    },
+    {
+      "trade_id": 15,
+      "type": "rebalance",
+      "date": "2026-07-22",
+      "publish_time": "2026-07-22 10:25",
+      "intraday_seq": "2/4",
+      "entry_positions": {
+        "000016": 3.0,
+        "000300": 1.0,
+        "399006": 1.5,
+        "000688": 0.5
+      },
+      "entry_description": "3上证50+1沪深300+0.5科创50+1.5创业板指",
+      "exit_positions": {
+        "000016": 3.0,
+        "000300": 1.0,
+        "399006": 1.0
+      },
+      "exit_description": "3上证50+1沪深300+1创业板指",
+      "entry_nav": 1.037184,
+      "exit_nav": 1.037184,
+      "holding_days": 1,
+      "return_pct": -0.56,
+      "description": "双创减掉了，收益已经很满意了，风险放在第一，没必要去获取极致的收益。",
+      "confidence": "inferred",
+      "was_intraday": true
+    },
+    {
+      "trade_id": 16,
+      "type": "rebalance",
+      "date": "2026-07-22",
+      "publish_time": "2026-07-22 10:37",
+      "intraday_seq": "3/4",
+      "entry_positions": {
+        "000016": 3.0,
+        "000300": 1.0,
+        "399006": 1.0
+      },
+      "entry_description": "3上证50+1沪深300+1创业板指",
+      "exit_positions": {
+        "000016": 2.0,
+        "000300": 1.0,
+        "399006": 1.0
+      },
+      "exit_description": "2上证50+1沪深300+1创业板指",
+      "entry_nav": 1.037184,
+      "exit_nav": 1.037184,
+      "holding_days": 1,
+      "return_pct": -0.56,
+      "description": "白酒也抛了，白酒收益一般8%。现在仓位4成。1证券，1保险，1创业板，1上证综指。",
+      "confidence": "explicit",
+      "was_intraday": true
+    },
+    {
+      "trade_id": 17,
+      "type": "rebalance",
+      "date": "2026-07-22",
+      "publish_time": "2026-07-22 10:51",
+      "intraday_seq": "4/4",
+      "entry_positions": {
+        "000016": 2.0,
+        "000300": 1.0,
+        "399006": 1.0
+      },
+      "entry_description": "2上证50+1沪深300+1创业板指",
+      "exit_positions": {
+        "000016": 1.0,
+        "000300": 0.5,
+        "399006": 0.5
+      },
+      "exit_description": "1上证50+0.5沪深300+0.5创业板指",
+      "entry_nav": 1.037184,
+      "exit_nav": 1.037184,
+      "holding_days": 1,
+      "return_pct": -0.56,
+      "description": "科创50昨天一天基本就涨完了，短线可玩性已经不高。继续跟踪下上证走势，正常情况下，还有一周时间可以维持反弹，暂时保留2成仓位宽基。",
+      "confidence": "partial",
+      "was_intraday": true
+    },
+    {
+      "trade_id": 18,
+      "type": "rebalance",
+      "date": "2026-07-24",
+      "publish_time": "2026-07-24 14:03",
+      "intraday_seq": "1/1",
+      "entry_positions": {
+        "000016": 1.0,
+        "000300": 0.5,
+        "399006": 0.5
+      },
+      "entry_description": "1上证50+0.5沪深300+0.5创业板指",
+      "exit_positions": {
+        "000016": 1.25,
+        "000300": 0.62,
+        "399006": 0.62
+      },
+      "exit_description": "1.25上证50+0.62沪深300+0.62创业板指",
+      "entry_nav": 1.037004,
+      "exit_nav": 1.033987,
+      "holding_days": 3,
+      "return_pct": -0.87,
+      "description": "3820回补0.5成，成交。3810回补0.5成，先挂着。",
+      "confidence": "partial",
+      "was_intraday": false
+    },
+    {
+      "trade_id": 19,
+      "type": "rebalance",
+      "date": "2026-07-27",
+      "publish_time": "2026-07-26 15:13",
+      "intraday_seq": "1/1",
+      "entry_positions": {
+        "000016": 1.25,
+        "000300": 0.62,
+        "399006": 0.62
+      },
+      "entry_description": "1.25上证50+0.62沪深300+0.62创业板指",
+      "exit_positions": {
+        "000300": 3.0,
+        "000016": 2.0
+      },
+      "exit_description": "2上证50+3沪深300",
+      "entry_nav": 1.033987,
+      "exit_nav": 1.037125,
+      "holding_days": 2,
+      "return_pct": 0.01,
+      "description": "上周大盘走势还是很简单，很纯粹。目前仓位是3成宽基+2成的金融。",
+      "confidence": "explicit",
+      "was_intraday": false
+    },
+    {
+      "trade_id": 20,
+      "type": "rebalance",
+      "date": "2026-07-28",
+      "publish_time": "2026-07-27 16:47",
+      "intraday_seq": "1/2",
+      "entry_positions": {
+        "000300": 3.0,
+        "000016": 2.0
+      },
+      "entry_description": "2上证50+3沪深300",
+      "exit_positions": {
+        "000016": 2.0,
+        "000300": 1.0,
+        "399006": 3.0
+      },
+      "exit_description": "2上证50+1沪深300+3创业板指",
+      "entry_nav": 1.037125,
+      "exit_nav": 1.009425,
+      "holding_days": 2,
+      "return_pct": -2.38,
+      "description": "当前仓位：1证券 1保险 1上证综指etf 3创业板etf。本来今下午打算在3815进1成科创50，后来放弃了，仓位6成比较合适。",
+      "confidence": "explicit",
+      "was_intraday": true
+    },
+    {
+      "trade_id": 21,
+      "type": "rebalance",
+      "date": "2026-07-28",
+      "publish_time": "2026-07-28 14:58",
+      "intraday_seq": "2/2",
+      "entry_positions": {
+        "000016": 2.0,
+        "000300": 1.0,
+        "399006": 3.0
+      },
+      "entry_description": "2上证50+1沪深300+3创业板指",
+      "exit_positions": {
+        "000016": 2.0,
+        "000300": 1.0,
+        "399006": 3.0,
+        "000688": 1.0
+      },
+      "exit_description": "2上证50+1沪深300+1科创50+3创业板指",
+      "entry_nav": 1.009425,
+      "exit_nav": 1.009425,
+      "holding_days": 1,
+      "return_pct": -2.67,
+      "description": "大盘力保3800不失，尾盘买进1成科创50，仓位7成。",
+      "confidence": "inferred",
+      "was_intraday": true
+    },
+    {
+      "trade_id": 22,
+      "type": "rebalance",
+      "date": "2026-07-29",
+      "publish_time": "2026-07-29 13:56",
+      "intraday_seq": "1/1",
+      "entry_positions": {
+        "000016": 2.0,
+        "000300": 1.0,
+        "399006": 3.0,
+        "000688": 1.0
+      },
+      "entry_description": "2上证50+1沪深300+1科创50+3创业板指",
+      "exit_positions": {
+        "000016": 2.0,
+        "000300": 1.0,
+        "399006": 4.0,
+        "000688": 1.0
+      },
+      "exit_description": "2上证50+1沪深300+1科创50+4创业板指",
+      "entry_nav": 1.009425,
+      "exit_nav": 1.013375,
+      "holding_days": 2,
+      "return_pct": -2.29,
+      "description": "今天3785主动买的1成创业板及其精准，回血不少。尾盘能站稳3840，那就不会再有太大的折腾了",
+      "confidence": "inferred",
+      "was_intraday": false
+    }
+  ],
+  "attribution": {
+    "pnl_by_index": {
+      "000016_上证50": {
+        "total_contribution_pct": 0.03,
+        "avg_weight_pct": 27.7,
+        "days_held": 33
+      },
+      "000300_沪深300": {
+        "total_contribution_pct": 0.21,
+        "avg_weight_pct": 22.6,
+        "days_held": 14
+      },
+      "399006_创业板指": {
+        "total_contribution_pct": -0.08,
+        "avg_weight_pct": 15.2,
+        "days_held": 7
+      },
+      "000688_科创50": {
+        "total_contribution_pct": -0.02,
+        "avg_weight_pct": 7.5,
+        "days_held": 4
+      },
+      "000905_中证500": {
+        "total_contribution_pct": 0.02,
+        "avg_weight_pct": 17.3,
+        "days_held": 22
+      },
+      "000852_中证1000": {
+        "total_contribution_pct": 0.0,
+        "avg_weight_pct": 0,
+        "days_held": 0
+      }
+    },
+    "pnl_by_month": {
+      "2026-06": {
+        "portfolio_return_pct": 3.84,
+        "benchmark_return_pct": 2.79,
+        "alpha_pct": 1.05,
+        "position_changes": 2
+      },
+      "2026-07": {
+        "portfolio_return_pct": -2.41,
+        "benchmark_return_pct": -7.23,
+        "alpha_pct": 4.82,
+        "position_changes": 11
+      }
+    },
+    "best_trade": {
+      "trade_id": 11,
+      "type": "rebalance",
+      "date": "2026-07-21",
+      "publish_time": "2026-07-20 15:39",
+      "intraday_seq": "1/3",
+      "entry_positions": {
+        "000016": 3.0,
+        "000300": 2.0,
+        "399006": 0.5,
+        "000688": 0.5
+      },
+      "entry_description": "3上证50+2沪深300+0.5科创50+0.5创业板指",
+      "exit_positions": {
+        "000016": 3.0,
+        "000300": 2.0,
+        "399006": 1.5,
+        "000688": 0.5
+      },
+      "exit_description": "3上证50+2沪深300+0.5科创50+1.5创业板指",
+      "entry_nav": 1.014304,
+      "exit_nav": 1.043064,
+      "holding_days": 2,
+      "return_pct": 4.55,
+      "description": "今天把盈利的1成仓全部加到了高弹性的创业板上，收盘刚刚好把周五被动买进的亏损部分抹平，也就是说我现在短线仓位是在大盘3800，创业板在3445。",
+      "confidence": "inferred",
+      "was_intraday": true
+    },
+    "worst_trade": {
+      "trade_id": 21,
+      "type": "rebalance",
+      "date": "2026-07-28",
+      "publish_time": "2026-07-28 14:58",
+      "intraday_seq": "2/2",
+      "entry_positions": {
+        "000016": 2.0,
+        "000300": 1.0,
+        "399006": 3.0
+      },
+      "entry_description": "2上证50+1沪深300+3创业板指",
+      "exit_positions": {
+        "000016": 2.0,
+        "000300": 1.0,
+        "399006": 3.0,
+        "000688": 1.0
+      },
+      "exit_description": "2上证50+1沪深300+1科创50+3创业板指",
+      "entry_nav": 1.009425,
+      "exit_nav": 1.009425,
+      "holding_days": 1,
+      "return_pct": -2.67,
+      "description": "大盘力保3800不失，尾盘买进1成科创50，仓位7成。",
+      "confidence": "inferred",
+      "was_intraday": true
+    },
+    "comparison_with_signals": null
+  }
+}

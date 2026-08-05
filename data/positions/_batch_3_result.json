@@ -1,0 +1,52 @@
+[
+  {
+    "date": "2026-04-16",
+    "publish_time": "2026-04-16 10:23",
+    "post_id": "1862592039569418",
+    "description": "5000点附近减了1成恒科，当前还剩2成银行",
+    "positions": {"000016": 2.0},
+    "unmapped": {},
+    "total_units": 2.0,
+    "confidence": "explicit"
+  },
+  {
+    "date": "2026-05-07",
+    "publish_time": "2026-05-07 12:15",
+    "post_id": "1864501638138953",
+    "description": "早盘加仓1成保险和1成银行做中线防御，目前共4成",
+    "positions": {"000016": 4.0},
+    "unmapped": {},
+    "total_units": 4.0,
+    "confidence": "explicit"
+  },
+  {
+    "date": "2026-05-11",
+    "publish_time": "2026-05-11 12:04",
+    "post_id": "1864863368228875",
+    "description": "早盘再加1成银行，目前共5成",
+    "positions": {"000016": 5.0},
+    "unmapped": {},
+    "total_units": 5.0,
+    "confidence": "explicit"
+  },
+  {
+    "date": "2026-06-08",
+    "publish_time": "2026-06-08 09:42",
+    "post_id": "1867390953383947",
+    "description": "低开至3938后加仓3成短线（未指定板块），目前共7成",
+    "positions": {},
+    "unmapped": {},
+    "total_units": 7.0,
+    "confidence": "partial"
+  },
+  {
+    "date": "2026-06-12",
+    "publish_time": "2026-06-12 11:01",
+    "post_id": "1867758234958987",
+    "description": "调整仓位：银行3成中移1成到创新药、1成到券商，调整后银行1成+券商1成+创新药1成，覆盖大金融和创新药",
+    "positions": {"000016": 2.0, "000905": 1.0},
+    "unmapped": {},
+    "total_units": 3.0,
+    "confidence": "explicit"
+  }
+]
