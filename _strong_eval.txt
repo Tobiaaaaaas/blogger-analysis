@@ -1,0 +1,41 @@
+===========================================================================
+  顺应周期 Strong 观点有效性检验
+===========================================================================
+
+  Signal #12 | 2026-07-07 | bearish | th=unspecified
+    SKIPPED: ref=2026-07-07 (idx=507), need offset +22, only have 16 trading days after
+
+  Signal #3 | 2026-07-23 | bearish | th=unspecified
+    SKIPPED: ref=2026-07-23 (idx=519), need offset +22, only have 4 trading days after
+
+  Signal #7 | 2026-07-31 | bullish | th=short
+    SKIPPED: publish date after last available trading day
+
+  Signal #1 | 2026-01-06 | bearish | th=unspecified
+    Ref: 2026-01-06 @ 4083.7
+    Window (unspecified): [4067.7, 4102.2, 4075.9] avg=4082.0
+    Change: -0.04%  =>  CORRECT
+    Evidence: 大盘破4034，执行纪律，止损昨天2手kong
+
+  Strong signals: 1/1 correct (100%)
+
+===========================================================================
+  Moderate 信号作为基线对比
+===========================================================================
+
+  Moderate signals evaluated: 319
+  Moderate correct: 167/319 (52.4%)
+
+  bullish: 93/173 (53.8%)
+  bearish: 74/146 (50.7%)
+
+  --- Strong 按方向 ---
+  bullish: no strong signals
+  bearish #1: -0.04% => OK
+
+===========================================================================
+  结论
+===========================================================================
+  仅有 1 条 strong 信号，样本过少无法得出统计结论。
+  但这本身就是一个发现：博主在 365 条信号中仅表达了 4 次强烈信念 (1.1%)。
+  他绝大部分观点是 moderate (361/365 = 99%)。

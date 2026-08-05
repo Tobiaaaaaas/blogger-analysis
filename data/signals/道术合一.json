@@ -1,0 +1,475 @@
+{
+  "blogger": "道术合一",
+  "extraction_time": "2026-08-04 00:29:05",
+  "model": "deepseek-v4-flash",
+  "total_posts": 344,
+  "pre_2024_06": 0,
+  "evaluation_posts": 344,
+  "not_extracted": {
+    "no_market_topic": 76,
+    "pure_description": 21,
+    "directional_vague": 22,
+    "other_index_sector": 137,
+    "other": 33
+  },
+  "scored_bullish": {
+    "strong": 6,
+    "moderate": 32,
+    "long": 5,
+    "medium": 14,
+    "short": 3,
+    "intraday": 0,
+    "unspecified": 16
+  },
+  "scored_bearish": {
+    "strong": 1,
+    "moderate": 16,
+    "long": 0,
+    "medium": 5,
+    "short": 6,
+    "intraday": 0,
+    "unspecified": 6
+  },
+  "signals": [
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "下周股市必然上涨，战争不影响大趋势",
+      "publish_time": "2026-03-01 18:22"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "long",
+      "evidence": "大盘调整不用担心，今年就是大牛市",
+      "publish_time": "2026-03-03 12:01"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "关注股市情绪，情绪已经到反转点",
+      "publish_time": "2026-03-03 23:52"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "现在外围都在救市了，静等大奇迹日",
+      "publish_time": "2026-03-05 06:42"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "有，因为整个大环境不是理想，需要股市起来",
+      "publish_time": "2026-03-06 09:27"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "因为大环境不好，房子卖不掉，经济要突围，股市大涨，资金流动起来，经济才有希望",
+      "publish_time": "2026-03-07 15:29"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "是的，但是股市会提前与经济启动上涨，有可能提前一年，或者更多，就提前上涨了",
+      "publish_time": "2026-03-07 15:30"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "不断洗盘，不断暴跌，但整体向上",
+      "publish_time": "2026-03-11 17:04"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "当大家都彻底唾弃，全躺平，那个都不聊股票时候，机会来了",
+      "publish_time": "2026-03-14 20:16"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "大盘调整是机会",
+      "publish_time": "2026-03-20 06:21"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "月线级别调整，后面大涨",
+      "publish_time": "2026-03-21 14:38"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "大盘下跌就是机会，关注恒生科技机会",
+      "publish_time": "2026-03-21 14:38"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "卖掉股票，这我已完成，等机会",
+      "publish_time": "2026-03-21 18:43"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "市场阶段性调整，主升浪即将到来",
+      "publish_time": "2026-03-21 20:55"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "准备好了，等暴跌，全面暴跌时候买进",
+      "publish_time": "2026-03-21 22:57"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "月线级别调整，然后继续上涨",
+      "publish_time": "2026-03-21 22:57"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "股市月线级别调整，但这是最佳交易机会，关注白酒",
+      "publish_time": "2026-03-22 06:49"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "月线级别调整，然后继续上涨",
+      "publish_time": "2026-03-22 07:25"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "调整",
+      "publish_time": "2026-03-22 07:53"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "暴跌就是机会！A股月线调整将至，二季度白马、港股科技避风港",
+      "publish_time": "2026-03-22 16:56"
+    },
+    {
+      "post_n": 8,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "A股横盘3月！月线调整箭在弦上，二季度抄底机会看这几个方向",
+      "publish_time": "2026-03-23 06:15"
+    },
+    {
+      "post_n": 5,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "月线级别调整",
+      "publish_time": "2026-03-23 09:13"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "调整一下，来个暴跌血洗，接着稳住，缓慢上涨",
+      "publish_time": "2026-03-25 09:11"
+    },
+    {
+      "post_n": 11,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "大盘血洗将至？",
+      "publish_time": "2026-03-26 06:03"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "涨势后继乏力，A股静待暴跌：四月下影线筑底",
+      "publish_time": "2026-03-27 06:12"
+    },
+    {
+      "post_n": 9,
+      "direction": "bearish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "再来一个大暴跌就差不多了，搞个100点以上，150的更好",
+      "publish_time": "2026-03-27 09:04"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "中东战火点燃A股调整导火索",
+      "publish_time": "2026-03-28 14:32"
+    },
+    {
+      "post_n": 6,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "判断大盘会继续调整，存在一个暴跌的可能性",
+      "publish_time": "2026-03-28 17:17"
+    },
+    {
+      "post_n": 5,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "大盘存在暴跌可能性",
+      "publish_time": "2026-03-29 05:46"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "大盘月线调整后出现的机会",
+      "publish_time": "2026-03-29 05:58"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "今年就是大涨暴涨",
+      "publish_time": "2026-03-29 07:24"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "关注大盘后续机会",
+      "publish_time": "2026-03-29 12:22"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "有，但是目前需要调整",
+      "publish_time": "2026-03-30 07:23"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "就这里调整，一个暴跌后，继续上涨",
+      "publish_time": "2026-03-31 09:15"
+    },
+    {
+      "post_n": 6,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "大盘静待暴跌",
+      "publish_time": "2026-04-01 06:03"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "大盘后续大涨机会",
+      "publish_time": "2026-04-01 08:31"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "调整后继续上涨",
+      "publish_time": "2026-04-01 09:30"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "大盘终将迎变局",
+      "publish_time": "2026-04-02 07:23"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "从资金博弈看A股：3800点抄底，4600点兑现：A股终极路线图",
+      "publish_time": "2026-04-05 06:06"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "调整近尾声，白酒恒科等将率先启动行情",
+      "publish_time": "2026-04-06 09:32"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "月线级调整倒计时：聚焦资源型化工，静待4600点行情启动",
+      "publish_time": "2026-04-09 22:29"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "调整后，暴涨",
+      "publish_time": "2026-04-11 11:46"
+    },
+    {
+      "post_n": 6,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "别慌！美伊谈不拢是常态，A股调整没走完，恒生科技主升浪",
+      "publish_time": "2026-04-13 05:27"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "关注大盘即将出现的调整",
+      "publish_time": "2026-04-20 22:32"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "现在就是买进机会",
+      "publish_time": "2026-04-21 10:28"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "不用，等散户都老实了，就会涨",
+      "publish_time": "2026-04-21 10:29"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "4100点小心调整陷阱！主力自导自演",
+      "publish_time": "2026-04-23 06:20"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "要涨了",
+      "publish_time": "2026-04-25 08:34"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "对本周股市判断，先抑后扬",
+      "publish_time": "2026-05-18 07:14"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "对大盘最新预判，市场会创新高",
+      "publish_time": "2026-05-22 18:22"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "long",
+      "evidence": "大牛市，拿住不要动",
+      "publish_time": "2026-05-26 09:10"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大跌形成恐慌，典型恐慌盘，注意机会已经来了",
+      "publish_time": "2026-06-08 23:04"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "long",
+      "evidence": "本轮超级大牛市仅刚起步",
+      "publish_time": "2026-06-11 07:53"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "今天是机会，股市发财要的是掌握利用人的情绪的枭雄，而不是被涨跌控制。本人今天加仓了。",
+      "publish_time": "2026-07-17 17:33"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "预判下周一有下跌",
+      "publish_time": "2026-08-01 12:12"
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "blogger": "实盘指龙",
+  "extraction_time": "2026-08-04 09:05:52",
+  "model": "deepseek-v4-flash",
+  "total_posts": 23,
+  "pre_2024_06": 0,
+  "evaluation_posts": 23,
+  "not_extracted": {
+    "no_market_topic": 2,
+    "pure_description": 1,
+    "directional_vague": 1,
+    "other_index_sector": 4,
+    "other": 1
+  },
+  "scored_bullish": {
+    "strong": 1,
+    "moderate": 13,
+    "long": 0,
+    "medium": 3,
+    "short": 10,
+    "intraday": 1,
+    "unspecified": 0
+  },
+  "scored_bearish": {
+    "strong": 0,
+    "moderate": 0,
+    "long": 0,
+    "medium": 0,
+    "short": 0,
+    "intraday": 0,
+    "unspecified": 0
+  },
+  "signals": [
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天盘面不看空，但由于周五美丽国调整，所以明天早盘会承压。...因为从结构上看，下周会有技术性反弹，也就是说机会大于风险。...明天看低开高走。",
+      "publish_time": "2026-07-26 16:07"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "指农认为下周行情大概率不必担心，因为不管是情绪面还是技术面上看，这里都必须会有修复，且很可能会是不错的。...所以中线没有问题。终于明天吧，明早震荡一下，又可以进攻了。所以低开高走阳。",
+      "publish_time": "2026-07-26 20:47"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "所以今天大概率还是阳线。...接下来两周很可能会有不错的波段行情，因为很多ai应用都严重超跌，这里会有超跌反弹。...所以不能轻易看空。这位置拿住就行了。",
+      "publish_time": "2026-07-27 09:21"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "从结构上看，下午很可能会回落，但回落又是进场点，所以对于绝大部分人来说，持股待涨可能是比较好的。后面两周很可能会有波段上攻！",
+      "publish_time": "2026-07-27 13:11"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天继续看涨！今天表现平平的券券和ai，明天又能大放异彩[灵光一闪]",
+      "publish_time": "2026-07-27 16:40"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "今天盘中或有回落，但下午很容易拉起来！...这波反弹主要聚焦超跌的ai应用板块，加上券商的震荡上涨，时间可能会持续半个月。...这两天大盘临近变盘时刻，要么大阳线往上变盘，要么冲高回落震荡两天再上攻。...但总的来说，机会依然大于风险。中线拿住没有问题。",
+      "publish_time": "2026-07-28 08:21"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "那么这位置大盘有问题吗？指龙认为没有，甚至明天很可能还有大幅反弹。",
+      "publish_time": "2026-07-28 13:51"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "从大盘结构上看，大盘这里也不可能直接下去，今天早盘就是低开也得开启反弹，快则早上，慢则下午。",
+      "publish_time": "2026-07-29 08:28"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "但指农经过复盘，认为今天大A不会跟！而是要低开高走！",
+      "publish_time": "2026-07-30 09:51"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "但指龙认为这里无需恐慌，这里很可能就是极限压盘的位置，反弹一触即发。",
+      "publish_time": "2026-07-30 13:14"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大盘必须变盘了，抱团股的压制已经到了极限，包括美丽国半导科技，这里都得来一个像样的反弹才行。结构上来说，这种连续暴跌非常离谱，就算后面还得下也得反弹了再下！所以短线的话机会大于风险。",
+      "publish_time": "2026-07-30 18:07"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天看涨！没什么好说的，麻袋拿出来就行了。",
+      "publish_time": "2026-07-31 08:18"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "从结构上看，明天大盘是非常容易出一根中大阳线的，因为权重老登的压盘已经到了极限，随时会爆一根大阳线。所以指龙已经满仓埋伏，坐等抬轿子了",
+      "publish_time": "2026-08-03 18:10"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明日中阳线指龙认为是大概率的，因为目前情绪极度低迷，加上结构已经到位，从分时上看主力其实也一直在吸筹。所以明天大概率要变盘了。",
+      "publish_time": "2026-08-03 23:23"
+    }
+  ]
+}
