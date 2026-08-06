@@ -19,7 +19,7 @@ _requests.Session = NoProxySession
 import pandas as pd
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-OUTPUT_DIR = os.path.join(PROJECT_ROOT, "data", "minute")
+OUTPUT_DIR = os.path.join(PROJECT_ROOT, "data", "minute", "5min")
 
 # Index codes for EastMoney
 # EastMoney symbol format: 1.000300 for CSI300, 0.399006 for CYB, etc.
