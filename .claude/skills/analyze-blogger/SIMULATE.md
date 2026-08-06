@@ -29,11 +29,11 @@
 - 博主在帖子中**公开披露仓位**：持仓标的 + 各占比（如"1成银行""3成创业板"）
 - 博主披露**操作记录**：买入/卖出/加减仓的具体点位和仓位
 - 博主披露频率足够追踪仓位变化（至少每周 1 次）
-- **可投资标的仅限以下 6 个指数**（不包含个股、海外标的、商品）
+- **可投资标的仅限以下 2 个指数**：上证50(000016) 和 中证1000(000852)
 
 ## 标的映射规则
 
-博主使用的通俗标的名称 → 可投资的宽基指数：
+博主使用的通俗标的名称 → 仅可投资以下两个指数：
 
 | 博主标的 | 映射指数 | 指数代码 | 理由 |
 |:---|:---|:---|:---|
@@ -41,40 +41,33 @@
 | 金融 | 上证50 | 000016 | 同上 |
 | 银行 / 保险 / 券商 / 证券 | 上证50 | 000016 | 招行、平安、中信证券等 |
 | 白酒 / 酒 | 上证50 | 000016 | 茅台为第一权重 |
-| 宽基 / 上证综指 / 上证 / 综指 | 沪深300 | 000300 | 最接近上证综指的大盘基准 |
 | 上证50 / 上证50ETF | 上证50 | 000016 | 直接对应 |
-| 沪深300 / 沪深300ETF | 沪深300 | 000300 | 直接对应 |
-| 创业板 / 创业板ETF | 创业板指 | 399006 | 直接对应 |
-| 科创 / 科创50 / 科创50ETF | 科创50 | 000688 | 直接对应 |
-| 双创 | 50%创业板 + 50%科创50 | 399006/000688 | 合成映射 |
-| 创新药 / 药 | 中证500 | 000905 | 中小盘成长，医药创新企业集中 |
-| 中证500 / 中证500ETF | 中证500 | 000905 | 直接对应 |
+| **未注明**（无指定标的） | **中证1000** | **000852** | 默认映射，操作动词+量词但未指定标的时默认为中证1000 |
+| 宽基 / 上证综指 / 上证 / 综指 | 中证1000 | 000852 | 综合指数，覆盖小盘 |
+| 沪深300 / 沪深300ETF | 中证1000 | 000852 | 同上 |
+| 创业板 / 创业板ETF | 中证1000 | 000852 | 同上 |
+| 科创 / 科创50 / 科创50ETF | 中证1000 | 000852 | 同上 |
+| 双创 | 中证1000 | 000852 | 同上 |
+| 创新药 / 药 | 中证1000 | 000852 | 同上 |
+| 中证500 / 中证500ETF | 中证1000 | 000852 | 同上 |
 | 中证1000 / 中证1000ETF | 中证1000 | 000852 | 直接对应 |
 | 小登 (小盘股) / 题材股 | 中证1000 | 000852 | 小盘成长代表 |
 
-**不可映射的标的**（需记录在 `extraction_meta.unmapped_items` 中）：
-
-| 标的 | 处理方式 |
-|:---|:---|
-| 个股（具体股票名称/代码） | 需获取个股行情；短期无法自动化 |
-| 海外标的（美股/港股） | 需获取境外数据 |
-| 商品（黄金/原油） | 需获取期货数据 |
+> **映射逻辑**：上证50 系列（老登/金融/银行/保险/券商/证券/白酒/酒）保留映射到 000016，其余所有标的（含未注明）统一映射到中证1000(000852)。无不可映射标的——恒科、有色等地被归入中证1000。
 
 ## 所需数据
 
-全部 7 个指数（含上证综指基准）已整合至 `data/market/market_data.json`：
+模拟仅需以下 3 个指数的日线数据（已整合至 `data/market/market_data.json`）：
 
-| 数据 | 指数代码 | 来源 | 状态 |
-|:---|:---|:---|:---|
-| 上证综指 | 000001 | akshare | ✅（仅作参考基准，非可投资标的） |
-| 上证50 | 000016 | akshare `sh000016` | ✅ |
-| 沪深300 | 000300 | akshare | ✅ |
-| 创业板指 | 399006 | akshare | ✅ |
-| 科创50 | 000688 | akshare `sh000688` | ✅ |
-| 中证500 | 000905 | akshare `sh000905` | ✅ |
-| 中证1000 | 000852 | akshare `sh000852` | ✅ |
+| 数据 | 指数代码 | 用途 |
+|:---|:---|:---|
+| 上证综指 | 000001 | 参考基准（非可投资） |
+| 上证50 | 000016 | 可投资 |
+| 中证1000 | 000852 | 可投资 |
 
-> 数据范围：2024-06-03 ~ 2026-07-31，覆盖 524~526 个交易日。
+> 数据范围：2024-06-03 ~ 2026-08-06。
+
+分钟级 K 线数据目录 `data/minute/1min/` 和 `data/minute/5min/`，用于盘中参考价格判定（见 Step 4）。
 
 ---
 
@@ -170,58 +163,80 @@ candidate_posts = [
 **LLM 输出**：一个 JSON 数组，每个元素是一个仓位快照。
 
 > **⏀ 核心约定：所有快照的 `positions` 字段必须是绝对仓位（当日终态），不是增量。**
-> 模拟引擎直接替换，不做叠加。例如 "加了1成综指" → LLM 输出的是加完之后的完整持仓，不是 `{"000300": 1}`。
+> 模拟引擎直接替换，不做叠加。例如 "加了1成综指" → LLM 输出的是加完之后的完整持仓，不是 `{"000852": 1}`。
 
 **LLM 需要执行的判断**：
 
 **A. 确认持仓报告**（直接映射）：
 ```
-博主逐项列出当前持仓的标的 + 占比，可以完整映射到指数代码。
+博主逐项列出当前持仓的标的 + 占比，LLM 直接映射为指数单位数。
+
+> **模拟引擎执行流程（A 类）**：
+> 1. 收到 explicit 快照 → positions 直接替换 current_pos，不计算不修正
+> 2. 按新 positions 计算当日起的 NAV
 
 例 → explicit:
   "目前仓位是1证券，1保险，1白酒，1双创，1创业板，3上证综指，共8成仓"
-  → {"000016":3, "399006":1.5, "000688":0.5, "000300":3}
+  → 证券+保险+白酒→上证50(3), 双创+创业板+综指→中证1000(5)
+  → {"000016":3, "000852":5}
 
   "目前仓位是3成宽基+2成金融"
-  → {"000300":3, "000016":2}
+  → 金融→上证50(2), 宽基→中证1000(3)
+  → {"000016":2, "000852":3}
 ```
 
-**B. 交易操作**（结合前态反推）：
-```
-博主只说了刚发生的操作，未列出完整持仓。LLM 需结合前一个快照的状态，
-从操作动词推导新持仓。
+**B. 交易操作**（LLM 给绝对单位，引擎在权重空间修正）：
 
-关键规则：操作动词 + 量词但**未指定标的**时，默认标的 = 大盘（沪深300, 000300）。
-博主的核心基准是上证综指，裸"加仓1成"就是指加仓大盘。
+```
+博主只说了刚发生的操作，未列出完整持仓。LLM 结合前态推导新持仓（仍以绝对单位输出）。
+
+⚠️ **关键：B 类操作必须在权重空间执行。** 两个快照之间指数涨跌已改变前态各标的
+的实际仓位。LLM 输出的单位数只是"参照前态 +X unit"的静态推测——模拟引擎收到后，
+会计算当前实际市值权重，在权重空间叠加操作，再转回单位数。
+
+模拟引擎执行流程：
+1. 检测 LLM 输出的 inferred 快照与前态的 unit 差异（Δunits）
+2. 计算前态各标的的**当日实际仓位** = Σ(units × cum_return) / NAV（成）
+3. 将 Δunits 转为仓位变动：Δ成 = Δunits × cum_return[code] / NAV
+4. 新仓位 = 实际仓位 + Δ成
+5. 转回 units: new_units = 新成数 × NAV / cum_return[code]
+6. 其余标的 units 保持不变
+
+关键规则：操作动词 + 量词但**未指定标的**时，默认标的 = 中证1000（000852）。
 
 例1 → inferred（指定了标的）:
-  前态: {"000016":4, "000905":1}, total=5
-  帖子: "刚好3870点，进了1成综指"
-  → "综指"指定了标的 → 叠加 {"000300":1}
-  结果: {"000016":4, "000905":1, "000300":1}, total=6
+  前态: {"000016":4}, total=4。之后 000016 涨 5%, NAV 涨到 1.02。
+  当前实际仓位: 000016 = 4×1.05/1.02 = 4.12成
+  帖子: "刚好3870点，进了1成上证50"
+  → LLM 输出 {"000016":5}（前态 +1 unit）
+  → 引擎检测到 000016 +1 unit → 权重空间 +1成 → 目标 = 4.12 + 1.0 = 5.12成
+  → new_units = 5.12 × 1.02 / 1.05 ≈ 4.97
+  结果: {"000016":4.97}, total≈4.97
 
-例2 → inferred（未指定标的，默认大盘）:
+例2 → inferred（未指定标的，默认中证1000）:
   前态: {"000016":2}, total=4
-  帖子: "本人加了1成"
-  → 无标的 → 默认加仓大盘 → 叠加 {"000300":1}
-  结果: {"000016":2, "000300":1}, total=5
+  帖子: "本人加了1成"，无标的 → 叠加到 000852
+  结果: {"000016":2, "000852": 实际仓位+1成转换后的 units}, total 相应更新
 
-例3 → inferred（未指定标的，默认大盘）:
-  前态: {"000016":2}, total=4
-  帖子: "在4120减了2成出来"
-  → 无标的 → 默认减仓大盘 → 从现有仓位中减去 000300 的仓位
-  结果: {"000016":2}, total=2 (000300 减至 0)
+例3 → inferred（未指定标的，默认中证1000）:
+  前态: {"000016":2, "000852":2}, total=4
+  帖子: "在4120减了2成出来"，无标的 → 从 000852 减 2成
+  结果: 000852 的 units 减少到对应减 2成后的水平
 ```
 
-**C. 仅报总仓位**（按比例缩放，不涉及动作动词）：
+**C. 仅报总仓位**（不涉及操作动词）：
 ```
-博主只说总仓位几成，**无任何操作动词**，完全不提买卖了什么。
-→ LLM 不填 positions（留空），由模拟引擎按前态比例缩放。
+博主只说了总成数，**无任何操作动词**。
+→ LLM 不填 positions（留空），total_units 设为博主报的数字。
+
+> **模拟引擎执行流程（C 类）**：
+> 1. 计算前态在当前市值下的**实际总成数**：actual = Σ(units × cum_return) / NAV
+> 2. 按 scale = new_total / actual 缩放各单位
+> 3. 各标的等比例缩减或扩张，总成数精确匹配博主报的数字
 
 例1 → partial:
-  帖子: "仓位降到4成"（仅陈述状态，无动作词）
-  前态: {"000016":4, "000905":1}, total=5
-  → positions 留空, total_units=4 → 模拟引擎: scale=4/5=0.8 → {"000016":3.2, "000905":0.8}
+  帖子: "仓位降到4成"
+  → positions 留空, total_units=4
 
 例2 → partial:
   帖子: "本人继续4成仓位"
@@ -242,10 +257,26 @@ candidate_posts = [
 同一日期多条帖子各自记录独立操作时，**全部保留**，按 `publish_time` 排序。模拟引擎会逐条处理——每条仓位变化都产生一条 trade_log 记录；每日最终仓位用于 NAV 计算。
 
 **T 操作处理**：
-`"T了X成"` 或 `"T掉X成"` 表示博主做了当日 T+0 交易——在同一交易日内先卖出再买回（或先买入再卖出）X 成仓位，赚取日内差价。**净仓位不变**（买入和卖出相互抵消），但 LLM 应在 `description` 中保留 T 操作记录，因为 T 操作反映了博主的交易行为。
+
+`"T了X成"` 或 `"T掉X成"` 表示博主做了当日 T+0 交易——同一日内先买入后卖出（或先卖后买）X 成，赚取日内价差。LLM 需要结合当日其他帖子判定 T 的净仓位影响：
+
+**情形 1 — T 前有同日买入操作**（仓位需回撤）：
+```
+早盘 "进了1成创业板" → 总仓位 +1成
+午盘 "把早盘进的1成T掉了" → 早盘的 +1成 被 T 掉，仓位回到早盘买入前的水平
+```
+→ LLM 输出一条快照：`total_units` 回退到早盘操作前的值，`description` 记录 T 操作。
+
+**情形 2 — 当日无前序操作，仅描述性 T**（仓位不变）：
+```
+"今天T了1成，赚了点差价"
+```
+→ 全日仓位不变，LLM 可选跳过或输出与前态相同的快照（引擎会记录 type="T" 的 trade_log）。
+
+> **核心**：LLM 需理解同日内帖子序列。T 如果是对早盘已有操作的平仓，则仓位回撤；如果只是事后描述当日做过 T、没有提到具体买卖标的和方向，则仓位不变。判断依据是当日同标的**是否先有加仓/减仓信号**然后才出现 T。
 
 **不可映射标的**：
-遇到无法映射的标的（恒科、有色、个股等），记录在 `unmapped` 字段中，不计入 `positions` 但影响 `total_units`。
+无。所有博主的通俗标的名称均可映射到上证50(000016) 或中证1000(000852)。`unmapped` 字段始终为 `{}`。
 
 ### Step 3: 时间线构建
 
@@ -253,8 +284,8 @@ candidate_posts = [
 
 - **日期**：`publish_date`
 - **原文描述**：帖子中的原始仓位表述
-- **映射后仓位**：使用指数代码（000016/000300/399006/000688/000905/000852）作为 key
-- **总仓位**：映射标的 + 不可映射标的的成数之和
+- **映射后仓位**：使用指数代码（000016/000852）作为 key
+- **总仓位**：各标的成数之和
 - **现金**：10 - 总仓位成数
 - **置信度**：`explicit`（标的+比例均明确）/ `inferred`（从操作反推）/ `partial`（仅总仓位）
 
@@ -268,7 +299,7 @@ candidate_posts = [
       "description": "1银行+1保险+1券商+1药+1酒",
       "positions": {
         "000016": 3.0,
-        "000905": 1.0
+        "000852": 2.0
       },
       "unmapped": {},
       "total_units": 5.0,
@@ -281,11 +312,10 @@ candidate_posts = [
       "post_id": "1856086337902857",
       "description": "早盘4000附近进的2成先T了，还剩4成，2成有色和2成银行",
       "positions": {
-        "000016": 2.0
+        "000016": 2.0,
+        "000852": 2.0
       },
-      "unmapped": {
-        "有色": 2.0
-      },
+      "unmapped": {},
       "total_units": 4.0,
       "cash_units": 6.0,
       "confidence": "explicit"
@@ -296,8 +326,8 @@ candidate_posts = [
 
 > **字段说明**：
 > - `publish_time`（必填）：从原始帖子中获取的完整时间戳 `YYYY-MM-DD HH:MM`，用于判定参考价格
-> - `positions` 的 key 统一使用 6 位指数代码，与映射表一致
-> - `unmapped`：无法映射到 6 指数的标的及其占比（如恒科、有色），不计入 positions 但影响 total_units
+> - `positions` 的 key 统一使用指数代码（000016 或 000852），与映射表一致
+> - `unmapped`：始终为 `{}`，所有标的均可映射到上证50 或中证1000
 > - `total_units` = Σ positions.values() + Σ unmapped.values()，1 unit = 1成 = 组合的 10%
 > - `cash_units` = 10 - total_units，现金不产生收益
 > - `confidence` 区分数据质量，见 Step 2 末尾说明
@@ -308,18 +338,24 @@ candidate_posts = [
 
 1. 初始化：NAV = 1.0，快照指针指向最早的仓位记录
 2. 按交易日逐日遍历，对每个交易日：
-   a. 收集该日所有生效的快照（按 `publish_time` 排序）
-   b. 判定当日收益归属——（盘前）快照的新仓位赚当日收益； 型则由昨日终态赚当日收益
-   c. **逐条处理日内快照**：每条仓位变化生成一条 `trade_log`，标注 `intraday_seq`（如 `"2/3"`）
-   d. 当日终态 = 最后一条快照后的仓位，作为次日起点
-3. 每日收益 = Σ(各指数当日涨跌幅 × 当日生效仓位单位) / 10
-4. NAV *= (1 + 每日收益)
-5. 产出每日 NAV 序列 + 各项绩效指标
+   a. 收集该日所有生效的快照（按 `publish_time` 排序），解析每条快照的参考价格
+   b. **将当日切分为多个时间段**：按交易发生时刻，切为 [昨收 → 交易1 → 交易2 → … → 今收]
+   c. **每段用该段持仓 × 该段指数涨跌幅**（涨跌幅用该段起止时刻的分钟 K 线收盘价计算）
+   d. 各段 PnL 求和 = 当日总 PnL；逐条快照生成 `trade_log`（含 `reference_price`/`reference_source`）
+   e. 当日终态 = 最后一条快照后的仓位
+3. NAV *= (1 + 当日总 PnL / 10)
+4. 产出每日 NAV 序列 + 各项绩效指标
+
+**参考价格决定 PnL 怎么算**：
+- `open`（盘前）→ 交易价格 = 当日开盘价，从开盘到收盘用新仓位
+- `intraday`（盘中）→ 交易价格 = 帖子发布时间所在 K 线的收盘价。该日前半段用旧仓位（昨收→交易价），后半段用新仓位（交易价→今收）
+- 非交易日/盘后 → 顺延到下一交易日开盘价
+
+**分钟数据不可用时回退**：用日线收盘价做全段计算（从昨收到今收）。
 
 **仓位假设**：
 - 仓位快照之间的日期：沿用最近一次公开的仓位（不做日内推测，不猜测博主意图）
 - 现金部分不产生收益（无货币基金/逆回购利息）
-- 无法映射的标的（个股/商品等）按现金处理，记录在 `extraction_meta.unmapped_items`
 
 **加减仓参考价格**（根据帖子发布时间 + 行情数据粒度判定）：
 
@@ -354,12 +390,12 @@ candidate_posts = [
   "extraction_meta": {
     "blogger": "顺应周期",
     "total_posts": 2394,
-    "simulation_start": "2026-02-03",
+    "simulation_start": "2026-01-15",
     "simulation_end": "2026-07-29",
-    "position_snapshots_extracted": 35,
-    "timeline_events": 33,
-    "dates_with_intraday_changes": 8,
-    "confidence_breakdown": {"explicit": 11, "inferred": 9, "partial": 15},
+    "position_snapshots_extracted": 46,
+    "timeline_events": 46,
+    "dates_with_intraday_changes": 7,
+    "confidence_breakdown": {"explicit": 16, "inferred": 30, "partial": 0},
     "avg_update_interval_days": 5.9,
     "max_gap_days": 32,
     "gap_periods": [
@@ -370,9 +406,9 @@ candidate_posts = [
       {"start": "2026-05-07", "end": "2026-06-08", "days": 32},
       {"start": "2026-06-18", "end": "2026-07-08", "days": 20}
     ],
-    "mapped_exposures_pct": 96.1,
-    "unmapped_exposures_pct": 3.9,
-    "unmapped_items": ["恒科", "有色"]
+    "mapped_exposures_pct": 100.0,
+    "unmapped_exposures_pct": 0.0,
+    "unmapped_items": []
   }
 }
 ```
@@ -402,19 +438,16 @@ candidate_posts = [
         "cash_pct": 50.0,
         "positions_detail": {
           "000016": 3.0,
-          "000905": 1.0
+          "000852": 1.0
         },
         "intraday_changes": 0
       }
     ],
     "benchmarks": {
-      "000300_CSI300": [
-        {"date": "2026-01-02", "nav": 1.000000}
-      ],
       "000001_SH": [
         {"date": "2026-01-02", "nav": 1.000000}
       ],
-      "equal_weight_6": [
+      "equal_weight_2": [
         {"date": "2026-01-02", "nav": 1.000000}
       ]
     }
@@ -422,62 +455,58 @@ candidate_posts = [
 }
 ```
 
-> **三个基准**：
-> - `000300_CSI300`：沪深300 买入持有，代表大盘基准
-> - `000001_SH`：上证综指，博主最常提到的"大盘"
-> - `equal_weight_6`：6 个可投资指数等权再平衡（每月调整一次），代表"被动分散"的上限
+> **两个基准**：
+> - `000001_SH`：上证指数 买入持有
+> - `equal_weight_2`：上证50+中证1000 等权再平衡
 
 ### D. 绩效摘要 `summary`
 
 ```json
 {
   "summary": {
-    "simulation_period": "2026-02-03 ~ 2026-07-29",
-    "trading_days": 116,
+    "simulation_period": "2026-01-15 ~ 2026-07-29",
+    "trading_days": 129,
 
     "performance": {
-      "total_return_pct": -1.29,
-      "annualized_return_pct": -2.77,
-      "benchmark_csi300_return_pct": -1.28,
-      "benchmark_sh_return_pct": 0.0,
-      "benchmark_basket_return_pct": -62.35,
-      "alpha_vs_csi300_pct": -0.00,
-      "alpha_vs_basket_pct": 61.06,
-      "information_ratio_vs_csi300": -0.13,
+      "total_return_pct": 0.67,
+      "annualized_return_pct": 1.30,
+      "benchmark_sh_return_pct": -6.91,
+      "alpha_vs_sh_pct": 7.57,
+      "information_ratio_vs_sh": 0.85,
       "best_day_pct": 2.84,
       "worst_day_pct": -2.67,
       "winning_day_pct": 50.4,
-      "avg_win_day_pct": 0.37,
-      "avg_loss_day_pct": -0.40,
-      "profit_factor": 0.95
+      "avg_win_day_pct": 0.40,
+      "avg_loss_day_pct": -0.42,
+      "profit_factor": 1.03
     },
 
     "risk": {
-      "max_drawdown_pct": -3.92,
-      "max_drawdown_dates": {"peak": "2026-06-30", "trough": "2026-07-17"},
-      "volatility_annualized_pct": 9.96,
-      "downside_deviation_pct": 7.59,
-      "sortino_ratio": -0.63,
-      "var_95_daily_pct": -1.05,
+      "max_drawdown_pct": -6.99,
+      "max_drawdown_dates": {"peak": "2026-03-02", "trough": "2026-06-08"},
+      "volatility_annualized_pct": 11.2,
+      "downside_deviation_pct": 9.0,
+      "sortino_ratio": -0.08,
+      "var_95_daily_pct": -1.15,
       "longest_losing_streak_days": 4,
       "longest_winning_streak_days": 5
     },
 
     "position": {
-      "max_position_pct": 80.0,
-      "min_position_pct": 20.0,
-      "avg_position_pct": 45.8,
-      "position_volatility_pct": 14.4,
+      "max_position_pct": 82.0,
+      "min_position_pct": 0.0,
+      "avg_position_pct": 42.5,
+      "position_volatility_pct": 15.0,
       "days_full_invested": 0,
-      "days_above_70pct": 2,
+      "days_above_70pct": 3,
       "days_below_30pct": 12
     },
 
     "turnover": {
-      "total_position_changes": 21,
-      "intraday_change_days": 4,
-      "avg_holding_days": 5.5,
-      "annualized_turnover_rate": 45.6
+      "total_position_changes": 34,
+      "intraday_change_days": 7,
+      "avg_holding_days": 3.8,
+      "annualized_turnover_rate": 66.4
     }
   }
 }
@@ -485,7 +514,7 @@ candidate_posts = [
 
 > **关键指标说明**：
 > - `profit_factor`：Σ 盈利日收益 / |Σ 亏损日收益|，>1 说明赚钱能力大于亏钱能力，比 alpha 更直接反映交易质量
-> - `information_ratio`：alpha / tracking_error，衡量主动偏离基准的稳定性。>0.5 算不错
+> - `information_ratio`：alpha / tracking_error（vs 上证指数），衡量主动偏离基准的稳定性。>0.5 算不错
 > - `position_volatility`：仓位的标准差，反映博主调仓的激进程度
 > - `intraday_change_days`：有同日多笔操作的交易日数，反映博主当日交易活跃度
 > - `annualized_turnover_rate`：换手率帮助区分"择时型"（高频调仓）vs"持有型"（低频调整）
@@ -507,8 +536,8 @@ candidate_posts = [
       "confidence": "explicit",
       "entry_positions": {},
       "entry_description": "空仓",
-      "exit_positions": {"000016": 4.0, "000905": 1.0},
-      "exit_description": "4上证50+1中证500",
+      "exit_positions": {"000016": 4.0, "000852": 1.0},
+      "exit_description": "4上证50+1中证1000",
       "entry_nav": 1.000000,
       "exit_nav": 0.985092,
       "holding_days": 0,
@@ -523,10 +552,10 @@ candidate_posts = [
       "intraday_seq": "2/2",
       "description": "刚好3870点，进了1成综指",
       "confidence": "inferred",
-      "entry_positions": {"000016": 4.0, "000905": 1.0},
-      "entry_description": "4上证50+1中证500",
-      "exit_positions": {"000016": 4.0, "000905": 1.0, "000300": 1.0},
-      "exit_description": "4上证50+1沪深300+1中证500",
+      "entry_positions": {"000016": 4.0, "000852": 1.0},
+      "entry_description": "4上证50+1中证1000",
+      "exit_positions": {"000016": 4.0, "000852": 2.0},
+      "exit_description": "4上证50+2中证1000",
       "entry_nav": 0.992726,
       "exit_nav": 0.992726,
       "holding_days": 0,
@@ -549,19 +578,15 @@ candidate_posts = [
 {
   "attribution": {
     "pnl_by_index": {
-      "000016_SH50":    {"total_contribution_pct": 1.25, "avg_weight_pct": 25.0, "days_held": 120},
-      "000300_CSI300":  {"total_contribution_pct": -0.85, "avg_weight_pct": 45.0, "days_held": 130},
-      "399006_CYB":     {"total_contribution_pct": 2.10, "avg_weight_pct": 15.0, "days_held": 45},
-      "000688_KC50":    {"total_contribution_pct": -0.34, "avg_weight_pct": 10.0, "days_held": 30},
-      "000905_CSI500":  {"total_contribution_pct": 0.15, "avg_weight_pct": 5.0, "days_held": 25},
-      "000852_CSI1000": {"total_contribution_pct": 0.00, "avg_weight_pct": 0.0, "days_held": 0}
+      "000016_SH50":    {"total_contribution_pct": 0.85, "avg_weight_pct": 30.0, "days_held": 120},
+      "000852_CSI1000": {"total_contribution_pct": -0.15, "avg_weight_pct": 25.0, "days_held": 120}
     },
     "pnl_by_month": {
       "2026-01": {"portfolio_return_pct": 0.50, "benchmark_return_pct": -0.30, "alpha_pct": 0.80, "position_changes": 2},
       "2026-07": {"portfolio_return_pct": 1.20, "benchmark_return_pct": 2.50, "alpha_pct": -1.30, "position_changes": 10}
     },
     "best_trade":  {"trade_id": 12, "date": "2026-06-18", "type": "rebalance",
-                    "entry_description": "2上证50+1中证500", "exit_description": "3上证50+2中证500",
+                    "entry_description": "2上证50+1中证1000", "exit_description": "3上证50+2中证1000",
                     "return_pct": 0.94, "holding_days": 3},
     "worst_trade": {"trade_id": 10, "date": "2026-06-08", "type": "rebalance",
                     "entry_description": "4上证50", "exit_description": "7上证50",
@@ -570,9 +595,9 @@ candidate_posts = [
 
   "comparison_with_signals": {
     "signal_based_equity_return_pct": -3.19,
-    "position_based_nav_return_pct": -1.29,
+    "position_based_nav_return_pct": 0.67,
     "correlation_20d_rolling": 0.13,
-    "note": "仓位模拟（-1.29%）优于信号模拟（-3.19%），且两者相关性仅 0.13，说明博主实际仓位管理与其方向观点是两套独立系统。仓位管理更保守（日均 46% 仓位），客观上控制了回撤。"
+    "note": "仓位模拟（+0.67%）优于信号模拟（-3.19%），超额 +3.86%。上证50提供防御、中证1000提供弹性。"
   }
 }
 ```
@@ -589,7 +614,7 @@ candidate_posts = [
 |:---|:---|:---|
 | 适用博主 | 11 位全部适用 | 仅顺应周期（及未来公开仓位的博主） |
 | 数据来源 | LLM 标注的 `direction` + `time_horizon` | 帖子中的具体仓位/操作披露 |
-| 依赖 | 信号方向 + 窗口价格 | 仓位比例 + 6 指数价格 |
+| 依赖 | 信号方向 + 窗口价格 | 仓位比例 + 2 指数价格 |
 | 回答的问题 | 博主判断方向的能力有多准？ | 博主实际操作赚了多少钱？ |
 | 局限 | 无法反映仓位管理（满仓喊多 vs 1成仓喊多，信号无差别） | 仅适用于公开仓位的博主；依赖仓位提取质量 |
 
@@ -599,8 +624,7 @@ candidate_posts = [
 
 ## 当前状态
 
-- [x] 7 月管道验证完成 (顺应周期, 3 指数 proxy)
-- [x] 获取上证50/中证500/中证1000/科创50 日线数据 → 已整合至 `market_data.json`
-- [x] LLM 全量提取 顺应周期 2026 年仓位快照 → 35 个快照（explicit 11 / inferred 9 / partial 15），同日全保留已验证
-- [x] 实现 6 层级完整输出的模拟脚本 → `scripts/simulate_nav.py`
-- [x] 仓位模拟 vs 信号模拟 对比分析 → `scripts/compare_nav_vs_signals.py`
+- [x] 映射规则更新为上证50+中证1000 双指数
+- [x] LLM 全量提取 46 个快照（explicit 16 / inferred 30 / partial 0）
+- [x] 分钟级 K 线数据接入模拟引擎（1min/5min/日线三级回退）
+- [x] 三种标的组合模拟对比：6指数 / 上证50+中证1000 / 全中证1000

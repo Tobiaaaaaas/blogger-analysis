@@ -1,249 +1,309 @@
 [
   {
-    "date": "2026-01-15",
+    "post_id": "1864351173170250",
     "publish_time": "2026-01-15 11:18",
-    "post_id": "1854351173170250",
-    "description": "突破4034直接上了5成，这两天减了2成，还剩余3成",
     "positions": {
-      "000300": 3.0
+      "000852": 3
     },
+    "total_units": 3,
     "unmapped": {},
-    "total_units": 3.0,
-    "confidence": "inferred"
+    "date": "2026-01-15",
+    "confidence": "inferred",
+    "description": ""
   },
   {
-    "date": "2026-02-02",
+    "post_id": "1865992631046155",
     "publish_time": "2026-02-02 14:08",
-    "post_id": "1855992631046155",
-    "description": "4028成为向4250进发的起点是可以成立的。本人加了2成，明天计划再加2成。",
     "positions": {
-      "000300": 5.0
+      "000852": 5
     },
+    "total_units": 5,
     "unmapped": {},
-    "total_units": 5.0,
-    "confidence": "inferred"
+    "date": "2026-02-02",
+    "confidence": "inferred",
+    "description": ""
   },
   {
-    "date": "2026-02-03",
+    "post_id": "1866086337902857",
     "publish_time": "2026-02-03 14:58",
-    "post_id": "1856086337902857",
-    "description": "本人早盘4000附近进的2成先T了，还剩4成，2成有色和2成银行",
     "positions": {
-      "000016": 2.0,
-      "000905": 2.0
+      "000016": 2,
+      "000852": 2
     },
+    "total_units": 4,
     "unmapped": {},
-    "total_units": 4.0,
-    "confidence": "explicit"
+    "date": "2026-02-03",
+    "confidence": "inferred",
+    "description": ""
   },
   {
-    "date": "2026-02-11",
+    "post_id": "1866160266358985",
+    "publish_time": "2026-02-04 10:32",
+    "positions": {
+      "000852": 4
+    },
+    "total_units": 4,
+    "unmapped": {},
+    "date": "2026-02-04",
+    "confidence": "inferred",
+    "description": ""
+  },
+  {
+    "post_id": "1866800513380363",
     "publish_time": "2026-02-11 12:09",
-    "post_id": "1856800513380363",
-    "description": "成交量继续萎缩，指数继续往上推，下午还会继续，今天压力位上升至4155左右。本人继续4成仓位。",
-    "positions": {},
+    "positions": {
+      "000852": 4
+    },
+    "total_units": 4,
     "unmapped": {},
-    "total_units": 4.0,
-    "confidence": "partial"
+    "date": "2026-02-11",
+    "confidence": "inferred",
+    "description": ""
   },
   {
-    "date": "2026-02-27",
-    "publish_time": "2026-02-27 12:12",
     "post_id": "1858249969727497",
-    "description": "恒科已经我之前说的位置，按计划上了一成恒科，之后看情况还会加仓，恒科打算中长线持有，目前总共5成。",
+    "publish_time": "2026-02-27 12:12",
     "positions": {
-      "000016": 2.0,
-      "000905": 2.0
+      "000852": 5
     },
-    "unmapped": {
-      "恒科": 1.0
-    },
-    "total_units": 5.0,
-    "confidence": "inferred"
+    "total_units": 5,
+    "unmapped": {},
+    "date": "2026-02-27",
+    "confidence": "inferred",
+    "description": ""
   },
   {
-    "date": "2026-03-02",
+    "post_id": "1868512252752074",
     "publish_time": "2026-03-02 09:36",
-    "post_id": "1858512252752074",
-    "description": "恒科技又加了1成，目前2成的恒科。",
     "positions": {
-      "000016": 2.0,
-      "000905": 2.0
+      "000852": 6
     },
-    "unmapped": {
-      "恒科": 2.0
-    },
-    "total_units": 6.0,
-    "confidence": "inferred"
+    "total_units": 6,
+    "unmapped": {},
+    "date": "2026-03-02",
+    "confidence": "inferred",
+    "description": ""
   },
   {
-    "date": "2026-03-03",
+    "post_id": "1868623007967242",
     "publish_time": "2026-03-03 14:57",
-    "post_id": "1858623007967242",
-    "description": "按午评的技术形态走了，有点难看，看来谨慎是对的，破了4125，下面就是4065。下午开盘抛了钢铁，现在留下4成仓。",
-    "positions": {},
-    "unmapped": {},
-    "total_units": 4.0,
-    "confidence": "partial"
-  },
-  {
-    "date": "2026-03-09",
-    "publish_time": "2026-03-09 14:22",
-    "post_id": "1859164255374347",
-    "description": "早盘集合竞价补了1成仓的恒科决定先不T，看到5100附近再说",
-    "positions": {},
-    "unmapped": {
-      "恒科": 1.0
+    "positions": {
+      "000852": 4
     },
-    "total_units": 5.0,
-    "confidence": "partial"
+    "total_units": 4,
+    "unmapped": {},
+    "date": "2026-03-03",
+    "confidence": "inferred",
+    "description": ""
   },
   {
-    "date": "2026-03-20",
-    "publish_time": "2026-03-20 11:42",
+    "post_id": "1868789295151113",
+    "publish_time": "2026-03-05 11:00",
+    "positions": {
+      "000852": 4
+    },
+    "total_units": 4,
+    "unmapped": {},
+    "date": "2026-03-05",
+    "confidence": "inferred",
+    "description": ""
+  },
+  {
+    "post_id": "1869164255374347",
+    "publish_time": "2026-03-09 14:22",
+    "positions": {
+      "000852": 5
+    },
+    "total_units": 5,
+    "unmapped": {},
+    "date": "2026-03-09",
+    "confidence": "inferred",
+    "description": ""
+  },
+  {
+    "post_id": "1869521483675851",
+    "publish_time": "2026-03-13 12:57",
+    "positions": {
+      "000016": 2,
+      "000852": 3
+    },
+    "total_units": 5,
+    "unmapped": {},
+    "date": "2026-03-13",
+    "confidence": "inferred",
+    "description": ""
+  },
+  {
     "post_id": "1860149928783946",
-    "description": "早盘3984提升力度还可以，左侧最低可能就在这里，下午观望的右侧技术派资金应该会陆续进来，所以这次反弹开始启动了。本人加了1成，如果能打到3960还会再加1成，没有就算了。",
-    "positions": {},
+    "publish_time": "2026-03-20 11:42",
+    "positions": {
+      "000016": 2,
+      "000852": 4
+    },
+    "total_units": 6,
     "unmapped": {},
-    "total_units": 6.0,
-    "confidence": "partial"
+    "date": "2026-03-20",
+    "confidence": "inferred",
+    "description": ""
   },
   {
-    "date": "2026-03-23",
-    "publish_time": "2026-03-23 14:19",
     "post_id": "1860432563596427",
-    "description": "3800附近再加一成，现在7成，接下去每跌50点加0.5成，到3600就基本满上了。",
-    "positions": {},
+    "publish_time": "2026-03-23 14:19",
+    "positions": {
+      "000852": 7
+    },
+    "total_units": 7,
     "unmapped": {},
-    "total_units": 7.0,
-    "confidence": "partial"
+    "date": "2026-03-23",
+    "confidence": "inferred",
+    "description": ""
   },
   {
-    "date": "2026-04-01",
-    "publish_time": "2026-04-01 10:53",
     "post_id": "1861234972172298",
-    "description": "3950我先减掉一成，赚了不少了。没什么意外等4000附近再减一次",
-    "positions": {},
+    "publish_time": "2026-04-01 10:53",
+    "positions": {
+      "000852": 6
+    },
+    "total_units": 6,
     "unmapped": {},
-    "total_units": 6.0,
-    "confidence": "partial"
+    "date": "2026-04-01",
+    "confidence": "inferred",
+    "description": ""
   },
   {
-    "date": "2026-04-08",
-    "publish_time": "2026-04-08 13:29",
     "post_id": "1861878976117963",
-    "description": "我个人先减一成，还有5成。若4000点在减一成",
-    "positions": {},
+    "publish_time": "2026-04-08 13:29",
+    "positions": {
+      "000852": 5
+    },
     "unmapped": {},
-    "total_units": 5.0,
-    "confidence": "partial"
+    "total_units": 5,
+    "date": "2026-04-08",
+    "confidence": "explicit",
+    "description": ""
   },
   {
-    "date": "2026-04-10",
-    "publish_time": "2026-04-10 09:50",
     "post_id": "1862046374190218",
-    "description": "本人4000点减掉一成，还剩4成。",
-    "positions": {},
+    "publish_time": "2026-04-10 09:50",
+    "positions": {
+      "000852": 4
+    },
     "unmapped": {},
-    "total_units": 4.0,
-    "confidence": "partial"
+    "total_units": 4,
+    "date": "2026-04-10",
+    "confidence": "explicit",
+    "description": ""
   },
   {
     "date": "2026-04-10",
     "publish_time": "2026-04-10 11:04",
     "post_id": "1862051033323594",
-    "description": "这次3800附近进的仓位全部清了，完美的做完上涨段一个结构，现在回到底仓放着。等下个更大的机会。",
+    "description": "把3800附近进的仓位全部清了，回到底仓防守。等下个月新的机会。",
     "positions": {},
     "unmapped": {},
     "total_units": 0.0,
-    "confidence": "partial"
+    "confidence": "inferred"
   },
   {
-    "date": "2026-04-15",
-    "publish_time": "2026-04-15 10:39",
     "post_id": "1862502482535435",
-    "description": "恒科在4970减掉一成，后面合适的时候还会买回来。现在还剩3成，1成恒科，2成银行。",
+    "publish_time": "2026-04-15 10:39",
     "positions": {
-      "000016": 2.0
+      "000016": 2,
+      "000852": 1
     },
-    "unmapped": {
-      "恒科": 1.0
-    },
-    "total_units": 3.0,
-    "confidence": "explicit"
+    "unmapped": {},
+    "total_units": 3,
+    "date": "2026-04-15",
+    "confidence": "explicit",
+    "description": ""
   },
   {
-    "date": "2026-04-16",
-    "publish_time": "2026-04-16 10:23",
     "post_id": "1862592039569418",
-    "description": "受到外围影响，没有延续昨天的调整，早盘再次冲到4050。5000附近把1成恒科也减了，现在还剩2成银行。",
+    "publish_time": "2026-04-16 10:23",
     "positions": {
-      "000016": 2.0
+      "000016": 2
     },
     "unmapped": {},
-    "total_units": 2.0,
-    "confidence": "explicit"
+    "total_units": 2,
+    "date": "2026-04-16",
+    "confidence": "explicit",
+    "description": ""
   },
   {
-    "date": "2026-05-07",
-    "publish_time": "2026-05-07 12:15",
     "post_id": "1864501638138953",
-    "description": "早盘本人加仓了点1成保险和1成银行，做个中线防御，目前4成。",
+    "publish_time": "2026-05-07 12:15",
     "positions": {
-      "000016": 4.0
+      "000016": 4
     },
     "unmapped": {},
-    "total_units": 4.0,
-    "confidence": "inferred"
+    "total_units": 4,
+    "date": "2026-05-07",
+    "confidence": "explicit",
+    "description": ""
   },
   {
-    "date": "2026-05-11",
-    "publish_time": "2026-05-11 12:04",
     "post_id": "1864863368228875",
-    "description": "大科技是全场焦点，吸金的主力，期望这波能到4250，满足下我置顶贴里的点位，下午大概率开始滞涨，早盘我再加1成银行。",
+    "publish_time": "2026-05-11 12:04",
     "positions": {
-      "000016": 5.0
+      "000016": 5
     },
     "unmapped": {},
-    "total_units": 5.0,
-    "confidence": "inferred"
+    "total_units": 5,
+    "date": "2026-05-11",
+    "confidence": "inferred",
+    "description": ""
   },
   {
-    "date": "2026-06-08",
-    "publish_time": "2026-06-08 09:42",
     "post_id": "1867390953383947",
-    "description": "低开至3938，送了50个点，开盘我加了3成，现在一共7成，这三成短线，随时可能走。",
-    "positions": {},
+    "publish_time": "2026-06-08 09:42",
+    "positions": {
+      "000016": 4,
+      "000852": 3
+    },
     "unmapped": {},
-    "total_units": 7.0,
-    "confidence": "partial"
+    "total_units": 7,
+    "date": "2026-06-08",
+    "confidence": "explicit",
+    "description": ""
   },
   {
-    "date": "2026-06-12",
-    "publish_time": "2026-06-12 11:01",
     "post_id": "1867758234958987",
-    "description": "我调整下仓位，把银行的三成仓位移1成到创新药，1成到券商。这样我的仓位覆盖了大金融和创新药，基本长时间不会动。",
+    "publish_time": "2026-06-12 11:01",
     "positions": {
-      "000016": 2.0,
-      "000905": 1.0,
-      "000300": 4.0
+      "000016": 3,
+      "000852": 1
     },
     "unmapped": {},
-    "total_units": 7.0,
-    "confidence": "inferred"
+    "total_units": 4,
+    "date": "2026-06-12",
+    "confidence": "inferred",
+    "description": ""
   },
   {
-    "date": "2026-06-18",
-    "publish_time": "2026-06-18 10:56",
-    "post_id": "1868301732592650",
-    "description": "昨天虽然加了1成药，但金融板块今天集体杀跌，确实令人心碎。我现在的配比2成药，3成金融，有没发现现在炒股越来越难，除了科技和有色意外，令人头疼。",
+    "post_id": "1868216348507145",
+    "publish_time": "2026-06-17 12:19",
     "positions": {
-      "000016": 3.0,
-      "000905": 2.0
+      "000016": 3,
+      "000852": 2
     },
     "unmapped": {},
-    "total_units": 5.0,
-    "confidence": "explicit"
+    "total_units": 5,
+    "date": "2026-06-17",
+    "confidence": "inferred",
+    "description": ""
+  },
+  {
+    "post_id": "1868301732592650",
+    "publish_time": "2026-06-18 10:56",
+    "positions": {
+      "000016": 3,
+      "000852": 2
+    },
+    "unmapped": {},
+    "total_units": 5,
+    "date": "2026-06-18",
+    "confidence": "explicit",
+    "description": ""
   },
   {
     "date": "2026-07-07",
@@ -252,10 +312,11 @@
     "description": "我持有银行1，保险1，券商1，药2。已经代表我对这些板块的看法，及仓位大小代表重视程度。",
     "positions": {
       "000016": 3.0,
-      "000905": 2.0
+      "000852": 2.0
     },
     "unmapped": {},
     "total_units": 5.0,
+    "cash_units": 5.0,
     "confidence": "explicit"
   },
   {
@@ -265,11 +326,12 @@
     "description": "我调整了下仓位把创新药减掉一成换成了还在低位的白酒，创新药盈了近20%够喝好几壶酒了",
     "positions": {
       "000016": 4.0,
-      "000905": 1.0
+      "000852": 1.0
     },
     "unmapped": {},
     "total_units": 5.0,
-    "confidence": "inferred"
+    "cash_units": 5.0,
+    "confidence": "explicit"
   },
   {
     "date": "2026-07-13",
@@ -278,10 +340,11 @@
     "description": "我现在仓位银行1，保险1，券商1，药1，酒1。目前唯一亏钱的是保险",
     "positions": {
       "000016": 4.0,
-      "000905": 1.0
+      "000852": 1.0
     },
     "unmapped": {},
     "total_units": 5.0,
+    "cash_units": 5.0,
     "confidence": "explicit"
   },
   {
@@ -291,24 +354,25 @@
     "description": "3870进了一成宽基，后面下跌还会加",
     "positions": {
       "000016": 4.0,
-      "000905": 1.0,
-      "000300": 1.0
+      "000852": 2.0
     },
     "unmapped": {},
     "total_units": 6.0,
+    "cash_units": 4.0,
     "confidence": "inferred"
   },
   {
     "date": "2026-07-15",
     "publish_time": "2026-07-15 10:08",
     "post_id": "1870744829274329",
-    "description": "我在3975点，把昨天3870进的1成出了。1天2.5个点，知足了，其它仓位不变。接下去继续盯盘",
+    "description": "我在3975点，把昨天3870进的1成出了。1天2.5个点，知足了，其它仓位不变。",
     "positions": {
       "000016": 4.0,
-      "000905": 1.0
+      "000852": 1.0
     },
     "unmapped": {},
     "total_units": 5.0,
+    "cash_units": 5.0,
     "confidence": "inferred"
   },
   {
@@ -321,32 +385,35 @@
     },
     "unmapped": {},
     "total_units": 4.0,
+    "cash_units": 6.0,
     "confidence": "inferred"
   },
   {
     "date": "2026-07-17",
     "publish_time": "2026-07-17 13:10",
     "post_id": "1870937062994956",
-    "description": "瞄了一眼，指数完全在预期范围内（3845-3810）无需恐慌。被动吃进了2成，情绪下极端破一下3800，短期不会去3700。",
+    "description": "被动吃进了2成，情绪下极端破一下3800，短期不会去3700。",
     "positions": {
       "000016": 4.0,
-      "000300": 3.0
+      "000852": 2.0
     },
     "unmapped": {},
-    "total_units": 7.0,
+    "total_units": 6.0,
+    "cash_units": 4.0,
     "confidence": "inferred"
   },
   {
     "date": "2026-07-20",
     "publish_time": "2026-07-20 10:03",
     "post_id": "1871197526252554",
-    "description": "在3820减掉了上周五3795进的1成仓，短线宽基还剩2成，继续盯盘。",
+    "description": "在3820减掉了上周五3795进的1成仓，短线宽基还剩2成。注：07-17三笔挂单全部触发，共被动吃进3成宽基，此笔卖出后宽基剩2成。",
     "positions": {
       "000016": 4.0,
-      "000300": 2.0
+      "000852": 2.0
     },
     "unmapped": {},
     "total_units": 6.0,
+    "cash_units": 4.0,
     "confidence": "inferred"
   },
   {
@@ -356,27 +423,25 @@
     "description": "我先减掉1成银行，银行够努力了，调仓到双创上。",
     "positions": {
       "000016": 3.0,
-      "000300": 2.0,
-      "399006": 0.5,
-      "000688": 0.5
+      "000852": 3.0
     },
     "unmapped": {},
     "total_units": 6.0,
-    "confidence": "inferred"
+    "cash_units": 4.0,
+    "confidence": "explicit"
   },
   {
     "date": "2026-07-20",
     "publish_time": "2026-07-20 15:39",
     "post_id": "1871218321556480",
-    "description": "今天把盈利的1成仓全部加到了高弹性的创业板上，收盘刚刚好把周五被动买进的亏损部分抹平，也就是说我现在短线仓位是在大盘3800，创业板在3445。",
+    "description": "今天把盈利的1成仓全部加到了高弹性的创业板上，收盘刚刚好把周五被动买进的亏损部分抹平。",
     "positions": {
       "000016": 3.0,
-      "000300": 2.0,
-      "399006": 1.5,
-      "000688": 0.5
+      "000852": 4.0
     },
     "unmapped": {},
     "total_units": 7.0,
+    "cash_units": 3.0,
     "confidence": "inferred"
   },
   {
@@ -384,10 +449,14 @@
     "publish_time": "2026-07-21 10:25",
     "post_id": "1871289469748235",
     "description": "来压压惊，3760，加进1成综指etf现在8成。",
-    "positions": {},
+    "positions": {
+      "000016": 3.0,
+      "000852": 5.0
+    },
     "unmapped": {},
     "total_units": 8.0,
-    "confidence": "partial"
+    "cash_units": 2.0,
+    "confidence": "inferred"
   },
   {
     "date": "2026-07-21",
@@ -396,12 +465,11 @@
     "description": "我现在仓位 1证券，1保险，1白酒，1双创 1创业板，3上证综指。",
     "positions": {
       "000016": 3.0,
-      "000300": 3.0,
-      "399006": 1.5,
-      "000688": 0.5
+      "000852": 5.0
     },
     "unmapped": {},
     "total_units": 8.0,
+    "cash_units": 2.0,
     "confidence": "explicit"
   },
   {
@@ -411,12 +479,11 @@
     "description": "3880附近减掉2成综指。现在仓位 1证券，1保险，1白酒，1双创 1创业板，1上证综指。",
     "positions": {
       "000016": 3.0,
-      "000300": 1.0,
-      "399006": 1.5,
-      "000688": 0.5
+      "000852": 3.0
     },
     "unmapped": {},
     "total_units": 6.0,
+    "cash_units": 4.0,
     "confidence": "explicit"
   },
   {
@@ -426,11 +493,11 @@
     "description": "双创减掉了，收益已经很满意了，风险放在第一，没必要去获取极致的收益。",
     "positions": {
       "000016": 3.0,
-      "000300": 1.0,
-      "399006": 1.0
+      "000852": 2.0
     },
     "unmapped": {},
     "total_units": 5.0,
+    "cash_units": 5.0,
     "confidence": "inferred"
   },
   {
@@ -440,58 +507,53 @@
     "description": "白酒也抛了，白酒收益一般8%。现在仓位4成。1证券，1保险，1创业板，1上证综指。",
     "positions": {
       "000016": 2.0,
-      "000300": 1.0,
-      "399006": 1.0
+      "000852": 2.0
     },
     "unmapped": {},
     "total_units": 4.0,
+    "cash_units": 6.0,
     "confidence": "explicit"
-  },
-  {
-    "date": "2026-07-22",
-    "publish_time": "2026-07-22 10:51",
-    "post_id": "1871381749429257",
-    "description": "科创50昨天一天基本就涨完了，短线可玩性已经不高。继续跟踪下上证走势，正常情况下，还有一周时间可以维持反弹，暂时保留2成仓位宽基。",
-    "positions": {},
-    "unmapped": {},
-    "total_units": 2.0,
-    "confidence": "partial"
   },
   {
     "date": "2026-07-24",
     "publish_time": "2026-07-24 14:03",
     "post_id": "1871575019491339",
     "description": "3820回补0.5成，成交。3810回补0.5成，先挂着。",
-    "positions": {},
+    "positions": {
+      "000016": 2.0,
+      "000852": 2.5
+    },
     "unmapped": {},
-    "total_units": 2.5,
-    "confidence": "partial"
+    "total_units": 4.5,
+    "cash_units": 5.5,
+    "confidence": "inferred"
   },
   {
     "date": "2026-07-26",
     "publish_time": "2026-07-26 15:13",
     "post_id": "1871760585527499",
-    "description": "上周大盘走势还是很简单，很纯粹。目前仓位是3成宽基+2成的金融。",
+    "description": "目前仓位是3成宽基+2成的金融。",
     "positions": {
-      "000300": 3.0,
-      "000016": 2.0
+      "000016": 2.0,
+      "000852": 3.0
     },
     "unmapped": {},
     "total_units": 5.0,
+    "cash_units": 5.0,
     "confidence": "explicit"
   },
   {
     "date": "2026-07-27",
     "publish_time": "2026-07-27 16:47",
     "post_id": "1871857102296073",
-    "description": "当前仓位：1证券 1保险 1上证综指etf 3创业板etf。本来今下午打算在3815进1成科创50，后来放弃了，仓位6成比较合适。",
+    "description": "当前仓位 1证券 1保险 1上证综指etf 3创业板etf。仓位6成比较合适。",
     "positions": {
       "000016": 2.0,
-      "000300": 1.0,
-      "399006": 3.0
+      "000852": 4.0
     },
     "unmapped": {},
     "total_units": 6.0,
+    "cash_units": 4.0,
     "confidence": "explicit"
   },
   {
@@ -501,27 +563,25 @@
     "description": "大盘力保3800不失，尾盘买进1成科创50，仓位7成。",
     "positions": {
       "000016": 2.0,
-      "000300": 1.0,
-      "399006": 3.0,
-      "000688": 1.0
+      "000852": 5.0
     },
     "unmapped": {},
     "total_units": 7.0,
+    "cash_units": 3.0,
     "confidence": "inferred"
   },
   {
     "date": "2026-07-29",
     "publish_time": "2026-07-29 13:56",
     "post_id": "1872027534363657",
-    "description": "今天3785主动买的1成创业板及其精准，回血不少。尾盘能站稳3840，那就不会再有太大的折腾了",
+    "description": "今天3785主动买的1成创业板及其精准，回血不少。",
     "positions": {
       "000016": 2.0,
-      "000300": 1.0,
-      "399006": 4.0,
-      "000688": 1.0
+      "000852": 6.0
     },
     "unmapped": {},
     "total_units": 8.0,
+    "cash_units": 2.0,
     "confidence": "inferred"
   },
   {
@@ -531,12 +591,11 @@
     "description": "太墨迹了，0.5成主动加3220的创业板。用0.5继续挂在3170。",
     "positions": {
       "000016": 2.0,
-      "000300": 1.0,
-      "399006": 4.5,
-      "000688": 1.0
+      "000852": 6.5
     },
     "unmapped": {},
     "total_units": 8.5,
+    "cash_units": 1.5,
     "confidence": "inferred"
   }
 ]

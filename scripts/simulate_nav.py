@@ -10,7 +10,7 @@ SIMULATE — 博主仓位模拟：基于公开仓位披露，模拟组合净值�
   E. trade_log        — 交易明细（含同日多笔操作）
   F. attribution      — 归因与对比
 """
-import json, os, math
+import json, os, math, re
 from datetime import datetime, timedelta
 from collections import defaultdict
 
@@ -53,6 +53,96 @@ def load_market_data():
             px[r["日期"]] = float(r["收盘"])
         prices[idx_name] = px
     return prices
+
+
+# === 加载市场日线数据（含开盘价） ===
+def load_market_data_with_open():
+    """Load daily market data including open prices for reference price resolution."""
+    market = json.load(open(os.path.join(PROJECT_ROOT, "data/market/market_data.json"),
+                           encoding="utf-8"))
+    prices = {}
+    for idx_name, rows in market.items():
+        px = {}
+        for r in rows:
+            px[r["日期"]] = {
+                "open": float(r.get("开盘", r["收盘"])),
+                "close": float(r["收盘"])
+            }
+        prices[idx_name] = px
+    return prices
+
+
+# === 加载分钟数据 ===
+def load_minute_data():
+    """Load 1-min and 5-min K-lines for all indices. 1-min takes priority by merging
+    later (overwrites same-time entries from 5-min).
+
+    Returns:
+        dict: code -> list of {time: str, close: float}, sorted by time
+    """
+    minute_dir = os.path.join(PROJECT_ROOT, "data", "minute")
+    # Index name → code mapping for filenames
+    name_to_code = {
+        "SH50": "000016", "CSI300": "000300", "CYB": "399006",
+        "KC50": "000688", "CSI500": "000905", "CSI1000": "000852",
+    }
+
+    result = {code: {} for code in name_to_code.values()}
+
+    # Load 5-min first (lower priority)
+    _load_minute_dir(result, os.path.join(minute_dir, "5min"), name_to_code, "_5min")
+    # Load 1-min second (higher priority, overwrites)
+    _load_minute_dir(result, os.path.join(minute_dir, "1min"), name_to_code, "_1min")
+
+    # Convert dicts to sorted lists
+    for code in result:
+        result[code] = [{"time": t, "close": c} for t, c in
+                       sorted(result[code].items())]
+
+    return result
+
+
+def _load_minute_dir(result, dirpath, name_to_code, suffix):
+    """Load CSVs from a directory into the result dict."""
+    for fname, code in name_to_code.items():
+        path = os.path.join(dirpath, f"{fname}{suffix}.csv")
+        if not os.path.exists(path):
+            continue
+        with open(path, "r", encoding="utf-8") as f:
+            header = f.readline()  # skip header
+            for line in f:
+                parts = line.strip().split(",")
+                if len(parts) < 5:
+                    continue
+                time_str = parts[0]  # "2026-07-27 14:02:00"
+                try:
+                    close_px = float(parts[4])  # close column
+                except (ValueError, IndexError):
+                    continue
+                result[code][time_str] = close_px
+
+
+# === 查找参考价格 ===
+def get_reference_price(publish_time, minute_prices, daily_prices):
+    """Get the K-line close price at or just after publish_time.
+
+    Priority: minute data → daily close.
+    Returns (ref_time, ref_price, source) where source is "minute"/"daily".
+    """
+    ref_time = publish_time.strip()
+    if len(ref_time) == 16:
+        ref_time += ":00"
+
+    date = ref_time[:10]
+    if minute_prices:
+        for bar in minute_prices:
+            # Only consider same-day minute bars
+            if bar["time"][:10] == date and bar["time"] >= ref_time:
+                return bar["time"], bar["close"], "minute"
+
+    # Fallback to daily close
+    px = daily_prices.get(date, {})
+    return date, px.get("close", 0), "daily"
 
 
 # === 加载仓位数据 ===
@@ -193,28 +283,77 @@ def build_snapshot_timeline(snapshots, all_dates):
 
 
 # === 解析仓位（处理 partial scaling） ===
-def resolve_position(snapshot, current_pos, current_total):
+def resolve_position(snapshot, current_pos, current_total, cum_returns=None, nav=1.0):
     """Given a snapshot and current state, return the new (positions, total_units).
 
     Rules (from SIMULATE.md):
-    - explicit/inferred: LLM set absolute positions → use directly
-    - partial: no position detail, no action verb → scale prior composition proportionally
+    - explicit: LLM gave absolute positions → use directly
+    - inferred: LLM gave absolute positions but must be adjusted for market drift.
+      LLM's unit delta from prior state is interpreted as a WEIGHT delta (成).
+      Engine computes current actual weight, adds the delta, converts back to units.
+    - partial: no position detail → scale by current market-value position ratio.
     """
+    confidence = snapshot.get("confidence", "")
     new_pos = snapshot.get("positions", {})
     new_total = snapshot.get("total_units", current_total)
 
-    if new_pos and sum(new_pos.values()) > 0:
-        # Explicit/inferred: LLM already set absolute positions
-        return dict(new_pos), new_total
-    elif current_pos and new_total != current_total:
-        # Partial: no detail, scale last-known composition
-        scale = new_total / max(0.001, current_total)
-        scaled = {k: round(v * scale, 2) for k, v in current_pos.items()}
-        scaled = {k: v for k, v in scaled.items() if v > 0.01}
-        return scaled, new_total
-    else:
-        # No change
+    if not new_pos or sum(new_pos.values()) == 0:
+        # Partial (C-type): no detail, scale proportionally
+        if current_pos and new_total != current_total:
+            if cum_returns and nav > 0:
+                actual = actual_position_pct_from_units(current_pos, cum_returns, nav)
+                if actual > 0.001:
+                    scale = new_total / actual
+                else:
+                    scale = new_total / max(0.001, current_total)
+            else:
+                scale = new_total / max(0.001, current_total)
+            scaled = {k: round(v * scale, 2) for k, v in current_pos.items()}
+            scaled = {k: v for k, v in scaled.items() if v > 0.01}
+            return scaled, new_total
         return dict(current_pos), new_total
+
+    # Has position detail — explicit or inferred
+    if confidence == "inferred" and current_pos and cum_returns and nav > 0:
+        # B-type: LLM's unit delta → weight-space delta
+        # Detect which index changed and by how many units
+        all_codes = set(list(current_pos.keys()) + list(new_pos.keys()))
+        adjusted = dict(current_pos)
+        for code in all_codes:
+            old_units = current_pos.get(code, 0)
+            llm_units = new_pos.get(code, 0)
+            unit_delta = llm_units - old_units
+            if unit_delta == 0:
+                continue
+
+            # LLM's unit delta = intended weight delta in 成
+            weight_delta = unit_delta  # 1 unit delta → 1成 weight change
+            cr = cum_returns.get(code, 1.0)
+            if cr > 0:
+                # Current actual weight in 成
+                current_weight = old_units * cr / nav
+                # Target weight
+                target_weight = max(0, current_weight + weight_delta)
+                # Convert weight back to units
+                adjusted[code] = round(target_weight * nav / cr, 4)
+
+        # Remove tiny positions
+        adjusted = {k: v for k, v in adjusted.items() if v > 0.005}
+        new_total_adj = sum(adjusted.values())
+        return adjusted, new_total_adj
+
+    # Explicit (A-type) or fallback: use LLM output directly
+    return dict(new_pos), new_total
+
+
+def actual_position_pct_from_units(positions, cum_returns, nav):
+    """Compute actual market-value position percentage from units."""
+    if nav <= 0 or not positions:
+        return 0.0
+    market_val = 0.0
+    for code, units in positions.items():
+        market_val += units * 0.1 * cum_returns.get(code, 1.0)
+    return market_val / nav * 10.0  # 成
 
 
 def _describe_positions(positions):
@@ -235,7 +374,21 @@ def _describe_positions(positions):
 def compute_benchmarks(prices, all_dates):
     benchmarks = {}
 
-    # CSI300
+    # Shanghai Composite as primary benchmark
+    key = "上证指数"
+    px = prices.get(key, {})
+    bm = []
+    base = None
+    for day in all_dates:
+        if day not in px: continue
+        if base is None:
+            base = px[day]
+            bm.append({"date": day, "nav": 1.0})
+        else:
+            bm.append({"date": day, "nav": round(px[day] / base, 6)})
+    benchmarks["000001_SH"] = bm
+
+    # CSI300 as secondary benchmark
     key = "沪深300"
     px = prices.get(key, {})
     bm = []
@@ -248,19 +401,6 @@ def compute_benchmarks(prices, all_dates):
         else:
             bm.append({"date": day, "nav": round(px[day] / base, 6)})
     benchmarks["000300_CSI300"] = bm
-
-    # Shanghai Composite
-    key = "上证综指"
-    px = prices.get(key, {})
-    bm, base = [], None
-    for day in all_dates:
-        if day not in px: continue
-        if base is None:
-            base = px[day]
-            bm.append({"date": day, "nav": 1.0})
-        else:
-            bm.append({"date": day, "nav": round(px[day] / base, 6)})
-    benchmarks["000001_SH"] = bm
 
     # Equal weight 6-index basket (monthly rebalance)
     basket_codes = ["000016", "000300", "399006", "000688", "000905", "000852"]
@@ -292,12 +432,101 @@ def compute_benchmarks(prices, all_dates):
     return benchmarks
 
 
+# === 2指数映射 ===
+def remap_to_two_indices(snapshots):
+    """Remap positions to only two indices: 上证50(000016) + 中证1000(000852).
+
+    老登/金融/银行/保险/券商/证券/白酒/酒 → 上证50(000016)
+    其余所有标的 → 中证1000(000852)
+    B 类规则：操作动词+无指定标的 → 默认中证1000(000852)
+    """
+    # Tickers that map to 上证50 (the "老登" group)
+    SH50_TICKERS = {"老登", "金融", "银行", "保险", "券商", "证券", "白酒", "酒", "上证50"}
+
+    for s in snapshots:
+        new_pos = {}
+        for code, units in s.get("positions", {}).items():
+            if code == "000016":
+                new_pos["000016"] = new_pos.get("000016", 0) + units
+            else:
+                # Everything else → 中证1000
+                new_pos["000852"] = new_pos.get("000852", 0) + units
+
+        # Handle unmapped tickers
+        new_unmapped = {}
+        for ticker, units in s.get("unmapped", {}).items():
+            if ticker in SH50_TICKERS:
+                new_pos["000016"] = new_pos.get("000016", 0) + units
+            else:
+                new_pos["000852"] = new_pos.get("000852", 0) + units
+
+        s["positions"] = new_pos
+        s["unmapped"] = {}
+        # Preserve original total_units for partial snapshots; recompute only if positions changed
+        if new_pos:
+            s["total_units"] = sum(new_pos.values())
+
+    return snapshots
+
+
+# === 单指数映射 ===
+def remap_to_one_index(snapshots):
+    """Remap ALL positions to 中证1000(000852) only."""
+    for s in snapshots:
+        total = s.get("total_units", 0)
+        s["positions"] = {"000852": total} if total > 0 else {}
+        s["unmapped"] = {}
+    return snapshots
+
+
+def _resolve_trade_ref_price(snap, old_pos, new_pos, daily_full, minute_data):
+    """Find the reference price for a trade. Uses the index with the largest
+    absolute position change. Falls back to CSI300 (000300)."""
+    # Find the code with largest change
+    all_codes = set(list(old_pos.keys()) + list(new_pos.keys()))
+    best_code, best_delta = "000300", 0.0
+    for code in all_codes:
+        delta = abs(new_pos.get(code, 0) - old_pos.get(code, 0))
+        if delta > best_delta:
+            best_delta = delta
+            best_code = code
+
+    # Look up daily open/close for this index
+    market_key = CODE_TO_MARKET_KEY.get(best_code)
+    pub_time = snap.get("publish_time", "")
+    pub_date = pub_time[:10] if pub_time else snap.get("date", "")
+    daily_px = daily_full.get(market_key, {})
+    minute_px = minute_data.get(best_code, [])
+
+    price_type = snap.get("_price_type", "intraday")
+    eff_date = snap.get("_effective_date", pub_date)
+
+    if price_type == "open":
+        px = daily_px.get(eff_date, {})
+        return best_code, eff_date, round(px.get("open", px.get("close", 0)), 4), "daily_open"
+
+    # intraday: use K-line close
+    ref_time, ref_px, source = get_reference_price(pub_time, minute_px, daily_px)
+    return best_code, ref_time, round(ref_px, 4), source
+
+
 # === 主模拟函数 ===
-def simulate(positions_file, start_date=None, end_date=None):
-    """Run full position-based NAV simulation with intraday support."""
+def simulate(positions_file, start_date=None, end_date=None, two_index=False, one_index=False):
+    """Run full position-based NAV simulation with intraday support.
+
+    Args:
+        two_index: If True, remap all positions to only 上证50 + 中证1000.
+    """
 
     prices = load_market_data()
+    daily_full = load_market_data_with_open()
+    minute_data = load_minute_data()
     snapshots_raw = load_positions(positions_file)
+
+    if two_index:
+        snapshots_raw = remap_to_two_indices(snapshots_raw)
+    if one_index:
+        snapshots_raw = remap_to_one_index(snapshots_raw)
 
     first_idx = list(prices.keys())[0]
     all_dates = sorted(prices[first_idx].keys())
@@ -332,16 +561,20 @@ def simulate(positions_file, start_date=None, end_date=None):
 
     # Fast-forward to custom start_date: resolve initial position from prior snapshots
     sim_start = start_date if start_date else timeline[0]["_effective_date"]
+
+    # Track cumulative return multipliers and NAV (initialized here for pre-snap processing)
+    cum_returns = {code: 1.0 for code in CODE_TO_MARKET_KEY}
+    nav = 1.0
+
     current_pos = {}
     current_total = 0.0
     pre_snaps = [s for s in timeline if s["_effective_date"] <= sim_start]
     if pre_snaps:
         for s in pre_snaps:
-            current_pos, current_total = resolve_position(s, current_pos, current_total)
-        # Remove processed snapshots from timeline
+            current_pos, current_total = resolve_position(s, current_pos, current_total, cum_returns, nav)
         timeline = [s for s in timeline if s["_effective_date"] > sim_start]
     else:
-        current_pos, current_total = resolve_position(timeline[0], {}, 0.0)
+        current_pos, current_total = resolve_position(timeline[0], {}, 0.0, cum_returns, nav)
         timeline = timeline[1:]
 
     if end_date is None:
@@ -350,129 +583,160 @@ def simulate(positions_file, start_date=None, end_date=None):
     sim_dates = [d for d in all_dates if sim_start <= d <= end_date]
     benchmarks = compute_benchmarks(prices, sim_dates)
 
-    # === SIMULATE (intraday-aware) ===
+    # === SIMULATE (minute-price-driven NAV) ===
+    # Helper: index price lookup at a point in time
+    def _index_price(code, ref_time):
+        """Return index price at ref_time. Minute data if available, else daily open/close."""
+        date = ref_time[:10]
+        mins = minute_data.get(code, [])
+        if mins:
+            # Only use minute bars from the SAME day
+            for bar in mins:
+                if bar["time"] >= ref_time and bar["time"][:10] == date:
+                    return bar["close"]
+            # If no same-day bar found, fall through to daily data
+        # Fallback: use daily open/close
+        market_key = CODE_TO_MARKET_KEY.get(code, "沪深300")
+        dp = daily_full.get(market_key, {})
+        px = dp.get(date, {})
+        if "09:30" in ref_time:
+            return px.get("open", px.get("close", 1.0))
+        return px.get("close", 1.0)
+
+    def _prev_trading_day(day, dates):
+        """Return the previous trading day before 'day'."""
+        idx = dates.index(day) if day in dates else 0
+        return dates[idx - 1] if idx > 0 else day
+
+    def _segment_pnl(pos, t_start, t_end):
+        pnl = 0.0
+        for code, units in pos.items():
+            px_s = _index_price(code, t_start)
+            px_e = _index_price(code, t_end)
+            if px_s > 0:
+                pnl += units * (px_e / px_s - 1)
+        return pnl
+
     nav = 1.0
     nav_series = []
     trade_log = []
     trade_id = 0
-
-    current_pos = {}       # positions currently held
-    current_total = 0.0    # total units currently held
-    earn_positions = {}    # positions that will earn NEXT day's return
+    current_pos = {}
+    current_total = 0.0
     snap_idx = 0
 
     for day in sim_dates:
-        # Collect all snapshots effective today
         day_snaps = []
         while snap_idx < len(timeline) and timeline[snap_idx]["_effective_date"] == day:
             day_snaps.append(timeline[snap_idx])
             snap_idx += 1
 
-        # --- Apply daily return ---
-        # Which positions earn today's return?
-        # "open" (before market) → new position earns today's return
-        # "intraday" → old position earns today, new earns tomorrow
-        # No snapshots → yesterday's end position earns it
-        if nav_series:
-            daily_pnl = 0.0
-            if day_snaps and day_snaps[0]["_price_type"] == "open":
-                # First snapshot is open-type: resolve its position first
-                earn_pos, _ = resolve_position(day_snaps[0], dict(current_pos), current_total)
-            else:
-                earn_pos = dict(current_pos)
+        # Process open-type snapshot first (if any)
+        # Open-type: position applies from market open
+        for snap in day_snaps:
+            if snap["_price_type"] == "open":
+                new_pos, new_total = resolve_position(snap, current_pos, current_total, cum_returns, nav)
+                current_pos, current_total = new_pos, new_total
 
-            for code, units in earn_pos.items():
-                ret = daily_returns.get(code, {}).get(day, 0.0)
-                daily_pnl += units * ret
-            daily_ret_pct = daily_pnl / 10.0 if earn_pos else 0.0
+        # Build intraday trades sorted by publish_time
+        intra_trades = []
+        for snap in day_snaps:
+            if snap["_price_type"] != "intraday":
+                continue
+            pub_time = snap.get("publish_time", day + " 12:00")
+            new_pos, new_total = resolve_position(snap, current_pos, current_total, cum_returns, nav)
+            ref_code, ref_time, ref_price, ref_source = _resolve_trade_ref_price(
+                snap, current_pos, new_pos, daily_full, minute_data
+            )
+            intra_trades.append({
+                "snap": snap, "new_pos": new_pos, "new_total": new_total,
+                "ref_code": ref_code, "ref_time": ref_time,
+                "ref_price": ref_price, "ref_source": ref_source,
+            })
+        intra_trades.sort(key=lambda t: t["snap"].get("publish_time", ""))
+
+        # --- Minute-priced daily return ---
+        # Split day into segments: [open, trade1_time, trade2_time, ..., close]
+        seg_positions = [dict(current_pos)]
+        prev_day = _prev_trading_day(day, sim_dates)
+        seg_times = [prev_day + " 15:00:00"]
+        for tr in intra_trades:
+            seg_positions.append(dict(tr["new_pos"]))
+            seg_times.append(tr["ref_time"])
+        # Add close segment: last trade position earns from last trade → close
+        seg_times.append(day + " 15:00:00")
+
+        if nav_series:
+            if len(seg_times) > 1:
+                daily_pnl_sum = 0.0
+                for si in range(len(seg_times) - 1):
+                    daily_pnl_sum += _segment_pnl(seg_positions[si], seg_times[si], seg_times[si + 1])
+                daily_ret_pct = daily_pnl_sum / 10.0
+            else:
+                # No intraday trades: one segment from prev close to today close
+                # Find previous trading day
+                prev_day = _prev_trading_day(day, sim_dates)
+                seg_times = [prev_day + " 15:00:00", day + " 15:00:00"]
+                seg_positions = [dict(current_pos)]
+                daily_pnl_sum = _segment_pnl(current_pos, prev_day + " 15:00:00", day + " 15:00:00")
+                daily_ret_pct = daily_pnl_sum / 10.0
             nav *= (1 + daily_ret_pct)
+
+            # Update cum_returns
+            for code in CODE_TO_MARKET_KEY:
+                ret = daily_returns.get(code, {}).get(day, 0.0)
+                cum_returns[code] *= (1 + ret)
         else:
             daily_ret_pct = 0.0
+            for code in CODE_TO_MARKET_KEY:
+                daily_returns.get(code, {}).get(day, 0.0)
+                cum_returns[code] *= (1 + daily_returns.get(code, {}).get(day, 0.0))
 
-        # --- Process each intraday snapshot ---
-        for si, snap in enumerate(day_snaps):
-            new_pos, new_total = resolve_position(snap, current_pos, current_total)
+        # --- Record trades ---
+        for ti, tr in enumerate(intra_trades):
+            snap = tr["snap"]
+            new_pos = tr["new_pos"]
+            new_total = tr["new_total"]
 
-            # Determine entry NAV for this trade
-            if not trade_log and si == 0 and not nav_series:
-                # First trade ever: entry_nav = 1.0
-                entry_nav = 1.0
-            elif si == 0 and day_snaps[0]["_price_type"] == "open" and not nav_series:
-                entry_nav = 1.0
-            elif si == 0:
-                # First snapshot of the day: look back to when current_pos was established
-                entry_nav = nav_series[-1]["nav"] if nav_series else 1.0
-            else:
-                # Intraday change: entry is current NAV (same day)
-                entry_nav = nav
+            desc = snap.get("description", "")
+            is_t_hint = bool(re.search(r"T了|T掉|做T", desc)) if desc else False
+            is_t_only = is_t_hint and (current_pos == new_pos)
 
-            # Record trade if position actually changed
-            if current_pos != new_pos or (si == 0 and not current_pos):
+            if current_pos != new_pos or is_t_only:
                 trade_id += 1
+                trade_type = "T" if is_t_only else ("open" if not current_pos else ("close" if not new_pos else "rebalance"))
 
-                if not current_pos:
-                    trade_type = "open"
-                elif not new_pos:
-                    trade_type = "close"
-                else:
-                    trade_type = "rebalance"
-
-                # Holding period: from when current_pos was established to now
-                holding_days = 0
-                return_pct = 0.0
+                entry_nav = nav_series[-1]["nav"] if nav_series else 1.0
+                hd, rp = 0, 0.0
                 if current_pos and nav_series:
-                    # Find when current_pos was first established
                     for j in range(len(nav_series) - 1, -1, -1):
-                        if nav_series[j].get("positions_detail") == current_pos:
-                            continue
-                        # Found the transition point
-                        entry_day_nav = nav_series[j]["nav"]
-                        holding_days = len(nav_series) - j
-                        return_pct = round((nav / entry_day_nav - 1) * 100, 2) if entry_day_nav > 0 else 0.0
-                        break
+                        if nav_series[j].get("positions_detail") != current_pos:
+                            hd = len(nav_series) - j
+                            rp = round((nav / nav_series[j]["nav"] - 1) * 100, 2) if nav_series[j]["nav"] > 0 else 0.0
+                            break
 
                 trade_log.append({
-                    "trade_id": trade_id,
-                    "type": trade_type,
-                    "date": day,
+                    "trade_id": trade_id, "type": trade_type, "date": day,
                     "publish_time": snap.get("publish_time", ""),
-                    "intraday_seq": f"{snap['_intraday_seq']}/{snap['_intraday_total']}"
-                        if snap["_intraday_total"] > 1 else "1/1",
+                    "intraday_seq": f"{snap['_intraday_seq']}/{snap['_intraday_total']}" if snap["_intraday_total"] > 1 else "1/1",
                     "entry_positions": dict(current_pos),
                     "entry_description": _describe_positions(current_pos),
                     "exit_positions": dict(new_pos),
                     "exit_description": _describe_positions(new_pos),
-                    "entry_nav": round(entry_nav, 6),
-                    "exit_nav": round(nav, 6),
-                    "holding_days": holding_days,
-                    "return_pct": return_pct,
+                    "entry_nav": round(entry_nav, 6), "exit_nav": round(nav, 6),
+                    "holding_days": hd, "return_pct": rp,
+                    "reference_code": tr["ref_code"], "reference_time": tr["ref_time"],
+                    "reference_price": tr["ref_price"], "reference_source": tr["ref_source"],
                     "description": snap.get("description", ""),
                     "confidence": snap.get("confidence", ""),
                     "was_intraday": snap["_intraday_total"] > 1,
                 })
 
-            # Update current position and earn_positions
-            current_pos = new_pos
+            current_pos = dict(new_pos)
             current_total = new_total
 
-            if snap["_price_type"] == "open":
-                # Before-market trade: new position earned today's return, continues
-                earn_positions = dict(current_pos)
-            # "intraday": new position earns NEXT day's return
-
-        # After processing all snapshots, earn_positions for tomorrow
-        # is the final position of today
-        if day_snaps:
-            last_snap = day_snaps[-1]
-            if last_snap["_price_type"] == "intraday":
-                earn_positions = dict(current_pos)
-        else:
-            earn_positions = dict(current_pos)
-
-        # Record daily NAV
         nav_series.append({
-            "date": day,
-            "nav": round(nav, 6),
+            "date": day, "nav": round(nav, 6),
             "daily_return_pct": round(daily_ret_pct * 100, 4),
             "position_pct": round(current_total * 10, 1),
             "cash_pct": round((10 - current_total) * 10, 1),
@@ -562,18 +826,17 @@ def _build_summary(nav_series, benchmarks, daily_returns):
     days = len(navs)
     ann_ret = ((navs[-1] / 1.0) ** (252 / max(1, days)) - 1) * 100
 
-    bm_csi300_ret = 0.0
-    if "000300_CSI300" in benchmarks and benchmarks["000300_CSI300"]:
-        bm_csi300_ret = (benchmarks["000300_CSI300"][-1]["nav"] - 1.0) * 100
     bm_sh_ret = 0.0
     if "000001_SH" in benchmarks and benchmarks["000001_SH"]:
         bm_sh_ret = (benchmarks["000001_SH"][-1]["nav"] - 1.0) * 100
+    bm_csi300_ret = 0.0
+    if "000300_CSI300" in benchmarks and benchmarks["000300_CSI300"]:
+        bm_csi300_ret = (benchmarks["000300_CSI300"][-1]["nav"] - 1.0) * 100
     bm_basket_ret = 0.0
     if "equal_weight_6" in benchmarks and benchmarks["equal_weight_6"]:
         bm_basket_ret = (benchmarks["equal_weight_6"][-1]["nav"] - 1.0) * 100
 
-    alpha_csi300 = total_ret - bm_csi300_ret
-    alpha_basket = total_ret - bm_basket_ret
+    alpha_sh = total_ret - bm_sh_ret
 
     best_day = max(returns) if returns else 0
     worst_day = min(returns) if returns else 0
@@ -641,8 +904,8 @@ def _build_summary(nav_series, benchmarks, daily_returns):
 
     # Information ratio vs CSI300
     ir = 0.0
-    if "000300_CSI300" in benchmarks and len(benchmarks["000300_CSI300"]) > 1:
-        bm_navs = {x["date"]: x["nav"] for x in benchmarks["000300_CSI300"]}
+    if "000001_SH" in benchmarks and len(benchmarks["000001_SH"]) > 1:
+        bm_navs = {x["date"]: x["nav"] for x in benchmarks["000001_SH"]}
         excess_rets = []
         for i in range(1, len(nav_series)):
             d = nav_series[i]["date"]
@@ -669,12 +932,11 @@ def _build_summary(nav_series, benchmarks, daily_returns):
         "performance": {
             "total_return_pct": round(total_ret, 2),
             "annualized_return_pct": round(ann_ret, 2),
-            "benchmark_csi300_return_pct": round(bm_csi300_ret, 2),
             "benchmark_sh_return_pct": round(bm_sh_ret, 2),
+            "benchmark_csi300_return_pct": round(bm_csi300_ret, 2),
             "benchmark_basket_return_pct": round(bm_basket_ret, 2),
-            "alpha_vs_csi300_pct": round(alpha_csi300, 2),
-            "alpha_vs_basket_pct": round(alpha_basket, 2),
-            "information_ratio_vs_csi300": round(ir, 2),
+            "alpha_vs_sh_pct": round(alpha_sh, 2),
+            "information_ratio_vs_sh": round(ir, 2),
             "best_day_pct": round(best_day, 2),
             "worst_day_pct": round(worst_day, 2),
             "winning_day_pct": round(win_pct, 1),
@@ -762,8 +1024,8 @@ def _build_attribution(nav_series, benchmarks, trade_log, daily_returns, timelin
                 (month_navs[m] / month_navs[prev_m] - 1) * 100, 2)
 
     # Benchmark monthly returns
-    if "000300_CSI300" in benchmarks:
-        bm_navs = {x["date"]: x["nav"] for x in benchmarks["000300_CSI300"]}
+    if "000001_SH" in benchmarks:
+        bm_navs = {x["date"]: x["nav"] for x in benchmarks["000001_SH"]}
         for m in months:
             m_dates = [d for d in bm_navs if d[:7] == m]
             if m_dates:
@@ -808,8 +1070,10 @@ if __name__ == "__main__":
         print("Run LLM extraction first to generate position data.")
         sys.exit(1)
 
-    sim_start = sys.argv[3] if len(sys.argv) > 3 else None
-    result = simulate(positions_file, start_date=sim_start)
+    sim_start = sys.argv[3] if len(sys.argv) > 3 and not sys.argv[3].startswith("--") else None
+    two_index = "--two-index" in sys.argv
+    one_index = "--one-index" in sys.argv
+    result = simulate(positions_file, start_date=sim_start, two_index=two_index, one_index=one_index)
 
     output_file = sys.argv[2] if len(sys.argv) > 2 else \
         os.path.join(PROJECT_ROOT, "data/simulations/顺应周期_nav.json")
@@ -832,8 +1096,8 @@ if __name__ == "__main__":
         print(f"期间: {s['simulation_period']}")
         print(f"交易日: {s['trading_days']}")
         print(f"组合收益: {s['performance']['total_return_pct']:+.2f}%")
-        print(f"沪深300基准: {s['performance']['benchmark_csi300_return_pct']:+.2f}%")
-        print(f"超额alpha: {s['performance']['alpha_vs_csi300_pct']:+.2f}%")
+        print(f"上证指数基准: {s['performance']['benchmark_sh_return_pct']:+.2f}%")
+        print(f"超额alpha: {s['performance']['alpha_vs_sh_pct']:+.2f}%")
         print(f"最大回撤: {s['risk']['max_drawdown_pct']:+.2f}%")
         print(f"Sortino: {s['risk']['sortino_ratio']:.2f}")
         print(f"盈利因子: {s['performance']['profit_factor']:.2f}")

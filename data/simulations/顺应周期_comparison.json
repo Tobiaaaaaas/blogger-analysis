@@ -3,312 +3,312 @@
   "comparison_period": "2026-01-15 ~ 2026-07-29",
   "overlapping_days": 129,
   "returns": {
-    "position_based_nav_return_pct": -1.18,
+    "position_based_nav_return_pct": -0.66,
     "signal_based_equity_return_pct": -3.19,
-    "difference_pct": 2.01,
-    "interpretation": "仓位模拟 (-1.18%) 大幅优于信号模拟 (-3.19%)，差异 +2.01%。博主实际操作比其方向判断信号更赚钱。可能原因：(1) 仓位管理灵活，实际持仓低于信号假设的满仓操作；(2) 逆势减仓避免了大跌；(3) 博主'说的'和'做的'不一致——观点偏保守或偏激进，但实际操作更理眻。"
+    "difference_pct": 2.52,
+    "interpretation": "仓位模拟 (-0.66%) 大幅优于信号模拟 (-3.19%)，差异 +2.52%。博主实际操作比其方向判断信号更赚钱。可能原因：(1) 仓位管理灵活，实际持仓低于信号假设的满仓操作；(2) 逆势减仓避免了大跌；(3) 博主'说的'和'做的'不一致——观点偏保守或偏激进，但实际操作更理眻。"
   },
   "risk": {
-    "position_max_drawdown_pct": -4.65,
+    "position_max_drawdown_pct": -5.9,
     "signal_max_drawdown_pct": -12.65,
-    "position_avg_position_pct": 45.5,
+    "position_avg_position_pct": 42.4,
     "signal_position_model": "always_100pct"
   },
   "activity": {
-    "position_changes": 26,
+    "position_changes": 25,
     "signal_trades": 82,
     "signal_signals": 357
   },
   "correlation": {
-    "avg_20d_rolling": 0.202,
+    "avg_20d_rolling": 0.1636,
     "rolling_series": [
       {
         "date": "2026-02-12",
-        "correlation": 0.7115
+        "correlation": 0.3421
       },
       {
         "date": "2026-02-13",
-        "correlation": 0.7566
+        "correlation": 0.4344
       },
       {
         "date": "2026-02-24",
-        "correlation": 0.7707
+        "correlation": 0.4611
       },
       {
         "date": "2026-02-25",
-        "correlation": 0.7888
+        "correlation": 0.4952
       },
       {
         "date": "2026-02-26",
-        "correlation": 0.7856
+        "correlation": 0.4912
       },
       {
         "date": "2026-02-27",
-        "correlation": 0.7893
+        "correlation": 0.5004
       },
       {
         "date": "2026-03-02",
-        "correlation": 0.8036
+        "correlation": 0.5018
       },
       {
         "date": "2026-03-03",
-        "correlation": 0.8002
+        "correlation": 0.5631
       },
       {
         "date": "2026-03-04",
-        "correlation": 0.7924
+        "correlation": 0.5455
       },
       {
         "date": "2026-03-05",
-        "correlation": 0.7926
+        "correlation": 0.5502
       },
       {
         "date": "2026-03-06",
-        "correlation": 0.7859
+        "correlation": 0.5479
       },
       {
         "date": "2026-03-09",
-        "correlation": 0.7332
+        "correlation": 0.4869
       },
       {
         "date": "2026-03-10",
-        "correlation": 0.7713
+        "correlation": 0.7318
       },
       {
         "date": "2026-03-11",
-        "correlation": 0.7382
+        "correlation": 0.6975
       },
       {
         "date": "2026-03-12",
-        "correlation": 0.7392
+        "correlation": 0.6917
       },
       {
         "date": "2026-03-13",
-        "correlation": 0.7108
+        "correlation": 0.6515
       },
       {
         "date": "2026-03-16",
-        "correlation": 0.7103
+        "correlation": 0.6534
       },
       {
         "date": "2026-03-17",
-        "correlation": 0.7012
+        "correlation": 0.6025
       },
       {
         "date": "2026-03-18",
-        "correlation": 0.6679
+        "correlation": 0.5612
       },
       {
         "date": "2026-03-19",
-        "correlation": 0.39
+        "correlation": 0.2242
       },
       {
         "date": "2026-03-20",
-        "correlation": 0.4356
+        "correlation": 0.3049
       },
       {
         "date": "2026-03-23",
-        "correlation": 0.6716
+        "correlation": 0.6678
       },
       {
         "date": "2026-03-24",
-        "correlation": 0.4135
+        "correlation": 0.3851
       },
       {
         "date": "2026-03-25",
-        "correlation": 0.4391
+        "correlation": 0.4206
       },
       {
         "date": "2026-03-26",
-        "correlation": 0.4542
+        "correlation": 0.4373
       },
       {
         "date": "2026-03-27",
-        "correlation": 0.48
+        "correlation": 0.4673
       },
       {
         "date": "2026-03-30",
-        "correlation": 0.4781
+        "correlation": 0.4662
       },
       {
         "date": "2026-03-31",
-        "correlation": 0.4397
+        "correlation": 0.4431
       },
       {
         "date": "2026-04-01",
-        "correlation": 0.5037
+        "correlation": 0.5069
       },
       {
         "date": "2026-04-02",
-        "correlation": 0.5136
+        "correlation": 0.5166
       },
       {
         "date": "2026-04-03",
-        "correlation": 0.5259
+        "correlation": 0.5288
       },
       {
         "date": "2026-04-07",
-        "correlation": 0.5401
+        "correlation": 0.5423
       },
       {
         "date": "2026-04-08",
-        "correlation": 0.4632
+        "correlation": 0.4658
       },
       {
         "date": "2026-04-09",
-        "correlation": 0.459
+        "correlation": 0.4615
       },
       {
         "date": "2026-04-10",
-        "correlation": 0.4692
+        "correlation": 0.4715
       },
       {
         "date": "2026-04-13",
-        "correlation": 0.4757
+        "correlation": 0.4778
       },
       {
         "date": "2026-04-14",
-        "correlation": 0.4755
+        "correlation": 0.4776
       },
       {
         "date": "2026-04-15",
-        "correlation": 0.5071
+        "correlation": 0.5088
       },
       {
         "date": "2026-04-16",
-        "correlation": 0.5054
+        "correlation": 0.5075
       },
       {
         "date": "2026-04-17",
-        "correlation": 0.626
+        "correlation": 0.6284
       },
       {
         "date": "2026-04-20",
-        "correlation": 0.6067
+        "correlation": 0.612
       },
       {
         "date": "2026-04-21",
-        "correlation": 0.3685
+        "correlation": 0.3784
       },
       {
         "date": "2026-04-22",
-        "correlation": 0.6175
+        "correlation": 0.6313
       },
       {
         "date": "2026-04-23",
-        "correlation": 0.5604
+        "correlation": 0.5756
       },
       {
         "date": "2026-04-24",
-        "correlation": 0.5118
+        "correlation": 0.5254
       },
       {
         "date": "2026-04-27",
-        "correlation": 0.5059
+        "correlation": 0.52
       },
       {
         "date": "2026-04-28",
-        "correlation": 0.5119
+        "correlation": 0.5242
       },
       {
         "date": "2026-04-29",
-        "correlation": 0.4512
+        "correlation": 0.457
       },
       {
         "date": "2026-04-30",
-        "correlation": 0.279
+        "correlation": 0.2784
       },
       {
         "date": "2026-05-06",
-        "correlation": 0.2127
+        "correlation": 0.1822
       },
       {
         "date": "2026-05-07",
-        "correlation": 0.0987
+        "correlation": 0.0646
       },
       {
         "date": "2026-05-08",
-        "correlation": 0.1025
+        "correlation": 0.0694
       },
       {
         "date": "2026-05-11",
-        "correlation": -0.0706
+        "correlation": -0.035
       },
       {
         "date": "2026-05-12",
-        "correlation": -0.0658
+        "correlation": -0.0273
       },
       {
         "date": "2026-05-13",
-        "correlation": -0.1191
+        "correlation": -0.1222
       },
       {
         "date": "2026-05-14",
-        "correlation": 0.3505
+        "correlation": 0.3478
       },
       {
         "date": "2026-05-15",
-        "correlation": 0.2901
+        "correlation": 0.2879
       },
       {
         "date": "2026-05-18",
-        "correlation": 0.2632
+        "correlation": 0.2612
       },
       {
         "date": "2026-05-19",
-        "correlation": 0.1821
+        "correlation": 0.1802
       },
       {
         "date": "2026-05-20",
-        "correlation": 0.1927
+        "correlation": 0.1908
       },
       {
         "date": "2026-05-21",
-        "correlation": -0.0765
+        "correlation": -0.0776
       },
       {
         "date": "2026-05-22",
-        "correlation": -0.0902
+        "correlation": -0.0912
       },
       {
         "date": "2026-05-25",
-        "correlation": -0.2003
+        "correlation": -0.2011
       },
       {
         "date": "2026-05-26",
-        "correlation": -0.198
+        "correlation": -0.1988
       },
       {
         "date": "2026-05-27",
-        "correlation": -0.2902
+        "correlation": -0.2909
       },
       {
         "date": "2026-05-28",
-        "correlation": -0.2837
+        "correlation": -0.2844
       },
       {
         "date": "2026-05-29",
-        "correlation": -0.2873
+        "correlation": -0.288
       },
       {
         "date": "2026-06-01",
-        "correlation": -0.2869
+        "correlation": -0.2875
       },
       {
         "date": "2026-06-02",
-        "correlation": -0.2804
+        "correlation": -0.281
       },
       {
         "date": "2026-06-03",
-        "correlation": -0.3624
+        "correlation": -0.3627
       },
       {
         "date": "2026-06-04",
-        "correlation": -0.3883
+        "correlation": -0.3885
       },
       {
         "date": "2026-06-05",
-        "correlation": -0.409
+        "correlation": -0.4092
       },
       {
         "date": "2026-06-08",
@@ -316,79 +316,79 @@
       },
       {
         "date": "2026-06-09",
-        "correlation": -0.2733
+        "correlation": -0.2754
       },
       {
         "date": "2026-06-10",
-        "correlation": -0.2719
+        "correlation": -0.2733
       },
       {
         "date": "2026-06-11",
-        "correlation": -0.4212
+        "correlation": -0.4223
       },
       {
         "date": "2026-06-12",
-        "correlation": -0.4891
+        "correlation": -0.4889
       },
       {
         "date": "2026-06-15",
-        "correlation": -0.5594
+        "correlation": -0.5605
       },
       {
         "date": "2026-06-16",
-        "correlation": -0.5536
+        "correlation": -0.5547
       },
       {
         "date": "2026-06-17",
-        "correlation": -0.505
+        "correlation": -0.5089
       },
       {
         "date": "2026-06-18",
-        "correlation": -0.456
+        "correlation": -0.4595
       },
       {
         "date": "2026-06-22",
-        "correlation": -0.2526
+        "correlation": -0.2547
       },
       {
         "date": "2026-06-23",
-        "correlation": -0.0703
+        "correlation": -0.071
       },
       {
         "date": "2026-06-24",
-        "correlation": -0.0662
+        "correlation": -0.0669
       },
       {
         "date": "2026-06-25",
-        "correlation": 0.0047
+        "correlation": 0.0046
       },
       {
         "date": "2026-06-26",
-        "correlation": 0.17
+        "correlation": 0.1708
       },
       {
         "date": "2026-06-29",
-        "correlation": 0.111
+        "correlation": 0.1115
       },
       {
         "date": "2026-06-30",
-        "correlation": 0.1079
+        "correlation": 0.1085
       },
       {
         "date": "2026-07-01",
-        "correlation": 0.1069
+        "correlation": 0.1074
       },
       {
         "date": "2026-07-02",
-        "correlation": -0.081
+        "correlation": -0.0813
       },
       {
         "date": "2026-07-03",
-        "correlation": -0.0609
+        "correlation": -0.0611
       },
       {
         "date": "2026-07-06",
-        "correlation": 0.0337
+        "correlation": 0.0344
       },
       {
         "date": "2026-07-07",
@@ -396,31 +396,31 @@
       },
       {
         "date": "2026-07-08",
-        "correlation": -0.0455
+        "correlation": -0.0437
       },
       {
         "date": "2026-07-09",
-        "correlation": 0.0642
+        "correlation": 0.0659
       },
       {
         "date": "2026-07-10",
-        "correlation": 0.0585
+        "correlation": 0.0602
       },
       {
         "date": "2026-07-13",
-        "correlation": -0.0354
+        "correlation": -0.0305
       },
       {
         "date": "2026-07-14",
-        "correlation": 0.054
+        "correlation": 0.0529
       },
       {
         "date": "2026-07-15",
-        "correlation": 0.0539
+        "correlation": 0.0528
       },
       {
         "date": "2026-07-16",
-        "correlation": -0.0406
+        "correlation": -0.0407
       },
       {
         "date": "2026-07-17",
@@ -428,35 +428,35 @@
       },
       {
         "date": "2026-07-20",
-        "correlation": -0.3069
+        "correlation": -0.307
       },
       {
         "date": "2026-07-21",
-        "correlation": -0.1786
+        "correlation": -0.1812
       },
       {
         "date": "2026-07-22",
-        "correlation": -0.1502
+        "correlation": -0.1527
       },
       {
         "date": "2026-07-23",
-        "correlation": -0.149
+        "correlation": -0.1516
       },
       {
         "date": "2026-07-24",
-        "correlation": -0.3113
+        "correlation": -0.3147
       },
       {
         "date": "2026-07-27",
-        "correlation": -0.2645
+        "correlation": -0.2679
       },
       {
         "date": "2026-07-28",
-        "correlation": -0.0548
+        "correlation": -0.0572
       },
       {
         "date": "2026-07-29",
-        "correlation": -0.0546
+        "correlation": -0.057
       }
     ]
   },
@@ -465,775 +465,775 @@
       "date": "2026-01-15",
       "position_nav": 1.0,
       "signal_nav": 0.995258,
-      "position_pct": 30.0
+      "position_pct": 0.0
     },
     {
       "date": "2026-01-16",
-      "position_nav": 0.998765,
+      "position_nav": 1.0,
       "signal_nav": 0.997844,
-      "position_pct": 30.0
+      "position_pct": 0.0
     },
     {
       "date": "2026-01-19",
-      "position_nav": 0.998929,
+      "position_nav": 1.0,
       "signal_nav": 0.992165,
-      "position_pct": 30.0
+      "position_pct": 0.0
     },
     {
       "date": "2026-01-20",
-      "position_nav": 0.997943,
+      "position_nav": 1.0,
       "signal_nav": 0.992251,
-      "position_pct": 30.0
+      "position_pct": 0.0
     },
     {
       "date": "2026-01-21",
-      "position_nav": 0.998209,
+      "position_nav": 1.0,
       "signal_nav": 0.991448,
-      "position_pct": 30.0
+      "position_pct": 0.0
     },
     {
       "date": "2026-01-22",
-      "position_nav": 0.998249,
+      "position_nav": 1.0,
       "signal_nav": 0.98964,
-      "position_pct": 30.0
+      "position_pct": 0.0
     },
     {
       "date": "2026-01-23",
-      "position_nav": 0.996904,
+      "position_nav": 1.0,
       "signal_nav": 0.992902,
-      "position_pct": 30.0
+      "position_pct": 0.0
     },
     {
       "date": "2026-01-26",
-      "position_nav": 0.997189,
+      "position_nav": 1.0,
       "signal_nav": 0.992048,
-      "position_pct": 30.0
+      "position_pct": 0.0
     },
     {
       "date": "2026-01-27",
-      "position_nav": 0.997108,
+      "position_nav": 1.0,
       "signal_nav": 0.9938,
-      "position_pct": 30.0
+      "position_pct": 0.0
     },
     {
       "date": "2026-01-28",
-      "position_nav": 0.99789,
+      "position_nav": 1.0,
       "signal_nav": 0.996521,
-      "position_pct": 30.0
+      "position_pct": 0.0
     },
     {
       "date": "2026-01-29",
-      "position_nav": 1.000166,
+      "position_nav": 1.0,
       "signal_nav": 0.99814,
-      "position_pct": 30.0
+      "position_pct": 0.0
     },
     {
       "date": "2026-01-30",
-      "position_nav": 0.997166,
+      "position_nav": 1.0,
       "signal_nav": 0.988529,
-      "position_pct": 30.0
+      "position_pct": 0.0
     },
     {
       "date": "2026-02-02",
-      "position_nav": 0.990787,
+      "position_nav": 1.0,
       "signal_nav": 0.957282,
       "position_pct": 50.0
     },
     {
       "date": "2026-02-03",
-      "position_nav": 0.996609,
+      "position_nav": 1.005876,
       "signal_nav": 0.969676,
       "position_pct": 40.0
     },
     {
       "date": "2026-02-04",
-      "position_nav": 0.999183,
+      "position_nav": 1.008474,
       "signal_nav": 0.969676,
       "position_pct": 40.0
     },
     {
       "date": "2026-02-05",
-      "position_nav": 0.994833,
+      "position_nav": 1.004084,
       "signal_nav": 0.963463,
       "position_pct": 40.0
     },
     {
       "date": "2026-02-06",
-      "position_nav": 0.993465,
+      "position_nav": 1.002703,
       "signal_nav": 0.96102,
       "position_pct": 40.0
     },
     {
       "date": "2026-02-09",
-      "position_nav": 1.000359,
+      "position_nav": 1.009661,
       "signal_nav": 0.96102,
       "position_pct": 40.0
     },
     {
       "date": "2026-02-10",
-      "position_nav": 1.000608,
+      "position_nav": 1.009912,
       "signal_nav": 0.962252,
       "position_pct": 40.0
     },
     {
       "date": "2026-02-11",
-      "position_nav": 1.001142,
+      "position_nav": 1.010452,
       "signal_nav": 0.963094,
       "position_pct": 40.0
     },
     {
       "date": "2026-02-12",
-      "position_nav": 1.002928,
+      "position_nav": 1.012253,
       "signal_nav": 0.963567,
       "position_pct": 40.0
     },
     {
       "date": "2026-02-13",
-      "position_nav": 0.997019,
+      "position_nav": 1.00629,
       "signal_nav": 0.95146,
       "position_pct": 40.0
     },
     {
       "date": "2026-02-24",
-      "position_nav": 0.99972,
+      "position_nav": 1.009016,
       "signal_nav": 0.959696,
       "position_pct": 40.0
     },
     {
       "date": "2026-02-25",
-      "position_nav": 1.003822,
+      "position_nav": 1.013156,
       "signal_nav": 0.966647,
       "position_pct": 40.0
     },
     {
       "date": "2026-02-26",
-      "position_nav": 1.003216,
+      "position_nav": 1.012544,
       "signal_nav": 0.966507,
       "position_pct": 40.0
     },
     {
       "date": "2026-02-27",
-      "position_nav": 1.005877,
+      "position_nav": 1.015231,
       "signal_nav": 0.970295,
-      "position_pct": 50.0
+      "position_pct": 40.0
     },
     {
       "date": "2026-03-02",
-      "position_nav": 1.00634,
+      "position_nav": 1.015698,
       "signal_nav": 0.974889,
-      "position_pct": 60.0
+      "position_pct": 40.0
     },
     {
       "date": "2026-03-03",
-      "position_nav": 0.995456,
+      "position_nav": 1.004713,
       "signal_nav": 0.960924,
       "position_pct": 40.0
     },
     {
       "date": "2026-03-04",
-      "position_nav": 0.993174,
+      "position_nav": 1.001249,
       "signal_nav": 0.960924,
       "position_pct": 40.0
     },
     {
       "date": "2026-03-05",
-      "position_nav": 0.994771,
+      "position_nav": 1.00367,
       "signal_nav": 0.961207,
       "position_pct": 40.0
     },
     {
       "date": "2026-03-06",
-      "position_nav": 0.995774,
+      "position_nav": 1.005192,
       "signal_nav": 0.957551,
       "position_pct": 40.0
     },
     {
       "date": "2026-03-09",
-      "position_nav": 0.993178,
+      "position_nav": 1.001252,
       "signal_nav": 0.964006,
       "position_pct": 50.0
     },
     {
       "date": "2026-03-10",
-      "position_nav": 0.996832,
+      "position_nav": 1.006932,
       "signal_nav": 0.969905,
       "position_pct": 50.0
     },
     {
       "date": "2026-03-11",
-      "position_nav": 0.99689,
+      "position_nav": 1.007022,
       "signal_nav": 0.967484,
       "position_pct": 50.0
     },
     {
       "date": "2026-03-12",
-      "position_nav": 0.995262,
+      "position_nav": 1.004486,
       "signal_nav": 0.968502,
       "position_pct": 50.0
     },
     {
       "date": "2026-03-13",
-      "position_nav": 0.992079,
+      "position_nav": 0.999531,
       "signal_nav": 0.968502,
       "position_pct": 50.0
     },
     {
       "date": "2026-03-16",
-      "position_nav": 0.990833,
+      "position_nav": 0.997596,
       "signal_nav": 0.96598,
       "position_pct": 50.0
     },
     {
       "date": "2026-03-17",
-      "position_nav": 0.987963,
+      "position_nav": 0.993139,
       "signal_nav": 0.974228,
       "position_pct": 50.0
     },
     {
       "date": "2026-03-18",
-      "position_nav": 0.989489,
+      "position_nav": 0.995505,
       "signal_nav": 0.971136,
       "position_pct": 50.0
     },
     {
       "date": "2026-03-19",
-      "position_nav": 0.982532,
+      "position_nav": 0.984712,
       "signal_nav": 0.984624,
       "position_pct": 50.0
     },
     {
       "date": "2026-03-20",
-      "position_nav": 0.978298,
+      "position_nav": 0.978167,
       "signal_nav": 0.97246,
       "position_pct": 60.0
     },
     {
       "date": "2026-03-23",
-      "position_nav": 0.964109,
+      "position_nav": 0.955781,
       "signal_nav": 0.937128,
       "position_pct": 70.0
     },
     {
       "date": "2026-03-24",
-      "position_nav": 0.971903,
+      "position_nav": 0.968137,
       "signal_nav": 0.920417,
       "position_pct": 70.0
     },
     {
       "date": "2026-03-25",
-      "position_nav": 0.979241,
+      "position_nav": 0.979827,
       "signal_nav": 0.929774,
       "position_pct": 70.0
     },
     {
       "date": "2026-03-26",
-      "position_nav": 0.9728,
+      "position_nav": 0.969521,
       "signal_nav": 0.921275,
       "position_pct": 70.0
     },
     {
       "date": "2026-03-27",
-      "position_nav": 0.976629,
+      "position_nav": 0.975623,
       "signal_nav": 0.934141,
       "position_pct": 70.0
     },
     {
       "date": "2026-03-30",
-      "position_nav": 0.976774,
+      "position_nav": 0.975854,
       "signal_nav": 0.936423,
       "position_pct": 70.0
     },
     {
       "date": "2026-03-31",
-      "position_nav": 0.972221,
+      "position_nav": 0.96858,
       "signal_nav": 0.928922,
       "position_pct": 70.0
     },
     {
       "date": "2026-04-01",
-      "position_nav": 0.980356,
+      "position_nav": 0.98154,
       "signal_nav": 0.942454,
       "position_pct": 60.0
     },
     {
       "date": "2026-04-02",
-      "position_nav": 0.974993,
+      "position_nav": 0.973042,
       "signal_nav": 0.935468,
       "position_pct": 60.0
     },
     {
       "date": "2026-04-03",
-      "position_nav": 0.971644,
+      "position_nav": 0.967751,
       "signal_nav": 0.926115,
       "position_pct": 60.0
     },
     {
       "date": "2026-04-07",
-      "position_nav": 0.972568,
+      "position_nav": 0.969207,
       "signal_nav": 0.923711,
       "position_pct": 60.0
     },
     {
       "date": "2026-04-08",
-      "position_nav": 0.987363,
+      "position_nav": 0.992546,
       "signal_nav": 0.923711,
       "position_pct": 50.0
     },
     {
       "date": "2026-04-09",
-      "position_nav": 0.985146,
+      "position_nav": 0.989041,
       "signal_nav": 0.924051,
       "position_pct": 50.0
     },
     {
       "date": "2026-04-10",
-      "position_nav": 0.98745,
+      "position_nav": 0.992679,
       "signal_nav": 0.928723,
       "position_pct": 0.0
     },
     {
       "date": "2026-04-13",
-      "position_nav": 0.98745,
+      "position_nav": 0.992679,
       "signal_nav": 0.928723,
       "position_pct": 0.0
     },
     {
       "date": "2026-04-14",
-      "position_nav": 0.98745,
+      "position_nav": 0.992679,
       "signal_nav": 0.928723,
       "position_pct": 0.0
     },
     {
       "date": "2026-04-15",
-      "position_nav": 0.98745,
+      "position_nav": 0.992679,
       "signal_nav": 0.928589,
       "position_pct": 30.0
     },
     {
       "date": "2026-04-16",
-      "position_nav": 0.987824,
+      "position_nav": 0.993055,
       "signal_nav": 0.922053,
       "position_pct": 20.0
     },
     {
       "date": "2026-04-17",
-      "position_nav": 0.985882,
+      "position_nav": 0.991103,
       "signal_nav": 0.923004,
       "position_pct": 20.0
     },
     {
       "date": "2026-04-20",
-      "position_nav": 0.987425,
+      "position_nav": 0.992654,
       "signal_nav": 0.915922,
       "position_pct": 20.0
     },
     {
       "date": "2026-04-21",
-      "position_nav": 0.987319,
+      "position_nav": 0.992547,
       "signal_nav": 0.915242,
       "position_pct": 20.0
     },
     {
       "date": "2026-04-22",
-      "position_nav": 0.987218,
+      "position_nav": 0.992446,
       "signal_nav": 0.910357,
       "position_pct": 20.0
     },
     {
       "date": "2026-04-23",
-      "position_nav": 0.98704,
+      "position_nav": 0.992266,
       "signal_nav": 0.913357,
       "position_pct": 20.0
     },
     {
       "date": "2026-04-24",
-      "position_nav": 0.988194,
+      "position_nav": 0.993426,
       "signal_nav": 0.916436,
       "position_pct": 20.0
     },
     {
       "date": "2026-04-27",
-      "position_nav": 0.987792,
+      "position_nav": 0.993022,
       "signal_nav": 0.914142,
       "position_pct": 20.0
     },
     {
       "date": "2026-04-28",
-      "position_nav": 0.988556,
+      "position_nav": 0.99379,
       "signal_nav": 0.915875,
       "position_pct": 20.0
     },
     {
       "date": "2026-04-29",
-      "position_nav": 0.9897,
+      "position_nav": 0.994941,
       "signal_nav": 0.92236,
       "position_pct": 20.0
     },
     {
       "date": "2026-04-30",
-      "position_nav": 0.990901,
+      "position_nav": 0.996148,
       "signal_nav": 0.923403,
       "position_pct": 20.0
     },
     {
       "date": "2026-05-06",
-      "position_nav": 0.993619,
+      "position_nav": 0.99888,
       "signal_nav": 0.934185,
       "position_pct": 20.0
     },
     {
       "date": "2026-05-07",
-      "position_nav": 0.993799,
+      "position_nav": 0.999062,
       "signal_nav": 0.934185,
-      "position_pct": 40.0
+      "position_pct": 40.5
     },
     {
       "date": "2026-05-08",
-      "position_nav": 0.990439,
+      "position_nav": 0.995639,
       "signal_nav": 0.934185,
-      "position_pct": 40.0
+      "position_pct": 40.5
     },
     {
       "date": "2026-05-11",
-      "position_nav": 0.995457,
+      "position_nav": 1.00075,
       "signal_nav": 0.924112,
-      "position_pct": 50.0
+      "position_pct": 50.2
     },
     {
       "date": "2026-05-12",
-      "position_nav": 0.995772,
+      "position_nav": 1.001068,
       "signal_nav": 0.921809,
-      "position_pct": 50.0
+      "position_pct": 50.2
     },
     {
       "date": "2026-05-13",
-      "position_nav": 0.996376,
+      "position_nav": 1.001678,
       "signal_nav": 0.927951,
-      "position_pct": 50.0
+      "position_pct": 50.2
     },
     {
       "date": "2026-05-14",
-      "position_nav": 0.988091,
+      "position_nav": 0.993311,
       "signal_nav": 0.91381,
-      "position_pct": 50.0
+      "position_pct": 50.2
     },
     {
       "date": "2026-05-15",
-      "position_nav": 0.981666,
+      "position_nav": 0.986823,
       "signal_nav": 0.91381,
-      "position_pct": 50.0
+      "position_pct": 50.2
     },
     {
       "date": "2026-05-18",
-      "position_nav": 0.977908,
+      "position_nav": 0.983028,
       "signal_nav": 0.914663,
-      "position_pct": 50.0
+      "position_pct": 50.2
     },
     {
       "date": "2026-05-19",
-      "position_nav": 0.981091,
+      "position_nav": 0.986242,
       "signal_nav": 0.906264,
-      "position_pct": 50.0
+      "position_pct": 50.2
     },
     {
       "date": "2026-05-20",
-      "position_nav": 0.981038,
+      "position_nav": 0.986189,
       "signal_nav": 0.907888,
-      "position_pct": 50.0
+      "position_pct": 50.2
     },
     {
       "date": "2026-05-21",
-      "position_nav": 0.975588,
+      "position_nav": 0.980686,
       "signal_nav": 0.930925,
-      "position_pct": 50.0
+      "position_pct": 50.2
     },
     {
       "date": "2026-05-22",
-      "position_nav": 0.976022,
+      "position_nav": 0.981123,
       "signal_nav": 0.922867,
-      "position_pct": 50.0
+      "position_pct": 50.2
     },
     {
       "date": "2026-05-25",
-      "position_nav": 0.983562,
+      "position_nav": 0.988738,
       "signal_nav": 0.913892,
-      "position_pct": 50.0
+      "position_pct": 50.2
     },
     {
       "date": "2026-05-26",
-      "position_nav": 0.984339,
+      "position_nav": 0.989522,
       "signal_nav": 0.91552,
-      "position_pct": 50.0
+      "position_pct": 50.2
     },
     {
       "date": "2026-05-27",
-      "position_nav": 0.977938,
+      "position_nav": 0.983057,
       "signal_nav": 0.927204,
-      "position_pct": 50.0
+      "position_pct": 50.2
     },
     {
       "date": "2026-05-28",
-      "position_nav": 0.974518,
+      "position_nav": 0.979605,
       "signal_nav": 0.927204,
-      "position_pct": 50.0
+      "position_pct": 50.2
     },
     {
       "date": "2026-05-29",
-      "position_nav": 0.975671,
+      "position_nav": 0.980768,
       "signal_nav": 0.927204,
-      "position_pct": 50.0
+      "position_pct": 50.2
     },
     {
       "date": "2026-06-01",
-      "position_nav": 0.971101,
+      "position_nav": 0.976154,
       "signal_nav": 0.924736,
-      "position_pct": 50.0
+      "position_pct": 50.2
     },
     {
       "date": "2026-06-02",
-      "position_nav": 0.975556,
+      "position_nav": 0.980652,
       "signal_nav": 0.924736,
-      "position_pct": 50.0
+      "position_pct": 50.2
     },
     {
       "date": "2026-06-03",
-      "position_nav": 0.975664,
+      "position_nav": 0.980762,
       "signal_nav": 0.919821,
-      "position_pct": 50.0
+      "position_pct": 50.2
     },
     {
       "date": "2026-06-04",
-      "position_nav": 0.970726,
+      "position_nav": 0.975775,
       "signal_nav": 0.925809,
-      "position_pct": 50.0
+      "position_pct": 50.2
     },
     {
       "date": "2026-06-05",
-      "position_nav": 0.966448,
+      "position_nav": 0.971455,
       "signal_nav": 0.953746,
-      "position_pct": 50.0
+      "position_pct": 50.2
     },
     {
       "date": "2026-06-08",
-      "position_nav": 0.95956,
+      "position_nav": 0.9645,
       "signal_nav": 0.937549,
       "position_pct": 70.0
     },
     {
       "date": "2026-06-09",
-      "position_nav": 0.963764,
+      "position_nav": 0.968991,
       "signal_nav": 0.925545,
       "position_pct": 70.0
     },
     {
       "date": "2026-06-10",
-      "position_nav": 0.965585,
+      "position_nav": 0.970938,
       "signal_nav": 0.929525,
       "position_pct": 70.0
     },
     {
       "date": "2026-06-11",
-      "position_nav": 0.96453,
+      "position_nav": 0.96981,
       "signal_nav": 0.929525,
       "position_pct": 70.0
     },
     {
       "date": "2026-06-12",
-      "position_nav": 0.975177,
+      "position_nav": 0.981188,
       "signal_nav": 0.919151,
-      "position_pct": 70.0
+      "position_pct": 65.9
     },
     {
       "date": "2026-06-15",
-      "position_nav": 0.991361,
+      "position_nav": 0.996715,
       "signal_nav": 0.903841,
-      "position_pct": 70.0
+      "position_pct": 65.9
     },
     {
       "date": "2026-06-16",
-      "position_nav": 0.990284,
+      "position_nav": 0.995899,
       "signal_nav": 0.904853,
-      "position_pct": 70.0
+      "position_pct": 65.9
     },
     {
       "date": "2026-06-17",
-      "position_nav": 0.996887,
+      "position_nav": 1.002219,
       "signal_nav": 0.911504,
-      "position_pct": 70.0
+      "position_pct": 65.9
     },
     {
       "date": "2026-06-18",
-      "position_nav": 0.997856,
+      "position_nav": 1.003229,
       "signal_nav": 0.9076,
       "position_pct": 50.0
     },
     {
       "date": "2026-06-22",
-      "position_nav": 1.010935,
+      "position_nav": 1.016379,
       "signal_nav": 0.923712,
       "position_pct": 50.0
     },
     {
       "date": "2026-06-23",
-      "position_nav": 0.998187,
+      "position_nav": 1.003562,
       "signal_nav": 0.911099,
       "position_pct": 50.0
     },
     {
       "date": "2026-06-24",
-      "position_nav": 1.00348,
+      "position_nav": 1.008883,
       "signal_nav": 0.912111,
       "position_pct": 50.0
     },
     {
       "date": "2026-06-25",
-      "position_nav": 1.009081,
+      "position_nav": 1.014515,
       "signal_nav": 0.914212,
       "position_pct": 50.0
     },
     {
       "date": "2026-06-26",
-      "position_nav": 0.996607,
+      "position_nav": 1.001974,
       "signal_nav": 0.893574,
       "position_pct": 50.0
     },
     {
       "date": "2026-06-29",
-      "position_nav": 1.007952,
+      "position_nav": 1.01338,
       "signal_nav": 0.883226,
       "position_pct": 50.0
     },
     {
       "date": "2026-06-30",
-      "position_nav": 1.012588,
+      "position_nav": 1.018041,
       "signal_nav": 0.878782,
       "position_pct": 50.0
     },
     {
       "date": "2026-07-01",
-      "position_nav": 1.01211,
+      "position_nav": 1.01756,
       "signal_nav": 0.874869,
       "position_pct": 50.0
     },
     {
       "date": "2026-07-02",
-      "position_nav": 0.997184,
+      "position_nav": 1.002554,
       "signal_nav": 0.89352,
       "position_pct": 50.0
     },
     {
       "date": "2026-07-03",
-      "position_nav": 1.000309,
+      "position_nav": 1.005695,
       "signal_nav": 0.890255,
       "position_pct": 50.0
     },
     {
       "date": "2026-07-06",
-      "position_nav": 1.000887,
+      "position_nav": 1.006277,
       "signal_nav": 0.890788,
       "position_pct": 50.0
     },
     {
       "date": "2026-07-07",
-      "position_nav": 0.993931,
+      "position_nav": 0.999283,
       "signal_nav": 0.890788,
       "position_pct": 50.0
     },
     {
       "date": "2026-07-08",
-      "position_nav": 0.991049,
+      "position_nav": 0.996386,
       "signal_nav": 0.892281,
       "position_pct": 50.0
     },
     {
       "date": "2026-07-09",
-      "position_nav": 1.004886,
+      "position_nav": 1.010297,
       "signal_nav": 0.905525,
       "position_pct": 50.0
     },
     {
       "date": "2026-07-10",
-      "position_nav": 0.997377,
+      "position_nav": 1.002748,
       "signal_nav": 0.905525,
       "position_pct": 50.0
     },
     {
       "date": "2026-07-13",
-      "position_nav": 0.98451,
+      "position_nav": 0.989812,
       "signal_nav": 0.92419,
-      "position_pct": 50.0
+      "position_pct": 50.6
     },
     {
       "date": "2026-07-14",
-      "position_nav": 0.991904,
+      "position_nav": 0.997245,
       "signal_nav": 0.912105,
-      "position_pct": 60.0
+      "position_pct": 59.9
     },
     {
       "date": "2026-07-15",
-      "position_nav": 0.991711,
+      "position_nav": 0.997054,
       "signal_nav": 0.91476,
       "position_pct": 40.0
     },
     {
       "date": "2026-07-16",
-      "position_nav": 0.983295,
+      "position_nav": 0.988592,
       "signal_nav": 0.93168,
       "position_pct": 40.0
     },
     {
       "date": "2026-07-17",
-      "position_nav": 0.972941,
+      "position_nav": 0.978183,
       "signal_nav": 0.960059,
-      "position_pct": 70.0
+      "position_pct": 70.7
     },
     {
       "date": "2026-07-20",
-      "position_nav": 0.989126,
+      "position_nav": 0.994563,
       "signal_nav": 0.952349,
-      "position_pct": 60.0
+      "position_pct": 58.6
     },
     {
       "date": "2026-07-21",
-      "position_nav": 1.017172,
+      "position_nav": 1.022448,
       "signal_nav": 0.96943,
       "position_pct": 80.0
     },
     {
       "date": "2026-07-22",
-      "position_nav": 1.011438,
+      "position_nav": 1.016684,
       "signal_nav": 0.96252,
       "position_pct": 20.0
     },
     {
       "date": "2026-07-23",
-      "position_nav": 1.011263,
+      "position_nav": 1.016504,
       "signal_nav": 0.960095,
       "position_pct": 20.0
     },
     {
       "date": "2026-07-24",
-      "position_nav": 1.00832,
+      "position_nav": 1.013487,
       "signal_nav": 0.975671,
       "position_pct": 25.0
     },
     {
       "date": "2026-07-27",
-      "position_nav": 1.01138,
+      "position_nav": 1.016563,
       "signal_nav": 0.975671,
       "position_pct": 50.0
     },
     {
       "date": "2026-07-28",
-      "position_nav": 0.984368,
+      "position_nav": 0.989413,
       "signal_nav": 0.964309,
-      "position_pct": 70.0
+      "position_pct": 68.8
     },
     {
       "date": "2026-07-29",
-      "position_nav": 0.98822,
+      "position_nav": 0.99339,
       "signal_nav": 0.968141,
-      "position_pct": 80.0
+      "position_pct": 79.7
     }
   ]
 }
