@@ -1,24 +1,17 @@
 """
 Download minute-level index data from EastMoney.
-Uses urllib (NOT requests) — EastMoney blocks requests library by TLS fingerprint.
+Uses subprocess + curl (only curl bypasses EastMoney TLS fingerprint detection).
 Six investable indices: 上证50, 沪深300, 创业板指, 科创50, 中证500, 中证1000
-
-Period: 2026-01-01 onwards
-Supports 1-min and 5-min K-line via --period param.
 
 Usage:
   python scripts/simulate/download_minute_data.py              # default: 5min
   python scripts/simulate/download_minute_data.py --period 1   # 1min
   python scripts/simulate/download_minute_data.py --period 5   # 5min
 """
-import json, os, sys, time, argparse, math, ssl
-import urllib.request
-import pandas as pd
+import json, os, sys, time, argparse, math, subprocess, tempfile
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-# Index codes for EastMoney
-# Format: 1.000016 for Shanghai, 0.399006 for Shenzhen
 INDICES = {
     "上证50":   {"code": "1.000016", "name": "SH50"},
     "沪深300":  {"code": "1.000300", "name": "CSI300"},
@@ -30,85 +23,83 @@ INDICES = {
 
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
       "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36")
+UT = "fa5fd1943c7b386f172d6893dbbf196b"
+
+FIELDS1_KL = "f1,f2,f3,f4,f5,f6"
+FIELDS2_KL = "f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61"
+FIELDS1_TR = "f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11,f12,f13"
+FIELDS2_TR = "f51,f52,f53,f54,f55,f56,f57,f58"
 
 
-def _api_get(url, params, timeout=60):
-    """Call EastMoney API via urllib (bypasses requests TLS fingerprint block)."""
-    query = "&".join(f"{k}={v}" for k, v in params.items())
-    full_url = f"{url}?{query}"
-    req = urllib.request.Request(full_url, headers={
-        "User-Agent": UA,
-        "Referer": "https://quote.eastmoney.com/",
-    })
-    ctx = ssl.create_default_context()
-    with urllib.request.urlopen(req, timeout=timeout, context=ctx) as resp:
-        return json.loads(resp.read().decode())
+def curl_get(url, timeout=60):
+    """Call API via curl subprocess (bypasses EastMoney TLS blocking)."""
+    result = subprocess.run(
+        ["curl", "-s", "--max-time", str(timeout),
+         "-H", f"User-Agent: {UA}",
+         "-H", "Referer: https://quote.eastmoney.com/",
+         url],
+        capture_output=True, text=True, timeout=timeout + 5
+    )
+    if result.returncode != 0 or not result.stdout.strip():
+        return None
+    try:
+        return json.loads(result.stdout)
+    except json.JSONDecodeError:
+        return None
 
 
-def fetch_5min_kline(code, start_date="2026-01-01", end_date="2026-08-06"):
+def check_api_available():
+    """Quick health check — returns True if push2his API is reachable."""
+    url = (f"https://push2his.eastmoney.com/api/qt/stock/trends2/get?"
+           f"fields1=f1&fields2=f51,f52&iscr=0&ndays=1&secid=1.000016&ut={UT}")
+    data = curl_get(url, timeout=10)
+    return data is not None and data.get("rc") == 0
+
+
+def fetch_5min_kline(code, start_date="2026-01-01", end_date="2026-08-07"):
     """Fetch 5-min K-line via kline/get API."""
-    url = "https://push2his.eastmoney.com/api/qt/stock/kline/get"
-    params = {
-        "secid": code,
-        "fields1": "f1,f2,f3,f4,f5,f6",
-        "fields2": "f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61",
-        "klt": "5",
-        "fqt": "1",
-        "beg": start_date.replace("-", ""),
-        "end": end_date.replace("-", ""),
-        "lmt": "100000",
-        "ut": "fa5fd1943c7b386f172d6893dbbf196b",
-    }
+    url = (f"https://push2his.eastmoney.com/api/qt/stock/kline/get?"
+           f"secid={code}&fields1={FIELDS1_KL}&fields2={FIELDS2_KL}&klt=5&fqt=1"
+           f"&beg={start_date.replace('-', '')}&end={end_date.replace('-', '')}"
+           f"&lmt=100000&ut={UT}")
 
-    data = _api_get(url, params)
-    if data.get("rc") != 0:
-        return None, data.get("msg", "unknown error")
+    data = curl_get(url, timeout=60)
+    if data is None or data.get("rc") != 0:
+        return None
 
     klines = data.get("data", {}).get("klines", [])
     if not klines:
-        return None, "no data"
+        return None
 
     rows = []
     for line in klines:
         parts = line.split(",")
         rows.append({
-            "time": parts[0],
-            "open": float(parts[1]),
-            "close": float(parts[2]),
-            "high": float(parts[3]),
-            "low": float(parts[4]),
-            "volume": float(parts[5]),
-            "amount": float(parts[6]),
+            "time": parts[0], "open": float(parts[1]), "close": float(parts[2]),
+            "high": float(parts[3]), "low": float(parts[4]),
+            "volume": float(parts[5]), "amount": float(parts[6]),
         })
-
-    return pd.DataFrame(rows), None
+    return rows
 
 
 def fetch_1min_trends(code, ndays=5):
     """Fetch 1-min K-line via trends2/get API.
 
-    Returns intraday 1-min bars:
-    time, open, close, high, low, volume, amount, _
-
-    ndays: how many recent trading days to return (max ~200).
+    Returns list of {time, open, high, low, close, volume, amount}.
+    trends2 cols: time, open, close, high, low, volume, amount, avg_price
+    We reorder to: time, open, high, low, close, volume, amount
     """
-    url = "https://push2his.eastmoney.com/api/qt/stock/trends2/get"
-    params = {
-        "fields1": "f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11,f12,f13",
-        "fields2": "f51,f52,f53,f54,f55,f56,f57,f58",
-        "iscr": "0",
-        "ndays": str(ndays),
-        "secid": code,
-        "ut": "fa5fd1943c7b386f172d6893dbbf196b",
-    }
+    url = (f"https://push2his.eastmoney.com/api/qt/stock/trends2/get?"
+           f"fields1={FIELDS1_TR}&fields2={FIELDS2_TR}&iscr=0"
+           f"&ndays={ndays}&secid={code}&ut={UT}")
 
-    data = _api_get(url, params)
-    if data.get("rc") != 0:
-        return None, data.get("msg", "unknown error")
+    data = curl_get(url, timeout=60)
+    if data is None or data.get("rc") != 0:
+        return None
 
     trends = data.get("data", {}).get("trends", [])
     if not trends:
-        return None, "no data"
+        return None
 
     rows = []
     for line in trends:
@@ -118,107 +109,110 @@ def fetch_1min_trends(code, ndays=5):
         rows.append({
             "time": parts[0],
             "open": float(parts[1]),
-            "close": float(parts[2]),
             "high": float(parts[3]),
             "low": float(parts[4]),
+            "close": float(parts[2]),
             "volume": float(parts[5]),
             "amount": float(parts[6]),
         })
+    return rows
 
-    return pd.DataFrame(rows), None
 
-
-def download_with_retry(fetch_fn, code, idx_name, max_retries=5):
-    """Download with exponential backoff retry."""
-    last_error = None
-    for attempt in range(max_retries):
-        try:
-            df, error = fetch_fn()
-            if df is not None and len(df) > 0:
-                return df
-            last_error = error or "empty data"
-        except Exception as e:
-            last_error = str(e)
-
-        if attempt < max_retries - 1:
-            delay = int(5 * math.pow(2, attempt))  # 5, 10, 20, 40, 80s
-            print(f"  Retry {attempt+1}/{max_retries} in {delay}s... ({last_error[:80]})")
-            time.sleep(delay)
-
-    print(f"  FAILED after {max_retries} attempts: {last_error[:100]}")
-    return None
+def wait_for_api(timeout_minutes=120, poll_seconds=30):
+    """Block until push2his API becomes available."""
+    print(f"Waiting for EastMoney API (timeout={timeout_minutes}min)...")
+    deadline = time.time() + timeout_minutes * 60
+    while time.time() < deadline:
+        if check_api_available():
+            print("  API available!")
+            return True
+        print(f"  [{time.strftime('%H:%M:%S')}] blocked, retry in {poll_seconds}s...")
+        time.sleep(poll_seconds)
+    print("  TIMEOUT: API did not become available")
+    return False
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Download minute-level index data from EastMoney")
+    parser = argparse.ArgumentParser(description="Download minute-level index data")
     parser.add_argument("--period", "-p", type=int, default=5, choices=[1, 5],
-                        help="K-line period: 1 (1min) or 5 (5min), default: 5")
-    parser.add_argument("--start", default="2026-01-01", help="Start date (YYYY-MM-DD)")
-    parser.add_argument("--end", default="2026-08-06", help="End date (YYYY-MM-DD)")
+                        help="K-line period: 1 or 5 (default: 5)")
+    parser.add_argument("--start", default="2026-01-01")
+    parser.add_argument("--end", default="2026-08-07")
+    parser.add_argument("--wait", type=int, default=0,
+                        help="Wait up to N minutes for API to become available")
+    parser.add_argument("--ndays", type=int, default=200,
+                        help="ndays param for trends2 API (default: 200, try 5 if fails)")
     args = parser.parse_args()
 
     period = args.period
     subdir = "1min" if period == 1 else "5min"
-    OUTPUT_DIR = os.path.join(PROJECT_ROOT, "data", "minute", subdir)
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
-    suffix = f"_{period}min"
+    output_dir = os.path.join(PROJECT_ROOT, "data", "minute", subdir)
+    os.makedirs(output_dir, exist_ok=True)
 
-    print("=" * 60)
-    print(f"  EastMoney {period}min K-line Downloader")
-    print(f"  Range: {args.start} ~ {args.end}")
-    print(f"  Output: {OUTPUT_DIR}")
-    print(f"  Indices: {', '.join(INDICES.keys())}")
-    print("=" * 60)
+    # Wait for API if requested
+    if args.wait > 0:
+        if not wait_for_api(timeout_minutes=args.wait):
+            sys.exit(1)
+
+    print(f"{'='*60}")
+    print(f"  EastMoney {period}min Downloader (curl-based)")
+    print(f"  Output: {output_dir}")
+    print(f"{'='*60}")
 
     total_rows = 0
+    suffix = f"_{period}min"
 
-    for i, (idx_name, info) in enumerate(INDICES.items()):
+    for i, (name, info) in enumerate(INDICES.items()):
         code = info["code"]
-        csv_path = os.path.join(OUTPUT_DIR, f"{info['name']}{suffix}.csv")
+        csv_path = os.path.join(output_dir, f"{info['name']}{suffix}.csv")
 
-        print(f"\n[{i+1}/6] {idx_name} ({code})", end="", flush=True)
+        print(f"\n[{i+1}/6] {name} ({code})")
 
         if i > 0:
-            time.sleep(3)  # Rate limit between indices
+            delay = 10 if period == 1 else 3
+            print(f"  Delay {delay}s...")
+            time.sleep(delay)
 
         if period == 1:
-            # 1min: trends2/get API, ndays=200 to cover full 2026
-            print(" — 1min trends2...")
-            df = download_with_retry(
-                lambda: fetch_1min_trends(code, ndays=200),
-                code, idx_name
-            )
-
-            if df is not None:
-                dates = sorted(df["time"].str[:10].unique())
-                print(f"  {len(df):>6} rows, {len(dates):>3} dates: {dates[0]} ~ {dates[-1]}")
-                df.to_csv(csv_path, index=False, encoding="utf-8")
-                total_rows += len(df)
+            print(f"  Fetching 1min trends (ndays={args.ndays})...")
+            rows = None
+            for ndays in [args.ndays, 60, 30, 10, 5]:
+                if ndays != args.ndays:
+                    print(f"    Retry with ndays={ndays}...")
+                    time.sleep(5)
+                rows = fetch_1min_trends(code, ndays=ndays)
+                if rows is not None:
+                    break
         else:
-            # 5min: kline/get API
-            print(" — 5min kline...")
-            df = download_with_retry(
-                lambda: fetch_5min_kline(code, args.start, args.end),
-                code, idx_name
-            )
+            print(f"  Fetching 5min kline ({args.start}~{args.end})...")
+            rows = fetch_5min_kline(code, args.start, args.end)
 
-            if df is not None:
-                dates = sorted(df["time"].str[:10].unique())
-                print(f"  {len(df):>6} rows, {len(dates):>3} dates: {dates[0]} ~ {dates[-1]}")
-                df.to_csv(csv_path, index=False, encoding="utf-8")
-                total_rows += len(df)
+        if rows is None:
+            print(f"  FAILED — API blocked or rejected")
+            continue
+
+        # Save CSV
+        import csv
+        with open(csv_path, "w", newline="", encoding="utf-8") as f:
+            w = csv.DictWriter(f, fieldnames=["time", "open", "high", "low", "close", "volume", "amount"])
+            w.writeheader()
+            w.writerows(rows)
+
+        dates = sorted(set(r["time"][:10] for r in rows))
+        print(f"  OK: {len(rows):>6} rows, {len(dates):>3} dates: {dates[0]} ~ {dates[-1]}")
+        print(f"  Saved: {csv_path}")
+        total_rows += len(rows)
 
     # Summary
-    print(f"\n{'=' * 60}")
+    print(f"\n{'='*60}")
     print(f"  Download complete — {total_rows:,} total rows")
-    print(f"{'=' * 60}")
+    print(f"{'='*60}")
     for name, info in INDICES.items():
-        csv_path = os.path.join(OUTPUT_DIR, f"{info['name']}{suffix}.csv")
+        csv_path = os.path.join(output_dir, f"{info['name']}{suffix}.csv")
         if os.path.exists(csv_path):
-            df = pd.read_csv(csv_path)
-            dates = sorted(df["time"].str[:10].unique())
-            print(f"  {name}: {len(df):>6} rows, {len(dates):>3} dates, "
-                  f"{dates[0] if dates else '?'} ~ {dates[-1] if dates else '?'}")
+            with open(csv_path) as f:
+                line_count = sum(1 for _ in f) - 1  # minus header
+            print(f"  {name}: {line_count:>6} rows")
         else:
             print(f"  {name}: MISSING")
 
