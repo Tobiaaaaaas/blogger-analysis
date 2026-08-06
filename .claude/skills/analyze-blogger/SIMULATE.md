@@ -344,7 +344,7 @@ candidate_posts = [
 
 ### Step 4: 净值模拟
 
-参考 `scripts/simulate_nav.py`：
+参考 `scripts/simulate/simulate_nav.py`：
 
 1. 初始化：NAV = 1.0，快照指针指向最早的仓位记录
 2. 按交易日逐日遍历，对每个交易日：

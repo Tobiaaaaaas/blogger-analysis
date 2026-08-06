@@ -22,7 +22,7 @@
 ### Step 1: 爬取帖子
 
 ```bash
-cd <项目根目录> && python scripts/scrape_toutiao.py <帖子链接>
+cd <项目根目录> && python scripts/pipeline/scrape_toutiao.py <帖子链接>
 ```
 
 - 从帖子链接自动提取 token 和用户主页，翻页获取全部帖子
@@ -103,7 +103,7 @@ cd <项目根目录> && python scripts/scrape_toutiao.py <帖子链接>
 ### Step 2: 获取市场数据
 
 ```bash
-cd <项目根目录> && python scripts/fetch_market_data.py
+cd <项目根目录> && python scripts/utils/fetch_market_data.py
 ```
 
 - 获取**上证综指**日线数据（含开盘/收盘/最高/最低/成交量）
