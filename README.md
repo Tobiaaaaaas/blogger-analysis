@@ -76,16 +76,55 @@ python scripts/pipeline/gen_report_data.py --blogger "<博主名>"
 python scripts/pipeline/md_to_pdf.py --blogger "<博主名>"
 ```
 
+### 下载分钟行情数据
+
+脚本：`scripts/simulate/download_minute_data.py`  
+零 Python 依赖，仅需系统安装 `curl`。数据源为东方财富 API。
+
+```bash
+# 下载 2026 全年 1 分钟数据（6 指数：上证50/沪深300/中证500/中证1000/创业板指/科创50）
+python scripts/simulate/download_minute_data.py --period 1
+
+# 下载 5 分钟数据
+python scripts/simulate/download_minute_data.py --period 5
+
+# 先测试一个指数，确认 API 可通
+python scripts/simulate/download_minute_data.py --period 1 --test
+
+# 指定日期范围（仅 kline/get 路径支持）
+python scripts/simulate/download_minute_data.py --period 1 --start 2026-06-01 --end 2026-08-07
+```
+
+**下载策略**（脚本自动执行，无需手动干预）：
+
+| 优先级 | API | 参数 | 说明 |
+|--------|-----|------|------|
+| A | `kline/get` + `klt=1` | `beg/end` 日期 | 理想路径：支持任意日期区间，一次拉全年 |
+| B | `trends2/get` + `ndays` | 仅最近 N 天 | 回退路径：ndays 从 200 递减，取最大可用值 |
+
+输出到 `data/minute/1min/` 和 `data/minute/5min/`，CSV 格式：
+`time,open,high,low,close,volume,amount`
+
+**前置条件**：
+- 系统已安装 `curl`（macOS 自带，Linux `apt install curl`）
+- IP 未被东方财富封禁（封禁表现为 HTTP 000 或空响应，等 1-2 小时自动解封）
+- 不要短时间内连续多次运行（会触发 IP 封禁）
+
+**常见问题**：
+
+| 症状 | 原因 | 解决 |
+|------|------|------|
+| 所有请求返回空 | IP 被封 | 等待 1-2 小时，或换网络/VPN |
+| `trends2/get` 只拉到最近几天 | `ndays` 上限受限 | 正常现象，该 API 不提供完整历史 |
+| `kline/get` + `klt=1` 返回空 | API 可能不支持 1min | 回退到 5min 数据（`--period 5`），精度损失有限 |
+
 ### 运行仓位模拟（仅 顺应周期）
 
 ```bash
-# 1. 下载分钟行情数据
-python scripts/simulate/download_minute_data.py
-
-# 2. 运行 NAV 模拟
+# 1. 运行 NAV 模拟
 python scripts/simulate/simulate_nav.py
 
-# 3. 对比分析
+# 2. 对比分析
 python scripts/simulate/compare_nav_vs_signals.py
 python scripts/simulate/decompose_timing_vs_selection.py
 ```
