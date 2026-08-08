@@ -15,6 +15,7 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(os.path.dirname(SCRIPT_DIR))
 
 INFLECTION_INFO = {
+    "M1": ("2024-09-18", "底部", "Major", 2690),
     "M2": ("2024-10-08", "顶部", "Major", 3674),
     "I1": ("2024-10-18", "底部", "Intermediate", 3153),
     "I2": ("2024-11-08", "顶部", "Intermediate", 3510),
@@ -32,8 +33,7 @@ INFLECTION_INFO = {
     "M6": ("2026-05-14", "顶部", "Major", 4259),
     "I13": ("2026-06-08", "底部", "Intermediate", 3928),
     "I14": ("2026-06-23", "顶部", "Intermediate", 4175),
-    "M8": ("2026-07-20", "底部", "Major", 3741),
-    "M7": ("2026-06-25", "顶部", "Major", 4380),
+    "M7": ("2026-07-20", "底部", "Major", 3741),
 }
 
 
@@ -92,8 +92,7 @@ def gen_post_breakdown(sig_d):
     lines.append(f"              └── ⏱️ 按时间跨度拆解：")
     lines.append(f"                    ├── long（月级以上）：{long_s} 条")
     lines.append(f"                    ├── medium（数周-月）：{medium_s} 条")
-    lines.append(f"                    ├── short（1-2天）：{short_s} 条")
-    lines.append(f"                    ├── intraday（日内）：{intraday_s} 条")
+    lines.append(f"                    ├── short（3天内，含日内）：{short_s + intraday_s} 条")
     lines.append(f"                    └── unspecified（无明确时间范围）：{unspecified_s} 条")
     lines.append("```")
     lines.append("")
@@ -171,7 +170,7 @@ def gen_inflection_table(score_d):
         lines.append(f"| {label} | {date} | {itype} | {count} | {total:+.2f} | {avg:+.1f}% | {rep} |")
         covered.add(label)
 
-    all_major = ["M2", "M3", "M4", "M5", "M6", "M7", "M8"]
+    all_major = ["M1", "M2", "M3", "M4", "M5", "M6", "M7"]
     uncovered = [m for m in all_major if m not in covered]
     if uncovered:
         lines.append("")
@@ -187,8 +186,10 @@ def main():
     blogger = args.blogger
 
     sig_d = load_json("data", "signals", f"{blogger}.json")
-    # Try _v11 first, fall back to non-suffixed
-    score_path = os.path.join(PROJECT_ROOT, "data", "scores", f"{blogger}_v11.json")
+    # Try _v12 first, fall back to _v11
+    score_path = os.path.join(PROJECT_ROOT, "data", "scores", f"{blogger}_v12.json")
+    if not os.path.exists(score_path):
+        score_path = os.path.join(PROJECT_ROOT, "data", "scores", f"{blogger}_v11.json")
     if not os.path.exists(score_path):
         score_path = os.path.join(PROJECT_ROOT, "data", "scores", f"{blogger}.json")
     with open(score_path, encoding="utf-8") as f:
@@ -211,7 +212,7 @@ def main():
     report.append(f"> 评估时间：2026-08-03 | 平台：今日头条")
     report.append(f"> 帖子数量：{total_posts} 条 | 时间跨度：{earliest} ~ {latest}")
     report.append(f"> 粉丝：{followers} | 信号数量：{sig_count} 条")
-    report.append(f"> 方法论版本：v11（LLM全量读取 + A/B/C/D 双因子打分，3日均价 short_return）")
+    report.append(f"> 方法论版本：v12（LLM全量读取 + return 单因子打分）")
     report.append("")
     report.append("---")
     report.append("")

@@ -1,0 +1,251 @@
+{
+  "blogger": "实盘指龙",
+  "scoring_version": "v12 (return single-factor)",
+  "signals_total": 14,
+  "signals_scored": 0,
+  "score_zero": 14,
+  "no_price": 0,
+  "no_segment": 0,
+  "scores": {
+    "综合": {
+      "total": 0.0,
+      "count": 0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "上升段": {
+      "total": 0.0,
+      "count": 0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "下降段": {
+      "total": 0.0,
+      "count": 0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "抄底": {
+      "total": 0.0,
+      "count": 0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "逃顶": {
+      "total": 0.0,
+      "count": 0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "看多": {
+      "total": 0.0,
+      "count": 0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "看空": {
+      "total": 0.0,
+      "count": 0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    }
+  },
+  "time_horizon_scores": {
+    "short": {
+      "count": 11,
+      "total": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "medium": {
+      "count": 3,
+      "total": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "long": {
+      "count": 0,
+      "total": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "unspecified": {
+      "count": 0,
+      "total": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    }
+  },
+  "equity_curve": {
+    "overall": [
+      [
+        "2026-07-27",
+        1.012954
+      ],
+      [
+        "2026-07-28",
+        1.001158
+      ],
+      [
+        "2026-07-29",
+        1.005137
+      ],
+      [
+        "2026-07-30",
+        0.998894
+      ],
+      [
+        "2026-07-31",
+        1.006132
+      ],
+      [
+        "2026-08-03",
+        1.000199
+      ],
+      [
+        "2026-08-04",
+        1.003512
+      ],
+      [
+        "2026-08-05",
+        1.018254
+      ],
+      [
+        "2026-08-06",
+        1.024009
+      ],
+      [
+        "2026-08-07",
+        1.034429
+      ]
+    ],
+    "bullish_only": [
+      [
+        "2026-07-27",
+        1.012954
+      ],
+      [
+        "2026-07-28",
+        1.001158
+      ],
+      [
+        "2026-07-29",
+        1.005137
+      ],
+      [
+        "2026-07-30",
+        0.998894
+      ],
+      [
+        "2026-07-31",
+        1.006132
+      ],
+      [
+        "2026-08-03",
+        1.000199
+      ],
+      [
+        "2026-08-04",
+        1.003512
+      ],
+      [
+        "2026-08-05",
+        1.018254
+      ],
+      [
+        "2026-08-06",
+        1.024009
+      ],
+      [
+        "2026-08-07",
+        1.034429
+      ]
+    ],
+    "bearish_only": [],
+    "benchmark": [
+      [
+        "2026-07-27",
+        1.0
+      ],
+      [
+        "2026-07-28",
+        0.988355
+      ],
+      [
+        "2026-07-29",
+        0.992283
+      ],
+      [
+        "2026-07-30",
+        0.986119
+      ],
+      [
+        "2026-07-31",
+        0.993265
+      ],
+      [
+        "2026-08-03",
+        0.987407
+      ],
+      [
+        "2026-08-04",
+        0.990678
+      ],
+      [
+        "2026-08-05",
+        1.005232
+      ],
+      [
+        "2026-08-06",
+        1.010913
+      ],
+      [
+        "2026-08-07",
+        1.0212
+      ]
+    ]
+  },
+  "risk_metrics": {
+    "overall": {
+      "total_return": 3.44,
+      "annual_return": 134.67,
+      "max_drawdown": -1.39,
+      "max_drawdown_dates": [
+        "2026-07-27",
+        "2026-07-30"
+      ],
+      "sharpe_like": 0,
+      "trade_count": 0,
+      "signal_count": 14,
+      "avg_trade_return": 0,
+      "benchmark_return": 2.12,
+      "alpha": 1.32
+    },
+    "bullish": {
+      "total_return": 3.44,
+      "annual_return": 134.67,
+      "max_drawdown": -1.39,
+      "max_drawdown_dates": [
+        "2026-07-27",
+        "2026-07-30"
+      ],
+      "sharpe_like": 0,
+      "trade_count": 0,
+      "signal_count": 14,
+      "avg_trade_return": 0
+    },
+    "bearish": {}
+  },
+  "segments": {
+    "M7->now": {
+      "direction": "rising",
+      "start_label": "M7",
+      "end_label": "?",
+      "total": 14,
+      "bull": 14,
+      "bear": 0,
+      "score": 0.0
+    }
+  },
+  "inflection_details": {}
+}

@@ -1,0 +1,6419 @@
+{
+  "blogger": "实盘指龙副号",
+  "extraction_time": "2026-08-08 21:21:03",
+  "model": "deepseek-v4-flash",
+  "total_posts": 919,
+  "pre_2024_06": 0,
+  "evaluation_posts": 919,
+  "not_extracted": {
+    "no_market_topic": 4,
+    "pure_description": 20,
+    "directional_vague": 40,
+    "other_index_sector": 31,
+    "other": 22
+  },
+  "scored_bullish": {
+    "strong": 69,
+    "moderate": 547,
+    "long": 0,
+    "medium": 139,
+    "short": 344,
+    "intraday": 118,
+    "unspecified": 15
+  },
+  "scored_bearish": {
+    "strong": 1,
+    "moderate": 181,
+    "long": 0,
+    "medium": 16,
+    "short": 146,
+    "intraday": 20,
+    "unspecified": 0
+  },
+  "signals": [
+    {
+      "post_n": 17,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明日大盘：冲高回落！周末出了挺多消息呀，利好挺多的，这就对明天的开盘形成了不错的氛围。所以明天大盘早盘会有大幅冲高！但下午大概率会回落收上影线！",
+      "publish_time": "2025-06-29 16:34"
+    },
+    {
+      "post_n": 16,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天的节奏是冲高回落！如果手中个股大幅冲高，也可以做个小T，预期是明后天会有调整震荡一下。",
+      "publish_time": "2025-06-30 11:32"
+    },
+    {
+      "post_n": 15,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明日大盘：中阴调整！晚上好，经过指农的复盘，发现明天大盘可以中阴线回踩3400！！",
+      "publish_time": "2025-06-30 22:15"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "要吃到一轮趋势的大肉，必须要减少操作，尤其是在牛市。指农知道，现在很多人依然不相信牛来了，没关系，等这个月大盘突破3550点你再看看相不相信",
+      "publish_time": "2025-07-01 09:18"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "变盘点就在明天！今天由于银行的拉升，导致大盘看起来红彤彤的，但个股杀伤力却很多是调整的！指农告诉你，这就是跷跷板！目前行情已经在转换点了，前期大盘行情可以说是银行拉起来的，而目前银行已经到高位，即将变盘往下了！银行明天很可能就有大阴线。那么出来的资金会去哪呢？答案是科技和券商！所以行情转换点就在明天，银行落，万股生！明天券商和个股很可能低开探底，尾盘回升！所以大家不要倒在最后一步了！大盘没有危险，个股百花齐放与银行衰落的行情，此消彼长！临界转换点！就在明天！！",
+      "publish_time": "2025-07-01 16:44"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "目前的大盘由于银行的作用，已经严重失真！所以很多指标已经失效了！目前节奏就是轻大盘，重个股！所以大家各自选好个股就行了！没有大跌的风险！",
+      "publish_time": "2025-07-02 12:48"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "看来大盘走的是极限的走法呀，主力真行！非要把大家压的万念俱灰才肯涨。不过这点手法对指农毫无波澜！指农依然满仓持股，不吃肉不走！",
+      "publish_time": "2025-07-02 16:48"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "不管大盘怎么震荡！可以确定的是这里中线是可以拿住不动的。",
+      "publish_time": "2025-07-03 13:31"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大盘在这个位置依然没有风险，因为券商今天没有大涨，如果它大涨了明后天是可以调整一下的，但现在来看可能是推迟到明天大涨了。明天大概率是个好日子",
+      "publish_time": "2025-07-03 17:20"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大盘今天可以继续涨！大概率收个中阳线或者冲高回落的阳线！但千万不要追涨，因为今天很可能是短期小高点。下周一周二很可能会有两天的回踩，所以今天冲高是超短线的卖点！",
+      "publish_time": "2025-07-04 09:20"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "风险解除！！下周风险没有了！因为大盘选择了先探底。那么指农没有操作，继续满仓持股券商！坐等风来！",
+      "publish_time": "2025-07-04 12:03"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "行情结束了吗？并没有！只能说这都是主力的障眼法！不管主力怎么折腾，指农满仓持股，不动摇！不吃大肉不走！下周看大涨！",
+      "publish_time": "2025-07-04 16:47"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "指农可以告诉你，不会这样！指农认为银行已经见顶，下周银行跌将会是主旋律！现在的行情，就是跷跷板，银行涨则散户难受。银行跌，则个股精彩纷呈！下周的行情会非常精彩，不宜看空！",
+      "publish_time": "2025-07-06 15:12"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天基本就这样了，横盘震荡到收盘！从盘面上来看，很多题材股到下午基本都调整完成了！明天可以开始反攻！",
+      "publish_time": "2025-07-07 13:41"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "满仓持股待涨！没有操作[哈欠][哈欠]今天的行情好无聊，震了一天，指农满仓躺平，坐等明日风云！",
+      "publish_time": "2025-07-07 16:26"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "今日大盘：普涨！目前的大盘从结构上来说，早盘是可以来个小低开探底一下的，但这并不需要害怕，反而可能是近期最后的抄底机会了！因为大盘探底后可以直接拉起，然后普涨！",
+      "publish_time": "2025-07-08 07:50"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "大涨将至！拿好手中的券商科技，坐好扶稳了！大盘一直涨，看空的人越来越多了，这波行情将会有非常多的人踏空！拭目以待。主升浪即将开启！这一波一定要吃大肉！",
+      "publish_time": "2025-07-08 13:56"
+    },
+    {
+      "post_n": 24,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "在指农这不存在这种情况，我们坚定看多！",
+      "publish_time": "2025-07-08 18:04"
+    },
+    {
+      "post_n": 23,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "intraday",
+      "evidence": "突破3500就在今天！今天大概率是个好日子[机智]个股调整结构已经到位，接下来只有看涨一条路！",
+      "publish_time": "2025-07-09 09:33"
+    },
+    {
+      "post_n": 22,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明日大盘：低开高走！",
+      "publish_time": "2025-07-10 00:14"
+    },
+    {
+      "post_n": 21,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "所以安心持股！下午很可能拉起来！",
+      "publish_time": "2025-07-10 12:42"
+    },
+    {
+      "post_n": 20,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天开始你会发现，大盘会被大盘股拖累，涨不起来甚至阴线调整，但科技题材和券商却会逆势上涨！",
+      "publish_time": "2025-07-10 15:57"
+    },
+    {
+      "post_n": 19,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "那么下午怎么走？接着奏乐接着舞！继续躺平继续吃肉！",
+      "publish_time": "2025-07-11 14:35"
+    },
+    {
+      "post_n": 16,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "指农认为，下周题材个股，即将迎来绽放时刻！行情切换！！",
+      "publish_time": "2025-07-12 21:28"
+    },
+    {
+      "post_n": 15,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "今天券商和科技基本就是低开高走的走势！所以不必恐慌，持股待涨即可！",
+      "publish_time": "2025-07-14 11:39"
+    },
+    {
+      "post_n": 8,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明日大盘：冲高回落！",
+      "publish_time": "2025-07-15 20:52"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大权重明显没调整完成，还需要跌，也就是大盘还有低点！",
+      "publish_time": "2025-07-16 13:44"
+    },
+    {
+      "post_n": 5,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明日大概率是冲高回落了",
+      "publish_time": "2025-07-17 00:06"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "指农觉得没有，科技目前的回落属于正常调整，最多周一再震荡一天，就可以继续涨了。",
+      "publish_time": "2025-07-18 14:47"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "往往就是在这种纠结的行情时，大盘会迎来突破！！",
+      "publish_time": "2025-07-18 17:06"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下周或有剧烈变盘，而且是往下！！",
+      "publish_time": "2025-07-20 14:02"
+    },
+    {
+      "post_n": 23,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "真正风险的是明天",
+      "publish_time": "2025-07-21 11:32"
+    },
+    {
+      "post_n": 22,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大盘今天冲了，那么至少要调整两三天，才能继续上！而且很可能是中大阴线调整。",
+      "publish_time": "2025-07-21 14:46"
+    },
+    {
+      "post_n": 21,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "指农认为短线这里会有一波调整，因为散户情绪太火热了，看多太一致了！",
+      "publish_time": "2025-07-22 09:20"
+    },
+    {
+      "post_n": 20,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "目前大盘在这里可能会横盘或者小跌几天，但券商和科技题材股却已经连续调整几天，包括现在也是绿的，他们很可能会走独立行情！",
+      "publish_time": "2025-07-22 13:14"
+    },
+    {
+      "post_n": 19,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大盘在这里可能会有两天的震荡，但科技明早再震荡一下就调整完成了，所以明天指农将把剩下的仓位打满！",
+      "publish_time": "2025-07-22 17:17"
+    },
+    {
+      "post_n": 17,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "指农认为接下来很可能是逼空式拉伸！彻底打爆空头！",
+      "publish_time": "2025-07-23 12:59"
+    },
+    {
+      "post_n": 16,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明早科技题材早盘探底一下就可以拉升了！明天开始赚钱效应将会越来越好",
+      "publish_time": "2025-07-23 17:35"
+    },
+    {
+      "post_n": 15,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "散户越是恐惧，分歧越大，越不可能大跌，最多横盘震荡。",
+      "publish_time": "2025-07-24 15:28"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "所以明天开始大盘可能会有个两天左右的下切调整。",
+      "publish_time": "2025-07-24 17:01"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天的大盘分歧巨大，在这里可能还有震荡调整的需求。但是科技板块指农认为已经回踩完毕，接下来可以直接开启大涨。",
+      "publish_time": "2025-07-25 12:48"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "因为科技这里可以直接主升浪，也可以再磨两天再涨，反正就一个字，涨！",
+      "publish_time": "2025-07-25 16:10"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "大盘没有问题！周一或许还有强分化一天，但那也是那些大盘股的调整~而科技题材，下周将会扭转颓势，赚钱效应彻底打开。",
+      "publish_time": "2025-07-26 11:36"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "科技今天的调整是大涨前的下蹲，也是对那些心智不坚定的散户，一次强力的洗盘。",
+      "publish_time": "2025-07-28 14:00"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "明天很可能直接起爆，带领市场情绪走向高潮！",
+      "publish_time": "2025-07-28 21:47"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "指农认为下午赚钱效应很可能会打开，所以不必患得患失，安心持股即可，科技继续看涨！",
+      "publish_time": "2025-07-29 13:42"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "指农再次告诉你，行情在分歧中突破！而且是加速突破！明天科技很可能就要迎来加速了！",
+      "publish_time": "2025-07-29 20:37"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "这样子走的话明天估计还有一天调整或者探底回升。然后才能好好涨。所以目前大概率还是洗盘。",
+      "publish_time": "2025-07-30 13:45"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "指农可以说，安心持股。目前的科技股，依然是洗盘结构，明天再来个低开高走，就调整完毕了！",
+      "publish_time": "2025-07-30 21:09"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "且调整就在今天结束！所以今天不管是低开高走，还是在震荡调整一天再涨，都没关系。调整就是机会",
+      "publish_time": "2025-07-31 07:57"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "下跌都是机会，而且目前科技很多都涨上来一些了。没有风险",
+      "publish_time": "2025-07-31 11:32"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天早盘最多来个探底。",
+      "publish_time": "2025-07-31 15:56"
+    },
+    {
+      "post_n": 24,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天看反弹。",
+      "publish_time": "2025-08-01 09:35"
+    },
+    {
+      "post_n": 23,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "尾盘可能还有一次杀跌拉回来的动作。",
+      "publish_time": "2025-08-01 13:50"
+    },
+    {
+      "post_n": 22,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "下周很可能有一波强力反弹！安心持股待涨就行了。",
+      "publish_time": "2025-08-02 00:05"
+    },
+    {
+      "post_n": 21,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "周一大概率是低开高走。然后科技和券商带领反弹！大概率会反弹两三天。",
+      "publish_time": "2025-08-02 17:45"
+    },
+    {
+      "post_n": 20,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天大盘看低开高走！早盘低开震荡一下，然后就可以反弹了，消息最多影响开盘半小时！今天看收红",
+      "publish_time": "2025-08-04 08:50"
+    },
+    {
+      "post_n": 18,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "这里短期不看空，尤其是往后两天都反弹。",
+      "publish_time": "2025-08-04 13:31"
+    },
+    {
+      "post_n": 17,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "继续看好大盘明天涨，而且是大涨！",
+      "publish_time": "2025-08-04 16:24"
+    },
+    {
+      "post_n": 16,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "接下来很可能会震荡整理一个星期！然后再去突破3674点。",
+      "publish_time": "2025-08-05 13:36"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "早盘预计有一波探底！但是科技和券商看好探底回升。",
+      "publish_time": "2025-08-06 10:24"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大盘有望突破3674点！",
+      "publish_time": "2025-08-06 13:15"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "明天很大可能大涨突破3674点！继续拿好了！",
+      "publish_time": "2025-08-06 16:23"
+    },
+    {
+      "post_n": 11,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天很可能冲高回落！",
+      "publish_time": "2025-08-07 10:12"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "下午是有可能再冲高回落的，或者不回落也行。",
+      "publish_time": "2025-08-07 13:36"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天预计节奏是探底回升",
+      "publish_time": "2025-08-08 08:04"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "科技周一再来个探底回升就基本到位了，到时候赚钱行情会越来越好一些。",
+      "publish_time": "2025-08-08 13:39"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "周一看反弹，重点依然是券商和低位科技股。",
+      "publish_time": "2025-08-08 23:12"
+    },
+    {
+      "post_n": 6,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周上半周，将会出现这段行情以来，真正的短期高点。",
+      "publish_time": "2025-08-10 12:50"
+    },
+    {
+      "post_n": 5,
+      "direction": "bearish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "今天继续减仓，甚至可以清仓了！",
+      "publish_time": "2025-08-11 08:46"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "下午谨防冲高回落！",
+      "publish_time": "2025-08-11 14:10"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大盘明天大概率要开启调整了！",
+      "publish_time": "2025-08-11 16:48"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "接下来两周，大盘会在3550-3650点，进行高位区间震荡！",
+      "publish_time": "2025-08-12 08:44"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大盘估计要开始震荡了。",
+      "publish_time": "2025-08-12 13:42"
+    },
+    {
+      "post_n": 24,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "半仓科技，持股待涨！今天的大盘看着好强，但却是强分化行情，所以赚钱效应依然很差。早盘趁着调整低吸了一些低位科技股，目前半仓科技。尾盘走势依然很强，目前大盘股几乎没什么行情了，现在就是那些滞涨的科技在轮动上涨。今天上涨就是属于高低切换，很多没怎么涨的今天涨得都不错。接下来大盘在震荡时基本也是这样，那些低位滞涨的科技股轮动上涨。所以只要你持有的是低位科技股，中线可以不用动。那么大盘明天怎么走？明天很可能突破一下3674点，给火热的情绪点一把🔥。指农半仓持股，笑看风云[比心]",
+      "publish_time": "2025-08-12 17:32"
+    },
+    {
+      "post_n": 23,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "继续持有低位科技股！目前的大盘依然非常强，尤其是双创科技股。目前的大盘，主力已经高度控盘，场外的人都不敢进，场内的人随着大盘的拉升一直持续的卖出。那就是说没人追，主力的筹码没人接盘！所以大盘只能持续拉升，继续加速，直到空头来接盘！接下来的大盘很可能继续震荡上涨，期间位科技股轮流补涨！所以只要你持有的不要是那种大涨的票，都没问题。",
+      "publish_time": "2025-08-13 14:28"
+    },
+    {
+      "post_n": 22,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "明日十字星！收盘了，今天的大盘再次上攻，突破了去年的高点，表现的非常的强势。指农觉得下个星期很可能复刻去年的9-24行情！来一波主升浪，彻底引爆情绪。所以接下来两天大盘有调整都可以进场打满仓位，必须博弈！明天大盘可以收个探底回升的小十字星。也可以收个小阴线。在即将发动大行情前来个关前整理。但时间最多一天半。所以明后天一旦有调整，都是进场的机会！盈亏比很大。今天指农的备用号被和谐了，明明什么都没说，却无缘无故被和谐。实在是让人无语失望。指农预测大盘，大家赚了指农没好处，要是哪天出错了一堆喷人的，指农只想说，不喜欢可以取关。可以去关注那些天天唱多唱空的。不必这样[作揖]",
+      "publish_time": "2025-08-13 18:26"
+    },
+    {
+      "post_n": 21,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "分化上涨！大盘连续涨了这么多天，分离率已经很高了。那么今明两天指数很可能是震荡调整一下，修复一下结构，然后明天探底回升修复上涨趋势！但这调整是针对指数的，个股很可能分化上涨。这也是只能持有科技股的理由。指农认为券商和科技股，未来两周内很可能会有一波主升浪行情，到时候行情很可能出乎意料。这两天大盘一旦有调整，都可以加仓低位科技股和券商。",
+      "publish_time": "2025-08-14 10:31"
+    },
+    {
+      "post_n": 19,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明日大盘：反包修复！经过复盘，指农认为今天的强震调整，就是在赶人下车！从分时中可以看出，下午大盘跳水的时候，在放巨量。这种盘中杀跌，对场内的人杀伤力巨大，还有部分追进来的筹码，也在跳水中纷纷出逃！[思考]而指农目前已经满仓科技股！并且重仓的科技股也逆风上涨！很多低位股都在陆续启动。今天的下跌，只是主力的烟雾弹！明天就会反包修复！[机智]大盘即将从指数行情转换成个股行情！千万不要追涨杀跌。",
+      "publish_time": "2025-08-14 16:39"
+    },
+    {
+      "post_n": 17,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "继续看涨！昨天下午指农就预判了今天的低开高走，今天如期而至！不相信的去翻翻前面的头条。今天盘面非常强势，将近四千六百家上涨，百股涨停，盘面热火朝天。而主角正是指农一直说的券商科技！今天科技探底回升，然而涨幅却不够，从结构上来说，今天的走势属于上涨中继！下周将会继续大涨！行情没有结束，因为从盘面可以看出，今天踏空的人依然不敢追涨，或者说，追涨的依然很少。只能说主力太高明了，通过一系列操作，不仅指数大涨，空头迟迟不敢进，而且还拉指数压个股，造成场内散户欲死欲仙，赚钱效应极差，这样的话场内多头也在持续出逃！而主力随着拉升，压力却越来越轻。那么这样主力会怎么做？？继续逼空！所以近期很可能再来一次924",
+      "publish_time": "2025-08-15 17:51"
+    },
+    {
+      "post_n": 16,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "即将进入震荡周窗外大雨淅淅，布满了阴霾，让人不免感到烦躁。正如目前大盘艳阳高照，实则虚之。又是即将开盘的一天，相信经过周末消息的发酵，很多散户跃跃欲试[思考]经过复盘，指农认为今天冲高回落收中小阳线！然后这个星期，基本都会是震荡！大盘目前情绪高涨，主力为了压制一下情绪会开启震荡几天！但要注意的是，指农认为，这个星期后，下个星期很可能直接开启突破行情，彻底来一轮诱多行情！行情依然没有结束，这周大家会发现，大盘虽然在震荡，但是大量滞涨的科技股个股，将会风生水起，赚钱效应越来越好[比心]所以只要你持有的不是高位股，或者最近大涨的股，则基本无忧~中线依然没有问题，指农继续持股待涨，注意，强分化行情尤其",
+      "publish_time": "2025-08-18 08:50"
+    },
+    {
+      "post_n": 13,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "如期冲高，那么下午怎么看？盘面出乎意料的强势，我们的题材股也如期大涨[机智]盘面非常火热，相信追涨的人非常多！！首先指农要提醒，如果持有的是低位科技股，则没有问题，如果高位股的话则要注意高低切换！千万不要追涨高位股，不然明天大盘一个震荡就被套了[尬笑]无论下午回不回落，明天也看探底回升调整一天！指农继续目前满仓题材股，继续持股！注意高低切换！短期会有震荡。",
+      "publish_time": "2025-08-18 13:05"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明日探底回升！又是大涨的一天[大金牙]今天的大盘再次在一片恐高声中突破新高！盘面情绪非常火热！然而这一切都在指农的预料之中，昨天的文章就说了今天的走势！[机智]相信最近跟着指农的铁粉，多多少少都是有赚的！那么接下来大盘怎么走？明天看探底回升，明天早盘会有探底，但只有你持有的是低位科技股，指农认为问题不大，高位股另说[思考]券商今天冲高回落，这也在指农文章预判之内，接下来一两天券商大概率震荡。明天开始大盘看震荡两天，但科技股不看空。指农依然满仓持股！大盘无论这两天震荡不震荡，中线依然没有问题！噢力给[强]",
+      "publish_time": "2025-08-18 21:06"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "题材继续大涨！接下来怎么办？完美的一天[比心]今天大蓝筹表现比较差劲，但是科技题材很多高开高走大涨！节奏非常好。那么接下来怎么办？继续持股！指农认为大盘接下来两天或有震荡秋千但科技题材股的上涨刚刚启动！且还能加速！所以指农继续满仓题材股，坐等抬轿。",
+      "publish_time": "2025-08-19 12:58"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "持股不动！相信大家也发现了，下午大盘跳水，低位科技压根没跟跌，依旧我行我素！指农继续满仓，明天科技看大涨！！",
+      "publish_time": "2025-08-19 15:52"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "盘中杀跌洗盘，你怕了吗？昨天大盘突破十年高点以后，场外那些新韭菜或者踏空的散户，把越来越多的目光聚焦于a股了，既然情绪如此火热，那么主力就不得不泼一盆冷水降降温了[思考]大家看看下午的盘面，相信都可以明显看出，主力通过砸盘a50大盘股，直接把大盘涨势砸断，砸到大盘翻绿。让散户以为调整要开始了！！纷纷到处惊呼狼来了[抠鼻]但指农不为所动，继续满仓科技躺平，从中证2000可以看出，小盘股，也就是科技股，压根不想跌，大盘跳水都没怎么动！！你就说科技强不强？既然主力如此动作，说明下午的跳水就是洗盘，你恐慌了吗？那么明天怎么走？继续看多！科技明天很可能加速上涨！明天看大盘修复中阳线！",
+      "publish_time": "2025-08-19 16:48"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今日大盘：冲高回落！昨晚貌似有利空，造成外围也调整一下。这对今天的大盘早盘构成了一定压力。那么今天大盘怎么看？今天低开高走尾盘在回落，收小阳线！大盘连续高位，今天冲高回落以后，下半周大概率震荡盘整一下。为下周的加速做准备！所以这几天吧不要玩高位股和大盘股，大概率震荡！但是低位科技股，指农认为没有问题，这里存在继续加速的可能！也就是局部牛依然存在！要踏准节奏！",
+      "publish_time": "2025-08-20 09:44"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "依旧是洗盘！指农把话撂在这里，主升浪即将爆发！！券商的走势也是非常强悍，日线三阴使得原本看好的人也都不敢看多了！但其实它正在酝酿爆发！目前大盘基本没跌多少，但是场外大V几乎都看空了！从来没有哪一次大行情，是全部看多才长的！也没有一次回调，是全部人看空跌下去的！目前全网看空，所以主力非常可能反手来个主升浪！看指农这次怎么打爆全网空头！行情越来越有意思了[强]",
+      "publish_time": "2025-08-20 13:58"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "行情继续起爆！网上逛了一下，空头依然非常多，几乎全网看空[皱眉]非常好。只有散户全部踏空，大盘才能顺利开启主升浪，大家今天有望再见大阳线[强]不得不说主力手段太高明，昨天盘中洗盘也在持续赶人下车，怎么高的位置还在赶人，你觉得主力想干嘛[灵光一闪]指农认为行情很可能加速！而我们需要做的，就是满仓躺平，坐等抬轿[灵光一闪]很多散户直到现在观望没上车，或者问能不能上车？指农满仓这么久还在问？现在每天依然利好频出，指农认为今天大盘会迎来加速！再来一根中大阳线！[比心][比心]",
+      "publish_time": "2025-08-21 07:56"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "行情没有结束！下午杀跌依然是洗盘，这是指农说的[强]场外全场大V惊呼离场，而场内散户每次杀跌都在放量涌出，又没人敢追进来。而没人接盘，行情自然不可能结束。如此看来，主力所求甚大。！指农认为主升浪越来越近了，甚至明天很可能直接大阳线反弹！所以指农才让大家不要吓跑，无视震荡！只能说引爆点越来越近了！明天要不继续横盘十字星，下周一开拉，要不明天直接大阳线反弹！拭目以待[比心][灵光一闪]",
+      "publish_time": "2025-08-21 17:41"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "继续持股！拿着就行了，好戏才个股开始，周一再来一根大阳线！不要和我说什么技术见顶，说明要杀猪了，认知不同，多说无益！指农继续满仓，继续打爆空头！今天既然先拉大阳线，那么周末很可能有利好要发酵了，继续持股待涨。",
+      "publish_time": "2025-08-22 15:37"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "指农说下周继续加速，继续打爆空头，你敢信吗？不管你信不信，指农相信自己！继续满仓持股，打爆全网！",
+      "publish_time": "2025-08-22 15:52"
+    },
+    {
+      "post_n": 24,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "行情即将起爆。一觉醒来，一打开手机利好满天飞[吃瓜群众]什么6000亿MLF，美股大涨，金龙指数大涨，三倍做多大涨一堆利好，真是让人心旷神怡[灵光一闪]然而这一切都在指农预料之中，作为头条极少数能够高准确率持续预测大盘的人，这都是日常操作[吃瓜群众]消息是配合牛市的，每次牛市你都会发现越大涨各种利好越是多，直到踏空的人开始疯狂。昨天大盘再次如指农说的低开高走大阳线，你就说准不准？这就是实力！（不信的去翻看前面的头条~）那么接下来大盘怎么走？接下来大家将迎来最疯狂的赚钱行情，大盘周线看大阳线！周一看高开高走大阳线！最肥美的鱼身子行情即将开启，你准备好了吗？相信跟着指农的人和学习圈最近都是吃的盆满",
+      "publish_time": "2025-08-23 09:49"
+    },
+    {
+      "post_n": 23,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "连续拉升行情即将来临！明天大盘看高开高走，但下午可能会有些回落，收个带上影线的中阳线！",
+      "publish_time": "2025-08-24 15:46"
+    },
+    {
+      "post_n": 22,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "调仓换股！大盘如期冲高回落！那么加下来怎么办？中线来说依然不看空，但明天券商和大盘大概率是震荡调整的一天。",
+      "publish_time": "2025-08-25 15:18"
+    },
+    {
+      "post_n": 21,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "午盘回落的是时候，如果下午没拉回来，那么明天依然可以继续阳线，而下午大盘拉了回来，这样就把明天的动能消耗了，所以明天大概率收个横盘震荡了！行情依然没有问题，主要注意大涨的股调仓换股就行了。",
+      "publish_time": "2025-08-25 16:25"
+    },
+    {
+      "post_n": 20,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "探底都是题材个股的机会，接下来大盘震荡很多个股会有补涨。今天大概率收个十字星了。",
+      "publish_time": "2025-08-26 11:49"
+    },
+    {
+      "post_n": 19,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "加速主升！目前依然是全网看空，非常好，主力乐见其成[灵光一闪]指农把话撂在这里，加速即将来临，这是真正的加速，涨停潮那种，就起这几天内出现！",
+      "publish_time": "2025-08-26 13:51"
+    },
+    {
+      "post_n": 18,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明日大概率还是好日子！大盘如指农所说，震盘震荡了一天，但细心的老铁应该发现了，很多低位股都在启动了，所以这两天这些科技股将会到处开花！",
+      "publish_time": "2025-08-26 15:43"
+    },
+    {
+      "post_n": 17,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "科技即将迎来加速！熟悉指农的老铁都知道，指农这波行情已经满仓不动两个月了，可以说是吃的盆满钵满。[灵光一闪]而主力也是特别牛，把大盘拉到3800点了，而市场几乎全网看空。",
+      "publish_time": "2025-08-27 09:01"
+    },
+    {
+      "post_n": 16,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "在这里依然不能看空！早上券商再度蠢蠢欲动，下午很可能还有表现！科技也在轮动上涨，轮流发力，所以如果没轮到就继续拿，不要追涨杀跌！",
+      "publish_time": "2025-08-27 12:56"
+    },
+    {
+      "post_n": 15,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "急跌就是机会~尤其是券商板块，还有仓位的都可以拿一拿。[比心]",
+      "publish_time": "2025-08-27 15:20"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "依然是洗盘！本来大盘涨势正好，午盘后却被强行砸盘，导致了放巨量下跌，很多散户割肉出逃了！指农认为这就是主力针对大盘火热的洗盘，把节奏放慢一些！",
+      "publish_time": "2025-08-27 17:02"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "低开高走！安心持股，不必惊慌！不要昨天大盘一跳水就急急慌慌团团转，行情依然没有结束！",
+      "publish_time": "2025-08-28 08:26"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "没有操作，继续躺平[灵光一闪]现在指数又回打了，有仓位的都可以低吸。",
+      "publish_time": "2025-08-28 13:32"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天突破！今天在大盘最危难之际，指农挺身而出，坚定让大家持股待涨，躺平即可，不知道有几个相信指农？？",
+      "publish_time": "2025-08-28 16:25"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "今天大盘：大阳线突破！昨天真是惊心动魄的一天，不知道大家跟着指农一起坚守下来了吗？股场注定是少数人的狂欢，指农希望粉丝都在少数人里面，一起坚定持股，迎接主升浪！",
+      "publish_time": "2025-08-29 10:06"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "让子弹飞一会儿！继续等待，满仓持股，坐等风来~~",
+      "publish_time": "2025-08-29 12:50"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "安心持股。依然没有什么问题，最近行情一直涨的大市值的多，而小市值动的少。下周可能会有转换。大市值的压着，中小盘开始活跃！",
+      "publish_time": "2025-08-29 17:02"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "继续看涨！又是准备开盘的一天，周末这么多利好，相信空头又是准备被暴打的一天[思考]今天依然看涨，午盘很可能会有一波快速拉升，如果下午守住了不回落，则明天开始会有一波连续拉升行情。",
+      "publish_time": "2025-09-01 08:21"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "安心躺平！早盘大盘如期冲高，却在临近收盘快速回落，你害怕了吗？[灵光一闪]指农不动如山，满仓持股躺平，内心毫无波澜。",
+      "publish_time": "2025-09-01 12:59"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "主升前夜！明天继续看中阳拉升！今天的大盘依然强的一批，在一片恐高声中再次上涨！",
+      "publish_time": "2025-09-01 16:36"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "今日大盘：中阳线！经过复盘，指农认为昨天虽然很多个股都冲高回落了，看似权重股在掩护主力出货，其实不然，因为无论从情绪来说还是大盘结构来看。目前很可能继续走加速行情的，且这两天内很可能会有一根2%以上的大阳线。把大盘情绪推向高潮！",
+      "publish_time": "2025-09-02 09:47"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "不要在恐慌时割肉！早盘放量砸盘了，量能非常大，说明在这个位置割肉离场的人是非常多的。",
+      "publish_time": "2025-09-02 13:35"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "行情还有新高！先说结论，行情依然没有结束。",
+      "publish_time": "2025-09-02 17:39"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天看反弹，而且早盘很可能有中大阳冲高，但下午容易回落！或者守住阳线，明天开启调整.。",
+      "publish_time": "2025-09-03 08:14"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "还没出的就不用出了，拿着就好了。券商和题材都已经超跌，今天基本都跌到位了，所以不要割肉了，等待反弹即可。",
+      "publish_time": "2025-09-03 14:41"
+    },
+    {
+      "post_n": 24,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "目前情绪已经冰点到极限，明天很可能会有一波大反弹。所以要减仓也得等明天反弹再跑。这位置不合适满仓了。",
+      "publish_time": "2025-09-04 13:43"
+    },
+    {
+      "post_n": 23,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "不要在这个位置割肉了！明天很可能开启超跌反弹了。指农把剩下的仓位也打满了！",
+      "publish_time": "2025-09-04 16:00"
+    },
+    {
+      "post_n": 22,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "经过指农昨天一整晚的复盘，指农认为调整已经完成！这几天的恐慌杀跌就是牛回头！接下来新一轮行情即将展开！这一波目标是4000点！今天预计低开高走中大阳线，确认底部。所以早盘将是非常好的进场点 还有仓位的可以进场。行情不会就这么结束的，因为主力压根就没出货。你让行情怎么结束。所以接下来继续行情！",
+      "publish_time": "2025-09-05 08:30"
+    },
+    {
+      "post_n": 21,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大盘如期低开高走收了个小阳线！目前涨幅依然远远不够，下午有望继续拉升中阳线！从评论区可以看出来，目前散户已经不相信有牛了，都在叫嚣3600见，可见主力洗盘多么成功！没关系，等大盘单边连续阳线上涨突破，他们又会进来了[吃瓜群众]这波主力很可能先上涨破了前高后，然后再次震荡。很多散户已经被吓破胆了，就算涨也不敢进了，所以主力可以看看放心开拉！短期这几天至少是安全的！很可能连续阳线！安心持股即可。",
+      "publish_time": "2025-09-05 13:06"
+    },
+    {
+      "post_n": 19,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "经过复盘，指农认为明天很可能中大阳线！早盘会有一波快速拉升，但尾盘或有些回落，收个带上影线的中阳线！上周大盘连续杀跌，很多人在周三周四已经被摔下车，被恐慌情绪主导，都以为大盘见顶了。所以纷纷割肉。而后周五大家也看到了，大盘强势拉起来，很多直接大涨，被甩下车的拍大腿！但这位置他们是不敢进来的，因为刚刚连续杀跌吓破胆了，所以即使周五拉了依然在观望！指农呵呵一笑。不敢上车正好，明天主力再拉一根中大阳线，让空头追悔莫及[灵光一闪]行情依然没有结束！相反，接下来很可能要加速了，之前那种赚指数不赚钱的行情将会反转！",
+      "publish_time": "2025-09-07 12:28"
+    },
+    {
+      "post_n": 18,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "不要着急，早盘的探底回升只不过是主力在洗盘！给周末火热的情绪浇一盆冷水，冷静冷静[灵光一闪]目前盘面已经冷静的差不多了，下午券商可以干活了！从分时来也完全支持这么干。记得高低切换，这波行情将会在低位个股里面轮动！指农继续躺平！等待主力干活！",
+      "publish_time": "2025-09-08 13:53"
+    },
+    {
+      "post_n": 17,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大家可以看到，下午大盘再次拉起来了，收个中阳线。而这都在指农预料之中！这就是实力！[灵光一闪]而今天虽然没有中大阳，但明天可以继续补上呀[大笑]所以明天继续看涨！继续躺平即可！很多个股已经压不住了，明天继续阳线，大盘来个红三兵[灵光一闪]",
+      "publish_time": "2025-09-08 15:49"
+    },
+    {
+      "post_n": 16,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "先说一点，明日继续看中阳上涨！但是明天很可能是强分化行情，也就是个股会强分化，这两天涨的多的得休息下，而横盘了两天的券商和没涨的题材则可能要表现下了。所以指农一直提醒大家要高低切换，不要追涨杀跌，就是因为主力很容易通过强分化把这些爱动来动去的围剿。造成亏钱效应！总得来说明天应该是权重类比较好些，个股容易冲高回落或者高开低走震荡一天。",
+      "publish_time": "2025-09-08 16:34"
+    },
+    {
+      "post_n": 15,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "走势很复杂。首先可以肯定的是，这里就是这波调整的底部区域，就是这两天震荡有些磨人。继续持股待涨。",
+      "publish_time": "2025-09-09 13:45"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天没有中阳线，反倒来了中阴线，这是出乎意料的，今天盘面走的比预料中弱的多。但指农依然没有操作。主力很可能在进行最后的震仓，把这两天短线获利的赶出去。指农依然觉得这里还缺少一轮行情！很可能突破新高。明天大概率会有反弹，最差劲的走法就是十字星。指农继续按兵不动。",
+      "publish_time": "2025-09-09 16:23"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "先说一点，今天肯定有反弹，但反弹的力度很重要，将决定短期大盘会不会再来一波深蹲！如果今天券商能够放量带领大盘强势反弹，且尾盘站住了，则后面大盘无忧，继续反弹。而如果反弹弱势或者冲高回落小阳线，那么短期还有一次深蹲。在深蹲后再开启行情。总得来说中线没问题，短线或有深蹲。",
+      "publish_time": "2025-09-10 09:01"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "指农认为下午直接起来好一点！这样才符合大盘强势结构。说实话，这几天大盘虽然跌幅不大，但是很多个股跌了二三十个点，除了那些翻倍个股不推荐外，指农认为那些这轮行情没怎么表现的科技基本都跌到位了，中线拿着没问题。所以下午看大盘拉不拉。拉的话皆大欢喜继续拿。",
+      "publish_time": "2025-09-10 13:10"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "好吧，下午大盘走了最坏的走势，冲高回落， 这么来看短期的下蹲是避免不了的了。但这下蹲却不是明天，大概率是下周一二。也就是这两天很可能还会小阳线往上推。因为很多个股已经连续杀跌，从结构上来说至少得先反弹一两天才能回踩。所以明天没有风险！而如果明天涨得够强势甚至趋势会不一样。明天先看中小阳线反弹！",
+      "publish_time": "2025-09-10 17:18"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天继续看涨，但大概率是根小阳线。大盘预计这两天小阳线反弹后，下周很可能会有个下蹲！要改变这一趋势，除非今天强势拉起来往上变盘，这样才有可能突破颓势。而关键之处就是券商发不发力，如果今天发力带领大盘来个中阳线，则后面突破新高就稳了！如果还是券商还是躺平横盘的话，下周下蹲不可避免。",
+      "publish_time": "2025-09-11 09:42"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "得劲！今天渣男券商终于给力了一回，直接带动大盘往上突破[大笑][大笑]看来主力不让让大盘就这么下去哈哈！实在是非常给力[加油][加油]我们的坚守终于有了回本！现在理解为什么指农让大家不要割肉了吧？没什么好说的，下午接着奏乐接着舞！打爆全网空头！",
+      "publish_time": "2025-09-11 12:51"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大家发现没有，下午大盘继续上涨，但却是缩量的！这说明了什么？？说明没有人追涨！也就是踏空的那波人依然非常不看好接下来的行情，那就很安全！继续持股！指农继续满仓躺平。坐等抬轿[灵光一闪]",
+      "publish_time": "2025-09-11 15:46"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "接下来大盘很可能要走加速行情了！不要和指农说什么前高压力巨大，这个那个的。指农告诉你，就凭现在主力满手筹码，而几乎全网看空，且主力这几天还在强震赶人下车。就说明这轮行情的高点还远远没到！今晚就看各位“大V”有没有空转多，如果全网空转多，则明天冲高回落，如果还是像昨晚那样子都看空。那么行情就稳了！明天就可以直接高开高走大阳线干起来！而一旦这样子，那么连续主升浪行情，就正式开启！",
+      "publish_time": "2025-09-11 16:53"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "intraday",
+      "evidence": "那么今天大盘怎么走？高开高走中大阳线！突破3900就在今天！激动的心，颤抖的手，空头瑟瑟发抖[机智]今天大A将再创辉煌！蛰伏已久的券商拍拍衣裳，今天将走马上任，表演一下了[加油]突破新高那肯定少不了大金融，尤其是券商。所以跟随指农满仓的准备拿出麻袋，今天可以敞开了收米了[祝福]",
+      "publish_time": "2025-09-12 09:37"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "早盘大盘破了前高之后立马急跌砸盘，相信不少人已经恐慌了。但指农告诉你，安心持股等待。突破砸盘，就是要把那些持股不坚定的人洗出去，这样还可以让那些踏空的人不敢进场，以为今天就是顶了。指农呵呵一笑，高点远远未到。",
+      "publish_time": "2025-09-12 12:52"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "这里没有看空的理由，指农认为这里很可能起一波去年924那种行情！而且各大权重在这个位置都缺一轮上涨，所以他们一旦共振上涨，大盘很可能直接起飞！盈亏比巨大，指农必须博一下。大盘周一再震荡一天，很可能就可以开启行情了。所以今天就是洗盘。指农继续持股待涨。指农认为这里也没有大跌的风险，所以按兵不动。",
+      "publish_time": "2025-09-12 16:42"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "指农认为大盘在这里位置很可能会有一波加速，且可能性越来越大！那么明天大盘怎么走？明天看探底回升小阳线！如果节奏快的话，可能周二开始会开启反弹再创新高！[比心]但这里降息消息也可能会成为变数，如果因为降息再冲高回落震荡两天，下周再进攻也是可以的。反正这位置指农只有拿一条路，不看空！",
+      "publish_time": "2025-09-14 10:07"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明日大盘：低开高走小阳线。由于周五的冲高回落，散户情绪目前是偏恐慌的，所以明天开盘会有个探底回升然后再拉起来！不必惊慌，这只是主力在清洗不坚定的筹码！所以明天低开的话反而是机会，千万不要惊慌割肉！经过指农的复盘，大盘三天之内会爆发一根大阳线，而券商很可能是主角[比心]拭目以待。指农中线坚定看好不动摇，满仓笑看风云[灵光一闪]",
+      "publish_time": "2025-09-14 20:26"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "指农认为下午很可能盘面会有改观！下午券商如果启动，那么很可能收个中大阳！赚钱效应将会爆棚！让大盘进入强势突破结构！",
+      "publish_time": "2025-09-15 13:10"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "指农昨天说了三天之内必出大阳线，今天第一天没出现。那么就看明后天了！大家记住了，只有这里没来大阳线，且没来一波加速，这是是没有大跌的风险的！所以继续持股待涨就行了。",
+      "publish_time": "2025-09-15 16:35"
+    },
+    {
+      "post_n": 24,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天看中大阳线突破！",
+      "publish_time": "2025-09-16 10:05"
+    },
+    {
+      "post_n": 23,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "调整结束，准备迎接大阳线",
+      "publish_time": "2025-09-16 12:33"
+    },
+    {
+      "post_n": 22,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天很可能就要收中大阳线了！下午拭目以待！",
+      "publish_time": "2025-09-16 12:47"
+    },
+    {
+      "post_n": 21,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "但明天第三天无论如何都压不下来了。指农满仓持股，坐等抬轿！",
+      "publish_time": "2025-09-16 15:51"
+    },
+    {
+      "post_n": 20,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "如果下午没有强攻收盘还是这样，那么明天探底回升继续涨！",
+      "publish_time": "2025-09-17 13:28"
+    },
+    {
+      "post_n": 19,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天可能还有个探底回升。",
+      "publish_time": "2025-09-17 15:45"
+    },
+    {
+      "post_n": 18,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明早大概率还有个探底回升，分时会有个急跌拉回，",
+      "publish_time": "2025-09-17 15:52"
+    },
+    {
+      "post_n": 16,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "指农认为近期很可能要发动一轮大主升行情了！就在近期！",
+      "publish_time": "2025-09-18 09:40"
+    },
+    {
+      "post_n": 15,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "但要注意的是明天，明天可能会调整一天。",
+      "publish_time": "2025-09-18 13:21"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大概率会有小阳线反弹，但下周一可能还有调整。",
+      "publish_time": "2025-09-18 17:18"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "中线来看行情远远没有结束，后面还有新高，但这两天可能会比较折腾。",
+      "publish_time": "2025-09-19 09:47"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周周线看涨！也就是说下周行情指农很看好，也会在下周初调整结束后满仓进城！",
+      "publish_time": "2025-09-19 21:04"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天看反弹回落。周五大盘再次冲高回落收跌，已经让散户情绪跌到了极致。",
+      "publish_time": "2025-09-21 10:53"
+    },
+    {
+      "post_n": 9,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天冲高继续减仓！经过复盘，指农越发觉得主力近期很可能会加剧折腾大盘，所以下周行情大概率不太好做。",
+      "publish_time": "2025-09-21 21:40"
+    },
+    {
+      "post_n": 8,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天不适合抄底，因为下午很走冲高回落的走势，甚至可能跳水！所以风险很大。",
+      "publish_time": "2025-09-22 14:01"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天如果直接盘中下探强势拉起，那么调整结束。如果还是十字星。那么继续防守。",
+      "publish_time": "2025-09-22 21:10"
+    },
+    {
+      "post_n": 6,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天看冲高回落，也不排除下午直接来一波急跌！所以在这种指农不会看多，没有提示操作。",
+      "publish_time": "2025-09-23 09:56"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "可以回补一些仓位博短期反弹了，但不能打满",
+      "publish_time": "2025-09-23 11:43"
+    },
+    {
+      "post_n": 4,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明后天或还有调整，所以不要重仓。",
+      "publish_time": "2025-09-23 14:01"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天看冲高回落！大盘在这里很难直接上去，大概率还有两天的震荡！",
+      "publish_time": "2025-09-23 20:18"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "早盘大概率会有下探一下再拉起来！目前大券和科技在这里都需要来一波反弹，所以今天有下探都是机会！",
+      "publish_time": "2025-09-24 09:43"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "调整结束。今天大盘低开探底又拉了起来，基本可以确定调整结束了！指农已经满仓继续持股待涨！下午很可能会继续拉伸收个中阳线，而如果冲高回落，则明天再横盘一天。",
+      "publish_time": "2025-09-24 13:25"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天看中阳线！接着奏乐接着舞！",
+      "publish_time": "2025-09-24 16:30"
+    },
+    {
+      "post_n": 24,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今日大盘：中阳上涨！从结构上来说，今天继续中阳反弹，盘面没有问题，题材也有很强烈的反弹需求！",
+      "publish_time": "2025-09-25 09:12"
+    },
+    {
+      "post_n": 23,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "指农觉得大盘在这里很可能要复刻一下去年的国庆行情了，只是高度没那么高。目前无论是情绪还是结构，都支持这样子！所以千万不要在这里割肉！",
+      "publish_time": "2025-09-25 13:26"
+    },
+    {
+      "post_n": 22,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天看低开高走中阳线！新一轮上涨已经在路上了，信则有，不信则无。",
+      "publish_time": "2025-09-25 20:16"
+    },
+    {
+      "post_n": 21,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "大盘已经有止跌迹象了，就看什么时候拉了。",
+      "publish_time": "2025-09-26 14:54"
+    },
+    {
+      "post_n": 20,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "指农认为今天的调整就是洗盘的末端了！下周两个交易日看震荡反弹。",
+      "publish_time": "2025-09-27 00:11"
+    },
+    {
+      "post_n": 19,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "所以明后天，也就是节前最后两个交易日，大概率不会有大跌风险，相反，很多个股都要开启止跌反弹了。",
+      "publish_time": "2025-09-28 23:05"
+    },
+    {
+      "post_n": 17,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "因为这位置随时来大阳线！今天如期而至！",
+      "publish_time": "2025-09-29 14:41"
+    },
+    {
+      "post_n": 16,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "所以近期很可能有一轮快速上涨行情！今天只是开胃菜。预计节后行情会很精彩！",
+      "publish_time": "2025-09-29 22:57"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "真正的行情大概率在节后！所以指农继续持股待涨。",
+      "publish_time": "2025-09-30 13:35"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "大行情在节后！",
+      "publish_time": "2025-09-30 17:19"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "指农节前就坚定说了满仓过节，看好节后破4000点！现在依然这么认为。",
+      "publish_time": "2025-10-04 14:28"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "从结构上来看，这个月大盘是很看好的，很可能要去突破4K点！而且很多个股已经出现大底部结构，持股待涨没问题！",
+      "publish_time": "2025-10-08 18:01"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "在这里不会有大跌的风险！最多早盘低开一下就可以冲高了！但注意尾盘可能有回落！至于空头想的跌到3700点那是不可能的。跌下去让节前出逃的资金进场？想多了[灵光一闪]相反主力很可能要再创新高！突破4000点，到时候散户忍不住追进来，大盘才可能会有一波正式调整！",
+      "publish_time": "2025-10-09 09:57"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "继续满仓持股待涨！很多个股反弹才刚刚开始而已，这时候走为时尚早。",
+      "publish_time": "2025-10-09 13:41"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "那么说说明天的大盘。明天继续看阳线！",
+      "publish_time": "2025-10-09 16:17"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天大盘：探底回升小阳线",
+      "publish_time": "2025-10-10 08:57"
+    },
+    {
+      "post_n": 6,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下周很可能会有一天中大阴线普跌，所以大家可以做一下防守。",
+      "publish_time": "2025-10-10 13:52"
+    },
+    {
+      "post_n": 5,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下周一反弹一下然后周二三估计还有一轮普跌，那时候才基本到位。",
+      "publish_time": "2025-10-10 17:39"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "周一大跌很可能就是回补机会。到时候指农会提醒。",
+      "publish_time": "2025-10-11 14:15"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "所以今天大概低开两个点左右。盘中会有探底，但尾盘很可能拉起来收个下影线！所以今天调整探底都是机会！",
+      "publish_time": "2025-10-13 08:05"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "盘面看不出什么风险了，躺平坐等抬轿即可",
+      "publish_time": "2025-10-13 12:18"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "所以明天早盘就有冲高的动力！而明天早盘冲高后，下午需要震荡回落，避免踏空的人大脑发热冲进来！所以明天冲高回落小阴线。",
+      "publish_time": "2025-10-13 19:37"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "新一波行情已经开始！所以持股不动也没问题！由于早盘回落比较狠，所以下午是可以拉起来的！或者冲高回落。继续持股待涨，让子弹继续飞！",
+      "publish_time": "2025-10-14 13:36"
+    },
+    {
+      "post_n": 24,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "明天大盘看中阳上涨！明天大盘将一扫今天的阴霾，券商和科技带领大盘上涨！反包今天阴线。",
+      "publish_time": "2025-10-14 20:33"
+    },
+    {
+      "post_n": 23,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天券券和科技很可能开启反弹，带领大盘反包昨天阴线！",
+      "publish_time": "2025-10-15 09:46"
+    },
+    {
+      "post_n": 22,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "下午继续看修复昨天阴线。",
+      "publish_time": "2025-10-15 13:11"
+    },
+    {
+      "post_n": 20,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "综上所述，明天大盘继续上涨！再次中阳线突破。主角依然是大金融和科技。指农认为，两日之内，很可能要去突破4K。",
+      "publish_time": "2025-10-15 20:53"
+    },
+    {
+      "post_n": 19,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天很可能复制昨天的走势！也就是早盘振荡 ，下午拉升。所以不必惊慌失措，觉得要大跌了什么的！虽然目前大盘看似在高位，但一点空头结构都没有，主力能做的只有突破！",
+      "publish_time": "2025-10-16 12:47"
+    },
+    {
+      "post_n": 18,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "指农依然不改变后面大行情的判断。主力最多明天再收个十字星，下周再进攻。",
+      "publish_time": "2025-10-16 16:38"
+    },
+    {
+      "post_n": 17,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "目前行情依然没有结束，如果节奏快的话下午再跳一下就可以反弹了。",
+      "publish_time": "2025-10-17 13:32"
+    },
+    {
+      "post_n": 16,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下周初先看反弹。",
+      "publish_time": "2025-10-17 21:48"
+    },
+    {
+      "post_n": 15,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "虽然从盘面上看，调整依然没有结束，但是下周初依然先看反弹。",
+      "publish_time": "2025-10-17 21:55"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周总体看涨。但很可能是强分化行情。机会大部分在券券或许低位中小盘。",
+      "publish_time": "2025-10-18 23:24"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "指农认为，这是因为后面很可能还有一次破位下蹲，所以主力才走的这么弱势。从结构上来看，也完全支持这么走，明天是可以再小阳线一天的，然后后天才下蹲。",
+      "publish_time": "2025-10-20 21:21"
+    },
+    {
+      "post_n": 11,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "最近大盘结构走的不太好，很可能还会有几天震荡！而科技板块，尤其是双创，由于近期出现了四根破位下杀，所以结构已经走坏了。在这里科技很可能明天再次小阳线的话，就是下跌中继了，下半周容易再次出现下杀！",
+      "publish_time": "2025-10-20 23:56"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天券商的启动，说明短期预期的回踩很可能不会出现了！券商在这里很可能要带领一波新的行情！",
+      "publish_time": "2025-10-21 13:31"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "指农觉得大盘突破随时发生，而如果想这样，那么券商无疑是非常重要的一环。指农觉得目前从结构上也支持！在这里很可能随时大阳线突破！",
+      "publish_time": "2025-10-22 00:55"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天大盘看券商低开高走拉中阳线，带领行情继续往上摸新高！",
+      "publish_time": "2025-10-23 07:31"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "指农把话撂在这里了，今明两天，券商就会爆发大阳线，接过上涨的大旗，让大盘突破新高！",
+      "publish_time": "2025-10-23 13:27"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "明天看低开高走中大阳线！券商带头突破~大家准备迎接第四根阳线，加速阳！",
+      "publish_time": "2025-10-24 00:23"
+    },
+    {
+      "post_n": 4,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天不出意料大盘再次冲了。那么在这里可以减些仓位，因为下周一很可能会有低开震荡一下。",
+      "publish_time": "2025-10-24 14:32"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周突破！经过复盘，指农觉得下周很可能要去突破4K点了！",
+      "publish_time": "2025-10-26 15:01"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "这位置有风险吗？并没有！尤其是券商，这里面明显要起一波行情了，大家拿好就行！下午券商还要表演！",
+      "publish_time": "2025-10-27 13:02"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天很可能有一次下蹲！所以短线可以做减仓动作。科技的诱多已经渐进尾声，两天之内很可能有大阴线。",
+      "publish_time": "2025-10-27 15:09"
+    },
+    {
+      "post_n": 23,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "所以今天大盘可以正式突破新高4000点！...但要注意的是，今天很可能冲高回落！",
+      "publish_time": "2025-10-28 09:13"
+    },
+    {
+      "post_n": 22,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "大盘在这里要做关后整理了。大概震荡两三天再去上！",
+      "publish_time": "2025-10-28 14:39"
+    },
+    {
+      "post_n": 20,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "指农觉得明天券商这个大家传统印象里的渣男，明天很可能要来个放量阳线了！一举站稳四千点。...明天来个中阳线！",
+      "publish_time": "2025-10-28 23:21"
+    },
+    {
+      "post_n": 18,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "从结构上看，明天大盘很可能收个十字星冲高回落震荡一天。",
+      "publish_time": "2025-10-29 23:02"
+    },
+    {
+      "post_n": 17,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "目前无论是结构还是从情绪面看，行情依然远远没有结束，只不过这两天关后整理，可能磨两天。",
+      "publish_time": "2025-10-30 13:56"
+    },
+    {
+      "post_n": 16,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天看中阳线反包！",
+      "publish_time": "2025-10-30 16:47"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大盘很可能拉个中阳线，大科技也会一起反弹，但要注意，明天不要去追大科技了，反弹后它们将继续探底！",
+      "publish_time": "2025-11-03 20:27"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天大盘是还有反弹的动力的，但在这里要注意，今天中阳反弹后，明天是很可能继续中阴线杀跌的",
+      "publish_time": "2025-11-04 07:30"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "相反，新一轮行情将从明天开始！大盘也到了关键节点！所以明天大家可以把出来的仓位打满了...明天看低开高走中阳线！",
+      "publish_time": "2025-11-04 17:45"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天大盘很可能会低开探底，下午拉起来！...今天很可能收个带长下引线的阳线。",
+      "publish_time": "2025-11-05 08:53"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "下午继续看拉升中阳线！券商和超跌科技，下午会共振上涨！",
+      "publish_time": "2025-11-05 13:39"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "继续中阳反弹，券商和科技才刚刚企稳，明天应该问题不大。可以继续反弹！中线来说大盘这一波大概率要去突破新高了",
+      "publish_time": "2025-11-05 17:41"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天大盘看中阳上涨，渣男券商今天大概率也要表现一下了，所以今天大盘没什么问题。",
+      "publish_time": "2025-11-06 09:13"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "继续持股待涨！下午很可能会有加速，拿着就行了，先不要下车。",
+      "publish_time": "2025-11-06 11:54"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "下午券商很可能会继续拉升，正式站稳四千点！",
+      "publish_time": "2025-11-06 13:14"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天看冲高回落带上影线的中阳线。",
+      "publish_time": "2025-11-06 20:49"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "今天看低开冲高，尾盘回落收个小阳线。...短线来看下周很可能会有一两天震荡。...中线也没问题，后面还有新高。",
+      "publish_time": "2025-11-07 09:07"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "中线依然没问题，短线还会震一两天。",
+      "publish_time": "2025-11-07 14:01"
+    },
+    {
+      "post_n": 24,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "所以指农觉得后面很可能还有一波大行情！",
+      "publish_time": "2025-11-08 16:04"
+    },
+    {
+      "post_n": 23,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "所以在这里变盘，指农看好向上。",
+      "publish_time": "2025-11-10 09:03"
+    },
+    {
+      "post_n": 21,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "下午继续看涨，收中阳线。",
+      "publish_time": "2025-11-10 13:42"
+    },
+    {
+      "post_n": 20,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天看中大阳线再创新高！",
+      "publish_time": "2025-11-10 22:00"
+    },
+    {
+      "post_n": 19,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "今天看中大阳线上涨！",
+      "publish_time": "2025-11-11 08:28"
+    },
+    {
+      "post_n": 17,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "指农相信大盘还要新高，所以继续持股待涨。",
+      "publish_time": "2025-11-11 21:13"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天看低开高走中阳线！",
+      "publish_time": "2025-11-12 22:48"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "下午看继续反弹，收中阳线！",
+      "publish_time": "2025-11-13 13:41"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天看小阳线，在这里大概率不会拉的急，而是震荡上涨📈的走势！",
+      "publish_time": "2025-11-13 18:44"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天看低开高走，尾盘收个小阳线。",
+      "publish_time": "2025-11-14 10:00"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "下午看V起来收小阳线。",
+      "publish_time": "2025-11-14 13:39"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "所以短线这两天要谨防最后一杀。",
+      "publish_time": "2025-11-17 08:10"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天看低开高走中阳线！明天大概率是普涨行情，大盘将再次站上四千点！",
+      "publish_time": "2025-11-17 21:51"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "intraday",
+      "evidence": "指农把话撂在这里，券商今天大概率要表演了！",
+      "publish_time": "2025-11-18 11:00"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "这样子跳水明天很可能直接高开。",
+      "publish_time": "2025-11-18 15:35"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天看反弹修复，大盘在这里，已经没什么人相信牛市了，每天都有无数的人问牛还在吗？",
+      "publish_time": "2025-11-18 18:30"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天看低开高走中阳线。昨天很多个股超跌了，今天都得修复。",
+      "publish_time": "2025-11-19 10:11"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天收了个小阳线，大盘基本企稳了！明天继续看反弹阳线。",
+      "publish_time": "2025-11-19 17:02"
+    },
+    {
+      "post_n": 24,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天很可能冲高回落。那么盘中券商冲高最好不要追涨，因为如果冲高回落可能还要震荡两天。",
+      "publish_time": "2025-11-20 08:11"
+    },
+    {
+      "post_n": 23,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "下午继续看拉升，早盘也可以看做一次强力洗盘，相信早上很多人已经对大a失望透顶破口大骂了，并且很多已经割肉离场。……下午看继续拉升收中阳线！",
+      "publish_time": "2025-11-20 13:18"
+    },
+    {
+      "post_n": 22,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天看低开震荡一下，然后高走收中阳线。但由于又到了周五，尾盘可能会回落。",
+      "publish_time": "2025-11-20 22:04"
+    },
+    {
+      "post_n": 21,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天看低开高走，尾盘回落。最近局势动荡，外围不太稳定，所以指农决定今天盘中冲高时减些仓位做一下防守！昨天大盘的再次下杀，把结构走坏了。这样的话下周很容易再来一轮挖坑。",
+      "publish_time": "2025-11-21 09:15"
+    },
+    {
+      "post_n": 19,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大盘趋势已经走坏，这样的走势下周很可能会有破位下踩。所以必须得控制仓位了。",
+      "publish_time": "2025-11-21 13:00"
+    },
+    {
+      "post_n": 18,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大盘在这里如果周末来什么黑天鹅，那么下周就危险了。所以还不能抄底！目前外围不妙，要谨慎对待，必须做好防守。",
+      "publish_time": "2025-11-21 17:21"
+    },
+    {
+      "post_n": 17,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "经过复盘，指农依然认为大盘还没有调整到位，虽然昨晚a50反弹和美股反弹，但仍然不改变下周看新低！大盘结构已经走坏，周一估计冲高回落，后面还有连续阴跌或者横两天再来一个百股跌停。",
+      "publish_time": "2025-11-22 14:50"
+    },
+    {
+      "post_n": 16,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天大盘依然非常弱势，明天很容易变盘。指农当然希望往上变盘，但从外部环境来看，很难。主力要想在这里拉起来难度非常大。那么就继续防守。",
+      "publish_time": "2025-11-24 13:14"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "指农认为这周大盘还有新低！今天大盘收了个十字星，从结构上看明天还能反弹一下。但下午容易回落。……下半周则还有低点，所以要谨慎。",
+      "publish_time": "2025-11-25 00:00"
+    },
+    {
+      "post_n": 13,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下午即使不回落守住了阳线，明天风险依然很大，下半周还有一次回踩。要谨慎，等待后面确定性的机会。",
+      "publish_time": "2025-11-25 11:43"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "短期真正的风险在下半周，所以大家拿好手中的仓位，下半周探底逐步打满即可！前两天指农看空防的是大盘的再次下蹲，而这，很可能在下半周看得见。大盘在这种情况下不可能直接起飞🛫，目前轻仓观望即可，下半周风险释放完指农将分批打满。",
+      "publish_time": "2025-11-25 17:48"
+    },
+    {
+      "post_n": 11,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天下午或者明天很可能大盘会有二次探底，所以不能满仓。到时候趁着下探再分批进场即可。可以肯定的是目前就在底部附近，要预防下半周大盘再次探底，所以大家要做好计划，分批次等到位再逐步打满即可。",
+      "publish_time": "2025-11-26 10:15"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "不要满仓。因为明天可能还有低点。在这里先打几层是因为券商和低位软件有反弹需求了。",
+      "publish_time": "2025-11-26 15:47"
+    },
+    {
+      "post_n": 9,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "从结构上来说，明后天大概率要回踩一下了。但券商这里基本也没啥风险了，后面就可能是震荡上涨。",
+      "publish_time": "2025-11-27 12:06"
+    },
+    {
+      "post_n": 8,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大概率要调整一下，所以仓位最好控制在三层。今天银行撑着指数，双创大科技却一路走低。所以大科技短期风险很大！留着仓位等这波调整完再进场。",
+      "publish_time": "2025-11-27 15:25"
+    },
+    {
+      "post_n": 6,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天看中阴线调整，盘中很可能会有跳水表演，早盘即使冲高，下午依然看回落收中阴线！从周线来看，下周大盘很可能还有低点，所以目前轻仓就好，留好仓位，才能游刃有余。",
+      "publish_time": "2025-11-27 22:52"
+    },
+    {
+      "post_n": 5,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "这种磨人的行情一般很可能再来个破位下杀，才能放量！所以目前依然要谨慎，不适合满仓。",
+      "publish_time": "2025-11-28 14:52"
+    },
+    {
+      "post_n": 4,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "短期很可能有大阴线下蹲！所以这两天指农偏谨慎。市场不关门，没必要在目前这里火中取栗。等后面下切再打满。",
+      "publish_time": "2025-11-28 18:48"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周大盘探底指农将再次满仓进场！目前大蓝筹和券商严重超跌，下周初主力很可能借助消息来个破坏走势，来个恐慌杀跌，清洗浮筹！然后就可以结束磨人走势，开启牛市第二浪！",
+      "publish_time": "2025-11-29 09:11"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "目前就是这轮调整的末端，在这里下周初可能会震荡下跌📉，然后出一根恐慌中大阴线打爆杠杆资金，逼出浮筹，而后就此调整结束。大盘又可以开启一轮新的行情~",
+      "publish_time": "2025-11-30 17:59"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明后天大盘大概率会回踩一下，到时候再继续分批抄底即可。相信大家也发现了，很多低位科技题材股已经率先启动反弹了，后面大概率是轮动上涨！",
+      "publish_time": "2025-12-01 16:12"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "经过这轮调整，牛市第二浪行情很快就要开启了，但要注意后面依然很可能是强分化行情！券商和大蓝筹在这里已经调整的差不多，今他调整或者探底回升，就见底了。所以今天盘中调整都可以进场。",
+      "publish_time": "2025-12-02 09:55"
+    },
+    {
+      "post_n": 24,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "中线的话这里也是不错的买点。",
+      "publish_time": "2025-12-02 14:13"
+    },
+    {
+      "post_n": 23,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "明天看反弹中阳线",
+      "publish_time": "2025-12-02 21:15"
+    },
+    {
+      "post_n": 21,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天大盘大概率冲高回落收个小阳线。",
+      "publish_time": "2025-12-04 09:07"
+    },
+    {
+      "post_n": 20,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "中线买点已经到了！",
+      "publish_time": "2025-12-04 12:17"
+    },
+    {
+      "post_n": 19,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "明日看涨！",
+      "publish_time": "2025-12-04 16:33"
+    },
+    {
+      "post_n": 18,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下周一虽然大概率还有小阳线反弹",
+      "publish_time": "2025-12-05 12:41"
+    },
+    {
+      "post_n": 17,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "大行情很可能才刚刚开始！",
+      "publish_time": "2025-12-05 14:51"
+    },
+    {
+      "post_n": 15,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "好日子很可能要来了！",
+      "publish_time": "2025-12-05 15:01"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周很可能周线有中大阳线！",
+      "publish_time": "2025-12-05 16:20"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天看大盘拉出中阳线！",
+      "publish_time": "2025-12-07 10:12"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "上涨趋势确立！",
+      "publish_time": "2025-12-08 14:56"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大盘大概率要横盘震荡一下收个十字星，后天再进攻！",
+      "publish_time": "2025-12-08 16:20"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天大盘看冲高回落十字星！",
+      "publish_time": "2025-12-09 08:35"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天低开震荡一下又可以上了！",
+      "publish_time": "2025-12-09 15:53"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天看低开高走小阳线",
+      "publish_time": "2025-12-09 18:19"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "随时展开反弹！快则下午，慢则明天。",
+      "publish_time": "2025-12-10 13:16"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "真正的表演在明天！明天券券和科技要开始干活了。",
+      "publish_time": "2025-12-10 15:27"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "明天看中大阳线拔起！",
+      "publish_time": "2025-12-10 16:54"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "今天很可能高开高走中大阳线！",
+      "publish_time": "2025-12-11 08:14"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "继续持股待涨，主力就是故意反着来让那些埋伏消息的资金割肉跑路。然后再反手拉起来，让短线资金来回折腾。",
+      "publish_time": "2025-12-11 12:25"
+    },
+    {
+      "post_n": 24,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天看阳线反弹！",
+      "publish_time": "2025-12-12 09:46"
+    },
+    {
+      "post_n": 23,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "可以趁着冲高减些仓位，尤其是题材股很多破位了，这里要预防下周加速探底。",
+      "publish_time": "2025-12-12 12:00"
+    },
+    {
+      "post_n": 22,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "大盘可能还会小阳线反弹一下，但要注意反弹后可能还有探底的可能！",
+      "publish_time": "2025-12-12 16:52"
+    },
+    {
+      "post_n": 21,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天看低开探底，尾盘会升！",
+      "publish_time": "2025-12-15 00:18"
+    },
+    {
+      "post_n": 20,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天大盘这么走，很多个股结构依然处于下跌通道，很可能明天还要继续探底。",
+      "publish_time": "2025-12-15 14:48"
+    },
+    {
+      "post_n": 19,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大盘就要变盘了，明天的走势很重要，只有券商大涨才能把大盘救回来，如果还是装死甚至下跌拖累大盘，则很可能中阴线杀跌！",
+      "publish_time": "2025-12-15 17:34"
+    },
+    {
+      "post_n": 18,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天看大蓝筹护盘收小阳线或小阴线。",
+      "publish_time": "2025-12-16 07:59"
+    },
+    {
+      "post_n": 16,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下午可能还有低点，所以不能抄底过快，半仓就差不多了。",
+      "publish_time": "2025-12-16 13:06"
+    },
+    {
+      "post_n": 15,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大盘很可能冲高回落，周四还有调整。",
+      "publish_time": "2025-12-16 18:18"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "如果大盘还是这样死气沉沉或者回落，那么明天还有低点！",
+      "publish_time": "2025-12-17 13:27"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "这样的话手上还有仓位的可以继续拿着！明天应该还有冲高再减。",
+      "publish_time": "2025-12-17 15:51"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "除非出重磅的大利好，不然明天还是看冲高回落！而明天冲高适合减仓。",
+      "publish_time": "2025-12-17 16:49"
+    },
+    {
+      "post_n": 11,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天行情很可能强分化，也就是以券商为首的权重大涨，而科技低开冲高回落。这样的话大盘也容易冲高回落！所以今天冲高不能追，适合减仓！",
+      "publish_time": "2025-12-18 08:41"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "后面还有高点！",
+      "publish_time": "2025-12-18 11:56"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大盘大概率是小阳线或者十字星。",
+      "publish_time": "2025-12-18 17:15"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天或许还比较磨人折腾，但是下周就开始好做了！",
+      "publish_time": "2025-12-19 10:02"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "大盘走势已经开始向好的方向转变了，而且权重也开始企稳发力，这是件好事！这样大盘就不会总是死气沉沉。",
+      "publish_time": "2025-12-19 12:54"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "指农认为，到春节为止大盘会发动一轮新行情突破新高！",
+      "publish_time": "2025-12-19 18:07"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "经过复盘，指农认为下周将开启新一轮行情，中线来看后面必创新高，但是下周可能还有反复折腾一下。",
+      "publish_time": "2025-12-21 13:24"
+    },
+    {
+      "post_n": 4,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "注意不要追涨，因为如果今天中阳线收盘，明后天大概率要调整，所以不按照纪律追涨杀跌，很容易啪啪打脸。",
+      "publish_time": "2025-12-22 11:13"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "目前大盘走了指农说的第一种走势，那么明后天大概率要分化震荡了！",
+      "publish_time": "2025-12-22 12:59"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "尾盘冲的有些不太对劲！这样的话明后天容易中阴线回踩。",
+      "publish_time": "2025-12-22 15:32"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "现在的微红很可能就是掩护主力出货，明天很可能还有一次普跌！",
+      "publish_time": "2025-12-23 11:40"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "如果下午还强行继续上攻，后面的调整就不是小幅震荡了，因为大盘把上涨动能消耗殆尽了！这样的话下个月很可能会有波剧烈杀跌。",
+      "publish_time": "2025-12-23 13:36"
+    },
+    {
+      "post_n": 24,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天看低开探底回升中小阴线，指农认为明天盘中探底将是不错的加仓时机，盘中跳水可以加多两三层仓位",
+      "publish_time": "2025-12-23 17:51"
+    },
+    {
+      "post_n": 22,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "下午很可能继续高走！",
+      "publish_time": "2025-12-24 12:26"
+    },
+    {
+      "post_n": 21,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "指农认为，两天之内大盘很可能要去突破四千点！",
+      "publish_time": "2025-12-24 17:59"
+    },
+    {
+      "post_n": 20,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天大盘将由权重带领突破，收七连阳！",
+      "publish_time": "2025-12-25 09:20"
+    },
+    {
+      "post_n": 19,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天大盘再次上涨，然而目前已经有些乏力了。这样的话明后天容易震荡回调两天了，所以不能追涨。",
+      "publish_time": "2025-12-25 12:02"
+    },
+    {
+      "post_n": 17,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "两天之内很可能再次爆发大阳线！彻底打爆空头！",
+      "publish_time": "2025-12-25 18:05"
+    },
+    {
+      "post_n": 16,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天大概率是震荡的一天，收个小阴线或者十字星，然后下周一再进攻！",
+      "publish_time": "2025-12-26 09:06"
+    },
+    {
+      "post_n": 15,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "来吧，中大阳线今天看看能不能提前一天爆发！",
+      "publish_time": "2025-12-26 11:19"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "下周继续拉升！收九连阳突破四千点！",
+      "publish_time": "2025-12-26 16:46"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天看冲高回落中阳线！",
+      "publish_time": "2025-12-28 17:22"
+    },
+    {
+      "post_n": 11,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "这样的话明后天要震荡到节日了！",
+      "publish_time": "2025-12-29 11:19"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明后天看震荡调整！",
+      "publish_time": "2025-12-29 14:17"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "短期来看今年剩下的两个交易日大概率是震荡行情了，估计也比较磨，所以这两天不用抱太大的希望。",
+      "publish_time": "2025-12-29 18:52"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下午和明天很可能也是这种节奏，震荡，但这种震荡是良性的！有助于下个月继续拉升。",
+      "publish_time": "2025-12-30 14:07"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大概率也是一样的行情，一路震荡，尾盘收个十字星！",
+      "publish_time": "2025-12-30 17:30"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "指农满仓持股待涨，巍然不动。",
+      "publish_time": "2025-12-31 13:56"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "大盘将迎来普涨行情，就在节后！",
+      "publish_time": "2025-12-31 18:22"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "指农把话撂在这里，下周大盘突破四千点！这一次将是赚钱效应明显的普涨行情！",
+      "publish_time": "2026-01-02 15:30"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "下周吃肉妥妥的[灵光一闪]",
+      "publish_time": "2026-01-03 08:26"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大盘看高开冲高，下午回落收中阳线！",
+      "publish_time": "2026-01-04 22:52"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "因为高点还没有到，虽然十二阳线有点疯狂，但是，这依然不是高点。",
+      "publish_time": "2026-01-05 14:40"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "大盘这样子走已经确立了中期走势还有一大波行情！所以即使今天大盘大阳线指农也巍然不动！",
+      "publish_time": "2026-01-05 17:40"
+    },
+    {
+      "post_n": 24,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天看冲高回落小阳线，当然如果老六券券肯表现的话，那就不用回落了，直接中阳线。",
+      "publish_time": "2026-01-06 08:37"
+    },
+    {
+      "post_n": 22,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "这里大盘很容易突然加速！",
+      "publish_time": "2026-01-06 14:06"
+    },
+    {
+      "post_n": 21,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大盘依然不会跌！更可能的走势，是探底回升中阳线，明天还能涨！",
+      "publish_time": "2026-01-06 17:19"
+    },
+    {
+      "post_n": 20,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天的大盘依然看涨，早盘盘中会有波小探底震荡，期间会有无数人被摔下车，而且踏空的也不敢追。然后下午大盘会反手拉起来再收阳线！",
+      "publish_time": "2026-01-07 09:01"
+    },
+    {
+      "post_n": 19,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "尾盘大概率收小红十字星了。",
+      "publish_time": "2026-01-07 15:29"
+    },
+    {
+      "post_n": 18,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "从结构上来说，明天是可以继续收个十字星的，然后才来大阳线。",
+      "publish_time": "2026-01-07 17:09"
+    },
+    {
+      "post_n": 17,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天很可能就是小阳线强分化行情！",
+      "publish_time": "2026-01-08 10:15"
+    },
+    {
+      "post_n": 16,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "在没到4200之前的盘中杀跌都是赶人下车",
+      "publish_time": "2026-01-08 11:57"
+    },
+    {
+      "post_n": 15,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明后天很容易反包回来。",
+      "publish_time": "2026-01-08 13:50"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天看权重表演，大盘继续阳线！",
+      "publish_time": "2026-01-08 17:16"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "今天指农看大阳线突破！大盘将会再次拉出大阳线，把踏空的人彻底摔下车！",
+      "publish_time": "2026-01-09 08:17"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "好戏在下午！老渣男还没表演，这场戏就还没结束！目前涨幅还不够，下午很可能还要点一把🔥。",
+      "publish_time": "2026-01-09 12:01"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下周继续看涨！",
+      "publish_time": "2026-01-09 18:10"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "这一次主力发动的是一轮跨年行情，期间会一直阳线震荡上涨，屡创新高！",
+      "publish_time": "2026-01-10 16:26"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天看冲高回落小阳线！",
+      "publish_time": "2026-01-11 11:48"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "只要券商肯发力，今天就不用回落了！就可以收中大阳线！",
+      "publish_time": "2026-01-12 11:47"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "下午大概率继续涨",
+      "publish_time": "2026-01-12 12:59"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "大盘到这里已经具备再次大涨加速的结构！",
+      "publish_time": "2026-01-12 17:05"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大盘很可能迎来加速，冲击4200再创新高！",
+      "publish_time": "2026-01-12 22:09"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "今天大盘将会高举高打突破4200！让散户颅内高潮丧失自我。让空头追涨进来！然后明后天大盘随时调整两天让这批追涨资金难受至极！",
+      "publish_time": "2026-01-13 08:15"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天开始大盘会有两三天的震荡了。",
+      "publish_time": "2026-01-13 12:08"
+    },
+    {
+      "post_n": 24,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大盘短期要迎来调整了，而科技明后天风险挺大的，所以可以高低切换，或者落袋为安了。",
+      "publish_time": "2026-01-13 14:22"
+    },
+    {
+      "post_n": 23,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "接下来三天很可能还有中阴线杀跌，所以出来的仓位先拿着，到时候再次进场！",
+      "publish_time": "2026-01-13 17:35"
+    },
+    {
+      "post_n": 22,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天很可能走探底回升中阳线！带长下影线的中阳线！",
+      "publish_time": "2026-01-14 08:04"
+    },
+    {
+      "post_n": 21,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "下午接着奏乐接着舞！",
+      "publish_time": "2026-01-14 13:28"
+    },
+    {
+      "post_n": 20,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天继续看中阳线！",
+      "publish_time": "2026-01-14 15:29"
+    },
+    {
+      "post_n": 19,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "所以明天行情没什么大碍，并不会再大阴线去砸盘。",
+      "publish_time": "2026-01-14 21:29"
+    },
+    {
+      "post_n": 18,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "指农满仓持股，继续看多！",
+      "publish_time": "2026-01-15 12:19"
+    },
+    {
+      "post_n": 17,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "而指农认为目前已经调整到位，随时展开反弹！快则下午，慢则明天。",
+      "publish_time": "2026-01-15 13:10"
+    },
+    {
+      "post_n": 16,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "明天很可能低开高走中阳反弹！",
+      "publish_time": "2026-01-15 17:41"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "大盘选择了再次压盘，目前周线滞涨，下周很可能还有探底！",
+      "publish_time": "2026-01-16 16:01"
+    },
+    {
+      "post_n": 13,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下周注意反弹后的风险。",
+      "publish_time": "2026-01-16 23:18"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天看探底回升阳线！",
+      "publish_time": "2026-01-18 18:04"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天大盘看探底回升中阳线，明天大概率还有冲高回落阳线。",
+      "publish_time": "2026-01-19 09:19"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "下午看继续反弹。",
+      "publish_time": "2026-01-19 13:15"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天再次冲高回落，主力压盘太过分了，这里无论如何都缺个反弹，很可能就在明天。",
+      "publish_time": "2026-01-19 15:03"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天看中阳反弹！继续按照剧本来。明天券商大概率要接过上涨的大旗，引领大盘反弹！",
+      "publish_time": "2026-01-19 17:46"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天基本就是这么个节奏，探底回升中阳线。",
+      "publish_time": "2026-01-20 09:36"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "明天大盘很可能直接中大阳线反弹！",
+      "publish_time": "2026-01-20 20:49"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "intraday",
+      "evidence": "今天看低开高走中阳线！",
+      "publish_time": "2026-01-21 08:54"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "指农的观点很明确，短期还要震荡，中线依然没有问题。",
+      "publish_time": "2026-01-21 15:47"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "所以明天将是强分化行情！二八行情！以权重为代表的老登股明天引领大盘上涨，收中大阳线！",
+      "publish_time": "2026-01-21 22:27"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "新一轮跨年行情就这今明两天开启了，不要倒在黎明前。该来的反弹少不了，下午继续看涨！今明两天没有风险。",
+      "publish_time": "2026-01-22 13:09"
+    },
+    {
+      "post_n": 24,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "中大阳线明天爆发！",
+      "publish_time": "2026-01-22 16:47"
+    },
+    {
+      "post_n": 23,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天很可能中大阳线爆发。",
+      "publish_time": "2026-01-22 21:05"
+    },
+    {
+      "post_n": 22,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天很可能权重带头，科技为辅，拉出一根中大阳！",
+      "publish_time": "2026-01-23 09:19"
+    },
+    {
+      "post_n": 20,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "这种极限压盘带来的势必是强力反弹！",
+      "publish_time": "2026-01-23 15:48"
+    },
+    {
+      "post_n": 19,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "从明天开始到春节前，很可能迎来一波加速行情，直接涨到过年",
+      "publish_time": "2026-01-25 09:44"
+    },
+    {
+      "post_n": 18,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "两日之内大阳爆发！",
+      "publish_time": "2026-01-26 09:49"
+    },
+    {
+      "post_n": 16,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天很可能探底回升阳线。",
+      "publish_time": "2026-01-26 21:10"
+    },
+    {
+      "post_n": 15,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "下午会回升收阳线吗？指农认为这是非常可能的",
+      "publish_time": "2026-01-27 12:14"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "至少短期反弹是会有的",
+      "publish_time": "2026-01-27 13:34"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天继续看涨。",
+      "publish_time": "2026-01-27 18:02"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天看中阳线！",
+      "publish_time": "2026-01-28 10:06"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "下午大盘将会在权重的推动下，收中阳线！",
+      "publish_time": "2026-01-28 12:41"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天很可能会有普涨行情！",
+      "publish_time": "2026-01-28 15:38"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大盘看低开高走普涨中阳线！",
+      "publish_time": "2026-01-28 21:31"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天大盘看低开高走！",
+      "publish_time": "2026-01-29 09:32"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "下午还得涨！",
+      "publish_time": "2026-01-29 10:58"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "下午科技题材还能反弹，但是今天不要追，因为明天很可能还有震荡轮动。",
+      "publish_time": "2026-01-29 13:24"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "今天十字星后，下周将开启跨年行情！",
+      "publish_time": "2026-01-30 09:39"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "下午大盘很可能拉起来收个大长腿！",
+      "publish_time": "2026-01-30 13:29"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "行情依然在，下周低开都是机会而不是风险。",
+      "publish_time": "2026-01-30 21:04"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天看低开探底回升小阳线。",
+      "publish_time": "2026-02-01 13:20"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大盘看低开探底回升阳线！",
+      "publish_time": "2026-02-01 23:54"
+    },
+    {
+      "post_n": 24,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "尾盘很可能会有回升！所以并不需要恐慌。相反下午探底有仓位的甚至可以加仓！",
+      "publish_time": "2026-02-02 14:25"
+    },
+    {
+      "post_n": 23,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天科技很可能会有暴力反弹。",
+      "publish_time": "2026-02-02 15:38"
+    },
+    {
+      "post_n": 22,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天一旦大盘企稳，暴力反弹随时开始！",
+      "publish_time": "2026-02-02 16:02"
+    },
+    {
+      "post_n": 21,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明日大盘：低开高走中阳线！",
+      "publish_time": "2026-02-02 22:25"
+    },
+    {
+      "post_n": 20,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "下午看大盘收中阳线！",
+      "publish_time": "2026-02-03 12:27"
+    },
+    {
+      "post_n": 19,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "继续持股待涨！明天很可能会继续反弹！",
+      "publish_time": "2026-02-03 15:40"
+    },
+    {
+      "post_n": 18,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大盘很容易冲高回落！节奏基本就是这样。要注意的是明天冲高不要追涨，下午容易回落！明天大盘看冲高回落小阳线！",
+      "publish_time": "2026-02-04 00:24"
+    },
+    {
+      "post_n": 17,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "节前几天很可能会有一波快速拉升行情！赚钱效应很明显那种！",
+      "publish_time": "2026-02-04 13:13"
+    },
+    {
+      "post_n": 16,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天继续看涨！明天只有两种走势，要么高开高走中大阳线，要么高开冲高回落中阳线！",
+      "publish_time": "2026-02-04 17:21"
+    },
+    {
+      "post_n": 15,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天很可能会高开高走中大阳线！最差也得高开冲高回落小阳线！",
+      "publish_time": "2026-02-04 23:52"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天看低开探底回升小阳线！",
+      "publish_time": "2026-02-05 10:02"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "下午很可能反手拉起来！拭目以待。",
+      "publish_time": "2026-02-05 11:42"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "下午就看券商了！随时爆发！今天也不要随便割肉，下午很可能直接拉起来！",
+      "publish_time": "2026-02-05 14:40"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "明天开始大盘将开启轮动上涨行情！到过年前很可能都是以涨为主。",
+      "publish_time": "2026-02-05 21:35"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天看低开高走中阳线！今天大盘早盘低开震荡后，将会反手做多！",
+      "publish_time": "2026-02-06 10:05"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "下午很可能继续拉升，为新一轮行情打先锋！",
+      "publish_time": "2026-02-06 11:35"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "大涨下周开启，红包行情即将来临！",
+      "publish_time": "2026-02-06 17:16"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下周一大盘很可能高开高走大阳线！",
+      "publish_time": "2026-02-07 10:13"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下午很可能券券会有惊喜[大笑][大笑]",
+      "publish_time": "2026-02-09 11:25"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "节前这几天很可能是震荡上涨的行情。",
+      "publish_time": "2026-02-09 13:20"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大盘继续看涨！！今天券商虽然有涨，但是涨幅远远不够。所以明天券券很可能带领大盘继续反攻！收中阳线！",
+      "publish_time": "2026-02-09 21:21"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "从大盘结构上来说，今天是非常容易再出中阳线的。",
+      "publish_time": "2026-02-10 09:18"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "大盘就剩下三个交易日了，指农认为明后天两天之内会有大阳线爆发！",
+      "publish_time": "2026-02-10 16:29"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "指农把话撂在这里！两日之内中大阳线突破！",
+      "publish_time": "2026-02-10 22:18"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天大概率是二八行情！也就是权重反弹为主，大量科技个股会被压制的强分化行情！",
+      "publish_time": "2026-02-11 09:37"
+    },
+    {
+      "post_n": 24,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "所以明天的行情依然看好！明天看中大阳线爆发！",
+      "publish_time": "2026-02-11 17:01"
+    },
+    {
+      "post_n": 23,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "到现在为止，大盘只剩下两个交易日了，但指农依然看好红包行情！",
+      "publish_time": "2026-02-12 09:06"
+    },
+    {
+      "post_n": 22,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "而指农认为大盘即将再次来一波类似这种行情！",
+      "publish_time": "2026-02-12 17:30"
+    },
+    {
+      "post_n": 21,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "指农认为时间很快了，明天很可能就要启动了！",
+      "publish_time": "2026-02-12 22:10"
+    },
+    {
+      "post_n": 19,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "节后最差的走势也是探底回升，而后继续涨！",
+      "publish_time": "2026-02-14 11:53"
+    },
+    {
+      "post_n": 18,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "节后行情总体看好，并不需要担心什么。",
+      "publish_time": "2026-02-19 19:30"
+    },
+    {
+      "post_n": 17,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大盘很可能收中阳线！",
+      "publish_time": "2026-02-23 21:47"
+    },
+    {
+      "post_n": 16,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天看开门红阳线！",
+      "publish_time": "2026-02-24 08:46"
+    },
+    {
+      "post_n": 15,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大盘下午和明天容易震荡回踩。",
+      "publish_time": "2026-02-24 12:20"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大盘看探底回升小阴线！",
+      "publish_time": "2026-02-24 17:43"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "指农认为券商近两日很可能要变盘了，带领大盘突破这胶着的盘面。",
+      "publish_time": "2026-02-25 01:32"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "继续持股待涨，这位置大盘要冲关，少不了券商的冲锋！拿住就行了，现在只是刚刚开始。",
+      "publish_time": "2026-02-25 13:43"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "而且从结构上来说，今天券商冲高回落，明天是可以非常容易出大阳线的，所以千万不要倒在了黎明前！",
+      "publish_time": "2026-02-25 22:58"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "所以今天大盘没有调整的可能性，相反很可能在券商强力反弹的带动下再来一根中阳线。",
+      "publish_time": "2026-02-26 10:14"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "指农坚定看好大盘即将爆发，还是认为这里不可能下去只能上去！",
+      "publish_time": "2026-02-26 19:00"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "那么下午大盘怎么看？下午看继续上涨收阳线！",
+      "publish_time": "2026-02-27 13:49"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "在这里千万不要再乱跑了！拿稳了，下午大概率要逼空了！",
+      "publish_time": "2026-02-27 14:32"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "不管主力是在等什么消息再拉也好，还是下周直接起来干活也罢。指农都不为动！满仓持股待涨！",
+      "publish_time": "2026-02-27 18:43"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "下周初大盘调整将会彻底结束，开始新一轮行情！",
+      "publish_time": "2026-02-28 22:00"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大盘看探底回升！",
+      "publish_time": "2026-03-01 22:54"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "中线已经见底，盘中探底都是机会！指农满仓持股，巍然不动。",
+      "publish_time": "2026-03-02 13:17"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "所以明天大盘看十字星，权重横盘，科技题材个股反弹！",
+      "publish_time": "2026-03-02 17:13"
+    },
+    {
+      "post_n": 24,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "明早但凡有低开就是机会！",
+      "publish_time": "2026-03-02 22:01"
+    },
+    {
+      "post_n": 23,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "下午很可能还能继续拉红收阳线！",
+      "publish_time": "2026-03-03 12:02"
+    },
+    {
+      "post_n": 22,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明早最差最差也是探底回升，明天早盘低开将是绝佳布局的机会。",
+      "publish_time": "2026-03-04 00:00"
+    },
+    {
+      "post_n": 21,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "指农的观点很明确的这里就是中线大底部，这毋庸置疑。",
+      "publish_time": "2026-03-04 13:50"
+    },
+    {
+      "post_n": 20,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "明天大盘非常容易大阳线反包！",
+      "publish_time": "2026-03-04 15:58"
+    },
+    {
+      "post_n": 19,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "那么说说明天的大盘，明天大盘看反弹中阳线！",
+      "publish_time": "2026-03-04 23:32"
+    },
+    {
+      "post_n": 18,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "intraday",
+      "evidence": "今天看大盘中阳启动行情！",
+      "publish_time": "2026-03-05 08:13"
+    },
+    {
+      "post_n": 17,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "而且尾盘的杀跌，很容易明天再来波探底回升。",
+      "publish_time": "2026-03-05 15:44"
+    },
+    {
+      "post_n": 16,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "所以两者共振之下，下周或还有大阴线去破四千点，而后筑底反弹。",
+      "publish_time": "2026-03-06 09:32"
+    },
+    {
+      "post_n": 15,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "关键看下午，如果下午还砸盘则再考虑要不要减仓。现在就看下午券商和科技要不要继续反弹了，只有他们反弹了市场情绪才会好，后面才有行情！",
+      "publish_time": "2026-03-06 12:58"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "目前我们重仓持有的券商互金终于开始启动，这样最好，说明下周不会有挖坑了。",
+      "publish_time": "2026-03-06 14:44"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "明天大盘会在外围的影响下，低开探底震荡一下，然后下午回升！探底就是机会！",
+      "publish_time": "2026-03-08 23:19"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "大盘很可能会在券商带动下，下午探底回升！收一个大长腿的长下引线。",
+      "publish_time": "2026-03-09 09:04"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "所以明天大盘看冲高回落小阳线！",
+      "publish_time": "2026-03-09 23:17"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "中线这里就是大底部，所以即使回落指农也不会操作，继续躺平。",
+      "publish_time": "2026-03-10 13:01"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "指农认为短期或有一波权重带头的强力反弹！",
+      "publish_time": "2026-03-10 19:49"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "真正关键的日子，是明天！明天就是变盘节点了，恰逢会议结束，如果有什么重磅利好，大盘很可能直接起飞！",
+      "publish_time": "2026-03-11 12:56"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大盘没有问题，这里具备由权重带头的一轮反攻行情，就在近期了。",
+      "publish_time": "2026-03-12 00:19"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "指农观点很简单，这里就是大底，权重已经被主力控盘太久了，严重滞涨了，这里急需一波反弹。",
+      "publish_time": "2026-03-12 08:27"
+    },
+    {
+      "post_n": 4,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "接下来三天大盘大概率要去挖坑破4000点。然后再企稳。",
+      "publish_time": "2026-03-12 14:39"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "所以这里可以出来三层做活水 ，预防大盘向下挖坑。",
+      "publish_time": "2026-03-12 15:37"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大盘走势依然非常弱势，这样的话下周一很可能还有次探底回升。",
+      "publish_time": "2026-03-13 14:10"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下周继续看还有个探底回升。",
+      "publish_time": "2026-03-13 15:54"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "经过复盘，指农认为下周大概率会有诱空砸盘走势，大概率在周二三。周一大盘会有小反弹。",
+      "publish_time": "2026-03-14 22:25"
+    },
+    {
+      "post_n": 24,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大盘很可能冲高回落小阴线，仓位重的可趁着冲高减仓出来点，等大盘企稳再满仓不迟。",
+      "publish_time": "2026-03-15 14:37"
+    },
+    {
+      "post_n": 23,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下午大概率会继续反弹回来一些，但依然收阴线。",
+      "publish_time": "2026-03-16 13:04"
+    },
+    {
+      "post_n": 22,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大盘早看冲高，但下午很容易回落。",
+      "publish_time": "2026-03-16 23:49"
+    },
+    {
+      "post_n": 21,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大盘结构已经走坏，这里非常可能再来个回踩，所以必须控制仓位。",
+      "publish_time": "2026-03-17 12:32"
+    },
+    {
+      "post_n": 20,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "指农认为调整很可能在明后天结束，到时候择机再次把仓位逐步接回来！",
+      "publish_time": "2026-03-17 21:51"
+    },
+    {
+      "post_n": 19,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天大盘如果有大幅低开，则很可能低开高走收中阳线。",
+      "publish_time": "2026-03-18 08:43"
+    },
+    {
+      "post_n": 18,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "指农认为主力破一下四千点就差不多了，到时候择机把周四离场的仓位加回来。",
+      "publish_time": "2026-03-18 12:47"
+    },
+    {
+      "post_n": 16,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "而现在，大盘一旦再次靠近四千点或者破了四千，指农认为就是机会！所以今天开始！回调就是机会！",
+      "publish_time": "2026-03-19 10:11"
+    },
+    {
+      "post_n": 15,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "而现在大盘如期跌到四千，这位置需要恐慌吗？指农认为不需要！相反，我们应该在全网恐惧的时候逆向而行！可以陆续加仓了。",
+      "publish_time": "2026-03-19 15:29"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大盘明早大概率还有低开，但非常容易高走收中阳线！明天大概率是个不错的日子。",
+      "publish_time": "2026-03-20 00:16"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天大概就这样了，下午继续震荡，这里关键看券商，下午券商能表现一下则大盘收中阳线，继续墨迹的话就小阳线。",
+      "publish_time": "2026-03-20 14:25"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "从结构上看，周一大概率还有探底，然后周二才能开启反弹！",
+      "publish_time": "2026-03-20 19:43"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "开为期三天的反弹行情！所以下周指农将择机，把剩下的仓位再次打满！",
+      "publish_time": "2026-03-22 13:53"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "而从中长线来看，大盘依然还有行情！所以下周择机进场！",
+      "publish_time": "2026-03-22 16:50"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "从大盘结构上来看，今天再砸之后就可以见底了，然后明天开启为期三四天的反弹。",
+      "publish_time": "2026-03-23 09:02"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "指农认为目前券券互金已经基本到位，甚至部分互金已经提前启动。",
+      "publish_time": "2026-03-23 12:45"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "这里3850附近就是底部区域！即使反复几天也很难再怎么砸了。",
+      "publish_time": "2026-03-23 13:08"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天都很可能中大阳线修复，明天看普涨！",
+      "publish_time": "2026-03-23 22:12"
+    },
+    {
+      "post_n": 5,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "该强力反弹的时候不强，那就得继续向下寻底！",
+      "publish_time": "2026-03-24 13:53"
+    },
+    {
+      "post_n": 4,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "这么弱说明可能还要砸。。",
+      "publish_time": "2026-03-24 14:24"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "所以明后天大盘很可能还会有盘中砸盘！然后伴随着长下影线才能结束调整。",
+      "publish_time": "2026-03-25 00:19"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天开始大盘很可能会震荡分化，创业板大概率会震荡调整，而权重会护盘。",
+      "publish_time": "2026-03-25 13:28"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大概率就是这样，早盘冲高后非常容易盘中急跌，这样会让场内散户很容易离场割肉。",
+      "publish_time": "2026-03-26 00:35"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "所以盘中的跳水不必惊慌，反而是机会，还有仓位的都可以进场，目标是券券互金！",
+      "publish_time": "2026-03-26 12:11"
+    },
+    {
+      "post_n": 24,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "现在指农认为大盘已经调整到位，即使全网看空也好，都不相信还有行情也罢。指农选择逆流而上！满仓进城！",
+      "publish_time": "2026-03-26 15:59"
+    },
+    {
+      "post_n": 23,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "经过复盘，指农认为这里就是大底，尤其是券商这里已经到位！",
+      "publish_time": "2026-03-27 11:40"
+    },
+    {
+      "post_n": 22,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "下午看继续拉升，让那些割肉离场的，眼巴巴的看着它继续涨！",
+      "publish_time": "2026-03-27 13:13"
+    },
+    {
+      "post_n": 21,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周完全具备突破四千的境界。",
+      "publish_time": "2026-03-27 23:18"
+    },
+    {
+      "post_n": 20,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天看低开高走中阳线。",
+      "publish_time": "2026-03-29 12:31"
+    },
+    {
+      "post_n": 19,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "这里中线就是大底，并没有什么大跌空间，加上情绪恐慌过度，所以主力非但不会跌，还会盘中砸盘把散户洗出去然后再拉回来，就如今天这样。",
+      "publish_time": "2026-03-30 19:36"
+    },
+    {
+      "post_n": 18,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大盘很可能会继续冲高反弹，但下午容易回落，这里是可以回落震荡一下的。",
+      "publish_time": "2026-03-31 00:00"
+    },
+    {
+      "post_n": 16,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大盘有望低开高走收一根中大阳线！",
+      "publish_time": "2026-03-31 19:58"
+    },
+    {
+      "post_n": 15,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大盘非常可能反弹收普涨中大阳线！",
+      "publish_time": "2026-03-31 23:49"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天有望高开高走中大阳线！",
+      "publish_time": "2026-04-01 07:55"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "早盘的反弹不够，下午继续看震荡走高！",
+      "publish_time": "2026-04-01 13:54"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大盘看冲高回落！恰逢节日，这里暂时不适合连续强力反弹，这样怕散户跟进来。所以明天大概率冲高回落小阳线！",
+      "publish_time": "2026-04-01 20:24"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "这里就是大底部，即使主力再次杀跌，依然不改趋势！",
+      "publish_time": "2026-04-02 15:47"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大盘看冲高收中阳线！",
+      "publish_time": "2026-04-03 00:21"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天大盘看中阳反弹，很多个股已经严重超跌，这里随时展开强力反弹。",
+      "publish_time": "2026-04-03 09:39"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下周大盘如果再次探底，将会彻底结束调整，展开一波强力反弹！",
+      "publish_time": "2026-04-05 21:20"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大盘看探底回升中阳线。",
+      "publish_time": "2026-04-06 10:36"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天很可能高开回落再反弹收中阳线。",
+      "publish_time": "2026-04-07 09:44"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大盘也不会好过的。现在来看，明后天很可能就会有最后一“蹲”",
+      "publish_time": "2026-04-08 00:22"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天大盘表现会好一些。经过复盘，指农认为今天看探底回升小阳线！",
+      "publish_time": "2026-04-08 08:04"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明后天极易再次震荡回踩。",
+      "publish_time": "2026-04-08 11:50"
+    },
+    {
+      "post_n": 24,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "如果明天再次中大阳线突破4000，那么则顺利反转。",
+      "publish_time": "2026-04-08 13:22"
+    },
+    {
+      "post_n": 22,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "从分时上看，明天大盘很可能会有惯性冲高，甚至可能摸4050点，但这也很可能是短期高点。",
+      "publish_time": "2026-04-08 22:46"
+    },
+    {
+      "post_n": 21,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大盘明天大概率还有中阳反弹。",
+      "publish_time": "2026-04-09 15:47"
+    },
+    {
+      "post_n": 20,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "从结构上来看，大盘下周是有可能收周大阳线的，到时候可能也有什么消息配合。",
+      "publish_time": "2026-04-10 09:12"
+    },
+    {
+      "post_n": 18,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "盘后更是利好频发，尤其是券商出了直接利好，下周很可能再次引领大盘来一波！",
+      "publish_time": "2026-04-11 00:05"
+    },
+    {
+      "post_n": 17,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "从结构上来看，大盘下周或还有有强力的惊喜，指农满仓持股，坐等东风。",
+      "publish_time": "2026-04-11 23:48"
+    },
+    {
+      "post_n": 16,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "目前的大盘，与924行情越来越像，无论是散户情绪，还是大盘技术面来说，这里完全支持来一波快速拉升行情！",
+      "publish_time": "2026-04-12 10:20"
+    },
+    {
+      "post_n": 15,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "指农认为明天大盘大概率小阴线震荡！",
+      "publish_time": "2026-04-12 23:49"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "而指农认为这里非常可能开启一波新行情，原因就在于目前不管是情绪面还是技术面，都完全支持。",
+      "publish_time": "2026-04-13 23:42"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "所以从时间上来看，这里非常可能来一波快速突破！",
+      "publish_time": "2026-04-14 08:09"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天很可能再次中大阳线爆发！",
+      "publish_time": "2026-04-14 16:31"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大盘看中大阳线再次上攻，让空头目眦欲裂，大腿拍肿！",
+      "publish_time": "2026-04-14 19:29"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "下午大盘继续看好！下午大盘继续上攻！",
+      "publish_time": "2026-04-15 12:50"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大阳线只会迟到不会不来，明天很可能来临！",
+      "publish_time": "2026-04-15 17:02"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "指农把话撂在这里，大盘两日之内必要大阳线！也就是最迟周五。",
+      "publish_time": "2026-04-15 19:11"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "如果今天收涨小阳线的话，那么后面两三天大概率会震荡调整一下，然后再上。",
+      "publish_time": "2026-04-16 13:41"
+    },
+    {
+      "post_n": 6,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "明天大盘看震荡十字星！",
+      "publish_time": "2026-04-17 00:08"
+    },
+    {
+      "post_n": 5,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天大盘看强分化震荡，大概率收小阴线。",
+      "publish_time": "2026-04-17 07:59"
+    },
+    {
+      "post_n": 4,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "所以下周大盘预期会有三四天的震荡调整，所以可以控制仓位到五六层就好了。",
+      "publish_time": "2026-04-17 15:46"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "周一还有冲高，但不能追！",
+      "publish_time": "2026-04-18 13:57"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "在下周，大盘将会上下翻飞，会有剧烈波动！也就是行情启动前的最后一蹲！",
+      "publish_time": "2026-04-19 16:21"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今日大盘看冲高回落，然后接下来几天看震荡调整。所以今天是很容易出现短期高点的，切记不要追涨。",
+      "publish_time": "2026-04-20 09:46"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "下午大盘非常可能冲高回落收小阳线。",
+      "publish_time": "2026-04-20 13:43"
+    },
+    {
+      "post_n": 24,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "所以明天大盘看调整阴线！",
+      "publish_time": "2026-04-20 21:51"
+    },
+    {
+      "post_n": 23,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天大盘看震荡调整，目前很多高位板块，个股和创业板都出现了放量滞涨的现象，所以在这里需要回踩一下拢一拢均线。",
+      "publish_time": "2026-04-21 07:53"
+    },
+    {
+      "post_n": 22,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "分批低吸，明天大盘或还有一次下蹲。",
+      "publish_time": "2026-04-21 13:58"
+    },
+    {
+      "post_n": 20,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明日大盘看反弹！",
+      "publish_time": "2026-04-21 18:21"
+    },
+    {
+      "post_n": 19,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "经过复盘，指农认为今天大盘大概率会低开震荡一下，然后反手拉起来收中阳线！",
+      "publish_time": "2026-04-22 08:04"
+    },
+    {
+      "post_n": 18,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "因为只有下午能站住了，明天还能冲中阳！",
+      "publish_time": "2026-04-22 14:25"
+    },
+    {
+      "post_n": 17,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天看中阳反弹！",
+      "publish_time": "2026-04-22 17:13"
+    },
+    {
+      "post_n": 16,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "所以下午和明天依然会是调整结构，主力选择先砸，然后下周节前再干活！",
+      "publish_time": "2026-04-23 13:48"
+    },
+    {
+      "post_n": 15,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "所以明天大概率还是震荡洗盘行情，盘中或有小跳水，但尾盘都会收回来。",
+      "publish_time": "2026-04-23 18:27"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "经过复盘，指农认为明天大概率还是震荡洗盘行情，盘中或有下探，但尾盘很容易收回来！",
+      "publish_time": "2026-04-23 23:28"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "这两天就是起涨前最后的震荡了，不要倒在黎明前。",
+      "publish_time": "2026-04-24 11:47"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下周一再震荡一下，就可以开启最后的冲锋了。",
+      "publish_time": "2026-04-24 15:03"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周权重将会带领大盘收周阳线！",
+      "publish_time": "2026-04-24 16:56"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "指农把话撂在这里，下周大盘很可能要去攻击4200点了！从大盘结构上看，这里下周也很可能要周线反弹！",
+      "publish_time": "2026-04-25 11:27"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "从大盘周线结构上看，下周大概率是个反弹周，大盘在这里需要一轮上涨收复前高，所以中线来说完全没有问题，可以持股待涨。",
+      "publish_time": "2026-04-26 10:55"
+    },
+    {
+      "post_n": 8,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "如果下午券商不能拉起来收中阳线，那么明天大概率还有一次下挫包括大盘。",
+      "publish_time": "2026-04-27 13:36"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明后天可能会有次下蹲。",
+      "publish_time": "2026-04-27 15:19"
+    },
+    {
+      "post_n": 6,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天大盘看震荡调整，主力一直压制权重，该上不上就得向下回踩。",
+      "publish_time": "2026-04-28 09:07"
+    },
+    {
+      "post_n": 5,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天早盘大概率还有一砸。",
+      "publish_time": "2026-04-28 15:33"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "所以昨天早盘盘中有下探，都是蓝筹不错的机会。",
+      "publish_time": "2026-04-28 22:31"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天继续看涨。",
+      "publish_time": "2026-04-29 15:23"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天继续看涨！",
+      "publish_time": "2026-04-29 18:57"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "经过复盘，指农认为明天大盘将继续中阳上涨！",
+      "publish_time": "2026-04-29 22:32"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "指农的答案很明确，今天看涨！而且很可能中阳线！",
+      "publish_time": "2026-04-30 09:12"
+    },
+    {
+      "post_n": 24,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "大盘方向没有变化，中线继续看涨",
+      "publish_time": "2026-04-30 12:38"
+    },
+    {
+      "post_n": 23,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "这一轮加速行情跑不了的。",
+      "publish_time": "2026-04-30 15:57"
+    },
+    {
+      "post_n": 22,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "节后行情没有问题，安心持股待涨即可。",
+      "publish_time": "2026-05-01 12:08"
+    },
+    {
+      "post_n": 21,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "节后大概率会有一波上行",
+      "publish_time": "2026-05-03 12:03"
+    },
+    {
+      "post_n": 20,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "如果明天外围能够再次加速大涨，那么节后大a的高开高走就稳了！",
+      "publish_time": "2026-05-04 12:51"
+    },
+    {
+      "post_n": 19,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大盘看小高开冲高回落，收阳线！",
+      "publish_time": "2026-05-05 17:46"
+    },
+    {
+      "post_n": 18,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "指农认为今天大盘很可能直接高开高走，而后下午会有回落，收带上影线的中阳线！",
+      "publish_time": "2026-05-06 08:16"
+    },
+    {
+      "post_n": 17,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "后面大概率要震荡回调了。",
+      "publish_time": "2026-05-06 11:29"
+    },
+    {
+      "post_n": 16,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "明天大概率要开启为期四五天的震荡调整了",
+      "publish_time": "2026-05-06 14:02"
+    },
+    {
+      "post_n": 15,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "所以明天看低开冲高回落！",
+      "publish_time": "2026-05-06 18:28"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天看冲高回落阴线！",
+      "publish_time": "2026-05-06 23:39"
+    },
+    {
+      "post_n": 13,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天再次冲高触及4200点很容易回落",
+      "publish_time": "2026-05-07 09:18"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "如果下午还是这么震荡调整的话，明天或还有一次中阴调整！",
+      "publish_time": "2026-05-07 13:24"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天很可能会先强力反弹一天。",
+      "publish_time": "2026-05-07 15:29"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "指农认为明天很可能会有强力反弹！",
+      "publish_time": "2026-05-07 22:12"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天依然看涨！",
+      "publish_time": "2026-05-08 08:38"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "券券的大阳突破随时发生！",
+      "publish_time": "2026-05-08 13:06"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "指农认为下周最少先突破4200才有调整！",
+      "publish_time": "2026-05-08 15:46"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下周一很可能直接普涨大阳线突破新高！",
+      "publish_time": "2026-05-09 10:07"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "指农认为下周大盘总体会先扬后抑！",
+      "publish_time": "2026-05-10 10:20"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周开始将会以大量低位科技的补涨和权重的反弹为主角。",
+      "publish_time": "2026-05-10 14:12"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "现在继续持股，下午或有加速。",
+      "publish_time": "2026-05-11 11:25"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "只要朱丽想，完全可以来一根大阳线，彻底引爆情绪，让多头疯狂，让空头大腿拍肿！",
+      "publish_time": "2026-05-11 12:30"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "总而言之，中线行情没有问题。",
+      "publish_time": "2026-05-11 13:25"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "行情远远没有结束！但明天大盘也很难直接再次大涨，更可能的是指数震荡，低位科技题材补涨！",
+      "publish_time": "2026-05-11 16:35"
+    },
+    {
+      "post_n": 24,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "中线后面毫无疑问是看涨的",
+      "publish_time": "2026-05-11 22:56"
+    },
+    {
+      "post_n": 23,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天大盘很可能小高开冲高回落收小阳线。当然如果今天券商肯再次发力大涨的话是可以不回落的，那么就收住中阳线。",
+      "publish_time": "2026-05-12 10:00"
+    },
+    {
+      "post_n": 21,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大盘看冲高回落小阳线！指数继续震荡，权重压盘，个股反弹！",
+      "publish_time": "2026-05-12 17:08"
+    },
+    {
+      "post_n": 19,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天大盘大概率是低开高走中阳线！",
+      "publish_time": "2026-05-13 08:15"
+    },
+    {
+      "post_n": 18,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "下午继续看涨",
+      "publish_time": "2026-05-13 12:30"
+    },
+    {
+      "post_n": 16,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "后面大盘肯定要来一波加速的",
+      "publish_time": "2026-05-13 16:52"
+    },
+    {
+      "post_n": 15,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "所以明天即使震荡也不看空",
+      "publish_time": "2026-05-14 00:36"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "今天大盘看高开高走中阳线，当然如果券商肯出力大涨的话是可以中大阳线的！指农认为非常可能。",
+      "publish_time": "2026-05-14 08:15"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "接下来大概率要开启调整了。今天短期来看就是高点了。",
+      "publish_time": "2026-05-14 17:25"
+    },
+    {
+      "post_n": 11,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天早盘会有低开，然后展开反弹。反弹的力度很重要，如果反弹高度比较高那么，那么下周一还能冲高。如果只是低开弱反弹，那么下周将自己展开两周的调整。",
+      "publish_time": "2026-05-14 18:17"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "反弹后大概率后面也得调整",
+      "publish_time": "2026-05-15 09:46"
+    },
+    {
+      "post_n": 9,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "后面应该还要探底",
+      "publish_time": "2026-05-15 12:02"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "周一是很可能还有一砸的，或者大低开，那时候也基本是最后一跌了。所以最好的入场时间是下周一",
+      "publish_time": "2026-05-15 18:24"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下半周大盘将再次砸盘！",
+      "publish_time": "2026-05-16 16:11"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大概率是探底回升小阳线。",
+      "publish_time": "2026-05-17 16:37"
+    },
+    {
+      "post_n": 4,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "这波调整的最低点大概率在4060-4080点，所以还有距离。",
+      "publish_time": "2026-05-18 14:00"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天还有冲高回落的阳线反弹。要记住，这种小阳线反弹大概率是下跌中继！",
+      "publish_time": "2026-05-18 17:07"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "这很可能是主力要点燃情绪掩护撤退的死亡诱多。",
+      "publish_time": "2026-05-19 13:11"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天继续反弹。但明天就得注意了！明天反弹后大概率继续探底。",
+      "publish_time": "2026-05-19 15:41"
+    },
+    {
+      "post_n": 24,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大盘再次冲高的话要谨防后面的调整了，所以如果明天再次冲的话要考虑减仓而不是加了。",
+      "publish_time": "2026-05-19 16:24"
+    },
+    {
+      "post_n": 23,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天看低开高走回落小阳线！",
+      "publish_time": "2026-05-20 08:29"
+    },
+    {
+      "post_n": 22,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "下午很可能还有一冲。",
+      "publish_time": "2026-05-20 13:59"
+    },
+    {
+      "post_n": 21,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "目前很多个股都具备了调整动能，因为该上不上，那就容易向下挖坑！",
+      "publish_time": "2026-05-20 15:34"
+    },
+    {
+      "post_n": 20,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大盘：冲高回落阴线！",
+      "publish_time": "2026-05-20 17:14"
+    },
+    {
+      "post_n": 19,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大盘看冲高回落阴线。",
+      "publish_time": "2026-05-20 23:41"
+    },
+    {
+      "post_n": 18,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今明两天很可能会有中大阳爆发。",
+      "publish_time": "2026-05-21 10:15"
+    },
+    {
+      "post_n": 16,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "这样子的话大盘下周将开启挖坑。",
+      "publish_time": "2026-05-21 13:40"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天低开将是不错的时机。",
+      "publish_time": "2026-05-21 23:37"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下周一大概率还有一次阴线调整，然后才能开启反弹。",
+      "publish_time": "2026-05-22 13:45"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "接下来几天大盘大概率会震荡反弹去前高，也就是4250附近。",
+      "publish_time": "2026-05-22 20:26"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周大概率都是小阳线碎步上涨的节奏。",
+      "publish_time": "2026-05-23 13:42"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大盘看震荡收阳线。",
+      "publish_time": "2026-05-24 10:51"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天看震荡收中小阳线。",
+      "publish_time": "2026-05-25 10:29"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "所以明天大盘很可能再次大阳线！",
+      "publish_time": "2026-05-25 16:51"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "一旦下午券再次扛起大旗带领上涨，大盘是有希望拉起来的。",
+      "publish_time": "2026-05-26 12:40"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大概率是权重压盘，个股反弹的行情！",
+      "publish_time": "2026-05-26 18:08"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天看探底回升小阳线。",
+      "publish_time": "2026-05-26 23:03"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "下午如果券券没有如期探底回升，那么高位股回落的话大概率收中阴线今天。",
+      "publish_time": "2026-05-27 11:31"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "现在大盘短期基本调整完毕，明天看反弹。",
+      "publish_time": "2026-05-27 15:56"
+    },
+    {
+      "post_n": 24,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天早盘低开探底一下就会开启新一轮行情！",
+      "publish_time": "2026-05-27 22:10"
+    },
+    {
+      "post_n": 22,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "可以拿了，今天就是机会",
+      "publish_time": "2026-05-28 12:52"
+    },
+    {
+      "post_n": 21,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "接下来大盘将展开一两周的震荡上涨",
+      "publish_time": "2026-05-28 13:17"
+    },
+    {
+      "post_n": 20,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "下午没什么好说的，接着奏乐接着舞！",
+      "publish_time": "2026-05-28 14:45"
+    },
+    {
+      "post_n": 19,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大盘看平开高走中阳线！",
+      "publish_time": "2026-05-28 17:47"
+    },
+    {
+      "post_n": 18,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天看冲高回落中阳线！",
+      "publish_time": "2026-05-29 09:00"
+    },
+    {
+      "post_n": 17,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下周一估计还得震荡回踩一下",
+      "publish_time": "2026-05-29 14:25"
+    },
+    {
+      "post_n": 16,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周的震荡反弹还得来",
+      "publish_time": "2026-05-29 14:45"
+    },
+    {
+      "post_n": 15,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "周一可以直接低开高走了。",
+      "publish_time": "2026-05-29 21:16"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "周一低开后可以开启一波反弹，甚至低位科技会反转！",
+      "publish_time": "2026-05-30 12:56"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "周一早上低开探底一下就差不多了",
+      "publish_time": "2026-05-30 18:02"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周行情毫无疑问是会有一波反弹的",
+      "publish_time": "2026-05-31 12:24"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周很多个股都会有一波连续修复行情",
+      "publish_time": "2026-05-31 21:29"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "新一轮反弹行情刚刚开始，这里没有下车的理由！",
+      "publish_time": "2026-06-01 13:01"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大概率还是震荡小阳线。",
+      "publish_time": "2026-06-01 16:54"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "指农认为明天大概率震荡收小阳线",
+      "publish_time": "2026-06-02 00:06"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天早盘探底后快则下午，慢则明天，将会出一根普涨中大阳线！",
+      "publish_time": "2026-06-02 10:14"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "黎明将至！",
+      "publish_time": "2026-06-02 13:22"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "两天之内大家有望看见由权重带领的中大阳线，确立反弹行情！",
+      "publish_time": "2026-06-02 16:23"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天即将变盘！带领大盘往上突破！",
+      "publish_time": "2026-06-02 23:32"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天不看空",
+      "publish_time": "2026-06-03 10:05"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "如果下午券商还是不中大阳线爆发的话，明天权重会再次杀跌挖坑。",
+      "publish_time": "2026-06-03 13:26"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大盘很可能还会挖坑中阴线。",
+      "publish_time": "2026-06-03 15:49"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天看中阴调整。",
+      "publish_time": "2026-06-04 08:32"
+    },
+    {
+      "post_n": 24,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "盘中探底都是机会。",
+      "publish_time": "2026-06-04 11:42"
+    },
+    {
+      "post_n": 23,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天看中阳线反弹！",
+      "publish_time": "2026-06-04 16:51"
+    },
+    {
+      "post_n": 22,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明日看中阳反弹。",
+      "publish_time": "2026-06-05 00:33"
+    },
+    {
+      "post_n": 21,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "下午依然会是这种节奏，震荡上涨收中阳线！",
+      "publish_time": "2026-06-05 12:47"
+    },
+    {
+      "post_n": 20,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周行情没有问题。",
+      "publish_time": "2026-06-05 17:29"
+    },
+    {
+      "post_n": 19,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周节奏会反着来，那就是上证撑着，而抱团股为代表的双创会有剧烈杀跌 。",
+      "publish_time": "2026-06-06 10:19"
+    },
+    {
+      "post_n": 18,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下一周的行情，将是新一轮反弹行情的开始。",
+      "publish_time": "2026-06-07 10:26"
+    },
+    {
+      "post_n": 17,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天但凡主力启动权重护盘大盘就不会大跌。",
+      "publish_time": "2026-06-08 10:20"
+    },
+    {
+      "post_n": 16,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "下午如果券商还是死气沉沉的话，那么尾盘大概率会回落收中大阴线。",
+      "publish_time": "2026-06-08 13:12"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明日大盘：中大阳线！",
+      "publish_time": "2026-06-08 23:20"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "快则下午，慢则明天，券券保鲜即将爆发！带领大盘上攻！",
+      "publish_time": "2026-06-09 13:17"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大概率得继续反弹。",
+      "publish_time": "2026-06-09 15:50"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明日继续看涨！",
+      "publish_time": "2026-06-09 17:57"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明日继续收阳线",
+      "publish_time": "2026-06-10 00:06"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天大盘将会在它们的带领下，探底回升中阳线！",
+      "publish_time": "2026-06-10 08:17"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "下午权重继续带领大盘反弹。",
+      "publish_time": "2026-06-10 13:21"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天继续看反弹，处于调整末端的超跌科技，已经被压迫到极致，只要明天券券再次起舞。随时起爆！",
+      "publish_time": "2026-06-10 20:26"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今日不看空",
+      "publish_time": "2026-06-11 08:05"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "这里必须来一波反弹，目前就是临界点了。",
+      "publish_time": "2026-06-11 16:23"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今日看普涨反弹！",
+      "publish_time": "2026-06-12 08:02"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "下午大概率还能涨！",
+      "publish_time": "2026-06-12 13:35"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下周一很可能还有探底回升。",
+      "publish_time": "2026-06-12 15:41"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周将会继续震荡上涨。",
+      "publish_time": "2026-06-12 21:51"
+    },
+    {
+      "post_n": 24,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周大盘大概率是震荡上涨的局面。",
+      "publish_time": "2026-06-14 10:11"
+    },
+    {
+      "post_n": 23,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "因为下午和明天很可能都是调整模式。",
+      "publish_time": "2026-06-15 08:01"
+    },
+    {
+      "post_n": 21,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "下午大概率要回落了。",
+      "publish_time": "2026-06-15 10:48"
+    },
+    {
+      "post_n": 20,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明后天容易震荡。",
+      "publish_time": "2026-06-15 16:47"
+    },
+    {
+      "post_n": 18,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "超跌个股的修复行情刚刚开始，目前来看大盘还是走的比较强的。",
+      "publish_time": "2026-06-16 11:49"
+    },
+    {
+      "post_n": 17,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天大盘如果收个十字星或者小阳线的话，就很可能是上涨中继！也就是说明天很可能还有中大阳线爆发。",
+      "publish_time": "2026-06-16 13:39"
+    },
+    {
+      "post_n": 16,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天看中大阳突破！",
+      "publish_time": "2026-06-16 17:53"
+    },
+    {
+      "post_n": 15,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天明天就继续中大阳线突破！",
+      "publish_time": "2026-06-16 23:29"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天很可能低开高走中大阳线。",
+      "publish_time": "2026-06-17 09:20"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天大盘看低开冲高回落!",
+      "publish_time": "2026-06-18 08:26"
+    },
+    {
+      "post_n": 11,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "观点依然不变，依然看低开冲高回落。",
+      "publish_time": "2026-06-18 11:38"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周初大盘依然会震荡盘整，虽然大盘不好看，但其中不少超跌的补涨才刚刚开始。",
+      "publish_time": "2026-06-18 13:53"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "指农认为，下周大盘还有行情！",
+      "publish_time": "2026-06-18 17:00"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "指农认为属于券商和低位ai的行情，将从下周拉开序幕！这一次很可能大阳连续拔地而起。",
+      "publish_time": "2026-06-20 12:41"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "指农认为明天大盘很可能会正式完成切换，抱团股高开低走，而券商和低位科技，将会接过上涨的大旗，开启新一轮行情。",
+      "publish_time": "2026-06-21 14:19"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天大盘早盘大概率低开震荡一下，然后直接开启反弹！",
+      "publish_time": "2026-06-22 09:02"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "反弹刚刚开始！",
+      "publish_time": "2026-06-22 11:53"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天很可能还有中大阳继续爆发！",
+      "publish_time": "2026-06-22 15:54"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大盘很可能中大阳线继续爆发！",
+      "publish_time": "2026-06-22 20:53"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天大盘很可能还能继续中大阳线爆发。",
+      "publish_time": "2026-06-23 10:01"
+    },
+    {
+      "post_n": 24,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "接下来大盘大概率要震荡两天了，然后才会继续上攻",
+      "publish_time": "2026-06-23 12:27"
+    },
+    {
+      "post_n": 23,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大盘继续看涨，券商依然会带领大盘接着上攻。",
+      "publish_time": "2026-06-23 16:57"
+    },
+    {
+      "post_n": 22,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天大盘看小低开，然后直接高走收中阳线",
+      "publish_time": "2026-06-24 09:08"
+    },
+    {
+      "post_n": 21,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "强力反弹刚刚开始。",
+      "publish_time": "2026-06-24 10:53"
+    },
+    {
+      "post_n": 20,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "下午大盘继续看涨，下午低位科技和中小盘，将会大面积爆发！",
+      "publish_time": "2026-06-24 13:38"
+    },
+    {
+      "post_n": 19,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大盘看震荡盘整，但科技个股明天却可以直接反弹。",
+      "publish_time": "2026-06-24 16:58"
+    },
+    {
+      "post_n": 18,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "这一波反弹行情很可能会持续到七月十号差不多",
+      "publish_time": "2026-06-25 09:23"
+    },
+    {
+      "post_n": 17,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "快则下午，慢则明天，随时大阳线拉起！",
+      "publish_time": "2026-06-25 13:29"
+    },
+    {
+      "post_n": 16,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "低位科技这里就是极限调整位置，明天随时爆发。",
+      "publish_time": "2026-06-25 15:11"
+    },
+    {
+      "post_n": 15,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天行情很可能会反转，抱团股休息，券商和低位科技登场表演！",
+      "publish_time": "2026-06-25 18:11"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "下午大盘看探底回升。",
+      "publish_time": "2026-06-26 12:19"
+    },
+    {
+      "post_n": 13,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大盘这样子走后面可能得继续墨迹了",
+      "publish_time": "2026-06-26 17:04"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明早大盘低开后会有一波反弹，大概反弹到4060-4070附近，会遇阻后再次回落，然后周二再阴线回调到4000点附近完成调整。",
+      "publish_time": "2026-06-28 14:49"
+    },
+    {
+      "post_n": 11,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "这样的话容易再来一根大阴线，所以这里要谨慎一点。",
+      "publish_time": "2026-06-29 11:11"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天调整结束随时反弹。",
+      "publish_time": "2026-06-29 13:29"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天盘中若有杀跌，都是机会而不是恐慌，后面大盘将会在券商和ai应用的带领下，展开一轮全新的行情！",
+      "publish_time": "2026-06-29 23:36"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天大盘很可能会继续剧烈波动，今天大盘看冲高回落然后在高走！",
+      "publish_time": "2026-06-30 09:51"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "中线来看在下个月上半月很可能会去挑战前期高点。",
+      "publish_time": "2026-06-30 13:27"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天看中阳线反弹！",
+      "publish_time": "2026-06-30 17:28"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天如果大阳线的话，明后天是很可能要震荡的",
+      "publish_time": "2026-07-01 11:16"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明后天抱团股很可能有砸盘，大盘也会调整两三天",
+      "publish_time": "2026-07-01 12:02"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天看震荡收阴线。",
+      "publish_time": "2026-07-01 16:37"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "观点不变，今天依然看震荡收跌。",
+      "publish_time": "2026-07-02 10:08"
+    },
+    {
+      "post_n": 24,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "从结构上看大盘没有问题，明天大概率又得继续上攻。",
+      "publish_time": "2026-07-02 13:46"
+    },
+    {
+      "post_n": 23,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今晚大美丽大概率又得大阴线，那么明天抱团股接着爆杀，今天冲进去的人，明天都得被埋。",
+      "publish_time": "2026-07-02 15:48"
+    },
+    {
+      "post_n": 22,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "经过复盘，指农认为明天会有反弹，但是，反弹大概率是以老登权重为主导的，和低位的ai应用。",
+      "publish_time": "2026-07-02 23:47"
+    },
+    {
+      "post_n": 21,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "从盘面上看，大盘没有问题，下周大概率还能继续反弹。",
+      "publish_time": "2026-07-03 13:08"
+    },
+    {
+      "post_n": 20,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "所以抱团股下周一大概率还得砸，进而带动大盘再调整一天。",
+      "publish_time": "2026-07-03 16:54"
+    },
+    {
+      "post_n": 18,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "经过复盘，指农认为，下周都将会真正迎来风格切换！老登券商保险下周表现很可能会比较亮眼，而抱团股呢，下周大概率都是震荡下跌📉的走势，短期不必看了。",
+      "publish_time": "2026-07-05 10:30"
+    },
+    {
+      "post_n": 17,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "综合判断，那么今天大概率还是冲高回落收阴线。",
+      "publish_time": "2026-07-06 08:56"
+    },
+    {
+      "post_n": 16,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "总而言之现在已经调整完毕，没必要动来动去，持股待涨就行了。",
+      "publish_time": "2026-07-06 13:51"
+    },
+    {
+      "post_n": 15,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "经过复盘，指农认为明天大盘看反弹，很多个股，尤其是中小盘科技，已经压盘到了极致，明天随时反攻。",
+      "publish_time": "2026-07-06 17:01"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "从结构上看，今天大概率会是普涨中阳线，而由于权重前两天都比较强势，所以今天是可以震荡休息一天的。",
+      "publish_time": "2026-07-07 08:29"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "但复盘后，指农依然认为。ai应用和券券互金，现在就是极致洗盘，明天可以直接开启反弹。",
+      "publish_time": "2026-07-07 15:43"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天大盘看反弹，至于回不回落看券商，券商肯出力的话，今天看中阳反弹。不出力则是冲高回落小阳线。",
+      "publish_time": "2026-07-08 08:17"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "而券券早盘冲高回落目前小绿，依然没有问题，下午大概率也得继续反弹。",
+      "publish_time": "2026-07-08 12:40"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "盘面依然没有问题，今天反攻冲高失败了，那么明天就继续反弹！",
+      "publish_time": "2026-07-08 16:52"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "所以今天和昨天一样，早盘冲高，重点依然看券商，券商装死不表现的话，大盘就冲高回落收绿。券商表现，则中阳没问题！",
+      "publish_time": "2026-07-09 08:49"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "指农认为不会！新一轮反弹，很可能从下午开始！越是全网恐惧的时候，越说明到位了。",
+      "publish_time": "2026-07-09 13:05"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "因为沉寂已久的老登权重，尤其是券商保鲜，明天将会再次登场表演！是的，你没看错，明天大盘还有加速中大阳线，明天大概率是指数行情，老登粉墨登场，个股震荡休整。",
+      "publish_time": "2026-07-09 16:36"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "指农认为，这一次大盘大概率要要去冲击4250附近，且很可能会是连续阳线上攻的走势，主角正是目前人人喊打的老登，尤其是券券保险。",
+      "publish_time": "2026-07-10 00:04"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "新一轮上涨正式开始，但这一次很可能还是指数行情，也就是说，踩不对板块，你很可能还是没赚钱。这一次大盘会去冲击前高4250附近，为即将上市的大块头暖场。所以近两个星期，指农认为不必担心大跌。",
+      "publish_time": "2026-07-10 10:10"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "但指农要告诉你，拿！拿到前高4250再说，不要觉得不可能，一周后你就知道为什么了。",
+      "publish_time": "2026-07-10 13:19"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "所以周一大盘必然会有中阳修复.",
+      "publish_time": "2026-07-10 16:30"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "所以指农认为，下周大盘很可能会迎来加速行情！这一次很可能会涨的出乎意料。所以最好不要乱动，拿住就行了。",
+      "publish_time": "2026-07-12 10:56"
+    },
+    {
+      "post_n": 24,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天看低开高走中阳线！",
+      "publish_time": "2026-07-13 08:57"
+    },
+    {
+      "post_n": 22,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天早盘大概率还有低开，而后就会企稳反弹。",
+      "publish_time": "2026-07-13 18:12"
+    },
+    {
+      "post_n": 21,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "经过复盘，指农依然认为这就是底部，现在就是起涨前最后的杀跌！",
+      "publish_time": "2026-07-14 12:07"
+    },
+    {
+      "post_n": 18,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天的大盘指农认为没有问题，明天看继续中阳反弹",
+      "publish_time": "2026-07-14 16:31"
+    },
+    {
+      "post_n": 16,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "指农认为非常有可能，只要下午券商继续发力，好日子就来了",
+      "publish_time": "2026-07-15 12:36"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大盘看继续上攻",
+      "publish_time": "2026-07-15 17:15"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "intraday",
+      "evidence": "观点不变，下午依然看中阳线！",
+      "publish_time": "2026-07-16 13:06"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "所以明天不看空，甚至很可能会有强力反弹。",
+      "publish_time": "2026-07-16 16:22"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天看低开高走中阳线！",
+      "publish_time": "2026-07-17 08:38"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "intraday",
+      "evidence": "下午大盘看V起收红！",
+      "publish_time": "2026-07-17 12:31"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "而这种跌法，下周是极易暴力反弹的。",
+      "publish_time": "2026-07-17 16:43"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "明天大盘看探底回升阳线。",
+      "publish_time": "2026-07-19 10:43"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天大盘的预期是低开高走反弹，但尾盘容易因为抱团股影响回落。",
+      "publish_time": "2026-07-20 09:56"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大概率还有一次强力反弹，且可能以科技为主。",
+      "publish_time": "2026-07-20 13:17"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天看中大阳线反弹。",
+      "publish_time": "2026-07-20 17:30"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "intraday",
+      "evidence": "今日大盘：中大阳线\n\n观点不变，今天依然看中大阳线反弹",
+      "publish_time": "2026-07-21 08:45"
+    },
+    {
+      "post_n": 24,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大概率还是好日子[得意]，至少早上是。",
+      "publish_time": "2026-07-21 16:21"
+    },
+    {
+      "post_n": 23,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天大盘看冲高回落，但冲高回落更可能的是半导，而其它那些低位题材，可以继续上攻！",
+      "publish_time": "2026-07-22 07:47"
+    },
+    {
+      "post_n": 21,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大盘接下来要上去，只能推动老登券券保险他们才行，才能完成点火任务。 真正的变盘明后天才开始，到时候还得券券保险带头。",
+      "publish_time": "2026-07-22 13:55"
+    },
+    {
+      "post_n": 20,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "指龙认为，明天还有反弹，且很可能是老登和低位题材带领的，而不是像昨天那样子只拉抱团股。所以明天依然没有问题。 明天看中小阳反弹！",
+      "publish_time": "2026-07-22 16:48"
+    },
+    {
+      "post_n": 19,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "指龙认为，目前大盘如此纠结不定。是因为缺少了券券的变盘！也就是说大盘的变盘时刻即将来临。 就在这几天了。 只要券券爆一根大阳线，盘面情绪将会被彻底盘活！指农认为很快了。",
+      "publish_time": "2026-07-22 23:20"
+    },
+    {
+      "post_n": 18,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "近期盘面低迷，虽然前天我们吃到了半导体超跌反弹的大肉，但这依然不改变大盘的颓势，所以这里除非券券爆量大阳改变趋势，不然短期不要对大盘抱太大希望。",
+      "publish_time": "2026-07-23 09:05"
+    },
+    {
+      "post_n": 17,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大盘这样子走未来两三天可能还得回踩一下前低，所以不能激进。",
+      "publish_time": "2026-07-23 11:23"
+    },
+    {
+      "post_n": 16,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "从结构上看，明天是很可能中阴线回踩的，所以今天指龙趁着冲高已经减仓。 明天和周一大概率都是震荡调整。",
+      "publish_time": "2026-07-23 15:48"
+    },
+    {
+      "post_n": 15,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "所以指农昨天文章观点不变，今天看中阴线调整。",
+      "publish_time": "2026-07-24 10:18"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "因为目前对于很多低位题材来说，现在就是最后的赶人下车，反而是低吸的机会。所以今天可以分批低吸，再留些仓位周一看看。",
+      "publish_time": "2026-07-24 12:18"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "指龙认为这时候还要反人性进场，指龙已经进场，继续等待超跌反弹。越是全网觉得要跌的时候，往往很可能会爆发出乎意料的行情。",
+      "publish_time": "2026-07-24 14:24"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "从结构上看，下周很可能还是强分化行情。 目前来看抱团股半导和天空上的卫星，下周大初概率还有不错的反弹，券券呢今天调整这么多也算是短线进场点。 所以尾盘进场没有问题，下周大概率都有肉可以出来。",
+      "publish_time": "2026-07-24 17:11"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "所以指农认为下周一如果早盘再次低开，也是机会而不是风险。指龙昨天尾盘已经满仓进场，坐等下周的大肉！",
+      "publish_time": "2026-07-25 13:10"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "从结构上看，这一周可能会有不错的行情，所以对于绝大部分人来说，就一个字，拿住！ 至于明天的大盘，明天接着奏乐接着舞",
+      "publish_time": "2026-07-27 16:26"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "指龙认为下午大概率继续回升收阳线。这里很难继续砸下去，3800附近就是底。",
+      "publish_time": "2026-07-28 13:22"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "所以明天的盘面，指龙认为明天会反弹。至少会有大幅冲高。",
+      "publish_time": "2026-07-28 18:04"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "今天大盘看反弹中阳线！最差也是冲高回落带上影线的小阳线。 这里是新一轮波段行情的起点。大概会有一两周的反弹行情。节奏大概率是震荡上涨到四千附近。",
+      "publish_time": "2026-07-29 08:08"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "下午大盘有望继续反弹，收中阳线。盘面依然没有问题",
+      "publish_time": "2026-07-29 12:01"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "从大盘结构上看，明天大概率还有一波不错的修复行情，针对抱团股的。",
+      "publish_time": "2026-07-29 15:55"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "从结构上看，大盘这波调整已经基本结束了，今晚大美丽国大概率也得来波反弹了。所以明天大盘大概率没有问题。",
+      "publish_time": "2026-07-29 17:47"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天看低开高走中阳线！今天大盘很难在继续更跌下去，大概率会走独立行情。",
+      "publish_time": "2026-07-30 09:45"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "这里都必须来一波反。这里走很容易倒在黎明前。",
+      "publish_time": "2026-07-30 13:08"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "指龙依然坚定看好！因为指龙复盘后依然认为大盘没有问题。 明天随时展开反攻！ 指龙继续满仓躺平。",
+      "publish_time": "2026-07-30 17:08"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天大盘情绪有望阴转晴[得意] 因为看好这里即将会有一轮暴力的超跌反弹！",
+      "publish_time": "2026-07-31 06:20"
+    },
+    {
+      "post_n": 24,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大涨如期来临！",
+      "publish_time": "2026-07-31 11:17"
+    },
+    {
+      "post_n": 23,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下周初可能会有震荡调整一下",
+      "publish_time": "2026-07-31 13:48"
+    },
+    {
+      "post_n": 22,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "周一是很容易中阴调整的",
+      "publish_time": "2026-07-31 18:38"
+    },
+    {
+      "post_n": 21,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下周初大盘大概率会是震荡调整的走势。",
+      "publish_time": "2026-08-01 21:51"
+    },
+    {
+      "post_n": 20,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天大盘看十字星或者阴线，开门红大概是比较难的",
+      "publish_time": "2026-08-03 09:10"
+    },
+    {
+      "post_n": 19,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下午或者明天应该还有次回踩",
+      "publish_time": "2026-08-03 11:56"
+    },
+    {
+      "post_n": 18,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大盘明天很可能会有中阳线反弹",
+      "publish_time": "2026-08-03 13:46"
+    },
+    {
+      "post_n": 17,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "指龙认为明天它们会带领大盘拉出一根中大阳线！",
+      "publish_time": "2026-08-03 17:56"
+    },
+    {
+      "post_n": 16,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "观点不变，依然看中大阳线。",
+      "publish_time": "2026-08-04 10:13"
+    },
+    {
+      "post_n": 15,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "下午大盘看接着奏乐接着舞！",
+      "publish_time": "2026-08-04 13:20"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "从结构上看，明天大概率会有中阴线",
+      "publish_time": "2026-08-04 15:49"
+    },
+    {
+      "post_n": 13,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明后天很可能会中阴调整！",
+      "publish_time": "2026-08-04 18:29"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天看调整，并且后面两天很可能也是震荡调整行情。",
+      "publish_time": "2026-08-05 08:25"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "目前看，这里是有可能直接启动反转的。",
+      "publish_time": "2026-08-05 13:17"
+    },
+    {
+      "post_n": 9,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大盘大概率会震荡一天或者小阴线。",
+      "publish_time": "2026-08-05 15:44"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天大概率上证收红，双创收绿。",
+      "publish_time": "2026-08-06 08:04"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天观点不变，上证收红，双创收绿。",
+      "publish_time": "2026-08-06 12:34"
+    },
+    {
+      "post_n": 6,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "如果下午券还是死气沉沉躺在地板下，而不选择向上变盘的话，大盘短期两三天的调整就是板上钉钉了。",
+      "publish_time": "2026-08-06 13:49"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大盘震荡期间将是不错的进场时机，尤其是券券保鲜。",
+      "publish_time": "2026-08-06 20:48"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周初应该还有不错的反弹，所以今天盘中探底将按照计划进城。",
+      "publish_time": "2026-08-07 09:00"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "盘面没有问题，下周蓝筹大概率得表现一下了。",
+      "publish_time": "2026-08-07 15:12"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "大行情大概率在下周。",
+      "publish_time": "2026-08-07 18:02"
+    }
+  ]
+}
