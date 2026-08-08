@@ -2,7 +2,7 @@
 
 对今日头条财经博主的大盘预测能力进行系统性量化评估，包含两个子系统：
 
-- **博主分析系统**：爬取帖子 → LLM 语义信号提取 → v11 双因子打分 → 个体报告 + 横向对比
+- **博主分析系统**：爬取帖子 → LLM 语义信号提取 → v12 单因子打分 → 个体报告 + 横向对比
 - **仓位模拟系统**：基于博主公开仓位披露，模拟组合净值曲线（仅适用于公开仓位的博主）
 
 ## 目录结构
@@ -22,7 +22,7 @@ ana/
 ├── data/
 │   ├── posts/                      爬取的原始帖子（15 位博主）
 │   ├── signals/                    LLM 提取的方向信号
-│   ├── scores/                     v11 打分结果（14 分数体系）
+│   ├── scores/                     v12 打分结果（14 分数体系）
 │   ├── market/                     日线行情数据
 │   ├── minute/                     分钟级行情数据
 │   │   ├── 1min/                   6 指数 1 分钟 K 线
@@ -53,26 +53,35 @@ ana/
 
 ## 快速开始
 
-### 添加新博主完整流程
+### 主要入口：/analyze-blogger Skill
+
+在 Claude Code 中直接使用 Skill 完成全流程分析（爬取→信号提取→打分→报告生成）：
+
+```
+/analyze-blogger <博主名称> <帖子链接>
+```
+
+Skill 定义见 `.claude/skills/analyze-blogger/SKILL.md`（方向信号评分）和 `SIMULATE.md`（仓位模拟，仅适用公开仓位的博主）。
+
+### 后台脚本流水线
+
+Skill 内部调用以下 Python 脚本。如需单独运行某一步（调试/批量处理），可手动执行：
 
 ```bash
 # 1. 爬取帖子（Playwright，需要 chromium）
 python scripts/pipeline/scrape_toutiao.py "<帖子链接>" --name "<博主名>"
 
-# 2. LLM 信号提取（需要 DeepSeek API Key）
+# 2. LLM 信号提取（Claude Agent 在 Skill 中直接完成，也可用 DeepSeek 批量提取）
 export DEEPSEEK_API_KEY="sk-xxx"
 python scripts/pipeline/extract_signals.py --blogger "<博主名>"
 
-# 3. v11 打分（纯本地）
-python scripts/pipeline/score_v11.py --blogger "<博主名>"
+# 3. v12 打分（由 Claude Agent 按 SKILL.md §4.1 规则执行，也可用脚本批量）
+python scripts/pipeline/score_v12.py --blogger "<博主名>"
 
-# 4. 生成报告骨架（量化部分）
+# 4. 生成报告骨架（量化部分 → 再由 Agent 填充定性内容）
 python scripts/pipeline/gen_report_data.py --blogger "<博主名>"
 
-# 5. Agent 定性填充（使用 /analyze-blogger 技能）
-# 在 Claude Code 中运行: /analyze-blogger <博主名>
-
-# 6. 生成 PDF
+# 5. 生成 PDF
 python scripts/pipeline/md_to_pdf.py --blogger "<博主名>"
 ```
 
@@ -141,6 +150,31 @@ python scripts/eval/evaluate_trade_pairs.py --blogger "<博主名>"
 
 ## 数据流
 
+### Path A: Claude Agent（SKILL.md 主路径）
+
+```
+Toutiao 帖子
+    │
+    ▼
+scrape_toutiao.py ──► data/posts/<name>.json
+    │
+    ▼
+Claude Agent 全量阅读 ──► data/signals/<name>.json
+（LLM 逐条语义标注 direction/strength/time_horizon）
+    │
+    ▼
+Claude Agent v12 打分 ──► 14 分数 + time_horizon 分组 + 逐拐点分析
+（market_analysis.md 拐点对齐，return 单因子）
+    │
+    ▼
+Claude Agent 生成报告 ──► reports/bloggers/<name>_analysis.md
+    │
+    ▼
+md_to_pdf.py ──► reports/bloggers/pdf/<name>_analysis.pdf
+```
+
+### Path B: Python 批量流水线（extract_signals.py + score_v12.py）
+
 ```
 Toutiao 帖子
     │
@@ -149,21 +183,19 @@ scrape_toutiao.py ──► data/posts/<name>.json
     │
     ▼
 extract_signals.py ──► data/signals/<name>.json
-(DeepSeek V4 Flash LLM)
+(DeepSeek V4 Flash 批量语义提取)
     │
     ▼
-score_v11.py ──► data/scores/<name>_v11.json
-(market_analysis.md 拐点对齐)
+score_v12.py ──► data/scores/<name>_v12.json
     │
     ├──► gen_report_data.py ──► reports/bloggers/<name>_analysis.md
     │    + Claude Agent 定性填充
     │
     └──► md_to_pdf.py ──► reports/bloggers/pdf/<name>_analysis.pdf
+```
 
-[顺应周期并行分支]
-    │
-    ▼
-仓位披露 batch 提取 ──► data/positions/顺应周期_positions.json
+```
+[顺应周期] 仓位披露 batch 提取 ──► data/positions/顺应周期_positions.json
     │
     ▼
 simulate_nav.py ──► data/simulations/顺应周期_nav.json
@@ -171,35 +203,6 @@ simulate_nav.py ──► data/simulations/顺应周期_nav.json
     ▼
 compare_* / decompose_* ──► reports/simulations/
 ```
-
-## 方法论
-
-### v11 打分公式
-
-四场景 A/B/C/D 双因子打分：
-
-| 场景 | 条件 | 得分公式 |
-|------|------|----------|
-| A | 上升段 + 看多 | `sbase × max(return, short_return)` — 奖励正确看多 |
-| B | 上升段 + 看空 | 条件扣分（1.5% 阈值）— 惩罚过早看空 |
-| C | 下降段 + 看多 | 条件扣分（1.5% 阈值）— 惩罚过早抄底 |
-| D | 下降段 + 看空 | `sbase × max(return, short_return)` — 奖励正确看空 |
-
-- `return = |P_next_inflection - P_ref| / |P_ref|`
-- `short_return = |avg_close(T, T+1, T+2) / P_ref - 1|`（3 日均价）
-- 信号参考价格：开盘前→开盘价，盘中→收盘价，收盘后→下一交易日开盘价
-
-### 14 分数体系
-
-7 维度 × 2 指标（总得分 + 平均百分比）：
-综合、上升段、下降段、抄底、逃顶、看多、看空
-
-### time_horizon 4 分类
-
-- **short**：T ~ T+2
-- **medium**：T+3 ~ 1 个月
-- **long**：1 个月以上
-- **unspecified**：无明确时间范围
 
 ## 当前博主
 
@@ -215,6 +218,7 @@ compare_* / decompose_* ──► reports/simulations/
 | TL阳光 | ~500+ | 2024-06 ~ 2026-08 | 趋势跟踪型 |
 | 梦若神机 | ~400+ | 2024-06 ~ 2026-08 | 价值投资型 |
 | 云帆观市 | ~400+ | 2024-08 ~ 2026-08 | 短线交易型 |
+| 来自股市的猩猩 | ~2400 | 2024-06 ~ 2026-08 | 情绪分析型 |
 | 稀豹 | ~300+ | 2024-06 ~ 2026-08 | 情绪分析型 |
 | 鸟瞰股市 | ~300+ | 2024-06 ~ 2026-08 | 宏观分析型 |
 | 道术合一 | 344 | 2024-06 ~ 2026-08 | 哲学框架型 |
@@ -228,7 +232,7 @@ compare_* / decompose_* ──► reports/simulations/
 - **DeepSeek API**（信号提取，模型 `deepseek-v4-flash`）
 - **Chrome**（PDF 生成，headless 模式）
 - **aiohttp / akshare**（行情数据下载）
-- **Claude Code**（报告定性填充、策略文档更新）
+- **Claude Code**（信号提取 / v12 打分 / 报告定性填充 / 策略文档更新 / 仓位模拟 LLM 提取）
 
 ## 注意事项
 
