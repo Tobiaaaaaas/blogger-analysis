@@ -175,6 +175,9 @@ def main():
         "direction": "", "total": 0, "bull": 0, "bear": 0, "score": 0.0,
         "start_label": "", "end_label": "",
     })
+    # Per-segment bull/bear tracking for balanced composite
+    bull_by_seg = defaultdict(lambda: {"cnt": 0, "score": 0.0, "win": 0})
+    bear_by_seg = defaultdict(lambda: {"cnt": 0, "score": 0.0, "win": 0})
     inflection_signals = defaultdict(list)
     equity_records = []
 
@@ -349,8 +352,42 @@ def main():
             by_seg[seg_key]["score"] += score
             if direction == "bullish":
                 by_seg[seg_key]["bull"] += 1
+                if score != 0:
+                    bull_by_seg[seg_key]["cnt"] += 1
+                    bull_by_seg[seg_key]["score"] += score
+                    if score > 0:
+                        bull_by_seg[seg_key]["win"] += 1
             else:
                 by_seg[seg_key]["bear"] += 1
+                if score != 0:
+                    bear_by_seg[seg_key]["cnt"] += 1
+                    bear_by_seg[seg_key]["score"] += score
+                    if score > 0:
+                        bear_by_seg[seg_key]["win"] += 1
+
+    # ── Balanced Composite: segment-equalized, long/short equal weight ──
+    # Bull segment-equalized: average of per-segment bullish signal avg_pct
+    bull_seg_avgs = []
+    for seg_key, d in bull_by_seg.items():
+        if d["cnt"] > 0:
+            bull_seg_avgs.append(d["score"] / d["cnt"])
+    bull_seg_avg = sum(bull_seg_avgs) / len(bull_seg_avgs) if bull_seg_avgs else 0.0
+    bull_seg_win = sum(1 for x in bull_seg_avgs if x > 0) / len(bull_seg_avgs) * 100 if bull_seg_avgs else 0.0
+
+    # Bear segment-equalized
+    bear_seg_avgs = []
+    for seg_key, d in bear_by_seg.items():
+        if d["cnt"] > 0:
+            bear_seg_avgs.append(d["score"] / d["cnt"])
+    bear_seg_avg = sum(bear_seg_avgs) / len(bear_seg_avgs) if bear_seg_avgs else 0.0
+    bear_seg_win = sum(1 for x in bear_seg_avgs if x > 0) / len(bear_seg_avgs) * 100 if bear_seg_avgs else 0.0
+
+    # Balanced composite = 0.5 * bull + 0.5 * bear
+    balanced_composite = round(0.5 * bull_seg_avg + 0.5 * bear_seg_avg, 2)
+
+    # Direction bias: 0.5 = perfectly balanced, 1.0 = all bull, 0.0 = all bear
+    total_bull_bear = cnt_bull + cnt_bear
+    direction_bias = round(cnt_bull / total_bull_bear, 2) if total_bull_bear > 0 else 0.5
 
     def avg_pct(total, count):
         return round(total / count, 2) if count > 0 else 0.0
@@ -390,6 +427,14 @@ def main():
     print(f"{'-'*50}")
     for dim, d in scores.items():
         print(f"{dim:<8} {d['total']:>+10.2f}% {d['count']:>8} {d['avg_pct']:>+9.2f}% {d['win_rate']:>9.1f}%")
+    print(f"{'='*70}")
+
+    # ── Terminal: Balanced Composite ──
+    print(f"\n=== BALANCED COMPOSITE (segment-equalized, 50/50 long-short) ===")
+    print(f"  Bull (seg-eq): {bull_seg_avg:+.2f}% across {len(bull_seg_avgs)} segments")
+    print(f"  Bear (seg-eq): {bear_seg_avg:+.2f}% across {len(bear_seg_avgs)} segments")
+    print(f"  Balanced Composite: {balanced_composite:+.2f}%")
+    print(f"  Direction Bias: {direction_bias:.2f} (0.5=balanced, 1.0=all-bull)")
     print(f"{'='*70}")
 
     # By time_horizon
@@ -545,7 +590,21 @@ def main():
         "score_zero": score_zero,
         "no_price": no_price,
         "no_segment": no_segment,
+        "bullish_count": cnt_bull,
+        "bearish_count": cnt_bear,
         "scores": scores,
+        "balanced_composite": balanced_composite,
+        "direction_bias": direction_bias,
+        "bull_segment_avg": {
+            "segments": len(bull_seg_avgs),
+            "avg_pct": round(bull_seg_avg, 2),
+            "win_rate": round(bull_seg_win, 2),
+        },
+        "bear_segment_avg": {
+            "segments": len(bear_seg_avgs),
+            "avg_pct": round(bear_seg_avg, 2),
+            "win_rate": round(bear_seg_win, 2),
+        },
         "time_horizon_scores": th_scores,
         "equity_curve": equity_output,
         "risk_metrics": risk_output,

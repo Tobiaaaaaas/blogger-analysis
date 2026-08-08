@@ -121,6 +121,10 @@ def gen_segment_table(score_d):
 
 def gen_14scores(score_d):
     s = score_d.get("scores", {})
+    bc = score_d.get("balanced_composite", 0)
+    db = score_d.get("direction_bias", 0.5)
+    bsa = score_d.get("bull_segment_avg", {})
+    bxa = score_d.get("bear_segment_avg", {})
     lines = []
     lines.append("### 十四分数")
     lines.append("")
@@ -129,6 +133,19 @@ def gen_14scores(score_d):
     for dim in ["综合", "上升段", "下降段", "抄底", "逃顶", "看多", "看空"]:
         d = s.get(dim, {})
         lines.append(f"| {dim} | {d.get('total', 0):+.2f} | {d.get('count', 0)} | {d.get('avg_pct', 0):+.2f}% |")
+    lines.append("")
+    lines.append("### 多空均衡评分（v12.1 修正）")
+    lines.append("")
+    lines.append("| 维度 | 值 | 说明 |")
+    lines.append("|------|---|------|")
+    lines.append(f"| **均衡综合** | **{bc:+.2f}%** | 多空等权 + 线段均衡（核心新指标）|")
+    bs_label = f"{bsa.get('segments', 0)} 段" if bsa else "N/A"
+    bx_label = f"{bxa.get('segments', 0)} 段" if bxa else "N/A"
+    lines.append(f"| 看多段均 | {bsa.get('avg_pct', 0):+.2f}% | 各线段看多信号 avg 的平均（{bs_label}）|")
+    lines.append(f"| 看空段均 | {bxa.get('avg_pct', 0):+.2f}% | 各线段看空信号 avg 的平均（{bx_label}）|")
+    bias_desc = "完美均衡" if 0.45 <= db <= 0.55 else ("偏多" if db > 0.55 else "偏空")
+    bias_warn = " ⚠️ 极端偏多，综合分可能虚高" if db > 0.8 else (" ⚠️ 极端偏空" if db < 0.2 else "")
+    lines.append(f"| 方向偏误 | {db:.2f} | {bias_desc}{bias_warn} |")
     lines.append("")
     return "\n".join(lines)
 
@@ -212,7 +229,7 @@ def main():
     report.append(f"> 评估时间：2026-08-03 | 平台：今日头条")
     report.append(f"> 帖子数量：{total_posts} 条 | 时间跨度：{earliest} ~ {latest}")
     report.append(f"> 粉丝：{followers} | 信号数量：{sig_count} 条")
-    report.append(f"> 方法论版本：v12（LLM全量读取 + return 单因子打分）")
+    report.append(f"> 方法论版本：v12.1（LLM全量读取 + return 单因子打分 + 多空均衡修正）")
     report.append("")
     report.append("---")
     report.append("")
@@ -270,7 +287,12 @@ def main():
     report.append("")
     report.append(f"- **看多/抄底**：看多得分 {s.get('看多',{}).get('total',0):+.2f}（{s.get('看多',{}).get('count',0)} 条，平均 {s.get('看多',{}).get('avg_pct',0):+.2f}%），抄底得分 {s.get('抄底',{}).get('total',0):+.2f}（{s.get('抄底',{}).get('count',0)} 条，平均 {s.get('抄底',{}).get('avg_pct',0):+.2f}%）。<!-- LLM_ANALYSIS -->")
     report.append(f"- **看空/逃顶**：看空得分 {s.get('看空',{}).get('total',0):+.2f}（{s.get('看空',{}).get('count',0)} 条，平均 {s.get('看空',{}).get('avg_pct',0):+.2f}%），逃顶得分 {s.get('逃顶',{}).get('total',0):+.2f}（{s.get('逃顶',{}).get('count',0)} 条，平均 {s.get('逃顶',{}).get('avg_pct',0):+.2f}%）。<!-- LLM_ANALYSIS -->")
-    report.append(f"- **综合**：综合得分 {s.get('综合',{}).get('total',0):+.2f}（{s.get('综合',{}).get('count',0)} 条，平均 {s.get('综合',{}).get('avg_pct',0):+.2f}%），上升段 {s.get('上升段',{}).get('total',0):+.2f}，下降段 {s.get('下降段',{}).get('total',0):+.2f}。<!-- LLM_ANALYSIS -->")
+    report.append(f"- **综合（原始）**：综合得分 {s.get('综合',{}).get('total',0):+.2f}（{s.get('综合',{}).get('count',0)} 条，平均 {s.get('综合',{}).get('avg_pct',0):+.2f}%），上升段 {s.get('上升段',{}).get('total',0):+.2f}，下降段 {s.get('下降段',{}).get('total',0):+.2f}。<!-- LLM_ANALYSIS -->")
+    bc = score_d.get("balanced_composite", 0)
+    db = score_d.get("direction_bias", 0.5)
+    bsa = score_d.get("bull_segment_avg", {})
+    bxa = score_d.get("bear_segment_avg", {})
+    report.append(f"- **均衡综合（v12.1）**：**{bc:+.2f}%**（多空等权+线段均衡，修正了方向偏误）。看多段均 {bsa.get('avg_pct', 0):+.2f}%，看空段均 {bxa.get('avg_pct', 0):+.2f}%。方向偏误 {db:.2f}（0.5=完美均衡）。<!-- LLM_ANALYSIS -->")
     report.append(f"- **适合什么类型的跟随者**：<!-- LLM_ANALYSIS -->")
     report.append("")
 

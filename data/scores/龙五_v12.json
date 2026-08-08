@@ -6,6 +6,8 @@
   "score_zero": 6,
   "no_price": 0,
   "no_segment": 0,
+  "bullish_count": 160,
+  "bearish_count": 49,
   "scores": {
     "综合": {
       "total": 230.54,
@@ -49,6 +51,18 @@
       "avg_pct": -0.31,
       "win_rate": 48.98
     }
+  },
+  "balanced_composite": 0.07,
+  "direction_bias": 0.77,
+  "bull_segment_avg": {
+    "segments": 11,
+    "avg_pct": -0.45,
+    "win_rate": 45.45
+  },
+  "bear_segment_avg": {
+    "segments": 10,
+    "avg_pct": 0.59,
+    "win_rate": 60.0
   },
   "time_horizon_scores": {
     "short": {
