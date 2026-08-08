@@ -492,6 +492,7 @@ candidate_posts = [
       "max_drawdown_pct": -6.96,
       "max_drawdown_dates": {"peak": "2026-02-27", "trough": "2026-03-23"},
       "volatility_annualized_pct": 12.7,
+      "sharpe_ratio": -0.41,
       "downside_deviation_pct": 8.63,
       "sortino_ratio": -0.28,
       "var_95_daily_pct": -1.27,
@@ -617,7 +618,7 @@ candidate_posts = [
 
 ## 与方向信号评分的关系
 
-仓位模拟的净值曲线（SIMULATE）和 v11 信号评分（SKILL.md）是两个独立维度：
+仓位模拟的净值曲线（SIMULATE）和 v12 信号评分（SKILL.md）是两个独立维度：
 
 | | 方向信号评分 (SKILL.md) | 仓位模拟 (SIMULATE.md) |
 |:---|:---|:---|
