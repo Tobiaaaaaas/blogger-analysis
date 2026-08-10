@@ -34,7 +34,7 @@ cd <项目根目录> && python scripts/pipeline/scrape_toutiao.py <帖子链接>
 
 ### Step 1.5: LLM 信号提取
 
-> **v12 变更**：全量读取帖子，LLM 逐条标注信号。不再分片、不再正则匹配。
+> **v13 变更**：全量读取帖子，LLM 逐条标注信号。不再分片、不再正则匹配。打分改用双触点拐点感知规则（return + return2，按 1% 阈值分流，情形 B 反转判据）。
 
 **整个过程不能用关键词匹配或正则表达式来筛选或标注。** 每一条帖子的每一个标注字段 (direction/strength/time_horizon)，都必须由 LLM 通过理解帖子语义来判定，而非依赖关键词列表。
 
@@ -81,20 +81,12 @@ cd <项目根目录> && python scripts/pipeline/scrape_toutiao.py <帖子链接>
     "other": 0
   },
   "scored_bullish": {
-    "strong": 0,
-    "moderate": 0,
-    "short": 0,
-    "medium": 0,
-    "long": 0,
-    "unspecified": 0
+    "by_strength": {"strong": 0, "moderate": 0},
+    "by_time_horizon": {"short": 0, "medium": 0, "long": 0, "unspecified": 0}
   },
   "scored_bearish": {
-    "strong": 0,
-    "moderate": 0,
-    "short": 0,
-    "medium": 0,
-    "long": 0,
-    "unspecified": 0
+    "by_strength": {"strong": 0, "moderate": 0},
+    "by_time_horizon": {"short": 0, "medium": 0, "long": 0, "unspecified": 0}
   },
   "signals": [ ... ]
 }
@@ -145,19 +137,23 @@ cd <项目根目录> && python scripts/utils/fetch_market_data.py
 > - 信号在收盘后/非交易日发出 → T 日 = 下一个交易日（参考价 = 下一日开盘）
 > - 时间未知 → T 日 = 下一交易日
 
-##### 4.1.3 v12 单因子打分规则
+##### 4.1.3 v13 双触点拐点感知打分规则
 
-**唯一因子 — return**：信号所在线段中到下一拐点的潜在最大收益。
+**两个 return 值**：
 
 ```
-return = |下一拐点价格 - 信号参考价格| / |信号参考价格|
+return  = |P_next  - P_ref| / |P_ref|      # 到下一拐点
+return2 = |P_next2 - P_ref| / |P_ref|      # 到往后第二个拐点
 ```
 
-**下一拐点价格**：从 `knowledge/market_analysis.md` 直接读取。该文档 §五 列出了全部 Major + Intermediate 拐点的日期和点位，Agent 打分时必须逐一引用——不自行推算、不等价于收盘价。定价规则：顶部拐点取交易日**最高价**，底部拐点取交易日**最低价**（文档中已标注极端价）。
+- `P_next`：当前线段终点拐点的极端价（顶→最高价，底→最低价），从 `market_analysis.md` 直接读取
+- `P_next2`：`P_next` 之后紧邻的下一个拐点的极端价
+- `P_ref`：信号参考价格（定价规则同 §4.1.2）
+- `strength_base = 2`（strong）或 `1`（moderate）
 
-`strength_base = 2`（strong）或 `1`（moderate）。
+**打分公式（按 return 阈值分流）**：
 
-**打分公式**：
+**情形 A — return ≥ 1%**：
 
 信号方向与线段方向一致时（看多+上升段，看空+下降段）→ 奖励：
 ```
@@ -169,7 +165,25 @@ score = +strength_base × return
 score = -strength_base × return
 ```
 
-> 注：分数以百分比表示（return 已 ×100）。博主预测对方向→得分正（大小取决于线段幅度）；预测错方向→得分负。strong 信号（×2）的影响是 moderate（×1）的两倍。
+**情形 B — return < 1%**（剩余空间极小，此时改用 `return2`，且打分方向**反转**）：
+
+信号方向与线段方向一致 → **惩罚**（博主还在顺趋势喊，但线段已接近终点，滞后了）：
+
+```
+score = -strength_base × return2
+```
+
+信号方向与线段方向相反 → **奖励**（博主逆趋势喊，提前看到了拐点之后的反向走势）：
+
+```
+score = +strength_base × return2
+```
+
+> 逻辑：return < 1% 时当前线段方向几乎没有剩余空间，顺着喊无信息量。真正的预测能力体现在是否提前感知到拐点**之后**的反向走势。逆着趋势喊并且对了，说明博主提前判断出了拐点。
+
+**拐点链末端的处理**：当前 `market_analysis.md` 中最后一个已确认拐点是 M7（2026-07-20, 底, 3741）。为让 I12→M7 段和 M7→now 段信号的 `P_next`/`P_next2` 可计算，在 M7 之后补充一个临时拐点：**M7 之后的上证最高点**（2026-08-10, 最高价 3967.59, 类型=顶）。此后拐点链变为 …→M7(3741)→临时顶(3967.59)→(未闭合)。每次运行打分时应从 `data/market/market_data.json` 中重新查询 M7 之后的最高点，若出现更高的最高价则更新此临时拐点。
+
+**特例 — 当 `P_next2` 不存在且 return < 1% 时** → `score = 0`。若 `P_next2` 不存在但 return ≥ 1%，仍走情形 A（常规打分）。
 
 ##### 4.1.4 共 14 个分数（7 个总得分 + 7 个平均分）
 
@@ -199,7 +213,9 @@ score = -strength_base × return
 ⑭ 看空平均分 = (⑦ / bearish 有效信号数)
 ```
 
-> 最后一段（M7 之后）score = 0。
+> 信号落于 P_next 或 P_next2 不存在时，按 §4.1.3 特例处理（可能为 score=0）。
+
+**排名资格**：仅首次信号发布时间早于 **2026-05-13** 的博主参与排名。此日期为 M6 拐点（2026-05-14）前一日，确保参评博主至少覆盖了 M6 之前的信号 + M6→M7 的完整下跌段。不满足此条件的博主标注为 **⚠️ 数据不足**，不纳入横向对比表。
 
 ##### 4.1.5 报告中的呈现
 
@@ -244,7 +260,7 @@ score = -strength_base × return
 
 评估流程分两步：
 
-1. **拐点线段评估（§4.1）**：所有信号按方向一致性打分（return 单因子），产出 14 个分数（7 总得分 + 7 平均分）+ 按 time_horizon 分组得分
+1. **拐点线段评估（§4.1）**：所有信号按 v13 双触点规则打分（return + return2，1% 阈值分流），产出 14 个分数（7 总得分 + 7 平均分）+ 按 time_horizon 分组得分
 2. **LLM 定性分析**：对照拐点逐条分析博主的代表性判断，引用原文，给出 nuanced 评价
 
 互相验证：线段打分提供量化框架，LLM 定性提供深度解读。如有矛盾（如分数高但 LLM 发现博主只是喊口号），以 LLM 定性为准并解释原因。
@@ -261,7 +277,7 @@ score = -strength_base × return
 > 评估时间：YYYY-MM-DD | 平台：今日头条
 > 帖子数量：N 条 | 时间跨度：YYYY-MM-DD ~ YYYY-MM-DD
 > 粉丝：X | 信号数量：N 条
-> 方法论版本：v12（LLM全量读取 + return 单因子打分）
+> 方法论版本：v13（LLM全量读取 + 双触点拐点感知打分）
 
 ---
 
