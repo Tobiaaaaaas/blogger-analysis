@@ -1,0 +1,67 @@
+{
+  "blogger": "小工匠说股市v",
+  "extraction_time": "2026-08-14 22:20:00",
+  "model": "deepseek-v4-flash",
+  "total_posts": 20,
+  "pre_2024_06": 0,
+  "evaluation_posts": 20,
+  "not_extracted": {
+    "no_market_topic": 0,
+    "pure_description": 2,
+    "directional_vague": 1,
+    "other_index_sector": 6,
+    "other": 7
+  },
+  "scored_bullish": {
+    "strong": 0,
+    "moderate": 3,
+    "long": 1,
+    "medium": 2,
+    "short": 0,
+    "intraday": 0,
+    "unspecified": 0
+  },
+  "scored_bearish": {
+    "strong": 0,
+    "moderate": 1,
+    "long": 1,
+    "medium": 0,
+    "short": 0,
+    "intraday": 0,
+    "unspecified": 0
+  },
+  "signals": [
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "我依然维持如下观点不变：2026年是周期之秋，创业板会震荡驻顶。创业板4380大概率是这一轮牛市的顶部区间，后面可能会有反弹，达到这个高度，甚至超过一点，但不会超过太多。",
+      "publish_time": "2026-07-20 15:58"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "参考上一轮牛市，创业板大概率会缓慢冲高到前高附近，甚至有可能突破前高，然后再回落，再冲高，最后结束这轮牛市。",
+      "publish_time": "2026-07-21 21:30"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "我预判这次恒生科技快要见底了，大概今年年底明年年初我就会再次回到我最熟悉的恒生科技赛道上，继续征战。",
+      "publish_time": "2026-07-27 20:52"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "恒生科技和各主要标的都来了一轮不错的反弹，那么之前的点位即便不是这一轮的底部，也基本上确定是底部附近了。",
+      "publish_time": "2026-08-10 20:27"
+    }
+  ]
+}

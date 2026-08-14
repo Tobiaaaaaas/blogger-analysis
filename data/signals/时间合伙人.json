@@ -1,0 +1,3923 @@
+{
+  "blogger": "时间合伙人",
+  "extraction_time": "2026-08-14 22:44:57",
+  "model": "deepseek-v4-flash",
+  "total_posts": 2299,
+  "pre_2024_06": 897,
+  "evaluation_posts": 1402,
+  "not_extracted": {
+    "no_market_topic": 197,
+    "pure_description": 87,
+    "directional_vague": 441,
+    "other_index_sector": 82,
+    "other": 109
+  },
+  "scored_bullish": {
+    "strong": 62,
+    "moderate": 385,
+    "long": 108,
+    "medium": 115,
+    "short": 127,
+    "intraday": 20,
+    "unspecified": 77
+  },
+  "scored_bearish": {
+    "strong": 2,
+    "moderate": 37,
+    "long": 3,
+    "medium": 12,
+    "short": 18,
+    "intraday": 1,
+    "unspecified": 5
+  },
+  "signals": [
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "减仓，减仓，锁定利润永远没有错!",
+      "publish_time": "2024-09-26 14:00"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "A股盘前突发大利好，今天稳了!",
+      "publish_time": "2024-10-10 10:05"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A股，大盘阶段性调整或接近尾声!",
+      "publish_time": "2024-10-16 22:34"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "各位，耐心持股，好事将至！",
+      "publish_time": "2024-10-17 12:55"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "五重磅利好已经到位，下周将迎来一轮波澜壮阔的拉升！",
+      "publish_time": "2024-10-20 21:46"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "long",
+      "evidence": "牛市，锁仓，不要轻易卖出！",
+      "publish_time": "2024-10-23 23:41"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "保持耐心，更大的行情在后面！",
+      "publish_time": "2024-10-24 10:37"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "大A没有慢牛，只有疯牛和熊市。",
+      "publish_time": "2024-11-16 16:54"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下周一，指数或将直接反弹！",
+      "publish_time": "2024-11-16 18:41"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "周末重大利好来袭！",
+      "publish_time": "2024-11-17 23:25"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "昨晚高层发布利好，接下来稳了!",
+      "publish_time": "2024-11-20 11:30"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "券商有可能正在复制14年7.28日的大行情!",
+      "publish_time": "2024-11-22 11:07"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "long",
+      "evidence": "2025年必定会迎来一轮大牛市!",
+      "publish_time": "2024-11-29 13:38"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "明确观点：下午反转！",
+      "publish_time": "2024-11-29 14:12"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "明确观点：突破有效！",
+      "publish_time": "2024-12-03 21:37"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "unspecified",
+      "evidence": "明确观点: 指数即将一飞冲天!",
+      "publish_time": "2024-12-04 22:02"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "重大利好加持，上证指数将向4000点发起冲击！",
+      "publish_time": "2024-12-10 00:17"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "A股能涨到多少点？可能超出想象!",
+      "publish_time": "2024-12-14 21:12"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "A股能涨到多少点？我是这样认为!",
+      "publish_time": "2024-12-14 22:23"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "2025年会迎来一轮大牛市吗？我是这样认为",
+      "publish_time": "2024-12-26 10:33"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "中国股市未来三年的推背图来了！",
+      "publish_time": "2025-01-11 16:28"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天A股开盘，接下来我这样看",
+      "publish_time": "2025-01-13 00:21"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "每一次下跌都是买入的好机会!",
+      "publish_time": "2025-02-06 19:49"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "2025年A股行情将震荡向上",
+      "publish_time": "2025-02-24 22:44"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "A股能涨到多少点？可能超出想象!",
+      "publish_time": "2025-03-14 22:41"
+    },
+    {
+      "post_n": 4,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大盘无悬念，不要着急建仓!",
+      "publish_time": "2025-04-06 20:31"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "强烈预感：明天大盘或触底反弹!",
+      "publish_time": "2025-04-07 20:23"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "大跌之后必有暴涨",
+      "publish_time": "2025-04-07 21:12"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大跌就是大机会，A股或即将反弹！",
+      "publish_time": "2025-04-07 23:33"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下午或明天将有更大级别的反弹！",
+      "publish_time": "2025-04-08 14:03"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大胆预测一下，明天继续反弹收复3200点！",
+      "publish_time": "2025-04-08 19:00"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "可能要大涨了！",
+      "publish_time": "2025-04-08 23:39"
+    },
+    {
+      "post_n": 9,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "未来几天，大盘波动或非常大!",
+      "publish_time": "2025-04-09 09:53"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "大A今天算是稳了，国家队出手了！",
+      "publish_time": "2025-04-09 15:10"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "未来一段时间，A股将不再有抛压！",
+      "publish_time": "2025-04-10 11:19"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "大A！下午继续大涨！",
+      "publish_time": "2025-04-10 14:24"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "莫慌，天塌不下来！",
+      "publish_time": "2025-04-10 17:50"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今日一战，A股已视美如无物!",
+      "publish_time": "2025-04-11 17:47"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "一大波吃肉行情要来了!",
+      "publish_time": "2025-04-12 10:52"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "稳了！反转来得这么快！",
+      "publish_time": "2025-04-13 00:41"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "继续走牛市！",
+      "publish_time": "2025-04-13 10:49"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "A股下午继续涨！",
+      "publish_time": "2025-04-14 14:28"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "4月14日收评：越来越好!",
+      "publish_time": "2025-04-14 16:25"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "A股迎来长期资金入市逻辑：",
+      "publish_time": "2025-04-14 23:00"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "天塌不下来！",
+      "publish_time": "2025-04-14 23:14"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "3040点，应该是新一轮行情起点！",
+      "publish_time": "2025-04-15 12:30"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "拿住筹码，不要随便乱动。",
+      "publish_time": "2025-04-15 16:17"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "unspecified",
+      "evidence": "坚决与国家队一起守护股市！",
+      "publish_time": "2025-04-16 15:41"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "国家队继续维稳!",
+      "publish_time": "2025-04-16 23:20"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "4月份月线还能收阳吗？",
+      "publish_time": "2025-04-17 12:14"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "今年A股还能创新高！",
+      "publish_time": "2025-04-17 16:21"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "跌不下去是因为便宜和政策呵护!",
+      "publish_time": "2025-04-17 18:58"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "高盛：看多中国资产A股“跑赢大市”！",
+      "publish_time": "2025-04-18 09:49"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A股十连阳它来了？坐稳了！",
+      "publish_time": "2025-04-18 11:12"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "unspecified",
+      "evidence": "这里是大底，耐心拿住!",
+      "publish_time": "2025-04-18 15:25"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下周一或许只有看的份了！",
+      "publish_time": "2025-04-19 14:14"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "A股正在发生翻天覆地的变革！",
+      "publish_time": "2025-04-19 21:31"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "重磅利好，明天周一或许会这样走！",
+      "publish_time": "2025-04-20 19:33"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "午评：上午冲高蓄势，下午蓄势冲高！",
+      "publish_time": "2025-04-21 13:51"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天继续看涨！",
+      "publish_time": "2025-04-22 16:49"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "long",
+      "evidence": "一场波澜壮阔的大牛市在即！",
+      "publish_time": "2025-04-22 19:08"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "不放量就一直涨！",
+      "publish_time": "2025-04-22 22:40"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "耐心等待主升浪行情！",
+      "publish_time": "2025-04-23 02:14"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "散户等的回调可能不会来了！",
+      "publish_time": "2025-04-24 11:27"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "long",
+      "evidence": "长期趋势已经逆转为大牛市！",
+      "publish_time": "2025-04-25 11:54"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "A股“稳定牛”或将是全世界最稳定的股市!",
+      "publish_time": "2025-04-25 20:41"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "继续看好2025年后的股市!",
+      "publish_time": "2025-04-26 16:02"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "大盘已经选择方向了！",
+      "publish_time": "2025-04-28 23:48"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "A股大概十年左右一个牛市周期。",
+      "publish_time": "2025-04-29 12:25"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "圆弧顶已经逐渐形成",
+      "publish_time": "2025-04-29 16:43"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "利好，节后大A可期！",
+      "publish_time": "2025-04-30 23:29"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "利好！节后大盘大概率要高开！",
+      "publish_time": "2025-05-02 22:25"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "unspecified",
+      "evidence": "在这个时间，千万不要割肉下车！",
+      "publish_time": "2025-05-08 18:49"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "中国股市未来将开启十年慢牛，时机已经成熟。",
+      "publish_time": "2025-05-09 14:07"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "A股每隔10年都会迎来一轮牛市!",
+      "publish_time": "2025-05-15 12:22"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "长期资金入市就是慢牛最强的支撑。",
+      "publish_time": "2025-05-19 23:08"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "别慌，牛市根基还在！",
+      "publish_time": "2025-05-25 21:18"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A股，筑底中，行情或即将到来！",
+      "publish_time": "2025-05-28 11:43"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A股已经触及关键位置，行情蓄势待发！",
+      "publish_time": "2025-05-28 14:38"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "long",
+      "evidence": "不用怀疑，现在就是大牛市初期！",
+      "publish_time": "2025-05-29 17:21"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "坚定看好后面的行情",
+      "publish_time": "2025-06-01 12:45"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "慢牛时代即将到来？",
+      "publish_time": "2025-06-02 13:32"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "A股，会有一轮超乎大部分人预期的行情！",
+      "publish_time": "2025-07-08 22:30"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "A股，耐心拿好不要乱动!",
+      "publish_time": "2025-07-10 15:00"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "long",
+      "evidence": "A股：今年4000点一定会见到！",
+      "publish_time": "2025-07-11 16:56"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "A股，耐心捂股待涨！",
+      "publish_time": "2025-07-14 00:20"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "重磅利好来临，明天A股再创新高！",
+      "publish_time": "2025-07-15 00:02"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "long",
+      "evidence": "总体向上，今年目标4000点！",
+      "publish_time": "2025-07-15 09:37"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "A股，将要告别3500点了。",
+      "publish_time": "2025-07-15 22:30"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "A股，牛市或许真的来了！",
+      "publish_time": "2025-07-16 09:32"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "重大趋势性拉升一触即发！",
+      "publish_time": "2025-07-16 14:44"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "A股，耐心等待再次突破！",
+      "publish_time": "2025-07-16 18:02"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "A股牛市中，珍惜那短暂的沉寂！",
+      "publish_time": "2025-07-16 23:46"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "我依然坚定地认为，当前的行情就是洗盘阶段。虽然现在的走势让人难受，主力这么做，其实是在下一盘大棋，他们的目的就是为后续的拉升蓄力。",
+      "publish_time": "2025-07-17 12:49"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "A股，拿好别乱动!",
+      "publish_time": "2025-07-17 15:07"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "A股，静候拉升！",
+      "publish_time": "2025-07-18 11:24"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "空头们颤抖吧，降息已经是不可阻止的了！",
+      "publish_time": "2025-07-18 11:50"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "A股，慢牛来了！",
+      "publish_time": "2025-07-18 21:42"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "A股，下周攻击3600！",
+      "publish_time": "2025-07-19 21:54"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "long",
+      "evidence": "A股，今年4000点见!",
+      "publish_time": "2025-07-20 17:41"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "A股，能迎来一轮波澜壮阔的大行情吗？",
+      "publish_time": "2025-07-21 11:16"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "A股，超级大牛市起爆在即?",
+      "publish_time": "2025-07-21 12:37"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "A股，回调就是机会!",
+      "publish_time": "2025-07-22 16:40"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "A股，等一根月线级别大阳线！",
+      "publish_time": "2025-07-22 17:46"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "A股，今天冲击3600点大有可能。",
+      "publish_time": "2025-07-23 08:57"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "牛市旗手带领A股，突破3600！",
+      "publish_time": "2025-07-23 12:45"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A股，等待加速起跳！",
+      "publish_time": "2025-07-23 13:41"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "A股，这就是牛市！",
+      "publish_time": "2025-07-23 16:21"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "A股，大行情还在后面！",
+      "publish_time": "2025-07-24 10:33"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A股，行情随时会加速！",
+      "publish_time": "2025-07-24 14:29"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A股，震荡洗盘，不用担心!",
+      "publish_time": "2025-07-25 14:47"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A股，即将突破3674！",
+      "publish_time": "2025-07-25 17:48"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "A股，下周箭指3674点!",
+      "publish_time": "2025-07-27 09:52"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A股，继续加速上涨!",
+      "publish_time": "2025-07-28 11:07"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "A股，坚定看涨!",
+      "publish_time": "2025-07-30 10:58"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "A股，没有最高，再创新高！",
+      "publish_time": "2025-07-30 11:42"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "A股，筹码不要丢！",
+      "publish_time": "2025-07-30 15:58"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "long",
+      "evidence": "A股，下半年4500点见！",
+      "publish_time": "2025-07-30 16:42"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "A股，安心持股待涨!",
+      "publish_time": "2025-07-31 14:23"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "A股，目标可以看的更远一些!",
+      "publish_time": "2025-08-01 11:22"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A股，下周初行情无忧！",
+      "publish_time": "2025-08-02 19:16"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "A股，下周行情向上修复!",
+      "publish_time": "2025-08-03 12:28"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "A股，早盘低开别慌!",
+      "publish_time": "2025-08-04 10:33"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "A股，机会永远都是跌出来的！",
+      "publish_time": "2025-08-04 15:01"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "A股，今天收复3600点！",
+      "publish_time": "2025-08-05 09:24"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "unspecified",
+      "evidence": "A股，牛回速归！",
+      "publish_time": "2025-08-05 11:06"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "A股，史诗级牛市要来了吗？",
+      "publish_time": "2025-08-06 11:06"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "A股，本月或将创下十年新高！",
+      "publish_time": "2025-08-06 21:16"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "A股，今天继续看新高！",
+      "publish_time": "2025-08-07 10:50"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "A股，牛市不看空!",
+      "publish_time": "2025-08-09 12:06"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "A股，一步一个台阶的向上!",
+      "publish_time": "2025-08-09 16:24"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下周一A股与港股高开高走稳了！",
+      "publish_time": "2025-08-09 19:26"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A股，即将突破前高？",
+      "publish_time": "2025-08-14 10:31"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A股，下周接着涨!",
+      "publish_time": "2025-08-15 20:27"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A股，下周大盘继续高歌猛进？",
+      "publish_time": "2025-08-15 20:41"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "盘后又是大利好！下周一A股继续冲高有希望了？",
+      "publish_time": "2025-08-15 23:29"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "A股，大牛行情且行且珍惜！",
+      "publish_time": "2025-08-16 13:10"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "A股，机会都是跌出来的!",
+      "publish_time": "2025-08-17 21:31"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "A股，中线拿好了!",
+      "publish_time": "2025-08-18 16:23"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "A股，新周期，新起点!",
+      "publish_time": "2025-08-18 20:08"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "港股跳水，A股缩量上涨，最后的疯狂？",
+      "publish_time": "2025-08-19 11:49"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "A股，别人贪婪，我恐惧！",
+      "publish_time": "2025-08-19 13:39"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "A股，顶部已现，散户如何应对？",
+      "publish_time": "2025-08-19 15:56"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A股，震荡上行继续涨!",
+      "publish_time": "2025-08-20 09:19"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A股，大盘可能要加速上涨了!",
+      "publish_time": "2025-08-21 14:22"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A股，即将突破重要压力线！",
+      "publish_time": "2025-08-21 17:23"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "A股，当所有人疯狂之时，行情戛然而止！",
+      "publish_time": "2025-08-23 09:55"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "下星期一（25日），A股涨定了！",
+      "publish_time": "2025-08-23 12:34"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "A股，耐心持股待涨！",
+      "publish_time": "2025-08-23 18:46"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "A股，明天继续涨，目标突破3900！",
+      "publish_time": "2025-08-25 21:15"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "A股降温来了，这次真是奔着慢牛去的!",
+      "publish_time": "2025-08-27 08:56"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "A股，3800点保卫战今日打响！",
+      "publish_time": "2025-08-28 09:33"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "A股，午盘继续拉升修复！",
+      "publish_time": "2025-08-28 13:46"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "A股，机会都是跌出来的！",
+      "publish_time": "2025-08-28 16:56"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "A股，新的一波主升即将开启!",
+      "publish_time": "2025-08-29 09:04"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "A股，九月将展开更为强劲的主升浪!",
+      "publish_time": "2025-08-30 09:48"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "昨晚阿里准备了一个惊喜，下周中国资产全面起飞?",
+      "publish_time": "2025-08-30 10:56"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "A股，展望九月份，4000点将成为过去式！",
+      "publish_time": "2025-08-30 16:19"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "A股，静待午盘继续拉升!",
+      "publish_time": "2025-09-01 14:48"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "A股，牛市不言顶！",
+      "publish_time": "2025-09-01 15:02"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A股明天冲击3900点，外资要加把力了！",
+      "publish_time": "2025-09-02 00:00"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "A股，珍惜每一次大跌的机会!",
+      "publish_time": "2025-09-02 16:21"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A股，洗盘基本到位了！",
+      "publish_time": "2025-09-02 21:26"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "美联储即将开启降息周期，全球资金正瞄准中国资产！",
+      "publish_time": "2025-09-03 11:23"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "A股，今天看探底回升！",
+      "publish_time": "2025-09-04 09:12"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A股，调整一步到位!",
+      "publish_time": "2025-09-04 14:33"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A股，急跌洗盘结束！",
+      "publish_time": "2025-09-04 18:32"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "央行放水10000亿！明天A股能止跌反弹吗？",
+      "publish_time": "2025-09-04 22:52"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A股，反弹行情或一触即发！",
+      "publish_time": "2025-09-05 09:10"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "A股，现在或许是最佳上车机会？",
+      "publish_time": "2025-09-05 11:55"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "周末利好迭发，下周要按不住了?",
+      "publish_time": "2025-09-06 16:18"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "A股，牛市要坐好扶稳!",
+      "publish_time": "2025-09-06 22:31"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "A股，或许行情还远远没有结束!",
+      "publish_time": "2025-09-07 10:09"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "A股，慢牛可期!",
+      "publish_time": "2025-09-07 12:44"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "A股，主升浪或即将来临?",
+      "publish_time": "2025-09-07 20:45"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A股，明天大涨冲击3858？",
+      "publish_time": "2025-09-08 22:02"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "A股，大盘无忧，耐心等待新一波行情！",
+      "publish_time": "2025-09-11 14:14"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "A股，主升浪今天启动?",
+      "publish_time": "2025-09-12 00:10"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "A股，请珍惜每一次倒车接人的机会！",
+      "publish_time": "2025-09-12 13:45"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "A股，耐心捂股待涨！",
+      "publish_time": "2025-09-12 17:26"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "A股，永远不要在支撑位附近做空！",
+      "publish_time": "2025-09-13 12:15"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "这一轮行情，坚定牛市的信心是要有的…",
+      "publish_time": "2025-09-13 20:53"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "long",
+      "evidence": "A股，珍惜这十年一遇的牛市！",
+      "publish_time": "2025-09-14 13:32"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "A股，本周继续看涨！",
+      "publish_time": "2025-09-15 15:22"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "洗盘结束，主升浪即将开启?",
+      "publish_time": "2025-09-16 19:38"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "A股，耐心等待新一轮行情启动！",
+      "publish_time": "2025-09-17 11:26"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "港股已经率先启动，A股还会远吗？",
+      "publish_time": "2025-09-17 16:26"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "A股，这轮牛市能冲8000点吗？",
+      "publish_time": "2025-09-18 00:31"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "A股，这波大概率是超级大牛市？",
+      "publish_time": "2025-09-18 08:26"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A股，明天有望迎来强势反弹！",
+      "publish_time": "2025-09-19 00:53"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "A股，今天触底反弹?",
+      "publish_time": "2025-09-19 08:58"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "A股，离4000点已经不远了!",
+      "publish_time": "2025-09-19 09:26"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "A股，或许本轮牛市远未结束!",
+      "publish_time": "2025-09-19 10:53"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "A股，牛市历史总是惊人的相似！",
+      "publish_time": "2025-09-20 16:06"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "牛市，珍惜每一次调整的机会！",
+      "publish_time": "2025-09-21 11:54"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "A股，当前牛市趋势已确立?",
+      "publish_time": "2025-09-21 19:00"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "long",
+      "evidence": "A股，为什么说这次是超级大牛市？",
+      "publish_time": "2025-09-29 00:16"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "4000点，或许是A股最后的洗盘了！",
+      "publish_time": "2025-11-07 21:11"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A股反弹在即，地量之后必有行情！",
+      "publish_time": "2025-11-20 22:11"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大涨来袭！下周A股反包行情启动在即？",
+      "publish_time": "2025-11-22 10:55"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "深夜重磅！A50三倍做多狂飙5%，A股变盘十字星后迎转机？",
+      "publish_time": "2025-11-25 02:23"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "稳了！强力反弹在即？A股港股迎来拐点信号！",
+      "publish_time": "2025-12-04 10:13"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "突破在即！A股蓄势待发，反弹行情或一触即发",
+      "publish_time": "2025-12-04 14:54"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "别被吓跑！这次回调，只是牛市中的“小憩”",
+      "publish_time": "2025-12-05 14:32"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "别上当了！后面的反弹可能会超出想象",
+      "publish_time": "2025-12-06 00:46"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "A股还没到终点，历史重演可能性很大！",
+      "publish_time": "2025-12-06 10:10"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "行情远未结束，全面牛市还没开启！",
+      "publish_time": "2025-12-06 16:31"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "long",
+      "evidence": "这轮牛市不是小打小闹，目标直指7000点！",
+      "publish_time": "2025-12-07 14:37"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "A股：牛市一边上涨，一边洗盘！",
+      "publish_time": "2025-12-07 21:34"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天A股怎么走？牛市远未结束！",
+      "publish_time": "2025-12-08 00:55"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "周末利好频出，A股或将迎报复性上涨？",
+      "publish_time": "2025-12-08 09:34"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "A股，牛市远未结束！",
+      "publish_time": "2025-12-08 14:45"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A股双底成型，反弹可期！",
+      "publish_time": "2025-12-09 00:04"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "明年牛市有望延续？政策组合拳或将持续发力！",
+      "publish_time": "2025-12-09 10:36"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "最后一跌？A股接下来的走势越来越清晰了",
+      "publish_time": "2025-12-10 00:09"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "A股，本轮牛市远未到尾声！",
+      "publish_time": "2025-12-10 11:24"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A股触及关键位，抄底窗口或已打开？",
+      "publish_time": "2025-12-10 13:01"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "本次牛市会涨到多少？历史已经给出答案了！",
+      "publish_time": "2025-12-10 23:37"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "港股科技带头反包！农历年前红包行情稳了？",
+      "publish_time": "2025-12-12 12:50"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "牛市争论又起？大趋势根本没破！",
+      "publish_time": "2025-12-12 12:58"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "A股，12月中下旬或将迎来大行情！",
+      "publish_time": "2025-12-12 21:27"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "A股，或许我们正站在第三波主升浪的起点上！",
+      "publish_time": "2025-12-12 23:54"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "超级大牛市前的“三大关口”，我们正在闯第几关？",
+      "publish_time": "2025-12-13 01:18"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周A股怎么走？或将开启新一波上涨！",
+      "publish_time": "2025-12-13 15:43"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "A股，或将重演2019年大行情！",
+      "publish_time": "2025-12-13 20:03"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "四大利好来袭，A股下周稳了？",
+      "publish_time": "2025-12-13 21:02"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "别被外围吓到！A股探底信号显现，机会正在跌出来！",
+      "publish_time": "2025-12-14 20:50"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "A股，长期是在上涨的！",
+      "publish_time": "2025-12-14 22:50"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "突破3873！回踩不破，反弹有望冲击3950！",
+      "publish_time": "2025-12-15 13:19"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天要放量长阳？富时50和港股或成“领头羊”！",
+      "publish_time": "2025-12-15 19:52"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A股，从明天起，或许将迎来关键时刻！",
+      "publish_time": "2025-12-16 02:20"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "3816精准回踩！或许不仅是双底，更是“跨年大红包”！",
+      "publish_time": "2025-12-16 18:32"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A股、港股尾盘异动！神秘资金进场，这一波洗盘要结束了？",
+      "publish_time": "2025-12-16 21:08"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A股：右底确认在即，新行情一触即发？",
+      "publish_time": "2025-12-17 11:24"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "long",
+      "evidence": "牛市还在！政策“组合拳”已出，3800点下方全是机会！",
+      "publish_time": "2025-12-17 11:36"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A股，缩量见底信号已现！",
+      "publish_time": "2025-12-17 15:42"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "真神了！行情正式启动，这波“剧本”我早就看透了！",
+      "publish_time": "2025-12-17 15:52"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "暴力拉升！A股“深V”反转，这波反弹的逻辑太硬了！",
+      "publish_time": "2025-12-17 16:37"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "long",
+      "evidence": "3800点是铁底！万点牛市或不是梦！",
+      "publish_time": "2025-12-18 09:28"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "只要不破这根线，A股多头无忧！",
+      "publish_time": "2025-12-18 09:54"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大盘无忧，右底已现！",
+      "publish_time": "2025-12-18 13:36"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "A股，别让踏空成为最大的遗憾！",
+      "publish_time": "2025-12-18 15:15"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "A股，机会永远是跌出来的！",
+      "publish_time": "2025-12-18 17:21"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "日本加息之日，就是A股绝地反击之时！",
+      "publish_time": "2025-12-19 09:56"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "A股，珍惜当下任何回调低吸的机会！",
+      "publish_time": "2025-12-19 14:00"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "放量上涨，跨年行情来了？",
+      "publish_time": "2025-12-19 18:21"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周A股：这波行情，恐怕要踏空很多人！",
+      "publish_time": "2025-12-20 10:43"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "A股大底已成！红三兵确认牛市启动！",
+      "publish_time": "2025-12-20 15:07"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "long",
+      "evidence": "2689是17年大熊终点？2026剑指6124！",
+      "publish_time": "2025-12-20 21:30"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "long",
+      "evidence": "为什么我坚定看好2026年冲顶5000点？",
+      "publish_time": "2025-12-22 10:10"
+    },
+    {
+      "post_n": 9,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A股周一开门红，但这位置千万别追！",
+      "publish_time": "2025-12-22 11:11"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "持续反弹，真的要来了！",
+      "publish_time": "2025-12-22 12:22"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A股要变盘？别慌，这可能是倒车接人！",
+      "publish_time": "2025-12-22 16:46"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "long",
+      "evidence": "突破5178点势在必行！高盛重磅加持！",
+      "publish_time": "2025-12-22 21:33"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "3936点，生死在此一举！",
+      "publish_time": "2025-12-23 14:31"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "缩量上涨是诱多！越涨越卖，别上头！",
+      "publish_time": "2025-12-24 15:27"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "央妈“精准滴灌”4000亿！明天，大盘要起飞了？",
+      "publish_time": "2025-12-24 22:59"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "A股，天时地利人和齐聚！",
+      "publish_time": "2025-12-25 02:06"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "A股放量长阳！反转确认，下一目标直指3985点！",
+      "publish_time": "2025-12-25 13:13"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "历史告诉我们，这一次牛市终点大概是这个位置!",
+      "publish_time": "2025-12-26 11:50"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "long",
+      "evidence": "30年等一回！这波牛市不仅要过4000，还要剑指历史！",
+      "publish_time": "2025-12-26 13:12"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "牛市最大的风险，是在洗盘中交出了筹码！",
+      "publish_time": "2025-12-26 18:45"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "A股：牛市未完，且行且珍惜！",
+      "publish_time": "2025-12-27 10:51"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "A股大变局，2026年剑指5178？",
+      "publish_time": "2025-12-27 13:29"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "long",
+      "evidence": "2026，见证雄狮怒吼，直捣5000点！",
+      "publish_time": "2025-12-28 09:47"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "千亿ETF资金进场，A股要冲4000点了？",
+      "publish_time": "2025-12-28 12:05"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "周末四大利好集结，跨年主升浪已至?",
+      "publish_time": "2025-12-29 02:57"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "3800点稳了，牛市就稳了？这次的“子弹”很充足！",
+      "publish_time": "2025-12-29 13:49"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "蓄势待发：A股新一轮攻势在即",
+      "publish_time": "2025-12-30 11:14"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "A股季线三连阳，大牛市或将爆发！",
+      "publish_time": "2026-01-01 10:29"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "人民币牛起来了，股市未来可期！",
+      "publish_time": "2026-01-01 12:25"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "美股跳水吓不到A股！节后走势要么逼空，要么回踩上车！",
+      "publish_time": "2026-01-01 16:45"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "A股，别被轻易洗下车了！",
+      "publish_time": "2026-01-01 19:57"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "年初反弹或要来了，大家做好准备了吗?",
+      "publish_time": "2026-01-03 17:34"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "2026股市展望：一场跨越周期的财富盛宴",
+      "publish_time": "2026-01-04 21:28"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "A股春季攻势火力全开！4500点目标位并非空谈！",
+      "publish_time": "2026-01-05 14:24"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "2026年A股大方向，只说一次",
+      "publish_time": "2026-01-05 21:23"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "A股回调别慌！这是主力给你的最后一次上车机会",
+      "publish_time": "2026-01-07 11:20"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "历史惊人相似，回踩这个位置或许才是真机会。",
+      "publish_time": "2026-01-07 20:35"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "4500点见？这次牛市和2007、2015都不一样！",
+      "publish_time": "2026-01-08 08:38"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "本轮牛市突破6000点可能性有多大？历史早告诉我们了！",
+      "publish_time": "2026-01-09 09:33"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "A股狂飙！突破4100点，进入牛市第二阶段了？",
+      "publish_time": "2026-01-09 14:02"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "现在开始留意牛市什么时候结束，感觉要加速了！",
+      "publish_time": "2026-01-10 14:11"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "牛市越来越疯狂了，涨到受不了或许就是清仓之时",
+      "publish_time": "2026-01-10 20:46"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "越接近4165压力越大，下周这样走！",
+      "publish_time": "2026-01-11 12:13"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A股站上4100点，我选择减仓落袋为安",
+      "publish_time": "2026-01-11 20:26"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "A股冲上4100，我为何选择在4500点止盈？",
+      "publish_time": "2026-01-12 00:42"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "错过这一轮牛市，可能得再等10年！",
+      "publish_time": "2026-01-12 14:41"
+    },
+    {
+      "post_n": 9,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "我为什么决定下半年清仓？看看A股牛市周期就明白了！",
+      "publish_time": "2026-01-13 13:39"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "春节前A股怎么走？我给你们列出来了，有反弹的!",
+      "publish_time": "2026-01-13 16:14"
+    },
+    {
+      "post_n": 4,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "牛市下半场，我不再满仓，会提前清仓！",
+      "publish_time": "2026-01-14 09:25"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A股缩量下跌，别慌，过年前还有反弹的",
+      "publish_time": "2026-01-15 15:34"
+    },
+    {
+      "post_n": 11,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "为什么我打算4500点清仓？因为历史告诉我们这个位置最合理",
+      "publish_time": "2026-01-17 10:46"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "我认为，明天（周二）极大概率会走出一根漂亮的中阳线！多头会一举突破4140点这个“拦路虎”，正式确立反攻号角。一旦站稳这里，后天和大后天，指数就有望去挑战前面的阶段新高了。",
+      "publish_time": "2026-01-19 21:49"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "现在最重要的是耐心，会反弹的！",
+      "publish_time": "2026-01-20 18:24"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "坚定看多，静待突破！",
+      "publish_time": "2026-01-23 12:07"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "稳住心态，陪A股走完这轮长牛！",
+      "publish_time": "2026-01-24 20:45"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "权重搭台好戏开场，低吸潜伏或正当时！",
+      "publish_time": "2026-01-26 12:14"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "别怕！或许A股是春节前最后一跌?",
+      "publish_time": "2026-01-30 18:44"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "long",
+      "evidence": "突破天际！A股确认进入十年最强主升浪，万点不是梦？",
+      "publish_time": "2026-02-01 16:05"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "牛市半山腰，别被颠下马了！",
+      "publish_time": "2026-02-02 18:56"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "跌出来的是机会，在恐惧中播种！",
+      "publish_time": "2026-02-03 12:15"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A股反弹触及关键位，谨防二次探底！",
+      "publish_time": "2026-02-04 13:33"
+    },
+    {
+      "post_n": 6,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "提前做好牛市结束的心理准备！4500点我就清仓。",
+      "publish_time": "2026-02-04 18:17"
+    },
+    {
+      "post_n": 5,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "涨了别上头！接下来大概率还有一“蹲”！",
+      "publish_time": "2026-02-04 20:12"
+    },
+    {
+      "post_n": 4,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "4500点我就清仓，感觉今年牛市会结束。",
+      "publish_time": "2026-02-04 23:35"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "历史总是惊人的相似，下周A股或迎中阳突破！",
+      "publish_time": "2026-02-05 18:45"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天，大盘要绝地反击了？",
+      "publish_time": "2026-02-05 20:36"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "突破！A股强势站上关键位，节后行情可期！",
+      "publish_time": "2026-02-09 13:47"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "今年能有4500我就清仓了！",
+      "publish_time": "2026-02-09 19:26"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A股强势上攻，节前红包稳了？",
+      "publish_time": "2026-02-11 12:50"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "央妈派万亿红包，A股春节行情稳了！",
+      "publish_time": "2026-02-12 23:04"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A股节前收官战：4100点或是最佳上车点！",
+      "publish_time": "2026-02-13 13:57"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "牛市还没结束，年后的行情可能会超出你们想象！",
+      "publish_time": "2026-02-14 11:04"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "关于这轮牛市，说实话的人太少了，那我来说几句大实话。",
+      "publish_time": "2026-02-14 13:17"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "春节之后A股会怎么走？我认为上涨的可能会大一点。",
+      "publish_time": "2026-02-14 17:56"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "A股黄金十年，或从马年开始！",
+      "publish_time": "2026-02-22 20:39"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天A股开盘，节前埋伏的，准备收红包了！",
+      "publish_time": "2026-02-23 18:07"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "为什么说A股牛市远未结束？",
+      "publish_time": "2026-02-23 23:04"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "差不多每十年，A股就来一轮大牛市！",
+      "publish_time": "2026-02-24 00:52"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "盘后突发两大利好！明天A股稳了？",
+      "publish_time": "2026-02-25 00:38"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "A股，或新一波行情正式开启！",
+      "publish_time": "2026-02-25 12:36"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "A股，新一波行情或随时开启！",
+      "publish_time": "2026-02-25 21:43"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A股洗盘或结束，反攻随时开启！",
+      "publish_time": "2026-02-26 13:18"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "A股变盘信号已至，耐心等待新一轮行情！",
+      "publish_time": "2026-02-26 15:40"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "别怀疑了，大盘下周很可能要突破前高！",
+      "publish_time": "2026-02-28 21:37"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "散户必看：为什么说不到5000点主力根本不会卖出去？",
+      "publish_time": "2026-03-01 13:41"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "说个预判：低开高走，下周就这么干！",
+      "publish_time": "2026-03-01 18:43"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "站稳4140点，主升行情要来了？",
+      "publish_time": "2026-03-02 22:30"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "新一轮牛市起点？对比2006年，这几个信号太像了",
+      "publish_time": "2026-03-03 13:52"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "史上最长牛市来了，为什么大多数人反而赚不到钱？",
+      "publish_time": "2026-03-03 23:47"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "牛市还没结束，但多数人已经开始亏钱了！",
+      "publish_time": "2026-03-04 13:27"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "牛市已走25个月，今年最大的考验要来了！",
+      "publish_time": "2026-03-05 13:39"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "散户的恐慌，正是国家队想要的效果！",
+      "publish_time": "2026-03-05 18:29"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "A股历史或惊人相似，主力早已明牌！",
+      "publish_time": "2026-03-06 17:27"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "2026年，A股能实现5000点的目标吗？",
+      "publish_time": "2026-03-06 18:41"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "证监会、央行、财政部一起出手，这次是玩真的。",
+      "publish_time": "2026-03-06 22:15"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "现在的A股，像极了20年前的楼市。",
+      "publish_time": "2026-03-07 13:56"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "当多数人开始害怕，或许机会就快来了！",
+      "publish_time": "2026-03-07 21:02"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "为什么越打仗，我越看好A股？",
+      "publish_time": "2026-03-08 18:36"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "A股双底形态确认，新一轮行情启动信号已现！",
+      "publish_time": "2026-03-09 18:14"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天起，A股新一波行情或正式打响！",
+      "publish_time": "2026-03-09 23:49"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A股双底已现，反攻倒计时开始？",
+      "publish_time": "2026-03-10 08:25"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "说A股到4200点不算牛市的，你可能不了解这段历史。",
+      "publish_time": "2026-03-10 10:28"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "A股双底已成，新一波行情启动，踏空风险正在加剧！",
+      "publish_time": "2026-03-10 13:40"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "反转信号来了？别被轻易洗下车了！",
+      "publish_time": "2026-03-10 18:20"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "双底确认！A股倒车接人或正当时！",
+      "publish_time": "2026-03-12 13:20"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "说点大实话：A股现在这位置，我看跌不动了。",
+      "publish_time": "2026-03-12 17:21"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "long",
+      "evidence": "今年上证剑指5200点！解放十年套牢盘",
+      "publish_time": "2026-03-13 18:26"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A50突然直线拉升！今天或是最后一跌，下周要反包？",
+      "publish_time": "2026-03-13 21:15"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "这轮牛市的高点在哪里？在2007和2015年的历史剧本里，早就写好了",
+      "publish_time": "2026-03-14 12:36"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "别被主力骗下车！3月4500点不见不散！",
+      "publish_time": "2026-03-14 20:47"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周A股如果守得住这里，接着奏乐接着舞！",
+      "publish_time": "2026-03-15 12:20"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "为什么说这轮牛市，比2007年和2015年更稳？",
+      "publish_time": "2026-03-15 19:15"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大盘回踩到“黄金坑”，倒车接人机会真来了！",
+      "publish_time": "2026-03-16 12:59"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "不要倒在黎明前！大盘或随时开启新一轮行情！",
+      "publish_time": "2026-03-17 23:11"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "央妈出手护盘！历史会重演吗？",
+      "publish_time": "2026-03-19 18:32"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "历史告诉我们：牛市的下车铃还没响呢！",
+      "publish_time": "2026-03-21 13:55"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "A股慢牛还能走多远？数据告诉你真相！",
+      "publish_time": "2026-03-21 18:45"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A股砸出黄金坑，反弹或一触即发！",
+      "publish_time": "2026-03-22 13:04"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "都绝望了？好！大资金就等这一刻！",
+      "publish_time": "2026-03-22 20:20"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "洗盘快结束了，别倒在黎明前！",
+      "publish_time": "2026-03-23 16:50"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "拿好，等涨，目标就是上面那个3955的缺口！",
+      "publish_time": "2026-03-24 18:31"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "现在A股每次下跌，都是倒车接人！",
+      "publish_time": "2026-03-26 13:33"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "震荡继续，缺口要补，A股下周就这么走。",
+      "publish_time": "2026-03-28 13:28"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "突破18年压制线！A股长期向上空间或已打开！",
+      "publish_time": "2026-03-29 22:02"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "历史规律再现：深度调整后，A股修复行情可期！",
+      "publish_time": "2026-04-01 12:34"
+    },
+    {
+      "post_n": 5,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "为什么说3800点还要再破一次？",
+      "publish_time": "2026-04-07 23:42"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "牛市大底正在形成，4000点或是新一轮起点！",
+      "publish_time": "2026-04-08 13:29"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "观点不变！现在冲高是给你卖，不是给你买的！",
+      "publish_time": "2026-04-09 09:55"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "调整或即将结束，反弹一触即发！",
+      "publish_time": "2026-04-09 22:00"
+    },
+    {
+      "post_n": 6,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "别在4000点追涨！等待回踩3900才是明智选择",
+      "publish_time": "2026-04-10 08:30"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "市场已经企稳，上涨或已成为主趋势。在这种情况下，空仓等待调整并不是明智之举。因为上涨往往是突然且迅速的，一旦错过，可能就会错失丰厚的收益。所以，不能因为害怕短期的波动而放弃了长期的机会。此时此刻，或许应该坚定信心，持基待涨。虽然可能还会有回调，但整体向上的趋势不会改变。",
+      "publish_time": "2026-04-11 22:19"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "long",
+      "evidence": "为什么说A股这次一定能突破2007年的高点？（数据说话）",
+      "publish_time": "2026-04-14 22:59"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "“十年一遇”的牛市又来了？普通人跟不跟？",
+      "publish_time": "2026-04-15 11:27"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "3794点支撑夯实，A股中长期趋势渐明！",
+      "publish_time": "2026-04-15 16:49"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "拿稳了！这波牛市的目标至少是4500点",
+      "publish_time": "2026-04-16 15:22"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "任泽平：此轮牛市将是十年一遇，堪称史诗级别！",
+      "publish_time": "2026-04-17 11:42"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "为什么说4500点今年必到？",
+      "publish_time": "2026-04-17 14:55"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "别在牛市中途下车，大行情还在后头",
+      "publish_time": "2026-04-17 20:54"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "未来3个月，A股将迎来“指数牛”加速期！",
+      "publish_time": "2026-04-19 10:35"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "量价齐升破4055，A股反转行情启动？",
+      "publish_time": "2026-04-20 14:02"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "A股，这一轮牛市的涨幅可能超出大部分人的想象！",
+      "publish_time": "2026-04-21 00:26"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "牛市的答案，越来越清晰了！",
+      "publish_time": "2026-04-21 10:28"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "拒绝回调，二季度A股的“逼空”剧本正在上演！",
+      "publish_time": "2026-04-21 21:22"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "A股逆天了！无视全球下跌创新高，4500点真是下一站？",
+      "publish_time": "2026-04-22 16:55"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "反弹止步？那条压制A股十年的线，就在眼前",
+      "publish_time": "2026-04-24 08:38"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "4200点只是起点？2026下半年A股能走多高？",
+      "publish_time": "2026-04-24 17:06"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "变盘在即！A股快要憋不住了！",
+      "publish_time": "2026-04-25 15:46"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "全球牛市二十年，为何唯独A股在蓄力？",
+      "publish_time": "2026-04-26 10:57"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "四重动力共振，A股结构性长牛蓄势待发！",
+      "publish_time": "2026-04-27 08:22"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "别急，真正的机会是跌出来的！",
+      "publish_time": "2026-04-27 13:22"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "数据说话：为什么A股的结构性慢牛已成定局？",
+      "publish_time": "2026-04-29 12:29"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "历史或正在重演：美联储决议后，总会先砸出“黄金坑”!",
+      "publish_time": "2026-04-30 10:41"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "等了三轮“牛市”，这次A股总算来真的了？",
+      "publish_time": "2026-04-30 17:13"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "A股，别等大盘涨疯了才问能不能进场！",
+      "publish_time": "2026-05-01 09:33"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "别被洗出去了！2026年真正的行情才刚开始",
+      "publish_time": "2026-05-01 10:12"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "二十年盘整一朝破局！A股真正的长牛或才刚开始",
+      "publish_time": "2026-05-01 14:59"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "5月A股剧本：回踩结束，加速在即！",
+      "publish_time": "2026-05-02 22:32"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "夯实底部、稳步抬升，年底看5000点！",
+      "publish_time": "2026-05-03 10:09"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "long",
+      "evidence": "听我一句劝：拿稳了别乱动，这轮大牛市起码看到8000点！",
+      "publish_time": "2026-05-03 21:51"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "直冲4500点！A股四重保险护体，请系好安全带！",
+      "publish_time": "2026-05-04 15:11"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "167万亿还没动呢，谁敢说这波牛市结束了？",
+      "publish_time": "2026-05-04 19:36"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "放量中阳来了！4200这道坎，迈过去了就是海阔天空！",
+      "publish_time": "2026-05-06 15:58"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "long",
+      "evidence": "A股这波慢牛，谁也拦不住了。",
+      "publish_time": "2026-05-11 00:44"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "放量突破！这周我就四个字：继续卧倒！",
+      "publish_time": "2026-05-11 18:34"
+    },
+    {
+      "post_n": 5,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "历史总是惊人的相似：金茂一现，必有深调！",
+      "publish_time": "2026-05-12 15:24"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "别再恐高了！这波行情目标直指5000点！",
+      "publish_time": "2026-05-13 22:08"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "慢牛还在路上！沪指打开空间，下半年行情怎么走？",
+      "publish_time": "2026-05-13 23:09"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "不出意外，明天又要百点长阳！",
+      "publish_time": "2026-05-14 18:51"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "到位了！回调结束，持股待涨！",
+      "publish_time": "2026-05-15 13:45"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "乘风破浪会有时！大跌之后，我看到了直挂云帆的A股！",
+      "publish_time": "2026-05-15 19:01"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "只要水龙头不关，这轮牛市就不会结束！",
+      "publish_time": "2026-05-16 23:07"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "为什么我说这一轮比2015年更猛？因为创业板已经“无顶可依”了！",
+      "publish_time": "2026-05-18 09:32"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "4100铁底！A股明天必红！",
+      "publish_time": "2026-05-18 18:49"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "long",
+      "evidence": "上证或正在复制历史性大底，错过这波再等十年！",
+      "publish_time": "2026-05-19 08:55"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "A股，历史总是惊人的相似！",
+      "publish_time": "2026-05-19 21:52"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "27年了，“5·19”又回来了！这熟悉的配方、熟悉的味道",
+      "publish_time": "2026-05-19 22:46"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "unspecified",
+      "evidence": "别等涨上天才后悔没上车！这个位置就是最佳买点！",
+      "publish_time": "2026-05-20 22:12"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "十年一轮回！当前或是新一轮主升浪的起点",
+      "publish_time": "2026-05-21 13:34"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "弹簧压太狠了！别动不动就喊牛市结束",
+      "publish_time": "2026-05-21 23:22"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "A股现在的剧本，跟07年和15年一模一样！",
+      "publish_time": "2026-05-23 13:42"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天看涨！下周A股走势推演…",
+      "publish_time": "2026-05-24 22:15"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "为什么说这波科技牛刚走到半山腰，远没到下山的时候！",
+      "publish_time": "2026-05-26 00:29"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "像极了今年2月那波走势！我看今天下跌是机会，理由有这两点",
+      "publish_time": "2026-05-26 12:56"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "注意！A股变盘在即，错过这波真要拍大腿！",
+      "publish_time": "2026-05-27 00:49"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "洗盘结束？上证双底初现！4067点或是新一轮行情的起点！",
+      "publish_time": "2026-05-27 18:47"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "这轮行情，逃顶可能才是最大的风险！",
+      "publish_time": "2026-05-28 00:15"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "别慌！双底已成，今天A股大概率这么走！",
+      "publish_time": "2026-05-28 08:51"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "A股精准回踩60日线，新一轮主升浪正式启动？",
+      "publish_time": "2026-05-28 18:50"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "intraday",
+      "evidence": "W双底已现，60日线不破，今天就是新行情起点！",
+      "publish_time": "2026-05-29 08:53"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "A股两次回踩4055点，为什么我说不用慌？",
+      "publish_time": "2026-05-29 18:48"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "周一A股高开是大概率",
+      "publish_time": "2026-05-30 13:35"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "六月A股或将迎来“黄金拐点”！",
+      "publish_time": "2026-05-30 21:04"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下周起，科技板块或开启“逼空式”反攻！",
+      "publish_time": "2026-05-31 16:58"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "这才哪到哪？中途下车的可能要拍断大腿了！",
+      "publish_time": "2026-05-31 21:42"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "洗盘或接近尾声！守住60日线，坐等风起！",
+      "publish_time": "2026-06-01 13:43"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "60日线失守，正式进入防守模式！",
+      "publish_time": "2026-06-02 00:00"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A股，从今天起，变盘或一触即发！",
+      "publish_time": "2026-06-03 13:49"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "主力意图太明显了，拿稳筹码别乱动！",
+      "publish_time": "2026-06-03 21:24"
+    },
+    {
+      "post_n": 5,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A股重回下降通道，下周只有这两个信号能救市！",
+      "publish_time": "2026-06-05 22:53"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "long",
+      "evidence": "4258点就是大顶？别闹了！说牛市结束的，非蠢即坏？",
+      "publish_time": "2026-06-07 21:27"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "拿稳了！这两天是最佳上车点？",
+      "publish_time": "2026-06-09 13:55"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "空头彻底傻眼！高盛、大摩联手唱多",
+      "publish_time": "2026-06-09 23:43"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "别盲目割肉，大盘或正在“倒车接人”！",
+      "publish_time": "2026-06-10 13:41"
+    },
+    {
+      "post_n": 9,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "A股只有跌到这个位置，才是黄金坑！",
+      "publish_time": "2026-06-10 21:57"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "历史重演？A股筑底一旦完成，随时可能开启新一轮拉升！",
+      "publish_time": "2026-06-11 16:33"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "重磅信号！大盘首次突破下降趋势线",
+      "publish_time": "2026-06-13 09:24"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "这波可能是4258见顶以来，最重要的变盘时刻！",
+      "publish_time": "2026-06-14 12:37"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "A股增量资金源源不断，这一波看到5000点？",
+      "publish_time": "2026-06-15 23:16"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "五穷六绝七翻身，大盘上半年收官站稳4060！",
+      "publish_time": "2026-06-30 22:10"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "4100点稳了！七月开门红，我为什么坚定看多？",
+      "publish_time": "2026-07-01 13:42"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "越跌越兴奋！4060都没摸到，慌什么？",
+      "publish_time": "2026-07-01 18:47"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "大盘或正在蓄力，本月大概率要冲击前高！",
+      "publish_time": "2026-07-01 21:58"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "A股回踩不破4060坚定看多！",
+      "publish_time": "2026-07-02 08:45"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "观点不变：无系统风险，4060点之上不看空！",
+      "publish_time": "2026-07-02 13:31"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "但我认为今天有低吸机会",
+      "publish_time": "2026-07-03 09:05"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "精准回踩3971！双重支撑共振，反弹一触即发？",
+      "publish_time": "2026-07-07 18:44"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "美股跌了，A50也绿了，但我今天不跑！",
+      "publish_time": "2026-07-08 08:49"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "当前位置，A股具备开启新一轮行情的所有条件！",
+      "publish_time": "2026-07-08 13:25"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A股强支撑已现，新一轮反弹一触即发？",
+      "publish_time": "2026-07-09 09:29"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "拒绝看空！A股，新一轮拉升开始了？",
+      "publish_time": "2026-07-10 08:43"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "年线已破，这一幕竟与2022年开年如出一辙！",
+      "publish_time": "2026-07-14 08:44"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "现在的A股，像极了2022年1月那场暴跌！",
+      "publish_time": "2026-07-14 13:28"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "下降趋势未改，4010点是今日天花板？",
+      "publish_time": "2026-07-15 08:53"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "大盘这波走势太像2022年了，目标先看3920！",
+      "publish_time": "2026-07-21 08:48"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "这一波调整往下空间或许真不大了！",
+      "publish_time": "2026-07-21 13:46"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大概率这么走！",
+      "publish_time": "2026-07-21 23:18"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "当下的行情，别指望能调整多深！",
+      "publish_time": "2026-07-23 13:35"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "unspecified",
+      "evidence": "不到这个点位，我是坚决不看空的！",
+      "publish_time": "2026-07-23 18:48"
+    },
+    {
+      "post_n": 6,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "年线已破，下周A股大概率这样走！",
+      "publish_time": "2026-07-26 13:52"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "不必悲观！A股正处于关键支撑区！",
+      "publish_time": "2026-07-30 08:46"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "unspecified",
+      "evidence": "我不怕打脸：3800点下方再割肉，等于把筹码扔进垃圾桶！",
+      "publish_time": "2026-08-03 18:54"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "硬科技反转确认？8月或是今年确定性最高的吃饭行情！",
+      "publish_time": "2026-08-05 13:37"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "5-10日线不破，这波硬科技修复不言顶！",
+      "publish_time": "2026-08-05 19:01"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "大阳之后的这波回踩，或是这轮行情最大的红包！",
+      "publish_time": "2026-08-06 11:11"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "A股，为什么我说今天的低点可能再也看不到了？",
+      "publish_time": "2026-08-06 13:25"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "A股金叉确立，坚定看多！",
+      "publish_time": "2026-08-07 08:49"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "年线近在眼前，现在该贪婪还是恐惧？我的答案很明确",
+      "publish_time": "2026-08-07 13:52"
+    },
+    {
+      "post_n": 4,
+      "direction": "bearish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "听劝，年线之下无牛市！",
+      "publish_time": "2026-08-07 17:50"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "下周A股：年线不过，坚决不追！",
+      "publish_time": "2026-08-08 11:10"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "A股：反弹是认真的，但4000点不会一口气过去！",
+      "publish_time": "2026-08-10 08:46"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "昨晚美股大跌，A股迎来绝佳买点？",
+      "publish_time": "2026-08-12 08:51"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "绿油油一片！但大盘或正在复制6月走势！",
+      "publish_time": "2026-08-12 11:13"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "在上涨趋势中，每一次回踩都是机会！",
+      "publish_time": "2026-08-12 13:30"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "5日线不破不看空，这波行情拿稳了！",
+      "publish_time": "2026-08-13 13:27"
+    }
+  ]
+}

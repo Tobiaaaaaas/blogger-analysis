@@ -1,0 +1,5419 @@
+{
+  "blogger": "股市求是",
+  "extraction_time": "2026-08-14 22:17:21",
+  "model": "deepseek-v4-flash",
+  "total_posts": 1349,
+  "pre_2024_06": 0,
+  "evaluation_posts": 1349,
+  "not_extracted": {
+    "no_market_topic": 103,
+    "pure_description": 163,
+    "directional_vague": 124,
+    "other_index_sector": 126,
+    "other": 160
+  },
+  "scored_bullish": {
+    "strong": 20,
+    "moderate": 307,
+    "long": 20,
+    "medium": 127,
+    "short": 158,
+    "intraday": 16,
+    "unspecified": 6
+  },
+  "scored_bearish": {
+    "strong": 16,
+    "moderate": 330,
+    "long": 6,
+    "medium": 163,
+    "short": 169,
+    "intraday": 5,
+    "unspecified": 3
+  },
+  "signals": [
+    {
+      "post_n": 11,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "6月份破了3000点该怎么办呢？",
+      "publish_time": "2024-06-02 22:35"
+    },
+    {
+      "post_n": 9,
+      "direction": "bearish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "跌势形成，势不可挡！",
+      "publish_time": "2024-06-03 12:33"
+    },
+    {
+      "post_n": 5,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "我曾经说过，6月份是以跌为主，中间会有反弹，最好是空仓。",
+      "publish_time": "2024-06-05 13:55"
+    },
+    {
+      "post_n": 4,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "六月份的行情我已经说过好多遍了，总体应该是处于下跌状态。",
+      "publish_time": "2024-06-05 22:53"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "最近两天有低点，但同时也意味着反弹近在咫尺。",
+      "publish_time": "2024-06-06 09:43"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "其实这个地点还是可以博弈的，博弈节后的反弹。",
+      "publish_time": "2024-06-07 12:20"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "原先认为节后会有一周反弹的可能性降低。",
+      "publish_time": "2024-06-08 21:28"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "至少跌到25号左右吧，那里会有一个低点。本周如果有反弹，你去抢吗？建议你别抢，没有意思。会跌到哪个点位呢？3000点必破，这是我好久以前就说过的观点。",
+      "publish_time": "2024-06-11 13:50"
+    },
+    {
+      "post_n": 13,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "本月的低点不是这两天才能到的，一定是月末，比方说25号左右。那么最近两天即便有低点，然后再反弹，也就是一个下跌中继，在下跌中继中拿常规票没有意义，很容易被重新套住。",
+      "publish_time": "2024-06-12 00:11"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "先说结论：昨天的低点并不是低点，6月触底反弹应该是在月底25号左右。此外任何情况下的反弹都只能作为反抽，有能力你就抢一把，没能力你就继续等待。",
+      "publish_time": "2024-06-12 08:38"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "估计14号左右，大盘还要往下跌。你在25号左右潜伏，效果会好很多。因为那个低点够低。",
+      "publish_time": "2024-06-12 21:48"
+    },
+    {
+      "post_n": 8,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "总之离破3000点不远啊。月底25号左右必破。说不定提前破了。振作起来，那个时候，大胆干、满仓干。",
+      "publish_time": "2024-06-13 15:36"
+    },
+    {
+      "post_n": 6,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "我多次发文说3000点必破，平台不推荐，也有很多网民冷嘲热讽。",
+      "publish_time": "2024-06-17 10:38"
+    },
+    {
+      "post_n": 5,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "至少下跌到25号26号左右！下跌到什么点位呢？2968点左右！正负误差不会到10个点。总而言之，3000点是必破的。",
+      "publish_time": "2024-06-19 08:49"
+    },
+    {
+      "post_n": 4,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "我早就说过3000点必破，很多人都不相信，但事实将是如此啊。发文的时候现在还没有收盘。但我相信破3000点不远了。",
+      "publish_time": "2024-06-20 15:46"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "所以要不了多久，大A必然会反弹。25号或者26号，大a触底后将强势反弹！",
+      "publish_time": "2024-06-21 10:44"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "那么下周会有反弹。迎接25号或26号的触底反弹！这个反弹也不会坚持多长时间，但力度应该还可以，赚点小钱没什么问题。",
+      "publish_time": "2024-06-22 09:19"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周大盘可以探底回升。准确的说6月25号或者6月26号大盘将探底。然后就会有一段幸福的上涨日期。涨到什么时候呢？时间也不长，大概7月上旬比方说7号到8号左右。",
+      "publish_time": "2024-06-23 09:25"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "这里就是阶段性的底部！",
+      "publish_time": "2024-06-24 11:24"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "就在这两天，天就要亮了。",
+      "publish_time": "2024-06-25 00:55"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "乌云即将过去，上涨随时到来。",
+      "publish_time": "2024-06-25 22:49"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "我始终坚信，一轮反弹，近在咫尺。",
+      "publish_time": "2024-06-26 14:36"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大盘必然探底回升！",
+      "publish_time": "2024-06-26 15:59"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天（27日）还可继续逢低加仓",
+      "publish_time": "2024-06-27 00:50"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "这轮上涨差不多有100个点。",
+      "publish_time": "2024-06-27 10:48"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "即便明天早晨开盘有惯性的跌势，但反弹，必然即将到来。",
+      "publish_time": "2024-06-27 22:44"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "7月上中旬以后，还会有更大的跌幅。",
+      "publish_time": "2024-06-28 11:47"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "总体而言，涨势会延续一段时间。",
+      "publish_time": "2024-06-28 16:35"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "long",
+      "evidence": "2635点，绝无可能跌破！",
+      "publish_time": "2024-06-30 22:46"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大A触底反弹，但是预估为有波折的反弹。",
+      "publish_time": "2024-07-01 10:10"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "7月上中旬总体维持反弹，但不排除某一两天会往下调。总体向上的基调不变！",
+      "publish_time": "2024-07-01 15:42"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "我这里明确告诉大家，信心比黄金要重要，大盘必然会重拾升势。大盘要到多少点才有些危险？至少3050点。现在离的还远呢。坚定持有优质股票待涨。",
+      "publish_time": "2024-07-03 10:57"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "我的观点是短期上涨的势头并没有见顶，所以你不用着急，如果票票的内在比较好，那么你还可以加仓，就这么简单。",
+      "publish_time": "2024-07-04 12:41"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "本轮反弹虽然不可看的太高，但确实还没有达到目标。现在其实是低吸的时候，不是你割肉的时候，除非你所选的个股太差！这两三天有低点都是很正常的！顶过这阵风雨后，天空将迎来彩虹！本轮你到3050点以后再去逐步减仓我都认可，但你现在就沉不住气了，那就不是一条汉子！",
+      "publish_time": "2024-07-04 15:53"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "机会都是跌出来的，明天早盘如果继续开跌，特别是大跌就是绝佳的机会。",
+      "publish_time": "2024-07-04 20:28"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "因为我相信自己的判断：7月上中旬，大盘总体是要往上的。我多次说过，波折向上涨。很多人就是听不明白，怨天怨地。具体到今天，如果还是往下再跌，你该怎么办？三个字：买！买！买！买完后你就等着数钱吧，就这么简单的事儿。",
+      "publish_time": "2024-07-05 06:30"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天大盘走了一个v字，所以我说今天越跌越买是可以的。凡是今天在v字底买的，下周大概率会吃肉。",
+      "publish_time": "2024-07-05 16:41"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "我给的答案是下周以反弹为主。即便周一低开，但是反弹绝对是有的。反弹的高度可能就没有预期那么高了。原先认为3050点可以到，现在觉得有些困难，3010多点差不多了吧。",
+      "publish_time": "2024-07-06 09:14"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "intraday",
+      "evidence": "今天低点出现后，大盘一定会上涨。下跌到多少点，这个不确定。但大盘反弹这个是确定的。",
+      "publish_time": "2024-07-08 11:04"
+    },
+    {
+      "post_n": 13,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "反弹会有，但是不要把反弹看的会涨多高，多长。",
+      "publish_time": "2024-07-09 09:03"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "现在先持股到15号吧，如果量能充沛，我估计可以上涨到22、23号也不是不可以。",
+      "publish_time": "2024-07-09 21:50"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "估计明天白马股，特别是最近被他们恶意做空的白马股，全线大涨！",
+      "publish_time": "2024-07-10 21:32"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "我个人倾向于高开高走，最好是量价齐升。",
+      "publish_time": "2024-07-11 10:06"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "我的看法次高点在15号左右，然后下跌到18号左右吧，再上涨。本月的高点在23号左右，下旬后半段属于下跌时间。",
+      "publish_time": "2024-07-11 20:18"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "前面科技股涨的多了，那么回调是必然的。当回调之后，依然会倔强地往上走。",
+      "publish_time": "2024-07-12 08:30"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大会结束后肯定下跌。",
+      "publish_time": "2024-07-15 16:11"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "市场即将下跌...从下周开始，具体来说，应该从农历大暑那天开始测算...下周一周二，到了大暑时节以后就要非常警惕，市场就有可能往下走，一直跌到8月初，总体而言是下跌形态。",
+      "publish_time": "2024-07-18 09:20"
+    },
+    {
+      "post_n": 9,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "那么下周一开盘a股就会承压。如果a股有点雄性激素的话，应该在22号23号抵挡一下。如果像椰风一样，那就挡不住了。估计，下周五是低点。比22号23号要低得多。",
+      "publish_time": "2024-07-20 17:51"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "由于预判下周以下跌为主，所以呢仓位不要太重，最多5成仓。",
+      "publish_time": "2024-07-22 00:18"
+    },
+    {
+      "post_n": 4,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "我曾经画了一个图，意思是22号开始，大盘就开始下跌了。",
+      "publish_time": "2024-07-22 16:43"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "什么时候涨？7月底8月初吧。",
+      "publish_time": "2024-07-23 21:10"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "这两天的行情非常之差，大家都看到了，明显处于下跌趋势中。我曾经画了一个图，清晰地表明，会一直跌到8月初。",
+      "publish_time": "2024-07-24 08:10"
+    },
+    {
+      "post_n": 11,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "这个性质目前判断是下跌中继，除非下午放量大涨。总的来说下跌的时间没有到，所以必须继续跌，总体保持跌势要到7月底和8月初。",
+      "publish_time": "2024-07-24 13:44"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "直接告诉你：2900点不是底。哪怕明天有反弹。这个盘面明显的还要往下探。",
+      "publish_time": "2024-07-24 15:57"
+    },
+    {
+      "post_n": 8,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "明天若有反弹，那也不是你买进的机会。减减仓等到深不可测的底。说笑了，也不是深不可测，大概在8月份吧。",
+      "publish_time": "2024-07-24 16:51"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "最近趋势依然向下，指望放量反弹很难。所以控制仓位，不买或者少买，是为上策。",
+      "publish_time": "2024-07-25 07:07"
+    },
+    {
+      "post_n": 4,
+      "direction": "bearish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "我昨天说过2900点不是底，今天应声跌破！上午最低到了2872点。这个点位够低了吧？但是还没有完。你且看。看什么呢？8月某个时间一定比这个点位还要低。",
+      "publish_time": "2024-07-25 14:36"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "股指这几天连续下跌，很多人都跌麻了。其实越往下跌，越有机会反弹。当然仅仅是反弹。",
+      "publish_time": "2024-07-26 07:46"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "感觉今天大盘要反弹，所以开盘 就把抱团的金龙给砸了。",
+      "publish_time": "2024-07-26 10:50"
+    },
+    {
+      "post_n": 13,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周大盘总体冲高回落。预测周五出现低点，到时候值得博弈。",
+      "publish_time": "2024-07-26 16:24"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周，如果指的是8月初的话，那么我认为a股将上涨。但不是所谓的继续上涨，因为本周是下跌的。",
+      "publish_time": "2024-07-30 07:24"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "首先大盘肯定不会太好，那么在这种情形下，你也只能看抱团之类的票了。",
+      "publish_time": "2024-07-30 08:52"
+    },
+    {
+      "post_n": 11,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "基于这种生硬的大涨原因，所以股市在8月份依然还有低点。",
+      "publish_time": "2024-07-31 21:10"
+    },
+    {
+      "post_n": 9,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "总而言之，8月份依然还存在低点，昨天的反弹仅仅就是反弹，是一种情绪的宣泄。",
+      "publish_time": "2024-08-01 08:08"
+    },
+    {
+      "post_n": 6,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "具体到8月5号6号左右依然是低点时间。然后会上涨。下旬有可能创新低。",
+      "publish_time": "2024-08-01 16:47"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周的走势应该比较简单，低开高走，概括来说，5号左右应该就是低点，然后涨到周四、周五左右。",
+      "publish_time": "2024-08-02 16:24"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周的行情我其实说过了，是低开高走。具体来说周一周二应该是低点时间，到了周五应该是高点时间，高点有可能延续到下下周一。",
+      "publish_time": "2024-08-04 17:48"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "最多熬过明天市场将迎来久违的上涨，尽管最终的高度不是很高，但是也够兄弟们吃五六天的肉了。",
+      "publish_time": "2024-08-05 16:07"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "我认为今天应该是一个触底反弹日，换而言之，差不多今天就应该到一个阶段的小底了。所以即便手中的票处于亏损状态，也不要盲目的去割肉了，因为过了今天，接下来大盘将有五六天的上涨时间。",
+      "publish_time": "2024-08-06 08:09"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大盘会走好，那么你就远离那些抱团股。",
+      "publish_time": "2024-08-06 12:46"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "我多次说过，本周是低开高走，那么今天是一个重要的低点，持股的继续持股，当然你拿的一些抱团票例外啊。",
+      "publish_time": "2024-08-06 15:55"
+    },
+    {
+      "post_n": 9,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "整个8月跟今天的走势有点类似。必然也是跌宕起伏，坎坷的很。具体来说，下周一12号有一个小高点，然后就会往下走。14 号左右低点，反弹到16号，又会遇到一个与12号持平的小高点，我们可以称之为M头， M头的最后一笔下跌，大概要到20号左右，可能19号。这个点位稍微有点低。然后会反身向上。",
+      "publish_time": "2024-08-06 23:45"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "昨天大盘开始反弹，但是反弹的力度非常有限。今天理应继续反弹，如果不及预期再应对。",
+      "publish_time": "2024-08-07 07:48"
+    },
+    {
+      "post_n": 13,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "那么大盘到了下周，总体而言斜率是向下的，即便周初有冲高，但是绝对会回落。大概到了19号，会是一个比较重要的低点。",
+      "publish_time": "2024-08-09 22:55"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "long",
+      "evidence": "我这里明确告诉大家，2635点今年万分之万不可能跌破！",
+      "publish_time": "2024-08-12 23:58"
+    },
+    {
+      "post_n": 4,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "首先可以肯定地说，对于绝大多数股民朋友而言，本周空仓是为上策。",
+      "publish_time": "2024-08-13 07:35"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "就8月份而言，肯定是跌到8月中下旬了，具体而言应该是8月19号以后。8月19号，及以后大概是一个什么点位呢？根据预测，大约在2800点正负20个点。",
+      "publish_time": "2024-08-13 12:12"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "所以大盘继续向下走是大概率的事件，尽管它可以反弹个半天，最多两天。",
+      "publish_time": "2024-08-13 22:12"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "连续几天都在5,000亿以下的量能，你不要指望当下有什么大行情。你不亏钱就好，把钱攒着，等着下个礼拜去抄底！",
+      "publish_time": "2024-08-15 07:37"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "老乡该走还得走。这个时间点很难说，它就修复了。看一下下周，如果下周依然有低点，那么你下周就别走了，可以买进。",
+      "publish_time": "2024-08-15 14:04"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "在我的体系里面，大盘也应该还是要往下跌一下的。大约在下周，那是一个极佳的上车点。总之，下周逢低做多。",
+      "publish_time": "2024-08-15 16:32"
+    },
+    {
+      "post_n": 5,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "但在我的系统里头，以下跌为主。跌多少呢？周初的两天看能不能跌60个点。",
+      "publish_time": "2024-08-16 23:05"
+    },
+    {
+      "post_n": 4,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "在我的体系里，今天大盘其实不太好。担心把情绪也会带坏。",
+      "publish_time": "2024-08-19 08:17"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "所以大盘在这里持续上涨，难度非常大。",
+      "publish_time": "2024-08-19 21:52"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大盘震荡下行依然是8月下旬的主基调。短期冲高不改震荡下行的态势。",
+      "publish_time": "2024-08-20 07:33"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "近期还是要防阴跌。",
+      "publish_time": "2024-08-20 07:43"
+    },
+    {
+      "post_n": 13,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天大盘恢复下跌的本色。我说过8月底是震荡下跌筑底的一个过程，今天完美验证。",
+      "publish_time": "2024-08-20 13:22"
+    },
+    {
+      "post_n": 11,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天（20日）大跌，那是不是就跌完了？答案是还没有，还得继续跌！",
+      "publish_time": "2024-08-21 01:09"
+    },
+    {
+      "post_n": 9,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "由于预判8月底是筑底阶段，现在的指数并不是最低点，还应该往下探一下。",
+      "publish_time": "2024-08-21 07:47"
+    },
+    {
+      "post_n": 8,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "基本上8月底以震荡阴跌为主，这个判断是非常准确的。",
+      "publish_time": "2024-08-21 21:53"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "最迟29号还有一个地点，再继续买就差不多了。",
+      "publish_time": "2024-08-22 07:52"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "如果你看的稍微长一点，9月10号左右全部抛掉，你是可以获利的。当然还有一个时间点，那就是下周二左右。估计当天应该是暴涨了。。你抛掉一点毛病都没有。",
+      "publish_time": "2024-08-23 06:54"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周大盘怎么走？其实也很明了：基本上快到筑底尾声了。周一如果还有低点的话，放心地买，周二（27号）高抛就好了。然后继续震荡向下，到29号应该是一个低点，你可以重仓买入，因为9月初反弹向上！",
+      "publish_time": "2024-08-23 20:49"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "耐心等29日低点",
+      "publish_time": "2024-08-24 08:32"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "小中线资金还是要看29号的低点再动手。",
+      "publish_time": "2024-08-27 07:43"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "我原先判断29号是低点，这个判断目前没有改变，我依然觉得29号或者30号就是低点。但是下个月的月初，我看了一下，感觉不会走得很高，但绝对会反弹，只是高度比过去预判的要低一些。",
+      "publish_time": "2024-08-27 21:01"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "小中线资金还是要等明天吧，明天应有低点。",
+      "publish_time": "2024-08-28 07:58"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "至于大盘，其实依然缩量。看明天吧，如果明天深跌，那么小中线资金可以扣扳机。",
+      "publish_time": "2024-08-28 13:37"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "预计明天，最多30号就会遇到难得的低点，这个低点的位置，我以前发文说大概在2820点左右，这个观点不变。有点误差也不会太大。所以亏的麻麻的普通股民朋友，你可以准备扣扳机了，现在你子弹要上膛，随时击发，就这！",
+      "publish_time": "2024-08-28 17:50"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "这两天比较关键，看大盘能否再创新低，达到2810点到2820点一线（稍许误差正常）。如果比较低的话，越低越买。",
+      "publish_time": "2024-08-29 09:13"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "抱团取暖结束将意味着指数回升。指数回升意味着绝大多数股票开启上涨周期。一鲸落，万物生。我曾经多次预测，本轮下跌在2810~2820之间，今天最低点2815，完美！",
+      "publish_time": "2024-08-29 13:33"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "30号3号有可能还是低点，9月10号之间的行情其实很鸡肋，尽管是震荡上升的。",
+      "publish_time": "2024-08-30 09:43"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "总而言之，9月10月其实并不太乐观，特别是9月10号以后。10号之前还是可以看多的，虽然3号那个点有可能是个低点。",
+      "publish_time": "2024-08-30 12:47"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "个人估计10月份的低点应该是2700点左右。",
+      "publish_time": "2024-08-30 21:33"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "具体到本周我认为是波折的上涨。因为你要提防3号有可能还要往下挫。至于其他时间总体而言震荡上行。所以本周总体而言，容错率是比较高的。做多没问题。",
+      "publish_time": "2024-09-02 06:36"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天再跌一下，或者明天盘中再有低点的话，大盘依然会重拾升势。但这个升势应该是短暂的，最多维持到9号10号",
+      "publish_time": "2024-09-02 10:55"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "预判明天还有低点，然后大盘开始上涨。其实也长不了多长时间，大家珍惜吧。",
+      "publish_time": "2024-09-02 14:04"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "普通股民也不要太悲伤，明天大盘将随时重启反弹升势。",
+      "publish_time": "2024-09-02 16:12"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天先说几个观点。第一，本日如果有低点的话，那反弹随时开启。",
+      "publish_time": "2024-09-03 08:47"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "我说过大盘不会就这样萎靡的，我多次提前强调3号本身就是个低点，那么大盘绝对会反弹的，大家放心！",
+      "publish_time": "2024-09-03 14:41"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天的最低点是2794点，以这个点位为基点，预计这个反弹应该是有一定持续性的。",
+      "publish_time": "2024-09-03 16:18"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天我依然看反弹。即便开盘再跌，尾盘也应该能够收上来。即便我的判断有误差，也就是天把两天的事，大A总而言之，在10号之前是要往上走的！",
+      "publish_time": "2024-09-04 08:14"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "我虽然不认为牛市会来，但是我认为在10号之前一个阶段性的反弹是有的。大家拭目以待。",
+      "publish_time": "2024-09-04 13:47"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "9月不乐观，赚钱有两条路。今天大a在昨晚美股下跌的面前还是跪下了，这样结构就有所改变。原来我认为3号应该是低点，最多有两天的偏差，但是我觉得这两天的偏差有没有都无所谓，关键是9月9号10号那一个反弹高点高度就降低了不少，这样9月初这一段可做可不做，不是高手不要做。",
+      "publish_time": "2024-09-04 20:29"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "我早就说过10号左右，可能是9号是本月的高点，这个判断不变，但是呢，第一高度稍微要放低一点，第二，可能谈不上什么太大的反弹，说反抽呢可能好一点。过了10号以后呢，总体应该向下。",
+      "publish_time": "2024-09-05 08:01"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今天是周五，理应看涨。",
+      "publish_time": "2024-09-06 08:03"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "大盘预计全天应该是红盘收。",
+      "publish_time": "2024-09-06 10:51"
+    },
+    {
+      "post_n": 8,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下一周虽然不看好大盘（冲高回落）",
+      "publish_time": "2024-09-06 14:09"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "具体到下周，最多周初会有一个反抽，然后大盘继续向下寻底！",
+      "publish_time": "2024-09-06 17:47"
+    },
+    {
+      "post_n": 5,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "由于9月初下跌的力度比较大，这样9月10号之前那么一个反抽，有胜于无，总体而言，低点还是在下旬，但这个低点应该不会太低了。目标2715点吧，正负误差不过10个点，26号或27号到达。反弹后，到了10月份还有低点，其实分析这些意义都不太大。",
+      "publish_time": "2024-09-07 16:41"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "至于大盘，个人主观偏向多方一些。",
+      "publish_time": "2024-09-09 08:43"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "目前是熊市格局，估计大多数人都相信了吧，那些叫嚣牛氏来了的人那不是傻吗？在这种大的背景下，指数即便有反弹，你也把它当成反抽对待。",
+      "publish_time": "2024-09-10 08:35"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天这个盘面继续往下跌，不仅是杀指数更是杀短线。预计全天下跌会超过4000家。",
+      "publish_time": "2024-09-10 14:13"
+    },
+    {
+      "post_n": 9,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "9月份以杀跌为主。原先以为10号以前会有一个小反弹，现在看来还是预期的太理想化了。这几天一直杀跌，那么会跌到哪里去呢？我初步看了一下，26号27号依然是一个低点，大致阴跌到此，市场会迎来反弹。",
+      "publish_time": "2024-09-10 14:27"
+    },
+    {
+      "post_n": 8,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "就大盘而言，往后跌破2700都有可能，但是你要说跌到2月份那个低点2635可能性还是不大。",
+      "publish_time": "2024-09-11 08:12"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "预期大盘继续震荡向下。",
+      "publish_time": "2024-09-11 13:43"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "从上午的盘面看，大盘依然没有什么起色，指望大盘止跌，反弹的确太难，至于反转，还需要一段时间。大家还需要一点耐心。就一个字：等。",
+      "publish_time": "2024-09-13 13:49"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "大盘其实没啥说的，一路向下吧。中间虽然略有反抽，但这种反抽非常鸡肋，去做的话没啥意思。下到什么时候呢？26号27号有一个低点，可以去试错抄底。换而言之，整个9月份其实都是非常难做的，只是到月底会有一个反弹。",
+      "publish_time": "2024-09-15 21:42"
+    },
+    {
+      "post_n": 5,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "对于指数而言，肯定是缓慢下跌，但不排除，某两天反弹一下。具体到今天，防止高开低走。",
+      "publish_time": "2024-09-18 08:45"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "那么大盘以后会走成什么样子呢？预计缓慢下跌，虽然途中会有冲高。可能某一天还收阳线，但是总体而言处于缓慢下跌状态。",
+      "publish_time": "2024-09-18 13:38"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "具体到大A今天怎么走？其实本周总体而言是一个冲高回落的走势，具体到今天，即便有些震荡上涨的意思，但是也持续不了多长时间。",
+      "publish_time": "2024-09-19 08:09"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "现在等一个反弹后继续往下跌。",
+      "publish_time": "2024-09-19 11:04"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "在我的体系里，下跌的时间还是没有到，具体而言，下周还会缓缓下跌。大盘跌幅不会很大，关注26号到27号的低点，看有没有变化。",
+      "publish_time": "2024-09-20 07:45"
+    },
+    {
+      "post_n": 13,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "指数在这里不可能马上涨起来，这是我近一段时间反复强调的观点，哪怕昨天遇到美联储降息这样的天大利好，我也依然保持这么一个观点。从今天上午的盘面来看，指数就是跌下来了。",
+      "publish_time": "2024-09-20 14:27"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "预计下周末将会有低点。无论周初是涨还是跌，下周末26号27号左右就是低点。",
+      "publish_time": "2024-09-21 08:58"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "本周，除了周末有低点以外，其他都还好，如果要跌的话其实也跌不到哪去。",
+      "publish_time": "2024-09-23 07:30"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "对于大盘我是暂时不担心的，因为即便下跌也不会跌到哪里去。主要是现在点位够低嘛。",
+      "publish_time": "2024-09-24 09:21"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "接下来行情演绎，应该是权重搭台、题材唱戏。",
+      "publish_time": "2024-09-26 22:32"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "从现在的行情来看，应该是可以持续相当一段长的时间的。即便当中会有震荡回调，但也是前进中的回调。",
+      "publish_time": "2024-09-27 07:11"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "行情这么热，你该怎么办？在车上的躺赢就好，特别是干了核心券商的。没有在车上的，节后去选强再上！",
+      "publish_time": "2024-09-27 13:48"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "现在是不讲技术，头铁上的时间窗口，只要胆子大都可以喝一杯羹，甚至压对了宝，连续吃大肉。基于这样一种火爆局面，兄弟们，干，就完了。",
+      "publish_time": "2024-09-27 22:47"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "其实是不是牛市并不重要，关键是现在的情绪上来了，情绪上来了你就上啊，还想什么呢？你做空是大聪明的行为。",
+      "publish_time": "2024-09-28 11:43"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "牛市既然来了，那么如何上车呢？哪些板块先涨，哪些板块后涨呢？一般而言，牛市来了很多人都敢于下重仓，甚至加杠杆去干，特别是在初期，你只要猛干并且拿着不动，基本上都是2~3倍往上走的。",
+      "publish_time": "2024-09-28 20:42"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "股市不可能天天这样暴涨，这个是绝对的，估计会有些回调，但回调应该不会这么快就灰飞烟灭，回调是再上车的机会。",
+      "publish_time": "2024-09-29 16:01"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大盘不会跌，个股看情况，基本也不会跌。",
+      "publish_time": "2024-09-30 07:31"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "不用怀疑，准备迎接史诗性的牛市！尽管买。买！买！买！",
+      "publish_time": "2024-09-30 11:15"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "基于这样一种行情，国庆节后应该还会有上升，不会马上玩完。",
+      "publish_time": "2024-09-30 18:32"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "目前是牛市初期，这个应该毫无疑问。所以对于普通股民而言，你买的越早越便宜，然后持股不动，经受住市场的波动，那么到最后高点，一股脑卖掉，应该是最划算的。",
+      "publish_time": "2024-10-01 18:43"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "long",
+      "evidence": "史诗性的牛市已然而来。这个时候你不把子弹打光，还在等什么呢？",
+      "publish_time": "2024-10-02 19:14"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "换而言之，这轮牛市必然会回调，无论是起始阶段还是中间阶段，它都有回调，不可能直接往上冲。",
+      "publish_time": "2024-10-04 07:28"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "所以只要港股不是太差，那么基本上可以肯定，10月8号铁定高开，高开100个点没问题。所以，10月8号，大盘涨5%没问题！大盘涨停，90%的可能吧。",
+      "publish_time": "2024-10-04 15:31"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "指数越是在底部，越是要加仓，头寸越多越好，指数越往上走，越是减仓，头寸越少越好。",
+      "publish_time": "2024-10-05 14:58"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "long",
+      "evidence": "首先要坚定信心，这就是一轮牛市，哪怕是一轮疯牛，即便来的快去的也快。",
+      "publish_time": "2024-10-07 14:54"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "这里明确的跟大家说，牛还没有走，还在场内。今天放量3.5万亿，场外的资金依然要活跃，不断涌进。明天新开户的资金可以进场，你说牛走了没有？不要低估上面的意图，牛没有走！",
+      "publish_time": "2024-10-08 21:30"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "这里需要震荡调整，调整之后才有可能上。",
+      "publish_time": "2024-10-09 13:47"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "本轮牛市还没有结束，但是必定是曲线向上走。中途会有调整，而且调整的力度可能超出一些人的想象，比方说昨天。记住：道路是曲折的，前途是光明的。",
+      "publish_time": "2024-10-10 08:25"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "那么下周一肯定继续下跌，毫无疑问。",
+      "publish_time": "2024-10-11 11:08"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "下一周，可以肯定的告诉大家一定会苦尽甜来。就大盘而言，下周的低点在周一或周二，过了周一周二大盘铁定反弹。",
+      "publish_time": "2024-10-11 19:26"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "但是从下周一周二开始，基本上探明低点后应该曲折的反弹。",
+      "publish_time": "2024-10-12 17:57"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "寄希望于本周能够反弹上去，如果本周是高开低走的走势的话，那么后面将会很麻烦。那意味着10月份没有什么太好的行情。后面会有反弹，但是反弹后依然会往下走。",
+      "publish_time": "2024-10-15 11:46"
+    },
+    {
+      "post_n": 13,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "明天十分关键，如果明天大盘能够企稳回稳，那么10月份还有所期望。如果明天不能企稳，那么10月份基本上是震荡态势，甚至月尾还有低点。。",
+      "publish_time": "2024-10-15 16:14"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "总体而言，股市这个时候应该走震荡，而且是震荡下跌。在这个过程中会有反抽的高点，比方说21号和22号。月底大概率是下跌了，29号或者30号是低点，比现在大概低200点左右吧。",
+      "publish_time": "2024-10-16 16:19"
+    },
+    {
+      "post_n": 9,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "至于指数，我认为是阶段性的反弹。下周中后段肯定是要下跌了。国家队不护盘的话，基本上3000点月底是可以见到的。",
+      "publish_time": "2024-10-17 13:49"
+    },
+    {
+      "post_n": 8,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "我判断月底必到3000点，很多人“谴责”我，说我说错了，说要维护牛市的大好氛围。",
+      "publish_time": "2024-10-17 15:33"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "无论今天是否收阳，还是下周一周二是否收阳（因为那里理论上是一个小高点），都不改月底向3000点进军的趋势。",
+      "publish_time": "2024-10-18 08:06"
+    },
+    {
+      "post_n": 6,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "即便下周一周二继续上涨，也不改变3000点在月末将会出现。",
+      "publish_time": "2024-10-18 13:55"
+    },
+    {
+      "post_n": 5,
+      "direction": "bearish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "但在我的系统里，其实隐患很多，下周铁定冲高回落！过完周一周二你看吧，指数将剧烈下跌，特别是到了月底，下跌会更快。",
+      "publish_time": "2024-10-18 21:51"
+    },
+    {
+      "post_n": 4,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "我一直说，10月下旬将会有一轮剧烈的下跌，下跌的极限位置应该是3000点左右，很多人都不相信，更有很多人认为我是看空派。",
+      "publish_time": "2024-10-19 15:27"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "具体到本周的盘面，我早说过应该是冲高回落，所以本周初不要上头。影响大盘涨跌的当然是大金融，本周我不看好大金融。",
+      "publish_time": "2024-10-21 07:39"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天大盘冲高回落，指望大盘一根线往上涨是不可能的，这里必须回调。所以明天往后走不乐观。",
+      "publish_time": "2024-10-21 18:34"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天开始要小心 我说过月底是一个很容易下跌的阶段，我虽然说有可能到3000点，但那只是一个数字而已，到不到3000点没有关系，但你记住，月底极易下跌！今天估计是个拐点。",
+      "publish_time": "2024-10-22 07:46"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "北交所已经开始预警，主板明天强烈看分歧。",
+      "publish_time": "2024-10-22 21:34"
+    },
+    {
+      "post_n": 13,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "我虽然不看好月底的指数，但是我觉得个股如果节奏把握好的话也是可以赚钱的。",
+      "publish_time": "2024-10-23 08:12"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "虽然大盘这两天其实走得挺强，但我依然判断10月下旬将迅猛下跌。",
+      "publish_time": "2024-10-23 21:26"
+    },
+    {
+      "post_n": 11,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天还是要防高标跳水。情绪属于退潮期，高位不断兑现，要回避高位，谨慎接力。",
+      "publish_time": "2024-10-24 08:08"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "个人建议，虽然指数不好，但是依然可以锚定少数情绪票积极做多。",
+      "publish_time": "2024-10-24 13:50"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "所以除了下周前几天要谨慎以外，然后你依然可以把它作为牛市预期加码去做。",
+      "publish_time": "2024-10-26 21:30"
+    },
+    {
+      "post_n": 6,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "总体而言，今天不建议再去追高。盘中如果有低吸点，看一看能否低吸。如果指数大幅下跌的话，那我建议也别低吸了，看看明后天的低吸机会。",
+      "publish_time": "2024-10-28 07:55"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "如果跌的很深，那绝对是再上车的机会。",
+      "publish_time": "2024-10-29 07:34"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "等下跌过后又是一轮上涨。",
+      "publish_time": "2024-10-29 12:15"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "这样的盘面应当以防守为主。",
+      "publish_time": "2024-10-29 16:22"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "当高潮一致的时候，往往也是风险来临的时候。",
+      "publish_time": "2024-10-30 02:10"
+    },
+    {
+      "post_n": 13,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "估计今天指数依然比较弱，搞不好还会往下跌。",
+      "publish_time": "2024-10-31 07:51"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "那么对于11月第1个交易日来说，搞不好是开门黑，因为昨天外围情况很不好。",
+      "publish_time": "2024-11-01 08:07"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "大家也不要担心，过了4号后，大盘依然会恢复向上，只是到了8号左右还是要向下。",
+      "publish_time": "2024-11-01 16:13"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "但总体而言，11月份并不是太好做。",
+      "publish_time": "2024-11-01 18:28"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "所以下周不需要慌张，依然可以看一下重组线和大科技线。",
+      "publish_time": "2024-11-02 22:57"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "那到了本周，可以说应该是有修复预期的。",
+      "publish_time": "2024-11-04 07:45"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "这样的盘面继续猛干。",
+      "publish_time": "2024-11-05 13:53"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "unspecified",
+      "evidence": "这样的市场大家都期待。不用说什么，三个字：买！买！买！",
+      "publish_time": "2024-11-05 16:54"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "昨天爆量上涨，整个行情牛市的那个味道非常浓。增量资金进场，那么总体应该做多。",
+      "publish_time": "2024-11-06 07:36"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "牛市依然可以预期存在。只是这个时间要拖长，而且这是一轮慢牛。",
+      "publish_time": "2024-11-06 20:44"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下周指数预计往下调整。",
+      "publish_time": "2024-11-08 16:09"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "面对这种诡异之处，我只能说a股该调整一下了。。",
+      "publish_time": "2024-11-09 17:06"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "总之本周以调整为主，但不排除今天会震荡冲高。",
+      "publish_time": "2024-11-11 08:55"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "估计整个市场还要继续下跌。下跌到什么时候呢？看21号能否真正止跌？",
+      "publish_time": "2024-11-14 16:17"
+    },
+    {
+      "post_n": 13,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "我的观点即便涨起来，哪怕深V也是一个中继，下跌中继，除非V的量能特别可观。",
+      "publish_time": "2024-11-15 08:30"
+    },
+    {
+      "post_n": 11,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "途中当然会有反弹震荡，但是这些反弹和震荡你不要去理会他，毕竟还要往下走！",
+      "publish_time": "2024-11-15 15:58"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "总之大盘再度崛起，还是要看21号左右。当然最好是29号过了后再涨。12月上旬的快速上涨是可以期待的。",
+      "publish_time": "2024-11-17 12:11"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "缩量下跌还要下跌，因为根本就没有跌透。本月21号左右是一个低点，29号左右是另一个低点，其中29号比21号还要低。",
+      "publish_time": "2024-11-18 17:29"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "我原来说21号左右有一个次低点，什么是左右呢，就是最近两天吧。因此你逢低建仓，然后到二十五六号卖掉也是一个不错的小反弹。",
+      "publish_time": "2024-11-19 07:49"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "不要担心明天大盘怎么样，即便震荡一下也无关紧要，因为今天的低点已经比较低了。",
+      "publish_time": "2024-11-19 16:12"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "个人估计应该反弹到二十五六号，不及预期再说。",
+      "publish_time": "2024-11-20 08:44"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "在我看来，大盘在二十五六号左右会到一个相对高点，那个时候必须减仓甚至空仓。到月底几天大盘猛烈向下杀的时候，你再来捡便宜筹码。",
+      "publish_time": "2024-11-20 13:30"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "我前几天就明确指出这里有一个小波段的上涨，涨到二十五六号。所以大家不必太担心。",
+      "publish_time": "2024-11-20 17:27"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "预计情绪还将会延续，指数总是波浪式地碎步向前。",
+      "publish_time": "2024-11-21 08:01"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大盘在这里其实没有什么危险。",
+      "publish_time": "2024-11-21 13:30"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "所以最近指数是无忧的，指数也不会被空头打下去，耐心持股到25号26号再说。",
+      "publish_time": "2024-11-21 16:10"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周大盘总体不看好，虽然会有分时反弹，但不建议大家去做。相反，下周末（比方说29号）左右，大家可以准备一下资金，去捡便宜筹码，迎接12月初的上涨！",
+      "publish_time": "2024-11-22 16:13"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "上周五，大a长阴下跌103点，预计本周初有反弹。但这个反弹我不建议各位去抓，因为仅仅是一个反弹。大概到本周末29号左右才是一个更低的点位。",
+      "publish_time": "2024-11-25 08:34"
+    },
+    {
+      "post_n": 13,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "反弹如期出现，但不要指望能够反弹多长时间。我说过本周初，会有反弹。但是我要提醒各位的是这个反弹不会有多长时间。耐心等月底的低点。",
+      "publish_time": "2024-11-25 11:35"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "反弹不会维持多长时间，这是我上周就有的判断。今天开盘一小时又发文提醒各位。下午或明天上午，即使有反弹那都是离场的机会。",
+      "publish_time": "2024-11-25 12:47"
+    },
+    {
+      "post_n": 11,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "越发觉得这个牛市似乎是海市蜃楼。",
+      "publish_time": "2024-11-25 20:58"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "说到指数，我个人认为29号是一个低点，如果想做趋势票的，那个时候去买把握性更大。所以本周初若有反弹，但是反弹是阶段性卖出的机会。",
+      "publish_time": "2024-11-26 09:03"
+    },
+    {
+      "post_n": 8,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "上午指数涨得不错，在我的系统里以前就说过25号到26号有一个高点的。但是我不认为这个高点能够持续多长时间。还是看月底的低点再说吧。",
+      "publish_time": "2024-11-26 13:59"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "我提前10多天就说29号左右有低点。现在大家静等就可以。不是高手，不要早动手。",
+      "publish_time": "2024-11-26 16:11"
+    },
+    {
+      "post_n": 6,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "对于一般玩家，你们手中的普通票我也不建议你们多持有，因为29号这一天是有低点的。那么这几天多看少动为好。",
+      "publish_time": "2024-11-27 07:56"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "对于指数，我说过29号会有低点。对于非龙头选手而言，明天低点少买一点不要紧。因为我怕12月初还有低点。但不管怎么说，买了总比不买要好。",
+      "publish_time": "2024-11-28 20:07"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "在我的系统里，预计今天指数会达到一个相对低点，那么你该如何做呢？如果是相对低点，按普通人做常规票的搞法是应该买票的。但我觉得12月初还有一个波折，也就是说12月3号左右可能还会有一个相对低点。那么今天买不买呢？买！即便被套也不会套的蛮深，所以今天买票是划得来的生意，但是你不要满仓就好。",
+      "publish_time": "2024-11-29 08:14"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天29号，股市将会有一个相对低点，在这个低点可以去买票。买票目的是为了迎接12月份的上涨。",
+      "publish_time": "2024-11-29 08:22"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "12月初有一波小行情，今天低点似乎等不到，行情有提前启动的意思。",
+      "publish_time": "2024-11-29 12:34"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "行情至少可以延续十来天吧，虽然中间有一些波折，但这些波折可以忽略。",
+      "publish_time": "2024-11-29 19:49"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "基于地缘政治，基于中美博弈，基于当前的经济形势，上面都急需一场牛市，并且是慢牛。",
+      "publish_time": "2024-11-30 08:15"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "预计向下的拐点要到12月中旬了。也就是说12月上中旬是炒趋势的一个比较好的时间。",
+      "publish_time": "2024-11-30 10:36"
+    },
+    {
+      "post_n": 9,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "但整个12月其实也不要指望它涨多高，基本上是震荡的，到了中下旬又要有跌势。",
+      "publish_time": "2024-12-01 07:00"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天看一下大金融是否还能够有较好的表现，如果大金融不拉胯的话，指数依然会往上走。",
+      "publish_time": "2024-12-02 08:22"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "总体而言，情绪和趋势都向好发展。珍惜当前的环境。",
+      "publish_time": "2024-12-02 14:10"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "指数虽然震荡，但今明两天问题不大，估计后天有一些小问题。",
+      "publish_time": "2024-12-03 13:43"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "接下来两天要注意，除了情绪走分歧以外，对于大盘也要稍微小心一点。预计5号左右有一个小高点，然后再往下调一下。",
+      "publish_time": "2024-12-03 22:09"
+    },
+    {
+      "post_n": 13,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "大盘这么走，那么预示着12月份其实也不太乐观，因为前期预测12月5号左右应该有一个高点，那么继续维持这个预测不变的话，在7号之前应该还有一个小高点。这个高点过了后建议清仓或者小仓位博弈。因为12月底绝对要比12月初低很多。12月中旬也有一个小高点，但这个高点最多跟12月6号持平。",
+      "publish_time": "2024-12-04 16:37"
+    },
+    {
+      "post_n": 11,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "大盘过了这两天才死\n午盘收盘的时候大盘总算翻红，原先预计5号6号左右，应该有高点的，所以大盘不会轻易在这两天死掉。\n大盘即使死掉了，15 16号又有相对高点，然后才真正死掉。",
+      "publish_time": "2024-12-05 13:47"
+    },
+    {
+      "post_n": 8,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "在我的交易系统里，其实调整也不会等多久，所以今天上午我以卖为主。你们随意。",
+      "publish_time": "2024-12-06 13:41"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "strong",
+      "time_horizon": "long",
+      "evidence": "12月份的走势，其实很不乐观。\n昨天大盘涨了一下，基本上算是高点了。看周一是否比昨天还高？当然这并不重要。因为周一以后总体而言，大盘震荡下跌，顶多到16号之前，再反弹一点。中下旬以后肯定是下跌了。\n那么很多人就向往元月份的走势了。\n元月份更不乐观。依旧是下跌的趋势。\n跌到什么时候为止呢\n2月初吧。\n具体点位呢？\n2800多点吧，反正在2900点以下。",
+      "publish_time": "2024-12-07 09:50"
+    },
+    {
+      "post_n": 5,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "上周五，三大指数悉数上涨，个人预计这个上涨持续不了几天，所以最近以防为主。不过放心，跌了以后也会反弹，预计16号左右会有一个小反弹高点。",
+      "publish_time": "2024-12-09 08:13"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "明天股市开盘大涨了\n刚才看了上面重要会议的一些主要精神，那么可以肯定的是明天开盘，股市铁定大涨。你如果清仓了，可能要后悔。如果满仓了肯定要笑哈哈。",
+      "publish_time": "2024-12-09 21:03"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "股市不可能再下探得非常厉害",
+      "publish_time": "2024-12-10 08:02"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "接下来市场挺危险的，特别是12月份。",
+      "publish_time": "2024-12-10 21:22"
+    },
+    {
+      "post_n": 11,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "大盘目前就应该是处于不断寻底的阶段，阶段性的反弹，做不做关系都不大。",
+      "publish_time": "2024-12-11 08:31"
+    },
+    {
+      "post_n": 9,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "但指数方面，必须谨慎。",
+      "publish_time": "2024-12-11 21:41"
+    },
+    {
+      "post_n": 4,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下跌后会有反弹。当然要等个天把两天。",
+      "publish_time": "2024-12-13 10:52"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "12月份基本上震荡下跌。先跌到20号再说。",
+      "publish_time": "2024-12-13 21:57"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "随着重要会议的结束，大盘却应声而落，而不是应声而涨，呈现利好兑现的态势，那么大盘其实不好做了",
+      "publish_time": "2024-12-14 09:28"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "即便有反弹，但是下跌趋势依然不改。",
+      "publish_time": "2024-12-15 12:50"
+    },
+    {
+      "post_n": 8,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "这个行情我早就预判到它会下跌，但是下跌的过程也是跌宕起伏，总的来说要下跌到月底，月底到什么时候呢？27号吧。",
+      "publish_time": "2024-12-17 08:14"
+    },
+    {
+      "post_n": 6,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "那么预判，本月27号左右是一个低点，可以去搏几天反弹，这个预判目前不改变。",
+      "publish_time": "2024-12-17 12:40"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "2025年，中央将进一步实行货币宽松政策，必将有利于经济社会的发展。同时对投资市场必定是一个促进作用。",
+      "publish_time": "2024-12-18 14:19"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "其实今天只有1.37万亿的量能，这个量能指望大盘高歌猛进，基本上不可能。",
+      "publish_time": "2024-12-18 21:32"
+    },
+    {
+      "post_n": 13,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "昨天大盘缩量上涨，所以我判断这个上涨也就是一个反弹，仅仅就是一个反弹。那么今天对于大盘我不抱所谓的期望，哪怕海那边美联储降息。",
+      "publish_time": "2024-12-19 08:56"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "我曾经说过这个下跌一直要震荡下跌到月底。现在才是19号。到27号到28号，看还有没有底点。当然不是直线下跌，是震荡下跌。那么元月份呢，继续震荡跌！",
+      "publish_time": "2024-12-19 11:45"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "今天即使有反弹，但总体而言在27号28号之前维持震荡下跌局面不变。",
+      "publish_time": "2024-12-20 08:04"
+    },
+    {
+      "post_n": 8,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "预计到27号28号，这一段下跌是不变的。然后有一个反抽到元月初。元月总体也是震荡下跌。一直跌到2月初。2月初以后有一轮比较凌厉的上涨。",
+      "publish_time": "2024-12-20 19:00"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周有冲高的动作，随后大盘开始回落，一直到27号附近低点位置。",
+      "publish_time": "2024-12-21 09:34"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "这个礼拜的操作，以周五所发微头条《下周冲高回落》为参考。早盘大盘涨，是诱多。耐心等27号左右低点位量。",
+      "publish_time": "2024-12-23 17:17"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今日若有反抽，走为上。",
+      "publish_time": "2024-12-24 07:09"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "昨天是有修复，但今天应该还是以防跌为主。",
+      "publish_time": "2024-12-25 09:59"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "我明确的说今天不是机会。机会在哪里呢？最早明天下午。或者后天。",
+      "publish_time": "2024-12-25 13:50"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明后两天过后，大盘会有反弹。",
+      "publish_time": "2024-12-25 18:01"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "如果按照阳一天阴一天这样的规律算的话，明天应该收阴。",
+      "publish_time": "2024-12-27 00:23"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "那么具体到盘面，下周初大盘将会有反弹上涨。",
+      "publish_time": "2024-12-28 11:18"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "我个人的判断，明天大盘指数应该继续收阳。",
+      "publish_time": "2024-12-30 21:26"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "我说今日红盘几率比较大，是说大盘。",
+      "publish_time": "2024-12-31 08:26"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "整个元月份股指将有剧烈暴跌！",
+      "publish_time": "2024-12-31 12:51"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "明确告诉各位，元月份以震荡下跌为主。2月初才能止跌。",
+      "publish_time": "2024-12-31 16:35"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "从技术上说，大跌以后应该有一个反弹，但一切都要以盘面表现为准。我个人的看法，可以轻仓去试错。即便有反弹也最多一两天。",
+      "publish_time": "2025-01-02 08:08"
+    },
+    {
+      "post_n": 11,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "至于大盘还得继续观察，估计最多会有一个反弹，然后绵绵下跌至月底。",
+      "publish_time": "2025-01-02 13:39"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "至于大盘，那肯定又要朝3000点方向去了。即便明天有反弹，反弹完了后也还是要朝3000点方向去。",
+      "publish_time": "2025-01-02 22:15"
+    },
+    {
+      "post_n": 9,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "指数将一江春水向东流，极限位置在3000点上方不远。但具体到今天，由于跌的够多，所以反弹一下也是允许的。",
+      "publish_time": "2025-01-03 09:00"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "那么会跌到什么哪里呢？先看一下3152点会不会跌破，如果跌破再往下看一点，但估计3000点跌不破。",
+      "publish_time": "2025-01-04 09:31"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "具体到下周，大盘应该低开高走。换而言之，6号、7号左右是低点，然后开始反弹，至少反弹到13号。",
+      "publish_time": "2025-01-04 15:05"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "所以不改下周一周二出现低点的可能性。现在的问题是买什么？如果你是做趋势的，建议配一些中等市值白马票，拿到13号左右抛掉。",
+      "publish_time": "2025-01-05 18:38"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "具体到今明两天如果有低点的话，那是可以上车的！",
+      "publish_time": "2025-01-06 08:52"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "预计今明两天大盘将有低点，然后，至少上涨到13号。今天低点和明天低点都可以试错，小仓位去干。切忌满仓，因为这个反弹其实空间并不大。",
+      "publish_time": "2025-01-06 14:28"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "所以最近一两天变盘是极有可能发生的，今天如果还有低点，大胆的再买一点，越跌越买。但就是为了抢一个反弹而已，所以也不要太上头。",
+      "publish_time": "2025-01-07 09:02"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "总的来说，13号之前市场震荡向上！",
+      "publish_time": "2025-01-08 08:39"
+    },
+    {
+      "post_n": 11,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "总体而言，反弹是不及预期的。那么这个反弹还在吗？目前认定反弹还在，只是要打一些折扣。10号或者13号，如果有高点了，建议出局。静等大盘中下旬砸盘。",
+      "publish_time": "2025-01-08 12:08"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "但是这个反弹，仅仅是一个反弹，不能定义为反转，依然不会持续多长时间。到了中旬以后，大盘将暴跌。所以反弹到10号以后就应该非常谨慎了，不应该再重仓持有。那么会下跌到什么点位呢？3000点上下。",
+      "publish_time": "2025-01-08 16:05"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "预计今天反弹会继续进行。",
+      "publish_time": "2025-01-09 08:30"
+    },
+    {
+      "post_n": 8,
+      "direction": "bearish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "大盘中下旬以后将剧烈杀跌。今天大盘这么走，说明非常弱。那么中下旬剧烈杀跌到什么时候呢？目前预测的低点是2月5号左右。到时候将尸横遍野。2月5号是一个变盘点。过了2月5号，大盘将迎来春季行情。",
+      "publish_time": "2025-01-09 18:04"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "总的来说中下旬后市场应该是震荡下行，但是在我的体系里13号左右应该还是有一个高点。所以即便今天反弹，我个人认为也要谨慎，何况今天是周五。",
+      "publish_time": "2025-01-10 08:52"
+    },
+    {
+      "post_n": 5,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "预计下周继续以跌为主，一江春水向东流。途中的反弹可以不必太上心，因为总体处于跌势。跌到哪儿呢？我原先说跌到3000点上下。这个观点目前不变。但是要等月底了。",
+      "publish_time": "2025-01-11 08:22"
+    },
+    {
+      "post_n": 4,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "因为趋势依然向下，即便有反弹，你也不要伸手，而是要管住手！",
+      "publish_time": "2025-01-12 08:51"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天主要是看大盘会不会修复。如果修复那是卖点，不是买点。如果不修复，继续等待下跌。说实话，及时修复，也是下跌中继。",
+      "publish_time": "2025-01-13 09:11"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "该继续下跌，还得继续下跌。盘中的反弹都是出局点，而不是买入点。中旬有几天震荡，不会马上再往下跌，但中下旬的下跌是极其恐怖的。照这样的玩法，3000点都不保。初步预测2月5号是一个低点，总的来说看2800点~3080点之间。",
+      "publish_time": "2025-01-13 12:44"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天预计大盘会有反弹。但反弹不是买点，依然是卖点，反弹的越高越要降低仓位，等待下旬的下跌。",
+      "publish_time": "2025-01-14 08:33"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "我的系统依然认为元月份不好做，而且元月下旬铁定是下跌的。",
+      "publish_time": "2025-01-14 19:27"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "现在依然判断，下旬会有大跌。",
+      "publish_time": "2025-01-15 12:42"
+    },
+    {
+      "post_n": 11,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "但是指数呢，肯定是震荡下跌，昨天收阴，今天说不定是一个阳线。",
+      "publish_time": "2025-01-16 09:10"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "这里明确告诉大家，2月5日之前，所有的上涨都是下跌中继。",
+      "publish_time": "2025-01-17 08:52"
+    },
+    {
+      "post_n": 5,
+      "direction": "bearish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "预计最低点应该在3000点左右，也就是距离现在的点位差不多还有240个点左右。",
+      "publish_time": "2025-01-17 22:54"
+    },
+    {
+      "post_n": 4,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "总体而言，震荡向下。",
+      "publish_time": "2025-01-18 12:24"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "总的来说，下周应该先抑后扬，即便是扬，也扬不到哪去。",
+      "publish_time": "2025-01-19 16:37"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "总体没有红包行情，但某一天会有。",
+      "publish_time": "2025-01-20 08:36"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大盘以跌为主。",
+      "publish_time": "2025-01-20 22:35"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "连续几天都冲高回落，所以我判断这个地方冲不上去，冲不上去后只能冲高回落，然后走下跌之路。",
+      "publish_time": "2025-01-21 14:29"
+    },
+    {
+      "post_n": 13,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "这几天都是冲高回落，所以节前的行情我总体不看好。",
+      "publish_time": "2025-01-22 08:56"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "我早就说过，根据我的系统，大概2月5号左右才可能止跌。",
+      "publish_time": "2025-01-22 15:09"
+    },
+    {
+      "post_n": 11,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "总体而言，我认为最近都是往下走，即便今天反弹又如何呢",
+      "publish_time": "2025-01-23 08:29"
+    },
+    {
+      "post_n": 9,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天如果直接低开，今天买票上车的都会被买埋。",
+      "publish_time": "2025-01-23 16:05"
+    },
+    {
+      "post_n": 8,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "防止大盘大跌，是首要任务。",
+      "publish_time": "2025-01-24 08:44"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "预计低点要往后推几天了，低点看2月11号或者12号吧。最低点位估计到不了3000点了，应该3100多点吧。",
+      "publish_time": "2025-01-24 18:31"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今日收上影线几率大",
+      "publish_time": "2025-01-27 07:49"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "可以肯定的说，节后第1周都不太乐观，依然是震荡向下，有可能大跌。",
+      "publish_time": "2025-01-27 21:25"
+    },
+    {
+      "post_n": 9,
+      "direction": "bearish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "可以想象的到，5号开盘，我大a必然全线下跌。",
+      "publish_time": "2025-02-01 17:14"
+    },
+    {
+      "post_n": 4,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "后天大a开盘，估计也不会有太好的表现，看当日尾盘会不会有回抽动作。",
+      "publish_time": "2025-02-03 14:50"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "个人预计，中下旬，大盘会有一个上扬。",
+      "publish_time": "2025-02-04 11:37"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "这样大a有可能开门红。但是也须防范高开低走。",
+      "publish_time": "2025-02-05 07:05"
+    },
+    {
+      "post_n": 13,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "指数拉垮说明现在不是主升浪，那么指数向下走的风险依然非常大。",
+      "publish_time": "2025-02-05 16:16"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "因为股指并没有跌透。",
+      "publish_time": "2025-02-06 08:33"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天冲高减仓！",
+      "publish_time": "2025-02-07 09:16"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "预计下周总体低开高走。",
+      "publish_time": "2025-02-08 10:09"
+    },
+    {
+      "post_n": 8,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "我的看法，周一还是得悠着点。",
+      "publish_time": "2025-02-09 18:25"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天大盘其实有调整的需求的，因为前两天都是上涨了，根据a股的尿性，调整的需求是比较大的。",
+      "publish_time": "2025-02-10 08:04"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "应该说今后一个时期，特别是春季，咱们迎来了科技牛。",
+      "publish_time": "2025-02-11 08:44"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "因为春季行情就要到来。",
+      "publish_time": "2025-02-11 13:01"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "预计明天继续调整，不排除有深调。",
+      "publish_time": "2025-02-11 22:40"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "昨天股市才开始调整，预计今天继续调整。",
+      "publish_time": "2025-02-12 09:22"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "总之小伙伴们春季行情已经启动。",
+      "publish_time": "2025-02-12 16:08"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天如果市场有调整，我的看法是继续买。",
+      "publish_time": "2025-02-13 08:51"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "没啥说的，这样的盘面继续逢低买就对了。",
+      "publish_time": "2025-02-13 12:50"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "在中下旬，目测大盘应该可以涨到18号到19号。然后会震荡，大约在3月初，会有一个小低点。过了3月初，大盘又继续迎来升势！",
+      "publish_time": "2025-02-14 16:41"
+    },
+    {
+      "post_n": 4,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "指数已经到阶段性高点了，还是悠着点。",
+      "publish_time": "2025-02-18 08:37"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "本月的高点在27号附近。",
+      "publish_time": "2025-02-19 08:25"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "总之，在27号之前，大盘应该是缓慢的向上涨的。",
+      "publish_time": "2025-02-19 13:50"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "今天指数下跌其实是正常的，因为昨天涨的比较猛，今天调一调有利于今后上涨。",
+      "publish_time": "2025-02-20 13:39"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "预计明天依然有分歧的预期，无论是指数还是情绪。但不会深度调整。",
+      "publish_time": "2025-02-20 22:35"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "大盘即便调整，但也是上涨过程中的调整，只要不深跌，那么趋势依然向上，直到27号。",
+      "publish_time": "2025-02-21 07:45"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "预计27日以后大盘会向下急挫，无论做长线还是短线都比较困难。",
+      "publish_time": "2025-02-22 16:44"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "预期周一股指继续往上打。",
+      "publish_time": "2025-02-24 08:15"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "短期内按道理说，今明两天大盘应该是上涨的。但这个上涨也是一个短期的上涨。",
+      "publish_time": "2025-02-26 08:36"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "明天应该是高点时间，然后开启下跌。至少震荡下跌半个月左右，所以大家还是防一防为好。",
+      "publish_time": "2025-02-26 21:02"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大盘下跌应该是迫在眉睫的事儿，上涨都是为下跌做准备，特别是在3月上中旬以前。",
+      "publish_time": "2025-02-27 09:15"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "预计3月12号之前都要防一防。",
+      "publish_time": "2025-02-27 12:35"
+    },
+    {
+      "post_n": 13,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "尾盘三大指数探底回升，但预计依然不改下跌趋势。",
+      "publish_time": "2025-02-27 17:33"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "马上就到3月了，3月有反弹机会的。4号或5号的低点是一个小机会。12号左右的低点，是一个中等的机会。",
+      "publish_time": "2025-02-28 06:59"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "预计3月初继续往下跌，当然不是一口气跌下来，是震荡的往下跌，下跌过程中的反弹，能力强的，可以去抢，能力差的就继续等！",
+      "publish_time": "2025-02-28 16:21"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "我认为肯定会行动。...股市会从低点震荡反弹那么一点点。",
+      "publish_time": "2025-03-02 11:25"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天或者后天，如果有低点的话可以动手吗？可以。但仓位也不要放的太重。",
+      "publish_time": "2025-03-03 15:49"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "如果汪汪队今天不出手的话，今天还是以跌为主。",
+      "publish_time": "2025-03-04 07:04"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "所以只要有低点，还是可以抄底的，但是由于没有稳定的载体，第二天应该冲高就卖，极为强势的个股除外。",
+      "publish_time": "2025-03-04 17:12"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "从量能看，后市可期。对于股民而言，不建议追高，后面有低点可以择机上车！",
+      "publish_time": "2025-03-06 11:24"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "总之，后面不排除会有短暂的下跌，但是下跌不能看空，而应积极备战上场！",
+      "publish_time": "2025-03-06 16:14"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "从大的方向来看，回踩其实是加仓的机会。...但不管怎么走，总的方向是向上。",
+      "publish_time": "2025-03-07 07:59"
+    },
+    {
+      "post_n": 6,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "我觉得下周一也应该是跌势，现在抢反弹的话，下周一开盘不一定有溢价，如果你今天开盘买进去尾盘被套住的话，那你只能再等一等。",
+      "publish_time": "2025-03-07 15:50"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "主观倾向于12号以后大盘向上，这个大概有70%的几率。12号以后大盘向下，这个有30%的几率。",
+      "publish_time": "2025-03-07 16:17"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "外围美股虽然上涨，但预期大a，今天调整可能性大。过了今明两天后，大盘将选择方向。我们不去赌一定向上或者一定向下，上涨则顺势跟，下跌要么空仓要么轻仓。",
+      "publish_time": "2025-03-10 08:25"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "目前还是维持原来的观点，今明两天，总体而言处于调整状态，后天决定方向，14号左右确定方向。仓位重的建议稍微减点仓，多防一手没有坏事。",
+      "publish_time": "2025-03-10 13:52"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "在我看来，11号12号就是一个低点。这两天过后会有反弹。",
+      "publish_time": "2025-03-11 13:29"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "如果继续收中阳线，且量能跟得上，那么一轮可观的反弹，即可以宣告成立。",
+      "publish_time": "2025-03-12 06:47"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大盘走了我最不愿意看到的30%的可能性走势。",
+      "publish_time": "2025-03-13 13:19"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "我原先的判断，70%的机会往高处走，目前暂且维持。",
+      "publish_time": "2025-03-14 08:25"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下午不出什么幺蛾子的话，大盘铁定无忧。",
+      "publish_time": "2025-03-14 13:08"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "预计下周初还有高点。高点出现后会震荡，最高点在26号左右。",
+      "publish_time": "2025-03-14 16:22"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "昨天我说下周大盘无忧，并不表示说大盘要一直上涨，甚至暴涨。而是说大盘整体不会回落。",
+      "publish_time": "2025-03-15 07:25"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "④下周会有冲高，但总体呈现震荡态势。",
+      "publish_time": "2025-03-16 16:46"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "预计今后几天指数将来回震荡，这里不可能直线拉起来。",
+      "publish_time": "2025-03-17 16:08"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "个人预计至少大a应该高开吧，至于是否冲高回落，则需要防一防。",
+      "publish_time": "2025-03-18 08:11"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "但这里应该不要紧，因为26号左右他还有一个小高点，那个时候再策略性的离场，短暂的离场应该是可以躲一个急跌的。",
+      "publish_time": "2025-03-18 12:38"
+    },
+    {
+      "post_n": 5,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "月末最后几天，大盘将血雨腥风。",
+      "publish_time": "2025-03-20 16:47"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "如果周末没有利好的情况下，周一开盘大盘将惯性下杀，然后拉起。如果有利好，那么下周指数将直接往上走！",
+      "publish_time": "2025-03-21 20:48"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "总的来说最近两天会有拉升。",
+      "publish_time": "2025-03-24 10:00"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "这两天会有反弹",
+      "publish_time": "2025-03-25 07:35"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "总的来说，这两天我是看反弹的。但是28号，极有可能是下跌。",
+      "publish_time": "2025-03-26 07:41"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "退一步说，即便今天涨，28日也容易下跌。",
+      "publish_time": "2025-03-27 07:05"
+    },
+    {
+      "post_n": 11,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今日股市要下跌，我不是今天才说，好多天前就说过，28号看跌。",
+      "publish_time": "2025-03-28 05:50"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "如果下午大盘不跌破3340点，那么后势可期。预计后市将震荡爬升至4月8日左右。",
+      "publish_time": "2025-03-28 12:45"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "总体而言，下周震荡爬升，先看到7号，也就是震荡上涨到下下周一再说！珍惜下周总体上涨的时间窗口！弄点资金买入做多！周一如果有低点，大胆低吸！",
+      "publish_time": "2025-03-29 08:11"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "别恐慌，逐步加仓就是了。",
+      "publish_time": "2025-03-31 13:20"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天无论是大盘，还是多数题材，都理应看修复。",
+      "publish_time": "2025-04-01 07:44"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "当前的行情，虽然在我看来大盘是稳了，在4月8号之前应该不会有大的下跌，即便下跌，也是反弹之中的下跌。总体来说是震荡向上走。",
+      "publish_time": "2025-04-02 06:54"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "根据我的系统，在4月8号之前，股票市场总体而言是安全的，所以逢低买入没有错。",
+      "publish_time": "2025-04-03 08:38"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "如果注汪队大力护盘的话，下周低开高走，是可以期待的。",
+      "publish_time": "2025-04-06 19:31"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "这里虽然也有风险，但是不太重要，大盘迟早要上去的。",
+      "publish_time": "2025-04-09 15:23"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "基于以上信息，明日我觉得短线题材兑现者众，会遇到大的分歧。大a向上压力也非常大。",
+      "publish_time": "2025-04-10 22:16"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "对于大盘而言，下一周应该是先抑后扬的走势。具体而言，周一周二继续下滑为主，周三周四周五，逐渐抬头，但周五左右基本上又到了高点。到了这个高点，建议各位轻仓或者空仓，因为下下周大盘将剧烈下滑。",
+      "publish_time": "2025-04-12 08:26"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "个人判断，18号应该是高点，然后一江春水向东流，指数将剧烈下跌！",
+      "publish_time": "2025-04-15 23:20"
+    },
+    {
+      "post_n": 11,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "维持原来的观点不变，18号左右，有一个小高点，然后下周大a是大开杀戒，一路下滑到25号。",
+      "publish_time": "2025-04-16 16:13"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "预计今天最多一个冲高，然后下周进入调整阶段。",
+      "publish_time": "2025-04-18 09:08"
+    },
+    {
+      "post_n": 9,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "如果没有护盘资金的话，市场将大概率向下！上一条信息以及最近发的头条，都明确的指出下一周是下跌为主。现在市场已经给大家一个下马威了，大家一定要坐稳降落伞！前面赚的钱不要轻易的吐回去了，因为后面的跌幅比较大！",
+      "publish_time": "2025-04-18 10:56"
+    },
+    {
+      "post_n": 8,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "所以下周大a总体要下跌，但是不会跌的那么深了，尽管是这样，我还是劝各位谨慎为好。",
+      "publish_time": "2025-04-19 09:34"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "①总体下降 ②跌幅不会很深 ③谨慎开仓 ④只做超短",
+      "publish_time": "2025-04-19 10:43"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "25号左右是一个低点，那个分歧点你是可以买入的！",
+      "publish_time": "2025-04-20 09:49"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "尽管昨天超了预期，但是我还是觉得应该冷静一下。毕竟昨天这个所谓的阳，也不是非常的阳。我们还是要多看一两天。如果连续2~3日都是这样的结果，那么我们必须改变过去的观念，积极做多。虽然我认为开始做多的时间窗口应该是25号左右以后。在我看来，昨天的阳线其实多少有点诱多的味道。",
+      "publish_time": "2025-04-22 07:13"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "具体到今天早上可能还往上冲，但是下午你看吧，80%的可能收阴线。收完阴线后，明天再反弹。然后25号或者28号又遇到低点。",
+      "publish_time": "2025-04-23 08:28"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "我个人倾向于管住手，把宝贵的资金用于博弈“51”后的小行情。高点在5月中旬左右吧。",
+      "publish_time": "2025-04-25 00:00"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "4月28号低点，然后震荡上涨到5月14号。8号和9号左右应该是一个小的回调点。5月上中旬总体做多比较好。",
+      "publish_time": "2025-04-26 17:42"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "如果市场强势的话，今天就是一个低点，如果弱势的话还要盘整一下。但不管怎么说，节后大概率是上涨了。所有的下跌都是为了节后上涨。",
+      "publish_time": "2025-04-28 11:07"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "对于大盘而言，节后应该总体而言，是往上涨的，这一点不必担心。",
+      "publish_time": "2025-04-30 13:50"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "对于大盘的演绎，我个人的看法是中旬以前，有一小段震荡上升的行情。中旬以后开始震荡下跌。30号左右应该算是一个低点。",
+      "publish_time": "2025-05-05 23:16"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "对于中长线资金而言，坦率的说要珍惜5月中旬以前难得的做多时间。在5月中旬以前低吸高抛大概率没有问题。",
+      "publish_time": "2025-05-07 07:42"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "我也说过，在5月中旬以前，总体应该以做多为主，那么既然有分歧，你应该买入，才是正道。",
+      "publish_time": "2025-05-08 10:03"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "尽管今天是周五，市场有可能往下探一探。但那依然是买入的良机。毕竟还没有到中旬嘛。",
+      "publish_time": "2025-05-09 08:19"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "按照我的交易系统，大约14号左右是一个高点，那个时候再离场才是应该的。所以现在逢低做多，其实是给了你买便宜货的机会。",
+      "publish_time": "2025-05-09 13:40"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "如果你是做中长线的，我可以告诉你放心持股，因为在中旬之前，大盘依然有上涨的动力。逢低买就对了。",
+      "publish_time": "2025-05-10 07:52"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "总的来说，14号之前都应该是上涨。。14号左右应该是一个高点，本月的高点。",
+      "publish_time": "2025-05-12 07:44"
+    },
+    {
+      "post_n": 13,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "14号是一个节点。过了14号大盘将向下一直跌到30号。当然不是每天都跌，是震荡向下。。27号和30号左右都是低点应该出现的时间。。",
+      "publish_time": "2025-05-12 11:58"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "既然已经公布了，那么预期差也就没了，所以市场将惯性的上冲一下，明天或者后天有一个高点，这样大家就应该收缩战线了。",
+      "publish_time": "2025-05-12 17:33"
+    },
+    {
+      "post_n": 8,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "至于大盘，目前我依然不是很看好，总体而言月底有低点。",
+      "publish_time": "2025-05-13 17:12"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "明天开始下跌，哪怕有高点。但过几天，又会反弹。大致19号往后，会跌至27日。然后阶段反弹至6月4日左右。然后再下跌。6月9号、16号都是低点，6月17号后会上涨。",
+      "publish_time": "2025-05-13 21:29"
+    },
+    {
+      "post_n": 5,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "所以明天呢，还得防一下指数向下。",
+      "publish_time": "2025-05-14 21:21"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "即便有反弹，总体方向是向下的，这点反弹的肉你愿意吃吗？",
+      "publish_time": "2025-05-15 11:10"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "如果你是高高手的话，建议还是要再等一等，因为大盘根本就没有见底！",
+      "publish_time": "2025-05-15 14:46"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "高高手还要等一等，这个底部远远还没有到。",
+      "publish_time": "2025-05-15 16:09"
+    },
+    {
+      "post_n": 11,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "大盘还是要往下走的，而且点位会很低，我今天晚些时候再说吧。",
+      "publish_time": "2025-05-16 11:26"
+    },
+    {
+      "post_n": 8,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "从点位上说，个人认为还会跌300~400点左右。从时间上说要跌到6月中旬了，也就是6月16号左右。",
+      "publish_time": "2025-05-16 14:29"
+    },
+    {
+      "post_n": 4,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "大盘指数不被看好。",
+      "publish_time": "2025-05-17 12:35"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "我早就在好多天前就说过，大盘不会有太好的起色，本月会一路下滑。",
+      "publish_time": "2025-05-19 13:36"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "我的观点是一贯的，明确的。5月份不好做，现在基本上是震荡向下的走势，别看今天涨得好。27号，30号低点，维持不变。",
+      "publish_time": "2025-05-20 21:35"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "首先我个人觉得大盘继续向上的难度是比较大的，因为这两天攻击性的板块其实并没有启动，攻击性的板块主要是券商，所以指数是很难突上去的！",
+      "publish_time": "2025-05-22 09:23"
+    },
+    {
+      "post_n": 5,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "大盘27号30号会有大的跌幅。但这并没有完，到了下个月16号17号，你会惊奇的发现市场还有低点！",
+      "publish_time": "2025-05-22 16:10"
+    },
+    {
+      "post_n": 4,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "对于长线而言，本人依然看跌。即便这两天有反弹，但总体趋势那就是一个字：跌。",
+      "publish_time": "2025-05-23 08:45"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "短期来看，比方说一个月，市场总体是下跌的。这一点我已经说了很长时间了，是明确的，一贯的。如果汪汪队不强力护盘的话，大盘铁定走我说的剧本。。但时间拉长一点，咱们这个市场其实是处于涨势的。是涨中有跌的市场。。涨到什么时候呢？涨到2027年。那个时候是什么点位呢？4500点左右。",
+      "publish_time": "2025-05-23 16:11"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "好的消息是我们始终还是处于一个上升周期，这个上升周期大概到了2027年才结束！",
+      "publish_time": "2025-05-24 06:26"
+    },
+    {
+      "post_n": 13,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周走势，呈现震荡状态。对于长线而言，可以战略性的放弃。因为27号附近的低点，你买进的话，如果标的是错误的话，也赚不了什么钱，并且持续性不好。",
+      "publish_time": "2025-05-25 09:05"
+    },
+    {
+      "post_n": 9,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "根据我的系统，今天下午或者明天上午应该有低点。",
+      "publish_time": "2025-05-26 12:37"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "鉴于昨天量能严重不足，所以大盘即便反弹，也不认为会有多强的持续性。",
+      "publish_time": "2025-05-27 07:06"
+    },
+    {
+      "post_n": 5,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "低点出现后会有反弹，但是30号会有更低的点位。包括6月9号，6月16号17号都是这样。只是说到了下个月中旬，点位更低了。所以中长线而言，观望为上。",
+      "publish_time": "2025-05-27 12:00"
+    },
+    {
+      "post_n": 4,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "明天有可能有个小反弹。手痒的可以去试一下，但即便反弹持续性也不会很强，因为30号可能又是一个低点。5月份就快过去了，如果大家都是做长线的，我建议等大盘跌到更深一步，再去做。",
+      "publish_time": "2025-05-27 20:09"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "当前股市其实似强不强，指数今天即便反弹，但总体下跌趋势是大概率的。",
+      "publish_time": "2025-05-28 08:13"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "目前这个市场就是一个似强非强的市场。3400点不是那么好突破的，需要向下调一调，夯实一下基础，再往上突破。而且这个时间有点长，所以同志们要有点耐心。",
+      "publish_time": "2025-05-28 12:37"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "只要连续三天都这样放量上涨，那么一轮行情将会起来，否则的话只能看成反弹。",
+      "publish_time": "2025-05-29 13:56"
+    },
+    {
+      "post_n": 13,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "市场是诱多，换句话说后市特别是6月份该怎么跌还是怎么跌！",
+      "publish_time": "2025-05-29 23:19"
+    },
+    {
+      "post_n": 11,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "我昨天盘后发文，觉得市场是诱多。别看市场轰轰烈烈，大家高高兴兴，其实市场是诱多，该怎么下还是怎么下。",
+      "publish_time": "2025-05-30 12:30"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "首先肯定的说，6月份也不容乐观。6月6号9号左右或者6月16号17号左右都是相对低点。即便反弹到20号23号左右，到了月底依然会震荡下挫。",
+      "publish_time": "2025-05-30 21:59"
+    },
+    {
+      "post_n": 6,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "总之，6月多看少动为好。",
+      "publish_time": "2025-06-02 23:01"
+    },
+    {
+      "post_n": 4,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "这种反弹我认为是下跌中的反弹，不要抱以太大的期望。也就是说反弹持续性不强。",
+      "publish_time": "2025-06-03 13:56"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "量能没有跟上去，那么意味着不会走远，所以这里我始终认为市场不会有多大的起色。",
+      "publish_time": "2025-06-03 23:59"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天如果市场继续高举高打，那预期本月市场下跌的可能性将大打折扣。否则依然要注意6月16日17日的低点。",
+      "publish_time": "2025-06-04 16:21"
+    },
+    {
+      "post_n": 13,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "如果不能再涨，调头向下，那么预期本月还是以调整为主。",
+      "publish_time": "2025-06-05 07:41"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "不能有效攻破的话，市场依然应该是往下走！",
+      "publish_time": "2025-06-05 21:26"
+    },
+    {
+      "post_n": 9,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周初，9号左右有低点，然后会反弹再下跌。预计下下周16，17号是低点，也是本月重要的低点。",
+      "publish_time": "2025-06-06 14:11"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "事实上在我的体系里，下一周应该是下跌的，只是不好判断护盘力量还强不强。",
+      "publish_time": "2025-06-07 13:50"
+    },
+    {
+      "post_n": 6,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "6月份6月16号，17号左右有低点。但这个低点绝对不是最低，7月份还有低点。",
+      "publish_time": "2025-06-07 17:05"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "向上，放量站上3400点，则新一轮行情向我们走来。",
+      "publish_time": "2025-06-08 11:39"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "若连续放量站稳3400点，那么向上突破的可能性非常大，后市可期。",
+      "publish_time": "2025-06-09 11:28"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "截至目前，没有理由让我觉得16号或17号不是低点。",
+      "publish_time": "2025-06-09 18:58"
+    },
+    {
+      "post_n": 13,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "总体而言，3400点近期是守不住的，大盘冲击力不强。",
+      "publish_time": "2025-06-10 12:48"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "接下来大盘怎么走？17号左右，肯定是有低点的，我一直坚持这样一个观点。尔后大盘会反弹。但7月份并不美妙，那里还有低点。",
+      "publish_time": "2025-06-10 16:20"
+    },
+    {
+      "post_n": 11,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "市场走到当下，我认为是有退潮预期的。如果是这样，不仅追高不合适，其实低吸也不合适。若你一定要低吸，你只能低吸分歧延续，而且是低吸核心。市场若有反弹，那后天早点卖。总的来说，我建议多数人还是静等16号17号左右这个低点。",
+      "publish_time": "2025-06-10 21:33"
+    },
+    {
+      "post_n": 6,
+      "direction": "bearish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "这个市场就此向上涨开去了吗？NO！这点量能能够维持往上走吗？不能。今天只是回光返照！市场终将向下！让我们16号或者17号去抄这个底，虽然这个底也不能够说是一个大底。",
+      "publish_time": "2025-06-11 21:26"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下周一周二过后会有一轮反弹。但这个反弹并不会有多高，最多到11号这个高度，且大概率到不了。",
+      "publish_time": "2025-06-13 12:36"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "我说不能，先不要急于出手。",
+      "publish_time": "2025-06-13 15:44"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "就我的交易系统而言，我认为下周走势应该是先抑后扬。16 或17号是低点，20号或下下周初是高点。",
+      "publish_time": "2025-06-14 07:26"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下周初受伊以冲突影响，预计大盘低开，但总体而言应呈先抑后扬之势，大家可以去把握。",
+      "publish_time": "2025-06-15 14:54"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "如果周一还有大跌，那么我劝各位买进。因为这是难得的黄金坑。",
+      "publish_time": "2025-06-16 06:56"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "早盘开盘，三大指数均下跌，这是机会不是风险。盘中如果还有下跌，那么也是机会，不是风险。小跌小买，大跌大买。",
+      "publish_time": "2025-06-16 10:56"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天市场如果再给低点，依然是你进场的机会。",
+      "publish_time": "2025-06-16 16:11"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "若上涨，接连几天都应该呈现涨势。",
+      "publish_time": "2025-06-16 21:39"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今日十分关键，如果继续上涨，那么本周基本安全，可以震荡上涨到20日左右。",
+      "publish_time": "2025-06-17 06:49"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "从大盘的表现来看，今天并没有阴包阳，那么短期大盘不会大跌，但是大跌的影子依然存在。估计7月初大盘开始彻底露出獠牙。那个时候必须防一防。",
+      "publish_time": "2025-06-17 21:23"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A股大概率是要低开的，看盘中能否收回。最关键的还是要看汪汪队是否行动。如果今天汪汪队不给力的话，大盘是要下跌的。",
+      "publish_time": "2025-06-18 08:04"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "到了7月上旬，你会发现股市又开始猛烈下跌。",
+      "publish_time": "2025-06-18 11:17"
+    },
+    {
+      "post_n": 8,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "昨日市场大跌，虽跟中东局势有关，但总的来说，目前市场处于下跌状态。虽不排除今日再跌以后有一些小反弹，但市场总体处于跌势。",
+      "publish_time": "2025-06-20 08:12"
+    },
+    {
+      "post_n": 6,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周市场震荡走高，但也不会太高。关键是整个7月份的行情。坦率的说，7月份的行情不太好。应该是震荡下跌的走势。9号11号和28号都是低点。",
+      "publish_time": "2025-06-20 16:19"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "伊以冲突加剧大盘承压，但相关概念或逆势上涨。",
+      "publish_time": "2025-06-23 08:56"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "最近几天大盘总体应该无忧，但也不会出现暴涨这种现象。",
+      "publish_time": "2025-06-23 14:05"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "若连续放量上涨，市场反转是大概率，否则保持谨慎。",
+      "publish_time": "2025-06-24 21:21"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "如果继续放量上涨，那么行情真有可能朝“9 24”方向演变。",
+      "publish_time": "2025-06-25 08:47"
+    },
+    {
+      "post_n": 9,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "但坦率的说，明天并不是很好的买票机会，因为后天有可能调整。",
+      "publish_time": "2025-06-25 22:47"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天情绪接着分化。",
+      "publish_time": "2025-06-26 18:55"
+    },
+    {
+      "post_n": 5,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天市场表现其实非常重要。若市场表现继续大跌，那么牛市几乎没有可能。",
+      "publish_time": "2025-06-27 08:50"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "总的来说，只要下午大盘不再深跌，个股继续保持涨多跌少的态势，那么一轮小牛可以期待。",
+      "publish_time": "2025-06-27 13:51"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下周指数不太看好。",
+      "publish_time": "2025-06-27 14:53"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "就长线而言，2号过后开始下跌。30号到2号之前应该是震荡状态，震来荡去的幅度还稍微有点大，大家扣好保险。过了2号以后，总体大盘处于跌势。",
+      "publish_time": "2025-06-28 09:16"
+    },
+    {
+      "post_n": 8,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "个人以为明天指数不会像今天这么强势，大概率是要收阴线，除非银行再护盘。",
+      "publish_time": "2025-07-01 16:14"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天如果量能不能有效放大的话，市场将陷入盘整或调整状态。",
+      "publish_time": "2025-07-02 07:58"
+    },
+    {
+      "post_n": 6,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "总的来说，预测7月上旬并不好做。",
+      "publish_time": "2025-07-02 10:52"
+    },
+    {
+      "post_n": 5,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "我很早以前就说过，7月2号应该是一个下跌的开始。现在初步预判至少要跌到11号左右。这说的是大众情绪。",
+      "publish_time": "2025-07-02 21:24"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "既然大哥不愿意市场下跌，那么大家该跟就跟。",
+      "publish_time": "2025-07-04 12:43"
+    },
+    {
+      "post_n": 13,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "个人判断，下周依然以跌势为主，虽然8号左右可能会有一个小反抽。原来判断要至少跌到10号11号左右，目前维持这个判断。",
+      "publish_time": "2025-07-05 10:41"
+    },
+    {
+      "post_n": 9,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "预计最近两天大盘总体应该是弱势。但个股机会依然还在。",
+      "publish_time": "2025-07-07 14:03"
+    },
+    {
+      "post_n": 4,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "接下来的走势，照说应该是往下蹲一蹲了，准备第3次冲锋3500点。",
+      "publish_time": "2025-07-08 16:25"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "如果过关，那么柳暗花明又一春。预计本月至少要涨到16 17号。",
+      "publish_time": "2025-07-09 08:43"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "如果继续放量上涨的话，大盘后势可期。",
+      "publish_time": "2025-07-09 13:33"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "预计今天的振幅将变大，如果能够继续向上打高度，则是最好的一种走势。如果不能够继续向上打高度，那么有可能会深度回调一下。。",
+      "publish_time": "2025-07-10 09:06"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "昨天大a阶段性的突破了新高，这样本月大a还可以往上涨，预计高点在16、 17号左右。",
+      "publish_time": "2025-07-11 08:17"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周，行情将呈现震荡的状态，不会马上熄火。高点目测在16 17号。",
+      "publish_time": "2025-07-11 17:39"
+    },
+    {
+      "post_n": 8,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "因此，下周初如果不继续放量的话，那么下周初应该是一种震荡回调的走势。",
+      "publish_time": "2025-07-13 09:10"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "昨天市场表现逼近冰点，按股市一般规律，冰点过后应该有所修复。",
+      "publish_time": "2025-07-16 07:38"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "现在市场明显的呈现慢牛风格。尽管这样，指数也还会调整，明天是周五，极有可能市场走分歧。",
+      "publish_time": "2025-07-17 19:36"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "那么根据a股的调性，今天是周五，有可能会调整。继续涨当然更好，但是防一手不为过。",
+      "publish_time": "2025-07-18 08:53"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "总的来说，下周是冲高回落，预计周五是下周的低点。",
+      "publish_time": "2025-07-19 17:32"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "当前，对于指数，不要过于忧虑，因为上面是不想让行情就这么快的下来的，所以近期指数无忧。",
+      "publish_time": "2025-07-24 13:56"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "指数连续拔高，预计今日稍微有所调整。但调整依然是买入机会。",
+      "publish_time": "2025-07-25 08:01"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "那么从这里开始买，不要一下子把仓位买满了，要谨防后两天还有低点。大约在8月1号或者4号左右，你抛出就可以了，那里应该是一个相对高点。",
+      "publish_time": "2025-07-25 12:26"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "目前，市场人士普遍认为汪汪队会托底，上面有维护市场稳定的愿望与资金，因此股市不会大跌。个人认为本周市场会冲高，然后有可能进行调整。",
+      "publish_time": "2025-07-28 08:43"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "预计8月1号会有惯性下跌，但随后会迎来反弹，至少反弹到4号。若市场够强，6号也应该是个小高点。",
+      "publish_time": "2025-08-01 08:38"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大盘下跌，但缩量3420亿，这就不需要太害怕，充分说明主力并没有走。给市场一点耐心。给自己一份安心。耐心等这个反弹。",
+      "publish_time": "2025-08-01 18:25"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "不会。目前，经济不景气，加之美贸易保护主义抬头，关税壁垒加重，人为给股市爆发造成障碍。特别是股市要迎来史诗级大爆发，比较难。",
+      "publish_time": "2025-08-02 06:49"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "想都不用想，如某队不出手，那么必跌！",
+      "publish_time": "2025-08-02 20:43"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "鉴于因关税问题导致全球股市震荡，本周初应以防守为主。等待一根长下影线再动手不迟。",
+      "publish_time": "2025-08-04 08:01"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "但总的来说，在牛市环境里不如阶段性地持核心股不动。",
+      "publish_time": "2025-08-05 08:29"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "果真是牛市，你不会踏空。",
+      "publish_time": "2025-08-05 13:04"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "若收阳，会进一步刺激股市上涨。",
+      "publish_time": "2025-08-08 08:09"
+    },
+    {
+      "post_n": 4,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "如果不重演，市场将迎来一段下滑时间。",
+      "publish_time": "2025-08-10 20:52"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "若有效突破，持股不动。如果没有突破，暂时减仓。估计“924”行情高点3674点迟早会被突破。",
+      "publish_time": "2025-08-12 07:37"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "但突破后，量能如果不持续放大的话，极有可能冲高回落。",
+      "publish_time": "2025-08-13 08:09"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "如果能够稳住的话，大盘会继续向上突。",
+      "publish_time": "2025-08-13 12:20"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天如果大盘冲高回落，那么明天大盘也大概率是阴线。",
+      "publish_time": "2025-08-14 11:51"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "那么今天下跌之后，明天如果还有低点，请放心买货。",
+      "publish_time": "2025-08-14 16:08"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天如果继续下跌的话，是买股的好时机，至少在短线可以做一个反抽。",
+      "publish_time": "2025-08-15 06:38"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "今天股市大涨。其实往后也有调整的需求，但总体而言，这轮牛市才刚刚开始。因为街头的大爷大妈还没有议论股市。",
+      "publish_time": "2025-08-18 20:10"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "从上午的盘面可以看出市场依然强，虽然开盘的时候红盘少、绿盘多，大盘也是冲高回落，但不久以后，大盘逐渐修复，红盘多、绿盘少。这反映了资金的饥渴程度。",
+      "publish_time": "2025-08-19 12:29"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "今天市场又突破新高了。股市这么走的话，年底突破4000那是有极大可能的。",
+      "publish_time": "2025-08-20 16:12"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "对牛市要有信仰。现在没有冲进来的散户，大概4000点到了就会冲进来。那是一个关键的心理点位。",
+      "publish_time": "2025-08-21 16:09"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天大盘其实是超预期的，这样走的话，大盘应该今天就摸3800。那照这样的速度下去，本月月底也就几天的时间可以摸4000。",
+      "publish_time": "2025-08-22 12:11"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "4000点已然在向我们招手。从这种速度和斜率来推测，4000点根本不在话下。快的话下周末就可以到达。即使到不了，也差不多3900多点吧。",
+      "publish_time": "2025-08-23 06:10"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "long",
+      "evidence": "那么根据现在a股的估值、上面的意图综合判断，5178点必破，而且是100%的。我一般说话不那么绝对，但这一回我认为5178点必然会达到，而且必然超过。市场运行好的话，应该是可以达到6000点往上一线。",
+      "publish_time": "2025-08-24 08:52"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "按照这样的速度，本周必破4000点。",
+      "publish_time": "2025-08-25 12:22"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "long",
+      "evidence": "既然是牛市，现在只是初期，根本就不可能在这里是顶部，也不是阶段性顶部。牛市除了卖飞的风险，还有踏空的风险。赶快把筹码捡回来吧。每天盘中的一些小洗盘，要不了多长时间就会收复。大概4000点以后，才会有大的洗盘。但是大盘依然剑指6000点。",
+      "publish_time": "2025-08-25 16:13"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "当前a股，毫无疑问，是走一轮牛市。不管他是慢牛还是快牛，他都叫牛市。牛市多急跌，非常正常。今天如果大盘遇到调整，我希望大家心里不要慌得一批，那是加仓的好机会。",
+      "publish_time": "2025-08-26 07:34"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "开盘前我明确指出，今天若有调整，是加仓的时机，不必恐慌，更不必慌的一批。",
+      "publish_time": "2025-08-26 12:29"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "这是一次正常的调整，目的是为了更好的上升！",
+      "publish_time": "2025-08-26 16:07"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "我开盘前就说今天要下跌，但敬请加仓就是了。",
+      "publish_time": "2025-08-26 17:51"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "周三盘面会有起伏，但是最终还是要涨！",
+      "publish_time": "2025-08-27 00:35"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "我说的很明确，大盘今天会有起伏，但周三是上涨的。",
+      "publish_time": "2025-08-27 12:36"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "其实牛市的趋势并没有改变。回补一下缺口也挺好的。慢慢来，不着急。",
+      "publish_time": "2025-08-27 18:37"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "其实是上涨途中的正常调整，换句话说就是洗盘，不必过于恐慌。那么对于今天而言，如果收复的快的话，今天就可以收复5日线。如果收复的慢的话，还需要调整一两天。那么对策也很简单：越跌越买。",
+      "publish_time": "2025-08-28 08:40"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天开盘前说的很清楚了，就是上升途中的调整。每一次大阴线，请你必须珍惜。",
+      "publish_time": "2025-08-28 16:05"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "大盘向上的主基调并没有变。所以最近在盘中如果遇到了分歧，不要慌，这都是补仓加仓的好时机。",
+      "publish_time": "2025-08-29 07:55"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "所以要不了多久，大a就会突破4000点。",
+      "publish_time": "2025-08-31 10:46"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "预计股指本周依然是震荡上行态势。过了4000点以后，才会调整。早盘如低开，依然是加仓良机。",
+      "publish_time": "2025-09-01 08:22"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "预计，市场明天将处于震荡状态。但总体而言，市场依然向上，只是斜率有所放缓，短期即便有天把两天的下跌，不代表市场会下跌。",
+      "publish_time": "2025-09-01 16:40"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "所谓看大是坚定地看大方向，这就是一轮牛市，远远没有结束！",
+      "publish_time": "2025-09-02 08:14"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天怎么跌回去，明天就会怎么涨上去。总而言之，言而总之，现在没有必要慌啊。",
+      "publish_time": "2025-09-02 18:14"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "反弹随时会来。所以指数越往下探，你就应该越去买。",
+      "publish_time": "2025-09-03 21:44"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "周五盘面应该是有修复的，这应该是大概率的事情，即便开盘继续惯性下杀，但盘中大概率会修复的。",
+      "publish_time": "2025-09-04 23:27"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "预计下周，前三天总体以上涨为主，所以长线选手持股为主（还要看股票性质）。",
+      "publish_time": "2025-09-07 23:48"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "我曾经说过，大盘10号之前没有什么风险，即便下跌也会收回来，目前维持这个看法。",
+      "publish_time": "2025-09-08 16:15"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "那么明天如果不放大量的话，依然是偏调整。",
+      "publish_time": "2025-09-10 23:26"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天上午，大科技打了个翻身仗，不仅量起来了，价也起来了。上午收盘，三大指数和盘面都是红彤彤。",
+      "publish_time": "2025-09-11 12:33"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "应该不是。因为量能增加的如此巨大，全市增量资金4,606亿，你跟我说是回光返照？",
+      "publish_time": "2025-09-11 16:15"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "个人主观认为这里似乎在阶段筑顶，以防下跌为主。",
+      "publish_time": "2025-09-15 16:14"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "昨天认为当前似乎大盘在筑顶，要以防下跌为主。早盘上证高开后不久，随即往下走。发文之时三大指数，均往下跌！",
+      "publish_time": "2025-09-16 12:08"
+    },
+    {
+      "post_n": 13,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "先说结论，今天大盘较强，但明天黑周四的可能性大，因为有一些滞涨的苗头。所以明天极有可能冲高回落，周五延续下跌。",
+      "publish_time": "2025-09-17 16:21"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "其实这样的话，下周大盘将跌宕起伏，但总的来说，“十一”之前还有逃生的机会！下周如果上涨了，建议减仓或轻仓过节。",
+      "publish_time": "2025-09-19 16:20"
+    },
+    {
+      "post_n": 9,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "所以这个地方应该以震荡为主。明天大盘还会冲一下，后天又要下跌。节前不能加大仓位干了，只能低吸高抛。",
+      "publish_time": "2025-09-22 16:11"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "总的来说，节前不要太害怕，尽管有很多机构和游资都不想做了，想落袋为安。作为散户，控制仓位，谨慎参与也没有大错。",
+      "publish_time": "2025-09-23 18:50"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "可以肯定的说，指数现在是无忧的。即便明天大盘又下来，但是后天又会上来。总的来说，高点在月底两天左右。",
+      "publish_time": "2025-09-24 20:15"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "预计节前两天大盘会有所反弹。",
+      "publish_time": "2025-09-26 16:17"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "如果下午大盘不跌的话，明天大盘也是大概率收红。节前这个红包该拿还是得拿。",
+      "publish_time": "2025-09-29 12:13"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "如果没有利空的话，9号10号会有高点。但这个节点个人不建议去做，偷鸡不成倒蚀把米，划不来。如果有利空，那么就直接下跌了。总的来说，10月上中旬我并不看好，操盘还需谨慎。",
+      "publish_time": "2025-09-30 11:10"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "如果节后4000点大盘只是摸了一下，量能并不能有效放大，那么还会下去！如果节后4千点都不愿意摸，那么十有八九久盘必跌，需要再一次蓄能才能往上走。",
+      "publish_time": "2025-10-03 11:30"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "这样的行情能够持续吗？我觉得很难。明天可能会再冲一下，但应该总体看分歧。总而言之，短线票该兑现还是得兑现。",
+      "publish_time": "2025-10-09 19:54"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "但总体而言，市场还会涨，但是调整却会很长，比如10月份，其实非常难做的。",
+      "publish_time": "2025-10-10 16:59"
+    },
+    {
+      "post_n": 13,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "周一开盘大盘应该往下走。",
+      "publish_time": "2025-10-11 19:40"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "所以明天还需谨慎，预计冲高后会回落。",
+      "publish_time": "2025-10-13 16:32"
+    },
+    {
+      "post_n": 11,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "预计今后几天继续震荡下跌，17号左右会有低点。但是没有完，月底还有低点。",
+      "publish_time": "2025-10-14 16:09"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "既然大盘量能刚刚只有20,000亿，那么后市其实并不能明显看好。",
+      "publish_time": "2025-10-15 16:23"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "反弹！对，没错，就是反弹，应该是震荡反弹，不会一根直线往上拉。反弹完后最后一周估计还是往下跌。",
+      "publish_time": "2025-10-17 16:16"
+    },
+    {
+      "post_n": 6,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "如果是这样，那么本周应该还有下跌，周末应该是下跌的低点。",
+      "publish_time": "2025-10-20 14:00"
+    },
+    {
+      "post_n": 5,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "连续两天上涨，那么预计明天分歧的可能性比较大。",
+      "publish_time": "2025-10-21 14:00"
+    },
+    {
+      "post_n": 4,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "本周总体应该是往下跌了。",
+      "publish_time": "2025-10-22 14:19"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "不出意外，明天还有低点",
+      "publish_time": "2025-10-23 13:54"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "那么下周，市场怎样走？继续维持震荡下跌的判断。",
+      "publish_time": "2025-10-24 22:52"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下一周应该总体呈现一个震荡上爬的过程。",
+      "publish_time": "2025-10-26 21:20"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "预计周二，前期在大科技套牢的一些人有兑现的预期。因此，指数向上是曲折的，短期会有分歧。",
+      "publish_time": "2025-10-28 07:41"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天的盘面应该延续下跌。看看尾盘是否上钩，这样形成最近几天的一个小低点。总之，逢低都是加仓的机会。",
+      "publish_time": "2025-10-29 01:10"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "short",
+      "evidence": "首先说结论，最近几天还是坚决做多，哪怕盘中股指下沉到水下，也要尽量去买一些筹码。",
+      "publish_time": "2025-10-29 23:51"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "所以，接下来两天股指仍然有可能翻红，但是多数人却很有可能亏钱。",
+      "publish_time": "2025-10-30 13:49"
+    },
+    {
+      "post_n": 9,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "先说结论，明天大盘再涨一涨就差不多了。换而言之，11月初，不太指望大盘一根直线往上涨。相反，上旬总体而言，应该是往下溜。",
+      "publish_time": "2025-11-03 16:26"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "根据我的系统，目测至少要跌到11月11日。到时候再看。",
+      "publish_time": "2025-11-04 16:26"
+    },
+    {
+      "post_n": 6,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "主观判断，由于大盘缩量，近期还是偏谨慎一些为好。",
+      "publish_time": "2025-11-05 12:49"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "只要市场能够稳住4000点，那么后市还是可以期待的。否则大盘短期还是主观判断向下。",
+      "publish_time": "2025-11-06 12:40"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "至于大盘，不需要担忧。现在震荡一下，到月底它是有高点的。",
+      "publish_time": "2025-11-10 12:40"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "我说月底是高点，是震荡爬升的意思。下个交易日和下下个交易日，万一有调整，其实都很正常。总之，炒股票要有信心。",
+      "publish_time": "2025-11-13 16:25"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "若有大跌，敬请加仓。",
+      "publish_time": "2025-11-14 09:20"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "周一如果惯性下跌，依然不需要害怕，依然可以继续抄底。",
+      "publish_time": "2025-11-16 08:49"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大盘看反弹。",
+      "publish_time": "2025-11-17 16:22"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天照说还应该有一个低点，大盘就开始反弹，最多拖到20号必反弹。",
+      "publish_time": "2025-11-18 16:35"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "所谓否极泰来，一根中阳随时会来。",
+      "publish_time": "2025-11-20 16:07"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "冰点极致，会迎来多头反击。本周就这样了，反击应该在下个礼拜。",
+      "publish_time": "2025-11-21 12:35"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "本周总体而言，周一或周二应该有低点位置，然后周末属于高点位置区间。",
+      "publish_time": "2025-11-24 07:36"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "预计12月4号左右都应该算高点。",
+      "publish_time": "2025-11-25 19:49"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "预计今后几天总体上涨为主。",
+      "publish_time": "2025-11-26 12:38"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "本周预测走势呈震荡状态，略微向上。",
+      "publish_time": "2025-12-01 09:01"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "本周预计还应该有高点。到了那个高点之后，应该谨慎一些。本周四，看是否是高点时间。",
+      "publish_time": "2025-12-01 16:23"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天有可能指数上涨，而情绪向下。",
+      "publish_time": "2025-12-03 00:54"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "那么双杀以后，市场会有一个反弹，让你减亏离场。",
+      "publish_time": "2025-12-04 09:12"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "如果幻想12月份将开启新行情，那将是大错特错。我早就说过，12月份其实并不好做。下周一，你如果再冲进去，其实是接盘。总而言之，12月份调整的可能性更大一些，周一尽量落袋为安。",
+      "publish_time": "2025-12-06 12:43"
+    },
+    {
+      "post_n": 13,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "坦率地说，下周如果量能不能像推土机一样的逐步往上堆，那么下周指数是上不去的。周一开盘是持筹者的盛宴，你有充分的时间决定卖不卖。但周一绝对不是买点。",
+      "publish_time": "2025-12-07 22:57"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "如果量能不能有效放大，机构重仓指数如果依然是向下回落的话，那么今天注定是冲高回落的结局。",
+      "publish_time": "2025-12-08 10:56"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "在量能持续增长的情形下，理应看多。接下来若有调整，只要量能健康稳定，那么依然可以看多做多。",
+      "publish_time": "2025-12-08 11:45"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "预计市场还将下跌到15号到16号。中途的震荡反弹，都不是什么大的反弹。月末可能还有低点。",
+      "publish_time": "2025-12-11 17:56"
+    },
+    {
+      "post_n": 9,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "连续两天大跌以后，市场应该有个反弹，这个反弹近在咫尺。但这个反弹其实抓不抓意义不大，因为在我看来，12月底还是要下跌的。过了12月份市场会好起来的。",
+      "publish_time": "2025-12-16 16:07"
+    },
+    {
+      "post_n": 8,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "基于这样的理由，所以如果被套着的广大股民可以趁反弹减仓减亏。如果手中有大把资金的股民，也就是说子弹很多的股民，建议耐心等那个低点。那个低点在12月底。",
+      "publish_time": "2025-12-17 14:12"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "到了19号这一天，无论如何应该减仓。然后股指会一路下跌。到了12月底，会跌到你想不到。",
+      "publish_time": "2025-12-17 18:04"
+    },
+    {
+      "post_n": 4,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "如果盘中不能够由跌转涨，那么务必逢高减仓！",
+      "publish_time": "2025-12-18 10:28"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "基于大盘指数反弹成色不够的现实，那么现在应该早做离场准备，节约子弹，积极备战来年的行情。",
+      "publish_time": "2025-12-18 16:28"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "既然已经判断12月底还有低点，那么趁高点卖掉难道不好吗？",
+      "publish_time": "2025-12-19 13:35"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天也就是23日，应该是高点了，然后下跌到25日，再反抽一下，最后31号是低点。",
+      "publish_time": "2025-12-22 12:29"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "大方向上看，12日之前，大盘无忧，震荡向上。",
+      "publish_time": "2026-01-05 09:37"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "继续看好12日底之前，大盘没有大的调整，只有震荡向上。",
+      "publish_time": "2026-01-06 09:27"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "继续看好本月12日之前大盘依然震荡向上，中间的调整，都不要紧。",
+      "publish_time": "2026-01-07 09:57"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "总而言之，今年的行情依然看好，逢低买票，总体而言没有错。",
+      "publish_time": "2026-01-09 09:05"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "基于上述3点考虑，周一还是可以继续惯性冲高的。",
+      "publish_time": "2026-01-11 00:14"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "估计明天早晨还可以冲高一下，如果量能不萎缩，那么还可以继续奏乐继续舞。",
+      "publish_time": "2026-01-13 00:35"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "大盘很诡异，总感觉到他要往下走，当然这只是一种直觉。",
+      "publish_time": "2026-01-29 16:16"
+    },
+    {
+      "post_n": 13,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "现在就抄底吗？答案是否定的。等下周一二以后再说吧。",
+      "publish_time": "2026-01-30 12:43"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "如果周一大盘直接恢复到5日线，那不用说了，节前大盘总体应该上涨了，这个时候凡是有低点，都是买入的时机。",
+      "publish_time": "2026-02-01 23:50"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "既然跌的深，那么必然会弹得大。何况咱们的市场，有上面罩着，你认为会跌到哪里去呢？慢牛会跌没吗？",
+      "publish_time": "2026-02-03 13:40"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "所以如果有调整，不要害怕。小跌小买，大跌大买，春节前我依然认为大概率还是有红包行情的。",
+      "publish_time": "2026-02-03 20:26"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "总的来说，节后上涨的机会大一些，当然是震荡上涨。",
+      "publish_time": "2026-02-25 10:14"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "基本上节后还是震荡上行为主。有低点可以买一点。",
+      "publish_time": "2026-02-25 10:59"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "总体而言，后市暂无忧，近期如果大盘有回调，那是加仓的机会！",
+      "publish_time": "2026-02-25 16:26"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "整个大盘估计也是大低开。需要割肉吗？这要看你是做长线还是短线，如果从长线的角度上讲，那是越低越买。因为给你难得的低位筹码。如果是短线，亏的不多，割了也无妨。",
+      "publish_time": "2026-02-28 21:33"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "从大盘的角度来看，大盘远没有企稳，所以做长线的还要等一等。",
+      "publish_time": "2026-03-18 21:55"
+    },
+    {
+      "post_n": 9,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "就大盘而言，今天表现恐慌，又往下跌了。大概要延续到月底了。大盘是一波三折的往下跌，但是对于广大股民而言，下手的机会也越来越快到了。",
+      "publish_time": "2026-03-19 11:35"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "预计大盘还有下跌，反抽之后再下跌。跌跌不休，几时休？",
+      "publish_time": "2026-03-19 16:09"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "早盘开盘出来，大盘上涨，9:40左右，整个市场近4000家上涨，情况似乎在向好的方向发展。现在9:41，我说一个标准，那就是放量上涨。如果量能跟不上，甚至是缩量的话，那市场还有反复，不会一蹴而就。",
+      "publish_time": "2026-03-20 10:41"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "大盘跌破3800点可能性不大，因为如果跌破了3800点，那么整个趋势都要向下了。大盘目前处于底部区域，会有一个反弹，一触而发。",
+      "publish_time": "2026-03-20 16:43"
+    },
+    {
+      "post_n": 4,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周会有反抽，但是持续性不会太强。比方说周一若反抽，那是你减仓的机会。",
+      "publish_time": "2026-03-22 22:36"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天即使反弹，我也只看作反抽。",
+      "publish_time": "2026-03-23 16:14"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "现在阻碍大盘向上的变量，就是中东局势，如果中东局势再恶化，再出现什么幺蛾子的话，那么大盘还是会向下。但是这个向下，我认为是可控的，总体最近一阶段，调整后还是应该向上走。",
+      "publish_time": "2026-03-25 16:16"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "所以接下来如果大盘还想往上走，个股还想红彤彤一片的话，量能是关键，2.5万亿是最好，如果达不到，至少也要做到20,000亿吧。还有一点，那就是美伊冲突结局明朗。现在两边都还在说狠话，特别是特不靠谱，又在极限施压，声称炸电厂、炸桥梁，如果局势进一步恶化，那大盘也将继续承压。",
+      "publish_time": "2026-04-07 18:04"
+    },
+    {
+      "post_n": 9,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "既然这样，那下周指数其实挺危险的。所以下周开始应该小心一些。如果量能不放大的话，那么手中的大科技，建议最多持股，但是不能再买了。或者先卖掉，观望一下再说，不耽误赚钱。",
+      "publish_time": "2026-04-19 23:59"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天半天大盘放量接近1,500亿这绝对是好事儿。如果最近两天大盘能够持续放量的话，那基本上，担心下跌的警报可以解除。",
+      "publish_time": "2026-04-20 14:33"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "个人认为下周总体而言，应该是先跌后涨。受中东局势不确定性的影响，下周初应该依然是惯性下跌。大致要跌到月末，比方说29号左右。过了这个时间节点，大盘应该总体向上走了。",
+      "publish_time": "2026-04-26 23:05"
+    },
+    {
+      "post_n": 5,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "其实这个涨幅已基本上完成，后面虽然会有反复，但总体而言，从现在到5月下旬，总体看跌。一定要说上涨，那么你看看18号或者19号能否反抽一下？总而言之，从19号到25号基本上以下跌为主。",
+      "publish_time": "2026-05-14 13:28"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "但总体而言，从现在到25号左右，主旋律是向下的。一定要等这个反抽，那么你看看18号或者19号吧。",
+      "publish_time": "2026-05-15 10:55"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "缩量反弹的本质是没有增量资金。所以姑且判断行情难以为续。何况是周五，你要顶住周六周天一些消息面的影响。继续空仓不为过。",
+      "publish_time": "2026-05-15 12:30"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "总体而言应该是冲高回落。18 19号应该还算好。到了下周五的时候，市场又将到达低点位置。",
+      "publish_time": "2026-05-16 02:07"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "后面继续略为看空。",
+      "publish_time": "2026-05-18 09:35"
+    },
+    {
+      "post_n": 13,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "这两天不适合持长，有反弹点就应该走。",
+      "publish_time": "2026-05-19 09:59"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "不建议周四周五再买票了。",
+      "publish_time": "2026-05-20 18:21"
+    },
+    {
+      "post_n": 11,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大盘总体而言，这周在周四，周五是没有多少机会的，我昨天就表达了这样的观点。",
+      "publish_time": "2026-05-21 15:34"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "具体来说，明天大盘继续向下的概率还是比较高的。",
+      "publish_time": "2026-05-21 22:42"
+    },
+    {
+      "post_n": 9,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "那么对于接下来几天的行情，不应该太乐观。",
+      "publish_time": "2026-05-22 11:11"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "只要股市成交额保持上升的趋势，那就应该做多。即便途中有调整，调整完之后依然要做多。",
+      "publish_time": "2026-05-25 13:33"
+    },
+    {
+      "post_n": 5,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "总体而言，6月份行情处于跌势或者震荡市。",
+      "publish_time": "2026-06-01 09:59"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "具体到明天，我觉得是可以逢低买票的。",
+      "publish_time": "2026-06-04 20:25"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "可以肯定的说，每次急跌都会有反弹。",
+      "publish_time": "2026-06-08 10:12"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "但不管怎么说，最多跌到月底，比方说端午节前后，那你如果有低点的话，你应该重视起来。在那个低点，你应该去上仓位。这是战略。",
+      "publish_time": "2026-06-11 09:54"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "总的来说，6月下旬会磨底。等这个底磨的差不多了后，是可以上仓位的。",
+      "publish_time": "2026-06-12 09:12"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "6月29号或者30号有低点的话，你大胆的上仓位。一个字干，两个字猛干。",
+      "publish_time": "2026-06-27 18:14"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "总体而言，7月上旬或者7月上中旬比较好做一点。因为总体处于上升趋势。",
+      "publish_time": "2026-06-30 18:03"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "我说过，7月份，至少在前半月应该是看涨的。那么遇到下跌，其实是你拿便宜筹码的机会。所以不需要慌。",
+      "publish_time": "2026-07-02 16:11"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "依然是震荡上行，但是呢，在7月中旬之前，把握更大一些。",
+      "publish_time": "2026-07-03 15:05"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "最近的市场跌宕起伏，但总体符合我说的，7月上旬中旬以前，总体应该是上涨的这种态势。",
+      "publish_time": "2026-07-05 12:01"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "那么接下来4个小时应该是越跌越买。也就是从今天下午到明天上午，都是这样一个操作程序，越跌越买！",
+      "publish_time": "2026-07-06 11:42"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "总而言之，明天后天开始，会由低向高，开始呈现涨势。",
+      "publish_time": "2026-07-07 00:52"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "但不管怎么说，这种三冰之后，市场应该大概率反弹，换句话说，反弹，近在咫尺。",
+      "publish_time": "2026-07-08 19:29"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "那么反弹出现后，个人估计，这个反弹将延续一段时间，至少7月中旬之前看涨。",
+      "publish_time": "2026-07-09 15:50"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "今天大盘延续上涨，预计7月中旬以前，问题不大。",
+      "publish_time": "2026-07-10 13:44"
+    },
+    {
+      "post_n": 13,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "总而言之，7月中下旬以后，大盘下跌的概率比较大。特别是7月下旬，大盘下跌的概率极大。建议控仓。",
+      "publish_time": "2026-07-13 09:37"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "现在大盘下跌，那么明天应该还有低点，然后看看会不会再起一波，到了7月下旬，铁定下跌了。",
+      "publish_time": "2026-07-13 10:41"
+    },
+    {
+      "post_n": 11,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "开盘不久4000多只下跌，那么今天原则上是不应该买票的，你要等这个惯性下跌，大概明天看有没有低点，再决定是否买票。",
+      "publish_time": "2026-07-13 10:44"
+    },
+    {
+      "post_n": 8,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "从目前情况看，即便这两天能够护住，但是到了7月下旬，大概率还是下跌。",
+      "publish_time": "2026-07-13 11:45"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "明天若有可以小仓位的上一点，等待一个小反弹。然后迎接7月下旬的下跌。",
+      "publish_time": "2026-07-13 12:28"
+    },
+    {
+      "post_n": 5,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天下跌，明天看是否能够企稳，接下来会有一个反抽。反抽之后再下！",
+      "publish_time": "2026-07-13 14:35"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "今日若大盘继续下跌，那你是可以逢低吸纳的。",
+      "publish_time": "2026-07-14 07:42"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "所以我在早上开盘之前就提醒过各位，今天是可以抓鱼的，在深水中抓。",
+      "publish_time": "2026-07-14 11:43"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "从我的系统来看，这两天反弹应该是大概率的事情，即便今天不反弹，这几天总会反弹，所以需要一些耐心。",
+      "publish_time": "2026-07-14 11:50"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "尽管总体而言，市场是向下的，但阶段性的反弹一定会来。",
+      "publish_time": "2026-07-14 12:08"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "但是我认为今天依然是反弹，这个反弹还可以延续几天。几天之后大盘依然会下跌。",
+      "publish_time": "2026-07-14 16:13"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "重要的是这个月21号之前，总体而言，应该呈现涨势，或者准确的说，21号会有一个高点，明显的会高于今天，明天，后天。",
+      "publish_time": "2026-07-14 21:17"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "最后的高点在21号左右。",
+      "publish_time": "2026-07-15 12:24"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天单边下跌，那么16号有可能还是是一个低点，那个时候买，把握性更大一些。",
+      "publish_time": "2026-07-15 16:07"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "21号以前，不用太着急。从明天开始，逢低就买，会有拉升的。",
+      "publish_time": "2026-07-15 23:24"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "因为21号之前，大盘总体呈一个小升势。",
+      "publish_time": "2026-07-16 09:00"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "因为接下来会有一个几天的小反弹。",
+      "publish_time": "2026-07-16 11:09"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "这是典型的冰点，冰点选强，没有什么好说的，反弹随时准备到来。",
+      "publish_time": "2026-07-16 16:25"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天如果还有下探的话，那么随时一根阳线就会起来。",
+      "publish_time": "2026-07-16 23:37"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "预计这个反弹，它是可以持续两天的。",
+      "publish_time": "2026-07-20 16:08"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "总而言之，我看不到股市上涨的合力，虽然途中会有反弹。",
+      "publish_time": "2026-07-23 22:32"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下周多多少少会止跌一下吧。",
+      "publish_time": "2026-07-24 22:23"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明日大盘有很多利好因素，包括方某被抓，包括特朗普决定暂停攻击伊朗。在这些所谓利好的加持下，大盘极有可能出现反弹。",
+      "publish_time": "2026-07-26 21:09"
+    },
+    {
+      "post_n": 5,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "预计市场还会震荡下跌。",
+      "publish_time": "2026-07-28 16:07"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "目前并没有跌完。所以继续空仓看戏是上策。",
+      "publish_time": "2026-07-30 08:53"
+    },
+    {
+      "post_n": 11,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "首先总体而言，8月份应该是一个宽幅震荡的走势。在指数层面上，不要指望8月份能够翻身得解放，能够继续走所谓的牛市，其实结构性科技牛市都已经结束了。",
+      "publish_time": "2026-08-02 23:19"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "预计周一最多再冲一下，大盘将下跌。下周的下跌有可能比较剧烈，所以大家还是以防为主。",
+      "publish_time": "2026-08-07 13:40"
+    },
+    {
+      "post_n": 4,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "intraday",
+      "evidence": "现在10点过10分，这个反弹看来有点像接近尾声的样子。不建议大家再大张旗鼓的去攻击了，能够守一守是最好的。",
+      "publish_time": "2026-08-10 11:13"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "总的来说，大盘还要下跌几天，不着急。",
+      "publish_time": "2026-08-11 16:22"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "我说下跌还得等两天，有些人不信，结果事实会给你们看。下跌后会有反弹，但依然会下跌。",
+      "publish_time": "2026-08-13 15:52"
+    }
+  ]
+}

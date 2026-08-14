@@ -1,0 +1,3443 @@
+{
+  "blogger": "白猫财眼",
+  "extraction_time": "2026-08-14 22:50:51",
+  "model": "deepseek-v4-flash",
+  "total_posts": 1836,
+  "pre_2024_06": 245,
+  "evaluation_posts": 1591,
+  "not_extracted": {
+    "no_market_topic": 265,
+    "pure_description": 138,
+    "directional_vague": 198,
+    "other_index_sector": 340,
+    "other": 223
+  },
+  "scored_bullish": {
+    "strong": 9,
+    "moderate": 296,
+    "long": 55,
+    "medium": 178,
+    "short": 69,
+    "intraday": 0,
+    "unspecified": 3
+  },
+  "scored_bearish": {
+    "strong": 1,
+    "moderate": 120,
+    "long": 6,
+    "medium": 68,
+    "short": 45,
+    "intraday": 0,
+    "unspecified": 2
+  },
+  "signals": [
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "现在的A股，在黎明前的黑夜，会比以前的天都更黑一些。",
+      "publish_time": "2024-06-02 10:42"
+    },
+    {
+      "post_n": 6,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "这个地方，如果能往下走一大步，从3174下跌150，到3024附近，那市场会暖很多，机会也自然就多不少。",
+      "publish_time": "2024-06-05 13:28"
+    },
+    {
+      "post_n": 4,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "每天3000-4000家下跌，你根本闻不到牛市的味道。",
+      "publish_time": "2024-06-06 08:29"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "劝大家还是把当下的市场当熊市看吧，别再幻想牛市了。",
+      "publish_time": "2024-06-07 01:10"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "这个方向的股票，可能还要面临一次腰斩，这个洗牌才会结束。",
+      "publish_time": "2024-06-08 12:21"
+    },
+    {
+      "post_n": 9,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "上证、深证、创业板，其实都是一个缓慢趋势向下的行情。",
+      "publish_time": "2024-06-11 23:31"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "大部分蓝筹和白马还有最后一跌。",
+      "publish_time": "2024-06-15 16:47"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "那么市场给的反弹周期也不会太短，至少到6月底7月初的样子，会有一段缓和的时间。",
+      "publish_time": "2024-06-18 11:22"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "6月下旬会出一个阶段性的低点，估计位置在2900出头，然后会有弱反弹行情，空间在100个点位出头吧。",
+      "publish_time": "2024-06-21 11:11"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大概率6月底会有阶段性的低点，是阶段性的，会有反弹。3000点以下出现的反弹，力度不会太弱，至少周期不会太短。",
+      "publish_time": "2024-06-24 11:02"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "等指数哪一天又回到3300，3400，3500，自然有大把的人喊着牛市来了，入市接盘。",
+      "publish_time": "2024-06-25 11:57"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "反弹其实一触即发了，情绪酝酿就快到位了，就在那么几天了。",
+      "publish_time": "2024-06-26 08:11"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "虽说已经到了下跌尾声，但不排除有震荡的反复。",
+      "publish_time": "2024-06-27 08:24"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "3000点以下，剩者为王。",
+      "publish_time": "2024-06-28 07:00"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "7月份，谈不上翻身，但比起五月六月一定好很多。或多或少会有一些赚钱的机会。",
+      "publish_time": "2024-06-28 17:36"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "不要用熊市思维去对待牛市。",
+      "publish_time": "2024-06-29 07:00"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下半年，市场总体的震荡幅度可能还会收敛，最终完成底部的确认。",
+      "publish_time": "2024-07-01 09:25"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "梦回2013，大家集体躺平，大概半年左右，牛市启动。",
+      "publish_time": "2024-07-03 16:06"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周初的探底结束，情绪应该会缓和一段时间，但大的风暴还没来，四季度才是大决战。",
+      "publish_time": "2024-07-05 13:33"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "情绪差不多到低点了，意味着反弹不远了。",
+      "publish_time": "2024-07-08 14:22"
+    },
+    {
+      "post_n": 8,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "弱势行情中的弱反弹，随缘参与吧。",
+      "publish_time": "2024-07-09 09:09"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "反弹如约而至，但一切不过是一场精心设计的剧本而已。",
+      "publish_time": "2024-07-10 08:27"
+    },
+    {
+      "post_n": 5,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "接下来几天，市场又会再次让人感觉，牛市要来了。这会是今年的第二次，“牛市来了”的前兆。",
+      "publish_time": "2024-07-10 21:15"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "没有高开低走，只有稳步上行。",
+      "publish_time": "2024-07-11 17:54"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "指数2904上来已经70个点位了，再有70个点位，反弹也就完成任务了。",
+      "publish_time": "2024-07-13 01:12"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "3000点下方，即便看跌，也不要恐慌，至少跌速不会太快的。",
+      "publish_time": "2024-07-18 14:51"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "坐等上3000点。抬轿的资金总会有的，这个毫无疑问。",
+      "publish_time": "2024-07-19 10:18"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "这个信号，意味着新一轮资产价格潮的起点，要来了。",
+      "publish_time": "2024-07-25 10:39"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大A要直接高开3320.89了。",
+      "publish_time": "2024-07-28 22:44"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "好消息是8月份的上半个月，是能确保太平了。坏消息是这里的结构不属于二次回踩，反弹结束后还要调整。",
+      "publish_time": "2024-07-31 12:29"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "这个阶段，可以开始做指数定投了。而且是全宽基品类，不是单独的方向。... 但如果从未来1-2年来看，潜在收益是比较乐观的。",
+      "publish_time": "2024-08-01 18:43"
+    },
+    {
+      "post_n": 13,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "阴跌的概率在增加。还不如突然之间来个暴跌，再下一个台阶，机会和空间就会大很多。",
+      "publish_time": "2024-08-14 17:26"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "调整周期有63个，反弹周期起码21天起。这里争取到的不是空间，而是时间。",
+      "publish_time": "2024-08-15 13:21"
+    },
+    {
+      "post_n": 8,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "漫长的拉锯战或许才刚刚开始，就像2013-2014那样，底部区域能徘徊很久。",
+      "publish_time": "2024-08-16 16:36"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "当市场开始进入通缩时代之后，会采取各式各样，哪怕是强制涨价，强行拉动通胀。而刺激消费，拉动内需的各大政策，也都在路上了。说白了，钱都已经准备好了，只等发令枪响而已。",
+      "publish_time": "2024-08-17 09:17"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "这种炒法，本质是抓住最后的存量，再宰一刀。没有任何增量，存量继续这么玩，那即便是反弹也走不远。",
+      "publish_time": "2024-08-19 14:33"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "8月的最后两个交易日，准备积极做多了，九月争取混口饭吃。",
+      "publish_time": "2024-08-29 11:07"
+    },
+    {
+      "post_n": 5,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "是反弹，不是反转。",
+      "publish_time": "2024-08-30 16:14"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "按照这个趋势，四季度，考验2635是逃不掉了。",
+      "publish_time": "2024-09-03 12:57"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "弱势的市场，虽说反弹的空间不大，但做空动能衰竭后，该涨还是会涨涨。",
+      "publish_time": "2024-09-05 15:47"
+    },
+    {
+      "post_n": 5,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "市场如果短期内快速下行，那反而是一件好事。如果市场下周又开始阴阳怪气，那还会继续磨时间。",
+      "publish_time": "2024-09-06 17:47"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "这个时间，这个位置，但凡再有1-2天的恐慌，就有比较好的机会了。周三周四要特别注意盘内的低点了。",
+      "publish_time": "2024-09-10 13:01"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "从盘面来看，整体下跌的动能，这两天基本释放完毕，今天应该是最后一天了。跌不下去就该涨了。",
+      "publish_time": "2024-09-12 08:39"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "2700下方，即便不是终级买点，也已经是一个不错的买点了。2400-2700，被称为真正的底部区域，也是主力建仓的核心区域。盘面看着很弱，实则暗流涌动。",
+      "publish_time": "2024-09-13 09:24"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "市场寻底的路，还有很长一段。不过好在国庆节前，可以喘口气了。2700上方，没看到真正的抄底资金入场，干活的还是村里的自卫队。",
+      "publish_time": "2024-09-20 01:14"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "又跌了，是不是又一日游。一日游指的是单日大阳线，昨天只能算个反抽，今天有个回踩，节前大概率就震荡一下完事。",
+      "publish_time": "2024-09-20 13:08"
+    },
+    {
+      "post_n": 9,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "建议是持币为主，毕竟市场的风险很大。",
+      "publish_time": "2024-09-20 19:31"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "熊市，才是你的致富良机。资本致富的核心，是抄底廉价资产。这种机会，一个大的经济周期里，通常只有一次。映射到股市里，就是熊市末端。这种机会，同样很多年才有一次。",
+      "publish_time": "2024-09-21 18:50"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "节前的反弹是一定会有的，毕竟国庆是个大节。时间窗口主要是在上半周，因为下半周会面临比较大的出金过节。2765的缺口，得努力的补上，毕竟这种位置留一个向下跳空的缺口，还是周线级别，比较要命。",
+      "publish_time": "2024-09-23 10:52"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "熊市的终点，就是消灭高价股。当茅台破千，300元以上个股归零，200元个股回到5家，100元个股再少10家，就差不多了。",
+      "publish_time": "2024-09-23 19:09"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "央妈放水下的资本市场，无限子弹的印钞机，按下开机键了。",
+      "publish_time": "2024-09-27 11:27"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "当下一个黄金时代开启，大放水下的资产溢价，就会从股市开始蔓延，到楼市，到其他资产里。这场资产盛宴，别错过。",
+      "publish_time": "2024-09-28 16:48"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "不畏浮亏遮望眼，只缘心在牛市中。",
+      "publish_time": "2024-09-29 07:00"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "在情绪还没彻底发酵完毕之前，增量还会不断拥挤入市。节前节后，溢价还会继续，直到整个市场慢慢清醒为止。",
+      "publish_time": "2024-09-29 12:25"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "要等情绪推升出的第一个高点出现之后，才会有技术上的修复，市场才会震荡和回归。在那之前，只能让情绪奔跑，增量会让整个市场颤抖，甚至是地动山摇。",
+      "publish_time": "2024-10-01 10:57"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "看港股这态势，以及市场情绪发酵的情况，节后继续飙升的概率很高。",
+      "publish_time": "2024-10-06 09:03"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "热度既然炒起来了，短期就不会冷太快。科技线，一半是纯血鸿蒙，一半是芯片半导体，也都只是刚刚开始而已。市场成交量还没突破3万亿，情绪还没到巅峰，盘内也还没有出现特别剧烈的震荡下杀。",
+      "publish_time": "2024-10-07 09:56"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "市场从第一阶段普涨，迈入第二阶段分化了。从闪电战，变成拉锯战了。目标没变，但上涨的形式变了，交易策略变了。3.5万亿，这个量能，逾越3731绰绰有余。",
+      "publish_time": "2024-10-09 08:50"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "我只能告诉大家，牛市也有阶段，不可能每天涨。这里出现的震荡修复，已经进入了行情的第二阶段。",
+      "publish_time": "2024-10-12 08:17"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "3200肯定是守不住了，但向下的空间并不会太大。",
+      "publish_time": "2024-10-16 08:13"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "市场马上就要进入热点凋零+快速轮动的周期了。",
+      "publish_time": "2024-10-18 07:21"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "要变盘了。3300像一块铁板一样，已经盘了有好几天了。要么一鼓作气拿下，要么继续震荡回落，等待20日线的借力。",
+      "publish_time": "2024-10-22 21:22"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "我们要深刻理解，这轮牛市是刻意为之。",
+      "publish_time": "2024-10-23 09:07"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "3674-3152是2浪A，现在处于2浪B的反弹周期里，大概率还没走完。如果量价配合，能够跌跌撞撞的走到3400上方，但如果不走空间走时间，那么3330附近阻力就不小。",
+      "publish_time": "2024-10-26 17:54"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "我反而认为，市场还会继续延续弱势反弹，会反复诱多。3300上方，肯定是一个诱多的区域，3300下方，肯定是越跌越安全。",
+      "publish_time": "2024-10-31 09:33"
+    },
+    {
+      "post_n": 8,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "而是权重搭台，让游资先撤退，然后指数再进入大的调整周期。",
+      "publish_time": "2024-11-01 14:47"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "短期内，对于市场的判断仍然是震荡，而且偏乐观的认为市场还有诱多的行为。",
+      "publish_time": "2024-11-03 23:23"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "牛市不要轻易看空，哪怕有震荡，也是逐步分批低吸的机会。",
+      "publish_time": "2024-11-04 12:56"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "long",
+      "evidence": "这轮牛市的剧本，是国资+化债+重组+创投+科技。",
+      "publish_time": "2024-11-05 01:13"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "如果说昨天是上涨第一天，那么今天是加速的第二天，才刚刚开始。",
+      "publish_time": "2024-11-05 22:48"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "未来两年，围绕自主可控发散出来的科技赛道，我们应该还会有更多的机会去突破。",
+      "publish_time": "2024-11-07 08:31"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "大放水预期之下，可能还会有更多的增量入市。",
+      "publish_time": "2024-11-08 22:42"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "只有当市场再次回到1.5万亿左右的量能，市场做多的声音改为看空的时候，真正的下一轮牛市推动浪，才会真正启动。",
+      "publish_time": "2024-11-12 18:02"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "当市场开始动三大运营商，拉银行，涨中字头，搞银行的时候，尾段的行情就越来越近了。",
+      "publish_time": "2024-11-13 15:10"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "短期100%要重点照顾，3天超20%要异动监管。",
+      "publish_time": "2024-11-14 10:31"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "千金难买牛回头。",
+      "publish_time": "2024-11-16 07:00"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "牛市主线已经越来越清晰了。",
+      "publish_time": "2024-11-19 07:00"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "2024，我们至少能打赢3000点保卫战。",
+      "publish_time": "2024-11-24 10:48"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "市场到了3250下方，要开始慢慢捏紧筹码了，也要做好准备吃点浮亏了。",
+      "publish_time": "2024-11-25 12:41"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "所以，总体上更倾向于快涨+震荡调整的走法。那么震荡的周期总体就会拉长了，需要更多的耐心。",
+      "publish_time": "2024-12-01 13:56"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "这轮牛市，可能会持续8-10年。",
+      "publish_time": "2024-12-04 07:00"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "当这些巨无霸开始跳舞的时候。市场才是真正的进入了一个新周期的阶段。至于接下来会发生什么，其实看看上一个雷同的周期就行了。包括去年年底，炒作的周期，还有今年一月份的情况，很多事情一目了然。",
+      "publish_time": "2024-12-04 18:55"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "这是不可能拉起来了，多头都直接举白旗了。",
+      "publish_time": "2024-12-10 17:46"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "所以这个调整，即便深度上人为的控制，时间周期也短不了。耐心等待吧。",
+      "publish_time": "2024-12-11 16:40"
+    },
+    {
+      "post_n": 5,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "接下来，又将是一个缩量的过程。这个所谓的跨年，大概率还是机构躺平，游资和量化出老千的周期。",
+      "publish_time": "2024-12-13 20:36"
+    },
+    {
+      "post_n": 11,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "但凡是这种感觉，市场就不会太好。",
+      "publish_time": "2024-12-16 17:38"
+    },
+    {
+      "post_n": 9,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "12月-1月份的任务只有一个，就是完成对于高位个股的调整。",
+      "publish_time": "2024-12-17 12:47"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "又到了主动买套的时间点了。",
+      "publish_time": "2024-12-19 07:00"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "距离下一轮行情启动，还有不到20个交易日了。",
+      "publish_time": "2024-12-19 09:33"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天大概率是个决战日，也就是很多人喜欢说的变盘日。……这种割裂+抽血的市场，不会维持太久，很快就有方向了。结论也很简单，有钱就上，没钱就下。",
+      "publish_time": "2024-12-20 09:55"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "这轮牛市的必修课之一，就是读懂寒武纪的炒作逻辑。如果到这个份上了，依旧看不懂，认为是泡沫的话，可能就会与牛市失之交臂了。",
+      "publish_time": "2024-12-21 08:53"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "为2025是一个放水，乃至是注水的年份。会有大把新的增量回到股市里，去推动行情进一步往好的方向发展的。",
+      "publish_time": "2024-12-26 08:45"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "留给整个指数调整的时间周期，最多还有2周。这个调整，不一定是下跌，而是去整理筹码，整理均线，整理趋势。",
+      "publish_time": "2024-12-28 10:06"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "牛市，都是三年起步。",
+      "publish_time": "2024-12-29 07:00"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "2025年，找到年线的低点之后，一定是一马平川的。1月上旬再熬一熬，曙光都在最黑的夜过去之后。",
+      "publish_time": "2024-12-31 18:03"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "2025年的牛市展望。以及全年的周期图谱，会陆续更新。",
+      "publish_time": "2025-01-01 08:44"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "但一月份最终，将会是一个红一月，下半个月一定会有起色。",
+      "publish_time": "2025-01-01 17:20"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "写给2025年的牛市。",
+      "publish_time": "2025-01-02 07:00"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "一月份，几个关键词。低点，分化，春节行情。",
+      "publish_time": "2025-01-02 09:36"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "一月份的低点，是今年的大低点。",
+      "publish_time": "2025-01-02 16:12"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "急跌结束，肯定是小碎步先走几天的缓涨态势。",
+      "publish_time": "2025-01-03 08:29"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "再多等几个交易日，曙光自然就来了，就可以开始买买买了。",
+      "publish_time": "2025-01-03 17:04"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "2025年，捂股是第一位。",
+      "publish_time": "2025-01-04 07:00"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "这里摆明了是一个黄金坑。",
+      "publish_time": "2025-01-04 10:23"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "2025年的A股，瑞雪兆丰年。",
+      "publish_time": "2025-01-05 07:00"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "未来2-3周，会有超级买点。",
+      "publish_time": "2025-01-05 20:31"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "而3200附近，有个小的反复很正常，但目标肯定还在更低的点位。",
+      "publish_time": "2025-01-06 16:08"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "耐心等待黄金坑吧，还有1-2周。",
+      "publish_time": "2025-01-07 09:28"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "市场离底不远，但总是差了点什么。或许，最后一跌又是跑不掉了，这周晃荡一礼拜，只是为最后一跌做个准备。",
+      "publish_time": "2025-01-09 16:15"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "最后一跌正式拉开序幕了。目标直指3087的缺口。时间周期大概5个交易日左右。",
+      "publish_time": "2025-01-10 16:44"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "2025，牛市的4000点。",
+      "publish_time": "2025-01-11 07:00"
+    },
+    {
+      "post_n": 13,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "先杀一轮，然后给个弱反弹，再杀一轮。第一轮杀权重，第二轮应该就是杀个股，而且是狂风暴雨。",
+      "publish_time": "2025-01-11 08:54"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "这次的目标在3100左右，看看能抄到什么程度吧。",
+      "publish_time": "2025-01-11 21:29"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "long",
+      "evidence": "不要去怀疑我们的牛市，否则，注定错过2025年的行情。",
+      "publish_time": "2025-01-15 09:08"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "判断整轮大调整在一月中旬结束，其实是基于周线的周期。",
+      "publish_time": "2025-01-16 09:08"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "市场修复的都差不多了以后，共振的行情自然就开启了。",
+      "publish_time": "2025-01-16 16:26"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "春节红包会有的，这个强调好多次了，让那些还在苦等3000点的，继续等待吧。",
+      "publish_time": "2025-01-18 10:23"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "只要每天写今年是大牛市，为什么是大牛市，就会获得很多流量。",
+      "publish_time": "2025-01-18 22:48"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "long",
+      "evidence": "下一个阶段，是行情的主升，而且是普涨形式的主升浪行情。持续周期会贯穿整个2025的上半年。",
+      "publish_time": "2025-01-19 10:51"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "如果非要下个结论，四个字，不丢筹码。",
+      "publish_time": "2025-01-20 12:37"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "上车的时间点，很迫近了，就看用什么样的姿势上车了。",
+      "publish_time": "2025-01-20 16:39"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "尽早将雷全部给扫了，那么后面呢？自然是一片坦荡。",
+      "publish_time": "2025-01-24 22:21"
+    },
+    {
+      "post_n": 8,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "市场今天的震荡，已经为节后的二次回踩提前铺垫了。",
+      "publish_time": "2025-01-27 16:15"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "市场刻意打压的，不仅有指数，还有情绪。",
+      "publish_time": "2025-02-06 00:40"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "连续两个交易日放量，多头在加速建仓。",
+      "publish_time": "2025-02-06 20:28"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "2025注定是中国资产被估值重构的一年。",
+      "publish_time": "2025-02-08 11:08"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "周五盘内的调整，其实是一个不错的迹象，这给下周初的行情助力了几分。",
+      "publish_time": "2025-02-09 11:42"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "Deepseek的热度不会短期内褪去，市场也会围绕DS开始大三浪行情。",
+      "publish_time": "2025-02-10 00:09"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "市场在突破3300之后，一定是先找高点，然后会有回踩，力度也不会太小。",
+      "publish_time": "2025-02-10 13:05"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "这个题材会成为核心，反反复复炒作，甚至贯穿整个大三浪的",
+      "publish_time": "2025-02-11 17:19"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "目前看来，这种震荡盘升的格局，躺平还是最优解。但也不是说一直躺平到天明，在市场明确短期高点出现后，也需要适度的落袋。只不过，这个大级别的高点，还离得很远，短期内只有很多错落的小高点，没有可操作性。",
+      "publish_time": "2025-02-13 13:12"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "最近，把市场的震荡，定义为减少看盘的“鸡肋”时间。之所以这么说，是市场的震荡会是一个电风扇行情，然后慢慢爬坡。之前有提过，大家最近也感受到了，很多“边角料”的板块在异动。白酒、医药、地产什么的，都是很多散户已经不关注的方向，时不时被资金扫货。指数原地踏步几天，是为了让主力把廉价筹码都横扫一遍。而所谓的主线，科技，在高位震荡震荡，是为了在震荡中把散户给横扫一遍。",
+      "publish_time": "2025-02-14 14:16"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "从大三浪的角度来看，一浪的高度应该在3400+，如果资金力度强，打到3500也没什么问题。如果打不到这个位置，周线的趋势修复就没法完成。三浪要做很多事情，不仅仅是确认3140那么简单，市场会有很多的阶段。利好不利好，只是一个表面现象。背后是资金开始自发的入场，而不是像2689那样，跟着政策入场。当年519的行情，在完成回踩之后，就走出了慢牛的格局，最终在1年多之后出了高点2245。这里的行情，和当年也不会差太多，市场会开始爬坡。",
+      "publish_time": "2025-02-15 13:49"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "三浪一的小高点临近，但不是大级别高点。整个三浪一的出过很多“疑似”高点，其实都是级别不够。因为市场维持震荡上行，所以每涨个50点，就会出一个小高点洗洗盘。新一个小高点在3400附近，时间周期就在下周中。",
+      "publish_time": "2025-02-16 09:31"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "市场今年是个大放水的年份，资本大量涌入A股、港股。但入场的第一步，是需要筹码，而且最好是廉价的筹码。所以，资金开启了扫货，从最核心的科技开始。一段时间过去后，科技的筹码已经不再廉价，那就开始做轮动。利用轮动的方式，去收集其他方向的廉价筹码。所以，看到今天光伏锂电动了，前几天医药动了，上周白酒和地产都动了。散户高位追科技，资金就低位扫货大蓝筹。散户捂着大蓝筹，资金就猛干科技。跷跷板的两头扫货，所以市场总体的调整幅度非常有限，承接力非常的强。",
+      "publish_time": "2025-02-18 15:16"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "两月份，反复强调的策略，就是那么三条。不丢筹码，不追高，只低吸。市场资金无非就是为了点筹码才这么折腾的。当筹码到位，A股像港股那样起飞，也就再正常不过了。不知不觉已经快2月下旬了，市场只能用一个稳字来形容。这1.4万亿的现金投放，对于整个市场的促进作用，还是非常积极的。这个阶段，其实容错率很高，亏钱的概率很低。",
+      "publish_time": "2025-02-19 17:01"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "这才3350，好多人就开始提示风险了。很难想象，到3500，到3800，到4000，会是什么样。还是会出现底部提示风险，到了顶部开始极力唱多的盛况？都说熊市没有底，牛市没有顶。就当下这点位而言，和顶这个词，本身就没什么关联吧。在大趋势的浪潮下，非要去做小周期的判断，其实是不太聪明的一种做法。",
+      "publish_time": "2025-02-20 09:47"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "牛市不是到处找题材，而是围绕核心主线，炒到泡沫飞溅。开年的王炸，其实就是给市场一颗定心丸而已。我们不仅要炒泡沫，我们也有炒泡沫的底气，有中国的硅谷，有自己的科技。在某些细分领域，我们齐头并进，在某些细分领域，我们遥遥领先。底气有了，信心自然就有了，配合资金放水，未来可期。",
+      "publish_time": "2025-02-21 09:36"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "从时间周期上来看，还有2-3周的时间，空间也还有不少。当下不是很急，持股待涨就行。",
+      "publish_time": "2025-02-22 12:05"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "一阶段的普涨，越来越近了。确实，要突破3400，光靠科技是不行的，需要齐心协力。",
+      "publish_time": "2025-02-27 00:17"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "资本自然会用脚投票，认为在当下，中国资产更具备性价比，中概股也就水涨船高。内生驱动力+外部的助攻，推动着资产升值的进程。",
+      "publish_time": "2025-03-06 09:44"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "市场在这个位置，3297-3388，已经盘整了19个交易日了（21个交易日/月）这种长周期的盘整，无非就是为了洗盘，而且周期越久，突破后的力度就越大。",
+      "publish_time": "2025-03-06 19:00"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "虽说今天的盘面并不是很好看，但也符合了变盘。毕竟指数最终拉出了一根中阳线，在外围大跌的情况下，有弱转强的趋势。",
+      "publish_time": "2025-03-11 19:24"
+    },
+    {
+      "post_n": 13,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "本质上就是A股短期的调整还没有结束的信号。",
+      "publish_time": "2025-03-13 14:40"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "三月的低点已经确认，接下来要准备迎接三月的高点了。",
+      "publish_time": "2025-03-14 16:55"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "有人问向上向下，大概率是向上的。",
+      "publish_time": "2025-03-19 00:17"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "短不看空，长不看空，阶段看震荡。",
+      "publish_time": "2025-03-21 22:16"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "静待五月之后的主升浪吧。",
+      "publish_time": "2025-03-23 13:04"
+    },
+    {
+      "post_n": 4,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "这轮市场冰点的量能，大概率是要破万亿的。否则，盘子很难彻底洗干净。",
+      "publish_time": "2025-03-29 11:01"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "A股的投资性价比，相比美股就高很多。至少我们知道，上面有人，他们会在3000点出手，给了我们一个下限。",
+      "publish_time": "2025-04-11 01:28"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "市场最终就会顺着这两条路往前走。绝对不会停下来的。",
+      "publish_time": "2025-04-13 11:06"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "告一段落，贸易战迎来喘息期，资本长牛继续。",
+      "publish_time": "2025-04-14 07:00"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "市场在四月份，不会脱离修复的主旋律，毕竟四月份比较敏感，还有年报和一季报。最快四月底，才能见分晓，可以展望五六月的行情高度，需要耐心。",
+      "publish_time": "2025-04-14 14:10"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "不论强弱，最终这种低位的缺口都是会回补的。",
+      "publish_time": "2025-04-15 11:10"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "而没有进入经济循环的货币，大概率会进入资产的循环，推升整个中国资产的价格。",
+      "publish_time": "2025-04-15 22:39"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "再1-2周吧，在4月底左右的时间节点，应该会有结果。",
+      "publish_time": "2025-04-16 13:00"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "在逻辑没有发生本质改变的情况下，耐心的等待趋势，慢慢自然会往上走的。",
+      "publish_time": "2025-04-17 13:43"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "缩量结束后，号角一吹，千军万马来相见了。",
+      "publish_time": "2025-04-18 11:09"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "窗口期还有最后两周，这两周如果没什么大的波澜，那么好日子就不远了。",
+      "publish_time": "2025-04-20 09:49"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "所以，市场在四月底的业绩渡劫之后，就会重新回到水牛的路线里。静待这几天过去，其实就可以了，五月份依旧会阳光灿烂。",
+      "publish_time": "2025-04-25 13:03"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "市场不会一直横在这里，总有转强或者转弱信号的。就比如上证指数，到3330附近，就是弱转强确认了，信号就出来了。",
+      "publish_time": "2025-04-25 16:26"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "相信券商的吹号，不会等太久了。",
+      "publish_time": "2025-04-27 20:51"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "当港股开始企稳，重拾升势之时，A股的春天也就不会远了。",
+      "publish_time": "2025-05-04 12:37"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "从4月底的表现来看，A股在5月拉胯的概率很低。",
+      "publish_time": "2025-05-05 11:35"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "整个大趋势，其实是不会变的。三浪的行情不会因为任何原因而迟到。2025，其实等的就是这一段行情。",
+      "publish_time": "2025-05-06 11:37"
+    },
+    {
+      "post_n": 6,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "等市场再次分歧转一致看多的时候，调整自然也就来了。",
+      "publish_time": "2025-05-06 18:18"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "牛市的底层是放水。五月份的剧本也基本定调了。",
+      "publish_time": "2025-05-07 11:04"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "也就意味着，空单对冲的高峰期已经过去了，市场很快就会迎来主升浪。",
+      "publish_time": "2025-05-10 15:57"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "但最有可能发生的，其实是先蹲后跳，既可以洗盘，也减轻起跳的负担。",
+      "publish_time": "2025-05-11 10:07"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "今年最好的时间窗口，就是567这三个月了。",
+      "publish_time": "2025-05-12 16:07"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "机会在五月的尾巴上。",
+      "publish_time": "2025-05-13 16:28"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "迎接三浪做准备。",
+      "publish_time": "2025-05-13 18:28"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "但是从整个3浪主升的结构去看，现在还是前半段，还很早。3674看似是个小目标，但真正的目标，应该在4000+，所以路还很长。",
+      "publish_time": "2025-05-15 09:42"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "上涨趋势完好，三浪进行中。",
+      "publish_time": "2025-05-18 01:58"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "五月底是一个很好的时间窗口，定性，定量，定价，都有很标准的信号。",
+      "publish_time": "2025-05-19 10:28"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "那么，整个市场还不在牛市里吗？",
+      "publish_time": "2025-05-19 16:53"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "五月底，会有一个不错的表现。",
+      "publish_time": "2025-05-20 14:21"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "欢乐的小碎步背后，市场正在酝酿大的变盘。",
+      "publish_time": "2025-05-21 13:57"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "市场确实给人感觉有点半死不活。因为筹码都被锁定了，浮筹很少，大家虽不愿意主动去托举，但也并没有要大举撤退的意思。这种表面上的弱平衡状态，其实是刻意为之。",
+      "publish_time": "2025-05-22 12:45"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "这个地方一旦突破，其实是力度非常大的，也就是我们说的3-3的主升浪开启。但是，按照惯例，起跳之前需要下蹲，这个过程总是有的。",
+      "publish_time": "2025-05-25 14:08"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "破万亿就是离牛市主升启动不远了。市场需要一个缩量的过程，去把浮筹洗的干干净净。",
+      "publish_time": "2025-05-26 16:17"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "三浪里，不犯大错，不错过，才是关键，而不是博弈一个缺口是不是要回补。让市场的风再吹一吹吧。快了快了，快开始了。",
+      "publish_time": "2025-05-29 14:34"
+    },
+    {
+      "post_n": 11,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "节后市场还要继续承压，尤其是情绪层面。",
+      "publish_time": "2025-06-02 11:50"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "这段时间，也就是最后的洗盘阶段，网络的舆论风向标，大概率会成为反向指标。",
+      "publish_time": "2025-06-03 11:20"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "高歌猛进的港股，将会成为A股的急先锋，引领着大方向。",
+      "publish_time": "2025-06-05 10:29"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "更重要的是给市场释放一个信号，要大干一场了。",
+      "publish_time": "2025-06-05 22:07"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "市场启动，应该是周线级别的连续阳线打底。六月第一周，第一根阳线已经出来了。",
+      "publish_time": "2025-06-07 10:16"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "一直以来的观点，市场在确认启动之前，会把盘子洗干净。那么现在，就是进入最后一个阶段的洗盘了。",
+      "publish_time": "2025-06-10 17:40"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "下半年大概率还要降息，不过到时候后知后觉，从银行里出来的钱，如果再进入股市，就不知道是什么价格了。",
+      "publish_time": "2025-06-11 13:51"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "最近A股没有太大的调整，那是因为没有利空消息，去给砸盘的理由。战争本身和我们关系并不大，但也能成为一个买单的理由。这找到利空了，当然要稍微猛烈的表示一下了。",
+      "publish_time": "2025-06-13 23:50"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "对了，好戏快开场了。",
+      "publish_time": "2025-06-16 15:32"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "现在没法确认最后的这个下降周期是否结束，但这个周期结束之后，就是反复提到的主升周期。",
+      "publish_time": "2025-06-17 17:27"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "一阳改三观，如果是二阳呢？如果还有三阳呢？",
+      "publish_time": "2025-06-24 21:00"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "long",
+      "evidence": "3439今天突破后，三浪主升浪，已经定性了。而且，三连阳的结构，也定型了未来的趋势。再往后，每一次调整，都是一个上车的机会了。",
+      "publish_time": "2025-06-25 17:59"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "3439过关后，就是3494和3509了，这两个位置是必然要突破的。等3509过关后，券商等工具人的工作基本就完成了，就要进入下一阶段了。",
+      "publish_time": "2025-06-27 13:15"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周，机会满满。但是，整个市场的上涨速率，会偏慢一点，不要太着急了。",
+      "publish_time": "2025-06-27 16:45"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "如果按照一浪的总高度空间来看，是要突破4000点的。",
+      "publish_time": "2025-06-28 09:39"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "未来一年，应该就是这轮牛市真正的主升阶段了。",
+      "publish_time": "2025-06-29 10:45"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "期待下半年吧，机会远比上半年更多。",
+      "publish_time": "2025-06-30 09:36"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "我们说行情进入三浪主升阶段。指的是市场会震荡上行，途中不会出现大规模的连续下跌。",
+      "publish_time": "2025-07-01 13:28"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "long",
+      "evidence": "3674必然突破。或者说，牛市的目标在4000+，压根不在3674。",
+      "publish_time": "2025-07-02 00:24"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "震荡上行的格局不变，刷新高度也是自然。市场在滞涨之后，往往会有小幅的调整，缩量之后，会进一步爬坡。",
+      "publish_time": "2025-07-03 23:20"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下半年凭什么能有行情？天时、地利、人和。首先，市场已经处于大三浪的后半段周期。7-10月都是一个非常黄金的周期。",
+      "publish_time": "2025-07-05 22:39"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "市场依旧会围绕趋势展开行情，该震荡震荡，该向上依旧会向上。七月的行情，其实并不复杂，眼下的震荡和拉扯，都是障眼法罢了。",
+      "publish_time": "2025-07-07 15:34"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "七月的行情，其实并不复杂，震荡上行，其他都是障眼法罢了。",
+      "publish_time": "2025-07-08 16:56"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "6-10月是主升周期，其实剧本早已写好，就等着慢慢公布了。",
+      "publish_time": "2025-07-09 13:14"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "6-10月是主升周期，其实剧本早已写好，就等着慢慢公布了。",
+      "publish_time": "2025-07-11 11:16"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "6-10月都是主升周期。还没看懂的，要反思一下了。",
+      "publish_time": "2025-07-11 20:59"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "牛市进入下半场，还有一年左右，好好珍惜难得的资本红利吧。",
+      "publish_time": "2025-07-12 16:13"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "623的节点后，洗盘已经彻底结束，牛市进入下半场的加速。三浪五浪，目标已经不是拿筹码，而是拉高出货了。",
+      "publish_time": "2025-07-14 10:13"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "9月份，我们大概率也会再一次同步降息。这轮三浪的周期，会在9-10月，进行最后的冲刺。借着93，降息，国庆的周期，完成今年大三浪的收尾。7月，还在大三浪的中期。3500，也只是上涨路上的一个小的阶段罢了。6月，中阳。7月，基本上也是中阳。8月或许有小幅度调整，但大概率依旧收阳。至于9月，10月，那就是真正的冲刺月了。",
+      "publish_time": "2025-07-16 23:34"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "这里是三浪，遍地黄金的时间点。这种不可多得的时间点，一定要偏积极一些。",
+      "publish_time": "2025-07-18 00:09"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "预计在7月底、8月初，指数会开始陆陆续续突破高点，创出牛市的新高。",
+      "publish_time": "2025-07-18 12:39"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "当3500站稳之后，可以开始放眼3600，甚至3700了。市场在一个完好的上涨趋势通道里，这一次走的很稳。",
+      "publish_time": "2025-07-19 13:15"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "而当下，大家都还有些惶恐和忐忑的时间段，就不会有大的调整。",
+      "publish_time": "2025-07-20 13:40"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "整个大三浪里，上升是主旋律。",
+      "publish_time": "2025-07-21 23:59"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "市场压根没想踩刹车，一鼓作气才是主流。",
+      "publish_time": "2025-07-22 14:41"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "安心持有，1-2周的加速还是有的。",
+      "publish_time": "2025-07-23 12:35"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "1.9万亿，市场总体还在安全的阈值里。3600，浅尝即止，并不着急的剑指3674。",
+      "publish_time": "2025-07-23 17:18"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "市场在3600也好，甚至3674，都不会有太大的阻力。牛市里，没有那么多所谓的阻力位，都是心理价位罢了。",
+      "publish_time": "2025-07-24 14:20"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "趋势的玩法将会变成这轮三浪的主流。",
+      "publish_time": "2025-07-25 12:55"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "这轮牛市里，科创板发挥至关重要的作用。",
+      "publish_time": "2025-07-25 16:06"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "也就是说，真正的上涨，将在三浪中段（623行情）开始，到五浪结束。",
+      "publish_time": "2025-07-26 18:29"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "大方向，大趋势，已经定了。",
+      "publish_time": "2025-07-27 15:13"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "时间上是完全足够去突破3674，甚至3700的。",
+      "publish_time": "2025-07-30 13:09"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "市场在三浪的大趋势里，在突破3674之前，怎么蹲都是对的。",
+      "publish_time": "2025-08-02 17:51"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "上行趋势，就应该有逢跌买入的思维方式。",
+      "publish_time": "2025-08-04 10:18"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "上证3636肯定是还要挑战，顺带连着3674一起。",
+      "publish_time": "2025-08-04 17:01"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "四平八稳。3674不是梦。3731，十年高点，也在目标范围内。不论是迎93，还是迎国庆，礼物都是要提前准备的。",
+      "publish_time": "2025-08-06 15:10"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "从浪形上看，3-3-5，是要突破3674的。现在主要看量能补多少，另外就是3731的高点要不要摸一下。",
+      "publish_time": "2025-08-06 23:30"
+    },
+    {
+      "post_n": 9,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "市场走到现在这个份上。应该要提示一下短期的风险。这里的风险，不是跌出来的，而是涨出来的。也就是，最近如果再出现放量上涨，普涨，各种涨，就是风险。",
+      "publish_time": "2025-08-08 10:17"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下周就要挑战3674了，内心多少有点小激动。虽说我们都知道，目前再往上涨，风险是大于机会的。但3674一旦突破，宣告市场彻底进入上升通道，再也没有异议了。",
+      "publish_time": "2025-08-09 10:53"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "1、下周冲击3674，概率极高。这就好比炮台搭好了，总是要放炮的。",
+      "publish_time": "2025-08-10 12:46"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "3-4，即便来了，也只是一个小的浪形。适度防守就行了，并不是什么大的调整周期。三浪作为容错率最高的一个周期，应该更多的往上去看。既然大的终点还没到，又何必纠结于一个小山头。",
+      "publish_time": "2025-08-11 10:24"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "放量温和，1000亿出头，说明资金还没着急忙慌的要出货。这是尾段的中期，还没有到末期，不要太紧张。",
+      "publish_time": "2025-08-11 16:19"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "623启动后，整个市场就开始一个上升趋势了。而之前，从3674-3040，其实都是一个围绕3300-3400的震荡趋势。我们只要顺应趋势就行了。至于趋势在3700休息，还是在4000休息，还是在4300休息，都只是个过程。最终，我们要找到的是大级别顶部在哪里。",
+      "publish_time": "2025-08-12 23:32"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "全市场都在唱多。给大家泼个冷水。3700+，会出现阶段性的高点，并且会持续一段时间。2万亿，不是什么机会，而是筹码松动后的风险。",
+      "publish_time": "2025-08-13 22:20"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "未来3-5个交易日，一定有老乡别走的剧情。爆量2.31万亿，一定是边拉边撤，而不是一股脑的单边撤退。",
+      "publish_time": "2025-08-14 16:44"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "那些鼓吹3700是牛市新起点的，不是傻，就是坏。2635-3700这一千点，主力不布局，到3700开始大举进场了？所以，当市场开始极力唱多，同时，还出现了爆量的时候，阶段性的需要休息了。",
+      "publish_time": "2025-08-16 10:41"
+    },
+    {
+      "post_n": 9,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "3040开启的这段行情，快到尾声了。要做一段时间的情绪修复。为什么3300，3400，3500，3600，3700。唯独到了3700要说是尾声，不是等到3800，3900？这个和点位没有关系，和市场情绪有关系。",
+      "publish_time": "2025-08-17 09:42"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "市值超越GDP，意味着泡沫，是容易引发系统性风险的。中美的底层不一样，核心是美元超发有全世界买单，人民币超发，大众买单。所以，保持理智，不要跟着市场去疯狂。最近的热度太高，降降温不是坏事。",
+      "publish_time": "2025-08-19 12:44"
+    },
+    {
+      "post_n": 6,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "风险其实周末就提示过了，短期就不再反复提了。3-3是接近尾声了，该好好想想怎么应对3-4了。",
+      "publish_time": "2025-08-19 20:48"
+    },
+    {
+      "post_n": 4,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "创业板第一个出结构性顶部信号了。其他板块和方向，暂时还没有。多补一根阴线，估计也都会有了。指数还在通往3800的路上，今天最高3787。",
+      "publish_time": "2025-08-21 16:18"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "从大的情绪去看，这里已经堪比924。924行情里，月线级别的超买信号，恰恰在3510（11月最终走到3509）结果就是一路修复情绪，筹码重新整理。",
+      "publish_time": "2025-08-24 09:25"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "按照市场维护情绪的节奏，应该还有1-2周。这是三浪直接一波流带走了，看来要重新对四季度的行情做个评估了。",
+      "publish_time": "2025-08-25 14:16"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "未来，指数的4000点，也不是散户理想中的4000点了。和过去告别吧。",
+      "publish_time": "2025-08-28 14:25"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "指数在等4000，大概率3900+就会刹车。散户在等普涨4000+，大概率不会出现。",
+      "publish_time": "2025-08-30 12:53"
+    },
+    {
+      "post_n": 4,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "9月中，市场就会开始降温，大家都需要休息。",
+      "publish_time": "2025-09-01 14:40"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "9月初的机会，稍纵即逝。那就迎接9月洗礼，耐心等待机会吧。",
+      "publish_time": "2025-09-03 13:23"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "3740以下，是真正3-4的调整修复阶段，100-200个点位吧，不会特别多。",
+      "publish_time": "2025-09-04 15:15"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "既然3.2万亿已经撤退，那么后面的核心就是缩量。缩量，代表筹码重新沉淀下来。缩量，代表又可以肆意的洗盘。",
+      "publish_time": "2025-09-05 14:39"
+    },
+    {
+      "post_n": 11,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "量是没有，因为要撤退了。价格是给了，不扔点肉，撒一把芝麻，谁来捡呢？",
+      "publish_time": "2025-09-08 11:43"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "牛市会继续，但不是现在。市场在一个推动浪结束之后，少则休整1-2个月，多则半年。又要开始过缩量的日子了。",
+      "publish_time": "2025-09-09 14:24"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "而降息周期催生牛市，是自然而然。只不过，我们的牛市更集中精力，把握未来，助力未来，也就自然形成了结构化的科技牛。",
+      "publish_time": "2025-09-14 11:13"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "这种局面不会持续很久，很快就有结果了。原本可以主动做修复，现在要拖到被动修复了。",
+      "publish_time": "2025-09-15 17:07"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "这大概就是慢牛真正的底气吧。",
+      "publish_time": "2025-09-29 12:54"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "接下来，就是四季度了。核心围绕中低位的补涨，包括资源、反内卷、低位科技等展开。同时，要给明年1季度的五浪开始做布局了。",
+      "publish_time": "2025-09-30 13:17"
+    },
+    {
+      "post_n": 13,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "港股暴涨的戏码，去年已经来过一次了。去年10月8日，恒生最终暴跌了9%，直到今年1月份才缓过来。当时满腔热情的投资者，哎。大量南向资金，在国庆休市期间，无法抛售港股。等10月9日开盘，如果有10-20%的溢价，肯定是拼命抛售。这种踩踏式的抛售，结果就是接盘的一地鸡毛。风险不在头两天，在节假日的尾巴上。",
+      "publish_time": "2025-10-02 16:20"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "股市跌肯定是要跌一下的。我们在等黑天鹅，因为没有黑天鹅，也找不到甩锅的理由。这下好了，锅又是老美背了。整顿一下市场，整顿一下融资盘，顺带又可以树立一下正面形象。",
+      "publish_time": "2025-10-11 23:39"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "资本市场的反馈，必然会比47要柔和很多。但是，柔和不等于盲目抄底。一个位置在3040，一个位置在3936，风险等级不一样。简单的结论：10-12月，可以参考4-6月。",
+      "publish_time": "2025-10-12 11:40"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "3850是个短期中枢吧。这个位置，哪有什么黄金坑。坑至少得挖个300点才能有。市场的缩量还没开始，就急着抄底。底不是抄出来的（某队抄底除外），底是磨出来的。高位的方向，还涨就是诱多。低位的方向，还跌就是诱空。先等缩量吧。",
+      "publish_time": "2025-10-13 12:33"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "如果上面控盘到位，指数能维持在3900。……这里，需要找个地量的点，把筹码沉淀下来。然后，市场就能进入下一个推动浪，也就是五浪了。",
+      "publish_time": "2025-10-15 15:13"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "缩量+修复，是短期的主旋律。没有大的风险，会有遍地“乱七八糟”的机会。",
+      "publish_time": "2025-10-21 09:59"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "A股深V，连续3天站稳3900，这是要发利好了。关键的政策方向，应该要落地了，就等着通报了。",
+      "publish_time": "2025-10-23 16:26"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "4000点，近在咫尺。……4000肯定不是终点，但4000肯定是重要的关口。……这次的4000，卡着点出现，大概率也是和贸易战“落幕”有关系。",
+      "publish_time": "2025-10-27 16:47"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "站稳4000。最近一段时间，只要少碰科技，基本都能赚点。资金已经回归低估值、高股息的方向做防御了。这些方向的散户比较少，大部分散户都在科技里站岗。科技不是没有机会，就是得稍微洗一洗。毕竟车上散户太多，负重超了，开起来就比较费劲了。反而是超跌的，之前提的白酒、医药这些。周期的齿轮慢慢开始转动了，散户都认为没机会了，自然机会就靠近了。",
+      "publish_time": "2025-11-10 16:54"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "别小看4000点这个收费站。来来回回收很多次，一点都不夸张。站上4000，就是集体看多，跌破4000，又是集体看空。一边是拼命喊机会，一边是拼命喊风险，来回折腾。忘记4000点，跟着市场走。资金既然往低位的红利、大消费这些避险的方向走，那就跟着走。不要去站岗科技了，这话其实说了有一段时间了。",
+      "publish_time": "2025-11-11 12:06"
+    },
+    {
+      "post_n": 8,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "无共振的割裂局面，预计还将维持一段时间，但不会太久了。因为大部分板块都走到了十字路口。来回收费的模式，会慢慢结束，因为渐渐就无费可收。指数出现同频共振的阳线，才能算是开启五浪。而这个地方，是迟迟不结束的三浪，以及已经开始的四浪。就最近两个月的玩法，还是多看少动，静观其变为宜。",
+      "publish_time": "2025-11-12 09:16"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "2025剩下的1个多月，是以收官为主了。既然机构都躺平了，那就跟着机构躺平吧，别想太多了，总不能跟着游资去发疯吧。",
+      "publish_time": "2025-11-18 14:19"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "这种局面，直接打破了之前大票先调整，小票唱戏的风格。而且，这种风格一旦切换，短期内是不会再转回去了。说白了，游资吃饭行情也结束了。这里只有一条路，就是缩量。1.5万亿在招手了。仓位还很高的，先避一避吧。",
+      "publish_time": "2025-11-19 11:59"
+    },
+    {
+      "post_n": 13,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "好消息是，已经跌了5天，继续下跌的概率降低了。坏消息是，市场还在缩量，玩家们不断持续退场了。4000点的收费站是远离了，但是3900的收费站很快要开了。",
+      "publish_time": "2025-11-20 17:03"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "只能说牛市必然还在，因为2635-4034，时间只走了22个月，还没有到尽头。至少还有小半年的光景，去做个收尾。",
+      "publish_time": "2025-11-23 10:17"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "12月份，可以重点开仓布局了。",
+      "publish_time": "2025-11-24 17:27"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "未来的1个月时间，尤其是12月，应该是一个新周期的布局时间。定义为冬播阶段，为了明年的春收行情。",
+      "publish_time": "2025-11-25 17:04"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "市场大的趋势向上不变，牛市肯定还没结束。",
+      "publish_time": "2025-12-12 12:44"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "这轮牛市，大金融底座，是搭的真够稳的，所以指数上，不会有大的风险。慢牛格局，也就能稳扎稳打。",
+      "publish_time": "2025-12-14 16:16"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "放心，再有1-2周，A股也就清晰了。",
+      "publish_time": "2025-12-15 14:58"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "接下来一段时间，又是把耳朵关上，然后专心布局的时间了。不要在意别人怎么说，在意当下该怎么做。如何把握市场在接下来一段时间的调整里，好的上车机会。",
+      "publish_time": "2025-12-17 09:52"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "既然告诉大家，这里是4浪的中后期，安心逢低布局就好，追涨肯定是不可取的。既要坚决最多，又要理性做多，不要受外界的干扰和影响。",
+      "publish_time": "2025-12-18 00:38"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "红艳艳的维稳，虽说量不大。但一定是稳的，这种日子是不能趴的。市场回到3900+，是一种态度。市场的局势越来越明朗了。",
+      "publish_time": "2025-12-19 12:37"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "主升浪开启之前，肯定还有一段时间的消耗，去把筹码重新堆砌起来。需要一些时间，毕竟年末的资金面有些紧张。布局可以开始了，积极中带一点谨慎，但总体一定要乐观。",
+      "publish_time": "2025-12-20 12:39"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "这里市场已经是4转5的过程中了，至少4浪已经到后半段了。3936等待突破，重回4000点也只是时间问题。",
+      "publish_time": "2025-12-22 14:24"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "这个地方，跳脱出来看，就四个字。逢低布局。再往稍微远一点说，就是布局五浪，布局2026。",
+      "publish_time": "2025-12-23 14:04"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "不要去怀疑五浪是不是来了，他肯定是来了。",
+      "publish_time": "2025-12-26 18:06"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "五浪是牛市收尾的高潮。",
+      "publish_time": "2025-12-28 15:14"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "不管他们怎么玩，最终，市场都会交出五浪答卷的。把握好五浪，也就是把握好牛市后段最好的机会了。",
+      "publish_time": "2025-12-29 11:24"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "有资金托底，才意味着未来可期。如果上面都不管大A了，那何来牛市呢？",
+      "publish_time": "2025-12-29 16:59"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "这些方向，一旦有回踩，自然会有大批量的资金蜂拥而至，继续推升五浪高度。",
+      "publish_time": "2025-12-30 10:53"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "春天的行情，是完全可以期待的。",
+      "publish_time": "2025-12-31 14:16"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "能剧透的，是大A在2026，至少还有500个点的涨幅。",
+      "publish_time": "2026-01-01 11:58"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "大A离4000一步之遥，早晚站回4000点。预估节后先回4000看一看。然后完成一轮回踩，再开始五浪的新征程。",
+      "publish_time": "2026-01-02 15:38"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "对于小散而言，新年的愿望很朴实。有个开门红，最好能上4000。不过，开年的头上几天，并没有那么重要。因为市场还没有完成五浪初期的构建，距离启动主升还需要一段时间。最快，一月下旬会迎来五浪的启动。市场在1月中上旬，大概率还是分化的行情，去处理很多分歧。还有部分机构资金，要完成主线板块的布局。然后才能确认行情的启动。整个市场的脉络会越来越清晰，机会也遍地都是。五浪虽是一个出货浪，但不会影响五浪的赚钱效应，机会很多，积极布局。",
+      "publish_time": "2026-01-05 10:36"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "13连阳，应该还有14，有没有15就不好说了。市场用一波连阳+创新高，宣布回归，五浪开启。五浪的周期不会很长，但会贯穿整个一季度。如果从3815开始算，那600+个点位的空间肯定是有的。",
+      "publish_time": "2026-01-06 13:57"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "4100突破后，4200就是下一个目标。但是到4200的路上，颠簸肯定不少。毕竟，市场很难一直复制16连阳，市场情绪需要一个发泄窗口。预计4100-4200的路，会以震荡上行来完成。这个过程的周期，可能会稍微拉长一些，有个2-3周比较合理。",
+      "publish_time": "2026-01-10 15:15"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "现在的情绪，和924差不多。唯一不同的是，924-10月8日，市场涨了1000点。这次的16连阳，比较克制，涨了300点（银保券比较克制）这给五浪还预留了一半的空间。但情绪降温，是必然会发生的。因为短线资金会不断的有分歧，开始兑现，然后再从分歧变成统一。情绪降温并不影响趋势，就是会增加颠簸而已。",
+      "publish_time": "2026-01-11 12:33"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "五浪空间是600+，3815起步就是4415+，具体加多少不好说，得看冲顶的情绪了。所以，4100空间也就走了一半，不用恐高。主升浪往往在启动初期和冲顶时期。16连阳过后，市场的上行结构会复杂一些，震荡会增加。但是总体趋势，不会有变化，爬坡式上行。这个阶段，大调整不会有，就是那种100-200点的，并不会出现。",
+      "publish_time": "2026-01-12 09:41"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "休整一天，就要冲击4200了。这轮行情的效率和速度，实在是令人叹服。与其关注什么时候踩刹车，不如想想，车该往哪里开，能开多久。情绪首阴后，对应的时间周期，一般在10-20天。也就是这里的行情，震荡上行至少要维持到月底。中间如果刹车踩的稳，没有超速，可以持续到春节前。至于目标位，4200肯定是刹不住，应该在4300-4400区间。关键在于，这里还不是五浪终点，也就是3月份，休整后还会有进一步上攻。今年的一季度，这是要把全市场热情打满，迎接牛市尾声的高潮了。享受五浪吧。",
+      "publish_time": "2026-01-14 12:58"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "趋势还是好好的，但赚钱效应变成了亏钱效应。",
+      "publish_time": "2026-01-15 12:27"
+    },
+    {
+      "post_n": 13,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "他们正在大量的出清手里的筹码，说明牛市已经进入尾巴段。",
+      "publish_time": "2026-01-16 12:11"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "调整是好事，4100左右踩个刹车，总比到4300再踩，杀伤力小。",
+      "publish_time": "2026-01-19 12:16"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "其实，五浪的趋势没有什么大的问题。",
+      "publish_time": "2026-01-20 12:37"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "市场的趋势始终保持完好。4100-4200-4300，市场又该去挑战下一个新高度了。",
+      "publish_time": "2026-01-23 09:39"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "在趋势完好的时候，跟随趋势。",
+      "publish_time": "2026-01-25 18:21"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "趋势没问题，但是风格轮动却暗流涌动。",
+      "publish_time": "2026-01-27 10:03"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "突破4190只是时间问题。",
+      "publish_time": "2026-01-28 11:19"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "总体的五浪趋势还在，20日线还是守住了。所以，大方向暂时还没有变化，市场的上升周期还在。",
+      "publish_time": "2026-01-31 01:09"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "难道不是冰点将至，转折到了？",
+      "publish_time": "2026-02-02 22:07"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "现在说牛市还没结束，市场正常震荡，还要重回升势。",
+      "publish_time": "2026-02-05 12:24"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "2月初的回踩，基本完毕。下周初再确认一下，就可以开始重回升势了。五浪继续。",
+      "publish_time": "2026-02-06 12:51"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "节前9连阳，4150可期。但节前赚钱效应不会很好。反倒是板块轮动的收割效应会很强。真正会爆发的板块，应该在节前蛰伏，反复洗盘。而那些节前上蹿下跳的，在节后反而机会更少。毕竟，过节效应不容忽视。市场走着维稳的脚步。可能节后还有个下蹲，然后就差不多能起跳了。这里最后的30-33个交易日，才是5浪的核心。",
+      "publish_time": "2026-02-11 12:37"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "今年最好的行情，会在春节后上演。马年第一炮，就等着节后来放吧。目标剑指4400+将是五浪最精华的一段。",
+      "publish_time": "2026-02-13 11:18"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "更何况，怎么看今年的一季度都是一个非常不错的春耕行情。",
+      "publish_time": "2026-02-15 11:04"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "开门红的概率挺高，但红指数不是最重要的，抓重点领域才是关键。",
+      "publish_time": "2026-02-24 00:36"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "这里是五浪的后半段，或者说临近启动点了。4117得踩在脚下，然后才能看4200-4300-4400。",
+      "publish_time": "2026-02-24 12:44"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "4190，预计很快会突破的，就这几天了。市场2月的洗盘，其实已经差不多了。",
+      "publish_time": "2026-02-25 13:52"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "3月初的鏖战大概率是少不了了。大的时间周期目前没有变化，是否会延迟，需要再多观察几天盘面才有结论。不是盘面走坏，而是缺量，缺点意思。2.5万亿，其中1.5万亿是量化，实际的成交量还是少。按照这个市场当下的体量，3万亿+，才有可能正式启动行情。",
+      "publish_time": "2026-02-27 13:30"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "全A已经创新高了。所以4190很快就会突破。",
+      "publish_time": "2026-02-28 11:22"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "市场还在五浪进程里。而且，很快就要进入后半段的高潮期了。",
+      "publish_time": "2026-03-01 12:26"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "整个三月份，是一个主升浪剧本。",
+      "publish_time": "2026-03-02 14:21"
+    },
+    {
+      "post_n": 11,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "先等这个周期性调整的低点出现，估计在4000附近。",
+      "publish_time": "2026-03-04 12:29"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "至少在今年上半年，还是看牛尾行情。虽说这个尾巴很难啃，高度也不会很高。但是从周期角度而言，至少是向上的。",
+      "publish_time": "2026-03-06 13:36"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "2026年，至少上半年，天时地利，还是站在A股这边的。",
+      "publish_time": "2026-03-09 00:43"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "市场在一个中周期的调整阶段，是周线级别的，类四浪。但整体上，还是在牛市的上升周期，月线级别的，并不是下跌周期。",
+      "publish_time": "2026-03-10 11:50"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "所以，2026年A股的走向，至少大的结构和方向上，不会受到地缘政治的过大影响。至于一些情绪带来的波动，就让市场自己去消化吧。",
+      "publish_time": "2026-03-14 14:18"
+    },
+    {
+      "post_n": 8,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "这里会杀出一个普跌的冰点，然后才会出现市场阶段性的低点。静待吧。不会很久了。就这几天了。",
+      "publish_time": "2026-03-17 21:19"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "最近，准备开始唱多了。全市场都开始集体唱空，说要跌到3700什么的。这是典型的开始吓唬市场，寻找割肉盘了。",
+      "publish_time": "2026-03-18 11:28"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "创业板已经创新高了。意味着已经有先头资金入场了。上证3984，短期新低。创业板3426，牛市新高。市场不是割裂，而是缺乏共振。这里的共振，要等4月份以后了。这里有个明显的小大切。也就是小盘股的资金，正在加速涌入大盘股的方向。二季度的行情，可能是一个偏向于指数的行情，而不是普涨。",
+      "publish_time": "2026-03-20 14:33"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "周末如果都是恐慌，那么周一顺势破3900，也只是一哆嗦的问题。也就是这里的低点，其实并不像很多人那样可以预测。而是短期情绪，出现一个恐慌性的共振。一场大逃杀正在酝酿。然后，就是遍地尸体，又可以吃的饱饱了。子弹已经上膛，就等着周一去翻尸体了。",
+      "publish_time": "2026-03-21 10:09"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "情绪信号，2个交易日。资金信号，1个交易日。超跌信号，还差1个交易日。周末过后，周一应该就是这个情绪发泄的冰点了。头脑清醒的猎手，已经匍匐准备了。",
+      "publish_time": "2026-03-21 18:39"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "市场连续杀冰点的情况，并不常见，一年一般就1-2次。去年的1124的3+1+3，7天冷却，这次是5+1+2，已经8天了。这里的小三冰，大二冰，马上就要出现了。又该去验证一下那句，在别人恐慌时贪婪了。",
+      "publish_time": "2026-03-22 12:17"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "好吧，先看反弹，再看二季度了。",
+      "publish_time": "2026-03-23 22:03"
+    },
+    {
+      "post_n": 13,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "这个季度改画了根阴线，无非是给二季度多续命了3个月罢了。",
+      "publish_time": "2026-03-24 14:39"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "反弹到3900+，是必然。",
+      "publish_time": "2026-03-25 13:18"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "未来一段时间，都会围绕3900的中轴，来回拉扯。",
+      "publish_time": "2026-03-26 17:45"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "这个地方，市场真正走出来，需要的是平开后的中阳线。",
+      "publish_time": "2026-04-01 15:19"
+    },
+    {
+      "post_n": 13,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "节前节后，依旧会出现3000-4000+下跌的绿地种植园。一部分走熊，才刚刚开始。",
+      "publish_time": "2026-04-03 12:36"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "市场在3900以下，无论怎么震荡，就当洗盘处理就行了。",
+      "publish_time": "2026-04-06 10:59"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "市场在这里，小概率直接走突破。大概率在完成二次回踩之后，形成阶段性的底部。无论是什么样的方式，市场3-4月份的调整周期，都离结束不远了。",
+      "publish_time": "2026-04-07 23:23"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "市场的周期，要重新确认回到上升趋势，还需要1-2周的时间。",
+      "publish_time": "2026-04-09 12:43"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "二季度的行情快开始咯。坐稳扶好。",
+      "publish_time": "2026-04-10 13:57"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "今年还会有很长时间，市场会回到4000+，但不是所有股票都能回到4000+了。",
+      "publish_time": "2026-04-12 16:31"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "市场重新站稳4000，意味着3794彻底脱坑了。至少3900以下，短期是不太可能看到了。",
+      "publish_time": "2026-04-14 15:41"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "不管能不能突破4197，市场肯定还要去挑战一下。",
+      "publish_time": "2026-04-22 10:11"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "节前还是要冲击4100，5月要冲击4197。",
+      "publish_time": "2026-04-28 10:02"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "5-6月应该是今年最后两个好月了，资金自然不会错过，一定会抓紧布局。",
+      "publish_time": "2026-04-29 11:39"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大盘4100，上不去，下不来，蓄势中，节后挑战4197。",
+      "publish_time": "2026-04-30 13:19"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "最后，美股和A股，全球的股市，都在“布大局”，下半年会“爆发”。",
+      "publish_time": "2026-05-02 11:25"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "预计5月份，整个科创依旧会延续强势，领跑A股。",
+      "publish_time": "2026-05-06 00:18"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "5月不用担心，左侧都是安全的。但是5-6月，该考虑寻找高点落袋了。赚钱离场，对于2026来说，都是对的。",
+      "publish_time": "2026-05-06 11:19"
+    },
+    {
+      "post_n": 9,
+      "direction": "bearish",
+      "strength": "strong",
+      "time_horizon": "medium",
+      "evidence": "3万亿=市场进入出货期。24年10月8日，3674大屠杀，成交量3.48万亿。25年8月25日，3883短线见顶，成交量3.18万亿。25年8月27日，上证大跌1.76%，成交量3.2万亿。25年9月18日，上证大跌1.15%，成交量3.17万亿。26年1月9日-1月14日，上证4083狂奔到4190，阶段性顶部，成交量3.99万亿。26年5月6日，成交量3.25万亿。当主力在暗度陈仓的时候，你还在进货，还在抢货吗？醒醒吧。",
+      "publish_time": "2026-05-06 23:59"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "5月份一定有一次挑战4197的时间。但是过不过4197，一半一半吧，象征意义大于实际意义。过了4197，大家又可以高喊牛市，入场接盘了。",
+      "publish_time": "2026-05-07 13:27"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "市场到了4180这个位置，如果还是单纯拉指数，那要突破4197难度太大。激活游资，量化，能够把一些题材热度炒起来，形成合力共振，突破的概率会更高一些。",
+      "publish_time": "2026-05-08 11:43"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "市场还有1-2个月的时间，去完成结构性封顶。时间宝贵。有预感，最后的狂欢即将开启。一旦大金融开始发力，托着市场去做突破。科技的火再烧一烧，那么市场的人声鼎沸自然就来了。",
+      "publish_time": "2026-05-09 13:40"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "当下，证券还没动。说明，行情还没有到真正的尾声。当你发现，证券开始补涨了，市场就是人为制造高潮了。那么，距离最后的高点，自然也就不会太远了。",
+      "publish_time": "2026-05-09 23:06"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "上证冲关4197成功。科创50突破1726，创历史新高。A股见证历史，也欢迎川普访华。全市场进入沸腾期，两融节节新高，赌徒加速入场。这才是牛市临近收尾，该有的样子。",
+      "publish_time": "2026-05-11 13:13"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "耐心等待高潮落幕，自然会看到谁在裸泳，谁又赚的盆满钵满。",
+      "publish_time": "2026-05-11 14:40"
+    },
+    {
+      "post_n": 12,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "注意，券商，工具人，要冲锋了。或者说，要开启补涨了，要开始暖场了。",
+      "publish_time": "2026-05-12 10:53"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "上证4400点，还差160多个点位。快了快了，都临近了。",
+      "publish_time": "2026-05-13 15:17"
+    },
+    {
+      "post_n": 6,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "行情确实没走完。但是行情不是这么玩的，不是这么一路高歌，也不可能没有调整。",
+      "publish_time": "2026-05-14 10:44"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "二季度这段推升浪，总体还在安全可控范围内。毕竟周期上的时间，还绰绰有余。",
+      "publish_time": "2026-05-14 18:14"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "牛市临近尾声。",
+      "publish_time": "2026-05-15 13:48"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周肯定还有探底动作，但大概率下半周就会企稳。月线级别缺口已经回补，市场隐患不大，只是需要一些时间。",
+      "publish_time": "2026-05-16 02:56"
+    },
+    {
+      "post_n": 1,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "证券开始吹号了。后半段要起航了。半导体要迎来巨震了，波动幅度会明显加大，但并不是大的调整。牛市，总需要一个高潮尾声。暂定1个月左右的时间，到下个月的端午节前后。",
+      "publish_time": "2026-05-21 10:42"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "说实话，我倒是不这么担忧，并且认为市场有情绪修复。",
+      "publish_time": "2026-05-22 09:34"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "1、指数还会缓慢爬坡。",
+      "publish_time": "2026-05-25 11:36"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明后应该有修复性的反弹了。",
+      "publish_time": "2026-05-27 16:06"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "4-5-6是一个上升周期。只不过，5月中旬之前，是主升。5月中旬之后，是收尾，也就是一直说的第二阶段。第一个阶段是发红包。第二阶段就是套人。",
+      "publish_time": "2026-05-28 15:02"
+    },
+    {
+      "post_n": 11,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "5月要是收阴，后面日子更难过。",
+      "publish_time": "2026-05-29 10:56"
+    },
+    {
+      "post_n": 8,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "如果还要杀，下一步就是3900了。",
+      "publish_time": "2026-05-30 01:04"
+    },
+    {
+      "post_n": 6,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "市场还有3-6个月，基于融资为底层逻辑的窗口期。也可以把这3-6个，称之为盘顶期。",
+      "publish_time": "2026-05-31 15:35"
+    },
+    {
+      "post_n": 4,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "市场在4000附近，就没必要特别悲观了。虽说，赚钱效应会很差，但大的风险也没有。处于一种，上去很难，下去也很难的局面。",
+      "publish_time": "2026-06-01 00:31"
+    },
+    {
+      "post_n": 6,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "市值的红线，如果卡死在140万亿。那么对应的市场上限4300点，就被牢牢限制住了。",
+      "publish_time": "2026-06-04 15:00"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "周一周二，又是特别大的考验。6月8号9号，估摸着情况差不太多。到时候又是一片恐慌，尸横遍野的情况。",
+      "publish_time": "2026-06-06 12:14"
+    },
+    {
+      "post_n": 7,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "短期大的风险已经过去了。就是整体交易会转向冷清一点，得往3季度去看了。",
+      "publish_time": "2026-06-09 11:00"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "这盘面，短期很难有大的变化。要么继续缩量，要么大跌收割一票，然后才会有转机。",
+      "publish_time": "2026-06-10 11:12"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "市场不会轻易下4000，一旦下4000，就不会轻易罢休。必然要在4000点下方，能够拿到足够多的筹码。",
+      "publish_time": "2026-06-10 11:34"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "缺钱的问题不解决，市场很难有大的起色。",
+      "publish_time": "2026-06-10 16:09"
+    },
+    {
+      "post_n": 12,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "如果每天都是20%上涨，80%下跌。那不叫牛市，叫熊市，甚至比熊市更惨。",
+      "publish_time": "2026-06-11 11:25"
+    },
+    {
+      "post_n": 11,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "这里是阶段性调整的末期，不会太久了。坏消息是。这里只有反弹，没有趋势了，不会创新高了。",
+      "publish_time": "2026-06-11 18:39"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "三季度的行情，大概会在6月下旬开始。这不是什么大行情，但是会有这么一个周期。",
+      "publish_time": "2026-06-14 14:45"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "这里一旦站稳4080，可以定义为新的小周期开始。是一个上升周期，而且是横跨到三季度的行情。",
+      "publish_time": "2026-06-15 15:46"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "市场至少未来3-4周，会相对平稳，在上升周期里。",
+      "publish_time": "2026-06-17 20:12"
+    },
+    {
+      "post_n": 9,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "大家都认为，4258不是顶，都认为有4500，有5000。都认为，就是问题所在。那么真的到4500了，谁来接力呢？到5000了，谁来护驾呢？顶部总是静悄悄，就像是底部一样。",
+      "publish_time": "2026-06-21 11:03"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "不知道这轮券商能把大盘的高度带到多少，能否突破4258。",
+      "publish_time": "2026-06-23 10:02"
+    },
+    {
+      "post_n": 14,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "大金融，就是工具人。千万别指望大金融带着指数走什么主升浪。那些大金融启动，涨到4500,5000点的言论，千万别信。",
+      "publish_time": "2026-06-24 14:57"
+    },
+    {
+      "post_n": 8,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "今年，4150-4250这个区间，是集中砸盘，而且是放量砸盘的。基本上，市场只要走到这个区间，必然是优先砸盘，控制风险的。",
+      "publish_time": "2026-06-26 12:16"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "这个地方，用趋势的角度去看市场，是没有意义的。因为上趋势和下趋势的交易行为太频繁了。或者说，这里没有趋势，上证就是摆明了要用震荡来延续时间线。",
+      "publish_time": "2026-06-27 10:30"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "老登下周能有修复了。修复是情绪上的，也不是空间上的。3000-4000+上涨的概率不大，但是涨跌互现，2000-3000+上涨是可以的。",
+      "publish_time": "2026-06-28 10:30"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "这里要突破这么大，这么密集的屏障。要么就是猛蹲，然后起跳。要么就是确认顶部的有效性了。",
+      "publish_time": "2026-06-28 10:35"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "预计在未来2年，市场回到一个相对较低水平（比如沪深300回到4000点以内），还是会回来托市的。",
+      "publish_time": "2026-06-29 08:39"
+    },
+    {
+      "post_n": 8,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "上证虽说突破4258难度不小，但好歹也该演绎一下，至少再去摸一摸4200+ 7月的上旬，把火点起来。",
+      "publish_time": "2026-07-01 09:05"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "7月开始，大量游资会配合市场热度，完成新一轮的市场加热，护航几家IPO能顺利落地。所以，7月能看到每天批量的涨停，市场重燃生机。至于指数，大概率横向震荡，确保能维持在一个相对合理的位置。",
+      "publish_time": "2026-07-02 10:10"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "市场肯定会迎来指数上的修复。尽可能的保卫4000点，是一个底线，因为任务很重。",
+      "publish_time": "2026-07-03 08:45"
+    },
+    {
+      "post_n": 0,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "预估，4050还是市场的中轴。上下，100-150都是点位，也就是3900-4200，是三季度的大致区间。",
+      "publish_time": "2026-07-03 20:13"
+    },
+    {
+      "post_n": 5,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "这盘面，大盘回到4000以下，再交换一部分筹码，再组织进攻会比较好。否则，越走越难看。",
+      "publish_time": "2026-07-07 11:13"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "回到4000以下，意味着安全。站在4000以上，意味着风险。安全一些，有时候并不是坏事。总想着在风险里博弈，意义不大，价值更不多。",
+      "publish_time": "2026-07-07 11:53"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "上证3900附近会有反弹的，会有企稳的。",
+      "publish_time": "2026-07-09 13:49"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "牛还在吗？牛一直在。这轮牛市的几个低点，2635，2689，3040，这几个点不跌破，牛就还在。",
+      "publish_time": "2026-07-11 14:00"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "3900下方，当下是相对安全的，不宜恐慌性杀跌了。",
+      "publish_time": "2026-07-14 12:18"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "最近几天，3900以下，逢低布局。是全面积极做多，不分老登小登。别人恐惧的时候，该有点贪婪之心了。",
+      "publish_time": "2026-07-14 13:06"
+    },
+    {
+      "post_n": 13,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "大科技要抽血，全A估计也要抽血。既然中签的要发钱，给红包，那就铁定要有人买单。",
+      "publish_time": "2026-07-16 10:29"
+    },
+    {
+      "post_n": 11,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "还是那句话，3900以下，积极看多做多。",
+      "publish_time": "2026-07-16 13:17"
+    },
+    {
+      "post_n": 10,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "然后大家奏乐，迎接大会，做个小反弹，2-3天。",
+      "publish_time": "2026-07-17 10:54"
+    },
+    {
+      "post_n": 9,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "按照这个情况，37xx是肯定得见了。",
+      "publish_time": "2026-07-17 13:05"
+    },
+    {
+      "post_n": 5,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "这里的下跌动能，已经要进入衰竭区了。现在就等巨无霸上市，市场把短期最后的风险释放完毕。",
+      "publish_time": "2026-07-19 10:07"
+    },
+    {
+      "post_n": 4,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "上4000的概率，10%。上4100的概率，1%。其实非常残酷，因为4000+的抛压，有点太大了。",
+      "publish_time": "2026-07-19 22:11"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "反弹有，弱修复，不要抱太大的希望，边走边看。",
+      "publish_time": "2026-07-20 10:43"
+    },
+    {
+      "post_n": 14,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "总之，短期回暖是早晚的，8月份应该还不错。",
+      "publish_time": "2026-07-20 16:07"
+    },
+    {
+      "post_n": 11,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "又要回到成交量相对比较低，偏向于震荡的行情阶段了。",
+      "publish_time": "2026-07-25 13:15"
+    },
+    {
+      "post_n": 9,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "3950，如果成了一道大坎，那么市场的向上抛压，就会非常大。",
+      "publish_time": "2026-07-26 10:17"
+    },
+    {
+      "post_n": 4,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "等这批中军上市之后，A股的“改造”计划基本上就完成了。也就是这轮牛市从头至尾的任务，圆满落幕了。",
+      "publish_time": "2026-07-27 17:53"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "这里3741只有低点，没有底部结构，即便能站住，也只是阶段性的。",
+      "publish_time": "2026-07-28 11:48"
+    },
+    {
+      "post_n": 1,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "未来2-3周，市场会在3741-3940这个200点的区间里，窄幅震荡。",
+      "publish_time": "2026-07-28 12:30"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "估摸着1900都很难再见到了。",
+      "publish_time": "2026-07-28 17:28"
+    },
+    {
+      "post_n": 13,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "反弹，越来越近了。只可惜，当下能看到的反弹，方向上也是一片模糊。",
+      "publish_time": "2026-07-29 10:00"
+    },
+    {
+      "post_n": 10,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "情绪修复+弱反弹。会贯穿未来几周。你指着他爹，他有妈，不会爹。你指着他涨，那对不起，给一颗糖，然后又扇一巴掌。",
+      "publish_time": "2026-07-30 10:30"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "unspecified",
+      "evidence": "3800是保住了。但保住点位的意义，只是保住了面子。并没有保住大家兜里的钱。",
+      "publish_time": "2026-07-30 16:36"
+    },
+    {
+      "post_n": 3,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "这里没法准确判断这轮A浪持续多久，预估是7-8个月。真实结束应该到2027年了，不会在2026年。当下只是A1段，也就是刚起个头。",
+      "publish_time": "2026-07-31 16:22"
+    },
+    {
+      "post_n": 2,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "当主线都已经出现山头了，实在难以想象，还有哪个方向的筹码结构，可以支撑市场开启一轮向上的主升浪。",
+      "publish_time": "2026-08-01 09:14"
+    },
+    {
+      "post_n": 9,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "反弹还没有结束，就是比较弱而已。要上3900，难度不小，但好歹周期是站在反弹里的。",
+      "publish_time": "2026-08-03 11:47"
+    },
+    {
+      "post_n": 7,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "但是从中期角度去看，3800是韧性的起点，也就是韧性的终点。",
+      "publish_time": "2026-08-03 15:17"
+    },
+    {
+      "post_n": 6,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "反弹还要继续，时间还有2周才走完。",
+      "publish_time": "2026-08-04 10:43"
+    },
+    {
+      "post_n": 3,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "目前看，反弹周期的时间还有，短期保持乐观。",
+      "publish_time": "2026-08-05 10:48"
+    },
+    {
+      "post_n": 2,
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "市场没到3900之前，积极看反弹。市场突破3900以后，谨慎看震荡。8月中旬之前，耐心等上涨周期，8月中旬之后，边走边看市场的变化。",
+      "publish_time": "2026-08-05 14:28"
+    },
+    {
+      "post_n": 0,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "目前是优先按中期趋势去看，毕竟反弹不带来趋势，趋势优先。",
+      "publish_time": "2026-08-06 10:46"
+    },
+    {
+      "post_n": 6,
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "今年剩下的4-5个月，市场以震荡为主。很多人期盼的是市场再大幅度走延伸，突破4258，去4500。希望会落空。很多人期盼着市场昨早日杀完A浪，直接看到3500以下。希望也会落空。市场不会非黑即白的出现大起大落。市场会像上半年那样，进行箱体的区间震荡。只不过，会比上半年箱体的高低点，向下移动100-200个点位。",
+      "publish_time": "2026-08-09 12:12"
+    }
+  ]
+}

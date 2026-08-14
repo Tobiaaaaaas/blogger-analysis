@@ -1,0 +1,344 @@
+{
+  "blogger": "小工匠说股市v",
+  "scoring_version": "v12 (return single-factor)",
+  "signals_total": 4,
+  "signals_scored": 0,
+  "score_zero": 3,
+  "no_price": 1,
+  "no_segment": 0,
+  "bullish_count": 0,
+  "bearish_count": 0,
+  "scores": {
+    "综合": {
+      "total": 0.0,
+      "count": 0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "上升段": {
+      "total": 0.0,
+      "count": 0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "下降段": {
+      "total": 0.0,
+      "count": 0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "抄底": {
+      "total": 0.0,
+      "count": 0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "逃顶": {
+      "total": 0.0,
+      "count": 0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "看多": {
+      "total": 0.0,
+      "count": 0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "看空": {
+      "total": 0.0,
+      "count": 0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    }
+  },
+  "balanced_composite": 0.0,
+  "direction_bias": 0.5,
+  "bull_segment_avg": {
+    "segments": 0,
+    "avg_pct": 0.0,
+    "win_rate": 0.0
+  },
+  "bear_segment_avg": {
+    "segments": 0,
+    "avg_pct": 0.0,
+    "win_rate": 0.0
+  },
+  "time_horizon_scores": {
+    "short": {
+      "count": 0,
+      "total": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "medium": {
+      "count": 1,
+      "total": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "long": {
+      "count": 2,
+      "total": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "unspecified": {
+      "count": 0,
+      "total": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    }
+  },
+  "equity_curve": {
+    "overall": [
+      [
+        "2026-07-20",
+        1.004166
+      ],
+      [
+        "2026-07-21",
+        0.992651
+      ],
+      [
+        "2026-07-22",
+        0.993336
+      ],
+      [
+        "2026-07-23",
+        0.995839
+      ],
+      [
+        "2026-07-24",
+        0.979764
+      ],
+      [
+        "2026-07-27",
+        0.991078
+      ],
+      [
+        "2026-07-28",
+        0.979537
+      ],
+      [
+        "2026-07-29",
+        0.98343
+      ],
+      [
+        "2026-07-30",
+        0.977322
+      ],
+      [
+        "2026-07-31",
+        0.984404
+      ],
+      [
+        "2026-08-03",
+        0.978598
+      ],
+      [
+        "2026-08-04",
+        0.98184
+      ]
+    ],
+    "bullish_only": [
+      [
+        "2026-07-21",
+        1.006433
+      ],
+      [
+        "2026-07-22",
+        1.007128
+      ],
+      [
+        "2026-07-23",
+        1.009665
+      ],
+      [
+        "2026-07-24",
+        0.993367
+      ],
+      [
+        "2026-07-27",
+        1.004839
+      ],
+      [
+        "2026-07-28",
+        0.993137
+      ],
+      [
+        "2026-07-29",
+        0.997084
+      ],
+      [
+        "2026-07-30",
+        0.990891
+      ],
+      [
+        "2026-07-31",
+        0.998071
+      ],
+      [
+        "2026-08-03",
+        0.992186
+      ],
+      [
+        "2026-08-04",
+        0.995472
+      ]
+    ],
+    "bearish_only": [
+      [
+        "2026-07-20",
+        1.004166
+      ],
+      [
+        "2026-07-21",
+        0.986306
+      ],
+      [
+        "2026-07-22",
+        0.985606
+      ],
+      [
+        "2026-07-23",
+        0.98305
+      ],
+      [
+        "2026-07-24",
+        0.999466
+      ],
+      [
+        "2026-07-27",
+        0.987912
+      ],
+      [
+        "2026-07-28",
+        0.999698
+      ]
+    ],
+    "benchmark": [
+      [
+        "2026-07-20",
+        1.0
+      ],
+      [
+        "2026-07-21",
+        1.017935
+      ],
+      [
+        "2026-07-22",
+        1.018637
+      ],
+      [
+        "2026-07-23",
+        1.021204
+      ],
+      [
+        "2026-07-24",
+        1.00472
+      ],
+      [
+        "2026-07-27",
+        1.016322
+      ],
+      [
+        "2026-07-28",
+        1.004487
+      ],
+      [
+        "2026-07-29",
+        1.008479
+      ],
+      [
+        "2026-07-30",
+        1.002215
+      ],
+      [
+        "2026-07-31",
+        1.009477
+      ],
+      [
+        "2026-08-03",
+        1.003524
+      ],
+      [
+        "2026-08-04",
+        1.006849
+      ]
+    ]
+  },
+  "risk_metrics": {
+    "overall": {
+      "total_return": -1.82,
+      "annual_return": -31.95,
+      "max_drawdown": -2.67,
+      "max_drawdown_dates": [
+        "2026-07-20",
+        "2026-07-30"
+      ],
+      "sharpe_like": 0,
+      "trade_count": 1,
+      "signal_count": 3,
+      "avg_trade_return": -1.37,
+      "benchmark_return": 0.68,
+      "alpha": -2.5
+    },
+    "bullish": {
+      "total_return": -0.45,
+      "annual_return": -9.87,
+      "max_drawdown": -1.86,
+      "max_drawdown_dates": [
+        "2026-07-23",
+        "2026-07-30"
+      ],
+      "sharpe_like": 0,
+      "trade_count": 0,
+      "signal_count": 2,
+      "avg_trade_return": 0
+    },
+    "bearish": {
+      "total_return": -0.03,
+      "annual_return": -1.08,
+      "max_drawdown": -2.1,
+      "max_drawdown_dates": [
+        "2026-07-20",
+        "2026-07-23"
+      ],
+      "sharpe_like": 0,
+      "trade_count": 0,
+      "signal_count": 1,
+      "avg_trade_return": 0
+    }
+  },
+  "segments": {
+    "M7->now": {
+      "direction": "rising",
+      "start_label": "M7",
+      "end_label": "?",
+      "total": 3,
+      "bull": 2,
+      "bear": 1,
+      "score": 0.0
+    }
+  },
+  "inflection_details": {
+    "M7": {
+      "signals": [
+        {
+          "date": "2026-07-21",
+          "time": "21:30",
+          "direction": "bullish",
+          "strength": "moderate",
+          "return": 0.0,
+          "score": 0.0,
+          "ref": "2026-07-22 open",
+          "evidence": "参考上一轮牛市，创业板大概率会缓慢冲高到前高附近，甚至有可能突破前高，然后再回落，再冲高，最后结束这轮牛市。"
+        }
+      ],
+      "total_score": 0.0,
+      "signal_count": 1,
+      "avg_score_pct": 0.0
+    }
+  }
+}
