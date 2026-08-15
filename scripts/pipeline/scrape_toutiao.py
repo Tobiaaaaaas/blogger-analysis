@@ -117,15 +117,21 @@ def parse_items(data):
             (f"https://www.toutiao.com/w/{post_id}/" if post_id else "")
         )
 
-        # 提取用户信息（API返回的用户名优先级最高，始终覆盖）
+        # 提取用户信息（统计 feed 中出现最多的用户作为账号主体，防止被转载内容覆盖）
         user_data = item.get("user", {})
-        if user_data and user_data.get("name"):
-            user_info["name"] = user_data.get("name", "")
-            user_info["user_id"] = str(user_data.get("id", ""))
-            user_info["description"] = user_data.get("desc", "")
+        user_name = user_data.get("name", "") if user_data else ""
+        if user_name:
+            user_info.setdefault("_user_counter", {})
+            user_info["_user_counter"][user_name] = user_info["_user_counter"].get(user_name, 0) + 1
+            user_info["_user_detail"] = user_info.get("_user_detail", {})
+            user_info["_user_detail"][user_name] = {
+                "user_id": str(user_data.get("id", "")),
+                "description": user_data.get("desc", ""),
+            }
 
         posts.append({
             "post_id": post_id,
+            "user": user_data.get("name", "") if user_data else "",
             "content": content.strip(),
             "publish_time": int(pub_time) if pub_time else 0,
             "publish_date": datetime.fromtimestamp(pub_time).strftime("%Y-%m-%d %H:%M") if pub_time else "",
@@ -138,6 +144,7 @@ def parse_items(data):
 
 
 def main():
+    global all_posts
     parser = argparse.ArgumentParser(description="爬取今日头条博主全部帖子")
     parser.add_argument("url", nargs="?", default="", help="博主任意帖子链接")
     parser.add_argument("--name", "-n", default="", help="博主名称（可选，不提供则自动检测）")
@@ -167,46 +174,74 @@ def main():
         page = context.new_page()
         page.on("response", intercept_response)
 
-        # === 步骤1: 加载帖子页面，提取token ===
-        print("\n[1] 加载帖子页面...")
+        # === 步骤1: 提取token（优先从 URL 直接解析，避免页面链接指向他人主页） ===
+        print("\n[1] 提取 token...")
+        import re
+        token = ""
+        m = re.search(r'/c/user/token/([A-Za-z0-9_=-]{30,})', post_url)
+        if m:
+            token = m.group(1)
+            profile_href = f"https://www.toutiao.com/c/user/token/{token}/"
+            print(f"  从URL提取 token: {token[:60]}...")
+        else:
+            # URL 无 token（普通帖子链接）→ 加载页面，从页面链接提取
+            print("  URL 无 token，加载页面提取...")
+            page.goto(post_url, timeout=30000, wait_until="domcontentloaded")
+            time.sleep(3)
+
+            # 等待用户主页链接出现
+            try:
+                page.wait_for_selector('a[href*="/c/user/token/"]', timeout=10000)
+            except:
+                pass
+            time.sleep(2)
+
+            # 获取用户主页链接
+            profile_href = page.evaluate("""
+                () => {
+                    const links = document.querySelectorAll('a[href*="/c/user/token/"]');
+                    return links.length > 0 ? links[0].href : '';
+                }
+            """)
+            print(f"  用户主页: {profile_href[:100]}...")
+
+            if not profile_href:
+                print("  ❌ 找不到用户主页链接，尝试从HTML提取...")
+                html = page.content()
+                m = re.search(r'/c/user/token/([A-Za-z0-9_=-]{30,})/', html)
+                if m:
+                    profile_href = f"https://www.toutiao.com/c/user/token/{m.group(1)}/"
+                    print(f"  从HTML提取: {profile_href[:100]}...")
+
+            token = profile_href.split("/c/user/token/")[1].split("/")[0].split("?")[0] if profile_href else ""
+            print(f"  Token: {token[:60]}...")
+
+        if not token:
+            print("  ❌ 未能提取到用户 token，退出（不抓取推荐流）")
+            browser.close()
+            return
+
+        # 无论 token 从哪来，都先访问一次原始链接以建立 cookie（feed API 依赖）
+        print("  访问原始链接建立 cookie...")
         page.goto(post_url, timeout=30000, wait_until="domcontentloaded")
         time.sleep(3)
-
-        # 等待用户主页链接出现
+        # 等待重定向链结束、页面稳定（m_redirect 会自我跳转一次）
         try:
-            page.wait_for_selector('a[href*="/c/user/token/"]', timeout=10000)
-        except:
+            page.wait_for_load_state('networkidle', timeout=20000)
+        except Exception:
             pass
-        time.sleep(2)
-
-        # 获取用户主页链接
-        profile_href = page.evaluate("""
-            () => {
-                const links = document.querySelectorAll('a[href*="/c/user/token/"]');
-                return links.length > 0 ? links[0].href : '';
-            }
-        """)
-        print(f"  用户主页: {profile_href[:100]}...")
-
-        if not profile_href:
-            print("  ❌ 找不到用户主页链接，尝试从HTML提取...")
-            html = page.content()
-            import re
-            m = re.search(r'/c/user/token/([A-Za-z0-9_=-]{30,})/', html)
-            if m:
-                profile_href = f"https://www.toutiao.com/c/user/token/{m.group(1)}/"
-                print(f"  从HTML提取: {profile_href[:100]}...")
-
-        # 提取token
-        token = profile_href.split("/c/user/token/")[1].split("/")[0].split("?")[0] if profile_href else ""
-        print(f"  Token: {token[:60]}...")
+        time.sleep(3)
 
         # 从页面标题获取博主名（仅作后备，API数据更可靠会覆盖）
 
         # === 步骤2: 访问用户主页 ===
-        print("\n[2] 访问用户主页...")
-        if profile_href:
+        # 若 post_url 本身就是用户主页（含 token），步骤1 已访问过，跳过以避免跳转链冲突
+        if profile_href and '/c/user/token/' not in post_url:
+            print("\n[2] 访问用户主页...")
             page.goto(profile_href, timeout=30000, wait_until="domcontentloaded")
+            time.sleep(4)
+        else:
+            print("\n[2] 已在用户主页（post_url 含 token），等待页面稳定...")
             time.sleep(4)
 
         # === 步骤3: 浏览器内翻页 ===
@@ -218,7 +253,16 @@ def main():
 
         empty_streak = 0  # 连续空页计数
         for page_num in range(1, max_pages + 1):
-            result = call_api_in_browser(page, max_behot_time=max_behot_time, token=token)
+            # 页面仍可能被重定向链导航，API 调用失败时短暂等待后重试
+            result = None
+            for attempt in range(3):
+                try:
+                    result = call_api_in_browser(page, max_behot_time=max_behot_time, token=token)
+                except Exception as e:
+                    print(f"  第{page_num}页: JS调用异常({attempt + 1}/3) - {e}")
+                if result and "error" not in result:
+                    break
+                time.sleep(3)
             if not result:
                 print(f"  第{page_num}页: API返回空，停止")
                 break
@@ -300,7 +344,32 @@ def main():
 
         # === 步骤5: 保存 ===
         print("\n[5] 保存结果...")
+        if not all_posts:
+            print("  ❌ 未抓取到任何帖子，不保存（避免覆盖已有数据）。请检查网络/页面状态后重试。")
+            browser.close()
+            return
         times = [p["publish_time"] for p in all_posts if p["publish_time"]]
+
+        # 确定 feed 主体用户（出现次数最多者）
+        counter = user_info.pop("_user_counter", {})
+        user_detail = user_info.pop("_user_detail", {})
+        dominant = max(counter, key=counter.get) if counter else ""
+        if dominant:
+            user_info["name"] = dominant
+            user_info.update(user_detail.get(dominant, {}))
+            others = {k: v for k, v in sorted(counter.items(), key=lambda kv: -kv[1]) if k != dominant}
+            if others:
+                user_info["_other_users_in_feed"] = others
+
+        # 帖子级过滤：feed 中混入他人帖子时，只保留主体用户的帖子
+        with_user = [p for p in all_posts if p.get("user")]
+        if with_user and dominant:
+            before = len(all_posts)
+            all_posts = [p for p in all_posts if not p.get("user") or p["user"] == dominant]
+            if len(all_posts) < before:
+                print(f"  按主体用户「{dominant}」过滤：{before} → {len(all_posts)} 条")
+        for p in all_posts:
+            p.pop("user", None)
 
         # Determine output filename: explicit --name > auto-detected name > fallback
         blogger_name = explicit_name or user_info.get("name", "").strip()
@@ -308,6 +377,12 @@ def main():
             output_file = os.path.join(DATA_DIR, f"{blogger_name}.json")
         else:
             output_file = os.path.join(DATA_DIR, "posts.json")
+
+        # 名称校验：feed 主体用户与 --name 不一致时，不覆盖目标文件（防止抓错账号毁数据）
+        if explicit_name and dominant and dominant != explicit_name:
+            output_file = os.path.join(DATA_DIR, f"{explicit_name}_feed_check.json")
+            print(f"  ⚠️ 警告：feed 主体用户是「{dominant}」，与 --name「{explicit_name}」不一致，请检查 token/链接是否正确！")
+            print(f"  ⚠️ 结果另存为 {output_file}，不覆盖 {explicit_name}.json")
 
         result = {
             "scrape_time": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
@@ -320,6 +395,16 @@ def main():
             },
             "posts": sorted(all_posts, key=lambda x: x["publish_time"], reverse=True),
         }
+
+        # 保存前备份旧文件，防止覆盖丢失历史数据
+        if output_file and os.path.exists(output_file):
+            backup_dir = os.path.join(DATA_DIR, "_backup")
+            os.makedirs(backup_dir, exist_ok=True)
+            ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+            backup_file = os.path.join(backup_dir, f"{blogger_name}_{ts}.json")
+            import shutil
+            shutil.copy2(output_file, backup_file)
+            print(f"  旧文件已备份到 {backup_file}")
 
         with open(output_file, "w", encoding="utf-8") as f:
             json.dump(result, f, ensure_ascii=False, indent=2)
