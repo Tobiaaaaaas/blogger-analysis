@@ -13,20 +13,27 @@
     "other": 34
   },
   "scored_bullish": {
-    "strong": 56,
-    "moderate": 120,
-    "short": 96,
-    "medium": 37,
-    "long": 18,
-    "unspecified": 25
+    "by_strength": {
+      "moderate": 76,
+      "strong": 43
+    },
+    "by_time_horizon": {
+      "medium": 31,
+      "short": 56,
+      "unspecified": 17,
+      "long": 15
+    }
   },
   "scored_bearish": {
-    "strong": 6,
-    "moderate": 40,
-    "short": 35,
-    "medium": 6,
-    "long": 0,
-    "unspecified": 5
+    "by_strength": {
+      "moderate": 27,
+      "strong": 2
+    },
+    "by_time_horizon": {
+      "short": 19,
+      "unspecified": 4,
+      "medium": 6
+    }
   },
   "signals": [
     {
@@ -94,14 +101,6 @@
       "publish_time": "2026-01-11 14:08"
     },
     {
-      "post_n": 11,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "unspecified",
-      "evidence": "只要不破5日线，不出阴线，给仓位留些余地，都可持续保持多头做法。",
-      "publish_time": "2026-01-12 11:35"
-    },
-    {
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
@@ -110,28 +109,12 @@
       "publish_time": "2026-01-12 15:13"
     },
     {
-      "post_n": 9,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "昨天我说了，今天继续看涨！下午自然看收红盘，十八连阳！",
-      "publish_time": "2026-01-13 11:32"
-    },
-    {
       "post_n": 8,
       "direction": "bullish",
       "strength": "strong",
       "time_horizon": "short",
       "evidence": "别慌！明确观点！明天阳包阴，中阳线！闪爆全场！",
       "publish_time": "2026-01-13 15:00"
-    },
-    {
-      "post_n": 7,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "unspecified",
-      "evidence": "下午没有反转！中阳线会扎扎实实的落地！不仅如此，本周还有新高，因为这波行情依然在主升加速阶段！",
-      "publish_time": "2026-01-14 11:30"
     },
     {
       "post_n": 6,
@@ -174,28 +157,12 @@
       "publish_time": "2026-01-19 15:02"
     },
     {
-      "post_n": 0,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "今天会收阴线！这也是我昨天的明确预判，当时给的原话是：“明天会有窄幅震荡，或将回踩五周均线止跌，最终会收小阴线。但到时反而是一次较好的进攻机会！”",
-      "publish_time": "2026-01-20 11:30"
-    },
-    {
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明确观点，明天看涨！会收中小阳线！",
       "publish_time": "2026-01-20 15:05"
-    },
-    {
-      "post_n": 13,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午会收中小阳线！",
-      "publish_time": "2026-01-21 11:32"
     },
     {
       "post_n": 12,
@@ -206,28 +173,12 @@
       "publish_time": "2026-01-21 15:08"
     },
     {
-      "post_n": 11,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午会收阴线，且大概率是十字阴线！",
-      "publish_time": "2026-01-22 11:30"
-    },
-    {
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明确观点，明天会收中小阳线！且会连续三天破前高！",
       "publish_time": "2026-01-22 15:02"
-    },
-    {
-      "post_n": 9,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "今天最终会收中小阳线！这是昨天确定性预判",
-      "publish_time": "2026-01-23 11:30"
     },
     {
       "post_n": 8,
@@ -246,28 +197,12 @@
       "publish_time": "2026-01-25 14:08"
     },
     {
-      "post_n": 6,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "明确观点，今天会收红盘！这是确定性预判，下午不仅不会翻绿，甚至不排除尾盘还有冲高，再创日内新高！",
-      "publish_time": "2026-01-26 11:30"
-    },
-    {
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天会收中小阳线！且两市氛围大概率也会比今天好",
       "publish_time": "2026-01-26 15:15"
-    },
-    {
-      "post_n": 3,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午最终会收中小阳线，且会大幅修复涨跌比",
-      "publish_time": "2026-01-27 11:30"
     },
     {
       "post_n": 2,
@@ -278,28 +213,12 @@
       "publish_time": "2026-01-27 15:05"
     },
     {
-      "post_n": 1,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午不仅有较高概率走出中阳线！两市涨跌倒挂现象，也将迎来明显改善！",
-      "publish_time": "2026-01-28 11:30"
-    },
-    {
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明确观点！明天会有中小阳线！或全面上涨中突破4190！",
       "publish_time": "2026-01-28 15:03"
-    },
-    {
-      "post_n": 14,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午依然有较大概率在全面上涨中，收中小阳线！",
-      "publish_time": "2026-01-29 11:34"
     },
     {
       "post_n": 13,
@@ -326,28 +245,12 @@
       "publish_time": "2026-02-01 14:08"
     },
     {
-      "post_n": 9,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "本周上半周的震荡，不仅不是本轮趋势的终结，反而是新一轮上攻行情的起点阶段，自然是积极布局跟进后市向上方向的绝佳时机。",
-      "publish_time": "2026-02-02 11:30"
-    },
-    {
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "unspecified",
       "evidence": "当前不仅不是恐惧的时刻，反而是龙游浅滩，蓄势待飞的关键节点。",
       "publish_time": "2026-02-02 16:00"
-    },
-    {
-      "post_n": 7,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午不论涨跌，都是本周先抑后扬的拐点信号！",
-      "publish_time": "2026-02-03 11:39"
     },
     {
       "post_n": 6,
@@ -358,14 +261,6 @@
       "publish_time": "2026-02-03 15:00"
     },
     {
-      "post_n": 5,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午依然有较高概率，站上5日先收红盘！",
-      "publish_time": "2026-02-04 11:35"
-    },
-    {
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
@@ -374,28 +269,12 @@
       "publish_time": "2026-02-04 15:15"
     },
     {
-      "post_n": 3,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午多半会降低砸盘力度。到时流动性的活性当然会被重新激活，推动大盘逐步走V，并站上5日线收小红盘，是大概率事件。",
-      "publish_time": "2026-02-05 11:31"
-    },
-    {
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天会有一根带天线的小阳线！即盘中一阳破两线，而后回落至小阳线！",
       "publish_time": "2026-02-05 15:18"
-    },
-    {
-      "post_n": 1,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "明确观点，下午会收中小阳线！",
-      "publish_time": "2026-02-06 11:31"
     },
     {
       "post_n": 0,
@@ -414,14 +293,6 @@
       "publish_time": "2026-02-08 14:08"
     },
     {
-      "post_n": 13,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "上午如我所言，高开高走！下午或收大阳线！因其冲高势能依然没有结束，短线还有新高！",
-      "publish_time": "2026-02-09 11:30"
-    },
-    {
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
@@ -430,28 +301,12 @@
       "publish_time": "2026-02-09 15:10"
     },
     {
-      "post_n": 11,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "今天会收小阳线！此判断在昨天收盘已明确，当时我的原话是：“明天还有一涨，再创新高，但最终大概率是冲高回落的小阳线！”... 但这里明确观点，下午还是会翻红收小阳线！",
-      "publish_time": "2026-02-10 11:34"
-    },
-    {
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "先明确观点，明天方向还会上涨！且大概率有中阳线！因为下午盘面出现了一个重要信号，直接扭转了当前短线逻辑。",
       "publish_time": "2026-02-10 15:02"
-    },
-    {
-      "post_n": 9,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "今天最终会收中阳线！这是我在昨天给的明确观点，而当时的原话是：“明天方向还会上涨！且大概率有中阳线！”这里直接升级成，下午会收中阳线！",
-      "publish_time": "2026-02-11 11:30"
     },
     {
       "post_n": 8,
@@ -470,14 +325,6 @@
       "publish_time": "2026-02-23 14:08"
     },
     {
-      "post_n": 6,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "还没涨完！明天会出中小阳线！突破4150，打开短期向上趋势！",
-      "publish_time": "2026-02-24 15:24"
-    },
-    {
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
@@ -486,28 +333,12 @@
       "publish_time": "2026-02-24 20:06"
     },
     {
-      "post_n": 4,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "明确观点，明天还有一涨！中小阳线！反包今日回落幅度，实现春节后的三连涨！",
-      "publish_time": "2026-02-25 15:01"
-    },
-    {
       "post_n": 3,
       "direction": "bullish",
       "strength": "strong",
       "time_horizon": "long",
       "evidence": "今年必涨无疑！如果心无丘壑，是不可能敢给这样的结论。而我虽有时爱开玩笑，但在关键趋势判断上，一向都是严谨的。之所以这次如此笃定，就是为了让大家看清方向，相信A股。这样才能拿稳筹码，踏准这轮长期慢牛的方向。",
       "publish_time": "2026-02-25 20:08"
-    },
-    {
-      "post_n": 2,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "但不论怎么震，都要拿稳筹码，因为今天的大利好，大概率会在下周成为各方专业资金水下吸筹的暗线。",
-      "publish_time": "2026-02-27 15:00"
     },
     {
       "post_n": 1,
@@ -566,14 +397,6 @@
       "publish_time": "2026-03-06 15:43"
     },
     {
-      "post_n": 9,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "因此即便现在缺少人气主线的助攻，下周A股仍能具备极强的抗跌与避险属性。",
-      "publish_time": "2026-03-07 11:14"
-    },
-    {
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
@@ -612,22 +435,6 @@
       "time_horizon": "unspecified",
       "evidence": "古巨阳，直接杵碎4197，一举扭转近一段时间以来的市场预期，彻底引爆情绪。",
       "publish_time": "2026-03-11 15:08"
-    },
-    {
-      "post_n": 3,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "第一，下午将走V翻红，收中阳线！",
-      "publish_time": "2026-03-12 11:34"
-    },
-    {
-      "post_n": 2,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "unspecified",
-      "evidence": "就如A股，趋势向上无疑！尽管不能百分百看对每一次短线，但只要保持定力，自能穿越波动，抓住趋势红利！",
-      "publish_time": "2026-03-12 15:13"
     },
     {
       "post_n": 1,
@@ -694,28 +501,12 @@
       "publish_time": "2026-03-22 14:08"
     },
     {
-      "post_n": 6,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "我估计下午大概率走不了V了，最多盘中再往上抖一抖，但最终仍会收出大阴线。",
-      "publish_time": "2026-03-23 11:30"
-    },
-    {
       "post_n": 5,
       "direction": "bullish",
       "strength": "strong",
       "time_horizon": "short",
       "evidence": "明确观点，明天会收红盘！并且这波行情的机会，就在明天！",
       "publish_time": "2026-03-23 15:02"
-    },
-    {
-      "post_n": 4,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "medium",
-      "evidence": "因此我现在就可以提前判断，昨天的3794，就是本轮短中期行情的底部！",
-      "publish_time": "2026-03-24 11:34"
     },
     {
       "post_n": 3,
@@ -726,28 +517,12 @@
       "publish_time": "2026-03-24 15:02"
     },
     {
-      "post_n": 2,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午目标很简单，就是让今天成为站上5日线的第一天！至此明确观点，下午会将上午还未回补的缺口部分，交给明天。但最终不仅会保持中阳线，还有较高概率站上5日线收盘！",
-      "publish_time": "2026-03-25 11:30"
-    },
-    {
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天还有一根小阳线！最终会成为站上5日线的第二天！",
       "publish_time": "2026-03-25 15:01"
-    },
-    {
-      "post_n": 0,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午会走V翻红，收小阳线！这一方向也是我在昨天的观点，上午虽大幅震荡，但观点不变！",
-      "publish_time": "2026-03-26 11:30"
     },
     {
       "post_n": 14,
@@ -878,14 +653,6 @@
       "publish_time": "2026-04-16 15:00"
     },
     {
-      "post_n": 11,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "昨天看空今天，说盘中或有中阴线，最终收在5日线上方！",
-      "publish_time": "2026-04-17 15:07"
-    },
-    {
       "post_n": 9,
       "direction": "bearish",
       "strength": "moderate",
@@ -902,14 +669,6 @@
       "publish_time": "2026-05-05 14:08"
     },
     {
-      "post_n": 7,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午以中阳线收盘，已是板上钉钉。",
-      "publish_time": "2026-05-06 11:31"
-    },
-    {
       "post_n": 6,
       "direction": "bearish",
       "strength": "moderate",
@@ -918,36 +677,12 @@
       "publish_time": "2026-05-06 15:00"
     },
     {
-      "post_n": 5,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午会收绿盘！中小阴线！",
-      "publish_time": "2026-05-07 11:32"
-    },
-    {
       "post_n": 4,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天或有中阴线，好好洗一把，把墙头草洗走，稳住长期慢牛格局。",
       "publish_time": "2026-05-07 15:00"
-    },
-    {
-      "post_n": 3,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午会收绿盘，中阴线！绿盘是方向，中阴线是预判，甚至下午不排除直接跌破5日线，回踩缺口。",
-      "publish_time": "2026-05-08 11:30"
-    },
-    {
-      "post_n": 2,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "所以今天过后，行情大概率会再创新高，而后再横盘震荡消化分析，重新选择下一轮的短线方向。",
-      "publish_time": "2026-05-08 15:00"
     },
     {
       "post_n": 1,
@@ -966,22 +701,6 @@
       "publish_time": "2026-05-10 14:08"
     },
     {
-      "post_n": 14,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "但今天我依然提示可能要下雨，同频的记得带好伞防范一下",
-      "publish_time": "2026-05-11 11:14"
-    },
-    {
-      "post_n": 13,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "unspecified",
-      "evidence": "但我却丝毫不改对趋势的坚守看多！",
-      "publish_time": "2026-05-12 11:30"
-    },
-    {
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
@@ -998,28 +717,12 @@
       "publish_time": "2026-05-13 11:32"
     },
     {
-      "post_n": 9,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "long",
-      "evidence": "但长线却可无视这种短期分歧，直接锚定长期慢牛的方向，卧倒待涨，自能笑看风云！",
-      "publish_time": "2026-05-14 11:30"
-    },
-    {
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "所以明天稍微踩一踩10日线，基本就能走出缩量反弹的格局。至此明确预判，明天会缩量反弹，压力在4207附近。",
       "publish_time": "2026-05-14 15:11"
-    },
-    {
-      "post_n": 7,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "long",
-      "evidence": "而这种短线，也丝毫撼动不了长期上涨的大方向。",
-      "publish_time": "2026-05-15 11:31"
     },
     {
       "post_n": 6,
@@ -1046,28 +749,12 @@
       "publish_time": "2026-05-18 11:32"
     },
     {
-      "post_n": 2,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午会收绿盘，十字星！因为行情反转上攻的拐点，即将来临！",
-      "publish_time": "2026-05-19 11:31"
-    },
-    {
       "post_n": 1,
       "direction": "bullish",
       "strength": "strong",
       "time_horizon": "short",
       "evidence": "明天就一句话，大涨，再来一根中阳线！而且我还要告诉大家，这波短线调整已经结束，从现在到到本月底期间，还会再创新高！",
       "publish_time": "2026-05-19 15:00"
-    },
-    {
-      "post_n": 0,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "下午会走V翻红，且会收中阳线！",
-      "publish_time": "2026-05-20 11:30"
     },
     {
       "post_n": 14,
@@ -1078,28 +765,12 @@
       "publish_time": "2026-05-20 15:10"
     },
     {
-      "post_n": 13,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午当然有大涨预期，最终会收大阳线！",
-      "publish_time": "2026-05-21 11:30"
-    },
-    {
       "post_n": 12,
       "direction": "bullish",
       "strength": "strong",
       "time_horizon": "long",
       "evidence": "坐等今年5000的雄风浩荡！",
       "publish_time": "2026-05-21 15:00"
-    },
-    {
-      "post_n": 11,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午会收中阳线！收服昨日一半跌幅",
-      "publish_time": "2026-05-22 11:30"
     },
     {
       "post_n": 10,
@@ -1126,36 +797,12 @@
       "publish_time": "2026-05-25 15:01"
     },
     {
-      "post_n": 5,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午会走V翻红，收红盘！",
-      "publish_time": "2026-05-26 11:30"
-    },
-    {
       "post_n": 4,
       "direction": "bullish",
       "strength": "strong",
       "time_horizon": "short",
       "evidence": "明天看涨！中阳线！直接盖掉三天前的大阴线！",
       "publish_time": "2026-05-26 15:05"
-    },
-    {
-      "post_n": 2,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午会走V翻红！收大长腿红盘！",
-      "publish_time": "2026-05-27 11:30"
-    },
-    {
-      "post_n": 1,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "unspecified",
-      "evidence": "其背后正是市场在对长期方向有高度信心下，对后续增量资金的一种笃定行为。",
-      "publish_time": "2026-05-27 15:00"
     },
     {
       "post_n": 0,
@@ -1166,36 +813,12 @@
       "publish_time": "2026-05-27 19:10"
     },
     {
-      "post_n": 14,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "unspecified",
-      "evidence": "企稳反弹乃至反转才是大势所趋。",
-      "publish_time": "2026-05-28 11:30"
-    },
-    {
       "post_n": 13,
       "direction": "bullish",
       "strength": "strong",
       "time_horizon": "short",
       "evidence": "明天将全面上攻，拉出一根久违的中阳线，冲击5日线，确认双底！",
       "publish_time": "2026-05-28 15:01"
-    },
-    {
-      "post_n": 12,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午顺势企稳，走V翻红当然已是大概率事件！甚至依然有概率收出中阳线！",
-      "publish_time": "2026-05-29 11:30"
-    },
-    {
-      "post_n": 11,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "medium",
-      "evidence": "今天已对60日线，完成了二次确认，一波大行情正在来的路上，这点我看的定定的，而六月，也是值得所有股民期待的！",
-      "publish_time": "2026-05-29 15:01"
     },
     {
       "post_n": 10,
@@ -1212,14 +835,6 @@
       "time_horizon": "medium",
       "evidence": "因此下周依然看涨，会收周阳线。",
       "publish_time": "2026-05-31 14:19"
-    },
-    {
-      "post_n": 8,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "第一，六月依然有较大概率出现一波大行情。第二，本周大概率会涨上来，收一根漂亮的周阳线！",
-      "publish_time": "2026-06-01 11:24"
     },
     {
       "post_n": 7,
@@ -1278,28 +893,12 @@
       "publish_time": "2026-06-14 14:08"
     },
     {
-      "post_n": 10,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "明后两天行情整体会有所调整，可能会有最后一洗，下半周再涨回来。",
-      "publish_time": "2026-06-15 11:00"
-    },
-    {
       "post_n": 9,
       "direction": "bearish",
       "strength": "strong",
       "time_horizon": "short",
       "evidence": "明确观点，明天会跌！不论冲高回落，或先抑后扬，最终都会收绿盘！",
       "publish_time": "2026-06-15 15:06"
-    },
-    {
-      "post_n": 8,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "今天下午大概率会有一波杀跌，最终收出六月至今的第三根阴线。",
-      "publish_time": "2026-06-16 11:30"
     },
     {
       "post_n": 7,
@@ -1310,28 +909,12 @@
       "publish_time": "2026-06-16 15:02"
     },
     {
-      "post_n": 6,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午会收绿盘！且假阳线或变真阴线！",
-      "publish_time": "2026-06-17 11:30"
-    },
-    {
       "post_n": 5,
       "direction": "bullish",
       "strength": "strong",
       "time_horizon": "short",
       "evidence": "明天会涨！中阳线！",
       "publish_time": "2026-06-17 15:01"
-    },
-    {
-      "post_n": 4,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "下午会走V翻红，收中阳线！这方向也是我昨日观点，这里不变！",
-      "publish_time": "2026-06-18 11:30"
     },
     {
       "post_n": 3,
@@ -1350,28 +933,12 @@
       "publish_time": "2026-06-21 14:08"
     },
     {
-      "post_n": 1,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "long",
-      "evidence": "所以今天的跌大于涨，不是坏事，反而如前文所言，是有较高确定性的机会。对此不必恐惧，反要在坚定长期慢牛的大格局下，保持兴奋感！",
-      "publish_time": "2026-06-22 11:30"
-    },
-    {
       "post_n": 0,
       "direction": "bullish",
       "strength": "strong",
       "time_horizon": "medium",
       "evidence": "立帖为证！直接上重点，听好了，不仅从今天到6月底，行情会在震荡中整体上扬，且还会与今年7月共同构建一波主升浪！剑指4300！",
       "publish_time": "2026-06-22 15:00"
-    },
-    {
-      "post_n": 14,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "别犹豫！不论短线是否震荡，现在都是果断看涨的时候！",
-      "publish_time": "2026-06-23 11:30"
     },
     {
       "post_n": 13,
@@ -1382,28 +949,12 @@
       "publish_time": "2026-06-23 15:08"
     },
     {
-      "post_n": 12,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "今天就是摸底的一天，是要赶人走的！所以这里我强势提醒大家，上午低点就是底，要直接亮剑了！",
-      "publish_time": "2026-06-24 11:30"
-    },
-    {
       "post_n": 11,
       "direction": "bullish",
       "strength": "strong",
       "time_horizon": "unspecified",
       "evidence": "就一句话，这波行情我已看到了4300！",
       "publish_time": "2026-06-24 15:07"
-    },
-    {
-      "post_n": 10,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "直接亮明观点，下午有中阳线！",
-      "publish_time": "2026-06-25 11:30"
     },
     {
       "post_n": 9,
@@ -1422,14 +973,6 @@
       "publish_time": "2026-06-26 11:30"
     },
     {
-      "post_n": 6,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "至于大盘，无需多言，下午会收红盘，但过程可能还要扭一扭，因此最终大概率会是一根探底的红十字星。",
-      "publish_time": "2026-06-29 11:30"
-    },
-    {
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
@@ -1438,28 +981,12 @@
       "publish_time": "2026-06-29 15:01"
     },
     {
-      "post_n": 4,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "具体是昨日观点不变，今天不仅会站上5日线收红盘，且大概率会有中阳线！",
-      "publish_time": "2026-06-30 11:30"
-    },
-    {
       "post_n": 3,
       "direction": "bullish",
       "strength": "strong",
       "time_horizon": "short",
       "evidence": "明确观点，明天大涨！中大阳线！",
       "publish_time": "2026-06-30 15:00"
-    },
-    {
-      "post_n": 2,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "我说了，今天会大涨！有中大阳线！上午直接来了一根中阳线，下午还得涨",
-      "publish_time": "2026-07-01 11:34"
     },
     {
       "post_n": 1,
@@ -1478,14 +1005,6 @@
       "publish_time": "2026-07-02 11:16"
     },
     {
-      "post_n": 14,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "今天的阳包阴，是确定性事件！下午是没有什么悬念的，起步就是中阳线收盘，且仍不排除中大阳线！",
-      "publish_time": "2026-07-03 11:30"
-    },
-    {
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
@@ -1502,28 +1021,12 @@
       "publish_time": "2026-07-06 15:00"
     },
     {
-      "post_n": 9,
-      "direction": "bearish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "如果下午大盘不能收回4005，那就真有危险了！...短中线可无视一切，直接清光。",
-      "publish_time": "2026-07-07 11:30"
-    },
-    {
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "long",
       "evidence": "但从长期来看，过了这段猴市之后，大方向最终还是会涨上来的！",
       "publish_time": "2026-07-07 15:02"
-    },
-    {
-      "post_n": 7,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "unspecified",
-      "evidence": "包括今天在内，短期所有反弹都是观望机会！",
-      "publish_time": "2026-07-08 11:30"
     },
     {
       "post_n": 6,
@@ -1558,28 +1061,12 @@
       "publish_time": "2026-07-12 14:08"
     },
     {
-      "post_n": 0,
-      "direction": "bearish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "所以别指望下午能走V，今天就是杀跌的一天，全天大绿盘是跑不了的！",
-      "publish_time": "2026-07-13 11:31"
-    },
-    {
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "long",
       "evidence": "接下来的行情方向，虽然不能排除短线依然有震荡，但大方向会在震荡中逐步上行，已成了高确定性事件。",
       "publish_time": "2026-07-13 15:00"
-    },
-    {
-      "post_n": 13,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "unspecified",
-      "evidence": "就是今天！底部将现！股市行情随时能迎来惊天反转！因此这里我毫不含糊，全面看涨！",
-      "publish_time": "2026-07-14 11:32"
     },
     {
       "post_n": 12,
@@ -1590,28 +1077,12 @@
       "publish_time": "2026-07-14 15:06"
     },
     {
-      "post_n": 11,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "今天会冲高回落，收阴线！这是我在昨天给的判断，这里观点不变！",
-      "publish_time": "2026-07-15 11:30"
-    },
-    {
       "post_n": 10,
       "direction": "bullish",
       "strength": "strong",
       "time_horizon": "short",
       "evidence": "明确观点，明天会涨！且大概率会让人目瞪口呆，不仅收中阳线， 且会向上补缺，直接破4000！",
       "publish_time": "2026-07-15 15:01"
-    },
-    {
-      "post_n": 9,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "至此明确观点，下午走V翻红，收中阳线！破4000（这里的破，要有爆破音）！",
-      "publish_time": "2026-07-16 11:30"
     },
     {
       "post_n": 8,
@@ -1638,28 +1109,12 @@
       "publish_time": "2026-07-19 14:08"
     },
     {
-      "post_n": 5,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "今日红盘已是定局！但下午多半还有反复，最终或收红十字星！",
-      "publish_time": "2026-07-20 11:30"
-    },
-    {
       "post_n": 4,
       "direction": "bullish",
       "strength": "strong",
       "time_horizon": "unspecified",
       "evidence": "所以即便现在，我说3745就是底，也没任何毛病，我又没说它是极限...",
       "publish_time": "2026-07-20 15:04"
-    },
-    {
-      "post_n": 3,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "我说了，今天会站上5日线，收中阳线！就这一句话，我敢断言，全网敢说，且非乱说的人，不超一手之数！",
-      "publish_time": "2026-07-21 11:30"
     },
     {
       "post_n": 2,
@@ -1670,14 +1125,6 @@
       "publish_time": "2026-07-21 15:04"
     },
     {
-      "post_n": 1,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "unspecified",
-      "evidence": "但不论怎么走，大概率都会在两市跌大于涨的情况下，最终收小阳线。",
-      "publish_time": "2026-07-22 11:30"
-    },
-    {
       "post_n": 0,
       "direction": "bearish",
       "strength": "moderate",
@@ -1686,28 +1133,12 @@
       "publish_time": "2026-07-22 15:04"
     },
     {
-      "post_n": 14,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "今天会收阴线，这是方向！细节是下午可能会收在3860的下方。",
-      "publish_time": "2026-07-23 11:30"
-    },
-    {
       "post_n": 13,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "涨不上去就别勉强了！明天大概率会回踩5日线，守不住会再次探底，守住了，这波短线才不会再现凌厉杀跌！",
       "publish_time": "2026-07-23 15:00"
-    },
-    {
-      "post_n": 12,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "所以说实话，此刻除了今天会收阴线的判断，我已不敢笃定一定会守住5日线，只能用猜的，我猜今天会守住5日线。",
-      "publish_time": "2026-07-24 11:30"
     },
     {
       "post_n": 11,
@@ -1726,28 +1157,12 @@
       "publish_time": "2026-07-26 14:08"
     },
     {
-      "post_n": 9,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "今天会收涨！但下午难有大涨，最终大概率会在5日线下收阳线！",
-      "publish_time": "2026-07-27 11:30"
-    },
-    {
       "post_n": 8,
       "direction": "bearish",
       "strength": "strong",
       "time_horizon": "short",
       "evidence": "先明确观点，明天会跌！收阴线！",
       "publish_time": "2026-07-27 15:08"
-    },
-    {
-      "post_n": 7,
-      "direction": "bearish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "我说了，今日股市会跌！收阴线！方向就是跌！",
-      "publish_time": "2026-07-28 11:30"
     },
     {
       "post_n": 6,
@@ -1758,14 +1173,6 @@
       "publish_time": "2026-07-28 15:00"
     },
     {
-      "post_n": 5,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "先说短线，今天下午会走V翻红，收T字阳线！",
-      "publish_time": "2026-07-29 11:31"
-    },
-    {
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
@@ -1774,28 +1181,12 @@
       "publish_time": "2026-07-29 15:00"
     },
     {
-      "post_n": 3,
-      "direction": "bearish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "方向不变，今天就是会跌，收阴线！",
-      "publish_time": "2026-07-30 11:30"
-    },
-    {
       "post_n": 2,
       "direction": "bullish",
       "strength": "strong",
       "time_horizon": "short",
       "evidence": "明天将全面上攻！拉出一根中阳线，燃爆全场！同时完成整个七月探底走势的收束！",
       "publish_time": "2026-07-30 15:15"
-    },
-    {
-      "post_n": 1,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "下午将再次大涨！站上10日线收大红盘！而上午的冲高回落，正是后市能否拿到结果的分水岭！因此这篇内容较特别，我就是要告诉大家，现在的核心就两个字，进攻！",
-      "publish_time": "2026-07-31 11:33"
     },
     {
       "post_n": 0,

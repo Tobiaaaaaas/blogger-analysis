@@ -1,0 +1,218 @@
+{
+  "blogger": "凸教授",
+  "version": "v13",
+  "total_raw": 89,
+  "pre_2026": 0,
+  "scorable": 89,
+  "score_zero": 0,
+  "no_price": 0,
+  "no_segment": 0,
+  "case_a": 85,
+  "case_b": 4,
+  "first_signal_date": "2026-01-05",
+  "rankable": true,
+  "scores": {
+    "综合": {
+      "total_pct": 161.72,
+      "count": 89,
+      "avg_pct": 1.82,
+      "win_rate": 58.43
+    },
+    "上升段": {
+      "total_pct": 388.62,
+      "count": 57,
+      "avg_pct": 6.82,
+      "win_rate": 91.23
+    },
+    "下降段": {
+      "total_pct": -226.9,
+      "count": 32,
+      "avg_pct": -7.09,
+      "win_rate": 0.0
+    },
+    "抄底": {
+      "total_pct": 55.85,
+      "count": 7,
+      "avg_pct": 7.98,
+      "win_rate": 71.43
+    },
+    "逃顶": {
+      "total_pct": 0.0,
+      "count": 0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "看多": {
+      "total_pct": 162.81,
+      "count": 88,
+      "avg_pct": 1.85,
+      "win_rate": 59.09
+    },
+    "看空": {
+      "total_pct": -1.09,
+      "count": 1,
+      "avg_pct": -1.09,
+      "win_rate": 0.0
+    }
+  },
+  "time_horizon": {
+    "short": {
+      "count": 22,
+      "effective": 22,
+      "total_pct": 26.53,
+      "avg_pct": 1.21,
+      "win_rate": 72.73
+    },
+    "medium": {
+      "count": 6,
+      "effective": 6,
+      "total_pct": 18.26,
+      "avg_pct": 3.04,
+      "win_rate": 66.67
+    },
+    "long": {
+      "count": 7,
+      "effective": 7,
+      "total_pct": 19.02,
+      "avg_pct": 2.72,
+      "win_rate": 71.43
+    },
+    "unspecified": {
+      "count": 54,
+      "effective": 54,
+      "total_pct": 97.91,
+      "avg_pct": 1.81,
+      "win_rate": 50.0
+    }
+  },
+  "segments": {
+    "I10→M5": {
+      "direction": "falling",
+      "total": 14,
+      "bull": 14,
+      "bear": 0,
+      "score_pct": -142.72
+    },
+    "I11→I12": {
+      "direction": "rising",
+      "total": 1,
+      "bull": 1,
+      "bear": 0,
+      "score_pct": 10.89
+    },
+    "I7→I8": {
+      "direction": "rising",
+      "total": 8,
+      "bull": 8,
+      "bear": 0,
+      "score_pct": 22.71
+    },
+    "I8→I9": {
+      "direction": "falling",
+      "total": 15,
+      "bull": 15,
+      "bear": 0,
+      "score_pct": -66.13
+    },
+    "I9→I10": {
+      "direction": "rising",
+      "total": 14,
+      "bull": 13,
+      "bear": 1,
+      "score_pct": 20.45
+    },
+    "M5→M6": {
+      "direction": "rising",
+      "total": 34,
+      "bull": 34,
+      "bear": 0,
+      "score_pct": 334.57
+    },
+    "M6→I11": {
+      "direction": "falling",
+      "total": 3,
+      "bull": 3,
+      "bear": 0,
+      "score_pct": -18.05
+    }
+  },
+  "inflections": {
+    "I11": {
+      "signals": [
+        {
+          "date": "2026-06-08",
+          "time": "11:28",
+          "direction": "bullish",
+          "strength": "strong",
+          "score": 10.89,
+          "evidence": "凸教授坚定做多，左手券商，右手科技，继续满仓持股，经过今天的下跌之后，全球大的拐点即将来临，A股将王者归来！"
+        }
+      ],
+      "total_score_pct": 10.89,
+      "count": 1,
+      "avg_pct": 10.89
+    },
+    "I9": {
+      "signals": [
+        {
+          "date": "2026-02-02",
+          "time": "20:24",
+          "direction": "bullish",
+          "strength": "strong",
+          "score": -2.02,
+          "evidence": "不管别人怎么做，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！"
+        },
+        {
+          "date": "2026-02-03",
+          "time": "20:27",
+          "direction": "bullish",
+          "strength": "strong",
+          "score": 6.51,
+          "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！"
+        },
+        {
+          "date": "2026-02-04",
+          "time": "20:28",
+          "direction": "bullish",
+          "strength": "strong",
+          "score": 5.99,
+          "evidence": "明日大盘将会在券商板块的带动下，继续反攻！"
+        }
+      ],
+      "total_score_pct": 10.48,
+      "count": 3,
+      "avg_pct": 3.49
+    },
+    "M5": {
+      "signals": [
+        {
+          "date": "2026-03-22",
+          "time": "20:19",
+          "direction": "bullish",
+          "strength": "strong",
+          "score": -5.63,
+          "evidence": "不管别人怎么说，不管别人怎么做，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不"
+        },
+        {
+          "date": "2026-03-23",
+          "time": "20:23",
+          "direction": "bullish",
+          "strength": "strong",
+          "score": 21.27,
+          "evidence": "不管别人怎么说，不管别人怎么做，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不"
+        },
+        {
+          "date": "2026-03-24",
+          "time": "20:29",
+          "direction": "bullish",
+          "strength": "strong",
+          "score": 18.84,
+          "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！"
+        }
+      ],
+      "total_score_pct": 34.48,
+      "count": 3,
+      "avg_pct": 11.49
+    }
+  }
+}

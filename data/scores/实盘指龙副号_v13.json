@@ -1,0 +1,301 @@
+{
+  "blogger": "实盘指龙副号",
+  "version": "v13",
+  "total_raw": 337,
+  "pre_2026": 147,
+  "scorable": 190,
+  "score_zero": 1,
+  "no_price": 0,
+  "no_segment": 0,
+  "case_a": 181,
+  "case_b": 8,
+  "first_signal_date": "2026-01-02",
+  "rankable": true,
+  "scores": {
+    "综合": {
+      "total_pct": 26.21,
+      "count": 189,
+      "avg_pct": 0.14,
+      "win_rate": 53.44
+    },
+    "上升段": {
+      "total_pct": 215.05,
+      "count": 106,
+      "avg_pct": 2.03,
+      "win_rate": 75.47
+    },
+    "下降段": {
+      "total_pct": -188.84,
+      "count": 83,
+      "avg_pct": -2.28,
+      "win_rate": 25.3
+    },
+    "抄底": {
+      "total_pct": 34.9,
+      "count": 11,
+      "avg_pct": 3.17,
+      "win_rate": 72.73
+    },
+    "逃顶": {
+      "total_pct": 4.63,
+      "count": 2,
+      "avg_pct": 2.32,
+      "win_rate": 50.0
+    },
+    "看多": {
+      "total_pct": 14.1,
+      "count": 150,
+      "avg_pct": 0.09,
+      "win_rate": 55.33
+    },
+    "看空": {
+      "total_pct": 12.1,
+      "count": 39,
+      "avg_pct": 0.31,
+      "win_rate": 46.15
+    }
+  },
+  "time_horizon": {
+    "short": {
+      "count": 138,
+      "effective": 138,
+      "total_pct": -30.59,
+      "avg_pct": -0.22,
+      "win_rate": 49.28
+    },
+    "medium": {
+      "count": 44,
+      "effective": 43,
+      "total_pct": 53.12,
+      "avg_pct": 1.24,
+      "win_rate": 67.44
+    },
+    "long": {
+      "count": 0,
+      "effective": 0,
+      "total_pct": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "unspecified": {
+      "count": 8,
+      "effective": 8,
+      "total_pct": 3.68,
+      "avg_pct": 0.46,
+      "win_rate": 50.0
+    }
+  },
+  "segments": {
+    "I10→M5": {
+      "direction": "falling",
+      "total": 18,
+      "bull": 11,
+      "bear": 7,
+      "score_pct": -28.89
+    },
+    "I11→I12": {
+      "direction": "rising",
+      "total": 13,
+      "bull": 12,
+      "bear": 1,
+      "score_pct": 23.51
+    },
+    "I12→M7": {
+      "direction": "falling",
+      "total": 23,
+      "bull": 19,
+      "bear": 4,
+      "score_pct": -85.77
+    },
+    "I7→I8": {
+      "direction": "rising",
+      "total": 12,
+      "bull": 11,
+      "bear": 1,
+      "score_pct": 40.54
+    },
+    "I8→I9": {
+      "direction": "falling",
+      "total": 17,
+      "bull": 16,
+      "bear": 1,
+      "score_pct": -50.75
+    },
+    "I9→I10": {
+      "direction": "rising",
+      "total": 19,
+      "bull": 18,
+      "bear": 1,
+      "score_pct": 29.22
+    },
+    "M5→M6": {
+      "direction": "rising",
+      "total": 46,
+      "bull": 34,
+      "bear": 12,
+      "score_pct": 100.34
+    },
+    "M6→I11": {
+      "direction": "falling",
+      "total": 25,
+      "bull": 19,
+      "bear": 6,
+      "score_pct": -23.43
+    },
+    "M7→TMP": {
+      "direction": "rising",
+      "total": 16,
+      "bull": 10,
+      "bear": 6,
+      "score_pct": 21.44
+    }
+  },
+  "inflections": {
+    "I11": {
+      "signals": [
+        {
+          "date": "2026-06-07",
+          "time": "10:26",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 6.0,
+          "evidence": "下一周的行情，将是新一轮反弹行情的开始。"
+        },
+        {
+          "date": "2026-06-08",
+          "time": "23:20",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.96,
+          "evidence": "明日大盘：中大阳线！"
+        },
+        {
+          "date": "2026-06-09",
+          "time": "17:57",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.76,
+          "evidence": "明日继续看涨！"
+        }
+      ],
+      "total_score_pct": 15.72,
+      "count": 3,
+      "avg_pct": 5.24
+    },
+    "I8": {
+      "signals": [
+        {
+          "date": "2026-01-13",
+          "time": "17:35",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": -1.26,
+          "evidence": "接下来三天很可能还有中阴线杀跌，所以出来的仓位先拿着，到时候再次进场！"
+        }
+      ],
+      "total_score_pct": -1.26,
+      "count": 1,
+      "avg_pct": -1.26
+    },
+    "I9": {
+      "signals": [
+        {
+          "date": "2026-02-02",
+          "time": "22:25",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": -1.01,
+          "evidence": "明日大盘：低开高走中阳线！"
+        },
+        {
+          "date": "2026-02-03",
+          "time": "15:40",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 3.26,
+          "evidence": "继续持股待涨！明天很可能会继续反弹！"
+        },
+        {
+          "date": "2026-02-04",
+          "time": "23:52",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 2.99,
+          "evidence": "明天很可能会高开高走中大阳线！最差也得高开冲高回落小阳线！"
+        }
+      ],
+      "total_score_pct": 5.24,
+      "count": 3,
+      "avg_pct": 1.75
+    },
+    "M5": {
+      "signals": [
+        {
+          "date": "2026-03-22",
+          "time": "16:50",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": -2.82,
+          "evidence": "而从中长线来看，大盘依然还有行情！所以下周择机进场！"
+        },
+        {
+          "date": "2026-03-23",
+          "time": "22:12",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 10.63,
+          "evidence": "明天都很可能中大阳线修复，明天看普涨！"
+        }
+      ],
+      "total_score_pct": 7.81,
+      "count": 2,
+      "avg_pct": 3.91
+    },
+    "M6": {
+      "signals": [
+        {
+          "date": "2026-05-14",
+          "time": "18:17",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 5.9,
+          "evidence": "明天早盘会有低开，然后展开反弹。反弹的力度很重要，如果反弹高度比较高那么，那么下周一还能冲高。如果只是低开弱反弹，那么下"
+        }
+      ],
+      "total_score_pct": 5.9,
+      "count": 1,
+      "avg_pct": 5.9
+    },
+    "M7": {
+      "signals": [
+        {
+          "date": "2026-07-19",
+          "time": "10:43",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": -1.34,
+          "evidence": "明天大盘看探底回升阳线。"
+        },
+        {
+          "date": "2026-07-20",
+          "time": "17:30",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.1,
+          "evidence": "明天看中大阳线反弹。"
+        },
+        {
+          "date": "2026-07-21",
+          "time": "16:21",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 3.35,
+          "evidence": "明天大概率还是好日子[得意]，至少早上是。"
+        }
+      ],
+      "total_score_pct": 6.11,
+      "count": 3,
+      "avg_pct": 2.04
+    }
+  }
+}

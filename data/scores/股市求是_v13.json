@@ -1,0 +1,239 @@
+{
+  "blogger": "股市求是",
+  "version": "v13",
+  "total_raw": 673,
+  "pre_2026": 590,
+  "scorable": 83,
+  "score_zero": 4,
+  "no_price": 0,
+  "no_segment": 0,
+  "case_a": 78,
+  "case_b": 1,
+  "first_signal_date": "2026-01-05",
+  "rankable": true,
+  "scores": {
+    "综合": {
+      "total_pct": -17.44,
+      "count": 79,
+      "avg_pct": -0.22,
+      "win_rate": 54.43
+    },
+    "上升段": {
+      "total_pct": 24.48,
+      "count": 28,
+      "avg_pct": 0.87,
+      "win_rate": 67.86
+    },
+    "下降段": {
+      "total_pct": -41.92,
+      "count": 51,
+      "avg_pct": -0.82,
+      "win_rate": 47.06
+    },
+    "抄底": {
+      "total_pct": 15.98,
+      "count": 4,
+      "avg_pct": 4.0,
+      "win_rate": 100.0
+    },
+    "逃顶": {
+      "total_pct": 16.01,
+      "count": 3,
+      "avg_pct": 5.34,
+      "win_rate": 100.0
+    },
+    "看多": {
+      "total_pct": -87.66,
+      "count": 47,
+      "avg_pct": -1.87,
+      "win_rate": 40.43
+    },
+    "看空": {
+      "total_pct": 70.22,
+      "count": 32,
+      "avg_pct": 2.19,
+      "win_rate": 75.0
+    }
+  },
+  "time_horizon": {
+    "short": {
+      "count": 38,
+      "effective": 35,
+      "total_pct": 3.53,
+      "avg_pct": 0.1,
+      "win_rate": 54.29
+    },
+    "medium": {
+      "count": 40,
+      "effective": 40,
+      "total_pct": -10.0,
+      "avg_pct": -0.25,
+      "win_rate": 57.5
+    },
+    "long": {
+      "count": 0,
+      "effective": 0,
+      "total_pct": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "unspecified": {
+      "count": 5,
+      "effective": 4,
+      "total_pct": -10.98,
+      "avg_pct": -2.74,
+      "win_rate": 25.0
+    }
+  },
+  "segments": {
+    "I10→M5": {
+      "direction": "falling",
+      "total": 6,
+      "bull": 2,
+      "bear": 4,
+      "score_pct": 12.22
+    },
+    "I11→I12": {
+      "direction": "rising",
+      "total": 3,
+      "bull": 3,
+      "bear": 0,
+      "score_pct": 14.07
+    },
+    "I12→M7": {
+      "direction": "falling",
+      "total": 29,
+      "bull": 22,
+      "bear": 7,
+      "score_pct": -103.07
+    },
+    "I7→I8": {
+      "direction": "rising",
+      "total": 6,
+      "bull": 6,
+      "bear": 0,
+      "score_pct": 10.75
+    },
+    "I8→I9": {
+      "direction": "falling",
+      "total": 3,
+      "bull": 1,
+      "bear": 2,
+      "score_pct": 4.03
+    },
+    "I9→I10": {
+      "direction": "rising",
+      "total": 6,
+      "bull": 5,
+      "bear": 1,
+      "score_pct": 8.85
+    },
+    "M5→M6": {
+      "direction": "rising",
+      "total": 6,
+      "bull": 3,
+      "bear": 3,
+      "score_pct": -6.71
+    },
+    "M6→I11": {
+      "direction": "falling",
+      "total": 13,
+      "bull": 2,
+      "bear": 11,
+      "score_pct": 44.9
+    },
+    "M7→TMP": {
+      "direction": "rising",
+      "total": 7,
+      "bull": 3,
+      "bear": 4,
+      "score_pct": -2.49
+    }
+  },
+  "inflections": {
+    "I11": {
+      "signals": [
+        {
+          "date": "2026-06-08",
+          "time": "10:12",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 5.45,
+          "evidence": "可以肯定的说，每次急跌都会有反弹。"
+        }
+      ],
+      "total_score_pct": 5.45,
+      "count": 1,
+      "avg_pct": 5.45
+    },
+    "I9": {
+      "signals": [
+        {
+          "date": "2026-02-03",
+          "time": "13:40",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 3.18,
+          "evidence": "既然跌的深，那么必然会弹得大。何况咱们的市场，有上面罩着，你认为会跌到哪里去呢？慢牛会跌没吗？"
+        },
+        {
+          "date": "2026-02-03",
+          "time": "20:26",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 3.26,
+          "evidence": "所以如果有调整，不要害怕。小跌小买，大跌大买，春节前我依然认为大概率还是有红包行情的。"
+        }
+      ],
+      "total_score_pct": 6.44,
+      "count": 2,
+      "avg_pct": 3.22
+    },
+    "M6": {
+      "signals": [
+        {
+          "date": "2026-05-14",
+          "time": "13:28",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 5.98,
+          "evidence": "其实这个涨幅已基本上完成，后面虽然会有反复，但总体而言，从现在到5月下旬，总体看跌。一定要说上涨，那么你看看18号或者1"
+        },
+        {
+          "date": "2026-05-15",
+          "time": "10:55",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 5.02,
+          "evidence": "但总体而言，从现在到25号左右，主旋律是向下的。一定要等这个反抽，那么你看看18号或者19号吧。"
+        },
+        {
+          "date": "2026-05-15",
+          "time": "12:30",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 5.02,
+          "evidence": "缩量反弹的本质是没有增量资金。所以姑且判断行情难以为续。何况是周五，你要顶住周六周天一些消息面的影响。继续空仓不为过。"
+        }
+      ],
+      "total_score_pct": 16.02,
+      "count": 3,
+      "avg_pct": 5.34
+    },
+    "M7": {
+      "signals": [
+        {
+          "date": "2026-07-20",
+          "time": "16:08",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.1,
+          "evidence": "预计这个反弹，它是可以持续两天的。"
+        }
+      ],
+      "total_score_pct": 4.1,
+      "count": 1,
+      "avg_pct": 4.1
+    }
+  }
+}

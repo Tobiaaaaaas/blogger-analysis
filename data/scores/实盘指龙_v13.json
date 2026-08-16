@@ -1,0 +1,98 @@
+{
+  "blogger": "实盘指龙",
+  "version": "v13",
+  "total_raw": 5,
+  "pre_2026": 0,
+  "scorable": 5,
+  "score_zero": 0,
+  "no_price": 0,
+  "no_segment": 0,
+  "case_a": 5,
+  "case_b": 0,
+  "first_signal_date": "2026-07-26",
+  "rankable": false,
+  "scores": {
+    "综合": {
+      "total_pct": 19.57,
+      "count": 5,
+      "avg_pct": 3.91,
+      "win_rate": 100.0
+    },
+    "上升段": {
+      "total_pct": 19.57,
+      "count": 5,
+      "avg_pct": 3.91,
+      "win_rate": 100.0
+    },
+    "下降段": {
+      "total_pct": 0.0,
+      "count": 0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "抄底": {
+      "total_pct": 0.0,
+      "count": 0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "逃顶": {
+      "total_pct": 0.0,
+      "count": 0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "看多": {
+      "total_pct": 19.57,
+      "count": 5,
+      "avg_pct": 3.91,
+      "win_rate": 100.0
+    },
+    "看空": {
+      "total_pct": 0.0,
+      "count": 0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    }
+  },
+  "time_horizon": {
+    "short": {
+      "count": 5,
+      "effective": 5,
+      "total_pct": 19.57,
+      "avg_pct": 3.91,
+      "win_rate": 100.0
+    },
+    "medium": {
+      "count": 0,
+      "effective": 0,
+      "total_pct": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "long": {
+      "count": 0,
+      "effective": 0,
+      "total_pct": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "unspecified": {
+      "count": 0,
+      "effective": 0,
+      "total_pct": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    }
+  },
+  "segments": {
+    "M7→TMP": {
+      "direction": "rising",
+      "total": 5,
+      "bull": 5,
+      "bear": 0,
+      "score_pct": 19.57
+    }
+  },
+  "inflections": {}
+}

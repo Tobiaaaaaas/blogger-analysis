@@ -1,0 +1,247 @@
+{
+  "blogger": "衡山佛曰论股",
+  "version": "v13",
+  "total_raw": 173,
+  "pre_2026": 0,
+  "scorable": 173,
+  "score_zero": 0,
+  "no_price": 0,
+  "no_segment": 0,
+  "case_a": 166,
+  "case_b": 7,
+  "first_signal_date": "2026-01-01",
+  "rankable": true,
+  "scores": {
+    "综合": {
+      "total_pct": 172.95,
+      "count": 173,
+      "avg_pct": 1.0,
+      "win_rate": 60.12
+    },
+    "上升段": {
+      "total_pct": -8.03,
+      "count": 98,
+      "avg_pct": -0.08,
+      "win_rate": 51.02
+    },
+    "下降段": {
+      "total_pct": 180.98,
+      "count": 75,
+      "avg_pct": 2.41,
+      "win_rate": 72.0
+    },
+    "抄底": {
+      "total_pct": 6.61,
+      "count": 2,
+      "avg_pct": 3.3,
+      "win_rate": 50.0
+    },
+    "逃顶": {
+      "total_pct": 21.98,
+      "count": 6,
+      "avg_pct": 3.66,
+      "win_rate": 83.33
+    },
+    "看多": {
+      "total_pct": 64.25,
+      "count": 72,
+      "avg_pct": 0.89,
+      "win_rate": 68.06
+    },
+    "看空": {
+      "total_pct": 108.7,
+      "count": 101,
+      "avg_pct": 1.08,
+      "win_rate": 54.46
+    }
+  },
+  "time_horizon": {
+    "short": {
+      "count": 75,
+      "effective": 75,
+      "total_pct": 54.23,
+      "avg_pct": 0.72,
+      "win_rate": 60.0
+    },
+    "medium": {
+      "count": 28,
+      "effective": 28,
+      "total_pct": 50.57,
+      "avg_pct": 1.81,
+      "win_rate": 60.71
+    },
+    "long": {
+      "count": 49,
+      "effective": 49,
+      "total_pct": 29.43,
+      "avg_pct": 0.6,
+      "win_rate": 55.1
+    },
+    "unspecified": {
+      "count": 21,
+      "effective": 21,
+      "total_pct": 38.72,
+      "avg_pct": 1.84,
+      "win_rate": 71.43
+    }
+  },
+  "segments": {
+    "I10→M5": {
+      "direction": "falling",
+      "total": 17,
+      "bull": 5,
+      "bear": 12,
+      "score_pct": 65.09
+    },
+    "I11→I12": {
+      "direction": "rising",
+      "total": 13,
+      "bull": 4,
+      "bear": 9,
+      "score_pct": -37.7
+    },
+    "I12→M7": {
+      "direction": "falling",
+      "total": 22,
+      "bull": 10,
+      "bear": 12,
+      "score_pct": 24.43
+    },
+    "I7→I8": {
+      "direction": "rising",
+      "total": 11,
+      "bull": 7,
+      "bear": 4,
+      "score_pct": 13.76
+    },
+    "I8→I9": {
+      "direction": "falling",
+      "total": 15,
+      "bull": 1,
+      "bear": 14,
+      "score_pct": 30.17
+    },
+    "I9→I10": {
+      "direction": "rising",
+      "total": 23,
+      "bull": 7,
+      "bear": 16,
+      "score_pct": -40.86
+    },
+    "M5→M6": {
+      "direction": "rising",
+      "total": 40,
+      "bull": 28,
+      "bear": 12,
+      "score_pct": 44.64
+    },
+    "M6→I11": {
+      "direction": "falling",
+      "total": 21,
+      "bull": 3,
+      "bear": 18,
+      "score_pct": 61.29
+    },
+    "M7→TMP": {
+      "direction": "rising",
+      "total": 11,
+      "bull": 7,
+      "bear": 4,
+      "score_pct": 12.13
+    }
+  },
+  "inflections": {
+    "I10": {
+      "signals": [
+        {
+          "date": "2026-03-03",
+          "time": "21:55",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 7.16,
+          "evidence": "明天可能油气股下调与科技和其它权重股上行作对冲，如不是这样，则大盘彻底完结。"
+        }
+      ],
+      "total_score_pct": 7.16,
+      "count": 1,
+      "avg_pct": 7.16
+    },
+    "I8": {
+      "signals": [
+        {
+          "date": "2026-01-13",
+          "time": "12:16",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": -1.26,
+          "evidence": "大市转震荡无疑。"
+        },
+        {
+          "date": "2026-01-14",
+          "time": "20:47",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 2.51,
+          "evidence": "我认为短线应该把年初的上跳缺口补上，即最理想的走法得到3977.54点。但是事情总是多磨，想一步到位挺难，4070附近就"
+        },
+        {
+          "date": "2026-01-15",
+          "time": "22:52",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 3.01,
+          "evidence": "上证应该还是4100上下震荡，春节前估计都受限于4190~4200区域。"
+        }
+      ],
+      "total_score_pct": 4.26,
+      "count": 3,
+      "avg_pct": 1.42
+    },
+    "M5": {
+      "signals": [
+        {
+          "date": "2026-03-22",
+          "time": "18:43",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": -2.82,
+          "evidence": "如果战事预期在走向结束，那么将迎来全球共振式大反弹。别看美股这两天跌得凶。感觉港股\\A股\\美股都将按次序轮番进入反弹周期"
+        },
+        {
+          "date": "2026-03-24",
+          "time": "23:50",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 9.42,
+          "evidence": "我估什这次砸到3800，能保大盘三个月的太平环境，大涨大跌短期都没有。"
+        }
+      ],
+      "total_score_pct": 6.6,
+      "count": 2,
+      "avg_pct": 3.3
+    },
+    "M6": {
+      "signals": [
+        {
+          "date": "2026-05-14",
+          "time": "17:04",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 5.9,
+          "evidence": "综合评判：短期转震荡市，且下跌未结束，41110平台及4118点缺口位面临考验。"
+        },
+        {
+          "date": "2026-05-15",
+          "time": "19:54",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 4.66,
+          "evidence": "日线大转向标志性K线出现，可能判错，而周线穿头破脚且留下长上影阴包阳，就不能不算，转向太明显。"
+        }
+      ],
+      "total_score_pct": 10.56,
+      "count": 2,
+      "avg_pct": 5.28
+    }
+  }
+}

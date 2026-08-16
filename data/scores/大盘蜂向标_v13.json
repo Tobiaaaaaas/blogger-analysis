@@ -1,0 +1,284 @@
+{
+  "blogger": "大盘蜂向标",
+  "version": "v13",
+  "total_raw": 111,
+  "pre_2026": 0,
+  "scorable": 111,
+  "score_zero": 0,
+  "no_price": 0,
+  "no_segment": 0,
+  "case_a": 106,
+  "case_b": 5,
+  "first_signal_date": "2026-01-06",
+  "rankable": true,
+  "scores": {
+    "综合": {
+      "total_pct": 168.52,
+      "count": 111,
+      "avg_pct": 1.52,
+      "win_rate": 62.16
+    },
+    "上升段": {
+      "total_pct": 68.94,
+      "count": 61,
+      "avg_pct": 1.13,
+      "win_rate": 59.02
+    },
+    "下降段": {
+      "total_pct": 99.58,
+      "count": 50,
+      "avg_pct": 1.99,
+      "win_rate": 66.0
+    },
+    "抄底": {
+      "total_pct": 39.1,
+      "count": 7,
+      "avg_pct": 5.59,
+      "win_rate": 100.0
+    },
+    "逃顶": {
+      "total_pct": 16.56,
+      "count": 3,
+      "avg_pct": 5.52,
+      "win_rate": 100.0
+    },
+    "看多": {
+      "total_pct": 90.08,
+      "count": 54,
+      "avg_pct": 1.67,
+      "win_rate": 64.81
+    },
+    "看空": {
+      "total_pct": 78.44,
+      "count": 57,
+      "avg_pct": 1.38,
+      "win_rate": 59.65
+    }
+  },
+  "time_horizon": {
+    "short": {
+      "count": 28,
+      "effective": 28,
+      "total_pct": -44.54,
+      "avg_pct": -1.59,
+      "win_rate": 39.29
+    },
+    "medium": {
+      "count": 12,
+      "effective": 12,
+      "total_pct": 23.47,
+      "avg_pct": 1.96,
+      "win_rate": 75.0
+    },
+    "long": {
+      "count": 1,
+      "effective": 1,
+      "total_pct": -8.44,
+      "avg_pct": -8.44,
+      "win_rate": 0.0
+    },
+    "unspecified": {
+      "count": 70,
+      "effective": 70,
+      "total_pct": 198.03,
+      "avg_pct": 2.83,
+      "win_rate": 70.0
+    }
+  },
+  "segments": {
+    "I10→M5": {
+      "direction": "falling",
+      "total": 14,
+      "bull": 3,
+      "bear": 11,
+      "score_pct": 59.96
+    },
+    "I11→I12": {
+      "direction": "rising",
+      "total": 5,
+      "bull": 1,
+      "bear": 4,
+      "score_pct": -16.57
+    },
+    "I12→M7": {
+      "direction": "falling",
+      "total": 7,
+      "bull": 1,
+      "bear": 6,
+      "score_pct": 31.13
+    },
+    "I7→I8": {
+      "direction": "rising",
+      "total": 5,
+      "bull": 3,
+      "bear": 2,
+      "score_pct": 9.31
+    },
+    "I8→I9": {
+      "direction": "falling",
+      "total": 11,
+      "bull": 1,
+      "bear": 10,
+      "score_pct": 23.33
+    },
+    "I9→I10": {
+      "direction": "rising",
+      "total": 12,
+      "bull": 10,
+      "bear": 2,
+      "score_pct": 7.43
+    },
+    "M5→M6": {
+      "direction": "rising",
+      "total": 29,
+      "bull": 18,
+      "bear": 11,
+      "score_pct": 81.87
+    },
+    "M6→I11": {
+      "direction": "falling",
+      "total": 18,
+      "bull": 13,
+      "bear": 5,
+      "score_pct": -14.83
+    },
+    "M7→TMP": {
+      "direction": "rising",
+      "total": 10,
+      "bull": 4,
+      "bear": 6,
+      "score_pct": -13.09
+    }
+  },
+  "inflections": {
+    "I10": {
+      "signals": [
+        {
+          "date": "2026-03-04",
+          "time": "17:59",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 7.66,
+          "evidence": "洗盘还没结束，大概率是下跌中继。"
+        }
+      ],
+      "total_score_pct": 7.66,
+      "count": 1,
+      "avg_pct": 7.66
+    },
+    "I11": {
+      "signals": [
+        {
+          "date": "2026-06-07",
+          "time": "19:45",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 6.0,
+          "evidence": "美股极端暴跌之后，A股上涨的概率竟"
+        }
+      ],
+      "total_score_pct": 6.0,
+      "count": 1,
+      "avg_pct": 6.0
+    },
+    "I8": {
+      "signals": [
+        {
+          "date": "2026-01-15",
+          "time": "19:37",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 3.01,
+          "evidence": "所以，我预判明天充其量就是个弱反，下周继续调整。"
+        }
+      ],
+      "total_score_pct": 3.01,
+      "count": 1,
+      "avg_pct": 3.01
+    },
+    "I9": {
+      "signals": [
+        {
+          "date": "2026-02-03",
+          "time": "22:39",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 3.26,
+          "evidence": "我个人倾向于继续涨。"
+        },
+        {
+          "date": "2026-02-04",
+          "time": "21:56",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 2.99,
+          "evidence": "我认为明天会继续反弹。"
+        }
+      ],
+      "total_score_pct": 6.25,
+      "count": 2,
+      "avg_pct": 3.12
+    },
+    "M5": {
+      "signals": [
+        {
+          "date": "2026-03-23",
+          "time": "19:10",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 10.63,
+          "evidence": "绿柱出现，意味着什么？1、意味着反弹周期开启，95%的概率。2、意味着恐慌指数的1买出现，当前及以下位置机会大于风险。"
+        },
+        {
+          "date": "2026-03-24",
+          "time": "17:23",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 9.42,
+          "evidence": "不是股神的我就说一句：拿住！"
+        }
+      ],
+      "total_score_pct": 20.05,
+      "count": 2,
+      "avg_pct": 10.03
+    },
+    "M6": {
+      "signals": [
+        {
+          "date": "2026-05-14",
+          "time": "18:37",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 5.9,
+          "evidence": "暴击会迟到，但不会缺席。"
+        }
+      ],
+      "total_score_pct": 5.9,
+      "count": 1,
+      "avg_pct": 5.9
+    },
+    "M7": {
+      "signals": [
+        {
+          "date": "2026-07-20",
+          "time": "18:37",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.1,
+          "evidence": "这两个积极信号表明，科技短期有止跌反弹的需求，从而带动大盘止跌反弹。"
+        },
+        {
+          "date": "2026-07-21",
+          "time": "12:36",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 2.69,
+          "evidence": "只要cpo、存储科技止跌，大盘有70%的概率就会止跌反弹。"
+        }
+      ],
+      "total_score_pct": 6.79,
+      "count": 2,
+      "avg_pct": 3.39
+    }
+  }
+}

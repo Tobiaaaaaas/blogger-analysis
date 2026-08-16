@@ -1,0 +1,405 @@
+{
+  "blogger": "强哥解盘",
+  "version": "v13",
+  "total_raw": 1342,
+  "pre_2026": 889,
+  "scorable": 453,
+  "score_zero": 20,
+  "no_price": 3,
+  "no_segment": 0,
+  "case_a": 408,
+  "case_b": 22,
+  "first_signal_date": "2026-01-01",
+  "rankable": true,
+  "scores": {
+    "综合": {
+      "total_pct": 238.5,
+      "count": 430,
+      "avg_pct": 0.55,
+      "win_rate": 54.19
+    },
+    "上升段": {
+      "total_pct": 257.57,
+      "count": 248,
+      "avg_pct": 1.04,
+      "win_rate": 60.89
+    },
+    "下降段": {
+      "total_pct": -19.07,
+      "count": 182,
+      "avg_pct": -0.1,
+      "win_rate": 45.05
+    },
+    "抄底": {
+      "total_pct": 103.47,
+      "count": 20,
+      "avg_pct": 5.17,
+      "win_rate": 85.0
+    },
+    "逃顶": {
+      "total_pct": 24.88,
+      "count": 6,
+      "avg_pct": 4.15,
+      "win_rate": 83.33
+    },
+    "看多": {
+      "total_pct": 136.45,
+      "count": 255,
+      "avg_pct": 0.54,
+      "win_rate": 58.82
+    },
+    "看空": {
+      "total_pct": 102.05,
+      "count": 175,
+      "avg_pct": 0.58,
+      "win_rate": 47.43
+    }
+  },
+  "time_horizon": {
+    "short": {
+      "count": 263,
+      "effective": 249,
+      "total_pct": 203.26,
+      "avg_pct": 0.82,
+      "win_rate": 54.22
+    },
+    "medium": {
+      "count": 103,
+      "effective": 99,
+      "total_pct": -3.35,
+      "avg_pct": -0.03,
+      "win_rate": 54.55
+    },
+    "long": {
+      "count": 11,
+      "effective": 10,
+      "total_pct": 9.98,
+      "avg_pct": 1.0,
+      "win_rate": 50.0
+    },
+    "unspecified": {
+      "count": 73,
+      "effective": 72,
+      "total_pct": 28.61,
+      "avg_pct": 0.4,
+      "win_rate": 54.17
+    }
+  },
+  "segments": {
+    "I10→M5": {
+      "direction": "falling",
+      "total": 35,
+      "bull": 18,
+      "bear": 17,
+      "score_pct": 18.5
+    },
+    "I11→I12": {
+      "direction": "rising",
+      "total": 29,
+      "bull": 20,
+      "bear": 9,
+      "score_pct": -11.74
+    },
+    "I12→M7": {
+      "direction": "falling",
+      "total": 52,
+      "bull": 26,
+      "bear": 26,
+      "score_pct": -0.81
+    },
+    "I7→I8": {
+      "direction": "rising",
+      "total": 25,
+      "bull": 11,
+      "bear": 14,
+      "score_pct": -8.08
+    },
+    "I8→I9": {
+      "direction": "falling",
+      "total": 41,
+      "bull": 33,
+      "bear": 8,
+      "score_pct": -77.29
+    },
+    "I9→I10": {
+      "direction": "rising",
+      "total": 46,
+      "bull": 35,
+      "bear": 11,
+      "score_pct": 6.9
+    },
+    "M5→M6": {
+      "direction": "rising",
+      "total": 102,
+      "bull": 65,
+      "bear": 37,
+      "score_pct": 209.63
+    },
+    "M6→I11": {
+      "direction": "falling",
+      "total": 54,
+      "bull": 19,
+      "bear": 35,
+      "score_pct": 40.52
+    },
+    "M7→TMP": {
+      "direction": "rising",
+      "total": 46,
+      "bull": 28,
+      "bear": 18,
+      "score_pct": 60.87
+    }
+  },
+  "inflections": {
+    "I11": {
+      "signals": [
+        {
+          "date": "2026-06-08",
+          "time": "15:50",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.96,
+          "evidence": "强哥提醒周二指数先下探在回升弱势反弹。"
+        },
+        {
+          "date": "2026-06-08",
+          "time": "16:10",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.96,
+          "evidence": "强哥提醒周二先跌后涨"
+        },
+        {
+          "date": "2026-06-09",
+          "time": "11:53",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.11,
+          "evidence": "反弹可持续到周三。"
+        }
+      ],
+      "total_score_pct": 14.03,
+      "count": 3,
+      "avg_pct": 4.68
+    },
+    "I8": {
+      "signals": [
+        {
+          "date": "2026-01-13",
+          "time": "11:20",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": -1.26,
+          "evidence": "今天放量震荡调整难以避免"
+        }
+      ],
+      "total_score_pct": -1.26,
+      "count": 1,
+      "avg_pct": -1.26
+    },
+    "I9": {
+      "signals": [
+        {
+          "date": "2026-02-02",
+          "time": "18:52",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": -1.01,
+          "evidence": "跌破4000在3968之上反弹"
+        },
+        {
+          "date": "2026-02-03",
+          "time": "16:15",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 3.26,
+          "evidence": "对大盘明天继续反弹没影响。"
+        },
+        {
+          "date": "2026-02-03",
+          "time": "19:08",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 3.26,
+          "evidence": "结合以上盘面信号，强哥认为大盘指数周三继续反弹，参考反弹受5日线压制。"
+        }
+      ],
+      "total_score_pct": 5.51,
+      "count": 3,
+      "avg_pct": 1.84
+    },
+    "M5": {
+      "signals": [
+        {
+          "date": "2026-03-22",
+          "time": "11:14",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": -2.82,
+          "evidence": "从周五外盘继续大跌情况下来看，下周一大盘会继续受影响去考验3910支撑，证券会去考验1490支撑并击穿。如果证券能够起死"
+        },
+        {
+          "date": "2026-03-23",
+          "time": "11:54",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 11.69,
+          "evidence": "这个时候是机会而不是风险。"
+        },
+        {
+          "date": "2026-03-23",
+          "time": "16:04",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 10.63,
+          "evidence": "市场连续非理性下跌之后必然迎来报复性反弹"
+        },
+        {
+          "date": "2026-03-23",
+          "time": "20:51",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 10.63,
+          "evidence": "明天没啥好说的，迎接市场大复反弹即可"
+        },
+        {
+          "date": "2026-03-24",
+          "time": "15:51",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 9.42,
+          "evidence": "明天市场继续反弹站上3900"
+        },
+        {
+          "date": "2026-03-24",
+          "time": "16:15",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 9.42,
+          "evidence": "站上3880周三继续反弹"
+        },
+        {
+          "date": "2026-03-24",
+          "time": "17:13",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 9.42,
+          "evidence": "站上3880周三继续反弹"
+        }
+      ],
+      "total_score_pct": 58.39,
+      "count": 7,
+      "avg_pct": 8.34
+    },
+    "M6": {
+      "signals": [
+        {
+          "date": "2026-05-14",
+          "time": "15:57",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 5.9,
+          "evidence": "强哥提醒短期调整不可避免"
+        },
+        {
+          "date": "2026-05-14",
+          "time": "19:31",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 5.9,
+          "evidence": "大盘短线回调，没有任何涨多了个股不跌。"
+        },
+        {
+          "date": "2026-05-15",
+          "time": "13:16",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 5.02,
+          "evidence": "那表明今天这个快速回落快速反弹也只是短暂资金博弈区间反弹，结束后还是会继续下跌，以4062为最后参考支撑位。"
+        },
+        {
+          "date": "2026-05-15",
+          "time": "15:49",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 4.66,
+          "evidence": "补缺4118后还不能止跌"
+        },
+        {
+          "date": "2026-05-15",
+          "time": "18:44",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 4.66,
+          "evidence": "下周指数跌破4100，在4062一带可以考虑选择喜欢的个股下场。"
+        }
+      ],
+      "total_score_pct": 26.14,
+      "count": 5,
+      "avg_pct": 5.23
+    },
+    "M7": {
+      "signals": [
+        {
+          "date": "2026-07-19",
+          "time": "10:24",
+          "direction": "bullish",
+          "strength": "strong",
+          "score": -2.67,
+          "evidence": "强哥一锤定音周一A股不但不会下跌反而会止跌反弹"
+        },
+        {
+          "date": "2026-07-20",
+          "time": "14:46",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.54,
+          "evidence": "市场底部仍然维持3800，k线图m型底部仍然维持3731，若情绪悲观跌破3700也是短暂需要收回"
+        },
+        {
+          "date": "2026-07-20",
+          "time": "15:50",
+          "direction": "bullish",
+          "strength": "strong",
+          "score": 8.2,
+          "evidence": "周二将强势迎来反弹，再次由市场自己站回3800上。"
+        },
+        {
+          "date": "2026-07-21",
+          "time": "11:37",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 2.69,
+          "evidence": "本轮超跌反弹依然要去挑战第一反弹阻击位3966"
+        },
+        {
+          "date": "2026-07-21",
+          "time": "14:17",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 2.69,
+          "evidence": "只要站稳3830打掉政策托底资金堰塞湖后市反弹第一目标3966"
+        },
+        {
+          "date": "2026-07-21",
+          "time": "15:50",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 3.35,
+          "evidence": "接下来市场就是反弹第一目标位20日线和3966这个双重压力位"
+        },
+        {
+          "date": "2026-07-21",
+          "time": "18:22",
+          "direction": "bullish",
+          "strength": "strong",
+          "score": 6.71,
+          "evidence": "强哥已经一锤定音市场三重底验证3731底部成立，接下来市场就是上涨一条路。，没必要关心每天涨跌，安心持股待涨就是。"
+        }
+      ],
+      "total_score_pct": 25.51,
+      "count": 7,
+      "avg_pct": 3.64
+    }
+  }
+}

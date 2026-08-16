@@ -1,0 +1,284 @@
+{
+  "blogger": "白猫财眼",
+  "version": "v13",
+  "total_raw": 426,
+  "pre_2026": 289,
+  "scorable": 137,
+  "score_zero": 1,
+  "no_price": 0,
+  "no_segment": 0,
+  "case_a": 127,
+  "case_b": 9,
+  "first_signal_date": "2026-01-01",
+  "rankable": true,
+  "scores": {
+    "综合": {
+      "total_pct": -42.73,
+      "count": 136,
+      "avg_pct": -0.31,
+      "win_rate": 51.47
+    },
+    "上升段": {
+      "total_pct": 44.68,
+      "count": 76,
+      "avg_pct": 0.59,
+      "win_rate": 64.47
+    },
+    "下降段": {
+      "total_pct": -87.41,
+      "count": 60,
+      "avg_pct": -1.46,
+      "win_rate": 35.0
+    },
+    "抄底": {
+      "total_pct": 13.69,
+      "count": 6,
+      "avg_pct": 2.28,
+      "win_rate": 50.0
+    },
+    "逃顶": {
+      "total_pct": 27.03,
+      "count": 4,
+      "avg_pct": 6.76,
+      "win_rate": 100.0
+    },
+    "看多": {
+      "total_pct": -37.26,
+      "count": 91,
+      "avg_pct": -0.41,
+      "win_rate": 53.85
+    },
+    "看空": {
+      "total_pct": -5.47,
+      "count": 45,
+      "avg_pct": -0.12,
+      "win_rate": 46.67
+    }
+  },
+  "time_horizon": {
+    "short": {
+      "count": 38,
+      "effective": 38,
+      "total_pct": -23.34,
+      "avg_pct": -0.61,
+      "win_rate": 50.0
+    },
+    "medium": {
+      "count": 86,
+      "effective": 85,
+      "total_pct": 0.21,
+      "avg_pct": 0.0,
+      "win_rate": 54.12
+    },
+    "long": {
+      "count": 10,
+      "effective": 10,
+      "total_pct": -4.76,
+      "avg_pct": -0.48,
+      "win_rate": 50.0
+    },
+    "unspecified": {
+      "count": 3,
+      "effective": 3,
+      "total_pct": -14.83,
+      "avg_pct": -4.94,
+      "win_rate": 0.0
+    }
+  },
+  "segments": {
+    "I10→M5": {
+      "direction": "falling",
+      "total": 11,
+      "bull": 9,
+      "bear": 2,
+      "score_pct": -36.34
+    },
+    "I11→I12": {
+      "direction": "rising",
+      "total": 10,
+      "bull": 4,
+      "bear": 6,
+      "score_pct": -13.56
+    },
+    "I12→M7": {
+      "direction": "falling",
+      "total": 23,
+      "bull": 13,
+      "bear": 10,
+      "score_pct": -21.24
+    },
+    "I7→I8": {
+      "direction": "rising",
+      "total": 7,
+      "bull": 7,
+      "bear": 0,
+      "score_pct": 11.95
+    },
+    "I8→I9": {
+      "direction": "falling",
+      "total": 11,
+      "bull": 10,
+      "bear": 1,
+      "score_pct": -28.02
+    },
+    "I9→I10": {
+      "direction": "rising",
+      "total": 12,
+      "bull": 11,
+      "bear": 1,
+      "score_pct": 21.58
+    },
+    "M5→M6": {
+      "direction": "rising",
+      "total": 28,
+      "bull": 24,
+      "bear": 4,
+      "score_pct": 47.11
+    },
+    "M6→I11": {
+      "direction": "falling",
+      "total": 15,
+      "bull": 6,
+      "bear": 9,
+      "score_pct": -1.81
+    },
+    "M7→TMP": {
+      "direction": "rising",
+      "total": 19,
+      "bull": 7,
+      "bear": 12,
+      "score_pct": -22.39
+    }
+  },
+  "inflections": {
+    "I10": {
+      "signals": [
+        {
+          "date": "2026-03-04",
+          "time": "12:29",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 7.04,
+          "evidence": "先等这个周期性调整的低点出现，估计在4000附近。"
+        }
+      ],
+      "total_score_pct": 7.04,
+      "count": 1,
+      "avg_pct": 7.04
+    },
+    "I11": {
+      "signals": [
+        {
+          "date": "2026-06-09",
+          "time": "11:00",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.11,
+          "evidence": "短期大的风险已经过去了。就是整体交易会转向冷清一点，得往3季度去看了。"
+        }
+      ],
+      "total_score_pct": 4.11,
+      "count": 1,
+      "avg_pct": 4.11
+    },
+    "I12": {
+      "signals": [
+        {
+          "date": "2026-06-24",
+          "time": "14:57",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 9.0,
+          "evidence": "大金融，就是工具人。千万别指望大金融带着指数走什么主升浪。那些大金融启动，涨到4500,5000点的言论，千万别信。"
+        }
+      ],
+      "total_score_pct": 9.0,
+      "count": 1,
+      "avg_pct": 9.0
+    },
+    "I9": {
+      "signals": [
+        {
+          "date": "2026-02-02",
+          "time": "22:07",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": -1.01,
+          "evidence": "难道不是冰点将至，转折到了？"
+        }
+      ],
+      "total_score_pct": -1.01,
+      "count": 1,
+      "avg_pct": -1.01
+    },
+    "M5": {
+      "signals": [
+        {
+          "date": "2026-03-22",
+          "time": "12:17",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": -2.82,
+          "evidence": "市场连续杀冰点的情况，并不常见，一年一般就1-2次。去年的1124的3+1+3，7天冷却，这次是5+1+2，已经8天了。"
+        },
+        {
+          "date": "2026-03-23",
+          "time": "22:03",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 10.63,
+          "evidence": "好吧，先看反弹，再看二季度了。"
+        }
+      ],
+      "total_score_pct": 7.81,
+      "count": 2,
+      "avg_pct": 3.91
+    },
+    "M6": {
+      "signals": [
+        {
+          "date": "2026-05-14",
+          "time": "10:44",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 5.98,
+          "evidence": "行情确实没走完。但是行情不是这么玩的，不是这么一路高歌，也不可能没有调整。"
+        },
+        {
+          "date": "2026-05-15",
+          "time": "13:48",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 5.02,
+          "evidence": "牛市临近尾声。"
+        }
+      ],
+      "total_score_pct": 11.0,
+      "count": 2,
+      "avg_pct": 5.5
+    },
+    "M7": {
+      "signals": [
+        {
+          "date": "2026-07-19",
+          "time": "10:07",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": -1.34,
+          "evidence": "这里的下跌动能，已经要进入衰竭区了。现在就等巨无霸上市，市场把短期最后的风险释放完毕。"
+        },
+        {
+          "date": "2026-07-20",
+          "time": "16:07",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.1,
+          "evidence": "总之，短期回暖是早晚的，8月份应该还不错。"
+        }
+      ],
+      "total_score_pct": 2.76,
+      "count": 2,
+      "avg_pct": 1.38
+    }
+  }
+}

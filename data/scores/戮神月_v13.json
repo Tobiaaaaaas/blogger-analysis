@@ -1,0 +1,323 @@
+{
+  "blogger": "戮神月",
+  "version": "v13",
+  "total_raw": 308,
+  "pre_2026": 128,
+  "scorable": 180,
+  "score_zero": 2,
+  "no_price": 0,
+  "no_segment": 0,
+  "case_a": 171,
+  "case_b": 7,
+  "first_signal_date": "2026-01-04",
+  "rankable": true,
+  "scores": {
+    "综合": {
+      "total_pct": -36.57,
+      "count": 178,
+      "avg_pct": -0.21,
+      "win_rate": 50.0
+    },
+    "上升段": {
+      "total_pct": 138.46,
+      "count": 95,
+      "avg_pct": 1.46,
+      "win_rate": 63.16
+    },
+    "下降段": {
+      "total_pct": -175.03,
+      "count": 83,
+      "avg_pct": -2.11,
+      "win_rate": 34.94
+    },
+    "抄底": {
+      "total_pct": 36.08,
+      "count": 9,
+      "avg_pct": 4.01,
+      "win_rate": 77.78
+    },
+    "逃顶": {
+      "total_pct": 36.06,
+      "count": 5,
+      "avg_pct": 7.21,
+      "win_rate": 100.0
+    },
+    "看多": {
+      "total_pct": -34.22,
+      "count": 113,
+      "avg_pct": -0.3,
+      "win_rate": 51.33
+    },
+    "看空": {
+      "total_pct": -2.36,
+      "count": 65,
+      "avg_pct": -0.04,
+      "win_rate": 47.69
+    }
+  },
+  "time_horizon": {
+    "short": {
+      "count": 120,
+      "effective": 119,
+      "total_pct": 1.71,
+      "avg_pct": 0.01,
+      "win_rate": 52.1
+    },
+    "medium": {
+      "count": 36,
+      "effective": 35,
+      "total_pct": 38.63,
+      "avg_pct": 1.1,
+      "win_rate": 60.0
+    },
+    "long": {
+      "count": 1,
+      "effective": 1,
+      "total_pct": -7.09,
+      "avg_pct": -7.09,
+      "win_rate": 0.0
+    },
+    "unspecified": {
+      "count": 23,
+      "effective": 23,
+      "total_pct": -69.82,
+      "avg_pct": -3.04,
+      "win_rate": 26.09
+    }
+  },
+  "segments": {
+    "I10→M5": {
+      "direction": "falling",
+      "total": 17,
+      "bull": 12,
+      "bear": 5,
+      "score_pct": -36.83
+    },
+    "I11→I12": {
+      "direction": "rising",
+      "total": 13,
+      "bull": 3,
+      "bear": 10,
+      "score_pct": -3.36
+    },
+    "I12→M7": {
+      "direction": "falling",
+      "total": 25,
+      "bull": 23,
+      "bear": 2,
+      "score_pct": -123.65
+    },
+    "I7→I8": {
+      "direction": "rising",
+      "total": 9,
+      "bull": 8,
+      "bear": 1,
+      "score_pct": 9.31
+    },
+    "I8→I9": {
+      "direction": "falling",
+      "total": 19,
+      "bull": 4,
+      "bear": 15,
+      "score_pct": 26.97
+    },
+    "I9→I10": {
+      "direction": "rising",
+      "total": 16,
+      "bull": 11,
+      "bear": 5,
+      "score_pct": 2.01
+    },
+    "M5→M6": {
+      "direction": "rising",
+      "total": 40,
+      "bull": 23,
+      "bear": 17,
+      "score_pct": 77.83
+    },
+    "M6→I11": {
+      "direction": "falling",
+      "total": 22,
+      "bull": 13,
+      "bear": 9,
+      "score_pct": -41.52
+    },
+    "M7→TMP": {
+      "direction": "rising",
+      "total": 17,
+      "bull": 16,
+      "bear": 1,
+      "score_pct": 52.67
+    }
+  },
+  "inflections": {
+    "I10": {
+      "signals": [
+        {
+          "date": "2026-03-03",
+          "time": "20:41",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 7.16,
+          "evidence": "大幅度低开，然后向上反弹反弹，下午有可能还会复制今天的走势，继续回落。"
+        }
+      ],
+      "total_score_pct": 7.16,
+      "count": 1,
+      "avg_pct": 7.16
+    },
+    "I11": {
+      "signals": [
+        {
+          "date": "2026-06-08",
+          "time": "21:09",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.96,
+          "evidence": "综上所述，我认为明天大盘略高开，然后向上冲高 3985 有压力，回落收在 3973 附近，收小阳线。"
+        },
+        {
+          "date": "2026-06-09",
+          "time": "21:19",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.76,
+          "evidence": "综上所述，我认为明天大盘略高开，继续向上反弹。这一轮的反弹压力很有可能就在 4070。"
+        }
+      ],
+      "total_score_pct": 9.72,
+      "count": 2,
+      "avg_pct": 4.86
+    },
+    "I12": {
+      "signals": [
+        {
+          "date": "2026-06-22",
+          "time": "13:08",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 10.14,
+          "evidence": "综上所述，我认为下午大盘依然会回落，收小阴线到中阴线。"
+        },
+        {
+          "date": "2026-06-23",
+          "time": "21:41",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 8.54,
+          "evidence": "日线，然后围绕 4076 震荡，收在 4076 附近。"
+        }
+      ],
+      "total_score_pct": 18.68,
+      "count": 2,
+      "avg_pct": 9.34
+    },
+    "I8": {
+      "signals": [
+        {
+          "date": "2026-01-14",
+          "time": "21:07",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 2.51,
+          "evidence": "判断，我对明天的预判为明天大盘略低开，然后向下探底 4100探底回升，收在 5 日线附近，继续收阴线！"
+        }
+      ],
+      "total_score_pct": 2.51,
+      "count": 1,
+      "avg_pct": 2.51
+    },
+    "I9": {
+      "signals": [
+        {
+          "date": "2026-02-04",
+          "time": "20:49",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 2.99,
+          "evidence": "对于明天的行情来说，大盘略低开，震荡向上冲高收小阳线的概率高。"
+        }
+      ],
+      "total_score_pct": 2.99,
+      "count": 1,
+      "avg_pct": 2.99
+    },
+    "M5": {
+      "signals": [
+        {
+          "date": "2026-03-22",
+          "time": "18:23",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": -2.82,
+          "evidence": "总的来说，我认为明天就会结束本轮调整，开始弱反弹，我们的目标是 4050。"
+        },
+        {
+          "date": "2026-03-23",
+          "time": "20:52",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 10.63,
+          "evidence": "上所述，我认为明天会有一个快速的反弹，不排除反弹到跳空缺口以下 3900 点。"
+        },
+        {
+          "date": "2026-03-24",
+          "time": "21:44",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 9.42,
+          "evidence": "综上所述，我认为明天大盘会低开震荡，然后探底回升向上收在 3900 点附近收小阳线。有可能会向上回补一部分缺口。"
+        }
+      ],
+      "total_score_pct": 17.23,
+      "count": 3,
+      "avg_pct": 5.74
+    },
+    "M6": {
+      "signals": [
+        {
+          "date": "2026-05-13",
+          "time": "22:06",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 7.71,
+          "evidence": "综上所述，我认为明天行情大概率受到外围行情影响，大幅度低开探底回升，冲高回落收小阴线。"
+        }
+      ],
+      "total_score_pct": 7.71,
+      "count": 1,
+      "avg_pct": 7.71
+    },
+    "M7": {
+      "signals": [
+        {
+          "date": "2026-07-19",
+          "time": "20:26",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": -1.34,
+          "evidence": "下周行情我总体看反弹为主，而且我认为反弹的速度会比较快。"
+        },
+        {
+          "date": "2026-07-20",
+          "time": "20:54",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.1,
+          "evidence": "认为周三有可能有爆发趋势 因为最近两周 ETF 资金大幅度买入，周三是 7 月份 ETF 期权交割，有利于多方。"
+        },
+        {
+          "date": "2026-07-21",
+          "time": "21:25",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 3.35,
+          "evidence": "率会略低开，然后继续探底回升，收小阳到中阳线。"
+        }
+      ],
+      "total_score_pct": 6.11,
+      "count": 3,
+      "avg_pct": 2.04
+    }
+  }
+}

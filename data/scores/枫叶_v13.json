@@ -1,0 +1,647 @@
+{
+  "blogger": "枫叶",
+  "version": "v13",
+  "total_raw": 1186,
+  "pre_2026": 0,
+  "scorable": 1186,
+  "score_zero": 63,
+  "no_price": 8,
+  "no_segment": 0,
+  "case_a": 1066,
+  "case_b": 49,
+  "first_signal_date": "2026-01-24",
+  "rankable": true,
+  "scores": {
+    "综合": {
+      "total_pct": -17.97,
+      "count": 1115,
+      "avg_pct": -0.02,
+      "win_rate": 55.61
+    },
+    "上升段": {
+      "total_pct": 852.32,
+      "count": 679,
+      "avg_pct": 1.26,
+      "win_rate": 71.87
+    },
+    "下降段": {
+      "total_pct": -870.29,
+      "count": 436,
+      "avg_pct": -2.0,
+      "win_rate": 30.28
+    },
+    "抄底": {
+      "total_pct": 234.26,
+      "count": 57,
+      "avg_pct": 4.11,
+      "win_rate": 89.47
+    },
+    "逃顶": {
+      "total_pct": 7.66,
+      "count": 1,
+      "avg_pct": 7.66,
+      "win_rate": 100.0
+    },
+    "看多": {
+      "total_pct": 114.1,
+      "count": 831,
+      "avg_pct": 0.14,
+      "win_rate": 59.81
+    },
+    "看空": {
+      "total_pct": -132.07,
+      "count": 284,
+      "avg_pct": -0.47,
+      "win_rate": 43.31
+    }
+  },
+  "time_horizon": {
+    "short": {
+      "count": 644,
+      "effective": 609,
+      "total_pct": -137.47,
+      "avg_pct": -0.23,
+      "win_rate": 52.55
+    },
+    "medium": {
+      "count": 199,
+      "effective": 189,
+      "total_pct": 91.45,
+      "avg_pct": 0.48,
+      "win_rate": 62.43
+    },
+    "long": {
+      "count": 42,
+      "effective": 41,
+      "total_pct": 50.4,
+      "avg_pct": 1.23,
+      "win_rate": 70.73
+    },
+    "unspecified": {
+      "count": 293,
+      "effective": 276,
+      "total_pct": -22.35,
+      "avg_pct": -0.08,
+      "win_rate": 55.43
+    }
+  },
+  "segments": {
+    "I10→M5": {
+      "direction": "falling",
+      "total": 52,
+      "bull": 35,
+      "bear": 17,
+      "score_pct": -113.04
+    },
+    "I11→I12": {
+      "direction": "rising",
+      "total": 127,
+      "bull": 69,
+      "bear": 58,
+      "score_pct": -161.46
+    },
+    "I12→M7": {
+      "direction": "falling",
+      "total": 159,
+      "bull": 103,
+      "bear": 56,
+      "score_pct": -327.81
+    },
+    "I8→I9": {
+      "direction": "falling",
+      "total": 43,
+      "bull": 39,
+      "bear": 4,
+      "score_pct": -71.34
+    },
+    "I9→I10": {
+      "direction": "rising",
+      "total": 116,
+      "bull": 103,
+      "bear": 13,
+      "score_pct": 140.33
+    },
+    "M5→M6": {
+      "direction": "rising",
+      "total": 294,
+      "bull": 239,
+      "bear": 55,
+      "score_pct": 629.05
+    },
+    "M6→I11": {
+      "direction": "falling",
+      "total": 182,
+      "bull": 133,
+      "bear": 49,
+      "score_pct": -358.09
+    },
+    "M7→TMP": {
+      "direction": "rising",
+      "total": 142,
+      "bull": 110,
+      "bear": 32,
+      "score_pct": 244.4
+    }
+  },
+  "inflections": {
+    "I10": {
+      "signals": [
+        {
+          "date": "2026-03-04",
+          "time": "18:01",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 7.66,
+          "evidence": "更可能是在4050-4100点区间震荡筑底。"
+        }
+      ],
+      "total_score_pct": 7.66,
+      "count": 1,
+      "avg_pct": 7.66
+    },
+    "I11": {
+      "signals": [
+        {
+          "date": "2026-06-07",
+          "time": "16:14",
+          "direction": "bullish",
+          "strength": "strong",
+          "score": 12.0,
+          "evidence": "大家坐稳扶好了，从下周一起，牛市将继续加速\"大变盘\"了！"
+        },
+        {
+          "date": "2026-06-07",
+          "time": "18:55",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 6.0,
+          "evidence": "周末悲观情绪弥漫,主力会反向操作？不出意外的话,周一行情这样走"
+        },
+        {
+          "date": "2026-06-07",
+          "time": "21:59",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 6.0,
+          "evidence": "A股：下周稳了！周末这几件事串起来看，方向其实已经明牌了"
+        },
+        {
+          "date": "2026-06-08",
+          "time": "17:08",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.96,
+          "evidence": "不用慌！本周A股会见底！"
+        },
+        {
+          "date": "2026-06-09",
+          "time": "12:54",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.11,
+          "evidence": "不出意外的话,下午行情这样走！"
+        },
+        {
+          "date": "2026-06-09",
+          "time": "13:41",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.11,
+          "evidence": "下午大盘，会这样运行"
+        },
+        {
+          "date": "2026-06-09",
+          "time": "19:25",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.76,
+          "evidence": "明天开盘前听我一句"
+        },
+        {
+          "date": "2026-06-09",
+          "time": "21:07",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.76,
+          "evidence": "不出意外的话,明天周三行情这样走！"
+        },
+        {
+          "date": "2026-06-09",
+          "time": "21:23",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.76,
+          "evidence": "明天开盘必听我一句"
+        }
+      ],
+      "total_score_pct": 51.46,
+      "count": 9,
+      "avg_pct": 5.72
+    },
+    "I9": {
+      "signals": [
+        {
+          "date": "2026-02-02",
+          "time": "00:54",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": -1.88,
+          "evidence": "关于明天的A股，再给大家三个提醒，不出意外的话，明天这样走！"
+        },
+        {
+          "date": "2026-02-02",
+          "time": "09:48",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.51,
+          "evidence": "马上就要开盘了，关于今天的A股，提前给大家3个提醒！"
+        },
+        {
+          "date": "2026-02-02",
+          "time": "12:56",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.51,
+          "evidence": "市场有望在春节前完成震荡筑底，节后迎来新一轮上行行情。"
+        },
+        {
+          "date": "2026-02-02",
+          "time": "13:24",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.51,
+          "evidence": "A股：大盘精准跌到4063点，不出意外的话，下午行情这么走！"
+        },
+        {
+          "date": "2026-02-02",
+          "time": "17:11",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": -1.01,
+          "evidence": "中信建投证券强调，全A指数调整空间有限，且有望在春节前企稳，春节前后迎来新一轮上行行情。"
+        },
+        {
+          "date": "2026-02-02",
+          "time": "21:03",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": -1.01,
+          "evidence": "月因春节因素可能呈现“先弱后强”格局，但节后随着两会政策预期升温，指数表现值得期待。"
+        },
+        {
+          "date": "2026-02-02",
+          "time": "22:15",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": -1.01,
+          "evidence": "中信建投等机构明确表示，预计全A指数调整空间有限，且有望在春节前企稳，春节前后迎来新一轮上行行情。"
+        },
+        {
+          "date": "2026-02-02",
+          "time": "22:58",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": -1.01,
+          "evidence": "历史数据显示，2月上证指数上涨概率超过70%，平均涨幅达2.2%。调整带来的是机会而非风险，关键是守住本金，等待确定性机"
+        },
+        {
+          "date": "2026-02-03",
+          "time": "00:13",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 3.79,
+          "evidence": "进入业绩兑现期的驱动下，A股市场仍存在中期投资机会。"
+        },
+        {
+          "date": "2026-02-03",
+          "time": "00:50",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 3.79,
+          "evidence": "关于明天的A股，再给大家三个提醒，不出意外的话，明天这样走！"
+        },
+        {
+          "date": "2026-02-03",
+          "time": "12:47",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 3.18,
+          "evidence": "市场短期修复可期，但节前难现单边大涨，重在捕捉结构性机会。"
+        },
+        {
+          "date": "2026-02-03",
+          "time": "13:10",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 3.18,
+          "evidence": "A股：大盘奇迹高开涨到4049点，不出意外的话，下午行情这么走！"
+        },
+        {
+          "date": "2026-02-03",
+          "time": "18:40",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 3.26,
+          "evidence": "A股韧性十足，短期市场问题不大，随着资金持续流入和热点轮动，春季行情值得期待。"
+        },
+        {
+          "date": "2026-02-03",
+          "time": "20:02",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 3.26,
+          "evidence": "明天周三，A股大概率呈现先抑后扬走势。开盘后可能面临一定压力，但下行空间有限，午后有望逐步回升。"
+        },
+        {
+          "date": "2026-02-03",
+          "time": "20:08",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 3.26,
+          "evidence": "春节后由于临近两会召开，政策催化将会加速出现，市场交易热度会再度回升。"
+        },
+        {
+          "date": "2026-02-03",
+          "time": "21:01",
+          "direction": "bullish",
+          "strength": "strong",
+          "score": 6.51,
+          "evidence": "A股：周二绝地反击！4800股上涨,黄金坑确认!周三周四将重演历史"
+        },
+        {
+          "date": "2026-02-03",
+          "time": "21:55",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 3.26,
+          "evidence": "今夜无重大利空消息出现的话，明日市场有望延续今天的震荡反弹节奏。"
+        },
+        {
+          "date": "2026-02-03",
+          "time": "22:06",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 3.26,
+          "evidence": "这一压力位，则市场有望继续上扬；反之，若量能萎缩，可能出现震荡整理。"
+        },
+        {
+          "date": "2026-02-03",
+          "time": "23:50",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 3.26,
+          "evidence": "牛市，只要不踏空，你就是最大的赢家！"
+        },
+        {
+          "date": "2026-02-04",
+          "time": "21:42",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 2.99,
+          "evidence": "上方最近的压力位在4115点附近，如果金融权重能够持续发力，不排除指数会尝试挑战这一位置。"
+        }
+      ],
+      "total_score_pct": 50.61,
+      "count": 20,
+      "avg_pct": 2.53
+    },
+    "M5": {
+      "signals": [
+        {
+          "date": "2026-03-22",
+          "time": "13:32",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": -2.82,
+          "evidence": "大盘精准跌到3957.05点,不论你是空仓还是满仓,接下来请听我一句"
+        },
+        {
+          "date": "2026-03-24",
+          "time": "18:06",
+          "direction": "bullish",
+          "strength": "strong",
+          "score": 18.84,
+          "evidence": "周三，A股会迎来新的行情了，不用猜了，抄底！"
+        },
+        {
+          "date": "2026-03-24",
+          "time": "21:43",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 9.42,
+          "evidence": "明天还会继续大涨,甚至暴涨吗?我直接说结论,不废话,直接说重点："
+        },
+        {
+          "date": "2026-03-24",
+          "time": "23:34",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 9.42,
+          "evidence": "大盘精准涨到3881点,不论你是空仓还是满仓,明天开盘前请听我一句"
+        }
+      ],
+      "total_score_pct": 34.86,
+      "count": 4,
+      "avg_pct": 8.71
+    },
+    "M7": {
+      "signals": [
+        {
+          "date": "2026-07-20",
+          "time": "08:42",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.66,
+          "evidence": "今天会不会大跌甚至暴跌？我直接说答案，周一7.20开盘前听我一言"
+        },
+        {
+          "date": "2026-07-20",
+          "time": "12:55",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.54,
+          "evidence": "今天大盘精准涨到3808点,无论你是空仓是满仓,下午开盘前听我一句"
+        },
+        {
+          "date": "2026-07-20",
+          "time": "13:07",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.54,
+          "evidence": "A股：大盘精准跌到3808.39点，不出意外的话，下午行情这样走！"
+        },
+        {
+          "date": "2026-07-20",
+          "time": "13:14",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.54,
+          "evidence": "周一下午是继续反攻还是跳水？我直接说答案，下午开盘前听我一言"
+        },
+        {
+          "date": "2026-07-20",
+          "time": "13:28",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.54,
+          "evidence": "今天大盘精准涨到3808点,无论你是空仓是满仓,下午开盘前听我一句"
+        },
+        {
+          "date": "2026-07-20",
+          "time": "17:47",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.1,
+          "evidence": "A股：大盘精准涨到3796.28点，不出意外的话，明天行情这样走！"
+        },
+        {
+          "date": "2026-07-20",
+          "time": "18:29",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.1,
+          "evidence": "A股：211家跌停+尾盘神秘资金抄底，信号很明显，明天行情怎么看?"
+        },
+        {
+          "date": "2026-07-20",
+          "time": "19:26",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.1,
+          "evidence": "A股：大家坐稳扶好了，不出意外的话，明天周二或将再次历史重演?"
+        },
+        {
+          "date": "2026-07-20",
+          "time": "21:19",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.1,
+          "evidence": "今天大盘精准涨到3796点,无论你是空仓是满仓,明天开盘前听我一句"
+        },
+        {
+          "date": "2026-07-20",
+          "time": "22:09",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.1,
+          "evidence": "周二会不会继续大涨甚至暴涨?我直接说答案,周二开盘前请听我一言"
+        },
+        {
+          "date": "2026-07-20",
+          "time": "22:57",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.1,
+          "evidence": "A股：国家队强行护盘，政策底已现，不出意外的话,明天行情这样走"
+        },
+        {
+          "date": "2026-07-21",
+          "time": "08:44",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.1,
+          "evidence": "今天会不会大涨甚至暴涨？我直接说答案，周二7.21开盘前听我一言"
+        },
+        {
+          "date": "2026-07-21",
+          "time": "09:21",
+          "direction": "bullish",
+          "strength": "strong",
+          "score": 8.2,
+          "evidence": "A股:周二盘前猛料:这下彻底要稳了!中央多部委打出立体救市组合拳"
+        },
+        {
+          "date": "2026-07-21",
+          "time": "12:43",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 2.69,
+          "evidence": "上午收盘，休息时间有限，关于下午行情给大家3点提醒！"
+        },
+        {
+          "date": "2026-07-21",
+          "time": "12:56",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 2.69,
+          "evidence": "今天大盘精准涨到3819点,无论你是空仓是满仓,下午开盘前听我一句"
+        },
+        {
+          "date": "2026-07-21",
+          "time": "13:11",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 2.69,
+          "evidence": "A股：大盘精准涨到3819.66点，不出意外的话，下午行情这样走！"
+        },
+        {
+          "date": "2026-07-21",
+          "time": "13:31",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 2.69,
+          "evidence": "A股：巨幅震荡后大涨，半导体暴涨，下午大盘，会一骑绝尘吗？"
+        },
+        {
+          "date": "2026-07-21",
+          "time": "17:23",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 3.35,
+          "evidence": "今天大盘精准涨到3864点,无论你是空仓是满仓,明天开盘前听我一句"
+        },
+        {
+          "date": "2026-07-21",
+          "time": "17:42",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 3.35,
+          "evidence": "A股：周二科技奇迹日，半导体暴涨11%，周三牛市或将这样走了！"
+        },
+        {
+          "date": "2026-07-21",
+          "time": "18:48",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 3.35,
+          "evidence": "A股：大盘精准涨到3864.37点，半导体暴涨11%！明天行情这样走！"
+        },
+        {
+          "date": "2026-07-21",
+          "time": "19:19",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 3.35,
+          "evidence": "周三会不会继续大涨甚至暴涨?我直接说答案,周三开盘前请听我一言"
+        },
+        {
+          "date": "2026-07-21",
+          "time": "20:59",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 3.35,
+          "evidence": "今天大盘精准涨到3864点,无论你是空仓是满仓,明天开盘前听我一句"
+        },
+        {
+          "date": "2026-07-21",
+          "time": "21:39",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 3.35,
+          "evidence": "大盘精准涨到3864.37点，不出意外的话，明天周三行情这样走"
+        },
+        {
+          "date": "2026-07-21",
+          "time": "23:15",
+          "direction": "bullish",
+          "strength": "strong",
+          "score": 6.71,
+          "evidence": "国家队全力护盘!空头一击毙命!科技股王者归来?"
+        }
+      ],
+      "total_score_pct": 97.29,
+      "count": 24,
+      "avg_pct": 4.05
+    }
+  }
+}

@@ -13,20 +13,27 @@
     "other": 23
   },
   "scored_bullish": {
-    "strong": 15,
-    "moderate": 91,
-    "short": 44,
-    "medium": 27,
-    "long": 13,
-    "unspecified": 22
+    "by_strength": {
+      "moderate": 73,
+      "strong": 7
+    },
+    "by_time_horizon": {
+      "short": 35,
+      "unspecified": 14,
+      "long": 10,
+      "medium": 21
+    }
   },
   "scored_bearish": {
-    "strong": 2,
-    "moderate": 52,
-    "short": 32,
-    "medium": 15,
-    "long": 0,
-    "unspecified": 7
+    "by_strength": {
+      "moderate": 40,
+      "strong": 2
+    },
+    "by_time_horizon": {
+      "medium": 12,
+      "short": 24,
+      "unspecified": 6
+    }
   },
   "signals": [
     {
@@ -54,28 +61,12 @@
       "publish_time": "2026-01-08 17:52"
     },
     {
-      "post_n": 1,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "long",
-      "evidence": "今天继续收阳也没有问题！行情到春节前是没有问题的，当然也不可能一直一帆风顺，去年6月我就说上4200没有问题，现在再告诉大家春节前必上4500。",
-      "publish_time": "2026-01-13 06:53"
-    },
-    {
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "大盘的回落只是短期的，指数会到达4800，不用怀疑。",
       "publish_time": "2026-01-13 21:44"
-    },
-    {
-      "post_n": 13,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "洗盘不彻底，要小心今天冲高回落！明天可能继续调整！",
-      "publish_time": "2026-01-14 10:56"
     },
     {
       "post_n": 11,
@@ -100,14 +91,6 @@
       "time_horizon": "medium",
       "evidence": "机构大幅加空！下周还会回踩。",
       "publish_time": "2026-01-16 18:51"
-    },
-    {
-      "post_n": 6,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "今天属于初步企稳，春节行情还会继续",
-      "publish_time": "2026-01-19 21:16"
     },
     {
       "post_n": 5,
@@ -142,14 +125,6 @@
       "publish_time": "2026-01-26 17:40"
     },
     {
-      "post_n": 14,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "周三依然会出现回踩，短线要谨慎，坚决止盈高价股。",
-      "publish_time": "2026-01-27 18:32"
-    },
-    {
       "post_n": 13,
       "direction": "bearish",
       "strength": "moderate",
@@ -174,14 +149,6 @@
       "publish_time": "2026-01-29 17:12"
     },
     {
-      "post_n": 7,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "unspecified",
-      "evidence": "大盘指数还会不断新高，4500前不要过分担心。",
-      "publish_time": "2026-01-30 09:36"
-    },
-    {
       "post_n": 6,
       "direction": "bullish",
       "strength": "strong",
@@ -190,28 +157,12 @@
       "publish_time": "2026-01-30 21:07"
     },
     {
-      "post_n": 4,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "unspecified",
-      "evidence": "大盘终于到底了，4024就是低点。...未来引领大盘向上的一定是金融，白酒，基建，大消费等板块中的绩优股。...牛市绩优股的主升行情就要启动了。",
-      "publish_time": "2026-02-02 14:00"
-    },
-    {
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "unspecified",
       "evidence": "股海斜阳余晖对后市反而看高一线，原来的4500，可以看到4800。",
       "publish_time": "2026-02-02 15:20"
-    },
-    {
-      "post_n": 2,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "大盘已经见底，4002将是新的行情的起点。投资者要抓紧时间抄底 ，春节行情就要启动了！",
-      "publish_time": "2026-02-03 10:58"
     },
     {
       "post_n": 1,
@@ -262,28 +213,12 @@
       "publish_time": "2026-02-11 17:23"
     },
     {
-      "post_n": 8,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "综合来看，今日大盘要低开探底，再回升，节前的红包要泡汤。",
-      "publish_time": "2026-02-13 07:27"
-    },
-    {
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "long",
       "evidence": "坚定持有绩优股，春季行情将在3月份大放异彩。美国由于在就业数据上大肆造假，很多海外资本逃离美国股市，它们开始看好中国资产，人民币也在不断升值，很多海外资本会涌入中国股市，所以2026年股市依然会很牛，要坚定信心。蛇年股市走得是蜿蜒曲折，扭扭捏捏。马年股市一定会走得万马奔腾，马上发财！",
       "publish_time": "2026-02-13 18:29"
-    },
-    {
-      "post_n": 14,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "目前大盘在4100以上盘整时间太长了，必须有证券板块助攻才能攻克4200点大关，目前主力启动证券板块，说明主力要有大动作了。由于春节前股市没有行情，造成消费低迷，春节期间的房地产销售数据也非常差。之前牛市已经没有了牛样，软塌塌的。管理层已经被上面批评了，这样就会松绑，不会再打压大盘，本月收月线，月线收得越高越好，这样三月大盘会有更大涨幅！",
-      "publish_time": "2026-02-25 13:07"
     },
     {
       "post_n": 13,
@@ -382,14 +317,6 @@
       "publish_time": "2026-03-16 12:08"
     },
     {
-      "post_n": 14,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "昨天已经精准预测，大盘到底了，今天这跟中阳线是放量的，主力开始干活了。",
-      "publish_time": "2026-03-17 10:51"
-    },
-    {
       "post_n": 13,
       "direction": "bearish",
       "strength": "moderate",
@@ -404,30 +331,6 @@
       "time_horizon": "unspecified",
       "evidence": "那么后面一定会迎来更大的下跌，跌破4002点。",
       "publish_time": "2026-03-18 17:50"
-    },
-    {
-      "post_n": 11,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "unspecified",
-      "evidence": "目前可以抄底了，短线已经超跌，不管是短线还是中线，都风险不大了。",
-      "publish_time": "2026-03-23 09:48"
-    },
-    {
-      "post_n": 10,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "unspecified",
-      "evidence": "3799就是大底，短中期风险已经充分释放，可以补仓了。",
-      "publish_time": "2026-03-23 14:27"
-    },
-    {
-      "post_n": 9,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "今天到底是一次性到底，还是A浪杀跌，都应该抄底做反弹，所以今天下午到尾盘，吉星高照都不断加仓，等周线一笔反弹再减仓。",
-      "publish_time": "2026-03-23 22:11"
     },
     {
       "post_n": 8,
@@ -502,14 +405,6 @@
       "publish_time": "2026-04-07 19:42"
     },
     {
-      "post_n": 13,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "今日大盘会高开高走，然后冲高回落，所以散户朋友们不要追涨，等回踩后再加仓。",
-      "publish_time": "2026-04-08 08:46"
-    },
-    {
       "post_n": 12,
       "direction": "bearish",
       "strength": "moderate",
@@ -518,28 +413,12 @@
       "publish_time": "2026-04-08 18:41"
     },
     {
-      "post_n": 11,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "所以今天大概率是上窜下跳的震荡。",
-      "publish_time": "2026-04-09 09:38"
-    },
-    {
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大概率继续反弹。",
       "publish_time": "2026-04-09 20:57"
-    },
-    {
-      "post_n": 8,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "今日大盘会冲高回落，现在短线仓位减仓，尾盘接回。",
-      "publish_time": "2026-04-10 09:49"
     },
     {
       "post_n": 6,
@@ -558,14 +437,6 @@
       "publish_time": "2026-04-14 22:08"
     },
     {
-      "post_n": 2,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "所以大概率回调就要开始了，会补掉今天和昨天的跳空缺口，目前不要追涨，静待主力回调到位再上车。",
-      "publish_time": "2026-04-15 12:36"
-    },
-    {
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
@@ -580,22 +451,6 @@
       "time_horizon": "unspecified",
       "evidence": "让中国股市不要再人为干预，让快牛走起来！",
       "publish_time": "2026-04-20 09:15"
-    },
-    {
-      "post_n": 13,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "unspecified",
-      "evidence": "让中国股市不要再认为操纵，让快牛走起来！",
-      "publish_time": "2026-04-20 09:15"
-    },
-    {
-      "post_n": 11,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "unspecified",
-      "evidence": "第一目标位4700！",
-      "publish_time": "2026-04-21 05:37"
     },
     {
       "post_n": 9,
@@ -620,14 +475,6 @@
       "time_horizon": "unspecified",
       "evidence": "二次探底中！上周大盘重新走弱，日线KDJ已经死叉。",
       "publish_time": "2026-04-26 12:35"
-    },
-    {
-      "post_n": 4,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "月末大盘依然会震荡筑底，不要过于激进。",
-      "publish_time": "2026-04-27 09:41"
     },
     {
       "post_n": 3,
@@ -670,14 +517,6 @@
       "publish_time": "2026-05-06 19:53"
     },
     {
-      "post_n": 7,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "看来今天会高开高走，然后冲高回落。逢高继续减仓。",
-      "publish_time": "2026-05-07 08:43"
-    },
-    {
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
@@ -692,14 +531,6 @@
       "time_horizon": "medium",
       "evidence": "90分钟背驰结构形成！下周还有调整。",
       "publish_time": "2026-05-08 19:37"
-    },
-    {
-      "post_n": 4,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "unspecified",
-      "evidence": "吉星高照3月初就预测了大盘将在5月初启动主升行情，目前一一应验。个人认为，第一目标4700。",
-      "publish_time": "2026-05-11 17:58"
     },
     {
       "post_n": 3,
@@ -726,14 +557,6 @@
       "publish_time": "2026-05-13 18:39"
     },
     {
-      "post_n": 0,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "今天冲高要减仓，不能追涨!今天是日线高九序列，风险很大，而且科技股已经在冲顶了，所以不要追涨，而是要逢高减仓。",
-      "publish_time": "2026-05-14 07:06"
-    },
-    {
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
@@ -758,14 +581,6 @@
       "publish_time": "2026-05-18 18:59"
     },
     {
-      "post_n": 4,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "unspecified",
-      "evidence": "大盘企稳至少要到30日线支撑。",
-      "publish_time": "2026-05-19 20:36"
-    },
-    {
       "post_n": 3,
       "direction": "bearish",
       "strength": "moderate",
@@ -782,14 +597,6 @@
       "publish_time": "2026-05-20 21:20"
     },
     {
-      "post_n": 1,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "我已经在4199处大幅减仓，因为下周还有明显回踩。调整大概率会再创新低，位置在30日线附近。",
-      "publish_time": "2026-05-21 12:16"
-    },
-    {
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
@@ -804,14 +611,6 @@
       "time_horizon": "medium",
       "evidence": "所以大盘下周依然会调整，只是幅度会小。",
       "publish_time": "2026-05-22 20:30"
-    },
-    {
-      "post_n": 13,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "今天大盘有可能进行中阳诱多，注意适当减仓，等回踩再接回。",
-      "publish_time": "2026-05-26 06:43"
     },
     {
       "post_n": 12,
@@ -870,14 +669,6 @@
       "publish_time": "2026-06-03 20:51"
     },
     {
-      "post_n": 1,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "long",
-      "evidence": "综上所述，从技术面到政策面，大盘都将迎来牛市下半场！",
-      "publish_time": "2026-06-04 21:06"
-    },
-    {
       "post_n": 0,
       "direction": "bullish",
       "strength": "strong",
@@ -886,36 +677,12 @@
       "publish_time": "2026-06-04 21:08"
     },
     {
-      "post_n": 14,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "long",
-      "evidence": "六月就是高低切换的一个月，真正的行情在7月和8月。",
-      "publish_time": "2026-06-05 09:32"
-    },
-    {
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "medium",
       "evidence": "下周会继续回踩，周一技术面60分钟大概率会发生底背离，大盘有望在周一探底企稳。",
       "publish_time": "2026-06-05 18:23"
-    },
-    {
-      "post_n": 11,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "大盘转折就在下周上半周。",
-      "publish_time": "2026-06-07 09:25"
-    },
-    {
-      "post_n": 10,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "大盘转折就在下周上半周。",
-      "publish_time": "2026-06-07 12:48"
     },
     {
       "post_n": 9,
@@ -940,14 +707,6 @@
       "time_horizon": "long",
       "evidence": "目前，大盘的主跌阶段已经告一段落，下一步回踩确认后，将展开比较大的行情，点位看4500。大盘将在7月和8月迎来高潮。",
       "publish_time": "2026-06-09 21:02"
-    },
-    {
-      "post_n": 1,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "明日要看大金融是否能够连续走强，带领大盘日线收出红角线。这样，再度回踩，会形成日线级别的底背离，从而确定中期行情的底部。",
-      "publish_time": "2026-06-10 22:04"
     },
     {
       "post_n": 0,
@@ -1038,14 +797,6 @@
       "publish_time": "2026-06-26 12:20"
     },
     {
-      "post_n": 5,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "今天科技股已经冲顶完毕，注意风险！",
-      "publish_time": "2026-06-29 10:39"
-    },
-    {
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
@@ -1118,22 +869,6 @@
       "publish_time": "2026-07-10 19:51"
     },
     {
-      "post_n": 3,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "unspecified",
-      "evidence": "该上车了兄弟们！目前大盘出现39分钟，60分钟，90分钟，120分钟及日线底部钝化结构，说明马上要转折了，大家要赶紧抄底咯。",
-      "publish_time": "2026-07-13 12:48"
-    },
-    {
-      "post_n": 2,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "大盘到底了，3900就是大底，放心抄底咯，吉星高照是本次牛市的吹哨人，2024年9月18日，大盘在2689点形成熊牛转折点，是吉星高照第一时间告诉小伙伴们的，不信的，看我置顶文章。那么今天又是一个重要转折点，吉星高照再次提醒大家该上车了。",
-      "publish_time": "2026-07-13 14:50"
-    },
-    {
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
@@ -1158,28 +893,12 @@
       "publish_time": "2026-07-15 17:43"
     },
     {
-      "post_n": 10,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "大盘大概率会创新低，形成新的底背离结构，但低点就在3820到3870之间。今日科创板大跌，一些老登股，如地产等，反而大涨对冲。科创板已经跌幅很大，明日可能会形成科技和证券止跌反弹。由于大盘已经调整了9个月，周线级别指标有望在下周转折，牛市的下半场也有望在下周展开。",
-      "publish_time": "2026-07-16 22:05"
-    },
-    {
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "medium",
       "evidence": "大盘大概率会创新低，形成新的底背离结构，但低点就在3820到3870之间。今日科创板大跌，一些老登股，如地产等，反而大涨对冲。科创板已经跌幅很大，明日可能会形成科技和证券止跌反弹。由于大盘已经调整了9个月，周线级别指标有望在下周转折，牛市的下半场也有望在下周展开。",
       "publish_time": "2026-07-16 22:08"
-    },
-    {
-      "post_n": 8,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "3745是大底，风险已经充分释放，吉星高照今天抄底证券，等待黎明的到来。",
-      "publish_time": "2026-07-17 14:13"
     },
     {
       "post_n": 7,
@@ -1190,14 +909,6 @@
       "publish_time": "2026-07-17 21:32"
     },
     {
-      "post_n": 5,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "medium",
-      "evidence": "本周确定见底，唯一不能确定的是反弹节奏。本次见底反弹是一直向上，还是反弹到3920后，再度回踩。大A迟迟不发动牛市下半场，主要原因是霉国迟迟不降息。霉国打着控制CPI的旗号，想用高利率拖爆龙国，可美元国债支付的利息已经上万亿，超过了国防开支；而且非农就业数据越来越差。吉星高照估计，霉国最晚在9月降息，否则财政彻底崩盘，目前所谓鹰派作风就是演戏。所以真的大涨应该出现在霉国降息后，另一个924行情。当然，最近的一个议息会议时间是7月29日。如果霉国经济实在支撑",
-      "publish_time": "2026-07-20 07:32"
-    },
-    {
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
@@ -1206,36 +917,12 @@
       "publish_time": "2026-07-20 17:55"
     },
     {
-      "post_n": 3,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "今天将迎来大多数股票的反弹！昨天3000多家股票下跌，跌停的达到268家，今日大多数股票将会止跌反弹，尤其科技股会出现有力度的反弹，而昨天护盘大涨的白酒，地产，石油，保险等大盘蓝筹则会出现震荡调整，当然也不会深跌，因为大盘已经初步企稳。大盘反弹的第一目标位是3940，这里有个向下的跳空缺口，大概率会被补上。",
-      "publish_time": "2026-07-21 07:54"
-    },
-    {
-      "post_n": 2,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "今天将迎来大多数股票的反弹！昨天3000多家股票下跌，跌停的达到268家，今日大多数股票将会止跌反弹，尤其科技股会出现有力度的反弹，而昨天护盘大涨的白酒，地产，石油，保险等大盘蓝筹则会出现震荡调整，当然也不会深跌，因为大盘已经初步企稳。大盘反弹的第一目标位是3940，这里有个向下的跳空缺口，大概率会被补上。",
-      "publish_time": "2026-07-21 09:32"
-    },
-    {
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天继续看反弹，热点会有所切换。第一目标不变，依然是3940。",
       "publish_time": "2026-07-22 18:00"
-    },
-    {
-      "post_n": 13,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "现在处于4浪反弹中，目标在2920。明天继续反弹。",
-      "publish_time": "2026-07-23 19:00"
     },
     {
       "post_n": 12,
@@ -1262,14 +949,6 @@
       "publish_time": "2026-07-28 15:40"
     },
     {
-      "post_n": 13,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "科创板已经见底，大盘的双底很快构建完毕，周二是个转折点",
-      "publish_time": "2026-07-29 10:16"
-    },
-    {
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
@@ -1278,28 +957,12 @@
       "publish_time": "2026-07-29 18:46"
     },
     {
-      "post_n": 8,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "今天可能会影响大A开盘，但大A会展现自己的独立性，继续向上反弹。",
-      "publish_time": "2026-07-30 08:26"
-    },
-    {
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "unspecified",
       "evidence": "目前大A就是底部，至于是反弹后再创新低，还是直接向上，不管主力如何耍花招，吉星高照就一招搞定...你只要知道它要向上变盘就可以了。",
       "publish_time": "2026-07-30 18:18"
-    },
-    {
-      "post_n": 4,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "估计下周一会出现回踩。虽然上午4000多家股票上涨，但杂乱无章，没有主线，这种反弹走不远，下周依然看震荡调整。但总体而言，目前就是底部区域，不用过分恐慌。8月转势的概率很大，继续保持耐心和信心！",
-      "publish_time": "2026-07-31 11:55"
     },
     {
       "post_n": 2,

@@ -7,3 +7,4 @@ __pycache__/
 _*.txt
 _*.json
 merge_positions.py
+data/posts/_backup/

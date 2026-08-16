@@ -1,0 +1,285 @@
+{
+  "blogger": "梦若神机",
+  "version": "v13",
+  "total_raw": 154,
+  "pre_2026": 0,
+  "scorable": 154,
+  "score_zero": 0,
+  "no_price": 0,
+  "no_segment": 0,
+  "case_a": 148,
+  "case_b": 6,
+  "first_signal_date": "2026-01-04",
+  "rankable": true,
+  "scores": {
+    "综合": {
+      "total_pct": -96.12,
+      "count": 154,
+      "avg_pct": -0.62,
+      "win_rate": 42.21
+    },
+    "上升段": {
+      "total_pct": 44.42,
+      "count": 89,
+      "avg_pct": 0.5,
+      "win_rate": 51.69
+    },
+    "下降段": {
+      "total_pct": -140.54,
+      "count": 65,
+      "avg_pct": -2.16,
+      "win_rate": 29.23
+    },
+    "抄底": {
+      "total_pct": 21.07,
+      "count": 7,
+      "avg_pct": 3.01,
+      "win_rate": 57.14
+    },
+    "逃顶": {
+      "total_pct": 48.35,
+      "count": 4,
+      "avg_pct": 12.09,
+      "win_rate": 100.0
+    },
+    "看多": {
+      "total_pct": -19.05,
+      "count": 96,
+      "avg_pct": -0.2,
+      "win_rate": 48.96
+    },
+    "看空": {
+      "total_pct": -77.07,
+      "count": 58,
+      "avg_pct": -1.33,
+      "win_rate": 31.03
+    }
+  },
+  "time_horizon": {
+    "short": {
+      "count": 72,
+      "effective": 72,
+      "total_pct": -69.1,
+      "avg_pct": -0.96,
+      "win_rate": 43.06
+    },
+    "medium": {
+      "count": 30,
+      "effective": 30,
+      "total_pct": -34.92,
+      "avg_pct": -1.16,
+      "win_rate": 46.67
+    },
+    "long": {
+      "count": 8,
+      "effective": 8,
+      "total_pct": 0.4,
+      "avg_pct": 0.05,
+      "win_rate": 37.5
+    },
+    "unspecified": {
+      "count": 44,
+      "effective": 44,
+      "total_pct": 7.5,
+      "avg_pct": 0.17,
+      "win_rate": 38.64
+    }
+  },
+  "segments": {
+    "I10→M5": {
+      "direction": "falling",
+      "total": 16,
+      "bull": 16,
+      "bear": 0,
+      "score_pct": -139.33
+    },
+    "I11→I12": {
+      "direction": "rising",
+      "total": 13,
+      "bull": 1,
+      "bear": 12,
+      "score_pct": -70.98
+    },
+    "I12→M7": {
+      "direction": "falling",
+      "total": 16,
+      "bull": 6,
+      "bear": 10,
+      "score_pct": 70.22
+    },
+    "I7→I8": {
+      "direction": "rising",
+      "total": 5,
+      "bull": 5,
+      "bear": 0,
+      "score_pct": 12.88
+    },
+    "I8→I9": {
+      "direction": "falling",
+      "total": 11,
+      "bull": 11,
+      "bear": 0,
+      "score_pct": -46.84
+    },
+    "I9→I10": {
+      "direction": "rising",
+      "total": 12,
+      "bull": 7,
+      "bear": 5,
+      "score_pct": -16.22
+    },
+    "M5→M6": {
+      "direction": "rising",
+      "total": 47,
+      "bull": 32,
+      "bear": 15,
+      "score_pct": 152.36
+    },
+    "M6→I11": {
+      "direction": "falling",
+      "total": 22,
+      "bull": 15,
+      "bear": 7,
+      "score_pct": -24.59
+    },
+    "M7→TMP": {
+      "direction": "rising",
+      "total": 12,
+      "bull": 3,
+      "bear": 9,
+      "score_pct": -33.62
+    }
+  },
+  "inflections": {
+    "I11": {
+      "signals": [
+        {
+          "date": "2026-06-07",
+          "time": "19:20",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 6.0,
+          "evidence": "明天不用多想，重点先看韩国股市的盘面表现。只要韩股能探底回升、稳住走势，那咱们A股就完全不用担心，科技板块大概率也会同步"
+        }
+      ],
+      "total_score_pct": 6.0,
+      "count": 1,
+      "avg_pct": 6.0
+    },
+    "I12": {
+      "signals": [
+        {
+          "date": "2026-06-23",
+          "time": "17:48",
+          "direction": "bearish",
+          "strength": "strong",
+          "score": 17.07,
+          "evidence": "我把话撂这，这一轮不是短期洗盘，是实打实的深度杀跌行情！"
+        },
+        {
+          "date": "2026-06-24",
+          "time": "18:23",
+          "direction": "bearish",
+          "strength": "strong",
+          "score": 17.67,
+          "evidence": "依神机判断，不出意外明天科技板块就要开启暴跌模式，别觉得我危言耸听。"
+        }
+      ],
+      "total_score_pct": 34.74,
+      "count": 2,
+      "avg_pct": 17.37
+    },
+    "I9": {
+      "signals": [
+        {
+          "date": "2026-02-02",
+          "time": "20:05",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": -1.01,
+          "evidence": "神机未退，只为奔赴4500点的确定性"
+        },
+        {
+          "date": "2026-02-04",
+          "time": "15:18",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 2.99,
+          "evidence": "先抑后扬藏转机，神机静候证券大阳起稳升"
+        }
+      ],
+      "total_score_pct": 1.98,
+      "count": 2,
+      "avg_pct": 0.99
+    },
+    "M5": {
+      "signals": [
+        {
+          "date": "2026-03-22",
+          "time": "16:32",
+          "direction": "bullish",
+          "strength": "strong",
+          "score": -5.63,
+          "evidence": "明天看反弹收红，稳住节奏，吃肉行情就在眼前。"
+        },
+        {
+          "date": "2026-03-23",
+          "time": "15:30",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 10.63,
+          "evidence": "熬过低谷，才有高峰。稳住，我们等反弹，等反转，等柳暗花明那一天！"
+        },
+        {
+          "date": "2026-03-24",
+          "time": "18:18",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 9.42,
+          "evidence": "明天继续看涨，拿稳就行！"
+        }
+      ],
+      "total_score_pct": 14.42,
+      "count": 3,
+      "avg_pct": 4.81
+    },
+    "M6": {
+      "signals": [
+        {
+          "date": "2026-05-13",
+          "time": "16:29",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 7.71,
+          "evidence": "科技板块一路单边拉升，估值早就严重透支，高位获利盘堆积如山，资金分歧越来越大，随时都会迎来一波深度大调整。"
+        },
+        {
+          "date": "2026-05-14",
+          "time": "15:02",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 5.9,
+          "evidence": "我早就反复提醒，本轮调整远没到尽头，短期下跌趋势早已板上钉钉，别被丁点反弹迷了眼。明日乃至接下来一周，市场依旧难逃调整格"
+        }
+      ],
+      "total_score_pct": 13.61,
+      "count": 2,
+      "avg_pct": 6.8
+    },
+    "M7": {
+      "signals": [
+        {
+          "date": "2026-07-19",
+          "time": "16:30",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": -1.34,
+          "evidence": "这种短期情绪化下跌，来得快、回得更快，大概率明天就能全部收复失地。"
+        }
+      ],
+      "total_score_pct": -1.34,
+      "count": 1,
+      "avg_pct": -1.34
+    }
+  }
+}

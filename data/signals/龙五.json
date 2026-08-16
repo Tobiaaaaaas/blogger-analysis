@@ -13,22 +13,29 @@
     "other": 38
   },
   "scored_bullish": {
-    "strong": 22,
-    "moderate": 143,
-    "long": 13,
-    "medium": 15,
-    "short": 132,
-    "intraday": 4,
-    "unspecified": 1
+    "by_strength": {
+      "moderate": 122,
+      "strong": 20
+    },
+    "by_time_horizon": {
+      "medium": 11,
+      "long": 8,
+      "short": 119,
+      "unspecified": 1,
+      "intraday": 3
+    }
   },
   "scored_bearish": {
-    "strong": 7,
-    "moderate": 43,
-    "long": 0,
-    "medium": 3,
-    "short": 44,
-    "intraday": 1,
-    "unspecified": 2
+    "by_strength": {
+      "moderate": 38,
+      "strong": 6
+    },
+    "by_time_horizon": {
+      "short": 40,
+      "unspecified": 1,
+      "medium": 2,
+      "intraday": 1
+    }
   },
   "signals": [
     {
@@ -88,14 +95,6 @@
       "publish_time": "2025-09-04 19:07"
     },
     {
-      "post_n": 14,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下周前三天小阳线",
-      "publish_time": "2025-09-07 02:18"
-    },
-    {
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
@@ -120,14 +119,6 @@
       "publish_time": "2025-09-09 16:29"
     },
     {
-      "post_n": 7,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "long",
-      "evidence": "9月份进入震荡上升期，估计高点4000。10月震荡巩固4000点，可能达到4150左右，11.12月进入震荡下行调整期，点位在3800～4150之间",
-      "publish_time": "2025-09-15 16:59"
-    },
-    {
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
@@ -136,28 +127,12 @@
       "publish_time": "2025-09-15 21:21"
     },
     {
-      "post_n": 5,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "明天收小阳线概率70%，小阴线概率30%。",
-      "publish_time": "2025-09-16 01:44"
-    },
-    {
       "post_n": 4,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘大概率是震荡收小阴线概率70%，小阳线概率30%。",
       "publish_time": "2025-09-16 23:48"
-    },
-    {
-      "post_n": 3,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "明天大盘大概率平开或低开低走，收阴线。",
-      "publish_time": "2025-09-18 00:46"
     },
     {
       "post_n": 2,
@@ -176,14 +151,6 @@
       "publish_time": "2025-09-19 13:55"
     },
     {
-      "post_n": 13,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "long",
-      "evidence": "我个人预判牛市至少还要持续一年半，也可能持续整个十五五规划。",
-      "publish_time": "2025-09-22 19:47"
-    },
-    {
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
@@ -198,14 +165,6 @@
       "time_horizon": "short",
       "evidence": "我很乐观的预测，明天大盘收中阳线。",
       "publish_time": "2025-09-23 17:37"
-    },
-    {
-      "post_n": 10,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "节前到3901，如果到了关注我，我有个股推荐",
-      "publish_time": "2025-09-24 04:41"
     },
     {
       "post_n": 9,
@@ -264,14 +223,6 @@
       "publish_time": "2025-10-10 20:31"
     },
     {
-      "post_n": 2,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "放心，牛市格局已经基本形成，大盘不会暴跌，调整几十点个问题不大。满仓的不必过分担心，空仓的买进吃肉。",
-      "publish_time": "2025-10-12 10:37"
-    },
-    {
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
@@ -286,14 +237,6 @@
       "time_horizon": "medium",
       "evidence": "对接下来的走势，我认为明天会低开震荡高走，如果美股红收，那我们也会跟着走出中阳或小阳线。反之，会小阴线收盘。另外，10月份大盘上4000是大概率事件，不必担心。",
       "publish_time": "2025-10-13 16:44"
-    },
-    {
-      "post_n": 13,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "今天大盘估计震荡整理，低开或平开震荡走高，收小阳线。",
-      "publish_time": "2025-10-15 01:37"
     },
     {
       "post_n": 12,
@@ -366,14 +309,6 @@
       "time_horizon": "short",
       "evidence": "鉴于明晚美联储降息概率很高，所以个人推测明天大盘收小阳线，估计能站稳4000点。",
       "publish_time": "2025-10-28 17:38"
-    },
-    {
-      "post_n": 0,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "由此推断，明天高开收小阳线，为啥是小阳线呢，因为前几天涨的太快，GJ队肯定打压，不让涨的太快。周五可能收中阴线或小阴线。",
-      "publish_time": "2025-10-29 20:23"
     },
     {
       "post_n": 14,
@@ -528,14 +463,6 @@
       "publish_time": "2025-11-24 16:21"
     },
     {
-      "post_n": 2,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "今天预测收小阳或中阳线。",
-      "publish_time": "2025-11-25 08:29"
-    },
-    {
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
@@ -560,14 +487,6 @@
       "publish_time": "2025-11-27 16:58"
     },
     {
-      "post_n": 12,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "我预测明天大盘在3875～3895之间做箱体震荡。极可能收到3878附近。",
-      "publish_time": "2025-11-30 12:09"
-    },
-    {
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
@@ -584,28 +503,12 @@
       "publish_time": "2025-12-01 19:49"
     },
     {
-      "post_n": 9,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "long",
-      "evidence": "结论，牛市远远没有结束，大家尽可放心。",
-      "publish_time": "2025-12-02 09:54"
-    },
-    {
       "post_n": 8,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "主要看下午能否收复3900，如果收盘跌破的3900，那明天极可能继续下探。",
       "publish_time": "2025-12-02 13:25"
-    },
-    {
-      "post_n": 7,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "今天大盘估计在3876～3916之间震荡，估计收小阳线",
-      "publish_time": "2025-12-03 09:55"
     },
     {
       "post_n": 6,
@@ -680,14 +583,6 @@
       "publish_time": "2025-12-12 01:53"
     },
     {
-      "post_n": 6,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "明天继续收阴线",
-      "publish_time": "2025-12-15 17:45"
-    },
-    {
       "post_n": 5,
       "direction": "bearish",
       "strength": "moderate",
@@ -734,22 +629,6 @@
       "time_horizon": "short",
       "evidence": "明天大盘在3890～3920震荡",
       "publish_time": "2025-12-22 17:54"
-    },
-    {
-      "post_n": 11,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "中线持有必赚",
-      "publish_time": "2025-12-23 00:30"
-    },
-    {
-      "post_n": 10,
-      "direction": "bearish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "今天收盘低于3936，明天必收阴线",
-      "publish_time": "2025-12-23 13:33"
     },
     {
       "post_n": 9,
@@ -800,28 +679,12 @@
       "publish_time": "2025-12-30 11:18"
     },
     {
-      "post_n": 0,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "long",
-      "evidence": "慢牛。26年估计4500～4700之间",
-      "publish_time": "2026-01-01 02:07"
-    },
-    {
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "long",
       "evidence": "#你对2026年最大的愿望是什么#大牛市",
       "publish_time": "2026-01-01 02:08"
-    },
-    {
-      "post_n": 10,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "神奇11连阳后面还有4连阳吗",
-      "publish_time": "2026-01-02 09:18"
     },
     {
       "post_n": 9,
@@ -856,36 +719,12 @@
       "publish_time": "2026-01-08 18:30"
     },
     {
-      "post_n": 2,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "最后提醒，涨的越快，越要如履薄冰，如临深渊。春节前一定做到套利兑现，最多持仓3层。保证节后资金充裕。",
-      "publish_time": "2026-01-09 17:31"
-    },
-    {
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "我不这么认为，我认为乐观估计，可能18连阳，到4180左右，然后回调到 4090左右。",
       "publish_time": "2026-01-09 21:58"
-    },
-    {
-      "post_n": 12,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "long",
-      "evidence": "今年至少有2～3波行情",
-      "publish_time": "2026-01-12 01:14"
-    },
-    {
-      "post_n": 11,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "乐观估计周一二收阳，4170左右。周三掉头小阴线，周四周五中阴线，4050左右。",
-      "publish_time": "2026-01-12 01:16"
     },
     {
       "post_n": 10,
@@ -960,14 +799,6 @@
       "publish_time": "2026-01-22 16:59"
     },
     {
-      "post_n": 3,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "预测明天大盘会收到4140左右。",
-      "publish_time": "2026-01-26 17:05"
-    },
-    {
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
@@ -1038,22 +869,6 @@
       "time_horizon": "short",
       "evidence": "明天必须收4130+，否则春节红包就是大问题了。",
       "publish_time": "2026-02-04 20:44"
-    },
-    {
-      "post_n": 4,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "尽管今天大盘缩量3000亿，但我仍旧看好周五大盘走势。",
-      "publish_time": "2026-02-05 16:28"
-    },
-    {
-      "post_n": 2,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "周一收长阳\n请看美股昨天就知道了。春节前收盘4151～4200，观点不变。",
-      "publish_time": "2026-02-07 14:24"
     },
     {
       "post_n": 1,
@@ -1232,14 +1047,6 @@
       "publish_time": "2026-03-31 17:57"
     },
     {
-      "post_n": 3,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "明天100%概率收红",
-      "publish_time": "2026-04-01 00:22"
-    },
-    {
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
@@ -1374,14 +1181,6 @@
       "time_horizon": "short",
       "evidence": "明日大盘整体震荡偏强，冲高后有小幅回踩休整需求，指数趋势向好、结构行情为主。",
       "publish_time": "2026-05-06 16:11"
-    },
-    {
-      "post_n": 8,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "5月8日大盘将延续“强势震荡、科技领航”格局，4200点近在咫尺，但过程难免波折。",
-      "publish_time": "2026-05-07 17:26"
     },
     {
       "post_n": 7,
@@ -1544,22 +1343,6 @@
       "publish_time": "2026-06-10 16:49"
     },
     {
-      "post_n": 7,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "unspecified",
-      "evidence": "美股如果牛市结束了，我们也就跟着结束了，大盘就不是3800的问题了，是重回3000点。",
-      "publish_time": "2026-06-11 09:16"
-    },
-    {
-      "post_n": 6,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "明天大盘必反弹",
-      "publish_time": "2026-06-11 16:20"
-    },
-    {
       "post_n": 5,
       "direction": "bullish",
       "strength": "strong",
@@ -1574,14 +1357,6 @@
       "time_horizon": "short",
       "evidence": "周一跳空低开",
       "publish_time": "2026-06-13 11:46"
-    },
-    {
-      "post_n": 2,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "明日A股无系统性风险，整体呈现窄幅震荡、小幅收涨、结构活跃的行情。",
-      "publish_time": "2026-06-15 17:35"
     },
     {
       "post_n": 1,
@@ -1617,14 +1392,6 @@
     },
     {
       "post_n": 6,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "明天收小阳线（赛道推荐）",
-      "publish_time": "2026-06-24 16:43"
-    },
-    {
-      "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",

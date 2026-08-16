@@ -1,0 +1,269 @@
+{
+  "blogger": "吉星高照",
+  "version": "v13",
+  "total_raw": 117,
+  "pre_2026": 0,
+  "scorable": 117,
+  "score_zero": 0,
+  "no_price": 0,
+  "no_segment": 0,
+  "case_a": 111,
+  "case_b": 6,
+  "first_signal_date": "2026-01-05",
+  "rankable": true,
+  "scores": {
+    "综合": {
+      "total_pct": 63.85,
+      "count": 117,
+      "avg_pct": 0.55,
+      "win_rate": 57.26
+    },
+    "上升段": {
+      "total_pct": 95.97,
+      "count": 61,
+      "avg_pct": 1.57,
+      "win_rate": 68.85
+    },
+    "下降段": {
+      "total_pct": -32.12,
+      "count": 56,
+      "avg_pct": -0.57,
+      "win_rate": 44.64
+    },
+    "抄底": {
+      "total_pct": 40.54,
+      "count": 7,
+      "avg_pct": 5.79,
+      "win_rate": 85.71
+    },
+    "逃顶": {
+      "total_pct": 16.54,
+      "count": 2,
+      "avg_pct": 8.27,
+      "win_rate": 100.0
+    },
+    "看多": {
+      "total_pct": 10.51,
+      "count": 77,
+      "avg_pct": 0.14,
+      "win_rate": 55.84
+    },
+    "看空": {
+      "total_pct": 53.35,
+      "count": 40,
+      "avg_pct": 1.33,
+      "win_rate": 60.0
+    }
+  },
+  "time_horizon": {
+    "short": {
+      "count": 54,
+      "effective": 54,
+      "total_pct": 66.89,
+      "avg_pct": 1.24,
+      "win_rate": 59.26
+    },
+    "medium": {
+      "count": 33,
+      "effective": 33,
+      "total_pct": -14.08,
+      "avg_pct": -0.43,
+      "win_rate": 54.55
+    },
+    "long": {
+      "count": 10,
+      "effective": 10,
+      "total_pct": 27.12,
+      "avg_pct": 2.71,
+      "win_rate": 70.0
+    },
+    "unspecified": {
+      "count": 20,
+      "effective": 20,
+      "total_pct": -16.07,
+      "avg_pct": -0.8,
+      "win_rate": 50.0
+    }
+  },
+  "segments": {
+    "I10→M5": {
+      "direction": "falling",
+      "total": 9,
+      "bull": 6,
+      "bear": 3,
+      "score_pct": -26.17
+    },
+    "I11→I12": {
+      "direction": "rising",
+      "total": 9,
+      "bull": 4,
+      "bear": 5,
+      "score_pct": -8.89
+    },
+    "I12→M7": {
+      "direction": "falling",
+      "total": 18,
+      "bull": 10,
+      "bear": 8,
+      "score_pct": -7.29
+    },
+    "I7→I8": {
+      "direction": "rising",
+      "total": 4,
+      "bull": 4,
+      "bear": 0,
+      "score_pct": 13.09
+    },
+    "I8→I9": {
+      "direction": "falling",
+      "total": 12,
+      "bull": 8,
+      "bear": 4,
+      "score_pct": -9.02
+    },
+    "I9→I10": {
+      "direction": "rising",
+      "total": 12,
+      "bull": 11,
+      "bear": 1,
+      "score_pct": 11.83
+    },
+    "M5→M6": {
+      "direction": "rising",
+      "total": 28,
+      "bull": 18,
+      "bear": 10,
+      "score_pct": 58.75
+    },
+    "M6→I11": {
+      "direction": "falling",
+      "total": 17,
+      "bull": 9,
+      "bear": 8,
+      "score_pct": 10.36
+    },
+    "M7→TMP": {
+      "direction": "rising",
+      "total": 8,
+      "bull": 7,
+      "bear": 1,
+      "score_pct": 21.2
+    }
+  },
+  "inflections": {
+    "I11": {
+      "signals": [
+        {
+          "date": "2026-06-07",
+          "time": "15:46",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 6.0,
+          "evidence": "大盘转折就在下周上半周。"
+        },
+        {
+          "date": "2026-06-09",
+          "time": "21:02",
+          "direction": "bullish",
+          "strength": "strong",
+          "score": 9.53,
+          "evidence": "目前，大盘的主跌阶段已经告一段落，下一步回踩确认后，将展开比较大的行情，点位看4500。大盘将在7月和8月迎来高潮。"
+        }
+      ],
+      "total_score_pct": 15.53,
+      "count": 2,
+      "avg_pct": 7.76
+    },
+    "I12": {
+      "signals": [
+        {
+          "date": "2026-06-24",
+          "time": "21:05",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 8.83,
+          "evidence": "明天继续看调整，因为20%股票的牛市走不远"
+        }
+      ],
+      "total_score_pct": 8.83,
+      "count": 1,
+      "avg_pct": 8.83
+    },
+    "I9": {
+      "signals": [
+        {
+          "date": "2026-02-02",
+          "time": "15:20",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": -1.01,
+          "evidence": "股海斜阳余晖对后市反而看高一线，原来的4500，可以看到4800。"
+        },
+        {
+          "date": "2026-02-03",
+          "time": "18:07",
+          "direction": "bullish",
+          "strength": "strong",
+          "score": 6.51,
+          "evidence": "4002将成为春季行情的起点，这个春季行情将延续到5月份，高度4800以上。"
+        },
+        {
+          "date": "2026-02-04",
+          "time": "22:45",
+          "direction": "bullish",
+          "strength": "strong",
+          "score": 5.99,
+          "evidence": "盘后股指期货机构大幅减空近6000手，明天大盘还会上涨。跨春节行情已经展开。今天是立春，股市的春天也开始了！"
+        }
+      ],
+      "total_score_pct": 11.49,
+      "count": 3,
+      "avg_pct": 3.83
+    },
+    "M5": {
+      "signals": [
+        {
+          "date": "2026-03-24",
+          "time": "21:45",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 9.42,
+          "evidence": "所以明天重点关注量能，必须放量大涨才能化解危机。3750到3800是主力机构的成本区，除非彻底进入熊市，否则主力一定会发"
+        }
+      ],
+      "total_score_pct": 9.42,
+      "count": 1,
+      "avg_pct": 9.42
+    },
+    "M6": {
+      "signals": [
+        {
+          "date": "2026-05-13",
+          "time": "18:39",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 7.71,
+          "evidence": "明天科技股要大幅调整了，当然由于科技股的权重很大，所以明天大盘指数向下调整的可能性极大。"
+        }
+      ],
+      "total_score_pct": 7.71,
+      "count": 1,
+      "avg_pct": 7.71
+    },
+    "M7": {
+      "signals": [
+        {
+          "date": "2026-07-20",
+          "time": "17:55",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.1,
+          "evidence": "明天半导体等科技股会出现有力度的反弹，今日抄底的短线筹码，可以等明天大涨后出掉，而今天涨幅比较大的老登股板块，明天可能会"
+        }
+      ],
+      "total_score_pct": 4.1,
+      "count": 1,
+      "avg_pct": 4.1
+    }
+  }
+}

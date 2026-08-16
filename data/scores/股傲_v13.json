@@ -1,0 +1,340 @@
+{
+  "blogger": "股傲",
+  "version": "v13",
+  "total_raw": 566,
+  "pre_2026": 383,
+  "scorable": 183,
+  "score_zero": 2,
+  "no_price": 1,
+  "no_segment": 0,
+  "case_a": 168,
+  "case_b": 12,
+  "first_signal_date": "2026-01-02",
+  "rankable": true,
+  "scores": {
+    "综合": {
+      "total_pct": 80.27,
+      "count": 180,
+      "avg_pct": 0.45,
+      "win_rate": 52.22
+    },
+    "上升段": {
+      "total_pct": 196.56,
+      "count": 104,
+      "avg_pct": 1.89,
+      "win_rate": 59.62
+    },
+    "下降段": {
+      "total_pct": -116.29,
+      "count": 76,
+      "avg_pct": -1.53,
+      "win_rate": 42.11
+    },
+    "抄底": {
+      "total_pct": 36.46,
+      "count": 8,
+      "avg_pct": 4.56,
+      "win_rate": 75.0
+    },
+    "逃顶": {
+      "total_pct": 55.44,
+      "count": 9,
+      "avg_pct": 6.16,
+      "win_rate": 88.89
+    },
+    "看多": {
+      "total_pct": 37.66,
+      "count": 98,
+      "avg_pct": 0.38,
+      "win_rate": 57.14
+    },
+    "看空": {
+      "total_pct": 42.61,
+      "count": 82,
+      "avg_pct": 0.52,
+      "win_rate": 46.34
+    }
+  },
+  "time_horizon": {
+    "short": {
+      "count": 125,
+      "effective": 124,
+      "total_pct": -52.48,
+      "avg_pct": -0.42,
+      "win_rate": 45.16
+    },
+    "medium": {
+      "count": 54,
+      "effective": 53,
+      "total_pct": 117.47,
+      "avg_pct": 2.22,
+      "win_rate": 67.92
+    },
+    "long": {
+      "count": 2,
+      "effective": 2,
+      "total_pct": 16.99,
+      "avg_pct": 8.5,
+      "win_rate": 100.0
+    },
+    "unspecified": {
+      "count": 1,
+      "effective": 1,
+      "total_pct": -1.71,
+      "avg_pct": -1.71,
+      "win_rate": 0.0
+    }
+  },
+  "segments": {
+    "I10→M5": {
+      "direction": "falling",
+      "total": 18,
+      "bull": 12,
+      "bear": 6,
+      "score_pct": -41.58
+    },
+    "I11→I12": {
+      "direction": "rising",
+      "total": 10,
+      "bull": 4,
+      "bear": 6,
+      "score_pct": -12.56
+    },
+    "I12→M7": {
+      "direction": "falling",
+      "total": 17,
+      "bull": 15,
+      "bear": 2,
+      "score_pct": -92.93
+    },
+    "I7→I8": {
+      "direction": "rising",
+      "total": 19,
+      "bull": 3,
+      "bear": 16,
+      "score_pct": -2.46
+    },
+    "I8→I9": {
+      "direction": "falling",
+      "total": 20,
+      "bull": 6,
+      "bear": 14,
+      "score_pct": 23.6
+    },
+    "I9→I10": {
+      "direction": "rising",
+      "total": 27,
+      "bull": 16,
+      "bear": 11,
+      "score_pct": 33.21
+    },
+    "M5→M6": {
+      "direction": "rising",
+      "total": 41,
+      "bull": 27,
+      "bear": 14,
+      "score_pct": 161.15
+    },
+    "M6→I11": {
+      "direction": "falling",
+      "total": 21,
+      "bull": 9,
+      "bear": 12,
+      "score_pct": -5.38
+    },
+    "M7→TMP": {
+      "direction": "rising",
+      "total": 7,
+      "bull": 6,
+      "bear": 1,
+      "score_pct": 17.23
+    }
+  },
+  "inflections": {
+    "I10": {
+      "signals": [
+        {
+          "date": "2026-03-02",
+          "time": "17:58",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 9.41,
+          "evidence": "上证指数接近前期高点，石化双雄功不可没，因为事件造成的短期上冲，不要追，如果今天早盘进场，也要设好止盈。"
+        },
+        {
+          "date": "2026-03-02",
+          "time": "22:17",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 9.41,
+          "evidence": "因为对三月份行情不是很看，所以写好文章发不出，并不是因为外围，而是市场自身有需求，另外人民币升值短期见顶。"
+        },
+        {
+          "date": "2026-03-03",
+          "time": "20:29",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 7.16,
+          "evidence": "连续两天的放量下跌，让多数股民忐忑，放量回调的主浪已经完成，接下来就是余波了。"
+        }
+      ],
+      "total_score_pct": 25.98,
+      "count": 3,
+      "avg_pct": 8.66
+    },
+    "I12": {
+      "signals": [
+        {
+          "date": "2026-06-22",
+          "time": "19:31",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 9.93,
+          "evidence": "今天已经进入六月下旬，明天再大涨的概率不大，上下震荡概率大，周三周四大概率收小阴线。"
+        }
+      ],
+      "total_score_pct": 9.93,
+      "count": 1,
+      "avg_pct": 9.93
+    },
+    "I8": {
+      "signals": [
+        {
+          "date": "2026-01-13",
+          "time": "16:16",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": -1.26,
+          "evidence": "明天上证大概率要跌破五日线，并且是一副赖赖唧唧的感觉。"
+        },
+        {
+          "date": "2026-01-14",
+          "time": "19:09",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 2.51,
+          "evidence": "成交量太大，这属于顶部的成交量，而不是温和上涨的成交量，这种成交量难以维持下去。"
+        }
+      ],
+      "total_score_pct": 1.25,
+      "count": 2,
+      "avg_pct": 0.62
+    },
+    "I9": {
+      "signals": [
+        {
+          "date": "2026-02-02",
+          "time": "17:18",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": -1.01,
+          "evidence": "明天梭哈进场做钉子户，剑指商业航天。今天的回调一点也不拖泥带水，印证了上周五下影线无效，周五下午属于硬撑。"
+        }
+      ],
+      "total_score_pct": -1.01,
+      "count": 1,
+      "avg_pct": -1.01
+    },
+    "M5": {
+      "signals": [
+        {
+          "date": "2026-03-22",
+          "time": "16:29",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": -2.82,
+          "evidence": "如果我说牛市还没结束会挨喷，我依然坚定我的观点，牛市没结束,现在是挖坑。因为时间点不对，牛市不会在三月份戛然而止，这可是"
+        },
+        {
+          "date": "2026-03-23",
+          "time": "19:22",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 10.63,
+          "evidence": "牛市多急跌，这种连续的调整属于快刀斩乱麻，不给一丝喘息，容易出现单针见底的形态。人民币汇率依然坚挺，并未出现大幅度贬值，"
+        },
+        {
+          "date": "2026-03-24",
+          "time": "19:07",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 9.42,
+          "evidence": "四月到七月的行情会不错（清明节前后，大概率是清明节之后）"
+        },
+        {
+          "date": "2026-03-24",
+          "time": "20:27",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 9.42,
+          "evidence": "观点依旧没变，三月挖坑，四月填坑，行情没走完。"
+        }
+      ],
+      "total_score_pct": 26.65,
+      "count": 4,
+      "avg_pct": 6.66
+    },
+    "M6": {
+      "signals": [
+        {
+          "date": "2026-05-13",
+          "time": "18:25",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 7.71,
+          "evidence": "从明天下午要格外小心，别轻易出手，行情总是在火爆中走向反转。"
+        },
+        {
+          "date": "2026-05-14",
+          "time": "17:19",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 5.9,
+          "evidence": "从现在到在端午节之前，市场会进入调整周期。"
+        },
+        {
+          "date": "2026-05-15",
+          "time": "19:18",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 4.66,
+          "evidence": "下周一市场还有一跌，随着而来的是反弹，反弹能持续两到三个交易日左右，然后就没然后了。"
+        }
+      ],
+      "total_score_pct": 18.27,
+      "count": 3,
+      "avg_pct": 6.09
+    },
+    "M7": {
+      "signals": [
+        {
+          "date": "2026-07-20",
+          "time": "18:21",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.1,
+          "evidence": "至于是牛回头还是市场走熊，我倾向于市场是牛回头，如果真走熊不会有承接资金进场。"
+        },
+        {
+          "date": "2026-07-21",
+          "time": "16:41",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 3.35,
+          "evidence": "反弹周期算上今天大概率三天左右（反弹力度会逐渐降低），随后进入震荡阶段。"
+        },
+        {
+          "date": "2026-07-21",
+          "time": "23:22",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 3.35,
+          "evidence": "明天反弹幅度不会很大，能摸到十日线就很不错了，但再大跌的概率微乎其微。"
+        }
+      ],
+      "total_score_pct": 10.8,
+      "count": 3,
+      "avg_pct": 3.6
+    }
+  }
+}

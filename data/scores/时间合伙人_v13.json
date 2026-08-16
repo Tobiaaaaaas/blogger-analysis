@@ -1,0 +1,302 @@
+{
+  "blogger": "时间合伙人",
+  "version": "v13",
+  "total_raw": 486,
+  "pre_2026": 269,
+  "scorable": 217,
+  "score_zero": 7,
+  "no_price": 0,
+  "no_segment": 0,
+  "case_a": 203,
+  "case_b": 7,
+  "first_signal_date": "2026-01-01",
+  "rankable": true,
+  "scores": {
+    "综合": {
+      "total_pct": -215.82,
+      "count": 210,
+      "avg_pct": -1.03,
+      "win_rate": 49.52
+    },
+    "上升段": {
+      "total_pct": 270.33,
+      "count": 119,
+      "avg_pct": 2.27,
+      "win_rate": 80.67
+    },
+    "下降段": {
+      "total_pct": -486.15,
+      "count": 91,
+      "avg_pct": -5.34,
+      "win_rate": 8.79
+    },
+    "抄底": {
+      "total_pct": 47.62,
+      "count": 12,
+      "avg_pct": 3.97,
+      "win_rate": 75.0
+    },
+    "逃顶": {
+      "total_pct": 2.02,
+      "count": 2,
+      "avg_pct": 1.01,
+      "win_rate": 50.0
+    },
+    "看多": {
+      "total_pct": -172.92,
+      "count": 184,
+      "avg_pct": -0.94,
+      "win_rate": 52.72
+    },
+    "看空": {
+      "total_pct": -42.89,
+      "count": 26,
+      "avg_pct": -1.65,
+      "win_rate": 26.92
+    }
+  },
+  "time_horizon": {
+    "short": {
+      "count": 65,
+      "effective": 63,
+      "total_pct": -173.94,
+      "avg_pct": -2.76,
+      "win_rate": 36.51
+    },
+    "medium": {
+      "count": 71,
+      "effective": 67,
+      "total_pct": 9.17,
+      "avg_pct": 0.14,
+      "win_rate": 61.19
+    },
+    "long": {
+      "count": 50,
+      "effective": 50,
+      "total_pct": 6.32,
+      "avg_pct": 0.13,
+      "win_rate": 58.0
+    },
+    "unspecified": {
+      "count": 31,
+      "effective": 30,
+      "total_pct": -57.37,
+      "avg_pct": -1.91,
+      "win_rate": 36.67
+    }
+  },
+  "segments": {
+    "I10→M5": {
+      "direction": "falling",
+      "total": 32,
+      "bull": 31,
+      "bear": 1,
+      "score_pct": -216.2
+    },
+    "I11→I12": {
+      "direction": "rising",
+      "total": 8,
+      "bull": 7,
+      "bear": 1,
+      "score_pct": 20.4
+    },
+    "I12→M7": {
+      "direction": "falling",
+      "total": 15,
+      "bull": 12,
+      "bear": 3,
+      "score_pct": -95.12
+    },
+    "I7→I8": {
+      "direction": "rising",
+      "total": 21,
+      "bull": 16,
+      "bear": 5,
+      "score_pct": 49.3
+    },
+    "I8→I9": {
+      "direction": "falling",
+      "total": 11,
+      "bull": 9,
+      "bear": 2,
+      "score_pct": -21.97
+    },
+    "I9→I10": {
+      "direction": "rising",
+      "total": 28,
+      "bull": 24,
+      "bear": 4,
+      "score_pct": 21.78
+    },
+    "M5→M6": {
+      "direction": "rising",
+      "total": 48,
+      "bull": 41,
+      "bear": 7,
+      "score_pct": 139.23
+    },
+    "M6→I11": {
+      "direction": "falling",
+      "total": 33,
+      "bull": 31,
+      "bear": 2,
+      "score_pct": -152.85
+    },
+    "M7→TMP": {
+      "direction": "rising",
+      "total": 14,
+      "bull": 13,
+      "bear": 1,
+      "score_pct": 39.62
+    }
+  },
+  "inflections": {
+    "I11": {
+      "signals": [
+        {
+          "date": "2026-06-07",
+          "time": "21:27",
+          "direction": "bullish",
+          "strength": "strong",
+          "score": 12.0,
+          "evidence": "4258点就是大顶？别闹了！说牛市结束的，非蠢即坏？"
+        },
+        {
+          "date": "2026-06-09",
+          "time": "13:55",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.11,
+          "evidence": "拿稳了！这两天是最佳上车点？"
+        },
+        {
+          "date": "2026-06-09",
+          "time": "23:43",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.76,
+          "evidence": "空头彻底傻眼！高盛、大摩联手唱多"
+        }
+      ],
+      "total_score_pct": 20.87,
+      "count": 3,
+      "avg_pct": 6.96
+    },
+    "I8": {
+      "signals": [
+        {
+          "date": "2026-01-13",
+          "time": "13:39",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": -1.26,
+          "evidence": "我为什么决定下半年清仓？看看A股牛市周期就明白了！"
+        },
+        {
+          "date": "2026-01-14",
+          "time": "09:25",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 3.28,
+          "evidence": "牛市下半场，我不再满仓，会提前清仓！"
+        }
+      ],
+      "total_score_pct": 2.02,
+      "count": 2,
+      "avg_pct": 1.01
+    },
+    "I9": {
+      "signals": [
+        {
+          "date": "2026-02-02",
+          "time": "18:56",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": -1.01,
+          "evidence": "牛市半山腰，别被颠下马了！"
+        },
+        {
+          "date": "2026-02-03",
+          "time": "12:15",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 3.18,
+          "evidence": "跌出来的是机会，在恐惧中播种！"
+        }
+      ],
+      "total_score_pct": 2.17,
+      "count": 2,
+      "avg_pct": 1.08
+    },
+    "M5": {
+      "signals": [
+        {
+          "date": "2026-03-22",
+          "time": "13:04",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": -2.82,
+          "evidence": "A股砸出黄金坑，反弹或一触即发！"
+        },
+        {
+          "date": "2026-03-22",
+          "time": "20:20",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": -2.82,
+          "evidence": "都绝望了？好！大资金就等这一刻！"
+        },
+        {
+          "date": "2026-03-23",
+          "time": "16:50",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 10.63,
+          "evidence": "洗盘快结束了，别倒在黎明前！"
+        },
+        {
+          "date": "2026-03-24",
+          "time": "18:31",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 9.42,
+          "evidence": "拿好，等涨，目标就是上面那个3955的缺口！"
+        }
+      ],
+      "total_score_pct": 14.41,
+      "count": 4,
+      "avg_pct": 3.6
+    },
+    "M7": {
+      "signals": [
+        {
+          "date": "2026-07-21",
+          "time": "08:48",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.1,
+          "evidence": "大盘这波走势太像2022年了，目标先看3920！"
+        },
+        {
+          "date": "2026-07-21",
+          "time": "13:46",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 2.69,
+          "evidence": "这一波调整往下空间或许真不大了！"
+        },
+        {
+          "date": "2026-07-21",
+          "time": "23:18",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 3.35,
+          "evidence": "明天大概率这么走！"
+        }
+      ],
+      "total_score_pct": 10.14,
+      "count": 3,
+      "avg_pct": 3.38
+    }
+  }
+}

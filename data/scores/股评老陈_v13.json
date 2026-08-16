@@ -1,0 +1,325 @@
+{
+  "blogger": "股评老陈",
+  "version": "v13",
+  "total_raw": 332,
+  "pre_2026": 156,
+  "scorable": 176,
+  "score_zero": 3,
+  "no_price": 0,
+  "no_segment": 0,
+  "case_a": 166,
+  "case_b": 7,
+  "first_signal_date": "2026-01-05",
+  "rankable": true,
+  "scores": {
+    "综合": {
+      "total_pct": -40.45,
+      "count": 173,
+      "avg_pct": -0.23,
+      "win_rate": 43.93
+    },
+    "上升段": {
+      "total_pct": 97.4,
+      "count": 94,
+      "avg_pct": 1.04,
+      "win_rate": 52.13
+    },
+    "下降段": {
+      "total_pct": -137.85,
+      "count": 79,
+      "avg_pct": -1.74,
+      "win_rate": 34.18
+    },
+    "抄底": {
+      "total_pct": 73.22,
+      "count": 12,
+      "avg_pct": 6.1,
+      "win_rate": 100.0
+    },
+    "逃顶": {
+      "total_pct": 23.94,
+      "count": 4,
+      "avg_pct": 5.98,
+      "win_rate": 100.0
+    },
+    "看多": {
+      "total_pct": -51.22,
+      "count": 104,
+      "avg_pct": -0.49,
+      "win_rate": 47.12
+    },
+    "看空": {
+      "total_pct": 10.77,
+      "count": 69,
+      "avg_pct": 0.16,
+      "win_rate": 39.13
+    }
+  },
+  "time_horizon": {
+    "short": {
+      "count": 31,
+      "effective": 30,
+      "total_pct": 46.77,
+      "avg_pct": 1.56,
+      "win_rate": 60.0
+    },
+    "medium": {
+      "count": 16,
+      "effective": 16,
+      "total_pct": 5.97,
+      "avg_pct": 0.37,
+      "win_rate": 43.75
+    },
+    "long": {
+      "count": 0,
+      "effective": 0,
+      "total_pct": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "unspecified": {
+      "count": 129,
+      "effective": 127,
+      "total_pct": -93.18,
+      "avg_pct": -0.73,
+      "win_rate": 40.16
+    }
+  },
+  "segments": {
+    "I10→M5": {
+      "direction": "falling",
+      "total": 23,
+      "bull": 16,
+      "bear": 7,
+      "score_pct": -53.21
+    },
+    "I11→I12": {
+      "direction": "rising",
+      "total": 17,
+      "bull": 10,
+      "bear": 7,
+      "score_pct": 8.05
+    },
+    "I12→M7": {
+      "direction": "falling",
+      "total": 20,
+      "bull": 15,
+      "bear": 5,
+      "score_pct": -84.58
+    },
+    "I7→I8": {
+      "direction": "rising",
+      "total": 6,
+      "bull": 2,
+      "bear": 4,
+      "score_pct": -12.37
+    },
+    "I8→I9": {
+      "direction": "falling",
+      "total": 17,
+      "bull": 9,
+      "bear": 8,
+      "score_pct": 8.23
+    },
+    "I9→I10": {
+      "direction": "rising",
+      "total": 17,
+      "bull": 2,
+      "bear": 15,
+      "score_pct": -44.12
+    },
+    "M5→M6": {
+      "direction": "rising",
+      "total": 37,
+      "bull": 25,
+      "bear": 12,
+      "score_pct": 118.71
+    },
+    "M6→I11": {
+      "direction": "falling",
+      "total": 19,
+      "bull": 12,
+      "bear": 7,
+      "score_pct": -8.29
+    },
+    "M7→TMP": {
+      "direction": "rising",
+      "total": 17,
+      "bull": 13,
+      "bear": 4,
+      "score_pct": 27.13
+    }
+  },
+  "inflections": {
+    "I10": {
+      "signals": [
+        {
+          "date": "2026-03-04",
+          "time": "12:59",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 7.04,
+          "evidence": "中午收盘后，我倾向大盘今天收盘价4063点左右。收盘K线：小阴。"
+        }
+      ],
+      "total_score_pct": 7.04,
+      "count": 1,
+      "avg_pct": 7.04
+    },
+    "I11": {
+      "signals": [
+        {
+          "date": "2026-06-08",
+          "time": "12:26",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 5.45,
+          "evidence": "预判今天上午收盘，只要上证指数下午开盘半小时站上4000点。大盘下午不但能够回补早盘缺口，而且收盘小中阳以上也不是不可能"
+        },
+        {
+          "date": "2026-06-08",
+          "time": "17:21",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.96,
+          "evidence": "下个星期上证指数行情，大概率是修复式走势。目前大部分中小盘个股已跌到前期———跌无可跌地步。再割肉已毫无意义。等待反弹后"
+        },
+        {
+          "date": "2026-06-08",
+          "time": "20:49",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.96,
+          "evidence": "接下来（即从明天开始），上证指数大概率走修复式上涨行情。"
+        },
+        {
+          "date": "2026-06-09",
+          "time": "00:27",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.96,
+          "evidence": "明天大盘修复性上涨是大概率。"
+        },
+        {
+          "date": "2026-06-09",
+          "time": "00:31",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.96,
+          "evidence": "从复盘分析中，个人盘感是先上后下，周二周三有反弹。"
+        },
+        {
+          "date": "2026-06-09",
+          "time": "13:17",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.11,
+          "evidence": "之后，大盘指数大概率是向上走高。"
+        }
+      ],
+      "total_score_pct": 29.4,
+      "count": 6,
+      "avg_pct": 4.9
+    },
+    "I9": {
+      "signals": [
+        {
+          "date": "2026-02-02",
+          "time": "13:18",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.51,
+          "evidence": "下午开盘，指数有可能在目前点位止跌企稳。接下来反弹将一触即发。下午休市，指数大概率重返4100点附近。"
+        }
+      ],
+      "total_score_pct": 4.51,
+      "count": 1,
+      "avg_pct": 4.51
+    },
+    "M5": {
+      "signals": [
+        {
+          "date": "2026-03-23",
+          "time": "13:34",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 11.69,
+          "evidence": "个人认为：接下来大盘有可能围绕3857点上下横盘震荡一段时间。大盘已跌下来，今天已显现周线底背离态势。接下来，主力机构大"
+        },
+        {
+          "date": "2026-03-23",
+          "time": "22:07",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 10.63,
+          "evidence": "收盘K线：小阳。极限大小阳。预判中小盘股票明天涨幅大概率远超大盘走势。持有小票的股民朋友明天大概率有不错的涨幅。"
+        },
+        {
+          "date": "2026-03-24",
+          "time": "13:08",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 9.73,
+          "evidence": "下午开盘，个人观点：依然坚持昨天发文预判。只是，由于超出高开预期，下午收盘，原预判小阳，有可能是假小阴实阳十字星。"
+        }
+      ],
+      "total_score_pct": 32.05,
+      "count": 3,
+      "avg_pct": 10.68
+    },
+    "M6": {
+      "signals": [
+        {
+          "date": "2026-05-14",
+          "time": "12:29",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 5.98,
+          "evidence": "以早盘前半小时放量下跌架势，尾盘收大小阴以上几成定局。"
+        },
+        {
+          "date": "2026-05-14",
+          "time": "17:14",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 5.9,
+          "evidence": "明天大盘大概率是小阴或红十字星。"
+        },
+        {
+          "date": "2026-05-15",
+          "time": "13:04",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 5.02,
+          "evidence": "下午开盘走势，有可能会出现如下图彩色虚线走势。继续维持昨天预判观点，尾盘收大小阴十字星。"
+        }
+      ],
+      "total_score_pct": 16.9,
+      "count": 3,
+      "avg_pct": 5.63
+    },
+    "M7": {
+      "signals": [
+        {
+          "date": "2026-07-20",
+          "time": "12:57",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.54,
+          "evidence": "下午开盘，没啥说的。继续维持周五推测观点。尾盘收盘小中阳。"
+        },
+        {
+          "date": "2026-07-21",
+          "time": "12:51",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 2.69,
+          "evidence": "如果下午前一个小时能够突破3833点。下午收盘小中阳以上可能性仍然很大。"
+        }
+      ],
+      "total_score_pct": 7.23,
+      "count": 2,
+      "avg_pct": 3.62
+    }
+  }
+}

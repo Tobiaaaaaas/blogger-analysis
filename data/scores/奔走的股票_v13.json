@@ -1,0 +1,172 @@
+{
+  "blogger": "奔走的股票",
+  "version": "v13",
+  "total_raw": 35,
+  "pre_2026": 0,
+  "scorable": 35,
+  "score_zero": 0,
+  "no_price": 0,
+  "no_segment": 0,
+  "case_a": 35,
+  "case_b": 0,
+  "first_signal_date": "2026-01-07",
+  "rankable": true,
+  "scores": {
+    "综合": {
+      "total_pct": 57.13,
+      "count": 35,
+      "avg_pct": 1.63,
+      "win_rate": 60.0
+    },
+    "上升段": {
+      "total_pct": 56.35,
+      "count": 22,
+      "avg_pct": 2.56,
+      "win_rate": 72.73
+    },
+    "下降段": {
+      "total_pct": 0.78,
+      "count": 13,
+      "avg_pct": 0.06,
+      "win_rate": 38.46
+    },
+    "抄底": {
+      "total_pct": 3.26,
+      "count": 1,
+      "avg_pct": 3.26,
+      "win_rate": 100.0
+    },
+    "逃顶": {
+      "total_pct": 5.52,
+      "count": 2,
+      "avg_pct": 2.76,
+      "win_rate": 100.0
+    },
+    "看多": {
+      "total_pct": 46.29,
+      "count": 24,
+      "avg_pct": 1.93,
+      "win_rate": 66.67
+    },
+    "看空": {
+      "total_pct": 10.84,
+      "count": 11,
+      "avg_pct": 0.99,
+      "win_rate": 45.45
+    }
+  },
+  "time_horizon": {
+    "short": {
+      "count": 31,
+      "effective": 31,
+      "total_pct": 45.95,
+      "avg_pct": 1.48,
+      "win_rate": 58.06
+    },
+    "medium": {
+      "count": 4,
+      "effective": 4,
+      "total_pct": 11.18,
+      "avg_pct": 2.79,
+      "win_rate": 75.0
+    },
+    "long": {
+      "count": 0,
+      "effective": 0,
+      "total_pct": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "unspecified": {
+      "count": 0,
+      "effective": 0,
+      "total_pct": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    }
+  },
+  "segments": {
+    "I10→M5": {
+      "direction": "falling",
+      "total": 1,
+      "bull": 0,
+      "bear": 1,
+      "score_pct": 14.53
+    },
+    "I7→I8": {
+      "direction": "rising",
+      "total": 3,
+      "bull": 0,
+      "bear": 3,
+      "score_pct": -7.14
+    },
+    "I8→I9": {
+      "direction": "falling",
+      "total": 9,
+      "bull": 5,
+      "bear": 4,
+      "score_pct": -3.84
+    },
+    "I9→I10": {
+      "direction": "rising",
+      "total": 8,
+      "bull": 6,
+      "bear": 2,
+      "score_pct": 11.2
+    },
+    "M5→M6": {
+      "direction": "rising",
+      "total": 11,
+      "bull": 10,
+      "bear": 1,
+      "score_pct": 52.28
+    },
+    "M6→I11": {
+      "direction": "falling",
+      "total": 3,
+      "bull": 3,
+      "bear": 0,
+      "score_pct": -9.91
+    }
+  },
+  "inflections": {
+    "I8": {
+      "signals": [
+        {
+          "date": "2026-01-14",
+          "time": "15:15",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 2.51,
+          "evidence": "一则利空引发跳水，股民们要准备好，明天A股，将迎较大级别变盘"
+        },
+        {
+          "date": "2026-01-15",
+          "time": "15:24",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 3.01,
+          "evidence": "A股缩量超万亿，反弹没有来，明天又要大跌了吗"
+        }
+      ],
+      "total_score_pct": 5.52,
+      "count": 2,
+      "avg_pct": 2.76
+    },
+    "I9": {
+      "signals": [
+        {
+          "date": "2026-02-03",
+          "time": "15:07",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 3.26,
+          "evidence": "强劲反弹来了，股民做好准备，明天A股，会这样运行"
+        }
+      ],
+      "total_score_pct": 3.26,
+      "count": 1,
+      "avg_pct": 3.26
+    }
+  }
+}

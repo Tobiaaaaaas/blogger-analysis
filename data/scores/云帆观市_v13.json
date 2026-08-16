@@ -1,0 +1,277 @@
+{
+  "blogger": "云帆观市",
+  "version": "v13",
+  "total_raw": 145,
+  "pre_2026": 0,
+  "scorable": 145,
+  "score_zero": 0,
+  "no_price": 0,
+  "no_segment": 0,
+  "case_a": 137,
+  "case_b": 8,
+  "first_signal_date": "2026-01-02",
+  "rankable": true,
+  "scores": {
+    "综合": {
+      "total_pct": 93.29,
+      "count": 145,
+      "avg_pct": 0.64,
+      "win_rate": 57.24
+    },
+    "上升段": {
+      "total_pct": 169.51,
+      "count": 85,
+      "avg_pct": 1.99,
+      "win_rate": 71.76
+    },
+    "下降段": {
+      "total_pct": -76.22,
+      "count": 60,
+      "avg_pct": -1.27,
+      "win_rate": 36.67
+    },
+    "抄底": {
+      "total_pct": 31.54,
+      "count": 8,
+      "avg_pct": 3.94,
+      "win_rate": 75.0
+    },
+    "逃顶": {
+      "total_pct": 10.69,
+      "count": 2,
+      "avg_pct": 5.35,
+      "win_rate": 100.0
+    },
+    "看多": {
+      "total_pct": 87.32,
+      "count": 99,
+      "avg_pct": 0.88,
+      "win_rate": 61.62
+    },
+    "看空": {
+      "total_pct": 5.97,
+      "count": 46,
+      "avg_pct": 0.13,
+      "win_rate": 47.83
+    }
+  },
+  "time_horizon": {
+    "short": {
+      "count": 67,
+      "effective": 67,
+      "total_pct": -27.58,
+      "avg_pct": -0.41,
+      "win_rate": 46.27
+    },
+    "medium": {
+      "count": 35,
+      "effective": 35,
+      "total_pct": 33.95,
+      "avg_pct": 0.97,
+      "win_rate": 62.86
+    },
+    "long": {
+      "count": 13,
+      "effective": 13,
+      "total_pct": 33.92,
+      "avg_pct": 2.61,
+      "win_rate": 84.62
+    },
+    "unspecified": {
+      "count": 30,
+      "effective": 30,
+      "total_pct": 53.0,
+      "avg_pct": 1.77,
+      "win_rate": 63.33
+    }
+  },
+  "segments": {
+    "I10→M5": {
+      "direction": "falling",
+      "total": 14,
+      "bull": 12,
+      "bear": 2,
+      "score_pct": -68.55
+    },
+    "I11→I12": {
+      "direction": "rising",
+      "total": 5,
+      "bull": 1,
+      "bear": 4,
+      "score_pct": -10.96
+    },
+    "I12→M7": {
+      "direction": "falling",
+      "total": 14,
+      "bull": 7,
+      "bear": 7,
+      "score_pct": 16.95
+    },
+    "I7→I8": {
+      "direction": "rising",
+      "total": 10,
+      "bull": 8,
+      "bear": 2,
+      "score_pct": 12.87
+    },
+    "I8→I9": {
+      "direction": "falling",
+      "total": 15,
+      "bull": 13,
+      "bear": 2,
+      "score_pct": -29.91
+    },
+    "I9→I10": {
+      "direction": "rising",
+      "total": 15,
+      "bull": 15,
+      "bear": 0,
+      "score_pct": 19.29
+    },
+    "M5→M6": {
+      "direction": "rising",
+      "total": 43,
+      "bull": 31,
+      "bear": 12,
+      "score_pct": 130.19
+    },
+    "M6→I11": {
+      "direction": "falling",
+      "total": 17,
+      "bull": 4,
+      "bear": 13,
+      "score_pct": 5.28
+    },
+    "M7→TMP": {
+      "direction": "rising",
+      "total": 12,
+      "bull": 8,
+      "bear": 4,
+      "score_pct": 18.13
+    }
+  },
+  "inflections": {
+    "I11": {
+      "signals": [
+        {
+          "date": "2026-06-08",
+          "time": "19:01",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.96,
+          "evidence": "明天是否会有反弹修复的机会？A股今天算不算是情绪冰点，明天行情怎么看？给大家明确自己的观点："
+        }
+      ],
+      "total_score_pct": 4.96,
+      "count": 1,
+      "avg_pct": 4.96
+    },
+    "I8": {
+      "signals": [
+        {
+          "date": "2026-01-14",
+          "time": "13:18",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 2.98,
+          "evidence": "这对于A股市场短期来讲是利空消息。"
+        }
+      ],
+      "total_score_pct": 2.98,
+      "count": 1,
+      "avg_pct": 2.98
+    },
+    "I9": {
+      "signals": [
+        {
+          "date": "2026-02-02",
+          "time": "22:42",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": -1.01,
+          "evidence": "情绪普跌一旦出现，短期就不应该过度悲观看空了。"
+        },
+        {
+          "date": "2026-02-03",
+          "time": "15:09",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 3.26,
+          "evidence": "指数长期继续慢牛，商业航天和AI应用双主线驱动，其余板块轮动上涨为主。"
+        },
+        {
+          "date": "2026-02-04",
+          "time": "15:28",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 2.99,
+          "evidence": "我觉得已经证明了我说的指数依旧是慢牛的观点。"
+        }
+      ],
+      "total_score_pct": 5.24,
+      "count": 3,
+      "avg_pct": 1.75
+    },
+    "M5": {
+      "signals": [
+        {
+          "date": "2026-03-22",
+          "time": "17:59",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": -2.82,
+          "evidence": "大盘指数现在挖的坑，不久之后再回头来看，会是一个很好的低吸位置；"
+        },
+        {
+          "date": "2026-03-23",
+          "time": "23:39",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 10.63,
+          "evidence": "短期先让大家回点血是关键，持续这样的冰点下跌，是真要出大风险的！"
+        },
+        {
+          "date": "2026-03-24",
+          "time": "15:07",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 9.42,
+          "evidence": "大盘指数缩量探底回升，两市超5000多只个股反弹上涨，可以说是一个普涨了；"
+        }
+      ],
+      "total_score_pct": 17.23,
+      "count": 3,
+      "avg_pct": 5.74
+    },
+    "M6": {
+      "signals": [
+        {
+          "date": "2026-05-13",
+          "time": "15:18",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 7.71,
+          "evidence": "可创业板指数拉的越是疯狂，背后代表的就是抱团越极端，而行情一旦极端下去，最后结果一定是走向另外一个极端：要么是牺牲指数，"
+        }
+      ],
+      "total_score_pct": 7.71,
+      "count": 1,
+      "avg_pct": 7.71
+    },
+    "M7": {
+      "signals": [
+        {
+          "date": "2026-07-20",
+          "time": "15:30",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.1,
+          "evidence": "大盘3800点下方确实是政策底，是需要护盘救市的位置；所以，3800点下方的大盘指数，依旧是下跌的空间不大；对长期定投指"
+        }
+      ],
+      "total_score_pct": 4.1,
+      "count": 1,
+      "avg_pct": 4.1
+    }
+  }
+}

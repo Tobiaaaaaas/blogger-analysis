@@ -1,0 +1,563 @@
+{
+  "blogger": "钱眼",
+  "total_posts": 2400,
+  "pre_2024_06": null,
+  "evaluation_posts": null,
+  "not_extracted": {
+    "no_market_topic": null,
+    "pure_description": null,
+    "directional_vague": null,
+    "other_index_sector": null,
+    "body_blocked": null,
+    "other": null
+  },
+  "scored_bullish": {
+    "by_strength": {},
+    "by_time_horizon": {}
+  },
+  "scored_bearish": {
+    "by_strength": {},
+    "by_time_horizon": {}
+  },
+  "signals": [
+    {
+      "publish_time": "2026-01-04 19:39",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大概率会借助假期外围大涨之势尝试第一次突破4000-4034"
+    },
+    {
+      "publish_time": "2026-01-08 19:36",
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "真阴假阳既然已经出现,真阴线也会到来,短期指数可能要适当回调一下"
+    },
+    {
+      "publish_time": "2026-01-11 19:39",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "A股中期主升浪格局已基本确立,建议总体保持看涨做多思路"
+    },
+    {
+      "publish_time": "2026-01-12 19:26",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "短期调整节点尚未出现,在到达4200点之前市场压力不大"
+    },
+    {
+      "publish_time": "2026-01-13 19:33",
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天再顺势来一个调整,5日、10日均线都是支撑"
+    },
+    {
+      "publish_time": "2026-01-15 20:00",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天资金大概率就会回流"
+    },
+    {
+      "publish_time": "2026-01-16 19:23",
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下周初预计还有下探低点,但是整体探低回升为主"
+    },
+    {
+      "publish_time": "2026-01-23 19:23",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周有望延续震荡向上的\"慢牛\"格局"
+    },
+    {
+      "publish_time": "2026-01-25 19:37",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下周初仍会惯性冲高,但越向上压力也越大"
+    },
+    {
+      "publish_time": "2026-01-27 19:58",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天或继续在震荡中冲高"
+    },
+    {
+      "publish_time": "2026-02-01 19:55",
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下周一指数大概率还会继续探底"
+    },
+    {
+      "publish_time": "2026-02-02 19:47",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "本周后半段大盘会企稳回升"
+    },
+    {
+      "publish_time": "2026-02-03 19:37",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "随着有色极端调整的结束,春节红包行情已蓄势待发"
+    },
+    {
+      "publish_time": "2026-02-05 20:06",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "交易情绪被压到了极致,离反弹不远了"
+    },
+    {
+      "publish_time": "2026-02-08 19:36",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "外围快速回暖,大A有望翘尾"
+    },
+    {
+      "publish_time": "2026-02-09 19:51",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "继续看好春节红包行情"
+    },
+    {
+      "publish_time": "2026-02-10 19:55",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "本轮春节红包行情不止于节前,而是将贯穿节后"
+    },
+    {
+      "publish_time": "2026-02-11 12:05",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "后天红包行情值得期待"
+    },
+    {
+      "publish_time": "2026-02-12 11:59",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天市场大概率会出现普涨式红包行情"
+    },
+    {
+      "publish_time": "2026-02-23 19:22",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "继续看好A股节后迎来新一轮上行"
+    },
+    {
+      "publish_time": "2026-02-25 12:11",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "短期指数有望保持震荡上行"
+    },
+    {
+      "publish_time": "2026-02-26 19:53",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天2月份最后一个交易日,指数预计波动不大,稳定收涨为主"
+    },
+    {
+      "publish_time": "2026-03-04 12:01",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "市场情绪已杀出三冰点,短期随时会迎来修复"
+    },
+    {
+      "publish_time": "2026-03-08 19:36",
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下周一开盘之后,预计A股以及整个亚太市场可能会出现一定的调整"
+    },
+    {
+      "publish_time": "2026-03-11 19:58",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天的指数大概率还有惯性冲高"
+    },
+    {
+      "publish_time": "2026-03-16 00:17",
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "周末中东局势进一步升级,明日A股或再度承压"
+    },
+    {
+      "publish_time": "2026-03-17 19:32",
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "上证以全天最低点位收盘,大概率还有惯性下探"
+    },
+    {
+      "publish_time": "2026-03-18 19:52",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "这个反弹或可以持续到周五"
+    },
+    {
+      "publish_time": "2026-03-19 19:41",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "指数下跌空间确实不大了,从周五起,短线反弹或一触即发"
+    },
+    {
+      "publish_time": "2026-03-22 19:45",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下周一市场有望探底回升"
+    },
+    {
+      "publish_time": "2026-03-23 20:00",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "周二、周三大概率会走出超跌报复性反弹"
+    },
+    {
+      "publish_time": "2026-03-31 20:15",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天失守3900点之后,明天预计会反弹修复"
+    },
+    {
+      "publish_time": "2026-04-02 19:42",
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "短期行情恐很难迎来修复窗口"
+    },
+    {
+      "publish_time": "2026-04-03 12:07",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "节前应该是以震荡过渡,反弹要等到节后了"
+    },
+    {
+      "publish_time": "2026-04-08 19:47",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "今天站上3955点,明天顺势突破4000点整数关口"
+    },
+    {
+      "publish_time": "2026-04-12 19:50",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周A股走势预计先抑后扬"
+    },
+    {
+      "publish_time": "2026-04-15 19:38",
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "沪指短线将向4000点回踩"
+    },
+    {
+      "publish_time": "2026-04-16 19:46",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "未来一两个交易日,主板权重留出发力空间,助力大盘完成关键突破"
+    },
+    {
+      "publish_time": "2026-04-19 20:18",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周大概率还会继续尝试收复牛熊分界线"
+    },
+    {
+      "publish_time": "2026-04-26 19:54",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周,上证将继续尝试向前高突破"
+    },
+    {
+      "publish_time": "2026-04-28 19:44",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "行情有望逐步走出低谷,迎来五月,向上挑战前期高点4197点附近区域"
+    },
+    {
+      "publish_time": "2026-04-29 19:40",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "目前回踩已经完成,节后有望重拾升势"
+    },
+    {
+      "publish_time": "2026-05-07 19:52",
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天大概率会出现震荡洗盘、冲高回落走势"
+    },
+    {
+      "publish_time": "2026-05-08 12:24",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "短期继续看多做多"
+    },
+    {
+      "publish_time": "2026-05-09 19:21",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周大盘有望冲击阶段新高"
+    },
+    {
+      "publish_time": "2026-05-12 12:20",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "本周上半周应该还是进攻行情"
+    },
+    {
+      "publish_time": "2026-05-17 20:05",
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下周初A股整体或震荡承压"
+    },
+    {
+      "publish_time": "2026-05-18 20:02",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "调整空间有限,短线孕育反弹"
+    },
+    {
+      "publish_time": "2026-05-19 19:39",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "long",
+      "evidence": "这一轮主打的就是科技牛,时间窗口至少还有3~6个月"
+    },
+    {
+      "publish_time": "2026-05-22 11:49",
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "沪指放量跌破20日线后,调整周期大概率会被拉长"
+    },
+    {
+      "publish_time": "2026-05-24 19:36",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周继续看反弹修复"
+    },
+    {
+      "publish_time": "2026-05-31 19:51",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "短线风险明显释放之后,下周有望迎来修复的机会"
+    },
+    {
+      "publish_time": "2026-06-02 19:53",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "60分钟双金反弹周期3天左右,短线买点出现"
+    },
+    {
+      "publish_time": "2026-06-03 12:21",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "预计后半周行情有望迎来突破"
+    },
+    {
+      "publish_time": "2026-06-05 12:08",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "技术性反弹随时将会到来"
+    },
+    {
+      "publish_time": "2026-06-08 20:08",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "本周上证可能随时打出一个重要低点后回升"
+    },
+    {
+      "publish_time": "2026-06-09 19:57",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "周三往上冲一冲大概率就会补掉缺口"
+    },
+    {
+      "publish_time": "2026-06-11 19:48",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天周五,市场有希望迎来超跌反弹"
+    },
+    {
+      "publish_time": "2026-06-12 12:08",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "盘面经历短期急跌后,底部区域基本探明,午后及下周初将继续寻求修复"
+    },
+    {
+      "publish_time": "2026-06-15 11:58",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "上周市场基本探明底部,本周行情大概率围绕修复展开"
+    },
+    {
+      "publish_time": "2026-06-21 19:54",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "假期市场消息面偏利好,有利于A股震荡上扬"
+    },
+    {
+      "publish_time": "2026-06-29 20:19",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "周二有望重新站上牛熊分界线"
+    },
+    {
+      "publish_time": "2026-07-07 19:52",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "多种迹象表明,短期A股大概率会有一个反弹修复的机会"
+    },
+    {
+      "publish_time": "2026-07-08 20:16",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "这个位置上,指数在前低3297点附近,随时有望展开技术反弹"
+    },
+    {
+      "publish_time": "2026-07-12 20:35",
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周可能还有最后一波的下探,即使再回落,在年线附近还是强支撑"
+    },
+    {
+      "publish_time": "2026-07-13 20:13",
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "补掉3902缺口,这波调整的低点也很快会出现了"
+    },
+    {
+      "publish_time": "2026-07-14 20:06",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "年线有效跌破概率不大,三天之内大概率会收回"
+    },
+    {
+      "publish_time": "2026-07-18 19:43",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周市场有望情绪恢复,超跌反弹已在积蓄中了"
+    },
+    {
+      "publish_time": "2026-07-19 20:20",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "即使下周一大盘被外围带动下跌探底,周二或周三则有较大概率出现企稳修复"
+    },
+    {
+      "publish_time": "2026-07-20 20:42",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "市场有筑底反弹迹象,短期反弹可期待"
+    },
+    {
+      "publish_time": "2026-07-27 19:51",
+      "direction": "bearish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "明天继续普涨可能比较难,但个股情绪应该不会很差"
+    },
+    {
+      "publish_time": "2026-07-29 19:57",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "除7月17日盘中短暂跌破外,指数均在该区域获得支撑并反弹,这个位置反弹随时开启"
+    },
+    {
+      "publish_time": "2026-08-02 19:54",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "short",
+      "evidence": "下周一有望先站稳10日线,再向上发力突破"
+    },
+    {
+      "publish_time": "2026-08-03 20:06",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "科创50指数5连阴,短期随时会有探底回升或者阳线出现"
+    },
+    {
+      "publish_time": "2026-08-05 19:50",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "短线方向已经明了,向上修复是主基调"
+    },
+    {
+      "publish_time": "2026-08-09 20:08",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "下周A股反弹有望延续,但反弹进入强压力区后震荡加剧"
+    },
+    {
+      "publish_time": "2026-08-16 19:57",
+      "direction": "bullish",
+      "strength": "moderate",
+      "time_horizon": "medium",
+      "evidence": "预计下周创业板指数还会继续反弹,目标60日均线3840附近"
+    }
+  ]
+}

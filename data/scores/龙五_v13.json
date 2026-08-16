@@ -1,0 +1,239 @@
+{
+  "blogger": "龙五",
+  "version": "v13",
+  "total_raw": 185,
+  "pre_2026": 80,
+  "scorable": 105,
+  "score_zero": 0,
+  "no_price": 0,
+  "no_segment": 0,
+  "case_a": 99,
+  "case_b": 6,
+  "first_signal_date": "2026-01-01",
+  "rankable": true,
+  "scores": {
+    "综合": {
+      "total_pct": 21.35,
+      "count": 105,
+      "avg_pct": 0.2,
+      "win_rate": 55.24
+    },
+    "上升段": {
+      "total_pct": 116.5,
+      "count": 58,
+      "avg_pct": 2.01,
+      "win_rate": 75.86
+    },
+    "下降段": {
+      "total_pct": -95.15,
+      "count": 47,
+      "avg_pct": -2.02,
+      "win_rate": 29.79
+    },
+    "抄底": {
+      "total_pct": 28.29,
+      "count": 5,
+      "avg_pct": 5.66,
+      "win_rate": 80.0
+    },
+    "逃顶": {
+      "total_pct": 16.19,
+      "count": 2,
+      "avg_pct": 8.1,
+      "win_rate": 100.0
+    },
+    "看多": {
+      "total_pct": 1.55,
+      "count": 81,
+      "avg_pct": 0.02,
+      "win_rate": 55.56
+    },
+    "看空": {
+      "total_pct": 19.8,
+      "count": 24,
+      "avg_pct": 0.82,
+      "win_rate": 54.17
+    }
+  },
+  "time_horizon": {
+    "short": {
+      "count": 94,
+      "effective": 94,
+      "total_pct": 1.56,
+      "avg_pct": 0.02,
+      "win_rate": 53.19
+    },
+    "medium": {
+      "count": 5,
+      "effective": 5,
+      "total_pct": 6.33,
+      "avg_pct": 1.27,
+      "win_rate": 60.0
+    },
+    "long": {
+      "count": 4,
+      "effective": 4,
+      "total_pct": 15.37,
+      "avg_pct": 3.84,
+      "win_rate": 100.0
+    },
+    "unspecified": {
+      "count": 2,
+      "effective": 2,
+      "total_pct": -1.91,
+      "avg_pct": -0.96,
+      "win_rate": 50.0
+    }
+  },
+  "segments": {
+    "I10→M5": {
+      "direction": "falling",
+      "total": 10,
+      "bull": 5,
+      "bear": 5,
+      "score_pct": 8.32
+    },
+    "I11→I12": {
+      "direction": "rising",
+      "total": 8,
+      "bull": 4,
+      "bear": 4,
+      "score_pct": 1.49
+    },
+    "I12→M7": {
+      "direction": "falling",
+      "total": 11,
+      "bull": 8,
+      "bear": 3,
+      "score_pct": -44.07
+    },
+    "I7→I8": {
+      "direction": "rising",
+      "total": 8,
+      "bull": 8,
+      "bear": 0,
+      "score_pct": 18.29
+    },
+    "I8→I9": {
+      "direction": "falling",
+      "total": 14,
+      "bull": 10,
+      "bear": 4,
+      "score_pct": -19.72
+    },
+    "I9→I10": {
+      "direction": "rising",
+      "total": 11,
+      "bull": 11,
+      "bear": 0,
+      "score_pct": 6.53
+    },
+    "M5→M6": {
+      "direction": "rising",
+      "total": 25,
+      "bull": 20,
+      "bear": 5,
+      "score_pct": 71.07
+    },
+    "M6→I11": {
+      "direction": "falling",
+      "total": 12,
+      "bull": 10,
+      "bear": 2,
+      "score_pct": -39.68
+    },
+    "M7→TMP": {
+      "direction": "rising",
+      "total": 6,
+      "bull": 5,
+      "bear": 1,
+      "score_pct": 19.13
+    }
+  },
+  "inflections": {
+    "I10": {
+      "signals": [
+        {
+          "date": "2026-03-04",
+          "time": "17:14",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 7.66,
+          "evidence": "大盘即使反弹，也挡不住下跌的趋势。不亏的赶快清仓。"
+        }
+      ],
+      "total_score_pct": 7.66,
+      "count": 1,
+      "avg_pct": 7.66
+    },
+    "I12": {
+      "signals": [
+        {
+          "date": "2026-06-23",
+          "time": "17:10",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 8.54,
+          "evidence": "悲观预测，本周未来三天均绿收。"
+        }
+      ],
+      "total_score_pct": 8.54,
+      "count": 1,
+      "avg_pct": 8.54
+    },
+    "I9": {
+      "signals": [
+        {
+          "date": "2026-02-02",
+          "time": "17:19",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": -1.01,
+          "evidence": "小幅低开，可能破4000，然后反弹，预测收4050左右。"
+        },
+        {
+          "date": "2026-02-03",
+          "time": "17:21",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 3.26,
+          "evidence": "明天大盘会震荡偏强、结构性轮动，沪指大概率在4040-4100点区间博弈，收小阳或红十字星"
+        },
+        {
+          "date": "2026-02-04",
+          "time": "20:44",
+          "direction": "bullish",
+          "strength": "strong",
+          "score": 5.99,
+          "evidence": "明天必须收4130+，否则春节红包就是大问题了。"
+        }
+      ],
+      "total_score_pct": 8.24,
+      "count": 3,
+      "avg_pct": 2.75
+    },
+    "M5": {
+      "signals": [
+        {
+          "date": "2026-03-23",
+          "time": "20:49",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 10.63,
+          "evidence": "明天不反弹找我索要红包"
+        },
+        {
+          "date": "2026-03-24",
+          "time": "16:02",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 9.42,
+          "evidence": "明天继续反弹"
+        }
+      ],
+      "total_score_pct": 20.05,
+      "count": 2,
+      "avg_pct": 10.03
+    }
+  }
+}

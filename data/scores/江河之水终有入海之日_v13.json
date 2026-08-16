@@ -1,0 +1,284 @@
+{
+  "blogger": "江河之水终有入海之日",
+  "version": "v13",
+  "total_raw": 537,
+  "pre_2026": 385,
+  "scorable": 152,
+  "score_zero": 0,
+  "no_price": 0,
+  "no_segment": 0,
+  "case_a": 145,
+  "case_b": 7,
+  "first_signal_date": "2026-01-03",
+  "rankable": true,
+  "scores": {
+    "综合": {
+      "total_pct": -22.67,
+      "count": 152,
+      "avg_pct": -0.15,
+      "win_rate": 51.32
+    },
+    "上升段": {
+      "total_pct": 28.45,
+      "count": 83,
+      "avg_pct": 0.34,
+      "win_rate": 57.83
+    },
+    "下降段": {
+      "total_pct": -51.13,
+      "count": 69,
+      "avg_pct": -0.74,
+      "win_rate": 43.48
+    },
+    "抄底": {
+      "total_pct": 13.85,
+      "count": 4,
+      "avg_pct": 3.46,
+      "win_rate": 75.0
+    },
+    "逃顶": {
+      "total_pct": 36.0,
+      "count": 6,
+      "avg_pct": 6.0,
+      "win_rate": 83.33
+    },
+    "看多": {
+      "total_pct": -36.7,
+      "count": 90,
+      "avg_pct": -0.41,
+      "win_rate": 53.33
+    },
+    "看空": {
+      "total_pct": 14.03,
+      "count": 62,
+      "avg_pct": 0.23,
+      "win_rate": 48.39
+    }
+  },
+  "time_horizon": {
+    "short": {
+      "count": 129,
+      "effective": 129,
+      "total_pct": -23.39,
+      "avg_pct": -0.18,
+      "win_rate": 51.16
+    },
+    "medium": {
+      "count": 19,
+      "effective": 19,
+      "total_pct": -7.09,
+      "avg_pct": -0.37,
+      "win_rate": 47.37
+    },
+    "long": {
+      "count": 3,
+      "effective": 3,
+      "total_pct": 5.19,
+      "avg_pct": 1.73,
+      "win_rate": 66.67
+    },
+    "unspecified": {
+      "count": 1,
+      "effective": 1,
+      "total_pct": 2.62,
+      "avg_pct": 2.62,
+      "win_rate": 100.0
+    }
+  },
+  "segments": {
+    "I10→M5": {
+      "direction": "falling",
+      "total": 17,
+      "bull": 9,
+      "bear": 8,
+      "score_pct": -5.03
+    },
+    "I11→I12": {
+      "direction": "rising",
+      "total": 10,
+      "bull": 7,
+      "bear": 3,
+      "score_pct": -16.14
+    },
+    "I12→M7": {
+      "direction": "falling",
+      "total": 19,
+      "bull": 11,
+      "bear": 8,
+      "score_pct": -19.85
+    },
+    "I7→I8": {
+      "direction": "rising",
+      "total": 9,
+      "bull": 7,
+      "bear": 2,
+      "score_pct": 14.53
+    },
+    "I8→I9": {
+      "direction": "falling",
+      "total": 15,
+      "bull": 10,
+      "bear": 5,
+      "score_pct": -19.85
+    },
+    "I9→I10": {
+      "direction": "rising",
+      "total": 15,
+      "bull": 7,
+      "bear": 8,
+      "score_pct": -13.86
+    },
+    "M5→M6": {
+      "direction": "rising",
+      "total": 38,
+      "bull": 24,
+      "bear": 14,
+      "score_pct": 41.11
+    },
+    "M6→I11": {
+      "direction": "falling",
+      "total": 18,
+      "bull": 9,
+      "bear": 9,
+      "score_pct": -6.39
+    },
+    "M7→TMP": {
+      "direction": "rising",
+      "total": 11,
+      "bull": 6,
+      "bear": 5,
+      "score_pct": 2.82
+    }
+  },
+  "inflections": {
+    "I10": {
+      "signals": [
+        {
+          "date": "2026-03-03",
+          "time": "16:45",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 7.16,
+          "evidence": "如果继续大涨可能将大盘带入熊市。"
+        },
+        {
+          "date": "2026-03-04",
+          "time": "16:44",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 7.66,
+          "evidence": "明天大盘将反弹？即便有反弹，力度也不会大。"
+        }
+      ],
+      "total_score_pct": 14.82,
+      "count": 2,
+      "avg_pct": 7.41
+    },
+    "I11": {
+      "signals": [
+        {
+          "date": "2026-06-07",
+          "time": "22:36",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 6.0,
+          "evidence": "满足以上两个条件，大概率会低开高走。理由是:上证指数2024年9月低点2689与3040的连线用对数坐标，趋势线支撑就在"
+        },
+        {
+          "date": "2026-06-09",
+          "time": "16:48",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.76,
+          "evidence": "所以，大盘已经发出强烈的左侧见底信号。但需要右侧确认。如果这个假设正确，那么:①明天大盘不能冲高回落收中阴线。②明天上证"
+        }
+      ],
+      "total_score_pct": 10.76,
+      "count": 2,
+      "avg_pct": 5.38
+    },
+    "I12": {
+      "signals": [
+        {
+          "date": "2026-06-24",
+          "time": "16:13",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 8.83,
+          "evidence": "明天大盘又是中阴线杀跌？按逻辑最迟周五会再出一根中阴线。"
+        }
+      ],
+      "total_score_pct": 8.83,
+      "count": 1,
+      "avg_pct": 8.83
+    },
+    "I8": {
+      "signals": [
+        {
+          "date": "2026-01-13",
+          "time": "12:52",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": -1.26,
+          "evidence": "判断:\n①今天大盘收跌是大概率。\n②下午可能跳水，但收在5日均线之下概率不足百分之1。\n③明天最多再震荡调整一天，后天将"
+        }
+      ],
+      "total_score_pct": -1.26,
+      "count": 1,
+      "avg_pct": -1.26
+    },
+    "I9": {
+      "signals": [
+        {
+          "date": "2026-02-02",
+          "time": "17:22",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": -1.01,
+          "evidence": "所以，明天如果低开，则百分之90概率反弹收阳线，高开则需提防低走收阴线，但最迟，周三会收涨。"
+        }
+      ],
+      "total_score_pct": -1.01,
+      "count": 1,
+      "avg_pct": -1.01
+    },
+    "M6": {
+      "signals": [
+        {
+          "date": "2026-05-13",
+          "time": "16:21",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 7.71,
+          "evidence": "明天大盘将冲高回落？按逻辑是。"
+        },
+        {
+          "date": "2026-05-14",
+          "time": "16:26",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 5.9,
+          "evidence": "明天大盘将继续大阴线杀跌？按逻辑是。"
+        }
+      ],
+      "total_score_pct": 13.61,
+      "count": 2,
+      "avg_pct": 6.8
+    },
+    "M7": {
+      "signals": [
+        {
+          "date": "2026-07-20",
+          "time": "16:28",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.1,
+          "evidence": "明天大盘将拉大阳线？大概率。理由很简单: ①大盘下午大幅跳水，但是已无法将价格维持在日内低点附近，表明空方力量已是强弩之"
+        }
+      ],
+      "total_score_pct": 4.1,
+      "count": 1,
+      "avg_pct": 4.1
+    }
+  }
+}

@@ -13,20 +13,24 @@
     "other": 50
   },
   "scored_bullish": {
-    "strong": 101,
-    "moderate": 63,
-    "short": 60,
-    "medium": 8,
-    "long": 15,
-    "unspecified": 81
+    "by_strength": {
+      "strong": 65,
+      "moderate": 25
+    },
+    "by_time_horizon": {
+      "unspecified": 54,
+      "short": 24,
+      "long": 7,
+      "medium": 5
+    }
   },
   "scored_bearish": {
-    "strong": 0,
-    "moderate": 1,
-    "short": 0,
-    "medium": 1,
-    "long": 0,
-    "unspecified": 0
+    "by_strength": {
+      "moderate": 1
+    },
+    "by_time_horizon": {
+      "medium": 1
+    }
   },
   "signals": [
     {
@@ -38,36 +42,12 @@
       "publish_time": "2026-01-05 21:02"
     },
     {
-      "post_n": 0,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "long",
-      "evidence": "2026年，国家就算是拉，也要拉出一波疯牛行情！何以解忧，唯有暴富，当中国经济决定转型的那一刻起，股市的上涨就承载着国家意志，而疯牛的作用就是造势。",
-      "publish_time": "2026-01-06 11:28"
-    },
-    {
-      "post_n": 14,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "long",
-      "evidence": "但是，还没有到我们庆祝的时候，2026年的“造势”行情，只是刚刚开始，接下来的路还需要我们坚定的走下去。",
-      "publish_time": "2026-01-06 14:58"
-    },
-    {
       "post_n": 13,
       "direction": "bullish",
       "strength": "strong",
       "time_horizon": "unspecified",
       "evidence": "别人怎么说，不管别人怎么做，此时此刻，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-01-06 20:24"
-    },
-    {
-      "post_n": 12,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午没什么说的，大盘跌不下去，券商板块还在压盘，没什么好担心的。",
-      "publish_time": "2026-01-07 11:23"
     },
     {
       "post_n": 11,
@@ -102,28 +82,12 @@
       "publish_time": "2026-01-11 20:47"
     },
     {
-      "post_n": 5,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "long",
-      "evidence": "但凸教授却告诉你们，2025年造牛任务已经完成，那么2026年就要造势，既然是造势，那就必须是疯牛行情！",
-      "publish_time": "2026-01-12 11:24"
-    },
-    {
       "post_n": 4,
       "direction": "bullish",
       "strength": "strong",
       "time_horizon": "short",
       "evidence": "既然不够，明天就继续给我涨，涨到让他们都疯狂为止！",
       "publish_time": "2026-01-12 15:00"
-    },
-    {
-      "post_n": 2,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "unspecified",
-      "evidence": "我还是那句话，只要凸教授没有让你们卖，那就都给我安心持股，一日的涨跌说明不了什么，记住，我们跟那些天天三成仓位跳来跳去的人，有着本质的区别。",
-      "publish_time": "2026-01-13 15:06"
     },
     {
       "post_n": 1,
@@ -134,44 +98,12 @@
       "publish_time": "2026-01-13 20:25"
     },
     {
-      "post_n": 0,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "unspecified",
-      "evidence": "哈哈，这几天真是太爽啦，疯牛行情进行到底，记住，只要凸教授没有让你们卖，那就都给我安心持股，来吧，继续满仓吃肉，大口吃肉！",
-      "publish_time": "2026-01-14 11:29"
-    },
-    {
-      "post_n": 14,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "long",
-      "evidence": "不管怎样，突发消息不改长期趋势，凸教授继续满仓持股，坚定做多！",
-      "publish_time": "2026-01-14 14:58"
-    },
-    {
       "post_n": 13,
       "direction": "bullish",
       "strength": "strong",
       "time_horizon": "unspecified",
       "evidence": "不管别人怎么做，此时此刻，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-01-14 20:25"
-    },
-    {
-      "post_n": 12,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "long",
-      "evidence": "今年如果要涨，一定要快速的涨，大张旗鼓的涨，充满信心的涨，这样才能增强民众的信心，才能起到刺激消费的效果。",
-      "publish_time": "2026-01-15 11:28"
-    },
-    {
-      "post_n": 11,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "unspecified",
-      "evidence": "凸教授将继续满仓持股，坚定做多，疯牛行情，不存在半路下车的问题。",
-      "publish_time": "2026-01-15 15:00"
     },
     {
       "post_n": 10,
@@ -196,14 +128,6 @@
       "time_horizon": "unspecified",
       "evidence": "别人怎么说，不管别人怎么做，此时此刻，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-01-18 20:34"
-    },
-    {
-      "post_n": 7,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "long",
-      "evidence": "不管怎样，凸教授认为，中国股市到了不得不上的时候，今年如果股市拉不起来，会产生一系列非常严重的问题，到时候再想解决，可能就晚了。",
-      "publish_time": "2026-01-19 11:30"
     },
     {
       "post_n": 6,
@@ -254,28 +178,12 @@
       "publish_time": "2026-01-25 20:36"
     },
     {
-      "post_n": 14,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "unspecified",
-      "evidence": "凸教授这里继续选择满仓持股，坚定做多。",
-      "publish_time": "2026-01-26 11:32"
-    },
-    {
       "post_n": 13,
       "direction": "bullish",
       "strength": "strong",
       "time_horizon": "long",
       "evidence": "凸教授认为，唯有股市拉升，方能救中国经济，股市上涨，承载着国家意志，这个观念，正在被大家所接受，当越来越多的人认同的时候，中国股市，就会走出一波史无前例的超级大牛市！",
       "publish_time": "2026-01-26 20:30"
-    },
-    {
-      "post_n": 11,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "明日周三，来一根势如破竹的中阳线吧！",
-      "publish_time": "2026-01-27 15:08"
     },
     {
       "post_n": 10,
@@ -302,28 +210,12 @@
       "publish_time": "2026-02-01 20:27"
     },
     {
-      "post_n": 4,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "unspecified",
-      "evidence": "暴力杀跌，必然会有暴力反弹，凸教授继续满仓券商➕科技，继续坚定做多！",
-      "publish_time": "2026-02-02 15:01"
-    },
-    {
       "post_n": 3,
       "direction": "bullish",
       "strength": "strong",
       "time_horizon": "unspecified",
       "evidence": "不管别人怎么做，凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-02-02 20:24"
-    },
-    {
-      "post_n": 2,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "凸教授昨天明确指出，暴力杀跌，必然会有暴力反弹，今天明显反弹的还不够，那么明天就继续反攻，凸教授继续满仓持股，坚定做多！",
-      "publish_time": "2026-02-03 14:58"
     },
     {
       "post_n": 1,
@@ -350,28 +242,12 @@
       "publish_time": "2026-02-08 20:27"
     },
     {
-      "post_n": 9,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "明日大盘观点，就五个字：继续拉中阳线！",
-      "publish_time": "2026-02-09 14:59"
-    },
-    {
       "post_n": 8,
       "direction": "bullish",
       "strength": "strong",
       "time_horizon": "long",
       "evidence": "不管别人怎么说，凸教授始终满仓持股，坚定看涨，利润不是靠频繁交易操作来的，而是靠长期重仓持股守来的。",
       "publish_time": "2026-02-09 20:27"
-    },
-    {
-      "post_n": 7,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "unspecified",
-      "evidence": "大盘没什么说的，这里下跌的概率几乎为零，就看什么时候在券商板块的带动下，向上突破了！",
-      "publish_time": "2026-02-10 11:32"
     },
     {
       "post_n": 6,
@@ -382,28 +258,12 @@
       "publish_time": "2026-02-10 19:30"
     },
     {
-      "post_n": 5,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "unspecified",
-      "evidence": "我就把话撂这里了，后面要么大阳线往上拉，要么就给我继续缩量拉小阳线，还记得之前的十七连阳吗？后面连续走小阳线的概率也很大！",
-      "publish_time": "2026-02-11 15:05"
-    },
-    {
       "post_n": 4,
       "direction": "bullish",
       "strength": "strong",
       "time_horizon": "long",
       "evidence": "2025年，将会是中国股市，全面进入牛市的第一年。2025年，中国股市，将会彻底结束十年的底部震荡，进入到全新的行情。",
       "publish_time": "2026-02-11 20:54"
-    },
-    {
-      "post_n": 3,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "unspecified",
-      "evidence": "大盘继续缩量慢慢往上爬，只要是缩量状态，市场就没有任何问题，大盘将继续震荡上攻。",
-      "publish_time": "2026-02-12 15:01"
     },
     {
       "post_n": 2,
@@ -414,28 +274,12 @@
       "publish_time": "2026-02-12 20:30"
     },
     {
-      "post_n": 13,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "“今日周二，A股马年首秀，大盘必将高开高走，那些节前空仓的人，根本不敢追涨买入！”",
-      "publish_time": "2026-02-24 11:28"
-    },
-    {
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "今天主力算是把苦活，脏货都干完了，高开，跳水，震荡都有了，那么明天就只剩下拉升一条路了。",
       "publish_time": "2026-02-24 14:59"
-    },
-    {
-      "post_n": 10,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "我看到很多人说，今天大盘会跌，这些人根本不懂逻辑，今天大盘只有上涨这一条路。跌是不可能的，今天如果跌，那么前期上涨的基础逻辑就要全部被推翻，今天如果跌，也可以断定后面没行情了。",
-      "publish_time": "2026-02-25 11:27"
     },
     {
       "post_n": 9,
@@ -446,36 +290,12 @@
       "publish_time": "2026-02-25 15:03"
     },
     {
-      "post_n": 8,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "1、今天大跌是不可能的，今天如果收中阴线，那么前两天的上涨就不应该存在，这在逻辑上是行不通的。",
-      "publish_time": "2026-02-26 11:28"
-    },
-    {
-      "post_n": 7,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "这样一来，那么明天市场的走势就非常简单了，就两种情况：一是拉中阳线，直接干上去，这种概率较大。二是继续震荡休整一天，这种概率较小。",
-      "publish_time": "2026-02-26 15:00"
-    },
-    {
       "post_n": 6,
       "direction": "bullish",
       "strength": "strong",
       "time_horizon": "short",
       "evidence": "凸教授今晚把话放这里了，明天A股最差的走势就是再横盘震荡一天，但是更大的概率是直接干上去，拉出一根中阳线！",
       "publish_time": "2026-02-26 20:25"
-    },
-    {
-      "post_n": 5,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "3、至于下午是逼空上涨，还是继续横盘震荡，看主力心情，但想要大跌，几乎不可能。",
-      "publish_time": "2026-02-27 11:29"
     },
     {
       "post_n": 4,
@@ -502,36 +322,12 @@
       "publish_time": "2026-03-01 20:11"
     },
     {
-      "post_n": 1,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "unspecified",
-      "evidence": "但是，想要指数大跌，几乎不可能，因为现在筹码都在主力手中，大跌就是自己砸自己，这显然不符合主力的利益。",
-      "publish_time": "2026-03-02 11:27"
-    },
-    {
-      "post_n": 0,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "第一种是明天大盘横盘震荡一天，但是大量个股却可以上涨，修复今天的下跌，此种情况概率较大。第二种是明天大盘跟个股一起涨，上证指数直接强势突破4200点，市场赚钱效应明显，此种情况概率较小。至于我们，没什么好说的，继续满仓持股，坚定做多！",
-      "publish_time": "2026-03-02 15:02"
-    },
-    {
       "post_n": 14,
       "direction": "bullish",
       "strength": "strong",
       "time_horizon": "unspecified",
       "evidence": "3000点我是这样，4000点我依旧是这样，牛市的起点，最怕的就是瞻前顾后，最珍贵的就是信仰与定力。",
       "publish_time": "2026-03-02 20:35"
-    },
-    {
-      "post_n": 13,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "unspecified",
-      "evidence": "至于我们，现在依然是满仓持股，坚定做多！",
-      "publish_time": "2026-03-03 11:28"
     },
     {
       "post_n": 12,
@@ -542,36 +338,12 @@
       "publish_time": "2026-03-03 15:00"
     },
     {
-      "post_n": 11,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "unspecified",
-      "evidence": "至于我们，依然是满仓持股，坚定做多，黑天鹅也不是遇见一次两次了，每一次我们都是硬扛下来的，这一次，我选择继续硬扛。",
-      "publish_time": "2026-03-04 11:24"
-    },
-    {
       "post_n": 9,
       "direction": "bullish",
       "strength": "strong",
       "time_horizon": "short",
       "evidence": "明天市场迎来反攻的概率非常大！没什么说的，这个地方，绝对不能割肉，明天，准备迎接大反攻！",
       "publish_time": "2026-03-04 20:15"
-    },
-    {
-      "post_n": 8,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "unspecified",
-      "evidence": "经过这一次杀跌之后，后面大盘再向上突破，会更加轻松。",
-      "publish_time": "2026-03-05 11:27"
-    },
-    {
-      "post_n": 7,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "unspecified",
-      "evidence": "大盘砸不下去，就只剩下上涨一条路了！",
-      "publish_time": "2026-03-05 15:04"
     },
     {
       "post_n": 6,
@@ -582,36 +354,12 @@
       "publish_time": "2026-03-05 20:19"
     },
     {
-      "post_n": 5,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午大盘会进一步震荡拉升，今天盘后会有一个重要会议，到时候应该会有利好消息出台。",
-      "publish_time": "2026-03-06 11:29"
-    },
-    {
       "post_n": 4,
       "direction": "bullish",
       "strength": "strong",
       "time_horizon": "medium",
       "evidence": "下周，大盘向上突破，不会再有任何阻力了，除非有更大的黑天鹅出现。",
       "publish_time": "2026-03-06 15:00"
-    },
-    {
-      "post_n": 3,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "unspecified",
-      "evidence": "不管全球股市如何暴跌，A股是不可能大幅下跌的，因为目前主力所有的筹码都在里面。",
-      "publish_time": "2026-03-09 11:25"
-    },
-    {
-      "post_n": 2,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "unspecified",
-      "evidence": "市场筹码集中度越高，说明主力介入程度越深，主力介入程度越深，则大盘大跌的可能性就越低。",
-      "publish_time": "2026-03-09 14:59"
     },
     {
       "post_n": 1,
@@ -622,44 +370,12 @@
       "publish_time": "2026-03-09 20:19"
     },
     {
-      "post_n": 0,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "unspecified",
-      "evidence": "凸教授可以肯定地跟你说，只要你没有在这次黑天鹅事件中割肉，你的账户后面都会涨回来，不仅都会涨回来，还会涨的比之前更多。",
-      "publish_time": "2026-03-10 11:30"
-    },
-    {
-      "post_n": 14,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "unspecified",
-      "evidence": "目前主力已经满手筹码了，你就等着后面拉升吧，相信我，再耐心一点，接下来必有厚报。",
-      "publish_time": "2026-03-10 14:59"
-    },
-    {
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "unspecified",
       "evidence": "凸教授始终满仓持股，坚定做多。",
       "publish_time": "2026-03-10 20:33"
-    },
-    {
-      "post_n": 12,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "unspecified",
-      "evidence": "接下来大盘只有上涨一条路，最多就是主力压盘不让涨，至于大跌，基本上是不可能的。",
-      "publish_time": "2026-03-11 11:29"
-    },
-    {
-      "post_n": 11,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "明天大盘会继续向上进攻，再次狠狠的打他们的脸！",
-      "publish_time": "2026-03-11 14:59"
     },
     {
       "post_n": 10,
@@ -694,28 +410,12 @@
       "publish_time": "2026-03-15 20:32"
     },
     {
-      "post_n": 6,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "unspecified",
-      "evidence": "只要中东事态没有进一步恶化，那么后面大盘很快就会迎来反攻。",
-      "publish_time": "2026-03-16 15:00"
-    },
-    {
       "post_n": 5,
       "direction": "bullish",
       "strength": "strong",
       "time_horizon": "short",
       "evidence": "从明天开始，A股将重新回到之前的上涨趋势中去，后面上证指数突破4200点，几乎没有任何悬念。",
       "publish_time": "2026-03-16 20:16"
-    },
-    {
-      "post_n": 4,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "今日大盘会止跌企稳，正式反攻！",
-      "publish_time": "2026-03-17 11:30"
     },
     {
       "post_n": 2,
@@ -726,36 +426,12 @@
       "publish_time": "2026-03-17 20:33"
     },
     {
-      "post_n": 1,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "如果今天砸不下去，基本上可以肯定后面也不会砸下去了，这一次因为黑天鹅导致的下跌，也算是彻底结束了。",
-      "publish_time": "2026-03-18 11:30"
-    },
-    {
-      "post_n": 0,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "今天的低点4023点，就是本轮大盘调整的最低点。",
-      "publish_time": "2026-03-18 15:00"
-    },
-    {
       "post_n": 14,
       "direction": "bullish",
       "strength": "strong",
       "time_horizon": "unspecified",
       "evidence": "目前市场的本质就是主力已经完全控盘，大盘接下来的走势，就是反攻➕突破，至于下跌的概率，已经忽略不计了。",
       "publish_time": "2026-03-18 20:21"
-    },
-    {
-      "post_n": 13,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "如果今天大盘，在重大利空之下，依然砸不破4000点，那么后面4000点就不可能再破了。",
-      "publish_time": "2026-03-19 11:29"
     },
     {
       "post_n": 9,
@@ -774,28 +450,12 @@
       "publish_time": "2026-03-23 20:23"
     },
     {
-      "post_n": 5,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "unspecified",
-      "evidence": "只要基础逻辑没有改变，只要国家还需要牛市来刺激经济，我就一定会坚守下去，直到满意为止！",
-      "publish_time": "2026-03-24 11:28"
-    },
-    {
       "post_n": 3,
       "direction": "bullish",
       "strength": "strong",
       "time_horizon": "unspecified",
       "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-03-24 20:29"
-    },
-    {
-      "post_n": 1,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "从目前来看，市场修复的不错，明天大盘有望继续上攻，回补上方缺口。",
-      "publish_time": "2026-03-25 15:06"
     },
     {
       "post_n": 0,
@@ -806,36 +466,12 @@
       "publish_time": "2026-03-25 20:21"
     },
     {
-      "post_n": 14,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午大盘再次拉起来的概率非常大，各位不用担心，耐心等待就行了。",
-      "publish_time": "2026-03-26 11:25"
-    },
-    {
-      "post_n": 13,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "明天包括下周一，大盘应该向上，并回补上方缺口。",
-      "publish_time": "2026-03-26 14:59"
-    },
-    {
       "post_n": 12,
       "direction": "bullish",
       "strength": "strong",
       "time_horizon": "unspecified",
       "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-03-26 20:23"
-    },
-    {
-      "post_n": 11,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "今日周五，本周最后一个交易日，大盘将再次向上反攻，市场会保持进二退一的节奏，逐步修复黑天鹅导致的下跌。",
-      "publish_time": "2026-03-27 11:27"
     },
     {
       "post_n": 10,
@@ -854,44 +490,12 @@
       "publish_time": "2026-03-29 20:21"
     },
     {
-      "post_n": 8,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "unspecified",
-      "evidence": "凸教授继续满仓持股，依然是券商➕科技，继续坚定做多！",
-      "publish_time": "2026-03-30 11:28"
-    },
-    {
-      "post_n": 7,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "既然今天没有涨到，那么明天大盘会继续反攻，先把上方缺口回补掉。",
-      "publish_time": "2026-03-30 14:59"
-    },
-    {
       "post_n": 5,
       "direction": "bullish",
       "strength": "strong",
       "time_horizon": "unspecified",
       "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-03-30 20:22"
-    },
-    {
-      "post_n": 4,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "我认为下午大盘再次拉起来的概率极大，大家不要慌张，继续耐心持股！",
-      "publish_time": "2026-03-31 11:38"
-    },
-    {
-      "post_n": 3,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "既然上周四跌，周五和本周一涨，本周二跌，那么明后两天，大盘都应该是以上涨为主了，还是进二退一的节奏。",
-      "publish_time": "2026-03-31 15:00"
     },
     {
       "post_n": 2,
@@ -902,36 +506,12 @@
       "publish_time": "2026-03-31 20:22"
     },
     {
-      "post_n": 1,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "下午大盘就会去回补上方缺口，我们继续满仓持股，继续坚定做多！",
-      "publish_time": "2026-04-01 11:30"
-    },
-    {
-      "post_n": 0,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "明天大盘还要继续上攻，上证指数不仅要回补缺口，还要站在缺口上方才行。",
-      "publish_time": "2026-04-01 15:00"
-    },
-    {
       "post_n": 14,
       "direction": "bullish",
       "strength": "strong",
       "time_horizon": "unspecified",
       "evidence": "凸教授始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-04-01 20:22"
-    },
-    {
-      "post_n": 13,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "unspecified",
-      "evidence": "A股或将成为第一个走出独立行情的市场！我们继续满仓持股，坚定做多！",
-      "publish_time": "2026-04-02 11:28"
     },
     {
       "post_n": 11,
@@ -950,22 +530,6 @@
       "publish_time": "2026-04-07 20:18"
     },
     {
-      "post_n": 8,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "long",
-      "evidence": "突发事件，不改长期趋势，每一次黑天鹅，其实都是给踏空者上车的机会。希望本轮黑天鹅事件，就此结束，希望大盘尽快回到原有的轨迹中去",
-      "publish_time": "2026-04-08 11:31"
-    },
-    {
-      "post_n": 7,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "long",
-      "evidence": "一旦黑天鹅结束，那么全球股市都会出现暴力反攻，短期利空不改长期趋势，一旦大盘回到原有轨迹中去，A股将出现加速上涨！",
-      "publish_time": "2026-04-08 15:00"
-    },
-    {
       "post_n": 6,
       "direction": "bullish",
       "strength": "strong",
@@ -980,14 +544,6 @@
       "time_horizon": "unspecified",
       "evidence": "大家只要保持足够的耐心，多给主力一点时间，主力后面会再次把大盘拉上去的，这一点，你们完全可以放心！",
       "publish_time": "2026-04-09 20:20"
-    },
-    {
-      "post_n": 4,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "unspecified",
-      "evidence": "一旦黑天鹅事件被消化完毕，后面大盘就会一飞冲天，重新回到之前牛市的轨道中去！",
-      "publish_time": "2026-04-10 11:29"
     },
     {
       "post_n": 3,
@@ -1022,14 +578,6 @@
       "publish_time": "2026-04-13 20:34"
     },
     {
-      "post_n": 14,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "unspecified",
-      "evidence": "所以，凸教授继续满仓持股，科技➕券商，继续坚定做多，不动如山！",
-      "publish_time": "2026-04-14 11:29"
-    },
-    {
       "post_n": 13,
       "direction": "bullish",
       "strength": "strong",
@@ -1038,36 +586,12 @@
       "publish_time": "2026-04-14 20:21"
     },
     {
-      "post_n": 12,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "下午大盘就会拉起来，上证指数这里下跌的概率，几乎为零！",
-      "publish_time": "2026-04-15 11:27"
-    },
-    {
-      "post_n": 11,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "最后再说一句，明天周四，我绝不看空，直接干起来吧！",
-      "publish_time": "2026-04-15 15:00"
-    },
-    {
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "关于明天的行情，各位不用担心，市场离真正的拉升不远了，主力很有耐心，你必须比主力还要有耐心。",
       "publish_time": "2026-04-15 20:29"
-    },
-    {
-      "post_n": 9,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "unspecified",
-      "evidence": "让我们继续满仓持股，继续坚守下去，等待大盘再创新高，等待个股轮番上涨！",
-      "publish_time": "2026-04-16 11:31"
     },
     {
       "post_n": 8,
@@ -1086,22 +610,6 @@
       "publish_time": "2026-04-19 20:19"
     },
     {
-      "post_n": 6,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "下午大盘要么横扫震荡，要么继续上攻，至于下跌的可能性，几乎为零。",
-      "publish_time": "2026-04-20 11:25"
-    },
-    {
-      "post_n": 5,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "收盘，明天就六个字：继续拉中阳线！",
-      "publish_time": "2026-04-20 15:02"
-    },
-    {
       "post_n": 4,
       "direction": "bullish",
       "strength": "strong",
@@ -1110,28 +618,12 @@
       "publish_time": "2026-04-20 20:22"
     },
     {
-      "post_n": 3,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午大盘跌不下去，今天最差的走势就是横盘震荡一天，好的话，下午大盘就可以直接拉起来！",
-      "publish_time": "2026-04-21 11:30"
-    },
-    {
       "post_n": 2,
       "direction": "bullish",
       "strength": "strong",
       "time_horizon": "unspecified",
       "evidence": "接下来，大盘将向4200点进攻，本次大盘创新高之后，会有大量的个股直线涨停，千万不要再一次卖飞筹码了！",
       "publish_time": "2026-04-21 15:07"
-    },
-    {
-      "post_n": 1,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "下午大盘会继续震荡走高，今天会再次拉出一根中阳线！",
-      "publish_time": "2026-04-22 11:30"
     },
     {
       "post_n": 0,
@@ -1150,28 +642,12 @@
       "publish_time": "2026-04-28 15:56"
     },
     {
-      "post_n": 13,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "节前的震荡，就是为了节后的拉升，等所有业绩落地，你们会看到，什么是真正的百花齐放！",
-      "publish_time": "2026-04-29 11:24"
-    },
-    {
       "post_n": 12,
       "direction": "bullish",
       "strength": "strong",
       "time_horizon": "short",
       "evidence": "明天是节前最后一天，大盘继续上攻，上证指数再拉一根中阳线！",
       "publish_time": "2026-04-29 15:00"
-    },
-    {
-      "post_n": 11,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "市场没有任何问题，下午大盘要么横盘震荡，要么继续向上进攻，至于下跌的可能性，几乎为零。",
-      "publish_time": "2026-04-30 11:30"
     },
     {
       "post_n": 10,
@@ -1190,36 +666,12 @@
       "publish_time": "2026-05-05 20:25"
     },
     {
-      "post_n": 8,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "今日大盘将高开高走，上证指数将会在券商板块的带动下，拉出一根中阳线！一旦上证指数突破4200点，你们会知道，什么才是真正的百花齐放！",
-      "publish_time": "2026-05-06 11:30"
-    },
-    {
       "post_n": 7,
       "direction": "bullish",
       "strength": "strong",
       "time_horizon": "short",
       "evidence": "开弓没有回头箭，既然主力开始决定拉升了，那就不要停，明天一气呵成直接突破4200点！",
       "publish_time": "2026-05-06 15:00"
-    },
-    {
-      "post_n": 6,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "unspecified",
-      "evidence": "一旦市场震荡结束，大盘还将继续向上进攻，凸教授继续满仓持股，坚定做多！",
-      "publish_time": "2026-05-07 11:25"
-    },
-    {
-      "post_n": 5,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "明天大盘冲高回落，不用担心，只要上证指数突破4200点，就意味着全新行情展开，后面你会看到什么是真正的“疯牛”行情。",
-      "publish_time": "2026-05-07 15:00"
     },
     {
       "post_n": 4,
@@ -1238,44 +690,12 @@
       "publish_time": "2026-05-10 20:15"
     },
     {
-      "post_n": 2,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "下午，大盘要么横盘震荡，要么继续逼空上涨，至于下跌的可能性，依然为零！",
-      "publish_time": "2026-05-11 11:29"
-    },
-    {
-      "post_n": 1,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "unspecified",
-      "evidence": "大盘已经完成我定的第一个目标，但这仅仅只是开始，接下来，还请你们继续保持耐心，跟我一起满仓持股，等待市场真正的爆发，等待个股真正的爆发！",
-      "publish_time": "2026-05-11 15:00"
-    },
-    {
       "post_n": 0,
       "direction": "bullish",
       "strength": "strong",
       "time_horizon": "unspecified",
       "evidence": "我始终满仓持股，坚定做多。3000点的时候，我是这么说的，今天，我依然是满仓持股，不动如山！",
       "publish_time": "2026-05-11 20:17"
-    },
-    {
-      "post_n": 14,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午没什么说的，基本上就是维持震荡的格局，这是主力在给你们时间卖出股票，是走是留，你随意，反正我一股不卖！",
-      "publish_time": "2026-05-12 11:29"
-    },
-    {
-      "post_n": 13,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "那么明日周三，大盘将继续震荡上攻，上证指数将会在券商板块的带动下，再拉一根中阳线！",
-      "publish_time": "2026-05-12 15:01"
     },
     {
       "post_n": 12,
@@ -1286,36 +706,12 @@
       "publish_time": "2026-05-12 20:52"
     },
     {
-      "post_n": 11,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午大盘要么维持横盘震荡，要么直接上攻，至于下跌的可能性，依然为零！",
-      "publish_time": "2026-05-13 11:29"
-    },
-    {
       "post_n": 10,
       "direction": "bullish",
       "strength": "strong",
       "time_horizon": "short",
       "evidence": "明日周四，大盘会继续上攻，券商板块随时会爆发，我们拭目以待！",
       "publish_time": "2026-05-13 15:00"
-    },
-    {
-      "post_n": 9,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午大盘要么继续震荡，要么V型反转，完成盘中甩人的动作",
-      "publish_time": "2026-05-14 11:27"
-    },
-    {
-      "post_n": 8,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "我不相信牛市就此结束了，我不相信趋势改变了，我更不相信主力会前功尽弃。所以主力，你可以洗盘，你可以震仓，但是你想要以这种方式把我赶出去，门都没有！啥都不说了，凸教授今天很难受，但凸教授绝不退缩，我会继续满仓持股，一股不卖！",
-      "publish_time": "2026-05-14 20:22"
     },
     {
       "post_n": 7,

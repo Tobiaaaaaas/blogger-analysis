@@ -1,0 +1,301 @@
+{
+  "blogger": "鸟瞰股市",
+  "version": "v13",
+  "total_raw": 140,
+  "pre_2026": 0,
+  "scorable": 140,
+  "score_zero": 0,
+  "no_price": 0,
+  "no_segment": 0,
+  "case_a": 134,
+  "case_b": 6,
+  "first_signal_date": "2026-01-01",
+  "rankable": true,
+  "scores": {
+    "综合": {
+      "total_pct": -85.47,
+      "count": 140,
+      "avg_pct": -0.61,
+      "win_rate": 47.86
+    },
+    "上升段": {
+      "total_pct": 210.68,
+      "count": 76,
+      "avg_pct": 2.77,
+      "win_rate": 82.89
+    },
+    "下降段": {
+      "total_pct": -296.15,
+      "count": 64,
+      "avg_pct": -4.63,
+      "win_rate": 6.25
+    },
+    "抄底": {
+      "total_pct": 36.51,
+      "count": 10,
+      "avg_pct": 3.65,
+      "win_rate": 80.0
+    },
+    "逃顶": {
+      "total_pct": 11.18,
+      "count": 3,
+      "avg_pct": 3.73,
+      "win_rate": 66.67
+    },
+    "看多": {
+      "total_pct": -74.45,
+      "count": 123,
+      "avg_pct": -0.61,
+      "win_rate": 49.59
+    },
+    "看空": {
+      "total_pct": -11.03,
+      "count": 17,
+      "avg_pct": -0.65,
+      "win_rate": 35.29
+    }
+  },
+  "time_horizon": {
+    "short": {
+      "count": 139,
+      "effective": 139,
+      "total_pct": -90.59,
+      "avg_pct": -0.65,
+      "win_rate": 47.48
+    },
+    "medium": {
+      "count": 0,
+      "effective": 0,
+      "total_pct": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "long": {
+      "count": 0,
+      "effective": 0,
+      "total_pct": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "unspecified": {
+      "count": 1,
+      "effective": 1,
+      "total_pct": 5.12,
+      "avg_pct": 5.12,
+      "win_rate": 100.0
+    }
+  },
+  "segments": {
+    "I10→M5": {
+      "direction": "falling",
+      "total": 14,
+      "bull": 13,
+      "bear": 1,
+      "score_pct": -89.72
+    },
+    "I11→I12": {
+      "direction": "rising",
+      "total": 10,
+      "bull": 9,
+      "bear": 1,
+      "score_pct": 39.87
+    },
+    "I12→M7": {
+      "direction": "falling",
+      "total": 19,
+      "bull": 18,
+      "bear": 1,
+      "score_pct": -108.92
+    },
+    "I7→I8": {
+      "direction": "rising",
+      "total": 10,
+      "bull": 4,
+      "bear": 6,
+      "score_pct": 9.93
+    },
+    "I8→I9": {
+      "direction": "falling",
+      "total": 14,
+      "bull": 13,
+      "bear": 1,
+      "score_pct": -33.52
+    },
+    "I9→I10": {
+      "direction": "rising",
+      "total": 14,
+      "bull": 12,
+      "bear": 2,
+      "score_pct": 11.58
+    },
+    "M5→M6": {
+      "direction": "rising",
+      "total": 32,
+      "bull": 27,
+      "bear": 5,
+      "score_pct": 112.77
+    },
+    "M6→I11": {
+      "direction": "falling",
+      "total": 17,
+      "bull": 17,
+      "bear": 0,
+      "score_pct": -63.99
+    },
+    "M7→TMP": {
+      "direction": "rising",
+      "total": 10,
+      "bull": 10,
+      "bear": 0,
+      "score_pct": 36.53
+    }
+  },
+  "inflections": {
+    "I11": {
+      "signals": [
+        {
+          "date": "2026-06-07",
+          "time": "08:42",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 6.0,
+          "evidence": "笔者仍斗胆预测，明日大概率是：前市大盘大幅低开，甚至开盘直接跌破4000点，后市股指探底企稳，逐步回升，至收盘，股指小幅"
+        },
+        {
+          "date": "2026-06-08",
+          "time": "16:24",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.96,
+          "evidence": "如果没有重大利空， 明日大概率是：大盘低位震荡企稳，股指逐步走高，至收盘，股指小幅上涨，红盘报收。"
+        },
+        {
+          "date": "2026-06-09",
+          "time": "15:52",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.76,
+          "evidence": "如果没有重大利空，明日大概率是：大盘冲高回补上方缺口后回落，横盘震荡，至收盘，股指小幅上涨，红盘报收。"
+        }
+      ],
+      "total_score_pct": 15.72,
+      "count": 3,
+      "avg_pct": 5.24
+    },
+    "I12": {
+      "signals": [
+        {
+          "date": "2026-06-22",
+          "time": "15:41",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 9.93,
+          "evidence": "明日大概率是：大盘冲高回落横盘震荡，至收盘，股指小幅下跌，阴线报收。"
+        }
+      ],
+      "total_score_pct": 9.93,
+      "count": 1,
+      "avg_pct": 9.93
+    },
+    "I8": {
+      "signals": [
+        {
+          "date": "2026-01-13",
+          "time": "16:02",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": -1.26,
+          "evidence": "明日大概率是：大盘继续震荡调整，阴线收盘。"
+        },
+        {
+          "date": "2026-01-14",
+          "time": "15:48",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 2.51,
+          "evidence": "明日大概率是：大盘继续震荡调整，至收盘，阴线报收。"
+        }
+      ],
+      "total_score_pct": 1.25,
+      "count": 2,
+      "avg_pct": 0.62
+    },
+    "I9": {
+      "signals": [
+        {
+          "date": "2026-02-02",
+          "time": "15:40",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": -1.01,
+          "evidence": "明日大概率是：大盘探底回升，至收盘，股指小幅上涨，红盘报收。"
+        },
+        {
+          "date": "2026-02-03",
+          "time": "16:13",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 3.26,
+          "evidence": "明日大概率是：大盘前市横盘震荡，后市股指逐步走高，至收盘，股指小幅反弹，红盘报收。"
+        },
+        {
+          "date": "2026-02-04",
+          "time": "16:07",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 2.99,
+          "evidence": "明天大概率是：大盘前市横盘震荡，后市股指逐步走高，至收盘，大盘再次收出一根阳线，红盘报收。"
+        }
+      ],
+      "total_score_pct": 5.24,
+      "count": 3,
+      "avg_pct": 1.75
+    },
+    "M5": {
+      "signals": [
+        {
+          "date": "2026-03-24",
+          "time": "15:23",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 9.42,
+          "evidence": "排除有重磅消息影响外，明日大概率是：大盘缩量震荡，整固底部，至收盘，小幅上涨，红盘报收。"
+        }
+      ],
+      "total_score_pct": 9.42,
+      "count": 1,
+      "avg_pct": 9.42
+    },
+    "M7": {
+      "signals": [
+        {
+          "date": "2026-07-19",
+          "time": "09:00",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": -1.34,
+          "evidence": "因此，明日大概率是：大盘震荡回升，大幅反弹。至收盘，股指大涨，红盘报收。"
+        },
+        {
+          "date": "2026-07-20",
+          "time": "15:25",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.1,
+          "evidence": "明日大概率是：大盘震荡反弹，个股普涨。至收盘，股指小幅上涨，红盘报收。"
+        },
+        {
+          "date": "2026-07-21",
+          "time": "15:15",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 3.35,
+          "evidence": "明日大概率是：大盘横盘震荡，消化短线获利盘。至收盘，股指小幅上涨，再收红盘。"
+        }
+      ],
+      "total_score_pct": 6.11,
+      "count": 3,
+      "avg_pct": 2.04
+    }
+  }
+}

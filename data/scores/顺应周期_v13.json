@@ -1,0 +1,224 @@
+{
+  "blogger": "顺应周期",
+  "version": "v13",
+  "total_raw": 127,
+  "pre_2026": 0,
+  "scorable": 127,
+  "score_zero": 0,
+  "no_price": 0,
+  "no_segment": 0,
+  "case_a": 118,
+  "case_b": 9,
+  "first_signal_date": "2026-01-05",
+  "rankable": true,
+  "scores": {
+    "综合": {
+      "total_pct": 18.36,
+      "count": 127,
+      "avg_pct": 0.14,
+      "win_rate": 52.76
+    },
+    "上升段": {
+      "total_pct": -30.7,
+      "count": 71,
+      "avg_pct": -0.43,
+      "win_rate": 53.52
+    },
+    "下降段": {
+      "total_pct": 49.06,
+      "count": 56,
+      "avg_pct": 0.88,
+      "win_rate": 51.79
+    },
+    "抄底": {
+      "total_pct": 4.06,
+      "count": 4,
+      "avg_pct": 1.02,
+      "win_rate": 50.0
+    },
+    "逃顶": {
+      "total_pct": 11.0,
+      "count": 2,
+      "avg_pct": 5.5,
+      "win_rate": 100.0
+    },
+    "看多": {
+      "total_pct": 1.39,
+      "count": 68,
+      "avg_pct": 0.02,
+      "win_rate": 55.88
+    },
+    "看空": {
+      "total_pct": 16.97,
+      "count": 59,
+      "avg_pct": 0.29,
+      "win_rate": 49.15
+    }
+  },
+  "time_horizon": {
+    "short": {
+      "count": 57,
+      "effective": 57,
+      "total_pct": -34.48,
+      "avg_pct": -0.6,
+      "win_rate": 49.12
+    },
+    "medium": {
+      "count": 24,
+      "effective": 24,
+      "total_pct": 17.91,
+      "avg_pct": 0.75,
+      "win_rate": 54.17
+    },
+    "long": {
+      "count": 8,
+      "effective": 8,
+      "total_pct": 17.09,
+      "avg_pct": 2.14,
+      "win_rate": 75.0
+    },
+    "unspecified": {
+      "count": 38,
+      "effective": 38,
+      "total_pct": 17.84,
+      "avg_pct": 0.47,
+      "win_rate": 52.63
+    }
+  },
+  "segments": {
+    "I10→M5": {
+      "direction": "falling",
+      "total": 14,
+      "bull": 7,
+      "bear": 7,
+      "score_pct": 4.94
+    },
+    "I11→I12": {
+      "direction": "rising",
+      "total": 10,
+      "bull": 5,
+      "bear": 5,
+      "score_pct": -18.32
+    },
+    "I12→M7": {
+      "direction": "falling",
+      "total": 17,
+      "bull": 6,
+      "bear": 11,
+      "score_pct": 44.08
+    },
+    "I7→I8": {
+      "direction": "rising",
+      "total": 7,
+      "bull": 5,
+      "bear": 2,
+      "score_pct": 10.56
+    },
+    "I8→I9": {
+      "direction": "falling",
+      "total": 12,
+      "bull": 10,
+      "bear": 2,
+      "score_pct": -21.05
+    },
+    "I9→I10": {
+      "direction": "rising",
+      "total": 12,
+      "bull": 10,
+      "bear": 2,
+      "score_pct": -9.66
+    },
+    "M5→M6": {
+      "direction": "rising",
+      "total": 32,
+      "bull": 15,
+      "bear": 17,
+      "score_pct": -33.14
+    },
+    "M6→I11": {
+      "direction": "falling",
+      "total": 13,
+      "bull": 3,
+      "bear": 10,
+      "score_pct": 21.09
+    },
+    "M7→TMP": {
+      "direction": "rising",
+      "total": 10,
+      "bull": 7,
+      "bear": 3,
+      "score_pct": 19.87
+    }
+  },
+  "inflections": {
+    "I9": {
+      "signals": [
+        {
+          "date": "2026-02-02",
+          "time": "15:54",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": -1.01,
+          "evidence": "但有一点可以放心，4190不是终点。"
+        },
+        {
+          "date": "2026-02-04",
+          "time": "14:52",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 2.31,
+          "evidence": "明天估计先触一下4115附近，短暂洗盘后，最后看冲4120，上了就有希望4250。"
+        }
+      ],
+      "total_score_pct": 1.3,
+      "count": 2,
+      "avg_pct": 0.65
+    },
+    "M6": {
+      "signals": [
+        {
+          "date": "2026-05-14",
+          "time": "11:24",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 5.98,
+          "evidence": "从中线周期角度看，后续重点观察3650附近（95%的人是无法相信），当然，如果中途出现重大突发事件或系统性风险，市场也存"
+        },
+        {
+          "date": "2026-05-15",
+          "time": "11:53",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 5.02,
+          "evidence": "第一阶段的调整目标没这么快完成，4200上不去，还要压下来，下周再看。下午震荡回落为主。"
+        }
+      ],
+      "total_score_pct": 11.0,
+      "count": 2,
+      "avg_pct": 5.5
+    },
+    "M7": {
+      "signals": [
+        {
+          "date": "2026-07-19",
+          "time": "14:34",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": -1.34,
+          "evidence": "短线上，下周稍破下3745，短线反弹结构就成立，极端点到3715，所以3715-3735开始的反弹方向是3820-385"
+        },
+        {
+          "date": "2026-07-20",
+          "time": "15:44",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.1,
+          "evidence": "3820小关口大概率是能过的，先看第一关3850-3870，性质暂时用短线对待。"
+        }
+      ],
+      "total_score_pct": 2.76,
+      "count": 2,
+      "avg_pct": 1.38
+    }
+  }
+}

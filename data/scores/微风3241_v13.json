@@ -1,0 +1,126 @@
+{
+  "blogger": "微风3241",
+  "version": "v13",
+  "total_raw": 213,
+  "pre_2026": 197,
+  "scorable": 16,
+  "score_zero": 1,
+  "no_price": 0,
+  "no_segment": 0,
+  "case_a": 12,
+  "case_b": 3,
+  "first_signal_date": "2026-02-14",
+  "rankable": true,
+  "scores": {
+    "综合": {
+      "total_pct": -2.99,
+      "count": 15,
+      "avg_pct": -0.2,
+      "win_rate": 53.33
+    },
+    "上升段": {
+      "total_pct": -36.69,
+      "count": 6,
+      "avg_pct": -6.11,
+      "win_rate": 0.0
+    },
+    "下降段": {
+      "total_pct": 33.69,
+      "count": 9,
+      "avg_pct": 3.74,
+      "win_rate": 88.89
+    },
+    "抄底": {
+      "total_pct": 0.0,
+      "count": 0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "逃顶": {
+      "total_pct": 0.0,
+      "count": 0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    },
+    "看多": {
+      "total_pct": 14.95,
+      "count": 4,
+      "avg_pct": 3.74,
+      "win_rate": 75.0
+    },
+    "看空": {
+      "total_pct": -17.94,
+      "count": 11,
+      "avg_pct": -1.63,
+      "win_rate": 45.45
+    }
+  },
+  "time_horizon": {
+    "short": {
+      "count": 5,
+      "effective": 4,
+      "total_pct": 6.17,
+      "avg_pct": 1.54,
+      "win_rate": 50.0
+    },
+    "medium": {
+      "count": 6,
+      "effective": 6,
+      "total_pct": -0.69,
+      "avg_pct": -0.12,
+      "win_rate": 50.0
+    },
+    "long": {
+      "count": 5,
+      "effective": 5,
+      "total_pct": -8.47,
+      "avg_pct": -1.69,
+      "win_rate": 60.0
+    },
+    "unspecified": {
+      "count": 0,
+      "effective": 0,
+      "total_pct": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    }
+  },
+  "segments": {
+    "I10→M5": {
+      "direction": "falling",
+      "total": 1,
+      "bull": 0,
+      "bear": 1,
+      "score_pct": 5.63
+    },
+    "I12→M7": {
+      "direction": "falling",
+      "total": 8,
+      "bull": 4,
+      "bear": 4,
+      "score_pct": 28.06
+    },
+    "I9→I10": {
+      "direction": "rising",
+      "total": 1,
+      "bull": 0,
+      "bear": 1,
+      "score_pct": -1.64
+    },
+    "M5→M6": {
+      "direction": "rising",
+      "total": 1,
+      "bull": 0,
+      "bear": 1,
+      "score_pct": -18.84
+    },
+    "M7→TMP": {
+      "direction": "rising",
+      "total": 4,
+      "bull": 0,
+      "bear": 4,
+      "score_pct": -16.2
+    }
+  },
+  "inflections": {}
+}

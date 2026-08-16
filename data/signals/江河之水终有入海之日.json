@@ -13,32 +13,30 @@
     "other": 35
   },
   "scored_bullish": {
-    "strong": 35,
-    "moderate": 484,
-    "long": 16,
-    "medium": 135,
-    "short": 337,
-    "intraday": 31,
-    "unspecified": 0
+    "by_strength": {
+      "moderate": 297,
+      "strong": 20
+    },
+    "by_time_horizon": {
+      "medium": 78,
+      "short": 223,
+      "long": 14,
+      "intraday": 2
+    }
   },
   "scored_bearish": {
-    "strong": 15,
-    "moderate": 390,
-    "long": 6,
-    "medium": 83,
-    "short": 253,
-    "intraday": 62,
-    "unspecified": 1
+    "by_strength": {
+      "moderate": 215,
+      "strong": 11
+    },
+    "by_time_horizon": {
+      "medium": 53,
+      "long": 6,
+      "short": 163,
+      "intraday": 4
+    }
   },
   "signals": [
-    {
-      "post_n": 5,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "大盘发出危险信号，意味着月线级别的二次探底得到进一步印证。",
-      "publish_time": "2024-06-05 11:41"
-    },
     {
       "post_n": 4,
       "direction": "bullish",
@@ -200,22 +198,6 @@
       "publish_time": "2024-07-22 16:05"
     },
     {
-      "post_n": 11,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "unspecified",
-      "evidence": "大盘下跌第一目标位2794点。",
-      "publish_time": "2024-07-23 16:33"
-    },
-    {
-      "post_n": 10,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "long",
-      "evidence": "A股出现超级大牛市唯一的逻辑是湾湾问题得到解决！",
-      "publish_time": "2024-07-23 18:10"
-    },
-    {
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
@@ -296,14 +278,6 @@
       "publish_time": "2024-09-19 19:03"
     },
     {
-      "post_n": 10,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "明天如果大盘还能拉一根百分之二以上的阳线，是可以乐观期待3100点的。即便这里不是反转的开始，今天这根阳线也足以支撑四周以上的震荡反弹。",
-      "publish_time": "2024-09-24 16:26"
-    },
-    {
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
@@ -320,52 +294,12 @@
       "publish_time": "2024-09-25 16:02"
     },
     {
-      "post_n": 6,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "大盘的目标是反转！技术面牛市是真的要来。换言之，以上证指数为例，这一波第一步是必然会突破最近三年的下降趋势线，之后会创年内新高突破3174，构筑大双底。",
-      "publish_time": "2024-09-26 16:55"
-    },
-    {
-      "post_n": 5,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "大盘的目标是反转！技术面牛市是真的要来。",
-      "publish_time": "2024-09-26 16:57"
-    },
-    {
-      "post_n": 4,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "A股先行指标新加破A50指数已经创年內新高，大双底反转形态已经确立。技术性牛市开启了。",
-      "publish_time": "2024-09-26 19:39"
-    },
-    {
       "post_n": 3,
       "direction": "bullish",
       "strength": "strong",
       "time_horizon": "short",
       "evidence": "新加坡A50指数夜盘疯涨，看样子明天A股又是跳空高开高走。不用怕，连续三个跳空缺口历史上有过，短时间都不会回补。策略就是持有，加仓低位蓝筹，杠杆拉满！",
       "publish_time": "2024-09-26 22:36"
-    },
-    {
-      "post_n": 2,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘下周一还会继续拉中阳线！",
-      "publish_time": "2024-09-27 16:36"
-    },
-    {
-      "post_n": 1,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "预判：创年内新高之后会迎来强势调整，应该是国庆节后二三个交易日内会发生，调整1至3个交易日之后又会创新高，再之后才会迎来猛烈的调整。",
-      "publish_time": "2024-09-27 17:03"
     },
     {
       "post_n": 0,
@@ -384,14 +318,6 @@
       "publish_time": "2024-09-28 13:11"
     },
     {
-      "post_n": 12,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "这么强的走势第一根阴线是买点，顶多调整三个交易日就会再创新高，但创新高之后顶多再涨三五天便会迎来真正的猛烈调整。",
-      "publish_time": "2024-09-30 12:46"
-    },
-    {
       "post_n": 11,
       "direction": "bullish",
       "strength": "strong",
@@ -406,14 +332,6 @@
       "time_horizon": "medium",
       "evidence": "大盘10月份将完成ABC一浪上涨，预计10月23号之后开始构筑顶部结构，最迟11月7号之后开始猛烈的回调。",
       "publish_time": "2024-10-03 13:53"
-    },
-    {
-      "post_n": 9,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "节后A股第一个交易日追涨依然是安全的！平均股价指数必将有效突破今年3月份高点，才能构筑一个双底反转形态。",
-      "publish_time": "2024-10-04 14:02"
     },
     {
       "post_n": 8,
@@ -448,38 +366,6 @@
       "publish_time": "2024-10-07 16:36"
     },
     {
-      "post_n": 1,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "今天这根K线可视为开启三至五天的调整信号。",
-      "publish_time": "2024-10-08 13:19"
-    },
-    {
-      "post_n": 0,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "今天大盘K线的高点是一定会在短期内被突破的。快的话三天內创新高，慢的话五天之内必创新高。",
-      "publish_time": "2024-10-08 16:15"
-    },
-    {
-      "post_n": 13,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "正常情况下，明天大盘是收涨的，但无法确定能阳包阴。",
-      "publish_time": "2024-10-09 12:36"
-    },
-    {
-      "post_n": 12,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "正常情况下，明天大盘探底回升收阳线的概率超过百分之99。",
-      "publish_time": "2024-10-09 16:12"
-    },
-    {
       "post_n": 11,
       "direction": "bearish",
       "strength": "strong",
@@ -488,28 +374,12 @@
       "publish_time": "2024-10-09 18:41"
     },
     {
-      "post_n": 10,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "15分钟反转形态确立之后，理论上是要往上走一波衰竭式上涨的，去再一次测试10月8号的高点。",
-      "publish_time": "2024-10-10 13:11"
-    },
-    {
       "post_n": 9,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘走势很关键，必须拉一根放量大阳k线，否则大盘将向下考验10日均线支撑。",
       "publish_time": "2024-10-10 16:26"
-    },
-    {
-      "post_n": 8,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "大盘日线MACD死叉之前应该还有一个反抽行情。",
-      "publish_time": "2024-10-11 12:55"
     },
     {
       "post_n": 7,
@@ -536,36 +406,12 @@
       "publish_time": "2024-10-13 14:33"
     },
     {
-      "post_n": 3,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "intraday",
-      "evidence": "大盘今天收阳线已成定局。",
-      "publish_time": "2024-10-14 13:18"
-    },
-    {
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "medium",
       "evidence": "大盘将开始B浪反弹，预计23号附近始C浪下跌。",
       "publish_time": "2024-10-14 16:09"
-    },
-    {
-      "post_n": 0,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "明天，最迟后天必须拉一根百分之二以上的中阳线才是正常走势。",
-      "publish_time": "2024-10-15 12:43"
-    },
-    {
-      "post_n": 14,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "明天大盘必须阳包阴。",
-      "publish_time": "2024-10-15 16:05"
     },
     {
       "post_n": 13,
@@ -576,14 +422,6 @@
       "publish_time": "2024-10-15 16:23"
     },
     {
-      "post_n": 11,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘构筑小时级别的双底无望。",
-      "publish_time": "2024-10-16 12:51"
-    },
-    {
       "post_n": 10,
       "direction": "bearish",
       "strength": "moderate",
@@ -592,36 +430,12 @@
       "publish_time": "2024-10-16 16:16"
     },
     {
-      "post_n": 9,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "今天要求不高，上证指数放量站上3260就是短期做多信号。站上3260，可以看三天反弹。",
-      "publish_time": "2024-10-17 10:29"
-    },
-    {
-      "post_n": 8,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "大盘短期走势预判如下: 1，今天下午如能收在3250之上，可以有三天左右的反弹，23号附近会开始新一轮为期二周以上的下跌调整。",
-      "publish_time": "2024-10-17 12:15"
-    },
-    {
       "post_n": 5,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘或将大阴线杀跌。",
       "publish_time": "2024-10-17 16:02"
-    },
-    {
-      "post_n": 4,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午如能放量收在3220之上，则至少可以有三天的反弹。",
-      "publish_time": "2024-10-18 12:39"
     },
     {
       "post_n": 3,
@@ -648,28 +462,12 @@
       "publish_time": "2024-10-20 17:58"
     },
     {
-      "post_n": 0,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "安心持股做多，只需关注上证指数15分钟级别何时构筑顶部形态即可。目前B反行情才刚刚开始。",
-      "publish_time": "2024-10-21 13:00"
-    },
-    {
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘收涨，起码要收在18号K线高点之上才是较强势的B浪反弹。",
       "publish_time": "2024-10-21 16:29"
-    },
-    {
-      "post_n": 13,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "大盘11月7号之前，应该就这样以弱势震上涨的方式完成B浪反弹。",
-      "publish_time": "2024-10-22 12:54"
     },
     {
       "post_n": 12,
@@ -680,28 +478,12 @@
       "publish_time": "2024-10-22 16:05"
     },
     {
-      "post_n": 11,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "大盘无忧。",
-      "publish_time": "2024-10-23 12:55"
-    },
-    {
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "medium",
       "evidence": "大盘冲高回落最伤市场人气，但B浪反弹并未结束。",
       "publish_time": "2024-10-23 16:11"
-    },
-    {
-      "post_n": 9,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "大盘属于正常调整，无需担心。",
-      "publish_time": "2024-10-24 12:52"
     },
     {
       "post_n": 8,
@@ -744,28 +526,12 @@
       "publish_time": "2024-10-28 16:17"
     },
     {
-      "post_n": 0,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "先看上证指数下午能否在3295止跌反弹，正常情况下，3295失守值得警惕，一旦短期见顶信确立，20均线太近，可能都撑不住。",
-      "publish_time": "2024-10-29 13:15"
-    },
-    {
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "所以，从历史来看，明天大盘收涨，个股普涨的概率超过百分之八十。",
       "publish_time": "2024-10-29 16:18"
-    },
-    {
-      "post_n": 13,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘短期调整目标将指向10月18号K线低点。",
-      "publish_time": "2024-10-30 12:41"
     },
     {
       "post_n": 11,
@@ -776,28 +542,12 @@
       "publish_time": "2024-10-30 16:14"
     },
     {
-      "post_n": 10,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘创盘中新高才是强烈的止跌反转信号。",
-      "publish_time": "2024-10-31 12:44"
-    },
-    {
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘上涨就没事，不涨反跌则可能迎来10月18号以来亏钱效应最大的一天。",
       "publish_time": "2024-10-31 16:28"
-    },
-    {
-      "post_n": 8,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "大盘今天应该是跌不下去了。",
-      "publish_time": "2024-11-01 12:59"
     },
     {
       "post_n": 6,
@@ -816,36 +566,12 @@
       "publish_time": "2024-11-03 13:47"
     },
     {
-      "post_n": 4,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "大盘下午突破10月31号K线高点就看多。",
-      "publish_time": "2024-11-04 12:53"
-    },
-    {
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "medium",
       "evidence": "大盘大概率要到11月22号前后才会开启C浪下跌。",
       "publish_time": "2024-11-04 16:21"
-    },
-    {
-      "post_n": 2,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "如果说昨天是小时级别的反转信号，那么今天就是日线级别的强烈的反转做多信号。",
-      "publish_time": "2024-11-05 12:39"
-    },
-    {
-      "post_n": 1,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "如果明天大盘还能持续今天这种走势，那突破前高的概率将超过百分之九十。",
-      "publish_time": "2024-11-05 16:19"
     },
     {
       "post_n": 14,
@@ -856,14 +582,6 @@
       "publish_time": "2024-11-05 20:46"
     },
     {
-      "post_n": 11,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "明天大盘将收涨，继续延续B浪反弹。",
-      "publish_time": "2024-11-06 16:13"
-    },
-    {
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
@@ -872,28 +590,12 @@
       "publish_time": "2024-11-06 16:25"
     },
     {
-      "post_n": 9,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘量价齐升，问题不大。",
-      "publish_time": "2024-11-07 13:04"
-    },
-    {
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "大盘气势如虹，很大概率会突破10月8号高点。",
       "publish_time": "2024-11-07 16:16"
-    },
-    {
-      "post_n": 6,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "目前的主观判断是要到11月22号前后才会见中期大顶。",
-      "publish_time": "2024-11-08 12:44"
     },
     {
       "post_n": 5,
@@ -920,36 +622,12 @@
       "publish_time": "2024-11-10 14:15"
     },
     {
-      "post_n": 1,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "大盘走势很强，暂时没什么好担心的。",
-      "publish_time": "2024-11-11 12:31"
-    },
-    {
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "medium",
       "evidence": "股市赚钱效应将持续到11月22号附近。",
       "publish_time": "2024-11-11 17:16"
-    },
-    {
-      "post_n": 14,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "大盘目前没问题，有问题也只是在为11月22号前后一二天的大阴线作准备。",
-      "publish_time": "2024-11-12 12:58"
-    },
-    {
-      "post_n": 13,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "大盘大概率在11月22号之前强势震荡构筑日线顶部形态，而不是直接尖顶下杀。",
-      "publish_time": "2024-11-12 16:21"
     },
     {
       "post_n": 12,
@@ -960,28 +638,12 @@
       "publish_time": "2024-11-12 21:09"
     },
     {
-      "post_n": 10,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘很强意味着11月22号附近这个变盘时间窗口的假设大概率是正确的。",
-      "publish_time": "2024-11-13 16:19"
-    },
-    {
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "long",
       "evidence": "股市涨势可能维持到2025年1月中旬。在这之前，A股可能都是维持震荡攀升的走势，最终大盘所有指数是要突破10月8号K线高点的。",
       "publish_time": "2024-11-13 19:11"
-    },
-    {
-      "post_n": 8,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "那A股技术性大回调也不会缺席太久。",
-      "publish_time": "2024-11-14 12:14"
     },
     {
       "post_n": 7,
@@ -1008,28 +670,12 @@
       "publish_time": "2024-11-17 16:40"
     },
     {
-      "post_n": 4,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "大盘止跌企稳向上做日线级别的次高点是大概率。",
-      "publish_time": "2024-11-18 12:45"
-    },
-    {
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘必须阳包阴，否则，就要等到11月22号附近才会有像样的反弹。",
       "publish_time": "2024-11-18 16:40"
-    },
-    {
-      "post_n": 1,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "22号是重要时间窗口，如果目前大盘持续下跌，则22号附近大概率会有短期反弹。",
-      "publish_time": "2024-11-19 11:18"
     },
     {
       "post_n": 14,
@@ -1040,28 +686,12 @@
       "publish_time": "2024-11-19 16:44"
     },
     {
-      "post_n": 13,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午大盘站上3373将会有3天左右的反弹，小时线MACD将金叉。",
-      "publish_time": "2024-11-20 12:37"
-    },
-    {
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘将继续反弹，预计冲高回落收阳线。",
       "publish_time": "2024-11-20 17:28"
-    },
-    {
-      "post_n": 11,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "大盘下午不能跌破3350。跌破3350看空。",
-      "publish_time": "2024-11-21 12:44"
     },
     {
       "post_n": 10,
@@ -1088,14 +718,6 @@
       "publish_time": "2024-11-23 12:25"
     },
     {
-      "post_n": 6,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "为什么说12月6号大盘会有一波上涨行情？",
-      "publish_time": "2024-11-24 13:07"
-    },
-    {
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
@@ -1104,52 +726,12 @@
       "publish_time": "2024-11-24 13:35"
     },
     {
-      "post_n": 3,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "大盘很强，但调整并未结束。",
-      "publish_time": "2024-11-25 12:50"
-    },
-    {
-      "post_n": 2,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "一旦大盘继续回调，不排除融资客抗不住会杀跌出局，从而造成大盘在重要支撑位破位下跌重挫市场做多信心。",
-      "publish_time": "2024-11-25 14:03"
-    },
-    {
-      "post_n": 1,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "明天大盘将放量长阳？可能性小，但明天大概率收涨。",
-      "publish_time": "2024-11-25 17:02"
-    },
-    {
       "post_n": 0,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天平均股价指数不能跌破今天K线低点，否则将构造一个强烈的看空信号。",
       "publish_time": "2024-11-25 22:59"
-    },
-    {
-      "post_n": 14,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "如果下午不能有强而有力的拉升走势，那么最迟明天，平均股价指数可能出大阴线，个股将出现强烈的亏钱效应。",
-      "publish_time": "2024-11-26 12:02"
-    },
-    {
-      "post_n": 13,
-      "direction": "bearish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "明天股市或将迎来亏钱效应最大的一天。",
-      "publish_time": "2024-11-26 15:54"
     },
     {
       "post_n": 12,
@@ -1168,36 +750,12 @@
       "publish_time": "2024-11-27 16:20"
     },
     {
-      "post_n": 8,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘大概率还要再次回探昨日K线低点。",
-      "publish_time": "2024-11-28 12:26"
-    },
-    {
       "post_n": 7,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘将继续回调，预计探底回升收小阴小阳线。",
       "publish_time": "2024-11-28 15:50"
-    },
-    {
-      "post_n": 5,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "警惕下午大盘跳水，个股普跌。",
-      "publish_time": "2024-11-29 11:36"
-    },
-    {
-      "post_n": 4,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘突破3323之后基本确定15分钟级别的突破为有效突破，反弹时间先看12月6号这个时间窗口，至少12月4号之前，大盘都是没什么风险了。",
-      "publish_time": "2024-11-29 12:38"
     },
     {
       "post_n": 3,
@@ -1224,28 +782,12 @@
       "publish_time": "2024-12-02 16:03"
     },
     {
-      "post_n": 13,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "如果大盘继续缓慢爬升呢？那超过百分之90的概率是向上做日线级别的次高点。",
-      "publish_time": "2024-12-03 12:47"
-    },
-    {
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "大盘明天走势很关键，只有继续强势前行才是安全信号。...大盘而言，明天上证指数不破3335依然是安全信号。",
       "publish_time": "2024-12-03 16:28"
-    },
-    {
-      "post_n": 8,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "大盘反弹结束了吗？别悲观。...上证指数如果持续抗跌，那么12月2号以来的反弹没有结束的概率超过百分之99。",
-      "publish_time": "2024-12-04 16:21"
     },
     {
       "post_n": 7,
@@ -1264,14 +806,6 @@
       "publish_time": "2024-12-05 12:51"
     },
     {
-      "post_n": 4,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "intraday",
-      "evidence": "提防下午大盘加速拉升。就是当心踏空的意思。...今天收中阳线应该成定局。",
-      "publish_time": "2024-12-06 12:53"
-    },
-    {
       "post_n": 2,
       "direction": "bearish",
       "strength": "moderate",
@@ -1288,30 +822,6 @@
       "publish_time": "2024-12-07 21:28"
     },
     {
-      "post_n": 7,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘不能破3374，否则是走弱的信号。破了会怎样？会考验3330。",
-      "publish_time": "2024-12-09 12:40"
-    },
-    {
-      "post_n": 6,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "别再幻想股市春节前的红包行情了。理由很简单: 无论是大盘指数还是平均股价指数都是该涨不涨的走势，这说明整个市场的做多动能已经开始衰竭。",
-      "publish_time": "2024-12-09 16:19"
-    },
-    {
-      "post_n": 4,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "明天大盘在这个位置出一个跳空缺口，未必是好事。除非能持续加速拉升，明天的跳空缺口才有意义。否则，迟早会被回补。",
-      "publish_time": "2024-12-09 17:11"
-    },
-    {
       "post_n": 3,
       "direction": "bearish",
       "strength": "moderate",
@@ -1320,28 +830,12 @@
       "publish_time": "2024-12-09 19:56"
     },
     {
-      "post_n": 2,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘走势弱于预期。今天的跳空缺口可能无意义。",
-      "publish_time": "2024-12-10 13:24"
-    },
-    {
       "post_n": 1,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "medium",
       "evidence": "明天大盘将回补缺口。这回应该可以彻底死心了，春节前没必要期待什么大红包行情了。",
       "publish_time": "2024-12-10 16:02"
-    },
-    {
-      "post_n": 12,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "大盘将维持震荡趋势。",
-      "publish_time": "2024-12-11 12:28"
     },
     {
       "post_n": 11,
@@ -1358,14 +852,6 @@
       "time_horizon": "medium",
       "evidence": "如果明天放量长阳突破3509，那就是强烈的加速拉升信号。",
       "publish_time": "2024-12-12 16:35"
-    },
-    {
-      "post_n": 3,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘短期上涨趋势结束，提防个股短期风险。",
-      "publish_time": "2024-12-13 12:07"
     },
     {
       "post_n": 2,
@@ -1400,36 +886,12 @@
       "publish_time": "2024-12-17 12:54"
     },
     {
-      "post_n": 5,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘如能站上3400将是强烈的做多信号。",
-      "publish_time": "2024-12-18 12:41"
-    },
-    {
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘或将拉一根放量中阳线。",
       "publish_time": "2024-12-18 16:30"
-    },
-    {
-      "post_n": 2,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘如能创盘中新高将是强烈的左侧做多信号。",
-      "publish_time": "2024-12-19 12:45"
-    },
-    {
-      "post_n": 1,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "明天大盘如果不能放量中阳线，将是一个危险信号。",
-      "publish_time": "2024-12-19 16:22"
     },
     {
       "post_n": 0,
@@ -1448,22 +910,6 @@
       "publish_time": "2024-12-20 12:41"
     },
     {
-      "post_n": 10,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "今天要求不高，下午大盘能扛住收涨就行。",
-      "publish_time": "2024-12-23 12:52"
-    },
-    {
-      "post_n": 7,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "警惕下午大盘疯狂跳水。",
-      "publish_time": "2024-12-24 12:45"
-    },
-    {
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
@@ -1478,14 +924,6 @@
       "time_horizon": "medium",
       "evidence": "如果明天个股还能普涨，那么市场将开始5-10天的趋势性震荡上涨。",
       "publish_time": "2024-12-26 12:42"
-    },
-    {
-      "post_n": 0,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘短期反弹趋势将廷续。...整体市场应该有的走势是震荡上涨。",
-      "publish_time": "2024-12-27 12:51"
     },
     {
       "post_n": 14,
@@ -1536,28 +974,12 @@
       "publish_time": "2025-01-05 12:38"
     },
     {
-      "post_n": 3,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "大盘这里应该只是15分钟级别的日内弱反弹。",
-      "publish_time": "2025-01-06 12:43"
-    },
-    {
       "post_n": 2,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明后天即便有反弹，大概率也会在3250附近遇阻。",
       "publish_time": "2025-01-06 17:57"
-    },
-    {
-      "post_n": 1,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘上午很抗跌，但大概率是抗不住的。",
-      "publish_time": "2025-01-07 12:59"
     },
     {
       "post_n": 0,
@@ -1568,28 +990,12 @@
       "publish_time": "2025-01-07 16:55"
     },
     {
-      "post_n": 13,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "如果明天特别是上证指数能突破今天K线高点，那至少还有三天以上的震荡反弹，甚至今天的低点大概率就是春节前的低点。",
-      "publish_time": "2025-01-08 16:12"
-    },
-    {
       "post_n": 12,
       "direction": "bullish",
       "strength": "strong",
       "time_horizon": "long",
       "evidence": "一旦实现统一，A股将迎来百年牛市，站上四万点。",
       "publish_time": "2025-01-08 22:45"
-    },
-    {
-      "post_n": 11,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "提防下午大盘可能跳水。...今天大盘各指数走势不一致，应该走强的上证指数并未走强，没有主动突破15分钟88线，意味着上攻动能不强。",
-      "publish_time": "2025-01-09 12:35"
     },
     {
       "post_n": 10,
@@ -1624,14 +1030,6 @@
       "publish_time": "2025-01-13 16:19"
     },
     {
-      "post_n": 2,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘春节前红包行情开启。...春节前大盘不可能再创新低了，但假日不确定因素决定往上空间不会太高，顶多在20天均线附近遇阻。",
-      "publish_time": "2025-01-14 13:00"
-    },
-    {
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
@@ -1640,28 +1038,12 @@
       "publish_time": "2025-01-14 16:34"
     },
     {
-      "post_n": 0,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘回调至少是一个短期买点。...预计最快明天就会结束15分钟MACD死叉调整。",
-      "publish_time": "2025-01-15 12:42"
-    },
-    {
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘将收涨，后天或者下周一收跌。",
       "publish_time": "2025-01-15 16:15"
-    },
-    {
-      "post_n": 13,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "目前大盘大跌是不可能，震荡反弹是大概率。",
-      "publish_time": "2025-01-16 12:56"
     },
     {
       "post_n": 12,
@@ -1728,22 +1110,6 @@
       "publish_time": "2025-01-23 20:26"
     },
     {
-      "post_n": 2,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘节后红包可能无望。创业板指60分钟有构筑顶部迹象，日线有二次回踩的大概率。",
-      "publish_time": "2025-01-27 13:50"
-    },
-    {
-      "post_n": 3,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘节后红包可能无望。创业板指60分钟有构筑顶部迹象，日线有二次回踩的大概率。",
-      "publish_time": "2025-01-27 13:50"
-    },
-    {
       "post_n": 1,
       "direction": "bearish",
       "strength": "strong",
@@ -1766,14 +1132,6 @@
       "time_horizon": "short",
       "evidence": "明天大盘走势很关键，也是在有盈利的情况下要不要加上杠杆的决定性因素。",
       "publish_time": "2025-02-06 17:22"
-    },
-    {
-      "post_n": 11,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "medium",
-      "evidence": "大盘所有指数将有效突破去年10月份以来的下降趋势线。",
-      "publish_time": "2025-02-07 12:42"
     },
     {
       "post_n": 10,
@@ -1800,14 +1158,6 @@
       "publish_time": "2025-02-11 17:52"
     },
     {
-      "post_n": 5,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘短期很危险！",
-      "publish_time": "2025-02-12 13:05"
-    },
-    {
       "post_n": 4,
       "direction": "bearish",
       "strength": "moderate",
@@ -1824,28 +1174,12 @@
       "publish_time": "2025-02-13 16:15"
     },
     {
-      "post_n": 2,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "警惕下午大盘大幅回落。",
-      "publish_time": "2025-02-14 13:06"
-    },
-    {
       "post_n": 1,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "下周大盘回调依然是大概率会发生的事。",
       "publish_time": "2025-02-14 16:43"
-    },
-    {
-      "post_n": 0,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "从技术面左侧判断来说，这里短期见顶是大概率，前两天说过，这里不再详述，所以如果这个判断正确，那么今天明天至少要出一根有杀伤力的中阴线。",
-      "publish_time": "2025-02-17 12:40"
     },
     {
       "post_n": 14,
@@ -1856,28 +1190,12 @@
       "publish_time": "2025-02-17 17:03"
     },
     {
-      "post_n": 13,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "大盘目标大概率指向3500。",
-      "publish_time": "2025-02-18 12:48"
-    },
-    {
       "post_n": 12,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "大盘终于还是迎来了调整。眼见为实，大盘在15分钟级别构造了一个顶部反转形态，所以，这是短期调整信号。",
       "publish_time": "2025-02-18 17:46"
-    },
-    {
-      "post_n": 11,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "目前来看，大的观点不变，只要足够抗跌，调整过后，大盘上证指数冲击3500就是大概率。",
-      "publish_time": "2025-02-19 12:42"
     },
     {
       "post_n": 10,
@@ -1896,14 +1214,6 @@
       "publish_time": "2025-02-20 18:30"
     },
     {
-      "post_n": 8,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "所以，从这个角度来说大盘大概率是要加速的。另外，突破下降趋势线时间已经较长，不曾出现持续性回调，那么，市场的意图就是奔上方的水平压力3500附近而去的。有加速的需求和空间，那么就可以坚定看多。",
-      "publish_time": "2025-02-21 12:43"
-    },
-    {
       "post_n": 7,
       "direction": "bullish",
       "strength": "strong",
@@ -1920,28 +1230,12 @@
       "publish_time": "2025-02-22 11:19"
     },
     {
-      "post_n": 4,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "不是说大盘要到3500附近吗？这个是有技术依据的，依据一个真理:价格是高点至低点，低点至高点的往复循环运动。3194至3140是高点至低点，现在3140至高点，高点产生了吗？日线高点沒有产生，那么目标就可以往前高3194去看，除非15分钟或者小时级别构筑了顶部反转形态。",
-      "publish_time": "2025-02-24 12:48"
-    },
-    {
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "大盘明大概率收涨。",
       "publish_time": "2025-02-24 21:06"
-    },
-    {
-      "post_n": 1,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘必须翻红，最好能有较大幅度收涨，否则，确实是一个左侧危险信号。上午盘中低点一旦被跌破，将是强烈的看空信号。",
-      "publish_time": "2025-02-25 12:45"
     },
     {
       "post_n": 0,
@@ -1952,28 +1246,12 @@
       "publish_time": "2025-02-25 16:21"
     },
     {
-      "post_n": 14,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "调整大概率只是一个横向震荡调整，难以出现深幅回调。",
-      "publish_time": "2025-02-26 12:56"
-    },
-    {
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "提防大盘明天加速上涨。",
       "publish_time": "2025-02-26 16:10"
-    },
-    {
-      "post_n": 12,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "一旦跌破，日线MACD死叉无悬念，再看周线MACD将金不金的形态，就会形成共振式下跌。",
-      "publish_time": "2025-02-27 12:32"
     },
     {
       "post_n": 11,
@@ -2000,14 +1278,6 @@
       "publish_time": "2025-03-03 16:33"
     },
     {
-      "post_n": 5,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘可能跳水。",
-      "publish_time": "2025-03-05 12:45"
-    },
-    {
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
@@ -2016,28 +1286,12 @@
       "publish_time": "2025-03-05 16:32"
     },
     {
-      "post_n": 3,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘日线有向上走加速的大概率。",
-      "publish_time": "2025-03-06 12:49"
-    },
-    {
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天将确认大盘是否会加速上涨。",
       "publish_time": "2025-03-06 16:23"
-    },
-    {
-      "post_n": 1,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘走势令人担忧，太弱。",
-      "publish_time": "2025-03-07 12:44"
     },
     {
       "post_n": 0,
@@ -2064,14 +1318,6 @@
       "publish_time": "2025-03-10 16:37"
     },
     {
-      "post_n": 11,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "这里要提防构筑日线顶部形态。",
-      "publish_time": "2025-03-11 13:02"
-    },
-    {
       "post_n": 10,
       "direction": "bullish",
       "strength": "strong",
@@ -2088,14 +1334,6 @@
       "publish_time": "2025-03-12 17:15"
     },
     {
-      "post_n": 7,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午大盘会加速下跌吗？大概率。",
-      "publish_time": "2025-03-13 13:00"
-    },
-    {
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
@@ -2110,14 +1348,6 @@
       "time_horizon": "medium",
       "evidence": "下周大盘会加速上涨吗？大概率会，需要星期一确认。",
       "publish_time": "2025-03-14 16:23"
-    },
-    {
-      "post_n": 3,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘弱势震荡，暂时无忧。",
-      "publish_time": "2025-03-17 13:13"
     },
     {
       "post_n": 2,
@@ -2144,14 +1374,6 @@
       "publish_time": "2025-03-20 16:29"
     },
     {
-      "post_n": 13,
-      "direction": "bearish",
-      "strength": "strong",
-      "time_horizon": "medium",
-      "evidence": "大盘大势已去，能做的只有一件事:保住本金。",
-      "publish_time": "2025-03-21 13:03"
-    },
-    {
       "post_n": 12,
       "direction": "bearish",
       "strength": "moderate",
@@ -2168,28 +1390,12 @@
       "publish_time": "2025-03-22 15:41"
     },
     {
-      "post_n": 8,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘最快明天会有短期反弹的右侧信号出现。",
-      "publish_time": "2025-03-24 16:26"
-    },
-    {
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "如果这则消息是真的，那港股明天应该又是艳阳天，那阿里腾讯应该还有巨大的上升空间，如此，恒生科技指数应该还会不断创新高。",
       "publish_time": "2025-03-24 16:38"
-    },
-    {
-      "post_n": 6,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "港股原有的短期趋势是调整，而利好不起反应，所以，可以确定调整是真实的，调整趋势还没有结束，短期即便再有利好也不可能反转向上，直到技术指标修复或者调整到目标位为止。",
-      "publish_time": "2025-03-25 13:15"
     },
     {
       "post_n": 5,
@@ -2208,28 +1414,12 @@
       "publish_time": "2025-03-26 16:06"
     },
     {
-      "post_n": 3,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午，上证指数如能创盘中新高，则还会有三天左右的震荡反弹。",
-      "publish_time": "2025-03-27 12:56"
-    },
-    {
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "medium",
       "evidence": "日线既然下跌势能不强，60分钟一旦出现底背离，那么可能会迎来8-10天的日线级别的B浪反弹。",
       "publish_time": "2025-03-27 17:18"
-    },
-    {
-      "post_n": 1,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "准备迎接大盘日线级别的B浪反弹。理由很简单: 大盘60分钟底背离即将形成，走势本身而言，今天的下跌并不流畅，符合衰竭式走势的特征，所以，预计60分钟MACD二次金叉之时会迎来日线级别8-10天的B浪反弹。",
-      "publish_time": "2025-03-28 13:08"
     },
     {
       "post_n": 14,
@@ -2248,14 +1438,6 @@
       "publish_time": "2025-03-29 12:44"
     },
     {
-      "post_n": 10,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "尾盘可以买一点。理由是:平均股价指数已经来到强支撑位附近，平均股价上午收盘是20.99，强支撑在20.8，明天再出一根中阴线概率偏小，至少应该会有一至三天左右的震荡反弹。",
-      "publish_time": "2025-03-31 12:50"
-    },
-    {
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
@@ -2264,36 +1446,12 @@
       "publish_time": "2025-03-31 16:43"
     },
     {
-      "post_n": 8,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "如果下午不回落，那么明天大概率会收阴线。",
-      "publish_time": "2025-04-01 11:49"
-    },
-    {
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "总体判断:大盘短期再创新低概率不大，两天之内突破15分钟下降趋势线是大概率。",
       "publish_time": "2025-04-01 16:23"
-    },
-    {
-      "post_n": 6,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘向上突破的概率增大。理由很简单:上午在下降趋势线附近遇阻时，回落的力度及速度不大，这种走势更像是突破前的蓄势走势。",
-      "publish_time": "2025-04-02 12:40"
-    },
-    {
-      "post_n": 5,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "明天大盘将向上突破。理由很简单:目前大盘对可以预见的利空消息已经充分反应，而技术面显示反复震荡下跌，就是跌不下去，所以，跌不下去就涨，只有向上突破，看市场能否涨上去。",
-      "publish_time": "2025-04-02 16:27"
     },
     {
       "post_n": 4,
@@ -2320,28 +1478,12 @@
       "publish_time": "2025-04-04 23:41"
     },
     {
-      "post_n": 0,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "悲观方面，大国博奕进入收尾阶段，胜局未定之前，股市可能长期低迷，另外，人工智能进展遇到瓶颈，全球科技泡沫可能破裂，所以，全球股市可能步入冬季。",
-      "publish_time": "2025-04-05 14:11"
-    },
-    {
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "下周一大盘能否单日见底？",
       "publish_time": "2025-04-05 20:11"
-    },
-    {
-      "post_n": 12,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "大盘中期调整目标或将回补下方所有跳空缺口。",
-      "publish_time": "2025-04-07 12:56"
     },
     {
       "post_n": 11,
@@ -2360,36 +1502,12 @@
       "publish_time": "2025-04-08 17:15"
     },
     {
-      "post_n": 8,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "目前大盘v形反转概率很小，中期趋势大概率是回补下方所有缺口。",
-      "publish_time": "2025-04-09 12:50"
-    },
-    {
-      "post_n": 6,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘企稳反弹的右侧信号已经出现。",
-      "publish_time": "2025-04-09 16:07"
-    },
-    {
       "post_n": 5,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天，可以收中阴线，但后天必须阳包阴。",
       "publish_time": "2025-04-09 20:35"
-    },
-    {
-      "post_n": 4,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "维持震荡反弹3-4周的观点不变。",
-      "publish_time": "2025-04-10 12:17"
     },
     {
       "post_n": 2,
@@ -2424,44 +1542,12 @@
       "publish_time": "2025-04-14 16:23"
     },
     {
-      "post_n": 13,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "①时间未到，20号前后一二天才是重要时间窗口，最早17号最迟22号应该会出中阴线杀跌。",
-      "publish_time": "2025-04-15 12:28"
-    },
-    {
-      "post_n": 12,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "明天大盘预计还有最后一涨。左侧逢高减仓的绝佳机会！不怕踏空？万一呢？没那么多万一。理由很简单:①大盘缩量。②五一长假临近。③以上证指数为例，目前往上涨百分之1是3299，是胫线3297、20天均线、下降趋势线三重压力位。",
-      "publish_time": "2025-04-15 16:20"
-    },
-    {
       "post_n": 11,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "long",
       "evidence": "所以，牛市一定会再来，但可能不在今年，也不在明年，而是2029年之后的2030年。",
       "publish_time": "2025-04-15 20:41"
-    },
-    {
-      "post_n": 10,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "大盘回调正式开启。第一目标回补4月10号跳空缺口。之后会有一个120分钟与日线MACD共振式金叉反弹行情。静待回调结束即可。",
-      "publish_time": "2025-04-16 13:02"
-    },
-    {
-      "post_n": 9,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "等回调的逻辑并没有改变:①大盘缩量。②五一长假临近。③上证指数目前面临胫线3297、20天均线、下降趋势线三重压力位。不要怕踏空，创业板指目前还在大形态的胫线位之下，除非明天创业板指放量大涨创反弹以来新高，才可以印证上证指数的上涨是真实的v形反转上涨。",
-      "publish_time": "2025-04-16 16:49"
     },
     {
       "post_n": 8,
@@ -2472,28 +1558,12 @@
       "publish_time": "2025-04-16 21:25"
     },
     {
-      "post_n": 7,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘上午收涨，但并未改变调整趋势。理由很简单:大盘缩量，且没有气势如虹的走势。上证指数依然是前进受阻的K线走势，创业板指上涨没有力度，大概率在做60分钟的顶部结构。策略:仓位重的，越往上越要逢高减仓，提防冲高回落日内顶部反转走势的出现，空仓的继续等回调，或者小仓位参与个股操作。",
-      "publish_time": "2025-04-17 12:36"
-    },
-    {
       "post_n": 6,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘或将中阴线杀跌。理由很简单:创业板指，科创50，深证成指有60分钟顶部反转形态雏形，江恩变盘时窗口临近，在成交量低迷，上攻动能不足的情况下，大概率向下变盘，回补下方缺口。",
       "publish_time": "2025-04-17 16:28"
-    },
-    {
-      "post_n": 5,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "所以，下午大盘要提防跳水。",
-      "publish_time": "2025-04-18 12:55"
     },
     {
       "post_n": 4,
@@ -2512,28 +1582,12 @@
       "publish_time": "2025-04-20 10:42"
     },
     {
-      "post_n": 0,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午跌破3270的概率不大。那就要看明天，明天继续创新高，则目标就是3320。",
-      "publish_time": "2025-04-21 12:53"
-    },
-    {
       "post_n": 14,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘将阴包阳？",
       "publish_time": "2025-04-21 16:11"
-    },
-    {
-      "post_n": 13,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘将疯狂跳水？不能不防。",
-      "publish_time": "2025-04-22 12:39"
     },
     {
       "post_n": 12,
@@ -2544,22 +1598,6 @@
       "publish_time": "2025-04-22 16:09"
     },
     {
-      "post_n": 11,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘要回调的意图并不明显。",
-      "publish_time": "2025-04-23 12:45"
-    },
-    {
-      "post_n": 10,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "大盘要加速上涨了吗？很难。",
-      "publish_time": "2025-04-23 17:54"
-    },
-    {
       "post_n": 9,
       "direction": "bearish",
       "strength": "moderate",
@@ -2568,28 +1606,12 @@
       "publish_time": "2025-04-23 22:49"
     },
     {
-      "post_n": 7,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘将加速跳水？大概率！",
-      "publish_time": "2025-04-24 12:31"
-    },
-    {
       "post_n": 6,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘只有继续收跌才是强烈的调整信号。",
       "publish_time": "2025-04-24 16:41"
-    },
-    {
-      "post_n": 5,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘原有反弹趋势并没有改变。",
-      "publish_time": "2025-04-25 13:41"
     },
     {
       "post_n": 3,
@@ -2616,14 +1638,6 @@
       "publish_time": "2025-04-28 16:18"
     },
     {
-      "post_n": 12,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "大盘调整信号明确，大概率不会回补下方缺口。理由很简单:①即便今天大盘各大指数收涨，只要没有突破昨天K线高点，那么依然是高低点下移的回调走势。从目前来看调整信号明确。②从目前的回调力度来看，以深证创业板指为例，60分钟M调整，但右边回调明显弱左边调整，所以构造M头回补缺口概率很小，更大可能是在缺口之上构造上升中继的w形态，完成日线级别的C浪上涨才会开启回补下方缺口之旅。",
-      "publish_time": "2025-04-29 13:00"
-    },
-    {
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
@@ -2648,28 +1662,12 @@
       "publish_time": "2025-05-05 12:35"
     },
     {
-      "post_n": 7,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "今天大盘这个缺口短期不会回补。理由很简单:今天大盘各大指数是一根关键性的突破K线，如果回补，意味着是假突破。所以，今天大盘这根阳线可以视为4月见底以来反弹结构中的C浪起涨点。目标先看去年10月以来的下降趋势线。五月无利空，红五月可期！",
-      "publish_time": "2025-05-06 16:12"
-    },
-    {
       "post_n": 6,
       "direction": "bullish",
       "strength": "strong",
       "time_horizon": "medium",
       "evidence": "今天股市大涨，明天是最后的上车机会。理由很简单:①市场的意图已经很明确，短期不会回补下方缺口，所以还在等回补缺口再买的人将错失5月行情。②从4月7号反弹以来的结构来看，今天是C浪起涨点，现在还有很多票与创业板深证成指走势相似，在20均线起涨点刚刚突破位置，所以，明天如有低买机会将是最后的上车机会。",
       "publish_time": "2025-05-06 22:20"
-    },
-    {
-      "post_n": 5,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "上证指数今天高开在去年10月份以来的下降趋势线附近，高开太多，且在重要压力位，所以回落便是大概率会发生的事。",
-      "publish_time": "2025-05-07 11:28"
     },
     {
       "post_n": 4,
@@ -2680,44 +1678,12 @@
       "publish_time": "2025-05-07 16:30"
     },
     {
-      "post_n": 3,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "尽管今天高开低走，但是目前反弹依然没有结束，只有当深证、创业板指回补上方缺囗之后才是值得谨慎的时候。",
-      "publish_time": "2025-05-08 00:33"
-    },
-    {
-      "post_n": 2,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "能，则还会往上，属于逼空，目标指向今年3月份高点。如果冲高回落，则明天上证指数大概率向下回补昨天缺口。无论是哪种走势，5月都是做多的策略。",
-      "publish_time": "2025-05-08 12:21"
-    },
-    {
-      "post_n": 1,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "明天大盘或将回调。理由很简单:①成交量萎缩了，表明市场追涨热情不高。②科创50今天是收跌的，平均股价指数涨幅小于创业板指及深证指数，进一步印证市场追涨热情不高。③上证指数尽管今天创新高了，但是并未突破去年10月份以来的下降趋势线，如果这根趋势线是有效的，或者说短期无意突破，那么，上证指数明天就应该收跌。",
-      "publish_time": "2025-05-08 16:47"
-    },
-    {
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "medium",
       "evidence": "即便有小级别的回调，也不改日线整体反弹趋势，现在就畏首畏尾完全没必要。说得更直白一点:技术面只要不破20线，都是做多思维为主。",
       "publish_time": "2025-05-08 20:50"
-    },
-    {
-      "post_n": 14,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "说明大盘反弹还没有结束，反弹结束时应该所有指数走势是一致的。",
-      "publish_time": "2025-05-09 14:58"
     },
     {
       "post_n": 13,
@@ -2736,36 +1702,12 @@
       "publish_time": "2025-05-11 14:01"
     },
     {
-      "post_n": 8,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "判断:预计明天大盘指数将分化，上证指数可能见顶，深证成指还未回补上方缺囗，应该还有冲高的大概率。",
-      "publish_time": "2025-05-12 12:44"
-    },
-    {
-      "post_n": 7,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "如果上证指数明天抗跌，或者继续震荡创新高，那就意味着今天突破去年10月份以来的下降趋势线是有效突破。",
-      "publish_time": "2025-05-12 16:12"
-    },
-    {
       "post_n": 6,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天如果大幅高开百分之2左右，那么超过百分之90的概率会高开低走收阴线。",
       "publish_time": "2025-05-12 16:59"
-    },
-    {
-      "post_n": 5,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘回调不可避免！",
-      "publish_time": "2025-05-13 12:55"
     },
     {
       "post_n": 4,
@@ -2776,52 +1718,12 @@
       "publish_time": "2025-05-13 16:53"
     },
     {
-      "post_n": 3,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "大盘还需要2至7天时间才会见顶。",
-      "publish_time": "2025-05-14 12:35"
-    },
-    {
-      "post_n": 2,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "所以，今天大盘强势上涨大概率是短期见顶之前的最后冲刺。",
-      "publish_time": "2025-05-14 16:47"
-    },
-    {
-      "post_n": 1,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘要见顶？上证指数看明天，深证成指、创业板指看今天。",
-      "publish_time": "2025-05-15 12:23"
-    },
-    {
-      "post_n": 14,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "按逻辑上证指数明天应该要强势上涨才对。",
-      "publish_time": "2025-05-15 16:50"
-    },
-    {
       "post_n": 13,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "medium",
       "evidence": "六月份大概率要回调，这应该也是共识，因为技术面日线MACD要死叉，宏观面美债可能会出风波。",
       "publish_time": "2025-05-15 21:56"
-    },
-    {
-      "post_n": 12,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘日线大概率还有向上涨1至三天的大概率，以便构筑日线级别的双顶形态。",
-      "publish_time": "2025-05-16 12:52"
     },
     {
       "post_n": 11,
@@ -2846,14 +1748,6 @@
       "time_horizon": "medium",
       "evidence": "大的方向是:日线MACD死叉调整不可避免。",
       "publish_time": "2025-05-19 12:32"
-    },
-    {
-      "post_n": 4,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "最迟本周五应该会有中阴线杀跌。",
-      "publish_time": "2025-05-20 13:02"
     },
     {
       "post_n": 3,
@@ -2904,14 +1798,6 @@
       "publish_time": "2025-05-26 16:22"
     },
     {
-      "post_n": 10,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "所以，要看多做多起码要回补3316这个缺口。",
-      "publish_time": "2025-05-27 12:50"
-    },
-    {
       "post_n": 9,
       "direction": "bearish",
       "strength": "moderate",
@@ -2920,28 +1806,12 @@
       "publish_time": "2025-05-27 16:13"
     },
     {
-      "post_n": 8,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘或将大幅跳水？大概率！",
-      "publish_time": "2025-05-28 12:45"
-    },
-    {
       "post_n": 7,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘将回补下方缺口。",
       "publish_time": "2025-05-28 16:24"
-    },
-    {
-      "post_n": 5,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "该跌不跌，突破了短期多空之锚-15分钟88线，所以短期看多。",
-      "publish_time": "2025-05-29 12:54"
     },
     {
       "post_n": 4,
@@ -2976,14 +1846,6 @@
       "publish_time": "2025-06-02 12:55"
     },
     {
-      "post_n": 0,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘发出强烈的短多信号。",
-      "publish_time": "2025-06-03 12:44"
-    },
-    {
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
@@ -2998,14 +1860,6 @@
       "time_horizon": "short",
       "evidence": "大盘反弹接近尾声？大概率！",
       "publish_time": "2025-06-05 16:17"
-    },
-    {
-      "post_n": 9,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘可能跳水？大概率。",
-      "publish_time": "2025-06-06 12:52"
     },
     {
       "post_n": 8,
@@ -3024,36 +1878,12 @@
       "publish_time": "2025-06-07 14:28"
     },
     {
-      "post_n": 6,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘发出了强烈的看多信号？从上午走势来看是的！",
-      "publish_time": "2025-06-09 12:49"
-    },
-    {
-      "post_n": 5,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "明天A股将开启强大的赚钱效应行情？大概率是！",
-      "publish_time": "2025-06-09 16:18"
-    },
-    {
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "如果大盘所有指数走势一致，且平均股价指数也是上涨的，个股涨多跌少，那么，大盘向上突破下降趋势线就没有悬念了。",
       "publish_time": "2025-06-09 19:01"
-    },
-    {
-      "post_n": 3,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "大盘今天突破无望。",
-      "publish_time": "2025-06-10 12:43"
     },
     {
       "post_n": 2,
@@ -3064,28 +1894,12 @@
       "publish_time": "2025-06-10 16:13"
     },
     {
-      "post_n": 1,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午只有创盘中新高，收在2076之上才是强烈的看多，做多信号。",
-      "publish_time": "2025-06-11 12:42"
-    },
-    {
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "收小阴小阳呢？弱势偏多，因为相当于横向突破了下降趋势线。",
       "publish_time": "2025-06-11 16:22"
-    },
-    {
-      "post_n": 14,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "今天是空方力量的最后机会，但上午大盘低开高走，该跌不跌，表明市场依然是多方掌控局面，今天无法阴包阳则可以认为昨天的突破是有效突破。",
-      "publish_time": "2025-06-12 12:54"
     },
     {
       "post_n": 13,
@@ -3120,28 +1934,12 @@
       "publish_time": "2025-06-15 14:59"
     },
     {
-      "post_n": 9,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘要重新走强并不容易。上午大盘走势还算强，表现在个股涨多跌少，大盘低开高走，突破上周五下午反弹高点。当一个看空信号出现之后，不能走出流畅的下跌，视为抗跌。抗跌也是强势的一种，至少，今年4月份以来的走势就是因为抗跌而不断震荡走高的。但是，这次又会因为抗跌而重新走强吗？上证指数日线、120分钟、60分钟MACD都已经处在死叉状态，要重新走强并不容易。上证突破15分钟88线才可以重新看多。创业板指突破2077才可以重新看多。",
-      "publish_time": "2025-06-16 13:00"
-    },
-    {
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "上证指数一旦重新站上3394，创业板指站上2077，那么，就是日线趋势转强的强烈信号，贸易协议沒签订之前大概率会一直震荡上涨。",
       "publish_time": "2025-06-16 16:43"
-    },
-    {
-      "post_n": 7,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘调整并未结束。调整结束的标志是:上证指数站上3394，创业板指站上2077。",
-      "publish_time": "2025-06-17 12:53"
     },
     {
       "post_n": 6,
@@ -3152,14 +1950,6 @@
       "publish_time": "2025-06-17 16:35"
     },
     {
-      "post_n": 4,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘很抗跌，但意义已不大。理由很简单:①从市场情绪来说，大盘自5月份以来，不断给人以希望，然后又不断给人失望，这种走势会磨灭所有多头的雄心壮志，最终不会再有人抄底，也不会再有人追涨，除非走出真正的放量突破，否则不见兔子不撒鹰就会成为整个市场的共识。②技术面，日线MACD已经死叉，绿柱放大，平均股价指数持续走弱，短期难言反转。",
-      "publish_time": "2025-06-18 12:51"
-    },
-    {
       "post_n": 3,
       "direction": "bearish",
       "strength": "moderate",
@@ -3168,28 +1958,12 @@
       "publish_time": "2025-06-18 16:21"
     },
     {
-      "post_n": 1,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "冲突没有转机之前，A股不会大涨。冲突没有恶化之前，A股不会大涨。",
-      "publish_time": "2025-06-19 12:44"
-    },
-    {
       "post_n": 0,
       "direction": "bearish",
       "strength": "strong",
       "time_horizon": "medium",
       "evidence": "大盘发出强烈的看空信号。理由很简单:①日线MACD死叉。②跌破10个交易日以来的整理平台。③平均股价指数日线，已构筑2个月以来的双顶形态。所以，大势已去，回补下方所有缺口不可避免。",
       "publish_time": "2025-06-19 16:13"
-    },
-    {
-      "post_n": 14,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘还远远没有跌到位。",
-      "publish_time": "2025-06-20 13:01"
     },
     {
       "post_n": 13,
@@ -3208,28 +1982,12 @@
       "publish_time": "2025-06-21 18:24"
     },
     {
-      "post_n": 10,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "所以，基于以上事实分析，明天A股大幅低开是很确定的事",
-      "publish_time": "2025-06-22 10:40"
-    },
-    {
       "post_n": 8,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "所以，明天A股大盘低开高走反转向上的概率很小",
       "publish_time": "2025-06-22 21:00"
-    },
-    {
-      "post_n": 6,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘抗跌，但今天肯定不是反弹转折日。",
-      "publish_time": "2025-06-23 13:03"
     },
     {
       "post_n": 5,
@@ -3240,44 +1998,12 @@
       "publish_time": "2025-06-23 17:17"
     },
     {
-      "post_n": 4,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "intraday",
-      "evidence": "大盘技术面发出强烈的做多信号。",
-      "publish_time": "2025-06-24 13:00"
-    },
-    {
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "medium",
       "evidence": "大盘将迎来加速上涨？",
       "publish_time": "2025-06-24 16:17"
-    },
-    {
-      "post_n": 1,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午上证指数如能收在3039之上，创业板指如能收在2103之上，那么，超过百分之80的概率会走加速行情",
-      "publish_time": "2025-06-25 12:41"
-    },
-    {
-      "post_n": 0,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "medium",
-      "evidence": "大盘气势如虹，加速拉升不可避免。",
-      "publish_time": "2025-06-25 16:25"
-    },
-    {
-      "post_n": 14,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "昨天已是明确的入场信号，今天已经确认强烈的做多信号了。",
-      "publish_time": "2025-06-25 18:52"
     },
     {
       "post_n": 13,
@@ -3288,28 +2014,12 @@
       "publish_time": "2025-06-25 20:24"
     },
     {
-      "post_n": 11,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘依然强势，但是行情或许没有想象中的波澜壮阔。",
-      "publish_time": "2025-06-26 13:06"
-    },
-    {
       "post_n": 10,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "medium",
       "evidence": "大盘加速上涨无望。",
       "publish_time": "2025-06-26 17:59"
-    },
-    {
-      "post_n": 9,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "提防这里可能只是一个衰竭式C浪上涨。",
-      "publish_time": "2025-06-27 13:10"
     },
     {
       "post_n": 8,
@@ -3320,28 +2030,12 @@
       "publish_time": "2025-06-27 16:19"
     },
     {
-      "post_n": 7,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "大盘将维持震荡攀升的节奏。",
-      "publish_time": "2025-06-30 12:55"
-    },
-    {
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "medium",
       "evidence": "震荡攀升应该是大概率。",
       "publish_time": "2025-06-30 16:37"
-    },
-    {
-      "post_n": 5,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘接下来需要关注的是能否抗跌。",
-      "publish_time": "2025-07-01 12:53"
     },
     {
       "post_n": 4,
@@ -3352,22 +2046,6 @@
       "publish_time": "2025-07-01 17:04"
     },
     {
-      "post_n": 1,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘问题不大，安心做个股。",
-      "publish_time": "2025-07-02 13:09"
-    },
-    {
-      "post_n": 0,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "上证指数不破3417不看空。",
-      "publish_time": "2025-07-02 16:19"
-    },
-    {
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
@@ -3376,36 +2054,12 @@
       "publish_time": "2025-07-02 19:11"
     },
     {
-      "post_n": 12,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "上证指数不破3417，就大胆看多，做多。",
-      "publish_time": "2025-07-03 12:41"
-    },
-    {
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "上证指数不破3417不看空，只要上证指数不破位，整个市场震荡上升的节奏就不会改变。",
       "publish_time": "2025-07-03 16:21"
-    },
-    {
-      "post_n": 10,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "当然是大盘不走坏就继续看多做多，只不过赚钱难度很大而已。",
-      "publish_time": "2025-07-04 12:50"
-    },
-    {
-      "post_n": 9,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "如果市场迟迟没有赚钱效应，不能不警惕历史重演，2026、2027年是赤马红羊劫，没有赚钱效应的行情小心为上。",
-      "publish_time": "2025-07-04 16:32"
     },
     {
       "post_n": 8,
@@ -3424,28 +2078,12 @@
       "publish_time": "2025-07-05 21:30"
     },
     {
-      "post_n": 6,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "只要上证指数不走破坏性结构，那么就可以安心做个股，市场结构性机会还会继续，撑死胆大的，饿死胆小的。",
-      "publish_time": "2025-07-07 12:43"
-    },
-    {
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "medium",
       "evidence": "只要这二个位置不破，那么往上突破3509就是百分之百会发生的事。",
       "publish_time": "2025-07-07 17:08"
-    },
-    {
-      "post_n": 3,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "3509不是大盘的目标，剑指3674。",
-      "publish_time": "2025-07-08 13:07"
     },
     {
       "post_n": 2,
@@ -3456,14 +2094,6 @@
       "publish_time": "2025-07-08 16:26"
     },
     {
-      "post_n": 1,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午大盘如能稳住并创盘中新高，平均股价指数也能创盘中新高，那么，大盘短期应该还会继强势前行。",
-      "publish_time": "2025-07-09 12:41"
-    },
-    {
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
@@ -3472,36 +2102,12 @@
       "publish_time": "2025-07-09 16:16"
     },
     {
-      "post_n": 14,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘各大指数必须创盘中新高。起码不能跳水。",
-      "publish_time": "2025-07-10 12:57"
-    },
-    {
       "post_n": 13,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘不能收跌？如果平均股价指数也收跌的话，那将是一个危险信号。",
       "publish_time": "2025-07-10 16:23"
-    },
-    {
-      "post_n": 12,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "今天大盘应该会收一根突破性大阳K线。",
-      "publish_time": "2025-07-11 12:39"
-    },
-    {
-      "post_n": 11,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "今天大盘冲高大幅回落，风险来了？应该是机会来了。",
-      "publish_time": "2025-07-11 16:18"
     },
     {
       "post_n": 10,
@@ -3520,28 +2126,12 @@
       "publish_time": "2025-07-14 12:56"
     },
     {
-      "post_n": 8,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "大盘日线级别的回调正式开启？大概率。",
-      "publish_time": "2025-07-15 12:51"
-    },
-    {
       "post_n": 7,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "medium",
       "evidence": "创业板指大涨，不改调整预期。",
       "publish_time": "2025-07-15 17:00"
-    },
-    {
-      "post_n": 6,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "所以，由此可以预判，如果接下来上证开启日线MACD死叉调整，那么其它指数都会迎来调整。",
-      "publish_time": "2025-07-16 12:46"
     },
     {
       "post_n": 5,
@@ -3552,28 +2142,12 @@
       "publish_time": "2025-07-16 16:37"
     },
     {
-      "post_n": 3,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "大的判断是22号前后日线MACD死叉不可避免。",
-      "publish_time": "2025-07-17 13:00"
-    },
-    {
       "post_n": 2,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "medium",
       "evidence": "大的观点不变，22号附近，大盘日线MACD大概率迎来死叉调整。",
       "publish_time": "2025-07-17 16:22"
-    },
-    {
-      "post_n": 0,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "上证没过3555之前，视为向上做60分钟次高点，所以，左侧关注这个次高点何时结束，然后右侧是跌破3483，那么将确认日线MACD有力度的回调。其它大盘指数也将回调。",
-      "publish_time": "2025-07-18 12:56"
     },
     {
       "post_n": 14,
@@ -3592,28 +2166,12 @@
       "publish_time": "2025-07-21 17:00"
     },
     {
-      "post_n": 8,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘逼空，暂无风险。",
-      "publish_time": "2025-07-22 12:45"
-    },
-    {
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "medium",
       "evidence": "大盘短期不会有日线级别的调整。",
       "publish_time": "2025-07-22 21:07"
-    },
-    {
-      "post_n": 6,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "大盘向上直接突破3674的概率较小。",
-      "publish_time": "2025-07-23 12:51"
     },
     {
       "post_n": 5,
@@ -3624,28 +2182,12 @@
       "publish_time": "2025-07-23 16:23"
     },
     {
-      "post_n": 4,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "大盘走势很健康，还会继续创新高。",
-      "publish_time": "2025-07-24 13:10"
-    },
-    {
       "post_n": 3,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "medium",
       "evidence": "但是要提防8月7号前后这个时间点。",
       "publish_time": "2025-07-24 16:26"
-    },
-    {
-      "post_n": 2,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "大盘属于正常回调，还会创新高。",
-      "publish_time": "2025-07-25 12:53"
     },
     {
       "post_n": 1,
@@ -3656,28 +2198,12 @@
       "publish_time": "2025-07-25 16:09"
     },
     {
-      "post_n": 11,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘如果无法探底回升，又收在3577之下，将是短期见顶的右侧信号。",
-      "publish_time": "2025-07-28 12:45"
-    },
-    {
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天必须创新高才能维持原有强势趋势。",
       "publish_time": "2025-07-28 16:46"
-    },
-    {
-      "post_n": 8,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘将有一波诱空，急速下跌？下探3560-3570概率大。",
-      "publish_time": "2025-07-29 12:45"
     },
     {
       "post_n": 6,
@@ -3688,28 +2214,12 @@
       "publish_time": "2025-07-29 16:21"
     },
     {
-      "post_n": 4,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "大盘上摸3674再调整的概率增大。",
-      "publish_time": "2025-07-30 12:41"
-    },
-    {
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "如无意外，明天创业板指将反抽收阳线。",
       "publish_time": "2025-07-30 16:16"
-    },
-    {
-      "post_n": 2,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘低点已探明，下午及明天将反弹。",
-      "publish_time": "2025-07-31 12:43"
     },
     {
       "post_n": 1,
@@ -3728,14 +2238,6 @@
       "publish_time": "2025-08-01 13:03"
     },
     {
-      "post_n": 13,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘大结构一定是走abc调整，a浪见底的标志，至少要出现一次个股恐慌性下跌，也就是平均股价指数至少还要出一根中阴线，之后才是b浪反弹。",
-      "publish_time": "2025-08-04 12:47"
-    },
-    {
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
@@ -3744,36 +2246,12 @@
       "publish_time": "2025-08-04 16:57"
     },
     {
-      "post_n": 11,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "突破15分钟88线，在88线之上形成N字结构，不回到88线之下，就是看多做多的策略。",
-      "publish_time": "2025-08-05 12:46"
-    },
-    {
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "medium",
       "evidence": "大盘调整结束，剑指3700？大概率是！",
       "publish_time": "2025-08-05 16:16"
-    },
-    {
-      "post_n": 9,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "medium",
-      "evidence": "大盘没突破3674之前，无风险，现在也是赚钱效应最大的时候。",
-      "publish_time": "2025-08-06 13:00"
-    },
-    {
-      "post_n": 8,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "medium",
-      "evidence": "25-26是百分之99会到达，那百分之一是天灾人祸。",
-      "publish_time": "2025-08-06 16:44"
     },
     {
       "post_n": 7,
@@ -3800,28 +2278,12 @@
       "publish_time": "2025-08-11 12:49"
     },
     {
-      "post_n": 1,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "今天大盘向上突破的概率大。",
-      "publish_time": "2025-08-12 12:46"
-    },
-    {
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "上证指数不破15分钟88线，可以坚定看多做多，破了，至少先减仓。",
       "publish_time": "2025-08-12 16:05"
-    },
-    {
-      "post_n": 14,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "碰到通道上轨是不是明天会有深幅回调？大概率是3天左右的震荡，无深幅回调风险，可以沿着通道上轨往上震荡攀升。",
-      "publish_time": "2025-08-13 12:43"
     },
     {
       "post_n": 13,
@@ -3832,28 +2294,12 @@
       "publish_time": "2025-08-13 16:23"
     },
     {
-      "post_n": 11,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘将跳水？大概率。",
-      "publish_time": "2025-08-14 12:51"
-    },
-    {
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "只能说明市场意图是健康调整，也意味着明天不大可能出大阴线。",
       "publish_time": "2025-08-14 16:30"
-    },
-    {
-      "post_n": 9,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "所以，大盘今天的低点，三至五天之内应该不会再跌破。",
-      "publish_time": "2025-08-15 12:53"
     },
     {
       "post_n": 8,
@@ -3872,28 +2318,12 @@
       "publish_time": "2025-08-16 13:23"
     },
     {
-      "post_n": 2,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午，上证指数不破上午回落低点3720，那么今天就无忧。",
-      "publish_time": "2025-08-18 12:44"
-    },
-    {
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "所以，明天应提防大盘逼空再拉中阳，而不是提防大阴线杀跌。",
       "publish_time": "2025-08-18 16:25"
-    },
-    {
-      "post_n": 0,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "判断:今天上证指数不破3716，明天将会再拉中阳线。",
-      "publish_time": "2025-08-19 12:43"
     },
     {
       "post_n": 14,
@@ -3904,22 +2334,6 @@
       "publish_time": "2025-08-19 16:17"
     },
     {
-      "post_n": 12,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午破位概率大吗？暂时不大。",
-      "publish_time": "2025-08-20 12:48"
-    },
-    {
-      "post_n": 11,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘调整结束，明天继续拉中阳线？大概率会。",
-      "publish_time": "2025-08-20 16:15"
-    },
-    {
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
@@ -3928,28 +2342,12 @@
       "publish_time": "2025-08-20 23:46"
     },
     {
-      "post_n": 9,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "风险可能在明天。因为，价格在加速趋势中，调整不能超过4天，创业板指今天不大涨就是3天了，明天会选择方向。",
-      "publish_time": "2025-08-21 12:46"
-    },
-    {
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "哪种走势概率大？当然是诱空概率大",
       "publish_time": "2025-08-21 16:53"
-    },
-    {
-      "post_n": 7,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘将大幅回落？概率极低。",
-      "publish_time": "2025-08-22 12:45"
     },
     {
       "post_n": 6,
@@ -3968,22 +2366,6 @@
       "publish_time": "2025-08-24 11:28"
     },
     {
-      "post_n": 2,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘回补缺口概率不大。",
-      "publish_time": "2025-08-25 12:57"
-    },
-    {
-      "post_n": 1,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "明天大盘将继续放量拉升？大概率，明天至少是一根小阳线。",
-      "publish_time": "2025-08-25 16:17"
-    },
-    {
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
@@ -3992,36 +2374,12 @@
       "publish_time": "2025-08-25 22:45"
     },
     {
-      "post_n": 13,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "收小阳线是大概率。",
-      "publish_time": "2025-08-26 12:52"
-    },
-    {
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "所以，明天阳包阴才是大概率。",
       "publish_time": "2025-08-26 16:28"
-    },
-    {
-      "post_n": 11,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘短期往上空间还很大，正是贪婪时刻？可以贪婪。",
-      "publish_time": "2025-08-27 12:46"
-    },
-    {
-      "post_n": 10,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "探底回升收阳线概率大。",
-      "publish_time": "2025-08-27 16:41"
     },
     {
       "post_n": 8,
@@ -4064,36 +2422,12 @@
       "publish_time": "2025-09-01 13:06"
     },
     {
-      "post_n": 12,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "大盘今天不大可能大幅回升，即便回升翻红，意义也不大了，日线MACD死叉调整不可避免。",
-      "publish_time": "2025-09-02 13:06"
-    },
-    {
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "所以，明天大盘收小阳线是大概率。",
       "publish_time": "2025-09-02 16:11"
-    },
-    {
-      "post_n": 9,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘今天高开低走，没有形成一个向上的分时结构，意味着短期底部未探明，今天收阳无望，还有向下的空间。",
-      "publish_time": "2025-09-03 13:14"
-    },
-    {
-      "post_n": 8,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "明天上证如果低开在20均线附近然后一路高走突破3850，个股普涨，创业板也大涨，是有可能再涨一波的。",
-      "publish_time": "2025-09-03 16:54"
     },
     {
       "post_n": 7,
@@ -4104,28 +2438,12 @@
       "publish_time": "2025-09-03 21:33"
     },
     {
-      "post_n": 6,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "昨天给出的3750轻松跌破了，表明这里下跌动能很强，不会有反弹，顶多会有反抽。",
-      "publish_time": "2025-09-04 12:39"
-    },
-    {
       "post_n": 5,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "我还是更相信往下再跌一二根阴线概率大。",
       "publish_time": "2025-09-04 23:24"
-    },
-    {
-      "post_n": 3,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下周大盘至少会开启衰竭式创新高或者做次高点的走势，乐观走势是复制2014年12月25号之后的走势，连续拉升再涨一周。",
-      "publish_time": "2025-09-05 16:39"
     },
     {
       "post_n": 2,
@@ -4136,36 +2454,12 @@
       "publish_time": "2025-09-05 23:09"
     },
     {
-      "post_n": 14,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘将加速拉升？进攻是最好的防守。",
-      "publish_time": "2025-09-08 12:55"
-    },
-    {
       "post_n": 13,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "大盘加速拉升无望？提防再次大跌。",
       "publish_time": "2025-09-08 16:35"
-    },
-    {
-      "post_n": 12,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘将加速跳水？小概率。",
-      "publish_time": "2025-09-09 12:55"
-    },
-    {
-      "post_n": 11,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "无论是真跌还是假跌，调整趋势都没那么快结束。",
-      "publish_time": "2025-09-09 16:20"
     },
     {
       "post_n": 8,
@@ -4184,28 +2478,12 @@
       "publish_time": "2025-09-10 16:20"
     },
     {
-      "post_n": 5,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "medium",
-      "evidence": "大盘正式开启5浪上涨？不用怀疑。",
-      "publish_time": "2025-09-11 12:43"
-    },
-    {
       "post_n": 4,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘将继续拉中阳线？按逻辑是。",
       "publish_time": "2025-09-11 16:37"
-    },
-    {
-      "post_n": 2,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "今天或者下周一收中阳线才是加速拉升走势。从上午盘中走势来看，回调很浅，属于强势走势特征下周一有再拉中阳线的大概率。",
-      "publish_time": "2025-09-12 13:17"
     },
     {
       "post_n": 1,
@@ -4224,14 +2502,6 @@
       "publish_time": "2025-09-15 13:55"
     },
     {
-      "post_n": 8,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘要二次探底？下午不能创盘中新低。",
-      "publish_time": "2025-09-16 13:09"
-    },
-    {
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
@@ -4240,28 +2510,12 @@
       "publish_time": "2025-09-16 16:27"
     },
     {
-      "post_n": 6,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "今天大盘收中阳线已成定局？势，不可挡。",
-      "publish_time": "2025-09-17 12:57"
-    },
-    {
       "post_n": 5,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘将单日见顶？不能不防。",
       "publish_time": "2025-09-17 16:16"
-    },
-    {
-      "post_n": 2,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘将加速拉升？大概率。",
-      "publish_time": "2025-09-18 12:51"
     },
     {
       "post_n": 1,
@@ -4288,28 +2542,12 @@
       "publish_time": "2025-09-20 12:49"
     },
     {
-      "post_n": 8,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "观点:大盘回调空间有限，短期重拾升势概率不大。",
-      "publish_time": "2025-09-22 12:55"
-    },
-    {
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大上证指数一旦突破多空之锚15分钟88线，可以视为强烈的调整结束的右侧信号。",
       "publish_time": "2025-09-22 16:27"
-    },
-    {
-      "post_n": 6,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "判断:明天大概率调整到位。",
-      "publish_time": "2025-09-23 12:53"
     },
     {
       "post_n": 5,
@@ -4320,14 +2558,6 @@
       "publish_time": "2025-09-23 16:27"
     },
     {
-      "post_n": 3,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "大盘发出强烈的右侧底部反转信号。",
-      "publish_time": "2025-09-24 12:46"
-    },
-    {
       "post_n": 2,
       "direction": "bearish",
       "strength": "moderate",
@@ -4336,28 +2566,12 @@
       "publish_time": "2025-09-24 16:24"
     },
     {
-      "post_n": 0,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "创业板指在3300至3350附近，大幅减仓观望，持币过节，待形势明朗再进。",
-      "publish_time": "2025-09-25 12:59"
-    },
-    {
       "post_n": 14,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "medium",
       "evidence": "所以，持股过节可能存在较大风险，半仓为宜。",
       "publish_time": "2025-09-25 19:14"
-    },
-    {
-      "post_n": 13,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "换言之:节后即便开门红，大概率也只是短暂的一至三天行情。",
-      "publish_time": "2025-09-26 13:07"
     },
     {
       "post_n": 12,
@@ -4374,22 +2588,6 @@
       "time_horizon": "medium",
       "evidence": "国庆节后，大盘将向上突破，直奔4200？",
       "publish_time": "2025-09-30 08:00"
-    },
-    {
-      "post_n": 9,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "总之，今天大盘无忧，可积极操作个股，如胜率低，可以分散仓位多买几只，条件是必须在软件上设置止损单，否则，一旦风吹草动会忙不过来造成重大损失。",
-      "publish_time": "2025-10-09 12:42"
-    },
-    {
-      "post_n": 8,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "如果大盘见顶这个判断正确，那么，最迟后天，大盘将会大阴线杀跌，上证指数一跌破今天K线低点，意味着今天是假突破。",
-      "publish_time": "2025-10-09 16:31"
     },
     {
       "post_n": 7,
@@ -4424,22 +2622,6 @@
       "publish_time": "2025-10-12 12:04"
     },
     {
-      "post_n": 1,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "预计最迟后天，大盘会有反弹，创业板指B浪反弹。",
-      "publish_time": "2025-10-13 12:54"
-    },
-    {
-      "post_n": 0,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "long",
-      "evidence": "如果稀土牌有效，则湾湾很快会回归，大国之间最激烈最惊险的博奕结束，全球资金会大幅流入，楼市将见底，股市长牛，上证指数一万四千点根本挡不住，至少是四万点。",
-      "publish_time": "2025-10-13 16:25"
-    },
-    {
       "post_n": 14,
       "direction": "bearish",
       "strength": "moderate",
@@ -4456,28 +2638,12 @@
       "publish_time": "2025-10-14 17:01"
     },
     {
-      "post_n": 12,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘将开启反弹？大概率还差最后一跌。理由很简单:创业板指15分钟是一个楔形雏形，底部反转楔形需要三个低点，也就是说今天的低点2927还需要跌破，可能明天或者后天跌破，那时才是大概率底部反转开启B浪反弹的技术面信号。",
-      "publish_time": "2025-10-15 12:44"
-    },
-    {
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "大盘调整结束，剑指4200？大概率，需要明天确认。理由很简单:上证指数之前是一个横盘箱体震荡走势，今天再次收在箱体高点3899之上，如果明天再次放量中阳线，意味着突破前高3936，日线MACD将二次金叉，从形态来看就是一个突破回踩再突破的强烈的做多信号，目标剑指通道上轨4200。",
       "publish_time": "2025-10-15 16:21"
-    },
-    {
-      "post_n": 10,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘走势值得警惕。理由很简单:抗涨。该涨而无法气势如虹地大涨视为抗涨。上证指数今天60分钟、120分钟MACD已经金叉，且是一个上升的N形结构，按逻辑应该气势如虹地大涨突破3936才是应该有的走势。如果不是这种走势那就值得警惕，一旦以中阴线方式跌破3851将是强烈的看空信号。",
-      "publish_time": "2025-10-16 12:52"
     },
     {
       "post_n": 9,
@@ -4496,14 +2662,6 @@
       "publish_time": "2025-10-20 13:02"
     },
     {
-      "post_n": 7,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘短期将进入震荡上涨节奏。理由很简单:创业板指在小周期构筑了一个底部反转形态，意味着大概率要进行B浪反弹。",
-      "publish_time": "2025-10-21 12:38"
-    },
-    {
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
@@ -4518,14 +2676,6 @@
       "time_horizon": "medium",
       "evidence": "大盘还有最后一跌？大概率。理由很简单:①技术面，上证指数是一个看跌的上升楔形形态，这类形态超过百分之90的概率会向下突破，创业板指要么走ABC结构，要么走横向W结构，目前看，反弹力度弱，走ABC概率大。",
       "publish_time": "2025-10-23 13:03"
-    },
-    {
-      "post_n": 4,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘将跳水？大概率。理由很简单:上证指数盘中回落之后的再冲高没有速度，表明上午已是上攻乏力，既然价格涨不上去，就必然会回落，下午开盘后，跌破3936跳就成定局。",
-      "publish_time": "2025-10-24 12:43"
     },
     {
       "post_n": 3,
@@ -4552,28 +2702,12 @@
       "publish_time": "2025-10-26 22:44"
     },
     {
-      "post_n": 0,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "大盘将剑指4200？大概率。理由很简单:上证指数已经突破上升楔形上轨，且突破的幅度较大，盘中有过回落，但随后又创出盘中新高，表明这里是一个有效突破，所以，这里应该是一个失败的上升楔形，目标应该是剑指通道上轨4200。",
-      "publish_time": "2025-10-27 12:47"
-    },
-    {
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘将继续加速上涨？大概率。",
       "publish_time": "2025-10-27 16:11"
-    },
-    {
-      "post_n": 13,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘已经站稳4000点？大概率。",
-      "publish_time": "2025-10-28 12:49"
     },
     {
       "post_n": 12,
@@ -4584,36 +2718,12 @@
       "publish_time": "2025-10-28 16:17"
     },
     {
-      "post_n": 10,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘又要跳水？不能不防。",
-      "publish_time": "2025-10-29 12:51"
-    },
-    {
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘将加速拉升收中阳线？大概率。",
       "publish_time": "2025-10-29 16:25"
-    },
-    {
-      "post_n": 8,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "所以，今天大盘不拉中阳线，明天将是非常危险的一天。",
-      "publish_time": "2025-10-30 13:15"
-    },
-    {
-      "post_n": 7,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "明天大盘将阳包阴？小概率。",
-      "publish_time": "2025-10-30 16:37"
     },
     {
       "post_n": 6,
@@ -4640,28 +2750,12 @@
       "publish_time": "2025-11-02 09:11"
     },
     {
-      "post_n": 3,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "大盘未来一二个月，无利空不大可能有深幅回调，无大利好，不大可能再创新高。",
-      "publish_time": "2025-11-03 13:19"
-    },
-    {
       "post_n": 2,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "所以，如果大盘进入较长时间的调整趋势这个判断正确，那么明天不应该收中阳线，而是应该冲高回落，最迟后天再跌一根中阴线。",
       "publish_time": "2025-11-03 16:23"
-    },
-    {
-      "post_n": 1,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午大盘将加速跳水？大概率。",
-      "publish_time": "2025-11-04 12:55"
     },
     {
       "post_n": 0,
@@ -4672,28 +2766,12 @@
       "publish_time": "2025-11-04 16:25"
     },
     {
-      "post_n": 13,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午大概率冲高回落，明天收阴线，周五开始60分钟MACD金叉反弹。",
-      "publish_time": "2025-11-05 12:44"
-    },
-    {
       "post_n": 12,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘将继续大跌？收小阴线概率大。",
       "publish_time": "2025-11-05 16:29"
-    },
-    {
-      "post_n": 10,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘将加速拉升冲击4200？剑指4025新高是大概率。",
-      "publish_time": "2025-11-06 12:48"
     },
     {
       "post_n": 9,
@@ -4704,28 +2782,12 @@
       "publish_time": "2025-11-06 16:22"
     },
     {
-      "post_n": 7,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘将跳水？大概率。",
-      "publish_time": "2025-11-07 12:47"
-    },
-    {
       "post_n": 6,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "下周星期一大盘将中阴线杀跌？大概率。",
       "publish_time": "2025-11-07 16:24"
-    },
-    {
-      "post_n": 2,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘会不会强势拉升？小概率。",
-      "publish_time": "2025-11-10 12:59"
     },
     {
       "post_n": 1,
@@ -4744,28 +2806,12 @@
       "publish_time": "2025-11-11 12:48"
     },
     {
-      "post_n": 13,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘将加速跳水？大概率。",
-      "publish_time": "2025-11-12 12:46"
-    },
-    {
       "post_n": 12,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "按逻辑明天大盘应该继续回调才对。",
       "publish_time": "2025-11-12 16:37"
-    },
-    {
-      "post_n": 11,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘重拾升势是大概率。",
-      "publish_time": "2025-11-13 13:01"
     },
     {
       "post_n": 10,
@@ -4800,28 +2846,12 @@
       "publish_time": "2025-11-17 16:23"
     },
     {
-      "post_n": 4,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘最迟明天会有反弹，反弹如无法走出气势如虹的走势，那么，今年将不会再创新高，而是破位调整。",
-      "publish_time": "2025-11-18 12:54"
-    },
-    {
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "预计会有1至3天的反弹。",
       "publish_time": "2025-11-18 16:47"
-    },
-    {
-      "post_n": 2,
-      "direction": "bearish",
-      "strength": "strong",
-      "time_horizon": "medium",
-      "evidence": "周线MACD死叉调整不可避免，目标指向9月份低点3732。暂时清仓为上策。",
-      "publish_time": "2025-11-19 12:44"
     },
     {
       "post_n": 1,
@@ -4832,28 +2862,12 @@
       "publish_time": "2025-11-19 18:39"
     },
     {
-      "post_n": 14,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "所以，依然要提防最迟明天出中大阴线跌破3922的大概率。",
-      "publish_time": "2025-11-20 12:54"
-    },
-    {
       "post_n": 13,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "所以，如果明天大盘大阴线杀跌这个判断正确，那么，明天开盘后，上证指数第二个5分钟不应该收在第一个5分钟高点之上，也不应该突破开盘价加12个点，否则将会收阳线。",
       "publish_time": "2025-11-20 16:47"
-    },
-    {
-      "post_n": 12,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "所以，大盘短期往下还有下探空间，即便下午反弹，下周一也应该还会再创一次新低。",
-      "publish_time": "2025-11-21 12:52"
     },
     {
       "post_n": 11,
@@ -4864,28 +2878,12 @@
       "publish_time": "2025-11-21 16:03"
     },
     {
-      "post_n": 9,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "所以，判断大盘短期反弹一触即发。",
-      "publish_time": "2025-11-24 12:47"
-    },
-    {
       "post_n": 8,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "所以，明天理想的走势是收跌，再测试一次今天的低点，看跌不跌得下去，只有跌不下去，然后，周三才有可能迎来较大力度的反弹。",
       "publish_time": "2025-11-24 17:16"
-    },
-    {
-      "post_n": 7,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "所以，即便下午大盘不跳水反而创盘中新高收在5天均线之上，那么，明后天也会出一根中阴线跌破5日均线。",
-      "publish_time": "2025-11-25 12:54"
     },
     {
       "post_n": 6,
@@ -4896,14 +2894,6 @@
       "publish_time": "2025-11-25 16:28"
     },
     {
-      "post_n": 5,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "所以，下午大盘大概率会有一波跳水走势，最迟明天会有出一根中阴线。",
-      "publish_time": "2025-11-26 12:50"
-    },
-    {
       "post_n": 4,
       "direction": "bearish",
       "strength": "moderate",
@@ -4912,28 +2902,12 @@
       "publish_time": "2025-11-26 16:22"
     },
     {
-      "post_n": 3,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "风险应该在明天。",
-      "publish_time": "2025-11-27 12:47"
-    },
-    {
       "post_n": 2,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "所以，明天大盘大跌收在5日均线之下是大概率。",
       "publish_time": "2025-11-27 16:37"
-    },
-    {
-      "post_n": 1,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "未来一周都无新低之忧。",
-      "publish_time": "2025-11-28 12:54"
     },
     {
       "post_n": 0,
@@ -4992,14 +2966,6 @@
       "publish_time": "2025-12-05 16:24"
     },
     {
-      "post_n": 2,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "所以，大盘加速拉升的条件已具备，要信就早信，在技术面发出右侧拐点的时侯选择相信，要远比未来追高悬空交易安全。",
-      "publish_time": "2025-12-08 12:53"
-    },
-    {
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
@@ -5022,14 +2988,6 @@
       "time_horizon": "medium",
       "evidence": "大盘将开启C浪下跌？大概率。理由很简单:①上证指数跌破了重要支撑3895，已经来到11月24号反弹以来的上升趋势线支撑，但是，价格并没有在这个位置起强烈反应，表明这里大概率会有效跌破。",
       "publish_time": "2025-12-10 12:44"
-    },
-    {
-      "post_n": 11,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘将加速跳水？不能不防，要信就早信。理由很简单:①靴子落地，不管你怎么解读是利好还是利空不重要，重要的是上证指数选择向下，这就意味着大概率还有一个C浪下跌，会跌破11月24号低点。",
-      "publish_time": "2025-12-11 12:47"
     },
     {
       "post_n": 10,
@@ -5056,28 +3014,12 @@
       "publish_time": "2025-12-14 22:32"
     },
     {
-      "post_n": 6,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "大盘应该看多还是看空？一图胜千言。①上证指数没有站稳3896，也没有突破短期下降趋势线3906，看空。",
-      "publish_time": "2025-12-15 12:55"
-    },
-    {
       "post_n": 5,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "大盘即将迎来百点长阴？大概率。理由很简单:①19号日加息时间临近，必然会有一部分资金提前一二天卖出观望，未来二天抛压加重。",
       "publish_time": "2025-12-15 16:39"
-    },
-    {
-      "post_n": 4,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘大跌，敢抄底否？时机未到，空间未到。理由很简单:①时机应选在12月19号靴子落地之时，或者22号。②空间下方看得见的趋势改变点在3732，这里才是强支撑位。",
-      "publish_time": "2025-12-16 12:51"
     },
     {
       "post_n": 3,
@@ -5096,28 +3038,12 @@
       "publish_time": "2025-12-17 12:37"
     },
     {
-      "post_n": 0,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘将会有跳水的风险？是。理由很简单:①上证指数从分时走势看，盘中向3880发起过四次冲击，四击不过必会大跳水，跌破3872跳水就成定局。",
-      "publish_time": "2025-12-18 12:44"
-    },
-    {
       "post_n": 14,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘又是百点长阴？不能不防？",
       "publish_time": "2025-12-18 16:12"
-    },
-    {
-      "post_n": 13,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘双底已成？短期无忧。",
-      "publish_time": "2025-12-19 12:52"
     },
     {
       "post_n": 12,
@@ -5128,28 +3054,12 @@
       "publish_time": "2025-12-19 16:15"
     },
     {
-      "post_n": 11,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "大盘将剑指4000？大概率。",
-      "publish_time": "2025-12-22 12:53"
-    },
-    {
       "post_n": 10,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘将冲高回落？大概率。",
       "publish_time": "2025-12-22 17:27"
-    },
-    {
-      "post_n": 8,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘将大幅回落？按逻辑是。",
-      "publish_time": "2025-12-23 12:43"
     },
     {
       "post_n": 7,
@@ -5160,28 +3070,12 @@
       "publish_time": "2025-12-23 16:30"
     },
     {
-      "post_n": 6,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "今天大盘将中阳线突破？最迟明天。",
-      "publish_time": "2025-12-24 12:49"
-    },
-    {
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘将继续强势拉升？大概率。",
       "publish_time": "2025-12-24 16:16"
-    },
-    {
-      "post_n": 3,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘走势很危险？值得警惕。",
-      "publish_time": "2025-12-25 13:01"
     },
     {
       "post_n": 2,
@@ -5208,28 +3102,12 @@
       "publish_time": "2025-12-27 14:03"
     },
     {
-      "post_n": 14,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘又要跳水？大概率。……所以，大概率要在上周五高点与低点之间构造一个上涨中继形态。",
-      "publish_time": "2025-12-29 12:41"
-    },
-    {
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘将中阴线杀跌？大概率探底回升，收小阴小阳线。……所以，明天中阴线杀跌概率极低。",
       "publish_time": "2025-12-29 16:23"
-    },
-    {
-      "post_n": 12,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘问题不大，具体视个股走势而定。……所以，大盘今天收在3954之上问题不大。",
-      "publish_time": "2025-12-30 12:54"
     },
     {
       "post_n": 11,
@@ -5248,28 +3126,12 @@
       "publish_time": "2026-01-03 15:08"
     },
     {
-      "post_n": 7,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "大盘将开启5浪上涨？大概率。……表明目前走5浪是大概率。5浪目标在哪里？4250至4350之间，具体需要根据走势而定。",
-      "publish_time": "2026-01-05 12:33"
-    },
-    {
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "medium",
       "evidence": "加速拉升概率大吗？大，理由是，大资金春节前要减仓，而这需要时间与空间，所以，1月中上旬加速拉升拉出空间，然后1月底至2月才可以游刃有余减仓出货。",
       "publish_time": "2026-01-05 16:19"
-    },
-    {
-      "post_n": 5,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "判断:大盘20号之前无风险。",
-      "publish_time": "2026-01-06 12:58"
     },
     {
       "post_n": 4,
@@ -5280,14 +3142,6 @@
       "publish_time": "2026-01-06 16:41"
     },
     {
-      "post_n": 2,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "最迟明天大盘会出一根小阴线。……所以，大盘短期存在收小阴线的大概率。",
-      "publish_time": "2026-01-07 12:48"
-    },
-    {
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
@@ -5296,28 +3150,12 @@
       "publish_time": "2026-01-07 16:28"
     },
     {
-      "post_n": 0,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "明天大概率拉中阳线。……最迟下周一百分之99.99的概率拉中阳线，除非黑天鹅。",
-      "publish_time": "2026-01-08 12:40"
-    },
-    {
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "另外，记住以下这个逻辑就可以知道明天，最迟下周一必须拉一根中阳线:",
       "publish_time": "2026-01-08 16:18"
-    },
-    {
-      "post_n": 13,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "观点:下午大盘只有创盘中新高才是安全信号。",
-      "publish_time": "2026-01-09 12:40"
     },
     {
       "post_n": 12,
@@ -5336,14 +3174,6 @@
       "publish_time": "2026-01-10 13:53"
     },
     {
-      "post_n": 8,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "观点:\n\n①大盘预计时间20号前后，空间4034-3815+4034=4253会见短期顶。",
-      "publish_time": "2026-01-12 12:54"
-    },
-    {
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
@@ -5360,36 +3190,12 @@
       "publish_time": "2026-01-13 12:52"
     },
     {
-      "post_n": 2,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "所以，比昨天更猛烈的回调可能即将来临，注意操作策略。",
-      "publish_time": "2026-01-14 12:55"
-    },
-    {
-      "post_n": 1,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "所以，无论从技术面还是博奕角度而言，明天最差走势是探底回升收小阴小阳，等周五再拉中阳线，乐观走势就是低开高走拉中阳线。",
-      "publish_time": "2026-01-14 16:44"
-    },
-    {
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "所以，明天正常的走势是大盘必须抗跌，且个股不能出现批量跌停，注意查看通达信平均股价指数，一旦平均股价指数跌幅超过百分之2就要谨慎，超过百分之3是万万不可以抄底。",
       "publish_time": "2026-01-14 23:43"
-    },
-    {
-      "post_n": 14,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午大盘将加速探底？大概率探底回升。理由很简单:①大盘很抗跌，表现在美股港股大跌及A股消息面利空的情况下，大盘没有出现恐慌性大跌，这是很强的走势，这意味着在强支撑位一定会有抄底资金。②由于上午是冲高回落持续走弱，15分钟是一个下降三角形，所以，下午应该还有最后一跌，极限在4075附近企稳回升，今天收在4080之下的概率不足百分之1。判断:①由于大盘抗跌，明天大盘收涨概率超过百分之90。",
-      "publish_time": "2026-01-15 12:39"
     },
     {
       "post_n": 13,
@@ -5400,28 +3206,12 @@
       "publish_time": "2026-01-15 16:15"
     },
     {
-      "post_n": 12,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘走势很危险？是。理由很简单:①消息面，结构性降息利好，大盘高开低走，呈现的是负向反应，不怕出利好，就怕出利好价格不涨反跌，这是市场无做多意图的表现。②技术面，强趋势下，回调不应该破10天均线，当价格来到10天均线附近时必须有强烈反应，昨天是一根收在10线之上的小K线，按逻辑今天选择方向，高开低走表明选择向下。",
-      "publish_time": "2026-01-16 12:50"
-    },
-    {
       "post_n": 11,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "下周一大盘将中阴线杀跌？按逻辑是。理由很简单:该涨不涨理应看空。①对消息面利好呈现负反应，看空。②收在10天均线下方，看空。",
       "publish_time": "2026-01-16 16:29"
-    },
-    {
-      "post_n": 5,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘将加速跳水？大概率。理由很简单:①创业板指不跟涨。②港股大跌。判断:①上证今天收在4134之上才可以认为是在走衰竭式创新高。②跌破盘中低点4090目标至少20天均线，突破盘中高点4126，今日才无忧。③无论是先向上做日线次高点，还是直接向下，日线MACD死叉都将不可避免。",
-      "publish_time": "2026-01-19 12:39"
     },
     {
       "post_n": 4,
@@ -5432,28 +3222,12 @@
       "publish_time": "2026-01-19 16:37"
     },
     {
-      "post_n": 3,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘调整结束了？为时尚早。理由很简单:①下午创盘中新高才是强烈的右侧短多信号。②20天均线才是左侧强支撑。创业板指20天均线破了，怎么看？一叶知秋，意味着对大势不要太乐观，对于牛市可以大胆假设，小心求证，但是不要忘记了风险。",
-      "publish_time": "2026-01-20 12:46"
-    },
-    {
       "post_n": 2,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘将企稳反弹？难！理由很简单:①欧美股市开始中阴线杀跌，港股持续走弱，不利于A股做多情绪，因为大部分投资者至少会犹豫:世界发生了什么？一犹豫也就暂时没有了急不可待的做多情绪与信心。②技术面，大盘日线MACD已死叉，而上证指数，包括上证50也尚未跌到重要支撑位，难以吸引左侧抄底资金入场做多。所以，明天大盘大概率继续回调，强支撑在4034至4060之间。",
       "publish_time": "2026-01-20 18:17"
-    },
-    {
-      "post_n": 1,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "下午大盘将跳水收跌？小概率。理由很简单:①上午大盘突破了4119，回落可以看成是回踩4119，下午最多下探4115便会企稳回升。②上证指数小时线MACD已金叉。所以，大盘大概率会有3天至5天的震荡反弹。",
-      "publish_time": "2026-01-21 12:48"
     },
     {
       "post_n": 0,
@@ -5464,28 +3238,12 @@
       "publish_time": "2026-01-21 16:31"
     },
     {
-      "post_n": 14,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午大概率加速跳水，最迟明天。",
-      "publish_time": "2026-01-22 12:41"
-    },
-    {
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "从左侧交易来看，由于大盘下午探底回升，短期技术面确实有转危为安的迹象，但是需要明天的走势确认。",
       "publish_time": "2026-01-22 17:39"
-    },
-    {
-      "post_n": 12,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘衰竭式上涨进入尾声？提防大阴线杀跌。",
-      "publish_time": "2026-01-23 12:59"
     },
     {
       "post_n": 11,
@@ -5512,14 +3270,6 @@
       "publish_time": "2026-01-26 12:37"
     },
     {
-      "post_n": 4,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "至少，今天破位收中阴线已是小概率。",
-      "publish_time": "2026-01-27 12:32"
-    },
-    {
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
@@ -5528,28 +3278,12 @@
       "publish_time": "2026-01-27 16:22"
     },
     {
-      "post_n": 1,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "至少，今天、明天大盘不会中阴线破位杀跌。",
-      "publish_time": "2026-01-28 12:51"
-    },
-    {
       "post_n": 0,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "所以，反弹趋势还在，扛住了三天的抛压，明天理应看涨。",
       "publish_time": "2026-01-28 16:44"
-    },
-    {
-      "post_n": 14,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘即将迎来中阴线杀跌？大概率。",
-      "publish_time": "2026-01-29 12:46"
     },
     {
       "post_n": 13,
@@ -5568,28 +3302,12 @@
       "publish_time": "2026-01-30 16:13"
     },
     {
-      "post_n": 9,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘已经有效跌破20天均线，目标至少60天均线，往下还有空间。",
-      "publish_time": "2026-02-02 13:38"
-    },
-    {
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "所以，明天如果低开，则百分之90概率反弹收阳线，高开则需提防低走收阴线，但最迟，周三会收涨。",
       "publish_time": "2026-02-02 17:22"
-    },
-    {
-      "post_n": 7,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "判断:明天或者后天最多还有最后一跌，便会开始震荡反弹，节后再选择方向。",
-      "publish_time": "2026-02-03 13:31"
     },
     {
       "post_n": 6,
@@ -5606,14 +3324,6 @@
       "time_horizon": "short",
       "evidence": "判断:①最弱指数明天如果继续收跌，那么有百分之50的概率去2900，明天如果跌破3180，有百分之95的概率去2900。",
       "publish_time": "2026-02-04 12:47"
-    },
-    {
-      "post_n": 3,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "所以，大盘下午按逻辑有进一步大跌的可能。",
-      "publish_time": "2026-02-05 12:49"
     },
     {
       "post_n": 2,
@@ -5640,28 +3350,12 @@
       "publish_time": "2026-02-07 17:36"
     },
     {
-      "post_n": 13,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘将加速回落？按逻辑是。",
-      "publish_time": "2026-02-09 12:45"
-    },
-    {
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘应该继续向上拓展空展。",
       "publish_time": "2026-02-09 16:50"
-    },
-    {
-      "post_n": 11,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "大盘有回探昨天下午低点的大概率。",
-      "publish_time": "2026-02-10 13:41"
     },
     {
       "post_n": 10,
@@ -5680,14 +3374,6 @@
       "publish_time": "2026-02-12 16:33"
     },
     {
-      "post_n": 6,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大概率会加速下跌，收中阴线。",
-      "publish_time": "2026-02-13 13:20"
-    },
-    {
       "post_n": 5,
       "direction": "bearish",
       "strength": "moderate",
@@ -5704,14 +3390,6 @@
       "publish_time": "2026-02-20 11:25"
     },
     {
-      "post_n": 2,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "今天顶多是一个日内无忧的走势。",
-      "publish_time": "2026-02-24 13:00"
-    },
-    {
       "post_n": 1,
       "direction": "bullish",
       "strength": "strong",
@@ -5726,14 +3404,6 @@
       "time_horizon": "short",
       "evidence": "未来1至3天，上证不破上午低点4127，可以安心做个股。",
       "publish_time": "2026-02-26 13:12"
-    },
-    {
-      "post_n": 14,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘将加速跳水？大概率。",
-      "publish_time": "2026-02-27 12:49"
     },
     {
       "post_n": 13,
@@ -5760,14 +3430,6 @@
       "publish_time": "2026-03-02 16:18"
     },
     {
-      "post_n": 8,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "明天大盘将继续大阴线杀跌？按逻辑明天是左侧逃顶的最后一天。",
-      "publish_time": "2026-03-03 16:13"
-    },
-    {
       "post_n": 7,
       "direction": "bearish",
       "strength": "moderate",
@@ -5784,28 +3446,12 @@
       "publish_time": "2026-03-04 16:44"
     },
     {
-      "post_n": 4,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "一根阳线改变信仰，大盘将重拾升势？左侧而言可以这么去期待。",
-      "publish_time": "2026-03-05 12:30"
-    },
-    {
       "post_n": 3,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘将继续中阴线杀跌？按逻辑，最迟后天，大盘所有指数必须创新低。",
       "publish_time": "2026-03-05 16:09"
-    },
-    {
-      "post_n": 2,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "大盘调整结束，将重拾升势突破4200？左侧发出积极信号，右侧信号还没有出现。",
-      "publish_time": "2026-03-06 13:02"
     },
     {
       "post_n": 1,
@@ -5824,28 +3470,12 @@
       "publish_time": "2026-03-07 13:11"
     },
     {
-      "post_n": 13,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "所以，除非大盘下午猛烈跳水，收大阴线，否则，最快明天就应该会出右侧做多信号。",
-      "publish_time": "2026-03-09 12:55"
-    },
-    {
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "所以，基于以上两个常识，由于大盘持续抗跌，外加利空出尽(原油暴涨、伊新领导人产生)，按逻辑，明天大盘理应开启猛烈的上涨。",
       "publish_time": "2026-03-09 16:14"
-    },
-    {
-      "post_n": 11,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "根据规则，大盘发出了右侧做多信号。",
-      "publish_time": "2026-03-10 12:29"
     },
     {
       "post_n": 10,
@@ -5856,28 +3486,12 @@
       "publish_time": "2026-03-10 16:04"
     },
     {
-      "post_n": 9,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "所以，大盘今日无忧，明日如无大阴线杀跌，则周五将选择向上突破。",
-      "publish_time": "2026-03-11 12:52"
-    },
-    {
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "短期无忧，明天不收大阴线，周五将向上突破。",
       "publish_time": "2026-03-11 16:25"
-    },
-    {
-      "post_n": 6,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "如果下午先反弹然后再创盘中新低，可以视为有效跌破，那就应该视为反弹结束。",
-      "publish_time": "2026-03-12 12:45"
     },
     {
       "post_n": 5,
@@ -5904,28 +3518,12 @@
       "publish_time": "2026-03-14 12:46"
     },
     {
-      "post_n": 2,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "所以，依然可以把每一次右侧信号当作向上反转做多的信号。",
-      "publish_time": "2026-03-16 12:53"
-    },
-    {
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天上证指数强于3月10号走势才是积极信号。",
       "publish_time": "2026-03-16 18:24"
-    },
-    {
-      "post_n": 0,
-      "direction": "bearish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "大盘已经发出强烈的离场观望信号。判断:大盘横盘震荡已进入尾声，破位大跌即将来临。如果这个判断正确，今天明天上证指数收盘不能收在4110之上，三天之內应该大阴线杀跌。",
-      "publish_time": "2026-03-17 12:30"
     },
     {
       "post_n": 14,
@@ -5944,28 +3542,12 @@
       "publish_time": "2026-03-18 16:49"
     },
     {
-      "post_n": 11,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘抗跌，抄底？不能。……所以，目前行情观望等右侧信号才是上策。",
-      "publish_time": "2026-03-19 12:58"
-    },
-    {
       "post_n": 10,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘还有更猛烈的大阴线杀跌？按逻辑是。……所以，基于反弹需要足够的空间及流畅的大跌才能杀出恐慌盘这个逻辑，明天大盘理应继续大阴线杀跌。",
       "publish_time": "2026-03-19 16:23"
-    },
-    {
-      "post_n": 9,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午，创业板指将带领上证指数强势反转？需要眼见为实。……下午有希望反转向上吗？上证创盘中新高，则今日无忧，但右侧预计要下周一，下周一上证突破4045便会开始3天左右的震荡反弹。",
-      "publish_time": "2026-03-20 12:45"
     },
     {
       "post_n": 8,
@@ -5984,36 +3566,12 @@
       "publish_time": "2026-03-21 13:25"
     },
     {
-      "post_n": 6,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘大跌，下午抄底？再等等，提防下午创业板指加速跳水。……所以，再等等，等上证到3800再抄底不迟。",
-      "publish_time": "2026-03-23 12:53"
-    },
-    {
-      "post_n": 4,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "明天大盘将暴力反弹？大概率。……所以，判断最迟周三大盘会有暴力反弹。",
-      "publish_time": "2026-03-23 16:22"
-    },
-    {
       "post_n": 2,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘高开高走，要不要追买？不能，最好等右侧。……正常情况下明天反弹，后天会下跌，再后天上涨才会有15分钟底部结构。",
       "publish_time": "2026-03-23 20:57"
-    },
-    {
-      "post_n": 1,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘走势不乐观？是。……所以，大盘短期走势并不乐观，等右侧信号为宜。",
-      "publish_time": "2026-03-24 12:35"
     },
     {
       "post_n": 0,
@@ -6024,28 +3582,12 @@
       "publish_time": "2026-03-24 16:48"
     },
     {
-      "post_n": 14,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "①今天上涨是真实的上涨，即大盘涨个股普涨是市场合力的结果，且上涨幅度较大、持续时间较长，所以，下午即便回落，收涨无忧。",
-      "publish_time": "2026-03-25 13:05"
-    },
-    {
       "post_n": 13,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "所以，正常情况下，明天大盘理应中阴线杀跌。",
       "publish_time": "2026-03-25 16:26"
-    },
-    {
-      "post_n": 12,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "所以，按逻辑回补下方缺口是大概率。",
-      "publish_time": "2026-03-26 12:57"
     },
     {
       "post_n": 11,
@@ -6056,28 +3598,12 @@
       "publish_time": "2026-03-26 16:07"
     },
     {
-      "post_n": 10,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "所以，按逻辑下午大盘应该向上加速拉升。",
-      "publish_time": "2026-03-27 12:52"
-    },
-    {
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "①上证指数15分钟周期已经发出右侧做多信号，按逻辑应该会有三天左右的日线震荡反弹，最迟下周二将回补上方缺口3955。",
       "publish_time": "2026-03-27 16:29"
-    },
-    {
-      "post_n": 8,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "按逻辑下周A股大幅低开无悬念。",
-      "publish_time": "2026-03-28 11:33"
     },
     {
       "post_n": 7,
@@ -6088,36 +3614,12 @@
       "publish_time": "2026-03-28 16:52"
     },
     {
-      "post_n": 5,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "所以，按逻辑下午大盘有进一步回升的大概率，最迟周二应该回补上方缺口。",
-      "publish_time": "2026-03-30 12:45"
-    },
-    {
       "post_n": 4,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "预计最迟周三会回落收跌，明天收在3957之上是小概率。",
       "publish_time": "2026-03-30 17:39"
-    },
-    {
-      "post_n": 2,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "①技术面创业板指在15分钟在下降通道上轨附近开启不涨反跌，那么目标就是指向3100，撑不住则至少2900。",
-      "publish_time": "2026-03-31 12:34"
-    },
-    {
-      "post_n": 1,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "所以，按逻辑，明天大盘理应继续中阴线杀跌。",
-      "publish_time": "2026-03-31 16:10"
     },
     {
       "post_n": 0,
@@ -6128,36 +3630,12 @@
       "publish_time": "2026-03-31 23:59"
     },
     {
-      "post_n": 14,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘涨势如虹，下午跑步进场？提防下午大盘大幅回落。理由很简单: ①市场并未发出右侧做多信号，最抗跌指数创业板指并未突破15分钟下降趋势线。②原油并未大幅回落跌破20天均线。③美股期指白天并未继续强势大涨。所以，下午跑步进场风险大，下午或者明天大盘有大幅回撤的风险。",
-      "publish_time": "2026-04-01 12:38"
-    },
-    {
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘将选择方向？大概率选择向上。理由很简单: ①上证指数明天只需突破今日K线高点就会在15分钟周期形成突破回踩再突破的经典做多形态，目标3937-3852+3937=4022，或者下降趋势线。②创业板指收在15分钟下降趋势线附近，频繁靠近下降趋势线是突破的前兆。③原油下午已大幅回落，离20天均线94一步之遥，市场开始选择相信战争结束。",
       "publish_time": "2026-04-01 16:30"
-    },
-    {
-      "post_n": 11,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘将加速跳水？按逻辑是。理由很简单: ①创业板指该涨不涨反而大跌，日k线形态已呈现向下加速下跌的k线组合，是强烈的看空信号。②上证指数已经跌破昨天K线低点，在15分钟已构筑小双顶，下午只有突破昨天K线高点才是重新看多做多信号。③原油并未跌破20天均线，已重新选择向上，一旦突破107，预计会重新给股市造成恐慌。所以，按逻辑下午大盘可能加速跳水。",
-      "publish_time": "2026-04-02 13:00"
-    },
-    {
-      "post_n": 10,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "明天大盘还有更猛烈的杀跌？按逻辑是。理由很简单: ①深证成指与创业板指参照上证指数跌幅，还远没有跌到位，既然抗跌之后的反弹无法大涨，那就必然会破位补跌。②原油已重拾升势，夜盘如若站上110，势必助推股市恐慌情绪，因为原油的悲观预期是150、180，而到了150、180又会产生金融危机的预期，所以，没有人愿意继续去赌这个不确定的预期，多杀多难免，直至杀到足够低的位置为止。",
-      "publish_time": "2026-04-02 16:03"
     },
     {
       "post_n": 8,
@@ -6168,28 +3646,12 @@
       "publish_time": "2026-04-02 21:44"
     },
     {
-      "post_n": 7,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘反复诱多？应该是。理由很简单: 高开可以低走，但是必须在1小时內创盘中新高，而不是不断创盘中新低，创业板指下午如创盘中新低，那么就可以确定今天大盘所有指数属于诱多走势。诱多有什么后果？不怕真跌，就怕假涨，诱多之后，下一交易日大概率会有一根中阴线杀跌。",
-      "publish_time": "2026-04-03 12:48"
-    },
-    {
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "medium",
       "evidence": "下周大盘将迎来报复性反弹。先抑后扬概率大。理由很简单: ①如无意外，下周原油将冲上130、150，再往上冲纯数字游戏，意义已不大，属于利空出尽。②下周初，深证成指与创业板指将补跌至重要支撑位，预计会有反弹。③上证指数可以创新低，也可以不创新低，创新低2小时MACD底背离，左侧做多信号。所以，下周大概率迎来报复性反弹行情。",
       "publish_time": "2026-04-03 16:19"
-    },
-    {
-      "post_n": 5,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘抗跌，左侧做多信号？并不乐观。理由很简单: ①创业板指权重宁德时代及易中天，日线MACD刚刚死叉或者即将死叉，调整概率大，创业板指破位中阴线杀跌难免。②上证指数盘中未突破3905，之后又跌破3891，是继续调整的信号。",
-      "publish_time": "2026-04-07 12:31"
     },
     {
       "post_n": 4,
@@ -6200,28 +3662,12 @@
       "publish_time": "2026-04-07 16:24"
     },
     {
-      "post_n": 3,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "大盘将创新高，开启5浪上涨？先看B浪反弹。理由很简单: 一天的大涨看不出强度的持续性，一般需要看三天，比方说明天小阴小阳，后天再拉中阳线，那么就大概率就会走5浪创新高，取决于速度及持续性。",
-      "publish_time": "2026-04-08 12:55"
-    },
-    {
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "medium",
       "evidence": "大盘B浪反弹目标4116？按逻辑是。理由很简单: 上证目标3955-3794+3955=4116或者至少3955-3852+3955=4058。",
       "publish_time": "2026-04-08 16:35"
-    },
-    {
-      "post_n": 1,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘走势无忧，积极追涨杀跌？可以。理由很简单: ①今日大盘属于正常调整，而且属于强势调整，预计最快明天最迟后天必然创昨日新高。",
-      "publish_time": "2026-04-09 12:46"
     },
     {
       "post_n": 0,
@@ -6248,28 +3694,12 @@
       "publish_time": "2026-04-11 16:01"
     },
     {
-      "post_n": 11,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "预计最快今天下午、最迟明天下午会重拾升势。",
-      "publish_time": "2026-04-13 13:03"
-    },
-    {
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘将中阳线拉升？最迟后天。",
       "publish_time": "2026-04-13 16:19"
-    },
-    {
-      "post_n": 9,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "如果下午上证指数没有大幅拉升，则明天大概率会回补，缺口越小越容易回补。",
-      "publish_time": "2026-04-14 12:45"
     },
     {
       "post_n": 8,
@@ -6280,28 +3710,12 @@
       "publish_time": "2026-04-14 16:20"
     },
     {
-      "post_n": 7,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "预计大盘将有两天的调整？是。",
-      "publish_time": "2026-04-15 12:35"
-    },
-    {
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘将探底回升收阳线？大概率。",
       "publish_time": "2026-04-15 16:42"
-    },
-    {
-      "post_n": 5,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘将回落？按逻辑是。",
-      "publish_time": "2026-04-16 12:37"
     },
     {
       "post_n": 4,
@@ -6312,28 +3726,12 @@
       "publish_time": "2026-04-16 16:17"
     },
     {
-      "post_n": 3,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "预计下午大盘会有一波跳水。",
-      "publish_time": "2026-04-17 12:59"
-    },
-    {
       "post_n": 2,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "提防下周一高开低走收中阴线。",
       "publish_time": "2026-04-17 16:18"
-    },
-    {
-      "post_n": 1,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘还将加速拉升？按逻辑是。",
-      "publish_time": "2026-04-20 12:55"
     },
     {
       "post_n": 0,
@@ -6344,14 +3742,6 @@
       "publish_time": "2026-04-20 16:46"
     },
     {
-      "post_n": 14,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘将失守5日线？按逻辑是。",
-      "publish_time": "2026-04-21 12:51"
-    },
-    {
       "post_n": 13,
       "direction": "bearish",
       "strength": "moderate",
@@ -6360,28 +3750,12 @@
       "publish_time": "2026-04-21 16:07"
     },
     {
-      "post_n": 12,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘将加速拉升？提防冲高回落。",
-      "publish_time": "2026-04-22 13:02"
-    },
-    {
       "post_n": 11,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "所以，明天上证指数很关键，如果加速，则4197必破。",
       "publish_time": "2026-04-22 16:41"
-    },
-    {
-      "post_n": 10,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘将探底回升？意义不大，逃命机会。",
-      "publish_time": "2026-04-23 12:49"
     },
     {
       "post_n": 9,
@@ -6400,14 +3774,6 @@
       "publish_time": "2026-04-24 16:17"
     },
     {
-      "post_n": 6,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午如能创盘中新高，则明天大概率会向上走衰竭式创新高走势。",
-      "publish_time": "2026-04-27 12:41"
-    },
-    {
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
@@ -6416,28 +3782,12 @@
       "publish_time": "2026-04-27 16:13"
     },
     {
-      "post_n": 4,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘将强势拉升站上5日均线？小概率。",
-      "publish_time": "2026-04-28 12:40"
-    },
-    {
       "post_n": 3,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘将收涨？按逻辑是。",
       "publish_time": "2026-04-28 16:19"
-    },
-    {
-      "post_n": 2,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "大盘将创新高？大概率。",
-      "publish_time": "2026-04-29 12:54"
     },
     {
       "post_n": 1,
@@ -6464,14 +3814,6 @@
       "publish_time": "2026-05-05 13:34"
     },
     {
-      "post_n": 13,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "大盘加速拉升已成定局？大概率，条件是下午不能大幅回落。",
-      "publish_time": "2026-05-06 12:47"
-    },
-    {
       "post_n": 12,
       "direction": "bearish",
       "strength": "moderate",
@@ -6486,14 +3828,6 @@
       "time_horizon": "short",
       "evidence": "明天大盘将冲高回落？有可能，但无见顶之忧。",
       "publish_time": "2026-05-07 16:24"
-    },
-    {
-      "post_n": 10,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "今天大盘将收中阴线？小概率。",
-      "publish_time": "2026-05-08 12:33"
     },
     {
       "post_n": 9,
@@ -6512,28 +3846,12 @@
       "publish_time": "2026-05-09 20:01"
     },
     {
-      "post_n": 7,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "今日无忧，风险在明天。",
-      "publish_time": "2026-05-11 12:39"
-    },
-    {
       "post_n": 6,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘将继续放量拉中阳线？按逻辑是。",
       "publish_time": "2026-05-11 16:03"
-    },
-    {
-      "post_n": 5,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "今天是大盘最后上车机会？是，上车喝汤的最后机会。",
-      "publish_time": "2026-05-12 12:53"
     },
     {
       "post_n": 4,
@@ -6544,28 +3862,12 @@
       "publish_time": "2026-05-12 16:01"
     },
     {
-      "post_n": 3,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午大盘将加速拉升？按逻辑是。",
-      "publish_time": "2026-05-13 12:35"
-    },
-    {
       "post_n": 2,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘将冲高回落？按逻辑是。",
       "publish_time": "2026-05-13 16:21"
-    },
-    {
-      "post_n": 1,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘原有的上升节奏已被打乱，是调整信号。",
-      "publish_time": "2026-05-14 12:46"
     },
     {
       "post_n": 0,
@@ -6576,14 +3878,6 @@
       "publish_time": "2026-05-14 16:26"
     },
     {
-      "post_n": 14,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "所以，判断20天均线附近会有三天左右的震荡反弹。",
-      "publish_time": "2026-05-15 12:32"
-    },
-    {
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
@@ -6592,36 +3886,12 @@
       "publish_time": "2026-05-15 16:01"
     },
     {
-      "post_n": 11,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘将暴跌？不能不防。理由很简单:港股连续三天暴跌，A股技术面短期走坏未超跌的情况下如此抗跌，值得怀疑。所以不能不防大盘特别是创业板指再出一根大阴线。",
-      "publish_time": "2026-05-18 12:31"
-    },
-    {
-      "post_n": 10,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "所以，判断明天大盘至少会有一个弱反弹阳线。",
-      "publish_time": "2026-05-18 16:02"
-    },
-    {
       "post_n": 8,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "long",
       "evidence": "所以，判断：无论从技术面还是宏观面分析，当下A股经历短暂的技术面调整之后，2026年下半年应该会继续大涨，有上摸5178的大概率。",
       "publish_time": "2026-05-18 19:27"
-    },
-    {
-      "post_n": 7,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "判断:这里应该是下跌中继，预计明天还会震荡一天，后天将选择方向，大概率还会出一根大阴线才会出有力度的反弹。",
-      "publish_time": "2026-05-19 12:48"
     },
     {
       "post_n": 6,
@@ -6640,28 +3910,12 @@
       "publish_time": "2026-05-20 16:19"
     },
     {
-      "post_n": 3,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘将加速跳水，收破坏性大阴线？不能不防。",
-      "publish_time": "2026-05-21 12:49"
-    },
-    {
       "post_n": 2,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘将继续大阴线杀跌？按逻辑是。理由很简单:①上午大盘诱多，早盘追涨被套的人明天会砍仓形成抛压。②今天这根K线走势恶劣，4080已被跌破，深幅回调意图明显，融资盘将减仓，场外资金将观望，多头孤立无援。③60天均线太近，预计明天撑不住，下方超强支撑在2024年9月份以来的上升趋势线3940附近，预计这里才会有多头资金左侧进场抄底。",
       "publish_time": "2026-05-21 16:35"
-    },
-    {
-      "post_n": 1,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "结论:越抗跌越意味着牛市还在。",
-      "publish_time": "2026-05-22 12:49"
     },
     {
       "post_n": 0,
@@ -6672,28 +3926,12 @@
       "publish_time": "2026-05-22 16:41"
     },
     {
-      "post_n": 14,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "大盘调整结束？下午大盘创盘中新高可视为强烈的调整结束信号。理由很简单:①上证指数已触发15分钟周期右侧做多信号，下午如能创盘中新高将是右侧做多确认信号。②创业板指盘中已突破两根阴线下降趋势线，下午如能创盘中新高可视为有效突破。",
-      "publish_time": "2026-05-25 12:45"
-    },
-    {
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "medium",
       "evidence": "大盘将开启新一轮大涨？按逻辑是。理由很简单:①创业板指已经突破21号大阴线的高点，基本确定这个日线MACD死叉可能导致深幅回调的预期已经不存在，剩下的走势就是只有新一轮大涨或者衰竭式创新高。②上证指数周线日线MACD死叉共振都无法形成流畅的大跌，表明做空动能已经耗尽，周线MACD将金叉。判断:由于上证指数周线MACD本周将金叉，存在开启大5浪上涨的预期，所以，衰竭式创新高然后见顶的概率偏小，而新一轮大涨概率偏大。",
       "publish_time": "2026-05-25 16:11"
-    },
-    {
-      "post_n": 12,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘将加速跳水？不能不防。理由很简单:①上证指数15分钟周期再次走坏，有二次探底之忧。②科创50昨天高位大阳线，今天又中阴线杀跌，15分钟周期有做双顶之忧。③创业板指尽管跌幅较小，但是盘中已跌破早盘低点3986，下午如果再创盘中新低就是日内下降趋势，有加速跳水之忧。④港股大涨，A50大涨，但A股未能延续昨日强势走势，且今天的调整已超出强势调整的范畴，属于该强不强的弱势走势。所以，判断大盘调整还没有结束，需再次等待右侧做多信号。",
-      "publish_time": "2026-05-26 12:59"
     },
     {
       "post_n": 11,
@@ -6704,28 +3942,12 @@
       "publish_time": "2026-05-26 16:01"
     },
     {
-      "post_n": 10,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "大盘C浪走完5个子浪才会见底？大概率。逻辑推演如下:①上证弱，创业板走衰竭式创新高然后大跌已成定局，即创业板指至少再去一次3800构筑一个中继型双底，或者走abc跌破3800。②由于创业板指下跌可能才刚刚开始，意味着上证也不大可能立马反转向上，即在前低4067构造小双底概率小，大概率目前是C3浪下跌会破4067，之后C4反弹，之后C5创不创新低都将迎来反转。",
-      "publish_time": "2026-05-27 12:47"
-    },
-    {
       "post_n": 9,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘将继续中阴线杀跌？冲高回落、最迟后天大阴线杀跌。理由很简单:①创业板指15分钟没有顶部结构，参考科创50指数，创业板指明天上午有向上折返做双顶的可能。②上证指数日线4080依然是重要位置，存在反复可能。③已经连续二天超四干只个股下跌，这种情况并不多见，明天上午大部分个股冲高收涨是大概率。所以，判断明天大盘先扬后抑概率大，最快明天，最迟后天，应该还会大阴线杀跌。",
       "publish_time": "2026-05-27 16:22"
-    },
-    {
-      "post_n": 8,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘探底成功？今日已无忧，风险在明天。理由很简单:①上证5分钟结构小楔形反转突破4086，创业板指探底回升创日內新高，大盘各指数走势都是探底回升结构，表明今天应无创新低之忧。②上证右侧信号并未出现，创业板指也未再次突破前高4090，暂时理解为向上的折返走势，预计明天才会变盘。明天向上拉中阳线会怎样？明天上证收在4110之上，创业板指创新高可视为调整结束。",
-      "publish_time": "2026-05-28 12:47"
     },
     {
       "post_n": 7,
@@ -6736,28 +3958,12 @@
       "publish_time": "2026-05-28 16:24"
     },
     {
-      "post_n": 6,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘将加速跳水？按逻辑是。理由很简单:①创业板指昨天收盘突破了4090，如果是假突破，今天就应该大阴线杀跌，跌破昨天K线低点。②上证指数今天并没有突破4113发出做多的右侧信号，表明昨天的日内反转做多动能并不强，表明依然在C3浪调整趋势中。",
-      "publish_time": "2026-05-29 12:31"
-    },
-    {
       "post_n": 5,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "medium",
       "evidence": "下周一大盘将继续大跌？按逻辑是。理由很简单:①上证指数C3浪目标是通道下轨4010附近，目前并未到位。②创业板指今天没有跌破昨天低点3971，下周一必须跌破才能确立调整趋势。所以，按逻辑下周一大盘应该继续大跌。",
       "publish_time": "2026-05-29 16:00"
-    },
-    {
-      "post_n": 4,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午大盘还将猛烈下跌？今天小概率，大概率在明天。理由很简单:①港股大涨，A股近四干只个股上涨，意味着今日市场恐慌情绪不够，所以，下午继续大跌小概率。②大盘没有调整到位，上证没到15分钟通道下轨，创业板指才刚刚开启回调，所以，明天还有出中阴线的大概率。",
-      "publish_time": "2026-06-01 12:43"
     },
     {
       "post_n": 3,
@@ -6768,28 +3974,12 @@
       "publish_time": "2026-06-01 17:11"
     },
     {
-      "post_n": 2,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘将猛烈跳水？按逻辑是。理由很简单:①上午创业板指大涨应该受恒生科技指数大涨的影响，及技术面有向上做次高点以便构造一个斜率稍缓的下降通道，上午反弹基本到位，下午猛烈跳水概率大。②上证指数跟随式上反弹，力度太弱，表明没有调整到位，c3目标3990至4000。由于港股上午已经开始回落，及美股期指较大幅度下跌，预计A股大盘下午可能有猛烈跳水，最迟明天应该会中阴线杀跌。",
-      "publish_time": "2026-06-02 12:43"
-    },
-    {
       "post_n": 1,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘将阴包阳大阴线杀跌？按逻辑是。理由很简单:①上证尽管探底回升，但力度不够，没有收在4090之上，依然处在短期调整趋势之中。②创业板指没有收在4090之上，表明5月28号的突破视为假突破依然有效。由于大盘今天的反弹已来到重要位置，所以，按逻辑如果大盘继续回调的意图还在，那么，明天就应该大阴线杀跌。",
       "publish_time": "2026-06-02 16:02"
-    },
-    {
-      "post_n": 0,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "大盘将开启新一轮暴涨？按逻辑是。理由很简单:①创业板指突破了4090且再次创新高，构造了一个中继型小双底，按逻辑目标至少是4090-3808+4090=4372。②上证指数突破昨天k线高点，也突破了调整以来的下降趋势线，是调整结束的右侧信号，周线MACD金叉是大概率，大5浪上涨可以期待。",
-      "publish_time": "2026-06-03 12:42"
     },
     {
       "post_n": 14,
@@ -6800,28 +3990,12 @@
       "publish_time": "2026-06-03 16:12"
     },
     {
-      "post_n": 13,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘将加速跳水？按逻辑是。理由很简单:①如果昨天冲高回落是洗盘，那么今天低开后就应该迅速高走收涨，没有这样走表明判定昨天为诱多依然有效，图穷匕现后理应大阴线杀跌。",
-      "publish_time": "2026-06-04 12:38"
-    },
-    {
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "所以，由于大盘抗跌，下午没有猛烈跳水，不构成强烈的看空信号，明天多头中阳线反击概率大。",
       "publish_time": "2026-06-04 16:08"
-    },
-    {
-      "post_n": 11,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "所以，大盘调整应该没有结束，除非下午大幅拉升收中阳线，否则下周一大概率又是中阴线杀跌。",
-      "publish_time": "2026-06-05 12:40"
     },
     {
       "post_n": 10,
@@ -6864,14 +4038,6 @@
       "publish_time": "2026-06-10 16:33"
     },
     {
-      "post_n": 3,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "所以，预判大盘下午探底回升、明天冲高回落概率大，不是短线高手，以右侧信号为佳。",
-      "publish_time": "2026-06-11 12:59"
-    },
-    {
       "post_n": 2,
       "direction": "bullish",
       "strength": "moderate",
@@ -6888,28 +4054,12 @@
       "publish_time": "2026-06-12 16:31"
     },
     {
-      "post_n": 14,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "medium",
-      "evidence": "大盘发出强烈的做多信号？是。",
-      "publish_time": "2026-06-15 12:30"
-    },
-    {
       "post_n": 13,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天是A股满仓做多的最后机会？按逻辑是。",
       "publish_time": "2026-06-15 16:01"
-    },
-    {
-      "post_n": 12,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "策略: 只要大盘不破20天均线就看多做多。",
-      "publish_time": "2026-06-16 12:57"
     },
     {
       "post_n": 11,
@@ -6920,28 +4070,12 @@
       "publish_time": "2026-06-16 16:29"
     },
     {
-      "post_n": 10,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午大盘将大幅跳水？小概率。",
-      "publish_time": "2026-06-17 13:05"
-    },
-    {
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘将继续强势拉升？按逻辑是。",
       "publish_time": "2026-06-17 16:22"
-    },
-    {
-      "post_n": 8,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘走势很危险？值得担忧。",
-      "publish_time": "2026-06-18 12:46"
     },
     {
       "post_n": 7,
@@ -6952,28 +4086,12 @@
       "publish_time": "2026-06-18 16:04"
     },
     {
-      "post_n": 6,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘将加速拉升？按逻辑是。",
-      "publish_time": "2026-06-22 12:41"
-    },
-    {
       "post_n": 5,
       "direction": "bullish",
       "strength": "strong",
       "time_horizon": "medium",
       "evidence": "今天是强烈的、日线级别的加杠杆做多的右侧机会，目标至少前高4258，后知后觉资金明天会跑步进场，从而进一步推升大盘拉大阳线。",
       "publish_time": "2026-06-22 16:08"
-    },
-    {
-      "post_n": 4,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "探底回升概率大。",
-      "publish_time": "2026-06-23 12:49"
     },
     {
       "post_n": 3,
@@ -6984,28 +4102,12 @@
       "publish_time": "2026-06-23 17:11"
     },
     {
-      "post_n": 2,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "所以，判断短期探底成功，下午有大幅回升或者明天继续收涨的可能。",
-      "publish_time": "2026-06-24 12:56"
-    },
-    {
       "post_n": 1,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘又是中阴线杀跌？按逻辑最迟周五会再出一根中阴线。",
       "publish_time": "2026-06-24 16:13"
-    },
-    {
-      "post_n": 0,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "所以，大盘重拾升势创新高概率大。",
-      "publish_time": "2026-06-25 12:33"
     },
     {
       "post_n": 14,
@@ -7016,28 +4118,12 @@
       "publish_time": "2026-06-25 16:31"
     },
     {
-      "post_n": 13,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "现在说再见为时尚早，但如果下周一不能止跌反弹，那么即便有行情预计也要等中报批露差不多后才有可能重拾升势。",
-      "publish_time": "2026-06-26 12:57"
-    },
-    {
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "所以，判断下周一收涨概率大，但只有阳包阴才有意义。",
       "publish_time": "2026-06-26 17:10"
-    },
-    {
-      "post_n": 10,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘将加速拉升？小概率。",
-      "publish_time": "2026-06-29 12:57"
     },
     {
       "post_n": 9,
@@ -7048,28 +4134,12 @@
       "publish_time": "2026-06-29 16:05"
     },
     {
-      "post_n": 8,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘将冲高回落？大概率，但今日无忧。",
-      "publish_time": "2026-06-30 12:48"
-    },
-    {
       "post_n": 7,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘将继续大涨？按逻辑是。",
       "publish_time": "2026-06-30 16:05"
-    },
-    {
-      "post_n": 5,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "今日无忧。",
-      "publish_time": "2026-07-01 12:41"
     },
     {
       "post_n": 4,
@@ -7080,28 +4150,12 @@
       "publish_time": "2026-07-01 17:13"
     },
     {
-      "post_n": 2,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "所以，抄底时机未到，让子弹飞一会儿。",
-      "publish_time": "2026-07-02 12:43"
-    },
-    {
       "post_n": 1,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "基本确定调整不会很快结束，应该至少等中报披露差不多或者持续暴跌至重要支撑位时才有可能反弹。",
       "publish_time": "2026-07-02 16:24"
-    },
-    {
-      "post_n": 0,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "调整并未结束。",
-      "publish_time": "2026-07-03 12:57"
     },
     {
       "post_n": 14,
@@ -7120,14 +4174,6 @@
       "publish_time": "2026-07-06 16:11"
     },
     {
-      "post_n": 10,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘还有更猛烈的跳水？按逻辑是。",
-      "publish_time": "2026-07-07 12:40"
-    },
-    {
       "post_n": 9,
       "direction": "bullish",
       "strength": "moderate",
@@ -7136,28 +4182,12 @@
       "publish_time": "2026-07-07 16:21"
     },
     {
-      "post_n": 8,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "大盘猛烈的反弹开启了？今日无忧，已发出积极信号。",
-      "publish_time": "2026-07-08 12:57"
-    },
-    {
       "post_n": 7,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘又是大阴线杀跌？按逻辑是。",
       "publish_time": "2026-07-08 16:09"
-    },
-    {
-      "post_n": 6,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘又要加速跳水？按逻辑是。",
-      "publish_time": "2026-07-09 12:32"
     },
     {
       "post_n": 5,
@@ -7176,28 +4206,12 @@
       "publish_time": "2026-07-10 12:52"
     },
     {
-      "post_n": 2,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘将止跌反弹？不反弹会更好。",
-      "publish_time": "2026-07-13 12:53"
-    },
-    {
       "post_n": 1,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘将迎来猛烈反弹？按逻辑最快明天，最迟后天。",
       "publish_time": "2026-07-13 16:28"
-    },
-    {
-      "post_n": 0,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘将迎来猛烈上涨？按逻辑是。",
-      "publish_time": "2026-07-14 12:44"
     },
     {
       "post_n": 14,
@@ -7208,28 +4222,12 @@
       "publish_time": "2026-07-14 16:27"
     },
     {
-      "post_n": 13,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘还有更猛烈跳水？小概率。理由很简单: ①外围市场大涨，A股涨多跌少，无恐慌情绪。②深证及创业板指已回到5分钟周期强支撑，按逻辑今天已经调整到位，下午即便再跳水，上证收在3932之下是小概率。",
-      "publish_time": "2026-07-15 12:49"
-    },
-    {
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘又是中阴线杀跌？小概率。理由很简单: ①上证指数已经回到3927上方，深证成指已回到14681上方，那么就不应该再跌下去，否则就要二次探底。②很多前期主流强势股已大跌百分之20至40，昨天大都收中阳线，而今天大都收中阴线，假设已调整到位，按逻辑明天应该拉中阳线。",
       "publish_time": "2026-07-15 18:01"
-    },
-    {
-      "post_n": 11,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "intraday",
-      "evidence": "下午大盘将暴力拉升？小概率。理由很简单: 这种大幅低开走势，如果当日要收涨，往往会在上午就拉升至翻红状态。从上午走势看，还是太弱，下午难以强势收涨。",
-      "publish_time": "2026-07-16 12:32"
     },
     {
       "post_n": 10,
@@ -7240,14 +4238,6 @@
       "publish_time": "2026-07-16 16:00"
     },
     {
-      "post_n": 9,
-      "direction": "bullish",
-      "strength": "strong",
-      "time_horizon": "short",
-      "evidence": "下午满仓抄底A股？上午已满仓抄底。逻辑策略如下: ①上证指数已跌至大箱体下沿，创业板指已跌至2年以来的上升趋势线支撑，抄底一定是在重要支撑附近买进。②今天大盘跌幅足够大，飘风不终朝，骤雨不终日，下周一再出大阴线是小概率。",
-      "publish_time": "2026-07-17 12:38"
-    },
-    {
       "post_n": 8,
       "direction": "bearish",
       "strength": "strong",
@@ -7256,28 +4246,12 @@
       "publish_time": "2026-07-17 17:11"
     },
     {
-      "post_n": 6,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘已经调整到位？按逻辑是。理由很简单: ①23号前后一二天是江恩时间窗口，在低位容易向上变盘。②上证指数3800是箱体下沿支撑，深证与创业板指已到年线附近，具备反弹的技术面支撑。③国家队释放增持利好消息，有利于缓解恐慌情绪，打击大资金做空的信心。所以，大盘预计就在未来一至三天内发出右侧做多信号。",
-      "publish_time": "2026-07-20 12:46"
-    },
-    {
       "post_n": 5,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘将拉大阳线？大概率。理由很简单: ①大盘下午大幅跳水，但是已无法将价格维持在日内低点附近，表明空方力量已是强弩之末。②已经连续二天出现大批量个股跌幅大于百分之10，这种情况不可持续，再而衰，三而竭。所以，判断大盘即将迎来猛烈反弹，最快明天，最迟后天会出大阳线。",
       "publish_time": "2026-07-20 16:28"
-    },
-    {
-      "post_n": 4,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "medium",
-      "evidence": "大盘将开启猛烈的B浪反弹？按逻辑是。理由很简单: ①大盘连续二天长下影，表明获得强劲支撑，且今天大幅上涨，表明单日见底反转已确立，A浪杀跌完成。②由于大盘所有指数已经跌破大趋势上升趋势线，所以，根据123准则，反弹暂定为向上做次高点，即B浪反弹。",
-      "publish_time": "2026-07-21 12:50"
     },
     {
       "post_n": 3,
@@ -7296,28 +4270,12 @@
       "publish_time": "2026-07-22 12:45"
     },
     {
-      "post_n": 0,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大盘将二次探底？大概率。理由很简单: 今天大盘该涨不涨，反而冲高回落，表明市场无强势上攻的意图，盘久必跌，二次探底可能不可避免。",
-      "publish_time": "2026-07-23 12:49"
-    },
-    {
       "post_n": 14,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘将拉中阳线？按逻辑是。",
       "publish_time": "2026-07-23 16:26"
-    },
-    {
-      "post_n": 13,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午大盘还将猛烈跳水？小概率。",
-      "publish_time": "2026-07-24 12:58"
     },
     {
       "post_n": 12,
@@ -7328,28 +4286,12 @@
       "publish_time": "2026-07-24 16:29"
     },
     {
-      "post_n": 11,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午大盘必须加速拉升？是。",
-      "publish_time": "2026-07-27 12:31"
-    },
-    {
       "post_n": 10,
       "direction": "bullish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘将继续长阳拉升？按逻辑是。",
       "publish_time": "2026-07-27 17:53"
-    },
-    {
-      "post_n": 9,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午大盘将大幅回升？小概率。",
-      "publish_time": "2026-07-28 12:46"
     },
     {
       "post_n": 8,
@@ -7360,28 +4302,12 @@
       "publish_time": "2026-07-28 16:08"
     },
     {
-      "post_n": 7,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午大盘将强势收涨？小概率。",
-      "publish_time": "2026-07-29 12:51"
-    },
-    {
       "post_n": 6,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "明天大盘将百点长阳？小概率。",
       "publish_time": "2026-07-29 16:06"
-    },
-    {
-      "post_n": 5,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午大盘将大幅回升？小概率。",
-      "publish_time": "2026-07-30 12:58"
     },
     {
       "post_n": 4,
@@ -7392,28 +4318,12 @@
       "publish_time": "2026-07-30 16:16"
     },
     {
-      "post_n": 3,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午大盘创盘中新高才是强烈的做多信号？是。",
-      "publish_time": "2026-07-31 12:54"
-    },
-    {
       "post_n": 2,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "下周一大盘将中阴线二次探底？按逻辑回补缺口概率大。",
       "publish_time": "2026-07-31 16:15"
-    },
-    {
-      "post_n": 1,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "下午大盘将暴力拉升？创盘中新高才有希望。",
-      "publish_time": "2026-08-03 12:47"
     },
     {
       "post_n": 0,

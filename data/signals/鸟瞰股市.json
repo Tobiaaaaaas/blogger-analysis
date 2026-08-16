@@ -13,20 +13,21 @@
     "other": 0
   },
   "scored_bullish": {
-    "strong": 0,
-    "moderate": 123,
-    "short": 122,
-    "medium": 0,
-    "long": 0,
-    "unspecified": 1
+    "by_strength": {
+      "moderate": 123
+    },
+    "by_time_horizon": {
+      "unspecified": 1,
+      "short": 122
+    }
   },
   "scored_bearish": {
-    "strong": 0,
-    "moderate": 17,
-    "short": 17,
-    "medium": 0,
-    "long": 0,
-    "unspecified": 0
+    "by_strength": {
+      "moderate": 17
+    },
+    "by_time_horizon": {
+      "short": 17
+    }
   },
   "signals": [
     {

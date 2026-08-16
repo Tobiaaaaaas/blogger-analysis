@@ -27,6 +27,12 @@ import sys
 from collections import defaultdict
 from datetime import datetime, timedelta
 
+# Windows GBK 控制台兼容：自测与摘要打印含 emoji
+try:
+    sys.stdout.reconfigure(encoding='utf-8')
+except Exception:
+    pass
+
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 DATA_DIR = os.path.join(ROOT, 'data', 'direction_signals')
 REPORTS_DIR = os.path.join(ROOT, 'reports')
@@ -129,7 +135,7 @@ def endpoint_of(pub_date, spec):
     raise ValueError(f'未知 spec: {spec}')
 
 
-SPEC_TEXT = {'today': '今天', 't1': '明天', 't2': '1-2天', 't3': '未来几天', 't5': '近期/短期',
+SPEC_TEXT = {'today': '今天', 't1': '明天', 't2': '后天/1-2天', 't3': '未来几天', 't5': '近期/短期',
              'week': '本周', 'nweek': '下周', 'nweek_first': '下周初', 'month': '月底前',
              'nmonth': '下个月', 'yearend': '全年'}
 IDX_SHORT = {'上证指数': '上证', '上证50': '上证50', '科创50': '科创50', '创业板指': '创业板',
@@ -151,12 +157,30 @@ def calc(sig):
     if cat in ('无效-日内', '无预测周期', '目标点位'):
         return dict(sig, ref=None, ep=None, epc=None, ret=None, score=None, note=cat)
     pub, d, idx = sig['pub'], sig['d'], normalize_idx(sig['idx'])
-    spec = sig['spec']
+    spec = sig.get('spec')
+    if spec is None:                                   # 防御：缺 spec 的手写单列（如 cat='待验证'）→ 无法定终点
+        return dict(sig, ref=None, ep=None, epc=None, ret=None, score=None, note='无预测周期')
+    if spec == 'today':                                # §1 防御：盘中/盘后/非交易日发布的"今天"一律无效-日内
+        pd_, hhmm = pub[:10], pub[11:]
+        if pd_ in CAL_SET:
+            h, m = int(hhmm[:2]), int(hhmm[3:5])
+            if h * 60 + m >= 9 * 60 + 30:
+                return dict(sig, ref=None, ep=None, epc=None, ret=None, score=None, note='无效-日内')
+        else:
+            return dict(sig, ref=None, ep=None, epc=None, ret=None, score=None, note='无效-日内')
     ref_date = ref_date_of(pub)
-    rp = ref_price_of(idx, ref_date)
+    if idx == '双创':                                  # 参考价数据覆盖防御（双创需两指数都有该日行情）
+        ref_ok = ref_date in IDX['创业板指'] and ref_date in IDX['科创50']
+    else:
+        ref_ok = ref_date in IDX[idx]
+    rp = ref_price_of(idx, ref_date) if ref_ok else None
     ep = endpoint_of(pub[:10], spec)
     if ep is None or ep > LAST[idx]:
-        return dict(sig, ref=round(rp, 2), ep=ep, epc=None, ret=None, score=None, note='待验证')
+        return dict(sig, ref=(round(rp, 2) if rp is not None else None), ep=ep, epc=None, ret=None, score=None, note='待验证')
+    if rp is None:
+        return dict(sig, ref=None, ep=ep, epc=None, ret=None, score=None, note='待验证')
+    if ep <= ref_date:                                 # 过时预测防御：终点 ≤ 参考价日（如周五盘后发"本周"）
+        return dict(sig, ref=round(rp, 2), ep=ep, epc=None, ret=None, score=None, note='无效-过时')
     if idx == '双创':
         r1 = IDX['创业板指'][ep]['收盘'] / IDX['创业板指'][ref_date]['收盘'] - 1
         r2 = IDX['科创50'][ep]['收盘'] / IDX['科创50'][ref_date]['收盘'] - 1
@@ -180,6 +204,33 @@ def acc_of(rs):
 
 def avg_of(rs):
     return sum(r['score'] for r in rs) / len(rs) if rs else 0.0
+
+
+def vol_of(rs):
+    """波动率 = 单信号 score 的样本标准差（n-1 分母）；<2 条信号时为 0"""
+    if len(rs) < 2:
+        return 0.0
+    m = avg_of(rs)
+    return (sum((r['score'] - m) ** 2 for r in rs) / (len(rs) - 1)) ** 0.5
+
+
+def sharpe_of(rs):
+    """夏普 = 平均分 / 波动率；波动率为 0 或信号不足 2 条时返回 None"""
+    v = vol_of(rs)
+    return avg_of(rs) / v if v > 0 else None
+
+
+def max_dd_of(rs):
+    """最大回撤 = 按发布时间顺序累加单信号 score 的曲线峰值回撤（%）"""
+    if not rs:
+        return 0.0
+    peak = cur = 0.0
+    mdd = 0.0
+    for r in sorted(rs, key=lambda x: x['pub']):
+        cur += r['score']
+        peak = max(peak, cur)
+        mdd = max(mdd, peak - cur)
+    return mdd
 
 
 # ---------------- 报告生成 ----------------
@@ -206,20 +257,26 @@ def generate(blogger):
     n_np = sum(1 for r in rows if r['note'] == '无预测周期')
     n_tp = sum(1 for r in rows if r['note'] == '目标点位')
     n_pend = sum(1 for r in rows if r['note'] == '待验证')
+    n_stale = sum(1 for r in rows if r['note'] == '无效-过时')
 
     n_pos = sum(1 for r in scored if r['score'] > 0)
     n_zero = sum(1 for r in scored if r['score'] == 0)
     den = len(scored) - n_zero
     acc = n_pos / den * 100 if den else 0.0
     avg = avg_of(scored)
-    mx = max(scored, key=lambda r: r['score'])
-    mn = min(scored, key=lambda r: r['score'])
-    bull = [r for r in scored if r['d'] == 1]
-    bear = [r for r in scored if r['d'] == -1]
-    strong = [r for r in scored if r['s'] == 2]
-    moderate = [r for r in scored if r['s'] == 1]
-    st = acc_of(strong)
-    md = acc_of(moderate)
+    if scored:
+        mx = max(scored, key=lambda r: r['score'])
+        mn = min(scored, key=lambda r: r['score'])
+        bull = [r for r in scored if r['d'] == 1]
+        bear = [r for r in scored if r['d'] == -1]
+        strong = [r for r in scored if r['s'] == 2]
+        moderate = [r for r in scored if r['s'] == 1]
+        st = acc_of(strong)
+        md = acc_of(moderate)
+    else:
+        mx = mn = None
+        bull = bear = strong = moderate = []
+        st = md = None
 
     n_posts = post_count(blogger)
     L = []
@@ -227,7 +284,7 @@ def generate(blogger):
     L.append('')
     L.append(f'> 评估时间：{EVAL_DATE} | 方法论：Direction.md（逐条验证，score = direction × return）')
     L.append(f'> 帖子总数：{n_posts} 条' if n_posts is not None else '> 帖子总数：未知（posts 文件缺失或不可读）')
-    L.append(f'> 信号总数：{len(rows)} 条（参与打分 {len(scored)} + 待验证 {n_pend} + 无效-日内 {n_inv} + 无预测周期 {n_np} + 目标点位 {n_tp}）')
+    L.append(f'> 信号总数：{len(rows)} 条（参与打分 {len(scored)} + 待验证 {n_pend} + 无效-日内 {n_inv} + 无预测周期 {n_np} + 目标点位 {n_tp} + 无效-过时 {n_stale}）')
     L.append('')
     L.append('---')
     L.append('')
@@ -235,12 +292,16 @@ def generate(blogger):
     L.append('')
     L.append('```')
     L.append(f'信号总数：{len(scored)}')
-    L.append(f'  另有：无效-日内 {n_inv} 条 / 无预测周期 {n_np} 条 / 目标点位-不计时 {n_tp} 条 / 待验证 {n_pend} 条（单列，不计分）')
+    L.append(f'  另有：无效-日内 {n_inv} 条 / 无预测周期 {n_np} 条 / 目标点位-不计时 {n_tp} 条 / 无效-过时 {n_stale} 条 / 待验证 {n_pend} 条（单列，不计分）')
     L.append(f'方向正确：{n_pos}（正确率 {acc:.1f}% = score>0 信号数 / {den}；score=0 计"平" {n_zero} 条，不计入分子分母）')
-    L.append(f'  - strong 正确：{st[0]}/{st[1]}（正确率 {st[2]:.1f}%）')
-    L.append(f'  - moderate 正确：{md[0]}/{md[1]}（正确率 {md[2]:.1f}%）')
+    L.append(f'  - strong 正确：{st[0]}/{st[1]}（正确率 {st[2]:.1f}%）' if st else '  - strong 正确：—')
+    L.append(f'  - moderate 正确：{md[0]}/{md[1]}（正确率 {md[2]:.1f}%）' if md else '  - moderate 正确：—')
     L.append(f'平均分：{avg:+.2f}（= 单信号平均收益 %，核心指标）')
-    L.append(f'最高分：{mx["score"]:+.2f} / 最低分：{mn["score"]:+.2f}')
+    L.append(f'波动率：{vol_of(scored):.2f}（单信号 score 样本标准差）')
+    sh = sharpe_of(scored)
+    L.append(f'夏普：{sh:+.2f}（= 平均分 / 波动率）' if sh is not None else '夏普：—（信号 <2 条或波动率为 0）')
+    L.append(f'最大回撤：-{max_dd_of(scored):.2f}（按信号发布时间顺序累加 score 的曲线峰值回撤）')
+    L.append(f'最高分：{mx["score"]:+.2f} / 最低分：{mn["score"]:+.2f}' if mx else '最高分：— / 最低分：—')
     L.append(f'看多平均分：{avg_of(bull):+.2f}（{len(bull)} 条）  看空平均分：{avg_of(bear):+.2f}（{len(bear)} 条）')
     L.append('```')
     L.append('')
@@ -289,6 +350,41 @@ def generate(blogger):
         p, dd, rate = acc_of(rs)
         L.append(f'| {mo} | {len(rs)} | {avg_of(rs):+.2f} | {rate:.1f}% |')
     L.append('')
+
+    # 信号时间分布与集中度/覆盖度分析
+    L.append('### ⏱️ 信号时间分布与集中度')
+    L.append('')
+    first_d = min(r['pub'][:10] for r in scored) if scored else '-'
+    last_d = max(r['pub'][:10] for r in scored) if scored else '-'
+    top_mo = max(bymonth.items(), key=lambda kv: len(kv[1])) if bymonth else None
+    top_n = len(top_mo[1]) if top_mo else 0
+    conc = top_n / len(scored) * 100 if scored else 0
+    L.append(f'- 覆盖：{first_d} ~ {last_d}，共 {len(bymonth)} 个月，{len(scored)} 条计分信号；单月最高占比 {conc:.0f}%'
+             + (f'（{top_mo[0]} {top_n} 条）' if top_mo else ''))
+    warns = []
+    if len(bymonth) < 3:
+        warns.append('⚠️ 信号覆盖不足 3 个月，样本期过短，排名参考价值低')
+    if conc >= 50:
+        warns.append(f'⚠️ 信号高度集中于单月（{top_mo[0]} 占 {conc:.0f}%）')
+    elif conc >= 33:
+        warns.append(f'提示：{top_mo[0]} 单月占比 {conc:.0f}%，存在轻度集中')
+    mos = sorted(bymonth)
+    gaps = []
+    for a, b in zip(mos, mos[1:]):
+        ya, ma = int(a[:4]), int(a[5:7])
+        yb, mb = int(b[:4]), int(b[5:7])
+        diff = (yb - ya) * 12 + (mb - ma)
+        if diff >= 4:
+            gaps.append(f'⚠️ {a} 与 {b} 之间缺 {diff - 1} 个月（严重覆盖缺口）')
+        elif diff >= 2:
+            gaps.append(f'提示：{a} 与 {b} 之间缺 {diff - 1} 个月')
+    warns += gaps
+    if warns:
+        for w in warns:
+            L.append('- ' + w)
+    else:
+        L.append('- 分布均匀，无集中度/覆盖度警告')
+    L.append('')
     L.append('---')
     L.append('')
     L.append('## 📋 逐条汇总表')
@@ -298,21 +394,25 @@ def generate(blogger):
     D_ICO = {1: '↑', -1: '↓'}
     S_TXT = {2: 'str', 1: 'mod'}
     CAT_PERIOD = {'无效-日内': '今天', '无预测周期': '无预测周期', '目标点位': '目标点位'}
-    NOTE_TXT = {'无效-日内': '无效-日内', '无预测周期': '无预测周期', '目标点位': '目标点位-不计时', '待验证': '待验证'}
+    NOTE_TXT = {'无效-日内': '无效-日内', '无预测周期': '无预测周期', '目标点位': '目标点位-不计时',
+                '无效-过时': '无效-过时', '待验证': '待验证'}
     for i, r in enumerate(rows, 1):
         ico = D_ICO.get(r['d'], '')
         stx = S_TXT.get(r.get('s', 1), 'mod')
         if r['score'] is not None:
             period = period_text(r['spec'])
-        elif r['note'] == '待验证' and r.get('spec'):
-            period = period_text(r['spec'])      # 待验证行显示实际预测周期（如"全年"）
+        elif r['note'] in ('待验证', '无效-过时') and r.get('spec'):
+            period = period_text(r['spec'])      # 单列行显示实际预测周期（如"全年"）
         else:
             period = CAT_PERIOD.get(r['note'], r['note'])
         idx = IDX_SHORT.get(r['idx'], r['idx'])
+        ref_txt = f"{r['ref']:.2f}" if r.get('ref') is not None else '-'
         if r['score'] is not None:
-            L.append(f"| {i} | {r['pub'][5:10]} | {r['summary']} | {ico} | {stx} | {period} | {idx} | {r['ref']:.2f} | {r['ep'][5:]} | {r['epc']:.2f} | {r['ret']*100:+.2f}% | {r['score']:+.2f} | — |")
+            L.append(f"| {i} | {r['pub'][5:10]} | {r['summary']} | {ico} | {stx} | {period} | {idx} | {ref_txt} | {r['ep'][5:]} | {r['epc']:.2f} | {r['ret']*100:+.2f}% | {r['score']:+.2f} | — |")
         elif r['note'] == '待验证':
-            L.append(f"| {i} | {r['pub'][5:10]} | {r['summary']} | {ico} | {stx} | {period} | {idx} | {r['ref']:.2f} | - | - | - | - | 待验证 |")
+            L.append(f"| {i} | {r['pub'][5:10]} | {r['summary']} | {ico} | {stx} | {period} | {idx} | {ref_txt} | - | - | - | - | 待验证 |")
+        elif r['note'] == '无效-过时':
+            L.append(f"| {i} | {r['pub'][5:10]} | {r['summary']} | {ico} | {stx} | {period} | {idx} | {ref_txt} | {r['ep'][5:]} | - | - | - | 无效-过时 |")
         else:
             L.append(f"| {i} | {r['pub'][5:10]} | {r['summary']} | {ico} | {stx} | {period} | {idx} | - | - | - | - | - | {NOTE_TXT.get(r['note'], r['note'])} |")
     L.append('')
@@ -331,14 +431,17 @@ def generate(blogger):
         best_i = max(byidx.items(), key=lambda kv: (avg_of(kv[1]), len(kv[1])))
         worst_i = min(byidx.items(), key=lambda kv: (avg_of(kv[1]), -len(kv[1])))
         L.append(f'- **预测指数**：{IDX_SHORT.get(best_i[0], best_i[0])} 最强（{len(best_i[1])} 条，平均 {avg_of(best_i[1]):+.2f} 分）；{IDX_SHORT.get(worst_i[0], worst_i[0])} 最弱（{len(worst_i[1])} 条，平均 {avg_of(worst_i[1]):+.2f} 分）。')
-    L.append(f'- **最大单条命中**：{mx["pub"][5:10]}"{mx["summary"][:24]}"（{mx["score"]:+.2f} 分）。')
-    L.append(f'- **最大单条失误**：{mn["pub"][5:10]}"{mn["summary"][:24]}"（{mn["score"]:+.2f} 分）。')
+    if mx:
+        L.append(f'- **最大单条命中**：{mx["pub"][5:10]}"{mx["summary"][:24]}"（{mx["score"]:+.2f} 分）。')
+        L.append(f'- **最大单条失误**：{mn["pub"][5:10]}"{mn["summary"][:24]}"（{mn["score"]:+.2f} 分）。')
     if n_tp:
         L.append(f'- **目标点位 {n_tp} 条不计分**：无时间承诺的点位表述，单独统计。')
     if n_np:
         L.append(f'- **无预测周期 {n_np} 条不计分**：模糊周期（"未来一段时间""中长期"等）与完全无时间信息，单独统计。')
     if n_pend:
         L.append(f'- **待验证 {n_pend} 条**：验证终点超出数据覆盖范围，等数据覆盖后补算。')
+    if n_stale:
+        L.append(f'- **无效-过时 {n_stale} 条**：验证终点 ≤ 参考价日（如周五盘后发"本周"），引擎自动单列不计分。')
     L.append('')
     out = os.path.join(REPORTS_DIR, f'{blogger}_direction.md')
     with open(out, 'w', encoding='utf-8') as f:
@@ -370,6 +473,21 @@ def selftest():
     exp_score = round((IDX['上证指数']['2026-01-08']['收盘'] / IDX['上证指数']['2026-01-07']['收盘'] - 1) * -100, 2)
     if abs(r['score'] - exp_score) > 0.02:
         errors.append(f'score={r["score"]} 期望 {exp_score}')
+    # 过时防御：月末周末发布"月底前" → 终点=当月最后交易日 ≤ 参考价日 → 无效-过时
+    r = calc({'pub': '2026-01-31 15:00', 'd': 1, 's': 1, 'idx': '上证指数', 'spec': 'month',
+              'summary': 'test', 'cat': 'scored'})
+    if r['note'] != '无效-过时':
+        errors.append(f'过时预测未被标记（note={r["note"]}）')
+    # §1 防御：盘中/盘后/非交易日发布"今天" → 无效-日内
+    for bad_pub in ('2026-01-28 10:06', '2026-01-28 15:06', '2026-01-31 15:00'):
+        r = calc({'pub': bad_pub, 'd': 1, 's': 1, 'idx': '上证指数', 'spec': 'today',
+                  'summary': 'test', 'cat': 'scored'})
+        if r['note'] != '无效-日内':
+            errors.append(f'{bad_pub} today 未判无效（note={r["note"]}）')
+    # 缺 spec 防御：手写单列无 spec → 无预测周期，不崩溃
+    r = calc({'pub': '2026-01-07 15:08', 'd': 1, 'idx': '上证指数', 'summary': 'test', 'cat': '待验证'})
+    if r['note'] != '无预测周期':
+        errors.append(f'缺 spec 防御失败（note={r["note"]}）')
     if errors:
         print('❌ 自测失败:')
         for e in errors:

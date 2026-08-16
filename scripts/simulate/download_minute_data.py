@@ -59,18 +59,28 @@ TR_F2 = "f51,f52,f53,f54,f55,f56,f57,f58"
 
 # ── Core: curl subprocess ──────────────────────────────────────────
 def curl_api(url, timeout=60):
-    """Call EastMoney API via curl subprocess. Returns parsed JSON or None."""
+    """Call EastMoney API via curl subprocess. Returns parsed JSON or None.
+
+    Uses shell=True because on Windows the list form of subprocess.run(['curl',...])
+    triggers schannel returncode 56 — only shell=True curl gets through.
+    """
     try:
-        result = subprocess.run(
-            ["curl", "-s", "--max-time", str(timeout),
-             "-H", f"User-Agent: {UA}",
-             "-H", "Referer: https://quote.eastmoney.com/",
-             url],
-            capture_output=True, text=True, timeout=timeout + 10,
+        cmd = (
+            f'curl -k -s --max-time {timeout} '
+            f'-H "User-Agent: {UA}" '
+            f'-H "Referer: https://quote.eastmoney.com/" '
+            f'"{url}"'
         )
-        if result.returncode != 0 or not result.stdout.strip():
+        result = subprocess.run(
+            cmd, shell=True, capture_output=True,
+            timeout=timeout + 10,
+        )
+        if result.returncode != 0 or not result.stdout:
             return None
-        return json.loads(result.stdout)
+        text = result.stdout.decode("utf-8", errors="replace").strip()
+        if not text:
+            return None
+        return json.loads(text)
     except (subprocess.TimeoutExpired, json.JSONDecodeError, Exception):
         return None
 
@@ -240,10 +250,9 @@ def main():
 
     if not any(r[2] for r in results):
         print()
-        print("  ⚠️  ALL downloads failed. Likely causes:")
-        print("     1. EastMoney API is blocking your IP (wait 1-2 hours and retry)")
-        print("     2. curl is not installed (required: brew install curl or apt install curl)")
-        print("     3. Network connectivity issues")
+        print("  [WARN] ALL downloads failed. Likely causes:")
+        print("     1. EastMoney API is rate-limiting your IP (wait 1-2 hours)")
+        print("     2. curl not found or network connectivity issues")
         sys.exit(1)
 
 

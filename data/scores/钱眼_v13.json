@@ -1,0 +1,262 @@
+{
+  "blogger": "钱眼",
+  "version": "v13",
+  "total_raw": 77,
+  "pre_2026": 0,
+  "scorable": 77,
+  "score_zero": 1,
+  "no_price": 1,
+  "no_segment": 0,
+  "case_a": 74,
+  "case_b": 1,
+  "first_signal_date": "2026-01-04",
+  "rankable": true,
+  "scores": {
+    "综合": {
+      "total_pct": 54.02,
+      "count": 75,
+      "avg_pct": 0.72,
+      "win_rate": 60.0
+    },
+    "上升段": {
+      "total_pct": 109.86,
+      "count": 43,
+      "avg_pct": 2.55,
+      "win_rate": 83.72
+    },
+    "下降段": {
+      "total_pct": -55.84,
+      "count": 32,
+      "avg_pct": -1.74,
+      "win_rate": 28.12
+    },
+    "抄底": {
+      "total_pct": 22.56,
+      "count": 8,
+      "avg_pct": 2.82,
+      "win_rate": 62.5
+    },
+    "逃顶": {
+      "total_pct": -1.26,
+      "count": 1,
+      "avg_pct": -1.26,
+      "win_rate": 0.0
+    },
+    "看多": {
+      "total_pct": 33.83,
+      "count": 60,
+      "avg_pct": 0.56,
+      "win_rate": 60.0
+    },
+    "看空": {
+      "total_pct": 20.19,
+      "count": 15,
+      "avg_pct": 1.35,
+      "win_rate": 60.0
+    }
+  },
+  "time_horizon": {
+    "short": {
+      "count": 31,
+      "effective": 31,
+      "total_pct": 32.2,
+      "avg_pct": 1.04,
+      "win_rate": 58.06
+    },
+    "medium": {
+      "count": 43,
+      "effective": 42,
+      "total_pct": 25.87,
+      "avg_pct": 0.62,
+      "win_rate": 61.9
+    },
+    "long": {
+      "count": 2,
+      "effective": 2,
+      "total_pct": -4.05,
+      "avg_pct": -2.03,
+      "win_rate": 50.0
+    },
+    "unspecified": {
+      "count": 0,
+      "effective": 0,
+      "total_pct": 0.0,
+      "avg_pct": 0.0,
+      "win_rate": 0.0
+    }
+  },
+  "segments": {
+    "I10→M5": {
+      "direction": "falling",
+      "total": 8,
+      "bull": 5,
+      "bear": 3,
+      "score_pct": -8.02
+    },
+    "I11→I12": {
+      "direction": "rising",
+      "total": 6,
+      "bull": 6,
+      "bear": 0,
+      "score_pct": 21.1
+    },
+    "I12→M7": {
+      "direction": "falling",
+      "total": 8,
+      "bull": 6,
+      "bear": 2,
+      "score_pct": -18.48
+    },
+    "I7→I8": {
+      "direction": "rising",
+      "total": 5,
+      "bull": 3,
+      "bear": 2,
+      "score_pct": -1.34
+    },
+    "I8→I9": {
+      "direction": "falling",
+      "total": 7,
+      "bull": 5,
+      "bear": 2,
+      "score_pct": -10.38
+    },
+    "I9→I10": {
+      "direction": "rising",
+      "total": 10,
+      "bull": 10,
+      "bear": 0,
+      "score_pct": 20.44
+    },
+    "M5→M6": {
+      "direction": "rising",
+      "total": 16,
+      "bull": 13,
+      "bear": 3,
+      "score_pct": 54.49
+    },
+    "M6→I11": {
+      "direction": "falling",
+      "total": 9,
+      "bull": 7,
+      "bear": 2,
+      "score_pct": -18.95
+    },
+    "M7→TMP": {
+      "direction": "rising",
+      "total": 6,
+      "bull": 5,
+      "bear": 1,
+      "score_pct": 15.17
+    }
+  },
+  "inflections": {
+    "I11": {
+      "signals": [
+        {
+          "date": "2026-06-08",
+          "time": "20:08",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.96,
+          "evidence": "本周上证可能随时打出一个重要低点后回升"
+        },
+        {
+          "date": "2026-06-09",
+          "time": "19:57",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.76,
+          "evidence": "周三往上冲一冲大概率就会补掉缺口"
+        }
+      ],
+      "total_score_pct": 9.72,
+      "count": 2,
+      "avg_pct": 4.86
+    },
+    "I8": {
+      "signals": [
+        {
+          "date": "2026-01-13",
+          "time": "19:33",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": -1.26,
+          "evidence": "明天再顺势来一个调整,5日、10日均线都是支撑"
+        }
+      ],
+      "total_score_pct": -1.26,
+      "count": 1,
+      "avg_pct": -1.26
+    },
+    "I9": {
+      "signals": [
+        {
+          "date": "2026-02-02",
+          "time": "19:47",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": -1.01,
+          "evidence": "本周后半段大盘会企稳回升"
+        },
+        {
+          "date": "2026-02-03",
+          "time": "19:37",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 3.26,
+          "evidence": "随着有色极端调整的结束,春节红包行情已蓄势待发"
+        }
+      ],
+      "total_score_pct": 2.25,
+      "count": 2,
+      "avg_pct": 1.12
+    },
+    "M5": {
+      "signals": [
+        {
+          "date": "2026-03-22",
+          "time": "19:45",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": -2.82,
+          "evidence": "下周一市场有望探底回升"
+        },
+        {
+          "date": "2026-03-23",
+          "time": "20:00",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 10.63,
+          "evidence": "周二、周三大概率会走出超跌报复性反弹"
+        }
+      ],
+      "total_score_pct": 7.81,
+      "count": 2,
+      "avg_pct": 3.91
+    },
+    "M7": {
+      "signals": [
+        {
+          "date": "2026-07-19",
+          "time": "20:20",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": -1.34,
+          "evidence": "即使下周一大盘被外围带动下跌探底,周二或周三则有较大概率出现企稳修复"
+        },
+        {
+          "date": "2026-07-20",
+          "time": "20:42",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.1,
+          "evidence": "市场有筑底反弹迹象,短期反弹可期待"
+        }
+      ],
+      "total_score_pct": 2.76,
+      "count": 2,
+      "avg_pct": 1.38
+    }
+  }
+}

@@ -1,0 +1,261 @@
+{
+  "blogger": "TL阳光",
+  "version": "v13",
+  "total_raw": 185,
+  "pre_2026": 0,
+  "scorable": 185,
+  "score_zero": 0,
+  "no_price": 0,
+  "no_segment": 0,
+  "case_a": 177,
+  "case_b": 8,
+  "first_signal_date": "2026-01-02",
+  "rankable": true,
+  "scores": {
+    "综合": {
+      "total_pct": -66.31,
+      "count": 185,
+      "avg_pct": -0.36,
+      "win_rate": 44.86
+    },
+    "上升段": {
+      "total_pct": -194.78,
+      "count": 101,
+      "avg_pct": -1.93,
+      "win_rate": 37.62
+    },
+    "下降段": {
+      "total_pct": 128.47,
+      "count": 84,
+      "avg_pct": 1.53,
+      "win_rate": 53.57
+    },
+    "抄底": {
+      "total_pct": 6.34,
+      "count": 3,
+      "avg_pct": 2.11,
+      "win_rate": 66.67
+    },
+    "逃顶": {
+      "total_pct": 50.75,
+      "count": 5,
+      "avg_pct": 10.15,
+      "win_rate": 80.0
+    },
+    "看多": {
+      "total_pct": -70.41,
+      "count": 79,
+      "avg_pct": -0.89,
+      "win_rate": 48.1
+    },
+    "看空": {
+      "total_pct": 4.1,
+      "count": 106,
+      "avg_pct": 0.04,
+      "win_rate": 42.45
+    }
+  },
+  "time_horizon": {
+    "short": {
+      "count": 84,
+      "effective": 84,
+      "total_pct": -54.87,
+      "avg_pct": -0.65,
+      "win_rate": 47.62
+    },
+    "medium": {
+      "count": 16,
+      "effective": 16,
+      "total_pct": 25.16,
+      "avg_pct": 1.57,
+      "win_rate": 62.5
+    },
+    "long": {
+      "count": 53,
+      "effective": 53,
+      "total_pct": -24.33,
+      "avg_pct": -0.46,
+      "win_rate": 33.96
+    },
+    "unspecified": {
+      "count": 32,
+      "effective": 32,
+      "total_pct": -12.26,
+      "avg_pct": -0.38,
+      "win_rate": 46.88
+    }
+  },
+  "segments": {
+    "I10→M5": {
+      "direction": "falling",
+      "total": 20,
+      "bull": 6,
+      "bear": 14,
+      "score_pct": 81.28
+    },
+    "I11→I12": {
+      "direction": "rising",
+      "total": 12,
+      "bull": 7,
+      "bear": 5,
+      "score_pct": -17.18
+    },
+    "I12→M7": {
+      "direction": "falling",
+      "total": 23,
+      "bull": 8,
+      "bear": 15,
+      "score_pct": 70.54
+    },
+    "I7→I8": {
+      "direction": "rising",
+      "total": 10,
+      "bull": 5,
+      "bear": 5,
+      "score_pct": -9.5
+    },
+    "I8→I9": {
+      "direction": "falling",
+      "total": 17,
+      "bull": 12,
+      "bear": 5,
+      "score_pct": -23.19
+    },
+    "I9→I10": {
+      "direction": "rising",
+      "total": 21,
+      "bull": 10,
+      "bear": 11,
+      "score_pct": -13.41
+    },
+    "M5→M6": {
+      "direction": "rising",
+      "total": 46,
+      "bull": 16,
+      "bear": 30,
+      "score_pct": -138.98
+    },
+    "M6→I11": {
+      "direction": "falling",
+      "total": 24,
+      "bull": 10,
+      "bear": 14,
+      "score_pct": -0.16
+    },
+    "M7→TMP": {
+      "direction": "rising",
+      "total": 12,
+      "bull": 5,
+      "bear": 7,
+      "score_pct": -15.71
+    }
+  },
+  "inflections": {
+    "I10": {
+      "signals": [
+        {
+          "date": "2026-03-03",
+          "time": "21:17",
+          "direction": "bearish",
+          "strength": "strong",
+          "score": 14.32,
+          "evidence": "这次只是牛转熊的预演，但预演也会很惨烈。数月后才是真跌，家人们，一定记住，仓位重的，等调整过后重回4200附近要选择清仓"
+        }
+      ],
+      "total_score_pct": 14.32,
+      "count": 1,
+      "avg_pct": 14.32
+    },
+    "I12": {
+      "signals": [
+        {
+          "date": "2026-06-23",
+          "time": "19:13",
+          "direction": "bearish",
+          "strength": "strong",
+          "score": 17.07,
+          "evidence": "这轮牛市，对于我而言已经于2026年3月彻底结束。接下来的3年，我会耐心等，等到我看得懂的时候再中长线进场抄底，然后再捂"
+        },
+        {
+          "date": "2026-06-24",
+          "time": "19:47",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": 8.83,
+          "evidence": "现在随着美元走强，大A未来会不会受到影响，值得警惕。"
+        }
+      ],
+      "total_score_pct": 25.9,
+      "count": 2,
+      "avg_pct": 12.95
+    },
+    "I8": {
+      "signals": [
+        {
+          "date": "2026-01-13",
+          "time": "16:21",
+          "direction": "bearish",
+          "strength": "moderate",
+          "score": -1.26,
+          "evidence": "1月13日收评：明天看跌"
+        }
+      ],
+      "total_score_pct": -1.26,
+      "count": 1,
+      "avg_pct": -1.26
+    },
+    "I9": {
+      "signals": [
+        {
+          "date": "2026-02-02",
+          "time": "16:17",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": -1.01,
+          "evidence": "2月2日收评：明天看涨"
+        },
+        {
+          "date": "2026-02-03",
+          "time": "21:08",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 3.26,
+          "evidence": "综上所述，春节前以震荡为主，春节后将恢复上涨，大盘将再创新高。"
+        }
+      ],
+      "total_score_pct": 2.25,
+      "count": 2,
+      "avg_pct": 1.12
+    },
+    "M6": {
+      "signals": [
+        {
+          "date": "2026-05-14",
+          "time": "20:04",
+          "direction": "bearish",
+          "strength": "strong",
+          "score": 11.8,
+          "evidence": "个人于4197附近已经逃顶，下次的重仓点就在3000点附近，在没有到3000点附近时，就是等。"
+        }
+      ],
+      "total_score_pct": 11.8,
+      "count": 1,
+      "avg_pct": 11.8
+    },
+    "M7": {
+      "signals": [
+        {
+          "date": "2026-07-20",
+          "time": "16:30",
+          "direction": "bullish",
+          "strength": "moderate",
+          "score": 4.1,
+          "evidence": "7月20日收评：明天看涨"
+        }
+      ],
+      "total_score_pct": 4.1,
+      "count": 1,
+      "avg_pct": 4.1
+    }
+  }
+}

@@ -13,20 +13,22 @@
     "other": 14
   },
   "scored_bullish": {
-    "strong": 0,
-    "moderate": 27,
-    "short": 23,
-    "medium": 4,
-    "long": 0,
-    "unspecified": 0
+    "by_strength": {
+      "moderate": 24
+    },
+    "by_time_horizon": {
+      "short": 20,
+      "medium": 4
+    }
   },
   "scored_bearish": {
-    "strong": 1,
-    "moderate": 13,
-    "short": 14,
-    "medium": 0,
-    "long": 0,
-    "unspecified": 0
+    "by_strength": {
+      "moderate": 10,
+      "strong": 1
+    },
+    "by_time_horizon": {
+      "short": 11
+    }
   },
   "signals": [
     {
@@ -60,14 +62,6 @@
       "time_horizon": "short",
       "evidence": "一则利空引发跳水，股民们要准备好，明天A股，将迎较大级别变盘",
       "publish_time": "2026-01-14 15:15"
-    },
-    {
-      "post_n": 14,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "市场热度大幅降低，调整结束了吗，下午，A股将会迎来反弹",
-      "publish_time": "2026-01-15 11:54"
     },
     {
       "post_n": 13,
@@ -108,14 +102,6 @@
       "time_horizon": "short",
       "evidence": "A股进入崭新阶段，主力资金回流，下午A股，会这样运行",
       "publish_time": "2026-01-21 11:39"
-    },
-    {
-      "post_n": 2,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "市场信号十分明确，股民要做好准备，下午A股，需要谨慎",
-      "publish_time": "2026-01-22 11:41"
     },
     {
       "post_n": 1,
@@ -222,14 +208,6 @@
       "publish_time": "2026-04-07 15:01"
     },
     {
-      "post_n": 13,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "大级别反弹来了，目标位在哪里，下午会怎么运行",
-      "publish_time": "2026-04-08 11:20"
-    },
-    {
       "post_n": 12,
       "direction": "bullish",
       "strength": "moderate",
@@ -252,14 +230,6 @@
       "time_horizon": "medium",
       "evidence": "中期底部确立，下周，是新行情过渡期，会大涨吗",
       "publish_time": "2026-04-10 15:24"
-    },
-    {
-      "post_n": 4,
-      "direction": "bullish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "盘面有一个细节，市场趋势基本确立，下午会怎么走",
-      "publish_time": "2026-04-14 11:36"
     },
     {
       "post_n": 3,
@@ -294,28 +264,12 @@
       "publish_time": "2026-04-17 15:20"
     },
     {
-      "post_n": 8,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "A股：有两个重要因素，影响走势，大跌要开始了吗，下午怎么运行",
-      "publish_time": "2026-04-21 11:44"
-    },
-    {
       "post_n": 7,
       "direction": "bearish",
       "strength": "moderate",
       "time_horizon": "short",
       "evidence": "A股：股民们要准备好，真正调整还没到来，明天走势已明朗",
       "publish_time": "2026-04-21 15:17"
-    },
-    {
-      "post_n": 6,
-      "direction": "bearish",
-      "strength": "moderate",
-      "time_horizon": "short",
-      "evidence": "A股：盘面有个特殊现象，股民要准备好，谨防下午跳水",
-      "publish_time": "2026-04-22 11:40"
     },
     {
       "post_n": 5,
