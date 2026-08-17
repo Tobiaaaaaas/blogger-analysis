@@ -28,7 +28,11 @@ LLM 全量读取博主的全部帖子，逐条提取方向预测信号，验证�
 ## 前置条件
 
 - `data/posts/<博主名>.json` 已存在（已爬取全部帖子）
+- 博主正文文件已抓取：`data/posts/<博主名>_bodies_s*.json`（信号提取脚本读取正文；正文缺失时退化为列表标题 `content`）
 - `data/market/market_data.json` 已存在（含 7 指数日线数据，且已更新到最新交易日）
+- **DeepSeek API Key**：信号由 DeepSeek 自动提取，key 只通过环境变量传入（**绝不写入文件、绝不提交 GitHub**）：
+  - `export DEEPSEEK_API_KEY="sk-..."`（每次运行前设置）
+  - 依赖：`pip install openai`
 
 > **行情数据更新**：`python scripts/utils/fetch_market_data.py --start 20240601`（脚本抓取全部 7 指数并与已有数据合并，不会覆盖其他指数）。评估开始前先运行一次，确保验证终点在数据覆盖范围内。
 >
@@ -44,24 +48,31 @@ LLM 全量读取博主的全部帖子，逐条提取方向预测信号，验证�
 
 读入 `data/posts/<博主名>.json` 的全部帖子。之后按需从 `data/market/market_data.json` 中读取与验证日期对应的行情行（无需全量加载，按日期查找即可）。
 
-### Step 2：逐条打分
+### Step 2：自动提取信号（DeepSeek）
 
-按照下文的 §1~§8 规则，对每一条帖子：
-1. 判断是否有明确方向预测
-2. 标注 `d`（方向）/ `s`（强度）/ `spec`（预测周期）/ `idx`（目标指数），JSON schema 见 §3
-3. 确定信号参考价和验证终点
-4. 读取验证终点的实际行情数据
-5. 按打分公式（§6）逐条打分
-6. 汇总全部信号的分值
-7. 将标注结果写入 `data/direction_signals/<博主名>.json`，运行 `python scripts/eval/run_direction.py <博主名>` 生成报告
+信号由 `scripts/pipeline/extract_signals_direction.py` 调用 DeepSeek flash 按 §1~§8 规则自动逐条提取（不再人工逐条标注）：
+
+```bash
+export DEEPSEEK_API_KEY="sk-..."   # 只经环境变量，绝不写入文件
+cd <项目根目录>
+python scripts/pipeline/extract_signals_direction.py <博主名>
+```
+
+脚本做的事：
+1. 读 `data/posts/<博主名>.json` 的帖子 + `<博主名>_bodies_s*.json` 的正文，过滤 `publish_date >= 2026-01-01`
+2. 分批（默认 15 条/批）调 DeepSeek flash，按下方 §1~§8 规则判定并标注 `d`/`s`/`spec`/`idx`/`cat`（JSON schema 见 §3）
+3. 脚本强校验：`spec`/`idx` 非法值丢弃、`cat` 归一、同帖重复与同日同周期同方向去重、`summary≤50字`
+4. 产出 `data/direction_signals/<博主名>.json`，随后运行 `python scripts/eval/run_direction.py <博主名>` 生成报告
+
+> 冒烟测试：`--limit 30` 只处理前 30 条；`--out /tmp/x.json` 写指定路径不动正式数据；`--dry-run` 不调 API。每次运行会覆盖目标文件（无增量续跑）。
 
 ---
 
 ## 预测质量逐条打分
 
-**整个过程不能用关键词匹配或正则表达式来筛选或标注。** 每一条帖子的每一个标注字段，都必须由 LLM 通过理解帖子语义来判定，而非依赖关键词列表。
+**整个过程不能用关键词匹配或正则表达式来筛选或标注。** 每一条帖子的每一个标注字段，都必须由 DeepSeek（通过本脚本）理解帖子语义来判定，而非依赖关键词列表——§1~§8 即写入 DeepSeek system prompt 的标注契约。
 
-逐条读帖子，用 LLM 判断每条帖子是否包含方向信号并逐条标注。
+脚本自动逐条读帖子，用 DeepSeek 判断每条帖子是否包含方向信号并逐条标注。
 
 **提取为信号的原则**：整条帖子内容中有对上证/大盘/市场的方向上明确的、非模糊的预测。LLM 不应机械地逐项检查，应整体判断：**这篇帖子表达了对大盘未来的明确方向预测吗？** 如果答案是肯定的，就提取信号；如果答案否定的，就不提取。
 

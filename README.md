@@ -69,8 +69,10 @@ python scripts/pipeline/scrape_toutiao.py "<帖子链接>" --name "<博主名>"
 # 2. 刷新行情数据（7 指数，Direction 前置条件）
 python scripts/utils/fetch_market_data.py --start 20240601
 
-# 3. LLM 信号标注 → data/direction_signals/<博主名>.json
-#    （由 Claude Agent 按 SKILL.md §1~§8 逐条标注，schema 见 SKILL.md §3）
+# 3. DeepSeek 自动提取信号 → data/direction_signals/<博主名>.json
+export DEEPSEEK_API_KEY="sk-..."   # 只经环境变量，绝不写入文件/提交
+python scripts/pipeline/extract_signals_direction.py <博主名>
+#    （DeepSeek flash 按 SKILL.md §1~§8 自动逐条标注 + 脚本格式强校验，schema 见 SKILL.md §3）
 
 # 4. Direction 验证打分并生成报告
 python scripts/eval/run_direction.py <博主名>        # 单个博主
@@ -89,8 +91,9 @@ Toutiao 帖子
 scrape_toutiao.py ──► data/posts/<name>.json
     │
     ▼
-Claude Agent 按 SKILL.md §1~§8 逐条标注
-（pub/d/s/idx/spec/summary/cat，语义理解 + 板块→指数映射）
+extract_signals_direction.py（DeepSeek flash）
+按 SKILL.md §1~§8 自动逐条标注
+（pub/d/s/idx/spec/summary/cat，语义理解 + 板块→指数映射 + 格式强校验）
     │
     ▼
 data/direction_signals/<name>.json
@@ -114,7 +117,8 @@ comparison_all.py ──► reports/comparison_direction.md
 - **Python** ≥ 3.10
 - **Playwright** + Chromium（爬虫）
 - **akshare / pandas**（行情数据下载）
-- **Claude Code**（LLM 信号标注 / Direction 打分）
+- **openai**（DeepSeek flash 自动信号提取，`pip install openai`）
+- **Claude Code**（Direction 打分 / 报告生成）
 
 ## 注意事项
 
