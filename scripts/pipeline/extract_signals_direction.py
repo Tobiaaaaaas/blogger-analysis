@@ -57,19 +57,10 @@ SPEC_RE = re.compile(r"^(today|week|nweek|nweek_first|month|nmonth|yearend|t\d+|
 NON_SCORED_CATS = {"无效-日内", "无预测周期", "目标点位"}
 
 
-def _placeholder(body):
-    """登录墙占位正文视为无正文（手机登录/扫码登录/获取验证码）。"""
-    if not body:
-        return True
-    if len(body) <= 20:
-        return True
-    if "登录" in body and "验证码" in body:
-        return True
-    return False
-
-
 # ── System Prompt（SKILL.md §1~§8 规则精简版，Direction schema）──
 SYSTEM_PROMPT = """你是财经内容分析助手。你的任务是阅读今日头条财经博主的帖子，判断每条帖子是否包含对上证综指/大盘的**明确方向预测**，并按给定规则逐条提取方向信号。
+
+帖子以「标题：…\\n正文：…」并列呈现——**标题与正文同等重要**：标题常直接给出预测结论（"明天看涨""站稳4130就能到4250"），勿因正文冗长而漏读标题；疑问句/引流话术式标题（"明天A股会怎么走？"）不代表预测，去正文找结论。微帖（标题即正文）只显示一次。
 
 ## 提取为信号的标准（可打分性）
 必须同时满足：**明确的预测周期**（明天/本周/下周/下月等）+ **明确的态度**（看涨/看跌、收阳/收阴、涨/跌）。
@@ -129,6 +120,8 @@ SYSTEM_PROMPT = """你是财经内容分析助手。你的任务是阅读今日�
 # ── 自查 System Prompt（对「已提取信号+原文」做独立审查）──
 VERIFY_SYSTEM_PROMPT = """你是信号审查助手。你会收到「已提取信号 + 其原文帖子」，请审查信号是否被原文**明确支持**，并修正或补加。
 
+帖子以「标题：…\\n正文：…」并列呈现，标题与正文同等重要——标题里的明确预测结论（"明天看涨"等）同样要审查、不可漏。
+
 ## 第一步：判定主结论句
 先找到帖子的**主结论句**——形如「周三：大盘探底回升，我看涨」「明天：只卖不买」「下周一我看跌」等**带明确时间+明确态度**的句子。主结论句是全帖最高优先级的预测：**任何条件句、风险提示、走势分类、点位预演都不能替代或覆盖主结论句**。若提取信号与主结论句方向/周期不一致 → 必须 action=fix，改为主结论句的方向/周期。
 
@@ -179,14 +172,36 @@ def load_posts_and_bodies(blogger):
 
 
 def post_text(post, bodies):
-    """正文优先（非登录墙占位），否则用列表标题 content。"""
-    b = bodies.get(str(post.get("post_id", "")), {})
+    """标题 + 正文同等重要：有正文时两者并列呈现（标题常直接含预测结论，勿丢弃）。
+
+    优先级：
+    - 标题：bodies.title → post.title（合并后保留的标题字段）→ 无正文时的原 content
+    - 正文：bodies.body（仅排除登录墙占位）→ 已合并的 post.content
+    微帖（正文即标题，一句话预测）只显示一次，避免重复。
+    """
+    pid = str(post.get("post_id", ""))
+    b = bodies.get(pid, {}) if isinstance(bodies, dict) else {}
+    title = b.get("title", "") if isinstance(b, dict) else ""
     body = b.get("body", "") if isinstance(b, dict) else ""
-    if _placeholder(body):
-        body = ""
-    text = body or post.get("content", "") or ""
-    if len(text) > 500:
-        text = text[:300] + "\n...[省略中间内容]...\n" + text[-250:]
+    if body and "登录" in body and "验证码" in body:
+        body = ""  # 登录墙占位（手机登录/扫码登录/获取验证码），非真实正文
+    content = post.get("content", "") or ""
+    post_title = post.get("title", "") or ""
+    t = (title or post_title).strip()
+    if body:
+        body = body.strip()
+        if t and t != body:
+            return _truncate(f"标题：{t}\n正文：{body}")
+        return _truncate(body)  # 微帖：标题即正文，只显示一次
+    # 无正文（bodies 未抓取 / 已归档 / 登录墙占位）
+    if t and t != content.strip():
+        return _truncate(f"标题：{t}\n正文：{content.strip()}")
+    return _truncate(content)
+
+
+def _truncate(text, limit=500):
+    if len(text) > limit:
+        return text[:300] + "\n...[省略中间内容]...\n" + text[-250:]
     return text
 
 

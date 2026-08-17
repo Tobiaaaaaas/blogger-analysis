@@ -27,7 +27,7 @@ LLM 全量读取博主 2026 年以来的帖子，逐条提取方向预测信号�
 ## 前置条件
 
 - `data/posts/<博主名>.json` 已存在（已爬取全部帖子）
-- 博主正文可用：主文件 `data/posts/<博主名>.json` 的 `content` 已含完整正文（老博主原本如此；新博主爬取时列表接口只回标题，已由 `scripts/utils/merge_bodies_to_posts.py` 将详情页正文回填进 `content` 并归档 `_bodies_s*.json` 至 `archive/<日期>-bodies-merged/`）。若 content 仍只有标题（新抓取未合并），用 `scripts/utils/fetch_bodies_shard.py` 抓正文后再合并
+- 博主正文可用：主文件 `data/posts/<博主名>.json` 的 `content` 已含完整正文（老博主原本如此；新博主爬取时列表接口只回标题，已由 `scripts/utils/merge_bodies_to_posts.py` 将详情页正文回填进 `content`、**原标题单独存 `title` 字段**（标题与正文同等重要，提取时两者并列呈现给 LLM）并归档 `_bodies_s*.json` 至 `archive/<日期>-bodies-merged/`）。若 content 仍只有标题（新抓取未合并），用 `scripts/utils/fetch_bodies_shard.py` 抓正文后再合并
 - `data/market/market_data.json` 已存在（含 7 指数日线数据，且已更新到最新交易日）
 - `data/market/intraday/<指数名>_30min.json` 已存在（7 指数 30 分钟线，所有信号的参考价与终点价来源；缺失时先跑 `python scripts/utils/fetch_market_intraday.py`）
 - **DeepSeek API Key**：信号由 DeepSeek 自动提取，key 只通过环境变量传入（**绝不写入文件、绝不提交 GitHub**）：
@@ -72,7 +72,7 @@ python scripts/pipeline/extract_signals_direction.py <博主名>
 ```
 
 脚本做的事：
-1. 读 `data/posts/<博主名>.json` 的帖子（`content` 已含完整正文；若仍有未合并的 `<名>_bodies_s*.json` 正文分片则自动优先读取），过滤 `publish_date >= 2026-01-01`
+1. 读 `data/posts/<博主名>.json` 的帖子（`content` 已含完整正文；若仍有未合并的 `<名>_bodies_s*.json` 正文分片则自动优先读取），过滤 `publish_date >= 2026-01-01`；每条帖子以「标题：…\n正文：…」并列呈现给 LLM（标题取 `bodies.title` → `title` 字段 → 无正文时的原 `content`），标题与正文同等重要
 2. 分批（默认 15 条/批）调 DeepSeek flash，按下方 §1~§7 规则判定并标注 `d`/`s`/`spec`/`idx`/`cat`（JSON schema 见 §2）
 3. 脚本强校验：`spec`/`idx` 非法值丢弃、`cat` 归一、同帖重复与同日同周期同方向去重、`summary≤50字`
 4. **信号自查**：把「已提取信号 + 原文」回喂 DeepSeek 做独立审查（keep/fix/drop/补加），修掉丢失主结论句（如 07-28 丢了"探底回升我看涨"）、周期误套（结构性无周期误标 scored）等错误
@@ -117,8 +117,8 @@ python scripts/pipeline/extract_signals_direction.py <博主名>
 逐条提取前，先按博主的帖子结构特征快速定位核心预测句：
 
 **通用规则**：
-- **忽略标题**——标题常是疑问句或引流话术，不代表预测；预测结论在**帖子正文**中寻找
-- 在正文中**快速提取方向与预测周期**即可，行情回顾、纯复盘、投资理念、仓位自述不提取
+- **标题与正文同等重要**——帖子以「标题：…\n正文：…」并列呈现，标题常直接给出预测结论（陈述句标题如"明天看涨""站稳4130就能到4250"可直接提取）；疑问句/引流话术式标题（"明天A股会怎么走？""下周要变天？"）不代表预测，去正文找结论。标题里明确的方向/周期不要因正文冗长而漏掉
+- 在**标题 + 正文**中快速提取方向与预测周期即可，行情回顾、纯复盘、投资理念、仓位自述不提取
 - **注意同一帖子可能出现多个观点**（不同周期**或不同方向**，如"明天探底回升、下周继续涨""短期看空、长期看多"）——每个"观点+周期"分别记一条信号，各按 §3 设验证终点、按 §5 打分；同一周期重复表述只记一条
 - 同一天发布的针对同一周期的相同方向的预测，只记一条（如一天内多帖都喊"明天中阳线"→记一条，保留当天最晚发布的一条）
 - 同一天发布的针对不同周期的预测，分开记录

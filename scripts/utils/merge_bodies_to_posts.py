@@ -8,7 +8,8 @@ posts[].content，使主文件自包含、与老博主（content 即全文）格
 用法：
     python scripts/utils/merge_bodies_to_posts.py <博主名> [<博主名>...] [--keep-bodies]
 
-- 合并规则：bodies 有条目且正文有效（非登录墙占位）→ 覆盖 content；否则保留原 content
+- 合并规则：bodies 有条目且正文有效（非登录墙占位）→ 正文覆盖 content，原标题单独存 title 字段
+  （标题与正文同等重要，提取时两者并列呈现给 LLM，标题不随正文合并丢失）；否则保留原 content
 - 默认把已合并的 _bodies_s*.json 移动到 archive/<日期>-bodies-merged/（--keep-bodies 跳过）
 - 不校验、不改动除 content 外的任何字段；格式沿用 json.dump(indent=2, ensure_ascii=False)
 """
@@ -64,6 +65,8 @@ def merge_blogger(blogger):
         body = entry.get("body", "")
         if _placeholder(body):
             continue
+        # 标题与正文同等重要：正文回填 content，原标题单独存 title 字段（bodies 归档后仍保留）
+        p["title"] = entry.get("title") or p.get("content", "")
         p["content"] = body
         filled += 1
     still_title_only = sum(1 for p in posts if len((p.get("content") or "")) <= 30)
