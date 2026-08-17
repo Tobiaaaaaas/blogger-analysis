@@ -7,7 +7,7 @@
 4. 页面内提取内容兜底
 
 Usage:
-  python scripts/scrape_toutiao.py <帖子链接> [--name <博主名>]
+  python scripts/scrape_toutiao.py <帖子链接> [--name <博主名>] [--since YYYY-MM-DD] [--force]
 """
 
 import json
@@ -155,6 +155,7 @@ def main():
     parser.add_argument("url", nargs="?", default="", help="博主任意帖子链接")
     parser.add_argument("--name", "-n", default="", help="博主名称（可选，不提供则自动检测）")
     parser.add_argument("--since", default="", help="只爬取该日期之后(含)的帖子，如 2026-01-01（默认全量）")
+    parser.add_argument("--force", action="store_true", help="异常停（未覆盖到 --since）时也强制覆盖保存（默认拒绝覆盖，防截断数据落盘）")
     args = parser.parse_args()
 
     post_url = args.url or "https://www.toutiao.com/w/1872013328886923/"
@@ -263,6 +264,7 @@ def main():
         max_pages = 200
 
         empty_streak = 0  # 连续空页计数
+        stop_reason = ""  # 翻页停止原因，写入 result 供 verify_posts.py 二次检查判读
         for page_num in range(1, max_pages + 1):
             # 页面仍可能被重定向链导航，API 调用失败时短暂等待后重试
             result = None
@@ -276,12 +278,15 @@ def main():
                 time.sleep(3)
             if not result:
                 print(f"  第{page_num}页: API返回空，停止")
+                stop_reason = "api_empty"
                 break
             if "error" in result:
                 print(f"  第{page_num}页: JS错误 - {result['error']}，停止")
+                stop_reason = "js_error"
                 break
             if result.get("message") != "success":
                 print(f"  第{page_num}页: 状态异常，停止")
+                stop_reason = "status_abnormal"
                 break
 
             try:
@@ -315,26 +320,34 @@ def main():
             # 只爬 --since 之后的帖子：本页最远时间已早于 since → 后续页全为更早，停止
             if since_ts and min_t and min_t < since_ts:
                 print(f"  已到起始日期 {args.since} 之前的帖子（本页最远 {date_str}），翻页结束")
+                stop_reason = "since"
                 break
 
             if len(all_posts) >= target:
                 print("  达到目标数量，翻页结束")
+                stop_reason = "target"
                 break
 
             if not has_more and empty_streak >= 3:
                 print("  has_more=False且连续空页，翻页结束")
+                stop_reason = "no_more"
                 break
 
             if empty_streak >= 5:
                 print("  连续5页无新帖，翻页结束")
+                stop_reason = "empty_streak"
                 break
 
             if not next_max:
                 print("  无下一页游标，翻页结束")
+                stop_reason = "no_cursor"
                 break
 
             max_behot_time = next_max
             time.sleep(1)
+
+        if not stop_reason:
+            stop_reason = "max_pages"  # 翻页到上限未触发停止条件
 
         # === 步骤4: 提取用户统计 ===
         print("\n[4] 提取用户统计...")
@@ -403,6 +416,7 @@ def main():
         result = {
             "scrape_time": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
             "source_url": post_url,
+            "stop_reason": stop_reason,
             "user_info": user_info,
             "total_posts": len(all_posts),
             "time_range": {
@@ -411,6 +425,18 @@ def main():
             },
             "posts": sorted(all_posts, key=lambda x: x["publish_time"], reverse=True),
         }
+
+        # 覆盖前保护：--since 未覆盖到起点且异常停 → 拒绝覆盖（防截断数据静默落盘）
+        TRUNCATED = {"api_empty", "js_error", "status_abnormal", "empty_streak", "max_pages"}
+        min_ts = min((p["publish_time"] for p in all_posts if p["publish_time"]), default=0)
+        if since_ts and min_ts > since_ts and stop_reason in TRUNCATED and not args.force:
+            print(f"  ❌ 异常停（stop_reason={stop_reason}），最远只到 "
+                  f"{datetime.fromtimestamp(min_ts).strftime('%Y-%m-%d')}，未覆盖到 --since {args.since}")
+            print(f"    拒绝覆盖 {output_file}（数据可能截断）。确认后加 --force 强制覆盖，或重试爬取。")
+            browser.close()
+            sys.exit(1)
+        elif stop_reason in TRUNCATED:
+            print(f"  ⚠️ 停止原因={stop_reason}（异常停）：建议运行 python scripts/utils/verify_posts.py <博主名> 二次检查")
 
         # 保存前备份旧文件，防止覆盖丢失历史数据
         if output_file and os.path.exists(output_file):
