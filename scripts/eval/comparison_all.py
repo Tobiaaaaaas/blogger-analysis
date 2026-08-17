@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-全部博主 Direction 横向对比汇总（配合引擎 v2）
+全部博主 Direction 横向对比汇总（配合引擎 v3：统一 30 分钟口径）
 用法: python scripts/eval/comparison_all.py
 输出: reports/comparison_direction.md
 """
@@ -63,7 +63,7 @@ if excluded:
     L.append(f'> 不参与总榜排名（计分信号 < {RANK_MIN_SIGNALS} 条）：' + '、'.join(f'{b}（{len(rows_all[b])} 条）' for b in excluded))
     L.append('')
 
-# 表1 预测周期（三档归类：交易日 0-1 / 2-5 / 6+，附"今天(盘前)"子行）
+# 表1 预测周期（三档归类：交易日 0-1 / 2-5 / 6+，附"今天(盘前/盘中)"子行）
 L.append('## 1. 按预测周期分类（三档：0-1/2-5/6个及以上交易日）')
 L.append('')
 def bucket_of(r):
@@ -82,8 +82,8 @@ for b in BLOGGERS:
         groups[b][bucket_of(r)].append(r)
         if r['spec'] == 'today':
             today_groups[b].append(r)
-for p in ['0-1个交易日(今天明天)', '　└ 其中:今天(盘前)', '2-5个交易日(1周内)', '6个交易日及以上(大于1周)']:
-    if p == '　└ 其中:今天(盘前)':
+for p in ['0-1个交易日(今天明天)', '　└ 其中:今天(盘前/盘中)', '2-5个交易日(1周内)', '6个交易日及以上(大于1周)']:
+    if p == '　└ 其中:今天(盘前/盘中)':
         L.append(f'| {p} | ' + ' | '.join(cell(today_groups[b]) for b in BLOGGERS) + ' |')
     else:
         L.append(f'| {p} | ' + ' | '.join(cell(groups[b].get(p, [])) for b in BLOGGERS) + ' |')
