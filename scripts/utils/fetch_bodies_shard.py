@@ -5,6 +5,10 @@ from playwright.sync_api import sync_playwright
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
+# 视频帖标记：无文字正文，抓取时直接跳过。写入 done 使后续重跑不再访问该 URL；
+# 合并/提取脚本因 len<=20 会把它当占位符忽略，不会回填成正文。
+VIDEO_MARKER = '[视频帖]'
+
 
 def _normalize_url(u):
     """归一化到桌面版 www.toutiao.com，避免跳转到需登录的移动站。
@@ -22,6 +26,8 @@ done = json.load(open(OUT, encoding='utf-8')) if os.path.exists(OUT) else {}
 posts = sorted(data['posts'], key=lambda p: p['publish_date'])
 def _placeholder(b):
     """登录墙文本视为未抓成功（手机登录/扫码登录/获取验证码），需要重抓。"""
+    if '[视频帖]' in (b or ''):
+        return False  # 视频帖已处理，绝不重试
     if len(b) <= 20:
         return True
     if '登录' in b and '验证码' in b:
@@ -40,13 +46,28 @@ with sync_playwright() as p:
     page = ctx.new_page()
     for i, post in enumerate(todo):
         pid = post['post_id']
+        # 视频帖跳过：m.toutiaoimg.cn 是视频 CDN 域名，无文字正文
+        if 'm.toutiaoimg.cn' in post['url']:
+            done[pid] = {'title': post['content'], 'body': VIDEO_MARKER, 'url': post['url']}
+            continue
         try:
             page.goto(_normalize_url(post['url']), timeout=12000, wait_until='commit')
-            # SPA 页面：等待正文内容渲染出来（最多 6s），比固定 sleep 更快更稳
+            # SPA 页面：等正文渲染（4s 内通常能出）。超时先查是否视频（西瓜播放器 xgplayer）——
+            # 视频页无正文节点，直接标记跳过、不再重试；非视频但渲染慢则再等一轮。
             try:
-                page.wait_for_selector('article, .article-content, .tt-article-content, .syl-article-base, .article-text, p', timeout=6000)
+                page.wait_for_selector('article, .article-content, .tt-article-content, .syl-article-base, .article-text, p', timeout=4000)
             except Exception:
-                pass
+                try:
+                    html = page.content()
+                except Exception:
+                    html = ''
+                if 'xgplayer' in html:
+                    done[pid] = {'title': post['content'], 'body': VIDEO_MARKER, 'url': post['url']}
+                    continue
+                try:
+                    page.wait_for_selector('article, .article-content, .tt-article-content, .syl-article-base, .article-text, p', timeout=4000)
+                except Exception:
+                    pass
             body = ''
             for sel in ['article', '.article-content', '.tt-article-content', '.syl-article-base', '.article-text']:
                 el = page.query_selector(sel)

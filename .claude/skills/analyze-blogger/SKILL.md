@@ -28,7 +28,7 @@ LLM 全量读取博主的全部帖子，逐条提取方向预测信号，验证�
 ## 前置条件
 
 - `data/posts/<博主名>.json` 已存在（已爬取全部帖子）
-- 博主正文文件已抓取：`data/posts/<博主名>_bodies_s*.json`（信号提取脚本读取正文；正文缺失时退化为列表标题 `content`）
+- 博主正文可用：主文件 `data/posts/<博主名>.json` 的 `content` 已含完整正文（老博主原本如此；新博主爬取时列表接口只回标题，已由 `scripts/utils/merge_bodies_to_posts.py` 将详情页正文回填进 `content` 并归档 `_bodies_s*.json` 至 `archive/<日期>-bodies-merged/`）。若 content 仍只有标题（新抓取未合并），用 `scripts/utils/fetch_bodies_shard.py` 抓正文后再合并
 - `data/market/market_data.json` 已存在（含 7 指数日线数据，且已更新到最新交易日）
 - **DeepSeek API Key**：信号由 DeepSeek 自动提取，key 只通过环境变量传入（**绝不写入文件、绝不提交 GitHub**）：
   - `export DEEPSEEK_API_KEY="sk-..."`（每次运行前设置）
@@ -59,7 +59,7 @@ python scripts/pipeline/extract_signals_direction.py <博主名>
 ```
 
 脚本做的事：
-1. 读 `data/posts/<博主名>.json` 的帖子 + `<博主名>_bodies_s*.json` 的正文，过滤 `publish_date >= 2026-01-01`
+1. 读 `data/posts/<博主名>.json` 的帖子（`content` 已含完整正文；若仍有未合并的 `<名>_bodies_s*.json` 正文分片则自动优先读取），过滤 `publish_date >= 2026-01-01`
 2. 分批（默认 15 条/批）调 DeepSeek flash，按下方 §1~§8 规则判定并标注 `d`/`s`/`spec`/`idx`/`cat`（JSON schema 见 §3）
 3. 脚本强校验：`spec`/`idx` 非法值丢弃、`cat` 归一、同帖重复与同日同周期同方向去重、`summary≤50字`
 4. **信号自查**：把「已提取信号 + 原文」回喂 DeepSeek 做独立审查（keep/fix/drop/补加），修掉丢失主结论句（如 07-28 丢了"探底回升我看涨"）、周期误套（结构性无周期误标 scored）、盘前"今天"误判无效-日内等错误

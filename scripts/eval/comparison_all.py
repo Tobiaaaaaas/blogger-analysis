@@ -14,7 +14,8 @@ import run_direction as eng
 
 RANK_MIN_SIGNALS = 30     # 总榜排名资格：计分信号 ≥ 30 条
 BUCKET_MIN_SIGNALS = 10   # 三档排名资格：该档信号 ≥ 10 条
-BLOGGERS = sorted(f[:-5] for f in os.listdir(eng.DATA_DIR) if f.endswith('.json'))
+# 跳过 _ 前缀文件：_<名>_run.json 是提取脚本的 gitignored 运行溯源（signals 为 int 计数），非信号文件
+BLOGGERS = sorted(f[:-5] for f in os.listdir(eng.DATA_DIR) if f.endswith('.json') and not f.startswith('_'))
 
 rows_all, meta = {}, {}
 for b in BLOGGERS:
