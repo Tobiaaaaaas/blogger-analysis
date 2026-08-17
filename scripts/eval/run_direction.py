@@ -673,6 +673,25 @@ def selftest():
     check(bucket_of(r) == '2-5个交易日(1周内)', f"bucket nweek={bucket_of(r)}")
     r = calc({'pub': '2026-01-07 15:08', 'd': 1, 's': 1, 'idx': '上证指数', 'spec': 't10', 'summary': 'test', 'cat': 'scored'})
     check(bucket_of(r) == '6个交易日及以上(大于1周)', f"bucket t10={bucket_of(r)}")
+    # ── 边界锁定（审计确认的正确"反直觉"落位，防未来回归改错）──
+    # 非交易日"明天"→base=前一交易日，ep=下周一，span=1 → 0-1 档（SKILL.md L371 边界示例）
+    r = calc({'pub': '2026-01-24 09:00', 'd': 1, 's': 1, 'idx': '上证指数', 'spec': 't1', 'summary': 'test', 'cat': 'scored'})
+    check(bucket_of(r) == '0-1个交易日(今天明天)', f"bucket 非交易日t1={bucket_of(r)}")
+    # 周五发"本周"→ep=当天，span=0 → 0-1 档
+    r = calc({'pub': '2026-02-06 14:19', 'd': 1, 's': 1, 'idx': '上证指数', 'spec': 'week', 'summary': 'test', 'cat': 'scored'})
+    check(bucket_of(r) == '0-1个交易日(今天明天)', f"bucket 周五week={bucket_of(r)}")
+    # 周三发"本周"→ep=次日(周四)，span=1 → 0-1 档
+    r = calc({'pub': '2026-04-29 12:11', 'd': 1, 's': 1, 'idx': '上证指数', 'spec': 'week', 'summary': 'test', 'cat': 'scored'})
+    check(bucket_of(r) == '0-1个交易日(今天明天)', f"bucket 周三week={bucket_of(r)}")
+    # 月底前最后交易日当天发→ep=当天，span=0 → 0-1 档
+    r = calc({'pub': '2026-02-27 13:20', 'd': 1, 's': 1, 'idx': '上证指数', 'spec': 'month', 'summary': 'test', 'cat': 'scored'})
+    check(bucket_of(r) == '0-1个交易日(今天明天)', f"bucket 月末month={bucket_of(r)}")
+    # 周三发"下周"、隔春节长假→span=8 → ≥6 档（数交易日非日历相减）
+    r = calc({'pub': '2026-02-04 13:33', 'd': 1, 's': 1, 'idx': '上证指数', 'spec': 'nweek', 'summary': 'test', 'cat': 'scored'})
+    check(bucket_of(r) == '6个交易日及以上(大于1周)', f"bucket 隔长假nweek={bucket_of(r)}")
+    # 后天 t2→ep=后第2交易日，span=2 → 2-5 档
+    r = calc({'pub': '2026-01-07 15:08', 'd': 1, 's': 1, 'idx': '上证指数', 'spec': 't2', 'summary': 'test', 'cat': 'scored'})
+    check(bucket_of(r) == '2-5个交易日(1周内)', f"bucket t2={bucket_of(r)}")
 
     if errors:
         print('❌ 自测失败:')
