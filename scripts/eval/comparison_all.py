@@ -66,20 +66,13 @@ if excluded:
 # 表1 预测周期（三档归类：交易日 0-1 / 2-5 / 6+，附"今天(盘前/盘中)"子行）
 L.append('## 1. 按预测周期分类（三档：0-1/2-5/6个及以上交易日）')
 L.append('')
-def bucket_of(r):
-    pubd = r['pub'][:10]
-    base = pubd if pubd in eng.CAL_SET else eng.prev_td(pubd)
-    span = eng.CAL.index(r['ep']) - eng.CAL.index(base)
-    if span <= 1: return '0-1个交易日(今天明天)'
-    if span <= 5: return '2-5个交易日(1周内)'
-    return '6个交易日及以上(大于1周)'
 L.append('| 预测周期 | ' + ' | '.join(BLOGGERS) + ' |')
 L.append('|:---|' + ':---:|' * len(BLOGGERS))
 groups = {b: defaultdict(list) for b in BLOGGERS}
 today_groups = {b: [] for b in BLOGGERS}
 for b in BLOGGERS:
     for r in rows_all[b]:
-        groups[b][bucket_of(r)].append(r)
+        groups[b][eng.bucket_of(r)].append(r)
         if r['spec'] == 'today':
             today_groups[b].append(r)
 for p in ['0-1个交易日(今天明天)', '　└ 其中:今天(盘前/盘中)', '2-5个交易日(1周内)', '6个交易日及以上(大于1周)']:

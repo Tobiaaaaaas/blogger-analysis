@@ -9,7 +9,8 @@ Direction 评估引擎 v3 — 严格按 SKILL.md（Direction 主技能）最新�
   §5 参考价   : 发布时刻后首根 30 分钟 bar 的开盘价（统一规则；盘后/非交易日 → 下一交易日首根）
   §6 打分     : score = direction × return × 100
   §7 汇总     : 平均分为核心指标；正确率 = score>0 占比，score=0 计"平"不计入
-  §8 报告     : 逐条表 + 按预测指数/多空/预测周期三分类表 + 月度表现
+  §8 报告     : 逐条表 + 按预测指数/多空分类表 + 按预测期限三档分类表（信号日→验证终点交易日数
+                0-1/2-5/≥6，"今天(盘前/盘中)"在 0-1 档下单列子行，与 comparison 表1 同口径）+ 月度表现
 
 用法:
   python scripts/eval/run_direction.py [博主名 ...]    # 不传参数 = 全部
@@ -173,9 +174,19 @@ def period_text(spec):
     return spec
 
 
-def period_group(spec):
-    """按预测周期分类的组标签：具体日期类（d:）统一归入"具体日期"，其余沿用 period_text"""
-    return '具体日期' if spec.startswith('d:') else period_text(spec)
+def bucket_of(r):
+    """按预测期限三档归类：信号日→验证终点的交易日数（数交易日历中间交易日，非日历相减）。
+
+    与 SKILL.md 输出部分「预测周期三档归类」算法一致（comparison 表1 同口径，comparison_all.py 复用本函数）：
+    base = 发布日若为交易日，否则前一交易日；span = CAL.index(ep) − CAL.index(base)。"""
+    pubd = r['pub'][:10]
+    base = pubd if pubd in CAL_SET else prev_td(pubd)
+    span = CAL.index(r['ep']) - CAL.index(base)
+    if span <= 1:
+        return '0-1个交易日(今天明天)'
+    if span <= 5:
+        return '2-5个交易日(1周内)'
+    return '6个交易日及以上(大于1周)'
 
 
 # ---------------- §6 打分（统一 30 分钟口径） ----------------
@@ -450,14 +461,17 @@ def generate(blogger):
     class_table('按多空分类', [('看多 bullish', bull), ('　└ strong', strong), ('　└ moderate', moderate),
                               ('看空 bearish', bear)])
 
-    # 按预测周期
-    byperiod = defaultdict(list)
+    # 按预测期限（三档归类：信号日→验证终点交易日数，与 comparison 表1 同口径，SKILL.md 输出部分）
+    horizon = defaultdict(list)
     for r in scored:
-        byperiod[period_group(r['spec'])].append(r)
-    order = ['今天', '明天', '后天/1-2天', '未来几天', '近期/短期', '本周', '下周', '下周初', '月底前', '下个月', '全年', '具体日期']
-    groups = [(k, byperiod[k]) for k in order if k in byperiod]
-    groups += [(k, v) for k, v in sorted(byperiod.items()) if k not in order]
-    class_table('按预测周期分类', groups)
+        horizon[bucket_of(r)].append(r)
+    today_sub = [r for r in scored if r['spec'] == 'today']
+    groups = []
+    for k in ['0-1个交易日(今天明天)', '2-5个交易日(1周内)', '6个交易日及以上(大于1周)']:
+        groups.append((k, horizon.get(k, [])))
+        if k == '0-1个交易日(今天明天)':
+            groups.append(('　└ 其中:今天(盘前/盘中)', today_sub))
+    class_table('按预测期限分类（三档：信号日→验证终点交易日数 0-1/2-5/≥6，"今天(盘前/盘中)"在 0-1 档下单列子行）', groups)
 
     # 月度表现
     L.append('### 月度表现')
@@ -546,10 +560,10 @@ def generate(blogger):
     verdict = '具备统计优势' if acc >= 55 else '接近抛硬币水平，没有统计优势'
     L.append(f'- **方向正确率 {acc:.1f}%**（{n_pos}/{den}，终点收益判定；score=0 计"平" {n_zero} 条）——{verdict}。')
     L.append(f'- **看多 {len(bull)} 条平均 {avg_of(bull):+.2f} 分（胜率 {acc_of(bull)[2]:.1f}%）vs 看空 {len(bear)} 条平均 {avg_of(bear):+.2f} 分（胜率 {acc_of(bear)[2]:.1f}%）。')
-    if byperiod:
-        best_p = max(byperiod.items(), key=lambda kv: (avg_of(kv[1]), len(kv[1])))
-        worst_p = min(byperiod.items(), key=lambda kv: (avg_of(kv[1]), -len(kv[1])))
-        L.append(f'- **预测周期**："{best_p[0]}"最强（{len(best_p[1])} 条，平均 {avg_of(best_p[1]):+.2f} 分）；"{worst_p[0]}"最弱（{len(worst_p[1])} 条，平均 {avg_of(worst_p[1]):+.2f} 分）。')
+    if horizon:
+        best_p = max(horizon.items(), key=lambda kv: (avg_of(kv[1]), len(kv[1])))
+        worst_p = min(horizon.items(), key=lambda kv: (avg_of(kv[1]), -len(kv[1])))
+        L.append(f'- **预测期限**："{best_p[0]}"最强（{len(best_p[1])} 条，平均 {avg_of(best_p[1]):+.2f} 分）；"{worst_p[0]}"最弱（{len(worst_p[1])} 条，平均 {avg_of(worst_p[1]):+.2f} 分）。')
     if byidx:
         best_i = max(byidx.items(), key=lambda kv: (avg_of(kv[1]), len(kv[1])))
         worst_i = min(byidx.items(), key=lambda kv: (avg_of(kv[1]), -len(kv[1])))
@@ -649,6 +663,16 @@ def selftest():
     check(r['note'] == '日内', f"无效-日内盘中 note={r['note']}")
     r = calc({'pub': '2026-02-02 15:06', 'd': 1, 's': 1, 'idx': '上证指数', 'summary': '今天收红', 'cat': '无效-日内'})
     check(r['note'] == '无效-日内', f"无效-日内(spec省略)盘后未判无效 note={r['note']}")
+
+    # ── bucket_of 三档归类（信号日→验证终点交易日数，与 SKILL.md/comparison 表1 同口径）──
+    r = calc({'pub': '2026-01-28 10:06', 'd': 1, 's': 1, 'idx': '上证指数', 'spec': 'today', 'summary': 'test', 'cat': '无效-日内'})
+    check(bucket_of(r) == '0-1个交易日(今天明天)', f"bucket 盘中today={bucket_of(r)}")
+    r = calc({'pub': '2026-01-07 15:08', 'd': -1, 's': 1, 'idx': '上证指数', 'spec': 't1', 'summary': 'test', 'cat': 'scored'})
+    check(bucket_of(r) == '0-1个交易日(今天明天)', f"bucket t1={bucket_of(r)}")
+    r = calc({'pub': '2026-01-24 14:44', 'd': 1, 's': 1, 'idx': '上证指数', 'spec': 'nweek', 'summary': 'test', 'cat': 'scored'})
+    check(bucket_of(r) == '2-5个交易日(1周内)', f"bucket nweek={bucket_of(r)}")
+    r = calc({'pub': '2026-01-07 15:08', 'd': 1, 's': 1, 'idx': '上证指数', 'spec': 't10', 'summary': 'test', 'cat': 'scored'})
+    check(bucket_of(r) == '6个交易日及以上(大于1周)', f"bucket t10={bucket_of(r)}")
 
     if errors:
         print('❌ 自测失败:')
