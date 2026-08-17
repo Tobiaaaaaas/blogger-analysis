@@ -38,9 +38,6 @@ def cell(rs):
 def acc_of(rs):
     return eng.acc_of(rs)[2]
 
-def period_key(r):
-    return '具体日期' if r['spec'].startswith('d:') else eng.period_text(r['spec'])
-
 L = []
 L.append('# 全部博主 Direction 横向对比（平均分 = 单信号平均收益 %，括号内为信号数）')
 L.append('')

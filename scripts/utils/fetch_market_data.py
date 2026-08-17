@@ -24,7 +24,7 @@ DATA_DIR = os.path.join(PROJECT_ROOT, "data", "market")
 os.makedirs(DATA_DIR, exist_ok=True)
 OUTPUT_FILE = os.path.join(DATA_DIR, "market_data.json")
 
-# 7 大指数（与 Direction.md §2 的 key 一一对应）
+# 7 大指数（与 SKILL.md §2 的 key 一一对应）
 INDICES = [
     ("sh000001", "上证指数"),
     ("sh000300", "沪深300"),

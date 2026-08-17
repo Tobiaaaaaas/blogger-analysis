@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-Direction 评估引擎 v2 — 严格按 Direction.md 最新规则实现
+Direction 评估引擎 v2 — 严格按 SKILL.md（Direction 主技能）最新规则实现
 
-规则要点（与 .claude/skills/analyze-blogger/Direction.md 一一对应）：
+规则要点（与 .claude/skills/analyze-blogger/SKILL.md §1~§8 一一对应）：
   §1 有效性   : 盘中/盘后发布的"今天"预测无效（无效-日内）；盘前(<9:30)"今天"有效
   §3 可打分性 : 必须同时有明确预测周期 + 明确态度（看涨看跌/收阳收阴）
   §4 验证终点 : 以"信号日"（帖子发布自然日）为基准推算
@@ -128,7 +128,8 @@ def endpoint_of(pub_date, spec):
         days = [d for d in CAL if d[:7] == f'{y:04d}-{m:02d}']
         return days[-1] if days else None
     if spec == 'yearend':                                      # 当年最后交易日（数据未覆盖→待验证）
-        return f'{pub.year}-12-31'
+        days = [d for d in CAL if d[:4] == f'{pub.year:04d}']
+        return days[-1] if days else None
     if spec.startswith('d:'):                                  # 具体日期（非交易日顺延）
         target = spec[2:]
         return target if target in CAL_SET else next_td(target)
@@ -148,6 +149,11 @@ def period_text(spec):
     if spec.startswith('d:'):
         return spec[2:][5:]
     return spec
+
+
+def period_group(spec):
+    """按预测周期分类的组标签：具体日期类（d:）统一归入"具体日期"，其余沿用 period_text"""
+    return '具体日期' if spec.startswith('d:') else period_text(spec)
 
 
 # ---------------- §6 打分 ----------------
@@ -282,7 +288,7 @@ def generate(blogger):
     L = []
     L.append(f'# {blogger} 方向预测评估（Direction）')
     L.append('')
-    L.append(f'> 评估时间：{EVAL_DATE} | 方法论：Direction.md（逐条验证，score = direction × return）')
+    L.append(f'> 评估时间：{EVAL_DATE} | 方法论：SKILL.md（Direction，逐条验证，score = direction × return）')
     L.append(f'> 帖子总数：{n_posts} 条' if n_posts is not None else '> 帖子总数：未知（posts 文件缺失或不可读）')
     L.append(f'> 信号总数：{len(rows)} 条（参与打分 {len(scored)} + 待验证 {n_pend} + 无效-日内 {n_inv} + 无预测周期 {n_np} + 目标点位 {n_tp} + 无效-过时 {n_stale}）')
     L.append('')
@@ -331,8 +337,8 @@ def generate(blogger):
     # 按预测周期
     byperiod = defaultdict(list)
     for r in scored:
-        byperiod[period_text(r['spec'])].append(r)
-    order = ['今天', '明天', '1-2天', '未来几天', '近期/短期', '本周', '下周', '下周初', '月底前', '下个月', '全年', '具体日期']
+        byperiod[period_group(r['spec'])].append(r)
+    order = ['今天', '明天', '后天/1-2天', '未来几天', '近期/短期', '本周', '下周', '下周初', '月底前', '下个月', '全年', '具体日期']
     groups = [(k, byperiod[k]) for k in order if k in byperiod]
     groups += [(k, v) for k, v in sorted(byperiod.items()) if k not in order]
     class_table('按预测周期分类', groups)

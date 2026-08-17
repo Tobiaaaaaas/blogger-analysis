@@ -1,6 +1,6 @@
 # 微风3241 方向预测评估（Direction）
 
-> 评估时间：2026-08-14 | 方法论：Direction.md（逐条验证，score = direction × return）
+> 评估时间：2026-08-14 | 方法论：SKILL.md（Direction，逐条验证，score = direction × return）
 > 帖子总数：912 条
 > 信号总数：16 条（参与打分 4 + 待验证 0 + 无效-日内 0 + 无预测周期 5 + 目标点位 7 + 无效-过时 0）
 
