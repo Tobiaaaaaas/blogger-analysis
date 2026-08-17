@@ -5,7 +5,9 @@ DeepSeek 自动提取 Direction 方向信号（替代 Claude 人工逐条标注�
 
 流程：读 data/posts/<博主>.json 的帖子 + <博主>_bodies_s*.json 的正文
       → 分批调 DeepSeek flash 按 SKILL.md §1~§8 规则逐条判断
-      → 脚本强校验（spec/idx/cat/日期/去重，非法条目丢弃）→ 写 data/direction_signals/<博主>.json
+      → 脚本强校验（spec/idx/cat/日期/去重，非法条目丢弃）
+      → 自查：把「已提取信号 + 原文」回喂 DeepSeek 做独立审查（keep/fix/drop/补加）
+      → 写 data/direction_signals/<博主>.json
 
 用法：
   export DEEPSEEK_API_KEY="sk-..."      # 只经环境变量，绝不写入文件/提交
@@ -13,6 +15,7 @@ DeepSeek 自动提取 Direction 方向信号（替代 Claude 人工逐条标注�
   python scripts/pipeline/extract_signals_direction.py <博主名> --batch-size 25
   python scripts/pipeline/extract_signals_direction.py <博主名> --limit 30          # 冒烟：只处理前 30 条
   python scripts/pipeline/extract_signals_direction.py <博主名> --out /tmp/x.json   # 写指定路径（不动正式数据）
+  python scripts/pipeline/extract_signals_direction.py <博主名> --no-verify         # 跳过自查（更快）
   python scripts/pipeline/extract_signals_direction.py <博主名> --dry-run           # 不调 API、不写文件
 """
 
@@ -34,6 +37,7 @@ PROJECT_ROOT = os.path.dirname(os.path.dirname(SCRIPT_DIR))
 MODEL = "deepseek-v4-flash"
 BASE_URL = "https://api.deepseek.com"
 DEFAULT_BATCH_SIZE = 15
+VERIFY_BATCH_SIZE = 10  # 自查批次：每批审几帖
 MAX_RETRIES = 3
 RETRY_DELAY = 5  # seconds
 
@@ -66,7 +70,7 @@ SYSTEM_PROMPT = """你是财经内容分析助手。你的任务是阅读今日�
 - ❌ 仅描述形态而无收盘方向态度：震荡、筑底、洗盘、蓄势、拉锯、考验X点支撑、探底回升、冲高回落 → 不提取
 - ❌ 仓位自述（"还剩4成仓""满仓持股"）、行情回顾、投资理念、新闻评论 → 不提取
 - ❌ 目标点位无时间承诺（"目标是4260点""看到X点""还有X点空间"）→ cat=目标点位，不标 spec
-- ❌ 无预测周期（"中长期""未来几个月""大趋势向上"）→ cat=无预测周期，不标 spec
+- ❌ 无预测周期（"中长期""未来几个月""大趋势向上""随时"）→ cat=无预测周期，不标 spec
 - ❌ 预测对象是不可映射板块（有色/钢铁/医药/创新药/恒科/半导体/电池/房地产/航天/军工等）→ 忽略不提取
 
 ## 默认规则与板块→指数映射
@@ -112,6 +116,28 @@ SYSTEM_PROMPT = """你是财经内容分析助手。你的任务是阅读今日�
 - 没有信号的帖子不用出现在 signals 里
 - cat=scored 时 spec、s 必填；cat=无效-日内/无预测周期/目标点位 时不填 spec、s
 - 只返回 JSON，不要有任何其他文字"""
+
+# ── 自查 System Prompt（对「已提取信号+原文」做独立审查）──
+VERIFY_SYSTEM_PROMPT = """你是信号审查助手。你会收到「已提取信号 + 其原文帖子」，请审查信号是否被原文**明确支持**，并修正或补加。
+
+## 第一步：判定主结论句
+先找到帖子的**主结论句**——形如「周三：大盘探底回升，我看涨」「明天：只卖不买」「下周一我看跌」等**带明确时间+明确态度**的句子。主结论句是全帖最高优先级的预测：**任何条件句、风险提示、走势分类、点位预演都不能替代或覆盖主结论句**。若提取信号与主结论句方向/周期不一致 → 必须 action=fix，改为主结论句的方向/周期。
+
+## 其他标准
+1. **周期支持**：spec 必须对应原文**明确出现**的周期词。原文没有明确周期（"随时""中长期""未来几个月""大趋势""上涨没结束"等结构/无时限表述）→ 不能给 scored，fix 为 cat=无预测周期（不填 spec）。目标点位无时间承诺（"目标是X点""背驰点在4423"）→ fix 为 cat=目标点位（不填 spec）。
+2. **可打分性**：只有形态描述（震荡/筑底/洗盘/冲高回落/支撑位）而无明确方向态度 → drop；仓位自述、行情回顾、投资理念 → drop。
+3. **盘中**：交易日盘中/盘后发布的"今天"预测 → fix 为 cat=无效-日内；交易日**盘前(<9:30)** 发布的"今天"预测是**有效**的（spec=today，保持 scored），不要误判为无效。
+4. **补加**：原文有比已提取信号更明确的预测结论（不同周期或方向），或应属无预测周期/目标点位而未被提取 → 放入 add。
+5. **保留**：信号方向与周期都有原文支持、且就是主结论句 → action=keep。
+
+## 输出 JSON（只输出 JSON，无其他文字）
+{"verdicts": [{"vidx": <帖子编号>, "sig": <该帖已提取信号下标，0基>, "action": "keep"|"fix"|"drop", "d":1|-1, "s":1|2, "spec":"...", "cat":"...", "summary":"≤50字", "reason":"一句话"}],
+ "add": [{"vidx": <帖子编号>, "d":1|-1, "s":1|2, "spec":"...", "cat":"...", "summary":"≤50字"}]}
+- action=keep：只输出 vidx/sig/action/reason
+- action=fix：输出修正后的完整字段（d/s/spec/cat/summary）
+- action=drop：只输出 vidx/sig/action/reason
+- cat=scored 时 spec、s 必填；cat=无效-日内/无预测周期/目标点位 时不填 spec、s
+- 无修正 → verdicts 为空数组；无补加 → add 为空数组；都无 → {"verdicts":[],"add":[]}"""
 
 
 def load_posts_and_bodies(blogger):
@@ -165,35 +191,31 @@ def format_post_for_prompt(post, index, bodies):
     return f"[Post #{index}] {pd}\n{post_text(post, bodies)}\n"
 
 
-def call_api(client, batch_posts, blogger, batch_num, total_batches, bodies):
-    """发一批给 DeepSeek，返回 (parsed_json, raw) 或 (None, None)。"""
-    lines = [format_post_for_prompt(p, i, bodies) for i, p in enumerate(batch_posts)]
-    user_message = (
-        f"以下是博主「{blogger}」的 {len(batch_posts)} 条帖子。请逐条分析，"
-        f"判断是否包含对上证/大盘的明确方向预测，并返回标注 JSON。\n\n" + "\n".join(lines)
-    )
+def call_json(client, system_prompt, user_message, label, thinking=False):
+    """调 DeepSeek，返回 (parsed_dict, raw) 或 (None, None)。
 
+    thinking=False：关推理（提取阶段，省 token）；thinking=True：开推理（自查阶段，更仔细）。
+    """
     for attempt in range(MAX_RETRIES):
         try:
             response = client.chat.completions.create(
                 model=MODEL,
                 messages=[
-                    {"role": "system", "content": SYSTEM_PROMPT},
+                    {"role": "system", "content": system_prompt},
                     {"role": "user", "content": user_message},
                 ],
                 temperature=0,
                 max_tokens=8192,
-                # 关推理模式：V4 Flash 否则会浪费 token 在 CoT 上
-                extra_body={"thinking": {"type": "disabled"}},
+                extra_body={"thinking": {"type": "enabled" if thinking else "disabled"}},
             )
             raw = response.choices[0].message.content
             result = parse_response(raw)
             if result is not None:
                 return result, raw
-            print(f"  Batch {batch_num}/{total_batches} attempt {attempt + 1}: JSON parse failed, retrying...")
+            print(f"  {label} attempt {attempt + 1}: JSON parse failed, retrying...")
             time.sleep(RETRY_DELAY * (attempt + 1))
         except Exception as e:
-            print(f"  Batch {batch_num}/{total_batches} attempt {attempt + 1}: API error: {e}")
+            print(f"  {label} attempt {attempt + 1}: API error: {e}")
             if attempt < MAX_RETRIES - 1:
                 time.sleep(RETRY_DELAY * (attempt + 1))
             else:
@@ -202,7 +224,7 @@ def call_api(client, batch_posts, blogger, batch_num, total_batches, bodies):
 
 
 def parse_response(raw):
-    """解析 LLM 返回的 JSON，处理 markdown 代码块与截断 JSON。"""
+    """解析 LLM 返回的 JSON（任意顶层 dict），处理 markdown 代码块与截断 JSON。"""
     if not raw:
         return None
 
@@ -220,12 +242,12 @@ def parse_response(raw):
     # 直接解析
     try:
         data = json.loads(text)
-        if isinstance(data, dict) and "signals" in data and isinstance(data["signals"], list):
+        if isinstance(data, dict):
             return data
     except json.JSONDecodeError:
         pass
 
-    # 括号配对扫描：找包含 "signals" 的最外层对象
+    # 括号配对扫描：找最外层对象
     for m in re.finditer(r"\{", text):
         start = m.start()
         depth, end = 0, -1
@@ -240,7 +262,7 @@ def parse_response(raw):
         if end > start:
             try:
                 data = json.loads(text[start:end])
-                if isinstance(data, dict) and "signals" in data and isinstance(data["signals"], list):
+                if isinstance(data, dict):
                     return data
             except json.JSONDecodeError:
                 continue
@@ -251,7 +273,7 @@ def parse_response(raw):
     if open_braces > 0 or open_brackets > 0:
         try:
             data = json.loads(text + "]" * open_brackets + "}" * open_braces)
-            if isinstance(data, dict) and "signals" in data and isinstance(data["signals"], list):
+            if isinstance(data, dict):
                 return data
         except json.JSONDecodeError:
             pass
@@ -259,9 +281,59 @@ def parse_response(raw):
     return None
 
 
+def normalize_signal(row, post):
+    """把一条候选信号行归一化为 Direction schema。返回 (sig, None) 或 (None, 原因)。"""
+    pub = (post.get("publish_date") or "").strip()
+    if not pub or pub[:10] < SIGNAL_START:
+        return None, "非 2026"
+
+    d = row.get("d")
+    if isinstance(d, str):
+        try:
+            d = int(d)
+        except ValueError:
+            d = None
+    if d not in (1, -1):
+        return None, "d 非法"
+
+    cat = row.get("cat") or "scored"
+    if cat not in VALID_CAT:
+        return None, f"cat 非法: {cat}"
+
+    idx = row.get("idx") or "上证指数"
+    if idx in ("上证综指", "上证", "综指"):
+        idx = "上证指数"
+    if idx not in VALID_IDX:
+        return None, f"idx 非法: {idx}"
+
+    summary = (row.get("summary") or "").strip()
+    if not summary:
+        return None, "summary 缺失"
+    summary = summary[:50]
+
+    sig = {"pub": pub, "d": d, "idx": idx, "summary": summary}
+    if cat == "scored":
+        spec = str(row.get("spec") or "")
+        if not SPEC_RE.match(spec):
+            return None, f"spec 非法/缺失: {spec or '(空)'}"
+        s = row.get("s", 1)
+        try:
+            s = int(s)
+        except (TypeError, ValueError):
+            s = 1
+        if s not in (1, 2):
+            s = 1
+        sig["s"] = s
+        sig["spec"] = spec
+        sig["cat"] = "scored"
+    else:
+        sig["cat"] = cat
+    return sig, None
+
+
 def validate_signals(raw_signals, batch_posts):
-    """把 DeepSeek 输出映射/校验成 Direction schema。返回 (ok_signals, dropped_counter)。"""
-    ok, dropped = [], Counter()
+    """把 DeepSeek 输出映射/校验成 Direction schema。返回 (ok_signals, dropped_counter, posts_aligned)。"""
+    ok, dropped, posts_aligned = [], Counter(), []
     for r in raw_signals:
         if not isinstance(r, dict):
             dropped["非对象"] += 1
@@ -274,59 +346,108 @@ def validate_signals(raw_signals, batch_posts):
             dropped["post_n 越界"] += 1
             continue
         post = batch_posts[post_n]
-        pub = (post.get("publish_date") or "").strip()
-        if not pub or pub[:10] < SIGNAL_START:
-            dropped["非 2026"] += 1
+        sig, reason = normalize_signal(r, post)
+        if sig is None:
+            dropped[reason] += 1
             continue
-
-        d = r.get("d")
-        if isinstance(d, str):
-            try:
-                d = int(d)
-            except ValueError:
-                d = None
-        if d not in (1, -1):
-            dropped["d 非法"] += 1
-            continue
-
-        cat = r.get("cat") or "scored"
-        if cat not in VALID_CAT:
-            dropped[f"cat 非法: {cat}"] += 1
-            continue
-
-        idx = r.get("idx") or "上证指数"
-        if idx in ("上证综指", "上证", "综指"):
-            idx = "上证指数"
-        if idx not in VALID_IDX:
-            dropped[f"idx 非法: {idx}"] += 1
-            continue
-
-        summary = (r.get("summary") or "").strip()
-        if not summary:
-            dropped["summary 缺失"] += 1
-            continue
-        summary = summary[:50]
-
-        sig = {"pub": pub, "d": d, "idx": idx, "summary": summary}
-        if cat == "scored":
-            spec = str(r.get("spec") or "")
-            if not SPEC_RE.match(spec):
-                dropped[f"spec 非法/缺失: {spec or '(空)'}"] += 1
-                continue
-            s = r.get("s", 1)
-            try:
-                s = int(s)
-            except (TypeError, ValueError):
-                s = 1
-            if s not in (1, 2):
-                s = 1
-            sig["s"] = s
-            sig["spec"] = spec
-            sig["cat"] = "scored"
-        else:
-            sig["cat"] = cat
         ok.append(sig)
-    return ok, dropped
+        posts_aligned.append(post)
+    return ok, dropped, posts_aligned
+
+
+def verify_signals(client, signals, posts, bodies, blogger):
+    """自查：把「已提取信号 + 原文」回喂 DeepSeek 审查，返回 (final_signals, final_posts, stats)。"""
+    # 按帖子分组合并（同一帖子的多条信号一起审）
+    groups, seen = [], {}
+    for sig, post in zip(signals, posts):
+        gi = seen.get(id(post))
+        if gi is None:
+            gi = len(groups)
+            seen[id(post)] = gi
+            groups.append({"post": post, "signals": []})
+        groups[gi]["signals"].append(sig)
+
+    final_signals, final_posts = [], []
+    stats = Counter()
+    total_groups = len(groups)
+
+    for start in range(0, total_groups, VERIFY_BATCH_SIZE):
+        grp = groups[start:start + VERIFY_BATCH_SIZE]
+        lines = []
+        for i, g in enumerate(grp):
+            vidx = start + i
+            sigs = [{"d": s["d"], "s": s.get("s"), "spec": s.get("spec"),
+                     "cat": s.get("cat", "scored"), "summary": s["summary"]} for s in g["signals"]]
+            lines.append(f"[Post #{vidx}] {g['post'].get('publish_date', '?')}\n"
+                         f"{post_text(g['post'], bodies)}\n"
+                         f"已提取信号: {json.dumps(sigs, ensure_ascii=False)}\n")
+        label = f"Verify {start // VERIFY_BATCH_SIZE + 1}/{(total_groups - 1) // VERIFY_BATCH_SIZE + 1}"
+        print(f"  [{label}] 审查 {len(grp)} 帖...", end=" ", flush=True)
+        user_message = (f"请审查以下 {len(grp)} 帖子的已提取信号是否被原文支持，并按规则修正（vidx 对应帖子编号）。\n\n"
+                        + "\n".join(lines))
+        result, _ = call_json(client, VERIFY_SYSTEM_PROMPT, user_message, label, thinking=False)
+        if result is None:
+            print("FAILED, 保留原信号")
+            stats["verify 批次失败"] += 1
+            for g in grp:
+                for s in g["signals"]:
+                    final_signals.append(s)
+                    final_posts.append(g["post"])
+            continue
+
+        # 处理 verdicts
+        verdicts = result.get("verdicts") or []
+        for v in verdicts:
+            vidx = v.get("vidx")
+            sigi = v.get("sig")
+            if not (0 <= vidx < total_groups):
+                stats["vidx 越界"] += 1
+                continue
+            g = groups[vidx]
+            if not (0 <= sigi < len(g["signals"])):
+                stats["sig 越界"] += 1
+                continue
+            action = v.get("action")
+            if action == "keep":
+                stats["keep"] += 1
+                final_signals.append(g["signals"][sigi])
+                final_posts.append(g["post"])
+            elif action == "drop":
+                stats["drop"] += 1
+            elif action == "fix":
+                sig, reason = normalize_signal(v, g["post"])
+                if sig is None:
+                    stats[f"fix 非法({reason})"] += 1
+                    final_signals.append(g["signals"][sigi])
+                    final_posts.append(g["post"])
+                else:
+                    stats["fix"] += 1
+                    final_signals.append(sig)
+                    final_posts.append(g["post"])
+            else:
+                stats[f"action 非法: {action}"] += 1
+                final_signals.append(g["signals"][sigi])
+                final_posts.append(g["post"])
+
+        # 处理补加
+        adds = result.get("add") or []
+        for a in adds:
+            vidx = a.get("vidx")
+            if not (0 <= vidx < total_groups):
+                stats["add vidx 越界"] += 1
+                continue
+            g = groups[vidx]
+            sig, reason = normalize_signal(a, g["post"])
+            if sig is None:
+                stats[f"add 非法({reason})"] += 1
+                continue
+            stats["add"] += 1
+            final_signals.append(sig)
+            final_posts.append(g["post"])
+
+        print(f"✓ keep={stats['keep']} fix={stats['fix']} drop={stats['drop']} add={stats['add']}")
+
+    return final_signals, final_posts, stats
 
 
 def dedup_and_sort(signals):
@@ -347,6 +468,7 @@ def main():
     parser.add_argument("--batch-size", type=int, default=DEFAULT_BATCH_SIZE, help="每批帖子数")
     parser.add_argument("--limit", type=int, default=0, help="只处理前 N 条帖子（冒烟测试）")
     parser.add_argument("--out", default="", help="输出文件路径（默认 data/direction_signals/<名>.json）")
+    parser.add_argument("--no-verify", action="store_true", help="跳过信号自查")
     parser.add_argument("--dry-run", action="store_true", help="不调 API、不写文件")
     args = parser.parse_args()
 
@@ -366,7 +488,7 @@ def main():
     print(f"Direction 信号提取（DeepSeek {MODEL}）：{blogger}")
     print("=" * 60)
     print(f"帖子总数: {len(all_posts)} | 2026 前剔除: {pre_count} | 参与提取: {total_eval}")
-    print(f"批次: {total_batches}（batch-size={args.batch_size}）")
+    print(f"批次: {total_batches}（batch-size={args.batch_size}）| 自查: {'开' if not args.no_verify else '关'}")
 
     if args.dry_run:
         print(f"\n[DRY RUN] 将向 DeepSeek 发送 {total_batches} 批帖子（不调 API、不写文件）")
@@ -380,19 +502,24 @@ def main():
 
     client = OpenAI(api_key=api_key, base_url=BASE_URL)
 
-    all_signals, all_dropped = [], Counter()
+    all_signals, all_posts_ref, all_dropped = [], [], Counter()
     start_time = time.time()
     failed_batches = 0
     for batch_num, batch_posts in enumerate(batches, 1):
         print(f"\n[Batch {batch_num}/{total_batches}] {len(batch_posts)} 条...", end=" ", flush=True)
         try:
-            result, _ = call_api(client, batch_posts, blogger, batch_num, total_batches, bodies)
+            lines = [format_post_for_prompt(p, i, bodies) for i, p in enumerate(batch_posts)]
+            user_message = (f"以下是博主「{blogger}」的 {len(batch_posts)} 条帖子。请逐条分析，"
+                            f"判断是否包含对上证/大盘的明确方向预测，并返回标注 JSON。\n\n" + "\n".join(lines))
+            label = f"Batch {batch_num}/{total_batches}"
+            result, _ = call_json(client, SYSTEM_PROMPT, user_message, label)
             if result is None:
                 failed_batches += 1
                 print("FAILED after %d retries, skipping batch" % MAX_RETRIES)
                 continue
-            ok, dropped = validate_signals(result.get("signals", []), batch_posts)
+            ok, dropped, posts_aligned = validate_signals(result.get("signals", []), batch_posts)
             all_signals.extend(ok)
+            all_posts_ref.extend(posts_aligned)
             all_dropped.update(dropped)
             print(f"✓ {len(ok)} 信号 | 累计 {len(all_signals)} | {time.time() - start_time:.0f}s")
         except Exception as e:
@@ -402,16 +529,31 @@ def main():
         if batch_num < total_batches:
             time.sleep(0.5)
 
-    elapsed = time.time() - start_time
+    extract_elapsed = time.time() - start_time
+
+    # ── 自查 ──
+    verify_stats = None
+    if not args.no_verify and all_signals:
+        print(f"\n[自查] 回喂 {len(all_signals)} 条信号做原文支持度审查...")
+        t0 = time.time()
+        all_signals, all_posts_ref, verify_stats = verify_signals(client, all_signals, all_posts_ref, bodies, blogger)
+        print(f"[自查] 完成，耗时 {time.time() - t0:.0f}s")
+    elif args.no_verify:
+        print("\n[自查] 已跳过（--no-verify）")
+
     signals = dedup_and_sort(all_signals)
     cat_counts = Counter(s["cat"] for s in signals)
 
+    elapsed = time.time() - start_time
     print(f"\n{'=' * 60}")
-    print(f"✅ 提取完成: {blogger} | 耗时 {elapsed:.0f}s | 失败批次 {failed_batches}")
+    print(f"✅ 提取完成: {blogger} | 总耗时 {elapsed:.0f}s（提取 {extract_elapsed:.0f}s）| 失败批次 {failed_batches}")
     print(f"参与提取: {total_eval} | 提取信号: {len(signals)}")
     print(f"  按 cat: {dict(cat_counts)}")
     if all_dropped:
-        print(f"  丢弃: {sum(all_dropped.values())} 条 -> {dict(all_dropped)}")
+        print(f"  提取丢弃: {sum(all_dropped.values())} 条 -> {dict(all_dropped)}")
+    if verify_stats:
+        print(f"  自查: keep={verify_stats['keep']} fix={verify_stats['fix']} drop={verify_stats['drop']} "
+              f"add={verify_stats['add']}")
 
     partial = args.limit > 0
     if args.dry_run:

@@ -62,9 +62,12 @@ python scripts/pipeline/extract_signals_direction.py <博主名>
 1. 读 `data/posts/<博主名>.json` 的帖子 + `<博主名>_bodies_s*.json` 的正文，过滤 `publish_date >= 2026-01-01`
 2. 分批（默认 15 条/批）调 DeepSeek flash，按下方 §1~§8 规则判定并标注 `d`/`s`/`spec`/`idx`/`cat`（JSON schema 见 §3）
 3. 脚本强校验：`spec`/`idx` 非法值丢弃、`cat` 归一、同帖重复与同日同周期同方向去重、`summary≤50字`
-4. 产出 `data/direction_signals/<博主名>.json`，随后运行 `python scripts/eval/run_direction.py <博主名>` 生成报告
+4. **信号自查**：把「已提取信号 + 原文」回喂 DeepSeek 做独立审查（keep/fix/drop/补加），修掉丢失主结论句（如 07-28 丢了"探底回升我看涨"）、周期误套（结构性无周期误标 scored）、盘前"今天"误判无效-日内等错误
+5. 产出 `data/direction_signals/<博主名>.json`，随后运行 `python scripts/eval/run_direction.py <博主名>` 生成报告
 
-> 冒烟测试：`--limit 30` 只处理前 30 条；`--out /tmp/x.json` 写指定路径不动正式数据；`--dry-run` 不调 API。每次运行会覆盖目标文件（无增量续跑）。
+> 冒烟测试：`--limit 30` 只处理前 30 条；`--out /tmp/x.json` 写指定路径不动正式数据；`--dry-run` 不调 API；`--no-verify` 跳过自查（更快）。每次运行会覆盖目标文件（无增量续跑）。
+>
+> **质量边界**：自查能系统性修复"漏结论/周期误套/单列类缺失"等错误（与人工标注精确同键从 63 提升到 ~67），但**不能保证每条语义正确**——方向冲突帖（全文立场与单句结论相反）仍会偶发分歧，且每次运行有少量随机差异。聚合层面（正确率/平均分）与人工标注一致。如需逐条精确可核查，需人工抽检。
 
 ---
 

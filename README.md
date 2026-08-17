@@ -72,7 +72,7 @@ python scripts/utils/fetch_market_data.py --start 20240601
 # 3. DeepSeek 自动提取信号 → data/direction_signals/<博主名>.json
 export DEEPSEEK_API_KEY="sk-..."   # 只经环境变量，绝不写入文件/提交
 python scripts/pipeline/extract_signals_direction.py <博主名>
-#    （DeepSeek flash 按 SKILL.md §1~§8 自动逐条标注 + 脚本格式强校验，schema 见 SKILL.md §3）
+#    （DeepSeek flash 按 SKILL.md §1~§8 自动逐条标注 + 格式强校验 + 信号自查，schema 见 SKILL.md §3）
 
 # 4. Direction 验证打分并生成报告
 python scripts/eval/run_direction.py <博主名>        # 单个博主
@@ -93,7 +93,7 @@ scrape_toutiao.py ──► data/posts/<name>.json
     ▼
 extract_signals_direction.py（DeepSeek flash）
 按 SKILL.md §1~§8 自动逐条标注
-（pub/d/s/idx/spec/summary/cat，语义理解 + 板块→指数映射 + 格式强校验）
+（pub/d/s/idx/spec/summary/cat，语义理解 + 板块→指数映射 + 格式强校验 + 信号自查）
     │
     ▼
 data/direction_signals/<name>.json
