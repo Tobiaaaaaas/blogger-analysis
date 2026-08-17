@@ -19,7 +19,7 @@ ana/
 │
 ├── data/
 │   ├── posts/                      爬取的原始帖子
-│   ├── direction_signals/          Direction 信号标注（LLM 逐条标注，37 位博主）
+│   ├── direction_signals/          Direction 信号标注（LLM 逐条标注，41 位博主）
 │   ├── market/                     日线行情数据（7 指数）
 │   └── (scores/signals/minute/positions/simulations 已随旧体系归档至 archive/20260817-pre-direction/)
 │
@@ -29,9 +29,9 @@ ana/
 │   └── utils/                      行情获取、正文分片抓取等工具
 │
 ├── reports/
-│   ├── *_direction.md              37 位博主逐条方向验证报告
+│   ├── *_direction.md              41 位博主逐条方向验证报告
 │   ├── comparison_direction.md     横向对比总榜
-│   └── Direction_结论报告.md        37 位博主横向结论
+│   └── Direction_结论报告.md        41 位博主横向结论
 │
 └── archive/                        历史快照 & 临时文件
     ├── scratch/                    一次性调试输出
@@ -106,8 +106,8 @@ comparison_all.py ──► reports/comparison_direction.md
 
 ## 当前博主
 
-> 37 位博主已完成 Direction 逐条方向评估（`reports/*_direction.md`），横向结论见 `reports/Direction_结论报告.md` 与 `reports/comparison_direction.md`。
-> 另有 8 位博主（乐哥来了、实盘指龙、小工匠说股市v、时间合伙人、时间轨迹、梦若神机、股市求是、飛浪王）已爬取帖子，但尚未完成 Direction 信号标注，未纳入评估。
+> 41 位博主已完成 Direction 逐条方向评估（`reports/*_direction.md`），横向结论见 `reports/Direction_结论报告.md` 与 `reports/comparison_direction.md`。
+> 另有 6 位博主（实盘指龙、小工匠说股市v、时间合伙人、时间轨迹、梦若神机、股市求是）已爬取帖子，但尚未完成 Direction 信号标注，未纳入评估。
 
 ## 依赖
 

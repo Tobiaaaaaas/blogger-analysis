@@ -154,10 +154,15 @@ def main():
     parser = argparse.ArgumentParser(description="爬取今日头条博主全部帖子")
     parser.add_argument("url", nargs="?", default="", help="博主任意帖子链接")
     parser.add_argument("--name", "-n", default="", help="博主名称（可选，不提供则自动检测）")
+    parser.add_argument("--since", default="", help="只爬取该日期之后(含)的帖子，如 2026-01-01（默认全量）")
     args = parser.parse_args()
 
     post_url = args.url or "https://www.toutiao.com/w/1872013328886923/"
     explicit_name = args.name.strip() if args.name else ""
+    since_ts = 0
+    if args.since:
+        since_ts = int(datetime.strptime(args.since, "%Y-%m-%d").timestamp())
+        print(f"  只爬取 {args.since} 之后的帖子")
 
     print("=" * 60)
     print("今日头条帖子爬虫 v5 - 浏览器内API调用")
@@ -306,6 +311,11 @@ def main():
                 empty_streak = 0
 
             print(f"  第{page_num}页: +{new_count}条 | 累计{len(all_posts)}条 | 最远{date_str} | more={has_more} | 空页连续{empty_streak}")
+
+            # 只爬 --since 之后的帖子：本页最远时间已早于 since → 后续页全为更早，停止
+            if since_ts and min_t and min_t < since_ts:
+                print(f"  已到起始日期 {args.since} 之前的帖子（本页最远 {date_str}），翻页结束")
+                break
 
             if len(all_posts) >= target:
                 print("  达到目标数量，翻页结束")
