@@ -15,8 +15,14 @@ DeepSeek 自动提取 Direction 方向信号（替代 Claude 人工逐条标注�
   python scripts/pipeline/extract_signals_direction.py <博主名> --batch-size 25
   python scripts/pipeline/extract_signals_direction.py <博主名> --limit 30          # 冒烟：只处理前 30 条
   python scripts/pipeline/extract_signals_direction.py <博主名> --out /tmp/x.json   # 写指定路径（不动正式数据）
+  python scripts/pipeline/extract_signals_direction.py <博主名> --runs 3            # 3 次运行共识合并（聚合更稳，推荐）
   python scripts/pipeline/extract_signals_direction.py <博主名> --no-verify         # 跳过自查（更快）
   python scripts/pipeline/extract_signals_direction.py <博主名> --dry-run           # 不调 API、不写文件
+
+稳定性：DeepSeek 同 prompt 下每次运行有少量批间随机差异（信号数 ±3 条量级）。
+--runs N 会完整跑 N 次（提取+自查），只保留 ≥(N//2+1) 次运行都出现的信号，
+直接压掉单次噪声，保证聚合结论稳定。运行元数据写入 data/direction_signals/_<名>_run.json
+（以 _ 开头，已被 .gitignore 忽略，不会提交）。
 """
 
 import argparse
@@ -462,12 +468,78 @@ def dedup_and_sort(signals):
     return sorted(seen.values(), key=lambda s: s["pub"])
 
 
+def consensus_key(sig):
+    """多次运行共识的信号键：scored 用 (pub, spec, d)，单列类用 (pub, cat, d)。"""
+    if sig["cat"] == "scored":
+        return (sig["pub"], "scored", sig["spec"], sig["d"])
+    return (sig["pub"], sig["cat"], None, sig["d"])
+
+
+def consensus_merge(runs_signals, min_votes):
+    """合并多次运行结果：只保留出现次数 ≥ min_votes 的信号；summary 取出现最多次的。"""
+    votes = {}
+    for sig in runs_signals:
+        k = consensus_key(sig)
+        d = votes.setdefault(k, {"n": 0, "summaries": Counter(), "template": sig})
+        d["n"] += 1
+        d["summaries"][sig["summary"]] += 1
+    merged = []
+    for k, d in votes.items():
+        if d["n"] < min_votes:
+            continue
+        sig = dict(d["template"])
+        sig["summary"] = d["summaries"].most_common(1)[0][0]
+        merged.append(sig)
+    return dedup_and_sort(merged)
+
+
+def extract_once(client, blogger, eval_posts, bodies, batch_size, no_verify, run_label=""):
+    """单次完整运行：分批提取 + 自查。返回 (signals, verify_stats, failed_batches, elapsed)。"""
+    all_signals, all_posts_ref, all_dropped = [], [], Counter()
+    start_time = time.time()
+    failed_batches = 0
+    batches = list(build_batches(eval_posts, batch_size))
+    for batch_num, batch_posts in enumerate(batches, 1):
+        print(f"  {run_label}[Batch {batch_num}/{len(batches)}] {len(batch_posts)} 条...", end=" ", flush=True)
+        try:
+            lines = [format_post_for_prompt(p, i, bodies) for i, p in enumerate(batch_posts)]
+            user_message = (f"以下是博主「{blogger}」的 {len(batch_posts)} 条帖子。请逐条分析，"
+                            f"判断是否包含对上证/大盘的明确方向预测，并返回标注 JSON。\n\n" + "\n".join(lines))
+            result, _ = call_json(client, SYSTEM_PROMPT, user_message,
+                                  f"{run_label}Batch {batch_num}/{len(batches)}", thinking=False)
+            if result is None:
+                failed_batches += 1
+                print("FAILED after %d retries, skipping batch" % MAX_RETRIES)
+                continue
+            ok, dropped, posts_aligned = validate_signals(result.get("signals", []), batch_posts)
+            all_signals.extend(ok)
+            all_posts_ref.extend(posts_aligned)
+            all_dropped.update(dropped)
+            print(f"✓ {len(ok)} 信号 | 累计 {len(all_signals)}")
+        except Exception as e:
+            failed_batches += 1
+            print(f"ERROR: {e}")
+            continue
+        if batch_num < len(batches):
+            time.sleep(0.5)
+
+    extract_elapsed = time.time() - start_time
+    verify_stats = None
+    if not no_verify and all_signals:
+        print(f"  {run_label}[自查] 回喂 {len(all_signals)} 条信号...", flush=True)
+        t0 = time.time()
+        all_signals, all_posts_ref, verify_stats = verify_signals(client, all_signals, all_posts_ref, bodies, blogger)
+        print(f"  {run_label}[自查] 完成，耗时 {time.time() - t0:.0f}s")
+    return all_signals, verify_stats, failed_batches, extract_elapsed
+
+
 def main():
     parser = argparse.ArgumentParser(description="DeepSeek 自动提取 Direction 方向信号")
     parser.add_argument("blogger", help="博主名（data/posts/<名>.json）")
     parser.add_argument("--batch-size", type=int, default=DEFAULT_BATCH_SIZE, help="每批帖子数")
     parser.add_argument("--limit", type=int, default=0, help="只处理前 N 条帖子（冒烟测试）")
     parser.add_argument("--out", default="", help="输出文件路径（默认 data/direction_signals/<名>.json）")
+    parser.add_argument("--runs", type=int, default=1, help="完整运行次数（≥2 时按多数共识合并，推荐 3）")
     parser.add_argument("--no-verify", action="store_true", help="跳过信号自查")
     parser.add_argument("--dry-run", action="store_true", help="不调 API、不写文件")
     args = parser.parse_args()
@@ -476,22 +548,24 @@ def main():
     all_posts, eval_posts, pre_count, bodies = load_posts_and_bodies(blogger)
     if all_posts is None:
         sys.exit(1)
+    if args.runs < 1:
+        print("ERROR: --runs 至少为 1")
+        sys.exit(1)
 
     if args.limit > 0:
         eval_posts = eval_posts[:args.limit]
 
     total_eval = len(eval_posts)
-    batches = list(build_batches(eval_posts, args.batch_size))
-    total_batches = len(batches)
+    total_batches = (total_eval + args.batch_size - 1) // args.batch_size
 
     print("=" * 60)
     print(f"Direction 信号提取（DeepSeek {MODEL}）：{blogger}")
     print("=" * 60)
     print(f"帖子总数: {len(all_posts)} | 2026 前剔除: {pre_count} | 参与提取: {total_eval}")
-    print(f"批次: {total_batches}（batch-size={args.batch_size}）| 自查: {'开' if not args.no_verify else '关'}")
+    print(f"批次: {total_batches}（batch-size={args.batch_size}）| 自查: {'开' if not args.no_verify else '关'} | 运行: {args.runs} 次")
 
     if args.dry_run:
-        print(f"\n[DRY RUN] 将向 DeepSeek 发送 {total_batches} 批帖子（不调 API、不写文件）")
+        print(f"\n[DRY RUN] 将向 DeepSeek 发送 {total_batches} 批帖子 × {args.runs} 次（不调 API、不写文件）")
         return
 
     api_key = os.environ.get("DEEPSEEK_API_KEY")
@@ -502,62 +576,45 @@ def main():
 
     client = OpenAI(api_key=api_key, base_url=BASE_URL)
 
-    all_signals, all_posts_ref, all_dropped = [], [], Counter()
     start_time = time.time()
-    failed_batches = 0
-    for batch_num, batch_posts in enumerate(batches, 1):
-        print(f"\n[Batch {batch_num}/{total_batches}] {len(batch_posts)} 条...", end=" ", flush=True)
-        try:
-            lines = [format_post_for_prompt(p, i, bodies) for i, p in enumerate(batch_posts)]
-            user_message = (f"以下是博主「{blogger}」的 {len(batch_posts)} 条帖子。请逐条分析，"
-                            f"判断是否包含对上证/大盘的明确方向预测，并返回标注 JSON。\n\n" + "\n".join(lines))
-            label = f"Batch {batch_num}/{total_batches}"
-            result, _ = call_json(client, SYSTEM_PROMPT, user_message, label)
-            if result is None:
-                failed_batches += 1
-                print("FAILED after %d retries, skipping batch" % MAX_RETRIES)
-                continue
-            ok, dropped, posts_aligned = validate_signals(result.get("signals", []), batch_posts)
-            all_signals.extend(ok)
-            all_posts_ref.extend(posts_aligned)
-            all_dropped.update(dropped)
-            print(f"✓ {len(ok)} 信号 | 累计 {len(all_signals)} | {time.time() - start_time:.0f}s")
-        except Exception as e:
-            failed_batches += 1
-            print(f"ERROR: {e}")
-            continue
-        if batch_num < total_batches:
-            time.sleep(0.5)
+    all_candidates, all_verify, total_failed = [], [], 0
+    runs_count = args.runs if args.limit == 0 else 1  # 冒烟(--limit)只跑一次
+    min_votes = (runs_count // 2) + 1 if runs_count > 1 else 1
 
-    extract_elapsed = time.time() - start_time
+    print(f"\n[提取] {runs_count} 次运行（共识阈值 ≥{min_votes}/次）..." if runs_count > 1 else "\n[提取] 单次运行...")
+    for r in range(1, runs_count + 1):
+        if runs_count > 1:
+            print(f"\n── 运行 {r}/{runs_count} ──")
+        signals, vstats, failed, ee = extract_once(
+            client, blogger, eval_posts, bodies, args.batch_size, args.no_verify,
+            run_label=f"[Run {r}] " if runs_count > 1 else "")
+        all_candidates.extend(signals)
+        if vstats:
+            all_verify.append(vstats)
+        total_failed += failed
+        if runs_count > 1:
+            print(f"  Run {r} 完成: {len(signals)} 条（提取 {ee:.0f}s）")
 
-    # ── 自查 ──
-    verify_stats = None
-    if not args.no_verify and all_signals:
-        print(f"\n[自查] 回喂 {len(all_signals)} 条信号做原文支持度审查...")
-        t0 = time.time()
-        all_signals, all_posts_ref, verify_stats = verify_signals(client, all_signals, all_posts_ref, bodies, blogger)
-        print(f"[自查] 完成，耗时 {time.time() - t0:.0f}s")
-    elif args.no_verify:
-        print("\n[自查] 已跳过（--no-verify）")
+    if runs_count > 1:
+        print(f"\n[共识] {len(all_candidates)} 条候选 → 保留 ≥{min_votes} 次运行都出现的信号...")
+        signals = consensus_merge(all_candidates, min_votes)
+    else:
+        signals = dedup_and_sort(all_candidates)
 
-    signals = dedup_and_sort(all_signals)
     cat_counts = Counter(s["cat"] for s in signals)
-
     elapsed = time.time() - start_time
     print(f"\n{'=' * 60}")
-    print(f"✅ 提取完成: {blogger} | 总耗时 {elapsed:.0f}s（提取 {extract_elapsed:.0f}s）| 失败批次 {failed_batches}")
-    print(f"参与提取: {total_eval} | 提取信号: {len(signals)}")
+    print(f"✅ 提取完成: {blogger} | 总耗时 {elapsed:.0f}s | 失败批次 {total_failed}")
+    print(f"参与提取: {total_eval} | 运行 {runs_count} 次 | 提取信号: {len(signals)}")
     print(f"  按 cat: {dict(cat_counts)}")
-    if all_dropped:
-        print(f"  提取丢弃: {sum(all_dropped.values())} 条 -> {dict(all_dropped)}")
-    if verify_stats:
-        print(f"  自查: keep={verify_stats['keep']} fix={verify_stats['fix']} drop={verify_stats['drop']} "
-              f"add={verify_stats['add']}")
+    if all_verify:
+        k = sum(v.get("keep", 0) for v in all_verify)
+        f_ = sum(v.get("fix", 0) for v in all_verify)
+        d_ = sum(v.get("drop", 0) for v in all_verify)
+        a = sum(v.get("add", 0) for v in all_verify)
+        print(f"  自查合计(跨运行): keep={k} fix={f_} drop={d_} add={a}")
 
     partial = args.limit > 0
-    if args.dry_run:
-        return
     if partial and not args.out:
         print("\n[部分运行] 仅处理前 %d 条，未写正式文件（加 --out 可写指定路径）" % args.limit)
         return
@@ -567,6 +624,28 @@ def main():
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump({"blogger": blogger, "signals": signals}, f, ensure_ascii=False, indent=2)
     print(f"输出: {out_path}（{len(signals)} 条信号）")
+
+    # ── 可复现性记录（gitignored，仅本地溯源）──
+    try:
+        meta_path = os.path.join(os.path.dirname(out_path), f"_{blogger}_run.json")
+        with open(meta_path, "w", encoding="utf-8") as f:
+            json.dump({
+                "blogger": blogger,
+                "model": MODEL,
+                "runs": runs_count,
+                "min_votes": min_votes,
+                "batch_size": args.batch_size,
+                "verify": not args.no_verify,
+                "posts_total": len(all_posts),
+                "posts_eval": total_eval,
+                "signals": len(signals),
+                "cat": dict(cat_counts),
+                "failed_batches": total_failed,
+                "extracted_at": time.strftime("%Y-%m-%d %H:%M:%S"),
+            }, f, ensure_ascii=False, indent=2)
+        print(f"运行记录: {meta_path}（gitignored，仅本地溯源）")
+    except Exception as e:
+        print(f"WARN: 写运行记录失败: {e}")
 
 
 if __name__ == "__main__":
