@@ -18,6 +18,12 @@ import argparse
 from playwright.sync_api import sync_playwright
 from datetime import datetime
 
+# Windows GBK 控制台兼容：输出含 emoji/中文
+try:
+    sys.stdout.reconfigure(encoding='utf-8')
+except Exception:
+    pass
+
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(os.path.dirname(SCRIPT_DIR))
 DATA_DIR = os.path.join(PROJECT_ROOT, "data", "posts")

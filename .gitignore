@@ -6,5 +6,6 @@ __pycache__/
 .env
 _*.txt
 _*.json
+*.log
 merge_positions.py
 data/posts/_backup/
