@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-全部博主 Direction 横向对比汇总（配合引擎 v4：SKILL §4 统一 30 分钟参考价 / unscored·long·t10 schema）
+全部博主 Direction 横向对比汇总（配合引擎 v3：统一 30 分钟口径）
 用法: python scripts/eval/comparison_all.py
 输出: reports/comparison_direction.md
-
-结构：总榜 → 三档分榜（每档 ≥10 条参与，含"今天（盘前/盘中）"子榜）→ 三档归类矩阵 → 多空/指数/月份 → 警告
 """
 import json
 import os
@@ -14,33 +12,24 @@ from collections import defaultdict
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import run_direction as eng
 
-RANK_MIN_SIGNALS = 30      # 总榜排名资格：计分信号 ≥ 30 条
-BUCKET_MIN_SIGNALS = 10    # 三档分榜/子榜排名资格：该组信号 ≥ 10 条
+RANK_MIN_SIGNALS = 30     # 总榜排名资格：计分信号 ≥ 30 条
+BUCKET_MIN_SIGNALS = 10   # 三档排名资格：该档信号 ≥ 10 条
 # 跳过 _ 前缀文件：_<名>_run.json 是提取脚本的 gitignored 运行溯源（signals 为 int 计数），非信号文件
 BLOGGERS = sorted(f[:-5] for f in os.listdir(eng.DATA_DIR) if f.endswith('.json') and not f.startswith('_'))
 
 rows_all, meta = {}, {}
 for b in BLOGGERS:
     data = json.load(open(os.path.join(eng.DATA_DIR, f'{b}.json'), encoding='utf-8'))
-    all_rows = [eng.calc(s) for s in data['signals']]
-    rows = [r for r in all_rows if r['score'] is not None]
+    rows = [r for r in (eng.calc(s) for s in data['signals']) if r['score'] is not None]
     rows_all[b] = rows
+    all_rows = [eng.calc(s) for s in data['signals']]
     meta[b] = {'signals': len(data['signals']), 'scored': len(rows),
                'bull': sum(1 for r in rows if r['d'] == 1), 'bear': sum(1 for r in rows if r['d'] == -1),
-               'unc': sum(1 for r in all_rows if r['note'] == '不计分'),
+               'inv': sum(1 for r in all_rows if r['note'] == '无效-日内'),
+               'np': sum(1 for r in all_rows if r['note'] == '无预测周期'),
+               'tp': sum(1 for r in all_rows if r['note'] == '目标点位'),
                'pend': sum(1 for r in all_rows if r['note'] == '待验证'),
                'stale': sum(1 for r in all_rows if r['note'] == '无效-过时')}
-
-BUCKET_KEYS = ['0-1个交易日（今天/明天）', '2-5个交易日（1周内）', '6个交易日及以上（大于1周）']
-
-# 分榜分组：每个博主 → 各档信号 / 今天（盘前/盘中）信号
-bucket_rows = {k: {b: [] for b in BLOGGERS} for k in BUCKET_KEYS}
-today_rows = {b: [] for b in BLOGGERS}
-for b in BLOGGERS:
-    for r in rows_all[b]:
-        bucket_rows[eng.bucket_of(r)][b].append(r)
-        if r['spec'] == 'today':
-            today_rows[b].append(r)
 
 def cell(rs):
     if not rs:
@@ -50,19 +39,10 @@ def cell(rs):
 def acc_of(rs):
     return eng.acc_of(rs)[2]
 
-def vol_sharpe_txt(rs):
-    """波动率 / 夏普 子行文本；该组信号 <2 条 → '—'"""
-    if len(rs) < 2:
-        return '—'
-    sh = eng.sharpe_of(rs)
-    return f'{eng.vol_of(rs):.2f} / {sh:+.2f}' if sh is not None else f'{eng.vol_of(rs):.2f} / —'
-
 L = []
 L.append('# 全部博主 Direction 横向对比（平均分 = 单信号平均收益 %，括号内为信号数）')
 L.append('')
-n_unc = sum(meta[b]['unc'] for b in BLOGGERS)
-L.append(f'博主数：{len(BLOGGERS)} | 数据截止 {eng.EVAL_DATE} | 总榜排名阈值：计分信号 ≥ {RANK_MIN_SIGNALS} 条 | '
-         f'三档排名阈值：该档 ≥ {BUCKET_MIN_SIGNALS} 条 | unscored 单列合计 {n_unc} 条')
+L.append(f'博主数：{len(BLOGGERS)} | 数据截止 {eng.EVAL_DATE} | 总榜排名阈值：计分信号 ≥ {RANK_MIN_SIGNALS} 条 | 三档排名阈值：该档 ≥ {BUCKET_MIN_SIGNALS} 条')
 L.append('')
 
 # 总榜
@@ -83,42 +63,23 @@ if excluded:
     L.append(f'> 不参与总榜排名（计分信号 < {RANK_MIN_SIGNALS} 条）：' + '、'.join(f'{b}（{len(rows_all[b])} 条）' for b in excluded))
     L.append('')
 
-# 三档分榜（每档 ≥10 条参与排名，按平均分排序，附波动率/夏普子行；0-1 档含"今天（盘前/盘中）"子榜）
-L.append('## 🏅 三档分榜（每档按平均分排序，该档 ≥ 10 条参与排名，附波动率/夏普）')
-L.append('')
-
-def emit_leaderboard(title, getter):
-    L.append(f'### {title}')
-    L.append('')
-    L.append('| 排名 | 博主 | 信号数 | **平均分** |')
-    L.append('|:---:|:---|:---:|:---:|')
-    in_rank = sorted([b for b in BLOGGERS if len(getter(b)) >= BUCKET_MIN_SIGNALS],
-                     key=lambda b: -eng.avg_of(getter(b)))
-    out = [b for b in BLOGGERS if len(getter(b)) < BUCKET_MIN_SIGNALS]
-    for i, b in enumerate(in_rank, 1):
-        rs = getter(b)
-        L.append(f'| {i} | {b} | {len(rs)} | **{eng.avg_of(rs):+.2f}** |')
-        L.append(f'| 　└ 波动率 / 夏普 | | | {vol_sharpe_txt(rs)} |')
-    L.append('')
-    if out:
-        L.append(f'> 未达 {BUCKET_MIN_SIGNALS} 条不参与本档排名：' + '、'.join(f'{b}（{len(getter(b))} 条）' for b in out))
-        L.append('')
-
-emit_leaderboard(f'档 1：{BUCKET_KEYS[0]}', lambda b: bucket_rows[BUCKET_KEYS[0]][b])
-emit_leaderboard(f'档 1 子榜：其中：今天（盘前/盘中）', lambda b: today_rows[b])
-emit_leaderboard(f'档 2：{BUCKET_KEYS[1]}', lambda b: bucket_rows[BUCKET_KEYS[1]][b])
-emit_leaderboard(f'档 3：{BUCKET_KEYS[2]}', lambda b: bucket_rows[BUCKET_KEYS[2]][b])
-
-# 表1 预测周期（三档归类矩阵：交易日 0-1 / 2-5 / 6+，附"今天(盘前/盘中)"子行）
+# 表1 预测周期（三档归类：交易日 0-1 / 2-5 / 6+，附"今天(盘前/盘中)"子行）
 L.append('## 1. 按预测周期分类（三档：0-1/2-5/6个及以上交易日）')
 L.append('')
 L.append('| 预测周期 | ' + ' | '.join(BLOGGERS) + ' |')
 L.append('|:---|' + ':---:|' * len(BLOGGERS))
-for p in BUCKET_KEYS + ['　└ 其中：今天（盘前/盘中）']:
-    if p == '　└ 其中：今天（盘前/盘中）':
-        L.append(f'| {p} | ' + ' | '.join(cell(today_rows[b]) for b in BLOGGERS) + ' |')
+groups = {b: defaultdict(list) for b in BLOGGERS}
+today_groups = {b: [] for b in BLOGGERS}
+for b in BLOGGERS:
+    for r in rows_all[b]:
+        groups[b][eng.bucket_of(r)].append(r)
+        if r['spec'] == 'today':
+            today_groups[b].append(r)
+for p in ['0-1个交易日(今天明天)', '　└ 其中:今天(盘前/盘中)', '2-5个交易日(1周内)', '6个交易日及以上(大于1周)']:
+    if p == '　└ 其中:今天(盘前/盘中)':
+        L.append(f'| {p} | ' + ' | '.join(cell(today_groups[b]) for b in BLOGGERS) + ' |')
     else:
-        L.append(f'| {p} | ' + ' | '.join(cell(bucket_rows[p][b]) for b in BLOGGERS) + ' |')
+        L.append(f'| {p} | ' + ' | '.join(cell(groups[b].get(p, [])) for b in BLOGGERS) + ' |')
 L.append('| **全部** | ' + ' | '.join(cell(rows_all[b]) for b in BLOGGERS) + ' |')
 L.append('')
 
@@ -204,7 +165,7 @@ L.append('')
 out = os.path.join(eng.REPORTS_DIR, 'comparison_direction.md')
 with open(out, 'w', encoding='utf-8') as f:
     f.write('\n'.join(L))
-print(f'对比表已写入 {out} | 博主数 {len(BLOGGERS)} | unscored 合计 {n_unc} 条')
+print(f'对比表已写入 {out} | 博主数 {len(BLOGGERS)}')
 for b in ranked:
     rs = rows_all[b]
     if not rs:

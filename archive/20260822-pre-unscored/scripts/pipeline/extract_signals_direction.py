@@ -52,8 +52,9 @@ SIGNAL_START = "2026-01-01"
 
 # ── Direction schema 合法集（引擎 run_direction.py 直接读取，非法值会导致崩溃）──
 VALID_IDX = {"上证指数", "上证50", "沪深300", "中证500", "中证1000", "创业板指", "科创50", "双创"}
-VALID_CAT = {"scored", "unscored"}
-SPEC_RE = re.compile(r"^(today|week|nweek|nweek_first|month|nmonth|long|t\d+|d:\d{4}-\d{2}-\d{2})$")
+VALID_CAT = {"scored", "无效-日内", "无预测周期", "目标点位"}
+SPEC_RE = re.compile(r"^(today|week|nweek|nweek_first|month|nmonth|yearend|t\d+|d:\d{4}-\d{2}-\d{2})$")
+NON_SCORED_CATS = {"无效-日内", "无预测周期", "目标点位"}
 
 
 # ── System Prompt（SKILL.md §1~§8 规则精简版，Direction schema）──
@@ -62,12 +63,13 @@ SYSTEM_PROMPT = """你是财经内容分析助手。你的任务是阅读今日�
 帖子以「标题：…\\n正文：…」并列呈现——**标题与正文同等重要**：标题常直接给出预测结论（"明天看涨""站稳4130就能到4250"），勿因正文冗长而漏读标题；疑问句/引流话术式标题（"明天A股会怎么走？"）不代表预测，去正文找结论。微帖（标题即正文）只显示一次。
 
 ## 提取为信号的标准（可打分性）
-必须满足：**明确的态度**（看涨/看跌、收阳/收阴、涨/跌）。有明确预测周期最好；**没有明确预测周期但有明确方向，也提取**（标 spec=t10，由引擎在第 10 个交易日计分）。
-- ❌ 仅描述形态而无方向态度：震荡、筑底、洗盘、蓄势、拉锯、考验X点支撑、探底回升、冲高回落 → 不提取
+必须同时满足：**明确的预测周期**（明天/本周/下周/下月等）+ **明确的态度**（看涨/看跌、收阳/收阴、涨/跌）。
+- ❌ 仅描述形态而无收盘方向态度：震荡、筑底、洗盘、蓄势、拉锯、考验X点支撑、探底回升、冲高回落 → 不提取
 - ❌ 仓位自述（"还剩4成仓""满仓持股"）、行情回顾、投资理念、新闻评论 → 不提取
-- ❌ **模棱两可/方向不明**（"可能涨也可能跌""不好说""边走边看""看市场情绪""不确定"）→ 整条忽略不提取（无方向可打，连单列都不记）
+- ❌ **模棱两可/方向不明**（"可能涨也可能跌""不好说""边走边看""看市场情绪""不确定"）→ 整条忽略不提取（无方向可打，连单列都不记；区别于"无预测周期"——后者方向明确只是没给时间）
 - ❌ **纯复盘/对过去的分析**（回顾行情、评价已发生走势、事后总结）→ 忽略不提取（不是对未来的预测；同一帖内既有复盘又有未来预测则只提取未来预测部分）
-- ❌ **状态描述**（"已经进入调整阶段""顶背离已经出现""目前处于上升趋势"）→ 是对现状的描述而非对未来的预测 → 不提取
+- ❌ 目标点位无时间承诺（"目标是4260点""看到X点""还有X点空间"）→ cat=目标点位，不标 spec
+- ❌ 无预测周期（"中长期""未来几个月""大趋势向上""随时"）→ cat=无预测周期，不标 spec
 - ❌ 预测对象是不可映射板块（有色/钢铁/医药/创新药/恒科/半导体/电池/房地产/航天/军工等）→ 忽略不提取
 
 ## 默认规则与板块→指数映射
@@ -82,38 +84,37 @@ SYSTEM_PROMPT = """你是财经内容分析助手。你的任务是阅读今日�
 | 上证综指/上证/综指/大盘 | 上证指数 |
 | 双创 | 双创（创业板指+科创50各半） |
 
-## 预测周期 → spec 编码
-- "今天/今日/下午/午后/尾盘" → spec=today，cat=scored（**无论何时发布**：盘前/盘中/盘后/非交易日都一样提取；是否过时由打分引擎自动判定，提取阶段不判无效）
-- "明天/明日/次日" → t1；"后天" → t2；"N天后/N日内" → tN（如 t3、t10）
+## 时间有效性
+- 交易日**盘前**（<9:30）发布"今天/今日"预测 → spec=today，cat=scored（引擎按当日开盘→收盘计分）
+- 交易日**盘中**（9:30~15:00）发布"今天/今日/下午/午后/尾盘"预测 → spec=today，cat=scored（引擎按发布后首根 30 分钟 bar→当日收盘计分）
+- 交易日**盘后**（≥15:00）发布"今天"预测 → 无效，cat=无效-日内，不标 spec（当天已收盘，预测过时）
+- 非交易日发布"今天"预测 → 无效，cat=无效-日内，不标 spec
+- "明天/明日/次日" → spec=t1；"后天" → t2；"N天后/N日内" → tN（如 t3、t10）
 - "X-Y天"（如1-2天、3-5天）→ 取窗口最后一天 tY（1-2天→t2，3-5天→t5）
 - "未来几天" → t3；"近期/短期/很快/马上/即将/不久/临近"（向前展望）→ t5
 - "本周/本周内" → week；"下周" → nweek；"下周一" → nweek_first
 - "月底前/月末前" → month；"下个月/下月" → nmonth
+- "下半年/全年/今年/2026年" → yearend
 - "X月X日"（未来具体日期）→ d:YYYY-MM-DD
-- **无明确预测周期但有明确方向**（"大趋势向上""随时会涨""肯定要涨但不知道什么时候"）→ spec=t10，cat=scored（引擎在第 10 个交易日计分）
-
-## 长期/不计分（spec=long，cat=unscored）
-以下三类方向明确的预测**不计分**（cat=unscored，spec=long，不填 s）：
-- **目标点位无时间承诺**："目标是4260点""看到X点""还有X点空间""背驰点在4423"
-- **年度预测**："下半年""全年""今年""2026年"
-- **中长期/远期**："中长期""未来几个月""三年""长线""长期来看"
+- 同一帖子多个观点（不同周期或不同方向，如"明天反弹、下周继续涨""短期看空、长期看多"）→ 每个"观点+周期"分条记录，各标对应 spec 与 d（如短期看空→t5、d=-1 + 长期看多→无预测周期、d=1）
+- 完全无预测周期 → cat=无预测周期，不标 spec
 
 ## 信号字段
 - post_n：输入批次中帖子的编号（从 0 开始），必须对应
 - d：1=看多，-1=看空
-- s：2=strong（"一定""必将""满仓""清仓""坚决""毫无疑问"）；1=moderate（"偏多""倾向于""大概率""有望"）；仅 cat=scored 时填
+- s：2=strong（"一定""必将""满仓""清仓""坚决""毫无疑问"）；1=moderate（"偏多""倾向于""大概率""有望"）
 - idx：上面映射出的指数 key（默认"上证指数"）
-- spec：上面的周期编码；cat=scored 时必填，cat=unscored 时恒为 "long"
+- spec：上面的周期编码（仅 cat=scored 时必填）
 - summary：≤50字，预测关键句概括
-- cat：scored（参与计分）/ unscored（不计分，单列）
-  - **禁止写"待验证""无效-过时""无效-日内""无预测周期""目标点位"**（引擎自动判定这些，提取阶段只写 scored/unscored）
-- 一条帖子可对应多条信号：不同周期**或不同方向**的明确预测各自成条（如"短期看空+长期看多"=2 条：短期看空→t5、d=-1、scored；长期看多→long、d=1、unscored）；同一周期重复表述只记一条
+- cat：scored（默认）/ 无效-日内 / 无预测周期 / 目标点位
+  - **禁止写"待验证"或"无效-过时"**（由打分引擎自动判定）
+- 一条帖子可对应多条信号：不同周期**或不同方向**的明确预测各自成条（如"短期看空+长期看多"=2 条，各标 spec+d）；同一周期重复表述只记一条
 
 ## 输出格式
 只返回一个 JSON 对象，无任何其他文字：
-{"signals": [{"post_n": 0, "d": 1, "s": 1, "idx": "上证指数", "spec": "t1", "summary": "明天看涨", "cat": "scored"}, {"post_n": 0, "d": 1, "idx": "上证指数", "spec": "long", "summary": "今年看涨到4250", "cat": "unscored"}, ...]}
+{"signals": [{"post_n": 0, "d": 1, "s": 1, "idx": "上证指数", "spec": "t1", "summary": "明天看涨", "cat": "scored"}, ...]}
 - 没有信号的帖子不用出现在 signals 里
-- cat=scored 时 spec、s 必填；cat=unscored 时 spec=long、不填 s
+- cat=scored 时 spec、s 必填；cat=无效-日内/无预测周期/目标点位 时不填 spec、s
 - 只返回 JSON，不要有任何其他文字"""
 
 # ── 自查 System Prompt（对「已提取信号+原文」做独立审查）──
@@ -122,23 +123,22 @@ VERIFY_SYSTEM_PROMPT = """你是信号审查助手。你会收到「已提取信
 帖子以「标题：…\\n正文：…」并列呈现，标题与正文同等重要——标题里的明确预测结论（"明天看涨"等）同样要审查、不可漏。
 
 ## 第一步：判定主结论句
-先找到帖子的**主结论句**——形如「周三：大盘探底回升，我看涨」「明天：只卖不买」「下周一我看跌」等**带明确方向**的句子。主结论句是全帖最高优先级的预测：**任何条件句、风险提示、走势分类、点位预演都不能替代或覆盖主结论句**。若提取信号与主结论句方向/周期不一致 → 必须 action=fix，改为主结论句的方向/周期。
+先找到帖子的**主结论句**——形如「周三：大盘探底回升，我看涨」「明天：只卖不买」「下周一我看跌」等**带明确时间+明确态度**的句子。主结论句是全帖最高优先级的预测：**任何条件句、风险提示、走势分类、点位预演都不能替代或覆盖主结论句**。若提取信号与主结论句方向/周期不一致 → 必须 action=fix，改为主结论句的方向/周期。
 
 ## 其他标准
-1. **周期支持**：spec 必须对应原文**明确出现**的周期词。**原文无明确周期但有明确方向**（"随时""大趋势向上""肯定涨但不知道什么时候""上涨没结束"等结构/无时限表述）→ 不能给 long 单列，fix 为 spec=t10、cat=scored（引擎在第 10 个交易日计分）。**目标点位无时间承诺**（"目标是X点""背驰点在4423"）→ fix 为 spec=long、cat=unscored（不填 s）。**年度预测**（"今年/下半年/全年/2026"）与**中长期/远期**（"未来几个月""三年""长期来看"）→ fix 为 spec=long、cat=unscored。
-2. **可打分性**：只有形态描述（震荡/筑底/洗盘/冲高回落/支撑位）而无明确方向态度 → drop；**模棱两可/方向不明（"可能涨也可能跌""边走边看""不好说"）→ drop（连单列都不记）；纯复盘/对过去的分析（回顾行情、评价已发生走势、事后总结）→ drop；状态描述（"已经进入调整阶段""顶背离已出现"）→ drop**；仓位自述 → drop。
-3. **盘中/盘前"今天"**："今天/今日/下午/午后/尾盘"预测 → spec=today、cat=scored（**无论盘前/盘中/盘后/非交易日发布都保持**，是否过时由打分引擎自动判定，审查阶段不做无效判断）。
-4. **补加**：原文有比已提取信号**更明确或被漏掉**的预测结论 → 放入 add。典型遗漏：① 同一帖子里还有**第二个观点**（不同方向或不同周期，如"短期看空、长期看多"只提取了短期看空 → add 长期看多那条：long/unscored）；② 应属 t10（无周期有方向）或 long/unscored 而未被提取。
+1. **周期支持**：spec 必须对应原文**明确出现**的周期词。原文没有明确周期（"随时""中长期""未来几个月""大趋势""上涨没结束"等结构/无时限表述）→ 不能给 scored，fix 为 cat=无预测周期（不填 spec）。目标点位无时间承诺（"目标是X点""背驰点在4423"）→ fix 为 cat=目标点位（不填 spec）。
+2. **可打分性**：只有形态描述（震荡/筑底/洗盘/冲高回落/支撑位）而无明确方向态度 → drop；**模棱两可/方向不明（"可能涨也可能跌""边走边看""不好说"）→ drop（连单列都不记）；纯复盘/对过去的分析（回顾行情、评价已发生走势、事后总结）→ drop**；仓位自述 → drop。
+3. **盘中"今天"**：交易日盘中（9:30~15:00）发布的"今天/今日/下午/午后/尾盘"预测是**有效**的（spec=today，保持 scored，引擎按发布后首根 30 分钟 bar→当日收盘计分），不要误判为无效；交易日**盘前(<9:30)** 发布的"今天"预测同样**有效**（spec=today，保持 scored）。仅交易日**盘后(≥15:00)**/非交易日发布的"今天"预测已过时/无法验证 → fix 为 cat=无效-日内（不填 spec）。
+4. **补加**：原文有比已提取信号**更明确或被漏掉**的预测结论 → 放入 add。典型遗漏：① 同一帖子里还有**第二个观点**（不同方向或不同周期，如"短期看空、长期看多"只提取了短期看空 → add 长期看多那条，各标 spec+d）；② 应属无预测周期/目标点位而未被提取。
 5. **保留**：信号方向与周期都有原文支持、且就是主结论句 → action=keep。
 
 ## 输出 JSON（只输出 JSON，无其他文字）
-**必须对「已提取信号」的每一条都给出 verdict（keep/fix/drop），不得遗漏任何一条**——漏掉任何一条都会被当作未评审而按原样保留；只有你明确 drop 的信号才会被删除。
 {"verdicts": [{"vidx": <帖子编号>, "sig": <该帖已提取信号下标，0基>, "action": "keep"|"fix"|"drop", "d":1|-1, "s":1|2, "spec":"...", "cat":"...", "summary":"≤50字", "reason":"一句话"}],
  "add": [{"vidx": <帖子编号>, "d":1|-1, "s":1|2, "spec":"...", "cat":"...", "summary":"≤50字"}]}
 - action=keep：只输出 vidx/sig/action/reason
 - action=fix：输出修正后的完整字段（d/s/spec/cat/summary）
 - action=drop：只输出 vidx/sig/action/reason
-- cat=scored 时 spec、s 必填；cat=unscored 时 spec=long、不填 s
+- cat=scored 时 spec、s 必填；cat=无效-日内/无预测周期/目标点位 时不填 spec、s
 - 无修正 → verdicts 为空数组；无补加 → add 为空数组；都无 → {"verdicts":[],"add":[]}"""
 
 
@@ -338,11 +338,6 @@ def normalize_signal(row, post):
     sig = {"pub": pub, "d": d, "idx": idx, "summary": summary}
     if cat == "scored":
         spec = str(row.get("spec") or "")
-        if spec == "long":
-            # spec=long 恒不计分（SKILL §3：目标点位/年度/中长期）→ 强制转 unscored
-            sig["spec"] = "long"
-            sig["cat"] = "unscored"
-            return sig, None
         if not SPEC_RE.match(spec):
             return None, f"spec 非法/缺失: {spec or '(空)'}"
         s = row.get("s", 1)
@@ -356,9 +351,7 @@ def normalize_signal(row, post):
         sig["spec"] = spec
         sig["cat"] = "scored"
     else:
-        # unscored：spec 统一归一为 long（供报告展示"长期/不计分"）
-        sig["spec"] = "long"
-        sig["cat"] = "unscored"
+        sig["cat"] = cat
     return sig, None
 
 
@@ -402,10 +395,8 @@ def verify_signals(client, signals, posts, bodies, blogger):
     stats = Counter()
     total_groups = len(groups)
 
-    batch_lo = 0
     for start in range(0, total_groups, VERIFY_BATCH_SIZE):
         grp = groups[start:start + VERIFY_BATCH_SIZE]
-        batch_hi = start + len(grp)
         lines = []
         for i, g in enumerate(grp):
             vidx = start + i
@@ -416,7 +407,7 @@ def verify_signals(client, signals, posts, bodies, blogger):
                          f"已提取信号: {json.dumps(sigs, ensure_ascii=False)}\n")
         label = f"Verify {start // VERIFY_BATCH_SIZE + 1}/{(total_groups - 1) // VERIFY_BATCH_SIZE + 1}"
         print(f"  [{label}] 审查 {len(grp)} 帖...", end=" ", flush=True)
-        user_message = (f"请审查以下 {len(grp)} 帖子的已提取信号是否被原文支持，并按规则修正（vidx 对应帖子编号，仅限本批次 {start}~{batch_hi - 1}）。\n\n"
+        user_message = (f"请审查以下 {len(grp)} 帖子的已提取信号是否被原文支持，并按规则修正（vidx 对应帖子编号）。\n\n"
                         + "\n".join(lines))
         result, _ = call_json(client, VERIFY_SYSTEM_PROMPT, user_message, label, thinking=False)
         if result is None:
@@ -428,20 +419,18 @@ def verify_signals(client, signals, posts, bodies, blogger):
                     final_posts.append(g["post"])
             continue
 
-        # 处理 verdicts（vidx 必须落在本批次范围内，防跨批错配/重复）
+        # 处理 verdicts
         verdicts = result.get("verdicts") or []
-        judged = set()  # (vidx, sigi) 已被明确评审（keep/fix/drop）
         for v in verdicts:
             vidx = v.get("vidx")
             sigi = v.get("sig")
-            if not (isinstance(vidx, int) and batch_lo <= vidx < batch_hi):
+            if not (0 <= vidx < total_groups):
                 stats["vidx 越界"] += 1
                 continue
             g = groups[vidx]
-            if not (isinstance(sigi, int) and 0 <= sigi < len(g["signals"])):
+            if not (0 <= sigi < len(g["signals"])):
                 stats["sig 越界"] += 1
                 continue
-            judged.add((vidx, sigi))
             action = v.get("action")
             if action == "keep":
                 stats["keep"] += 1
@@ -464,11 +453,11 @@ def verify_signals(client, signals, posts, bodies, blogger):
                 final_signals.append(g["signals"][sigi])
                 final_posts.append(g["post"])
 
-        # 处理补加（vidx 同样限制在本批次）
+        # 处理补加
         adds = result.get("add") or []
         for a in adds:
             vidx = a.get("vidx")
-            if not (isinstance(vidx, int) and batch_lo <= vidx < batch_hi):
+            if not (0 <= vidx < total_groups):
                 stats["add vidx 越界"] += 1
                 continue
             g = groups[vidx]
@@ -480,29 +469,17 @@ def verify_signals(client, signals, posts, bodies, blogger):
             final_signals.append(sig)
             final_posts.append(g["post"])
 
-        # 默认保留：未被任何 verdict 覆盖的信号。verify 只负责「显式 drop 掉的误报」，
-        # 未提及 ≠ 判为误报——静默丢弃会系统性丢失真实信号（鸟瞰股市 144→83 的根因）。
-        for i, g in enumerate(grp):
-            vidx = start + i
-            for j, s in enumerate(g["signals"]):
-                if (vidx, j) not in judged:
-                    stats["未评默认保留"] += 1
-                    final_signals.append(s)
-                    final_posts.append(g["post"])
-
-        batch_lo = batch_hi
-        print(f"✓ keep={stats['keep']} fix={stats['fix']} drop={stats['drop']} add={stats['add']} "
-              f"未评={stats['未评默认保留']} 越界={stats['vidx 越界'] + stats['sig 越界']}")
+        print(f"✓ keep={stats['keep']} fix={stats['fix']} drop={stats['drop']} add={stats['add']}")
 
     return final_signals, final_posts, stats
 
 
 def dedup_and_sort(signals):
-    """去重：同日同周期同方向→1 条（保留当天最晚发布）。unscored 统一用字面量作去重键。"""
+    """去重：同日同周期同方向→1 条（保留当天最晚发布）。"""
     seen = {}
     for s in signals:
         date = s["pub"][:10]
-        key = (date, s.get("spec") if s["cat"] == "scored" else "unscored", s["d"])
+        key = (date, s.get("spec") if s["cat"] == "scored" else f"cat:{s['cat']}", s["d"])
         cur = seen.get(key)
         if cur is None or s["pub"] > cur["pub"]:
             seen[key] = s
@@ -510,10 +487,10 @@ def dedup_and_sort(signals):
 
 
 def consensus_key(sig):
-    """多次运行共识的信号键：scored 用 (pub, spec, d)，unscored 用 (pub, "unscored", d)。"""
+    """多次运行共识的信号键：scored 用 (pub, spec, d)，单列类用 (pub, cat, d)。"""
     if sig["cat"] == "scored":
         return (sig["pub"], "scored", sig["spec"], sig["d"])
-    return (sig["pub"], "unscored", None, sig["d"])
+    return (sig["pub"], sig["cat"], None, sig["d"])
 
 
 def consensus_merge(runs_signals, min_votes):
