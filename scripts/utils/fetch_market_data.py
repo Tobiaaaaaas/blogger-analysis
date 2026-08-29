@@ -3,9 +3,9 @@
 独立脚本，供 Skill 和其他分析流程调用
 
 用法:
-  python scripts/fetch_market_data.py                     # 默认2026年全年
-  python scripts/fetch_market_data.py --start 20250101    # 指定起始日期
-  python scripts/fetch_market_data.py --start 20240601    # 全量刷新（Direction 前置要求）
+  python scripts/utils/fetch_market_data.py               # 默认2026年全年
+  python scripts/utils/fetch_market_data.py --start 20250101    # 指定起始日期
+  python scripts/utils/fetch_market_data.py --start 20240601    # 全量刷新（Direction 前置要求）
 
 与已有 market_data.json 合并写回：仅替换 [start, end] 区间内的行，
 区间外的旧数据和其他指数的数据保留，不会整文件覆盖。

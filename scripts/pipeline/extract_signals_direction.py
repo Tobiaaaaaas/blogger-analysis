@@ -91,10 +91,11 @@ SYSTEM_PROMPT = """你是财经内容分析助手。你的任务是阅读今日�
 - "月底前/月末前" → month；"下个月/下月" → nmonth
 - "X月X日"（未来具体日期）→ d:YYYY-MM-DD
 - **无明确预测周期但有明确方向**（"大趋势向上""随时会涨""肯定要涨但不知道什么时候"）→ spec=t10，cat=scored（引擎在第 10 个交易日计分）
+- **有明确预测点位 + 预测周期** → 视作有明确方向预测：预期点位高于参考价=看涨（d=1）、低于参考价=看跌（d=-1），**按周期计分**（例："今天下午能站上4000"→today、看涨；"下周要回踩3800"→nweek、看跌）
 
 ## 长期/不计分（spec=long，cat=unscored）
-以下三类方向明确的预测**不计分**（cat=unscored，spec=long，不填 s）：
-- **目标点位无时间承诺**："目标是4260点""看到X点""还有X点空间""背驰点在4423"
+以下方向明确的预测**不计分**（cat=unscored，spec=long，不填 s）：
+- **目标点位无时间承诺**（只给点位、不给时间）："目标是4260点""看到X点""还有X点空间""背驰点在4423" → unscored；**给定了时间的点位预测**（"明天站上4100""下周到4000"）→ **scored 按周期计分**，见上
 - **年度预测**："下半年""全年""今年""2026年"
 - **中长期/远期**："中长期""未来几个月""三年""长线""长期来看"
 
@@ -125,7 +126,7 @@ VERIFY_SYSTEM_PROMPT = """你是信号审查助手。你会收到「已提取信
 先找到帖子的**主结论句**——形如「周三：大盘探底回升，我看涨」「明天：只卖不买」「下周一我看跌」等**带明确方向**的句子。主结论句是全帖最高优先级的预测：**任何条件句、风险提示、走势分类、点位预演都不能替代或覆盖主结论句**。若提取信号与主结论句方向/周期不一致 → 必须 action=fix，改为主结论句的方向/周期。
 
 ## 其他标准
-1. **周期支持**：spec 必须对应原文**明确出现**的周期词。**原文无明确周期但有明确方向**（"随时""大趋势向上""肯定涨但不知道什么时候""上涨没结束"等结构/无时限表述）→ 不能给 long 单列，fix 为 spec=t10、cat=scored（引擎在第 10 个交易日计分）。**目标点位无时间承诺**（"目标是X点""背驰点在4423"）→ fix 为 spec=long、cat=unscored（不填 s）。**年度预测**（"今年/下半年/全年/2026"）与**中长期/远期**（"未来几个月""三年""长期来看"）→ fix 为 spec=long、cat=unscored。
+1. **周期支持**：spec 必须对应原文**明确出现**的周期词。**原文无明确周期但有明确方向**（"随时""大趋势向上""肯定涨但不知道什么时候""上涨没结束"等结构/无时限表述）→ 不能给 long 单列，fix 为 spec=t10、cat=scored（引擎在第 10 个交易日计分）。**目标点位无时间承诺**（"目标是X点""背驰点在4423"）→ fix 为 spec=long、cat=unscored（不填 s）。**有明确点位 + 明确周期**（"明天站上4100""下周回踩3800"）→ fix 为 scored 按周期计分，点位高于参考价=看涨 d=1、低于=看跌 d=-1。**年度预测**（"今年/下半年/全年/2026"）与**中长期/远期**（"未来几个月""三年""长期来看"）→ fix 为 spec=long、cat=unscored。
 2. **可打分性**：只有形态描述（震荡/筑底/洗盘/冲高回落/支撑位）而无明确方向态度 → drop；**模棱两可/方向不明（"可能涨也可能跌""边走边看""不好说"）→ drop（连单列都不记）；纯复盘/对过去的分析（回顾行情、评价已发生走势、事后总结）→ drop；状态描述（"已经进入调整阶段""顶背离已出现"）→ drop**；仓位自述 → drop。
 3. **盘中/盘前"今天"**："今天/今日/下午/午后/尾盘"预测 → spec=today、cat=scored（**无论盘前/盘中/盘后/非交易日发布都保持**，是否过时由打分引擎自动判定，审查阶段不做无效判断）。
 4. **补加**：原文有比已提取信号**更明确或被漏掉**的预测结论 → 放入 add。典型遗漏：① 同一帖子里还有**第二个观点**（不同方向或不同周期，如"短期看空、长期看多"只提取了短期看空 → add 长期看多那条：long/unscored）；② 应属 t10（无周期有方向）或 long/unscored 而未被提取。
@@ -498,11 +499,11 @@ def verify_signals(client, signals, posts, bodies, blogger):
 
 
 def dedup_and_sort(signals):
-    """去重：同日同周期同方向→1 条（保留当天最晚发布）。unscored 统一用字面量作去重键。"""
+    """去重：同日同周期同方向同指数→1 条（保留当天最晚发布）。unscored 统一用字面量作去重键。"""
     seen = {}
     for s in signals:
         date = s["pub"][:10]
-        key = (date, s.get("spec") if s["cat"] == "scored" else "unscored", s["d"])
+        key = (date, s.get("spec") if s["cat"] == "scored" else "unscored", s["d"], s["idx"])
         cur = seen.get(key)
         if cur is None or s["pub"] > cur["pub"]:
             seen[key] = s
@@ -510,10 +511,11 @@ def dedup_and_sort(signals):
 
 
 def consensus_key(sig):
-    """多次运行共识的信号键：scored 用 (pub, spec, d)，unscored 用 (pub, "unscored", d)。"""
+    """多次运行共识的信号键：scored 用 (pub, spec, d, idx)，unscored 用 (pub, "unscored", d, idx)。
+    含 idx：同日同周期同方向的预测若针对不同指数（如上证明天涨 + 创业板明天涨）是两条独立信号，不得合并。"""
     if sig["cat"] == "scored":
-        return (sig["pub"], "scored", sig["spec"], sig["d"])
-    return (sig["pub"], "unscored", None, sig["d"])
+        return (sig["pub"], "scored", sig["spec"], sig["d"], sig["idx"])
+    return (sig["pub"], "unscored", None, sig["d"], sig["idx"])
 
 
 def consensus_merge(runs_signals, min_votes):
@@ -598,12 +600,14 @@ def main():
 
     total_eval = len(eval_posts)
     total_batches = (total_eval + args.batch_size - 1) // args.batch_size
+    runs_count = args.runs if args.limit == 0 else 1  # 冒烟(--limit)只跑一次
+    min_votes = (runs_count // 2) + 1 if runs_count > 1 else 1
 
     print("=" * 60)
     print(f"Direction 信号提取（DeepSeek {MODEL}）：{blogger}")
     print("=" * 60)
     print(f"帖子总数: {len(all_posts)} | 2026 前剔除: {pre_count} | 参与提取: {total_eval}")
-    print(f"批次: {total_batches}（batch-size={args.batch_size}）| 自查: {'开' if not args.no_verify else '关'} | 运行: {args.runs} 次")
+    print(f"批次: {total_batches}（batch-size={args.batch_size}）| 自查: {'开' if not args.no_verify else '关'} | 运行: {runs_count} 次")
 
     if args.dry_run:
         print(f"\n[DRY RUN] 将向 DeepSeek 发送 {total_batches} 批帖子 × {args.runs} 次（不调 API、不写文件）")
@@ -619,8 +623,6 @@ def main():
 
     start_time = time.time()
     all_candidates, all_verify, total_failed = [], [], 0
-    runs_count = args.runs if args.limit == 0 else 1  # 冒烟(--limit)只跑一次
-    min_votes = (runs_count // 2) + 1 if runs_count > 1 else 1
 
     print(f"\n[提取] {runs_count} 次运行（共识阈值 ≥{min_votes}/次）..." if runs_count > 1 else "\n[提取] 单次运行...")
     for r in range(1, runs_count + 1):

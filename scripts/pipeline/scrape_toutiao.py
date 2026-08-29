@@ -7,7 +7,7 @@
 4. 页面内提取内容兜底
 
 Usage:
-  python scripts/scrape_toutiao.py <帖子链接> [--name <博主名>] [--since YYYY-MM-DD] [--force]
+  python scripts/pipeline/scrape_toutiao.py <帖子链接> [--name <博主名>] [--since YYYY-MM-DD] [--force]
 """
 
 import json
