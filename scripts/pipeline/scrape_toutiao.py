@@ -384,9 +384,16 @@ def main():
 
             # 只爬 --since 之后的帖子：本页最远时间已早于 since → 后续页全为更早，停止
             if since_ts and min_t and min_t < since_ts:
-                print(f"  已到起始日期 {args.since} 之前的帖子（本页最远 {date_str}），翻页结束")
-                stop_reason = "since"
-                break
+                if page_num == 1:
+                    # 第1页就混入 since 前的旧帖：正常最新页不应含历史帖，多为 feed 兜底帖。
+                    # 曾致 时间轨迹/稀豹/白猫财眼 首屏 12 条被误判"已到起点"直接截断保存。
+                    # 不在第1页停，继续翻页核实真实内容；真正截断由保存前旧文件对比兜底拦截。
+                    print(f"  ⚠️ 第1页就混入 {args.since} 之前的帖子（本页最远 {date_str}），疑似 feed 兜底帖，继续翻页核实")
+                    stop_reason = "since_first_page"
+                else:
+                    print(f"  已到起始日期 {args.since} 之前的帖子（本页最远 {date_str}），翻页结束")
+                    stop_reason = "since"
+                    break
 
             if len(all_posts) >= target:
                 print("  达到目标数量，翻页结束")
@@ -492,12 +499,32 @@ def main():
         }
 
         # 覆盖前保护：--since 未覆盖到起点且异常停 → 拒绝覆盖（防截断数据静默落盘）
-        TRUNCATED = {"api_empty", "js_error", "status_abnormal", "empty_streak", "max_pages"}
+        TRUNCATED = {"api_empty", "js_error", "status_abnormal", "empty_streak", "max_pages", "since_first_page"}
         if stop_reason == "wrong_feed":
             print("  ❌ 识别为推荐流/转帖页（非博主主页），拒绝覆盖保存。请换用博主本人原创帖链接重试。")
             browser.close()
             sys.exit(1)
         min_ts = min((p["publish_time"] for p in all_posts if p["publish_time"]), default=0)
+        # 覆盖前保护 2（治本）：--since 模式下与旧文件对比帖数。只靠 min_ts 不可靠——
+        # feed 第1页混入一条历史兜底帖时 min_ts < since_ts，旧保护误判"已覆盖到起点"直接放行，
+        # 导致 12 条截断版覆盖 800+ 条完整版（时间轨迹/稀豹/白猫财眼 事故）。
+        if since_ts and not args.force and output_file and os.path.exists(output_file):
+            new_since = sum(1 for p in all_posts if p.get("publish_time") and p["publish_time"] >= since_ts)
+            old_since = 0
+            try:
+                with open(output_file, encoding="utf-8") as _f:
+                    _old = json.load(_f)
+                _op = _old.get("posts", _old) if isinstance(_old, dict) else _old
+                if isinstance(_op, list):
+                    old_since = sum(1 for p in _op if p.get("publish_time") and p["publish_time"] >= since_ts)
+            except Exception:
+                old_since = 0
+            if old_since > 0 and new_since < max(10, int(old_since * 0.5)):
+                print(f"  ❌ 截断检测：新抓 {args.since} 后帖子仅 {new_since} 条，旧文件有 {old_since} 条"
+                      f"（<{max(10, int(old_since * 0.5))}），疑似 feed 翻页中断/混入旧帖")
+                print(f"    拒绝覆盖 {output_file}（数据可能截断）。确认无异常后加 --force 强制覆盖，或重试爬取。")
+                browser.close()
+                sys.exit(1)
         if since_ts and min_ts > since_ts and stop_reason in TRUNCATED and not args.force:
             print(f"  ❌ 异常停（stop_reason={stop_reason}），最远只到 "
                   f"{datetime.fromtimestamp(min_ts).strftime('%Y-%m-%d')}，未覆盖到 --since {args.since}")

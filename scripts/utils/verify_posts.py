@@ -31,8 +31,8 @@ REGRESSION_RATIO = 0.9         # 新抓取数量 < 备份此比例 → 提示
 SINCE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 # 翻页停止原因（scrape_toutiao.py 写入 result["stop_reason"]）
-NATURAL_STOPS = {"since", "no_more", "no_cursor", "target"}       # 自然停：已到起点/无更多内容
-TRUNCATED_STOPS = {"api_empty", "js_error", "status_abnormal", "empty_streak", "max_pages"}  # 异常停：可能截断
+NATURAL_STOPS = {"since", "no_more", "no_cursor", "target", "merged_backup+new"}  # 自然停：已到起点/无更多内容
+TRUNCATED_STOPS = {"api_empty", "js_error", "status_abnormal", "empty_streak", "max_pages", "since_first_page"}  # 异常停：可能截断
 
 
 def fmt(n, hard, warn):
@@ -172,31 +172,46 @@ def main():
         else:
             emit_ok("无 ≥7 天的按日缺口")
 
-    # ── [7] 备份回归 ──
-    backups = sorted(glob.glob(os.path.join(BACKUP_DIR, f"{args.blogger}_*.json")), key=os.path.getmtime, reverse=True)
+    # ── [7] 备份回归（截断硬检查） ──
+    # 遍历所有备份取 since 后帖数最大者作参照（重爬前的完整版本），防止与"截断版备份"对比误判。
+    # 当前帖数远少于最完整备份 → 硬失败阻断（时间轨迹/稀豹/白猫财眼 事故即 800+ 帖被截到 12 帖）。
+    backups = sorted(glob.glob(os.path.join(BACKUP_DIR, f"{args.blogger}_*.json")))
     if not backups:
         emit_ok("无备份可比较（data/posts/_backup/ 为空）")
     else:
-        backup = json.load(open(backups[0], encoding="utf-8"))
-        b_posts = backup.get("posts") if isinstance(backup, dict) else backup
-        if b_posts is None:
-            emit(f"备份 {os.path.basename(backups[0])} 缺少 posts 字段，无法比较", is_hard=False)
+        best_bak, best_sub = None, []
+        for bf in backups:
+            try:
+                bk = json.load(open(bf, encoding="utf-8"))
+            except Exception:
+                continue
+            bp = bk.get("posts") if isinstance(bk, dict) else bk
+            if not isinstance(bp, list) or not bp:
+                continue
+            sub = [p for p in bp if p.get("publish_date", "")[:10] >= since]
+            if len(sub) > len(best_sub):
+                best_bak, best_sub = bf, sub
+        if best_bak is None:
+            emit("备份均无法解析（data/posts/_backup/ 文件损坏）", is_hard=False)
+        elif not best_sub:
+            emit_ok(f"备份均无 {since} 后帖子，无法用备份判读截断")
         else:
-            cutoff = since if args.since else None
-            if cutoff:
-                new_sub = [p for p in posts if p.get("publish_date", "")[:10] >= cutoff]
-                bak_sub = [p for p in b_posts if p.get("publish_date", "")[:10] >= cutoff]
+            new_sub = [p for p in posts if p.get("publish_date", "")[:10] >= since]
+            n_new, n_best = len(new_sub), len(best_sub)
+            threshold = max(10, int(n_best * 0.5))
+            if n_best > 0 and n_new < threshold:
+                emit(f"当前 {since} 后帖子仅 {n_new} 条，最完整备份有 {n_best} 条"
+                     f"（{os.path.basename(best_bak)}，<{threshold}）：疑似截断/数据丢失，需从备份恢复或重爬", is_hard=True)
             else:
-                new_sub, bak_sub = posts, b_posts
-            if bak_sub and len(new_sub) < REGRESSION_RATIO * len(bak_sub):
-                emit(f"新抓取 {len(new_sub)} 条 < 备份 {len(bak_sub)} 条 × {REGRESSION_RATIO:.0%}（{os.path.basename(backups[0])}）：大幅缩水，确认后再继续", is_hard=False)
-            bak_ids = {p.get("post_id") for p in bak_sub if p.get("post_id")}
-            new_ids = {p.get("post_id") for p in new_sub if p.get("post_id")}
-            missing = bak_ids - new_ids
-            if missing:
-                emit(f"较最新备份丢失 {len(missing)} 条帖子（如 {sorted(missing)[:3]}…）：可能被删/被截断，必要时从备份恢复", is_hard=False)
-            if not bak_sub or (len(new_sub) >= REGRESSION_RATIO * len(bak_sub) and not missing):
-                emit_ok(f"与最新备份（{os.path.basename(backups[0])}）对比正常")
+                bak_ids = {p.get("post_id") for p in best_sub if p.get("post_id")}
+                new_ids = {p.get("post_id") for p in new_sub if p.get("post_id")}
+                missing = bak_ids - new_ids
+                if missing:
+                    emit(f"较最完整备份丢失 {len(missing)} 条 {since} 后帖子（如 {sorted(missing)[:3]}…）：可能被删/被截断，必要时从备份恢复", is_hard=False)
+                elif n_new < n_best:
+                    emit(f"{since} 后帖子 {n_new} 条 < 最完整备份 {n_best} 条，但在阈值内（≥{threshold}）：博主删帖或抓取缺口，仅提示", is_hard=False)
+                else:
+                    emit_ok(f"与最完整备份对比正常（{since} 后 {n_new} 条 ≥ 备份 {n_best} 条）")
 
     # ── 汇总 ──
     print("-" * 68)
