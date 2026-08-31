@@ -31,6 +31,7 @@ import json
 import os
 import re
 import sys
+import threading
 import time
 from collections import Counter
 
@@ -46,6 +47,11 @@ DEFAULT_BATCH_SIZE = 15
 VERIFY_BATCH_SIZE = 10  # 自查批次：每批审几帖
 MAX_RETRIES = 3
 RETRY_DELAY = 5  # seconds
+# 硬性 wall-clock 超时（秒）。DeepSeek 服务端偶尔会拖拽连接/维持连接不响应，
+# OpenAI SDK 的 timeout 只对"完全无数据"生效——服务端持续发字节会重置读超时→无限挂起
+# （2026-08-31 连挂 4 位博主：红红火火的老牛哥/纽约音乐厨房/老简说交易/股傲）。
+# 用守护线程强制放弃：单次调用绝不超 API_CALL_DEADLINE，3 次重试最坏 ~9 分钟/批。
+API_CALL_DEADLINE = 180
 
 # 只提取 2026-01-01 及之后发布的信号
 SIGNAL_START = "2026-01-01"
@@ -216,22 +222,51 @@ def format_post_for_prompt(post, index, bodies):
     return f"[Post #{index}] {pd}\n{post_text(post, bodies)}\n"
 
 
+def _call_with_deadline(fn, deadline, label):
+    """守护线程执行 fn，硬性 wall-clock 超时——服务端拖拽连接也强制放弃，绝不无限挂起。"""
+    box = {}
+
+    def runner():
+        try:
+            box["value"] = fn()
+        except BaseException as e:  # noqa: BLE001 —— 守护线程里任何异常都应装盒上报，不能杀主流程
+            box["error"] = e
+
+    t = threading.Thread(target=runner, daemon=True)
+    t.start()
+    t.join(deadline)
+    if t.is_alive():
+        raise TimeoutError(f"{label}: 超过 {deadline}s 硬性超时，放弃本次调用")
+    if "error" in box:
+        raise box["error"]
+    return box["value"]
+
+
 def call_json(client, system_prompt, user_message, label, thinking=False):
     """调 DeepSeek，返回 (parsed_dict, raw) 或 (None, None)。
 
     thinking=False：关推理（提取阶段，省 token）；thinking=True：开推理（自查阶段，更仔细）。
+
+    每次 attempt 用全新 client + 硬性 wall-clock 超时：
+    服务端偶尔拖拽连接不响应，SDK timeout 不生效（读超时被字节流重置），必须守护线程硬切，
+    否则单次调用可挂死整轮（2026-08-31 曾连挂 4 位博主）。新 client 避免复用被拖拽的毒连接。
     """
     for attempt in range(MAX_RETRIES):
+        c = OpenAI(api_key=os.environ["DEEPSEEK_API_KEY"], base_url=BASE_URL, timeout=API_CALL_DEADLINE)
         try:
-            response = client.chat.completions.create(
-                model=MODEL,
-                messages=[
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": user_message},
-                ],
-                temperature=0,
-                max_tokens=8192,
-                extra_body={"thinking": {"type": "enabled" if thinking else "disabled"}},
+            response = _call_with_deadline(
+                lambda c=c: c.chat.completions.create(
+                    model=MODEL,
+                    messages=[
+                        {"role": "system", "content": system_prompt},
+                        {"role": "user", "content": user_message},
+                    ],
+                    temperature=0,
+                    max_tokens=8192,
+                    extra_body={"thinking": {"type": "enabled" if thinking else "disabled"}},
+                ),
+                API_CALL_DEADLINE,
+                f"{label} attempt {attempt + 1}",
             )
             raw = response.choices[0].message.content
             result = parse_response(raw)
@@ -419,7 +454,17 @@ def verify_signals(client, signals, posts, bodies, blogger):
         print(f"  [{label}] 审查 {len(grp)} 帖...", end=" ", flush=True)
         user_message = (f"请审查以下 {len(grp)} 帖子的已提取信号是否被原文支持，并按规则修正（vidx 对应帖子编号，仅限本批次 {start}~{batch_hi - 1}）。\n\n"
                         + "\n".join(lines))
-        result, _ = call_json(client, VERIFY_SYSTEM_PROMPT, user_message, label, thinking=False)
+        try:
+            result, _ = call_json(client, VERIFY_SYSTEM_PROMPT, user_message, label, thinking=False)
+        except Exception as e:
+            # 单批 API 拖死（3 次重试后仍超时）→ 保留该批原信号，不拖垮整位博主（2026-08-31 加固）
+            print(f"FAILED({e}), 保留原信号")
+            stats["verify 批次失败"] += 1
+            for g in grp:
+                for s in g["signals"]:
+                    final_signals.append(s)
+                    final_posts.append(g["post"])
+            continue
         if result is None:
             print("FAILED, 保留原信号")
             stats["verify 批次失败"] += 1
@@ -619,7 +664,7 @@ def main():
         print("  export DEEPSEEK_API_KEY='sk-...'")
         sys.exit(1)
 
-    client = OpenAI(api_key=api_key, base_url=BASE_URL)
+    client = OpenAI(api_key=api_key, base_url=BASE_URL, timeout=120.0)  # 120s 超时：防止 DeepSeek API 调用挂死整轮提取（2026-08-31 红红火火的老牛哥曾卡 99 分钟）
 
     start_time = time.time()
     all_candidates, all_verify, total_failed = [], [], 0

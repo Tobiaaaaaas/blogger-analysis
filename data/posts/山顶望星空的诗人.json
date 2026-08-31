@@ -1,150 +1,192 @@
 {
-  "scrape_time": "2026-08-21 13:45:24",
-  "source_url": "https://www.toutiao.com/w/1874088853151754/",
+  "scrape_time": "2026-08-30 00:10:20",
+  "source_url": "https://www.toutiao.com/w/1874098708494340/",
   "stop_reason": "since",
   "user_info": {
-    "followers": "2576",
-    "digg_count": "6901",
-    "following": "195",
+    "followers": "2599",
+    "digg_count": "7036",
+    "following": "194",
     "name": "山顶望星空的诗人",
     "user_id": "83795564311",
     "description": ""
   },
-  "total_posts": 144,
+  "total_posts": 153,
   "time_range": {
-    "earliest": "2023-01-02",
-    "latest": "2026-08-21"
+    "earliest": "2021-05-06",
+    "latest": "2026-08-27"
   },
   "posts": [
+    {
+      "post_id": "1874676806320139",
+      "content": "科技股反弹到9月20日前，大盘4100点，也就是3741点的B浪反弹，最后的逃命！！！",
+      "publish_time": 1787831121,
+      "publish_date": "2026-08-27 19:45",
+      "url": "https://m.toutiao.com/w/1874676806320139/?app=toutiao_web&timestamp=1788019804&use_new_style=1",
+      "digg_count": 35,
+      "comment_count": 3,
+      "read_count": 24251,
+      "title": "科技股反弹到9月20日前，大盘4100点，也就是3741点的B浪反弹，最后的逃命！！！"
+    },
+    {
+      "post_id": "1874651312082947",
+      "content": "看来走的是第二种线路。\n\n科技继续诱多，完成头肩顶的右肩，胆子大的可以博一把。\n\n风险资产的科技和避险资产的有色+资源+粮食，轮流上涨。",
+      "publish_time": 1787806808,
+      "publish_date": "2026-08-27 13:00",
+      "url": "https://m.toutiao.com/w/1874651312082947/?app=toutiao_web&timestamp=1788019804&use_new_style=1",
+      "digg_count": 11,
+      "comment_count": 7,
+      "read_count": 5478
+    },
+    {
+      "post_id": "1874541134333956",
+      "content": "目前其实是风险最大的时刻！\n\n目前无外乎两种走势：\n1.9月20日之前，阴跌不止，指数破3741，到了3600附近，然后开启3个月的上涨行情，科技领涨！\n2.9月20日之前，指数围绕3800-4000，高位震荡不选方向，9月20日后，开启暴跌，那么10-12月将没有科技股行情，避险资产上涨。能源+有色！\n昨晚上的消息，中东缓解，原油大跌。我判断这是特朗普的烟雾弹，是大战前的最后迷糊药。我还是认为美伊有大战！时间就在9月20日前后！\n所以，9月20日前，应该是很多股票特别是科技股最后的逃命窗口。",
+      "publish_time": 1787701735,
+      "publish_date": "2026-08-26 07:48",
+      "url": "https://m.toutiao.com/w/1874541134333956/?app=toutiao_web&timestamp=1788019804&use_new_style=1",
+      "digg_count": 23,
+      "comment_count": 3,
+      "read_count": 9401
+    },
+    {
+      "post_id": "1874369148841987",
+      "content": "贵金属+小金属\n资源+能源\n\n大资金从科技流出，进入大宗！",
+      "publish_time": 1787537716,
+      "publish_date": "2026-08-24 10:15",
+      "url": "https://m.toutiao.com/w/1874369148841987/?app=toutiao_web&timestamp=1788019804&use_new_style=1",
+      "digg_count": 12,
+      "comment_count": 5,
+      "read_count": 4704,
+      "title": "贵金属+小金属\n资源+能源\n\n大资金从科技流出，进入大宗！"
+    },
     {
       "post_id": "1874098708494340",
       "content": "资源+能源！",
       "publish_time": 1787279804,
       "publish_date": "2026-08-21 10:36",
-      "url": "https://m.toutiao.com/w/1874098708494340/?app=toutiao_web&timestamp=1787291108&use_new_style=1",
-      "digg_count": 7,
+      "url": "https://m.toutiao.com/w/1874098708494340/?app=toutiao_web&timestamp=1788019804&use_new_style=1",
+      "digg_count": 13,
       "comment_count": 1,
-      "read_count": 724
+      "read_count": 9458
     },
     {
       "post_id": "1874088853151754",
       "content": "今天的走势很关键！\n\n如果收红，代表周三的大阴线只是洗盘，大盘还在向4015/4060的路上，那么9-11月都将下跌，也就是未来连跌3个月！\n如果收绿，那就是准备破前低3741，9（10）-11（12）月有2-3个月的上涨。\n对应的节奏不同，上涨下跌的板块也不同。\n目前，美股似乎撑不住了。美元指数也撑不住了。美伊不战不和，老美士兵也撑不住了。反战情绪高。共和党的中期选举似乎黄了。\n\n所以，未来1-2周，高波动的刺激消息会很多。\n没有把握的，看戏！\n打算出手的：\n1.科技慎遗。\n2.逢低买进。\n3.仓位控制。\n4.尽量选之前开过花且回落的（科技回落不够），比如AI应用、电力电网、医药、煤炭、石油、银行、小金属。在这些板块中寻找机会。",
       "publish_time": 1787270406,
       "publish_date": "2026-08-21 08:00",
-      "url": "https://m.toutiao.com/w/1874088853151754/?app=toutiao_web&timestamp=1787291108&use_new_style=1",
-      "digg_count": 27,
-      "comment_count": 4,
-      "read_count": 31977
+      "url": "https://m.toutiao.com/w/1874088853151754/?app=toutiao_web&timestamp=1788019804&use_new_style=1",
+      "digg_count": 63,
+      "comment_count": 6,
+      "read_count": 103009
     },
     {
       "post_id": "1874050891433091",
       "content": "如果明天下跌50点之上，就要认真考虑，4258是否和6124-5178一样的中期大顶！\n2026的走势非常相似2015年，同样的8月第三周反弹结束，同样的周三，一根大阴棒！",
       "publish_time": 1787234202,
       "publish_date": "2026-08-20 21:56",
-      "url": "https://m.toutiao.com/w/1874050891433091/?app=toutiao_web&timestamp=1787291108&use_new_style=1",
-      "digg_count": 16,
+      "url": "https://m.toutiao.com/w/1874050891433091/?app=toutiao_web&timestamp=1788019804&use_new_style=1",
+      "digg_count": 18,
       "comment_count": 3,
-      "read_count": 9693
+      "read_count": 15429
     },
     {
       "post_id": "1874021560455179",
       "content": "还有更大的下跌，管住手！\n\n这两天，大凡对商业航天、宇树机器人有一点点投机心理的，都被市场教训的鼻青脸肿！\n下跌的点位，预计3800左右，可能有个反弹。具体哪个时间点，要边走边看。",
       "publish_time": 1787206230,
       "publish_date": "2026-08-20 14:10",
-      "url": "https://m.toutiao.com/w/1874021560455179/?app=toutiao_web&timestamp=1787291108&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1874021560455179/?app=toutiao_web&timestamp=1788019804&use_new_style=1",
       "digg_count": 17,
       "comment_count": 1,
-      "read_count": 13016
+      "read_count": 18112
     },
     {
       "post_id": "1873941579708491",
       "content": "分享一下这两天操作的一个票。\n昨天，根据技术图形，股价翻过前一根墓碑线高点的时候，果断试盘，昨天股价上板，我成功+5%。但是封板资金只有2个亿。心想，今天开盘只要不封板，果断出。\n今天一早开盘卖出，股价稍波动后，瞬间跌停，我暗自庆幸，今天牛逼！\n没想到，很快，股价翻红，最多上涨+8%，差点地天！\n\n虽然尾盘翻绿，但是这个过程讲述了一个故事，市场上量化太牛！没有好的逻辑，那就是送人头。\n因为，量化打败了技术，之前看着5日线10日线20日线的，在量化面前只能投降。",
       "publish_time": 1787129955,
       "publish_date": "2026-08-19 16:59",
-      "url": "https://m.toutiao.com/w/1873941579708491/?app=toutiao_web&timestamp=1787291108&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1873941579708491/?app=toutiao_web&timestamp=1788019804&use_new_style=1",
       "digg_count": 16,
       "comment_count": 1,
-      "read_count": 14362
+      "read_count": 19453
     },
     {
       "post_id": "1873938306389060",
       "content": "今天好多人讽刺我，说我牛逼股市挣钱没，说我靠头条挣钱。\n这些人活该被股市修理！\n股市不缺聪明人，但是，智商情商低的，心态不好的，整天唱多的，一定亏的最多，这些人即使炒股30年，一定亏的更多！\n笔者小区一个股友，周一清仓，近2年5倍！！！8月靠云南锗业把7月跌的挣回来了！牛逼！\n\n早就提示科技反弹，8月14/17/18日变盘日拐头向下，上头为了宇树上市，撑到19日今天。如果昨晚美股科技大涨，那么，今天的成交量可能到30000-32000亿！而且是冲高回落，很多散户今天亏20%。\n可惜了，美股不配合。\n\n目前，全球股市上涨的动力已经没了，高位震荡因为科技没有完全出货。\n\n小心为妙，9月中旬是低点配合还是高点配合，需要走着瞧。",
       "publish_time": 1787126833,
       "publish_date": "2026-08-19 16:07",
-      "url": "https://m.toutiao.com/w/1873938306389060/?app=toutiao_web&timestamp=1787291108&use_new_style=1",
-      "digg_count": 15,
+      "url": "https://m.toutiao.com/w/1873938306389060/?app=toutiao_web&timestamp=1788019804&use_new_style=1",
+      "digg_count": 16,
       "comment_count": 3,
-      "read_count": 7986
+      "read_count": 13080
     },
     {
       "post_id": "1873910025594880",
       "content": "科技股下跌只是开始，还有一次诱多，然后才是暴跌！\n下半年的逻辑变了，关注资源涨价股、生活必需品涨价股。\n美国地面部队下场应该在9月中旬。那个时间点是变盘点。",
       "publish_time": 1787099862,
       "publish_date": "2026-08-19 08:37",
-      "url": "https://m.toutiao.com/w/1873910025594880/?app=toutiao_web&timestamp=1787291108&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1873910025594880/?app=toutiao_web&timestamp=1788019804&use_new_style=1",
       "digg_count": 108,
       "comment_count": 29,
-      "read_count": 171027
+      "read_count": 176819
     },
     {
       "post_id": "1873817211829257",
       "content": "今明两天，大盘指数4015/4016，量能28000亿，就是撤退的时候。\n不过，科技股即使回调，还有可能二波，之前预测的9月中旬低点，很可能科技股继续诱多形成高点。那个时候，纳斯达克也应该创历史新高了。\n9月中旬。美军地面战部队集结到位。\n9月17-18日，美国日本议息。\n一切配合都是那么天衣无缝。",
       "publish_time": 1787011348,
       "publish_date": "2026-08-18 08:02",
-      "url": "https://m.toutiao.com/w/1873817211829257/?app=toutiao_web&timestamp=1787291108&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1873817211829257/?app=toutiao_web&timestamp=1788019804&use_new_style=1",
       "digg_count": 49,
-      "comment_count": 3,
-      "read_count": 47027
+      "comment_count": 2,
+      "read_count": 51514
     },
     {
       "post_id": "1873756044173321",
       "content": "本来认为8月14/17日变盘向下，这个判断错了，说明浪型错了。\n上方两个点位4015/4060。\n如果4015开始向下，那么调整的幅度和时间都较小。幅度打掉3741就差不多了，9月中旬可以向上。\n如果4060开始向下，那就麻烦了，调整的幅度大，时间长。\n\n尽管大科技上涨，我兴趣不大。\n目前除了大科技，没有持续性的主线，创新药差不多了。\n这个时候，空仓看戏或者小仓位是比较稳妥的应对。",
       "publish_time": 1786953014,
       "publish_date": "2026-08-17 15:50",
-      "url": "https://m.toutiao.com/w/1873756044173321/?app=toutiao_web&timestamp=1787291108&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1873756044173321/?app=toutiao_web&timestamp=1788019806&use_new_style=1",
       "digg_count": 25,
       "comment_count": 4,
-      "read_count": 11900
+      "read_count": 15620
     },
     {
       "post_id": "1873471354932233",
       "content": "三种走势：\n\n1.3866不破，向上创新高，过4258，然后再下。这个可能性最小。\n2.3866不破，反弹4060，再下，创3741新低。\n3.3866破，直接下。\n\n不排除第二个可能性，也就是3866不破，再反弹200点，然后大级别向下。\n所以说，目前先向下测试3866。三种走势的共同之处。\n基本上，4258是全年最高点，4143是下半年最高点，3741不是三季度最低点。\n下跌过程，偏向防守板块（医药、电力、有色、金融）。反弹过程，科技为主。\n\n但是，所有的浪型都是事后验证，马后炮，风险永远放在第一位！",
       "publish_time": 1786681513,
       "publish_date": "2026-08-14 12:25",
-      "url": "https://m.toutiao.com/w/1873471354932233/?app=toutiao_web&timestamp=1787291108&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1873471354932233/?app=toutiao_web&timestamp=1788019806&use_new_style=1",
       "digg_count": 25,
       "comment_count": 7,
-      "read_count": 22261
+      "read_count": 25339
     },
     {
       "post_id": "1873452935615690",
       "content": "昨天尾盘急跌，今天开盘有可能反抽，任何反抽都是减仓或者逃命的机会。\n医药到头了！\n电力也不中用！\n指望科技？不过是美股的映射，续命，大资金有持续做多的意愿吗？紫光几十亿的封单说走就走，挥一挥衣袖，不留下一片云彩。但凡追高，跟徒手接飞刀没什么两样。",
       "publish_time": 1786663947,
       "publish_date": "2026-08-14 07:32",
-      "url": "https://m.toutiao.com/w/1873452935615690/?app=toutiao_web&timestamp=1787291108&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1873452935615690/?app=toutiao_web&timestamp=1788019806&use_new_style=1",
       "digg_count": 28,
       "comment_count": 2,
-      "read_count": 19943
+      "read_count": 22296
     },
     {
       "post_id": "1873393815638027",
       "content": "该提醒的，之前已经提醒了！\n\n明天周五、下周一下周二，这三天是变盘向下的变盘日。\n也就是，大盘随时反弹结束！\n\n愿赌服输，听信外面有人说大盘向上测试4258的，建议仓位控制好，因为即使向上攻击，也有回踩确认的机会。\n\n今天是典型的放量下跌！如果不是宇树科技上市预期，今天至少杀60点中大阴线，今天已经向下测试了！\n\n上午错过了一只化工妖股的低吸机会，下午从低点启动，幅度+12%。人性对低位的都恐惧，高位的都舍不得走。\n\n老太监为什么比小太监活的久？因为老太监割的早！",
       "publish_time": 1786607566,
       "publish_date": "2026-08-13 15:52",
-      "url": "https://m.toutiao.com/w/1873393815638027/?app=toutiao_web&timestamp=1787291108&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1873393815638027/?app=toutiao_web&timestamp=1788019806&use_new_style=1",
       "digg_count": 53,
       "comment_count": 1,
-      "read_count": 46539
+      "read_count": 48430
     },
     {
       "post_id": "1873390589331466",
       "content": "如果不是为了宇树上市，大盘可能已经开跌了。",
       "publish_time": 1786604489,
       "publish_date": "2026-08-13 15:01",
-      "url": "https://m.toutiao.com/w/1873390589331466/?app=toutiao_web&timestamp=1787291110&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1873390589331466/?app=toutiao_web&timestamp=1788019806&use_new_style=1",
       "digg_count": 5,
       "comment_count": 0,
-      "read_count": 8598,
+      "read_count": 9974,
       "title": "如果不是为了宇树上市，大盘可能已经开跌了。"
     },
     {
@@ -152,60 +194,60 @@
       "content": "今天下午回调是放量的。\n小心小心再小心。",
       "publish_time": 1786602790,
       "publish_date": "2026-08-13 14:33",
-      "url": "https://m.toutiao.com/w/1873388807544907/?app=toutiao_web&timestamp=1787291110&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1873388807544907/?app=toutiao_web&timestamp=1788019806&use_new_style=1",
       "digg_count": 15,
       "comment_count": 2,
-      "read_count": 10000
+      "read_count": 11380
     },
     {
       "post_id": "1873364438434826",
       "content": "目前的情况。\n\n昨天大盘小幅波动，目前市场上两种声音，一种是目前处在大5浪的第1浪，大5浪的起点是3741，1浪过前高4258，回调2浪后，主升5-3，然后5-4/5-5，本轮牛市结束。\n另外一个声音，这里即将变盘，4134就是今年下半年的高点，3741在9月将打破，9月低点3500左右。\n我倾向于后一种。\n昨天，大盘5分钟图，始终在144线之下，全天贴着线下，专业术语叫“线下爬”，接下来如何，壁虎在天花板上爬动，接下来怎么办？坠落！！！\n此次诱多的极限位置是4015。\n石油居高不下，纳斯达克创新高的路上磕磕绊绊。美股还没有完成最后一哆嗦。\n什么原因？\n1.美国武器没到位，预计9月中旬才能准备好。目前只剩下地面战。\n美国防部是个草台班子，准备不充分。这些人员到位后还要演训。\n2.美国共和党内部有分歧，中期选举前还是中期选举后干仗，有分歧。如果共和党中期选举选情不利，不排除提前动手。\n3.我们家出手了。及时和伊朗沟通，在纠偏。美国挑动中东逊尼派和什叶派内动，美伊坐山观虎斗，但是我们即时提醒，伊朗的对手是美国，不要鼓动胡赛与沙特斗，海峡不要收费。\n\n总之，密切观察这两天，股市有没有狂欢的时候，石油价格会不会掉下来，否则不宜出手。\n\n看戏！！！",
       "publish_time": 1786579550,
       "publish_date": "2026-08-13 08:05",
-      "url": "https://m.toutiao.com/w/1873364438434826/?app=toutiao_web&timestamp=1787291110&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1873364438434826/?app=toutiao_web&timestamp=1788019806&use_new_style=1",
       "digg_count": 18,
       "comment_count": 4,
-      "read_count": 15318
+      "read_count": 16714
     },
     {
       "post_id": "1873282515374089",
       "content": "今日看点。\n如果证券牛逼，把大盘拉起来，大盘过4000点，敬证券是条汉子！\n但是，这个渣男不太可能，这个位置犯得着吗？\n除非有内部消息，米国中东撤军，或者我们降息降准。\n否则，不太可能！\n\n那么，剩下一条路，下周开始杀科技，再杀50%！！！",
       "publish_time": 1786501422,
       "publish_date": "2026-08-12 10:23",
-      "url": "https://m.toutiao.com/w/1873282515374089/?app=toutiao_web&timestamp=1787291110&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1873282515374089/?app=toutiao_web&timestamp=1788019806&use_new_style=1",
       "digg_count": 30,
       "comment_count": 20,
-      "read_count": 28425
+      "read_count": 29806
     },
     {
       "post_id": "1873213409257481",
       "content": "今日看盘。\n\n首先说一下，今天跌破了一个非常重要的支撑位：3938！\n有人说，3938有那么重要吗！\n有那么重要！\n因为3938是大盘30分钟4浪低点，既然低点已经跌破，调整已经开始了。\n接下来重要的支撑位3890附近，支撑后还有反抽，但是，任何反抽都是走人！\n也就是，4000点可能到不了，昨天的高点3967也可能到不了。\n快寿终正寝了。\n执行纪律，未来三天一定要走人！！！\n目前只能选：\n1.所有均线多头排列。\n2.股价站上所有均线。\n\n这几天，做了几个一夜情，运气不错，完全是运气！。尾盘忍不住又低吸了一支，但愿主力明天给我活着离开的机会。",
       "publish_time": 1786435517,
       "publish_date": "2026-08-11 16:05",
-      "url": "https://m.toutiao.com/w/1873213409257481/?app=toutiao_web&timestamp=1787291110&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1873213409257481/?app=toutiao_web&timestamp=1788019806&use_new_style=1",
       "digg_count": 26,
       "comment_count": 2,
-      "read_count": 19191
+      "read_count": 20319
     },
     {
       "post_id": "1873122878196811",
       "content": "今日看盘。\n\n指数看着没事，其实暗藏杀机。如果主力使坏，接下来几天有冲4000点之上的机会，如果主力不使坏，随时开跌。冲4000点需要美股配合，标普和道琼斯都创了新高，只剩下纳指在憋屁。\n美股三大指数创新高很关键，特朗普的尿性，到时候自我吹牛和甩锅的理由！\n也就是，4000点附近，记得开溜！\n板块方面，农林牧渔在空开花的路上，快到压力位。\n创新药因为启动太急，步子太大扯着蛋了。\n电力/电网设备，目前最安全，后面几天的重点关注，因为空开花后，已经回踩到位，随时接过钢枪。之前两个妖股，我今天选错了，错过了一个涨停板。\n军工贸易和化工，几个龙头股，今天眼瞅着涨停不敢追，也不会追。\n变盘时间之前提过了，静等4000点附近！这次回踩一个月，空间在400+。也就是9月中旬见到3600点。9月17（18）日美联储议息会议，当天变盘向上！然后再下，年底见到3200-3300点。\n\n以上内容，纯粹是个人预判，不作为投资依据，赢亏自负！不喜勿喷！",
       "publish_time": 1786349180,
       "publish_date": "2026-08-10 16:06",
-      "url": "https://m.toutiao.com/w/1873122878196811/?app=toutiao_web&timestamp=1787291110&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1873122878196811/?app=toutiao_web&timestamp=1788019806&use_new_style=1",
       "digg_count": 25,
       "comment_count": 2,
-      "read_count": 12769
+      "read_count": 13811
     },
     {
       "post_id": "1873105614838859",
       "content": "管住手，不要追涨！买阴不买阳。\n仓位可控，日内差价。\n指数还有一次加速，只要加速，赶紧跑路！",
       "publish_time": 1786332716,
       "publish_date": "2026-08-10 11:31",
-      "url": "https://m.toutiao.com/w/1873105614838859/?app=toutiao_web&timestamp=1787291110&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1873105614838859/?app=toutiao_web&timestamp=1788019806&use_new_style=1",
       "digg_count": 16,
       "comment_count": 2,
-      "read_count": 12638,
+      "read_count": 13444,
       "title": "管住手，不要追涨！买阴不买阳。\n仓位可控，日内差价。\n指数还有一次加速，只要加速，赶紧跑路！"
     },
     {
@@ -213,40 +255,40 @@
       "content": "药明166.66，四胞胎？",
       "publish_time": 1786329284,
       "publish_date": "2026-08-10 10:34",
-      "url": "https://m.toutiao.com/w/1873102015741193/?app=toutiao_web&timestamp=1787291110&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1873102015741193/?app=toutiao_web&timestamp=1788019806&use_new_style=1",
       "digg_count": 10,
       "comment_count": 11,
-      "read_count": 27976
+      "read_count": 28444
     },
     {
       "post_id": "1872922095169802",
       "content": "昨晚美国7月非农数据不及预期，美股科技股大涨。下周一开盘，A股科技股也不会太差。\n另外，昨天，很多医药股用一根远古巨阳把前一天高开低走放量大阴线反包了，下周A股医药股还有继续上攻可能。\n这么说，A股大盘可能有连续阳线上攻，目标剑指4050点。\n\n市场上假酒多，千万别上头！",
       "publish_time": 1786157699,
       "publish_date": "2026-08-08 10:54",
-      "url": "https://m.toutiao.com/w/1872922095169802/?app=toutiao_web&timestamp=1787291110&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1872922095169802/?app=toutiao_web&timestamp=1788019807&use_new_style=1",
       "digg_count": 30,
-      "comment_count": 6,
-      "read_count": 27055
+      "comment_count": 5,
+      "read_count": 27274
     },
     {
       "post_id": "1872850297081930",
       "content": "卖在黎明前！\n\n昨天尾盘进了石油。因为石油期货80以下两天，外加贝森特说两天签协议，昨晚上和今天上午到期，知道吹牛，一旦没成，石油肯定涨上去。\n可以说，这个预判是对的！\n昨晚上石油期货涨了5%，高兴的夜里没睡好，以为今天小妖股至少+5%。没想到开盘绿了。\n这个没想到！！！\n外加昨天医药涨停板今天开盘也绿了。\n这个更没想到！！！\n所以，为了保住本金，锁住蝇头小利，开盘都卖了。\n后面的剧本是：\n医药10分钟差点冲涨停！\n石油也翻红了。\n总体上，错过了一个亿！\n如果晚10分钟卖，我还是卖了医药（策略事先定了，不涨停就卖），准备买铜矿股，开盘还在水下。因为昨天刚果金对铜钴出口管制，收盘铜矿股涨了8%！\n\n赌场，十赌九输！\n\n言归正传，下周指数基本上安全，3900-4000点之间波动。之前提到的资金回补板块，医药、电力、有色、煤炭、石油、银行、券商，轮动为主。\n重点是：电力！！！\n\n8月下旬，主力开始再对科技股动大刀了！\n科技跌了50%，回了20%，年底前，再跌60-80%，吃干抹净为止。\n\n市场底在哪里？可以看券商板块，现在的位置再跌20-30%！！！\n\n以上内容有个人预判，与实际走向肯定不准确，千万别参考，赢亏自负！",
       "publish_time": 1786089227,
       "publish_date": "2026-08-07 15:53",
-      "url": "https://m.toutiao.com/w/1872850297081930/?app=toutiao_web&timestamp=1787291110&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1872850297081930/?app=toutiao_web&timestamp=1788019807&use_new_style=1",
       "digg_count": 19,
       "comment_count": 5,
-      "read_count": 13605
+      "read_count": 13804
     },
     {
       "post_id": "1872844752739337",
       "content": "拉医药掩护易中天出货！主力太坏，以高位光模块为代表的大科技明显有大资金跑路！",
       "publish_time": 1786083939,
       "publish_date": "2026-08-07 14:25",
-      "url": "https://m.toutiao.com/w/1872844752739337/?app=toutiao_web&timestamp=1787291110&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1872844752739337/?app=toutiao_web&timestamp=1788019807&use_new_style=1",
       "digg_count": 25,
       "comment_count": 8,
-      "read_count": 34449,
+      "read_count": 34649,
       "title": "拉医药掩护易中天出货！主力太坏，以高位光模块为代表的大科技明显有大资金跑路！"
     },
     {
@@ -254,40 +296,40 @@
       "content": "我已经重点关注战争题材的板块。\n本周和下周，大盘还有上冲动作。如果月底或者9月初，美伊战争重启，能源+化工+军贸+特色+有色，将有集中表现。\n如果战争持续，更多的涨价概念，特别是农产品涨价，将会发酵。",
       "publish_time": 1786025977,
       "publish_date": "2026-08-06 22:19",
-      "url": "https://m.toutiao.com/w/1872783974677513/?app=toutiao_web&timestamp=1787291110&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1872783974677513/?app=toutiao_web&timestamp=1788019807&use_new_style=1",
       "digg_count": 21,
       "comment_count": 6,
-      "read_count": 12984
+      "read_count": 13281
     },
     {
       "post_id": "1872759631345673",
       "content": "今日收盘。\n\n1.大的周期，大盘指数在反抽的过程中，充其量是个震荡。空间就是3800-4000点之间。\n2.科技股尤其4-6月涨幅大的硬风险太大，不建议重仓操作。咬一口就走。昨天磷化铟，今天特气。都是指向半岛体上游材料。近两天华为超节点和ASIC芯片有表现，有龙头已经站上20日线，说明有内在逻辑。都指向国产替代！也就是国内算力比海外链风险小，修复快！\n千万别认为米国对我们光模块禁用是假消息，上半年阳光电源那个事，后面实锤了吧。后面阳光电源又下跌了40%！\n也就是海外链风险更大！\n3.电力、创新药、AI应用、黄金有色、石油、煤炭、银行、券商，这几个赛道，前期已经有资金介入，可以等回调一笔，低买高卖，小仓位，快进快出，情愿卖飞，也不粘票！千万别追高，更不可重仓乱追！一买就套是常有的事。\n今天前排煤炭很多票已经把所有均线踩在脚下，科技股的空开花风险比煤炭股风险大得多，不要瞧不起。\n4.变盘日是8月14日下周五或者8月17日下下周一。变盘向下！后面还有反复向上或者向下。\n5.震荡猴市，散户可以挣钱，别做反了，每天小赚是可以的。\n\n当然，一切都是运气和心态！\n我对大的周期的预判是，下半年是超级熊市，8月回本20%是可能的。9-12月，可能要换一批板块。\n\n赢亏自负，以上预测不可能准确，千万别受影响。",
       "publish_time": 1786002761,
       "publish_date": "2026-08-06 15:52",
-      "url": "https://m.toutiao.com/w/1872759631345673/?app=toutiao_web&timestamp=1787291111&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1872759631345673/?app=toutiao_web&timestamp=1788019807&use_new_style=1",
       "digg_count": 28,
       "comment_count": 3,
-      "read_count": 16367
+      "read_count": 16587
     },
     {
       "post_id": "1872740444126539",
       "content": "整个8月，甚至9月，贵金属、小金属、工业金属，可能有一次时间比较长的行情。\n美国一方面在巴拿马运河、中东的霍尔木兹海峡、曼德海峡搞事情，还在非洲联合赞比亚搞非洲金属交易所，目标都是指向上游材料。\n这个赛道非常值得关注！\n一旦科技里的钱飞出来，这些矿产资源是个非常好的载体。",
       "publish_time": 1785984463,
       "publish_date": "2026-08-06 10:47",
-      "url": "https://m.toutiao.com/w/1872740444126539/?app=toutiao_web&timestamp=1787291111&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1872740444126539/?app=toutiao_web&timestamp=1788019807&use_new_style=1",
       "digg_count": 61,
       "comment_count": 7,
-      "read_count": 45277
+      "read_count": 45503
     },
     {
       "post_id": "1872737914477579",
       "content": "百济神州和荣昌，业绩利好，大高开，高开低走，墓碑线。医药难办。\n判断失误。",
       "publish_time": 1785982050,
       "publish_date": "2026-08-06 10:07",
-      "url": "https://m.toutiao.com/w/1872737914477579/?app=toutiao_web&timestamp=1787291111&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1872737914477579/?app=toutiao_web&timestamp=1788019807&use_new_style=1",
       "digg_count": 8,
       "comment_count": 0,
-      "read_count": 11203,
+      "read_count": 11392,
       "title": "百济神州和荣昌，业绩利好，大高开，高开低走，墓碑线。医药难办。\n判断失误。"
     },
     {
@@ -295,10 +337,10 @@
       "content": "今天，受美股纳指回调影响，科技股可能承压，受百济神州财报影响，医药板块应该有所表现。\n今天，指数有回调需求。",
       "publish_time": 1785970101,
       "publish_date": "2026-08-06 06:48",
-      "url": "https://m.toutiao.com/w/1872725384787977/?app=toutiao_web&timestamp=1787291111&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1872725384787977/?app=toutiao_web&timestamp=1788019807&use_new_style=1",
       "digg_count": 12,
       "comment_count": 4,
-      "read_count": 11734,
+      "read_count": 11926,
       "title": "今天，受美股纳指回调影响，科技股可能承压，受百济神州财报影响，医药板块应该有所表现。\n今天，指数有回调需求。"
     },
     {
@@ -306,30 +348,30 @@
       "content": "盘后感。\n\n1.今天放量2.68万亿，警惕2.8万亿，要跑！\n2.明天冲高回落！\n3.重点板块还是创新药、软件、电力电网，还有有色（包括贵金属）。\n4.胆子大的，关注科技股反弹。空间还有30%。很多强势龙头有连板基因。\n5.在8月前三周，甚至8月25日之前，都是安全的。\n6.反弹目标4000-4050点。建议4000点的时候逃命！因为9-10-11-12月，包括2027年1月都是深熊！大大的熊市！\n7.注意仓位，咬一口就走。\n8.虽然我连红4天，但是高兴不起来，因为没有抓到涨停，每天只有2-3%的小肉。今天金融科技还行，但是没有成交量，看来券商板块没戏，我判断失误。\n\n我判断的细节常常失误，但是大的方向没错，各位千万别100%相信，否则容易亏钱。",
       "publish_time": 1785916359,
       "publish_date": "2026-08-05 15:52",
-      "url": "https://m.toutiao.com/w/1872669032240138/?app=toutiao_web&timestamp=1787291111&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1872669032240138/?app=toutiao_web&timestamp=1788019807&use_new_style=1",
       "digg_count": 35,
       "comment_count": 5,
-      "read_count": 20505
+      "read_count": 20718
     },
     {
       "post_id": "1872637697762506",
       "content": "昨晚上油价为何大跌？\n\n1.特朗普说话不好使，油价不跟，换贝森特讲话。\n2.特朗普昨天内部讲话，要求国防部做好2027年国防预算，确保2027年10月前拿下伊朗。媒体解读，美伊短期内不打了，是不是中期选举后再打。\n3.之前美国计划联合北约一起下场，经过伊朗警告，包括英国在内的北约国家退缩了。\n\n媒体消息真真假假。\n大盘向上，看两个指标：\n1.把3884打掉。\n2.放量28000亿。\n全市场只有券商有这个本事带领大盘上冲。\n所有的上涨只是诱多！",
       "publish_time": 1785886476,
       "publish_date": "2026-08-05 07:34",
-      "url": "https://m.toutiao.com/w/1872637697762506/?app=toutiao_web&timestamp=1787291111&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1872637697762506/?app=toutiao_web&timestamp=1788019807&use_new_style=1",
       "digg_count": 19,
       "comment_count": 0,
-      "read_count": 9811
+      "read_count": 9996
     },
     {
       "post_id": "1872605354482762",
       "content": "之前说的美股三大指数创历史新高，道指和标普已创新高，纳斯达克,+3%后也是历史新高。\n美股为了诱多，拉冒烟了！",
       "publish_time": 1785855631,
       "publish_date": "2026-08-04 23:00",
-      "url": "https://m.toutiao.com/w/1872605354482762/?app=toutiao_web&timestamp=1787291111&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1872605354482762/?app=toutiao_web&timestamp=1788019807&use_new_style=1",
       "digg_count": 11,
       "comment_count": 1,
-      "read_count": 11284,
+      "read_count": 11467,
       "title": "之前说的美股三大指数创历史新高，道指和标普已创新高，纳斯达克,+3%后也是历史新高。\n美股为了诱多，拉冒烟了！"
     },
     {
@@ -337,40 +379,40 @@
       "content": "今天很多科技股已经反弹到位，空开花，到线平仓，上方压力重重，需要回踩，再磨底。\n前期强势板块都有回踩需求。\n看好明天大金融护盘。\n\n目前，总的基调是反抽！诱多！\n石油已经回调，布油80左右，希望在75附近！",
       "publish_time": 1785853086,
       "publish_date": "2026-08-04 22:18",
-      "url": "https://m.toutiao.com/w/1872602685975577/?app=toutiao_web&timestamp=1787291111&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1872602685975577/?app=toutiao_web&timestamp=1788019807&use_new_style=1",
       "digg_count": 11,
       "comment_count": 2,
-      "read_count": 13266
+      "read_count": 13451
     },
     {
       "post_id": "1872577897112650",
       "content": "通过今天的盘面，我们看到了什么？\n1.好的一面，今天银行跌了，腾出了赚钱效应。\n不好的一面，今天证券不发力，否则今天中大阳，直接冲击3884。\n2.前面的低点3741大概率不破了。\n3.今天的科技股只是反抽，尾盘是卖点，反抽属于空开花，还有回落和反复磨底，千万别听别人说反弹空间20-30%，那是猜硬币！中期来说，跌幅远远不够，我猜测很多个股年内还有50%跌幅，也就是年内有个股高点下来80%跌幅！\n4.前期表现不错的创新药、电力电网设备、软件开发，即将面临补跌！！！\n5.美伊没缓解，指数反弹高度就难了。\n6.时刻关注能源、化工、军贸，这是决定下半年甚至全年收益的板块，但是现在不可贸然下场，我预计8月25日美伊干大仗！\n\n近期快进快出，大的风险没有，但是也难挣钱。\n\n以上只是预判，不作为投资依据，赢亏自负！",
       "publish_time": 1785829446,
       "publish_date": "2026-08-04 15:44",
-      "url": "https://m.toutiao.com/w/1872577897112650/?app=toutiao_web&timestamp=1787291111&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1872577897112650/?app=toutiao_web&timestamp=1788019808&use_new_style=1",
       "digg_count": 56,
       "comment_count": 11,
-      "read_count": 43892
+      "read_count": 44123
     },
     {
       "post_id": "1872574647709707",
       "content": "变盘失败！\n\n预计大盘中大阳线没有出现，双创中大阳没有意义。\n今天是变盘日，指数被死死压住，且隔夜美股大涨2%的情况下。\n\n后续风险很大很大！！！",
       "publish_time": 1785826347,
       "publish_date": "2026-08-04 14:52",
-      "url": "https://m.toutiao.com/w/1872574647709707/?app=toutiao_web&timestamp=1787291111&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1872574647709707/?app=toutiao_web&timestamp=1788019808&use_new_style=1",
       "digg_count": 50,
       "comment_count": 24,
-      "read_count": 71020
+      "read_count": 71215
     },
     {
       "post_id": "1872556605586571",
       "content": "今天是变盘日，有可能过3874-3884的可能！\n大胆做！",
       "publish_time": 1785809140,
       "publish_date": "2026-08-04 10:05",
-      "url": "https://m.toutiao.com/w/1872556605586571/?app=toutiao_web&timestamp=1787291111&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1872556605586571/?app=toutiao_web&timestamp=1788019808&use_new_style=1",
       "digg_count": 30,
       "comment_count": 1,
-      "read_count": 37941,
+      "read_count": 38782,
       "title": "今天是变盘日，有可能过3874-3884的可能！\n大胆做！"
     },
     {
@@ -378,30 +420,30 @@
       "content": "小心主力搞突然袭击！\n\n主力从高位科技出来后，一直在观望，等待一次恐慌盘的出现，指数击穿3741-3700，放量30000亿。可惜，怕她不来，更怕她乱来。\n于是乎，因为没有增量资金下场，市场走不出持续的主线，没有赚钱效应，主力更不愿意下场，这个时候，追涨的人往往亏钱，割肉-亏钱-被套-再割肉，小亏变大亏。\n\n结合8月下旬，美伊大概率重启战争，全球股市还有一次诱多的过程（好比上战场前喝一碗壮行酒），小心主力不按常理出牌，来一次突然拉升的普涨行情。\n\n纳指还有6-8%的上涨空间，对应A股有200+的脉冲。\n胆小的，做个旁观者，胆大的，做好低吸。\n创新药、电力/电网设备：AI应用，这三个赛道，主力已经有建仓，相对风险可控。找到有回踩结构的，似乎有机会。\n\n真正能交易的，只有几个交易日了。布油80之下，就要小心小心再小心！\n\n以上是个人预判，难免出错，赢亏自负！",
       "publish_time": 1785801996,
       "publish_date": "2026-08-04 08:06",
-      "url": "https://m.toutiao.com/w/1872549114683658/?app=toutiao_web&timestamp=1787291111&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1872549114683658/?app=toutiao_web&timestamp=1788019808&use_new_style=1",
       "digg_count": 44,
       "comment_count": 3,
-      "read_count": 37611
+      "read_count": 37827
     },
     {
       "post_id": "1872488641941515",
       "content": "明天开盘如果有下跌，打算干一票短线，方向：金融科技。\n今天的AI应用，主力手下留情了。\n\n其实，目前已经没有持续性的主线了，咬一口就走。\n其实，除了科技外，风险并不大，只要别追涨，低位放量的个股，逢回调可以干，只是注意仓位。\n\n美军武器没到位，不用担心，起码一周内没事。",
       "publish_time": 1785744325,
       "publish_date": "2026-08-03 16:05",
-      "url": "https://m.toutiao.com/w/1872488641941515/?app=toutiao_web&timestamp=1787291112&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1872488641941515/?app=toutiao_web&timestamp=1788019808&use_new_style=1",
       "digg_count": 53,
       "comment_count": 7,
-      "read_count": 46036
+      "read_count": 46206
     },
     {
       "post_id": "1872466263305226",
       "content": "本周有个变盘窗口，是个突然变盘向上中大阳的窗口。",
       "publish_time": 1785722983,
       "publish_date": "2026-08-03 10:09",
-      "url": "https://m.toutiao.com/w/1872466263305226/?app=toutiao_web&timestamp=1787291112&use_new_style=1",
-      "digg_count": 34,
+      "url": "https://m.toutiao.com/w/1872466263305226/?app=toutiao_web&timestamp=1788019808&use_new_style=1",
+      "digg_count": 35,
       "comment_count": 13,
-      "read_count": 33420,
+      "read_count": 33823,
       "title": "本周有个变盘窗口，是个突然变盘向上中大阳的窗口。"
     },
     {
@@ -409,80 +451,80 @@
       "content": "抓住鱼尾行情。\n\n预计美伊再次开战可能在8月20号左右，或者8月20号到8月25号之间。因为美国的弹药还没有准备好，沙特王储本萨勒曼与特朗普通电话，并不是劝他不打，而是说，大哥，你还没有准备好，先别急，这次打仗我们一起上往死里打。\n\n所以接下来如果打仗的话，中东所有的油井全部炸掉，所以一定会出现石油危机，这是第一。\n第二，美国8月份有很多科技企业公布的财报会很漂亮，所以科技股还有一个反弹的需求，美国的三大股指都可能创新高，这样的话，A股的大盘还有个反弹的需求，具体反弹到什么地方，边走边看。所以本周周一周二如果有低点的话，是一个很好的布局机会。其实，除了AI应用之外，目前也看不出有哪些主线。\n\n所以在8月上中旬的机会，15号之前，8月15号之前，可能要抓住一些能源、军工、化工等等方面与战争相关的题材的黄金坑的机会，这是本轮布局的重点，也是决定2026年收益的决定性的一个举措。\n\n股市是个赌场，任何消息、任何预判成功的可能性、准确性有50%已经很不容易了。赢亏自负，命中注定，怨不得人。",
       "publish_time": 1785711752,
       "publish_date": "2026-08-03 07:02",
-      "url": "https://m.toutiao.com/w/1872454486205450/?app=toutiao_web&timestamp=1787291112&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1872454486205450/?app=toutiao_web&timestamp=1788019808&use_new_style=1",
       "digg_count": 36,
       "comment_count": 6,
-      "read_count": 16197
+      "read_count": 16321
     },
     {
       "post_id": "1872377987259545",
       "content": "接下来两种走势，我认为第二种走势可能性大。你认为哪种？\n1.美伊近几天大打出手，石油暴涨，科技股暴跌，全球股市震荡下行。\n2.美伊这几天缓和，石油跌，美股涨，全球股市涨，完成最后一次诱多，半个月后，美伊重启“末日战争”。\n美国和乌克兰在谈判，促使乌克兰下场，乌克兰派出5000人的地面部队，关键是，乌克兰的无人机蜂群，这是对伊朗最大的威胁。\n另外，北约的武器在路上，集结还要一段时间。\n还有，沙特已经联合多国，准备围殴胡赛。\n大战一触即发！\n但是，特朗普喜欢反向，越是打算往一个方向，越是释放相反的信号。\n所以，我认为，特朗普突然释放缓和，从而利于股市反弹。\n那么，谁带领大盘反弹？\n周末6家券商受到处分，会不会是诱空？\n\n一切悬念即将见分晓！\n以上判断纯属个人预测，赢亏自负！",
       "publish_time": 1785638797,
       "publish_date": "2026-08-02 10:46",
-      "url": "https://m.toutiao.com/w/1872377987259545/?app=toutiao_web&timestamp=1787291112&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1872377987259545/?app=toutiao_web&timestamp=1788019808&use_new_style=1",
       "digg_count": 39,
       "comment_count": 5,
-      "read_count": 42812
+      "read_count": 42878
     },
     {
       "post_id": "1872282899910665",
       "content": "昨天收盘前，我减仓了软件开发，预测到下周一开盘可能有高开，但是，也不冒双休日这个险。\n1.硬科技的疯狂结束了，站在山顶上的小伞，等待救援。我在未来1-2年，不一定介入。本来对先进封装和超节点感兴趣，前期已经炒作一波，后面风险比较大。\n2.AI软件有补涨需求。因为前期一直在下降通道，现在，微软的财报显示，AI的逻辑还在。\n3.美股不排除短期内还有上冲的动力，但是，那也是最后的诱多。\n4.其实，全球关心的还是中东石油。石油价格决定美联储接下来的动作。\n5.如果A股有变盘向上的可能，券商是最大的不确定因素。一阳改三观，完全有可能。\n\n目前看，我主要盯着券商和AI软件这两个板块。其中，券商更有可能带领大盘收几根阳线。电力、创新药是助攻。\n以上判断，只是我的预判，错的可能性大。赌市，一切皆有可能。",
       "publish_time": 1785548114,
       "publish_date": "2026-08-01 09:35",
-      "url": "https://m.toutiao.com/w/1872282899910665/?app=toutiao_web&timestamp=1787291112&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1872282899910665/?app=toutiao_web&timestamp=1788019808&use_new_style=1",
       "digg_count": 25,
       "comment_count": 2,
-      "read_count": 13736
+      "read_count": 13807
     },
     {
       "post_id": "1872200189052235",
       "content": "早上提到的AI应用（软件开发）已完成中线反转，那么有一个可能：AI软件掩护AI硬件出货？\n如果接下来美股继续创新高，不用担心AI硬件马上熄火，但是，反弹高度有限。\n华尔街希望一把头把科技套在山顶上。",
       "publish_time": 1785469235,
       "publish_date": "2026-07-31 11:40",
-      "url": "https://m.toutiao.com/w/1872200189052235/?app=toutiao_web&timestamp=1787291112&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1872200189052235/?app=toutiao_web&timestamp=1788019808&use_new_style=1",
       "digg_count": 19,
       "comment_count": 9,
-      "read_count": 12715
+      "read_count": 12782
     },
     {
       "post_id": "1872186046179338",
       "content": "昨晚美股微软公布财报，证实算力可以收费，Ai可以增加公司收入，利于今天A股AI应用板块，包括软件开发。\n看来，今天硬科技板块开盘可以涨一下。由于上方套牢盘太多，硬科技仅仅作为反弹。\n还有，美国最晚8月中旬对伊朗发动致命一击，美国已经调集了包括北约国家在内的4000发导弹和120万枚炸弹，130架空中加油机已经到位，英国等北约国家可能下场，包括马斯克机器人的地面部队也会下场，夺取或者炸毁核燃料。\n目标只有一个：石油！\n也就是8-9月，石油价格将大涨！！！那个时候，包括科技在内的全球股市将大跌！\n所以，这次反弹就是诱多！\n需要警惕，防止多空双杀！！！\n\n以上推理只是预测，不作为参考依据，赢亏自负！！！",
       "publish_time": 1785455747,
       "publish_date": "2026-07-31 07:55",
-      "url": "https://m.toutiao.com/w/1872186046179338/?app=toutiao_web&timestamp=1787291112&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1872186046179338/?app=toutiao_web&timestamp=1788019808&use_new_style=1",
       "digg_count": 24,
       "comment_count": 6,
-      "read_count": 9344
+      "read_count": 9545
     },
     {
       "post_id": "1872126173896715",
       "content": "今天是前一个高点的第55天，今天应该是低点，破3741，破底翻！特别是，早盘有利空。\n但是，上层控盘，不让急跌，只能阴跌！\n那么，接下来，还是重复昨天的观点，优选这样的标的：\n1.前面5浪下跌，近期已经止跌，构筑平台，且有放量，一定要放量！！！同时，20日均价线之上。\n2.科技股没有止跌，还早，8-9月，再杀30%都有可能！\n3.集中火力干最强的一只！\n4.美伊两周内不会重新开战，石油煤炭黄金这些，受特特那张嘴的影响，往往波动非常大，一定不要追涨！\n5.不要重仓，V反后追加不迟，或者，逢红减仓。因为错过了今天大级别变盘，只有下周四第34天变盘，级别小。\n6.很有可能，整个8月，指数围绕3800点波动，然后，9月急跌400点！不要认为不可能。\n7.在阴跌中，频繁换股，加上重仓，指数变化不大，手上本金又少了50%。\n\n网上预判70%以上属于误判！赢亏自负，亏了认命！能熬到第4季度，还有一线希望，2027-2028，也是熊市，牛市需要等到2029年下半年。",
       "publish_time": 1785398649,
       "publish_date": "2026-07-30 16:04",
-      "url": "https://m.toutiao.com/w/1872126173896715/?app=toutiao_web&timestamp=1787291112&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1872126173896715/?app=toutiao_web&timestamp=1788019808&use_new_style=1",
       "digg_count": 23,
       "comment_count": 7,
-      "read_count": 16625
+      "read_count": 16691
     },
     {
       "post_id": "1872122305689675",
       "content": "预判错误，抱歉！\n\n今天没有成交量，双创没有止跌！\n以为美联储议息会议落地，叠加我们的会议预期和中字头止跌向上，没想到，进一步滑向深渊。\n科技股不流干最后一滴血，指数不打算向上。\n主要原因：\n美股向上向下不确定，大资金不下场。\n\n再次验证，跟着别人的分析，容易做错。网上所有的预判，只能参考10%。",
       "publish_time": 1785394960,
       "publish_date": "2026-07-30 15:02",
-      "url": "https://m.toutiao.com/w/1872122305689675/?app=toutiao_web&timestamp=1787291112&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1872122305689675/?app=toutiao_web&timestamp=1788019810&use_new_style=1",
       "digg_count": 33,
       "comment_count": 7,
-      "read_count": 25515
+      "read_count": 25581
     },
     {
       "post_id": "1872105448941898",
       "content": "完㱩子。\n破了3820。\n缩量。\n\n还有没有奇迹？",
       "publish_time": 1785378884,
       "publish_date": "2026-07-30 10:34",
-      "url": "https://m.toutiao.com/w/1872105448941898/?app=toutiao_web&timestamp=1787291112&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1872105448941898/?app=toutiao_web&timestamp=1788019810&use_new_style=1",
       "digg_count": 26,
       "comment_count": 11,
-      "read_count": 14077,
+      "read_count": 14140,
       "title": "完㱩子。\n破了3820。\n缩量。\n\n还有没有奇迹？"
     },
     {
@@ -490,50 +532,50 @@
       "content": "今天是变盘日，坚定看好变盘向上！\n1.观察早盘量能有没有扩大20%。\n2.上午10点见高点，有没有过掉3884。\n3.上午11点见低点，有没有跌破3820。\n4.上午行情不明，上午11点左右有没有机会启动突然拉升，下午拉大阳！\n5.超跌反弹行情，科技已经超跌，有反弹需求，另外，留意券商搞事。\n6.反弹周期2周，因为三季度还有更大的下跌！3450相见恨晚。\n\n以上是个人预判，不作为投资依据，赢亏自负。（依据互联网消息炒股，只有亏钱一条路）",
       "publish_time": 1785368408,
       "publish_date": "2026-07-30 07:40",
-      "url": "https://m.toutiao.com/w/1872094464156746/?app=toutiao_web&timestamp=1787291112&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1872094464156746/?app=toutiao_web&timestamp=1788019810&use_new_style=1",
       "digg_count": 37,
       "comment_count": 18,
-      "read_count": 30156
+      "read_count": 30223
     },
     {
       "post_id": "1872034651813899",
       "content": "明天变盘！\n\n\n本来不为所动，因为今天中字头已经跃跃欲试，拒绝下跌5浪，明天很可能向上大阳线！\n选择什么样的股？\n1.中字头央国企首选。\n2.长期下跌结构，下跌5浪完成，且近期已经明显有主力资金建仓，且这两天有回踩结构。\n3.科技股慎选，因为惯性下杀后，指望快速拉起来，不太可能。\n4.结合7月底上层重要的经济工作会议（六张网？）。\n\n我打算明天抄底，标的已选好！",
       "publish_time": 1785311367,
       "publish_date": "2026-07-29 15:49",
-      "url": "https://m.toutiao.com/w/1872034651813899/?app=toutiao_web&timestamp=1787291112&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1872034651813899/?app=toutiao_web&timestamp=1788019810&use_new_style=1",
       "digg_count": 95,
       "comment_count": 38,
-      "read_count": 106540
+      "read_count": 106622
     },
     {
       "post_id": "1872031584234697",
       "content": "不为心动！\n1.今天量能不够，没有超过25000亿。\n2.指数没有突破，除非站上3884，否则还是区间震荡。\n3.没有主线。\n4.科技没有止跌。\n\n继续观望。",
       "publish_time": 1785308441,
       "publish_date": "2026-07-29 15:00",
-      "url": "https://m.toutiao.com/w/1872031584234697/?app=toutiao_web&timestamp=1787291114&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1872031584234697/?app=toutiao_web&timestamp=1788019810&use_new_style=1",
       "digg_count": 16,
       "comment_count": 6,
-      "read_count": 11647
+      "read_count": 11710
     },
     {
       "post_id": "1871950038632523",
       "content": "周四是个变盘点，如果大跌，可能见到短期低点，搏一个象样的反弹。\n那么，什么方向值得抄底？\n有没有可能，盘后放出消息，每年7月底有个重要会议。\n会议指出下半年的重点在哪？",
       "publish_time": 1785230673,
       "publish_date": "2026-07-28 17:24",
-      "url": "https://m.toutiao.com/w/1871950038632523/?app=toutiao_web&timestamp=1787291114&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1871950038632523/?app=toutiao_web&timestamp=1788019810&use_new_style=1",
       "digg_count": 27,
       "comment_count": 5,
-      "read_count": 13426
+      "read_count": 13488
     },
     {
       "post_id": "1871922234846218",
       "content": "昨天讲的3845破了吗？\n破了！\n放量了吗？\n没有！\n那就简单了，等着周四低点到来！",
       "publish_time": 1785204157,
       "publish_date": "2026-07-28 10:02",
-      "url": "https://m.toutiao.com/w/1871922234846218/?app=toutiao_web&timestamp=1787291114&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1871922234846218/?app=toutiao_web&timestamp=1788019810&use_new_style=1",
       "digg_count": 57,
       "comment_count": 5,
-      "read_count": 45052,
+      "read_count": 45115,
       "title": "昨天讲的3845破了吗？\n破了！\n放量了吗？\n没有！\n那就简单了，等着周四低点到来！"
     },
     {
@@ -541,50 +583,50 @@
       "content": "日韩开盘崩了，跌破平台，今天屌了。",
       "publish_time": 1785197676,
       "publish_date": "2026-07-28 08:14",
-      "url": "https://m.toutiao.com/w/1871915438914634/?app=toutiao_web&timestamp=1787291114&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1871915438914634/?app=toutiao_web&timestamp=1788019810&use_new_style=1",
       "digg_count": 8,
       "comment_count": 6,
-      "read_count": 17420
+      "read_count": 17485
     },
     {
       "post_id": "1871914014840843",
       "content": "今天，盯着两个点位：\n会不会跌破3845甚至3833，\n会不会上破3884，\n会不会放量27000亿。\n如果没有，那么周三周四下跌的可能性大！\n下跌是机会，不管是科技股的反抽（伴随美股也有创新高的可能），还是近期放量的老登股的反弹，都有指数200-300点的上涨可能！\n重视券商，这货喜欢搞事情！\n再寻找主线！创新药、电力（电网设备），还是国产替代，一切在下周见分晓，因为可以上涨11个交易日，也就是两周多。",
       "publish_time": 1785196318,
       "publish_date": "2026-07-28 07:51",
-      "url": "https://m.toutiao.com/w/1871914014840843/?app=toutiao_web&timestamp=1787291114&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1871914014840843/?app=toutiao_web&timestamp=1788019810&use_new_style=1",
       "digg_count": 23,
       "comment_count": 6,
-      "read_count": 25793
+      "read_count": 25855
     },
     {
       "post_id": "1871855422787594",
       "content": "关于明天的盯盘和接下来的重点板块：\n\n1.今天盘面，由于尾盘翘尾，收了有效阳。\n2.明天盘中只盯一个点位3845，全天任何时候不可跌破。\n3.盯着量能，大于27000亿属于有效放量。\n4.如果明天全天点位始终在3845之上，则，仓位可以加到5成，因为大盘向4050挺进，反弹5-8天，暂时不考虑回落了。\n5.目前，重点盯着以下板块，创新药、石油、煤炭、黄金、电力（电网设备）、银行、券商，但是，每个板块节奏不一样，有的向上途中，有的回踩途中，回踩后再上。\n5.反弹高度4050，也是极限位置，别梦想着一次性通过，因为接下来又到了下跌周期。\n6.好的情况是，先下跌几天，破与不破3741没有关系，那个时候可以反弹11个交易日！\n7.绝大多数板块属于空开花，昙花一现，勾引不坚定的小散！\n\n以上不构成买卖建议，赢亏自负！！！",
       "publish_time": 1785140440,
       "publish_date": "2026-07-27 16:20",
-      "url": "https://m.toutiao.com/w/1871855422787594/?app=toutiao_web&timestamp=1787291114&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1871855422787594/?app=toutiao_web&timestamp=1788019810&use_new_style=1",
       "digg_count": 71,
       "comment_count": 13,
-      "read_count": 97369
+      "read_count": 97471
     },
     {
       "post_id": "1871847173616649",
       "content": "果然是石油下跌黄金上涨。",
       "publish_time": 1785132573,
       "publish_date": "2026-07-27 14:09",
-      "url": "https://m.toutiao.com/w/1871847173616649/?app=toutiao_web&timestamp=1787291114&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1871847173616649/?app=toutiao_web&timestamp=1788019810&use_new_style=1",
       "digg_count": 11,
       "comment_count": 1,
-      "read_count": 25610
+      "read_count": 25674
     },
     {
       "post_id": "1871824861975563",
-      "content": "科技股应该有一次超跌反弹，但是，仅仅是反弹。\n根据波浪理论，美股三大指数近期都有创新高的可能。\n\n科技股巨震",
+      "content": "科技股应该有一次超跌反弹，但是，仅仅是反弹。\n根据波浪理论，美股三大指数近期都有创新高的可能。",
       "publish_time": 1785111295,
       "publish_date": "2026-07-27 08:14",
-      "url": "https://m.toutiao.com/w/1871824861975563/?app=toutiao_web&timestamp=1787291114&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1871824861975563/?app=toutiao_web&timestamp=1788019810&use_new_style=1",
       "digg_count": 23,
       "comment_count": 12,
-      "read_count": 34330,
+      "read_count": 34386,
       "title": "科技股应该有一次超跌反弹，但是，仅仅是反弹。\n根据波浪理论，美股三大指数近期都有创新高的可能。"
     },
     {
@@ -592,60 +634,60 @@
       "content": "为什么美伊停战？\n1.美国每轮的弹药储备只够10几天\n2.美债收益率上升，债市吃紧（主因）\n3.以色列内塔正在赶往美国，主要商量马斯克的机器人作战，也就是地面战即将开打，特朗普有意把对伊作战承包给马斯克，胜利后谈利益分成，这是美国历史上第一次把战争承包给一个私人公司，另外，追加预算美国国会也不过\n4.乌克兰今天袭击了伊朗在里海的三条船，也就是美国有意让乌克兰出面，自已躲在后面\n\n更大的风险即将来临，不要有任何侥幸！尤其是科技股！！！\n塌方式的崩盘，还有什么幻想？！",
       "publish_time": 1785080787,
       "publish_date": "2026-07-26 23:46",
-      "url": "https://m.toutiao.com/w/1871792871790603/?app=toutiao_web&timestamp=1787291114&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1871792871790603/?app=toutiao_web&timestamp=1788019811&use_new_style=1",
       "digg_count": 14,
       "comment_count": 1,
-      "read_count": 11527
+      "read_count": 11581
     },
     {
       "post_id": "1871781421834251",
       "content": "明天盘中可能有急跌。\n周三或者周四有低点后，开启止跌反弹。\n但是！但是！但是！科技股需要借助反弹止盈止损，全部清仓！\n不要相信科技牛这样的鬼话！",
       "publish_time": 1785069868,
       "publish_date": "2026-07-26 20:44",
-      "url": "https://m.toutiao.com/w/1871781421834251/?app=toutiao_web&timestamp=1787291114&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1871781421834251/?app=toutiao_web&timestamp=1788019811&use_new_style=1",
       "digg_count": 62,
       "comment_count": 22,
-      "read_count": 67653
+      "read_count": 67738
     },
     {
       "post_id": "1871758089279755",
       "content": "目前的大盘，所有的科技反弹都要小心。\n存储和光模块、pcb已经彻底破位，我认为未来3年没戏，即使有反弹，也不可能有前高。\n半岛体不一定，如果指数春节前后有4500的可能，半岛体大概率有双头机会。\n国产算力，这次极强，还有先进封装，后续有待观察。\n国产算力，特别是算力基建，因为我们比美国滞后一年，海外链快见顶的情况下，国产算力基建的业绩刚刚体现，所以有补涨的要求。\n至于电力（电网设备），因为那天涨停板20%，通常被认为是主线启动，但是，大盘向下的情况，任何追高都是风险。何况龙头已经6连板，随时面临调整，如果缩量调整，再次放量拉升，则有重新上车的机会。\n还有石油、煤炭、黄金、有色，属于空开花，也就是macd距离零轴超级远，只能作为超跌反弹，确定性不如电力（电网设备），需要反复磨底。\n以上是我的理解，不作为投资依据，赢亏自负！\n但是，大方向上，除了国产算力，大科技风险比较大，非常明显，有大资金跑路，甚至拿半岛体掩护高位的存储芯片和光模块、pcb出逃，非常多的强势股已经跌了50%，指望大资金回头，已经不可能！\n低位板块中，能够容纳这么多资金的板块并不多。\n总之，三季度废了！！！",
       "publish_time": 1785047616,
       "publish_date": "2026-07-26 14:33",
-      "url": "https://m.toutiao.com/w/1871758089279755/?app=toutiao_web&timestamp=1787291114&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1871758089279755/?app=toutiao_web&timestamp=1788019811&use_new_style=1",
       "digg_count": 59,
       "comment_count": 26,
-      "read_count": 48436
+      "read_count": 48521
     },
     {
       "post_id": "1871644108826633",
       "content": "之前很多专家的预测有可能将成为现实：\n1.美伊战争扩大\n2.中东所有国家的石油设施被毁\n3.油价上天\n4.美国对所有国家加重关税\n5.通货膨胀上天\n6.全球股市暴跌\n美伊战争是包装成战争的金融战能源战！\n石油、黄金、资源、生活必需品涨价！！！",
       "publish_time": 1784938916,
       "publish_date": "2026-07-25 08:21",
-      "url": "https://m.toutiao.com/w/1871644108826633/?app=toutiao_web&timestamp=1787291114&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1871644108826633/?app=toutiao_web&timestamp=1788019811&use_new_style=1",
       "digg_count": 94,
       "comment_count": 32,
-      "read_count": 70978
+      "read_count": 71013
     },
     {
       "post_id": "1871521660311817",
       "content": "明天周五是个小的变盘点，要么上穿3884，要么下穿3847。从今晚美股走势看，明天大A向下的可能性大，走小5浪，就看破不破前低3741。\n而下周四又是一个变盘点。\n美伊越打越大。为什么7月底呢？马斯克的SpaceX上市45天可以减持，是不是7月底可以套现？",
       "publish_time": 1784822140,
       "publish_date": "2026-07-23 23:55",
-      "url": "https://m.toutiao.com/w/1871521660311817/?app=toutiao_web&timestamp=1787291115&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1871521660311817/?app=toutiao_web&timestamp=1788019811&use_new_style=1",
       "digg_count": 31,
       "comment_count": 9,
-      "read_count": 26837
+      "read_count": 26935
     },
     {
       "post_id": "1871517759742217",
       "content": "今年的德明利将重复2015全通教育的故事，3年之内，980元价格，能到50以下吗？\n还有很多人在犹豫和怀疑！",
       "publish_time": 1784818420,
       "publish_date": "2026-07-23 22:53",
-      "url": "https://m.toutiao.com/w/1871517759742217/?app=toutiao_web&timestamp=1787291115&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1871517759742217/?app=toutiao_web&timestamp=1788019811&use_new_style=1",
       "digg_count": 8,
       "comment_count": 0,
-      "read_count": 12283,
+      "read_count": 12315,
       "title": "今年的德明利将重复2015全通教育的故事，3年之内，980元价格，能到50以下吗？\n还有很多人在犹豫和怀疑！"
     },
     {
@@ -653,80 +695,80 @@
       "content": "电网设备今天涨停29家，20%，远大于10%，那么，电网设备接替科技，成为最确定的主线！！！\n另外，有色金属有抬头趋势。\n电力（含电网设备）+有色，还有煤炭、石油、黄金！\n也就是电力（电网设备）+能源资源+券商助攻！\n值得关注！",
       "publish_time": 1784799899,
       "publish_date": "2026-07-23 17:44",
-      "url": "https://m.toutiao.com/w/1871498339050698/?app=toutiao_web&timestamp=1787291115&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1871498339050698/?app=toutiao_web&timestamp=1788019811&use_new_style=1",
       "digg_count": 86,
       "comment_count": 41,
-      "read_count": 80112
+      "read_count": 80202
     },
     {
       "post_id": "1871489210594442",
       "content": "避险！避险！避险！\n目前的盘面，主要受美伊战争的影响，美国昨晚上轰炸了巴伊边界，几个月之前有人讨论，如果美国派出地面部队，从哪登陆较好，当时有人认为巴伊边境，不太可能登岛，因为边境有俾路支武装，容易造分裂。不挑除这个可能。所以，今天长城军工、北方长龙涨停，内蒙一机跟涨，都是军贸概念。\n另外，电力、石油、黄金，甚至有色上涨，都是因为资金在避险！\n科技进一步承压，无论多好的故事，市场不认也不行！世界人工智能大会期间，科技股撑不住，说明科技有很多问题，小心为妙！\n当然，科技的行情没走完，毕竟眼前的业绩有，但是，预期有没有？我认为短期内慎重。要看也是服务器交换机，设备，材料，封装等！！！\n科技有没有行情，主要看美伊战争扩不扩大，如果扩大，石油扰动，那就麻烦了。\n所以，短期内还是小心科技，没吃上肉也别惹一身骚！",
       "publish_time": 1784791193,
       "publish_date": "2026-07-23 15:19",
-      "url": "https://m.toutiao.com/w/1871489210594442/?app=toutiao_web&timestamp=1787291115&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1871489210594442/?app=toutiao_web&timestamp=1788019811&use_new_style=1",
       "digg_count": 20,
       "comment_count": 3,
-      "read_count": 11895
+      "read_count": 11929
     },
     {
       "post_id": "1871469193372683",
       "content": "电力牛逼！！！",
       "publish_time": 1784772103,
       "publish_date": "2026-07-23 10:01",
-      "url": "https://m.toutiao.com/w/1871469193372683/?app=toutiao_web&timestamp=1787291115&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1871469193372683/?app=toutiao_web&timestamp=1788019811&use_new_style=1",
       "digg_count": 10,
       "comment_count": 0,
-      "read_count": 13201
+      "read_count": 13232
     },
     {
       "post_id": "1871466153339913",
       "content": "很多人都想知道下半年的主线在哪？\n如果提前知道这个主线，离发财不远了。\n如果美伊平稳，美国不加息，科技还是主线，大不了通信设备/半岛体/pcb/。。。再炒补涨。。。\n但是，如果老美希望通过石油上涨，传导到所有资源上涨，那么，有色等大宗商品就要重视。\n毕竟，科技是大板块，已经占了一半的成交，小板块根本承接不了这么大的体量。有色金属、石油、煤炭、化工、粮食，那也是很大的板块。\n无论如何，特特一定想搞事，无外乎中期选举前或者中期选举后，而且，他们不达目的不罢休。\n我感觉，会动用地面力量搞伊朗分裂。",
       "publish_time": 1784769204,
       "publish_date": "2026-07-23 09:13",
-      "url": "https://m.toutiao.com/w/1871466153339913/?app=toutiao_web&timestamp=1787291115&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1871466153339913/?app=toutiao_web&timestamp=1788019811&use_new_style=1",
       "digg_count": 66,
       "comment_count": 12,
-      "read_count": 93186
+      "read_count": 93238
     },
     {
       "post_id": "1871429657084937",
       "content": "这么晚了，谈一下我的想法。\n这两天增加了1000个粉丝。但是我不是机构，没有任何群，没有任何圈子，文中谈到的观点或者板块，也可能是误导，各位一定要自我识别，以免亏钱！\n1.这次科技股的破位，绝不是小事，当时1月高位盘整，etf接连放天量，很多人都分析到，gjd跑了10000多亿，有人猜70%跑了，那么4-6月科技狂潮，剩下的30%也应该跑了。\n那么，指望短期内指数创新高，那是白日做梦！谁挣钱？散户是送钱的，债权人跑了，债务人怎么可能挣钱？\n2.这几天科技狂砸，也有可能是中美在股市上的一次交锋，也是一次演习，外资通过做空韩国日本股市，间接影响A股，是否有个目的，让我们的长鑫上市难堪。影响我们的科技大龙的信心。\n3.科技暂时真的没了。半岛体设备或者交换机服务器，也是一个轮动，不一定有持续性。\n4.美伊战争非常非常有可能扩大！！！日韩欧洲都有可能下场！接下来油价和通胀很可能出现！！！而且，特特今天宣布对60国加征关税（10%左右），不排除接下来大幅提高！\n5.不排除老美如息！！！\n6.防御性的板块值得重视。黄金、石油、煤炭、电力、创新药、粮食！！！\n7.科技下跌才刚刚开始，腰斩再腰斩都有可能！！！\n\n以上观点不构成投资建议，赢亏自负！！！",
       "publish_time": 1784734399,
       "publish_date": "2026-07-22 23:33",
-      "url": "https://m.toutiao.com/w/1871429657084937/?app=toutiao_web&timestamp=1787291115&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1871429657084937/?app=toutiao_web&timestamp=1788019811&use_new_style=1",
       "digg_count": 75,
       "comment_count": 9,
-      "read_count": 44181
+      "read_count": 44226
     },
     {
       "post_id": "1871401187369993",
       "content": "未来2-3个交易日是变盘日（小窗口）\n。\n1.向上变盘，证券发力，带领指数向上，过3950，那么反弹继续，越涨越卖！卖！卖！卖！\n证券本来没什么行情，偶尔出其不意，套人的本事是有的。\n2.向下变盘，跌破前低3741（不会太深），放心大胆重仓一下，因为还有反弹！\n这是一个小变盘，大的变盘时间还在8月上旬末的窗口，那是一个中级别窗口。\n市场上缺钱！\n7月27日长鑫上市，有没有可能搞一下气氛，润润场子？",
       "publish_time": 1784707248,
       "publish_date": "2026-07-22 16:00",
-      "url": "https://m.toutiao.com/w/1871401187369993/?app=toutiao_web&timestamp=1787291115&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1871401187369993/?app=toutiao_web&timestamp=1788019811&use_new_style=1",
       "digg_count": 75,
       "comment_count": 22,
-      "read_count": 54758
+      "read_count": 54803
     },
     {
       "post_id": "1871389421773003",
       "content": "网上的判断，最多只能相信10%，否则，肯定亏钱！别人亏钱对股评来说就是失德。\n所以，不要相信任何人。\n因为网上绝大多数股评都是错的。",
       "publish_time": 1784696027,
       "publish_date": "2026-07-22 12:53",
-      "url": "https://m.toutiao.com/w/1871389421773003/?app=toutiao_web&timestamp=1787291115&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1871389421773003/?app=toutiao_web&timestamp=1788019812&use_new_style=1",
       "digg_count": 22,
       "comment_count": 2,
-      "read_count": 14278
+      "read_count": 14314
     },
     {
       "post_id": "1871381297614091",
       "content": "早上提到的黄金板块，牛气冲天！没有回踩，继续高举高打。",
       "publish_time": 1784688279,
       "publish_date": "2026-07-22 10:44",
-      "url": "https://m.toutiao.com/w/1871381297614091/?app=toutiao_web&timestamp=1787291115&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1871381297614091/?app=toutiao_web&timestamp=1788019812&use_new_style=1",
       "digg_count": 13,
       "comment_count": 14,
-      "read_count": 13063,
+      "read_count": 13095,
       "title": "早上提到的黄金板块，牛气冲天！没有回踩，继续高举高打。"
     },
     {
@@ -734,30 +776,30 @@
       "content": "目前的行情仍然处于下跌中继当中。\n所以一根阳线，很突兀的阳线不能改变趋势。近两周科技股的下跌是主力掀桌子的表现，拆台的表现，彻底否定的表现，那止跌将不是一根阳线能做到的。\n\n下跌将是一波三折，很多科技股5日线，10日线，20日线，拐头向下，高位死叉，上方3905点是压力，4050点是强压力，基本上过不去，甚至三个月甚至半年也过不去，春节前甚至见不到4050了。因为这里是下跌第一浪末端，向下的第一浪，除非外界比如说美国有降息的举措，为了中期选举，美伊不打了。也就是上方近几年炒了5倍、10倍、20倍的CPO存储芯片将高位封存，筹码将高位封存，锁死！！！\n\n科技股将挖掘出新的热点，机器人也好，商业航天也好，军工也好，或者是国产替代国产算力也好啊，都是选项之一，能不能实现，没有人知道。但是如果科技股整体高位套牢的情况下，指望别的分支能够走出独立行情也是比较难的。\n\n下一个变盘点将在8月10号前，下一个低点，下一个变盘点，既然是变盘点，而且是低点配合的，也就是很可能会在3741点之下，具体在什么地方市场走出来，市场说了算，但是即使8月10号之前那个低点的出现，也不代表止跌，也只是一个反弹的机会。后面还有更低的点，更低的下一浪，下下一浪在等着，也就是说后面讲换一种活法了。有很多人这一次躲过了近两周的30%~40%的下跌，也不一定躲过下一次的下跌。\n从昨天的反弹的力度来看，主力动手早了一天，也就是昨天如果继续像周一那样收十字星，周二继续十字星，那么今天周三将有一个百点以上的阳线，哎，很可能能够到3900点之上。因为主力提前动手，他的力量衰竭了。\n昨天在众多板块当中，有一个板块让人眼前一亮，就是黄金板块，黄金板块似乎走出下跌的趋势，如果未来几天回踩不破，有强势支撑，那么黄金板块有可能会走出一小段的反弹或者叫上升啊，这一点我个人感觉是值得留意的。因为黄金整个板块不管是半年报也好，二季度报也好，它的业绩是有保证的，也就在价值体系当中，板块当中黄金板块也是值得留意的一个板块。\n主力用了两年时间，3000点以下建仓，一直到2689点建完，10000-15000亿，水皮先生直播时讲的，2015年的救市15000亿，全跑了，高位科技中跑了，还指望那个热点题材来第二次，想多了！\n但是，春节前后的行情，半岛体再来一波，做个双头，那是有可能，通信设备和存储芯片，那就比较难了。后面的下跌以年为单位！！！\n\n声明，我不加圈，不荐股，只要冒犯就拉黑。赢亏自负，本来就是赌场，送人头的。",
       "publish_time": 1784679502,
       "publish_date": "2026-07-22 08:18",
-      "url": "https://m.toutiao.com/w/1871372093927435/?app=toutiao_web&timestamp=1787291115&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1871372093927435/?app=toutiao_web&timestamp=1788019812&use_new_style=1",
       "digg_count": 66,
       "comment_count": 12,
-      "read_count": 30679
+      "read_count": 30868
     },
     {
       "post_id": "1871332804269129",
       "content": "8月10日前，见到阶段性的市场底。\n所以，今天的上涨只是反弹，不要上头。\nCPO/PCB/MLCC/存储芯片，这些板块是掀桌子的下跌，你指望V上去，那是想多了！\n主力早跑了，散户套在山顶，指望主力解散户的套？真想多了。\n如果明后天周三周四有回调，周五指数有二次反包的机会。\n远离老科技，拥抱新科技（国产算力产业链）！\n另外，大金融等价值股也非常有机会。",
       "publish_time": 1784642033,
       "publish_date": "2026-07-21 21:53",
-      "url": "https://m.toutiao.com/w/1871332804269129/?app=toutiao_web&timestamp=1787291115&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1871332804269129/?app=toutiao_web&timestamp=1788019812&use_new_style=1",
       "digg_count": 48,
       "comment_count": 2,
-      "read_count": 18559
+      "read_count": 18595
     },
     {
       "post_id": "1871318279600266",
       "content": "明天中字头或者大金融有一根大阳线，科技回调。",
       "publish_time": 1784628181,
       "publish_date": "2026-07-21 18:03",
-      "url": "https://m.toutiao.com/w/1871318279600266/?app=toutiao_web&timestamp=1787291117&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1871318279600266/?app=toutiao_web&timestamp=1788019812&use_new_style=1",
       "digg_count": 74,
       "comment_count": 27,
-      "read_count": 81894,
+      "read_count": 81922,
       "title": "明天中字头或者大金融有一根大阳线，科技回调。"
     },
     {
@@ -765,40 +807,40 @@
       "content": "我对接下来大盘的预判。\n\n炒股的人，喜欢参考别人的观点，其实这是亏钱的开始。因为自己没有主见，甚至不懂技术。\n有几个观点：\n1.科技股调整远远没有结束！光模块和存储芯片，这两年大涨的，这两周跌了40%以上的，建议统统删掉，永远不看！因为5年10年内没戏了！\n长鑫存储上市，对三星海力士冲击太大，未来两年市场份额肯定大，韩国股市撑不住，何况我们的德明利之流，纯粹是存储涨价，企业没什么技术含量，别信那些紧缺之类的骗术！\n还有MLCC、玻璃基板。。。\n2.科技会分化，比如，紫光之类，根本不跌，该跌不跌，必有大涨！还有海光也不差。自己去看，自己去想，为什么他们不跌？！前期也是疯涨。\n3.今天放量在创业板50和科创50，也就是今后科技只能干龙头，今天科创半岛体设备指数涨了20%，那里大家伙多。\n4.其实，指数在3800-4200之间震荡已经很好了，村里维持热度，每天25000亿之上的成交，大块头上市没问题，至于别的垃圾板块垃圾股，今后就是退市或者仙股的命。\n5.3905是个压力位，4050更是个压力位，三个月之内不可能站上。别整天牛市牛市的，目前的经济情况支撑牛市吗？还扯什么存款搬家，那是还房贷的，如果都入了这个赌场，多少人跳楼？！\n6.下一个变盘日在8月10日前。低点还是高点不知道。\n7.目前最稳的板块是券商。珍惜这个机会。如果春节前后有一轮行情，这个板块翻倍是有可能的。除了券商，还有很多低位的中字头。",
       "publish_time": 1784625147,
       "publish_date": "2026-07-21 17:12",
-      "url": "https://m.toutiao.com/w/1871315098300427/?app=toutiao_web&timestamp=1787291117&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1871315098300427/?app=toutiao_web&timestamp=1788019812&use_new_style=1",
       "digg_count": 53,
       "comment_count": 24,
-      "read_count": 18061
+      "read_count": 18091
     },
     {
       "post_id": "1871307280069835",
       "content": "那种A杀的，这几天跌了30-40%的大科技，其实行情已经结束了。起码3个月之内结束了。后面可能慢慢阴跌！！！\n接下来一段时间，很多不确定性，都对科技有冲击，除非美国降息，我们跟着降息。\n否则，所有的故事终究是故事。",
       "publish_time": 1784617691,
       "publish_date": "2026-07-21 15:08",
-      "url": "https://m.toutiao.com/w/1871307280069835/?app=toutiao_web&timestamp=1787291117&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1871307280069835/?app=toutiao_web&timestamp=1788019812&use_new_style=1",
       "digg_count": 76,
       "comment_count": 122,
-      "read_count": 90642
+      "read_count": 90669
     },
     {
       "post_id": "1871305568776202",
       "content": "向3870挺进！",
       "publish_time": 1784616059,
       "publish_date": "2026-07-21 14:40",
-      "url": "https://m.toutiao.com/w/1871305568776202/?app=toutiao_web&timestamp=1787291117&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1871305568776202/?app=toutiao_web&timestamp=1788019812&use_new_style=1",
       "digg_count": 19,
       "comment_count": 0,
-      "read_count": 12925
+      "read_count": 12934
     },
     {
       "post_id": "1871297707173002",
       "content": "国产替代框架下，国产算力产业链！\n紫光牛逼！",
       "publish_time": 1784608561,
       "publish_date": "2026-07-21 12:36",
-      "url": "https://m.toutiao.com/w/1871297707173002/?app=toutiao_web&timestamp=1787291117&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1871297707173002/?app=toutiao_web&timestamp=1788019812&use_new_style=1",
       "digg_count": 20,
       "comment_count": 1,
-      "read_count": 16722,
+      "read_count": 16736,
       "title": "国产替代框架下，国产算力产业链！\n紫光牛逼！"
     },
     {
@@ -806,10 +848,10 @@
       "content": "科技确实地天了。\n但是！但是！但是，更大的风险不远了！",
       "publish_time": 1784606118,
       "publish_date": "2026-07-21 11:55",
-      "url": "https://m.toutiao.com/w/1871295145549003/?app=toutiao_web&timestamp=1787291117&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1871295145549003/?app=toutiao_web&timestamp=1788019812&use_new_style=1",
       "digg_count": 18,
       "comment_count": 5,
-      "read_count": 17545,
+      "read_count": 17550,
       "title": "科技确实地天了。\n但是！但是！但是，更大的风险不远了！"
     },
     {
@@ -817,20 +859,20 @@
       "content": "根据波浪理论，上午11点前后，大盘见低点。由于提前回踩，这个低点可能提前。\n那么，下午，要么一根中大阳，指数过3870，要么磨叽两天再向上。\n总之，这个地方暂时底部区城。\n买什么？\n带指数的老登。电力还有几天回踩。大金融最稳。\n这次，村里害怕小散丢了信心，只拉指数！！！\n科技暂离。",
       "publish_time": 1784599689,
       "publish_date": "2026-07-21 10:08",
-      "url": "https://m.toutiao.com/w/1871288404369419/?app=toutiao_web&timestamp=1787291117&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1871288404369419/?app=toutiao_web&timestamp=1788019812&use_new_style=1",
       "digg_count": 25,
       "comment_count": 5,
-      "read_count": 23995
+      "read_count": 24000
     },
     {
       "post_id": "1871287465715739",
       "content": "现在的情况就是老登掩护小登出货。很多小登腰斩再腰斩。\n不要接飞刀！！！",
       "publish_time": 1784598794,
       "publish_date": "2026-07-21 09:53",
-      "url": "https://m.toutiao.com/w/1871287465715739/?app=toutiao_web&timestamp=1787291117&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1871287465715739/?app=toutiao_web&timestamp=1788019812&use_new_style=1",
       "digg_count": 7,
       "comment_count": 1,
-      "read_count": 11382,
+      "read_count": 11388,
       "title": "现在的情况就是老登掩护小登出货。很多小登腰斩再腰斩。\n不要接飞刀！！！"
     },
     {
@@ -838,50 +880,50 @@
       "content": "抓住政策底出来后，一波反弹的机会，市场底没那么快。\n券商最稳。\n电力等回落。\n银行保险同时助攻。\n今天中国海油涨停非常诡异！警惕石油异动！这不是好事情。\n\n科技有反抽，容易引起指数共振向上。\n这次的市场底有可能比较凶险。市场底的到来需要伴随美股的同步回落，那个时候，科技还要再杀一波，很多科技个股高点下来腰斩再腰斩。\n年底的时候，看中一波跨年行情。",
       "publish_time": 1784585575,
       "publish_date": "2026-07-21 06:12",
-      "url": "https://m.toutiao.com/w/1871273604698123/?app=toutiao_web&timestamp=1787291117&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1871273604698123/?app=toutiao_web&timestamp=1788019814&use_new_style=1",
       "digg_count": 8,
       "comment_count": 2,
-      "read_count": 9798
+      "read_count": 9800
     },
     {
       "post_id": "1871239567871307",
       "content": "明天上午11点，看看有没有上车机会。指数3750之下都是安全的。\n明天很多科技股都有地天的可能。今天跌停个股，明天大低开，融资盘再爆，可能立马有强势反弹冲高的机会。\n\n我明天还是看证券板块，有没有中大阳线！\n我们是主动降杠杆，先刺破科技股泡沫，几个月之后，很多优质龙头一定会再创新高，时间应该在春节前后。整个2027-2028年，就看今年年底的机会！下一个机会就是2029年下半年了。\n7-8月，老登反弹一下。然后，老登小登再下，最后小登唱戏。结束。",
       "publish_time": 1784553115,
       "publish_date": "2026-07-20 21:11",
-      "url": "https://m.toutiao.com/w/1871239567871307/?app=toutiao_web&timestamp=1787291117&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1871239567871307/?app=toutiao_web&timestamp=1788019814&use_new_style=1",
       "digg_count": 116,
       "comment_count": 25,
-      "read_count": 154772
+      "read_count": 154925
     },
     {
       "post_id": "1871221335227403",
       "content": "周二预测。\n\n今天上证创了低点，3741.11，今天或者明天有政策底，接下来反弹一波。\n这次牵头反弹的板块就是gjd带指数的老登。大金融、电力、煤炭、石油。\n明天或者后天随时出现中大阳。\n小登科技明星股，今天很多跌停，是因为融资盘爆仓的原因。小登也有反抽的需要。\n我依然看好券商。",
       "publish_time": 1784535727,
       "publish_date": "2026-07-20 16:22",
-      "url": "https://m.toutiao.com/w/1871221335227403/?app=toutiao_web&timestamp=1787291117&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1871221335227403/?app=toutiao_web&timestamp=1788019814&use_new_style=1",
       "digg_count": 22,
       "comment_count": 4,
-      "read_count": 29191
+      "read_count": 29193
     },
     {
       "post_id": "1871017350304841",
       "content": "下周一预判。\n\n目前的情况是，全球科技股暴涨以后的一个暴跌过程，美国的科技股还高高在上，不排除后几个月同步暴跌，这是第一点。\n第二点，韩国、日本，包括A股的暴跌，是美元回流美国的结果。这种回流在未来预期当中还会持续，比如，现在面临几个潜在的隐患，包括美国和伊朗战争的扩大。注意一点，近期美国已经轰炸伊朗的民用设施，特别是道路桥梁，有人预感到美国可要派地面部队（不要认为不可能！！！），也就是强行占领霍尔木兹海峡，逼迫伊朗让渡主权。\n我认为这是这一轮科技股暴跌的最主要因素。\n第二个，中美之间的关税战是暂停而不是终止，加征关税是暂停而不是停止，也就是是有期限的，印象当中是到11月份到期，一年到期，不排除到期后，或者提前对中国和其他国家，包括欧洲，包括日本，包括韩国等等国家重新加征关税。\n也就是加征关税，逼迫美元回流，这是第二条。\n第三条，美元回流以及美伊战争的扩大，导致强美元、强势美元，强势美元的出现，对其他货币，其他国家的货币是有强烈压制的，也就是说拉爆其他国家的股市是非常有可能的，也就是说这种情况下，伴随着美国自己再引爆科技股。也就是杀敌1000，自损800，这样的话，起推波助澜的作用，也就是压垮骆驼的最后一根稻草，也就引爆自己。这样的话，对全球的股市是非常大的打击。这是第三点。\n第四点，2024年的救市的资金，不管是一万亿也好，还是15000亿也好，当时买的很多科技的或者是宽基的ETF，在2026年的元月份基本上都撤出了市场，也就是护盘资金已经撤出市场半年。伴随着元月份以后A股的高位震荡，基本上就是资金全部撤完，而且赚了不少，为后面救市保留了大量的弹药，也就是说股市没有再跌再暴跌，国家队捡不到便宜的筹码。所以这一次的结果，那就是很多的优质的股票位置要更低，位置要更低，位置要更低，重要的事说三遍，大盘的指数不一定有那么低，但是很多股票的位置要更低，要低于2689。\n刚才分析的是宏观的背景，宏观的背景因为美国11月份中期选举，甚至10月份就有一个定论啊，也就是说不排除在第三季度美国玩一票大的，这样对全球的金融市场都是一个非常的大的动乱。而美国在相对其他国家来讲，它有优势，这样对共和党的大选是有利的。\n\n那么，说了这么多，目前何时止跌呢？两种止跌方式。\n第一种，周一有个大长腿，也就是低开是肯定的，因为韩国股市开盘暴跌熔断，叠加昨晚美股科技股大跌，所以低开是肯定的。低开以后有可能有反抽，也就第2小时或者第一小时有反抽以后再跌，杀出恐慌盘，也就是会不会3700点以下到3650点杀出恐慌盘，然后有可能收红，量能放大，但是指望周一直接反包走向上修复，可能性不大。\n这是第一种，就是说一根金针探底止跌。第二种就是周一小阴小阳，周二直接大阳线。这是另外一种止跌的方法。但是我们说，但是因为2026年或者是2025年下半年高位套牢盘太大，也就是3900点到4180点之间，或者是这样的200~300点的区间内，套牢盘太大太大。每天两万亿左右的成交额，那么这一次反抽它的高度就有限了。你即使从3650，哪怕到3950是极限，估计到不了，有可能只能到3900点，这时候也只有200多点，也就是时间很短，点位不大，就是空间不大，这时候形成反抽，再次下杀，那么一定会跌破比如说3650点，那就到3500点寻底，如果再反抽再下，那就是3200多点，也就是说这样的以后2027年全年不太理想。\n未来的板块，因为这一次科技抱团太明显，权重股科技抱团，那么未来很可能一些小票会有一些机会，特别是连续下跌的小票啊，其中还有一个很重要的板块，券商板块，未来应该是有不错的行情，但是也是一波三折。因为券商该涨不涨必有大涨，它的业绩，它的人气，它的控盘，包括指数的牵引都起到正面作用。它的作用很大，特别是大金融板块，尤其是券商。\n\n以上内部神侃。不喜勿喷。",
       "publish_time": 1784341192,
       "publish_date": "2026-07-18 10:19",
-      "url": "https://m.toutiao.com/w/1871017350304841/?app=toutiao_web&timestamp=1787291117&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1871017350304841/?app=toutiao_web&timestamp=1788019814&use_new_style=1",
       "digg_count": 141,
       "comment_count": 30,
-      "read_count": 122885
+      "read_count": 123318
     },
     {
       "post_id": "1870946509230153",
       "content": "时间窗口可能在下周二。\n下周一继续，杀出恐慌盘。",
       "publish_time": 1784273633,
       "publish_date": "2026-07-17 15:33",
-      "url": "https://m.toutiao.com/w/1870946509230153/?app=toutiao_web&timestamp=1787291118&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1870946509230153/?app=toutiao_web&timestamp=1788019814&use_new_style=1",
       "digg_count": 150,
-      "comment_count": 64,
-      "read_count": 346155,
+      "comment_count": 65,
+      "read_count": 346752,
       "title": "时间窗口可能在下周二。\n下周一继续，杀出恐慌盘。"
     },
     {
@@ -889,20 +931,20 @@
       "content": "今日预判。\n\n今日行情的焦点是在第一小时，如果第一小时踹一脚，或者是跌30点以上，或者40点以上，说不定是一个两天的短线反弹的机会（下周三开始。。。自己脑补）。\n目前为止，有持续性的是创新药，但是反弹不一定，有可能是券商带头，也有可能是部分的科技板块，比如与世界人工智能大会相关，比如华为，比如豆包手机，也就是消费电子，比如数据中心基建。\n当然，这样的板块，科技板块也不会是之前一年两年大涨的半导体、PCB、MLCC等等热点板块，这是第一点。\n第二点，这一轮下跌远远没有到位。\n因为要引起恐慌，恐慌盘出现，也就是当天必须有150、200点以上的一个跌幅引起恐慌。那么就是说，即使反弹两天以后，还有可能掉头向上向下。那么7月下旬将有一段非常难熬的一个时间点，这是第二点。\n第三点，很多科技板块已经见顶，很多科技股票已经见顶，也就未来五年都没有机会了，特别是一些垃圾股票，以后的科技股股票有可能是龙头带队。\n因为很多科技股票，科技板块只是下跌的第1浪，即使有2浪修复，但是还有3浪调整，3浪以后有可能还有5浪，那这样就是跌跌不休，时间跨度就很长。那么4258点，那是什么样的中期的顶部还是中短期的顶部，还是中长期的顶部，就不知道了。\n4258如果要跨过，只取决一个条件，就是美国降息，就是美国降息，美国不降息，4258是打不掉的，因为无论是券商还是大金融板块来带动指数上涨，不可能为科技股来解套。\n也就是这种情况下，只有一种可能，就是人工智能的热度要下降部分，也就是美国的人工智能要降温，美国的股市要下跌，硬件的采购要减少，所谓的涨价，所谓的紧缺，这些逻辑都不复存在。\n但是中美之间是人工智能的进争，人工智能的话题将持续5年、10年甚至20年，所以人工智能仍然是主线当中的主线，也就上涨必须靠科技，下跌，那就是泥沙俱下，只有靠大金融来维稳。至于那些就是食品饮料、大消费等等，那是只能见缝插针，没有最低，只有更低。\n以上是个人兴趣，不作为投资依据。",
       "publish_time": 1784247185,
       "publish_date": "2026-07-17 08:13",
-      "url": "https://m.toutiao.com/w/1870918776854665/?app=toutiao_web&timestamp=1787291118&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1870918776854665/?app=toutiao_web&timestamp=1788019814&use_new_style=1",
       "digg_count": 21,
       "comment_count": 5,
-      "read_count": 22241
+      "read_count": 22245
     },
     {
       "post_id": "1870850185696266",
       "content": "今天是高低点第18个交易日对称日定性向上还是向下。目前看，滑向万丈深渊。",
       "publish_time": 1784181772,
       "publish_date": "2026-07-16 14:02",
-      "url": "https://m.toutiao.com/w/1870850185696266/?app=toutiao_web&timestamp=1787291118&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1870850185696266/?app=toutiao_web&timestamp=1788019814&use_new_style=1",
       "digg_count": 3,
       "comment_count": 3,
-      "read_count": 7066,
+      "read_count": 7068,
       "title": "今天是高低点第18个交易日对称日定性向上还是向下。目前看，滑向万丈深渊。"
     },
     {
@@ -910,20 +952,20 @@
       "content": "今日行情。\n\n目前主要的问题是市场上没有钱，今天公布的M2又增长了，居民储户没有搬家，资金没有回到股市，所以没有量，这是第一个。\n第二点，科技股下跌没有停止，下跌中继，高位科技股流出的资金在医药板块只是避险，包括券商，包括猪肉，包括白酒，也就是这些低位超跌的板块只是资金避险。\n这是资金的分布情况以及板块的情况，也就这一次的行情是科技股的行情，科技股既然在下落，那么我们所说的老登股反弹其实也是战战兢兢，颤颤巍巍，小心谨慎。\n如果增量资金不来，那么不排除老登股和高伟科技股再次的下杀，这个点在什么地方？明天验证，也就是明天的收盘价必须高于3975。\n医药也仅仅是反弹，说有趋势性的行情可能性不太大，而且医药已经反弹了接近一个月了，或者叫生物医药反弹已经一个月了，它累积的也有一点获利盘，所以不太可能代替科技主线作为一个大的行情的一个主线。所以7月或者是8月也只能静等科技落地，另外也静等今后科技当中的分化的一些，板块能够带领指数上行。",
       "publish_time": 1784102757,
       "publish_date": "2026-07-15 16:05",
-      "url": "https://m.toutiao.com/w/1870767332599883/?app=toutiao_web&timestamp=1787291118&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1870767332599883/?app=toutiao_web&timestamp=1788019814&use_new_style=1",
       "digg_count": 7,
       "comment_count": 8,
-      "read_count": 10835
+      "read_count": 10838
     },
     {
       "post_id": "1870651713974299",
       "content": "下方空间不大了。3880。时间在周四。\n地狱级难度。",
       "publish_time": 1783992494,
       "publish_date": "2026-07-14 09:28",
-      "url": "https://m.toutiao.com/w/1870651713974299/?app=toutiao_web&timestamp=1787291118&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1870651713974299/?app=toutiao_web&timestamp=1788019814&use_new_style=1",
       "digg_count": 3,
       "comment_count": 5,
-      "read_count": 11418,
+      "read_count": 11420,
       "title": "下方空间不大了。3880。时间在周四。\n地狱级难度。"
     },
     {
@@ -931,30 +973,30 @@
       "content": "下半年主线明确：\n国产算力产业链。\n服务器+交换机+液冷+ASIC芯片！！！\n浪潮+紫光+英维克+盛科+曙光+拓维。。。",
       "publish_time": 1783843083,
       "publish_date": "2026-07-12 15:58",
-      "url": "https://m.toutiao.com/w/1870495045282955/?app=toutiao_web&timestamp=1787291118&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1870495045282955/?app=toutiao_web&timestamp=1788019814&use_new_style=1",
       "digg_count": 4,
       "comment_count": 5,
-      "read_count": 11533
+      "read_count": 11538
     },
     {
       "post_id": "1870377444306954",
       "content": "如果下周二大盘有低点，什么板块带领上涨？\n1.券商\n2.创新药\n3.商业航天\n4.国产算力（数字中心基建）\n5.AI应用\n6.长鑫产业链\n\n无外乎以上范围中的1-2个。",
       "publish_time": 1783730930,
       "publish_date": "2026-07-11 08:48",
-      "url": "https://m.toutiao.com/w/1870377444306954/?app=toutiao_web&timestamp=1787291118&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1870377444306954/?app=toutiao_web&timestamp=1788019814&use_new_style=1",
       "digg_count": 11,
       "comment_count": 10,
-      "read_count": 18587
+      "read_count": 18589
     },
     {
       "post_id": "1870312208714761",
       "content": "现在已经是熊市下降通道，要有熊市思维！\n7月8月非常难。",
       "publish_time": 1783668717,
       "publish_date": "2026-07-10 15:31",
-      "url": "https://m.toutiao.com/w/1870312208714761/?app=toutiao_web&timestamp=1787291118&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1870312208714761/?app=toutiao_web&timestamp=1788019814&use_new_style=1",
       "digg_count": 5,
       "comment_count": 6,
-      "read_count": 6016,
+      "read_count": 6018,
       "title": "现在已经是熊市下降通道，要有熊市思维！\n7月8月非常难。"
     },
     {
@@ -962,20 +1004,20 @@
       "content": "这次行情围绕7月17日在上海的世界人工智能大会展开。\n所以说，人工智能仍然是主流，梦想着老登代替小登，那是白日做梦。\n世界上所有国家都在唆哈人工智能，不想输给国运之战，还有什么更重要的？\n另外，创新药、机器人、商业航天，半年内都不要碰，傻逼板块！\n券商也不要碰！\n就是国产替代（芯片、设备、材料）！！！\n还有，近半年炒高的，注意一下节奏，不一定是最强主线。",
       "publish_time": 1783586489,
       "publish_date": "2026-07-09 16:41",
-      "url": "https://m.toutiao.com/w/1870225986425881/?app=toutiao_web&timestamp=1787291118&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1870225986425881/?app=toutiao_web&timestamp=1788019815&use_new_style=1",
       "digg_count": 21,
       "comment_count": 0,
-      "read_count": 22713
+      "read_count": 22715
     },
     {
       "post_id": "1870223456659531",
       "content": "今天只是反抽，只不过力度大一些。\n下周二是上车点。",
       "publish_time": 1783584076,
       "publish_date": "2026-07-09 16:01",
-      "url": "https://m.toutiao.com/w/1870223456659531/?app=toutiao_web&timestamp=1787291118&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1870223456659531/?app=toutiao_web&timestamp=1788019815&use_new_style=1",
       "digg_count": 12,
       "comment_count": 9,
-      "read_count": 38816,
+      "read_count": 38818,
       "title": "今天只是反抽，只不过力度大一些。\n下周二是上车点。"
     },
     {
@@ -983,20 +1025,20 @@
       "content": "对大盘指数和板块的预判。\n昨晚上美联储议息会议纪要传出来，有专家解读，还是要大力发展人工智能。但是，也防止投资过热传导到通货膨胀。\n所以，坚持人工智能的主线不要犹豫！\n今天关注创新药，如果没有+2%，创新药板块就歇菜了，如果有增长，创新药还有行情。\n科技方面，需要等到下周大盘低点后布局。\n重点两个板块：\n液冷、算力服务器。\n半岛体产业链需要观察一下。中报业绩肯定好，但是，是否提前透支？\n\n今天，开盘观察创新药，海思科不涨停，赶紧撤。",
       "publish_time": 1783558034,
       "publish_date": "2026-07-09 08:47",
-      "url": "https://m.toutiao.com/w/1870196149121035/?app=toutiao_web&timestamp=1787291118&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1870196149121035/?app=toutiao_web&timestamp=1788019815&use_new_style=1",
       "digg_count": 3,
       "comment_count": 2,
-      "read_count": 6257
+      "read_count": 6259
     },
     {
       "post_id": "1870111675959306",
       "content": "创新药的行情不妙，看不到那么高了。\n大盘低点在3600-3840之间，3794是个考验。至少在下周三四才能见到低点。",
       "publish_time": 1783477474,
       "publish_date": "2026-07-08 10:24",
-      "url": "https://m.toutiao.com/w/1870111675959306/?app=toutiao_web&timestamp=1787291118&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1870111675959306/?app=toutiao_web&timestamp=1788019815&use_new_style=1",
       "digg_count": 3,
       "comment_count": 0,
-      "read_count": 6269,
+      "read_count": 6271,
       "title": "创新药的行情不妙，看不到那么高了。\n大盘低点在3600-3840之间，3794是个考验。至少在下周三四才能见到低点。"
     },
     {
@@ -1004,10 +1046,10 @@
       "content": "这次指数空间有可能3600-3840才能止跌！\n与3794形成双底。",
       "publish_time": 1783429614,
       "publish_date": "2026-07-07 21:06",
-      "url": "https://m.toutiao.com/w/1870061490993226/?app=toutiao_web&timestamp=1787291120&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1870061490993226/?app=toutiao_web&timestamp=1788019815&use_new_style=1",
       "digg_count": 2,
       "comment_count": 0,
-      "read_count": 4899,
+      "read_count": 4901,
       "title": "这次指数空间有可能3600-3840才能止跌！\n与3794形成双底。"
     },
     {
@@ -1015,10 +1057,10 @@
       "content": "接下来会有小反弹，然后接着跌。\n科创指数还有10%+的跌幅。而且，大多数科技股2个月内没戏。\n老登股也难。",
       "publish_time": 1783414801,
       "publish_date": "2026-07-07 17:00",
-      "url": "https://m.toutiao.com/w/1870045958210827/?app=toutiao_web&timestamp=1787291120&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1870045958210827/?app=toutiao_web&timestamp=1788019815&use_new_style=1",
       "digg_count": 2,
       "comment_count": 4,
-      "read_count": 5594,
+      "read_count": 5596,
       "title": "接下来会有小反弹，然后接着跌。\n科创指数还有10%+的跌幅。而且，大多数科技股2个月内没戏。\n老登股也难。"
     },
     {
@@ -1026,70 +1068,70 @@
       "content": "证券+创新药是确定性上涨！\n本周五或者下周一，阶段见底，3929-3970之间，\n但是！反弹高度有限，真正的恐慌还没有到来，也就是一笔反弹后，再杀！！！\n那个时候才是撕心裂肺的时候！",
       "publish_time": 1783391703,
       "publish_date": "2026-07-07 10:35",
-      "url": "https://m.toutiao.com/w/1870021738463498/?app=toutiao_web&timestamp=1787291120&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1870021738463498/?app=toutiao_web&timestamp=1788019815&use_new_style=1",
       "digg_count": 2,
       "comment_count": 6,
-      "read_count": 6133
+      "read_count": 6135
     },
     {
       "post_id": "1870013717477385",
       "content": "3992有可能止跌，但是向上也仅仅是反弹，目标4258。需要反复测试4200-4300的上升趋势线压力。\n但是，真正的杀伤在4300的一笔下杀，不杀出恐慌，场外大资金不可能下场，这个下杀何时到来？\n创新药即将迎来日线调整，调整后仍然是主线之一。\n券商同样需要确认一次，才能再次出发。\n如果主力阴显，近两天破3992，靠近3927。\n如果主力更坏，上破4258后，下杀到3794附近！\n那个时候，将迎来千点暴涨。",
       "publish_time": 1783384053,
       "publish_date": "2026-07-07 08:27",
-      "url": "https://m.toutiao.com/w/1870013717477385/?app=toutiao_web&timestamp=1787291120&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1870013717477385/?app=toutiao_web&timestamp=1788019815&use_new_style=1",
       "digg_count": 22,
       "comment_count": 7,
-      "read_count": 25483
+      "read_count": 25485
     },
     {
       "post_id": "1869679588394122",
       "content": "每天30000+亿，某些板块一定有行情！\n这三个月大涨的高位科技股坚决回避。\n创新药、商业航天（军工）、机器人、无人驾驶，几个板块窝里斗，在抢夺高位科技的腐肉。\n接下来看看，哪个板块获胜。\n\n有成交量就不担心行情。\n失守4070，代表没有反转，下周还有挑战4019的可能。4019破了，4017保不住。接下来挑战3992。不过，趋势反转已经成立。只要不追高，赚钱效应不差。",
       "publish_time": 1783065403,
       "publish_date": "2026-07-03 15:56",
-      "url": "https://m.toutiao.com/w/1869679588394122/?app=toutiao_web&timestamp=1787291120&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1869679588394122/?app=toutiao_web&timestamp=1788019815&use_new_style=1",
       "digg_count": 8,
       "comment_count": 0,
-      "read_count": 21032
+      "read_count": 21033
     },
     {
       "post_id": "1869657847770315",
       "content": "机器人上可能判断失误。\n各个软件上指标不一样。龙头绿的谐波已经创新高了。有可能有行情。不知道。因为不知道这个产业有没有业绩支撑。",
       "publish_time": 1783044670,
       "publish_date": "2026-07-03 10:11",
-      "url": "https://m.toutiao.com/w/1869657847770315/?app=toutiao_web&timestamp=1787291120&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1869657847770315/?app=toutiao_web&timestamp=1788019815&use_new_style=1",
       "digg_count": 2,
       "comment_count": 4,
-      "read_count": 4951
+      "read_count": 4952
     },
     {
       "post_id": "1869589940541706",
       "content": "1、明天指数看两个点位：\n4019能不能守住。守不住，那就再来一次3992或者3993。\n2、创新药还有一次回调。\n3、相对来说，券商今天已回调，明天或者下周，回调空间不大。\n4、科技的大跌没跌完。\n5、机器人并不是机会。\n还是紧盯券商和创新药！！！\n\n我们和韩国采取不同的方式，韩国暴涨暴跌，我们是缓跌，目的都是消化科技泡沫。\n这么说，沃什马上强力缩表，美股在中期选举前挺不住，需要一次回调释放压力？",
       "publish_time": 1782979908,
       "publish_date": "2026-07-02 16:11",
-      "url": "https://m.toutiao.com/w/1869589940541706/?app=toutiao_web&timestamp=1787291120&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1869589940541706/?app=toutiao_web&timestamp=1788019815&use_new_style=1",
       "digg_count": 27,
       "comment_count": 13,
-      "read_count": 54917
+      "read_count": 54922
     },
     {
       "post_id": "1869561440158730",
       "content": "现在看来，8月中旬前，左手券商，右手创新药。\n如果是翘翘板，一个主攻，一个主守。\n前期强势的科技股鱼尾行情，指数上攻4258，科技暂时不拖后腿，不过，风险大于机遇。",
       "publish_time": 1782952728,
       "publish_date": "2026-07-02 08:38",
-      "url": "https://m.toutiao.com/w/1869561440158730/?app=toutiao_web&timestamp=1787291120&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1869561440158730/?app=toutiao_web&timestamp=1788019815&use_new_style=1",
       "digg_count": 21,
       "comment_count": 1,
-      "read_count": 27716
+      "read_count": 27717
     },
     {
       "post_id": "1869557472395274",
       "content": "今明两天指数有回调，指标4050。下周继续反身向上。",
       "publish_time": 1782948944,
       "publish_date": "2026-07-02 07:35",
-      "url": "https://m.toutiao.com/w/1869557472395274/?app=toutiao_web&timestamp=1787291120&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1869557472395274/?app=toutiao_web&timestamp=1788019816&use_new_style=1",
       "digg_count": 11,
       "comment_count": 9,
-      "read_count": 36138,
+      "read_count": 36139,
       "title": "今明两天指数有回调，指标4050。下周继续反身向上。"
     },
     {
@@ -1097,150 +1139,150 @@
       "content": "科技股中，半岛体风险最大。回调空间20%以上，个股30%以上回调比比皆是，7-8月。\n这个过程什么时候完成？老登股修复，大盘4258之上后还有一次300-400点回调，那过程高位科技风险更大。对应美股有个回调。\n9-10月，硬科技完成最后的主升。\n创新药、券商。。。只能小仓。",
       "publish_time": 1782947438,
       "publish_date": "2026-07-02 07:10",
-      "url": "https://m.toutiao.com/w/1869555893581833/?app=toutiao_web&timestamp=1787291120&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1869555893581833/?app=toutiao_web&timestamp=1788019816&use_new_style=1",
       "digg_count": 10,
       "comment_count": 13,
-      "read_count": 27993
+      "read_count": 27997
     },
     {
       "post_id": "1869498429583435",
       "content": "指数在券商和超跌反弹板块共振下，震荡向上，预计4260左右。然后再向下，科创板块深回调。\n科创不回调不上仓位。最多5成以下。科技中，目前看了电感板块（顺络电子、麦捷科技、铂科新材）。\n除了科技，对券商不太感冒，这个板块磨人，而且跳跃。\n目前，感兴趣的还是创新药（艾力斯、海思科、凯莱英）。\n小仓位玩玩吧。因为指数在3900-4200之间宽幅震荡。再次回调后，紧盯科技！！！",
       "publish_time": 1782892637,
       "publish_date": "2026-07-01 15:57",
-      "url": "https://m.toutiao.com/w/1869498429583435/?app=toutiao_web&timestamp=1787291120&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1869498429583435/?app=toutiao_web&timestamp=1788019816&use_new_style=1",
       "digg_count": 6,
       "comment_count": 0,
-      "read_count": 7779
+      "read_count": 7780
     },
     {
       "post_id": "1869473549290505",
       "content": "这次科技是一波流，美股不崩，我们的科技直冲云霄，上不封顶。\n但是，7月中旬，科创板块有比较大的回调，需要规避。至于牛市8月还是10月结束，只能边走边看。",
       "publish_time": 1782868909,
       "publish_date": "2026-07-01 09:21",
-      "url": "https://m.toutiao.com/w/1869473549290505/?app=toutiao_web&timestamp=1787291120&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1869473549290505/?app=toutiao_web&timestamp=1788019816&use_new_style=1",
       "digg_count": 9,
       "comment_count": 0,
-      "read_count": 17561
+      "read_count": 17562
     },
     {
       "post_id": "1869467229940810",
       "content": "长鑫存储的投资方合肥城建昨天涨停，长鑫存储会不会近期上市。\n一旦上市，近期反复冲高的半岛体设备、半岛体材料、先进封装板块将面临利好兑现的压力。\n6-7月炒中报预期。\n还有哪些板块有机会？\n创新药、券商、小金属，这几个板块，哪个更有可能？\n银行、保险、消费、机器人、商业航天，这几个暂时不考虑。\nA股越来越美股化，业绩为王。美股炒业绩兑现，A股炒业绩预期。都是消灭散户、抱团龙头。\n今后，A股也是高的越高、低的越低。",
       "publish_time": 1782862882,
       "publish_date": "2026-07-01 07:41",
-      "url": "https://m.toutiao.com/w/1869467229940810/?app=toutiao_web&timestamp=1787291121&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1869467229940810/?app=toutiao_web&timestamp=1788019816&use_new_style=1",
       "digg_count": 6,
       "comment_count": 0,
-      "read_count": 11980
+      "read_count": 11982
     },
     {
       "post_id": "1869422983958602",
       "content": "明天是变盘日也是上车日。\n早盘冲高回落，低点4017之上。\n明天是大喜的日子，也是外资捣乱的日子，去年九三阅兵，当天大跳水，军工跌成狗，大家还记得吧。\n明天大概率也是冲高回落。\n不过，争取上车，后面指数要加速了。\n科技要出货！！！\n白俄老卢来了，大概率欧洲战事要扩大了。\n美伊还要干！\n日本也要闹事！\n大概全球股市几个月后要崩。",
       "publish_time": 1782820686,
       "publish_date": "2026-06-30 19:58",
-      "url": "https://m.toutiao.com/w/1869422983958602/?app=toutiao_web&timestamp=1787291121&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1869422983958602/?app=toutiao_web&timestamp=1788019816&use_new_style=1",
       "digg_count": 44,
       "comment_count": 5,
-      "read_count": 114322
+      "read_count": 114335
     },
     {
       "post_id": "1869379134306315",
       "content": "泥玛，涨的全跟长鑫存储上市相关。看来科技退潮是长鑫上市那天冲高回落开始。那天相当于2024/10/8。\n\n预测一下，明天7/1，大盘有探底。外资喜欢在重要大喜的日子搞事情。",
       "publish_time": 1782778868,
       "publish_date": "2026-06-30 08:21",
-      "url": "https://m.toutiao.com/w/1869379134306315/?app=toutiao_web&timestamp=1787291121&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1869379134306315/?app=toutiao_web&timestamp=1788019816&use_new_style=1",
       "digg_count": 9,
       "comment_count": 10,
-      "read_count": 19082
+      "read_count": 19083
     },
     {
       "post_id": "1868605355387017",
       "content": "目前科技行情有一个基础：美国投入大量资金发展人工智能，中美产业链深度融合，美国对我们的代工大量采购，比如光模块。\n如果接下来，美国在缩表的基础上，加息，美国科技股暴跌，那么全球将进入衰退。\n由于高油价，通货膨胀，日欧已经加息，如果全球需求减少，对我国这样一个以出口为导向的国家来说，那就是雪上加霜。\n所以，这次科技股冲顶后，回调到哪里，不敢想。",
       "publish_time": 1782040935,
       "publish_date": "2026-06-21 19:22",
-      "url": "https://m.toutiao.com/w/1868605355387017/?app=toutiao_web&timestamp=1787291121&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1868605355387017/?app=toutiao_web&timestamp=1788019816&use_new_style=1",
       "digg_count": 1,
       "comment_count": 2,
-      "read_count": 4559
+      "read_count": 4561
     },
     {
       "post_id": "1868565940498506",
       "content": "未来一个月，炒作方向是科技的中报行情。\nmlcc，玻璃基板，电容电感，小金属，先进封装，存储芯片，光模块，探针钻针，半岛体材料。\n8-9日科技歇一歇。\n10-11月，科技最后疯狂。\n全球股市同时冲顶。",
       "publish_time": 1782003346,
       "publish_date": "2026-06-21 08:55",
-      "url": "https://m.toutiao.com/w/1868565940498506/?app=toutiao_web&timestamp=1787291121&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1868565940498506/?app=toutiao_web&timestamp=1788019816&use_new_style=1",
       "digg_count": 34,
       "comment_count": 2,
-      "read_count": 58558
+      "read_count": 58575
     },
     {
       "post_id": "1868222341156106",
       "content": "下周抄底！\n方向：科技\n海峡通了，星链未来2个月拉高套现。\n未来2个月，科技股狂欢！\n是不是牛市最后的疯狂，没人知道。\n方向上，拒绝老登。",
       "publish_time": 1781675664,
       "publish_date": "2026-06-17 13:54",
-      "url": "https://m.toutiao.com/w/1868222341156106/?app=toutiao_web&timestamp=1787291121&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1868222341156106/?app=toutiao_web&timestamp=1788019816&use_new_style=1",
       "digg_count": 4,
       "comment_count": 4,
-      "read_count": 6661
+      "read_count": 6662
     },
     {
       "post_id": "1866779280228490",
       "content": "很显然，在外围科技股大涨的情况下，我们先跌为敬，就是在规避风险，也就是日韩美台欧，接下来科技股会大跌！\n因为，海峡未来3个月都是封闭的，这次要拉爆很多国家，为美联储接下来的降息，指明了抄底方向。\n那个，这个过程至少三个月，也就是6/7/8，三个月科技不妙！\n资源（油煤电粮矿）是接下来重点方向。",
       "publish_time": 1780299454,
       "publish_date": "2026-06-01 15:37",
-      "url": "https://m.toutiao.com/w/1866779280228490/?app=toutiao_web&timestamp=1787291121&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1866779280228490/?app=toutiao_web&timestamp=1788019816&use_new_style=1",
       "digg_count": 8,
       "comment_count": 2,
-      "read_count": 21580
+      "read_count": 21581
     },
     {
       "post_id": "1866658102886538",
       "content": "其实A股只有两个主线：科技+能源。\n科技目前集中在硬科技，光模块/半岛体/芯片/pcb/算力，还有材料/设备，将来会不会有软件，不得而知。主要是因为有业绩增长！\n脉冲行情还有机器人/商业航天。\n军工暂时没动。\n资源集中在有色/电力/煤炭/石油。\n\n接下来半年，接替科技的大主线，我更看好有色！",
       "publish_time": 1780183890,
       "publish_date": "2026-05-31 07:31",
-      "url": "https://m.toutiao.com/w/1866658102886538/?app=toutiao_web&timestamp=1787291121&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1866658102886538/?app=toutiao_web&timestamp=1788019816&use_new_style=1",
       "digg_count": 8,
       "comment_count": 4,
-      "read_count": 5885
+      "read_count": 5886
     },
     {
       "post_id": "1866159700960266",
       "content": "今天关注了一个，铂科**新材。",
       "publish_time": 1779708577,
       "publish_date": "2026-05-25 19:29",
-      "url": "https://m.toutiao.com/w/1866159700960266/?app=toutiao_web&timestamp=1787291121&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1866159700960266/?app=toutiao_web&timestamp=1788019818&use_new_style=1",
       "digg_count": 2,
       "comment_count": 1,
-      "read_count": 4077
+      "read_count": 4078
     },
     {
       "post_id": "1865528361387339",
       "content": "半导体设备：北方华C、中微、拓荆、盛美\n封测：长电（放弃了通富）\n材料：华海诚K、兴森\n还有：国民技S、优讯\n这是未来几个月我关注的重点。\n不作为推荐，只是我自己的兴趣，买卖赢亏，后果自负。",
       "publish_time": 1779106484,
       "publish_date": "2026-05-18 20:14",
-      "url": "https://m.toutiao.com/w/1865528361387339/?app=toutiao_web&timestamp=1787291121&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1865528361387339/?app=toutiao_web&timestamp=1788019818&use_new_style=1",
       "digg_count": 4,
       "comment_count": 0,
-      "read_count": 6564
+      "read_count": 6566
     },
     {
       "post_id": "1865506203372683",
       "content": "明天开始，指数可能顶不住，向下半个月。\n科技可能有调整。。\n6月初，黄金坑出来，还是科技？\n半岛体设备、材料、封测，还有长鑫上市。",
       "publish_time": 1779085353,
       "publish_date": "2026-05-18 14:22",
-      "url": "https://m.toutiao.com/w/1865506203372683/?app=toutiao_web&timestamp=1787291121&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1865506203372683/?app=toutiao_web&timestamp=1788019818&use_new_style=1",
       "digg_count": 13,
       "comment_count": 0,
-      "read_count": 36064
+      "read_count": 36075
     },
     {
       "post_id": "1865271934265482",
       "content": "看来老M来签的2000亿美元的大单框架，是与老M对湾湾是否军售挂沟的，也就是要求停止军售。",
       "publish_time": 1778861936,
       "publish_date": "2026-05-16 00:18",
-      "url": "https://m.toutiao.com/w/1865271934265482/?app=toutiao_web&timestamp=1787291121&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1865271934265482/?app=toutiao_web&timestamp=1788019818&use_new_style=1",
       "digg_count": 0,
       "comment_count": 0,
-      "read_count": 4047,
+      "read_count": 4049,
       "title": "看来老M来签的2000亿美元的大单框架，是与老M对湾湾是否军售挂沟的，也就是要求停止军售。"
     },
     {
@@ -1248,10 +1290,10 @@
       "content": "下午2点后会跳水吗？\n\n都认为强就不是好事！",
       "publish_time": 1778648979,
       "publish_date": "2026-05-13 13:09",
-      "url": "https://m.toutiao.com/w/1865048631952394/?app=toutiao_web&timestamp=1787291123&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1865048631952394/?app=toutiao_web&timestamp=1788019818&use_new_style=1",
       "digg_count": 1,
       "comment_count": 0,
-      "read_count": 3864,
+      "read_count": 3866,
       "title": "下午2点后会跳水吗？\n\n都认为强就不是好事！"
     },
     {
@@ -1259,40 +1301,40 @@
       "content": "5-6月，科技冲顶\n7-8月，油价暴走、粮食涨价\n9-12月，储能、有色接力\n抓住接下来的科技冲顶，不要犹豫，要信早信。\n强者恒强，无成交量的垃圾股不要碰。",
       "publish_time": 1777502144,
       "publish_date": "2026-04-30 06:35",
-      "url": "https://m.toutiao.com/w/1863846088949769/?app=toutiao_web&timestamp=1787291123&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1863846088949769/?app=toutiao_web&timestamp=1788019818&use_new_style=1",
       "digg_count": 7,
       "comment_count": 1,
-      "read_count": 6366
+      "read_count": 6368
     },
     {
       "post_id": "1862683610363914",
       "content": "光模块业绩好，4月主升浪。但是，机遇与风险并存，一旦撤梯子，万劫不复。\n22日甚至24日下周五前，似乎风险不大。\n27-29日，日美都议息会议，谨慎点更好。\n5-6月，要么牛市狂欢，要么一地鸡毛。\n滞涨+衰退，是确定的！",
       "publish_time": 1776393518,
       "publish_date": "2026-04-17 10:38",
-      "url": "https://m.toutiao.com/w/1862683610363914/?app=toutiao_web&timestamp=1787291123&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1862683610363914/?app=toutiao_web&timestamp=1788019818&use_new_style=1",
       "digg_count": 10,
       "comment_count": 0,
-      "read_count": 20130
+      "read_count": 20136
     },
     {
       "post_id": "1861045600568715",
       "content": "今年围绕战争线。\n油气—氦气—硫磺—种业—猪肉。\n恶性通货膨胀在路上。石油肯定200以上，假如300呢？",
       "publish_time": 1774831391,
       "publish_date": "2026-03-30 08:43",
-      "url": "https://m.toutiao.com/w/1861045600568715/?app=toutiao_web&timestamp=1787291123&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1861045600568715/?app=toutiao_web&timestamp=1788019818&use_new_style=1",
       "digg_count": 5,
       "comment_count": 0,
-      "read_count": 4945
+      "read_count": 4947
     },
     {
       "post_id": "1859792675224587",
       "content": "贵金属—工业金属—能源化工—农产品。\n通货膨胀的传导路径。",
       "publish_time": 1773636508,
       "publish_date": "2026-03-16 12:48",
-      "url": "https://m.toutiao.com/w/1859792675224587/?app=toutiao_web&timestamp=1787291123&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1859792675224587/?app=toutiao_web&timestamp=1788019818&use_new_style=1",
       "digg_count": 5,
       "comment_count": 1,
-      "read_count": 6872,
+      "read_count": 6874,
       "title": "贵金属—工业金属—能源化工—农产品。\n通货膨胀的传导路径。"
     },
     {
@@ -1300,40 +1342,40 @@
       "content": "油价涨，降息空间没了，科技承压。",
       "publish_time": 1772878692,
       "publish_date": "2026-03-07 18:18",
-      "url": "https://m.toutiao.com/w/1858998047472841/?app=toutiao_web&timestamp=1787291123&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1858998047472841/?app=toutiao_web&timestamp=1788019818&use_new_style=1",
       "digg_count": 4,
       "comment_count": 1,
-      "read_count": 6766
+      "read_count": 6768
     },
     {
       "post_id": "1858782716764171",
       "content": "科技股暂时没戏了，全面转入防守。\n1、纳斯达克已高，在震荡调整中\n2、中东暂时停不了，石油涨价\n3、油价涨，封死国内降息空间\n4、科技阶段已高\n5、外围流动性下降，对估值高的科技股冲击大\n\n贵金属、工业金属、能源化工、粮油。\n电力—特高压，确定性高",
       "publish_time": 1772673336,
       "publish_date": "2026-03-05 09:15",
-      "url": "https://m.toutiao.com/w/1858782716764171/?app=toutiao_web&timestamp=1787291123&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1858782716764171/?app=toutiao_web&timestamp=1788019818&use_new_style=1",
       "digg_count": 3,
       "comment_count": 0,
-      "read_count": 7487
+      "read_count": 7489
     },
     {
       "post_id": "1858522108384266",
       "content": "上午卖了黄金\n买了科技\n高澜+有研",
       "publish_time": 1772424801,
       "publish_date": "2026-03-02 12:13",
-      "url": "https://m.toutiao.com/w/1858522108384266/?app=toutiao_web&timestamp=1787291123&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1858522108384266/?app=toutiao_web&timestamp=1788019818&use_new_style=1",
       "digg_count": 8,
       "comment_count": 0,
-      "read_count": 10332
+      "read_count": 10334
     },
     {
       "post_id": "1858421750552794",
       "content": "今天黄金国际暗金价格冲高回落，可能是卖黄金，回补美股大低开的头寸。",
       "publish_time": 1772329092,
       "publish_date": "2026-03-01 09:38",
-      "url": "https://m.toutiao.com/w/1858421750552794/?app=toutiao_web&timestamp=1787291123&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1858421750552794/?app=toutiao_web&timestamp=1788019819&use_new_style=1",
       "digg_count": 4,
       "comment_count": 0,
-      "read_count": 8356,
+      "read_count": 8358,
       "title": "今天黄金国际暗金价格冲高回落，可能是卖黄金，回补美股大低开的头寸。"
     },
     {
@@ -1341,50 +1383,50 @@
       "content": "28日小意外真的发生了。\n上周四晚上预测周六小意外发生了，以色列已经小干伊朗。转述星象大师鑫哥说的，28日周六，火星刑天王星，这个星座容易发生火星冲突。\n所以，我周五一早买了黄金，当天下午黄金股起来，吃了一口小肉。\n那个下周一怎么办？\n下周一低开跑不掉了，我打算卖了黄金，买科技！具体买什么，已经准备好了，后面会说出来。\n因为暂时不会大打。\n我预判3月5日或者6日晚上有大利好，会不会降息？",
       "publish_time": 1772261132,
       "publish_date": "2026-02-28 14:45",
-      "url": "https://m.toutiao.com/w/1858350489035913/?app=toutiao_web&timestamp=1787291123&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1858350489035913/?app=toutiao_web&timestamp=1788019819&use_new_style=1",
       "digg_count": 13,
       "comment_count": 11,
-      "read_count": 15295
+      "read_count": 15337
     },
     {
       "post_id": "1858248548305930",
       "content": "非常担心2026年行情复制美股1973-1974年走势。\n如果纳斯达克接下来10-20%回调空间，对我们的科技绝对有影响。\n那么，黄金和小金属涨价就是最强主线，因为全球表现为滞涨！\n老美通过通货膨胀转移债务！\n哪些更可能涨价？\n\n资源！",
       "publish_time": 1772163914,
       "publish_date": "2026-02-27 11:45",
-      "url": "https://m.toutiao.com/w/1858248548305930/?app=toutiao_web&timestamp=1787291123&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1858248548305930/?app=toutiao_web&timestamp=1788019819&use_new_style=1",
       "digg_count": 7,
       "comment_count": 1,
-      "read_count": 9765
+      "read_count": 9766
     },
     {
       "post_id": "1858243420625225",
       "content": "今天是诱多！\n英伟达昨晚上大跌-5%+，今天大A不跟，都以为天晴了雨停了，大A又行了。\n越是这个时候，越小心，因为券商不表态，没有哪个主力敢表态！\n没有主线，等待外围利空出尽，标志就是正式官方宣布特特哪天来。\n不宣布，就没有行情。",
       "publish_time": 1772159024,
       "publish_date": "2026-02-27 10:23",
-      "url": "https://m.toutiao.com/w/1858243420625225/?app=toutiao_web&timestamp=1787291123&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1858243420625225/?app=toutiao_web&timestamp=1788019819&use_new_style=1",
       "digg_count": 7,
       "comment_count": 5,
-      "read_count": 20333
+      "read_count": 20334
     },
     {
       "post_id": "1858232222582795",
       "content": "今天准确买点黄金股。\n昨天运气好，看到昆仑万w打到霜体下沿，5周线30日线不破，华胜涨停不跟，事出反常必有妖，果断买入，今天高开确定，不封板减半。\n买黄金的逻辑，赌周六美对伊朗警告性袭击。\n周日讲依据。",
       "publish_time": 1772148344,
       "publish_date": "2026-02-27 07:25",
-      "url": "https://m.toutiao.com/w/1858232222582795/?app=toutiao_web&timestamp=1787291124&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1858232222582795/?app=toutiao_web&timestamp=1788019819&use_new_style=1",
       "digg_count": 2,
       "comment_count": 0,
-      "read_count": 7507
+      "read_count": 7509
     },
     {
       "post_id": "1858202702186506",
       "content": "英伟达果然大跌，明天硬科技麻烦了。\n晚上昆仑万w控股的欧朋美股大涨，叠加华胜明天AI应用值得期待。",
       "publish_time": 1772120191,
       "publish_date": "2026-02-26 23:36",
-      "url": "https://m.toutiao.com/w/1858202702186506/?app=toutiao_web&timestamp=1787291124&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1858202702186506/?app=toutiao_web&timestamp=1788019819&use_new_style=1",
       "digg_count": 47,
       "comment_count": 4,
-      "read_count": 210473,
+      "read_count": 210478,
       "title": "英伟达果然大跌，明天硬科技麻烦了。\n晚上昆仑万w控股的欧朋美股大涨，叠加华胜明天AI应用值得期待。"
     },
     {
@@ -1392,20 +1434,20 @@
       "content": "津巴布韦的锂矿不出口这个事不一定简单。\n有人预测特没谱搞定委内瑞拉老马后，下一步，手将伸向非洲。\nA股资源股，要查一下，是不是国外的矿山占比高，是自有矿山还是来料加工。\n风险要归避，否则，突发情况来了冰火两重天。",
       "publish_time": 1772110957,
       "publish_date": "2026-02-26 21:02",
-      "url": "https://m.toutiao.com/w/1858193019278346/?app=toutiao_web&timestamp=1787291124&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1858193019278346/?app=toutiao_web&timestamp=1788019819&use_new_style=1",
       "digg_count": 14,
       "comment_count": 0,
-      "read_count": 53579
+      "read_count": 53581
     },
     {
       "post_id": "1858164306400265",
       "content": "大盘下周初要跌，周六有突发不利消息。\n预计3月5日再上车。\n方向：科技！",
       "publish_time": 1772083574,
       "publish_date": "2026-02-26 13:26",
-      "url": "https://m.toutiao.com/w/1858164306400265/?app=toutiao_web&timestamp=1787291124&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1858164306400265/?app=toutiao_web&timestamp=1788019819&use_new_style=1",
       "digg_count": 36,
       "comment_count": 8,
-      "read_count": 318084,
+      "read_count": 318085,
       "title": "大盘下周初要跌，周六有突发不利消息。\n预计3月5日再上车。\n方向：科技！"
     },
     {
@@ -1413,71 +1455,71 @@
       "content": "这几天重点关注避险的黄金和油气。\n科技重点关注液冷。\n指数上不去，因为中东，还因为纳斯达克不稳。\n特特关税牌费了，会不会在中东造牌。\n所以，本周六最危险，没事的话，下周就是科技股推指数创新高。\n如果有事，也是砸出黄金坑，回补3977缺口再上。\n明天大盘风险大，今晚英伟达公布业绩，万一不符预期，科技股明天爬窝。那么，黄金要连涨几天了。",
       "publish_time": 1771909010,
       "publish_date": "2026-02-24 12:56",
-      "url": "https://m.toutiao.com/w/1857981261865289/?app=toutiao_web&timestamp=1787291124&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1857981261865289/?app=toutiao_web&timestamp=1788019819&use_new_style=1",
       "digg_count": 4,
       "comment_count": 0,
-      "read_count": 7399
+      "read_count": 7400
     },
     {
       "post_id": "1857276368344265",
       "content": "恒生科技和腾讯、寒王的走势彻底歇菜，其实已经表明大主力已经提裤子跑路了。\n3月行情大小取决于开年几天挖坑大小，如果挖到3800，起码有300点空间，3800-4100，4100点之上纯属忽悠，大概率到不了4150，因为中东局势，没有哪个主力费力不讨好，把自己套住。而且解救4190需要放量40000亿。除非特朗普确定4月来我们这，伊朗不打。\n目前的情况是，特朗普11月中期选举，美股需要一个繁荣，需要降息，那么，全球股市在高位，老美不傻，很多资金等着老美解套。\n那么，有一种办法，老美的股市短期内快速下跌，锁住筹码，不让资金离开美国。\n需要一个触发条件，比如，中东干仗，把石油价格干上去，日本通涨，日本加息，全球的流动性抽干，这个时候，美国股市就锁仓了。\n\n那么，4-6月就是今年最大的风险，指数很有可能回到3500点的，甚至3200点。重新来一次千股跌停！\n下半年，到年底，大概率本轮牛市高点。\n至于2027年，高位横盘！滞涨！\n2028-2030年，全完蛋！因为世界经济大萧条来了。",
       "publish_time": 1771236771,
       "publish_date": "2026-02-16 18:12",
-      "url": "https://m.toutiao.com/w/1857276368344265/?app=toutiao_web&timestamp=1787291124&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1857276368344265/?app=toutiao_web&timestamp=1788019819&use_new_style=1",
       "digg_count": 31,
-      "comment_count": 4,
-      "read_count": 18315
+      "comment_count": 3,
+      "read_count": 18325
     },
     {
       "post_id": "1856910529470474",
-      "content": "有专家预测，美股2月18日开始快速下跌，我们大A24日开盘会跪吗？\n\n科技股巨震",
+      "content": "有专家预测，美股2月18日开始快速下跌，我们大A24日开盘会跪吗？",
       "publish_time": 1770887879,
       "publish_date": "2026-02-12 17:17",
-      "url": "https://m.toutiao.com/w/1856910529470474/?app=toutiao_web&timestamp=1787291124&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1856910529470474/?app=toutiao_web&timestamp=1788019819&use_new_style=1",
       "digg_count": 0,
       "comment_count": 0,
-      "read_count": 5502,
-      "title": "有专家预测，美股2月18日开始快速下跌，我们大A24日开盘会跪吗？"
+      "read_count": 5504,
+      "title": "有专家预测，美股2月18日开始快速下跌，我们大A24日开盘会跪吗？\n\n科技股巨震"
     },
     {
       "post_id": "1856619320551497",
       "content": "今天指数冲过4100是高市早苗的原因。\n日本股市今天创历史新高，中国对标一下。\n预计明天也不会差，至于后天，各回各家，各找各妈。\n\n为什么？因为没有量，你给我一个上涨的理由。",
       "publish_time": 1770610161,
       "publish_date": "2026-02-09 12:09",
-      "url": "https://m.toutiao.com/w/1856619320551497/?app=toutiao_web&timestamp=1787291124&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1856619320551497/?app=toutiao_web&timestamp=1788019819&use_new_style=1",
       "digg_count": 0,
       "comment_count": 2,
-      "read_count": 3696
+      "read_count": 3698
     },
     {
       "post_id": "1851675445334027",
       "content": "湖北省的三资改革：\n国有资源资产化\n资产证券化\n资金杠杆化\n这是建立全国统一大市场，扩大内需的一种尝试，也是一个改革试点，那么，接下来A股的一个主线是：\n券商—多元金融—金融科技—创投。",
       "publish_time": 1765895314,
       "publish_date": "2025-12-16 22:28",
-      "url": "https://m.toutiao.com/w/1851675445334027/?app=toutiao_web&timestamp=1787291124&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1851675445334027/?app=toutiao_web&timestamp=1788019820&use_new_style=1",
       "digg_count": 7,
       "comment_count": 0,
-      "read_count": 5300
+      "read_count": 5302
     },
     {
       "post_id": "1850801612502026",
       "content": "你这水平害了2万粉丝",
       "publish_time": 1765061962,
       "publish_date": "2025-12-07 06:59",
-      "url": "https://m.toutiao.com/w/1850801612502026/?app=toutiao_web&timestamp=1787291124&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1850801612502026/?app=toutiao_web&timestamp=1788019820&use_new_style=1",
       "digg_count": 13,
       "comment_count": 0,
-      "read_count": 3706
+      "read_count": 3708
     },
     {
       "post_id": "1848359765823563",
       "content": "一直想不通为何11月14日周五或者17日周一，大A要变脸，原来美国政府重启会失败！",
       "publish_time": 1762733236,
       "publish_date": "2025-11-10 08:07",
-      "url": "https://m.toutiao.com/w/1848359765823563/?app=toutiao_web&timestamp=1787291124&use_new_style=1",
+      "url": "https://m.toutiao.com/w/1848359765823563/?app=toutiao_web&timestamp=1788019820&use_new_style=1",
       "digg_count": 27,
       "comment_count": 2,
-      "read_count": 4409
+      "read_count": 4411
     },
     {
       "post_id": "7183861867314577959",
@@ -1487,7 +1529,57 @@
       "url": "http://toutiao.com/group/7183861867314577959/?app=news_article",
       "digg_count": 0,
       "comment_count": 0,
-      "read_count": 46
+      "read_count": 47
+    },
+    {
+      "post_id": "1748714799826960",
+      "content": "化妆师在后台给模特补妆。",
+      "publish_time": 1667704391,
+      "publish_date": "2022-11-06 11:13",
+      "url": "https://m.toutiao.com/w/1748714799826960/?app=toutiao_web&timestamp=1788019820&use_new_style=1",
+      "digg_count": 82,
+      "comment_count": 0,
+      "read_count": 14606
+    },
+    {
+      "post_id": "1748713995729935",
+      "content": "逛逛上海进博会。",
+      "publish_time": 1667703624,
+      "publish_date": "2022-11-06 11:00",
+      "url": "https://m.toutiao.com/w/1748713995729935/?app=toutiao_web&timestamp=1788019820&use_new_style=1",
+      "digg_count": 16,
+      "comment_count": 0,
+      "read_count": 10928
+    },
+    {
+      "post_id": "1730532625640448",
+      "content": "医院到处是新冠重症，前去就医的老年有基础疾病的都会被感染，医护感染了，很多病人没人照顾，死亡率将大大提高，这点常识为什么没人理解。在美国，医学院校大一新生都在临床一线，很多医护感染了3-4次，很多医护辞职了。",
+      "publish_time": 1650364518,
+      "publish_date": "2022-04-19 18:35",
+      "url": "https://m.toutiao.com/w/1730532625640448/?app=toutiao_web&timestamp=1788019820&use_new_style=1",
+      "digg_count": 15,
+      "comment_count": 0,
+      "read_count": 14193
+    },
+    {
+      "post_id": "1717644137509888",
+      "content": "儿童医院可以是个儿童乐园。孩子们可以放松心情，忘却疾病。\n\n英国大奥蒙德街儿童医院GOSH。\n这里有：毛毛虫门诊、大黄蜂病房、花蝴蝶病房、小刺猬病房、迪士尼游乐园、充满童话色彩的梦幻环境，使孩子们忘了身在何处。\n小患者可在病床的小电视上选看自己热爱的动画片。病房的儿童游戏室是孩子们的乐园。\n这里专业的游戏专家将带领您的孩子在住院期间进行有趣的游戏活动，使孩子和家长能够减轻压力、放松心情。",
+      "publish_time": 1638073098,
+      "publish_date": "2021-11-28 12:18",
+      "url": "https://m.toutiao.com/w/1717644137509888/?app=toutiao_web&timestamp=1788019820&use_new_style=1",
+      "digg_count": 10,
+      "comment_count": 0,
+      "read_count": 13861
+    },
+    {
+      "post_id": "6959036686391116326",
+      "content": "做对60个选择题，你的护患沟通能力没问题——沟通技巧培训真题",
+      "publish_time": 1620278494,
+      "publish_date": "2021-05-06 13:21",
+      "url": "http://toutiao.com/group/6959036686391116326/?app=news_article",
+      "digg_count": 0,
+      "comment_count": 1,
+      "read_count": 2079
     }
   ]
 }

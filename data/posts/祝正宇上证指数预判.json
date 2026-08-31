@@ -1,0 +1,2251 @@
+{
+  "scrape_time": "2026-08-30 12:20:41",
+  "source_url": "https://www.toutiao.com/w/1874740342544516/",
+  "stop_reason": "since",
+  "user_info": {
+    "followers": "7718",
+    "digg_count": "1.1万",
+    "following": "10",
+    "name": "祝正宇上证指数预判",
+    "user_id": "2664864387970791",
+    "description": "沪深300ETF基金及沪深300ETF期权投资人。有着稳扎稳打，步步为营的行事风格，擅长波段操作。人生信条：水滴石穿，凭实力说话。"
+  },
+  "total_posts": 223,
+  "time_range": {
+    "earliest": "2024-02-17",
+    "latest": "2026-08-30"
+  },
+  "posts": [
+    {
+      "post_id": "7138142961820467456",
+      "content": "{'answer': {'abstract_text': '从心理学的角度说几句：打坐禅定是为了消除杂念，得到更好的休息，深度睡眠是在无意识的状态下得到最高级别的休息。普通人靠高质量的睡眠得到休息补充，常年打坐禅定的人可以用打坐禅定在白天得到补充休息。既然两者的目的都是休息补充，那么夜间睡眠就是更好的选择，因为深度睡眠是完全无意识的，而且睡眠是轻松很舒服的。都是为了休息补充，为什么要在夜间不睡觉而选择打坐禅定这样有难度的事情做？而且，打坐禅定至少有打坐的意识存在，不能称作完全无意识休息。两者相比，高质量的睡眠比打坐禅定更好。有谁听说过老子和释迦牟尼不睡觉？如果有严重的睡眠障碍就当别论了，躺着睡不着很难受或者睡着了不断做梦得不到休息补充，倒不如打坐禅定更舒服。', 'abstract_text_ctrl': {}, 'ansid': '7138142961820467456', 'answer_detail_cdn': '/wenda/v2/cdn/answer/detail/00000000./00000000/1684914529/7138142961820467456.txt', 'answer_detail_schema': 'sslocal://wenda_detail?ansid=7138142961820467456&answer_detail_cdn=%2Fwenda%2Fv2%2Fcdn%2Fanswer%2Fdetail%2F00000000.%2F00000000%2F1684914529%2F7138142961820467456.txt&answer_type=0&api_param=%7B%22answer_list%22%3A%5B7138142961820467456%5D%2C%22answer_type%22%3A%22combine_answer%22%2C%22enter_ansid%22%3A%227138142961820467456%22%2C%22enter_from%22%3A%22click_pgc%22%2C%22from%22%3A%22outer%22%2C%22has_more%22%3Atrue%2C%22in_offset%22%3A0%2C%22next_offset%22%3A1%2C%22origin_from%22%3A%22click_pgc%22%7D&enable_detail_cdn=0&gd_ext_json=%7B%22enter_from%22%3A%22click_pgc%22%2C%22ansid%22%3A%227138142961820467456%22%2C%22enterfrom_answerid%22%3A%227138142961820467456%22%2C%22parent_enterfrom%22%3A%22click_pgc%22%2C%22qid%22%3A%226927628913435230464%22%2C%22category_name%22%3A%22profile_all%22%2C%22parent_categoryname%22%3A%22profile_all%22%2C%22author_id%22%3A%222664864387970791%22%2C%22article_type%22%3A%22wenda%22%2C%22log_pb%22%3A%7B%22impr_id%22%3A%2220260830122041F3C2B8B55DD90675A7BB%22%2C%22is_following%22%3A%220%22%2C%22parent_categoryname%22%3A%22profile_all%22%2C%22parent_enterfrom%22%3A%22click_pgc%22%2C%22answer_card_type%22%3A%22%22%7D%2C%22from_gid%22%3A%22%22%2C%22with_avatar%22%3A%220%22%2C%22hidden_ans%22%3A%22%22%7D&is_show_bury=1&video_type=0', 'answer_list_schema': 'sslocal://wenda_list?ansid=7138142961820467456&api_param=%7B%22answer_list%22%3A%5B7138142961820467456%5D%2C%22answer_type%22%3A%22combine_answer%22%2C%22enter_ansid%22%3A%227138142961820467456%22%2C%22enter_from%22%3A%22click_pgc%22%2C%22from%22%3A%22outer%22%2C%22has_more%22%3Atrue%2C%22in_offset%22%3A0%2C%22leading_answer_default_lines%22%3A20%2C%22leading_answer_max_lines%22%3A20%2C%22next_offset%22%3A1%2C%22origin_from%22%3A%22click_pgc%22%7D&gd_ext_json=%7B%22enter_from%22%3A%22click_pgc%22%2C%22ansid%22%3A%227138142961820467456%22%2C%22enterfrom_answerid%22%3A%227138142961820467456%22%2C%22parent_enterfrom%22%3A%22click_pgc%22%2C%22qid%22%3A%226927628913435230464%22%2C%22category_name%22%3A%22profile_all%22%2C%22parent_categoryname%22%3A%22profile_all%22%2C%22author_id%22%3A%222664864387970791%22%2C%22article_type%22%3A%22wenda%22%2C%22log_pb%22%3A%7B%22impr_id%22%3A%2220260830122041F3C2B8B55DD90675A7BB%22%2C%22is_following%22%3A%220%22%2C%22parent_categoryname%22%3A%22profile_all%22%2C%22parent_enterfrom%22%3A%22click_pgc%22%2C%22answer_card_type%22%3A%22%22%7D%2C%22from_gid%22%3A%22%22%2C%22with_avatar%22%3A%220%22%2C%22hidden_ans%22%3A%22%22%7D&qid=6927628913435230464', 'answer_type': 0, 'brow_count': 0, 'comment_count': 5, 'comment_schema': 'sslocal://wenda_detail?ansid=7138142961820467456&answer_type=0&api_param=%7B%22answer_list%22%3A%5B7138142961820467456%5D%2C%22answer_type%22%3A%22combine_answer%22%2C%22enter_ansid%22%3A%227138142961820467456%22%2C%22enter_from%22%3A%22click_pgc%22%2C%22from%22%3A%22outer%22%2C%22has_more%22%3Atrue%2C%22in_offset%22%3A0%2C%22next_offset%22%3A1%2C%22origin_from%22%3A%22click_pgc%22%7D&gd_ext_json=%7B%22enter_from%22%3A%22click_pgc%22%2C%22ansid%22%3A%227138142961820467456%22%2C%22enterfrom_answerid%22%3A%227138142961820467456%22%2C%22parent_enterfrom%22%3A%22click_pgc%22%2C%22qid%22%3A%226927628913435230464%22%2C%22category_name%22%3A%22profile_all%22%2C%22parent_categoryname%22%3A%22profile_all%22%2C%22author_id%22%3A%222664864387970791%22%2C%22article_type%22%3A%22wenda%22%2C%22log_pb%22%3A%7B%22impr_id%22%3A%2220260830122041F3C2B8B55DD90675A7BB%22%2C%22is_following%22%3A%220%22%2C%22parent_categoryname%22%3A%22profile_all%22%2C%22parent_enterfrom%22%3A%22click_pgc%22%2C%22answer_card_type%22%3A%22%22%7D%2C%22from_gid%22%3A%22%22%2C%22with_avatar%22%3A%220%22%2C%22hidden_ans%22%3A%22%22%7D&is_jump_comment=1&show_write_comment_dialog=0&video_type=0', 'content_abstract': None, 'create_time': 1661983460, 'digg_count': 25, 'display_count': 0, 'enable_prefetch': True, 'enable_prefetch_cdn': False, 'forward_count': 0, 'img_ctrl': {}, 'interactive_data': {'comment_list': [], 'digg_user_list': [], 'reply_list': None, 'style_ctrls': {'ban_comment': 0, 'ban_face': 0, 'ban_pic_comment': 0, 'comment_entrance': 0, 'comment_show_more_schema': '', 'comment_show_more_text': '', 'digg_show_more_schema': '', 'digg_show_more_text': '', 'max_comment_line': 4, 'max_digg_line': 2, 'show_repost_entrance': 0, 'style_type': 3}}, 'is_digg': 0, 'large_image_list': [], 'max_lines': 20, 'origin_image_list': [], 'perm': {'can_ban_comment': 0, 'can_comment_answer': 1, 'can_delete_answer': 0, 'can_delete_comment': 0, 'can_digg_answer': 1, 'can_edit_answer': 0, 'can_post_answer': 1, 'can_share_answer': 1, 'delete_answer_tips': '', 'edit_answer_tips': '', 'share_answer_tips': '', 'show_delete_answer': 0, 'show_edit_answer': 0}, 'read_count': 0, 'report_option': '[{\"text\":\"答非所问\",\"type\":306},{\"text\":\"色情低俗\",\"type\":304},{\"text\":\"配图引起不适\",\"type\":311},{\"text\":\"旧闻重复\",\"type\":303},{\"text\":\"内容质量差\",\"type\":318}]', 'share_data': {'cover_image': {'height': 0, 'image_type': 0, 'uri': '', 'url': 'https://p3-sign.toutiaoimg.com/origin/18a300102cab5d8d0e05?_iz=102746&from=wenda&lk3s=112c5925&x-expires=1796774400&x-signature=pj0HFMfhWWcSaaU5qeoxMShZj%2Fk%3D', 'url_list': None, 'width': 0}, 'share_type': {'pyq': 0, 'qq': 0, 'qzone': 0, 'wx': 0}, 'share_url': 'http://toutiao.com/group/7138142961820467456/?iid=0&app=news_article', 'title': '打坐，禅定，可以代替睡眠吗？(祝正宇上证指数预判的回答)', 'token_type': 1}, 'show_count': 0, 'show_lines': 8, 'show_text': '', 'status': 0, 'thumb_image_list': [], 'user_repin': 0, 'video_type': '0'}, 'cell_layout_style': 0, 'comment_schema': 'sslocal://wenda_detail?ansid=7138142961820467456&answer_type=0&api_param=%7B%22answer_list%22%3A%5B7138142961820467456%5D%2C%22answer_type%22%3A%22combine_answer%22%2C%22enter_ansid%22%3A%227138142961820467456%22%2C%22enter_from%22%3A%22click_pgc%22%2C%22from%22%3A%22outer%22%2C%22has_more%22%3Atrue%2C%22in_offset%22%3A0%2C%22next_offset%22%3A1%2C%22origin_from%22%3A%22click_pgc%22%7D&gd_ext_json=%7B%22enter_from%22%3A%22click_pgc%22%2C%22ansid%22%3A%227138142961820467456%22%2C%22enterfrom_answerid%22%3A%227138142961820467456%22%2C%22parent_enterfrom%22%3A%22click_pgc%22%2C%22qid%22%3A%226927628913435230464%22%2C%22category_name%22%3A%22profile_all%22%2C%22parent_categoryname%22%3A%22profile_all%22%2C%22author_id%22%3A%222664864387970791%22%2C%22article_type%22%3A%22wenda%22%2C%22log_pb%22%3A%7B%22impr_id%22%3A%2220260830122041F3C2B8B55DD90675A7BB%22%2C%22is_following%22%3A%220%22%2C%22parent_categoryname%22%3A%22profile_all%22%2C%22parent_enterfrom%22%3A%22click_pgc%22%2C%22answer_card_type%22%3A%22%22%7D%2C%22from_gid%22%3A%22%22%2C%22with_avatar%22%3A%220%22%2C%22hidden_ans%22%3A%22%22%7D&is_jump_comment=1&show_write_comment_dialog=0&video_type=0', 'default_lines': 3, 'filter_words': [{'id': '8:0', 'is_selected': False, 'name': '看过了'}, {'id': '9:1', 'is_selected': False, 'name': '内容太水'}], 'hide_create_time': 0, 'hide_list_create_time': False, 'image_type': 0, 'jump_type': 1, 'layout_type': 0, 'max_lines': 6, 'question': {'answer_count_description': '0人回答了问题', 'answer_user_list': [{'avatar_url': 'https://sf1-cdn-tos.toutiaostatic.com/img/motor-img/7aec596d2ce95d5e7ee550df085df51c~300x300.image', 'is_following': 0, 'is_verify': 0, 'uname': '祝正宇上证指数预判', 'user_auth_info': '', 'user_id': '2664864387970791', 'user_schema': '', 'v_icon': ''}, {'avatar_url': 'https://p3-sign.toutiaoimg.com/origin/3791/5035712059?_iz=102746&from=wenda&lk3s=112c5925&x-expires=1796774400&x-signature=eyy7tPxRolfkb6ffRhx60PhRcII%3D', 'is_following': 0, 'is_verify': 0, 'uname': '', 'user_auth_info': '', 'user_id': '', 'user_schema': '', 'v_icon': ''}, {'avatar_url': 'https://p3-sign.toutiaoimg.com/origin/3791/5035712059?_iz=102746&from=wenda&lk3s=112c5925&x-expires=1796774400&x-signature=eyy7tPxRolfkb6ffRhx60PhRcII%3D', 'is_following': 0, 'is_verify': 0, 'uname': '', 'user_auth_info': '', 'user_id': '', 'user_schema': '', 'v_icon': ''}], 'can_delete': False, 'can_edit': False, 'can_not_delete_reason': '', 'can_not_edit_reason': '', 'common_card': [], 'concern_tag_list': [{'concern_id': '6213185671385844225', 'name': '睡眠', 'schema': 'sslocal://concern?api_param=%7B%22wenda_api_param%22%3A%7B%7D%7D&cid=6213185671385844225&tab_sname=wenda'}], 'content': {'content_rich_span': '{\"links\":[]}', 'large_image_list': [{'height': 1000, 'type': 1, 'uri': 'tos-cn-i-0022/47a88119c9f3454faecdf0caae45c940', 'url': 'https://p3-sign.toutiaoimg.com/tos-cn-i-0022/47a88119c9f3454faecdf0caae45c940~tplv-tt-shrink:640:0.jpeg?_iz=102746&bid=41&from=wenda&gid=7138142961820467456&lk3s=112c5925&x-expires=1790655641&x-signature=OJ4axqeEUQMzi8IpQ9OxmAllq8U%3D', 'url_list': [{'url': 'https://p3-sign.toutiaoimg.com/tos-cn-i-0022/47a88119c9f3454faecdf0caae45c940~tplv-tt-shrink:640:0.jpeg?_iz=102746&bid=41&from=wenda&gid=7138142961820467456&lk3s=112c5925&x-expires=1790655641&x-signature=OJ4axqeEUQMzi8IpQ9OxmAllq8U%3D'}, {'url': 'https://p3-sign.toutiaoimg.com/tos-cn-i-0022/47a88119c9f3454faecdf0caae45c940~tplv-tt-shrink:640:0.jpeg?_iz=102746&bid=41&from=wenda&gid=7138142961820467456&lk3s=112c5925&x-expires=1790655641&x-signature=OJ4axqeEUQMzi8IpQ9OxmAllq8U%3D'}, {'url': 'https://p3-sign.toutiaoimg.com/tos-cn-i-0022/47a88119c9f3454faecdf0caae45c940~tplv-tt-shrink:640:0.jpeg?_iz=102746&bid=41&from=wenda&gid=7138142961820467456&lk3s=112c5925&x-expires=1790655641&x-signature=OJ4axqeEUQMzi8IpQ9OxmAllq8U%3D'}], 'width': 686}], 'origin_image_list': [{'height': 1000, 'type': 1, 'uri': 'tos-cn-i-0022/47a88119c9f3454faecdf0caae45c940', 'url': 'https://p3-sign.toutiaoimg.com/tos-cn-i-0022/47a88119c9f3454faecdf0caae45c940~tplv-tt-origin.jpeg?_iz=102746&bid=41&from=wenda&gid=7138142961820467456&lk3s=112c5925&x-expires=1790655641&x-signature=r2xbocynKDCxiMYHKgc2nt7ENRY%3D', 'url_list': [{'url': 'https://p3-sign.toutiaoimg.com/tos-cn-i-0022/47a88119c9f3454faecdf0caae45c940~tplv-tt-origin.jpeg?_iz=102746&bid=41&from=wenda&gid=7138142961820467456&lk3s=112c5925&x-expires=1790655641&x-signature=r2xbocynKDCxiMYHKgc2nt7ENRY%3D'}, {'url': 'https://p3-sign.toutiaoimg.com/tos-cn-i-0022/47a88119c9f3454faecdf0caae45c940~tplv-tt-origin.jpeg?_iz=102746&bid=41&from=wenda&gid=7138142961820467456&lk3s=112c5925&x-expires=1790655641&x-signature=r2xbocynKDCxiMYHKgc2nt7ENRY%3D'}, {'url': 'https://p3-sign.toutiaoimg.com/tos-cn-i-0022/47a88119c9f3454faecdf0caae45c940~tplv-tt-origin.jpeg?_iz=102746&bid=41&from=wenda&gid=7138142961820467456&lk3s=112c5925&x-expires=1790655641&x-signature=r2xbocynKDCxiMYHKgc2nt7ENRY%3D'}], 'width': 686}], 'quest_large_image_list': [{'height': 1000, 'type': 1, 'uri': 'tos-cn-i-0022/47a88119c9f3454faecdf0caae45c940', 'url': 'https://p3-sign.toutiaoimg.com/tos-cn-i-0022/47a88119c9f3454faecdf0caae45c940~tplv-tt-shrink:640:0.jpeg?_iz=102746&bid=41&from=wenda&gid=7138142961820467456&lk3s=112c5925&x-expires=1790655641&x-signature=OJ4axqeEUQMzi8IpQ9OxmAllq8U%3D', 'url_list': [{'url': 'https://p3-sign.toutiaoimg.com/tos-cn-i-0022/47a88119c9f3454faecdf0caae45c940~tplv-tt-shrink:640:0.jpeg?_iz=102746&bid=41&from=wenda&gid=7138142961820467456&lk3s=112c5925&x-expires=1790655641&x-signature=OJ4axqeEUQMzi8IpQ9OxmAllq8U%3D'}, {'url': 'https://p3-sign.toutiaoimg.com/tos-cn-i-0022/47a88119c9f3454faecdf0caae45c940~tplv-tt-shrink:640:0.jpeg?_iz=102746&bid=41&from=wenda&gid=7138142961820467456&lk3s=112c5925&x-expires=1790655641&x-signature=OJ4axqeEUQMzi8IpQ9OxmAllq8U%3D'}, {'url': 'https://p3-sign.toutiaoimg.com/tos-cn-i-0022/47a88119c9f3454faecdf0caae45c940~tplv-tt-shrink:640:0.jpeg?_iz=102746&bid=41&from=wenda&gid=7138142961820467456&lk3s=112c5925&x-expires=1790655641&x-signature=OJ4axqeEUQMzi8IpQ9OxmAllq8U%3D'}], 'width': 686}], 'quest_origin_image_list': [{'height': 1000, 'type': 1, 'uri': 'tos-cn-i-0022/47a88119c9f3454faecdf0caae45c940', 'url': 'https://p3-sign.toutiaoimg.com/tos-cn-i-0022/47a88119c9f3454faecdf0caae45c940~tplv-tt-origin.jpeg?_iz=102746&bid=41&from=wenda&gid=7138142961820467456&lk3s=112c5925&x-expires=1790655641&x-signature=r2xbocynKDCxiMYHKgc2nt7ENRY%3D', 'url_list': [{'url': 'https://p3-sign.toutiaoimg.com/tos-cn-i-0022/47a88119c9f3454faecdf0caae45c940~tplv-tt-origin.jpeg?_iz=102746&bid=41&from=wenda&gid=7138142961820467456&lk3s=112c5925&x-expires=1790655641&x-signature=r2xbocynKDCxiMYHKgc2nt7ENRY%3D'}, {'url': 'https://p3-sign.toutiaoimg.com/tos-cn-i-0022/47a88119c9f3454faecdf0caae45c940~tplv-tt-origin.jpeg?_iz=102746&bid=41&from=wenda&gid=7138142961820467456&lk3s=112c5925&x-expires=1790655641&x-signature=r2xbocynKDCxiMYHKgc2nt7ENRY%3D'}, {'url': 'https://p3-sign.toutiaoimg.com/tos-cn-i-0022/47a88119c9f3454faecdf0caae45c940~tplv-tt-origin.jpeg?_iz=102746&bid=41&from=wenda&gid=7138142961820467456&lk3s=112c5925&x-expires=1790655641&x-signature=r2xbocynKDCxiMYHKgc2nt7ENRY%3D'}], 'width': 686}], 'quest_thumb_image_list': [{'height': 1000, 'type': 1, 'uri': 'tos-cn-i-0022/47a88119c9f3454faecdf0caae45c940', 'url': 'https://p3-sign.toutiaoimg.com/tos-cn-i-0022/47a88119c9f3454faecdf0caae45c940~tplv-tt-cs0:172:120.jpeg?_iz=102746&bid=41&from=wenda&gid=7138142961820467456&lk3s=112c5925&x-expires=1790655641&x-signature=Pj7nw8NqYRWxGAlfwq4CRY%2FXgHM%3D', 'url_list': [{'url': 'https://p3-sign.toutiaoimg.com/tos-cn-i-0022/47a88119c9f3454faecdf0caae45c940~tplv-tt-cs0:172:120.jpeg?_iz=102746&bid=41&from=wenda&gid=7138142961820467456&lk3s=112c5925&x-expires=1790655641&x-signature=Pj7nw8NqYRWxGAlfwq4CRY%2FXgHM%3D'}, {'url': 'https://p3-sign.toutiaoimg.com/tos-cn-i-0022/47a88119c9f3454faecdf0caae45c940~tplv-tt-cs0:172:120.jpeg?_iz=102746&bid=41&from=wenda&gid=7138142961820467456&lk3s=112c5925&x-expires=1790655641&x-signature=Pj7nw8NqYRWxGAlfwq4CRY%2FXgHM%3D'}, {'url': 'https://p3-sign.toutiaoimg.com/tos-cn-i-0022/47a88119c9f3454faecdf0caae45c940~tplv-tt-cs0:172:120.jpeg?_iz=102746&bid=41&from=wenda&gid=7138142961820467456&lk3s=112c5925&x-expires=1790655641&x-signature=Pj7nw8NqYRWxGAlfwq4CRY%2FXgHM%3D'}], 'width': 686}], 'rich_text': '', 'text': '', 'thumb_image_list': [{'height': 1000, 'type': 1, 'uri': 'tos-cn-i-0022/47a88119c9f3454faecdf0caae45c940', 'url': 'https://p3-sign.toutiaoimg.com/tos-cn-i-0022/47a88119c9f3454faecdf0caae45c940~tplv-tt-cs0:172:120.jpeg?_iz=102746&bid=41&from=wenda&gid=7138142961820467456&lk3s=112c5925&x-expires=1790655641&x-signature=Pj7nw8NqYRWxGAlfwq4CRY%2FXgHM%3D', 'url_list': [{'url': 'https://p3-sign.toutiaoimg.com/tos-cn-i-0022/47a88119c9f3454faecdf0caae45c940~tplv-tt-cs0:172:120.jpeg?_iz=102746&bid=41&from=wenda&gid=7138142961820467456&lk3s=112c5925&x-expires=1790655641&x-signature=Pj7nw8NqYRWxGAlfwq4CRY%2FXgHM%3D'}, {'url': 'https://p3-sign.toutiaoimg.com/tos-cn-i-0022/47a88119c9f3454faecdf0caae45c940~tplv-tt-cs0:172:120.jpeg?_iz=102746&bid=41&from=wenda&gid=7138142961820467456&lk3s=112c5925&x-expires=1790655641&x-signature=Pj7nw8NqYRWxGAlfwq4CRY%2FXgHM%3D'}, {'url': 'https://p3-sign.toutiaoimg.com/tos-cn-i-0022/47a88119c9f3454faecdf0caae45c940~tplv-tt-cs0:172:120.jpeg?_iz=102746&bid=41&from=wenda&gid=7138142961820467456&lk3s=112c5925&x-expires=1790655641&x-signature=Pj7nw8NqYRWxGAlfwq4CRY%2FXgHM%3D'}], 'width': 686}]}, 'count_statistics': [{'count_name': '收藏量', 'count_num': '143', 'count_type': 1}], 'create_time': 1612964359, 'follow_count': 0, 'is_anonymous': 0, 'is_public_edit': False, 'is_question_delete': 0, 'item_status': 20, 'main_question_info': '', 'need_user_name': False, 'nice_ans_count': 0, 'normal_ans_count': 0, 'public_edit_reasons': None, 'qid': '6927628913435230464', 'question_anonymous': 0, 'question_content': '{\"pic_uri_list\":[{\"uri\":\"tos-cn-i-0022/47a88119c9f3454faecdf0caae45c940\",\"width\":686,\"height\":1000,\"mimetype\":\"jpeg\",\"image_type\":1,\"web_uri\":\"tos-cn-i-0022/47a88119c9f3454faecdf0caae45c940\",\"type\":1}],\"text\":\"\"}', 'question_images': '', 'question_list_schema': 'sslocal://wenda_list?api_param=%7B%22enter_ansid%22%3A%227138142961820467456%22%2C%22enter_from%22%3A%22click_pgc%22%2C%22no_enter_ansid%22%3A%22%22%2C%22origin_from%22%3A%22click_pgc%22%7D&gd_ext_json=%7B%22enter_from%22%3A%22click_pgc%22%2C%22ansid%22%3A%227138142961820467456%22%2C%22enterfrom_answerid%22%3A%227138142961820467456%22%2C%22parent_enterfrom%22%3A%22click_pgc%22%2C%22qid%22%3A%226927628913435230464%22%2C%22category_name%22%3A%22profile_all%22%2C%22parent_categoryname%22%3A%22profile_all%22%2C%22author_id%22%3A%222664864387970791%22%2C%22article_type%22%3A%22wenda%22%2C%22log_pb%22%3A%7B%22impr_id%22%3A%2220260830122041F3C2B8B55DD90675A7BB%22%2C%22is_following%22%3A%220%22%2C%22parent_categoryname%22%3A%22profile_all%22%2C%22parent_enterfrom%22%3A%22click_pgc%22%2C%22answer_card_type%22%3A%22%22%7D%2C%22from_gid%22%3A%22%22%2C%22with_avatar%22%3A%220%22%2C%22hidden_ans%22%3A%22%22%7D&qTitle=%E6%89%93%E5%9D%90%EF%BC%8C%E7%A6%85%E5%AE%9A%EF%BC%8C%E5%8F%AF%E4%BB%A5%E4%BB%A3%E6%9B%BF%E7%9D%A1%E7%9C%A0%E5%90%97%EF%BC%9F&qid=6927628913435230464', 'question_public_edit_reasons': '', 'question_tags': '[{\"concern_id\":6213185671385844225,\"name\":\"睡眠\"}]', 'repost_params': {'cover_url': '', 'fw_id': 6927628913435230000, 'fw_id_type': 1026, 'fw_user_id': 2304228565723667, 'opt_id': 6927628913435230000, 'opt_id_type': 1026, 'repost_type': 218, 'title': '打坐，禅定，可以代替睡眠吗？'}, 'show_count': 0, 'show_delete': False, 'show_edit': False, 'show_text': '阅读', 'status': 0, 'tips': {'tips_button_text': '', 'tips_schema': '', 'tips_text': '', 'tips_type': 0}, 'title': '打坐，禅定，可以代替睡眠吗？', 'title_ctrl': {}, 'user_repin': 0, 'wenda_qid': 6927628913435230000, 'wenda_qtitle': '打坐，禅定，可以代替睡眠吗？', 'write_answer_schema': 'sslocal://wenda_post?api_param=%7B%22enter_from%22%3A%22click_pgc%22%2C%22origin_from%22%3A%22click_pgc%22%7D&gd_ext_json=%7B%22enter_from%22%3A%22click_pgc%22%2C%22ansid%22%3A%22%22%2C%22enterfrom_answerid%22%3A%22%22%2C%22parent_enterfrom%22%3A%22click_pgc%22%2C%22qid%22%3A%226927628913435230464%22%2C%22category_name%22%3A%22profile_all%22%2C%22parent_categoryname%22%3A%22profile_all%22%2C%22log_pb%22%3A%7B%22impr_id%22%3A%2220260830122041F3C2B8B55DD90675A7BB%22%2C%22parent_categoryname%22%3A%22profile_all%22%2C%22parent_enterfrom%22%3A%22click_pgc%22%2C%22answer_card_type%22%3A%22%22%7D%2C%22from_gid%22%3A%22%22%2C%22with_avatar%22%3A%22%22%2C%22hidden_ans%22%3A%22%22%7D&qTitle=%E6%89%93%E5%9D%90%EF%BC%8C%E7%A6%85%E5%AE%9A%EF%BC%8C%E5%8F%AF%E4%BB%A5%E4%BB%A3%E6%9B%BF%E7%9D%A1%E7%9C%A0%E5%90%97%EF%BC%9F&qid=6927628913435230464'}, 'rec_reason_ctrl': {}, 'recommend_reason': '回答了问题', 'repost_params': {'cover_url': 'https://sf1-cdn-tos.toutiaostatic.com/img/motor-img/7aec596d2ce95d5e7ee550df085df51c~300x300.image', 'fw_id': 7138142961820467000, 'fw_id_type': 1025, 'fw_share_url': 'sslocal://repost_page?{\"repost_type\":214,\"fw_id\":7138142961820467456,\"fw_id_type\":1025,\"fw_user_id\":2664864387970791,\"opt_id\":7138142961820467456,\"opt_id_type\":1025,\"title\":\"祝正宇上证指数预判回答了：打坐，禅定，可以代替睡眠吗？\",\"cover_url\":\"https://sf1-cdn-tos.toutiaostatic.com/img/motor-img/7aec596d2ce95d5e7ee550df085df51c~300x300.image\"}', 'fw_user_id': 2664864387970791, 'opt_id': 7138142961820467000, 'opt_id_type': 1025, 'repost_type': 214, 'title': '祝正宇上证指数预判回答了：打坐，禅定，可以代替睡眠吗？'}, 'share_info': {'cover_image': {'height': 0, 'image_type': 0, 'uri': '', 'url': 'https://p3-sign.toutiaoimg.com/origin/18a300102cab5d8d0e05?_iz=102746&from=wenda&lk3s=112c5925&x-expires=1796774400&x-signature=pj0HFMfhWWcSaaU5qeoxMShZj%2Fk%3D', 'url_list': None, 'width': 0}, 'share_type': {'pyq': 0, 'qq': 0, 'qzone': 0, 'wx': 0}, 'share_url': 'http://toutiao.com/group/7138142961820467456/?iid=0&app=news_article', 'title': '打坐，禅定，可以代替睡眠吗？(祝正宇上证指数预判的回答)', 'token_type': 1}, 'summary': '', 'tail_content': '', 'user': {'avatar_url': 'https://sf1-cdn-tos.toutiaostatic.com/img/motor-img/7aec596d2ce95d5e7ee550df085df51c~300x300.image', 'is_following': 0, 'is_verify': 0, 'uname': '祝正宇上证指数预判', 'user_auth_info': '{}', 'user_id': '2664864387970791', 'user_intro': '', 'user_schema': 'sslocal://profile?api_param=%7B%22answer_list%22%3A%5B7138142961820467456%5D%2C%22answer_type%22%3A%22combine_answer%22%2C%22enter_ansid%22%3A%227138142961820467456%22%2C%22enter_from%22%3A%22click_pgc%22%2C%22from%22%3A%22outer%22%2C%22has_more%22%3Atrue%2C%22in_offset%22%3A0%2C%22next_offset%22%3A1%2C%22origin_from%22%3A%22click_pgc%22%7D&gd_ext_json=%7B%22enter_from%22%3A%22click_pgc%22%2C%22ansid%22%3A%227138142961820467456%22%2C%22enterfrom_answerid%22%3A%227138142961820467456%22%2C%22parent_enterfrom%22%3A%22click_pgc%22%2C%22qid%22%3A%226927628913435230464%22%2C%22category_name%22%3A%22profile_all%22%2C%22parent_categoryname%22%3A%22profile_all%22%2C%22author_id%22%3A%222664864387970791%22%2C%22article_type%22%3A%22wenda%22%2C%22log_pb%22%3A%7B%22impr_id%22%3A%2220260830122041F3C2B8B55DD90675A7BB%22%2C%22is_following%22%3A%220%22%2C%22parent_categoryname%22%3A%22profile_all%22%2C%22parent_enterfrom%22%3A%22click_pgc%22%2C%22answer_card_type%22%3A%22%22%7D%2C%22from_gid%22%3A%22%22%2C%22with_avatar%22%3A%220%22%2C%22hidden_ans%22%3A%22%22%7D&refer=wenda&uid=2664864387970791', 'v_icon': ''}}",
+      "publish_time": 1788063641,
+      "publish_date": "2026-08-30 12:20",
+      "url": "https://www.toutiao.com/w/7138142961820467456/",
+      "digg_count": 0,
+      "comment_count": 0,
+      "read_count": 0
+    },
+    {
+      "post_id": "1874740342544516",
+      "content": "股市有风险，投资须谨慎！\n      2026年8月28日12时40分发布2026年8月28日下午上证指数走势预判，预判今天下午上证继续横盘震荡，如下图所示。\n       个人观点不构成投资建议，买卖股票风险自担。",
+      "publish_time": 1787891714,
+      "publish_date": "2026-08-28 12:35",
+      "url": "https://m.toutiao.com/w/1874740342544516/?app=toutiao_web&timestamp=1788063615&use_new_style=1",
+      "digg_count": 5,
+      "comment_count": 1,
+      "read_count": 4854
+    },
+    {
+      "post_id": "1874723866557443",
+      "content": "股市有风险，投资须谨慎！\n      2026年8月28日8时15分发布2026年8月28日上证指数走势预判，预判今天上证冲高回落，如下图所示。\n       个人观点不构成投资建议，买卖股票风险自担。",
+      "publish_time": 1787876002,
+      "publish_date": "2026-08-28 08:13",
+      "url": "https://m.toutiao.com/w/1874723866557443/?app=toutiao_web&timestamp=1788063615&use_new_style=1",
+      "digg_count": 6,
+      "comment_count": 4,
+      "read_count": 2462
+    },
+    {
+      "post_id": "1874647765686284",
+      "content": "股市有风险，投资须谨慎！\n      2026年8月27日12时10分发布2026年8月27日下午上证指数走势预判，预判今天下午回调后再拉升，如下图所示。\n       个人观点不构成投资建议，买卖股票风险自担。",
+      "publish_time": 1787803426,
+      "publish_date": "2026-08-27 12:03",
+      "url": "https://m.toutiao.com/w/1874647765686284/?app=toutiao_web&timestamp=1788063615&use_new_style=1",
+      "digg_count": 5,
+      "comment_count": 3,
+      "read_count": 5440
+    },
+    {
+      "post_id": "1874555097976844",
+      "content": "股市有风险，投资须谨慎！\n      2026年8月26日11时30分发布2026年8月26日下午上证指数走势预判，上午走势比较强，预判今天下午回调后再拉升，如下图所示。\n       个人观点不构成投资建议，买卖股票风险自担。",
+      "publish_time": 1787715051,
+      "publish_date": "2026-08-26 11:30",
+      "url": "https://m.toutiao.com/w/1874555097976844/?app=toutiao_web&timestamp=1788063615&use_new_style=1",
+      "digg_count": 10,
+      "comment_count": 2,
+      "read_count": 6074
+    },
+    {
+      "post_id": "1874546094303235",
+      "content": "股市有风险，投资须谨慎！\n      2026年8月26日9时08分发布2026年8月26日上证指数走势预判，目前上证受到5日10日20日40日60日多条均线压制，向上推进速度比较缓慢。预判今天上证先抑后扬，震荡攀升，收小阳线，最高点3915，如下图所示。\n       个人观点不构成投资建议，买卖股票风险自担。",
+      "publish_time": 1787706465,
+      "publish_date": "2026-08-26 09:07",
+      "url": "https://m.toutiao.com/w/1874546094303235/?app=toutiao_web&timestamp=1788063615&use_new_style=1",
+      "digg_count": 10,
+      "comment_count": 2,
+      "read_count": 8950
+    },
+    {
+      "post_id": "1874466428916740",
+      "content": "股市有风险，投资须谨慎！\n      2026年8月25日12时0分发布2026年8月25日下午上证指数走势预判，目前大盘反弹太弱，从结构上看，大盘选择横盘向下完成了结构，所以反弹高度极为有限，随时都有结束反弹可能 ，不要对大盘抱有太高期望。\n      预判1、今天下午上证反弹很快触及反弹高点1，然后横盘震荡，如下图所示。\n      预判2、明天有可能触及反弹2高点。也有可能今天就结束反弹。\n      不要在微小空间博弈。即使有反弹，高度有限。\n       个人观点不构成投资建议，买卖股票风险自担。",
+      "publish_time": 1787630490,
+      "publish_date": "2026-08-25 12:01",
+      "url": "https://m.toutiao.com/w/1874466428916740/?app=toutiao_web&timestamp=1788063615&use_new_style=1",
+      "digg_count": 8,
+      "comment_count": 3,
+      "read_count": 7185
+    },
+    {
+      "post_id": "1874364217630730",
+      "content": "股市有风险，投资须谨慎！\n      2026年8月24日9时0分发布2026年8月24日上证指数走势预判，预判今天上证高开，震荡上行，如下图所示。\n       个人观点不构成投资建议，买卖股票风险自担。",
+      "publish_time": 1787533014,
+      "publish_date": "2026-08-24 08:56",
+      "url": "https://m.toutiao.com/w/1874364217630730/?app=toutiao_web&timestamp=1788063615&use_new_style=1",
+      "digg_count": 8,
+      "comment_count": 5,
+      "read_count": 45063
+    },
+    {
+      "post_id": "1874106415606922",
+      "content": "股市有风险，投资须谨慎！\n      2026年8月21日12时40分发布2026年8月21日下午上证指数走势预判，预判今天下午上证继续上攻昨日的高点3925，然后回落，窄幅震荡整理，如下图所示。\n       个人观点不构成投资建议，买卖股票风险自担。",
+      "publish_time": 1787287155,
+      "publish_date": "2026-08-21 12:39",
+      "url": "https://m.toutiao.com/w/1874106415606922/?app=toutiao_web&timestamp=1788063615&use_new_style=1",
+      "digg_count": 5,
+      "comment_count": 1,
+      "read_count": 9052
+    },
+    {
+      "post_id": "1874089451512068",
+      "content": "股市有风险，投资须谨慎！\n      2026年8月21日8时10分发布2026年8月21日上证指数走势预判，预判今天上证继续窄幅震荡调整，如下图所示。\n       个人观点不构成投资建议，买卖股票风险自担。",
+      "publish_time": 1787270976,
+      "publish_date": "2026-08-21 08:09",
+      "url": "https://m.toutiao.com/w/1874089451512068/?app=toutiao_web&timestamp=1788063615&use_new_style=1",
+      "digg_count": 6,
+      "comment_count": 5,
+      "read_count": 5970
+    },
+    {
+      "post_id": "1874012300230668",
+      "content": "股市有风险，投资须谨慎！\n      2026年8月20日11时45分发布2026年8月20日下午上证指数走势预判，预判今天下午上证以横盘震荡为主，尾盘向上翘尾，收小阳线，如下图所示。\n       个人观点不构成投资建议，买卖股票风险自担。",
+      "publish_time": 1787197399,
+      "publish_date": "2026-08-20 11:43",
+      "url": "https://m.toutiao.com/w/1874012300230668/?app=toutiao_web&timestamp=1788063615&use_new_style=1",
+      "digg_count": 10,
+      "comment_count": 6,
+      "read_count": 17525
+    },
+    {
+      "post_id": "1873999878275083",
+      "content": "股市有风险，投资须谨慎！\n      2026年8月20日8时30分发布2026年8月20日上证指数走势预判，预判今天上证低开高走，收大阳线，如下图所示。\n       个人观点不构成投资建议，买卖股票风险自担。",
+      "publish_time": 1787185553,
+      "publish_date": "2026-08-20 08:25",
+      "url": "https://m.toutiao.com/w/1873999878275083/?app=toutiao_web&timestamp=1788063615&use_new_style=1",
+      "digg_count": 8,
+      "comment_count": 3,
+      "read_count": 5262
+    },
+    {
+      "post_id": "1873908575470595",
+      "content": "股市有风险，投资须谨慎！\n      2026年8月19日8时15分发布2026年8月19日上证指数走势预判，预判今天上证将二次探底。\n       预判1、大幅低开，探底回升，横盘震荡，如下图所示。\n       预判2、中等幅度低开，震荡回升，再次探底，再次回升震荡，如下图所示。\n       预判3、大幅低开，底部横盘震荡，逐步震荡攀升，再创新高。走出这种形态的概率不大，但仍然存在可能性。\n       昨天追高被套的有可能有机会逃掉，也有可能不给机会。\n       个人观点不构成投资建议，买卖股票风险自担。",
+      "publish_time": 1787098479,
+      "publish_date": "2026-08-19 08:14",
+      "url": "https://m.toutiao.com/w/1873908575470595/?app=toutiao_web&timestamp=1788063615&use_new_style=1",
+      "digg_count": 8,
+      "comment_count": 3,
+      "read_count": 5636
+    },
+    {
+      "post_id": "1873830628574220",
+      "content": "股市有风险，投资须谨慎！\n      2026年8月1811时30分发布2026年8月18日下午上证指数走势预判，预判今天下午继续回调，但下跌的空间已经不大了，五日线将获得强力支撑，点位大概在3946附近。获得支撑后将会震荡上行。如下图所示。\n       个人观点不构成投资建议，买卖股票风险自担。",
+      "publish_time": 1787024144,
+      "publish_date": "2026-08-18 11:35",
+      "url": "https://m.toutiao.com/w/1873830628574220/?app=toutiao_web&timestamp=1788063616&use_new_style=1",
+      "digg_count": 7,
+      "comment_count": 4,
+      "read_count": 5297
+    },
+    {
+      "post_id": "1873814135682048",
+      "content": "股市有风险，投资须谨慎！\n      2026年8月18日7时5分发布2026年8月18日上证指数走势预判， 昨天的预判出现较大的错误，吃一堑长一智，错误原因找到了。\n       预判1、今天上证大幅低开，一步到位，缓慢震荡上行，这种走势杀伤力比较大，如下图所示。\n       预判2、用较长时间缓慢下跌，这种走势比较温和，给昨天进场的人有一个缓冲，如下图所示。\n       无论哪种预判都指向一个目标：上证需要回调。蓄势后再创新高。\n       个人观点不构成投资建议，买卖股票风险自担。",
+      "publish_time": 1787008415,
+      "publish_date": "2026-08-18 07:13",
+      "url": "https://m.toutiao.com/w/1873814135682048/?app=toutiao_web&timestamp=1788063616&use_new_style=1",
+      "digg_count": 5,
+      "comment_count": 11,
+      "read_count": 5465
+    },
+    {
+      "post_id": "1873730227555328",
+      "content": "股市有风险，投资须谨慎！\n      2026年8月17日9时0分发布2026年8月17日上证指数走势预判， 预判今天上证震荡小幅攀升，午后或尾盘跳水。收阴线。如下图所示。\n       个人观点不构成投资建议，买卖股票风险自担。",
+      "publish_time": 1786928394,
+      "publish_date": "2026-08-17 08:59",
+      "url": "https://m.toutiao.com/w/1873730227555328/?app=toutiao_web&timestamp=1788063616&use_new_style=1",
+      "digg_count": 7,
+      "comment_count": 9,
+      "read_count": 18413
+    },
+    {
+      "post_id": "1873724656530432",
+      "content": "#股评到底对股民炒股有帮助吗#客观讲，股评是一把双刃剑，有的股评对股民炒股有帮助，这种股评极为罕见，约占到总股评的，3-5%，甚至更低。绝大多数股评都是滥竽充数，或东郭先生。自己都不懂，更甚者自己在股市里面亏得一塌糊涂，还在那里装神弄鬼天天做股评，好一点的就是一知半解，这半瓶子醋晃荡的很厉害，天天教训别人没听他的。我经常看他们大讲小讲，讲得不亦乐乎，观点经常改变，所谓朝念昔改，没有一点逻辑可言。有的我追踪过一年以上，可笑的是没有一天预判对的，就连蒙都没蒙对过一次，一年300天总应该蒙对几次吧？现实太打脸了，一次都没有。更极具讽刺一味地是他发出的每一篇文章，少则几百个点赞 多则上1000个点赞。这一点让我百思不得其解，这在逻辑上是说不通的，一个天天出错的股评哪来的那么多点赞？这个赞是真实的吗？还是为了流量不择手段？如果是真实的，那对股民的伤害太大了，跟着他炒股亏得要倾家荡产了，如果这些赞是假的，那这个世界太可怕了。我说的一点不过分也不夸张。\n       选对一个好股评是老天安排给你的一件幸运之事，可有人却偏偏不当回事。我做股评有半年有余，每天还是有一些人看，随谈不上多，几百个或上1000个也还是有的，可收到的点赞却寥寥无几，我也做过深刻反思，是我预判不准确大家不认可吗？也不是，我的准确率在80%以上，最后的答案只有一个，白嫖。对这部分人，今后在关键节点上我会让他看不到我发的预判，我会精准投放。在这里，我为那些天天为我鼓励，加油点赞评论的朋友们说一声谢谢。\n      有一些所谓的股评天天盯着的的预判，我六点发，他六点半发，我八点发，他八点半发，他发出的预判观点和我一模一样，只是重新组织语言，今天我就不好意思说出他是谁，希望以后抄袭了也应该说一下出自哪里。我今天九点发，看他几点发。\n       我不是小气，也不是斤斤计较，而是深深感到不公，感到智商被侮辱。\n       今天发布预判的时间是9点整，届时，喜欢我的朋友过来看。\n       跟对了一个股评，就像嫁对了人一样，在股市里能挣到钱，跟错了陪个精光。它就像双刃剑。",
+      "publish_time": 1786923081,
+      "publish_date": "2026-08-17 07:31",
+      "url": "https://m.toutiao.com/w/1873724656530432/?app=toutiao_web&timestamp=1788063616&use_new_style=1",
+      "digg_count": 8,
+      "comment_count": 6,
+      "read_count": 4631
+    },
+    {
+      "post_id": "1873638871009292",
+      "content": "#你觉得2026年股市会有大行情吗#2026年不会再有什么大的行情了。自从2024年2月牛市行情启动以来历经2年多时间，上证指数已经涨了70%。4258就是2026年的最高点。目前大盘正处于下降通道之中运行。牛市结束了，开始了慢慢熊市。眼前处于下跌过程中的反弹，如下图所示。",
+      "publish_time": 1786841269,
+      "publish_date": "2026-08-16 08:47",
+      "url": "https://m.toutiao.com/w/1873638871009292/?app=toutiao_web&timestamp=1788063616&use_new_style=1",
+      "digg_count": 7,
+      "comment_count": 7,
+      "read_count": 8636
+    },
+    {
+      "post_id": "1873468886337536",
+      "content": "股市有风险，投资须谨慎。\n       2026年8月14日11时45分发布2026年8月14日下午走势预判：今天上午上证如预判的一样下跌到位如期展开震荡走势，只是比我预判的时间得来更早，预判下午上证指数继续震荡，如下图所示。\n       个人观点不构成投资建议，买卖股票风险自担。",
+      "publish_time": 1786679159,
+      "publish_date": "2026-08-14 11:45",
+      "url": "https://m.toutiao.com/w/1873468886337536/?app=toutiao_web&timestamp=1788063616&use_new_style=1",
+      "digg_count": 8,
+      "comment_count": 4,
+      "read_count": 9810
+    },
+    {
+      "post_id": "1873451440113676",
+      "content": "股市有风险，投资须谨慎！\n      预判今天上证继昨天尾盘跳水之后惯性下跌。\n      具体步骤大致是这样的 ：\n      1、上午惯性下跌。如下图所示。\n      2、下午横盘震荡。如下图所示。\n      总结一下几天来的预判：8月8日提醒目前A股所处的位置，做好投资规划。8月9日预判出拐点的时间最早是下周一（8月10），最晚是下周三（8月12），8月10日预判出震荡收十字星实证了大盘拐点的到来（需要从一分钟k线图看:)。8月11日准确预判低开收阴线，唯有跌幅不及预期。8月12日预判猜想一准确预判横盘震荡。8月13日准确预判上午横盘震荡，午后跳水。每一天的预判看似平常，不显山不露水，如果连贯起来看就会发现，逻辑严谨，脉络清晰，从拐点的出现到横盘震荡蓄势，再到午后跳水，环环相扣，步步精准。只有连贯起来看，才知道笔者拿捏大盘的厉害之处。正如我的粉丝朋友在评论区里面说的：牛牛牛，听大师的上午全清了。能给粉丝带来实实在在利益和好处，我深感慰藉。\n      发布时间：2026年8月14日7时10分。\n       个人观点不构成投资建议，买卖股票风险自担。",
+      "publish_time": 1786662521,
+      "publish_date": "2026-08-14 07:08",
+      "url": "https://m.toutiao.com/w/1873451440113676/?app=toutiao_web&timestamp=1788063616&use_new_style=1",
+      "digg_count": 10,
+      "comment_count": 3,
+      "read_count": 8144
+    },
+    {
+      "post_id": "1873363763700748",
+      "content": "股市有风险，投资须谨慎！\n      预判今天上证震荡后大跌。\n      预判今天上午上证继续横盘震荡，午后跳水，收大阴线，如下图所示。\n      发布时间：2026年8月13日8时0分。\n       个人观点不构成投资建议，买卖股票风险自担。",
+      "publish_time": 1786578906,
+      "publish_date": "2026-08-13 07:55",
+      "url": "https://m.toutiao.com/w/1873363763700748/?app=toutiao_web&timestamp=1788063616&use_new_style=1",
+      "digg_count": 11,
+      "comment_count": 8,
+      "read_count": 4979
+    },
+    {
+      "post_id": "1873287543875584",
+      "content": "股市有风险，投资须谨慎！\n      2026年8月12日11点45分发布2026年8月12日下午上证指数两大预判猜想。\n      第一大猜想：上证上午呈现出弱势震荡格局，预判今天上午窄幅震荡。如下图所示。\n       第二大预判猜想：下午可能出现一波快速跳水，如下图所示。\n       个人观点不构成投资建议，买卖股票风险自担。",
+      "publish_time": 1786506218,
+      "publish_date": "2026-08-12 11:43",
+      "url": "https://m.toutiao.com/w/1873287543875584/?app=toutiao_web&timestamp=1788063616&use_new_style=1",
+      "digg_count": 9,
+      "comment_count": 4,
+      "read_count": 7913
+    },
+    {
+      "post_id": "1873283173002252",
+      "content": "股市有风险，投资须谨慎！\n      接合当前走势发出最新预判，上证上午呈现出弱势震荡格局，预判今天上午震荡完毕，下午可能出现一波快速跳水，如下图所示。\n       个人观点不构成投资建议，买卖股票风险自担。",
+      "publish_time": 1786502049,
+      "publish_date": "2026-08-12 10:34",
+      "url": "https://m.toutiao.com/w/1873283173002252/?app=toutiao_web&timestamp=1788063616&use_new_style=1",
+      "digg_count": 4,
+      "comment_count": 1,
+      "read_count": 4630
+    },
+    {
+      "post_id": "1873264560159744",
+      "content": "股市有风险，投资须谨慎！\n       今天上证走势两大预判猜想，第一大预判猜想：预判今天上证略微低开高走，震荡上行，受制于上面的斜线压力触及上轨后，展开横盘震荡，收小阳线，如下图所示。\n      第二大猜想：预判今天上证略微低开高走，震荡上行，最高点触及上升趋势线上轨，收大阳线，如下图所示。\n      究竟哪种预判猜想能实现，咱们拭目以待，15点见分晓。\n       个人观点不构成投资建议，买卖股票风险自担。",
+      "publish_time": 1786484299,
+      "publish_date": "2026-08-12 05:38",
+      "url": "https://m.toutiao.com/w/1873264560159744/?app=toutiao_web&timestamp=1788063616&use_new_style=1",
+      "digg_count": 7,
+      "comment_count": 4,
+      "read_count": 6371
+    },
+    {
+      "post_id": "1873179708953600",
+      "content": "股市有风险，投资须谨慎！\n     2026年8月11日7时10分发布2026年8月11日上证指数走势预判，预判今天上证低开低走，震荡下行，收阴线，如下图所示。\n       个人观点不构成投资建议，买卖股票风险自担。",
+      "publish_time": 1786403378,
+      "publish_date": "2026-08-11 07:09",
+      "url": "https://m.toutiao.com/w/1873179708953600/?app=toutiao_web&timestamp=1788063616&use_new_style=1",
+      "digg_count": 8,
+      "comment_count": 5,
+      "read_count": 5146
+    },
+    {
+      "post_id": "1873088717998092",
+      "content": "股市有风险，投资须谨慎！\n     2026年8月10日7时10分发布2026年8月10日上证指数走势预判，预判今天上证横盘震荡，收十字星，如下图所示。\n       个人观点不构成投资建议，买卖股票风险自担。",
+      "publish_time": 1786316602,
+      "publish_date": "2026-08-10 07:03",
+      "url": "https://m.toutiao.com/w/1873088717998092/?app=toutiao_web&timestamp=1788063618&use_new_style=1",
+      "digg_count": 8,
+      "comment_count": 12,
+      "read_count": 6261
+    },
+    {
+      "post_id": "1873002250229772",
+      "content": "股市有风险，投资须谨慎。\n       就A股目前所处的位置具有双重属性，既不确定性与确定性同时存在，所谓的不确定的是上证指数还能涨多少不确定，也许还能涨10个点，也许还能涨50个点，或许还能涨100个点，没人知道，只有超级玩家自己才知道。理论上说涨到这个位置结构已经完整了，随时都可能结束上涨掉头向下，从时间上看，最快下周一就掉头下跌，最慢周三掉头下跌。这完全看超级玩家如何谋划的。所谓的确定性是指最近几天结束反弹，确定要掉头下跌。\n       抢反弹本来就是火中取栗，要快，要速战速决，随时最好撤离的准备，不要栗子没吃到反被大火烧坏了手，得不偿失。\n       下面是周一周二周三的走势猜想，如下图所示。\n       个人观点不构成投资建议，买卖股票风险自担。",
+      "publish_time": 1786234140,
+      "publish_date": "2026-08-09 08:09",
+      "url": "https://m.toutiao.com/w/1873002250229772/?app=toutiao_web&timestamp=1788063618&use_new_style=1",
+      "digg_count": 5,
+      "comment_count": 4,
+      "read_count": 4409
+    },
+    {
+      "post_id": "1872921184616448",
+      "content": "股市有风险，投资须谨慎。\n       两张图看明白咱们处在A股的位置：\n       第一张图是240分钟k线图，这是一张长期走势图，目前正处于下降通道之中，长期看是下跌的，随着时间推移，上证指数会越来越低。如下图所示。\n       第二张图是120分钟k线图，这是一张短期趋势走势图，在短期内处于上涨之中。如下图所示。\n       我们现在所处的位置是大的下降之中的反弹位置。\n       个人观点不构成投资建议，买卖股票风险自担。",
+      "publish_time": 1786156830,
+      "publish_date": "2026-08-08 10:40",
+      "url": "https://m.toutiao.com/w/1872921184616448/?app=toutiao_web&timestamp=1788063618&use_new_style=1",
+      "digg_count": 9,
+      "comment_count": 9,
+      "read_count": 7271
+    },
+    {
+      "post_id": "1872817470427200",
+      "content": "股市有风险，投资须谨慎！\n     2026年8月7日7时10分发布2026年8月7日上证指数走势预判，预判今天上证低开震荡高走，收小阳线，如下图所示。\n      预判未来两周走势，触及上轨后震荡下行，如下图所示。\n       沪深300已经创不出新高，走下降趋势，说明上证创新高，大多数股票在下跌，如下图所示。\n       个人观点不构成投资建议，买卖股票风险自担。",
+      "publish_time": 1786057921,
+      "publish_date": "2026-08-07 07:12",
+      "url": "https://m.toutiao.com/w/1872817470427200/?app=toutiao_web&timestamp=1788063618&use_new_style=1",
+      "digg_count": 7,
+      "comment_count": 5,
+      "read_count": 8642
+    },
+    {
+      "post_id": "1872730179243088",
+      "content": "股市有风险，投资须谨慎！\n       2026年8月6日8时05分发布2026年8月6日上证指数走势预判，预判今天上证低开高走，收十字星，如下图所示。\n       预判周五先抑后扬，收小阳线，如下图所示。\n       预判下周一低开，横盘震荡，如下图所示。\n       预判下周二横盘震荡，如下图所示。\n       预判下周三探底回升，如下图所示。\n       预判未来两周走势，探底，强劲反弹，如下图所示。\n      个人观点不构成投资建议，买卖股票风险自担。",
+      "publish_time": 1785974673,
+      "publish_date": "2026-08-06 08:04",
+      "url": "https://m.toutiao.com/w/1872730179243088/?app=toutiao_web&timestamp=1788063618&use_new_style=1",
+      "digg_count": 6,
+      "comment_count": 10,
+      "read_count": 4227
+    },
+    {
+      "post_id": "1872093353991180",
+      "content": "股市有风险，投资须谨慎！\n       2026年7月30日7时30分发布2026年7月30日上证指数走势预判，预判今天上证先震荡后拉升，再横盘震荡，收小阳线，如下图所示。\n       预判周五先横盘震荡后下跌，再横盘震荡，收阴线，如下图所示。\n      个人观点不构成投资建议，买卖股票风险自担。",
+      "publish_time": 1785367349,
+      "publish_date": "2026-07-30 07:22",
+      "url": "https://m.toutiao.com/w/1872093353991180/?app=toutiao_web&timestamp=1788063618&use_new_style=1",
+      "digg_count": 10,
+      "comment_count": 18,
+      "read_count": 10738
+    },
+    {
+      "post_id": "1871735138394124",
+      "content": "股市有风险，投资须谨慎！\n      2026年7月26日8时30分发布2026年7月27日上证指数走势预判，上周五低开震荡下行，收出一根实体大阴线，看上去挺可怕。\n      但从实际走势来看并不可怕，上证并没有出现单边下跌，而是在11点24分有一波强劲反弹，在2点06分又有一波反弹，本来有足够的时间跌得更多更深，可是没有。这种走势就意味着上证不会再有大幅度下跌，从时间上看，比我预判的回踩时间多了半天，再加上下明天应该还有半天微幅调整，总回调时间是三天半，从空间上看，正好卡在强支撑位上，也是上涨以来的50%，从形态上看仍然保持良好形态。所以可以把这次下跌看作回踩比较合理。\n     如果上证不在3884点附近多横盘半天，有筑顶嫌疑外，今天下跌到这个位置止跌堪称完美，恰恰就是多横盘了半天带来了些许隐患，不过应该也没有太大的关系。\n      预判明天上证低开，震荡后上行，全天都处在震荡之中，收小阳线，如下图所示。\n      预判周二低开高走，收大阳线，如下图所示。\n      提前发出预判，给自己点时间，休息两天。\n      个人观点不构成投资建议，买卖股票风险自担。",
+      "publish_time": 1785025728,
+      "publish_date": "2026-07-26 08:28",
+      "url": "https://m.toutiao.com/w/1871735138394124/?app=toutiao_web&timestamp=1788063618&use_new_style=1",
+      "digg_count": 14,
+      "comment_count": 2,
+      "read_count": 9070
+    },
+    {
+      "post_id": "1871548230369308",
+      "content": "股市有风险，投资须谨慎！\n       2026年7月24日7时0分发布2026年7月24日上证指数走势预判，昨天上午上证震荡攀升，之后并未按照预判下跌，而是全天都在3851-3871不到30个点之间反复震荡，这种该跌不跌的走势，给继续反弹蒙上了巨大阴影。\n      按照常规之下的操作，指数在触及高位之后就会逐步震荡下行，去做二次探底的动作，但这次不是，而是出现在高位反复震荡的走势，这种走势有在此筑顶的嫌疑，筑顶的概率极大，如果我分析判断正确的话，那么这次反弹到此结束，新的一轮下跌今天就要开始。\n      从时间节点上看，上证已经给出两天时间，散户有足够的时间从容应对，最差的思路也应该是高抛低吸，高抛完成之后，在等待低吸之时却发现风向变了，就不会再去低吸了，从而空仓躲过一劫。\n      牢记做反弹要时刻小心，拿不到足够便宜的筹码宁愿错过，也不冒然进局。\n      预判今天上证低开低走，震荡下行，如果直接跌破前期低点3741，会有较大幅度反抽。如下图所示。\n       个人观点不构成投资建议，买卖股票风险自担。",
+      "publish_time": 1784847479,
+      "publish_date": "2026-07-24 06:57",
+      "url": "https://m.toutiao.com/w/1871548230369308/?app=toutiao_web&timestamp=1788063618&use_new_style=1",
+      "digg_count": 11,
+      "comment_count": 8,
+      "read_count": 20673
+    },
+    {
+      "post_id": "1871453720269824",
+      "content": "股市有风险，投资须谨慎！\n       2026年7月23日6时0分发布2026年7月23日上证指数走势预判，昨天上午上证震荡攀升，下午横盘震荡，机构完成了筹码交换，兑现了部分获利盘，预判今天上证先扬后抑，继续探底。午后小幅回升，本轮调整时间会延续到明天。\n       具体走势可能是这样的：\n       早盘：继续震荡攀升，高点基本不会超过昨天的高点，为了更清晰的表达预判思路，特绘制了一分钟k线图，如下图所示。\n       盘中：继续寻底。\n       午后：小幅回升。如下图所示。\n       散户如何应对：\n       1、顺势而为，已经被套的须耐心等待，空仓的还是须耐心等待，耐心等待底部的到来。\n       2、始终牢记本轮上涨是反弹而非反转，捡不到便宜筹码宁可错过也不在高位追涨。\n       个人观点不构成投资建议，买卖股票风险自担。",
+      "publish_time": 1784757347,
+      "publish_date": "2026-07-23 05:55",
+      "url": "https://m.toutiao.com/w/1871453720269824/?app=toutiao_web&timestamp=1788063618&use_new_style=1",
+      "digg_count": 9,
+      "comment_count": 2,
+      "read_count": 7850
+    },
+    {
+      "post_id": "1871386289203212",
+      "content": "股市有风险，投资须谨慎！\n       2026年7月22日12时0分发布2026年7月22日下午上证指数走势预判，上午震荡攀升，高点也基本探明，预判下午上证横盘震荡，如下图所示。\n       明天继续回调，如下图所示。\n       算上今天，预判回调时间需要两天半。\n       个人观点不构成投资建议，买卖股票风险自担。",
+      "publish_time": 1784693040,
+      "publish_date": "2026-07-22 12:04",
+      "url": "https://m.toutiao.com/w/1871386289203212/?app=toutiao_web&timestamp=1788063618&use_new_style=1",
+      "digg_count": 7,
+      "comment_count": 1,
+      "read_count": 8368
+    },
+    {
+      "post_id": "1871362844295180",
+      "content": "股市有风险，投资须谨慎！\n       2026年7月22日5时50分发布2026年7月22日上证指数走势预判，昨天上证筑底成功后一路上扬。反弹的第一天就干净利落，有力度，收出大阳线。预示着未来较大反弹可期！\n       预判今天上证继续震荡攀，收阳线。\n       具体情况如下：\n       早盘：高开高走，冲高回落，获利盘回吐，高点在3900附近。\n       盘中：回调到3850附近。\n       午后：继续拉升，最高点3915。如下图所示。\n       短线高手可与狼共舞。没有能力的就持股待涨，回调时间大约一天半。\n       个人观点不构成投资建议，买卖股票风险自担。",
+      "publish_time": 1784670681,
+      "publish_date": "2026-07-22 05:51",
+      "url": "https://m.toutiao.com/w/1871362844295180/?app=toutiao_web&timestamp=1788063618&use_new_style=1",
+      "digg_count": 9,
+      "comment_count": 8,
+      "read_count": 7512
+    },
+    {
+      "post_id": "1871273921034240",
+      "content": "股市有风险，投资须谨慎！\n       2026年7月21日6时15分发布2026年7月21日上证指数走势预判，昨天上证没有延续跌势，而是横盘震荡，收小阳线，这种走势可以视作下跌中继，预判今天上证低开低走，收阴线，最低点3655，如下图所示。\n       如果今天上证开盘后仍然横盘震荡，不能在半小时创新低，说明上证在这里持续筑底，那么当指数再次下探至低点附近，或再次创新低时，就是抢反弹的最佳时机，如下图所示。\n       整体来说上证目前离底部区域已经不远了，不是今天见底就是明天见底，做好心理准备，迎接一轮较大的反弹。反弹时间暂且看作一个月吧。\n       值得一提的是白水龙头率先反弹，走势强劲可逢低吸纳，某液的安全边界很强。\n       个人观点不构成投资建议，买卖股票风险自担。",
+      "publish_time": 1784585877,
+      "publish_date": "2026-07-21 06:17",
+      "url": "https://m.toutiao.com/w/1871273921034240/?app=toutiao_web&timestamp=1788063618&use_new_style=1",
+      "digg_count": 10,
+      "comment_count": 11,
+      "read_count": 10062
+    },
+    {
+      "post_id": "1871179619046472",
+      "content": "股市有风险，投资须谨慎！\n       2026年7月20日5时20分发布2026年7月20日上证指数走势预判，上周五上证大跌3个点，完全超出乎我的预判，最最要命的是跌穿了前期低点3794，这意味着月线的上涨趋势发生了本质上的变化。\n       我们的思路也要跟着大盘的变化而变化，要由多头思路变成空头思路。也就是说4258点就是2026年的最高点，从今往后就是逐步震荡下行一个过程。不过也不必恐慌，下跌不会一蹴而就。就短期而言触底就有反弹。\n       经过仔细复盘，预判周一下跌，周二反弹，周三下跌，3550点附近有强支撑，获得支撑后有望迎来一波较强反弹，幅度大约300个点，如下图所示。预判今天上证低开震荡下行，最低点在3655点附近，收阴线。如下图所示。\n       面对突如其来的变化，我们散户该如何应对呢？我的建议是：\n       1、有能力做空的可快进快出，不恋战。\n       2、空仓激进的等待上证企稳在介入做反弹，仓位控制在五成以内，保守的散户长期休息。\n       3、满仓的等待反弹，反弹到高位清仓休息。\n        个人观点不构成投资建议，买卖股票风险自担。",
+      "publish_time": 1784495944,
+      "publish_date": "2026-07-20 05:19",
+      "url": "https://m.toutiao.com/w/1871179619046472/?app=toutiao_web&timestamp=1788063619&use_new_style=1",
+      "digg_count": 16,
+      "comment_count": 15,
+      "read_count": 12881
+    },
+    {
+      "post_id": "1870909749027843",
+      "content": "股市有风险，投资须谨慎！\n       2026年7月17日5时50分发布2026年7月17日上证指数走势预判，昨天上证大跌2点多，尾盘仅用9分钟就拉回0.4个点，拉升的非常迅猛，可以视作抢筹现象并不为过分，这说明有识之士或机构看好大A。昨天的走势超出了我的预判，我的预判是回调筑底，而且时间是在下周，最让我破防的是创了新低。\n      从月线周线看上升趋势并未改变，股市的走势是一门艺术，它不可能计算得分毫不差，多一浪少一浪都很正常，所以买股票很难买到最低点，只能买在自己认为差不多的地方。\n     上证目前正处在C浪上涨的起点，C浪是恐怖的一浪，上涨就是逼空的一浪，下跌就是逼多的一浪，这才是问题的关键。\n     我画了上证上涨日k线图，预判未来就是这样的走势，如下图所示。\n      在这里提醒大家要有耐心，不要频繁操作，频繁操作是亏钱的根源，买卖股票的原则是，要么不动手，动手后就雷打不动。\n        预判今天上证指数高开高走，收大阳线。\n        个人观点不构成投资建议，买卖股票风险自担。",
+      "publish_time": 1784238576,
+      "publish_date": "2026-07-17 05:49",
+      "url": "https://m.toutiao.com/w/1870909749027843/?app=toutiao_web&timestamp=1788063619&use_new_style=1",
+      "digg_count": 36,
+      "comment_count": 58,
+      "read_count": 21027
+    },
+    {
+      "post_id": "1870816634612868",
+      "content": "股市有风险，投资须谨慎！\n       2026年7月16日5时05分发布2026年7月16日上证指数走势预判，昨天上证盘中小幅回调，午后横盘震荡蓄势，整体来说走势还算稳健，预判今天上证指数继续震荡攀升，收小阳线，最高点4000，触及高点之后可能回落，横盘震荡蓄势，如下图所示。\n       周四周五两天可能都会延续小碎步震荡攀升的走势，由于上方套牢盘太多，压力太大，再加上下斜线的双重压力，上证很难一次性突破阻力位，我估计下周震荡幅度可能进一步扩大，如下图所示。究竟能否走出震荡格局，还要看当时盘中的实际情况而定，不过这种概率比较大，我会在随后的时间里继续报告下周动态。\n       请大家先有这么一个概念就行，我的建议是：\n       1、空仓的朋友不宜过度追高。\n       2、满仓的朋友注意管控好仓位。\n       个人观点不构成投资建议，买卖股票风险自担。",
+      "publish_time": 1784149775,
+      "publish_date": "2026-07-16 05:09",
+      "url": "https://m.toutiao.com/w/1870816634612868/?app=toutiao_web&timestamp=1788063619&use_new_style=1",
+      "digg_count": 12,
+      "comment_count": 15,
+      "read_count": 17413
+    },
+    {
+      "post_id": "1870751152863239",
+      "content": "股市有风险，投资须谨慎！\n       2026年7月15日11时50分发布2026年7月15日下午上证指数走势预判，上午的走势出乎我的预判，上证没有深度回调，以横盘震荡的形式完成了调整，3950点疑似调整到位，预判上证下午会在3950-3981一带横盘震荡，如下图所示。",
+      "publish_time": 1784087327,
+      "publish_date": "2026-07-15 11:48",
+      "url": "https://m.toutiao.com/w/1870751152863239/?app=toutiao_web&timestamp=1788063619&use_new_style=1",
+      "digg_count": 6,
+      "comment_count": 2,
+      "read_count": 8917
+    },
+    {
+      "post_id": "1870724433272839",
+      "content": "股市有风险，投资须谨慎！\n       2026年7月15日5时0分发布2026年7月15日上证指数走势预判，昨天上证走出探底回升，收中阳线。底部已经探明就是3869.30点，昨天可能有些人没听我的劝告，着急忙慌的就追进去了。我昨天就说了要观察两天，等筑底成功后再介入。不过呢追进去也无大碍，只是要在高位站站岗。\n       空仓的朋友不要急，耐心等待回调筑底，筑底的最低点大约在3892点附近。筑底时间大概一天半到两天，这才是最佳的买入点，既避免了连续下跌的风险，又不至于追高被套。\n       做股票就是要不急不躁刚刚好才好。\n       高位追进的朋友也不要因为下跌的幅度过大而恐惧，不要以为下跌还没结束，还要创新低，更不要高买低卖去割肉，明确告诉你3869.30就是铁底，放心持股等待上涨，时间最多也就两天。\n      根据以上分析，预判今天上证指数低开，呈现上下震荡走势，收阴线，最高点不超过3967，最低点3892，如下图所示。\n      个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1784061845,
+      "publish_date": "2026-07-15 04:44",
+      "url": "https://m.toutiao.com/w/1870724433272839/?app=toutiao_web&timestamp=1788063619&use_new_style=1",
+      "digg_count": 18,
+      "comment_count": 14,
+      "read_count": 10724
+    },
+    {
+      "post_id": "1870636297306119",
+      "content": "股市有风险，投资须谨慎！\n       2026年7月14日5时25分发布2026年7月14日上证指数走势预判，昨天是上证走出大跌行情，也跌破3927咱们设置的底线，我仔细复盘后， 总体感觉上证走得很扭扒，该涨却没涨，而是跌跌不休，如果就此跌下去，结构并不完整，一个结构不完整的股市似乎又不合逻辑，不合逻辑的事情应该不会发生，所以我认为大的上升趋势还没改变，在这种扭扒的情况下我们应该怎么办？\n       1、下跌还没结束，我认为离底部也不远了，今天可能就能见底回升，有一个筑底过程，所以我们要观察两天，确认筑底成功后再介入。\n       2、介入时一定要介入与上证指数相关的股票，不相关的绝对不碰，比如沪深300ETF，创业板指数基金，科创板指数基金，中证500指数基金等。\n       基于上述分析，预判如下：预判今天上证指数低开，探底回升，收阴线，最高点3880，最低点3840，如下图所示。\n      个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1783977792,
+      "publish_date": "2026-07-14 05:23",
+      "url": "https://m.toutiao.com/w/1870636297306119/?app=toutiao_web&timestamp=1788063619&use_new_style=1",
+      "digg_count": 15,
+      "comment_count": 1,
+      "read_count": 10351
+    },
+    {
+      "post_id": "1870546115513415",
+      "content": "股市有风险，投资须谨慎！\n       2026年7月13日5时30分发布2026年7月13日上证指数走势预判，上周五出现了过山车行情，可能又有一批人慌得不行，没必要完全没必要，现在上证正处在震荡攀升阶段，重要的是捂好筹码谨防诱空。\n      我之所以这样说，原因并不复杂：\n      1、做股票如同做人一般，做人要守住底线，守住底线，一辈子稳稳当当，顺风顺水。咱们做股票当下的底线就是3927，只要不破底线，咱们就高枕无忧，无论上证如何震荡，咱们都是任凭风浪起稳坐钓鱼台。\n        2、散户是跟庄的不是坐庄的，散户是靠时间挣钱的，庄家是靠空间挣钱的，每一次大的波动，庄家就高抛低吸挣钱一次钱，这是股票赋予庄家的特权，散户很难准确把握波动的高点和低点，T不好就踏空了，所以最好的操作就是不操作，躺平比什么都强。\n       3、在股票市场里面，散户不能跟庄家比聪明，只能跟庄家比耐心，无论庄家这样巨幅震荡，你就是不下车，最后它也就失去耐心了，只好不情愿的带着你一路上涨。庄家在一个波段里面可以不断的高抛低吸多次挣钱，而散户只能挣一次钱，只要卖出了就不能再参与了，散户赔钱的秘密就是频繁操作。\n       基于上述观点，预判如下：预判今天上证指数继续震荡攀升，收阳线，最高点4074，如下图所示。\n      个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1783891788,
+      "publish_date": "2026-07-13 05:29",
+      "url": "https://m.toutiao.com/w/1870546115513415/?app=toutiao_web&timestamp=1788063619&use_new_style=1",
+      "digg_count": 13,
+      "comment_count": 3,
+      "read_count": 9928
+    },
+    {
+      "post_id": "1870274651854920",
+      "content": "股市有风险，投资须谨慎！\n       2026年7月10日5时33分发布2026年7月10日上证指数走势预判，昨天上证指数走出惊魂一幕，最低探到3938点，这是极限施压的手法，心理素质不好的可能在巨大压力面前交出筹码，割肉出局了。随后上证又走出一波漂亮的逼空行情，不给空头任何回补的机会，出局的散户要么眼铮铮的看着上涨，要么高位补仓，这就是我前两天说的从战略上看是多头给空头精心布下的死亡陷阱。大A用残酷的现实给散户上了一课，要想在股市生存下来，斗智斗勇的本事一定要有。\n      预判今天上证指数高开，震荡上行，继续演绎逼空把戏，回调或在盘中进行，收阳线，最高点4090，最低点4053，如下图所示。\n      个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1783632900,
+      "publish_date": "2026-07-10 05:35",
+      "url": "https://m.toutiao.com/w/1870274651854920/?app=toutiao_web&timestamp=1788063619&use_new_style=1",
+      "digg_count": 15,
+      "comment_count": 8,
+      "read_count": 8422
+    },
+    {
+      "post_id": "1870185388804103",
+      "content": "股市有风险，投资须谨慎！\n       2026年7月9日5时53分发布2026年7月9日上证指数走势预判，昨天上证指数出现了少有的高开，说明人心思涨，是多数人集体选择的结果。虽然按照预判完成了最后的探底并回升，也走出来一根漂亮的小阳线，但好景不长，下午又跳水，大幅回落，到收盘未能保住阳线实体，收出来一根带上影线的实体阴线，日k线很难看，与前日k线组合成仙人指路。最大的安慰就是没有创新低，说明下跌动能已经衰竭。\n       还一个好消息告诉大家，港股大涨，其中恒生指数涨超3%，恒生科技涨超5%，国企指数涨幅超过4%。这就是A股大涨的前兆，如下图所示。\n      我分析昨天上证之所以走出这样的结果，主要原因是中东地缘政治发生变化，8号美伊互殴，上午外围市场都是涨得好好的，包括美股日韩，下午都突然跳水，尤其是日韩，一个跌2%得多一点跌5%点多。\n      昨天可以看作是反转上攻的一次预演吧，虽然没有成功，但集结号已经吹响，冲锋陷阵已在路上。\n      预判今天上证指数高开，震荡上行，收阳线，最高点4030，如下图所示。\n      以上说得都是好的方面，下面说说不好的地方，一旦发生散户应对的办法：\n       1、目前的结构是完好的，一切都在正常范围之内，但3967.91点不能跌破，一旦跌破短期结构遭破坏，部分减仓。\n       2、3927.85点不能跌破，一旦跌破，长期结构遭破坏，清仓休息。\n      个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1783547772,
+      "publish_date": "2026-07-09 05:56",
+      "url": "https://m.toutiao.com/w/1870185388804103/?app=toutiao_web&timestamp=1788063619&use_new_style=1",
+      "digg_count": 13,
+      "comment_count": 5,
+      "read_count": 6718
+    },
+    {
+      "post_id": "1870094643594307",
+      "content": "股市有风险，投资须谨慎！\n       2026年7月8日5时53分发布2026年7月8日上证指数走势预判，上证的收敛三角形越收越窄，多头有意制造恐慌氛围，几天的下跌调整市场分歧越来越大，从战术上看，这正是多头想看到的结果，从战略上看，这就是多头给空头精心布下的死亡陷阱。\n      单从图形上看，收敛三角形是一种调整形态而非下跌形态，目前看收敛三角形已经走到了尾巴上，反转上攻即将到来。\n      预判今天上证指数先抑后扬，探底回升，收阳线，最高点4025，最低点3960，如下图所示。\n      当下最重要的是信心和耐心。\n      个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1783461231,
+      "publish_date": "2026-07-08 05:53",
+      "url": "https://m.toutiao.com/w/1870094643594307/?app=toutiao_web&timestamp=1788063619&use_new_style=1",
+      "digg_count": 31,
+      "comment_count": 16,
+      "read_count": 13203
+    },
+    {
+      "post_id": "1870001700088835",
+      "content": "股市有风险，投资须谨慎！\n       2026年7月7日5时15分发布2026年7月7日上证指数走势预判，昨天上证指数冲关未果：高开震荡走低，午后探底回升，收出小阴线，整体上看，上证继续以防守为主。\n       目前上证指数不但仍受制于5日10日20日40日60日均线压制，还处于收敛三角形之中，如下图所示。虽然压力巨大，但多头仍会选择依托下轨有力的支撑位继续硬钢。\n      当下上证不会有太大的作为，只能安静的等待穿越多条压力线，预判今天上证指数继续震荡攻击4092这个关键点位，力争收盘前收复5日线。\n给散户两个实在的建议：\n1、持仓不动，耐心等待。\n2、轻仓者可逢低吸纳。\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1783372593,
+      "publish_date": "2026-07-07 05:16",
+      "url": "https://m.toutiao.com/w/1870001700088835/?app=toutiao_web&timestamp=1788063619&use_new_style=1",
+      "digg_count": 12,
+      "comment_count": 7,
+      "read_count": 7139
+    },
+    {
+      "post_id": "1869913852035080",
+      "content": "7月6日大盘预判：4098成关键！多头能否闯关成功？\n       7月6号大盘怎么走？我复盘了近期的走势，发现一个关键信号——上周五被5日均线压得死死的，冲高回落，全天只涨了0.37个点，典型的“上涨费劲、下跌容易”的弱势震荡格局。\n       更头疼的是现在5日、10日、20日、40日、60日均线全部悬在头顶，像五座小山一样压着。尤其是40均线的4098点这个位置之前堆积了不少的套牢筹码，今天第一次冲到这里大概率会有一波获利盘涌出来。\n       但我判断，多头今天不会认怂，虽然上方阻力重重，但日线级别的macd绿柱在缩短，kdj也快金叉了，说明多头还在蓄力。今天大概率是先攻后守的剧本。\n早盘：继续震荡上推，目标直指4098，或者直接刺破。\n盘中：触及到4098左右后遇阻回落，这是正常的技术性回调，不用慌。\n午后：回踩4070附近构筑新的防线，守住后尾盘小翘尾巴。\n收盘：成功收复5日均线，收小阳线，涨幅不大，但意义重大。\n下面给散户朋友两点实在的建议：\n       1、如果早盘急拉至4098附近，别追，等回落看4070支撑的力度再说；\n      2、 如果回采4070且缩量企稳，轻仓的可以小试一手，但仓位务必控制在半仓以下。\n       最后问您一句，您觉得今天多头能一口气拿下4098这个点吗？欢迎评论区留下您的点位预测，咱们一起验证。\n       以上仅为技术研判，不构成投资依据，市场瞬息万变，早8点后密切观察外围市场的走势情况综合判断，祝操作顺利，风险自担。",
+      "publish_time": 1783288814,
+      "publish_date": "2026-07-06 06:00",
+      "url": "https://m.toutiao.com/w/1869913852035080/?app=toutiao_web&timestamp=1788063619&use_new_style=1",
+      "digg_count": 12,
+      "comment_count": 7,
+      "read_count": 9308
+    },
+    {
+      "post_id": "1869664121692163",
+      "content": "股市有风险，投资须谨慎！\n       2026年7月3日11时50分发布2026年7月3日下午上证指数走势预判，预判今天下午上证指数继续上行，收阳线，最高点4092，之后横盘震荡蓄势，如下图所示。我预判昨天的下跌是这波上涨以来最大的跌幅，之后虽然免不了有波动，但幅度都不会超过昨天。冷不丁的搞一次波动，不少人都亏钱了，只有持仓没动的人能笑到最后。\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1783050653,
+      "publish_date": "2026-07-03 11:50",
+      "url": "https://m.toutiao.com/w/1869664121692163/?app=toutiao_web&timestamp=1788063621&use_new_style=1",
+      "digg_count": 9,
+      "comment_count": 2,
+      "read_count": 6861
+    },
+    {
+      "post_id": "1869641704327236",
+      "content": "股市有风险，投资须谨慎！\n       2026年7月3日5时50分发布2026年7月3日上证指数走势预判，预判今天上证指数高开高走，收大阳线，最高点4143，如下图所示。\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1783029274,
+      "publish_date": "2026-07-03 05:54",
+      "url": "https://m.toutiao.com/w/1869641704327236/?app=toutiao_web&timestamp=1788063621&use_new_style=1",
+      "digg_count": 12,
+      "comment_count": 9,
+      "read_count": 7040
+    },
+    {
+      "post_id": "1869572755355715",
+      "content": "股市有风险，投资须谨慎！\n       2026年7月2日11时40分发布2026年7月2日下午上证指数走势预判，预判今天下午上证指数继续震荡上行，收阳线，最高点4121，如下图所示。\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1782963519,
+      "publish_date": "2026-07-02 11:38",
+      "url": "https://m.toutiao.com/w/1869572755355715/?app=toutiao_web&timestamp=1788063621&use_new_style=1",
+      "digg_count": 9,
+      "comment_count": 5,
+      "read_count": 5893
+    },
+    {
+      "post_id": "1869550230865987",
+      "content": "股市有风险，投资须谨慎！\n       2026年7月2日5时40分发布2026年7月2日上证指数走势预判，预判今天上证指数低开，震荡下行，探底回升，收阳线，最高点4121，最低点4065，如下图所示。\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1782942038,
+      "publish_date": "2026-07-02 05:40",
+      "url": "https://m.toutiao.com/w/1869550230865987/?app=toutiao_web&timestamp=1788063621&use_new_style=1",
+      "digg_count": 15,
+      "comment_count": 6,
+      "read_count": 7767
+    },
+    {
+      "post_id": "1869482590028999",
+      "content": "股市有风险，投资须谨慎！\n       2026年7月1日11时50分发布2026年7月1日下午上证指数走势预判，预判今天下午上证指数以横盘震荡为主，收阳线，如下图所示。\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1782877531,
+      "publish_date": "2026-07-01 11:45",
+      "url": "https://m.toutiao.com/w/1869482590028999/?app=toutiao_web&timestamp=1788063621&use_new_style=1",
+      "digg_count": 7,
+      "comment_count": 12,
+      "read_count": 6268
+    },
+    {
+      "post_id": "1869460343617543",
+      "content": "股市有风险，投资须谨慎！\n       2026年7月1日5时50分发布2026年7月1日上证指数走势预判，预判今天上证指数高开，冲高回落，探底回升，收阳线，第一高点4133附近，第二高点4175，最低点4075，如下图所示。\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1782856315,
+      "publish_date": "2026-07-01 05:51",
+      "url": "https://m.toutiao.com/w/1869460343617543/?app=toutiao_web&timestamp=1788063621&use_new_style=1",
+      "digg_count": 15,
+      "comment_count": 11,
+      "read_count": 6941
+    },
+    {
+      "post_id": "1869391928203335",
+      "content": "股市有风险，投资须谨慎！\n       2026年6月30日11时45分发布2026年6月30日下午上证指数走势预判，预判今天下午上证指数继续上行，收阳线，最高点4133，4133点之后横盘震荡，如下图所示。\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1782791069,
+      "publish_date": "2026-06-30 11:44",
+      "url": "https://m.toutiao.com/w/1869391928203335/?app=toutiao_web&timestamp=1788063621&use_new_style=1",
+      "digg_count": 10,
+      "comment_count": 3,
+      "read_count": 9778
+    },
+    {
+      "post_id": "1869366267433991",
+      "content": "股市有风险，投资须谨慎！\n       2026年6月30日5时20分发布2026年6月30日上证指数走势预判，预判今天上证指数高开高走，冲高回落，再冲高再回落，收大阳线，最高点4175，最低点4087，如下图所示。\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1782766597,
+      "publish_date": "2026-06-30 04:56",
+      "url": "https://m.toutiao.com/w/1869366267433991/?app=toutiao_web&timestamp=1788063621&use_new_style=1",
+      "digg_count": 13,
+      "comment_count": 14,
+      "read_count": 7524
+    },
+    {
+      "post_id": "1869301295935492",
+      "content": "股市有风险，投资须谨慎！\n       2026年6月29日11时45分发布2026年6月29日下午上证指数走势预判，预高今天下午上证指数继续震荡上行，收阳线，最高点4080，如下图所示。\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1782704635,
+      "publish_date": "2026-06-29 11:43",
+      "url": "https://m.toutiao.com/w/1869301295935492/?app=toutiao_web&timestamp=1788063621&use_new_style=1",
+      "digg_count": 8,
+      "comment_count": 2,
+      "read_count": 6969
+    },
+    {
+      "post_id": "1869277413517315",
+      "content": "股市有风险，投资须谨慎！\n       2026年6月29日5时30分发布2026年6月29日上证指数走势预判，预判今天上证指数低开横盘震荡，探底回升，收阳线，最低点4000附近，最高点4075，如下图所示。\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1782681859,
+      "publish_date": "2026-06-29 05:24",
+      "url": "https://m.toutiao.com/w/1869277413517315/?app=toutiao_web&timestamp=1788063621&use_new_style=1",
+      "digg_count": 12,
+      "comment_count": 7,
+      "read_count": 6465
+    },
+    {
+      "post_id": "1869030222922760",
+      "content": "股市有风险，投资须谨慎！\n       2026年6月26日12时发布2026年6月26日下午上证指数走势预判，受外围市场暴跌的影响，日本股市跌5%，韩国股市跌8%，上证指数跟跌2%点多。预判今天下午上证指数有一个小幅反弹，第一压力位4055，第二压力位4066，如下图所示，反弹结束后持续下跌，预判最低点在3927，如下图所示。\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1782446120,
+      "publish_date": "2026-06-26 11:55",
+      "url": "https://m.toutiao.com/w/1869030222922760/?app=toutiao_web&timestamp=1788063621&use_new_style=1",
+      "digg_count": 7,
+      "comment_count": 0,
+      "read_count": 4261
+    },
+    {
+      "post_id": "1869013564569604",
+      "content": "股市有风险，投资须谨慎！\n       2026年6月26日7时30分发布2026年6月26日上午上证指数走势预判，预判今天上午上证指数会在方框里做箱体运动，目的是做好换手工作，筹码会在此做充分交换，最高点4133，收十字星，如下图所示。昨夜美股涨跌互现，幅度都不大，大家都知道A股是美股的跟屁虫，美股怎么走A股就怎么走。12时发布下午上证指数预判。\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1782430233,
+      "publish_date": "2026-06-26 07:30",
+      "url": "https://m.toutiao.com/w/1869013564569604/?app=toutiao_web&timestamp=1788063621&use_new_style=1",
+      "digg_count": 9,
+      "comment_count": 5,
+      "read_count": 4757
+    },
+    {
+      "post_id": "1868939279935488",
+      "content": "股市有风险，投资须谨慎！\n       2026年6月25日11时50分发布2026年6月25日下午上证指数走势预判，预判今天下午上证指数以横盘震荡为主，最高点4150，收阳线，如下图所示。今早开盘，上证指数低开低走，照常规，今天上证指数最低点应该探底到4070点，然后再上升。不料上证指数受到外围市场大涨的影响，日本股市大涨4%，韩国股市大涨5%，上证指数跌了一半就被沪深300强行拉起。\n       预判上证指数跌到4070是为了彻底洗一下箱体内的筹码，如下图所示。后来上证指数只好在4097点-4118点之间反复震荡洗盘，为后来拉升做最后的准备，如下图所示。\n       下午上证指数以横盘震荡为主，上升空间有限，如下图所示。\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1782359390,
+      "publish_date": "2026-06-25 11:49",
+      "url": "https://m.toutiao.com/w/1868939279935488/?app=toutiao_web&timestamp=1788063622&use_new_style=1",
+      "digg_count": 8,
+      "comment_count": 0,
+      "read_count": 4772
+    },
+    {
+      "post_id": "1868922871785472",
+      "content": "股市有风险，投资须谨慎！\n       2026年6月25日7时30分发布2026年6月25日上证指数走势预判，预判今天上证指数高开低走，探底回升，属于先抑后扬，最低点4070，最高点4158，如下图所示。早7时30分发布第一次预判，中午12时发布第二次预判。\n       客观真实的跟踪表述上证指数涨跌的每一天，有时会延迟，但不会缺席，比如说，预判今天收阳线，可今天没收阳线，第二天就会收阳线，这就叫延迟现象，它的底层逻辑就是趋势不变。\n       点赞关注我，我会分享更多更好的预判 ，转发，让更多人看到更真实更有价值的预判。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，市场没有假设，更不允许如果的存在，答案只有一个，那就是涨就是涨，跌就是跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1782343742,
+      "publish_date": "2026-06-25 07:29",
+      "url": "https://m.toutiao.com/w/1868922871785472/?app=toutiao_web&timestamp=1788063622&use_new_style=1",
+      "digg_count": 8,
+      "comment_count": 7,
+      "read_count": 3403
+    },
+    {
+      "post_id": "1868850528647168",
+      "content": "股市有风险，投资须谨慎！\n       2026年6月24日12时20分发布2026年6月24日下午上证指数走势预判，预判今天下午上证指数震荡上行，最高点4152，如下图所示。\n       客观真实的跟踪表述上证指数涨跌的每一天，有时会延迟，但不会缺席，比如说，预判今天收阳线，可今天没收阳线，第二天就会收阳线，这就叫延迟现象，它的底层逻辑就是趋势不变。\n       点赞关注我，我会分享更多更好的预判 ，转发，让更多人看到更真实更有价值的预判。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，市场没有假设，更不允许如果的存在，答案只有一个，那就是涨就是涨，跌就是跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1782274750,
+      "publish_date": "2026-06-24 12:19",
+      "url": "https://m.toutiao.com/w/1868850528647168/?app=toutiao_web&timestamp=1788063622&use_new_style=1",
+      "digg_count": 8,
+      "comment_count": 2,
+      "read_count": 9711
+    },
+    {
+      "post_id": "1868831997088780",
+      "content": "股市有风险，投资须谨慎！\n       2026年6月24日7时20分发布2026年6月24日上证指数走势预判，预判今天上证指数震荡上行，最高点4152，如下图所示。\n       客观真实的跟踪表述上证指数涨跌的每一天，有时会延迟，但不会缺席，比如说，预判今天收阳线，可今天没收阳线，第二天就会收阳线，这就叫延迟现象，它的底层逻辑就是趋势不变。\n       点赞关注我，我会分享更多更好的预判 ，转发，让更多人看到更真实更有价值的预判。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，市场没有假设，更不允许如果的存在，答案只有一个，那就是涨就是涨，跌就是跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1782257077,
+      "publish_date": "2026-06-24 07:24",
+      "url": "https://m.toutiao.com/w/1868831997088780/?app=toutiao_web&timestamp=1788063622&use_new_style=1",
+      "digg_count": 12,
+      "comment_count": 5,
+      "read_count": 5911
+    },
+    {
+      "post_id": "1868757069495432",
+      "content": "股市有风险，投资须谨慎！\n       2026年6月23日11时35分发布2026年6月23日下午上证指数走势预判，预判今天下午上证指数探底回升，收小阴线，最低4117，如下图所示。\n       客观真实的跟踪表述上证指数涨跌的每一天，有时会延迟，但不会缺席，比如说，预判今天收阳线，可今天没收阳线，第二天就会收阳线，这就叫延迟现象，它的底层逻辑就是趋势不变。\n       点赞关注我，我会分享更多更好的预判 ，转发，让更多人看到更真实更有价值的预判。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，市场没有假设，更不允许如果的存在，答案只有一个，那就是涨就是涨，跌就是跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1782185620,
+      "publish_date": "2026-06-23 11:33",
+      "url": "https://m.toutiao.com/w/1868757069495432/?app=toutiao_web&timestamp=1788063622&use_new_style=1",
+      "digg_count": 8,
+      "comment_count": 3,
+      "read_count": 10258
+    },
+    {
+      "post_id": "1868740563339272",
+      "content": "股市有风险，投资须谨慎！\n       2026年6月23日7时0分发布2026年6月2日上午上证指数走势预判，预判今天上午上证指数略微低开，震荡下行，收小阴线，最低4117，如下图所示。\n       客观真实的跟踪表述上证指数涨跌的每一天，有时会延迟，但不会缺席，比如说，预判今天收阳线，可今天没收阳线，第二天就会收阳线，这就叫延迟现象，它的底层逻辑就是趋势不变。\n       点赞关注我，我会分享更多更好的预判 ，转发，让更多人看到更真实更有价值的预判。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，市场没有假设，更不允许如果的存在，答案只有一个，那就是涨就是涨，跌就是跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1782169879,
+      "publish_date": "2026-06-23 07:11",
+      "url": "https://m.toutiao.com/w/1868740563339272/?app=toutiao_web&timestamp=1788063622&use_new_style=1",
+      "digg_count": 10,
+      "comment_count": 0,
+      "read_count": 4037
+    },
+    {
+      "post_id": "1868668371795971",
+      "content": "股市有风险，投资须谨慎！\n       2026年6月22日12时0分发布2026年6月22日下午上证指数走势预判，预判今天下午上证指数震荡上行，回落再上行，收小阳线，如下图所示。从今天开始，每天发布两次预判，早7时发布上午预判，12时发布下午预判。\n       客观真实的跟踪表述上证指数涨跌的每一天，有时会延迟，但不会缺席，比如说，预判今天收阳线，可今天没收阳线，第二天就会收阳线，这就叫延迟现象，它的底层逻辑就是趋势不变。\n       点赞关注我，我会分享更多更好的预判 ，转发，让更多人看到更真实更有价值的预判。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，市场没有假设，更不允许如果的存在，答案只有一个，那就是涨就是涨，跌就是跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1782101032,
+      "publish_date": "2026-06-22 12:03",
+      "url": "https://m.toutiao.com/w/1868668371795971/?app=toutiao_web&timestamp=1788063622&use_new_style=1",
+      "digg_count": 10,
+      "comment_count": 0,
+      "read_count": 5351
+    },
+    {
+      "post_id": "1868574922921992",
+      "content": "2026年6月21日11时，周六股休。今天想聊一下股市里面的经典话题：别人恐惧我贪婪，别人贪婪我恐惧。我相信每一个股民都听说过，但是不一定每一个人都能准确理解它真正的含义，今天我就扒开了，揉碎了讲给你听。先说恐惧，一般人不一定知道什么是恐惧，恐惧可分为担心、害怕、恐惧、极度恐慌、心理防线彻底奔溃。逻辑关系是层层递进，与其对应的是多头不死，空头不止。意思就是多头彻底崩溃，一致看空，再无人敢做多的时候，就是最安全的时候，就是该贪婪买入抄底时候。再来说说贪婪。贪婪就是不担心不害怕不恐惧毫无戒备洋洋得意，甚至有胜券在握，天生赢家。对，就是这种样子。你仔细观察一下周围的人，甚至包括自己也都是这副德行，这恰恰是最危险的时刻。当这种情况出现的时候，二话不说，赶紧抛掉股票，安安静静回家睡去觉。",
+      "publish_time": 1782011912,
+      "publish_date": "2026-06-21 11:18",
+      "url": "https://m.toutiao.com/w/1868574922921992/?app=toutiao_web&timestamp=1788063622&use_new_style=1",
+      "digg_count": 2,
+      "comment_count": 0,
+      "read_count": 3850
+    },
+    {
+      "post_id": "1868312837869575",
+      "content": "股市有风险，投资须谨慎！\n      2026年6月18日14时0分，复盘解盘。今天是端午节前最后一个交易日，上证指数走出宽幅震荡的走势，目的是洗盘，为节后大涨做准备，所以今天早点发出来，有幸看到也可以做些准备，等收盘在看到就有点晚。节后是高开高走收大阳线。不多说了。\n       客观真实的跟踪表述上证指数涨跌的每一天，有时会延迟，但不会缺席，比如说，预判今天收阳线，可今天没收阳线，第二天就会收阳线，这就叫延迟现象，它的底层逻辑就是趋势不变。\n       点赞关注我，我会分享更多更好的预判 ，转发，让更多人看到更真实更有价值的预判。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，市场没有假设，更不允许如果的存在，答案只有一个，那就是涨就是涨，跌就是跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1781761968,
+      "publish_date": "2026-06-18 13:52",
+      "url": "https://m.toutiao.com/w/1868312837869575/?app=toutiao_web&timestamp=1788063622&use_new_style=1",
+      "digg_count": 9,
+      "comment_count": 4,
+      "read_count": 10517
+    },
+    {
+      "post_id": "1868286972644488",
+      "content": "股市有风险，投资须谨慎！\n      2026年6月18日7时0分发布2026年6月18日上证指数走势预判，预判今天上证指数低开高走回落，收阳线，最低4084，最高4160，如下图所示。\n       客观真实的跟踪表述上证指数涨跌的每一天，有时会延迟，但不会缺席，比如说，预判今天收阳线，可今天没收阳线，第二天就会收阳线，这就叫延迟现象，它的底层逻辑就是趋势不变。\n       点赞关注我，我会分享更多更好的预判 ，转发，让更多人看到更真实更有价值的预判。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，市场没有假设，更不允许如果的存在，答案只有一个，那就是涨就是涨，跌就是跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1781737301,
+      "publish_date": "2026-06-18 07:01",
+      "url": "https://m.toutiao.com/w/1868286972644488/?app=toutiao_web&timestamp=1788063622&use_new_style=1",
+      "digg_count": 7,
+      "comment_count": 6,
+      "read_count": 10586
+    },
+    {
+      "post_id": "1868228170713091",
+      "content": "股市有风险，投资须谨慎！\n      现在是2026年6月17日15时30分，解盘复盘时间。今天上证指数的走势与我预判的几乎一样，早晨预判最低点4070，实际到了4073，差3个点。再看看我是这样预判下午走势的：2026年6月17日12时0分发布2026年6月17日下午上证指数走势预判，预判今天下午上证指数持续走高，最高4110，收阳线，如下图所示，下午走势也几乎一模一样，最高点只差1个点如下图所示，我给自己今天的预判打90分，不知大家同意吗？。有些敏感问题恕我不能回答。\n       客观真实的跟踪表述上证指数涨跌的每一天，有时会延迟，但不会缺席，比如说，预判今天收阳线，可今天没收阳线，第二天就会收阳线，这就叫延迟现象，它的底层逻辑就是趋势不变。\n       点赞关注我，我会分享更多更好的预判 ，转发，让更多人看到更真实更有价值的预判。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，市场没有假设，更不允许如果的存在，答案只有一个，那就是涨就是涨，跌就是跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1781681223,
+      "publish_date": "2026-06-17 15:27",
+      "url": "https://m.toutiao.com/w/1868228170713091/?app=toutiao_web&timestamp=1788063622&use_new_style=1",
+      "digg_count": 6,
+      "comment_count": 2,
+      "read_count": 4930
+    },
+    {
+      "post_id": "1868215377251332",
+      "content": "股市有风险，投资须谨慎！\n      2026年6月17日12时0分发布2026年6月17日下午上证指数走势预判，预判今天下午上证指数持续走高，最高4110，收阳线，如下图所示。有些敏感问题恕我不能回答。\n       客观真实的跟踪表述上证指数涨跌的每一天，有时会延迟，但不会缺席，比如说，预判今天收阳线，可今天没收阳线，第二天就会收阳线，这就叫延迟现象，它的底层逻辑就是趋势不变。\n       点赞关注我，我会分享更多更好的预判 ，转发，让更多人看到更真实更有价值的预判。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，市场没有假设，更不允许如果的存在，答案只有一个，那就是涨就是涨，跌就是跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1781669023,
+      "publish_date": "2026-06-17 12:03",
+      "url": "https://m.toutiao.com/w/1868215377251332/?app=toutiao_web&timestamp=1788063624&use_new_style=1",
+      "digg_count": 4,
+      "comment_count": 4,
+      "read_count": 7768
+    },
+    {
+      "post_id": "1868196055734343",
+      "content": "股市有风险，投资须谨慎！\n      2026年6月17日7时0分发布2026年6月17日上证指数走势预判，预判今天上证指数以震荡为主，最高4098，最低4070，收小阴线，如下图所示。有些敏感问题恕我不能回答。\n       客观真实的跟踪表述上证指数涨跌的每一天，有时会延迟，但不会缺席，比如说，预判今天收阳线，可今天没收阳线，第二天就会收阳线，这就叫延迟现象，它的底层逻辑就是趋势不变。\n       点赞关注我，我会分享更多更好的预判 ，转发，让更多人看到更真实更有价值的预判。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，市场没有假设，更不允许如果的存在，答案只有一个，那就是涨就是涨，跌就是跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1781650596,
+      "publish_date": "2026-06-17 06:56",
+      "url": "https://m.toutiao.com/w/1868196055734343/?app=toutiao_web&timestamp=1788063624&use_new_style=1",
+      "digg_count": 7,
+      "comment_count": 6,
+      "read_count": 8481
+    },
+    {
+      "post_id": "1868126208869380",
+      "content": "2026年6月16日12时26分，预判下午上证指数走势，下午上证指数持续震荡上行，上行趋势不改，如下图所示。",
+      "publish_time": 1781583985,
+      "publish_date": "2026-06-16 12:26",
+      "url": "https://m.toutiao.com/w/1868126208869380/?app=toutiao_web&timestamp=1788063624&use_new_style=1",
+      "digg_count": 5,
+      "comment_count": 0,
+      "read_count": 4228,
+      "title": "2026年6月16日12时26分，预判下午上证指数走势，下午上证指数持续震荡上行，上行趋势不改，如下图所示。"
+    },
+    {
+      "post_id": "1868105856049159",
+      "content": "股市有风险，投资须谨慎！\n      2026年6月16日7时0分发布2026年6月16上证指数走势预判，预判今天上证指数高开，呈现脉冲式上涨，收大阳线，第一高点4110，第二高点4160，第三高点4200，如下图所示，今天可以躺平睡觉休息不看盘。\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1781564575,
+      "publish_date": "2026-06-16 07:02",
+      "url": "https://m.toutiao.com/w/1868105856049159/?app=toutiao_web&timestamp=1788063624&use_new_style=1",
+      "digg_count": 7,
+      "comment_count": 1,
+      "read_count": 5755
+    },
+    {
+      "post_id": "1868034223228040",
+      "content": "股市有风险，投资须谨慎！\n      2026年6月15日12时08分发布2026年6月15下午上证指数走势预判，预判今天下午上证指数探底回升，最高点4107，最低点4060，如下图所示。\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1781496261,
+      "publish_date": "2026-06-15 12:04",
+      "url": "https://m.toutiao.com/w/1868034223228040/?app=toutiao_web&timestamp=1788063624&use_new_style=1",
+      "digg_count": 3,
+      "comment_count": 0,
+      "read_count": 9034
+    },
+    {
+      "post_id": "1867965077751940",
+      "content": "#在股市中赚大钱的关键是什么?#\n能在中国股市里面赚钱的关键，不是你有技术，也不是你有什么价值投资的理念，更不是你相信自己是天选之人能战胜99%的人，而是一个自律到极致，能彻底战胜自己的人。",
+      "publish_time": 1781430318,
+      "publish_date": "2026-06-14 17:45",
+      "url": "https://m.toutiao.com/w/1867965077751940/?app=toutiao_web&timestamp=1788063624&use_new_style=1",
+      "digg_count": 2,
+      "comment_count": 0,
+      "read_count": 3737
+    },
+    {
+      "post_id": "1867863411524616",
+      "content": "#你会空仓等待股市机会吗#会，我就是这样干的，这是在股市里面挣钱的不二法则。如果不会空仓，只会满仓，是挣不到钱的，说明还没有看透股市运行的逻辑。",
+      "publish_time": 1781333362,
+      "publish_date": "2026-06-13 14:49",
+      "url": "https://m.toutiao.com/w/1867863411524616/?app=toutiao_web&timestamp=1788063624&use_new_style=1",
+      "digg_count": 3,
+      "comment_count": 0,
+      "read_count": 3487
+    },
+    {
+      "post_id": "1867685708032263",
+      "content": "现在是2026年6月11日15时45分，在昨夜美股大跌的情况下，能预判出上午探底回升，午后震荡走高实属不易，给我自己打80分，大家觉得呢？，在评论区说说。接下来我想跟大家聊的是在一个波段中如何逃顶，如何抄底的话题，我相信这是100%的股民感兴趣的话题。以我为例吧，5月12日在4210点清仓，当时我清楚的知道这是顶部区域，至于说我卖的是不是最高点，说实话当时我并不知道，我卖完后第二天就大幅下跌，我还挺庆幸的，5月13日跌，5月14日又涨上去了，并且创了4258的新高，当时我很淡定，每天去买国债逆回购，并多次在文章中明确说出4200点上方风险大于机会。可能有一些粉丝听进去了，躲过了这300多点的下跌，我想说的是逃顶并不是卖在最高点，而是卖在高点的区域，卖在一个次高点上，我的观点是鱼尾巴不吃了，留点好处给别人。这样就可以全身而退，不要为挣到最后一个铜板而折在里面。同样道理，抄底也未必能抄到最低点，只是筹码已经很廉价，很有投资价值而已。抄底之后很可以暂时被套，我经常会这样。一般情况下，我买了股票就不再看盘了，去躺平睡觉。\n       今天上证指数又探底了，有需要我开满仓消息的老铁们，在评论区打上OK888。",
+      "publish_time": 1781163891,
+      "publish_date": "2026-06-11 15:44",
+      "url": "https://m.toutiao.com/w/1867685708032263/?app=toutiao_web&timestamp=1788063624&use_new_style=1",
+      "digg_count": 6,
+      "comment_count": 9,
+      "read_count": 4428
+    },
+    {
+      "post_id": "1867559598478339",
+      "content": "股市有风险，投资须谨慎！\n      2026年6月10日6时20分发布2026年6月10日上证指数预判，受美股昨夜下跌影响，预判今天上证指数的走势以震荡为主，走出蓄势待发走势，收十字星，如下图所示。\n       愚哥今天揭露股市运作的一个极为秘密的真相，全网也没几个知道的，今天说出来你会大吃一惊。股票是买一个波段，在波段的最低点买入，在波段的最高点卖出，中途不要在意它的波动，因为这种波动没有任何人可以预测或掌控，它就像是从昆明到北京，有100条路都可以通往北京，但究竟要走哪条路没人知道，只有开车的人知道，更何况去北京的路上可能遇到修路必须改道，或者遇到泥石流冲坏了路基，或因天气大雾，下大雨等等就必须绕道。更何况股市受到国内外政治经济战争能源，美联储降息，美股暴涨暴跌等等，都会影响到中国股市。所以说，预测每一天怎么走，的确很困难，准确率也不会很高。但是，我们可以放弃中途的波动，不予以理会，我们知道它的终点在北京，我们就在北京等着它就是了，等它接上我们，搭着顺丰便车驶向另一个目的地，心里是不是会狂喜呢？那有人又要问了，你知道目的地是北京？嗨，这话算你问着了，5月12日愚哥清仓，这消息是公布了的，谁都知道，可以去查我过去的文章证实，我的粉丝跟着我到现在空仓将近一个月了，从4258跌到3927点，一共跌了331点，我们躺赢了，如果再跌100-200点，那我们岂不是人生大赢家？你可以看，你可以在全网看，有几个能做到像愚哥这样的？不要苛求愚哥每一天的预判都是正确的，世界上没一个人能做到，说到这里愚哥就想问大家一个问题，等下次愚哥开满仓的时候想不想让愚哥把这个绝密消息告诉给大家？跟上愚哥大碗喝酒，大口吃肉。想的，请在评论区打上ok888，我看看有多少人想？如果没人打，就说明没人想知道，那我也就不多此一举了，不公布了，如果只有少数人打了，我就通知他们好了，反正别人不需要。\n       点赞关注我，我会分享更多更好的预判 ，转发，让更多人看到更真实更有价值的预判。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，市场没有假设，更不允许如果的存在，答案只有一个，那就是涨就是涨，跌就是跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1781043623,
+      "publish_date": "2026-06-10 06:20",
+      "url": "https://m.toutiao.com/w/1867559598478339/?app=toutiao_web&timestamp=1788063624&use_new_style=1",
+      "digg_count": 8,
+      "comment_count": 11,
+      "read_count": 5644
+    },
+    {
+      "post_id": "1867463780005895",
+      "content": "股市有风险，投资须谨慎！\n      2026年6月9日5时10分发布2026年6月9日上证指数走势预判，预判今天上证指数继续围绕着下降通道震荡下行，最高点就是碰到上轨，最低点就是碰到下轨，也就说碰下轨就反弹 碰上轨就下跌，收小阴线，如下图所示。\n       客观真实的跟踪表述上证指数涨跌的每一天，有时会延迟，但不会缺席，比如说，预判今天收阳线，可今天没收阳线，第二天就会收阳线，这就叫延迟现象，它的底层逻辑就是趋势不变。\n       点赞关注我，我会分享更多更好的预判 ，转发，让更多人看到更真实更有价值的预判。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，市场没有假设，更不允许如果的存在，答案只有一个，那就是涨就是涨，跌就是跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1780952243,
+      "publish_date": "2026-06-09 04:57",
+      "url": "https://m.toutiao.com/w/1867463780005895/?app=toutiao_web&timestamp=1788063624&use_new_style=1",
+      "digg_count": 8,
+      "comment_count": 0,
+      "read_count": 6888
+    },
+    {
+      "post_id": "1867411567928455",
+      "content": "现在是2026年6月8日15时05分解盘的时间：今天上证指数低开反弹探底回升，全天呈现出震荡下行的走势，总体来说上证指数处于相对平衡的状态，今天是2026年5月14日下跌以来单日跌幅最大的一天，跌穿了下降通道的下轨，恐慌盘大量抛出，恐慌情绪得到有效释放，这对上证指数今后轻装前行大有好处，如下图所示。明天还将继续寻底，这是一个难熬的磨底过程，不过也不要悲观焦虑，这是黎明前的黑暗，守好仓位，攥死筹码，静待花开。",
+      "publish_time": 1780902450,
+      "publish_date": "2026-06-08 15:07",
+      "url": "https://m.toutiao.com/w/1867411567928455/?app=toutiao_web&timestamp=1788063624&use_new_style=1",
+      "digg_count": 4,
+      "comment_count": 1,
+      "read_count": 6394
+    },
+    {
+      "post_id": "1867398869948424",
+      "content": "股市有风险，投资须谨慎！\n      2026年6月8日11时50分发布2026年6月8日下午上证指数走势预判，预判今天下午上证指数继续横盘震荡，最低点3976，最高点4030，收阴线，如下图所示。总体来说，现在上证指数处于一个比较安全的地方，不需要焦虑，静待好事发生，等下午收盘后我详细解盘。\n       客观真实的跟踪表述上证指数涨跌的每一天，有时会延迟，但不会缺席，比如说，预判今天收阳线，可今天没收阳线，第二天就会收阳线，这就叫延迟现象，它的底层逻辑就是趋势不变。\n       点赞关注我，我会分享更多更好的预判 ，转发，让更多人看到更真实更有价值的预判。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，市场没有假设，更不允许如果的存在，答案只有一个，那就是涨就是涨，跌就是跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1780890340,
+      "publish_date": "2026-06-08 11:45",
+      "url": "https://m.toutiao.com/w/1867398869948424/?app=toutiao_web&timestamp=1788063624&use_new_style=1",
+      "digg_count": 4,
+      "comment_count": 0,
+      "read_count": 9673
+    },
+    {
+      "post_id": "1867376784851971",
+      "content": "股市有风险，投资须谨慎！\n      2026年6月8日5时55分发布2026年6月8日上证指数走势预判，预判今天上证指数低开高走，或者低开震荡后高走，最低点4010，最高点4063，收阳线，如下图所示。\n       在低开很多的情况下，就需多长个心眼，别一听说能捡廉价筹码，就不管不顾的冲进去，必须等3分钟k线企稳才动手，等3分钟k线企稳再动手，等3分钟k线企稳再动手。不急，才是立于不败之地的法宝，捡廉价筹码的同时也须有防范之心，也须有不可预测之心，敬畏市场之心。希望点一个小红心支持一下。\n       客观真实的跟踪表述上证指数涨跌的每一天，有时会延迟，但不会缺席，比如说，预判今天收阳线，可今天没收阳线，第二天就会收阳线，这就叫延迟现象，它的底层逻辑就是趋势不变。\n       点赞关注我，我会分享更多更好的预判 ，转发，让更多人看到更真实更有价值的预判。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，市场没有假设，更不允许如果的存在，答案只有一个，那就是涨就是涨，跌就是跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1780869278,
+      "publish_date": "2026-06-08 05:54",
+      "url": "https://m.toutiao.com/w/1867376784851971/?app=toutiao_web&timestamp=1788063625&use_new_style=1",
+      "digg_count": 5,
+      "comment_count": 0,
+      "read_count": 6775
+    },
+    {
+      "post_id": "1867319515702403",
+      "content": "现在是2026年6月7日14时45分，周日休市，明天就要开盘了，现在谈一下明天的应对策略。上周五上证指数跌到4015点企稳反弹15个点，情况本来很好，周一本应该顺势高开高走，收阳线。哪知半夜杀出个程咬金，纳指大跌超过4%，这给A股产生了不小的冲击，也给股民造成了不小的困惑，于是市场上弥漫着悲观和恐慌情绪，这种恐慌情绪一定会在周一释放出去，所以明天上证指数低开的可能性极大，当这种恐慌情绪得到有效释放后，上证指数才能轻松顺利的上行。从分时图上明天上证指数应该是是低开高走，或低开震荡后高走如下图所示。面对这种情况，普通股民该如何应对呢？我给出的策略是：一，低开是件好事，或者说跌得多是好事，这样就可以捡到更廉价的筹码。二，胆子大点，别人恐慌我贪婪。三，说实话，我希望低开高走，我担心的是高开高走，那样很多人将失去这次机会。四，低开很多就要等一等，等企稳后再说。",
+      "publish_time": 1780814663,
+      "publish_date": "2026-06-07 14:44",
+      "url": "https://m.toutiao.com/w/1867319515702403/?app=toutiao_web&timestamp=1788063625&use_new_style=1",
+      "digg_count": 13,
+      "comment_count": 16,
+      "read_count": 19756
+    },
+    {
+      "post_id": "1867287212726276",
+      "content": "股市有风险，投资须谨慎！\n      2026年6月7日6时10分发布2026年6月8日（下周一:)上证指数走势预判，预判下周一上证指数低开高走，最低点4010，最高点4063，收阳线，如下图所示。\n       客观真实的跟踪表述上证指数涨跌的每一天，有时会延迟，但不会缺席，比如说，预判今天收阳线，可今天没收阳线，第二天就会收阳线，这就叫延迟现象，它的底层逻辑就是趋势不变。\n       点赞关注我，我会分享更多更好的预判 ，转发，让更多人看到更真实更有价值的预判。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，市场没有假设，更不允许如果的存在，答案只有一个，那就是涨就是涨，跌就是跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1780783856,
+      "publish_date": "2026-06-07 06:10",
+      "url": "https://m.toutiao.com/w/1867287212726276/?app=toutiao_web&timestamp=1788063625&use_new_style=1",
+      "digg_count": 10,
+      "comment_count": 2,
+      "read_count": 4886
+    },
+    {
+      "post_id": "1867232269219843",
+      "content": "股市有风险，投资须谨慎！\n      2026年6月6日15时35分发布2026年6月8日-2026年6月12日，未来一周的上证指数走势预判，预判未来一周上证指数低开高走，冲高回落，最低点4010，最高点4117，收阳线，如下图所示。\n       我在2026年5月30日发过一篇谈论上证指数当前的处境一文，当时上证指数正在下跌，大家一片茫然，我及时发了此文，文章中说过两天上证指数将二次触碰上轨，并不能成功穿越，同时画了150分钟下降通道来说明，真实情况正如我所预判那样，两天后上证指数触碰上轨没成功，客观上收到了很好的预判效果，感兴趣的朋友可以去看看我5月30日的发文，看看当时是怎样说的怎样预判的。整整一周过去了，时间验证了当时预判是可靠的。今天上证指数又处于探底将要回升并将再次触碰上轨并穿越上轨的关键节点，我再次及时画出了120分钟下降通道图，详细标出最低点和最高点，希望这次预判经得起时间验证，也希望同样收到好的效果。可是，把话说回来，到目前为止，我还没看到上证指数最后的底牌，在没看到底牌前，存在着诸多变数，这就是股市的不可预见性，也是股市魅力所在，我们要敬畏市场。反弹是必然的，但高度是不是在4117不敢肯定，至于用多少子弹去打仗，是每一个人需要思考的问题，我建议子弹多留点，等我看到上证指数底牌后在火力全开，拿出压箱底的子弹痛痛快快拼一场。\n       客观真实的跟踪表述上证指数涨跌的每一天，有时会延迟，但不会缺席，比如说，预判今天收阳线，可今天没收阳线，第二天就会收阳线，这就叫延迟现象，它的底层逻辑就是趋势不变。\n       点赞关注我，我会分享更多更好的预判 ，转发，让更多人看到更真实更有价值的预判。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，市场没有假设，更不允许如果的存在，答案只有一个，那就是涨就是涨，跌就是跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1780731458,
+      "publish_date": "2026-06-06 15:37",
+      "url": "https://m.toutiao.com/w/1867232269219843/?app=toutiao_web&timestamp=1788063625&use_new_style=1",
+      "digg_count": 10,
+      "comment_count": 5,
+      "read_count": 7043
+    },
+    {
+      "post_id": "1867221560384647",
+      "content": "今天是2026年6月6日12时50分，周六休息。从今天开始我将陆续寻找一些我所发的文中的闪光点，追溯并回忆一下波涛汹涌的股市生活，在闲暇之日多一分乐趣和快感，追溯回忆已经过去的时光，不仅仅限是为了这些，而是自勉，是为了能提高精准的预判能力，提供更加准确的预判情报，提供更加有价值的信息自勉。\n       今天要说的是2026年5月31日的文章，这篇文章我应邀分析创业板指数和科创50指数的走势，我画出了它们的上升趋势图，如下图所示。从图上分析出它们都运行在历史最高位，再从上升趋势线上看，也都处于刚刚触碰上升通道的上轨，我明确预判创业板指数和科创50指数短期有回调。预判经过整整一周的时间验证，完全符合预判，在这一周的时间里创业板指数和科创50指数双双下跌，并且再创新低，如下图所示。这是预判的成绩，也是更扎心的现实，这不是炫耀，而是一份沉甸甸的责任和担当，是信任，是一条守护安全的河。感兴趣的朋友可以查看我2026年5月31日发的文章，详细了解当时的预判经过。今天就分享到这里。以后再续。",
+      "publish_time": 1780721245,
+      "publish_date": "2026-06-06 12:47",
+      "url": "https://m.toutiao.com/w/1867221560384647/?app=toutiao_web&timestamp=1788063625&use_new_style=1",
+      "digg_count": 4,
+      "comment_count": 0,
+      "read_count": 3707
+    },
+    {
+      "post_id": "1867144258297863",
+      "content": "现在是2026年6月5日16时在15分解盘的时间：今天上证指数的走势基本符合预判，还是在下降通道里运行，如下图所示。今天上证指数低开高走，下午回落，像坐过山车一样，对股民来说亦喜亦悲，杀伤力不小，玩了个心跳加快。今天的走势很有看点，充满了悬念，这一涨一跌，有割肉的，也有追高的，促成了风格转换，说明上证指数不想马上在此跌下去，让大家有一个喘息的机会。下周会出现暂时止跌情况，能不能利用好这个机会就要看自己的能力了，周日晚上我会把下周一上证指数走势预判发出来。",
+      "publish_time": 1780647524,
+      "publish_date": "2026-06-05 16:18",
+      "url": "https://m.toutiao.com/w/1867144258297863/?app=toutiao_web&timestamp=1788063625&use_new_style=1",
+      "digg_count": 9,
+      "comment_count": 2,
+      "read_count": 15067
+    },
+    {
+      "post_id": "1867127365991427",
+      "content": "股市有风险，投资须谨慎！\n      2026年6月5日11时50分发布2026年6月5日下午上证指数走势预判，预判今天下午上证指数冲高有所回落，在4055和4070之间震荡做箱体蓄势，估计明天上午将会第三次触碰上轨，如下图所示。客观真实的跟踪表述上证指数涨跌的每一天，有时会延迟，但不会缺席，比如说，预判今天收阳线，可今天没收阳线，第二天就会收阳线，这就叫延迟现象，它的底层逻辑就是趋势不变。\n       点赞关注我，我会分享更多更好的预判 ，转发，让更多人看到更真实更有价值的预判。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，市场没有假设，更不允许如果的存在，答案只有一个，那就是涨就是涨，跌就是跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1780631414,
+      "publish_date": "2026-06-05 11:50",
+      "url": "https://m.toutiao.com/w/1867127365991427/?app=toutiao_web&timestamp=1788063625&use_new_style=1",
+      "digg_count": 9,
+      "comment_count": 3,
+      "read_count": 17926
+    },
+    {
+      "post_id": "1867052458269768",
+      "content": "现在是2026年6月日16时0分解盘的时间：今天上证指数低开有一波比较大的反弹，随后反弹力度越来越弱，没有完成我说的箱体运行，就一路下滑了，我估计这个箱体也做不出来了。为了更清楚的了解目前的态势，我们还是回到老图上面说，下图所示，我早就说第二次触碰上轨是不能成功的，上证指数仍然在150分钟大的下降通道中运行，这种趋势短期很难改变。听话的在4090点附近就知道不恋战，见好就收，现在无票一身轻，爽歪歪的。短期看也不乐观，我们现在回到5分钟盘面，下图所示，盘面清楚看到一个下降通道，每一次反弹到上轨就回落，每一次上涨都是诱多，保持定力和耐心很重要。4032是一个重要点位，一旦跌破就会出现加速，明天早晨我会把详细预判发出来。",
+      "publish_time": 1780559977,
+      "publish_date": "2026-06-04 15:59",
+      "url": "https://m.toutiao.com/w/1867052458269768/?app=toutiao_web&timestamp=1788063625&use_new_style=1",
+      "digg_count": 5,
+      "comment_count": 0,
+      "read_count": 2655
+    },
+    {
+      "post_id": "1867035864053764",
+      "content": "股市有风险，投资须谨慎！\n      2026年6月4日11时35分发布2026年6月4日下午上证指数走势预判，今天上证指数低开震荡上行，截止到中午收盘，上证指数收在4066.56点，预计下午2点前继续上行，最高点在4090附近，然后横盘震荡，如下图所示。客观真实的跟踪表述上证指数涨跌的每一天，有时会延迟，但不会缺席，比如说，预判今天收阳线，可今天没收阳线，第二天就会收阳线，这就叫延迟现象，它的底层逻辑就是趋势不变。\n       点赞关注我，我会分享更多更好的预判 ，转发，让更多人看到更真实更有价值的预判。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，市场没有假设，更不允许如果的存在，答案只有一个，那就是涨就是涨，跌就是跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1780544151,
+      "publish_date": "2026-06-04 11:35",
+      "url": "https://m.toutiao.com/w/1867035864053764/?app=toutiao_web&timestamp=1788063625&use_new_style=1",
+      "digg_count": 4,
+      "comment_count": 0,
+      "read_count": 2597
+    },
+    {
+      "post_id": "1866959991290952",
+      "content": "现在是2026年6月3日15时30分解盘的时间：先说一下今天的预判，我认为今天上证指数走势很符合预判，高点和低点都很接近，与我画的分时图也很类似，并且收出小阳线，不恋战，见好就收，反弹随时都可能结束，对今天的预判我是很满意，不知道大家满意不满意？在评论区说说你们的看法，说什么我都高兴，说明大家尊重我辛勤劳作。下面开始解盘：先从过去的老图说起，如下图所示，这张图大家都比较熟悉，不止一次提到过它，一次触碰上轨无情挡回来，二次触碰仍然无法穿越，等第三次有可能穿越，但也不一定，要看当时的情况而定。现在我们回到5分钟盘面，如下图所示，左侧有一个框，这个框是洗盘的，开盘就洗，洗完就拉升，下午2点有一波跳水，是为了打开空间，这个空间是为做箱体准备的，明天的主要任务就是完成箱体作业，这个箱体不是收集筹码，而是派发。明天早晨我会把详细预判发布出来。",
+      "publish_time": 1780471793,
+      "publish_date": "2026-06-03 15:29",
+      "url": "https://m.toutiao.com/w/1866959991290952/?app=toutiao_web&timestamp=1788063625&use_new_style=1",
+      "digg_count": 13,
+      "comment_count": 8,
+      "read_count": 6170
+    },
+    {
+      "post_id": "1866923487471623",
+      "content": "股市有风险，投资须谨慎！\n      2026年6月3日5时50分发布2026年6月3日上证指数走势预判，预判今天上证指数高开低走，收小阳线，最高点4091，最低点4050，如下图所示。不恋战，见好就收，反弹随时结束。客观真实的跟踪表述上证指数涨跌的每一天，有时会延迟，但不会缺席，比如说，预判今天收阳线，可今天没收阳线，第二天就会收阳线，这就叫延迟现象，它的底层逻辑就是趋势不变。\n       点赞关注我，我会分享更多更好的预判 ，转发，让更多人看到更真实更有价值的预判。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，市场没有假设，更不允许如果的存在，答案只有一个，那就是涨就是涨，跌就是跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1780436980,
+      "publish_date": "2026-06-03 05:49",
+      "url": "https://m.toutiao.com/w/1866923487471623/?app=toutiao_web&timestamp=1788063625&use_new_style=1",
+      "digg_count": 5,
+      "comment_count": 4,
+      "read_count": 2866
+    },
+    {
+      "post_id": "1866869298924679",
+      "content": "现在是2026年6月2日15时30分解盘的时间：为了便于讲解和理解，我画了一张5分钟k线图，图上有4个框，今天上证指数高开高走，跌破了第4个框，最低探至4032。从图形上看，4个框从上到下依次排开，一个比一个底，今天把昨天下午形成的最后一个框跌破，对股民的杀伤力是很大的，被套在上面的几个框的人已经绝望了，指数不断创新低，实在承受不了压力的股民今天会在最低位割肉出局，主力庄家今天是吸足了筹码一路拉了上来，抄底早了就会出现这样的情况。午后上证指数有一波拉升，接着开始横盘震荡做箱体，明天还会有洗盘动作，明天早晨我会把详细预判发布出来，大家可以参考适时做高抛低吸，降低成本。",
+      "publish_time": 1780385302,
+      "publish_date": "2026-06-02 15:28",
+      "url": "https://m.toutiao.com/w/1866869298924679/?app=toutiao_web&timestamp=1788063625&use_new_style=1",
+      "digg_count": 4,
+      "comment_count": 3,
+      "read_count": 3752
+    },
+    {
+      "post_id": "1866832098764804",
+      "content": "股市有风险，投资须谨慎！\n      2026年6月2日5时35分发布2026年6月2日上证指数走势预判，预判今天上证指数继续做箱体运行，预计10点半后拉升到4105附近继续做箱体运行，完成昨天没有完成的任务，最高点4110，最低点4050，收小阳线，如下图所示。客观真实的跟踪表述上证指数涨跌的每一天，有时会延迟，但不会缺席，比如说，预判今天收阳线，可今天没收阳线，第二天就会收阳线，这就叫延迟现象，它的底层逻辑就是趋势不变。\n       点赞关注我，我会分享更多更好的预判 ，转发，让更多人看到更真实更有价值的预判。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，市场没有假设，更不允许如果的存在，答案只有一个，那就是涨就是涨，跌就是跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1780349825,
+      "publish_date": "2026-06-02 05:37",
+      "url": "https://m.toutiao.com/w/1866832098764804/?app=toutiao_web&timestamp=1788063626&use_new_style=1",
+      "digg_count": 9,
+      "comment_count": 7,
+      "read_count": 5067
+    },
+    {
+      "post_id": "1866786772730884",
+      "content": "现在是2026年6月1日15时30分解盘的时间：为了便于讲解和理解，我画了一张5分钟k线图，图上有ABC三个框，今天上证指数最高点已经插到A框的右侧，由于A框的压力太大，迫使指数再度回落，指数回落到B框的右下方做箱体整理，目的是洗盘，收集A和B框里的筹码，明天上午指数还会在C框做箱体，预计午后拉升到A框右侧做箱体运动。顺便说一下，今天早晨发布的预判图仍然有效，它是一张未走完的图，明天将继续走完。明天早晨我会把详细预判发布出来。",
+      "publish_time": 1780306599,
+      "publish_date": "2026-06-01 17:36",
+      "url": "https://m.toutiao.com/w/1866786772730884/?app=toutiao_web&timestamp=1788063626&use_new_style=1",
+      "digg_count": 4,
+      "comment_count": 2,
+      "read_count": 3781
+    },
+    {
+      "post_id": "1866742078227459",
+      "content": "股市有风险，投资须谨慎！\n      2026年6月1日5时46分发布2026年6月1日上证指数走势预判，预判今天上证指数先抑后扬，最高4105，最低4058，收小阳线，如下图所示。客观真实的跟踪表述上证指数涨跌的每一天，有时会延迟，但不会缺席，比如说，预判今天收阳线，可今天没收阳线，第二天就会收阳线，这就叫延迟现象，它的底层逻辑就是趋势不变。\n       点赞关注我，我会分享更多更好的预判 ，转发，让更多人看到更真实更有价值的预判。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，涨就说涨，跌就说跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1780263975,
+      "publish_date": "2026-06-01 05:46",
+      "url": "https://m.toutiao.com/w/1866742078227459/?app=toutiao_web&timestamp=1788063626&use_new_style=1",
+      "digg_count": 9,
+      "comment_count": 8,
+      "read_count": 5131
+    },
+    {
+      "post_id": "1866671278096391",
+      "content": "股市有风险，投资须谨慎！\n      现在是2026年5月31日11时0分，明天就要开盘了，下周走势是关键，现在有必要理清思路，避免掉到坑里。上证指数从4258下跌以来形成了一个有效的下降通道，这个通道至今任然压制上证指数上行，从150分钟图上看有反弹要求，但从更大周期来看仍然处在下跌之中，所以每一次上涨都可以看作是反弹，参与反弹要慎之又慎，不要因为去捡一粒芝麻最后丢了西瓜，我画了一张日k线图供理解和参考，如下图所示。客观真实的跟踪表述上证指数涨跌的每一天，有时会延迟，但不会缺席，比如说，预判今天收阳线，可今天没收阳线，第二天就会收阳线，这就叫延迟现象，它的底层逻辑就是趋势不变。\n       点赞关注我，我会分享更多更好的预判 ，转发，让更多人看到更真实更有价值的预判。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，涨就说涨，跌就说跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1780196455,
+      "publish_date": "2026-05-31 11:00",
+      "url": "https://m.toutiao.com/w/1866671278096391/?app=toutiao_web&timestamp=1788063626&use_new_style=1",
+      "digg_count": 9,
+      "comment_count": 12,
+      "read_count": 8140
+    },
+    {
+      "post_id": "1866663702660228",
+      "content": "股市有风险，投资须谨慎！\n      现在是2026年5月31日9时0分，今天是周日股休，今天应粉丝之邀分析一下创业板指数和科创50指数，并特意要求用我常用的方法分析，说明她对我十分信任。说实话，我从来没有关注过创业板和科创50，一心埋头钻研上证指数和沪深300指数，既然粉丝邀请了，我也只好赶鸭子上架了，试着分析一下。不过话说回来，股市的规则和逻辑都是通用的，分析的结果也不会有太大的失误，只是只能从宏观上做分析，不能在微观上分析。为了便于讲解和理解，我画出了创业板指数和科创50指数k线图，如下图所示。从两张图上看，它们都有一个共同的特点：都运行在历史最高位，再从上升趋势线上看，也处于刚刚触碰趋势线的上轨，这说明创业板和科创50指数短期都有回调的需要，调整到下轨线之后还会创新高，这种创新高力量会逐步减弱，随着震荡加剧，能量会逐步衰竭，就像所画的图那样，最后就慢慢形成了锅盖式圆弧顶，创业板大概需要两年时间，科创50可能要用一年左右时间。有不同意见的评论区讨论交流。客观真实的跟踪表述上证指数涨跌的每一天，有时会延迟，但不会缺席，比如说，预判今天收阳线，可今天没收阳线，第二天就会收阳线，这就叫延迟现象，它的底层逻辑就是趋势不变。\n       点赞关注我，我会分享更多更好的预判 ，转发，让更多人看到更真实更有价值的预判。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，涨就说涨，跌就说跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1780189231,
+      "publish_date": "2026-05-31 09:00",
+      "url": "https://m.toutiao.com/w/1866663702660228/?app=toutiao_web&timestamp=1788063626&use_new_style=1",
+      "digg_count": 5,
+      "comment_count": 8,
+      "read_count": 4359
+    },
+    {
+      "post_id": "1866585696644167",
+      "content": "#上头条召唤豆包#       股市有风险，投资须谨慎！\n      今天是2026年5月30日6时30分，周六休市日，借此深入分析一下上证指数目前的处境，便于讲解和理解，我画了一张150分钟k线下降图，如下图所示。图中4199点是下降通道形成点，也是向下延伸线形成的上轨，4153点是第一次触碰上轨，被上轨线无情地挡了回来，穿越无果，被迫掉头向下，估计接下来再用两天左右的时间会第二次触碰上轨，第二次触碰还是无法穿越，上证指数需要在更低的地方蓄积最后的力量，耐心等待这一时刻的到来，等第三次触碰上轨时就会像初升的太阳，磅礴之势不可阻挡，一轮上升行情冉冉升起。客观真实的跟踪表述上证指数涨跌的每一天，有时会延迟，但不会缺席，比如说，预判今天收阳线，可今天没收阳线，第二天就会收阳线，这就叫延迟现象，它的底层逻辑就是趋势不变。\n       点赞关注我，我会分享更多更好的预判 ，转发，让更多人看到更真实更有价值的预判。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，涨就说涨，跌就说跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1780114838,
+      "publish_date": "2026-05-30 12:20",
+      "url": "https://m.toutiao.com/w/1866585696644167/?app=toutiao_web&timestamp=1788063626&use_new_style=1",
+      "digg_count": 6,
+      "comment_count": 3,
+      "read_count": 3173
+    },
+    {
+      "post_id": "1866563715381251",
+      "content": "股市有风险，投资须谨慎！\n      今天是2026年5月30日6时30分，周六休市日，借此深入分析一下上证指数目前的处境，便于讲解和理解，我画了一张150分钟k线下降图，如下图所示。图中4199点是下降通道形成点，也是向下延伸线形成的上轨，4153点是第一次触碰上轨，被上轨线无情地挡了回来，穿越无果，被迫掉头向下，估计接下来再用两天左右的时间会第二次触碰上轨，第二次触碰还是无法穿越，上证指数需要在更低的地方蓄积最后的力量，耐心等待这一时刻的到来，等第三次触碰上轨时就会像初升的太阳，磅礴之势不可阻挡，一轮上升行情冉冉升起。客观真实的跟踪表述上证指数涨跌的每一天，有时会延迟，但不会缺席，比如说，预判今天收阳线，可今天没收阳线，第二天就会收阳线，这就叫延迟现象，它的底层逻辑就是趋势不变。\n       点赞关注我，我会分享更多更好的预判 ，转发，让更多人看到更真实更有价值的预判。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，涨就说涨，跌就说跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1780093875,
+      "publish_date": "2026-05-30 06:31",
+      "url": "https://m.toutiao.com/w/1866563715381251/?app=toutiao_web&timestamp=1788063626&use_new_style=1",
+      "digg_count": 7,
+      "comment_count": 5,
+      "read_count": 5052
+    },
+    {
+      "post_id": "1866508710326275",
+      "content": "现在是2026年5月29日16时0分的解盘时间：今天上证指数高开低走，全天呈现出上下震荡走势，是预判没有预料到的事情。虽有意外，但仍然是合理的走势范围之内，并不影响大局，只是在此多整理停留一两天而已。现在就盘面情况做一下解析，我画了30分钟k线图，有AB两个框，如下图所示。A框的套牢筹码太多，上行压力比较大，所以今天上证指数选择了震荡回落的走势，今天这种走势的目的就是通过震荡迫使A框的筹码交到B框中来，属于洗盘的动作。从时间上看B框与A框大致相当，预计再有一天时间震荡就差不多了。下周一早晨我会把详细预判发出来。",
+      "publish_time": 1780041418,
+      "publish_date": "2026-05-29 15:56",
+      "url": "https://m.toutiao.com/w/1866508710326275/?app=toutiao_web&timestamp=1788063626&use_new_style=1",
+      "digg_count": 4,
+      "comment_count": 9,
+      "read_count": 5694
+    },
+    {
+      "post_id": "1866468414090243",
+      "content": "股市有风险，投资须谨慎！\n      2026年5月29日5时20分发布2026年5月29日上证指数走势预判，预判今天上证指数高开高走，最高点4150，最低点4105点，收中阳线，如下图所示。客观真实的跟踪表述上证指数涨跌的每一天，有时会延迟，但不会缺席，比如说，预判今天收阳线，可今天没收阳线，第二天就会收阳线，这就叫延迟现象，它的底层逻辑就是趋势不变。\n       点赞关注我，我会分享更多更好的预判 ，转发，让更多人看到更真实的预判。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，涨就说涨，跌就说跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1780002989,
+      "publish_date": "2026-05-29 05:16",
+      "url": "https://m.toutiao.com/w/1866468414090243/?app=toutiao_web&timestamp=1788063626&use_new_style=1",
+      "digg_count": 16,
+      "comment_count": 9,
+      "read_count": 5038
+    },
+    {
+      "post_id": "1866416849594436",
+      "content": "现在是2026年5月28日15时40分，是解盘时间：今天上证指数探底回升，一波三折回升的很艰难，涨幅没有达到预期，总体来说方向与预判是一致的，收出了小阳线。我画了5分钟k线图，图上有ABab四个框，今天下午上证指数主要在b框里运行，对应的是a框，由于a里面有套牢盘，b运行的目的就是通过上下震荡诱骗a交出筹码，今天下午运行的时间还不够，明天上午还要在b框里运行一段时间，预计下午会移到B框里运行，对应的是A框。今天就说这么多。",
+      "publish_time": 1779953813,
+      "publish_date": "2026-05-28 15:36",
+      "url": "https://m.toutiao.com/w/1866416849594436/?app=toutiao_web&timestamp=1788063626&use_new_style=1",
+      "digg_count": 7,
+      "comment_count": 3,
+      "read_count": 4005
+    },
+    {
+      "post_id": "1866376420211715",
+      "content": "股市有风险，投资须谨慎！\n      2026年5月28日5时20分发布2026年5月28日上证指数走势预判，预判今天上证指数探底回升，走出V型走势，最高点4147，最低点4065点，收大阳线，如下图所示。客观真实的跟踪表述上证指数涨跌的每一天，有时会延迟，但不会缺席，比如说，预判今天收阳线，可今天没收阳线，第二天就会收阳线，这就叫延迟现象，它的底层逻辑就是趋势不变。\n       点赞关注我，我会分享更多更好的预判 ，转发，让更多人看到更真实的预判。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，涨就说涨，跌就说跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1779915256,
+      "publish_date": "2026-05-28 04:54",
+      "url": "https://m.toutiao.com/w/1866376420211715/?app=toutiao_web&timestamp=1788063626&use_new_style=1",
+      "digg_count": 21,
+      "comment_count": 25,
+      "read_count": 10483
+    },
+    {
+      "post_id": "1866324303383684",
+      "content": "现在是2026年5月27日15时05分，是盘后解析时间：今天上证指数走势基本符合预判，低开后有一个冲高的过程，主力庄家借机出货，当筹码派发完成后，就一路震荡下跌至4077点，两点钟后开始反弹。目前来看在进行箱体震荡，箱体上沿4109，下沿4077。在此做箱体也是有玄机的，我画了5分钟k线图，左边一个框，右边一个框，右边框在左边框的下方运行，庄家在此收集左边框里的筹码，经过反复震荡后，左边框里面的筹码就会慢慢流入右边框里，当筹码收集的差不多了，又有一个低位筹码向高位派发的过程。大家不要糊里糊涂的跟风当接盘侠。明天早晨我会把详细的预判走势图发出来",
+      "publish_time": 1779865554,
+      "publish_date": "2026-05-27 15:05",
+      "url": "https://m.toutiao.com/w/1866324303383684/?app=toutiao_web&timestamp=1788063626&use_new_style=1",
+      "digg_count": 11,
+      "comment_count": 2,
+      "read_count": 5669
+    },
+    {
+      "post_id": "1866288853806083",
+      "content": "股市有风险，投资须谨慎！\n      2026年5月27日5时42分发布2026年5月27日上证指数走势预判，预判今天上证指数震荡下行，最高点4150，最低点4068点，收阴线，如下图所示。客观真实的跟踪表述上证指数涨跌的每一天，有时会延迟，但不会缺席，比如说，预判今天收阳线，可今天没收阳线，第二天就会收阳线，这就叫延迟现象，它的底层逻辑就是趋势不变。\n       点赞关注我，我会分享更多更好的预判 。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，涨就说涨，跌就说跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1779831747,
+      "publish_date": "2026-05-27 05:42",
+      "url": "https://m.toutiao.com/w/1866288853806083/?app=toutiao_web&timestamp=1788063628&use_new_style=1",
+      "digg_count": 8,
+      "comment_count": 9,
+      "read_count": 6173
+    },
+    {
+      "post_id": "1866234778600648",
+      "content": "股市有风险，投资须谨慎！\n      现在是2026年5月26日15时22分，现在解析一下今天上证指数走势的情况，今天上证指数围绕着4104和4140反复的宽幅震荡，既不深跌也涨不上去，一般人看不明白，是下跌的中继呢还是蓄势待发？我告诉各位，这里面暗藏玄机，今天就是真正下跌前的一次预演，真正的下跌在明天，我画了一张5分钟k线图，帮助说明便于理解，右侧画了个方块，里面都是追高被套的筹码，右侧方块是今天震荡的轨迹，多数情况下右侧方块都在左侧方块下面运行，左侧有不少筹码今天给了右侧，庄家主力就会把今天拿到的筹码派发到明天的高位，也许有今天割肉的明天又在高位重新接盘，其实这也不是什么阴谋，而是阳谋，只是一般人看不懂而已。今天有4000多家下跌，明天就有4000多家上涨，大家只能看，不能做接盘侠。尾盘又拉起来了，为明天高开做好了准备。明天好好看戏吧！上证指数的任务还没有完成，所以今天跌不下去，明天就要触及上轨了，等触碰到上轨就会慢慢回落，上证指数的任务就算完成了，如下图所示。客观真实的跟踪表述上证指数涨跌的每一天，有时会延迟，但不会缺席，比如说，预判今天收阳线，可今天没收阳线，第二天就会收阳线，这就叫延迟现象，它的底层逻辑就是趋势不变。\n       点赞关注我，我会分享更多更好的预判 。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，涨就说涨，跌就说跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1779780177,
+      "publish_date": "2026-05-26 15:22",
+      "url": "https://m.toutiao.com/w/1866234778600648/?app=toutiao_web&timestamp=1788063628&use_new_style=1",
+      "digg_count": 5,
+      "comment_count": 3,
+      "read_count": 8915
+    },
+    {
+      "post_id": "1866199595109507",
+      "content": "股市有风险，投资须谨慎！\n       2026年5月26日6时03分发布2026年5月26日上证指数走势预判，预判今天上证指数冲高回落，收阴线，最高点4168，最低点4090，如下图所示。客观真实的跟踪表述上证指数涨跌的每一天，有时会延迟，但不会缺席，比如说，预判今天收阳线，可今天没收阳线，第二天就会收阳线，这就叫延迟现象，它的底层逻辑就是趋势不变。\n       点赞关注我，我会分享更多更好的预判 。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，涨就说涨，跌就说跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1779746623,
+      "publish_date": "2026-05-26 06:03",
+      "url": "https://m.toutiao.com/w/1866199595109507/?app=toutiao_web&timestamp=1788063628&use_new_style=1",
+      "digg_count": 8,
+      "comment_count": 16,
+      "read_count": 6833
+    },
+    {
+      "post_id": "1866144856963076",
+      "content": "股市有风险，投资须谨慎！\n       现在是2026年5月25日盘后时间，我对今天上证指数走势做一个简单的分析，受到美伊和解利好消息的刺激，全球股市普涨，上证指数也延续了反弹的走势，预计明天仍有上攻的动能，我的观点从未改变，下跌的趋势已经形成，现在只是反弹而已，粉丝朋友们一定管住手，别冲动，咱们在高位清仓了，别稀里糊涂的又追进去，守好本金，耐心等待回调，以不变应万变，虽然还不清楚反弹的高点在哪里，但离下降通道的上轨已经不远了，如下图所示。客观真实的跟踪表述上证指数涨跌的每一天，有时会延迟，但不会缺席，比如说，预判今天收阳线，可今天没收阳线，第二天就会收阳线，这就叫延迟现象，它的底层逻辑就是趋势不变。\n       点赞关注我，我会分享更多更好的预判 。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，涨就说涨，跌就说跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1779694420,
+      "publish_date": "2026-05-25 15:33",
+      "url": "https://m.toutiao.com/w/1866144856963076/?app=toutiao_web&timestamp=1788063628&use_new_style=1",
+      "digg_count": 5,
+      "comment_count": 1,
+      "read_count": 4109
+    },
+    {
+      "post_id": "1866104704981063",
+      "content": "股市有风险，投资须谨慎！\n       2026年5月25日5时20分发布2026年5月25日上证指数走势预判，预判今天上证指数先横盘震荡，然后再下跌，收小阴线，最高4120点，最低4060点，如下图所示。客观真实的跟踪表述上证指数涨跌的每一天，有时会延迟，但不会缺席，比如说，预判今天收阳线，可今天没收阳线，第二天就会收阳线，这就叫延迟现象，它的底层逻辑就是趋势不变。\n       点赞关注我，我会分享更多更好的预判 。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，涨就说涨，跌就说跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1779656129,
+      "publish_date": "2026-05-25 04:55",
+      "url": "https://m.toutiao.com/w/1866104704981063/?app=toutiao_web&timestamp=1788063628&use_new_style=1",
+      "digg_count": 6,
+      "comment_count": 6,
+      "read_count": 7631
+    },
+    {
+      "post_id": "1866021520748548",
+      "content": "股市有风险，投资须谨慎！\n      今天是 2026年5月24周日，借此休市机会给当前上证指数做一个技术分析，这也是昨天粉丝朋友给我提出的问题，希望我能仔细的分析讲解一下目前A股市场多空的情况，应次之邀而为之，目前情况看，空方占主导，多方占下风，我画了一张180分钟k线图，足以说明这个问题，趋势已经由多转空了，从这张图看得清楚也很明显了，稍微有点股票技术分析常识的人都会一目了然。现在还有哪个唱多说大牛市的不服需要辩解的吗？我估计看了这张图也都闭嘴了，是不是有一种脊背发凉的感觉？如下图所示。客观真实的跟踪表述上证指数涨跌的每一天，有时会延迟，但不会缺席，比如说，预判今天收阳线，可今天没收阳线，第二天就会收阳线，这就叫延迟现象，它的底层逻辑就是趋势不变。\n       点赞关注我，我会分享更多更好的预判 。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，涨就说涨，跌就说跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1779576798,
+      "publish_date": "2026-05-24 06:53",
+      "url": "https://m.toutiao.com/w/1866021520748548/?app=toutiao_web&timestamp=1788063628&use_new_style=1",
+      "digg_count": 10,
+      "comment_count": 11,
+      "read_count": 9185
+    },
+    {
+      "post_id": "1865938018787395",
+      "content": "#你对全球债市未来的走势怎么看#今天是2026年5月23日，就目前全球债市巨幅上涨说说我对全球债市未来走势的看法：我认为这种债市上涨的走势还会持续相当长的一段时间，原因是美国股市日韩股市或者说欧洲股市都在历史高位，并有见顶的迹象，聪明的国际资本正在疯狂抛售手中的股票，兑现出利润丰厚的真金白银。资本是不休息的，钱从股票市场出来马上就投入到债市，由于大量资金涌入，不断抬高债券市场的价格，国债是以国家信誉担保的债券是非常安全的优质资产，假如以100元买入10年期的国债，到期就给5%的利息，并且还在有人源源不断地买入，推动债市价格不断的上涨，说不定最终能涨到10%，这样操作让资产稳定保值增值，这么好的香饽饽有谁不动心呢？说国债安全优质还有一个重要的方面，就是变现与股票卖出一样秒成。如果有一天股市跌到底了，事情就会发生反转，国际资本又会抛售债券买入股票，很多人卖债买股，股票市场的价格就会越来越高。这就是资本循环的硬核道理。",
+      "publish_time": 1779497164,
+      "publish_date": "2026-05-23 08:46",
+      "url": "https://m.toutiao.com/w/1865938018787395/?app=toutiao_web&timestamp=1788063628&use_new_style=1",
+      "digg_count": 4,
+      "comment_count": 3,
+      "read_count": 3537
+    },
+    {
+      "post_id": "1865873060761668",
+      "content": "#现在的股市你怎么看？#今天是2026年5月22日，对现在的股市我是这样看的：就目前上证指数来看，从2635点到4258点已经运行了两年多，上涨了1700多点，涨幅高达64%，今天收在在4112.90点，整体来说处于相对高位，对股市本身来说它也有些累了，需要停下来喘口气歇一歇。目前中国股市就是处于这样一个状态。而对于我个人来说是这样操作和应对的，既然它累了需要休息，我就跟它同步，把股票全部卖出，清仓休息。最近我都在公园跑步健身，盘后复盘，跟踪上证指数下跌的进度，盘算着下跌幅度和空间有多少，大约还有多少时间能跌到位，做好抄底捡便宜筹码的准备，等待着下一个上涨波段的到来！这就是我对现在股市的全部看法。有相同看法的，支持一下。",
+      "publish_time": 1779435215,
+      "publish_date": "2026-05-22 15:33",
+      "url": "https://m.toutiao.com/w/1865873060761668/?app=toutiao_web&timestamp=1788063628&use_new_style=1",
+      "digg_count": 3,
+      "comment_count": 5,
+      "read_count": 3888
+    },
+    {
+      "post_id": "1865834767141896",
+      "content": "股市有风险，投资须谨慎！\n       2026年5月22日5时30分发布2026年5月22日上证指数走势预判，预判今天上证指先抑后扬再抑，具体说就是顺势低开在4050附近，然后展开反弹，午后再现跳水，最高点4108点，最低点4012点，收中阴线，如下图所示。客观真实的跟踪表述上证指数涨跌的每一天，有时会延迟，但不会缺席，比如说，预判今天收阳线，可今天没收阳线，第二天就会收阳线，这就叫延迟现象，它的底层逻辑就是趋势不变。\n       点赞关注我，我会分享更多更好的预判 。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，涨就说涨，跌就说跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1779398696,
+      "publish_date": "2026-05-22 05:24",
+      "url": "https://m.toutiao.com/w/1865834767141896/?app=toutiao_web&timestamp=1788063628&use_new_style=1",
+      "digg_count": 2,
+      "comment_count": 2,
+      "read_count": 4324
+    },
+    {
+      "post_id": "1865779484191748",
+      "content": "#投资股票的最高境界是什么?#今天是2026年5月21日，要说投资股票的最高境界，那就是：任凭风浪起，稳坐钓鱼台。股市的大风大浪，甚至惊涛骇浪，都不畏惧的人就是最高境界。今天上证指数冲高回落，跌得狠不狠，可以算得上惊涛骇浪了吧，我们就能稳稳的坐在钓鱼台上，欣赏大风暴的来临，为什么？是因为我们早就知道风暴即将来临，早有准备，在5月12日就清仓了，我就想问一句，这算不算投资股票的最高境界？如果这都不算，那什么才算？整天喊着大牛市的人，这一下子该闭嘴了，还是那一句话说得太好了，当潮水褪去才知道谁在裸泳。",
+      "publish_time": 1779345974,
+      "publish_date": "2026-05-21 14:46",
+      "url": "https://m.toutiao.com/w/1865779484191748/?app=toutiao_web&timestamp=1788063628&use_new_style=1",
+      "digg_count": 2,
+      "comment_count": 2,
+      "read_count": 2956
+    },
+    {
+      "post_id": "1865740960650311",
+      "content": "股市有风险，投资须谨慎！\n       2026年5月21日5时20分发布2026年5月21日上证指数走势预判，预判今天上证指数横盘震荡，最高点4187点，最低点4138点，收十字星或小阳线，如下图所示。客观真实的跟踪表述上证指数涨跌的每一天，有时会延迟，但不会缺席，比如说，预判今天收阳线，可今天没收阳线，第二天就会收阳线，这就叫延迟现象，它的底层逻辑就是趋势不变。\n       点赞关注我，我会分享更多更好的预判 。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，涨就说涨，跌就说跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1779309235,
+      "publish_date": "2026-05-21 04:33",
+      "url": "https://m.toutiao.com/w/1865740960650311/?app=toutiao_web&timestamp=1788063628&use_new_style=1",
+      "digg_count": 3,
+      "comment_count": 1,
+      "read_count": 3882
+    },
+    {
+      "post_id": "1865693450547395",
+      "content": "#用一句话形容中国股市#今天是2026年5月20日，用一句话形容中国当前的股市，就是：黑云压城城欲摧。全球股市都在大跌，美股三大指数连跌三天，欧洲股市下跌七天，日韩股市也是大跌三天，中国股市也已经跌了4-5天了，昨天反弹0.92%，今天就又开始下跌。这种下跌的恐慌情绪正在漫延，美日的债市也崩了，利率高达吓人的5%，这一切都表面全球性的股市大跌即将来临，我作为资深股评人因影响力不够，不能让更多股民及时知道当前股市的危险而感到惶恐不安。这种全球性的崩盘是早有预谋还是巧合赶在了一起？好在从5月10起，我就连续拉响风险警报，态度十分肯定的告诉粉丝们，4200点上方是最高级别风险等级，我的粉丝朋友们可能因此躲过一劫，为此我有一丝慰藉。感兴趣的朋友可以去看看我5月10日以后是怎样拉响警报的。",
+      "publish_time": 1779263926,
+      "publish_date": "2026-05-20 15:58",
+      "url": "https://m.toutiao.com/w/1865693450547395/?app=toutiao_web&timestamp=1788063628&use_new_style=1",
+      "digg_count": 3,
+      "comment_count": 4,
+      "read_count": 4480
+    },
+    {
+      "post_id": "1865656381143171",
+      "content": "股市有风险，投资须谨慎！\n       2026年5月20日6时10分发布2026年5月20日上证指数走势预判，预判今天上证指数横盘震荡，最高点4200点，最低点4170点，收阴收阳皆有可能，如下图所示。我认为4200点附近为最后的逃命线，能不能超过4200点或破前高4258点，只能说有可能，但不确定，我认为买卖股票最重要的一点就是去做确定的事情，不去做不确定的事情。客观真实的跟踪表述上证指数涨跌的每一天，有时会延迟，但不会缺席，比如说，预判今天收阳线，可今天没收阳线，第二天就会收阳线，这就叫延迟现象，它的底层逻辑就是趋势不变。\n       点赞关注我，我会分享更多更好的预判 。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，涨就说涨，跌就说跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1779228574,
+      "publish_date": "2026-05-20 06:09",
+      "url": "https://m.toutiao.com/w/1865656381143171/?app=toutiao_web&timestamp=1788063629&use_new_style=1",
+      "digg_count": 2,
+      "comment_count": 5,
+      "read_count": 2831
+    },
+    {
+      "post_id": "1865597448351816",
+      "content": "#用一句话概括股市#今天是2026年5月19日，如果用一句话概括现在的股市，就是：鱼尾行情，考验投资人的耐心。最近几天的下跌，上证指数好似摇摇欲坠，但它就是跌不下去，只要一跌破4117点，它马上就被神秘资金拉起来，一共跌破5次，很快都被拉起来。今天就更有意思了，今天10点半开始30度缓慢上涨，不回头，就这样慢慢悠悠上涨，我相信没有多少人敢追的，这就是越不追，大盘就越涨，等涨高了，散户敢追了，也就不涨了。所以，股友们现在千万管好自己，别冲动。我曾在5月10日11日12日连续三天发出风险警报，并且我在5月12日清仓（已经在预判中告诉大家了:)，直截了当说明鱼尾行情很难受，既然我清仓了，没有大跌我绝不再进场参与，因为最后一个铜板挣得很辛苦，我的粉丝朋友可能躲过一劫，我还是那句话，最后一个铜板让别人去挣吧，希望我的粉丝朋友能听进去，大家可以去看看我5月6日以后的文章，看后一定会有不一样的感觉。",
+      "publish_time": 1779172371,
+      "publish_date": "2026-05-19 14:32",
+      "url": "https://m.toutiao.com/w/1865597448351816/?app=toutiao_web&timestamp=1788063629&use_new_style=1",
+      "digg_count": 4,
+      "comment_count": 5,
+      "read_count": 34513
+    },
+    {
+      "post_id": "1865564621260932",
+      "content": "股市有风险，投资须谨慎！\n       2026年5月19日6时0分发布2026年5月19日上证指数走势预判，预判今天上证指数高开高走，收阳线，最高点4200点，最低点4145，如下图所示。客观真实的跟踪表述上证指数涨跌的每一天，有时会延迟，但不会缺席，比如说，预判今天收阳线，可今天没收阳线，第二天就会收阳线，这就叫延迟现象，它的底层逻辑就是趋势不变。\n       点赞关注我，我会分享更多更好的预判 。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，涨就说涨，跌就说跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1779141065,
+      "publish_date": "2026-05-19 05:51",
+      "url": "https://m.toutiao.com/w/1865564621260932/?app=toutiao_web&timestamp=1788063629&use_new_style=1",
+      "digg_count": 6,
+      "comment_count": 2,
+      "read_count": 5787
+    },
+    {
+      "post_id": "1865513241099268",
+      "content": "#你认为2026年股市会走向牛市吗#不会。自从2024年2月29日的2635点启动的牛市以来，历经两年多的时间，上涨了1700多点，涨幅高达惊人的64%，现在它累了，涨不动了，尤其最近几个月出现巨幅震荡，疲态尽显，也该让它好好休息一下，睡睡觉了，感谢它两年多为我们做的贡献！5月是它为我们站的最后一班岗。[作揖]",
+      "publish_time": 1779092065,
+      "publish_date": "2026-05-18 16:14",
+      "url": "https://m.toutiao.com/w/1865513241099268/?app=toutiao_web&timestamp=1788063629&use_new_style=1",
+      "digg_count": 4,
+      "comment_count": 4,
+      "read_count": 3924
+    },
+    {
+      "post_id": "1865471926107140",
+      "content": "股市有风险，投资须谨慎！\n       2026年5月18日6时0分发布2026年5月18日上证指数走势预判，预判今天上证指数低开高走，收阳线，最高点4200点，如下图所示。客观真实的跟踪表述上证指数涨跌的每一天，有时会延迟，但不会缺席，比如说，预判今天收阳线，可今天没收阳线，第二天就会收阳线，这就叫延迟现象，它的底层逻辑就是趋势不变。\n       点赞关注我，我会分享更多更好的预判 。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，涨就说涨，跌就说跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1779052664,
+      "publish_date": "2026-05-18 05:17",
+      "url": "https://m.toutiao.com/w/1865471926107140/?app=toutiao_web&timestamp=1788063629&use_new_style=1",
+      "digg_count": 6,
+      "comment_count": 4,
+      "read_count": 5201
+    },
+    {
+      "post_id": "1865387254105224",
+      "content": "#2026年股市会涨到多少点#今天的2026年5月17日，我预判2026年A股会涨到4330点。我把最高点定为4330的理由是五浪上涨，起点是2635，一浪是3174，二浪是2689，三浪是3674，四浪是3040，五浪是4330。半年以后咱们来验证！",
+      "publish_time": 1778971914,
+      "publish_date": "2026-05-17 06:51",
+      "url": "https://m.toutiao.com/w/1865387254105224/?app=toutiao_web&timestamp=1788063629&use_new_style=1",
+      "digg_count": 5,
+      "comment_count": 5,
+      "read_count": 4493
+    },
+    {
+      "post_id": "1865325995952199",
+      "content": "股市有风险，投资须谨慎！\n       客观真实的记录上证指数涨跌的每一天，有时会延迟，但不会缺席，比如说，预判今天收阳线，可今天没收阳线，第二天就会收阳线，这就叫延迟现象，它的底层逻辑是趋势不变。大家好，我是愚哥，今天是2026年5月16日周六，今天不再聊风险了，风险聊多了文章就发不出去了。今天聊一个大家感兴趣的话题：普通股民如何在股市里面挣钱，普通股民想要走股市里挣钱，其实也很简单，今天我就教你一个简单实用的方法-如何识别三重底，当股价大跌之后在日k线形成的类似于w形态的图形就是三重底，举个例子来说，2026年3月23日是上证指数连续大跌形成了底部，后面连续9个交易日也就是4月3日走出来一个w形态的图形，这就是w底，也叫三重底，当看到这个图形，二话不说赶紧超低，如果你在4月3日进场超低，就会迎来23天的大涨，如下图所示。你学会了吗？在评论区聊聊。\n       点赞关注我，我会分享更多更好的预判 。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，涨就说涨，跌就说跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1778913494,
+      "publish_date": "2026-05-16 14:38",
+      "url": "https://m.toutiao.com/w/1865325995952199/?app=toutiao_web&timestamp=1788063629&use_new_style=1",
+      "digg_count": 4,
+      "comment_count": 3,
+      "read_count": 2740
+    },
+    {
+      "post_id": "1865307600620551",
+      "content": "股市有风险，投资须谨慎！\n       客观真实的记录上证指数涨跌的每一天，有时会延迟，但不会缺席，比如说，预判今天收阳线，可今天没收阳线，第二天就会收阳线，这就叫延迟现象，它的底层逻辑是趋势不变。大家好，我是愚哥，今天是周六休市，借机聊一下美国科技股泡沫破裂和风险防控的话题：美科技股本身就是一个巨大的泡沫，所谓的泡沫就是预估股票的价值是股票实际价值的几百倍，几千倍甚至上万倍，完全脱离现实，是人为吹出来的，美国科技股现在就是这样的，它的崩盘是早晚的事，聪明人都知道，巴菲特手握4000亿美元现金，为什么迟迟不出手，他就是等美股的大崩盘的这一天。我在上周五早上的预判中说美股科技股泡沫破裂就在下周，都没等到下周，周五直接就崩盘了，美股三大股指集体下跌，带崩了日韩，韩国股市跌到熔断7%，日本也跌了2%点多，欧洲股市更是绿成一片，上证指数昨天上午涨得好好的，下午也被带崩，美科技股泡沫破裂对全球股市都有巨大的影响。作为股市的股民我们不得不防，这也预示着重大风险即将来临，捂好钱袋子才是当务之急。当然啦，说美国科技股崩盘是一个过程，是一点一点慢慢崩的，不是要大跌甚至狂泄，崩盘要经历几个月甚至几年。结合着美股三大股指和A股都已经见顶回落，这是最重要的预警信号，别拿愚哥的肺腑之言不当回事。切记切记！\n       点赞关注我，我会分享更多更好的预判 。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，涨就说涨，跌就说跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1778895951,
+      "publish_date": "2026-05-16 09:45",
+      "url": "https://m.toutiao.com/w/1865307600620551/?app=toutiao_web&timestamp=1788063629&use_new_style=1",
+      "digg_count": 5,
+      "comment_count": 1,
+      "read_count": 2990
+    },
+    {
+      "post_id": "1865235379050504",
+      "content": "股市有风险，投资须谨慎！\n       上证指数这么跌，害怕吗？，上周六日加上周一连续三天我都拉响了警报，预警级别是最高等级的，大家可以看看这几天我的预判，我在5月12日都清仓了，也告诉大家了，我的粉丝朋友可能躲过了这一劫，也许有没听我话的，非要吃鱼尾巴，非要挣最后一个铜板，看看，有多难。早上我说了，美国科技股泡沫破裂就在下周，可是都等不急了，今天就已经开始崩盘了，由于美国科技股的崩盘，带崩了日韩，韩国跌了6点多，上证指数本来涨得好好的，下午也被带崩了，又一轮下跌。现在全球股市黑压压的一片，下周估计股民很难受。\n       点赞关注我，我会分享更多更好的预判 。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，涨就说涨，跌就说跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1778827075,
+      "publish_date": "2026-05-15 14:37",
+      "url": "https://m.toutiao.com/w/1865235379050504/?app=toutiao_web&timestamp=1788063629&use_new_style=1",
+      "digg_count": 3,
+      "comment_count": 1,
+      "read_count": 3347
+    },
+    {
+      "post_id": "1865223001974788",
+      "content": "股市有风险，投资须谨慎！\n       2026年5月15日11时20分发布2026年5月15日上证指数下午走势预判：下午继续缓慢攀升，收阳线，最高点在4229附近，这是最后的逃命线，至于说能不能涨得再高点，或者突破前高，只能说有可能，但不确定性，确定的高度是4229点附近。如下图所示。\n       点赞关注我，我会分享更多更好的预判 。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，涨就说涨，跌就说跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1778815271,
+      "publish_date": "2026-05-15 11:21",
+      "url": "https://m.toutiao.com/w/1865223001974788/?app=toutiao_web&timestamp=1788063629&use_new_style=1",
+      "digg_count": 5,
+      "comment_count": 1,
+      "read_count": 33843
+    },
+    {
+      "post_id": "1865208288064519",
+      "content": "股市有风险，投资须谨慎！\n       2026年5月15日6时30分发布2026年5月15日上证指数走势预判。在说预判前，先说一下5月13日的预判中出错的情况，经过当晚仔细复盘，原因很快找到了，问题出在技术参数上有点小毛病，现在已经修改了技术参数，问题已经得到解决，这类小问题只会影响短期走势预判，不会影响整体大的趋势，对上证指数长期的预判都是正确的，在股市里面能不能挣到钱，关键就看对长期的预判，对整体的把握，对于一波行情来说，买不到最低点也卖不到最高点，只要你把鱼身子吃了，也就足够了。之所以找到原因后没有及时发布第二天预判，主要是我说了停更两天，不能出尔反尔，言之无信，好在5月13日我已经说了上证指数5月14日（昨天:)是横盘震荡下行走势，也算是提前预警了。这次错误预判，也证实了我说过的话鱼尾很难吃，最后一个铜板很难挣的道理。预判今天上证指数高开高走收一根大阳线，最高点4260点附近，如下图所示。顺便说一下，美国科技股泡沫破裂就在下一周，粉丝朋友们，请跟我一起来见证这一历史吧！\n       点赞关注我，我会分享更多更好的预判 。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，涨就说涨，跌就说跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1778801239,
+      "publish_date": "2026-05-15 07:27",
+      "url": "https://m.toutiao.com/w/1865208288064519/?app=toutiao_web&timestamp=1788063629&use_new_style=1",
+      "digg_count": 2,
+      "comment_count": 2,
+      "read_count": 2631
+    },
+    {
+      "post_id": "1865064291689603",
+      "content": "今天的预判出错了，不知道是不是超出了我的认知，还是最后的一涨，我决定停更两天看看。我还是认为4200以上风险大于机会，我既然已经清仓了，上证指数不跌几百点我绝不进场。我顺便说一下，明天横盘向下震荡的概率比较大。",
+      "publish_time": 1778663913,
+      "publish_date": "2026-05-13 17:18",
+      "url": "https://m.toutiao.com/w/1865064291689603/?app=toutiao_web&timestamp=1788063629&use_new_style=1",
+      "digg_count": 5,
+      "comment_count": 3,
+      "read_count": 3662
+    },
+    {
+      "post_id": "1865021856955464",
+      "content": "股市有风险，投资须谨慎！\n       2026年5月13日6时05分发布2026年5月13日上证指数走势预判，预判今天上证指数低开低走，震荡下行，收阴线，最高点大约在4199点附近，最低点大约在4168点，如下图所示。\n       关注我，在股市关键时刻能救你一命，多点赞，我会分享更多更好的预判 。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，涨就说涨，跌就说跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1778623444,
+      "publish_date": "2026-05-13 06:04",
+      "url": "https://m.toutiao.com/w/1865021856955464/?app=toutiao_web&timestamp=1788063631&use_new_style=1",
+      "digg_count": 4,
+      "comment_count": 6,
+      "read_count": 3731
+    },
+    {
+      "post_id": "1864970631724099",
+      "content": "股市有风险，投资须谨慎！\n       2026年5月12日16时30分发布2026年5月13日上证指数走势预判，预判明天上证指数低开，震荡下行，收阴线，最高点大约在4216点附近，最低点大约在4180点，如下图所示。看来计划赶不上变化啊，早晨我还说上证指数上冲4260，实际冲到4230就跌下来了。上证指数就像小媳妇的心一样难以捉摸，好在我看不对劲，在高点就清仓了。\n       关注我，在股市关键时刻能救你一命，多点赞，我会分享更多更好的预判 。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，涨就说涨，跌就说跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1778574592,
+      "publish_date": "2026-05-12 16:29",
+      "url": "https://m.toutiao.com/w/1864970631724099/?app=toutiao_web&timestamp=1788063631&use_new_style=1",
+      "digg_count": 3,
+      "comment_count": 1,
+      "read_count": 5162
+    },
+    {
+      "post_id": "1864931755616263",
+      "content": "股市有风险，投资须谨慎！\n       2026年5月12日6时12分发布2026年5月12日上证指数走势预判，预判今天上证指数先抑后扬，收阳线，最高点大约在4260附近，最低点大约在4211点，如下图所示。在过去的周六周日两天时间里我都专门提示了风险，尤其是周日明确拉响了风险警报，今天再接着警示风险，上证指数稳稳当当站上4200点，大家欢欣鼓舞，群情激奋，扬眉吐气，可我要给你泼盘冷水，告诉你：现在是风险大于机会，4200点上方是红灯区，风险级别是最高等级，说这话也并不意味着上证指数马上就跌下去，我相信上证指数会继续往上冲，风险主要来自于你手中持有的股票，可能会出现上证指数涨了，你手里的股票却跌了的现象，等上证指数开始下跌的时候，你手中的股票已经跌得不成样子了，如果你手中股票跟上证指数密切相关还可以持有一下，昨天就很清楚的说明了这一点，上证指数大涨，有近一半股票在下跌，目前就是鱼尾行情，都知道从鱼头吃到鱼尾是一件很困难的事情，也都知道不挣最后一个铜板的道理，所以，在今天这个特别的日子，我要跟你说些特别的话，突破4200以后，量能会迅速放大到4万亿以上，市场得到充分换手，从心理学的角度说，只有指数不断创出新高才能彻底点燃投资者追高的热情，也只有这样机构才能顺利的出货，卖给踏空追高的散户，机构全身而退，在疯疯火火热热闹闹中结束一波行情，今天就说这么多。点赞关注我，支持一下。\n       关注我，在股市关键时刻能救你一命，多点赞，我会分享更多更好的预判 。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，涨就说涨，跌就说跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1778537517,
+      "publish_date": "2026-05-12 06:11",
+      "url": "https://m.toutiao.com/w/1864931755616263/?app=toutiao_web&timestamp=1788063631&use_new_style=1",
+      "digg_count": 6,
+      "comment_count": 1,
+      "read_count": 4938
+    },
+    {
+      "post_id": "1864876357452808",
+      "content": "股市有风险，投资须谨慎！\n       2026年5月11日15时30分发布2026年5月12日上证指数走势预判，明天上证指数先抑后扬，收阳线，最低4211，最高4260，如图所示。\n       4月30日买的股票，今天在高点卖出了，一共5个交易日，盈利118%，买入成本是17167，卖出金额是37444。说的简单点就是用一万七买入股票，5个交易日赚了二万块钱。愚哥是不是还可以，认为愚哥还可以的，评论区打上888。如下图所示。\n       关注我，在股市关键时刻能救你一命，多点赞，我会分享更多更好的预判 。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，涨就说涨，跌就说跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1778484685,
+      "publish_date": "2026-05-11 15:31",
+      "url": "https://m.toutiao.com/w/1864876357452808/?app=toutiao_web&timestamp=1788063631&use_new_style=1",
+      "digg_count": 7,
+      "comment_count": 1,
+      "read_count": 3131
+    },
+    {
+      "post_id": "1864863072697415",
+      "content": "股市有风险，投资须谨慎！\n       2026年5月11日12时0分发布2026年5月11日下午上证指数走势预判，今天下午上证指数是回调走势，回调结束后重拾升势，如图所示。\n       4月30日买的股票，今天已经翻倍了，如下图所示，不过，在最高点的时候已经卖出了，原因是下午有回调，如果回调比较深，我就再买回来，如果回调不深就算了，毕竟已经涨了一倍多了。\n       关注我，在股市关键时刻能救你一命，多点赞，我会分享更多更好的预判 。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，涨就说涨，跌就说跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1778472016,
+      "publish_date": "2026-05-11 12:00",
+      "url": "https://m.toutiao.com/w/1864863072697415/?app=toutiao_web&timestamp=1788063631&use_new_style=1",
+      "digg_count": 5,
+      "comment_count": 1,
+      "read_count": 10031
+    },
+    {
+      "post_id": "1864841721544711",
+      "content": "股市有风险，投资须谨慎！\n       2026年5月11日6时21分发布2026年5月11日上证指数走势预判，今天上证指数略微高开，震荡下行回升，收阳线，最低4170，最高点在4210点附近，如图所示。关注我，在股市关键时刻能救你一命，多点赞，我会分享更多更好的预判 。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，涨就说涨，跌就说跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1778451654,
+      "publish_date": "2026-05-11 06:20",
+      "url": "https://m.toutiao.com/w/1864841721544711/?app=toutiao_web&timestamp=1788063631&use_new_style=1",
+      "digg_count": 5,
+      "comment_count": 0,
+      "read_count": 2852
+    },
+    {
+      "post_id": "1864762274100248",
+      "content": "股市有风险，投资须谨慎！\n       2026年5月10日9时20分发布2026年5月11日上证指数走势预判，明天上证指数略微高开，震荡下行，午后震荡回升，收小阳线，最低4170，最高点在4196点附近，如图所示。借着今天休市，聊一下风险防范的话题，风险防范依据每个人的不同，对风险防范的理解也不同，有的人对股市一无所知，风险的防范意识非常强烈，股市一涨赶紧就追上去，股票一跌赶紧割肉，这种高买低卖，超强的风险意识把本金亏个精光。还有一种人，盲目乐观，相信自己，听说是10年慢牛无视风险。最后一种人就是知道风险的厉害和残酷，但是不知道风险在哪里，安全的边界又在哪里，所以，只好躺平摆烂任由股市潮起潮落。今天我要告诉你，股市的风险不在点位有多高，而是在于一个波段的点位有多高，举例说明，6124算不算高？当时绝大多数人都认为要涨到10000点，所以，6124他认为不高，结果就是被套近20年还未解套，3000点低不低，普遍认为很低，可是A股在3000点以下一待就是10年。这都是风险，现在又有人喊突破6124不是梦，甚至说这一轮牛市过万点，这是什么？这就是风险，所以，当有人高喊要大涨特涨的时候，我们就应该注意风险防范了，不然可能就白忙活一年了，甚至赔上本金，这不是危言耸听，这是愚哥拉响的第一个警报。关注我，在股市关键时刻能救你一命，多点赞，我会分享更多更好的预判 。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，涨就说涨，跌就说跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1778375887,
+      "publish_date": "2026-05-10 09:18",
+      "url": "https://m.toutiao.com/w/1864762274100248/?app=toutiao_web&timestamp=1788063631&use_new_style=1",
+      "digg_count": 5,
+      "comment_count": 3,
+      "read_count": 5159
+    },
+    {
+      "post_id": "1864672268935304",
+      "content": "股市有风险，投资须谨慎！\n       2026年5月9日9时30分发布2026年5月11日上证指数走势预判，下周一上证指数震荡上行，以震荡为主，上行为辅，最高点在4196点附近，虽然涨幅不算大，但上下震荡加剧，如图所示。借着今天休市，聊一下老生常谈的话题，在股市里面能挣点钱的三种人，第一种就是像巴菲特那种人，有一双慧眼，能找到绝对好股票，持有很多年，即使是回撤40%也不动摇的狠角色，不怕把牢底坐穿。第二种就是真正把股票技术钻研透的人，而绝非那种一知半解（自称所谓的技术派人士，90%都是这种人)，严格按照股票内在的运行规律交易的人。第三种人就是既找不到好股票，也钻研不了技术，但能找到一个好老师带着做股票的人，而不是认很多人为师，看谁说得都有道理，贻误战机，一败涂地。股市里面只要这三种人能赚到钱，除此以外再无它途。这也是从另外一个侧面说明了95%的人在股市挣不到钱的原因，本来是一波牛市，却听有些股评说要回调，要下跌，有风险，眼看着一波牛市这这样等待中错过了。风险是在你不知不觉中悄悄来临的，就像温水煮青蛙一样，市场一片祥和，或者欢欣鼓舞，都在更大的期待中舒舒服服的就被煮死了，涨势从来都是戛然而止的。关注我，在股市关键时刻能救你一命，多点赞，我会分享更多更好的预判 。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，涨就说涨，跌就说跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1778290051,
+      "publish_date": "2026-05-09 09:27",
+      "url": "https://m.toutiao.com/w/1864672268935304/?app=toutiao_web&timestamp=1788063631&use_new_style=1",
+      "digg_count": 5,
+      "comment_count": 2,
+      "read_count": 3749
+    },
+    {
+      "post_id": "1864606377422856",
+      "content": "股市有风险，投资须谨慎！\n       2026年5月8日16时0分发布2026年5月11日上证指数走势预判，先回顾一下今天上证指数的走势与预判的先跌后涨，收小阳线，是一致的。预判下周一上证指数高开高走，最高4196，冲高回落，以震荡为主。收阳线，最低4183，如图所示。\n       大家快来看看吧，4月30日买的股票，今天真的跌了，而且跌得比较惨，一天就跌了20%，浮盈不到9000了，市值也由30000剩下26000了，不过我不灰心，相信明天更美好。如下图所示。关注我，多点赞，我会分享更多更好的预判 。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，涨就说涨，跌就说跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1778227212,
+      "publish_date": "2026-05-08 16:00",
+      "url": "https://m.toutiao.com/w/1864606377422856/?app=toutiao_web&timestamp=1788063631&use_new_style=1",
+      "digg_count": 2,
+      "comment_count": 0,
+      "read_count": 2948
+    },
+    {
+      "post_id": "1864590019925064",
+      "content": "股市有风险，投资须谨慎！\n       2026年5月8日11时40分发布2026年5月8日下午上证指数走势预判，预判今天上证指数会先跌后涨，收小阳线，从上午的走势来看完全符合预判，下午上证指数震荡上行，最高点还是维持4188点不变，如下图所示。关注我，多点赞，我会分享更多更好的预判 。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，涨就说涨，跌就说跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1778211612,
+      "publish_date": "2026-05-08 11:40",
+      "url": "https://m.toutiao.com/w/1864590019925064/?app=toutiao_web&timestamp=1788063631&use_new_style=1",
+      "digg_count": 4,
+      "comment_count": 1,
+      "read_count": 20784
+    },
+    {
+      "post_id": "1864571097290820",
+      "content": "股市有风险，投资须谨慎！\n       2026年5月8日6时40分发布2026年5月8日上证指数走势预判，昨夜美股三大股指普跌，除道琼斯跌得多点，其它都是微跌。预判今天上证指数会步美股后尘，先跌后涨，收小阳线，最高4188点，最低4170点，如下图所示。关注我，多点赞，我会分享更多更好的预判 。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，涨就说涨，跌就说跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1778193566,
+      "publish_date": "2026-05-08 06:39",
+      "url": "https://m.toutiao.com/w/1864571097290820/?app=toutiao_web&timestamp=1788063631&use_new_style=1",
+      "digg_count": 4,
+      "comment_count": 5,
+      "read_count": 2921
+    },
+    {
+      "post_id": "1864514528277763",
+      "content": "股市有风险，投资须谨慎！\n       2026年4月7日15时45分发布2026年4月8日上证指数走势预判，明天上证指数先抑后扬，收小阳线，最高4188点，最低4170点，如下图所示。大家快来看看吧，4月30日买的股票，本想看它什么时候亏完，真没办法，它今天又涨了，看样子亏光也不是件容易的事情，今天收盘账面浮盈一万三千多，三天涨了80%，本金已经由17167变成30822，如下图所示。关注我，多点赞，我会分享更多更好的预判 。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，涨就说涨，跌就说跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1778139618,
+      "publish_date": "2026-05-07 15:40",
+      "url": "https://m.toutiao.com/w/1864514528277763/?app=toutiao_web&timestamp=1788063631&use_new_style=1",
+      "digg_count": 4,
+      "comment_count": 1,
+      "read_count": 2918
+    },
+    {
+      "post_id": "1864500587929608",
+      "content": "股市有风险，投资须谨慎！\n       2026年4月7日11时45分发布2026年4月7日下午上证指数走势预判，今天上午上证指数高开，横盘震荡，消化获利盘，下午两点之前大约上涨到4180附近，然后横盘震荡，收阳线，如下图所示。4月30日买的股票，账面浮盈9839元，两天涨了63%，本金已经由17167变成27060，如下图所示，看来，想把这一万七亏光也不是一件容易的事情。关注我，多点赞，我会分享更多更好的预判 。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，涨就说涨，跌就说跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1778126324,
+      "publish_date": "2026-05-07 11:58",
+      "url": "https://m.toutiao.com/w/1864500587929608/?app=toutiao_web&timestamp=1788063632&use_new_style=1",
+      "digg_count": 4,
+      "comment_count": 4,
+      "read_count": 2912
+    },
+    {
+      "post_id": "1864476885128199",
+      "content": "股市有风险，投资须谨慎！\n       2026年4月7日6时10分发布2026年4月7日上证指数走势预判，受外围市场大涨的影响，今天上证指数高开高走，收大阳线，最高4220点，最低4180点，如下图所示。4月30日买的股票，账面浮盈9839元，两天涨了63%，本金已经由17167变成27060，如下图所示，看来，想把这一万七亏光也不是一件容易的事情。关注我，多点赞，我会分享更多更好的预判 。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，涨就说涨，跌就说跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1778103719,
+      "publish_date": "2026-05-07 05:41",
+      "url": "https://m.toutiao.com/w/1864476885128199/?app=toutiao_web&timestamp=1788063632&use_new_style=1",
+      "digg_count": 6,
+      "comment_count": 2,
+      "read_count": 3827
+    },
+    {
+      "post_id": "1864437032297732",
+      "content": "股市有风险，投资须谨慎！\n       2026年4月6日19时10分发布2026年4月7日上证指数走势预判，今天上证指数大涨在我预料之中，在4月30日的预判中说过，过节回来A股会大涨。明天上证指数高开高走，收大阳线，最高4220，最低4180，如下图所示。4月30日买的股票，账面浮盈9839元多，两天涨了50%，如下图所示，看来，想把这一万七亏光也不是一件容易的事情。关注我，多点赞，我会分享更多更好的预判 。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，涨就说涨，跌就说跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1778065712,
+      "publish_date": "2026-05-06 19:08",
+      "url": "https://m.toutiao.com/w/1864437032297732/?app=toutiao_web&timestamp=1788063632&use_new_style=1",
+      "digg_count": 2,
+      "comment_count": 2,
+      "read_count": 2792
+    },
+    {
+      "post_id": "1864388390765767",
+      "content": "股市有风险，投资须谨慎！\n       2026年4月6日6时15分发布2026年4月6日上证指数走势预判，今天上证指数高开高走，收阳线，最高4142，最低4115，如下图所示。关注我，多点赞，我会分享更多更好的预判 。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判。所发出的预判，态度明确，观点鲜明，涨就说涨，跌就说跌，不模棱两可，不含糊其辞，有高点有低点有方向  \n       4月30日买了股票，买入的成本价是17167，如下图所示。大家跟我一起看看或见证一下要用多长时间能把这一万七亏完。\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1778019324,
+      "publish_date": "2026-05-06 06:15",
+      "url": "https://m.toutiao.com/w/1864388390765767/?app=toutiao_web&timestamp=1788063632&use_new_style=1",
+      "digg_count": 2,
+      "comment_count": 2,
+      "read_count": 2991
+    },
+    {
+      "post_id": "1864125085411336",
+      "content": "#看看我的头像# 快来看看我新换的头像吧",
+      "publish_time": 1777768216,
+      "publish_date": "2026-05-03 08:30",
+      "url": "https://m.toutiao.com/w/1864125085411336/?app=toutiao_web&timestamp=1788063632&use_new_style=1",
+      "digg_count": 2,
+      "comment_count": 0,
+      "read_count": 2488
+    },
+    {
+      "post_id": "1863866384073736",
+      "content": "今天是五一长假前的最后一个交易日，有很多股友担心长假期间会不会有黑天鹅事件发生，毕竟咱们休息，欧美那边照常交易，如果他们出现大跌，A股开盘也会受到牵连，这种担心可以理解，但欧美股市并没有见顶，正在上涨途中，这种担心完全没有必要。坚定持股过节，节日期间美股会上涨，等咱们过完节回来A股就会大涨。不要割肉，不要减仓，低位可以加仓。下午上证指数会出现高台跳水的戏码，不要担心害怕，持股过节。最低点在4079-4085点之间。最后祝大家节日快乐！",
+      "publish_time": 1777521499,
+      "publish_date": "2026-04-30 11:58",
+      "url": "https://m.toutiao.com/w/1863866384073736/?app=toutiao_web&timestamp=1788063632&use_new_style=1",
+      "digg_count": 4,
+      "comment_count": 2,
+      "read_count": 5271
+    },
+    {
+      "post_id": "1863844144153603",
+      "content": "股市有风险，投资须谨慎！\n       2026年4月30日6时0分发布2026年4月30日上证指数走势预判（早晨6时30分-8时30分时段发布)：我们先来回顾总结一下昨天的预判，昨天一共发了两个预判，早晨的预判堪称完美，预判上证指数走势高开低走回升，收阳线，最低4063，最高4114附近，受美股下跌的影响，虽然没有高开，但确实低走了，而且预判的最高点和最低点都只差两个点，这一精准的预判说明数据分析的精确性不容置疑，中午发的预判存在瑕疵，预判盘中有一个回落再上涨，然而上证指数强势上涨没有按预判走，直到2点26分才回落，不管怎么说吧，虽然回落的时间和点位不准，但总体向上的趋势不错，经一事长一智，今后尽量避免此类事情发生。在昨天下午的非正式预判中说到今天将继续回落，只是不能确定回落的幅度是多少，要取决于美股下跌的幅度，而且说到我看美股k线图感觉有一个幅度不小的下跌，昨夜美股果然下跌不少，对美股的预判也正确，预判今天上证指数低开继续震荡下行，收阴线，最高点4101，最低点4079，如下图所示。关注我（关键转折点位发布的预判只有粉丝能看到)，多点赞，我会分享更多更好的预判 。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害。所发出的预判，态度明确，观点鲜明，涨就说涨，跌就说跌，不模棱两可，不含糊其辞，有高点有低点有方向。\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1777500290,
+      "publish_date": "2026-04-30 06:04",
+      "url": "https://m.toutiao.com/w/1863844144153603/?app=toutiao_web&timestamp=1788063632&use_new_style=1",
+      "digg_count": 5,
+      "comment_count": 1,
+      "read_count": 8593
+    },
+    {
+      "post_id": "1863789636573191",
+      "content": "今天上证指数的走势基本符合预判。预判最低点4063，实盘是4061，相差2个点，最高预判是4114，实盘是4112，也差2个点，收阳线，这些预判都是准确的，美中不足的是，中午我又加了一个预判，认为有一个小回落，之后再上涨，没想到上证指数太强了，直到2点26分才开始回落，中午预判的不正确。明天上午预判有进一步回落的可能性，究竟回落多少，关键看美股今夜的走势，不过我看了美股三大股指的k线图，感觉今夜跌幅不小，看吧，睡醒觉就知道了，明天早晨看完美股情况后再发正式的预判，欢迎观看。如图所示。",
+      "publish_time": 1777448308,
+      "publish_date": "2026-04-29 15:38",
+      "url": "https://m.toutiao.com/w/1863789636573191/?app=toutiao_web&timestamp=1788063632&use_new_style=1",
+      "digg_count": 4,
+      "comment_count": 2,
+      "read_count": 3624
+    },
+    {
+      "post_id": "1863774690220039",
+      "content": "今天上午上证指数的走势基本符合预判。上午涨势有些猛，预判下午是回落走势，跌到4070附近就差不多了，然后缓慢回升，一般不会超过4096。如图所示。",
+      "publish_time": 1777434053,
+      "publish_date": "2026-04-29 11:40",
+      "url": "https://m.toutiao.com/w/1863774690220039/?app=toutiao_web&timestamp=1788063632&use_new_style=1",
+      "digg_count": 4,
+      "comment_count": 2,
+      "read_count": 47439
+    },
+    {
+      "post_id": "1863756240569415",
+      "content": "股市有风险，投资须谨慎！\n       2026年4月29日6时45分发布2026年4月29日上证指数走势预判（早晨6时30分-8时30分时段发布)：预判今天上证指数走势高开低走回升，收阳线，最低4063，最高4114附近，如下图所示。关注我，多点赞，我会分享更多更好的预判。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害。所发出的预判，态度明确，观点鲜明，涨就说涨，跌就说跌，不模棱两可，不含糊其辞，有高点有低点有方向。\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1777416458,
+      "publish_date": "2026-04-29 06:47",
+      "url": "https://m.toutiao.com/w/1863756240569415/?app=toutiao_web&timestamp=1788063632&use_new_style=1",
+      "digg_count": 7,
+      "comment_count": 0,
+      "read_count": 3934
+    },
+    {
+      "post_id": "1863704998071299",
+      "content": "今天的预判又做得很好，预判先抑后扬，午后拉升，预判最低点4067点，实盘是4063点，差了4个点。由于午后拉升的时间不够了，只拉升了一小段，没关系的，明天接着拉升。顺便说一下，从明天开始，以后发布预判的时间改为6时30分-8时30分之间。请朋友们到时观看。",
+      "publish_time": 1777367590,
+      "publish_date": "2026-04-28 17:13",
+      "url": "https://m.toutiao.com/w/1863704998071299/?app=toutiao_web&timestamp=1788063632&use_new_style=1",
+      "digg_count": 3,
+      "comment_count": 1,
+      "read_count": 4120
+    },
+    {
+      "post_id": "1863664126244871",
+      "content": "股市有风险，投资须谨慎！\n       2026年4月28日6时25分发布2026年4月28日上证指数走势预判：预判今天上证指数走势还是先抑后扬，上午震荡探底，午后震荡回升，收阳线，最低4067，最高4102，如下图所示。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！而这一切的一切都是建立在风平浪静之上的，如遇突发大利好大利空，预判会出现错误，敬请谅解！所以，越是离开盘时间越近发出的预判越准确。\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1777328611,
+      "publish_date": "2026-04-28 06:23",
+      "url": "https://m.toutiao.com/w/1863664126244871/?app=toutiao_web&timestamp=1788063632&use_new_style=1",
+      "digg_count": 5,
+      "comment_count": 1,
+      "read_count": 3800
+    },
+    {
+      "post_id": "1863621783107587",
+      "content": "股市有风险，投资须谨慎！\n       2026年4月27日7时10分发布2026年4月28日上证指数走势预判：昨天预判的今天上证指数走势说不上多好，但预判先抑后扬，收有上下影线小阳线还是不错的。预判明天上证指数走势还是先抑后扬，上午震荡下行，午后震荡上行，收有下影线的阳线，最低4067，最高4102，如下图所示，并配有一张分时走势预判图。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！而这一切的一切都是建立在风平浪静之上的，如遇突发大利好大利空，预判会出现错误，敬请谅解！所以，越是离开盘时间越近发出的预判越准确。\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1777288230,
+      "publish_date": "2026-04-27 19:10",
+      "url": "https://m.toutiao.com/w/1863621783107587/?app=toutiao_web&timestamp=1788063633&use_new_style=1",
+      "digg_count": 2,
+      "comment_count": 2,
+      "read_count": 3837
+    },
+    {
+      "post_id": "1863538728253700",
+      "content": "股市有风险，投资须谨慎！\n       2026年4月26日21时10分发布2026年4月27日上证指数预判：明天上证指数先抑后扬，上午围绕着4070一线上下反复震荡，午后拉升，再回落，收有上下影线小阳线，最低点4050，最高点4092，如下图所示，配有一张分时预判图。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！而这一切的一切都是建立在风平浪静之上的，如遇突发大利好大利空，预判会出现错误，敬请谅解！所以，越是离开盘时间越近发出的预判越准确。\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1777209023,
+      "publish_date": "2026-04-26 21:10",
+      "url": "https://m.toutiao.com/w/1863538728253700/?app=toutiao_web&timestamp=1788063633&use_new_style=1",
+      "digg_count": 2,
+      "comment_count": 0,
+      "read_count": 9810
+    },
+    {
+      "post_id": "1863304848366600",
+      "content": "股市有风险，投资须谨慎！\n       2026年4月24日7时13分发布2026年4月24日上证指数预判：预判今天上证指数继续震荡上行，突破新高后有所回落，收一个十字星，如下图所示。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！而这一切的一切都是建立在风平浪静之上的，如遇突发大利好大利空，预判会出现错误，敬请谅解！所以，越是离开盘时间越近发出的预判越准确。\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1776985977,
+      "publish_date": "2026-04-24 07:12",
+      "url": "https://m.toutiao.com/w/1863304848366600/?app=toutiao_web&timestamp=1788063633&use_new_style=1",
+      "digg_count": 3,
+      "comment_count": 2,
+      "read_count": 5047
+    },
+    {
+      "post_id": "1863246566475780",
+      "content": "股市有风险，投资须谨慎！\n       2026年4月23日15时50分发布2026年4月24日上证指数预判：在昨天的预判中我已经说过，目前正在运行的这一浪是c浪，这一浪没有深度回调，这是这一浪性质所决定的，从今天上证指数的走势也能得到验证，当指数跌到4070后马上就被拉回来了，今天调整的幅度相对来说已经很深了，到达0.9%，对空仓和轻仓的股民来说是绝好的入场和加仓的好时机。预判明天上证指数继续震荡上行，最高点可能到4140附近，如下图所示。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！而这一切的一切都是建立在风平浪静之上的，如遇突发大利好大利空，预判会出现错误，敬请谅解！所以，越是离开盘时间越近发出的预判越准确。\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1776930395,
+      "publish_date": "2026-04-23 15:46",
+      "url": "https://m.toutiao.com/w/1863246566475780/?app=toutiao_web&timestamp=1788063633&use_new_style=1",
+      "digg_count": 2,
+      "comment_count": 0,
+      "read_count": 6757
+    },
+    {
+      "post_id": "1863211534786696",
+      "content": "股市有风险，投资须谨慎！\n       2026年4月23日6时30分发布2026年4月23日上证指数预判：昨夜美股三大指数集体上涨，纳指创新高，大涨1.76%，受美股上涨的影响，预判今天上证指数高开震荡上行，收中阳线，实现加速上涨的目标，最高点可到4155点附近，如下图所示。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！而这一切的一切都是建立在风平浪静之上的，如遇突发大利好大利空，预判会出现错误，敬请谅解！所以，越是离开盘时间越近发出的预判越准确。\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1776896986,
+      "publish_date": "2026-04-23 06:29",
+      "url": "https://m.toutiao.com/w/1863211534786696/?app=toutiao_web&timestamp=1788063633&use_new_style=1",
+      "digg_count": 2,
+      "comment_count": 0,
+      "read_count": 10938
+    },
+    {
+      "post_id": "1863155884478660",
+      "content": "股市有风险，投资须谨慎！\n       2026年4月22日15时40分发布2026年4月23日上证指数预判：今天上证指数实在是太强了，低开后马上就涨回来了，收盘又创新高，上证指数拒绝深度回调，我想了一天终于想明白了，现在运行的这一浪是c浪，c浪就是没有深度回调，只有小幅回调，我把一分钟上升趋势线画出来了，碰到上轨就小幅回调，碰到下轨马上就拉起来，大家一看就明白了，如下图所示。这一浪c与前面的那一浪a是相互对应的都没有深度回调，如下图所示。根据目前的情况来看，最好的办法就是持仓不动，做高抛低吸很容易被洗出去。预判明天上证指继续小幅上涨，最高点位可到达4141，如下图所示。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！而这一切的一切都是建立在风平浪静之上的，如遇突发大利好大利空，预判会出现错误，敬请谅解！所以，越是离开盘时间越近发出的预判越准确。\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1776843914,
+      "publish_date": "2026-04-22 15:45",
+      "url": "https://m.toutiao.com/w/1863155884478660/?app=toutiao_web&timestamp=1788063633&use_new_style=1",
+      "digg_count": 5,
+      "comment_count": 3,
+      "read_count": 5433
+    },
+    {
+      "post_id": "1863122857327687",
+      "content": "股市有风险，投资须谨慎！\n       2026年4月22日7时0分发布2026年4月22日上证指数预判：继续维持昨天的预判，低开低走，收阴线。但受昨夜美股下跌收中阴线的影响，改预判今日上证指数也收中阴线，最高4075不变，最低由4055往下推移15个点到4040， 如下图所示。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！而这一切的一切都是建立在风平浪静之上的，如遇突发大利好大利空，预判会出现错误，敬请谅解！所以，越是离开盘时间越近发出的预判越准确。\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1776812417,
+      "publish_date": "2026-04-22 07:00",
+      "url": "https://m.toutiao.com/w/1863122857327687/?app=toutiao_web&timestamp=1788063633&use_new_style=1",
+      "digg_count": 6,
+      "comment_count": 0,
+      "read_count": 11699
+    },
+    {
+      "post_id": "1863064646704132",
+      "content": "股市有风险，投资须谨慎！\n       2026年4月21日15时35分发布2026年4月22日上证指数预判：明天上证指数低开低走，收阴线，最高4075，最低4055， 如下图所示。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！而这一切的一切都是建立在风平浪静之上的，如遇突发大利好大利空，预判会出现错误，敬请谅解！所以，越是离开盘时间越近发出的预判越准确。\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1776756903,
+      "publish_date": "2026-04-21 15:35",
+      "url": "https://m.toutiao.com/w/1863064646704132/?app=toutiao_web&timestamp=1788063633&use_new_style=1",
+      "digg_count": 4,
+      "comment_count": 0,
+      "read_count": 5387
+    },
+    {
+      "post_id": "1863037311752323",
+      "content": "股市有风险，投资须谨慎！\n       2026年4月21日8时30分发布2026年4月21日当天上证指数预判：今天上证指数低开探底，缓慢震荡窄幅攀升，收小十字星，最高4070，最低4060， 如下图所示。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！而这一切的一切都是建立在风平浪静之上的，如遇突发大利好大利空，预判会出现错误，敬请谅解！所以，越是离开盘时间越近发出的预判越准确。\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1776730835,
+      "publish_date": "2026-04-21 08:20",
+      "url": "https://m.toutiao.com/w/1863037311752323/?app=toutiao_web&timestamp=1788063633&use_new_style=1",
+      "digg_count": 3,
+      "comment_count": 0,
+      "read_count": 20861
+    },
+    {
+      "post_id": "1862947081031683",
+      "content": "股市有风险，投资须谨慎！\n       2026年4月20日8时30分发布2026年4月20日当天上证指数预判：今天上证指数低开回升，回补缺口，横盘震荡，午后回落，收阴线，最高点4051，最低点4010， 如下图所示。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！而这一切的一切都是建立在风平浪静之上的，如遇突发大利好大利空，预判会出现错误，敬请谅解！所以，越是离开盘时间越近发出的预判越准确。\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1776644784,
+      "publish_date": "2026-04-20 08:26",
+      "url": "https://m.toutiao.com/w/1862947081031683/?app=toutiao_web&timestamp=1788063633&use_new_style=1",
+      "digg_count": 5,
+      "comment_count": 1,
+      "read_count": 39093
+    },
+    {
+      "post_id": "1862852331125956",
+      "content": "股市有风险，投资须谨慎！\n       2026年4月19日7时20分发布2026年4月20日（下周一:)上证指数预判：上周五发布的预判是低开低走，收中阴线，无奈，受利好刺激美股周五夜间大涨，所以A股的剧本又要改写了，预判4月20日上证指数的走势略微高开，震荡上行，午后回落，收一根倒锤头阴线，最高点4070，最低点4028， 如下图所示。最新消息伊朗又回重新控制了霍尔木兹海峡，又是利空消息，上证指数到底如何走，我会在明天上午8点30分再发布一次预判，有兴趣的股友请到时观看。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！而这一切的一切都是建立在风平浪静之上的，如遇突发大利好大利空，预判会出现错误，敬请谅解！所以，越是离开盘时间越近发出的预判越准确。\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1776554423,
+      "publish_date": "2026-04-19 07:20",
+      "url": "https://m.toutiao.com/w/1862852331125956/?app=toutiao_web&timestamp=1788063633&use_new_style=1",
+      "digg_count": 5,
+      "comment_count": 0,
+      "read_count": 5423
+    },
+    {
+      "post_id": "1862701167617031",
+      "content": "股市有风险，投资须谨慎！\n       2026年4月17日15时20分发布2026年4月20日（下周一:)上证指数预判：今天上证指数的走势与我预判的差不多：低开，震荡下行，午后回升，收小阴线，预判下周一低开低走收一根中阴线，最高4038，最低4010或者3988 如下图所示。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！而这一切的一切都是建立在风平浪静之上的，如遇突发大利好大利空，预判会出现错误，敬请谅解！所以，越是离开盘时间越近发出的预判越准确。\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1776410262,
+      "publish_date": "2026-04-17 15:17",
+      "url": "https://m.toutiao.com/w/1862701167617031/?app=toutiao_web&timestamp=1788063633&use_new_style=1",
+      "digg_count": 6,
+      "comment_count": 8,
+      "read_count": 9219
+    },
+    {
+      "post_id": "1862674847007748",
+      "content": "股市有风险，投资须谨慎！\n       2026年4月17日8时20分发布2026年4月17日上证指数预判：今天上证指数低开，震荡下行，午后回升，收小阴线，最高4053，最低4010，如下图所示。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！而这一切的一切都是建立在风平浪静之上的，如遇突发大利好大利空，预判会出现错误，敬请谅解！所以，越是离开盘时间越近发出的预判越准确。\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1776385161,
+      "publish_date": "2026-04-17 08:19",
+      "url": "https://m.toutiao.com/w/1862674847007748/?app=toutiao_web&timestamp=1788063635&use_new_style=1",
+      "digg_count": 4,
+      "comment_count": 0,
+      "read_count": 38949
+    },
+    {
+      "post_id": "1862584857726020",
+      "content": "股市有风险，投资须谨慎！\n       2026年4月16日8时30分发布2026年4月16日上证指数预判：昨夜美股涨跌互现，表现温和，预判今天上证指数略微高开，横盘震荡午后走低，收小阴线或十字星，如下图所示。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！而这一切的一切都是建立在风平浪静之上的，如遇突发大利好大利空，预判会出现错误，敬请谅解！所以，越是离开盘时间越近发出的预判越准确。\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1776299341,
+      "publish_date": "2026-04-16 08:29",
+      "url": "https://m.toutiao.com/w/1862584857726020/?app=toutiao_web&timestamp=1788063635&use_new_style=1",
+      "digg_count": 2,
+      "comment_count": 0,
+      "read_count": 12526
+    },
+    {
+      "post_id": "1862520790381639",
+      "content": "股市有风险，投资须谨慎！\n       2026年4月15日15时30分发布2026年4月16日上证指数预判：今天上证指数的走势与我预判的大致相同，预判上证指数高开，横盘震荡，最高点4040，最低点4026收小十字星或小阴线，高点和低点都差的不多，并且如期收出小阴线。早上8点半的预判中说美股上涨乏力，疲态尽显，可到了大A竟然走出颓势，看得出来，只要是美股打喷嚏，A股必然感冒，预判明天上证指数下跌，收中阴线，究竟这根阴线收多大，要看美股今晚的表现，现在没办法说，明天早上8点30分我再发布一下预判，感兴趣的股民朋友请到时观看。如下图所示。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！而这一切的一切都是建立在风平浪静之上的，如遇突发大利好大利空，预判会出现错误，敬请谅解！所以，越是离开盘时间越近发出的预判越准确。\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1776238241,
+      "publish_date": "2026-04-15 15:30",
+      "url": "https://m.toutiao.com/w/1862520790381639/?app=toutiao_web&timestamp=1788063635&use_new_style=1",
+      "digg_count": 3,
+      "comment_count": 5,
+      "read_count": 4656
+    },
+    {
+      "post_id": "1862494455518344",
+      "content": "股市有风险，投资须谨慎！\n       2026年4月15日8时30分发布2026年4月15日上证预判，昨夜美股继续上涨，但受到中东局势影响，上涨乏力，疲态尽显，受美股影响，上证指数走势重新预判如下：今天上证指数高开，横盘震荡，最高点4040，最低点4026收小十字星或小阴线，如下图所示。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！而这一切的一切都是建立在风平浪静之上的，如遇突发大利好大利空，预判会出现错误，敬请谅解！所以，越是离开盘时间越近发出的预判越准确。\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1776213126,
+      "publish_date": "2026-04-15 08:32",
+      "url": "https://m.toutiao.com/w/1862494455518344/?app=toutiao_web&timestamp=1788063635&use_new_style=1",
+      "digg_count": 1,
+      "comment_count": 0,
+      "read_count": 4220
+    },
+    {
+      "post_id": "1862431138208772",
+      "content": "股市有风险，投资须谨慎！\n       2026年4月14日15时50分发布2026年4月15日上证指数预判，今天上证指数走势与我预判基本一致，高开高走，收阳线，最低点比我预判3991高了一个点在3992，最高点比我预判低了14个点，收在了3926点。明天上证指数走势预判如下：明天上证指数高开，震荡上行，最低点4013，最高点4070，收高位阴十字星，如下图所示。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！而这一切的一切都是建立在风平浪静之上的，如遇突发大利好大利空，预判会出现错误，敬请谅解！所以，越是离开盘时间越近发出的预判越准确。\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1776152742,
+      "publish_date": "2026-04-14 15:45",
+      "url": "https://m.toutiao.com/w/1862431138208772/?app=toutiao_web&timestamp=1788063635&use_new_style=1",
+      "digg_count": 2,
+      "comment_count": 2,
+      "read_count": 4640
+    },
+    {
+      "post_id": "1862403341884419",
+      "content": "股市有风险，投资须谨慎！\n       2026年4月14日8时23分发布2026年4月14日上证指数预判：受昨夜美股上涨的影响，今天上证指数高开高走，收阳线，最低点3991，最高点4040，如下图所示。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！而这一切的一切都是建立在风平浪静之上的，如遇突发大利好大利空，预判会出现错误，敬请谅解！所以，越是离开盘时间越近发出的预判越准确。\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1776126234,
+      "publish_date": "2026-04-14 08:23",
+      "url": "https://m.toutiao.com/w/1862403341884419/?app=toutiao_web&timestamp=1788063635&use_new_style=1",
+      "digg_count": 0,
+      "comment_count": 0,
+      "read_count": 40892
+    },
+    {
+      "post_id": "1862338476459140",
+      "content": "股市有风险，投资须谨慎！\n       2026年4月13日15时13分发布2026年4月14日上证指数预判，今天上证指数在利空情况下低开高走，收出小阳线。预判明天上证指数继续横盘震荡，收出一个十字星或小阴线，最高点3991，最低点3956，如下图所示。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！而这一切的一切都是建立在风平浪静之上的，如遇突发大利好大利空，预判会出现错误，敬请谅解！所以，越是离开盘时间越近发出的预判越准确。\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1776064373,
+      "publish_date": "2026-04-13 15:12",
+      "url": "https://m.toutiao.com/w/1862338476459140/?app=toutiao_web&timestamp=1788063635&use_new_style=1",
+      "digg_count": 3,
+      "comment_count": 2,
+      "read_count": 15140
+    },
+    {
+      "post_id": "1862216750413828",
+      "content": "股市有风险，投资须谨慎！\n       今天是2026年4月12日（周日:)，利用股市休市的时间回顾一下最近一段时间上证指数走势的特点：1总体来说是按照股市自身规律运行，但受到中东局势影响局部走势又没有按照自身运行规律，表现走势混乱，难以把握，如下图1，2跌得快涨得慢，这种走势还会延续一段时间。如图2，不该跌的跌了，该跌的没跌，如图3。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！而这一切的一切都是建立在风平浪静之上的，如遇突发大利好大利空，预判会出现错误，敬请谅解！所以，越是离开盘时间越近发出的预判越准确。\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1775948286,
+      "publish_date": "2026-04-12 06:58",
+      "url": "https://m.toutiao.com/w/1862216750413828/?app=toutiao_web&timestamp=1788063635&use_new_style=1",
+      "digg_count": 0,
+      "comment_count": 0,
+      "read_count": 4020
+    },
+    {
+      "post_id": "1862121415108612",
+      "content": "股市有风险，投资须谨慎！\n       2026年4月11日06时0分发布2026年4月13日上证指数走势预判：上证指数低开低走，最高点3985，最低点3933，收一根中阴线。如下图所示。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！而这一切的一切都是建立在风平浪静之上的，如遇突发大利好大利空，预判会出现错误，敬请谅解！所以，越是离开盘时间越近发出的预判越准确。\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1775857367,
+      "publish_date": "2026-04-11 05:42",
+      "url": "https://m.toutiao.com/w/1862121415108612/?app=toutiao_web&timestamp=1788063635&use_new_style=1",
+      "digg_count": 9,
+      "comment_count": 4,
+      "read_count": 8283
+    },
+    {
+      "post_id": "1862030576467975",
+      "content": "股市有风险，投资须谨慎！\n       昨夜美股上涨了，美股对A股有重大影响，所以必须对上证指数今天（2026年4月10日:)的走势做出重新预判：上证指数今天横盘震荡，最高点3979，最低点3933，再收十字星。如下图所示。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1775770737,
+      "publish_date": "2026-04-10 05:38",
+      "url": "https://m.toutiao.com/w/1862030576467975/?app=toutiao_web&timestamp=1788063635&use_new_style=1",
+      "digg_count": 2,
+      "comment_count": 0,
+      "read_count": 8164
+    },
+    {
+      "post_id": "1861975687881027",
+      "content": "股市有风险，投资须谨慎！\n       2026年4月9日15时07分发布明日（2026年4月10日:)上证指数预判，昨天的预判与今天上证指数走势是一致的。昨天预判上证指数b浪反弹基本到位，随时都有可能跌下来，于是我在3990点大幅减仓80%，预判今天上证指数收小阴线，这些都是对的。有些人把今天的下跌归于中东又开打了，其实今天的下跌与中东一点关系都没有，不开打跌的慢一点，开打跌的快一点，就像前一阵子下跌，没有中东战事就不会跌到3794，上证多跌了2%。这些本身都是股市的自然规律。明日上证指数预判如下：明天上证指数低开低走，最高点3955，最低点3902，收一根中阴线。如下图所示。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1775718391,
+      "publish_date": "2026-04-09 15:06",
+      "url": "https://m.toutiao.com/w/1861975687881027/?app=toutiao_web&timestamp=1788063635&use_new_style=1",
+      "digg_count": 4,
+      "comment_count": 0,
+      "read_count": 6087
+    },
+    {
+      "post_id": "1861886835104772",
+      "content": "股市有风险，投资须谨慎！\n       2026年4月8日15时30分发布明日（2026年4月9日:)上证指数预判，今天的预判与上证指数走势的方向是一致的。按照技术上看，本来5分钟还有一笔下跌，但受到美伊停火利好消息的刺激，上证直接高开高走，收一根大阳线。在3990点我已经大幅减仓80%，只剩20%的仓位。明日上证指数预判如下：上证指数b浪反弹基本到位，就像熟透的瓜，随时都有可能掉下来，明天的高低点不好判断，明天可能收十字星或小阴线。如下图所示。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！\n       个人观点，不构成投资建议，买卖股票风险自担！\n\n下来，明天的高低点不好判断，明天可能收十字星或小阴线。如下图所示。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1775633654,
+      "publish_date": "2026-04-08 15:34",
+      "url": "https://m.toutiao.com/w/1861886835104772/?app=toutiao_web&timestamp=1788063635&use_new_style=1",
+      "digg_count": 3,
+      "comment_count": 0,
+      "read_count": 3941
+    },
+    {
+      "post_id": "1861851437500488",
+      "content": "股市有风险，投资须谨慎！\n       2026年4月8日6时11分发布今日上证指数预判，昨天的预判与走势大致相同，昨天预判略微高开，随后震荡上行，全天都在震荡之中，只是阳线比预判的小。今日上证指数预判如下：今天上证指数先抑后扬，最低点大约在3852附近，最高点大约在3934附近，收一根阳线，如下图所示。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1775599897,
+      "publish_date": "2026-04-08 06:11",
+      "url": "https://m.toutiao.com/w/1861851437500488/?app=toutiao_web&timestamp=1788063636&use_new_style=1",
+      "digg_count": 2,
+      "comment_count": 0,
+      "read_count": 5277
+    },
+    {
+      "post_id": "1861760101385283",
+      "content": "股市有风险，投资须谨慎！\n       2026年4月7日6时0分发布今日上证指数预判，今日上证指数略微高开在3888点，随后震荡上行，全天都在震荡之中，最低点大约在3888附近，最高点大约在3930附近，收一根阳线，如下图所示。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1775512792,
+      "publish_date": "2026-04-07 05:59",
+      "url": "https://m.toutiao.com/w/1861760101385283/?app=toutiao_web&timestamp=1788063636&use_new_style=1",
+      "digg_count": 4,
+      "comment_count": 1,
+      "read_count": 16044
+    },
+    {
+      "post_id": "1861398594077699",
+      "content": "股市有风险，投资须谨慎！\n       2026年4月3日6时15分发布今日上证指数预判，今日上证指数先抑后扬，最低点大约在3872或3852附近，最高点大约在3933附近，收一根阳线，如下图所示。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1775168031,
+      "publish_date": "2026-04-03 06:13",
+      "url": "https://m.toutiao.com/w/1861398594077699/?app=toutiao_web&timestamp=1788063636&use_new_style=1",
+      "digg_count": 2,
+      "comment_count": 1,
+      "read_count": 7818
+    },
+    {
+      "post_id": "1861260185207940",
+      "content": "股市有风险，投资须谨慎！\n       2026年4月1日17时35分发布2026年4月2日上证指数预判，明天上证指数大幅高开，极有可能开在4060附近，而且开盘即是一天的最高点，随即开始一天的横盘震荡，最终收一根小阴线，如下图所示。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1775036035,
+      "publish_date": "2026-04-01 17:33",
+      "url": "https://m.toutiao.com/w/1861260185207940/?app=toutiao_web&timestamp=1788063636&use_new_style=1",
+      "digg_count": 4,
+      "comment_count": 9,
+      "read_count": 14900
+    },
+    {
+      "post_id": "1861069614180359",
+      "content": "股市有风险，投资须谨慎！\n       2026年3月30日15时05分发布2026年3月31日上证指数预判，今天的走势与昨天预判的大致一样，收出一根阳线，只是下跌的幅度超预期，预判最低点在3885点，实际在3872点，差13个点，涨幅不及预期，预判高点在3955点，实际在3924点，差21个点。在外围市场大跌的情况下，能预判出这样的成绩我已经感到满意了。预判明天上证指数高开高走，最低点在3937点，最高点在4012点，如下图所示。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1774854292,
+      "publish_date": "2026-03-30 15:04",
+      "url": "https://m.toutiao.com/w/1861069614180359/?app=toutiao_web&timestamp=1788063636&use_new_style=1",
+      "digg_count": 4,
+      "comment_count": 0,
+      "read_count": 5855
+    },
+    {
+      "post_id": "1860949068567687",
+      "content": "股市有风险，投资须谨慎！\n       受美股的拖累，预判下周一（30日:)上证指数会大幅低开，然后快速拉升，最低点一般情况下在3902点，极端情况下在3885点附近，最高点位在3955点极端情况下在3985点附近。收阳线。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！\n       个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1774739330,
+      "publish_date": "2026-03-29 07:08",
+      "url": "https://m.toutiao.com/w/1860949068567687/?app=toutiao_web&timestamp=1788063636&use_new_style=1",
+      "digg_count": 4,
+      "comment_count": 1,
+      "read_count": 16176
+    },
+    {
+      "post_id": "1860857040441368",
+      "content": "股市有风险，投资须谨慎！\n       昨夜美股大跌，给A股上涨带来了一些麻烦，但不会影响中国股市上涨的节奏。受美股的拖累，预判下周一30日上证指数会大幅低开，然后快速拉升，最低点在3885点附近，最高点位在3955点附近。收阳线。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！金无足赤人无完人。我预判的正确率如果能达到80%以上，我就心满意足了，不过，我不会就此止步，我会不断努力精进，不断提高正确率，以回报广大股民的厚爱！如果你也认同我的预判并且对你产生实质性的帮助，请关注我，多多点赞转发收藏，这样你就会在股市中不断获得好运！同时我也在这里衷心地祝愿你在股市挣钱挣更多的钱！也请股市高手多多在评论区发表意见，不吝赐教，供大家学习交流讨论，对此我非常感谢！\n个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1774651566,
+      "publish_date": "2026-03-28 06:46",
+      "url": "https://m.toutiao.com/w/1860857040441368/?app=toutiao_web&timestamp=1788063636&use_new_style=1",
+      "digg_count": 1,
+      "comment_count": 0,
+      "read_count": 6569
+    },
+    {
+      "post_id": "1860798287927431",
+      "content": "股市有风险，投资须谨慎！\n       2026年3月27日15时10分发布2026年3月30日下周一上证指数走势预判。今天上证指数如期上涨，只是涨幅不及预期，我预判最高点在3931点，而实际上是3924点，差了7个点。最低点差别比较大，预判是3889点，而实际上是3852点，这主要是受外围昨晚大跌的影响，好在低开后很快就拉了回来。预判下周一继续上涨，如果今天晚上外围市场不大跌，上证指数将高开在3937点附近，如果外围市场大跌，上证指数将会低开，但很快就会拉回来，最高点在4000点附近。收一根大阳线。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！金无足赤人无完人。我预判的正确率如果能达到80%以上，我就心满意足了，不过，我不会就此止步，我会不断努力精进，不断提高正确率，以回报广大股民的厚爱！如果你也认同我的预判并且对你产生实质性的帮助，请关注我，多多点赞转发收藏，这样你就会在股市中不断获得好运！同时我也在这里衷心地祝愿你在股市挣钱挣更多的钱！也请股市高手多多在评论区发表意见，不吝赐教，供大家学习交流讨论，对此我非常感谢！\n个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1774595535,
+      "publish_date": "2026-03-27 15:12",
+      "url": "https://m.toutiao.com/w/1860798287927431/?app=toutiao_web&timestamp=1788063636&use_new_style=1",
+      "digg_count": 5,
+      "comment_count": 1,
+      "read_count": 6440
+    },
+    {
+      "post_id": "1860709032492099",
+      "content": "股市有风险，投资须谨慎！\n       2026年3月26日15时40分发布2026年3月27日上证指数走势预判。今天调整一步到位，明天上证指数大约在3889点至3931点之间运行，收一根阳线。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！金无足赤人无完人。我预判的正确率如果能达到80%以上，我就心满意足了，不过，我不会就此止步，我会不断努力精进，不断提高正确率，以回报广大股民的厚爱！如果你也认同我的预判并且对你产生实质性的帮助，请关注我，多多点赞转发收藏，这样你就会在股市中不断获得好运！同时我也在这里衷心地祝愿你在股市挣钱挣更多的钱！也请股市高手多多在评论区发表意见，不吝赐教，供大家学习交流讨论，对此我非常感谢！\n个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1774510414,
+      "publish_date": "2026-03-26 15:33",
+      "url": "https://m.toutiao.com/w/1860709032492099/?app=toutiao_web&timestamp=1788063636&use_new_style=1",
+      "digg_count": 4,
+      "comment_count": 0,
+      "read_count": 6135
+    },
+    {
+      "post_id": "1860618450186436",
+      "content": "股市有风险，投资须谨慎！\n       2026年3月25日15时35分发布2026年3月26日上证指数走势预判。明天继续看涨，上证指数大约在3940点至4000点之间运行，收一根阳线。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！金无足赤人无完人。我预判的正确率如果能达到80%以上，我就心满意足了，不过，我不会就此止步，我会不断努力精进，不断提高正确率，以回报广大股民的厚爱！如果你也认同我的预判并且对你产生实质性的帮助，请关注我，多多点赞转发收藏，这样你就会在股市中不断获得好运！同时我也在这里衷心地祝愿你在股市挣钱挣更多的钱！也请股市高手多多在评论区发表意见，不吝赐教，供大家学习交流讨论，对此我非常感谢！\n个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1774424028,
+      "publish_date": "2026-03-25 15:33",
+      "url": "https://m.toutiao.com/w/1860618450186436/?app=toutiao_web&timestamp=1788063636&use_new_style=1",
+      "digg_count": 2,
+      "comment_count": 0,
+      "read_count": 6061
+    },
+    {
+      "post_id": "1860527103990919",
+      "content": "股市有风险，投资须谨慎！\n       2026年3月24日15时20分发布2026年3月25日上证指数走势预判。今天上证指数如期反弹，预判明天继续反弹，盘中有回调，支撑位在3852点，第二支撑位3840点回探，最高3986点，收有下影线的阳线。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！金无足赤人无完人。我预判的正确率如果能达到80%以上，我就心满意足了，不过，我不会就此止步，我会不断努力精进，不断提高正确率，以回报广大股民的厚爱！如果你也认同我的预判并且对你产生实质性的帮助，请关注我，多多点赞转发收藏，这样你就会在股市中不断获得好运！同时我也在这里衷心地祝愿你在股市挣钱挣更多的钱！也请股市高手多多在评论区发表意见，不吝赐教，供大家学习交流讨论，对此我非常感谢！\n个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1774336914,
+      "publish_date": "2026-03-24 15:21",
+      "url": "https://m.toutiao.com/w/1860527103990919/?app=toutiao_web&timestamp=1788063636&use_new_style=1",
+      "digg_count": 2,
+      "comment_count": 1,
+      "read_count": 7602
+    },
+    {
+      "post_id": "1860494138026056",
+      "content": "股市有风险，投资须谨慎！\n       2026年3月24日6时35分发布2026年3月24日上证指数走势预判。昨晚美股按预期的反弹了，但反弹力度不大，才上涨了1%点多，我预判今天上证指数反弹的力度也不会很大，最多也不会超过3%，因为它缺钙。不管上证指数今天反弹多少，信号已经明确，未来一段时间会持续的反弹。持股待涨，不要中途下车。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！金无足赤人无完人。我预判的正确率如果能达到80%以上，我就心满意足了，不过，我不会就此止步，我会不断努力精进，不断提高正确率，以回报广大股民的厚爱！如果你也认同我的预判并且对你产生实质性的帮助，请关注我，多多点赞转发收藏，这样你就会在股市中不断获得好运！同时我也在这里衷心地祝愿你在股市挣钱挣更多的钱！也请股市高手多多在评论区发表意见，不吝赐教，供大家学习交流讨论，对此我非常感谢！\n个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1774305475,
+      "publish_date": "2026-03-24 06:37",
+      "url": "https://m.toutiao.com/w/1860494138026056/?app=toutiao_web&timestamp=1788063636&use_new_style=1",
+      "digg_count": 4,
+      "comment_count": 5,
+      "read_count": 37608
+    },
+    {
+      "post_id": "1860441000571908",
+      "content": "股市有风险，投资须谨慎！\n       2026年3月23日16时30分发布2026年3月24日上证指数走势预判。受中东局势影响，今天上证指数出现恐慌性下跌，跌幅超预期，时间空间都已经跌够了，明天看反弹，反弹高度现在还不好说，关键要看今晚美股反弹的力度而定。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！金无足赤人无完人。我预判的正确率如果能达到80%以上，我就心满意足了，不过，我不会就此止步，我会不断努力精进，不断提高正确率，以回报广大股民的厚爱！如果你也认同我的预判并且对你产生实质性的帮助，请关注我，多多点赞转发收藏，这样你就会在股市中不断获得好运！同时我也在这里衷心地祝愿你在股市挣钱挣更多的钱！也请股市高手多多在评论区发表意见，不吝赐教，供大家学习交流讨论，对此我非常感谢！\n个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1774254799,
+      "publish_date": "2026-03-23 16:33",
+      "url": "https://m.toutiao.com/w/1860441000571908/?app=toutiao_web&timestamp=1788063638&use_new_style=1",
+      "digg_count": 2,
+      "comment_count": 0,
+      "read_count": 8840
+    },
+    {
+      "post_id": "1860326425278535",
+      "content": "股市有风险，投资须谨慎！\n       2026年3月22日10时15分发布2026年3月23日上证指数走走势预判，预判明天上证指数惯性下跌，3890点是强支撑，预计午后或周二反弹。再强调一下，这里已经是底部了，千万不要割肉，持股等待上涨，涨的要比跌的多。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！金无足赤人无完人。我预判的正确率如果能达到80%以上，我就心满意足了，不过，我不会就此止步，我会不断努力精进，不断提高正确率，以回报广大股民的厚爱！如果你也认同我的预判并且对你产生实质性的帮助，请关注我，多多点赞转发收藏，这样你就会在股市中不断获得好运！同时我也在这里衷心地祝愿你在股市挣钱挣更多的钱！也请股市高手多多在评论区发表意见，不吝赐教，供大家学习交流讨论，对此我非常感谢！\n个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1774145532,
+      "publish_date": "2026-03-22 10:12",
+      "url": "https://m.toutiao.com/w/1860326425278535/?app=toutiao_web&timestamp=1788063638&use_new_style=1",
+      "digg_count": 14,
+      "comment_count": 5,
+      "read_count": 13128
+    },
+    {
+      "post_id": "1860224259216387",
+      "content": "股市有风险，投资须谨慎！\n       2026年3月21日7时10分发布2026年3月23日上证指数走势预判：中东战争不断升级，中东能源设施互殴互毁，战争出现疯狂状态，原油现货暴涨到150美元一桶，全球出现能源慌，股市出现恐慌性非理性下跌，昨晚美股又是大跌，没有丝毫止跌迹象，只要能源问题得不到解决，全球股市还将继续下跌，中国股市也不能幸免。目前这种情况咱们股民怎么办，我的建议是躺平，千万不要割肉，现在各种技术分析和数据全都归零，在超大黑天鹅事件面前都不堪一击，现在唯一有用的就是停战或解决能源，不然，包括美国在内世界经济必然遭受重创，大家要密切关注周六日消息，如果没有好消息，中国股市下周一还要跌1%点多，今后股市到底还要跌多少没人知道，但是，如果某一天特朗普宣布停战撤军，股市就是疯狂涨的一天，跌多少就涨多少，可能是涨5%或8%，所以，躺平不动应该是最好的策略，如果割肉了，等上涨的时候就每份了。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！金无足赤人无完人。我预判的正确率如果能达到80%以上，我就心满意足了，不过，我不会就此止步，我会不断努力精进，不断提高正确率，以回报广大股民的厚爱！如果你也认同我的预判并且对你产生实质性的帮助，请关注我，多多点赞转发收藏，这样你就会在股市中不断获得好运！同时我也在这里衷心地祝愿你在股市挣钱挣更多的钱！也请股市高手多多在评论区发表意见，不吝赐教，供大家学习交流讨论，对此我非常感谢！\n个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1774048098,
+      "publish_date": "2026-03-21 07:08",
+      "url": "https://m.toutiao.com/w/1860224259216387/?app=toutiao_web&timestamp=1788063638&use_new_style=1",
+      "digg_count": 9,
+      "comment_count": 0,
+      "read_count": 10223
+    },
+    {
+      "post_id": "1860129639451848",
+      "content": "股市有风险，投资须谨慎！\n       2026年3月20日6时05分发布2026年3月20日上证指数走势预判：因中东战争不断升级，全球股市大跌，中国股市也未能幸免，昨晚美股跌幅已经大幅收窄，大利空得到有效释放，因此股市多跌了1-2天，上证指数本来不应该跌破4000点。预判今天上证指数回归正常走势，看涨。指数大约在4006至4050之间运行，收阳线。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！金无足赤人无完人。我预判的正确率如果能达到80%以上，我就心满意足了，不过，我不会就此止步，我会不断努力精进，不断提高正确率，以回报广大股民的厚爱！如果你也认同我的预判并且对你产生实质性的帮助，请关注我，多多点赞转发收藏，这样你就会在股市中不断获得好运！同时我也在这里衷心地祝愿你在股市挣钱挣更多的钱！也请股市高手多多在评论区发表意见，不吝赐教，供大家学习交流讨论，对此我非常感谢！\n个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1773957862,
+      "publish_date": "2026-03-20 06:04",
+      "url": "https://m.toutiao.com/w/1860129639451848/?app=toutiao_web&timestamp=1788063638&use_new_style=1",
+      "digg_count": 3,
+      "comment_count": 1,
+      "read_count": 7456
+    },
+    {
+      "post_id": "1860038892946648",
+      "content": "股市有风险，投资须谨慎！       \n      2026年3月19日6时0分发布2026年3月19日上证指数走势预判，昨天已经发布过今天上证指数预判，认为不太准确，所以今天早晨补发一下：今天上证指数继续震荡上行，指数大约在4048点至4115之间运行，收阳线。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！金无足赤人无完人。我预判的正确率如果能达到80%以上，我就心满意足了，不过，我不会就此止步，我会不断努力精进，不断提高正确率，以回报广大股民的厚爱！如果你也认同我的预判并且对你产生实质性的帮助，请关注我，多多点赞转发收藏，这样你就会在股市中不断获得好运！同时我也在这里衷心地祝愿你在股市挣钱挣更多的钱！也请股市高手多多在评论区发表意见，不吝赐教，供大家学习交流讨论，对此我非常感谢！ 个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1773871319,
+      "publish_date": "2026-03-19 06:01",
+      "url": "https://m.toutiao.com/w/1860038892946648/?app=toutiao_web&timestamp=1788063638&use_new_style=1",
+      "digg_count": 3,
+      "comment_count": 2,
+      "read_count": 6355
+    },
+    {
+      "post_id": "1859984444575815",
+      "content": "股市有风险，投资须谨慎！\n       2026年3月18日15时40分发布2026年3月19日上证指数走势预判：明天上证指数继续震荡上行，指数高点大约在4130附近。最终收一个十字星或小阴线。注意防范回落的风险。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！金无足赤人无完人。我预判的正确率如果能达到80%以上，我就心满意足了，不过，我不会就此止步，我会不断努力精进，不断提高正确率，以回报广大股民的厚爱！如果你也认同我的预判并且对你产生实质性的帮助，请关注我，多多点赞转发收藏，这样你就会在股市中不断获得好运！同时我也在这里衷心地祝愿你在股市挣钱挣更多的钱！也请股市高手多多在评论区发表意见，不吝赐教，供大家学习交流讨论，对此我非常感谢！\n个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1773819393,
+      "publish_date": "2026-03-18 15:36",
+      "url": "https://m.toutiao.com/w/1859984444575815/?app=toutiao_web&timestamp=1788063638&use_new_style=1",
+      "digg_count": 4,
+      "comment_count": 0,
+      "read_count": 5054
+    },
+    {
+      "post_id": "1859893333807176",
+      "content": "股市有风险，投资须谨慎！\n       2026年3月17日15时30分发布2026年3月18日上证指数走势预判：明天上证指数看涨 指数大约在4049点至4102点之间运行，收一根阳线。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！金无足赤人无完人。我预判的正确率如果能达到80%以上，我就心满意足了，不过，我不会就此止步，我会不断努力精进，不断提高正确率，以回报广大股民的厚爱！如果你也认同我的预判并且对你产生实质性的帮助，请关注我，多多点赞转发收藏，这样你就会在股市中不断获得好运！同时我也在这里衷心地祝愿你在股市挣钱挣更多的钱！也请股市高手多多在评论区发表意见，不吝赐教，供大家学习交流讨论，对此我非常感谢！\n个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1773732503,
+      "publish_date": "2026-03-17 15:28",
+      "url": "https://m.toutiao.com/w/1859893333807176/?app=toutiao_web&timestamp=1788063638&use_new_style=1",
+      "digg_count": 2,
+      "comment_count": 0,
+      "read_count": 6139
+    },
+    {
+      "post_id": "1859809385623559",
+      "content": "股市有风险，投资须谨慎！\n       2026年3月16日15时15分发布2026年3月17日上证指数走势预判：明天上证指数看涨 指数大约在4097点至4123点之间运行，收一根阳线。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高一些或低一些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，有的是冷静独立的预判，有的是客观反映上证指数变化趋势，用所有的一切做出独一无二的预判，希望帮助广大股民趋利避害！金无足赤人无完人。我预判的正确率如果能达到80%以上，我就心满意足了，不过，我不会就此止步，我会不断努力精进，不断提高正确率，以回报广大股民的厚爱！如果你也认同我的预判并且对你产生实质性的帮助，请关注我，多多点赞转发收藏，这样你就会在股市中不断获得好运！同时我也在这里衷心地祝愿你在股市挣钱挣更多的钱！也请股市高手多多在评论区发表意见，不吝赐教，供大家学习交流讨论，对此我非常感谢！\n个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1773652444,
+      "publish_date": "2026-03-16 17:14",
+      "url": "https://m.toutiao.com/w/1859809385623559/?app=toutiao_web&timestamp=1788063638&use_new_style=1",
+      "digg_count": 2,
+      "comment_count": 0,
+      "read_count": 4776
+    },
+    {
+      "post_id": "1859683436500999",
+      "content": "今天与大家讨论一下炒股与投资的话题。在很多人看来炒股就是投资，就是把钱投到股市，在股市里面挣钱。其实不然，炒股就是炒股，投资就是投资，虽然都是把钱投到股市，但两者却是是风马牛不相及的两件事，不能相提并论，更不能混为一谈。炒股就像炒瓜子炒花生一样，锅铲要在锅里来回翻转，如果火大的话还要不停地反翻转，掌握火候和翻转技巧是炒好瓜子和花生的关键，这两者掌握不好要么就是夹生要么就是炒糊了。炒股也是在股票市场这个大锅里不断地交易，不断地炒来炒去，这才是真正意义上的炒股。而投资呢就像是在古玩市场上掏到了宝贝，买到了最有价值最有升值潜力的文物，然后就把它深深地收藏起来，等十几年或几十年再卖出，赚取几十倍甚至百倍千倍的利润。最典型的就数股神巴菲特了，买入一只股票耐心持有十几年或几十年，直到这只股票不再拥有升值潜力才卖出。\n       炒股与投资根本就不是一回事，很多股民不知道，认为把钱投入股市就是炒股或者投资，绝大多数股民都在说我在炒股或我已经炒股多少年了，但从他的行为轨迹上看，他根本不知道两者的意义与巨大的区别，他买入股票持有几年都不动，账面红一年绿一年的，过山车都不知坐了多少回了也没挣到钱。几年不动这本应该算投资，可这老兄每天盯盘，每天为股票的涨跌而焦虑又像是在炒股，从股票持续盈利能力和坐过山车上看又不像是投资，怎么看都是一个四不像。投资是不用盯盘的，几个月看一下账户就行了，而且股票具有持续盈利能力，基本不会出现过山车的想象，你说他每天盯盘是炒家子吧，他又几年不交易，硬是把自己弄成了一个既不是投资又不是炒股的人。这也是他不挣钱的原因，没有搞清自己来股市是干什么的。所以，每个人都要清醒自己是属于哪一类的，根据自己的特长特点选择不同的路，有深入研究上市公司能力的，有火眼金睛的，能找出价值连城的股票，就做一个现代版的巴菲特，就做一个投资者。如果你是一个交易天才，悟性极高，深谙交易技巧，知道在什么火候该买入，知道在什么火候该卖出，那你就做一个炒家子。不管怎么说，这两样必须占一样，只要占一样必是赢家，如果两样都占那是大大的赢家，如果一样都不占就是韭菜。\n       中国股市炒作氛围更浓一些，像某些白水和某些科技类型的遭到爆炒或恶炒，把几十年的潜力一下子挖掘殆尽，炒坏了玩坏了就被无情的抛弃，再无人问津，这也并不是说中国股市就没有投资价值的股票，其实具有投资价值的股票还是很多的，只是你没有找到而已，或者说你的功夫还没有下到家，不下苦工硬功怎么会挣到钱呢，这是一个极其简单的道理，天上总不会掉馅饼吧！想在股市挣钱还是需要下下功夫的。\n      不知道屏幕前的你对此事是怎么看的？评论区谈谈你的看法。",
+      "publish_time": 1773532330,
+      "publish_date": "2026-03-15 07:52",
+      "url": "https://m.toutiao.com/w/1859683436500999/?app=toutiao_web&timestamp=1788063638&use_new_style=1",
+      "digg_count": 0,
+      "comment_count": 0,
+      "read_count": 4295
+    },
+    {
+      "post_id": "1859599396591688",
+      "content": "为股票平反。几十年来，有些人给股票冠以各种妖名，骂得狗血喷头，说它是能让人倾家荡产之首的坏东西。其实不然，今天我就来给它正正名。股票这东西，说它好它也不好，说它坏它也不坏，它就是它，它不好也不坏。它是工具，就像汽车一样，它可以载人载物，也可以毁人毁物，只要熟练掌握驾驶技术，遵守交通规则，小心驾驶，它就是造福人类的工具，反正它就是毁人毁物的工具。股票也是这样，懂得它运行规律，小心操作，它就是保值增值的工具，反之，它就是亏钱甚至家破人亡的工具。股票，不好也不坏，股票就是股票！",
+      "publish_time": 1773452183,
+      "publish_date": "2026-03-14 09:36",
+      "url": "https://m.toutiao.com/w/1859599396591688/?app=toutiao_web&timestamp=1788063638&use_new_style=1",
+      "digg_count": 2,
+      "comment_count": 0,
+      "read_count": 5024
+    },
+    {
+      "post_id": "1859595886867463",
+      "content": "今天周六休息，借着不开盘之际聊一个关于股市预判的话题，目前来看，大致分为三类，一类看多，一类看空，一类既不看多也不看空。前两类属于趋势类的，趋势类型的预判很容易，股票嘛不是涨就是跌，无论押注哪一方都可以，胜率各占50%，凡是在股市里做股票的人都可以做出这样的预判，至于对与不对就是另外一回事了。再来说说第三类，这第三类认为股市既不是多也不是空，多与空是相对而不是绝对的，今天股市还在做多，明天也许就在做空，这一周涨，说不定下一周又在跌，所以，股市不要考虑太长远，只要把握好每一个今天就足够了，今天涨就跟着挣钱，明天跌就空仓等待，总是把握今天当下的机会，这样就不会错过任何机会。有的死空头错过了3040-今1000多点的机会，有的死多头套在6124高点至今未被解套，所以，看股评看预测重点要看能做第二天预判的，也就是说能预判明天股市走势的，能预判明天是涨是跌，明天大致的高点低点在哪里就可以了，跟着能挣钱就行了，别的不要去管，这才应该是关注的重点。",
+      "publish_time": 1773448836,
+      "publish_date": "2026-03-14 08:40",
+      "url": "https://m.toutiao.com/w/1859595886867463/?app=toutiao_web&timestamp=1788063638&use_new_style=1",
+      "digg_count": 3,
+      "comment_count": 3,
+      "read_count": 4539
+    },
+    {
+      "post_id": "1859526183352328",
+      "content": "股市有风险，投资须谨慎！\n       2026年3月13日14时15分发布2026年3月16日上证指数走势预判：今天上证指数如期回调，收一根小阴，明天上证指数看涨 指数大约在4109点至4137点之间运行，收一根阳线。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高些或低些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，凭借冷静客观做出的独立预判，客观反映上证指数趋势变化，帮助广大股民趋利避害！金无足赤人无完人。我预判的正确率如果能达到80%以上，我就心满意足了，不过，我不会就此止步，我会不断努力精进，不断提高正确率，以回报广大股民的厚爱！如果你也认同我的预判并且对你产生实质性的帮助，请关注我，多多点赞转发收藏，这样你就会在股市中不断获得好运！同时我也在这里衷心地祝愿你在股市挣钱挣更多的钱！也请股市高手多多在评论区发表意见，不吝赐教，供大家学习交流讨论，对此我非常感谢！\n个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1773382361,
+      "publish_date": "2026-03-13 14:12",
+      "url": "https://m.toutiao.com/w/1859526183352328/?app=toutiao_web&timestamp=1788063638&use_new_style=1",
+      "digg_count": 2,
+      "comment_count": 0,
+      "read_count": 5880
+    },
+    {
+      "post_id": "1859438304089095",
+      "content": "股市有风险，投资须谨慎！\n       2026年3月12日15时0分发布2026年3月13日上证指数走势预判：今天上证指数冲高遇阻回落，明天继续回调，上证指数大约在4127点至4096点之间运行，收一根阴线。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高些或低些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，凭借冷静客观做出的独立预判，客观反映上证指数趋势变化，帮助广大股民趋利避害！金无足赤人无完人。我预判的正确率如果能达到80%以上，我就心满意足了，不过，我不会就此止步，我会不断努力精进，不断提高正确率，以回报广大股民的厚爱！如果你也认同我的预判并且对你产生实质性的帮助，请关注我，多多点赞转发收藏，这样你就会在股市中不断获得好运！同时我也在这里衷心地祝愿你在股市挣钱挣更多的钱！也请股市高手多多在评论区发表意见，不吝赐教，供大家学习交流讨论，对此我非常感谢！\n个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1773298553,
+      "publish_date": "2026-03-12 14:55",
+      "url": "https://m.toutiao.com/w/1859438304089095/?app=toutiao_web&timestamp=1788063639&use_new_style=1",
+      "digg_count": 5,
+      "comment_count": 0,
+      "read_count": 16400
+    },
+    {
+      "post_id": "1859348237295619",
+      "content": "股市有风险，投资须谨慎！\n       2026年3月11日15时04分发布2026年3月12日上证指数走势预判：明天上证指数大约在4135开盘，大约在4125点至4150点之间运行，收一根带有下影线的小阳线，如下图所示。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高些或低些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，凭借冷静客观做出的独立预判，客观反映上证指数趋势变化，帮助广大股民趋利避害！金无足赤人无完人。我预判的正确率如果能达到80%以上，我就心满意足了，不过，我不会就此止步，我会不断努力精进，不断提高正确率，以回报广大股民的厚爱！如果你也认同我的预判并且对你产生实质性的帮助，请关注我，多多点赞转发收藏，这样你就会在股市中不断获得好运！同时我也在这里衷心地祝愿你在股市挣钱挣更多的钱！也请股市高手多多在评论区发表意见，不吝赐教，供大家学习交流讨论，对此我非常感谢！\n个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1773212659,
+      "publish_date": "2026-03-11 15:04",
+      "url": "https://m.toutiao.com/w/1859348237295619/?app=toutiao_web&timestamp=1788063639&use_new_style=1",
+      "digg_count": 5,
+      "comment_count": 0,
+      "read_count": 4855
+    },
+    {
+      "post_id": "1859257840357379",
+      "content": "股市有风险，投资须谨慎！\n       2026年3月10日15时10分发布2026年3月11日上证指数走势预判：明天上证指数大约在4129点至4165点之间运行，收一根阳线，如下图所示。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高些或低些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，凭借冷静客观做出的独立预判，客观反映上证指数趋势变化，帮助广大股民趋利避害！金无足赤人无完人。我预判的正确率如果能达到80%以上，我就心满意足了，不过，我不会就此止步，我会不断努力精进，不断提高正确率，以回报广大股民的厚爱！如果我的预判有参考价值，请关注我，多多点赞转发，也请股市高手多多在评论区发表意见，不吝赐教，供大家学习交流讨论，对此我非常感谢！\n个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1773126450,
+      "publish_date": "2026-03-10 15:07",
+      "url": "https://m.toutiao.com/w/1859257840357379/?app=toutiao_web&timestamp=1788063639&use_new_style=1",
+      "digg_count": 8,
+      "comment_count": 0,
+      "read_count": 9201
+    },
+    {
+      "post_id": "1859171907154051",
+      "content": "股市有风险，投资须谨慎！\n       2026年3月9日16时20分发布2026年3月10日上证指数走势预判：明天上证指数大约在4112点至4154点之间运行，收一根阳线，如下图1所示。如果中东战事缓和或停战，出现重大利好，A股或出现报复性上涨。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高些或低些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，凭借冷静客观做出的独立预判，客观反映上证指数趋势变化，帮助广大股民趋利避害！金无足赤人无完人。我预判的正确率如果能到达80%以上，我就心满意足了，不过，我不会就此止步，我会不断努力精进，不断提高正确率，以回报广大股民的厚爱！如果我的预判有参考价值，请关注我，多多点赞转发，也请股市高手多多在评论区发表意见，不吝赐教，供大家学习交流讨论，对此我非常感谢！\n个人观点，不构成投资建议，买卖股票风险自担！",
+      "publish_time": 1773044497,
+      "publish_date": "2026-03-09 16:21",
+      "url": "https://m.toutiao.com/w/1859171907154051/?app=toutiao_web&timestamp=1788063639&use_new_style=1",
+      "digg_count": 12,
+      "comment_count": 1,
+      "read_count": 13612
+    },
+    {
+      "post_id": "1859057129172999",
+      "content": "股市有风险，投资须谨慎！\n       2026年3月8日10时0分发布2026年3月9日上证指数走势预判：明天上证指数大约在4112点至4154点之间运行，收一根阳线，如下图所示。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高些或低些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，凭借冷静客观做出的独立预判，客观反映上证指数趋势变化，帮助广大股民趋利避害！金无足赤人无完人。我预判的正确率如果能到达80%以上，我就心满意足了，不过，我不会就此止步，我会不断努力精进，不断提高正确率，以回报广大股民的厚爱！如果我的预判有参考价值或者因此获利，请关注我，多多点赞转发，也请股市高手多多在评论区发表意见，不吝赐教，供大家学习交流讨论，对此我非常感谢！",
+      "publish_time": 1772935037,
+      "publish_date": "2026-03-08 09:57",
+      "url": "https://m.toutiao.com/w/1859057129172999/?app=toutiao_web&timestamp=1788063639&use_new_style=1",
+      "digg_count": 26,
+      "comment_count": 4,
+      "read_count": 36801
+    },
+    {
+      "post_id": "1858623935419528",
+      "content": "股市有风险，投资须谨慎！\n       2026年3月3日15时10分发布2026年3月4日上证指数走势预判：明天上证指数大约在4125点至4176点之间运行，收一根带有上影线的阳线。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高些或低些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，凭借冷静客观做出的独立预判，客观反映上证指数趋势变化，帮助广大股民趋利避害！金无足赤人无完人。我预判的正确率如果能到达80%以上，我就心满意足了，不过，我不会就此止步，我会不断努力精进，不断提高正确率，以回报广大股民的厚爱！如果我的预判有参考价值或者因此获利，请关注我，多多点赞转发，也请股市高手多多在评论区发表意见，不吝赐教，供大家学习交流讨论，对此我非常感谢！",
+      "publish_time": 1772521911,
+      "publish_date": "2026-03-03 15:11",
+      "url": "https://m.toutiao.com/w/1858623935419528/?app=toutiao_web&timestamp=1788063639&use_new_style=1",
+      "digg_count": 2,
+      "comment_count": 0,
+      "read_count": 6226
+    },
+    {
+      "post_id": "1858533369967623",
+      "content": "风险警示：股市有风险，投资须谨慎，据此买卖，风险自担！\n       2026年3月2日15时20分发布2026年3月3日上证指数走势预判：鉴于美以伊打仗，局势不断升级，对全球股市有较大影响，准确预判上证指数比较困难，中东局势对A股影响有限，对美股影响巨大，美国毕竟是交战一方，对美国经济影响很大，所以，今晚美股走势决定A股明天走势，我的预判有三种情况，第一种美股没跌，A股收一个十字星如下图1所示，第二种美股小跌A股收小阴线如下图2所示，第三种美股大跌A股收大阴线如下图3所示。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高些或低些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，凭借冷静客观做出的独立预判，客观反映上证指数趋势变化，帮助广大股民趋利避害！金无足赤人无完人。我预判的正确率如果能到达80%以上，我就心满意足了，不过，我不会就此止步，我会不断努力精进，不断提高正确率，以回报广大股民的厚爱！如果我的预判有参考价值或者因此获利，请关注我，多多点赞转发，也请股市高手多多在评论区发表意见，不吝赐教，供大家学习交流讨论，对此我非常感谢！",
+      "publish_time": 1772435541,
+      "publish_date": "2026-03-02 15:12",
+      "url": "https://m.toutiao.com/w/1858533369967623/?app=toutiao_web&timestamp=1788063639&use_new_style=1",
+      "digg_count": 1,
+      "comment_count": 0,
+      "read_count": 4102
+    },
+    {
+      "post_id": "1858415388279944",
+      "content": "#炒股亏了100多万,还要坚持吗?#要不要坚持完全要看块钱人是一种什么样的人。如果是心浮气躁，急功近利，想赢怕亏，是一种赌徒心态，就要赶紧住手，否则就会越亏越多，直至倾家荡产，这不是危言耸听，是残酷的事实。如果是踏实稳重，虚心好学，能静心向内求，不断战胜超越自我，变成一个完全可控的人，变成一个集多重优质品格于一身的人，具体说是一个吃得苦，耐得劳，敢拼命，有恒心有耐力，有灵性有悟性，永不放弃理想和目标，不达目的绝不罢休的人，还懂得用复利思维让自己慢慢变富的道理，这样的人适合继续坚持，终有一天他会成为有钱人，世界上没有一个股票投资大师不是从亏钱开始的。股票投资是一条充满荆棘的艰难道路，除非具有战胜自我并具有战胜99%他人的能力，否则不要踏入股市，一旦踏入便是肥肥的待宰羔羊！",
+      "publish_time": 1772323025,
+      "publish_date": "2026-03-01 07:57",
+      "url": "https://m.toutiao.com/w/1858415388279944/?app=toutiao_web&timestamp=1788063639&use_new_style=1",
+      "digg_count": 0,
+      "comment_count": 0,
+      "read_count": 1598
+    },
+    {
+      "post_id": "1858332007043075",
+      "content": "2026年2月28日10时发布2026年3月2日上证指数走势预判：上证指数大约在4167点-4196点之间运行，收阳线，如下图所示。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高些或低些，但不影响整体趋势。这里没有主观臆断，没有情绪干扰，没有人云亦云，没有社会传言，这里有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，凭借冷静客观做出的独立预判，客观反映上证指数趋势变化，帮助广大股民趋利避害！金无足赤人无完人。我预判的正确率如果能到达80%以上，我就心满意足了，不过，我不会就此止步，我会不断努力精进，不断提高正确率，以回报广大股民的厚爱！如果我的预判有参考价值或者因此获利，请关注我，多多点赞转发，也请股市高手多多在评论区发表意见，不吝赐教，供大家学习交流讨论，对此我非常感谢！\n股市有风险，投资需谨慎，据此入市，风险自担！",
+      "publish_time": 1772243506,
+      "publish_date": "2026-02-28 09:51",
+      "url": "https://m.toutiao.com/w/1858332007043075/?app=toutiao_web&timestamp=1788063639&use_new_style=1",
+      "digg_count": 9,
+      "comment_count": 9,
+      "read_count": 6805
+    },
+    {
+      "post_id": "1857800255289351",
+      "content": "#股市向上还有空间吗？#这话只有傻子才能问的出来，谁都知道大a走得是慢牛行情，这种慢牛要持续很多年，怎么就会问到或者怀疑向上有没有空间了呢？说实话，向上空间不仅是大，而且还是巨大，大到一万点两万点甚至三万点，但这需要几十年的时间才能涨到。有没有空间，关键要谈时间性，从长远看，慢慢长牛没期限，但从短期看，向上的空间并不大。尤其是慢牛在涨超40%的情况下随时都可能掉头向下调整。几天前我发在微头条的文章从日线到月线都有详细的分析，在这里我就不再重复了，有感兴趣的朋友可关注我，查看我的文章。",
+      "publish_time": 1771736388,
+      "publish_date": "2026-02-22 12:59",
+      "url": "https://m.toutiao.com/w/1857800255289351/?app=toutiao_web&timestamp=1788063639&use_new_style=1",
+      "digg_count": 4,
+      "comment_count": 10,
+      "read_count": 6300
+    },
+    {
+      "post_id": "1857602410960072",
+      "content": "2026年2月20日8时30分发布一张月线图，供股民参考研判做出正确的抉择：月线从2635到4190已经悄无声息的走完了4浪，又来到到了5浪最高确认点之处，那么，5浪的最高点究竟在哪？是已经到了吗？还是没到？如果没到还能涨多少？这个点之所以非常要命揪心，是因为5浪以后会有B浪回调。对这张图表有各种看法，我归纳总结一下，一种看法是当看到这张图后吓出一身冷汗，理由是5浪高点已经出现，正在步入回调之路。二种看法是看到这张图表感到感到欢欣鼓舞，理由是上涨趋势未发生改变，牛市将继续，春节后会大涨特涨。三种看法是不能确定5浪的高点究竟在哪，如果没到还能涨多少是他们最关心事情？毕竟5浪3040启动已经涨了37.8%，涨幅不小了，如果继续参与风险已经很大，会出现以大博小的局面，有点得不偿失，需要十分小心谨慎。四种看法是5浪的上涨趋势线已经在2025年12月16号的3815点遭到破坏，目前是收兵休养生息的时期，等待捕捉更好的机会，正是所谓的高抛低吸做差价的好时候。\n看到这里你不知你有何感想？持何观点？请在评论区讨论一下，如果你现在还是拿不定主意也可在评论区说说，请教高人帮你分析一下，毕竟在股市里面挣钱不容易，亏钱很容易，好在还有3-4天的时间大A才开盘，在开盘之前还有充足的时间把它搞明白，也必须搞明白。如果觉得我这篇文章有用，能帮到你，请关注我，以便今后能及时看到我的文章，请点赞转发收藏，谢谢！",
+      "publish_time": 1771547709,
+      "publish_date": "2026-02-20 08:35",
+      "url": "https://m.toutiao.com/w/1857602410960072/?app=toutiao_web&timestamp=1788063639&use_new_style=1",
+      "digg_count": 27,
+      "comment_count": 38,
+      "read_count": 27325
+    },
+    {
+      "post_id": "1857510829993992",
+      "content": "#上证指数的1分钟如何理解?#说实话，上证指数一分钟是很难理解的，至少说我这个级别的是不行的，修炼还没到。如果能准确理解一分钟线那绝对是高手中的高手，他就可以做超级短线，是赢家的赢家。尽管如此，我还是愿意以我目前的水平说一下：一分钟它也遵循5浪运行原则，但是一分钟的5浪走得极为不标准不规范，这在识别上造成了很大的困难，实际操作也很困难。而且，有时候还会莫名其妙的多走出几浪来，很无奈，数浪者只能无奈的算作是延长浪，否则无法解释。所以一般人会忽略一分钟线，只看60分钟或日线就可以了，没有必要把自己搞得很累，那样就违背了炒股的初衷，我们炒股的初衷是快乐悠闲的炒，享受慢慢挣钱变富的乐趣。就是这样难以把握的东西，也还是有必要研究和学习，掌握了以后你就有可能卖在相对来说的最高点，也能买在相对的最低点。不知屏幕前的你是否同意我的观点？同意的支持一下，点关注点赞转发，不同意的，评论区发表意见，咱们讨论学习。",
+      "publish_time": 1771460371,
+      "publish_date": "2026-02-19 08:19",
+      "url": "https://m.toutiao.com/w/1857510829993992/?app=toutiao_web&timestamp=1788063641&use_new_style=1",
+      "digg_count": 3,
+      "comment_count": 42,
+      "read_count": 6100
+    },
+    {
+      "post_id": "1857429182129156",
+      "content": "春节长假期间没有新的上证指数涨跌预判要发布，借着空挡期谈一下投资理念：我认为投资的总原则是不急，它就像农民种庄稼一样，春天播种秋天收获。其余的时间比如夏天和冬天去享受生活。第二个原则就是以大博大，当市场大幅下跌30%的时候，把手中所有资金全部买入股票，躺着赢。第三个原则就是以小博大，当市场步入下降通道后，跌幅超过8%必有反弹，股票的常态就是涨涨跌跌跌跌涨涨，这时候可以以小博大，可用25%或30%的资金参与反弹，千万要记住，这仅仅是反弹，反弹的目标位50%左右就卖出，不能贪心，反弹永远是小资金参与，这就像滚雪球不断增加雪球的体积，以保住雪球的安全，这样才能等跌到底有足够多的资金抄底。\n不知道屏幕前的你是否同意我的投资理念？同意的请关注点赞转发，不同意的请在评论区留言讨论。",
+      "publish_time": 1771382505,
+      "publish_date": "2026-02-18 10:41",
+      "url": "https://m.toutiao.com/w/1857429182129156/?app=toutiao_web&timestamp=1788063641&use_new_style=1",
+      "digg_count": 1,
+      "comment_count": 0,
+      "read_count": 5443
+    },
+    {
+      "post_id": "1857265482262536",
+      "content": "2026年2月16日15时发布2026年春节后上证指数60分钟走势图的分析预判，请股民朋友做好高抛低吸心理准备。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高些或低些，但不影响整体趋势。这里没有主观臆断，不受情绪传导，不附和人云亦云，不听信社会传言，这里做出的每一个预判，有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，这种独立冷静不受外界干扰的预判，客观展示上证指数趋势变化，帮助广大股民趋利避害！金无足赤人无完人，我预判的正确率如果能到达80%以上，我就心满意足了，不过，我不会就此止步，我会不断努力精进，不断提高正确率，以回报广大股民的厚爱！如果我的预判有参考价值甚至因此获利，请关注多多点赞转发，也请股市高手多多在评论区发表意见，不吝赐教，供大家学习交流讨论，对此我非常感谢！\n股市有风险，投资需谨慎，据此入市，风险自担！",
+      "publish_time": 1771226389,
+      "publish_date": "2026-02-16 15:19",
+      "url": "https://m.toutiao.com/w/1857265482262536/?app=toutiao_web&timestamp=1788063641&use_new_style=1",
+      "digg_count": 6,
+      "comment_count": 8,
+      "read_count": 11765
+    },
+    {
+      "post_id": "1857264256847876",
+      "content": "2026年2月16日15时发布2026年春节后上证指数走势图的分析：上涨指数从4190回落以来已经走出了一个明显的5浪下降趋势线。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高些或低些，但不影响整体趋势。这里没有主观臆断，不受情绪传导，不附和人云亦云，不听信社会传言，这里做出的每一个预判，有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，这种独立冷静不受外界干扰的预判，客观展示上证指数趋势变化，帮助广大股民趋利避害！金无足赤人无完人，我预判的正确率如果能到达80%以上，我就心满意足了，不过，我不会就此止步，我会不断努力精进，不断提高正确率，以回报广大股民的厚爱！如果我的预判有参考价值甚至因此获利，请关注多多点赞转发，也请股市高手多多在评论区发表意见，不吝赐教，供大家学习交流讨论，对此我非常感谢！\n股市有风险，投资需谨慎，据此入市，风险自担！",
+      "publish_time": 1771225220,
+      "publish_date": "2026-02-16 15:00",
+      "url": "https://m.toutiao.com/w/1857264256847876/?app=toutiao_web&timestamp=1788063641&use_new_style=1",
+      "digg_count": 173,
+      "comment_count": 113,
+      "read_count": 193773
+    },
+    {
+      "post_id": "1857262880250884",
+      "content": "2026年2月16日15时发布2025年4月7日至2026年1月14日上证指数走势图的分析：指数在3040点一路涨到4190点，走出完美的5浪。有波浪理论技术分析的人都知道5浪过后有一个b浪调整。所以，春节过后会继续向下调整，对于重仓的股民来说需要防范风险",
+      "publish_time": 1771223907,
+      "publish_date": "2026-02-16 14:38",
+      "url": "https://m.toutiao.com/w/1857262880250884/?app=toutiao_web&timestamp=1788063641&use_new_style=1",
+      "digg_count": 7,
+      "comment_count": 21,
+      "read_count": 10802
+    },
+    {
+      "post_id": "1857248581857480",
+      "content": "2026年2月16日10时发布2026年2月24日（春节后第一个交易日)上证指数运行预判：指数将在4070点附近-4032附近之间运行，收阴线。说明一下：这里的最高点和最低点不是绝对数，而是一个相对数，实际走势可能高些或低些，但不影响整体趋势。这里没有主观臆断，不受情绪传导，不附和人云亦云，不听信社会传言，这里做出的每一个预判，有的是股市内在的逻辑运行规律，有的是冷冰冰的盘面数据，这种独立冷静不受外界干扰的预判，客观展示上证指数趋势变化，帮助广大股民趋利避害！金无足赤人无完人，我预判的正确率如果能到达80%以上，我就心满意足了，不过，我不会就此止步，我会不断努力精进，不断提高正确率，以回报广大股民的厚爱！如果我的预判有参考价值甚至因此获利，请关注多多点赞转发，也请股市高手多多在评论区发表意见，不吝赐教，供大家学习交流讨论，对此我非常感谢！\n股市有风险，投资需谨慎，据此入市，风险自担！",
+      "publish_time": 1771210271,
+      "publish_date": "2026-02-16 10:51",
+      "url": "https://m.toutiao.com/w/1857248581857480/?app=toutiao_web&timestamp=1788063641&use_new_style=1",
+      "digg_count": 3,
+      "comment_count": 0,
+      "read_count": 5928
+    },
+    {
+      "post_id": "1832337431827587",
+      "content": "#评论打卡任务#真幸运！我在评论区发布评论，触发了评论打卡的【每日运势签】彩蛋，还能参与瓜分现金噢！大家快来试试吧！",
+      "publish_time": 1747453147,
+      "publish_date": "2025-05-17 11:39",
+      "url": "https://m.toutiao.com/w/1832337431827587/?app=toutiao_web&timestamp=1788063641&use_new_style=1",
+      "digg_count": 0,
+      "comment_count": 2,
+      "read_count": 7959
+    },
+    {
+      "post_id": "1791106683937946",
+      "content": "#修心，修行的巅峰是什么？#修心、修行的巅峰是长生不老，进入四维或多维空间。",
+      "publish_time": 1708132442,
+      "publish_date": "2024-02-17 09:14",
+      "url": "https://m.toutiao.com/w/1791106683937946/?app=toutiao_web&timestamp=1788063641&use_new_style=1",
+      "digg_count": 3,
+      "comment_count": 0,
+      "read_count": 74362
+    }
+  ]
+}

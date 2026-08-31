@@ -141,6 +141,8 @@ def endpoint_of(pub_date, spec):
         return d
     if spec == 'week':                                         # 本周最后交易日
         base = pub_date if pub_date in CAL_SET else next_td(pub_date)
+        if base is None:                                       # 发布日已超行情截止（如 08-29+）→ 无法验证，不计分
+            return None
         y, w, _ = datetime.strptime(base, '%Y-%m-%d').isocalendar()
         days = [d for d in CAL if datetime.strptime(d, '%Y-%m-%d').isocalendar()[:2] == (y, w)]
         return days[-1] if days else None

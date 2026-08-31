@@ -93,7 +93,7 @@ def parse_items(data):
         if isinstance(content, dict):
             content = content.get("text") or content.get("title") or str(content)
         if not content:
-            share = item.get("itemCell", {}).get("shareInfo", {})
+            share = (item.get("itemCell") or {}).get("shareInfo", {})
             content = share.get("title", "")
         if isinstance(content, dict):
             content = str(content)
@@ -119,20 +119,35 @@ def parse_items(data):
 
         share_url = (
             item.get("share_url") or
-            item.get("itemCell", {}).get("shareInfo", {}).get("shareURL", "") or
+            (item.get("itemCell") or {}).get("shareInfo", {}).get("shareURL", "") or
             (f"https://www.toutiao.com/w/{post_id}/" if post_id else "")
         )
 
         # 提取用户信息（统计 feed 中出现最多的用户作为账号主体，防止被转载内容覆盖）
-        user_data = item.get("user", {})
+        # 头条 feed API 三种形态（API 不稳定，需级联兼容）：
+        #   ① item.user {name,id,desc}（旧格式）
+        #   ② item.user_info.ui {name,user_id,description}（嵌套格式）
+        #   ③ item.user_info {name,user_id,description}（扁平格式，当前常见）
+        user_data = item.get("user") or {}
+        if not user_data.get("name"):
+            ui_wrap = item.get("user_info") or {}
+            if isinstance(ui_wrap, dict):
+                if isinstance(ui_wrap.get("ui"), dict) and ui_wrap["ui"].get("name"):
+                    user_data = ui_wrap["ui"]
+                elif ui_wrap.get("name"):
+                    user_data = ui_wrap
+                else:
+                    user_data = {}
+            else:
+                user_data = {}
         user_name = user_data.get("name", "") if user_data else ""
         if user_name:
             user_info.setdefault("_user_counter", {})
             user_info["_user_counter"][user_name] = user_info["_user_counter"].get(user_name, 0) + 1
             user_info["_user_detail"] = user_info.get("_user_detail", {})
             user_info["_user_detail"][user_name] = {
-                "user_id": str(user_data.get("id", "")),
-                "description": user_data.get("desc", ""),
+                "user_id": str(user_data.get("id") or user_data.get("user_id") or ""),
+                "description": user_data.get("desc") or user_data.get("description") or "",
             }
 
         posts.append({
@@ -149,6 +164,36 @@ def parse_items(data):
     return posts
 
 
+FINANCE_KW = [
+    "A股", "大盘", "上证", "深证", "创业板", "股市", "涨停", "跌停", "板块",
+    "指数", "行情", "上涨", "下跌", "股票", "沪指", "深指", "科创", "北向",
+    "资金", "牛市", "熊市", "震荡", "反弹", "回调", "抄底", "逃顶", "仓位",
+    "股民", "盘面", "券商", "银行", "科技股", "半导体", "新能源", "个股",
+    "主力", "放量", "缩量", "收评", "盘中", "开盘", "收盘", "A 股", "白酒",
+]
+
+
+def _finance_density(titles):
+    """首屏标题中的财经关键词密度——判别「博主本人财经主页」vs「转帖/新闻流」"""
+    if not titles:
+        return 0.0
+    hits = sum(1 for t in titles if any(k in t for k in FINANCE_KW))
+    return hits / len(titles)
+
+
+def _load_existing_ids(name):
+    """加载既有文件 post_id 集合，供 wrong_feed 重叠判别（有 --name 时）"""
+    if not name:
+        return set()
+    fp = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),
+                      "data", "posts", f"{name}.json")
+    try:
+        d = json.load(open(fp, encoding="utf-8"))
+        return {p.get("post_id") for p in d.get("posts") or [] if p.get("post_id")}
+    except Exception:
+        return set()
+
+
 def main():
     global all_posts
     parser = argparse.ArgumentParser(description="爬取今日头条博主全部帖子")
@@ -160,6 +205,7 @@ def main():
 
     post_url = args.url or "https://www.toutiao.com/w/1872013328886923/"
     explicit_name = args.name.strip() if args.name else ""
+    _existing_ids = _load_existing_ids(explicit_name)  # wrong_feed 重叠判别用
     since_ts = 0
     if args.since:
         since_ts = int(datetime.strptime(args.since, "%Y-%m-%d").timestamp())
@@ -233,9 +279,14 @@ def main():
             browser.close()
             return
 
-        # 无论 token 从哪来，都先访问一次原始链接以建立 cookie（feed API 依赖）
-        print("  访问原始链接建立 cookie...")
-        page.goto(post_url, timeout=30000, wait_until="domcontentloaded")
+        # 无论 token 从哪来，都先访问一次页面以建立 cookie（feed API 依赖）。
+        # 若 post_url 本身是 token 主页（长 token 常含 '=' 且带 ?source=m_redirect，重定向链会挂起），
+        # 改为访问首页建立 cookie——feed API 在首页上下文即可调通（已实测）。
+        print("  访问页面建立 cookie...")
+        if "/c/user/token/" in post_url:
+            page.goto("https://www.toutiao.com/", timeout=30000, wait_until="domcontentloaded")
+        else:
+            page.goto(post_url, timeout=30000, wait_until="domcontentloaded")
         time.sleep(3)
         # 等待重定向链结束、页面稳定（m_redirect 会自我跳转一次）
         try:
@@ -261,7 +312,7 @@ def main():
         seen_ids = set()
         max_behot_time = 0
         target = 5000
-        max_pages = 200
+        max_pages = 400  # 高密度博主（如 枫叶 12 条/页）需 200+ 页才能回溯 6 个月
 
         empty_streak = 0  # 连续空页计数
         stop_reason = ""  # 翻页停止原因，写入 result 供 verify_posts.py 二次检查判读
@@ -301,6 +352,20 @@ def main():
                     seen_ids.add(pid)
                     all_posts.append(p)
                     new_count += 1
+
+            # 第1页无任何带 user 的条目 → 可能是推荐流/转帖页而非博主主页（搬运账号最新帖常指向原文作者）。
+            # 但部分账号 feed 本身就不带 user（如 枫叶/时间合伙人），不能仅凭无 user 就中止——
+            # 用「财经内容密度 + 既有帖 post_id 重叠」判别，两者都低才判定为转帖/新闻流，提前中止。
+            if page_num == 1 and explicit_name and not user_info.get("_user_counter"):
+                page1_titles = [p["content"][:40] for p in new_posts]
+                density = _finance_density(page1_titles)
+                overlap = len(seen_ids & _existing_ids) if _existing_ids else 0
+                if density < 0.25 and overlap == 0:
+                    print(f"  第1页无 user 信息且非财经内容（密度{density:.0%}/重叠{overlap}），"
+                          "判定为推荐流/转帖页而非博主主页，提前中止")
+                    stop_reason = "wrong_feed"
+                    break
+                print(f"  第1页无 user 信息，但内容为财经（密度{density:.0%}/重叠{overlap}），判定为主页，继续")
 
             has_more = result.get("has_more", False)
             next_info = result.get("next", {}) or {}
@@ -428,6 +493,10 @@ def main():
 
         # 覆盖前保护：--since 未覆盖到起点且异常停 → 拒绝覆盖（防截断数据静默落盘）
         TRUNCATED = {"api_empty", "js_error", "status_abnormal", "empty_streak", "max_pages"}
+        if stop_reason == "wrong_feed":
+            print("  ❌ 识别为推荐流/转帖页（非博主主页），拒绝覆盖保存。请换用博主本人原创帖链接重试。")
+            browser.close()
+            sys.exit(1)
         min_ts = min((p["publish_time"] for p in all_posts if p["publish_time"]), default=0)
         if since_ts and min_ts > since_ts and stop_reason in TRUNCATED and not args.force:
             print(f"  ❌ 异常停（stop_reason={stop_reason}），最远只到 "

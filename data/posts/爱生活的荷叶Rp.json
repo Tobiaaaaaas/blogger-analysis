@@ -1,1419 +1,1558 @@
 {
-  "scrape_time": "2026-08-04 00:25:53",
+  "scrape_time": "2026-08-30 00:43:05",
   "source_url": "https://www.toutiao.com/w/1872485597345792/",
+  "stop_reason": "since",
   "user_info": {
+    "followers": "582",
+    "digg_count": "2018",
+    "following": "15",
     "name": "爱生活的荷叶Rp",
     "user_id": "3134023122291740",
-    "description": "与凤凰同飞，必是俊鸟；与虎狼同行，必是猛兽；与智者同行，必不同凡响；与高人为伍，必登上高峰。",
-    "followers": "530",
-    "digg_count": "1844",
-    "following": "21"
+    "description": "与凤凰同飞，必是俊鸟；与虎狼同行，必是猛兽；与智者同行，必不同凡响；与高人为伍，必登上高峰。"
   },
-  "total_posts": 140,
+  "total_posts": 152,
   "time_range": {
     "earliest": "2025-12-29",
-    "latest": "2026-08-03"
+    "latest": "2026-08-27"
   },
   "posts": [
+    {
+      "post_id": "1874660525163531",
+      "content": "大盘本周五和下周策略:\n\n大盘接近顶部箱体3968-3970开始，分批减仓，越涨越减仓。\n在下面点位上根据个人情况进行。3970-3985-3994-4009-4028\n\n下周二是一个重要的日子，大盘剧烈变动。\n\n减仓后的仓位等站稳4035再考虑加进去。",
+      "publish_time": 1787815595,
+      "publish_date": "2026-08-27 15:26",
+      "url": "https://m.toutiao.com/w/1874660525163531/?app=toutiao_web&timestamp=1788021768&use_new_style=1",
+      "digg_count": 39,
+      "comment_count": 2,
+      "read_count": 60585
+    },
+    {
+      "post_id": "1874123060886538",
+      "content": "关于大盘:\n两市全天总成交仅18923亿，较前一日单日直接缩量2016亿；\n短短两个交易日，市场累计大幅缩量高达6377亿；\n今日成交额正式跌破2万亿整数关口，创下7月24日以来首次新低！\n直接击穿并刷新7月24日的阶段低量纪录，阶段性地量结构完全确认。\n\n3995是大盘今年最高点4258与3732的0.5分位(中位线)。\n\n本周的反弹受压于30分钟箱体的底部3927\n\n下周仍然谨慎看反弹，支撑位3812,  3797压力位3927、3968。\n\n操盘原则:3995中位线以下，不重仓、满仓；依据支撑位短线博弈。",
+      "publish_time": 1787303029,
+      "publish_date": "2026-08-21 17:03",
+      "url": "https://m.toutiao.com/w/1874123060886538/?app=toutiao_web&timestamp=1788021768&use_new_style=1",
+      "digg_count": 8,
+      "comment_count": 0,
+      "read_count": 2983
+    },
+    {
+      "post_id": "1873931113976907",
+      "content": "关于大盘\n\n大盘反弹到3995就结束了，没有过4000点\n\n大盘自3797反弹到3995的回调，0.618分位在3873，这里具有一定的支撑，压力位3944-3955\n\n下一个支撑位分别是3862-3830",
+      "publish_time": 1787119974,
+      "publish_date": "2026-08-19 14:12",
+      "url": "https://m.toutiao.com/w/1873931113976907/?app=toutiao_web&timestamp=1788021768&use_new_style=1",
+      "digg_count": 14,
+      "comment_count": 0,
+      "read_count": 29727
+    },
+    {
+      "post_id": "1873750443240448",
+      "content": "关于大盘:\n如预期，上周大盘没有跌破3897，最低3903（3797反弹3968回调的0.382分位）。\n\n本周大盘将震荡反弹，冲击3985-3995-4005-4028。\n周五为变盘日，也是股指期货交割日，大盘震荡反弹到周四周五应当以减仓为主。",
+      "publish_time": 1786947673,
+      "publish_date": "2026-08-17 14:21",
+      "url": "https://m.toutiao.com/w/1873750443240448/?app=toutiao_web&timestamp=1788021768&use_new_style=1",
+      "digg_count": 4,
+      "comment_count": 0,
+      "read_count": 3934
+    },
+    {
+      "post_id": "1873468727408652",
+      "content": "关于大盘:\n关注下午收盘情况。\n今天只要收盘在3897之上，下周就还有机会创新高，过3968到4000左右。",
+      "publish_time": 1786679008,
+      "publish_date": "2026-08-14 11:43",
+      "url": "https://m.toutiao.com/w/1873468727408652/?app=toutiao_web&timestamp=1788021768&use_new_style=1",
+      "digg_count": 3,
+      "comment_count": 0,
+      "read_count": 4859,
+      "title": "关于大盘:\n关注下午收盘情况。\n今天只要收盘在3897之上，下周就还有机会创新高，过3968到4000左右。"
+    },
+    {
+      "post_id": "1873135890494476",
+      "content": "关于大盘:\n\n我根据我的交易系统计算，大盘走势如上图:\n\n1.大盘本周末将震荡、上涨到最高点，区间在3995-4025之间\n\n2.下周开始回调到3800左右，构建W结构\n\n3.W构建完成后如果大盘强势，将继续上涨到4200及以上。",
+      "publish_time": 1786361590,
+      "publish_date": "2026-08-10 19:33",
+      "url": "https://m.toutiao.com/w/1873135890494476/?app=toutiao_web&timestamp=1788021768&use_new_style=1",
+      "digg_count": 40,
+      "comment_count": 13,
+      "read_count": 44530
+    },
+    {
+      "post_id": "1873030396143628",
+      "content": "美非农数据大幅度人为下修，美联储9月议息会议加息预期又降低\n\n纳斯达克12月06日实行23小时交易\n\n长期来说利好全球股市、利好大宗商品\n\n明天看看是否有高开高走的可能。\n\n我个人重点关注证券周一是否有异动。",
+      "publish_time": 1786260983,
+      "publish_date": "2026-08-09 15:36",
+      "url": "https://m.toutiao.com/w/1873030396143628/?app=toutiao_web&timestamp=1788021768&use_new_style=1",
+      "digg_count": 2,
+      "comment_count": 0,
+      "read_count": 4328
+    },
+    {
+      "post_id": "1872850165713932",
+      "content": "关于大盘:\n基本上按照我8月4日发布的上方压力位在走，依次为3847-3879-3894-3940-3995\n\n从3940不会直接到3995，中间需要过几个比较大的压力位:\n\n一.七月大阴线的0.5分位3947\n二.  10周线3956\n三、日线年线3975\n四、3995即使缺口又是3732与4258的中位线\n\n支撑位置:\n一、5日线支撑3882\n三、日线强弱分水岭3863\n四、周线强弱分水岭3840\n五、变盘3797",
+      "publish_time": 1786089101,
+      "publish_date": "2026-08-07 15:51",
+      "url": "https://m.toutiao.com/w/1872850165713932/?app=toutiao_web&timestamp=1788021768&use_new_style=1",
+      "digg_count": 30,
+      "comment_count": 0,
+      "read_count": 31476
+    },
+    {
+      "post_id": "1872818638076928",
+      "content": "股市是反人性的—投资教育\n\n1.大盘总是朝着与散户期望的相反的方向运行。\n\n2.当大盘朝着散户期望的方向运行的时候，那是主力想把羊🐏育肥后再宰。\n\n这就是A股之所以发生经典七亏、二平、一赚铁律的核心原因。\n\n大A是超级主力控盘，不了解他的交易逻辑，除非运气爆棚，否则很难在股市赚到钱。\n\n市场环境好转时大盘突然启动，80%的散户会被甩下车；\n市场环境不好时，一个跟风后的闷杀，绝大多数散户又被挂在山顶，一直折磨到你割肉为止。\n\n好不容买进去了，也有点盈利了，主力通过反复洗盘，不断抬高你的交易成本，让你在追涨杀跌中又失去自我。\n这就是散户的命运之归宿。",
+      "publish_time": 1786059034,
+      "publish_date": "2026-08-07 07:30",
+      "url": "https://m.toutiao.com/w/1872818638076928/?app=toutiao_web&timestamp=1788021768&use_new_style=1",
+      "digg_count": 2,
+      "comment_count": 2,
+      "read_count": 5895
+    },
+    {
+      "post_id": "1872741770277952",
+      "content": "关于大盘\n基本上在按照我说的3847-3879-3894等压力位在走。\n明天如果大盘到3928附近、或者接近30日线和33线附近我就大幅度减仓了，只留2成。\n\n一直等顺利站稳3995和4025位置我再择机重仓买入。",
+      "publish_time": 1785985727,
+      "publish_date": "2026-08-06 11:08",
+      "url": "https://m.toutiao.com/w/1872741770277952/?app=toutiao_web&timestamp=1788021768&use_new_style=1",
+      "digg_count": 5,
+      "comment_count": 4,
+      "read_count": 10098
+    },
+    {
+      "post_id": "1872650955858944",
+      "content": "关于大盘\n:按照我的计算，八月份，8月5日变盘窗口--8月21日变盘窗口的反弹高度，应该主要是本周这几天反弹出来的，其余大部分时间都是横盘震荡。\n因此我个人策略是今天回调回来后在昨天加仓的基础上再加一部分，周五找个高点出来。\n\n加仓止损点位3795",
+      "publish_time": 1785899120,
+      "publish_date": "2026-08-05 11:05",
+      "url": "https://m.toutiao.com/w/1872650955858944/?app=toutiao_web&timestamp=1788021768&use_new_style=1",
+      "digg_count": 4,
+      "comment_count": 4,
+      "read_count": 6040
+    },
+    {
+      "post_id": "1872592100719820",
+      "content": "关于大盘\n\n大盘这几天盘中一旦破了3800就有资金拉回来，已经三次了。\n\n看来超级主力目前是不让失手6124-5178趋势线支撑位置\n\n这样，接下来的八月份，收盘如果破了3800就看继续回调到3677-3680区域。\n\n收盘站上3833就继续看涨\n\n上方压力位依次为3847-3879-3894-3940-3995",
+      "publish_time": 1785842991,
+      "publish_date": "2026-08-04 19:29",
+      "url": "https://m.toutiao.com/w/1872592100719820/?app=toutiao_web&timestamp=1788021768&use_new_style=1",
+      "digg_count": 7,
+      "comment_count": 3,
+      "read_count": 9808
+    },
     {
       "post_id": "1872485597345792",
       "content": "关于大盘:\n\n根据我们的预判，明天下午将见阶段低点。\n\n这里可以买入第一批仓位，防止周三8月5日这个变盘窗口跳空高开踏空，博弈八月反弹。\n\n今日缩量4200亿元，缩量幅度约16.5%，明天看是否有加速下探。",
       "publish_time": 1785741422,
-      "publish_date": "2026-08-03 16:17",
-      "url": "https://m.toutiao.com/w/1872485597345792/?app=toutiao_web&timestamp=1785770731&use_new_style=1",
-      "digg_count": 11,
-      "comment_count": 5,
-      "read_count": 6282
+      "publish_date": "2026-08-03 15:17",
+      "url": "https://m.toutiao.com/w/1872485597345792/?app=toutiao_web&timestamp=1788021770&use_new_style=1",
+      "digg_count": 13,
+      "comment_count": 9,
+      "read_count": 11294
     },
     {
       "post_id": "1872411835328512",
       "content": "还有一个预判我提前说一下，这也是写下周推演这篇帖子时推理出来的:\n\n\n八月份反弹不会有多大反弹高度，反弹震荡横盘后会再跌的。\n\n原因:\n1.七月大阴线带来的压力大\n\n上证指数7月大阴线是自22年2月以来的最大月阴线\n\n科创50的7月月线，是自科创50于2020年7月23日正式上线，这根超长阴线不是几年最长，是指数上市成立5年来历史第一大月阴线，彻底刷新自身单月最大跌幅纪录 ，是标准、杀伤力极强的月线级别断头铡刀（一阴破三线），属于中期趋势见顶信号。\n\n2.  八月中报业绩暴雷预期阴影不散，大资金持币观望，甚至反弹就跑。\n\n我们已经知道的八月份除了8月5日这个变盘窗口外另一个变盘窗口是8月21日，也是中报业绩暴雷开始的日子。\n\n我通过历史走势得出，八月份震荡反弹到30日线（我看盘用的是33日线），时间也差不多到8月20-22日。\n接下来会开启更大下跌，这轮开启的下跌特点是下跌快、空间大，然后大盘走震荡筑底走大反弹。震荡筑底后的反弹高度要超过八月份的这轮反弹很多，但有很多人因为八月下旬的暴跌割肉而看不到这轮大反弹了。\n到8月20日前我会计算公布下跌空间。\n\n需要注意的是到了8月21前后或者30日线附近，就要大幅度减仓，不能期望太高。",
       "publish_time": 1785671077,
-      "publish_date": "2026-08-02 20:44",
-      "url": "https://m.toutiao.com/w/1872411835328512/?app=toutiao_web&timestamp=1785770731&use_new_style=1",
-      "digg_count": 30,
+      "publish_date": "2026-08-02 19:44",
+      "url": "https://m.toutiao.com/w/1872411835328512/?app=toutiao_web&timestamp=1788021770&use_new_style=1",
+      "digg_count": 31,
       "comment_count": 13,
-      "read_count": 16651
+      "read_count": 21163
     },
     {
       "post_id": "1872315828786188",
       "content": "根据昨天发布的下周三大预判，细化下周具体走势如下:\n\n我根据历史上超级主力操盘手法推算出，主力要想闷杀周五诱多盘、再加码杀出恐慌盘，推演出下周一、周二和周三的走势，仅供参考，不做操盘依据。\n\n1.周一低开至少30点，然后大阴线100点以上砸盘。\n\n2.周二高开后再砸出比周一低30-50个点来。\n\n3.周三高开30个点以上走反弹\n\n4.反弹、震荡两周最终压力位看30日线附近。",
       "publish_time": 1785579518,
-      "publish_date": "2026-08-01 19:18",
-      "url": "https://m.toutiao.com/w/1872315828786188/?app=toutiao_web&timestamp=1785770731&use_new_style=1",
+      "publish_date": "2026-08-01 18:18",
+      "url": "https://m.toutiao.com/w/1872315828786188/?app=toutiao_web&timestamp=1788021770&use_new_style=1",
       "digg_count": 20,
       "comment_count": 34,
-      "read_count": 36621
+      "read_count": 40495
     },
     {
       "post_id": "1872257674607616",
       "content": "关于下周的三大预判:\n\n1.周一低开低走，闷杀今天诱多买入盘，甚至杀恐慌盘。\n\n2.周一收盘在3800之下，打开下跌空间。\n\n3.阶段底将出现在周二尾盘，（周一周二两天有可能有中大阴线)\n\n建议尾盘务必买入部分仓位，防止8.5日变盘日跳空高开。",
       "publish_time": 1785524058,
-      "publish_date": "2026-08-01 03:54",
-      "url": "https://m.toutiao.com/w/1872257674607616/?app=toutiao_web&timestamp=1785770731&use_new_style=1",
+      "publish_date": "2026-08-01 02:54",
+      "url": "https://m.toutiao.com/w/1872257674607616/?app=toutiao_web&timestamp=1788021770&use_new_style=1",
       "digg_count": 58,
       "comment_count": 47,
-      "read_count": 111070
+      "read_count": 114451
     },
     {
       "post_id": "1872178393246732",
       "content": "大A的密集成交区域:\n\n大A筹码密集区分布区域划分:\n\n2600-3000-3400-3800-4200—4600-5000\n上涨趋势，大约是每400个点区间就会出现重要压力区；\n相应的，下降趋势,大约每400个点区间就会出现重要支撑区域；\n例如:4200这个压力区，大盘到了4190、4197、4258（诱多出货），长期反复震荡，进行筹码交换，主力完成高位出货任务。\n\n回调到3800（6124-5178趋势线支撑处）也会反复震荡进行多空争夺、筹码交换。\n\n如果有效破位3800区域，下一个重要支撑区域就变成3400区域了。\n\n依次类推。\n\n每上涨或回调400个点的一半，即200个点区域，多空也会激烈反复争夺。\n\n如4000区域、3600区域、3200区域、2800区域也需要重点关注。",
       "publish_time": 1785448449,
-      "publish_date": "2026-07-31 06:54",
-      "url": "https://m.toutiao.com/w/1872178393246732/?app=toutiao_web&timestamp=1785770731&use_new_style=1",
+      "publish_date": "2026-07-31 05:54",
+      "url": "https://m.toutiao.com/w/1872178393246732/?app=toutiao_web&timestamp=1788021770&use_new_style=1",
       "digg_count": 4,
       "comment_count": 2,
-      "read_count": 5299
+      "read_count": 10407
     },
     {
       "post_id": "1871876877008907",
       "content": "核心预判：明天（7.28）小变盘窗口，向下变盘概率更高（约65%），向上修复属于小概率（35%）\n \n一、利空（驱动向下变盘）4个核心逻辑\n \n1. 年线持续有效破位，反弹无量承压\n大盘已经连续8个交易日收在年线3954下方，今日反弹摸到3853就滞涨，全天总量2.08万亿，剔除长鑫1411亿成交后，市场存量资金实则缩量。上方3870-3880（20日线+缺口）、3954年线双重重压，没有权重放量很难突破。\n\n2. 长鑫上市虹吸效应次日延续，科技板块抛压未消化\n今日千亿资金扎堆新股，其余半导体、算力个股遭抽血；明天长鑫中签筹码继续批量兑现，赛道资金持续分流，券商（中信证券全天量比0.82、换手仅0.48）无量，大金融无法带动指数反攻。\n\n3. 技术形态弱势结构\n周线、月线指标走弱，3794共振支撑反复试探，今日反弹属于超跌修复，不是反转信号；无量反弹后容易回踩确认支撑，一旦3794失守，调整空间打开。\n\n4. 历史规律：跌破年线超8个交易日，修复周期拉长\n牛市短期假摔平均5.5天收回年线，当前已经远超临界值，中期趋势转弱，反弹持续性普遍很差 。\n \n二、向上变盘需要同时满足2个硬性条件（很难达成）\n \n1. 两市全天成交额站稳2.2万亿以上，资金回流券商、半导体主线；\n\n2. 指数放量站稳3870上方，收盘突破20日线，北向资金大额净流入。\n只要缺任意一条，向上变盘直接失效。\n \n三、明日两种变盘情景细节\n \n情景1：向下变盘（大概率）\n \n1. 短期第一支撑3804（6124-1664趋势线），回踩这里有小幅承接；\n\n2. 放量击穿3794共振支撑，中期调整目标3649（3040-4258波段0.5分割位）；\n\n3. 盘面特征：开盘小幅冲高3850附近遇阻回落，券商持续缩量走弱。\n \n情景2：向上修复（小概率）\n \n1. 放量站稳3870，短期反弹目标3900附近；\n\n2. 极限压力3954年线，到这里依旧会承压回落，属于反弹不是反转。",
       "publish_time": 1785160901,
-      "publish_date": "2026-07-27 23:01",
-      "url": "https://m.toutiao.com/w/1871876877008907/?app=toutiao_web&timestamp=1785770731&use_new_style=1",
+      "publish_date": "2026-07-27 22:01",
+      "url": "https://m.toutiao.com/w/1871876877008907/?app=toutiao_web&timestamp=1788021770&use_new_style=1",
       "digg_count": 11,
       "comment_count": 1,
-      "read_count": 6326
+      "read_count": 8641
     },
     {
       "post_id": "1871840598668314",
       "content": "今天是大盘跌破年线的第8天了。年线点位在3954。年线是中长期牛熊分界线，现在指数3830，距离年线有124个点，年线已经从支撑转为强压力；\n\n\n用过去十年的上证指数数据说话，跌破年线后出现趋势性下跌的案例主要有三次：2015年12月、2018年3月、2022年3月。\n回顾这三次破位后市场的实际走势，风险信号都得到了充分验证：\n\n2015年12月破位后，即便后续出台了多项维稳政策，两个月内大盘依然继续下跌了20%至30%。\n\n2018年3月跌破年线后，调整周期长达一年，大盘整体跌幅接近30%。\n\n2022年3月跌破年线后，直到去年9月的反弹行情来临之前，大盘又跌了近20%，整个过程持续了一年多。\n\n回到当下。国家统计局公布上半年经济数据的次日，上证指数正式跌穿了250日均线，也就是年线。\n\n现在大盘尚未出现明确的收复信号。在这个关键节点上，需要把风险控制放在首位，保持格外谨慎的态度，别因为盘中的临时反弹或短期的波动，轻易打乱了自己原本的节奏和纪律。\n\n3863是本周强弱分水岭。",
       "publish_time": 1785126303,
-      "publish_date": "2026-07-27 13:25",
-      "url": "https://m.toutiao.com/w/1871840598668314/?app=toutiao_web&timestamp=1785770731&use_new_style=1",
+      "publish_date": "2026-07-27 12:25",
+      "url": "https://m.toutiao.com/w/1871840598668314/?app=toutiao_web&timestamp=1788021770&use_new_style=1",
       "digg_count": 1,
       "comment_count": 0,
-      "read_count": 2029
+      "read_count": 4182
     },
     {
       "post_id": "1871113427951883",
       "content": "关于9.7日前多看少动、防止接飞刀的解释:\n\n今日头条有粉丝私信我为什么昨天我发的文章说9.7日前要多看少动、防止接飞刀。\n\n理由是我仔细研究了超级主力几十年来的操盘手法得出的结论:\n1.主力从3040点持续拉升到4025和4035点，震荡后再次拉升到4197和4258形成双头，头部横盘震荡几个月进行筹码交换，完成主力出货任务。\n2.大盘破了头部的3794这个颈线位置，也就意味着大盘脱离了头部区域。\n脱离头部区域后的大盘，超级主力会如同3040开始的持续上涨形成头部那样反过来操作用持续下跌来尽快脱离顶部区域，而且下跌的区间越大，顶部熬不住的套牢盘割肉就越多，主力获得的带血筹码就越多。\n\n为了便于直观理解，我找了一段历史截图与现在的截图做个对比，就能一目了然。截图我发了两次均不能通过，请大家自己动手看一下2001年7月份大盘周线走势图:大盘从1047点到2245点走势几乎惊人的与大盘从2635点到4258点的周线走势图，二者几乎惊人一致。\n\n其实这就是超级主力操盘手的操盘手法而已。",
       "publish_time": 1784432819,
-      "publish_date": "2026-07-19 12:46",
-      "url": "https://m.toutiao.com/w/1871113427951883/?app=toutiao_web&timestamp=1785770731&use_new_style=1",
+      "publish_date": "2026-07-19 11:46",
+      "url": "https://m.toutiao.com/w/1871113427951883/?app=toutiao_web&timestamp=1788021770&use_new_style=1",
       "digg_count": 9,
       "comment_count": 0,
-      "read_count": 4706
+      "read_count": 6464
     },
     {
       "post_id": "1871056151254217",
       "content": "关于大盘:\n我更正一下个人观点，不做操盘依据，仅仅是观点分享。\n按照斐波那契数列，变盘窗口期是\n\n第21天的7月21日\n\n第34天的8月7日(立秋)\n\n第55天的9月7(白露)\n\n与我们已经有的变盘日相差一两天很正常。\n\n周末，我又仔细核对和研究了一下大盘几十年来的历史走势，并根据超级主力操盘特点和上述变盘窗口期，我个人操盘策略如下:\n\n1.周一3700左右买入，周二下午择机卖出\n做一个短线，不再博弈反弹补日线和周线乖离率。理由是7月22日这个窗口期可上也可大跌，不好把握。\n\n2.  8月5日或7日做一个短线买入，择机尽快卖出，理由很简单，大盘这里可能震荡横盘一阵子，对散户来说没有大肉。\n\n3.波段买入的最佳日期是9月7日(白露节气)这个变盘窗口期，可以持有几周时间。理由大盘自4258的下跌到了阶段底(不一定是回调大底)，需要阶段反弹。\n根据我周末研判，大盘高位横盘了六七个月，期间两次放量接近3.6万亿，主力高位出货任务已经完成了，4258很可能就是今年的高点。\n\n今年不但很难见到4400，超级主力还会采取措施尽快在不制造出系统性金融风险的前提下，用尽可能短的时间，逼迫散户割肉，把散户手中的筹码逼出来。\n\n所以大盘在9月7日之前下跌是主旋律。\n\n9月7日前绝大多数时间是属于喝茶看戏的时间。\n\n因此，我个人认为不宜在这期间去接飞刀。",
       "publish_time": 1784378196,
-      "publish_date": "2026-07-18 21:36",
-      "url": "https://m.toutiao.com/w/1871056151254217/?app=toutiao_web&timestamp=1785770731&use_new_style=1",
+      "publish_date": "2026-07-18 20:36",
+      "url": "https://m.toutiao.com/w/1871056151254217/?app=toutiao_web&timestamp=1788021770&use_new_style=1",
       "digg_count": 54,
       "comment_count": 1,
-      "read_count": 48109
+      "read_count": 49748
     },
     {
       "post_id": "1871016859255881",
       "content": "哈哈😃不用听大佬们渲染恐慌情绪\n\n1.反弹起来不再跌破3794就没有风险\n\n2.下跌乖离率必反弹修复，乖离率:\n日线在3940缺口\n周线在3995缺口\n(分别每天和每周都下移几个点）\n\n换句话说，大盘从低位有200个点的反弹空间。\n\n下周一二顺势跌一下，120分钟和日线大资金入场信号就出现了。\n周二变盘窗口必反弹。",
       "publish_time": 1784340724,
-      "publish_date": "2026-07-18 11:12",
-      "url": "https://m.toutiao.com/w/1871016859255881/?app=toutiao_web&timestamp=1785770731&use_new_style=1",
+      "publish_date": "2026-07-18 10:12",
+      "url": "https://m.toutiao.com/w/1871016859255881/?app=toutiao_web&timestamp=1788021770&use_new_style=1",
       "digg_count": 21,
       "comment_count": 4,
-      "read_count": 29157
+      "read_count": 30438
     },
     {
       "post_id": "1870853767733258",
       "content": "关于大盘:\n大盘过4197后出现日线顶部信号，又连续拉升到4258诱多，我减仓到3成\n\n六月初我判断大盘在月底构筑3927W结构，自3927的反弹顶点在4080-4100,过了4100后主力每天又拉升20个点到4175\n\n我说主力还是诱多，当时我说云波六成仓位过高，我只有4成\n\n现在第二次破年线了，大盘蕴含极大风险，应该减仓，目前我是总仓位5成，不再考虑加了\n\n等八月份的第一个变盘窗口8.5日。\n\n我谨慎点，因为7月底有美联储议息会议。",
       "publish_time": 1784185188,
-      "publish_date": "2026-07-16 15:59",
-      "url": "https://m.toutiao.com/w/1870853767733258/?app=toutiao_web&timestamp=1785770731&use_new_style=1",
+      "publish_date": "2026-07-16 14:59",
+      "url": "https://m.toutiao.com/w/1870853767733258/?app=toutiao_web&timestamp=1788021770&use_new_style=1",
       "digg_count": 6,
       "comment_count": 3,
-      "read_count": 7299
+      "read_count": 8177
     },
     {
       "post_id": "1867400644155463",
       "content": "关于大盘:\n今天直接开在地板上，当下位置杀跌也没必要了。\n\n支撑就在3911-3900区域，主力的生命线。\n\n三天内站不上33周线4022就要考虑减仓。我个人认为用不了多长时间就能站上去的。",
       "publish_time": 1780892032,
-      "publish_date": "2026-06-08 13:13",
-      "url": "https://m.toutiao.com/w/1867400644155463/?app=toutiao_web&timestamp=1785770731&use_new_style=1",
+      "publish_date": "2026-06-08 12:13",
+      "url": "https://m.toutiao.com/w/1867400644155463/?app=toutiao_web&timestamp=1788021770&use_new_style=1",
       "digg_count": 7,
       "comment_count": 0,
-      "read_count": 15976
+      "read_count": 16618
     },
     {
       "post_id": "1867110807040007",
       "content": "关于大盘:\n本周五或者下周一大变盘，如果下破4032就是做多的机会。\n\n大变盘后摸到4200就减仓。减仓后出来观察。过了4220才能继续看多到4300否则又会被主力挂在山岗上，因为主力会构筑头肩底后必下破4000到3900-3800。",
       "publish_time": 1780615622,
-      "publish_date": "2026-06-05 08:27",
-      "url": "https://m.toutiao.com/w/1867110807040007/?app=toutiao_web&timestamp=1785770733&use_new_style=1",
+      "publish_date": "2026-06-05 07:27",
+      "url": "https://m.toutiao.com/w/1867110807040007/?app=toutiao_web&timestamp=1788021771&use_new_style=1",
       "digg_count": 10,
       "comment_count": 4,
-      "read_count": 22497
+      "read_count": 22939
     },
     {
       "post_id": "1867039300571144",
       "content": "关于今天大盘:\n早盘中反弹到4080是不够的，下午应该以4050为支撑反弹接近4098-4100才可以。",
       "publish_time": 1780547428,
-      "publish_date": "2026-06-04 13:30",
-      "url": "https://m.toutiao.com/w/1867039300571144/?app=toutiao_web&timestamp=1785770733&use_new_style=1",
+      "publish_date": "2026-06-04 12:30",
+      "url": "https://m.toutiao.com/w/1867039300571144/?app=toutiao_web&timestamp=1788021771&use_new_style=1",
       "digg_count": 2,
       "comment_count": 0,
-      "read_count": 5766
+      "read_count": 6065,
+      "title": "关于今天大盘:\n早盘中反弹到4080是不够的，下午应该以4050为支撑反弹接近4098-4100才可以。"
     },
     {
       "post_id": "1866588442927175",
       "content": "科创50（000688）日K在2026-05-29已经形成标准的断头铡刀形态 。\n \n一、形态判定（5/10/20日均线）\n \n- 5月29日：大阴线-5.04%，开盘1850、收盘1751。\n​\n- 均线状态：\n​\n- 5日均线：约1830，被实体下穿\n​\n- 10日均线：约1820，被实体下穿\n​\n- 20日均线：约1800，被实体下穿\n​\n- 量能：放量下跌，成交3.34万亿，较前日明显放大。\n​\n- 位置：出现在连续上涨后的高位，属于典型的见顶回落信号 。\n \n一句话：一阴断三线+高位+放量=标准断头铡刀 。\n \n二、后市含义（技术共识）\n \n- 短线：大概率继续调整，反弹多为逃命机会 。\n​\n- 中线：上升趋势转弱，震荡或下行概率上升。\n​\n- 关键支撑：1700、1650；压力：1800、1850。\n \n三、操作建议（偏短线）\n \n- 持仓：逢高减仓，尤其半导体、AI硬件等高标。\n​\n- 观望：未入场者暂不抄底，等缩量企稳再考虑 。",
       "publish_time": 1780117457,
-      "publish_date": "2026-05-30 14:04",
-      "url": "https://m.toutiao.com/w/1866588442927175/?app=toutiao_web&timestamp=1785770733&use_new_style=1",
+      "publish_date": "2026-05-30 13:04",
+      "url": "https://m.toutiao.com/w/1866588442927175/?app=toutiao_web&timestamp=1788021771&use_new_style=1",
       "digg_count": 2,
       "comment_count": 0,
-      "read_count": 5251
+      "read_count": 5523
     },
     {
       "post_id": "1866522549036168",
       "content": "关于大盘:\n\n今天确认了4055双底支撑有效。\n\n下周初看ABC三浪反弹到4155压力位置，时间下周二。\n\n然后开始继续下探新低到周四4055，最多到4040-4030。",
       "publish_time": 1780054616,
-      "publish_date": "2026-05-29 20:36",
-      "url": "https://m.toutiao.com/w/1866522549036168/?app=toutiao_web&timestamp=1785770733&use_new_style=1",
+      "publish_date": "2026-05-29 19:36",
+      "url": "https://m.toutiao.com/w/1866522549036168/?app=toutiao_web&timestamp=1788021771&use_new_style=1",
       "digg_count": 12,
       "comment_count": 3,
-      "read_count": 16869
+      "read_count": 17104
     },
     {
       "post_id": "1865587958326343",
       "content": "关于大盘:\n指数层面:\n自4258的下跌是洗盘，但主线高标是出货，（AI/半导体）高标兑现，但低位轮动（金融/中字头/周期）承接，属调仓换股。\n\n有效跌破4062就有从洗盘深度回调的可能。\n\n下午我个人是下午继续看反弹的。",
       "publish_time": 1779163320,
-      "publish_date": "2026-05-19 13:02",
-      "url": "https://m.toutiao.com/w/1865587958326343/?app=toutiao_web&timestamp=1785770733&use_new_style=1",
+      "publish_date": "2026-05-19 12:02",
+      "url": "https://m.toutiao.com/w/1865587958326343/?app=toutiao_web&timestamp=1788021771&use_new_style=1",
       "digg_count": 2,
       "comment_count": 1,
-      "read_count": 5621
+      "read_count": 5826
     },
     {
       "post_id": "1864486953020416",
       "content": "关于大盘:\n从大盘日线和周线指标看。今天在昨日下午低点4144支撑有效的前提下可以冲4180和4200,如果破了4144则继续高位震荡。\n4120支撑位置也可以再次冲击4180和4200一次。\n\n大盘周线级别KDJ等指标已经处于高位超买区，大盘可以继续冲高、甚至出新高，高位钝化1-2周。\n但一旦下周J指标拐头向下⬇️，大盘就要调整3-6周。\n\n周级别压力点分别是:\n \n1.4180–4200：短期强压，指标超买承压\n2.4230–4250：中期重套压力，周线减仓区\n3.4300：极大压力",
       "publish_time": 1778113320,
-      "publish_date": "2026-05-07 09:22",
-      "url": "https://m.toutiao.com/w/1864486953020416/?app=toutiao_web&timestamp=1785770733&use_new_style=1",
+      "publish_date": "2026-05-07 08:22",
+      "url": "https://m.toutiao.com/w/1864486953020416/?app=toutiao_web&timestamp=1788021771&use_new_style=1",
       "digg_count": 2,
       "comment_count": 1,
-      "read_count": 5551
+      "read_count": 5718
     },
     {
       "post_id": "1863995959968780",
       "content": "关于五月份大盘走势:\n\n我发两个大盘走势结构图，图一是9.24行情后大盘构筑双顶、下跌到3140.98后走5浪反弹再下跌的走势结构。\n\n图二是大盘构筑4190和4197双顶、下跌到3794后走5浪反弹再下跌的走势结构。\n\n主力做盘的手法简直是刻舟求剑。",
       "publish_time": 1777645073,
-      "publish_date": "2026-05-01 23:17",
-      "url": "https://m.toutiao.com/w/1863995959968780/?app=toutiao_web&timestamp=1785770733&use_new_style=1",
+      "publish_date": "2026-05-01 22:17",
+      "url": "https://m.toutiao.com/w/1863995959968780/?app=toutiao_web&timestamp=1788021771&use_new_style=1",
       "digg_count": 6,
       "comment_count": 3,
-      "read_count": 10556
+      "read_count": 10690
     },
     {
       "post_id": "1863865566732288",
       "content": "关于大盘和证券:\n\n大盘和证券板块今日二者的日线均出现了顶部变盘时间信号，大概率今天就是阶段顶了。\n今天的4117点就是我昨天说的4117点，正好打到那里没有再往上，如果今天回调超过30个点，那么。五一节后就有可能奔到4000去了，4000点后再支撑进行反弹上涨。\n\n下午，大盘若跌破4100点就只是高位震荡了；自高点算起，若进一步回调幅度超过30个点，即为要回踩一轮了。毕竟日线变盘时间信号出现了。",
       "publish_time": 1777520720,
-      "publish_date": "2026-04-30 12:45",
-      "url": "https://m.toutiao.com/w/1863865566732288/?app=toutiao_web&timestamp=1785770733&use_new_style=1",
+      "publish_date": "2026-04-30 11:45",
+      "url": "https://m.toutiao.com/w/1863865566732288/?app=toutiao_web&timestamp=1788021771&use_new_style=1",
       "digg_count": 6,
-      "comment_count": 2,
-      "read_count": 8880
+      "comment_count": 1,
+      "read_count": 8991
     },
     {
       "post_id": "1863787776273472",
       "content": "关于大盘:\n4 月 30 日（明日）四月收官 + 节前最后一天预判\n关键点位（上证）\n强压力：4120—4130\n短期支撑：4090，强支撑：4075\n走势预判\n明天是四月收官 + 五一节前兑现日：\n大概率小幅高开后高位震荡；\n很难暴力大涨，也不会大跌；\n资金偏向落袋为安，以窄幅横盘、平稳收小阳 / 十字星收官为主。\n操作思路\n站上 4120 才是超预期走强；\n回踩 4090 不破，就是强势整理；\n节前不追高，持仓卧倒观望最合适",
       "publish_time": 1777446533,
-      "publish_date": "2026-04-29 16:08",
-      "url": "https://m.toutiao.com/w/1863787776273472/?app=toutiao_web&timestamp=1785770733&use_new_style=1",
+      "publish_date": "2026-04-29 15:08",
+      "url": "https://m.toutiao.com/w/1863787776273472/?app=toutiao_web&timestamp=1788021771&use_new_style=1",
       "digg_count": 11,
       "comment_count": 0,
-      "read_count": 26092
+      "read_count": 26153
     },
     {
       "post_id": "1863767289901056",
       "content": "关于大盘:\n今天重点关注的点位4086点和和4038/4040附近的支撑是否有效。\n如果是按照波浪理论的话，自3794的上涨走5浪结构，今天四浪调整到位后依靠趋势线支撑进行5浪反弹。\n5浪出新高应该过4114点，但不一定过4197点。\n是否成立，就看这两天趋势线支撑是否有效。",
       "publish_time": 1777426996,
-      "publish_date": "2026-04-29 10:43",
-      "url": "https://m.toutiao.com/w/1863767289901056/?app=toutiao_web&timestamp=1785770733&use_new_style=1",
+      "publish_date": "2026-04-29 09:43",
+      "url": "https://m.toutiao.com/w/1863767289901056/?app=toutiao_web&timestamp=1788021771&use_new_style=1",
       "digg_count": 2,
       "comment_count": 0,
-      "read_count": 4765
+      "read_count": 4826
     },
     {
       "post_id": "1863702293959692",
       "content": "关于明天大盘:\n- 第一支撑：4070（今天中枢）\n\n- 强支撑：4060（今天低点，破就转弱）\n\n- 极限防守：4050（节前底线）\n \n压力（涨不动的位置）\n \n- 第一压力：4090（今天高点）\n\n- 强压力：4095–4100（套牢区，无量难破）",
       "publish_time": 1777365011,
-      "publish_date": "2026-04-28 17:30",
-      "url": "https://m.toutiao.com/w/1863702293959692/?app=toutiao_web&timestamp=1785770733&use_new_style=1",
+      "publish_date": "2026-04-28 16:30",
+      "url": "https://m.toutiao.com/w/1863702293959692/?app=toutiao_web&timestamp=1788021771&use_new_style=1",
       "digg_count": 5,
       "comment_count": 0,
-      "read_count": 8156
+      "read_count": 8214
     },
     {
       "post_id": "1863623360386048",
       "content": "关于大盘:\n大盘的趋势线支撑不断上移，本周周末将到4033-4038附近。\n\n希望本周收盘能在趋势线支撑点位之上。\n\n明天依托4050继续震荡反弹。",
       "publish_time": 1777289734,
-      "publish_date": "2026-04-27 20:35",
-      "url": "https://m.toutiao.com/w/1863623360386048/?app=toutiao_web&timestamp=1785770733&use_new_style=1",
+      "publish_date": "2026-04-27 19:35",
+      "url": "https://m.toutiao.com/w/1863623360386048/?app=toutiao_web&timestamp=1788021771&use_new_style=1",
       "digg_count": 3,
       "comment_count": 0,
-      "read_count": 5053
+      "read_count": 5108
     },
     {
       "post_id": "1863316296602636",
       "content": "关于大盘:\n大盘竟下破了4070这个昨日低点，那么大盘就由强势震荡转为弱势震荡了。\n\n从4114的这一波A浪回调大概率到下周了，点位应该在4022左右支撑B浪反弹。",
       "publish_time": 1776996895,
-      "publish_date": "2026-04-24 11:14",
-      "url": "https://m.toutiao.com/w/1863316296602636/?app=toutiao_web&timestamp=1785770735&use_new_style=1",
+      "publish_date": "2026-04-24 10:14",
+      "url": "https://m.toutiao.com/w/1863316296602636/?app=toutiao_web&timestamp=1788021772&use_new_style=1",
       "digg_count": 3,
       "comment_count": 0,
-      "read_count": 7665
+      "read_count": 7719
     },
     {
       "post_id": "1863171339639936",
       "content": "关于大盘:\n明天是个变盘日。\n观察一下，看4086支撑有效的前提下是否能加速上涨。\n还是回调破4086，明天下午就能见分晓。\n只要有效破掉4086，大盘就要走回调了。\n\n创业板的周线时间变盘信号出现，也意味着创业板也要走周线级别回调修复日线和周乖离率了。",
       "publish_time": 1776858653,
-      "publish_date": "2026-04-22 20:50",
-      "url": "https://m.toutiao.com/w/1863171339639936/?app=toutiao_web&timestamp=1785770735&use_new_style=1",
+      "publish_date": "2026-04-22 19:50",
+      "url": "https://m.toutiao.com/w/1863171339639936/?app=toutiao_web&timestamp=1788021772&use_new_style=1",
       "digg_count": 18,
       "comment_count": 5,
-      "read_count": 14836
+      "read_count": 14888
     },
     {
       "post_id": "1863044017768512",
       "content": "关于大盘4月下旬的预判:\n四月下旬影响大盘走势的主要因素:\n\n\n一.22日大漂亮谈判结果如何、海峡关闭或开放、2周暂停到期。\n\n二、2026年4月22日是沪深交易所股票/ETF起权行权日\n\n三、22日中国GDP数据公布\n\n四、中央政治局经济会议25-26待定\n\n五、25日星象变化，下旬可能有事发生。\n\n六、28-29日漂亮国议息\n\n七、30日一季度上市公司公布完毕。\n\n如果大盘在区间内波动到月底，那么最迟30日，就要果断上车，否则五一icon假期开盘就来不及了。\n\n4月30日前关注3950和3900支撑。不破就坚决上车。\n如果30日前破了3900收不回，就不要轻举妄动了。",
       "publish_time": 1776737230,
-      "publish_date": "2026-04-21 11:07",
-      "url": "https://m.toutiao.com/w/1863044017768512/?app=toutiao_web&timestamp=1785770735&use_new_style=1",
+      "publish_date": "2026-04-21 10:07",
+      "url": "https://m.toutiao.com/w/1863044017768512/?app=toutiao_web&timestamp=1788021772&use_new_style=1",
       "digg_count": 12,
       "comment_count": 0,
-      "read_count": 17576
+      "read_count": 17626
     },
     {
       "post_id": "1862861727552588",
       "content": "关于大盘4月下旬的预判:\n四月下旬影响大盘走势的主要因素:\n\n\n一.22日美伊谈判结果如何及海峡关闭或开放、2周暂停到期。\n\n二、2026年4月22日是沪深交易所股票/ETF起权行权日\n\n三、22日中国GDP数据公布\n\n四、中央政治局经济会议25-26待定\n\n五、25日星象变化\n\n六、28-29日漂亮国议息\n\n七、30日一季度上市公司公布完毕。\n\n如果大盘在区间内波动到月底，那么最迟30日，就要果断上车，否则五一假期开盘就来不及了。\n\n4月30日前关注3950和3900支撑。不破就坚决上车。\n如果30日前破了3900收不回，就不要轻举妄动了。",
       "publish_time": 1776563657,
-      "publish_date": "2026-04-19 10:54",
-      "url": "https://m.toutiao.com/w/1862861727552588/?app=toutiao_web&timestamp=1785770735&use_new_style=1",
+      "publish_date": "2026-04-19 09:54",
+      "url": "https://m.toutiao.com/w/1862861727552588/?app=toutiao_web&timestamp=1788021772&use_new_style=1",
       "digg_count": 7,
       "comment_count": 0,
-      "read_count": 11173
+      "read_count": 11224
     },
     {
       "post_id": "1862681994950720",
       "content": "关于大盘:\n今天的股指期货持仓数据如下:中证500加多1088\n     沪深300加空636。\n    上证50加空330。\n    中证1000加多810\n   利空大盘股，利好中小盘股。大盘股不护盘，利好中小盘的深成指和创业板。\n今上午反弹起来不创新高的话，今天就很难了。主要看上午的反弹力度。\n\n下周主要要看3794和3871趋势线支撑了，如果支撑住会继续上涨，支撑不住就奔着第二只脚去了。",
       "publish_time": 1776391978,
-      "publish_date": "2026-04-17 11:12",
-      "url": "https://m.toutiao.com/w/1862681994950720/?app=toutiao_web&timestamp=1785770735&use_new_style=1",
+      "publish_date": "2026-04-17 10:12",
+      "url": "https://m.toutiao.com/w/1862681994950720/?app=toutiao_web&timestamp=1788021772&use_new_style=1",
       "digg_count": 2,
       "comment_count": 0,
-      "read_count": 5527
+      "read_count": 5574
     },
     {
       "post_id": "1862621341739020",
       "content": "关于大盘:\n今天如预期，到了60日线位置。\n今天的股指期货持仓数据如下:中证500加多1088\n     沪深300加空636。\n    上证50加空330。\n    中证1000加多810\n机构量化基金一反常态，大盘股不在护盘。\n    个人观点，如果明天冲高，能减仓的建议减仓。\n        如果今晚外盘有不利因素影响，也不排除直接低开的可能。\n\n        趋势转折时间窗口应该在本月底这几天。",
       "publish_time": 1776334134,
-      "publish_date": "2026-04-16 19:08",
-      "url": "https://m.toutiao.com/w/1862621341739020/?app=toutiao_web&timestamp=1785770735&use_new_style=1",
+      "publish_date": "2026-04-16 18:08",
+      "url": "https://m.toutiao.com/w/1862621341739020/?app=toutiao_web&timestamp=1788021772&use_new_style=1",
       "digg_count": 3,
       "comment_count": 1,
-      "read_count": 8498
+      "read_count": 8542
     },
     {
       "post_id": "1862526625927180",
       "content": "关于大盘:\n\n明天4000-3990区域支撑看涨出新高，压力位60日线或者4062缺口附近。\n\n同样，明天证券板块冲高回落。\n\n今天股指期货持仓数据除了上证50外，沪深300、上证500和1000偏空。\n\n本周下一个压力位在4082附近。",
       "publish_time": 1776243806,
-      "publish_date": "2026-04-15 18:03",
-      "url": "https://m.toutiao.com/w/1862526625927180/?app=toutiao_web&timestamp=1785770735&use_new_style=1",
+      "publish_date": "2026-04-15 17:03",
+      "url": "https://m.toutiao.com/w/1862526625927180/?app=toutiao_web&timestamp=1788021772&use_new_style=1",
       "digg_count": 3,
       "comment_count": 0,
-      "read_count": 6477
+      "read_count": 6520
     },
     {
       "post_id": "1862430811521024",
       "content": "关于大盘:\n大盘今天如预期一样，具体走势内容参见昨天帖子内容。",
       "publish_time": 1776152431,
-      "publish_date": "2026-04-14 16:40",
-      "url": "https://m.toutiao.com/w/1862430811521024/?app=toutiao_web&timestamp=1785770735&use_new_style=1",
+      "publish_date": "2026-04-14 15:40",
+      "url": "https://m.toutiao.com/w/1862430811521024/?app=toutiao_web&timestamp=1788021772&use_new_style=1",
       "digg_count": 2,
       "comment_count": 0,
-      "read_count": 3341
+      "read_count": 3382,
+      "title": "关于大盘:\n大盘今天如预期一样，具体走势内容参见昨天帖子内容。"
     },
     {
       "post_id": "1862340359685120",
       "content": "关于大盘:\n\n受谈判曲折影响，大盘低开高走，消息影响力度在脱敏变弱，亚太股市整体比预期强。\n停战消息公布后，美第一夫人开始不得不撇清爱泼斯坦的关系，内塔国内开庭受审。这是很明显的黄毛和内塔在掰手腕。需要美以两国内讧、达成共识后再考虑下一步共同对付朗朗了。原先预计黄毛利用停战协议期间调兵遣将准备进行地面进攻的时间可能要拖一下了。\n总体预计本周是震荡上行，是否站稳要观察一下。4005、4023、4044(3974反弹的0.618分位)和4062都是关键点位。\n极限4100—+10。\n\n周五是个变盘日，也是股指期货交割日，需要引起注意。",
       "publish_time": 1776066169,
-      "publish_date": "2026-04-13 16:42",
-      "url": "https://m.toutiao.com/w/1862340359685120/?app=toutiao_web&timestamp=1785770735&use_new_style=1",
+      "publish_date": "2026-04-13 15:42",
+      "url": "https://m.toutiao.com/w/1862340359685120/?app=toutiao_web&timestamp=1788021772&use_new_style=1",
       "digg_count": 6,
       "comment_count": 0,
-      "read_count": 5118
+      "read_count": 5153
     },
     {
       "post_id": "1862242208542732",
       "content": "关于大盘和证券板块下周走势的基本预判:\n\n受巴基斯坦谈判曲折消息影响，下周大盘低开低走后继续上涨的概率很大。\n\n下周大盘区间震荡就是下面的两个缺口和上面4062的缺口之间。\n\n3794反弹的0.618分位在4043，也需要关注一下。\n\n证券板块下周与大盘走势基本相同。",
       "publish_time": 1775972565,
-      "publish_date": "2026-04-12 14:42",
-      "url": "https://m.toutiao.com/w/1862242208542732/?app=toutiao_web&timestamp=1785770735&use_new_style=1",
+      "publish_date": "2026-04-12 13:42",
+      "url": "https://m.toutiao.com/w/1862242208542732/?app=toutiao_web&timestamp=1788021772&use_new_style=1",
       "digg_count": 14,
       "comment_count": 3,
-      "read_count": 15435
+      "read_count": 15470
     },
     {
       "post_id": "1862146111117376",
       "content": "关于证券板块:\nA股历史会证明！证监会五次改革都引爆券商牛市，券商牛又来了。\n\n希望这次创业板改革，是第六次制度级券商牛市的起爆点。\n\n历史铁律：\n每一次重大交易/发行制度改革 → 券商必走大级别行情。\n\n何况主力不断打压吸筹建仓已经7周了，总建仓量已经接近9.24前的建仓量了。\n\n券商会配合大盘探底，进行最后一次洗盘，但不一定有新低了。\n\n这是我四五月份对证券板块的基本看法。",
       "publish_time": 1775880919,
-      "publish_date": "2026-04-11 13:15",
-      "url": "https://m.toutiao.com/w/1862146111117376/?app=toutiao_web&timestamp=1785770735&use_new_style=1",
+      "publish_date": "2026-04-11 12:15",
+      "url": "https://m.toutiao.com/w/1862146111117376/?app=toutiao_web&timestamp=1788021772&use_new_style=1",
       "digg_count": 31,
       "comment_count": 6,
-      "read_count": 29324
+      "read_count": 29348
     },
     {
       "post_id": "1862048428158988",
       "content": "关于大盘及证券板块:\n大盘依托3956支撑震荡后依然还可以再上。但只要不能站稳4050，都是3794震荡反弹的高位风险区了，震荡反弹可以持续到下周。\n证券板块普涨。中信证券昨晚公布的一季报业绩快报靓丽，直接带领证券板块大涨，其实是主力连续7周建仓后的拉升吸筹而已，后续还要洗掉跟风盘。\n4-5月的大盘拉升力度直接决定后市走向。想要有大行情，就必须全力拉出45度向上的5月线，破解月线MACD死叉风险。",
       "publish_time": 1775787761,
-      "publish_date": "2026-04-10 11:22",
-      "url": "https://m.toutiao.com/w/1862048428158988/?app=toutiao_web&timestamp=1785770735&use_new_style=1",
+      "publish_date": "2026-04-10 10:22",
+      "url": "https://m.toutiao.com/w/1862048428158988/?app=toutiao_web&timestamp=1788021772&use_new_style=1",
       "digg_count": 9,
       "comment_count": 4,
-      "read_count": 10948
+      "read_count": 10970
     },
     {
       "post_id": "1862006985218060",
       "content": "#分享我的头条荣誉# 我在头条30天内带图发文打卡10天，获得“图文辉映”称号",
       "publish_time": 1775748238,
-      "publish_date": "2026-04-10 00:23",
-      "url": "https://m.toutiao.com/w/1862006985218060/?app=toutiao_web&timestamp=1785770736&use_new_style=1",
+      "publish_date": "2026-04-09 23:23",
+      "url": "https://m.toutiao.com/w/1862006985218060/?app=toutiao_web&timestamp=1788021774&use_new_style=1",
       "digg_count": 0,
       "comment_count": 0,
-      "read_count": 3322
+      "read_count": 3343,
+      "title": "#分享我的头条荣誉# 我在头条30天内带图发文打卡10天，获得“图文辉映”称号"
     },
     {
       "post_id": "1861953680288972",
       "content": "关于大盘:\n今天要震荡分化了。先看3956支撑。\n\n接下来的日子，回调不能补昨天的跳空缺口，一旦补了就会形成3800双底或破一下3794再拉起来。",
       "publish_time": 1775697403,
-      "publish_date": "2026-04-09 10:16",
-      "url": "https://m.toutiao.com/w/1861953680288972/?app=toutiao_web&timestamp=1785770736&use_new_style=1",
+      "publish_date": "2026-04-09 09:16",
+      "url": "https://m.toutiao.com/w/1861953680288972/?app=toutiao_web&timestamp=1788021774&use_new_style=1",
       "digg_count": 5,
       "comment_count": 1,
-      "read_count": 5751
+      "read_count": 5767
     },
     {
       "post_id": "1861868117931020",
       "content": "关于大盘、证券、原油:\n大盘:\n自3794的反弹在走类似的形态如图。\n站稳3936就继续第一目标看涨至4197下跌到3794的0.5分位3995点。总体上还是上下震荡式上涨，不会直线上涨的。大盘站稳3936预示3871支撑有效，近期用不到3850和3825附近的支撑了。\n\n证券:证券的周线低点信号又出现了，不知道周五是否能锁住。我在等我交易系统里周线的另一个信号-----底部信号，感觉快了但一直没有出现。如果周线低点信号加底部信号同时出现的话就会确认底部反转的概率极大。现在只出现了一个低点信号，当没有出现底部信号。\n但从KDJ、MACD、RSI等传统指标看，周线级别也该反弹了。目前证券只看周线界别反弹，还不是翻转。\n原油:见附图二。我刚才查看了一下原油，119这个高点还真就过不去。不但过不去，简直全球不知道多少机构和个人BAO.\n尤其美原油远期合约9月和12月，直接从117美元跌到了70美元，一夜回补了月线乖离率.近期合约跌幅也足够杠杆资金喝一壶的。\n\n最重要的是我查看了一下：原油期货是早于黄毛讲话开启跳的。做原油和数字货币的散户上不了餐桌，只能是上菜单的命，任人宰割。\n散户在三维世界操盘，华尔街在四维和五维空间看着我们，简直就是降维打击。\n黄毛这个屎壳郎就是他们的白手套。",
       "publish_time": 1775615804,
-      "publish_date": "2026-04-08 11:36",
-      "url": "https://m.toutiao.com/w/1861868117931020/?app=toutiao_web&timestamp=1785770736&use_new_style=1",
+      "publish_date": "2026-04-08 10:36",
+      "url": "https://m.toutiao.com/w/1861868117931020/?app=toutiao_web&timestamp=1788021774&use_new_style=1",
       "digg_count": 4,
       "comment_count": 0,
-      "read_count": 4796
+      "read_count": 4808
     },
     {
       "post_id": "1861776796614720",
       "content": "关于大盘:\n\n今天压力区域在3926-3936区域，站不上就看反弹，不是3955下跌后的反转。\n\n今天预期行情波动不会太大，资金在等明天黄毛的决定。\n我是看自3794的反弹还没有走完的，还需要震荡上涨。\n只有破了3850，才能看3955的C浪下跌已经开始。\n\n大盘即使在未来受胡黄毛影响下破3794也是诱空，没有多少空间。",
       "publish_time": 1775528713,
-      "publish_date": "2026-04-07 11:25",
-      "url": "https://m.toutiao.com/w/1861776796614720/?app=toutiao_web&timestamp=1785770736&use_new_style=1",
+      "publish_date": "2026-04-07 10:25",
+      "url": "https://m.toutiao.com/w/1861776796614720/?app=toutiao_web&timestamp=1788021774&use_new_style=1",
       "digg_count": 4,
       "comment_count": 0,
-      "read_count": 5740
+      "read_count": 5751
     },
     {
       "post_id": "1861624993916940",
       "content": "#分享我的头条荣誉# 我在头条30天内带图发文打卡7天，获得“图文并茂”称号",
       "publish_time": 1775383943,
-      "publish_date": "2026-04-05 19:12",
-      "url": "https://m.toutiao.com/w/1861624993916940/?app=toutiao_web&timestamp=1785770736&use_new_style=1",
+      "publish_date": "2026-04-05 18:12",
+      "url": "https://m.toutiao.com/w/1861624993916940/?app=toutiao_web&timestamp=1788021774&use_new_style=1",
       "digg_count": 0,
       "comment_count": 0,
-      "read_count": 2902
+      "read_count": 2912,
+      "title": "#分享我的头条荣誉# 我在头条30天内带图发文打卡7天，获得“图文并茂”称号"
     },
     {
       "post_id": "1861444988785676",
       "content": "#分享我的头条荣誉# 我在头条累计发布内容破100啦！",
       "publish_time": 1775212277,
-      "publish_date": "2026-04-03 19:31",
-      "url": "https://m.toutiao.com/w/1861444988785676/?app=toutiao_web&timestamp=1785770736&use_new_style=1",
+      "publish_date": "2026-04-03 18:31",
+      "url": "https://m.toutiao.com/w/1861444988785676/?app=toutiao_web&timestamp=1788021774&use_new_style=1",
       "digg_count": 1,
       "comment_count": 0,
-      "read_count": 3077
+      "read_count": 3087,
+      "title": "#分享我的头条荣誉# 我在头条累计发布内容破100啦！"
     },
     {
       "post_id": "1861419422666764",
       "content": "关于大盘:\n今天支撑在3870。节前交投清单，比预期效果差点。下午要有利好消息才能再拉起来。\n\n结论不变:\n3850以上继续B浪上涨看3995。只有大盘破了3850，才能确认自4197的三浪回调中的B浪的高点为3956，也确认了C浪回调已经开始。",
       "publish_time": 1775187895,
-      "publish_date": "2026-04-03 12:44",
-      "url": "https://m.toutiao.com/w/1861419422666764/?app=toutiao_web&timestamp=1785770736&use_new_style=1",
+      "publish_date": "2026-04-03 11:44",
+      "url": "https://m.toutiao.com/w/1861419422666764/?app=toutiao_web&timestamp=1788021774&use_new_style=1",
       "digg_count": 5,
       "comment_count": 1,
-      "read_count": 7242
+      "read_count": 7252
     },
     {
       "post_id": "1861364781170688",
       "content": "关于大盘:\n\n昨天的阳线实际是3891-3955的中阳线，今天阴线3952-3900，昨天的阳和今天的阴形成子母线。\n明天预计收阳线，创出本周新高。理由有三:\n一是黄毛讲话利空出尽了\n二是放假期间需要出金的今天都出了\n三是股指期货机构量化基金今天持仓数据显示全面做多。\n\n我是看4197下跌ABC三浪中的B反弹还没有结束，继续震荡反弹上涨。",
       "publish_time": 1775135785,
-      "publish_date": "2026-04-02 22:16",
-      "url": "https://m.toutiao.com/w/1861364781170688/?app=toutiao_web&timestamp=1785770736&use_new_style=1",
+      "publish_date": "2026-04-02 21:16",
+      "url": "https://m.toutiao.com/w/1861364781170688/?app=toutiao_web&timestamp=1788021774&use_new_style=1",
       "digg_count": 26,
       "comment_count": 1,
-      "read_count": 22949
+      "read_count": 22959
     },
     {
       "post_id": "1861251920771084",
       "content": "关于大盘:\n受外盘影响，今天大盘没有延续回调，终于补了3955缺口。\n\n上周科学交易系统显示三大指数出现了周线级别时间变盘信号，我尾盘看了一下，大盘应该继续震荡上涨。看看本周收盘周低分型成立。\n\n目前看只要黄毛不闹事，这是大概率的事情。原油黄金在黄毛和华尔街的配合下即使拉高也是为套人的，因为他要利用冲突蒸发消灭掉超发的美元💵\n黄毛打伊朗、委内瑞拉和巴拿马就是通过控制石油来消灭美元流动性。\n证券板块又出现了周线低点信号，看周五收盘能否锁住该信号。",
       "publish_time": 1775028153,
-      "publish_date": "2026-04-01 16:22",
-      "url": "https://m.toutiao.com/w/1861251920771084/?app=toutiao_web&timestamp=1785770736&use_new_style=1",
+      "publish_date": "2026-04-01 15:22",
+      "url": "https://m.toutiao.com/w/1861251920771084/?app=toutiao_web&timestamp=1788021774&use_new_style=1",
       "digg_count": 6,
       "comment_count": 0,
-      "read_count": 5909
+      "read_count": 5919
     },
     {
       "post_id": "1861165689569356",
       "content": "关于大盘和证券板块\n大盘今天冲高回落破了3900点，那么明天的反弹就过不了今天的高点3948了。\n\n预计大盘走势如附图，周五见低点后继续反弹补缺口3955。\n\n本轮自3794的反弹高点通常情况能到3995点，乐观点能见到4095点。\n\n证券周线级别震荡，主力吸筹，我的科学交易系统可以看出，进入二季度它是要开启证券历史上的第三大主升浪的。一切以信号为主，不猜测。底部区域震荡时间越长，主升浪越高，忽略日线波动，看周线中枢的构建完成。进入二季度，大金融板块先护盘、再从护盘角色到强力拉大盘。这不是我猜的，证券板块周线级别信号显示是要开启大主升浪的。怕还有大跌就按照三三原则建仓或金字塔模式建仓。现在就是计算每下跌多少空间买多少仓位的证券。就看证券板块在二季度配合大盘涨跌在底部区域震荡多少周了。中间不排除有突然砸出黄金坑的可能存在。\n\n熊毛和黄毛二季度先后访华，国际局势二季度逐步缓和为主。",
       "publish_time": 1774945916,
-      "publish_date": "2026-03-31 17:31",
-      "url": "https://m.toutiao.com/w/1861165689569356/?app=toutiao_web&timestamp=1785770736&use_new_style=1",
+      "publish_date": "2026-03-31 16:31",
+      "url": "https://m.toutiao.com/w/1861165689569356/?app=toutiao_web&timestamp=1788021774&use_new_style=1",
       "digg_count": 18,
       "comment_count": 3,
-      "read_count": 16598
+      "read_count": 16608
     },
     {
       "post_id": "1860862457251916",
       "content": "关于大盘和证券板块的补充说明:\n\n按照尚局科学交易体系，大盘上证指数、深成指、科创50三大指数均出现了周线时间变盘信号，该信号出现预示着:\n大盘接下来上证要继续震荡反弹去补3955的缺口和修补周线乖离率(本周在4031附近，每周下移几个点)。\n当然这个乖离率修复掉需要时间、震荡完成。\n \n证券板块本周五收盘锁定周低点信号和连9.24行情都没有出现过的周线神秘资金信号(见图1），并且经过连续4周的主力吸筹建仓，总建仓量基本接近9.24行情前几周的建仓量。\n证券板块锁定周线低点信号后，没有突发事件一般会震荡去修补掉大跌后的周线乖离率(本周点位在1627附近)，周五收盘点位在1504.22",
       "publish_time": 1774656731,
-      "publish_date": "2026-03-28 09:12",
-      "url": "https://m.toutiao.com/w/1860862457251916/?app=toutiao_web&timestamp=1785770736&use_new_style=1",
+      "publish_date": "2026-03-28 08:12",
+      "url": "https://m.toutiao.com/w/1860862457251916/?app=toutiao_web&timestamp=1788021774&use_new_style=1",
       "digg_count": 32,
       "comment_count": 9,
-      "read_count": 35699
+      "read_count": 35722
     },
     {
       "post_id": "1860775001405504",
       "content": "关于证券板块:\n正如博股思金所说，昨天主力自己套牢自己，价格远低于他自己的持仓成本，在底部吸筹这么明显，同时证券etf不断买入加码，难道券商板块启动信号还不强烈吗？\n\n其它如证券板块行业温度、RSI等指标已到历史低点。这个时候将手中筹码交出去确实有些可惜。",
       "publish_time": 1774573327,
-      "publish_date": "2026-03-27 10:02",
-      "url": "https://m.toutiao.com/w/1860775001405504/?app=toutiao_web&timestamp=1785770736&use_new_style=1",
+      "publish_date": "2026-03-27 09:02",
+      "url": "https://m.toutiao.com/w/1860775001405504/?app=toutiao_web&timestamp=1788021774&use_new_style=1",
       "digg_count": 51,
       "comment_count": 22,
-      "read_count": 53029
+      "read_count": 53047
     },
     {
       "post_id": "1860706578934784",
       "content": "关于大盘:\n\n大盘补完缺口了，今天走势不算强，看3876支撑继续反弹。\n\n我个人认为今天即使补了缺口，3876也是会支撑继续反弹去补上缺口。\n\n证券板块主力吸筹建仓已经四周了，并且RSI指标和行业温度指标已到冰点，周线级别的震荡很快结束。\n\n看明天收盘证券板块是能否锁定周线神秘资金信号和周线低点信号。",
       "publish_time": 1774508074,
-      "publish_date": "2026-03-26 15:54",
-      "url": "https://m.toutiao.com/w/1860706578934784/?app=toutiao_web&timestamp=1785770738&use_new_style=1",
+      "publish_date": "2026-03-26 14:54",
+      "url": "https://m.toutiao.com/w/1860706578934784/?app=toutiao_web&timestamp=1788021775&use_new_style=1",
       "digg_count": 10,
       "comment_count": 0,
-      "read_count": 22820
+      "read_count": 22830
     },
     {
       "post_id": "1860635107832908",
       "content": "关于大盘:\n\n我是积极看3800-4800这1000个点的主升浪的。\n 如何判断3800反弹的这波强弱？\n\n大盘去年4.7日黄毛关税战极速下跌到3040，开始反弹的第3天出现了跳空高开缺口，一直没有回补，持续上涨到4025和4197，这让我感到有些意外。\n\n本周一大盘受外部环境影响也极速下跌破了3800，今天反弹第二天也出现了3881-3991这个跳空高开缺口，今天没有盘中回补掉。\n\n我们观察一下该缺口在今后的回调中是否会补掉，依此来判断大盘这波反弹的强弱。",
       "publish_time": 1774439914,
-      "publish_date": "2026-03-25 20:58",
-      "url": "https://m.toutiao.com/w/1860635107832908/?app=toutiao_web&timestamp=1785770738&use_new_style=1",
+      "publish_date": "2026-03-25 19:58",
+      "url": "https://m.toutiao.com/w/1860635107832908/?app=toutiao_web&timestamp=1788021775&use_new_style=1",
       "digg_count": 5,
       "comment_count": 2,
-      "read_count": 5209
+      "read_count": 5218
     },
     {
       "post_id": "1860596039000076",
       "content": "#分享我的头条荣誉# 单篇内容获赞量破50啦！",
       "publish_time": 1774402655,
-      "publish_date": "2026-03-25 10:37",
-      "url": "https://m.toutiao.com/w/1860596039000076/?app=toutiao_web&timestamp=1785770738&use_new_style=1",
+      "publish_date": "2026-03-25 09:37",
+      "url": "https://m.toutiao.com/w/1860596039000076/?app=toutiao_web&timestamp=1788021775&use_new_style=1",
       "digg_count": 1,
       "comment_count": 0,
-      "read_count": 3808
+      "read_count": 3816,
+      "title": "#分享我的头条荣誉# 单篇内容获赞量破50啦！"
     },
     {
       "post_id": "1860527332596940",
       "content": "关于大盘:\n按昨天分析的不变。\n大盘震荡筑底。没有看盘的必要了，月底3月31日看一下月线和季线收盘在哪里就可以了。\n\n证券板块2-3周也没有看盘的必要了，周线级别信号出现，周线级别反弹开始了。",
       "publish_time": 1774337132,
-      "publish_date": "2026-03-24 16:25",
-      "url": "https://m.toutiao.com/w/1860527332596940/?app=toutiao_web&timestamp=1785770738&use_new_style=1",
+      "publish_date": "2026-03-24 15:25",
+      "url": "https://m.toutiao.com/w/1860527332596940/?app=toutiao_web&timestamp=1788021775&use_new_style=1",
       "digg_count": 8,
       "comment_count": 0,
-      "read_count": 5926
+      "read_count": 5933
     },
     {
       "post_id": "1860464144197772",
       "content": "关于大盘的补充说明:\n关于大盘:\n我个人觉得自4197的下跌A浪就基本上结束了。\n\n然后就要开展B浪反弹，震荡反弹10个交易日(两周或者跨三周)，反弹200个点，补了跳空低开缺口达到4000点上下。\n\n然后继续进行C浪回调形成双底或新低一点到3775左右。\n\n然后还会开启一轮轰轰烈烈的暴涨行情。\n\n我是当前全网看新一轮暴涨行情位数不多的人之一。",
       "publish_time": 1774276871,
-      "publish_date": "2026-03-23 23:41",
-      "url": "https://m.toutiao.com/w/1860464144197772/?app=toutiao_web&timestamp=1785770738&use_new_style=1",
+      "publish_date": "2026-03-23 22:41",
+      "url": "https://m.toutiao.com/w/1860464144197772/?app=toutiao_web&timestamp=1788021775&use_new_style=1",
       "digg_count": 38,
       "comment_count": 7,
-      "read_count": 34596
+      "read_count": 34602
     },
     {
       "post_id": "1860423946496000",
       "content": "关于大盘:\n3850区域支撑有大反弹。\n大盘应该要反弹修补下跌乖离率到4024(本周的点位)，该点位每周会逐步下移。\n大盘转折点很快就会到来，不能过分看空，也不要割肉。",
       "publish_time": 1774238535,
-      "publish_date": "2026-03-23 13:02",
-      "url": "https://m.toutiao.com/w/1860423946496000/?app=toutiao_web&timestamp=1785770738&use_new_style=1",
+      "publish_date": "2026-03-23 12:02",
+      "url": "https://m.toutiao.com/w/1860423946496000/?app=toutiao_web&timestamp=1788021775&use_new_style=1",
       "digg_count": 6,
       "comment_count": 1,
-      "read_count": 6412
+      "read_count": 6418
     },
     {
       "post_id": "1860240955882496",
       "content": "关于三四月份大盘给散户的机会:\n\n下周初的反弹压力位大约不会超过本周周阴线的0.5分位，然后继续回调下来震荡到3900-3850区间后必定有大级别的反弹到4100+_10区间。也就是有200多个点的反弹空间在四月份出现。\n\n对大多数散户来说，有仓位的在3900-3850区间勇敢进场抢200个点的大反弹，对于重仓和满仓的朋友不用恐慌，坚持拿住筹码，坚决不能在3900区域割肉，等四月份到了4100+_10区间再考虑减仓，把仓位降下来，防止大盘进一步去3750区间。\n\n我的交易系统显示，四月份不会过4197这个三月高点。",
       "publish_time": 1774064022,
-      "publish_date": "2026-03-21 12:33",
-      "url": "https://m.toutiao.com/w/1860240955882496/?app=toutiao_web&timestamp=1785770738&use_new_style=1",
+      "publish_date": "2026-03-21 11:33",
+      "url": "https://m.toutiao.com/w/1860240955882496/?app=toutiao_web&timestamp=1788021775&use_new_style=1",
       "digg_count": 59,
       "comment_count": 8,
-      "read_count": 52847
+      "read_count": 52852
     },
     {
       "post_id": "1860164049565708",
       "content": "关于大盘\n关于大盘的综合分析研判，请看上一篇内容，大盘基本按照文中所述进行。\n下周周初探底一下后将进行短线2天左右的反弹，然后继续回调探底。",
       "publish_time": 1773990678,
-      "publish_date": "2026-03-20 16:11",
-      "url": "https://m.toutiao.com/w/1860164049565708/?app=toutiao_web&timestamp=1785770738&use_new_style=1",
+      "publish_date": "2026-03-20 15:11",
+      "url": "https://m.toutiao.com/w/1860164049565708/?app=toutiao_web&timestamp=1788021775&use_new_style=1",
       "digg_count": 7,
       "comment_count": 1,
-      "read_count": 5209
+      "read_count": 5214
     },
     {
       "post_id": "1860017903513612",
       "content": "关于大盘的综合研判:\n参考电脑图和手绘图，大盘跌到4023后的反弹，本周如果不能重新站稳红线(点位在4085左右)，大盘必然会去3950，然后从3950再起一轮去红线附近。\n\n本周重点看是否站稳红线。\n\n从3950的反弹如果还是站不上红线，不用商量，大盘必然会回调到3800附近(这是4190和4197双顶的技术回调位)，届时，到了3800才能起主升浪。\n\n所以今后主播们无论谁、无论如何分析，3040与3815的趋势线(红线)就是多空分界线。\n\n希望主力能在某个关键时间点上能够杀掉所有技术派，奇迹发生，能一次性到位，不要让大盘过分耗时间。",
       "publish_time": 1773851302,
-      "publish_date": "2026-03-19 01:28",
-      "url": "https://m.toutiao.com/w/1860017903513612/?app=toutiao_web&timestamp=1785770738&use_new_style=1",
+      "publish_date": "2026-03-19 00:28",
+      "url": "https://m.toutiao.com/w/1860017903513612/?app=toutiao_web&timestamp=1788021775&use_new_style=1",
       "digg_count": 50,
       "comment_count": 12,
-      "read_count": 43436
+      "read_count": 43443
     },
     {
       "post_id": "1859982777374732",
       "content": "关于大盘:\n\n今天大盘收盘在3040-3815趋势线线之下，明天继续震荡反弹，只要不能站稳趋势线之上，反弹后大概率还要回测前低4002。\n\n证券板块仍然震荡吸筹中，周线级别继续震荡上涨不变。",
       "publish_time": 1773817803,
-      "publish_date": "2026-03-18 16:10",
-      "url": "https://m.toutiao.com/w/1859982777374732/?app=toutiao_web&timestamp=1785770738&use_new_style=1",
+      "publish_date": "2026-03-18 15:10",
+      "url": "https://m.toutiao.com/w/1859982777374732/?app=toutiao_web&timestamp=1788021775&use_new_style=1",
       "digg_count": 6,
       "comment_count": 1,
-      "read_count": 7746
+      "read_count": 7751
     },
     {
       "post_id": "1859875967707136",
       "content": "关于证券板块和大盘:\n\n最近我连续发了两个帖子，对证券板块做出了预判，哪些怀疑不相信还有嘲笑的可以再去看看是否预判准确。\n\n证券板块如预期，走出了反包阳，并快速全部补掉了上周的跳空缺口，日线底分型形成，下午将会出现量过前五或者倍量柱。\n同时，证券板块在周线级别连续出现主力建仓信号后，今天出现了周线级别低点信号。\n\n总结今天就一句话，证券板块和大盘明天将继续震荡上行。",
       "publish_time": 1773715942,
-      "publish_date": "2026-03-17 11:52",
-      "url": "https://m.toutiao.com/w/1859875967707136/?app=toutiao_web&timestamp=1785770738&use_new_style=1",
+      "publish_date": "2026-03-17 10:52",
+      "url": "https://m.toutiao.com/w/1859875967707136/?app=toutiao_web&timestamp=1788021775&use_new_style=1",
       "digg_count": 21,
       "comment_count": 1,
-      "read_count": 15016
+      "read_count": 15021
     },
     {
       "post_id": "1859821314073628",
       "content": "关于大盘的三个观点:\n乐观派认为:\n在3040和3815趋势线支撑不有效跌破的情况下，看涨到4300附近区域。今天的趋势线支撑位到了4068附近了。\n\n中间派观点认为:大盘回调到4002附近或者4010/4023附近止跌，构筑日线中枢后继续上涨，看突破4197，然后继续上涨，突破4197到4300附近。\n\n悲观派认为:大盘破了3040和3815趋势线支撑收不回来，大盘早晚会破4002这个颈线位，到3950、3850、3750三个支撑区域，正常3800附近就是大底，然后继续上涨看4400-4700-4800。",
       "publish_time": 1773663820,
-      "publish_date": "2026-03-16 21:23",
-      "url": "https://m.toutiao.com/w/1859821314073628/?app=toutiao_web&timestamp=1785770738&use_new_style=1",
+      "publish_date": "2026-03-16 20:23",
+      "url": "https://m.toutiao.com/w/1859821314073628/?app=toutiao_web&timestamp=1788021775&use_new_style=1",
       "digg_count": 19,
       "comment_count": 1,
-      "read_count": 14866
+      "read_count": 14870
     },
     {
       "post_id": "1859790870754304",
       "content": "关于证券板块:\n\n有必要再重复说一下:证券板块日线和周线都已经出现了主力吸筹建仓信号，这是9.24行情以来第一次出现周主力建仓信号，虽然建仓量比9.24前几周的建仓量少。\n预计周线级别主力还会继续上下震荡吸筹建仓。\n\n从今日盘面看，本周上半周反包拉升概率在增大。\n\n同时，证券板块的周线乖离率太大了，需要反弹修复乖离率。\n\n反弹点位在前文中已经明确指出。",
       "publish_time": 1773634787,
-      "publish_date": "2026-03-16 13:19",
-      "url": "https://m.toutiao.com/w/1859790870754304/?app=toutiao_web&timestamp=1785770739&use_new_style=1",
-      "digg_count": 79,
+      "publish_date": "2026-03-16 12:19",
+      "url": "https://m.toutiao.com/w/1859790870754304/?app=toutiao_web&timestamp=1788021776&use_new_style=1",
+      "digg_count": 78,
       "comment_count": 31,
-      "read_count": 93122
+      "read_count": 93127
     },
     {
       "post_id": "1859615474348044",
       "content": "关于证券板块:\n经过计算:\n\n证券板块指数昨天的点位已经回调到了去年4月7日到8月底行情的0.618分位\n\n而去年4.7日暴跌到的点位就是9.24行情的0.618分位。\n目前全网应该没人计算过。\n当前，证券板块低位利空，猛打猛冲。\n\n今天股指期货数据多空基本平衡，没有大的波动。\n周一很可能还是低位小幅度上下波动。\n周二周三才是上涨变盘时间窗口。",
       "publish_time": 1773467516,
-      "publish_date": "2026-03-14 14:51",
-      "url": "https://m.toutiao.com/w/1859615474348044/?app=toutiao_web&timestamp=1785770739&use_new_style=1",
+      "publish_date": "2026-03-14 13:51",
+      "url": "https://m.toutiao.com/w/1859615474348044/?app=toutiao_web&timestamp=1788021776&use_new_style=1",
       "digg_count": 90,
       "comment_count": 16,
-      "read_count": 95287
+      "read_count": 95291
     },
     {
       "post_id": "1859530400774220",
       "content": "关于大盘:\n今天开盘受外盘影响下跌，释放完就好了。尾盘又下杀出了一批恐慌盘。\n这今天表现的就很不简单了：外围市场不理想，已经很不错了。\n下周看3040-4002趋势线支撑震荡上涨，突破4150后一段拉升就开始了。\n我昨天在群内说的今明两天支撑位是4085，压力位4146左右，完全在预期之内。\n周末看消息面如何，下周一只要没有大的外部影响，那么4052向上的ABC三浪反弹将进行c的反弹，将会突破4150，到达4156压力位或4176压力位区间。\n下周五是春分日，也是股指交割日，更是3月份美联储会议结果公布的第二天，需要到时候适当关注一下。",
       "publish_time": 1773386384,
-      "publish_date": "2026-03-13 16:19",
-      "url": "https://m.toutiao.com/w/1859530400774220/?app=toutiao_web&timestamp=1785770739&use_new_style=1",
+      "publish_date": "2026-03-13 15:19",
+      "url": "https://m.toutiao.com/w/1859530400774220/?app=toutiao_web&timestamp=1788021776&use_new_style=1",
       "digg_count": 27,
       "comment_count": 0,
-      "read_count": 43173
+      "read_count": 43178
     },
     {
       "post_id": "1859461417001996",
       "content": "关于大盘和证券板块:\n大盘今天和明天的支撑位4085，压力位4146左右。\n证券板块无论本周是否新低，周线级别要先反弹修复掉周线乖离率再看是否继续回调，因为周线乖离率已经太大了，必须修复。\n\n当前，证券板块指数目前看要反弹到1680左右才能修复掉。\n证券板块月线级别支撑位置在1520左右。\n个股目前不到3成红盘。但大跌大涨的都很少，绝大多数都在3%幅度以内，还是很稳健的。",
       "publish_time": 1773320595,
-      "publish_date": "2026-03-12 22:03",
-      "url": "https://m.toutiao.com/w/1859461417001996/?app=toutiao_web&timestamp=1785770739&use_new_style=1",
+      "publish_date": "2026-03-12 21:03",
+      "url": "https://m.toutiao.com/w/1859461417001996/?app=toutiao_web&timestamp=1788021776&use_new_style=1",
       "digg_count": 3,
       "comment_count": 0,
-      "read_count": 9768
+      "read_count": 9773
     },
     {
       "post_id": "1859371585161344",
       "content": "关于大盘下步发展方向:\n市场对大盘未来的发展方向，有乐观派、中间派和悲观派三派(具体见图)，三派也代表了三个发展方向。\n\n从日线布林带收口逐渐变小看，大盘反弹不了多长时间就得选择方向了。\n悲观派观点补充:\n大盘本周一旦收盘破了4050趋势线支撑，收在其下，4002是不能支撑住的，大盘结构会破坏，将会破掉继续下行，第一支撑在3950左右，第二支撑在3850左右，强支撑3750左右。\n3040和4002趋势线支撑下周会上移到4080左右，就不是4050了。\n你根据我画的图选一个最希望看到的方向吧，选好方向后把操盘策略同时对应好就行了。\n\n我选的是乐观派，风险防范措施是本周收盘跌破4050或下周跌破4080(大约)，我就减掉一部分仓位，否则无论怎么震荡，我持仓不动。",
       "publish_time": 1773234925,
-      "publish_date": "2026-03-11 22:15",
-      "url": "https://m.toutiao.com/w/1859371585161344/?app=toutiao_web&timestamp=1785770739&use_new_style=1",
+      "publish_date": "2026-03-11 21:15",
+      "url": "https://m.toutiao.com/w/1859371585161344/?app=toutiao_web&timestamp=1788021776&use_new_style=1",
       "digg_count": 2,
       "comment_count": 0,
-      "read_count": 7181
+      "read_count": 7186
     },
     {
       "post_id": "1859354984732736",
       "content": "关于大盘:\n今天大盘表现还可以，尽管涨幅不大，毕竟放了一点量，站上了前高4130点。\n\n今天股指期货大幅减空，看空情绪降低，明天大盘将继续震荡上涨。\n\n低位板块如证券、医疗、白酒等板块应该震荡上涨。\n个股轮动上涨格局不变。",
       "publish_time": 1773219094,
-      "publish_date": "2026-03-11 17:51",
-      "url": "https://m.toutiao.com/w/1859354984732736/?app=toutiao_web&timestamp=1785770739&use_new_style=1",
+      "publish_date": "2026-03-11 16:51",
+      "url": "https://m.toutiao.com/w/1859354984732736/?app=toutiao_web&timestamp=1788021776&use_new_style=1",
       "digg_count": 3,
       "comment_count": 0,
-      "read_count": 5918
+      "read_count": 5923
     },
     {
       "post_id": "1859240279198720",
       "content": "关于大盘和证券板块:\n大盘形成双针探底形态，短时间内也是强支撑看涨。\n今天尾盘到明天上午确认是否能站稳在4130以上，如站不稳则会发生自4055上涨的ABC三浪的B浪回调。\n现在证券板块指数在1610附近，修复周乖离率需要反弹至1670-1680区间才能修复，对应龙头中信证券需要反弹到27.3附近才能修复周线乖离率。\n这两天看一下证券板块是否能走出日线底分型。",
       "publish_time": 1773109702,
-      "publish_date": "2026-03-10 11:28",
-      "url": "https://m.toutiao.com/w/1859240279198720/?app=toutiao_web&timestamp=1785770739&use_new_style=1",
+      "publish_date": "2026-03-10 10:28",
+      "url": "https://m.toutiao.com/w/1859240279198720/?app=toutiao_web&timestamp=1788021776&use_new_style=1",
       "digg_count": 9,
       "comment_count": 0,
-      "read_count": 18932
+      "read_count": 18937
     },
     {
       "post_id": "1859178645325824",
       "content": "关于大盘:\n今天收盘没有站上3815和4085趋势线。明后天继续看反弹。\n\n今天股指期货大幅减空，在上证500和1000两大股指期货方面大幅加多单，沪深300和上证50也是多单为主。\n只要收盘在3815与4002趋势线之上，我们就坚决持有。",
       "publish_time": 1773050923,
-      "publish_date": "2026-03-09 19:08",
-      "url": "https://m.toutiao.com/w/1859178645325824/?app=toutiao_web&timestamp=1785770739&use_new_style=1",
+      "publish_date": "2026-03-09 18:08",
+      "url": "https://m.toutiao.com/w/1859178645325824/?app=toutiao_web&timestamp=1788021776&use_new_style=1",
       "digg_count": 4,
       "comment_count": 0,
-      "read_count": 7353
+      "read_count": 7357
     },
     {
       "post_id": "1859097423946752",
       "content": "关于明天大盘:\n周一开盘看4055与4085趋势线支撑继续上涨，支撑位置在4110左右。\n希望能放量站上4140。",
       "publish_time": 1772973465,
-      "publish_date": "2026-03-08 21:37",
-      "url": "https://m.toutiao.com/w/1859097423946752/?app=toutiao_web&timestamp=1785770739&use_new_style=1",
+      "publish_date": "2026-03-08 20:37",
+      "url": "https://m.toutiao.com/w/1859097423946752/?app=toutiao_web&timestamp=1788021776&use_new_style=1",
       "digg_count": 10,
       "comment_count": 0,
-      "read_count": 31378
+      "read_count": 31383,
+      "title": "关于明天大盘:\n周一开盘看4055与4085趋势线支撑继续上涨，支撑位置在4110左右。\n希望能放量站上4140。"
     },
     {
       "post_id": "1858889851772928",
       "content": "关于下周大盘:\n下周前半周应该继续反弹。\n\n技术把握:\n\n1.下周只要不跌破3815和4002趋势线支撑，支撑位4070，就有继续4197甚至更高的可能；\n\n2.下周如果收盘只要跌破3040和3815趋势线支撑位4040左右，则M顶有可能会形成，就会深度回调去3977缺口到3950左右，不排除再进一步回调的可能。",
       "publish_time": 1772775508,
-      "publish_date": "2026-03-06 14:38",
-      "url": "https://m.toutiao.com/w/1858889851772928/?app=toutiao_web&timestamp=1785770739&use_new_style=1",
+      "publish_date": "2026-03-06 13:38",
+      "url": "https://m.toutiao.com/w/1858889851772928/?app=toutiao_web&timestamp=1788021776&use_new_style=1",
       "digg_count": 18,
       "comment_count": 8,
-      "read_count": 45627
+      "read_count": 45631
     },
     {
       "post_id": "1858805002848268",
       "content": "关于大盘和证券板块:\n接上文:\n看大盘明天是否能到4140-4145区间。\n关注明天证券板块是否有中大阳线出来来改变周K形态。\n明天只有改变周K大阴线收盘形态，形成大长腿探底，该板块未来才能有大的上涨潜力。\n\n关注明天两回部长通道是否有金融大佬们出现。",
       "publish_time": 1772694590,
-      "publish_date": "2026-03-05 16:09",
-      "url": "https://m.toutiao.com/w/1858805002848268/?app=toutiao_web&timestamp=1785770739&use_new_style=1",
+      "publish_date": "2026-03-05 15:09",
+      "url": "https://m.toutiao.com/w/1858805002848268/?app=toutiao_web&timestamp=1788021776&use_new_style=1",
       "digg_count": 10,
       "comment_count": 0,
-      "read_count": 17985
+      "read_count": 17989
     },
     {
       "post_id": "1858789299087360",
       "content": "大盘进入反攻阶段:\n昨天大盘收盘收在了3815与4002趋势线支撑之上，为今天的反弹上攻4197提供了必要条件。\n今天压力位4127。\n\n大盘补完缺口后的震荡，只要不新低昨日低点4055，震荡后，就能继续反攻4197。",
       "publish_time": 1772679614,
-      "publish_date": "2026-03-05 12:00",
-      "url": "https://m.toutiao.com/w/1858789299087360/?app=toutiao_web&timestamp=1785770739&use_new_style=1",
+      "publish_date": "2026-03-05 11:00",
+      "url": "https://m.toutiao.com/w/1858789299087360/?app=toutiao_web&timestamp=1788021776&use_new_style=1",
       "digg_count": 2,
       "comment_count": 0,
-      "read_count": 5213
+      "read_count": 5217
     },
     {
       "post_id": "1858713086210048",
       "content": "关于大盘和证券:\n结论：今天补掉今日的缺口从时间来不及了，明天应该是受外盘影响新低一下再拉起来。\n  如果今晚美盘继续大跌的话，明天开盘有可能测试一下3040和3815的趋势线支撑再拉起来，点位在4035附近。\n因为证券小时级别和日线级别都有大资金入场，今天也暂没止损，等日线反弹起来再决定去留。",
       "publish_time": 1772606932,
-      "publish_date": "2026-03-04 15:48",
-      "url": "https://m.toutiao.com/w/1858713086210048/?app=toutiao_web&timestamp=1785770741&use_new_style=1",
+      "publish_date": "2026-03-04 14:48",
+      "url": "https://m.toutiao.com/w/1858713086210048/?app=toutiao_web&timestamp=1788021778&use_new_style=1",
       "digg_count": 31,
       "comment_count": 1,
-      "read_count": 59230
+      "read_count": 59239
     },
     {
       "post_id": "1858625282149452",
       "content": "关于大盘:\n今天行情突破4190到4197,使我想起去年4025突破后到4034，大盘没有继续上涨就马上展开回调一样的。\n今天日K线阴包阳形成断头铡刀了？明天如果继续新低，那么大盘就震荡、回踩为主；如果明日不跌破今日低点，那么还要再冲高一次4200。\n除了证券板块，单就龙头中信证券来说，明天再新低一下我的看盘系统就会出日线底部信号。\n所以，我还是判断证券板块仍然为日线和周线的底部区域震荡。\n\n判断归判断，风险把控归风险把控，还是防风险第一位：\n证券板块收盘破1624点止损，大盘收盘破4070减仓。",
       "publish_time": 1772523195,
-      "publish_date": "2026-03-03 16:33",
-      "url": "https://m.toutiao.com/w/1858625282149452/?app=toutiao_web&timestamp=1785770741&use_new_style=1",
+      "publish_date": "2026-03-03 15:33",
+      "url": "https://m.toutiao.com/w/1858625282149452/?app=toutiao_web&timestamp=1788021778&use_new_style=1",
       "digg_count": 21,
       "comment_count": 1,
-      "read_count": 22288
+      "read_count": 22292
     },
     {
       "post_id": "1858598868822028",
       "content": "关于今日大盘:\n\n昨天股指期货大量加多单，实属近期少见。\n今日首先看4170附近区域支撑，只要不跌破，会直接突破4190、甚至突破一下4200. \n站上4190后，向上空间不大，但在4190之上会震荡比较长的时间，预计能到3月中旬，顶部区域我看4300+-20。",
       "publish_time": 1772498005,
-      "publish_date": "2026-03-03 09:33",
-      "url": "https://m.toutiao.com/w/1858598868822028/?app=toutiao_web&timestamp=1785770741&use_new_style=1",
+      "publish_date": "2026-03-03 08:33",
+      "url": "https://m.toutiao.com/w/1858598868822028/?app=toutiao_web&timestamp=1788021778&use_new_style=1",
       "digg_count": 4,
       "comment_count": 0,
-      "read_count": 4925
+      "read_count": 4928
     },
     {
       "post_id": "1858557110804492",
       "content": "关于黄金的未来:\n\n关于当前国际宏观环境与贵金属(接上篇)，我本人预判:2026年上半年俄乌将结束长达4年的冲突，美伊冲突也不会持续多久。\n\n关于贵金属，与国际投行和有关专家们的看法不同，黄金今年不会到6000和7000美元，更不会过万美元。我个人认为，华尔街会借着中东战事把黄金在2026年上半年构筑头部完成，头部完成后就是暴跌，顺利实现收割全世界，这也是西大针对东大所采取的金融战手段之一。",
       "publish_time": 1772458182,
-      "publish_date": "2026-03-02 22:29",
-      "url": "https://m.toutiao.com/w/1858557110804492/?app=toutiao_web&timestamp=1785770741&use_new_style=1",
+      "publish_date": "2026-03-02 21:29",
+      "url": "https://m.toutiao.com/w/1858557110804492/?app=toutiao_web&timestamp=1788021778&use_new_style=1",
       "digg_count": 5,
       "comment_count": 1,
-      "read_count": 13616
+      "read_count": 13619
     },
     {
       "post_id": "1858539277009920",
       "content": "明天大盘突破4190没有任何悬念:\n\n今天中金所股指期货数据比来了，中证500和1000、沪深300和上证50期指都加了大量多单，明天突破4190没有任何悬念了，将会出现强反弹。",
       "publish_time": 1772441174,
-      "publish_date": "2026-03-02 17:46",
-      "url": "https://m.toutiao.com/w/1858539277009920/?app=toutiao_web&timestamp=1785770741&use_new_style=1",
+      "publish_date": "2026-03-02 16:46",
+      "url": "https://m.toutiao.com/w/1858539277009920/?app=toutiao_web&timestamp=1788021778&use_new_style=1",
       "digg_count": 4,
       "comment_count": 0,
-      "read_count": 11078
+      "read_count": 11081
     },
     {
       "post_id": "1858518038673484",
       "content": "关于证券板块(二)\n券商板块已经是底部区域了。日线不排除还有新低一点，但我个人认为周线和日线级别均没有多大向下空间了。\n我的看盘系统显示，大盘即使突破4190往上也没有太大空间，4300+-20个点区域就会出现严重顶背离。\n大盘要回调修复，修复的空间应该不太小。目前还不能判断。",
       "publish_time": 1772420920,
-      "publish_date": "2026-03-02 12:08",
-      "url": "https://m.toutiao.com/w/1858518038673484/?app=toutiao_web&timestamp=1785770741&use_new_style=1",
+      "publish_date": "2026-03-02 11:08",
+      "url": "https://m.toutiao.com/w/1858518038673484/?app=toutiao_web&timestamp=1788021778&use_new_style=1",
       "digg_count": 5,
       "comment_count": 1,
-      "read_count": 8563
+      "read_count": 8566
     },
     {
       "post_id": "1858513647147008",
       "content": "关于证券板块\n\n今天周一尽管受国际环境影响大盘低开，但整体表现强势。\n证券日线MACD已经背离，我个人的交易系统日线底部信号也已经出现，整体没有可担心的，放心持有即可，不需要割在地板上。\n如果有需要加仓的，需要等待出现日关键K线时再考虑吧。",
       "publish_time": 1772416732,
-      "publish_date": "2026-03-02 10:58",
-      "url": "https://m.toutiao.com/w/1858513647147008/?app=toutiao_web&timestamp=1785770741&use_new_style=1",
+      "publish_date": "2026-03-02 09:58",
+      "url": "https://m.toutiao.com/w/1858513647147008/?app=toutiao_web&timestamp=1788021778&use_new_style=1",
       "digg_count": 7,
       "comment_count": 2,
-      "read_count": 12604
+      "read_count": 12607
     },
     {
       "post_id": "1858458854671372",
       "content": "关于国际宏观环境的一点个人看法:\n\n        西大与伊朗的战争、西大与委内瑞拉冲突、巴拿马运河控制权之争、朝鲜问题、菲律宾问题、泰国柬埔寨冲突、印巴冲突，巴基斯坦与阿富汗冲突，俄乌冲突，拉拢中亚五国和蒙古、挑动小日本、台湾军售等等，都是西大遏制东大崛起的手段。\n\n东大加入WTO后，逐步占领了全球消费市场，科技军事快速得到了发展，产业链变得日臻完善。\n\n西大转身发现东大崛起后，奥、拜、特等历届政府开始对东大上手段，上演了一幕幕遏制与反遏制大剧，结果都以西大失败而告终。\n\n西大深知东大变的树大根深、枝叶茂盛，一时关税战也不能奏效，根本动摇不了东大的根基——完善的产业链条。\n\n最后一招就是围绕东大周边，展开局部冲突，控制航道，并把与东大关系紧密的经济体一一摆平，掌握其控制权，一方面逼迫人民币升值，一方面制造全球大萧条，让东大失去全球消费市场，把东大的茂盛枝叶和庞大根系触角逐渐砍掉，进一步压缩东大生长空间。\n\n总结当今世界局势，用一句话概括就是:\n西大忘我之心不死，项庄舞剑，皆意在沛公！",
       "publish_time": 1772364478,
-      "publish_date": "2026-03-01 20:27",
-      "url": "https://m.toutiao.com/w/1858458854671372/?app=toutiao_web&timestamp=1785770741&use_new_style=1",
+      "publish_date": "2026-03-01 19:27",
+      "url": "https://m.toutiao.com/w/1858458854671372/?app=toutiao_web&timestamp=1788021778&use_new_style=1",
       "digg_count": 7,
       "comment_count": 2,
-      "read_count": 12977
+      "read_count": 12980
     },
     {
       "post_id": "1858421425555456",
       "content": "关于下周大盘:\n\n美国和伊朗打仗，根据有关方面预测:\n\n一，黄金会涨价\n二,   有色金属会涨价。\n三，石油会涨价。\n四，工业和军工需要的各种芯片涨价。\n五，工业需要的各种电子元件会涨。\n周一，大A即使受影响低开也会低开高走，大家没有担心的必要。\n在风险把控方面:\n一、上述五大方面的行情不能盲目乐观追高，很容易有高开高走在下跌套人的事情发生，想想俄乌战争当天的黄金走势。\n二、大盘只要不跌破3815和4002趋势线支撑就放心持有，上涨结构不变；如果跌破，则考虑减仓防风险(快速下破再拉起来不用考虑）。",
       "publish_time": 1772328782,
-      "publish_date": "2026-03-01 10:33",
-      "url": "https://m.toutiao.com/w/1858421425555456/?app=toutiao_web&timestamp=1785770741&use_new_style=1",
+      "publish_date": "2026-03-01 09:33",
+      "url": "https://m.toutiao.com/w/1858421425555456/?app=toutiao_web&timestamp=1788021778&use_new_style=1",
       "digg_count": 17,
       "comment_count": 5,
-      "read_count": 21827
+      "read_count": 21832
     },
     {
       "post_id": "1858242580679680",
       "content": "关于大盘:\n\n春节后开盘不久，我预判本周大盘将在4070-4170之间运行，今天是周五了，二月份收官，目前看仍未超出我说的这100个点的空间。\n\n破了4070要适当减仓一些，尤其是满仓和重仓的，不破持有。\n原因是破了4070结构就走坏了，有形成M顶的嫌疑。\n我个人是看好4070支撑继续上涨。\n\n大行情在3—5月份。",
       "publish_time": 1772158223,
-      "publish_date": "2026-02-27 11:10",
-      "url": "https://m.toutiao.com/w/1858242580679680/?app=toutiao_web&timestamp=1785770741&use_new_style=1",
+      "publish_date": "2026-02-27 10:10",
+      "url": "https://m.toutiao.com/w/1858242580679680/?app=toutiao_web&timestamp=1788021778&use_new_style=1",
       "digg_count": 6,
       "comment_count": 1,
-      "read_count": 8918
+      "read_count": 8921
     },
     {
       "post_id": "1858159618605212",
       "content": "关于大盘:\n一月底二月初，我的看盘系统锁定了两个信号:\n一是二月份的高点不会过4190；\n二是二月份的证券板块指数不会高过一月份的高点。\n这几天2月收官很快就能验证。\n\n为防风险:\n1.大盘跌破4000点我就卖掉或者止损一部分仓位出来观察一下。\n2.证券板块指数跌破1645-1640区间我止损本周买入的证券出来观察一下\n为什么分别是4000点和1640点？只有跌破上述两个点位，才能改变上涨的趋势结构。否则震荡上涨的趋势不会改变。\n本周4170为压力位，一般过不去。\n最强支撑先看4070。\n今天和明天看下方缺口能回补多少。",
       "publish_time": 1772079104,
-      "publish_date": "2026-02-26 13:11",
-      "url": "https://m.toutiao.com/w/1858159618605212/?app=toutiao_web&timestamp=1785770741&use_new_style=1",
+      "publish_date": "2026-02-26 12:11",
+      "url": "https://m.toutiao.com/w/1858159618605212/?app=toutiao_web&timestamp=1788021778&use_new_style=1",
       "digg_count": 17,
       "comment_count": 0,
-      "read_count": 15857
+      "read_count": 15860
     },
     {
       "post_id": "1858086048830592",
       "content": "关于大盘：\n今天中金所股指期货的数据中证500、中证1000、沪深300和上证50四大皆空。\n明天预计上证要震荡回调。\n回调支撑位在4070。",
       "publish_time": 1772008942,
-      "publish_date": "2026-02-25 17:42",
-      "url": "https://m.toutiao.com/w/1858086048830592/?app=toutiao_web&timestamp=1785770741&use_new_style=1",
+      "publish_date": "2026-02-25 16:42",
+      "url": "https://m.toutiao.com/w/1858086048830592/?app=toutiao_web&timestamp=1788021778&use_new_style=1",
       "digg_count": 3,
       "comment_count": 0,
-      "read_count": 3776
+      "read_count": 3779
     },
     {
       "post_id": "1858058936413184",
       "content": "关于大盘:\n本周，我个人观点本周大盘要在4070-4170这100个点区间进行震荡。",
       "publish_time": 1771983086,
-      "publish_date": "2026-02-25 10:31",
-      "url": "https://m.toutiao.com/w/1858058936413184/?app=toutiao_web&timestamp=1785770743&use_new_style=1",
+      "publish_date": "2026-02-25 09:31",
+      "url": "https://m.toutiao.com/w/1858058936413184/?app=toutiao_web&timestamp=1788021779&use_new_style=1",
       "digg_count": 2,
       "comment_count": 0,
-      "read_count": 3478
+      "read_count": 3481,
+      "title": "关于大盘:\n本周，我个人观点本周大盘要在4070-4170这100个点区间进行震荡。"
     },
     {
       "post_id": "1858000534759424",
       "content": "关于大盘:\n\n本周4142、4170为两个压力位，一般过不去。\n支撑位先看4070附近。\n\n今天的股指期货，中证500和1000以及中证A50都是加空单，偏空一些，沪深300偏多一些。\n\n因此明天在沪深300护盘的情况下，中小盘股将继续下行。",
       "publish_time": 1771927390,
-      "publish_date": "2026-02-24 19:03",
-      "url": "https://m.toutiao.com/w/1858000534759424/?app=toutiao_web&timestamp=1785770743&use_new_style=1",
+      "publish_date": "2026-02-24 18:03",
+      "url": "https://m.toutiao.com/w/1858000534759424/?app=toutiao_web&timestamp=1788021779&use_new_style=1",
       "digg_count": 3,
       "comment_count": 0,
-      "read_count": 3256
+      "read_count": 3258
     },
     {
       "post_id": "1857956018973772",
       "content": "关于证券板块:\n\n今天是春节后的第一个交易日，单说证券板块，这个渣男，现在你爱理不理，反正2月份见底，三四月份你高攀不起。\n牛市就是满仓持有，不要对每日的涨跌一惊一乍。未来大部分渣男的高点就是现在高点的1倍。",
       "publish_time": 1771884936,
-      "publish_date": "2026-02-24 07:15",
-      "url": "https://m.toutiao.com/w/1857956018973772/?app=toutiao_web&timestamp=1785770743&use_new_style=1",
+      "publish_date": "2026-02-24 06:15",
+      "url": "https://m.toutiao.com/w/1857956018973772/?app=toutiao_web&timestamp=1788021779&use_new_style=1",
       "digg_count": 24,
       "comment_count": 3,
-      "read_count": 27882
+      "read_count": 27884
     },
     {
       "post_id": "1857906224371712",
       "content": "关于明天大盘:\n 接上一条:\n       周围股市今天大涨，包括今天港股。如果明天受情绪利好影响，明天高开高走收阳线也是有可能的。\n      关注今晚美股的收盘情况。\n      黄毛关税问题总体是利好的。",
       "publish_time": 1771837448,
-      "publish_date": "2026-02-23 18:04",
-      "url": "https://m.toutiao.com/w/1857906224371712/?app=toutiao_web&timestamp=1785770743&use_new_style=1",
+      "publish_date": "2026-02-23 17:04",
+      "url": "https://m.toutiao.com/w/1857906224371712/?app=toutiao_web&timestamp=1788021779&use_new_style=1",
       "digg_count": 5,
       "comment_count": 0,
-      "read_count": 4773
+      "read_count": 4775
     },
     {
       "post_id": "1857891578381376",
       "content": "关于大盘春节后的四天走势:\n       本人看好大盘低开反弹后再下跌，回调到前期低点4029或者4002附近形成双底结构。\n       最坏情形也不过去补掉下方3977缺口走主升。\n       几乎没有机会像有些知名人士所预判的那样到3815、3731。",
       "publish_time": 1771823481,
-      "publish_date": "2026-02-23 14:11",
-      "url": "https://m.toutiao.com/w/1857891578381376/?app=toutiao_web&timestamp=1785770743&use_new_style=1",
+      "publish_date": "2026-02-23 13:11",
+      "url": "https://m.toutiao.com/w/1857891578381376/?app=toutiao_web&timestamp=1788021779&use_new_style=1",
       "digg_count": 2,
       "comment_count": 0,
-      "read_count": 4371
+      "read_count": 4373
     },
     {
       "post_id": "1857800577570816",
       "content": "关于后天开盘:\n\n春节前的最后一个交易日，出乎大多数人的预期，变成了一个黑周五。很明显这是上面不愿意重复9.24国庆放假后的行情上演。\n\n个人预判:大盘周二即使受周边行情的影响低开(仅仅是有这个可能而已)也会低开高走，反弹收阳线。\n原因很简单，既有开门红的预期也有股指期货市场在春节前的最后一个交易日大幅加仓了中证500、中证1000、沪深300和上证50的多单。",
       "publish_time": 1771736695,
-      "publish_date": "2026-02-22 14:04",
-      "url": "https://m.toutiao.com/w/1857800577570816/?app=toutiao_web&timestamp=1785770743&use_new_style=1",
+      "publish_date": "2026-02-22 13:04",
+      "url": "https://m.toutiao.com/w/1857800577570816/?app=toutiao_web&timestamp=1788021779&use_new_style=1",
       "digg_count": 13,
       "comment_count": 1,
-      "read_count": 17940
+      "read_count": 17942
     },
     {
       "post_id": "1857532445388812",
       "content": "关于大A和证券板块:\n\n大家过年好！\n今天是大年初三。\n\n为了鼓舞大家的春节士气，分享一个关于证券板块的视频，让大家对未来大A充满信心。\n\n年前我的看盘系统锁定了两个信号:\n一是二月份的高点不会过4190；\n\n二是二月份的证券板块指数不会高过一月份的高点。\n以上两个判断很快春节二月份收官即可验证。\n\n此外，我根据看盘系统，推出了证券板块指数将在三月份起主升浪的预判(当前市场大多数人是看空的)。\n\n今天偶然间看到一个视频，这个视频从证券板块指数周线和日线的缠论中枢角度也论述了三月份起主升浪，和我个人观点一致，现分享给大家。\n\n我是坚信不疑看好三月份的。\n抖音搜索缠心观潮即可看他的视频分享。",
       "publish_time": 1771480985,
-      "publish_date": "2026-02-19 15:03",
-      "url": "https://m.toutiao.com/w/1857532445388812/?app=toutiao_web&timestamp=1785770743&use_new_style=1",
+      "publish_date": "2026-02-19 14:03",
+      "url": "https://m.toutiao.com/w/1857532445388812/?app=toutiao_web&timestamp=1788021779&use_new_style=1",
       "digg_count": 24,
       "comment_count": 3,
-      "read_count": 28704
+      "read_count": 28706
     },
     {
       "post_id": "1856992994286720",
       "content": "关于大盘\n春节后来说，今天缺口4124为压力，还会震荡2-3天，才能再起来。但3815向上ABC的C浪上涨不变。\nC浪至少能到4377。\n行情主要在3月份出现。",
       "publish_time": 1770966524,
-      "publish_date": "2026-02-13 16:08",
-      "url": "https://m.toutiao.com/w/1856992994286720/?app=toutiao_web&timestamp=1785770743&use_new_style=1",
+      "publish_date": "2026-02-13 15:08",
+      "url": "https://m.toutiao.com/w/1856992994286720/?app=toutiao_web&timestamp=1788021779&use_new_style=1",
       "digg_count": 7,
       "comment_count": 2,
-      "read_count": 13361
+      "read_count": 13363
     },
     {
       "post_id": "1856902280878080",
       "content": "关于大盘:\n\n我个人觉得上证指数4122应该不是自4142开始的回调的最低点，回调应该还没有完全到位，只有跌破4122，继续下行一点，大盘自4142下跌的结构才能完美。\n\n然而，明天是春节前的最后一个交易日，大盘只要站上4142和4140连线，则意味着自4142开始的回调就结束了，上涨压力位看4156-4170。",
       "publish_time": 1770880013,
-      "publish_date": "2026-02-12 16:06",
-      "url": "https://m.toutiao.com/w/1856902280878080/?app=toutiao_web&timestamp=1785770743&use_new_style=1",
+      "publish_date": "2026-02-12 15:06",
+      "url": "https://m.toutiao.com/w/1856902280878080/?app=toutiao_web&timestamp=1788021779&use_new_style=1",
       "digg_count": 8,
       "comment_count": 0,
-      "read_count": 5223
+      "read_count": 5225
     },
     {
       "post_id": "1856811277264204",
       "content": "关于大盘:\n\n明天反弹即使出新高也会顶背离，开始回调，回调在一个交易日内会完成，然后周五继续反弹。",
       "publish_time": 1770793225,
-      "publish_date": "2026-02-11 16:00",
-      "url": "https://m.toutiao.com/w/1856811277264204/?app=toutiao_web&timestamp=1785770743&use_new_style=1",
+      "publish_date": "2026-02-11 15:00",
+      "url": "https://m.toutiao.com/w/1856811277264204/?app=toutiao_web&timestamp=1788021779&use_new_style=1",
       "digg_count": 17,
       "comment_count": 1,
-      "read_count": 27551
+      "read_count": 27553,
+      "title": "关于大盘:\n\n明天反弹即使出新高也会顶背离，开始回调，回调在一个交易日内会完成，然后周五继续反弹。"
     },
     {
       "post_id": "1856707382392832",
       "content": "关于大盘:\n本周压力位在4156和4170。昨天涨幅和涨速都比较大，今天需要整理。\n预计本周高点将在周四出现，周五期指交割日看回调。",
       "publish_time": 1770694143,
-      "publish_date": "2026-02-10 12:29",
-      "url": "https://m.toutiao.com/w/1856707382392832/?app=toutiao_web&timestamp=1785770743&use_new_style=1",
+      "publish_date": "2026-02-10 11:29",
+      "url": "https://m.toutiao.com/w/1856707382392832/?app=toutiao_web&timestamp=1788021779&use_new_style=1",
       "digg_count": 4,
       "comment_count": 1,
-      "read_count": 4742
+      "read_count": 4744
     },
     {
       "post_id": "1856625666999308",
       "content": "关于大盘:\n今天高开且补了4117缺口，宣布了4190的下跌结束了。\n\n4002这个回调0.5分位支撑有效。\n\n就看春节前上破4190点还是春节后上破4190点了。\n\n今天的高开缺口4093是支撑点位了，本周不一定能完全回补掉该缺口了。",
       "publish_time": 1770616214,
-      "publish_date": "2026-02-09 14:50",
-      "url": "https://m.toutiao.com/w/1856625666999308/?app=toutiao_web&timestamp=1785770743&use_new_style=1",
+      "publish_date": "2026-02-09 13:50",
+      "url": "https://m.toutiao.com/w/1856625666999308/?app=toutiao_web&timestamp=1788021779&use_new_style=1",
       "digg_count": 13,
       "comment_count": 2,
-      "read_count": 15814
+      "read_count": 15816
     },
     {
       "post_id": "1856526545216588",
       "content": "关于下周大盘:\n下周大盘就是主力发过年红包的一个过程。\n周一大盘震荡、结束自4190的C浪回调。\n周二中大阳线拉起来，周三至周五震荡向上，看4170附近。",
       "publish_time": 1770521684,
-      "publish_date": "2026-02-08 12:34",
-      "url": "https://m.toutiao.com/w/1856526545216588/?app=toutiao_web&timestamp=1785770744&use_new_style=1",
+      "publish_date": "2026-02-08 11:34",
+      "url": "https://m.toutiao.com/w/1856526545216588/?app=toutiao_web&timestamp=1788021781&use_new_style=1",
       "digg_count": 14,
       "comment_count": 4,
-      "read_count": 18198
+      "read_count": 18200
     },
     {
       "post_id": "1856359589724176",
       "content": "关于大盘:\nC5还没有结束，下周一完成。\n下周一继续回调，能不能过今天的低点4030形成双底有待验证。\n下周一二次探底后春节前走上升。",
       "publish_time": 1770362462,
-      "publish_date": "2026-02-06 16:21",
-      "url": "https://m.toutiao.com/w/1856359589724176/?app=toutiao_web&timestamp=1785770744&use_new_style=1",
+      "publish_date": "2026-02-06 15:21",
+      "url": "https://m.toutiao.com/w/1856359589724176/?app=toutiao_web&timestamp=1788021781&use_new_style=1",
       "digg_count": 18,
       "comment_count": 2,
-      "read_count": 20073
+      "read_count": 20075
     },
     {
       "post_id": "1856268122238080",
       "content": "关于大盘:\n\n今天大盘c5回调没有结束，预期下周一结束。\n\n回调空间不大，双底的可能比较大，即使破了前低4002点也没有多大空间，3991、3977和3960缺口都是支撑看上涨。",
       "publish_time": 1770275232,
-      "publish_date": "2026-02-05 16:07",
-      "url": "https://m.toutiao.com/w/1856268122238080/?app=toutiao_web&timestamp=1785770744&use_new_style=1",
+      "publish_date": "2026-02-05 15:07",
+      "url": "https://m.toutiao.com/w/1856268122238080/?app=toutiao_web&timestamp=1788021781&use_new_style=1",
       "digg_count": 4,
       "comment_count": 1,
-      "read_count": 8066
+      "read_count": 8068
     },
     {
       "post_id": "1856175853094985",
       "content": "关于大盘:\n如前所述，今天如预期一样，补了日线乖离率，来到了缺口压力位。\n\nC5回调本周肯定会有，回调是否有新低不确定。\n\n本周剩余2天时间留意突然跳水。",
       "publish_time": 1770187237,
-      "publish_date": "2026-02-04 15:40",
-      "url": "https://m.toutiao.com/w/1856175853094985/?app=toutiao_web&timestamp=1785770744&use_new_style=1",
+      "publish_date": "2026-02-04 14:40",
+      "url": "https://m.toutiao.com/w/1856175853094985/?app=toutiao_web&timestamp=1788021781&use_new_style=1",
       "digg_count": 2,
       "comment_count": 0,
-      "read_count": 4606
+      "read_count": 4608
     },
     {
       "post_id": "1856077387995148",
       "content": "关于大盘:\n\n今天砸权重压大盘，个股反弹。\n大盘C4反弹修复日线乖离率：今天在4100附近，明天下降为4095附近，也就是说C4反弹很难补掉上面缺口,更不用说反转了。\n\n然后进行C5回调。",
       "publish_time": 1770093334,
-      "publish_date": "2026-02-03 13:35",
-      "url": "https://m.toutiao.com/w/1856077387995148/?app=toutiao_web&timestamp=1785770744&use_new_style=1",
+      "publish_date": "2026-02-03 12:35",
+      "url": "https://m.toutiao.com/w/1856077387995148/?app=toutiao_web&timestamp=1788021781&use_new_style=1",
       "digg_count": 3,
       "comment_count": 0,
-      "read_count": 4929
+      "read_count": 4931
     },
     {
       "post_id": "1855998632538124",
       "content": "今天关于大盘的补充内容:\n今天周一，盘中周K线出现了顶部结构信号。\n该信号告诉我们，如果本周C5结束后开始日线上涨，需要本周上涨必须突破今日高点4103，该顶部信号才能消失，\n否则，下周也不可能突破4103高点了，这样的话春节前就很难有行情了。春季行情得要变成春节后才启动了。",
       "publish_time": 1770018227,
-      "publish_date": "2026-02-02 16:43",
-      "url": "https://m.toutiao.com/w/1855998632538124/?app=toutiao_web&timestamp=1785770744&use_new_style=1",
+      "publish_date": "2026-02-02 15:43",
+      "url": "https://m.toutiao.com/w/1855998632538124/?app=toutiao_web&timestamp=1788021781&use_new_style=1",
       "digg_count": 2,
       "comment_count": 0,
-      "read_count": 5603
+      "read_count": 5605
     },
     {
       "post_id": "1855990293207040",
       "content": "关于大盘:\n自4170的C浪下跌，基本上包含5个小子浪，今天将基本结束C3的下跌，4046是4190下跌的0.382分位，是一重要支撑，前期高点4034和4024缺口都是重要支撑，然后开启C4的反弹。\n明天主要看C4反弹，压力位在缺口附近。",
       "publish_time": 1770010274,
-      "publish_date": "2026-02-02 14:31",
-      "url": "https://m.toutiao.com/w/1855990293207040/?app=toutiao_web&timestamp=1785770744&use_new_style=1",
+      "publish_date": "2026-02-02 13:31",
+      "url": "https://m.toutiao.com/w/1855990293207040/?app=toutiao_web&timestamp=1788021781&use_new_style=1",
       "digg_count": 23,
       "comment_count": 6,
-      "read_count": 40694
+      "read_count": 40731
     },
     {
       "post_id": "1855978770692108",
       "content": "#分享我的头条荣誉# 我在头条30天内投稿打卡20天，获得“文如泉涌”称号",
       "publish_time": 1769999285,
-      "publish_date": "2026-02-02 11:28",
-      "url": "https://m.toutiao.com/w/1855978770692108/?app=toutiao_web&timestamp=1785770744&use_new_style=1",
+      "publish_date": "2026-02-02 10:28",
+      "url": "https://m.toutiao.com/w/1855978770692108/?app=toutiao_web&timestamp=1788021781&use_new_style=1",
       "digg_count": 0,
       "comment_count": 0,
-      "read_count": 3475
+      "read_count": 3477,
+      "title": "#分享我的头条荣誉# 我在头条30天内投稿打卡20天，获得“文如泉涌”称号"
     },
     {
       "post_id": "1855966562969612",
       "content": "关于日元:\n当前，黄金白银大跌，坚信在不远的将来，日元也将开启大跌，做空日元者将会受益无穷。",
       "publish_time": 1769987643,
-      "publish_date": "2026-02-02 08:14",
-      "url": "https://m.toutiao.com/w/1855966562969612/?app=toutiao_web&timestamp=1785770744&use_new_style=1",
+      "publish_date": "2026-02-02 07:14",
+      "url": "https://m.toutiao.com/w/1855966562969612/?app=toutiao_web&timestamp=1788021781&use_new_style=1",
       "digg_count": 1,
       "comment_count": 0,
-      "read_count": 8229
+      "read_count": 8231,
+      "title": "关于日元:\n当前，黄金白银大跌，坚信在不远的将来，日元也将开启大跌，做空日元者将会受益无穷。"
     },
     {
       "post_id": "1855902255091724",
       "content": "关于券商:\n鉴于金银等美盘的继续暴跌，受其影响，明天有色金属板将继续大幅下行。超级主力明天开盘必然进行护盘维稳，金融板块会有较好的表现，券商板块有些股票不排除直接跳空高开高走。\n然而，二月份券商板块预计将在中旬左右出一个反弹小高点(不会超过一月份高点)，震荡回调后在三月上旬起主升。",
       "publish_time": 1769926314,
-      "publish_date": "2026-02-01 15:11",
-      "url": "https://m.toutiao.com/w/1855902255091724/?app=toutiao_web&timestamp=1785770744&use_new_style=1",
+      "publish_date": "2026-02-01 14:11",
+      "url": "https://m.toutiao.com/w/1855902255091724/?app=toutiao_web&timestamp=1788021781&use_new_style=1",
       "digg_count": 28,
       "comment_count": 6,
-      "read_count": 29250
+      "read_count": 29252
     },
     {
       "post_id": "1855743094661132",
       "content": "关于大盘(续):\n下周最低点应该就是出现在2月4日周三立春日，预计即使再新低一点，最低点也就在4056附近，然后开启春节和元宵节行情。\n然后大盘振荡上行整个2月份和3月上旬。\n下周上半周，高位板块继续洗盘、低位板块震荡等待、大盘继续调整，三者将在立春日形成共振。\n\n下周建仓日就是立春日，上半周喝茶看戏就行了。",
       "publish_time": 1769774527,
-      "publish_date": "2026-01-30 21:02",
-      "url": "https://m.toutiao.com/w/1855743094661132/?app=toutiao_web&timestamp=1785770744&use_new_style=1",
+      "publish_date": "2026-01-30 20:02",
+      "url": "https://m.toutiao.com/w/1855743094661132/?app=toutiao_web&timestamp=1788021781&use_new_style=1",
       "digg_count": 31,
       "comment_count": 1,
-      "read_count": 34622
+      "read_count": 34625
     },
     {
       "post_id": "1855724568206336",
       "content": "关于大盘:\n今天如预期回调，盘中跳水大跌后反弹，创造了本周最低点4064。\n\n大盘继续下跌的空间并不大，不排除4064有可能是春节前的最低点这一可能。\n\n下周一上午继续看反弹，今天跳空缺口即是压力位，压力位之下下周一下午继续看回调。\n下周是否出新低还有次新低有待观察。",
       "publish_time": 1769756859,
-      "publish_date": "2026-01-30 16:07",
-      "url": "https://m.toutiao.com/w/1855724568206336/?app=toutiao_web&timestamp=1785770744&use_new_style=1",
+      "publish_date": "2026-01-30 15:07",
+      "url": "https://m.toutiao.com/w/1855724568206336/?app=toutiao_web&timestamp=1788021781&use_new_style=1",
       "digg_count": 4,
       "comment_count": 2,
-      "read_count": 6054
+      "read_count": 6056
     },
     {
       "post_id": "1855654408981568",
       "content": "关于大A:\n大盘依旧通过震荡来耗时间。板块轮动依旧让散户很难把握节奏。\n明天无论是否新高，大盘都将开始走回调了，除非一根中大阳线直接拉起来。\n一月份收大大阳线已成定局。",
       "publish_time": 1769689950,
-      "publish_date": "2026-01-29 21:32",
-      "url": "https://m.toutiao.com/w/1855654408981568/?app=toutiao_web&timestamp=1785770746&use_new_style=1",
+      "publish_date": "2026-01-29 20:32",
+      "url": "https://m.toutiao.com/w/1855654408981568/?app=toutiao_web&timestamp=1788021782&use_new_style=1",
       "digg_count": 0,
       "comment_count": 0,
-      "read_count": 4346
+      "read_count": 4348
     },
     {
       "post_id": "1855548544054272",
       "content": "关于大盘:\n大盘没有在4160快速拉起来，顶背离了，有回调需求。\n\n但是，在接下来的不长时间内，以上证指数为参考标的的A股市场如果打破此“阴阳十字星交替”走势，拉升出一根“中大阳线”形态，则必然会引燃涨势！\n我们看大盘如何演进，请拭目以待！",
       "publish_time": 1769588989,
-      "publish_date": "2026-01-28 17:29",
-      "url": "https://m.toutiao.com/w/1855548544054272/?app=toutiao_web&timestamp=1785770746&use_new_style=1",
+      "publish_date": "2026-01-28 16:29",
+      "url": "https://m.toutiao.com/w/1855548544054272/?app=toutiao_web&timestamp=1788021782&use_new_style=1",
       "digg_count": 4,
       "comment_count": 0,
-      "read_count": 5760
+      "read_count": 5762
     },
     {
       "post_id": "1855459047334912",
       "content": "关于大盘:\n主力阴阳轮替，目的就是耗时间，时间一到，起涨迎接春节行情。\n明天4130不破先看反弹。只要不是4160之上快速拉起就还要走回调。",
       "publish_time": 1769503638,
-      "publish_date": "2026-01-27 17:47",
-      "url": "https://m.toutiao.com/w/1855459047334912/?app=toutiao_web&timestamp=1785770746&use_new_style=1",
+      "publish_date": "2026-01-27 16:47",
+      "url": "https://m.toutiao.com/w/1855459047334912/?app=toutiao_web&timestamp=1788021782&use_new_style=1",
       "digg_count": 3,
       "comment_count": 0,
-      "read_count": 8906
+      "read_count": 8908
     },
     {
       "post_id": "1855362494667788",
       "content": "关于大盘:\n你以为要向上扩展，其实只是震荡，你以为要跌下去，那其实也只是震荡。就是，耗时间。\n\n自3815-4190工上涨了375点，\n回调0.382分位是4046；\n回调0.5分位是4002\n回调0.618分位是3958\n\n只要不破0.5分位，大盘都将轰轰烈烈开启主升浪，大家就可以喜气洋洋迎春节！",
       "publish_time": 1769411558,
-      "publish_date": "2026-01-26 16:12",
-      "url": "https://m.toutiao.com/w/1855362494667788/?app=toutiao_web&timestamp=1785770746&use_new_style=1",
+      "publish_date": "2026-01-26 15:12",
+      "url": "https://m.toutiao.com/w/1855362494667788/?app=toutiao_web&timestamp=1788021782&use_new_style=1",
       "digg_count": 0,
       "comment_count": 0,
-      "read_count": 3076
+      "read_count": 3078
     },
     {
       "post_id": "1855091076043852",
       "content": "关于大盘:\n今天上证50相对大盘，相当于跌回了3950了，富时A50相对大盘，相当于跌破3815了，而大盘受核心板块支撑，平安无事。\n但大盘2小时级别下周要先回调一下了，系统出现了2小时变盘时间信号。\n下周重要支撑位再4110，不破就没有任何问题。",
       "publish_time": 1769152714,
-      "publish_date": "2026-01-23 16:18",
-      "url": "https://m.toutiao.com/w/1855091076043852/?app=toutiao_web&timestamp=1785770746&use_new_style=1",
+      "publish_date": "2026-01-23 15:18",
+      "url": "https://m.toutiao.com/w/1855091076043852/?app=toutiao_web&timestamp=1788021782&use_new_style=1",
       "digg_count": 2,
       "comment_count": 0,
-      "read_count": 7835
+      "read_count": 7836
     },
     {
       "post_id": "1854998324783116",
       "content": "大盘:\n自4190下跌，下跌—横盘—下跌结构不变。\n如同自4034下跌的跌—横—跌结构。\n\n今天的走势如同自4034下跌横盘的第三天，略微新高一点点，就回落变绿。\n\n明天是继续震荡回调还是开盘大幅度低开杀出恐慌盘，让我们拭目以待。\n\n如果破了4100，接下来的支撑区域就在4034这个前期高点附近，最低一般也不会破4000点(大盘回调的0.5分位附近)",
       "publish_time": 1769064259,
-      "publish_date": "2026-01-22 15:44",
-      "url": "https://m.toutiao.com/w/1854998324783116/?app=toutiao_web&timestamp=1785770746&use_new_style=1",
+      "publish_date": "2026-01-22 14:44",
+      "url": "https://m.toutiao.com/w/1854998324783116/?app=toutiao_web&timestamp=1788021782&use_new_style=1",
       "digg_count": 1,
       "comment_count": 0,
-      "read_count": 4028
+      "read_count": 4029
     },
     {
       "post_id": "1854910537711692",
       "content": "关于大盘:明天按计划冲高减仓。",
       "publish_time": 1768980539,
-      "publish_date": "2026-01-21 16:28",
-      "url": "https://m.toutiao.com/w/1854910537711692/?app=toutiao_web&timestamp=1785770746&use_new_style=1",
+      "publish_date": "2026-01-21 15:28",
+      "url": "https://m.toutiao.com/w/1854910537711692/?app=toutiao_web&timestamp=1788021782&use_new_style=1",
       "digg_count": 1,
       "comment_count": 0,
-      "read_count": 18085
+      "read_count": 18086
     },
     {
       "post_id": "1854815274446848",
       "content": "大盘b浪主要是震荡，时间较长，空间较小。\n跌-横-跌结构目前还不会改变。\n\n周中，大盘要先看4140的压力是否能突破了。",
       "publish_time": 1768889689,
-      "publish_date": "2026-01-20 15:14",
-      "url": "https://m.toutiao.com/w/1854815274446848/?app=toutiao_web&timestamp=1785770746&use_new_style=1",
+      "publish_date": "2026-01-20 14:14",
+      "url": "https://m.toutiao.com/w/1854815274446848/?app=toutiao_web&timestamp=1788021782&use_new_style=1",
       "digg_count": 0,
       "comment_count": 0,
-      "read_count": 4428
+      "read_count": 4429
     },
     {
       "post_id": "1854734075311168",
       "content": "今年上半年我至少看大盘到4700-4800区域。\n\n\n波段操作的，今年上半年有四个区域都要考虑减仓操作:\n4200-4250减仓\n4300-4350\n减仓\n4400-4450\n减仓\n4700-4750减仓\n\n长线的建议4700-4750减仓",
       "publish_time": 1768812251,
-      "publish_date": "2026-01-19 17:44",
-      "url": "https://m.toutiao.com/w/1854734075311168/?app=toutiao_web&timestamp=1785770746&use_new_style=1",
+      "publish_date": "2026-01-19 16:44",
+      "url": "https://m.toutiao.com/w/1854734075311168/?app=toutiao_web&timestamp=1788021782&use_new_style=1",
       "digg_count": 1,
       "comment_count": 0,
-      "read_count": 5653
+      "read_count": 5654
     },
     {
       "post_id": "1854709599753280",
       "content": "今天上午大盘突破了4120，那么可以说4090就是4190A浪下跌的最低点了\nA浪下跌100个点，B浪小于A浪\n\nB浪也得走小3浪反弹，或者上下震荡横盘\n\n震荡反弹到周四开始C浪回调",
       "publish_time": 1768788909,
-      "publish_date": "2026-01-19 11:15",
-      "url": "https://m.toutiao.com/w/1854709599753280/?app=toutiao_web&timestamp=1785770746&use_new_style=1",
+      "publish_date": "2026-01-19 10:15",
+      "url": "https://m.toutiao.com/w/1854709599753280/?app=toutiao_web&timestamp=1788021782&use_new_style=1",
       "digg_count": 4,
       "comment_count": 0,
-      "read_count": 5285
+      "read_count": 5286
     },
     {
       "post_id": "1854638483916864",
       "content": "关于大盘:\n明天周一开盘就很简单了，看大盘震荡出新低后走B浪反弹还是震荡不出新低就直接走B浪反弹。",
       "publish_time": 1768721088,
-      "publish_date": "2026-01-18 16:24",
-      "url": "https://m.toutiao.com/w/1854638483916864/?app=toutiao_web&timestamp=1785770746&use_new_style=1",
+      "publish_date": "2026-01-18 15:24",
+      "url": "https://m.toutiao.com/w/1854638483916864/?app=toutiao_web&timestamp=1788021782&use_new_style=1",
       "digg_count": 4,
       "comment_count": 0,
-      "read_count": 12305
+      "read_count": 12306,
+      "title": "关于大盘:\n明天周一开盘就很简单了，看大盘震荡出新低后走B浪反弹还是震荡不出新低就直接走B浪反弹。"
     },
     {
       "post_id": "1854570828407808",
       "content": "个人观点稍微需要修正一下:\n\n由于大盘下周B浪反弹和C浪下跌都是震荡式小3浪，我计算了一下，所耗时间在下周很难完成C浪，C浪回调的最低点应该出在下下周，也就是一月底这个周的某一天，然后主升起飞迎接春节到来！",
       "publish_time": 1768656567,
-      "publish_date": "2026-01-17 22:29",
-      "url": "https://m.toutiao.com/w/1854570828407808/?app=toutiao_web&timestamp=1785770746&use_new_style=1",
+      "publish_date": "2026-01-17 21:29",
+      "url": "https://m.toutiao.com/w/1854570828407808/?app=toutiao_web&timestamp=1788021782&use_new_style=1",
       "digg_count": 8,
       "comment_count": 1,
-      "read_count": 9847
+      "read_count": 9848
     },
     {
       "post_id": "1854465834791952",
       "content": "关于下周大盘:\n等下周反弹过了4120就可以确认4190的A浪下跌结束，开启B浪反弹。\n周一开盘最多再震荡一下就走出B浪反弹。\n\n本周出现的周线时间信号周五收盘仍在，这说明下周的高点不会超过本周的高点4190。\n下周上半周出B浪反弹的高点，下半周出低点，然后继续起飞🛫迎接跨年行情。",
       "publish_time": 1768556437,
-      "publish_date": "2026-01-16 18:40",
-      "url": "https://m.toutiao.com/w/1854465834791952/?app=toutiao_web&timestamp=1785770747&use_new_style=1",
+      "publish_date": "2026-01-16 17:40",
+      "url": "https://m.toutiao.com/w/1854465834791952/?app=toutiao_web&timestamp=1788021784&use_new_style=1",
       "digg_count": 18,
       "comment_count": 4,
-      "read_count": 26723
+      "read_count": 26726
     },
     {
       "post_id": "1854447974976524",
       "content": "下午会有拉升。一旦盘中破了4096指数就形成底背离，破了4096后，无论下跌有多少都会形成底背离，那么4190下跌的B浪反弹将开启。\n如果下午直接站稳了4150，则4096的反弹就是B浪反弹。",
       "publish_time": 1768539405,
-      "publish_date": "2026-01-16 13:56",
-      "url": "https://m.toutiao.com/w/1854447974976524/?app=toutiao_web&timestamp=1785770747&use_new_style=1",
+      "publish_date": "2026-01-16 12:56",
+      "url": "https://m.toutiao.com/w/1854447974976524/?app=toutiao_web&timestamp=1788021784&use_new_style=1",
       "digg_count": 10,
       "comment_count": 3,
-      "read_count": 38327
+      "read_count": 38330
     },
     {
       "post_id": "1854392613829712",
       "content": "我#大盘行情# 算了一下，春节前目标4200-4250有些低了，需要再加100个点，到4300-4350。\n4300-4350区域春节前是很难突破的，这是一个相对压力较大的区域，存在抛盘压力。\n预期下周后半周将在4050左右结束回调，开始新的上涨📈。\n牛市回调一般不会破0.5分位，更不用说0.618分位了。\n明天只要站不稳4150下周还得回调，站稳4150结构就向上⬆️了。",
       "publish_time": 1768486608,
-      "publish_date": "2026-01-15 23:16",
-      "url": "https://m.toutiao.com/w/1854392613829712/?app=toutiao_web&timestamp=1785770747&use_new_style=1",
+      "publish_date": "2026-01-15 22:16",
+      "url": "https://m.toutiao.com/w/1854392613829712/?app=toutiao_web&timestamp=1788021784&use_new_style=1",
       "digg_count": 3,
       "comment_count": 1,
-      "read_count": 5270
+      "read_count": 5271
     },
     {
       "post_id": "1854377761144844",
       "content": "观察一下央行今天推出的8项政策措施明天能不能起到大的拉升作用。\n\n我个人觉得大盘在震荡筑顶。\n反弹压力依旧为4150。",
       "publish_time": 1768472443,
-      "publish_date": "2026-01-15 19:20",
-      "url": "https://m.toutiao.com/w/1854377761144844/?app=toutiao_web&timestamp=1785770747&use_new_style=1",
+      "publish_date": "2026-01-15 18:20",
+      "url": "https://m.toutiao.com/w/1854377761144844/?app=toutiao_web&timestamp=1788021784&use_new_style=1",
       "digg_count": 0,
       "comment_count": 0,
-      "read_count": 3717
+      "read_count": 3718,
+      "title": "观察一下央行今天推出的8项政策措施明天能不能起到大的拉升作用。\n\n我个人觉得大盘在震荡筑顶。\n反弹压力依旧为4150。"
     },
     {
       "post_id": "1854189940071552",
       "content": "关于大盘:\n今天开始的这波回调，回调支撑区域我看4000-4050。",
       "publish_time": 1768293323,
-      "publish_date": "2026-01-13 17:35",
-      "url": "https://m.toutiao.com/w/1854189940071552/?app=toutiao_web&timestamp=1785770747&use_new_style=1",
+      "publish_date": "2026-01-13 16:35",
+      "url": "https://m.toutiao.com/w/1854189940071552/?app=toutiao_web&timestamp=1788021784&use_new_style=1",
       "digg_count": 0,
       "comment_count": 0,
-      "read_count": 3573
+      "read_count": 3574,
+      "title": "关于大盘:\n今天开始的这波回调，回调支撑区域我看4000-4050。"
     },
     {
       "post_id": "1854118359065740",
       "content": "关于大盘高点:\n其实这样计算也没毛病:\n上证自24年9.24启动-10.8号，指数上涨985点。25年4.07-10.30，指数上涨985点。自25年12.17日最低点3815.84反弹至今，连红14个交易日，完成突破反转，完美走势3815.84+985=4800.84",
       "publish_time": 1768225058,
-      "publish_date": "2026-01-12 22:37",
-      "url": "https://m.toutiao.com/w/1854118359065740/?app=toutiao_web&timestamp=1785770747&use_new_style=1",
+      "publish_date": "2026-01-12 21:37",
+      "url": "https://m.toutiao.com/w/1854118359065740/?app=toutiao_web&timestamp=1788021784&use_new_style=1",
       "digg_count": 0,
       "comment_count": 0,
-      "read_count": 4064
+      "read_count": 4065
     },
     {
       "post_id": "1854022152728576",
       "content": "关于大盘:\n接下来来的走势预判，没算全网还没有人做出如此预判。",
       "publish_time": 1768133309,
-      "publish_date": "2026-01-11 21:08",
-      "url": "https://m.toutiao.com/w/1854022152728576/?app=toutiao_web&timestamp=1785770747&use_new_style=1",
+      "publish_date": "2026-01-11 20:08",
+      "url": "https://m.toutiao.com/w/1854022152728576/?app=toutiao_web&timestamp=1788021784&use_new_style=1",
       "digg_count": 7,
       "comment_count": 0,
-      "read_count": 11209
+      "read_count": 11211,
+      "title": "关于大盘:\n接下来来的走势预判，没算全网还没有人做出如此预判。"
     },
     {
       "post_id": "1853877978191884",
       "content": "周五消息面:\n\n1.周五A股站上了4100点，而且量能放大到了3万亿之上。\n但同时，中信和其他主要机构大幅加空，中信加空超2千手，全天主要机构总加空超1万手，市场主要机构总净空单来到了13万手之上。\n\n2.周五晚上非农就业数据公布后，美联储1月份降息概率为零\n\n3.美金龙指数大跌，收盘跌1.3%，",
       "publish_time": 1767995813,
-      "publish_date": "2026-01-10 06:56",
-      "url": "https://m.toutiao.com/w/1853877978191884/?app=toutiao_web&timestamp=1785770747&use_new_style=1",
+      "publish_date": "2026-01-10 05:56",
+      "url": "https://m.toutiao.com/w/1853877978191884/?app=toutiao_web&timestamp=1788021784&use_new_style=1",
       "digg_count": 6,
       "comment_count": 0,
-      "read_count": 5992
+      "read_count": 5993
     },
     {
       "post_id": "1853827953708032",
       "content": "关于大盘:\n下周一如果突破4120继续阳线，则进一步打开上升空间。\n\n如果跌破4070(不是4036支撑位了），则意味着开始回调。\n\n所以下周初就很关键了。",
       "publish_time": 1767948106,
-      "publish_date": "2026-01-09 17:41",
-      "url": "https://m.toutiao.com/w/1853827953708032/?app=toutiao_web&timestamp=1785770747&use_new_style=1",
+      "publish_date": "2026-01-09 16:41",
+      "url": "https://m.toutiao.com/w/1853827953708032/?app=toutiao_web&timestamp=1788021784&use_new_style=1",
       "digg_count": 9,
       "comment_count": 0,
-      "read_count": 15427
+      "read_count": 15428
     },
     {
       "post_id": "1853756021849100",
       "content": "关于大盘:\n今天大盘仍然属于高位震荡。\n我个人观点4040/4036支撑位置不跌破，大盘就继续震荡\n到下周初。\n\n下周一旦跌破4036趋势线支撑，主力目的就是去回补下面的4024和3977这两个缺口。",
       "publish_time": 1767879507,
-      "publish_date": "2026-01-08 22:38",
-      "url": "https://m.toutiao.com/w/1853756021849100/?app=toutiao_web&timestamp=1785770747&use_new_style=1",
+      "publish_date": "2026-01-08 21:38",
+      "url": "https://m.toutiao.com/w/1853756021849100/?app=toutiao_web&timestamp=1788021784&use_new_style=1",
       "digg_count": 0,
       "comment_count": 1,
-      "read_count": 4290
+      "read_count": 4291
     },
     {
       "post_id": "1853662758115468",
       "content": "关于大盘:\n明天支撑依次看4070-4056-4036,重点继续看4040-4036的支撑是否有效，只要不跌破，回调就不会向下扩展，依然能反弹出次高点。\n如果跌破4036支撑，，则依次去补下方的2-3个缺口。",
       "publish_time": 1767790563,
-      "publish_date": "2026-01-07 21:56",
-      "url": "https://m.toutiao.com/w/1853662758115468/?app=toutiao_web&timestamp=1785770747&use_new_style=1",
+      "publish_date": "2026-01-07 20:56",
+      "url": "https://m.toutiao.com/w/1853662758115468/?app=toutiao_web&timestamp=1788021784&use_new_style=1",
       "digg_count": 1,
       "comment_count": 0,
-      "read_count": 5072
+      "read_count": 5073
     },
     {
       "post_id": "1853623208079360",
       "content": "指数几乎平开，没有担心的闷杀，缓慢震荡上升，没有周一周二猛了，沪深两室当前主力资金还是净流出状态，个股涨跌比1:1附近。保险证券有所分化，半导体接过了第一。\n这样，大盘横盘震荡或回调的周期就会相对变长。\n今天重要支撑位置看4040-4036",
       "publish_time": 1767752846,
-      "publish_date": "2026-01-07 11:27",
-      "url": "https://m.toutiao.com/w/1853623208079360/?app=toutiao_web&timestamp=1785770747&use_new_style=1",
+      "publish_date": "2026-01-07 10:27",
+      "url": "https://m.toutiao.com/w/1853623208079360/?app=toutiao_web&timestamp=1788021784&use_new_style=1",
       "digg_count": 0,
       "comment_count": 0,
-      "read_count": 4141
+      "read_count": 4142
     },
     {
       "post_id": "1853596413489152",
       "content": "关于大盘:\n今天起，大盘重要压力位没有了。主要看回调的力度了。\n\n4100-4150-4200-4250-4300-4350-4400-4450……4800\n\n从4100开始每隔50个点就是相对压力位。\n到了4700，满仓重仓的开始逐步减仓，看4800。\n大盘每到一个上述相对压力位附近，要结合当时的国内外环境，看回调力度的大小就可以了。如果遇到突发事件，不排除大幅急跌的可能。",
       "publish_time": 1767727292,
-      "publish_date": "2026-01-07 04:21",
-      "url": "https://m.toutiao.com/w/1853596413489152/?app=toutiao_web&timestamp=1785770749&use_new_style=1",
+      "publish_date": "2026-01-07 03:21",
+      "url": "https://m.toutiao.com/w/1853596413489152/?app=toutiao_web&timestamp=1788021785&use_new_style=1",
       "digg_count": 3,
       "comment_count": 0,
-      "read_count": 6862
+      "read_count": 6863
     },
     {
       "post_id": "1853550096561152",
       "content": "关于大盘:今天光头光脚大阳，明天是变盘窗口期，主力大概率会开盘闷杀散户，他们连续诱多任务完成了。",
       "publish_time": 1767683121,
-      "publish_date": "2026-01-06 16:05",
-      "url": "https://m.toutiao.com/w/1853550096561152/?app=toutiao_web&timestamp=1785770749&use_new_style=1",
+      "publish_date": "2026-01-06 15:05",
+      "url": "https://m.toutiao.com/w/1853550096561152/?app=toutiao_web&timestamp=1788021785&use_new_style=1",
       "digg_count": 10,
       "comment_count": 3,
-      "read_count": 14234
+      "read_count": 14235,
+      "title": "关于大盘:今天光头光脚大阳，明天是变盘窗口期，主力大概率会开盘闷杀散户，他们连续诱多任务完成了。"
     },
     {
       "post_id": "1853461120677900",
       "content": "关于大盘:   今天拉起来就是为了2026年开门红，这样就延迟了回调时间。明天很关键的一天，只要开盘不大幅度低开就没有大的风险。如果大幅度低开，则深度回调开始。",
       "publish_time": 1767598267,
-      "publish_date": "2026-01-05 16:31",
-      "url": "https://m.toutiao.com/w/1853461120677900/?app=toutiao_web&timestamp=1785770749&use_new_style=1",
+      "publish_date": "2026-01-05 15:31",
+      "url": "https://m.toutiao.com/w/1853461120677900/?app=toutiao_web&timestamp=1788021785&use_new_style=1",
       "digg_count": 9,
       "comment_count": 0,
-      "read_count": 12540
+      "read_count": 12541
     },
     {
       "post_id": "1853282579060812",
       "content": "或许对你有帮助，仅供参考！",
       "publish_time": 1767427997,
-      "publish_date": "2026-01-03 17:13",
-      "url": "https://m.toutiao.com/w/1853282579060812/?app=toutiao_web&timestamp=1785770749&use_new_style=1",
+      "publish_date": "2026-01-03 16:13",
+      "url": "https://m.toutiao.com/w/1853282579060812/?app=toutiao_web&timestamp=1788021785&use_new_style=1",
       "digg_count": 0,
       "comment_count": 0,
-      "read_count": 3400
+      "read_count": 3401
     },
     {
       "post_id": "1853169773059072",
       "content": "关于大盘:元旦节后的一周是持续回调的一周，先看是3816-3815连线支撑是否有效。周四周五或许有大幅跳空低开探底。",
       "publish_time": 1767320416,
-      "publish_date": "2026-01-02 11:20",
-      "url": "https://m.toutiao.com/w/1853169773059072/?app=toutiao_web&timestamp=1785770749&use_new_style=1",
+      "publish_date": "2026-01-02 10:20",
+      "url": "https://m.toutiao.com/w/1853169773059072/?app=toutiao_web&timestamp=1788021785&use_new_style=1",
       "digg_count": 0,
       "comment_count": 1,
-      "read_count": 7996
+      "read_count": 7997,
+      "title": "关于大盘:元旦节后的一周是持续回调的一周，先看是3816-3815连线支撑是否有效。周四周五或许有大幅跳空低开探底。"
     },
     {
       "post_id": "1852955394718732",
       "content": "昨天开盘低开17个点，没有达到50个点。今天大盘继续低开，绿十字星收盘。",
       "publish_time": 1767115969,
-      "publish_date": "2025-12-31 02:32",
-      "url": "https://m.toutiao.com/w/1852955394718732/?app=toutiao_web&timestamp=1785770749&use_new_style=1",
+      "publish_date": "2025-12-31 01:32",
+      "url": "https://m.toutiao.com/w/1852955394718732/?app=toutiao_web&timestamp=1788021785&use_new_style=1",
       "digg_count": 0,
       "comment_count": 0,
-      "read_count": 4155
+      "read_count": 4158
     },
     {
       "post_id": "1852844011606092",
       "content": "如果明天开盘低开50个点以上，则意味着连续大跌开始，至1月9日探底。",
       "publish_time": 1767009746,
-      "publish_date": "2025-12-29 21:02",
-      "url": "https://m.toutiao.com/w/1852844011606092/?app=toutiao_web&timestamp=1785770749&use_new_style=1",
+      "publish_date": "2025-12-29 20:02",
+      "url": "https://m.toutiao.com/w/1852844011606092/?app=toutiao_web&timestamp=1788021785&use_new_style=1",
       "digg_count": 9,
       "comment_count": 3,
-      "read_count": 37736
+      "read_count": 37737
     },
     {
       "post_id": "1852786911773708",
       "content": "关于大盘:\n\n关注12月30日这个变盘日，下一个变盘日是1月9日。\n不出意外，自12月30日起大盘会连续阴线回调6个交易日到1月9日探底。只是力度大小的问题，如果像恒指那样力度就大，如果像4月7日连续拉起后的回调就是弱回调。\n不管怎样，这6天回调是大概率的。1月9日之后，震荡几天，然后大A与恒指产生共振，证券开始发力，起主升浪。",
       "publish_time": 1766955291,
-      "publish_date": "2025-12-29 05:54",
-      "url": "https://m.toutiao.com/w/1852786911773708/?app=toutiao_web&timestamp=1785770749&use_new_style=1",
+      "publish_date": "2025-12-29 04:54",
+      "url": "https://m.toutiao.com/w/1852786911773708/?app=toutiao_web&timestamp=1788021785&use_new_style=1",
       "digg_count": 9,
       "comment_count": 1,
-      "read_count": 17760
+      "read_count": 17761
     }
   ]
 }
