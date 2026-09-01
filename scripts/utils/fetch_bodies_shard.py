@@ -24,7 +24,10 @@ MOBILE_UA = 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/
 
 
 def _pid_of(u):
-    m = re.search(r'/(?:group|article|w)/(\d+)', u) or re.search(r'/i(\d+)', u)
+    # 兼容 feed 接口新 URL 形态：m.toutiaoimg.cn/a<id>（文章 CDN 直链）与 /group/<id>
+    m = (re.search(r'/(?:group|article|w)/(\d+)', u)
+         or re.search(r'/(?:a|i)(\d+)', u)
+         or re.search(r'/i(\d+)', u))
     return m.group(1) if m else None
 
 
@@ -87,19 +90,21 @@ with sync_playwright() as p:
         pass
     for i, post in enumerate(todo):
         pid = post['post_id']
-        # 视频帖跳过：m.toutiaoimg.cn 是视频 CDN 域名，无文字正文
-        if 'm.toutiaoimg.cn' in post['url']:
-            done[pid] = {'title': post['content'], 'body': VIDEO_MARKER, 'url': post['url']}
-            continue
+        # 视频帖检测不再用 URL 域名判断：新爬虫把普通文章也存成 m.toutiaoimg.cn/<a|group>/<id>
+        # 形态，URL 含 m.toutiaoimg.cn 不代表视频。真视频由 SSR 页面含 xgplayer 标记兜底识别。
         body = ''
-        if not _is_microheadline_url(post['url']):
-            # 文章帖：info API 快速路径
+        if True:  # 所有帖（含微头条）先走 info API 快速路径：文本微头条可拿到正文，视频可标记 [视频帖]
             time.sleep(1.2)  # 节流
             try:
                 api = f"https://m.toutiao.com/i{_pid_of(post['url'])}/info/"
                 resp = ctx.request.get(api, timeout=10000,
                                        headers={'Referer': f"https://m.toutiao.com/i{_pid_of(post['url'])}/"})
-                body = _extract_info_content(resp.json())
+                jdata = resp.json()
+                body = _extract_info_content(jdata)
+                # 视频帖：info API 返回 play_auth_token_v2（视频播放凭证）→ 无文字正文，标 [视频帖]
+                if not body and (jdata.get('data') or {}).get('play_auth_token_v2'):
+                    done[pid] = {'title': post['content'], 'body': VIDEO_MARKER, 'url': post['url']}
+                    continue
             except Exception:
                 body = ''
             if body:
@@ -147,6 +152,10 @@ with sync_playwright() as p:
         if body and '打开今日头条查看图片' in body and len(body) < 60:
             # 图片-only 微头条：SSR 只回图片占位文案，正文应保留标题而非占位符
             body = ''
+        if body and '视频加载中' in body:
+            # 视频帖 SSR 占位文案：无文字正文，标 [视频帖]
+            done[pid] = {'title': post['content'], 'body': VIDEO_MARKER, 'url': post['url']}
+            continue
         done[pid] = {'title': post['content'], 'body': body.strip(), 'url': post['url']}
         if (i+1) % 30 == 0:
             json.dump(done, open(OUT, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)

@@ -29,6 +29,8 @@ def _placeholder(body):
     """登录墙占位正文视为无正文，绝不回填（手机登录/扫码登录/获取验证码）。"""
     if not body:
         return True
+    if body == "[视频帖]":
+        return False  # 视频帖标记应回填（标题即内容，无文字正文），不回填会让其滞留标题型
     if len(body) <= 20:
         return True
     if "登录" in body and "验证码" in body:
