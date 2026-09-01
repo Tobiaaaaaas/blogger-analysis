@@ -4,6 +4,7 @@ __pycache__/
 *.swp
 *.swo
 .env
+.deepseek_keys.env
 _*.txt
 _*.json
 *.log

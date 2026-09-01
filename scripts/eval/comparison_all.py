@@ -4,13 +4,15 @@
 用法: python scripts/eval/comparison_all.py
 输出: reports/comparison_direction.md
 
-结构：参与打分博主清单 → 总榜 → 三档分榜（含"其中：今天（盘前/盘中）"子榜）→ 方向榜单（看多/看空）→ 覆盖/集中度警告
+结构：参与打分博主清单 → 总榜 → 三档分榜（含"其中：今天（盘前/盘中）"子榜）→ 方向榜单（看多/看空）→ 无周期方向榜 → 覆盖/集中度警告
 
 排名资格（SKILL §横向对比）：
 - 仅纳入参与打分的博主（帖子跨度≥6 月 且 2026 以来信号>50）；不参与打分者单列注明
+- 总榜 / 三档 / 方向榜单 口径 = 显式周期信号（spec ≠ nd），nd 独立成档不参与
 - 总榜：计分信号 ≥ 30 条 且 平均分 > 0.1；不足者不参与排名、单列注明（统计无意义）
-- 三档分榜 / 方向榜单：该组信号 ≥ 10 条 且 平均分 > 0.1，仅取前 10 名上榜；表格同总榜形式
+- 三档分榜 / 方向榜单 / 无周期方向榜：该组信号 ≥ 10 条 且 平均分 > 0.1，仅取前 10 名上榜；表格同总榜形式
 - 方向榜单：看多=d=1、看空=d=-1；子集方向固定故不含看多/看空列
+- 无周期方向榜：spec=nd（无明确时间点，3/5/10 日收益率加权计分），独立排名
 """
 import json
 import os
@@ -35,6 +37,17 @@ for b in ALL_BLOGGERS:
     rows_all[b] = scored
     meta[b] = {'signals': len(data['signals']), 'scored': len(scored)}
 
+
+def explicit(b):
+    """显式周期信号（spec ≠ nd）：总榜/三档/方向榜单口径（SKILL §8）"""
+    return [r for r in rows_all[b] if r['spec'] != 'nd']
+
+
+def ndrows(b):
+    """无周期方向信号（spec=nd，3/5/10 日收益率加权计分）：独立「无周期方向榜」"""
+    return [r for r in rows_all[b] if r['spec'] == 'nd']
+
+
 # 参与打分资格（跨度≥6月 且 2026以来信号>50）：仅合格者进入榜单，不合格者单列注明
 ELIGIBLE, INELIGIBLE = [], []
 for b in ALL_BLOGGERS:
@@ -43,11 +56,11 @@ for b in ALL_BLOGGERS:
 
 BUCKET_KEYS = ['0-1个交易日（今天/明天）', '2-5个交易日（1周内）', '6个交易日及以上（大于1周）']
 
-# 分榜分组：每个合格博主 → 各档信号 / 今天（盘前/盘中）信号
+# 分榜分组：每个合格博主 → 各档显式周期信号 / 今天（盘前/盘中）信号（nd 独立，不进三档分组）
 bucket_rows = {k: {b: [] for b in ELIGIBLE} for k in BUCKET_KEYS}
 today_rows = {b: [] for b in ELIGIBLE}
 for b in ELIGIBLE:
-    for r in rows_all[b]:
+    for r in explicit(b):
         bucket_rows[eng.bucket_of(r)][b].append(r)
         if r['spec'] == 'today':
             today_rows[b].append(r)
@@ -111,7 +124,7 @@ def emit_leaderboard(title, getter):
 
 
 def emit_dir_leaderboard(title, pred):
-    """方向榜单：看多=d=1 / 看空=d=-1；子集方向固定故不含看多/看空列"""
+    """方向/无周期榜单：看多=d=1 / 看空=d=-1 / 无周期方向 nd；子集方向固定或独立档故不含看多/看空列"""
     L.append(f'### {title}')
     L.append('')
     L.append('| 排名 | 博主 | 信号数 | 正确率 | **平均分** | 波动率 | 夏普 |')
@@ -140,8 +153,9 @@ L = []
 L.append('# 全部博主 Direction 横向对比（平均分 = 单信号平均收益 %）')
 L.append('')
 L.append(f'> 数据截止 {eng.EVAL_DATE} | 参与打分博主 {len(ELIGIBLE)} 位（帖子跨度≥6 月 且 2026 以来信号>50）| '
-         f'总榜资格：计分信号 ≥ {RANK_MIN_SIGNALS} 条 且 平均分 > {AVG_MIN} | '
-         f'分榜资格：该组 ≥ {BUCKET_MIN_SIGNALS} 条 且 平均分 > {AVG_MIN}（仅取前 {TOP_N}）')
+         f'总榜资格：显式周期计分信号 ≥ {RANK_MIN_SIGNALS} 条 且 平均分 > {AVG_MIN} | '
+         f'分榜资格：该组 ≥ {BUCKET_MIN_SIGNALS} 条 且 平均分 > {AVG_MIN}（仅取前 {TOP_N}）| '
+         f'无周期方向（nd，无明确时间点）独立成档，不参与总榜/三档/方向榜单')
 L.append('')
 if INELIGIBLE:
     parts = []
@@ -152,35 +166,40 @@ if INELIGIBLE:
              + '、'.join(parts))
     L.append('')
 
-# ── 总榜 ──
-L.append('## 🏆 总榜（按平均分排序；计分信号 ≥ 30 条 且 平均分 > 0.1 才参与排名）')
+# ── 总榜（口径=显式周期信号，nd 独立）──
+L.append('## 🏆 总榜（按平均分排序；显式周期计分信号 ≥ 30 条 且 平均分 > 0.1 才参与排名）')
 L.append('')
 L.append('| 排名 | 博主 | 计分信号 | 正确率 | **平均分** | 波动率 | 夏普 | 看多 | 看空 |')
 L.append('|:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|')
-ranked = [b for b in ELIGIBLE if qualifies(b, lambda x: rows_all[x], RANK_MIN_SIGNALS)]
-ranked.sort(key=lambda b: -eng.avg_of(rows_all[b]))
+ranked = [b for b in ELIGIBLE if qualifies(b, explicit, RANK_MIN_SIGNALS)]
+ranked.sort(key=lambda b: -eng.avg_of(explicit(b)))
 for i, b in enumerate(ranked, 1):
-    L.append(fmt_row(i, b, rows_all[b]))
+    L.append(fmt_row(i, b, explicit(b)))
 L.append('')
-excluded = [b for b in ELIGIBLE if not qualifies(b, lambda x: rows_all[x], RANK_MIN_SIGNALS)]
+excluded = [b for b in ELIGIBLE if not qualifies(b, explicit, RANK_MIN_SIGNALS)]
 if excluded:
-    L.append(f'> 不参与总榜排名（计分信号 < {RANK_MIN_SIGNALS} 或 平均分 ≤ {AVG_MIN}，统计无意义）：'
-             + '、'.join(f'{b}（{len(rows_all[b])} 条，均分 {eng.avg_of(rows_all[b]):+.2f}）' for b in excluded))
+    L.append(f'> 不参与总榜排名（显式周期计分信号 < {RANK_MIN_SIGNALS} 或 平均分 ≤ {AVG_MIN}，统计无意义）：'
+             + '、'.join(f'{b}（{len(explicit(b))} 条，均分 {eng.avg_of(explicit(b)):+.2f}）' for b in excluded))
     L.append('')
 
-# ── 三档分榜 ──
-L.append('## 🏅 三档分榜（每档 ≥ 10 条 且 平均分 > 0.1 参与排名，仅取前 10 名，表格同总榜）')
+# ── 三档分榜（口径=显式周期信号，nd 独立成档不混入）──
+L.append('## 🏅 三档分榜（每档 ≥ 10 条 且 平均分 > 0.1 参与排名，仅取前 10 名，表格同总榜；无周期方向 nd 独立成档见下方）')
 L.append('')
 emit_leaderboard(f'档 1：{BUCKET_KEYS[0]}', lambda b: bucket_rows[BUCKET_KEYS[0]][b])
 emit_leaderboard('档 1 子榜：其中：今天（盘前/盘中）', lambda b: today_rows[b])
 emit_leaderboard(f'档 2：{BUCKET_KEYS[1]}', lambda b: bucket_rows[BUCKET_KEYS[1]][b])
 emit_leaderboard(f'档 3：{BUCKET_KEYS[2]}', lambda b: bucket_rows[BUCKET_KEYS[2]][b])
 
-# ── 方向榜单 ──
-L.append('## 🎯 方向榜单（看多=d=1 / 看空=d=-1；≥ 10 条 且 平均分 > 0.1，仅取前 10 名）')
+# ── 方向榜单（口径=显式周期信号）──
+L.append('## 🎯 方向榜单（看多=d=1 / 看空=d=-1；≥ 10 条 且 平均分 > 0.1，仅取前 10 名；口径=显式周期信号）')
 L.append('')
-emit_dir_leaderboard('看多榜（只看多信号）', lambda b: [r for r in rows_all[b] if r['d'] == 1])
-emit_dir_leaderboard('看空榜（只看空信号）', lambda b: [r for r in rows_all[b] if r['d'] == -1])
+emit_dir_leaderboard('看多榜（只看多信号）', lambda b: [r for r in explicit(b) if r['d'] == 1])
+emit_dir_leaderboard('看空榜（只看空信号）', lambda b: [r for r in explicit(b) if r['d'] == -1])
+
+# ── 无周期方向榜（spec=nd，独立档）──
+L.append('## 🕐 无周期方向榜（无明确时间点，3/5/10 日收益率加权计分；≥ 10 条 且 平均分 > 0.1，仅取前 10 名）')
+L.append('')
+emit_dir_leaderboard('无周期方向榜（无明确时间点，独立档）', ndrows)
 
 # ── 覆盖/集中度警告 ──
 L.append('## ⚠️ 信号覆盖 / 集中度警告（覆盖 <3 个月 ⚠️；单月占比 ≥50% 高度集中、≥33% 轻度集中；相邻月份缺 ≥3 个月为严重缺口）')
@@ -223,5 +242,5 @@ with open(out, 'w', encoding='utf-8') as f:
     f.write('\n'.join(L))
 print(f'对比表已写入 {out} | 参与打分博主 {len(ELIGIBLE)} / 全部 {len(ALL_BLOGGERS)} | 总榜上榜 {len(ranked)} 位')
 for b in ranked:
-    rs = rows_all[b]
-    print(f'  {b}: {len(rs)} 计分 | {acc_of(rs):.1f}% | {eng.avg_of(rs):+.2f}')
+    rs = explicit(b)
+    print(f'  {b}: {len(rs)} 计分(+nd {len(ndrows(b))}) | {acc_of(rs):.1f}% | {eng.avg_of(rs):+.2f}')
