@@ -113,6 +113,7 @@ def _date_header(date_str, slot_label):
     return f"📊 {slot_label}简报 · {date_str}"
 
 
+# ── LEGACY（v8 全板共识卡；2026-09 redesign 后 run_briefing 不再调用，仅保留供历史卡重渲染）──
 def build_card_payload(card, market_text, slot_label, date_str, window_txt=""):
     """card JSON → 飞书 interactive card payload。window_txt 如"自 14:00 以来"。
 
@@ -198,7 +199,7 @@ def build_card_payload(card, market_text, slot_label, date_str, window_txt=""):
 
 
 def build_heartbeat_payload(market_text, slot_label, date_str, window_txt=""):
-    """心跳消息：无新增观点时推一条极简文本，确认系统存活。"""
+    """LEGACY（v8）：心跳消息——无新增观点时推一条极简文本。v9 不再发心跳。"""
     win = f"\n覆盖时段：{window_txt}" if window_txt else ""
     return {
         "msg_type": "text",
@@ -236,3 +237,112 @@ def post_webhook(payload, webhook_url=None, retries=3):
             last = f"请求异常: {e}"
         time.sleep(3 * (i + 1))
     return False, last
+
+
+# =====================================================================
+# v9：18 人窗口速览卡（固定名单行式表格 + 卡底收敛总结）
+# =====================================================================
+
+_CN_NUMS = ["①", "②", "③", "④", "⑤", "⑥", "⑦", "⑧", "⑨", "⑩",
+            "⑪", "⑫", "⑬", "⑭", "⑮", "⑯", "⑰", "⑱"]
+_MAX_MD_BYTES = 30000  # 单 markdown 元素上限粗估；超长则把 18 行拆成两段
+
+
+def _fmt_roster_row(row):
+    """单博主行：观点行（1 行头 + 重点原话 + 摘要）或占位行（近3日无观点更新）。
+
+    row 字段见 summarize._row_from_llm：blogger/has_view/stance/bucket/horizon/
+    summary/quote/quote_ts/n_posts。占位行区分"无帖"与"有帖未明确表态"。
+    """
+    name = row.get("blogger") or "?"
+    if not row.get("has_view"):
+        base = f"**{name}**：{config.ROWS_NO_VIEW_TEXT}"
+        if row.get("n_posts"):
+            base += "（有发帖未明确表态）"
+        return base
+    emoji = STANCE_EMOJI.get(row.get("stance"), "")
+    stext = STANCE_TEXT.get(row.get("stance"), "")
+    line1 = f"{emoji} **{name}** {stext}"
+    if row.get("bucket"):
+        line1 += f" · {row['bucket']}"
+    if row.get("horizon") and row["horizon"] != "未提":
+        line1 += f" · {row['horizon']}"
+    lines = [line1]
+    if row.get("quote"):
+        t = fmt_post_time(row.get("quote_ts"))
+        lines.append(f"　重点原话：“{row['quote']}”" + (f"（{t}）" if t else ""))
+    if row.get("summary"):
+        lines.append(f"　摘要：{row['summary']}")
+    return "\n".join(lines)
+
+
+def build_roster_card_payload(rows, market_text, slot_label, date_str, window_txt="",
+                              summary_text="", counts=None):
+    """v9 主卡：header + 覆盖窗口 + 行情 + ①–⑱ 固定 18 行 + 卡底收敛总结 + 多空计数角标。
+
+    rows: {博主: row}，按 config.ROSTER 固定序渲染（缺的博主按占位行兜底）。
+    counts: {bull, bear, neutral, none}，系统权威计数，作角标与总结上下文。
+    """
+    counts = counts or {"bull": 0, "bear": 0, "neutral": 0, "none": 18}
+    elements = []
+    if window_txt:
+        elements.append({"tag": "note", "elements": [
+            {"tag": "plain_text", "content": f"🕐 覆盖：{window_txt}"}]})
+    elements.append({"tag": "markdown", "content": f"📈 {market_text}"})
+    elements.append({"tag": "hr"})
+
+    blocks = []
+    for i, name in enumerate(config.ROSTER):
+        row = dict(rows.get(name) or {})
+        row.setdefault("blogger", name)
+        blocks.append(f"{_CN_NUMS[i]} {_fmt_roster_row(row)}")
+
+    roster_md = "\n\n".join(blocks)
+    if len(roster_md.encode("utf-8", "replace")) > _MAX_MD_BYTES:
+        half = len(blocks) // 2
+        elements.append({"tag": "markdown", "content": "\n\n".join(blocks[:half])})
+        elements.append({"tag": "markdown", "content": "\n\n".join(blocks[half:])})
+    else:
+        elements.append({"tag": "markdown", "content": roster_md})
+    elements.append({"tag": "hr"})
+
+    # 卡底收敛总结（无总结文案时降级为计数一行，保证卡片信息完整）
+    foot = f"🧭 {summary_text}" if summary_text else \
+        f"🧭 多空版图：{counts['bull']} 多 / {counts['bear']} 空 / 观望 {counts['neutral']} / 无更新 {counts['none']}"
+    elements.append({"tag": "markdown", "content": foot})
+    elements.append({"tag": "note", "elements": [
+        {"tag": "plain_text", "content": f"多空 {counts['bull']}多/{counts['bear']}空 · 观望 {counts['neutral']} · 无更新 {counts['none']}"}]})
+
+    return {
+        "msg_type": "interactive",
+        "card": {
+            "config": {"wide_screen_mode": True},
+            "header": {"template": HEADER_TEMPLATE,
+                       "title": {"tag": "plain_text", "content": _date_header(date_str, slot_label)}},
+            "elements": elements,
+        },
+    }
+
+
+def build_minimal_card_payload(market_text, slot_label, date_str, window_txt="", note_text="", counts=None):
+    """零方向日（bull+bear==0）的最小交互卡：确认系统存活 + 计数角标，不渲染 18 行空表。"""
+    counts = counts or {}
+    counts_txt = (f"多空 {counts.get('bull', 0)}多/{counts.get('bear', 0)}空 · "
+                  f"观望 {counts.get('neutral', 0)} · 无更新 {counts.get('none', 18)}")
+    elements = []
+    if window_txt:
+        elements.append({"tag": "note", "elements": [
+            {"tag": "plain_text", "content": f"🕐 覆盖：{window_txt}"}]})
+    elements.append({"tag": "markdown", "content": f"📈 {market_text}"})
+    if note_text:
+        elements.append({"tag": "markdown", "content": f"💤 {note_text}"})
+    elements.append({"tag": "note", "elements": [{"tag": "plain_text", "content": counts_txt}]})
+    return {
+        "msg_type": "interactive",
+        "card": {
+            "config": {"wide_screen_mode": True},
+            "header": {"template": HEADER_TEMPLATE,
+                       "title": {"tag": "plain_text", "content": _date_header(date_str, slot_label)}},
+            "elements": elements,
+        },
+    }

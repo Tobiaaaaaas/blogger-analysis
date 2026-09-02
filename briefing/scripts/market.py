@@ -50,8 +50,11 @@ def _parse_sina(text):
         return None
     f = m.group(1).split(",")
     try:
+        prev = float(f[2])
+        price = float(f[3])
         return {
-            "name": f[0], "price": float(f[3]), "prev_close": float(f[2]),
+            "name": f[0], "price": price, "prev_close": prev,
+            "pct": (price - prev) / prev * 100 if prev else 0.0,
             "amount_wan": float(f[9]) / 1e4,  # 元 → 万元
         }
     except (IndexError, ValueError):

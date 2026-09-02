@@ -10,6 +10,7 @@ akshare 不可用/拉取失败时，回退到内置的 2026 节假日规则（we
   国庆 10/1-10/7（10/10 补班）
 A 股在这些"法定节假日"休市；周末补班日（周末上班）为交易日。
 """
+import bisect
 import json
 import os
 from datetime import date, datetime, timedelta
@@ -73,3 +74,27 @@ def latest_trading_day(d: date) -> date:
     while not is_trading_day(cur):
         cur -= timedelta(days=1)
     return cur
+
+
+def trading_days(d: date, n: int) -> list:
+    """截至 d 最近 n 个交易日（含），升序返回 [date, ...]。
+
+    锚点 = latest_trading_day(d)（d 本身若非交易日则取上一交易日）；
+    边界示例：trading_days(2026-09-02, 3) → [08-31, 09-01, 09-02]；
+              trading_days(2026-09-05(周六), 3) → [09-02, 09-03, 09-04]。
+    """
+    anchor = latest_trading_day(d)
+    days = _load_calendar()
+    if days:
+        i = bisect.bisect_right(days, anchor.strftime("%Y-%m-%d")) - 1
+        if i >= 0:
+            lo = max(0, i - n + 1)
+            return [date.fromisoformat(days[j]) for j in range(lo, i + 1)]
+    # akshare 缓存不可用 → 用 is_trading_day 回退向前数
+    out, cur = [], anchor
+    while len(out) < n:
+        out.append(cur)
+        cur -= timedelta(days=1)
+        while not is_trading_day(cur):
+            cur -= timedelta(days=1)
+    return sorted(out)

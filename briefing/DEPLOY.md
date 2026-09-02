@@ -26,15 +26,12 @@ python -m playwright install chromium
 #      FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/<token>
 #      REPO_ROOT=/srv/blogger_ana        # 父仓库路径（默认 briefing/ 上一级）
 
-# 4) 一次性任务：生成博主画像（执行后回填 briefing/TASKS.md）
-cd /srv/blogger_ana/briefing
-python -m briefing.scripts.profiles
-
-# 5) 试跑一次（落盘预览）
-python -m briefing.scripts.run_briefing --dry-run --slot evening
+# 4) 试跑一次（落盘预览；非交易日可加 --skip-calendar 强制跑）
+python -m briefing.scripts.run_briefing --dry-run --slot morning --no-scrape
 # 确认卡片内容 OK 后再真实推送一次验证 webhook：
-python -m briefing.scripts.run_briefing --push --slot evening
+python -m briefing.scripts.run_briefing --push --slot morning
 ```
+> v9（2026-09）起简报 = 固定 18 人窗口速览卡：交易日 **3 推**（09:30 早盘 / 13:00 午后 / 14:30 尾盘），每档 = 一张交互卡（行情 + ①–⑱ 固定 18 行 + 卡底收敛总结）。v8 的博主画像（profiles.json）已不再参与渲染，首次部署无需生成。
 
 ## 定时任务（cron）
 
@@ -43,14 +40,10 @@ python -m briefing.scripts.run_briefing --push --slot evening
 sudo timedatectl set-timezone Asia/Shanghai   # 或 TZ=Asia/Shanghai 前缀
 
 crontab -e
-# 交易日 7 推；非交易日自动跳过盘中槽、只留 20:00（脚本内用交易日历判断，无需区分写法）
-15 9 * * * cd /srv/blogger_ana/briefing && python -m briefing.scripts.run_briefing --push >> data/cron.log 2>&1
-0 10 * * * cd /srv/blogger_ana/briefing && python -m briefing.scripts.run_briefing --push >> data/cron.log 2>&1
-0 11 * * * cd /srv/blogger_ana/briefing && python -m briefing.scripts.run_briefing --push >> data/cron.log 2>&1
-45 12 * * * cd /srv/blogger_ana/briefing && python -m briefing.scripts.run_briefing --push >> data/cron.log 2>&1
-0 14 * * * cd /srv/blogger_ana/briefing && python -m briefing.scripts.run_briefing --push >> data/cron.log 2>&1
-0 15 * * * cd /srv/blogger_ana/briefing && python -m briefing.scripts.run_briefing --push >> data/cron.log 2>&1
-0 20 * * * cd /srv/blogger_ana/briefing && python -m briefing.scripts.run_briefing --push >> data/cron.log 2>&1
+# 交易日 3 推；非交易日脚本自动 exit 0（weekday 写 1-5 即可，节假日/调休由脚本内交易日历精确判定）
+30 9 * * 1-5 cd /srv/blogger_ana/briefing && python -m briefing.scripts.run_briefing --push --slot morning >> data/cron.log 2>&1
+0 13 * * 1-5 cd /srv/blogger_ana/briefing && python -m briefing.scripts.run_briefing --push --slot afternoon >> data/cron.log 2>&1
+30 14 * * 1-5 cd /srv/blogger_ana/briefing && python -m briefing.scripts.run_briefing --push --slot late >> data/cron.log 2>&1
 ```
 
 ## 已知风险与对策
@@ -63,9 +56,9 @@ crontab -e
 ## 监控
 
 - 日志：`briefing/data/briefing.log`、`data/cron.log`
-- 状态：`briefing/data/state.json`（last_run / seen / 上期卡片）
+- 状态：`briefing/data/state.json`（v9：`last_run / last_slot / seen`；`recent_views / board_prev / previous` 已由脚本首跑自动清除）
 - 历史简报：`briefing/data/briefings/*.json`
-- 每时段若无新观点会推心跳消息（确认系统存活）；任一步失败会推错误心跳。
+- 每档都推一张卡：18 人全部有方向观点 → 全卡（含收敛总结）；全无方向 → 最小卡（确认系统存活，不发心跳）；任一步失败推错误文本。
 
 ---
 
@@ -87,7 +80,8 @@ crontab -e
   - `C:\Users\24966\blogger_ana\briefing\.env` → `FEISHU_WEBHOOK_URL`
   - `C:\Users\24966\blogger_ana\.deepseek_keys.env` → `DEEPSEEK_API_KEY`
   - `paths.load_env()` 两者都读，`briefing/.env` 优先
-- 运行时数据：`briefing\data\`（state.json / run.lock / profiles.json / briefing.log / briefings\ 历史）——从 Mac 传输时已排除，由脚本自建
+- 运行时数据：`briefing\data\`（state.json / run.lock / briefing.log / briefings\ 历史）——从 Mac 传输时已排除，由脚本自建
+  （v9 起渲染不依赖 profiles.json；旧文件可留可删，不影响运行）
 
 ## 更新代码（Mac → Windows）
 
@@ -102,12 +96,12 @@ tar --exclude='__pycache__' --exclude='*.pyc' --exclude='briefing/data' \
 ## 首次运行（关键：先 warm-up 再开调度）
 
 1. 传密钥：`scp briefing/.env .deepseek_keys.env windows-server:...`（注意目标路径）
-2. 生成画像：`python -m briefing.scripts.profiles`（90 人 ~9 次 DeepSeek；增量只处理新增博主）
-3. **手动 warm-up**（真实全流程，人工盯，别让它在调度里超时）：
-   `python -m briefing.scripts.run_briefing --push --slot evening`
-   成功 → state 提交基线（last_run/seen），之后每轮都是轻量增量；中断也安全（锁/备份/原子写兜底）。
-4. 电源硬化：`powercfg /change standby-timeout-ac 0`、`powercfg /change hibernate-timeout-ac 0`
-5. 建调度（7 个 schtasks，全部每天触发，非交易日由脚本自跳过盘中槽）：
+2. **手动 warm-up**（真实全流程，人工盯，别让它在调度里超时）：
+   `python -m briefing.scripts.run_briefing --push --slot morning`
+   成功 → state 提交基线（last_run 落为首跑时刻，清掉 v8 残留键），之后每档都是轻量增量；中断也安全（锁/原子写兜底）。
+   若 state 里仍是旧 v8 键，无需手动重置——脚本首跑自动迁移（`_migrate_state_v2`）。
+3. 电源硬化：`powercfg /change standby-timeout-ac 0`、`powercfg /change hibernate-timeout-ac 0`
+4. 建调度（3 个 schtasks，全部每天触发，非交易日由脚本自行 exit 0）：
 
 ```bat
 @echo off
@@ -126,27 +120,27 @@ C:\Users\24966\AppData\Local\Programs\Python\Python311\python.exe -m briefing.sc
 ```
 
 > **bat 必须 ASCII + CRLF**：中文 Windows 的 cmd 按 GBK/OEM 码页解析批处理，UTF-8 中文（尤其 `rem` 注释里）会把后续行拆成乱命令；LF 行尾同样危险。改动 bat 后务必 `cmd /c ...\bat <slot>` 手动验证无 `'xxx' 不是内部或外部命令` 报错且面包屑落盘。
+> **bat 字节不变（2026-09 v9）**：它只透传 `--slot %1`，键名不在 bat 里；上面 rem 注释仍列 v8 槽位仅为历史说明。任务注册见下方 3 条（morning/afternoon/late）。
 
 ```bash
-:: 2026-09-02 重建：加 StartWhenAvailable（错过补跑）+ ExecutionTimeLimit 60min（防卡死占锁）
+:: 2026-09-02 v9：删旧 7 档任务，建新 3 档（morning 09:30 / afternoon 13:00 / late 14:30）
+:: 保留 StartWhenAvailable（错过补跑）+ ExecutionTimeLimit 60min（防卡死占锁）
 :: ssh 会话非提权（ELEVATED: False）→ 以 24966 身份注册（登录状态=只使用交互方式，24966 自动登录即可触发）；
 :: 若在管理员会话执行，改为 Register-ScheduledTask -User 'SYSTEM' -RunLevel Highest（无需交互登录）。
-schtasks /create /tn BriefingEarly    /tr "C:\Users\24966\blogger_ana\briefing\runners\briefing_runner.bat early_morning" /sc daily /st 09:15 /f
-schtasks /create /tn BriefingAm       /tr "C:\Users\24966\blogger_ana\briefing\runners\briefing_runner.bat am"            /sc daily /st 10:00 /f
-schtasks /create /tn BriefingAm2      /tr "C:\Users\24966\blogger_ana\briefing\runners\briefing_runner.bat am2"           /sc daily /st 11:00 /f
-schtasks /create /tn BriefingPmPre    /tr "C:\Users\24966\blogger_ana\briefing\runners\briefing_runner.bat pm_pre"        /sc daily /st 12:45 /f
-schtasks /create /tn BriefingPm       /tr "C:\Users\24966\blogger_ana\briefing\runners\briefing_runner.bat pm"            /sc daily /st 14:00 /f
-schtasks /create /tn BriefingClose    /tr "C:\Users\24966\blogger_ana\briefing\runners\briefing_runner.bat close"         /sc daily /st 15:00 /f
-schtasks /create /tn BriefingEvening  /tr "C:\Users\24966\blogger_ana\briefing\runners\briefing_runner.bat evening"       /sc daily /st 20:00 /f
+for %t in (BriefingEarly BriefingAm BriefingAm2 BriefingPmPre BriefingPm BriefingClose BriefingEvening) do schtasks /delete /tn %t /f
+schtasks /create /tn BriefingMorning   /tr "C:\Users\24966\blogger_ana\briefing\runners\briefing_runner.bat morning"    /sc daily /st 09:30 /f
+schtasks /create /tn BriefingAfternoon /tr "C:\Users\24966\blogger_ana\briefing\runners\briefing_runner.bat afternoon"  /sc daily /st 13:00 /f
+schtasks /create /tn BriefingLate      /tr "C:\Users\24966\blogger_ana\briefing\runners\briefing_runner.bat late"       /sc daily /st 14:30 /f
 ```
 
-> 登录状态若显示「只使用交互方式」，需 24966 处于已登录会话任务才会触发（家庭电脑自动登录即可）；`schtasks /run` 可手动立即触发测试。
+> 登录状态若显示「只使用交互方式」，需 24966 处于已登录会话任务才会触发（家庭电脑自动登录即可）；`schtasks /run /tn BriefingMorning` 可手动立即触发测试。
+> **重建任务用 `runners/register_tasks.ps1`**（2026-09-03 起为标准做法）：`powershell -NoProfile -ExecutionPolicy Bypass -File runners\register_tasks.ps1`。参数**必须全小写** `morning/afternoon/late`（`config.SLOTS` 键小写；曾因注册成 `Morning` 大写导致 `_resolve_slot` 拒绝、09:30 真实触发 exit 1）。脚本幂等：先注销旧任务再以原设置重建，末尾打印 NextRun 校验。
 
 ## Windows 监控
 
 - 日志：`C:\Users\24966\blogger_ana\briefing\data\briefing.log`
 - 任务：`schtasks /query /fo list | findstr Briefing`
-- 心跳兜底：每时段无新观点也会推心跳消息确认存活
+- 每档都推卡：18 人全有方向 → 全卡；全无方向 → 最小卡（健康信号，取代 v8 心跳）；失败推错误文本
 
 ## Windows 已知注意
 

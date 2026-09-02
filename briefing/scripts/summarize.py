@@ -1,24 +1,41 @@
 # -*- coding: utf-8 -*-
-"""简报生成：DeepSeek 分批抽点 → 全局综合。
+"""简报生成：DeepSeek 抽取与收敛。
 
 复用父仓库 scripts/pipeline/extract_signals_direction.py 的 DeepSeek 调用底座
 （call_json / parse_response / watchdog 硬超时），保证与信号提取同一套稳定链路。
 
-两步：
-  1. 抽点：新帖按批（~8 帖/批）逐条提炼"观点要点"（方向/强度/周期/关键句/极端标记）。
-  2. 综合：所有要点 + 行情 + 上期共识 + 博主画像 → 一次性推理出卡片 JSON。
+v9（2026-09 redesign：18 人窗口速览卡）主路径：
+  1. extract_window_rows：每博主近 3 交易日窗口内帖子 → 最新方向观点行（摘要+逐字原话）。
+  2. summarize_window：18 行快照 + 系统多空计数 → 一段收敛总结。
+旧 v8 全板共识路径（POINTS_SYSTEM_PROMPT / SYNTH_SYSTEM_PROMPT / extract_points / synthesize）
+已不再被 run_briefing 调用，仅保留作 LEGACY。
 """
 import importlib.util
 import json
 import logging
+from concurrent.futures import ThreadPoolExecutor
+from datetime import datetime, timedelta, timezone
 
-from . import paths
+from . import config, paths
 
 log = logging.getLogger("briefing")
 
 MAX_POST_CHARS = 1200   # 单帖正文截断长度（足够承载一篇观点帖）
-POINTS_BATCH = 8        # 抽点每批帖子数
-SYNTH_MAX_ATTEMPTS = 3  # 综合最大尝试次数（模型偶发把 consensus 拍平到顶层/漏段，不完整则重试）
+POINTS_BATCH = 8        # 抽点每批帖子数（LEGACY）
+SYNTH_MAX_ATTEMPTS = 3  # 综合最大尝试次数（LEGACY）
+
+ROW_MAX_ATTEMPTS = 3     # 行抽取 / 收敛总结最大尝试次数
+ROW_SUMMARY_MAX = 60     # summary ≤60 字
+ROW_QUOTE_MAX = 60       # 逐字原话 ≤60 字
+BEIJING = timezone(timedelta(hours=8))
+
+# LLM horizon 标签 → 两档（与父引擎 SKILL 两档口径一致：今天/明天=超短 0-1；其余=波段 2+）
+HORIZON_BUCKET = {
+    "今天": config.BUCKET_SHORT, "明天": config.BUCKET_SHORT,
+    "近日": config.BUCKET_SWING, "本周": config.BUCKET_SWING, "下周": config.BUCKET_SWING,
+    "更长": config.BUCKET_SWING, "未提": config.BUCKET_SWING,
+}
+HORIZONS = ("今天", "明天", "近日", "本周", "下周", "更长", "未提")
 
 _extract_mod = None
 
@@ -32,6 +49,7 @@ def _extract():
     return _extract_mod
 
 
+# ── LEGACY（v8 全板共识卡；2026-09 redesign 后不再被 run_briefing 调用，仅保留供历史复刻/回退）──
 POINTS_SYSTEM_PROMPT = """你是财经自媒体内容分析助手。你会收到一批今日头条财经博主的帖子（每条含博主名、标题、正文），请逐条判断博主是否对大A大盘给出了**明确的方向观点**。
 
 明确的观点指对未来的方向判断：看涨/看跌、收阳/收阴、点位目标、支撑/压力突破判断、明确条件后的方向倾向，且对象是上证指数/大盘/主要指数（不含具体个股、与大盘无关的板块行情）。
@@ -373,3 +391,168 @@ def _norm_takeaways(items):
         if text:
             out.append(text[:60])
     return out[:5]
+
+
+# =====================================================================
+# v9：18 人窗口行抽取（近 3 交易日方向观点 → 摘要 + 逐字原话）
+# =====================================================================
+
+WINDOW_ROW_SYSTEM_PROMPT = """你是财经观点摘要助手。你会收到若干位今日头条博主近期的帖子：每位博主名下若干条，按【发帖时间从新到旧】排列，每条前有编号 [0][1]… 并带发帖时间。你的任务：对**每位博主**判定其近 3 个交易日内是否对 上证指数/大盘/主要指数 给出过**明确方向观点**，并产出该博主当前最相关的一条方向观点。
+
+判定"明确方向观点"：
+- 有明确方向才算：看涨/看跌、收阳/收阴、点位目标（"目标3900""站稳4000看多"）、带明确条件的后市倾向（"放量站上X则看多"）。
+- 周期只有 今天/明天 的超短线也算方向观点（horizon 如实给"今天/明天"）。
+- 纯状态描述（"缩量震荡""进入调整"）、复盘已发生行情、仓位自述、理念分享、只谈个股/与大盘无关 → has_view=false。
+- 博主名下最新一条帖若非方向观点、但更早仍在窗口内的帖有方向观点 → 仍取那条方向观点（quote_post_n 指向它；系统按它真实的发帖时间标注，你不需要写时间）。
+
+输出规则：
+- 窗口内多次方向表态：以**最新一条方向观点**为主立场；若期间翻转（如先多后空），summary 用一句带过。
+- quote = 该方向观点的**原话关键句**，逐字引用 ≤60 字，**不许改写、润色、拼凑、编造**；quote_post_n = 该帖在博主帖子清单里的编号（[0] 即 0）。
+- horizon 从 {今天,明天,近日,本周,下周,更长,未提} 里选，依据引文里博主自己的时间表述；博主没给时间 → 未提。
+- summary = 1~2 句核心立场概括（≤60 字），写明方向与要点。
+- stance 只有 "多" 或 "空"；中性/无方向 → has_view=false。
+- 无方向观点 → has_view=false，summary/quote/horizon 填空字符串，quote_post_n 填 0。
+
+输出严格 JSON，rows 数量与输入博主数一致、顺序一一对应：
+{"rows":[{"blogger":"博主名","has_view":true,"stance":"多","horizon":"明天","summary":"概括(≤60字)","quote":"原话(≤60字)","quote_post_n":0}]}
+只输出 JSON，无其他文字。"""
+
+
+def _row_placeholder(blogger, n_posts=0):
+    """无观点 / 无帖 / 抽取失败的占位行。n_posts>0 表示"有发帖但未明确表态"。"""
+    return {"blogger": blogger, "has_view": False, "stance": "", "horizon": "",
+            "bucket": "", "summary": "", "quote": "", "quote_ts": None, "n_posts": n_posts}
+
+
+def _row_from_llm(blogger, d, posts):
+    """把某博主的单条 LLM 输出规整成行；quote_ts 由系统回填（引文时间权威在帖子，模型不誊写时间）。"""
+    d = d if isinstance(d, dict) else {}
+    has = bool(d.get("has_view")) and d.get("stance") in ("多", "空")
+    if not has:
+        return _row_placeholder(blogger, n_posts=len(posts))
+    horizon = d.get("horizon") if d.get("horizon") in HORIZONS else "未提"
+    bucket = HORIZON_BUCKET.get(horizon, config.BUCKET_SWING)
+    # 引文来源帖 = quote_post_n 指向（posts 为窗口内 新→旧 列表）。越界/缺 → 回退最新帖并记 warning。
+    quote_ts = None
+    try:
+        ni = int(d.get("quote_post_n") or 0)
+    except (TypeError, ValueError):
+        ni = -1
+    if 0 <= ni < len(posts) and posts[ni].get("publish_time"):
+        quote_ts = int(posts[ni]["publish_time"])
+    elif posts and posts[0].get("publish_time"):
+        quote_ts = int(posts[0]["publish_time"])
+        log.warning("  %s quote_post_n=%r 越界，引文时间回退到其最新帖", blogger, d.get("quote_post_n"))
+    return {"blogger": blogger, "has_view": True, "stance": d["stance"], "horizon": horizon,
+            "bucket": bucket, "summary": (d.get("summary") or "").strip()[:ROW_SUMMARY_MAX],
+            "quote": (d.get("quote") or "").strip()[:ROW_QUOTE_MAX],
+            "quote_ts": quote_ts, "n_posts": len(posts)}
+
+
+def _fmt_window_posts(blogger, posts):
+    """窗口帖清单文本：[0] 发帖 MM-DD HH:MM ｜标题\n正文。posts 约定 新→旧。"""
+    lines = [f"【博主】{blogger}（{len(posts)} 条窗口帖，新→旧）"]
+    for i, p in enumerate(posts):
+        content = (p.get("content") or "").strip()
+        if len(content) > MAX_POST_CHARS:
+            content = content[:MAX_POST_CHARS] + "…（已截断）"
+        pub = (p.get("publish_date") or "")[:16]
+        title = (p.get("title") or "").strip()
+        head = f"[{i}] 发帖 {pub}"
+        if title:
+            head += f"｜{title}"
+        lines.append(head + "\n" + content)
+    return "\n".join(lines)
+
+
+def extract_window_rows(by_blogger):
+    """每博主近 3 交易日方向观点 → ({博主: row}, errors)。
+
+    by_blogger: {博主: [窗口内帖子 新→旧]}（已按 config.ROWS_MAX_POSTS 裁剪由调用方，或此处再裁）。
+    返回行行字段见 _row_from_llm；无帖/视频帖博主不调 LLM，直接占位。失败博主 → errors + 占位行。
+    """
+    ext = _extract()
+    rows, errors = {}, []
+    work = {}
+    for b, posts in by_blogger.items():
+        clean = []
+        for p in posts:
+            content = (p.get("content") or "").strip()
+            if content == "[视频帖]" or len(content) < 5:
+                continue
+            clean.append(p)
+        clean = clean[:config.ROWS_MAX_POSTS]
+        if not clean:
+            rows[b] = _row_placeholder(b, n_posts=0)
+        else:
+            work[b] = clean
+    if not work:
+        return rows, errors
+
+    items = sorted(work.items())  # 确定序，便于 batch 对齐
+    bsize = config.ROWS_BATCH_BLOGGERS
+
+    def _call_group(group):
+        user_msg = "\n\n----\n\n".join(_fmt_window_posts(b, posts) for b, posts in group)
+        label = "briefing:rows:" + "&".join(b for b, _ in group)
+        for _attempt in range(ROW_MAX_ATTEMPTS):
+            result, raw = ext.call_json(None, WINDOW_ROW_SYSTEM_PROMPT, user_msg, label)
+            if result is not None:
+                return result, group
+        return None, group
+
+    groups = [items[i:i + bsize] for i in range(0, len(items), bsize)]
+    with ThreadPoolExecutor(max_workers=config.ROWS_WORKERS) as pool:
+        for result, group in pool.map(_call_group, groups):
+            if result is None:
+                for b, _posts in group:
+                    errors.append(b)
+                    rows[b] = _row_placeholder(b, n_posts=len(work[b]))
+                continue
+            got = result.get("rows") or []
+            for j, (b, _posts) in enumerate(group):
+                d = got[j] if j < len(got) else {}
+                rows[b] = _row_from_llm(b, d, work[b])
+    return rows, errors
+
+
+# =====================================================================
+# v9：卡底收敛总结（18 行快照 + 系统多空计数 → 一段散文）
+# =====================================================================
+
+SUMMARY_SYSTEM_PROMPT = """你是财经观点收敛总结助手。给你近 3 个交易日内多位追踪博主的方向观点快照：每位博主一行（博主名/多空/超短或波段/周期原话标签/一句核心/引文发帖时间），外加**系统统计的权威计数**（多/空各几位、观望、无更新）与当前大盘行情。
+
+任务：输出**一段收敛总结**（≤220 字，中文流畅段落；不要分点、不要列表、不要小标题）：
+① 开头一句给多空版图（**用系统给的计数**，不要自行重算、不要编造数字）；
+② 中间点出最鲜明的多空对立与多头/空头各自的代表性观点（可点名 1~2 位，只点快照里出现过的）；
+③ 结尾落到操作参考：超短(0-1日)方向一句 + 波段(2日+)情绪一句。
+禁止复述引文原话；禁止提快照之外的博主或内容。
+输出严格 JSON：{"summary": "收敛总结一段(≤220字)"}。只输出 JSON，无其他文字。"""
+
+
+def summarize_window(rows, counts, market_text, slot_label, date_str, window_txt=""):
+    """18 行方向快照 → 一段收敛总结。多空计数系统权威注入，模型只写散文；失败兜底返回计数行文案。"""
+    ext = _extract()
+    snap = []
+    for b in config.ROSTER:
+        r = rows.get(b)
+        if not r or not r.get("has_view"):
+            continue
+        ts = r.get("quote_ts")
+        t = datetime.fromtimestamp(int(ts), tz=BEIJING).strftime("%m-%d %H:%M") if ts else ""
+        snap.append(f"▍{b}：{r['stance']}·{r.get('bucket')}｜{r.get('horizon')}｜{r.get('summary')}｜引文 {t}")
+    snapshot_txt = "\n".join(snap) if snap else "（无方向观点）"
+    counts_txt = (f"{counts['bull']} 多 / {counts['bear']} 空 / 观望 {counts['neutral']} / 无更新 {counts['none']}")
+    user_msg = f"""【时段】{date_str} {slot_label}（{window_txt or '近3个交易日'}）
+【行情】{market_text}
+【系统统计（权威，勿重算）】{counts_txt}
+【博主方向快照】
+{snapshot_txt}"""
+    for _attempt in range(ROW_MAX_ATTEMPTS):
+        result, raw = ext.call_json(None, SUMMARY_SYSTEM_PROMPT, user_msg, "briefing:summarize_window")
+        if result is None:
+            continue
+        s = (result.get("summary") or "").strip()
+        if s:
+            return s[:300]
+    return f"多空版图：{counts_txt}"
