@@ -8,12 +8,14 @@
 
 返回本时段的新帖列表（content 已尽可能补齐全文），供简报 LLM 直接阅读。
 """
+import concurrent.futures
 import json
 import logging
 import os
 import shutil
 import subprocess
 import sys
+import threading
 import time
 
 from . import paths
@@ -158,23 +160,42 @@ def fetch_blogger_new_posts(blogger, since_str, timeout=240):
     return [p for p in refreshed if p], ""
 
 
-def fetch_all_new_posts(tracked, since_str, max_bloggers=None, per_timeout=240):
-    """对所有追踪博主增量抓取，返回 {blogger: [new_posts]} 与失败列表。"""
-    results, errors = {}, []
-    if max_bloggers:
-        tracked = tracked[:max_bloggers]
-    for i, blogger in enumerate(tracked, 1):
-        log.info("  [%d/%d] 抓取 %s (since=%s)", i, len(tracked), blogger, since_str)
-        try:
-            new_posts, err = fetch_blogger_new_posts(blogger, since_str, timeout=per_timeout)
-        except Exception as e:
-            err = f"异常: {e}"
-            new_posts = []
+def _worker(blogger, since_str, per_timeout, results, errors, lock):
+    """抓取单个博主并登记结果（线程池 worker 体）。"""
+    log.info("  ▶ 抓取 %s (since=%s)", blogger, since_str)
+    try:
+        new_posts, err = fetch_blogger_new_posts(blogger, since_str, timeout=per_timeout)
+    except Exception as e:
+        err = f"异常: {e}"
+        new_posts = []
+    with lock:
         if err:
             errors.append((blogger, err))
             log.warning("  ⚠️ %s 抓取失败: %s", blogger, err)
         if new_posts:
             results[blogger] = new_posts
-            log.info("    ✅ 新增 %d 条", len(new_posts))
-        time.sleep(1)  # 博主间节流
+            log.info("    ✅ %s 新增 %d 条", blogger, len(new_posts))
+        return blogger, bool(err)
+
+
+def fetch_all_new_posts(tracked, since_str, max_bloggers=None, per_timeout=240, workers=5):
+    """对所有追踪博主增量抓取，返回 {blogger: [new_posts]} 与失败列表。
+
+    博主间并行：每博主 = 独立爬虫子进程 + 独立窗口/主/正文文件，无跨博主共享状态，
+    可安全并发（scrape_merge 已在脚本内逐一验证）。workers 默认 5 路：Windows 22 核 /
+    32G，每无头浏览器 ~0.5G；并发过高时头条可能反爬限流，可调低。
+    """
+    results, errors = {}, []
+    if max_bloggers:
+        tracked = tracked[:max_bloggers]
+    if workers is None or workers < 1:
+        workers = 1
+    lock = threading.Lock()
+    if workers == 1:
+        for blogger in tracked:
+            _worker(blogger, since_str, per_timeout, results, errors, lock)
+    else:
+        with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as ex:
+            list(ex.map(lambda b: _worker(b, since_str, per_timeout, results, errors, lock), tracked))
+    log.info("抓取完毕：%d/%d 位博主成功，%d 失败", len(tracked) - len(errors), len(tracked), len(errors))
     return results, errors

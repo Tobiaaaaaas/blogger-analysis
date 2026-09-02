@@ -298,7 +298,8 @@ def _run(args):
         results, errors = _read_delta_no_scrape(config.TRACKED, since_str)
     else:
         results, errors = scrape_merge.fetch_all_new_posts(
-            config.TRACKED, since_str, max_bloggers=args.max_bloggers, per_timeout=args.timeout)
+            config.TRACKED, since_str, max_bloggers=args.max_bloggers,
+            per_timeout=args.timeout, workers=args.workers)
 
     # 2) 全板维护：首期建板（每博主取最新观点帖），增量用新帖观点更新（每博主取最新帖立场）
     board = dict(st.get("recent_views") or {})
@@ -432,6 +433,7 @@ def main():
     ap.add_argument("--no-scrape", action="store_true", help="不爬取，直接读主文件增量（试跑用）")
     ap.add_argument("--max-bloggers", type=int, default=None, help="只抓前 N 位博主（冒烟）")
     ap.add_argument("--timeout", type=int, default=240, help="单博主爬虫超时（秒）")
+    ap.add_argument("--workers", type=int, default=None, help="博主并行抓取数（默认 5；1=串行）")
     args = ap.parse_args()
     if not args.push and not args.dry_run:
         args.dry_run = True
