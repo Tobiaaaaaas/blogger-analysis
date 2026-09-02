@@ -8,11 +8,11 @@
 
 排名资格（SKILL §横向对比）：
 - 仅纳入参与打分的博主（帖子跨度≥6 月 且 2026 以来信号>50）；不参与打分者单列注明
-- 总榜 / 三档 / 方向榜单 口径 = 显式周期信号（spec ≠ nd），nd 独立成档不参与
-- 总榜：计分信号 ≥ 30 条 且 平均分 > 0.1；不足者不参与排名、单列注明（统计无意义）
+- 总榜口径 = 综合（显式周期 + 无周期方向 nd 合并）；三档 / 方向榜单口径 = 显式周期信号（spec ≠ nd）
+- 总榜：综合计分信号（含 nd）≥ 30 条 且 综合平均分 > 0；按 t 值（= 平均分/标准误）降序；不足者不参与排名、单列注明（统计无意义）
 - 三档分榜 / 方向榜单 / 无周期方向榜：该组信号 ≥ 10 条 且 平均分 > 0.1，仅取前 10 名上榜；表格同总榜形式
 - 方向榜单：看多=d=1、看空=d=-1；子集方向固定故不含看多/看空列
-- 无周期方向榜：spec=nd（无明确时间点，3/5/10 日收益率加权计分），独立排名
+- 无周期方向榜：spec=nd（无明确时间点，未来 5 个交易日收益率单点计分），独立排名；nd 同时并入总榜综合口径
 """
 import json
 import os
@@ -25,7 +25,8 @@ import run_direction as eng
 RANK_MIN_SIGNALS = 30      # 总榜排名资格：计分信号 ≥ 30 条
 BUCKET_MIN_SIGNALS = 10    # 三档/方向榜单资格：该组信号 ≥ 10 条
 TOP_N = 10                 # 三档/方向榜单仅取前 10 名上榜
-AVG_MIN = 0.1              # 排名资格：平均分 > 0.1（统计无意义者不上榜）
+AVG_MIN = 0.1              # 分榜（三档/方向/无周期方向榜）资格：平均分 > 0.1（统计无意义者不上榜）
+RANK_AVG_MIN = 0.0         # 总榜资格：综合平均分 > 0（2026-09-01 放宽口径）
 
 # 跳过 _ 前缀文件：_<名>_run.json 是提取脚本的 gitignored 运行溯源（signals 为 int 计数），非信号文件
 ALL_BLOGGERS = sorted(f[:-5] for f in os.listdir(eng.DATA_DIR) if f.endswith('.json') and not f.startswith('_'))
@@ -44,8 +45,13 @@ def explicit(b):
 
 
 def ndrows(b):
-    """无周期方向信号（spec=nd，3/5/10 日收益率加权计分）：独立「无周期方向榜」"""
+    """无周期方向信号（spec=nd，未来 5 个交易日收益率单点计分）：独立「无周期方向榜」"""
     return [r for r in rows_all[b] if r['spec'] == 'nd']
+
+
+def allrows(b):
+    """综合口径 = 显式周期 + 无周期方向 nd 合并：总榜（按 t 值排序）"""
+    return rows_all[b]
 
 
 # 参与打分资格（跨度≥6月 且 2026以来信号>50）：仅合格者进入榜单，不合格者单列注明
@@ -66,10 +72,10 @@ for b in ELIGIBLE:
             today_rows[b].append(r)
 
 
-def qualifies(b, getter, min_n):
-    """排名资格：该组信号 ≥ min_n 条 且 平均分 > AVG_MIN"""
+def qualifies(b, getter, min_n, min_avg=AVG_MIN):
+    """排名资格：该组信号 ≥ min_n 条 且 平均分 > min_avg（总榜用 RANK_AVG_MIN，分榜默认 AVG_MIN）"""
     rs = getter(b)
-    return len(rs) >= min_n and eng.avg_of(rs) > AVG_MIN
+    return len(rs) >= min_n and eng.avg_of(rs) > min_avg
 
 
 def acc_of(rs):
@@ -86,9 +92,22 @@ def sharpe_txt(rs):
     return f'{sh:+.2f}' if sh is not None else '—'
 
 
+def tstat_txt(rs):
+    """t 值单元格文本（总榜用）；<2 条信号或波动率为 0 → '—'"""
+    t = eng.t_stat_of(rs)
+    return f'{t:+.2f}' if t is not None else '—'
+
+
 def fmt_row(i, b, rs):
     bull, bear = bull_bear_txt(rs)
     return (f'| {i} | {b} | {len(rs)} | {acc_of(rs):.1f}% | **{eng.avg_of(rs):+.2f}** | '
+            f'{eng.vol_of(rs):.2f} | {sharpe_txt(rs)} | {bull} | {bear} |')
+
+
+def fmt_row_t(i, b, rs):
+    """总榜行（综合口径，含 t 值列）"""
+    bull, bear = bull_bear_txt(rs)
+    return (f'| {i} | {b} | {len(rs)} | {acc_of(rs):.1f}% | **{tstat_txt(rs)}** | **{eng.avg_of(rs):+.2f}** | '
             f'{eng.vol_of(rs):.2f} | {sharpe_txt(rs)} | {bull} | {bear} |')
 
 
@@ -150,12 +169,12 @@ def emit_dir_leaderboard(title, pred):
 
 
 L = []
-L.append('# 全部博主 Direction 横向对比（平均分 = 单信号平均收益 %）')
+L.append('# 全部博主 Direction 横向对比（平均分 = 单信号平均收益 %；总榜综合口径按 t 值排序）')
 L.append('')
 L.append(f'> 数据截止 {eng.EVAL_DATE} | 参与打分博主 {len(ELIGIBLE)} 位（帖子跨度≥6 月 且 2026 以来信号>50）| '
-         f'总榜资格：显式周期计分信号 ≥ {RANK_MIN_SIGNALS} 条 且 平均分 > {AVG_MIN} | '
+         f'总榜资格：综合计分信号（显式周期 + 无周期方向 nd）≥ {RANK_MIN_SIGNALS} 条 且 综合平均分 > 0，按 t 值排序 | '
          f'分榜资格：该组 ≥ {BUCKET_MIN_SIGNALS} 条 且 平均分 > {AVG_MIN}（仅取前 {TOP_N}）| '
-         f'无周期方向（nd，无明确时间点）独立成档，不参与总榜/三档/方向榜单')
+         f'无周期方向（nd，无明确时间点）并入总榜综合口径；三档/方向榜单仍为显式周期信号口径')
 L.append('')
 if INELIGIBLE:
     parts = []
@@ -166,20 +185,20 @@ if INELIGIBLE:
              + '、'.join(parts))
     L.append('')
 
-# ── 总榜（口径=显式周期信号，nd 独立）──
-L.append('## 🏆 总榜（按平均分排序；显式周期计分信号 ≥ 30 条 且 平均分 > 0.1 才参与排名）')
+# ── 总榜（口径=综合：显式周期 + 无周期方向 nd 合并，按 t 值排序）──
+L.append('## 🏆 总榜（综合口径 = 显式周期 + 无周期方向 nd，按 t 值排序；综合计分信号 ≥ 30 条 且 综合平均分 > 0 才参与排名）')
 L.append('')
-L.append('| 排名 | 博主 | 计分信号 | 正确率 | **平均分** | 波动率 | 夏普 | 看多 | 看空 |')
-L.append('|:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|')
-ranked = [b for b in ELIGIBLE if qualifies(b, explicit, RANK_MIN_SIGNALS)]
-ranked.sort(key=lambda b: -eng.avg_of(explicit(b)))
+L.append('| 排名 | 博主 | 计分信号 | 正确率 | **t 值** | **综合均分** | 波动率 | 夏普 | 看多 | 看空 |')
+L.append('|:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|')
+ranked = [b for b in ELIGIBLE if qualifies(b, allrows, RANK_MIN_SIGNALS, RANK_AVG_MIN)]
+ranked.sort(key=lambda b: -(eng.t_stat_of(rows_all[b]) or -999.0))
 for i, b in enumerate(ranked, 1):
-    L.append(fmt_row(i, b, explicit(b)))
+    L.append(fmt_row_t(i, b, rows_all[b]))
 L.append('')
-excluded = [b for b in ELIGIBLE if not qualifies(b, explicit, RANK_MIN_SIGNALS)]
+excluded = [b for b in ELIGIBLE if not qualifies(b, allrows, RANK_MIN_SIGNALS, RANK_AVG_MIN)]
 if excluded:
-    L.append(f'> 不参与总榜排名（显式周期计分信号 < {RANK_MIN_SIGNALS} 或 平均分 ≤ {AVG_MIN}，统计无意义）：'
-             + '、'.join(f'{b}（{len(explicit(b))} 条，均分 {eng.avg_of(explicit(b)):+.2f}）' for b in excluded))
+    L.append(f'> 不参与总榜排名（综合计分信号 < {RANK_MIN_SIGNALS} 或 综合平均分 ≤ 0，统计无意义）：'
+             + '、'.join(f'{b}（{len(rows_all[b])} 条，综合均分 {eng.avg_of(rows_all[b]):+.2f}）' for b in excluded))
     L.append('')
 
 # ── 三档分榜（口径=显式周期信号，nd 独立成档不混入）──
@@ -197,7 +216,7 @@ emit_dir_leaderboard('看多榜（只看多信号）', lambda b: [r for r in exp
 emit_dir_leaderboard('看空榜（只看空信号）', lambda b: [r for r in explicit(b) if r['d'] == -1])
 
 # ── 无周期方向榜（spec=nd，独立档）──
-L.append('## 🕐 无周期方向榜（无明确时间点，3/5/10 日收益率加权计分；≥ 10 条 且 平均分 > 0.1，仅取前 10 名）')
+L.append('## 🕐 无周期方向榜（无明确时间点，未来 5 个交易日收益率单点计分；≥ 10 条 且 平均分 > 0.1，仅取前 10 名）')
 L.append('')
 emit_dir_leaderboard('无周期方向榜（无明确时间点，独立档）', ndrows)
 
@@ -242,5 +261,5 @@ with open(out, 'w', encoding='utf-8') as f:
     f.write('\n'.join(L))
 print(f'对比表已写入 {out} | 参与打分博主 {len(ELIGIBLE)} / 全部 {len(ALL_BLOGGERS)} | 总榜上榜 {len(ranked)} 位')
 for b in ranked:
-    rs = explicit(b)
-    print(f'  {b}: {len(rs)} 计分(+nd {len(ndrows(b))}) | {acc_of(rs):.1f}% | {eng.avg_of(rs):+.2f}')
+    rs = rows_all[b]
+    print(f'  {b}: {len(rs)} 综合（显式 {len(explicit(b))}+nd {len(ndrows(b))}）| {acc_of(rs):.1f}% | 综合均分 {eng.avg_of(rs):+.2f} | t={eng.t_stat_of(rs):+.2f}')

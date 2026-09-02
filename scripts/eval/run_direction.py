@@ -170,7 +170,7 @@ def endpoint_of(pub_date, spec):
 
 
 SPEC_TEXT = {'today': '今天', 't1': '明天', 't2': '后天/1-2天', 't3': '未来几天', 't5': '近期/短期',
-             'nd': '无周期(3/5/10日加权)', 't10': '10天后', 'week': '本周', 'nweek': '下周', 'nweek_first': '下周初', 'month': '月底前',
+             'nd': '无周期(5日)', 't10': '10天后', 'week': '本周', 'nweek': '下周', 'nweek_first': '下周初', 'month': '月底前',
              'nmonth': '下个月', 'long': '长期', 'yearend': '全年'}
 IDX_SHORT = {'上证指数': '上证', '上证50': '上证50', '科创50': '科创50', '创业板指': '创业板',
              '双创': '双创', '沪深300': '沪深300', '中证500': '中证500', '中证1000': '中证1000'}
@@ -428,11 +428,11 @@ def _calc_daily_fallback(sig):
                 ret=ret, score=round(score, 2), note='')
 
 
-# ---------------- nd（无周期方向）多窗口加权计分（SKILL §5） ----------------
+# ---------------- nd（无周期方向）未来 5 个交易日收益率单点计分（SKILL §5） ----------------
 def _nd_window_days(pub_date):
-    """nd 验证窗口 = 信号日之后第 1~10 个交易日（含终点第 10 日）。返回日期列表；覆盖不足返回 None。"""
+    """nd 验证窗口 = 信号日之后第 1~5 个交易日（含终点第 5 日）。返回日期列表；覆盖不足返回 None。"""
     days, d = [], pub_date
-    for _ in range(10):
+    for _ in range(5):
         d = next_td(d)
         if d is None:
             return None
@@ -441,10 +441,10 @@ def _nd_window_days(pub_date):
 
 
 def _calc_nd(sig):
-    """无周期方向（spec=nd）：3/5/10 日收益率等权平均计分。
-    r3/r5/r10 = 信号日后第 3/5/10 个交易日收盘相对参考价的涨幅（各自与 ref 比较）；
-    ret = (r3 + r5 + r10) / 3，score = d × ret × 100；ref 同 §4（30 分钟口径，无则日线降级）。
-    终点覆盖检查沿用 t10 逻辑（第 10 个交易日超出数据 → 待验证）。"""
+    """无周期方向（spec=nd）：未来 5 个交易日收益率单点计分。
+    r5 = 信号日后第 5 个交易日收盘相对参考价的涨幅（与 ref 比较）；
+    ret = r5，score = d × ret × 100；ref 同 §4（30 分钟口径，无则日线降级）。
+    终点覆盖检查（第 5 个交易日超出数据 → 待验证）。"""
     pub, d, idx = sig['pub'], sig['d'], normalize_idx(sig['idx'])
     pd_ = pub[:10]
     days = _nd_window_days(pd_)
@@ -477,11 +477,10 @@ def _calc_nd(sig):
             if row is None:
                 return dict(sig, ref=round(ref, 2), ep=ep, epc=None, ret=None, score=None, note='待验证')
             closes.append(row['收盘'])
-    # 3/5/10 日收益率等权平均（days 恒为 10 个交易日，索引 2/4/9）
-    rets = [closes[i] / ref - 1 for i in (2, 4, 9)]
-    ret = sum(rets) / 3
-    return dict(sig, ref=round(ref, 2), ep=ep, epc=round(closes[9], 2),
-                ret=ret, score=round(d * ret * 100, 2), note='多点加权')
+    # 未来 5 个交易日收益率单点（days 恒为 5 个交易日，索引 4 = 第 5 日）
+    ret = closes[4] / ref - 1
+    return dict(sig, ref=round(ref, 2), ep=ep, epc=round(closes[4], 2),
+                ret=ret, score=round(d * ret * 100, 2), note='5日')
 
 
 def calc(sig):
@@ -505,7 +504,7 @@ def calc(sig):
     if spec == 'today' and pd_ not in CAL_SET:
         return dict(sig, ref=None, ep=None, epc=None, ret=None, score=None, note='报错')
     if spec == 'nd':
-        # 无周期方向：3/5/10 日收益率加权平均计分，独立成档（SKILL §3/§5）
+        # 无周期方向：未来 5 个交易日收益率单点计分，独立成档（SKILL §3/§5）
         return _calc_nd(sig)
     ep = endpoint_of(pd_, spec)
     if ep is None:
@@ -554,6 +553,15 @@ def sharpe_of(rs):
     """夏普 = 平均分 / 波动率；波动率为 0 或信号不足 2 条时返回 None"""
     v = vol_of(rs)
     return avg_of(rs) / v if v > 0 else None
+
+
+def t_stat_of(rs):
+    """t 值 = 平均分 / 标准误 = 平均分 / (波动率/√n)；信号不足 2 条或波动率为 0 时返回 None"""
+    n = len(rs)
+    v = vol_of(rs)
+    if n < 2 or v == 0:
+        return None
+    return avg_of(rs) / (v / (n ** 0.5))
 
 
 # ---------------- 报告生成 ----------------
@@ -628,11 +636,12 @@ def generate(blogger):
         L.append('')
         L.append('```')
         L.append(f'信号总数：{len(scored_t)}')
-        L.append(f'  另有：无周期方向 nd {len(nd_rows)} 条（独立档，3/5/10 日收益率加权计分，不参与总榜/多空/三档）/ unscored {n_unc} 条（spec=long）/ 无效-过时 {n_stale} 条 / 待验证 {n_pend} 条 / 报错 {n_err} 条（单列，不计分）')
+        L.append(f'  另有：无周期方向 nd {len(nd_rows)} 条（并入总榜综合口径，未来 5 个交易日收益率单点计分，不参与多空/三档）/ unscored {n_unc} 条（spec=long）/ 无效-过时 {n_stale} 条 / 待验证 {n_pend} 条 / 报错 {n_err} 条（单列，不计分）')
         L.append(f'方向正确：{n_pos}（正确率 {acc:.1f}% = score>0 信号数 / {den}；score=0 计"平" {n_zero} 条，不计入分子分母）')
         L.append(f'  - strong 正确：{st[0]}/{st[1]}（正确率 {st[2]:.1f}%）' if st else '  - strong 正确：—')
         L.append(f'  - moderate 正确：{md[0]}/{md[1]}（正确率 {md[2]:.1f}%）' if md else '  - moderate 正确：—')
         L.append(f'平均分：{avg:+.2f}（= 单信号平均收益 %，核心指标，仅显式周期信号）')
+        L.append(f'综合均分（含 nd）：{avg_of(scored):+.2f}（{len(scored)} 条）= 显式周期 + 无周期方向 nd 合并口径，总榜按 t 值排序采用')
         L.append(f'波动率：{vol_of(scored_t):.2f}（单信号 score 样本标准差）')
         sh = sharpe_of(scored_t)
         L.append(f'夏普：{sh:+.2f}（= 平均分 / 波动率）' if sh is not None else '夏普：—（信号 <2 条或波动率为 0）')
@@ -683,7 +692,7 @@ def generate(blogger):
             groups.append((k, horizon.get(k, [])))
             if k == '0-1个交易日（今天/明天）':
                 groups.append(('　└ 其中：今天（盘前/盘中）', today_sub))
-        groups.append(('无周期方向（无明确时间点，3/5/10 日收益率加权计分）', nd_rows))
+        groups.append(('无周期方向（无明确时间点，未来 5 个交易日收益率单点计分）', nd_rows))
         class_table('按预测周期分类（三档：信号日→验证终点交易日数 0-1/2-5/≥6；"今天（盘前/盘中）"在 0-1 档下单列子行；无周期方向独立成档）', groups)
 
         # 按抄底逃顶（SKILL §6：拐点取自 knowledge/market_analysis.md §5.1/§5.2，窗口=拐点当天+前一交易日）
@@ -775,8 +784,8 @@ def generate(blogger):
         ref_txt = f"{r['ref']:.2f}" if r.get('ref') is not None else '-'
         if r['score'] is not None:
             note_txt = r['note'] if r.get('note') else '—'
-            # nd 无周期方向：终点日显示 3/5/10 日三个收益率窗口（ep=第 10 交易日，epc=第 10 日收盘）
-            ep_txt = '3/5/10日' if r['spec'] == 'nd' else r['ep'][5:]
+            # nd 无周期方向：ep=第 5 交易日即 return 终点，直接显示真实日期（与其它行一致）
+            ep_txt = r['ep'][5:]
             L.append(f"| {i} | {r['pub'][5:10]} | {r['summary']} | {ico} | {stx} | {period} | {idx} | {ref_txt} | {ep_txt} | {r['epc']:.2f} | {r['ret']*100:+.2f}% | {r['score']:+.2f} | {note_txt} |")
         elif r['note'] == '待验证':
             L.append(f"| {i} | {r['pub'][5:10]} | {r['summary']} | {ico} | {stx} | {period} | {idx} | {ref_txt} | - | - | - | - | 待验证 |")
@@ -806,7 +815,7 @@ def generate(blogger):
             L.append(f'- **最大单条命中**：{mx["pub"][5:10]}"{mx["summary"][:24]}"（{mx["score"]:+.2f} 分）。')
             L.append(f'- **最大单条失误**：{mn["pub"][5:10]}"{mn["summary"][:24]}"（{mn["score"]:+.2f} 分）。')
         if nd_rows:
-            L.append(f'- **无周期方向 nd {len(nd_rows)} 条（独立档）**：无明确时间点，3/5/10 日收益率加权计分；平均 {avg_of(nd_rows):+.2f} 分（胜率 {acc_of(nd_rows)[2]:.1f}%），不参与总榜/看多看空/周期三档。')
+            L.append(f'- **无周期方向 nd {len(nd_rows)} 条**：无明确时间点，按未来 5 个交易日收益率单点（r5）计分；平均 {avg_of(nd_rows):+.2f} 分（胜率 {acc_of(nd_rows)[2]:.1f}%），并入总榜综合口径，不参与看多看空/周期三档。')
         if n_day_intra:
             L.append(f'- **盘中"今天" {n_day_intra} 条已按 30 分钟线日内窗口计分**（参考价=所处 30 分钟 K 线开盘价，终点=当日收盘）。')
         if n_unc:
@@ -928,23 +937,23 @@ def selftest():
     r = calc({'pub': '2026-01-07 15:08', 'd': 1, 's': 1, 'idx': '上证指数', 'spec': 't10', 'summary': 'test', 'cat': 'scored'})
     check(bucket_of(r) == '6个交易日及以上（大于1周）', f"bucket t10={bucket_of(r)}")
 
-    # ── nd 无周期方向：独立成档 bucket + 3/5/10 日收益率等权平均计分（ep=第 10 交易日，note=多点加权） ──
+    # ── nd 无周期方向：独立成档 bucket + 未来 5 个交易日收益率单点计分（ep=第 5 交易日，note=5日） ──
     r = calc({'pub': '2026-01-07 15:08', 'd': 1, 's': 1, 'idx': '上证指数', 'spec': 'nd', 'summary': 'test', 'cat': 'scored'})
     check(bucket_of(r) == '无周期方向', f"bucket nd={bucket_of(r)}")
     check(r['score'] is not None, 'nd 无 score')
-    check(r['note'] == '多点加权', f"nd note={r['note']}")
+    check(r['note'] == '5日', f"nd note={r['note']}")
     days = _nd_window_days('2026-01-07')
-    check(days is not None and len(days) == 10, f"_nd_window_days 窗口长度={None if days is None else len(days)}")
+    check(days is not None and len(days) == 5, f"_nd_window_days 窗口长度={None if days is None else len(days)}")
     check(r['ep'] == days[-1], f"nd ep={r['ep']} 期望 {days[-1]}")
     closes = [IDX['上证指数'][d]['收盘'] for d in days]
-    expect_epc = round(closes[9], 2)
-    check(r['epc'] == expect_epc, f"nd epc={r['epc']} 期望 {expect_epc}（第 10 日收盘）")
-    # ret = (r3 + r5 + r10)/3；r 用未取整的 ref 计算（仅显示 ref 取整），与 calc 主路径一致
+    expect_epc = round(closes[4], 2)
+    check(r['epc'] == expect_epc, f"nd epc={r['epc']} 期望 {expect_epc}（第 5 日收盘）")
+    # ret = r5（未来 5 个交易日单点）；r 用未取整的 ref 计算（仅显示 ref 取整），与 calc 主路径一致
     ref_raw, _ = ref_price_at('上证指数', '2026-01-07 15:08')
-    expect_ret = (closes[2] / ref_raw - 1 + closes[4] / ref_raw - 1 + closes[9] / ref_raw - 1) / 3
+    expect_ret = closes[4] / ref_raw - 1
     check(abs(r['ret'] - expect_ret) < 1e-9, f"nd ret={r['ret']} 与手算不符（期望 {expect_ret}）")
-    # 覆盖不足（信号日离数据末日不足 10 个交易日）→ 待验证
-    r2 = calc({'pub': '2026-08-20 15:08', 'd': 1, 's': 1, 'idx': '上证指数', 'spec': 'nd', 'summary': 'test', 'cat': 'scored'})
+    # 覆盖不足（信号日离数据末日不足 5 个交易日）→ 待验证
+    r2 = calc({'pub': '2026-08-25 15:08', 'd': 1, 's': 1, 'idx': '上证指数', 'spec': 'nd', 'summary': 'test', 'cat': 'scored'})
     check(r2['note'] == '待验证', f"nd 覆盖不足未判待验证 note={r2['note']}")
     check(r2['score'] is None, 'nd 覆盖不足不应有 score')
     # ── 边界锁定（审计确认的正确"反直觉"落位，防未来回归改错）──
@@ -977,6 +986,13 @@ def selftest():
     check(pivot_bucket('2026-05-14') == '逃顶', f"M6顶部当天未判逃顶：{pivot_bucket('2026-05-14')}")
     check(pivot_bucket('2026-05-13') == '逃顶', f"M6顶部前一天未判逃顶：{pivot_bucket('2026-05-13')}")
     check(pivot_bucket('2026-06-01') is None, f"非拐点日不应归入抄底/逃顶：{pivot_bucket('2026-06-01')}")
+
+    # ── t 值（平均分/标准误；n<2 或波动率=0 → None）──
+    check(t_stat_of([{'score': 1.0}]) is None, 't_stat_of n<2 应返回 None')
+    check(t_stat_of([{'score': 2.0}, {'score': 2.0}]) is None, 't_stat_of 波动率=0 应返回 None')
+    rs_t = [{'score': 1.0}, {'score': 3.0}, {'score': 2.0}]
+    # avg=2, 样本std=1, n=3 → t = 2/(1/√3) = 2√3 ≈ 3.4641
+    check(abs(t_stat_of(rs_t) - 2 * (3 ** 0.5)) < 1e-9, f"t_stat_of 手算不符: {t_stat_of(rs_t)}")
 
     if errors:
         print('❌ 自测失败:')

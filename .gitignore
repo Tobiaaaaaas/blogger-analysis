@@ -10,3 +10,6 @@ _*.json
 *.log
 merge_positions.py
 data/posts/_backup/
+
+# 正文分片抓取临时文件（与 DEPLOY 传输排除一致）
+*_bodies_s*.json

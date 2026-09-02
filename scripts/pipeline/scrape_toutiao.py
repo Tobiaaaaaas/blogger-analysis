@@ -201,6 +201,7 @@ def main():
     parser.add_argument("--name", "-n", default="", help="博主名称（可选，不提供则自动检测）")
     parser.add_argument("--since", default="", help="只爬取该日期之后(含)的帖子，如 2026-01-01（默认全量）")
     parser.add_argument("--force", action="store_true", help="异常停（未覆盖到 --since）时也强制覆盖保存（默认拒绝覆盖，防截断数据落盘）")
+    parser.add_argument("--out", default="", help="输出文件路径（覆盖默认 <博主名>.json；供简报系统增量窗口抓取，写到临时文件再 merge）")
     args = parser.parse_args()
 
     post_url = args.url or "https://www.toutiao.com/w/1872013328886923/"
@@ -208,7 +209,10 @@ def main():
     _existing_ids = _load_existing_ids(explicit_name)  # wrong_feed 重叠判别用
     since_ts = 0
     if args.since:
-        since_ts = int(datetime.strptime(args.since, "%Y-%m-%d").timestamp())
+        try:  # 支持时分粒度（简报系统按上一时段精确限窗，避免非活跃博主深翻页）
+            since_ts = int(datetime.strptime(args.since, "%Y-%m-%d %H:%M").timestamp())
+        except ValueError:
+            since_ts = int(datetime.strptime(args.since, "%Y-%m-%d").timestamp())
         print(f"  只爬取 {args.since} 之后的帖子")
 
     print("=" * 60)
@@ -472,9 +476,11 @@ def main():
         for p in all_posts:
             p.pop("user", None)
 
-        # Determine output filename: explicit --name > auto-detected name > fallback
+        # Determine output filename: --out > explicit --name > auto-detected name > fallback
         blogger_name = explicit_name or user_info.get("name", "").strip()
-        if blogger_name:
+        if args.out:
+            output_file = args.out
+        elif blogger_name:
             output_file = os.path.join(DATA_DIR, f"{blogger_name}.json")
         else:
             output_file = os.path.join(DATA_DIR, "posts.json")
