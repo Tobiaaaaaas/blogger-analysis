@@ -50,7 +50,7 @@ POINTS_SYSTEM_PROMPT = """你是财经自媒体内容分析助手。你会收到
 SYNTH_SYSTEM_PROMPT = """你是股票市场观点综合分析助手。输入包含：
 1) 当前时段与日期
 2) 大盘行情（实时/最近收盘）
-3) **上期简报**的共识与重点博主（基准，用于对比全板变化）
+3) **上期板况**（【较上期】块：上期/本期多空计数与本期观点翻转名单——仅供共识开头一句"较上期"对比；**严禁照抄或复述**）
 4) **博主画像**：部分博主的画像档案（**风格特征**与主攻周期；不含准确率/得分等量化指标）
 5) **本期更新观点博主**：本次推送窗口内发过新帖、观点发生更新的博主名单
 6) **全板近期观点**：所有追踪博主的当前近期观点（每人一条：立场/强度/周期/引文/发帖时间）
@@ -64,7 +64,11 @@ SYNTH_SYSTEM_PROMPT = """你是股票市场观点综合分析助手。输入包�
 - 只在时效内（发帖≤7 天）的观点上做统计与判断；过时博主的观点不出现、不参与。
 
 【共识】（全板态势，重中之重）
-- consensus.summary：**丰富的一段全板共识分析**（4~7 句，写成流畅段落，不要只给结论），**以"较上期……"开头**：先点出上期全板结论，再给本期全板结论与演变。段落必须覆盖：① 本期时间背景（时段/窗口与行情状态）；② 多空力量对比与占优方；③ **本期更新观点的博主**带来的变化（点名谁新发观点、方向如何、代表观点）；④ 中性观望者的态度；⑤ 整体风险偏好。首期则开头写"较上期：首期无基准"。
+- consensus.summary：**丰富的一段全板共识分析**（4~7 句，写成流畅段落，不要只给结论）。开头第一句按【本轮性质】二选一：
+  · **首期** → 固定写"较上期：首期无基准"。
+  · **增量** → 用【较上期】给的上期/本期多空与翻转名单写**一句真实对比**（如"较上期：全板偏空、空头占优；本期延续偏空，仅个别人转多"），一句话即可，不展开。
+  之后正文只分析**本期**全板：① 本期时间背景（时段/窗口与行情状态）；② 多空力量对比与占优方；③ **本期更新观点的博主**带来的变化（点名谁新发观点、方向如何、代表观点——点名**只能出自【本期更新观点博主】名单**）；④ 中性观望者的态度；⑤ 整体风险偏好。
+  **硬性要求：正文是本期全板的原创分析，必须基于【全板近期观点】与【本期更新观点博主】；严禁复述、转抄或沿用【较上期】/【上期板况】/上期卡片中的措辞、点名与引文。若本期结论与上期相近，用"较上期延续偏空"一笔带过，其余篇幅仍写本期。**
 - 多空统计由系统按全板计算，**你不需要也不能输出数字**——只描述态势与演变。
 
 【本期要点】（收尾总结，把整板凝结成读者该关注的若干点）
@@ -83,7 +87,7 @@ SYNTH_SYSTEM_PROMPT = """你是股票市场观点综合分析助手。输入包�
 
 输出严格 JSON（divergences/risks 可为空数组，takeaways 至少 3 条）：
 {
-  "consensus": {"stance": "偏多|偏空|均衡|未明", "summary": "以'较上期……'开头的丰富全板共识分析段落(4~7句)"},
+  "consensus": {"stance": "偏多|偏空|均衡|未明", "summary": "丰富全板共识段落(4~7句；首期开头写'较上期：首期无基准'，增量以'较上期'真实对比)"},
   "divergences": ["分歧1", "分歧2"],
   "risks": [{"blogger": "...", "desc": "风险观点", "note": "画像备注(风格)"}],
   "takeaways": ["总结句1(≤35字)", "总结句2", "总结句3", "总结句4"]
@@ -223,11 +227,74 @@ def _synth_result_ok(card):
     return bool(card.get("takeaways") or card.get("focus") or card.get("divergences") or card.get("risks"))
 
 
-def synthesize(board, updated, market_text, prev_state, profiles, slot_label, date_str, window_txt=""):
-    """全板综合 → 卡片 JSON。window_txt 描述本期窗口（如"自 14:00 以来 · 全板滚动更新"）。
+def _count_board(board):
+    """全板多空计数（口径与 run_briefing._board_counts 一致，供【较上期】块现算）。"""
+    bull = sum(1 for e in board.values() if e.get("stance") == "多")
+    bear = sum(1 for e in board.values() if e.get("stance") == "空")
+    neutral = sum(1 for e in board.values() if e.get("stance") == "中性")
+    return bull, bear, neutral
 
-    board:   全板近期观点 {博主: {stance, strength, horizon, quote, extreme, summary, pub_ts}}（已时效过滤）
-    updated: 本期发新帖、观点更新的博主集合（首期 = 全板博主）
+
+def _nature_block(first_board):
+    """本轮性质行：显式引导共识开头写法（首期 vs 增量），杜绝"首期无基准"被误带到增量档。"""
+    if first_board:
+        return "【本轮性质】首期建板：无上期基准，共识段落开头固定写\"较上期：首期无基准\"。"
+    return "【本轮性质】增量更新：共识段落开头须用【较上期】真实对比上期结论，禁止写\"首期无基准\"。"
+
+
+def _prev_block(board, board_prev, first_board):
+    """【较上期】结构化块：只喂上期多空计数 + 本期全板计数 + 本期观点翻转名单。
+
+    全部由账本（当前 board / 上期 board_prev 快照）现算，**不含任何上期散文**——模型无从照抄。
+    board_prev 可能只有 counts（旧版迁移，无逐博主立场）→ 只给计数、无翻转名单。
+    """
+    if first_board:
+        return "【较上期】（首期：无上期基准）"
+    if not board_prev:
+        return "【较上期】（无上期快照：勿编造上期数据；结论相近可用'延续上期'一笔带过）"
+    date = board_prev.get("date") or ""
+    slot = board_prev.get("slot") or ""
+    when = f"{date} {slot}".strip() or "上期"
+    views = board_prev.get("views") or {}
+    if views:
+        pb, pa, pn = _count_board(views)
+        p_n = len(views)
+    else:
+        c = board_prev.get("counts") or {}
+        pb, pa = int(c.get("bull") or 0), int(c.get("bear") or 0)
+        pn = c.get("neutral")
+        p_n = 0
+    cb, ca, cn = _count_board(board)
+    head = f"{pb}多/{pa}空"
+    if pn is not None:
+        head += f"/{pn}中性"
+    if p_n:
+        head += f"（{p_n} 位）"
+    lines = [f"【较上期】上期（{when}）：{head}；本期全板：{cb}多/{ca}空/{cn}中性"]
+    if views:
+        flips = []
+        for n, pe in views.items():
+            ps = pe.get("stance")
+            ce = board.get(n)
+            cs = ce.get("stance") if ce else None
+            if ps and cs and cs != ps:
+                flips.append(f"{n}（{ps}→{cs}）")
+        if flips:
+            lines.append("本期观点翻转：" + "、".join(sorted(flips)))
+        else:
+            lines.append("本期观点翻转：无（更新博主维持原方向）")
+    return "\n".join(lines)
+
+
+def synthesize(board, updated, market_text, board_prev, profiles, slot_label, date_str,
+               window_txt="", first_board=False):
+    """全板综合 → 卡片 JSON。window_txt 描述本期窗口（如"自 12:52 以来 · 全板滚动更新"）。
+
+    board:       全板近期观点 {博主: {stance, strength, horizon, quote, extreme, summary, pub_ts}}（已时效过滤）
+    updated:     本期发新帖、观点更新的博主集合（首期 = 全板博主）
+    board_prev:  上期推送时落盘的板况快照 {date, slot, views|counts}——只用于算"较上期"计数/翻转名单，
+                 绝**不回灌上期散文**（2026-09-02 修：模型曾整段照抄上期卡片）。
+    first_board: 首期建板（无上期基准，共识开头写"较上期：首期无基准"）。
     多空数字不在此定——由 run_briefing 按全板计数覆盖（全板口径，非本期增量）。
     """
     ext = _extract()
@@ -235,14 +302,10 @@ def synthesize(board, updated, market_text, prev_state, profiles, slot_label, da
     board_txt = _board_txt(board)
     updated_txt = "、".join(sorted(updated)) if updated else "（首期）"
 
-    prev = prev_state or {}
-    prev_txt = f"上期共识：{prev.get('consensus_text') or '（首期）'}"
-    if prev.get("key_bloggers_text"):
-        prev_txt += f"\n上期重点博主：{prev['key_bloggers_text']}"
-
     user_msg = f"""【时段】{date_str} {slot_label}（{window_txt or '本期'}）
 【行情】{market_text}
-【{prev_txt}】
+{_nature_block(first_board)}
+{_prev_block(board, board_prev, first_board)}
 【博主画像】
 {_build_profile_subset(profiles, sorted(board.keys()))}
 

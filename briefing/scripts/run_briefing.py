@@ -15,6 +15,7 @@ import atexit
 import json
 import logging
 import os
+import re
 import sys
 import time
 from datetime import datetime, timedelta, timezone
@@ -197,17 +198,28 @@ def _save_history(date_str, slot_label, payload, preview):
     return os.path.join(paths.BRIEFINGS_HIST_DIR, fn)
 
 
-def _previous_from_card(card):
-    c = card["consensus"]
-    # summary 即丰富共识段落（自带"较上期……"前缀）；evolution 旧字段已并入 summary，不再单独拼
-    cons = f"{c['stance']}（{c['bull']}多/{c['bear']}空） {c.get('summary','')}".strip()
-    cons = cons[:600]
-    sel, _ = render.select_key_bloggers(card)  # 与卡片展示一致：只取总榜排名靠前者
-    kbs = []
-    for x in sel:
-        h = x.get("horizon") or ""
-        kbs.append(f"{x.get('name')}({x.get('stance')}{'/' + h if h else ''}):{x.get('quote','')}")
-    return cons, "；".join(kbs)[:300]
+def _ensure_board_prev(st):
+    """旧版 state（previous 存整段散文 consensus_text）→ 迁移出 board_prev 板况快照（计数级）。
+
+    旧版只留了计数头"偏空（7多/13空）…"，没有逐博主立场 → 只能恢复上期多空计数，
+    转空/转多名单自下一个真实推送（写入 board_prev.views）起才有。幂等，仅改内存态。
+    """
+    if st.get("board_prev"):
+        return
+    prev = st.get("previous") or {}
+    ct = (prev.get("consensus_text") or "").strip()
+    if not ct:
+        return
+    m = re.match(r"^(偏多|偏空|均衡|未明)（(\d+)多/(\d+)空）", ct)
+    if not m:
+        return
+    st["board_prev"] = {
+        "date": prev.get("date") or "",
+        "slot": prev.get("slot") or "",
+        "views": {},  # 无逐博主立场 → 综合层只能用 counts
+        "counts": {"bull": int(m.group(2)), "bear": int(m.group(3)),
+                   "neutral": prev.get("neutral")},  # 旧格式未存中性 → None，展示层自动省略
+    }
 
 
 def _pid_alive(pid):
@@ -271,6 +283,12 @@ def _release_lock():
 def _run(args):
     paths.load_env()
     _setup_logging()
+    # Windows 控制台默认 GBK，print(preview) 遇 emoji 会崩（dry-run 崩在落盘之后；push 不走 print）。
+    # 重配 stdout 为 UTF-8 + 替换错误 → 重定向到文件得干净 UTF-8，交互控制台也不崩。
+    try:
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
     now = datetime.now(BEIJING_TZ)
     slot_key = _resolve_slot(args, now)
     slot_time, slot_label = config.SLOTS[slot_key]
@@ -282,6 +300,7 @@ def _run(args):
     atexit.register(_release_lock)  # 正常退出删锁；被杀/断电残留由下一轮自动接管
 
     st = state.load_state()
+    _ensure_board_prev(st)  # 旧版散文 previous → board_prev 计数（幂等迁移）
     # 全板观点模型：state.recent_views 存每博主当前近期观点（首期空 → 建板；之后增量更新）。
     # 共识统计=对全部博主近期观点计数（非本期增量帖统计），博主发新帖则其近期观点更新。
     first_board = not st.get("recent_views")
@@ -347,8 +366,9 @@ def _run(args):
     if not first_board:
         window_txt += f" · {len(updated)} 位博主更新观点 · 全板 {len(board)}/{len(config.TRACKED)} 位有近期观点"
     profiles_map = _load_profiles()
-    card, _ = synthesize(board, updated, mkt_text, st.get("previous"), profiles_map,
-                         slot_label, date_str, window_txt=window_txt)
+    prev_snap = None if first_board else st.get("board_prev")  # 首期丢弃可能的残留上期
+    card, _ = synthesize(board, updated, mkt_text, prev_snap, profiles_map,
+                         slot_label, date_str, window_txt=window_txt, first_board=first_board)
     bull, bear, neutral = _board_counts(board)
     card["consensus"]["bull"] = bull
     card["consensus"]["bear"] = bear
@@ -370,9 +390,12 @@ def _run(args):
         for blogger, plist in results.items():
             mark_seen(st, blogger, plist)
         st["recent_views"] = board  # 提交全板（下轮在此基础上增量更新）
-        cons, kbs = _previous_from_card(card)
-        st["previous"] = {"date": date_str, "slot": slot_label,
-                          "consensus_text": cons, "key_bloggers_text": kbs}
+        # 上期板况快照：下轮据此 diff 出转空/转多与多空变化（"较上期"由账本算，不再回灌散文）
+        st["board_prev"] = {
+            "date": date_str, "slot": slot_label,
+            "views": {name: {"stance": e["stance"]} for name, e in board.items()},
+        }
+        st.pop("previous", None)  # 旧散文字段已废弃（防误回灌）
         st["last_run"] = now.strftime("%Y-%m-%d %H:%M")
         st["last_slot"] = slot_key
         state.save_state(st)
