@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
 """
-Direction 评估引擎 v5 — 严格按 SKILL.md（Direction 主技能，commit 769fe57）最新规则实现
+Direction 评估引擎 v6 — 严格按 SKILL.md 最新规则实现（nd 并入 t5、周期两档归类、总榜按夏普排序）
 
 规则要点（与 .claude/skills/analyze-blogger/SKILL.md §1~§8 一一对应）：
   §2 cat      : 仅 scored / unscored（spec=long 恒 unscored，不计分）
   §3 验证终点 : 以"信号日"（帖子发布自然日）为基准推算；非交易日发布"今天"→ 报错单列不计分
-                （"明天/下周"等非 today 周期周末发布仍正常顺延）
+                （"明天/下周"等非 today 周期周末发布仍正常顺延）；
+                无预测周期但有明确方向 → t5（信号日之后第 5 个交易日，正常计分并参与多空/两档）
   §4 参考价   : 交易时间中（9:30~11:30、13:00~15:00）→ 所处 30 分钟 K 线开盘价；
                  非交易时间（盘前/午休/盘后/周末假期）→ 上一根 30 分钟 K 线收盘价
   §5 打分     : score = direction × return × 100；终点价 = 终点日 15:00 bar 收盘
@@ -13,7 +14,7 @@ Direction 评估引擎 v5 — 严格按 SKILL.md（Direction 主技能，commit 
                 另有 unscored（spec=long）/ 无效-过时 / 待验证 / 报错 单列不计分；
                 抄底平均分/逃顶平均分 = 拐点当天+前一交易日（2 交易日）窗口内计分信号平均分
   §7 备注     : — / 日内 / 不计分 / 待验证 / 无效-过时 / 报错（非交易日"今天"）
-  §8 报告     : 汇总指标（无最大回撤）+ 四个分类表（指数/周期三档/多空/抄底逃顶）
+  §8 报告     : 汇总指标（无最大回撤）+ 四个分类表（指数/周期两档/多空/抄底逃顶）
                 + 月度表现 + 时间分布 + 逐条表 + 观察要点；
                 参与打分资格（帖子跨度≥6月 且 2026以来信号>50）不满足者省略汇总/分类表
 
@@ -25,7 +26,6 @@ Direction 评估引擎 v5 — 严格按 SKILL.md（Direction 主技能，commit 
 信号记录 schema:
   计分:   {"pub": "YYYY-MM-DD HH:MM", "d": ±1, "s": 1|2, "idx": "指数", "spec": "...", "summary": "...", "cat": "scored"}
   单列:   {"pub": "...", "d": ±1, "idx": "指数", "spec": "long", "summary": "...", "cat": "unscored"}
-  旧数据兼容: cat=无效-日内/无预测周期/目标点位 或 spec=yearend → 引擎按新规则映射（不计分/报错）
 """
 
 import json
@@ -125,12 +125,12 @@ def ref_price_of(idx, ref_date):
 
 # ---------------- §4 验证终点：以信号日（发布自然日）为基准 ----------------
 def endpoint_of(pub_date, spec):
-    if spec in ('long', 'yearend'):
+    if spec == 'long':
         # 不计分周期（SKILL §3）：无验证终点，直接返回 None，不抛异常
         return None
     pub = datetime.strptime(pub_date, '%Y-%m-%d')
     if spec == 'today':
-        # 信号日当天收盘；非交易日发布 → 顺延至下一交易日收盘（SKILL §3）
+        # 信号日当天收盘（SKILL §3：非交易日发布的"今天"由 calc ② 拦截判报错，此处顺延仅为防御）
         return pub_date if pub_date in CAL_SET else next_td(pub_date)
     if spec.startswith('t'):                                   # tN = 信号日之后第 N 个交易日
         d = pub_date
@@ -169,9 +169,9 @@ def endpoint_of(pub_date, spec):
     raise ValueError(f'未知 spec: {spec}')
 
 
-SPEC_TEXT = {'today': '今天', 't1': '明天', 't2': '后天/1-2天', 't3': '未来几天', 't5': '近期/短期',
-             'nd': '无周期(5日)', 't10': '10天后', 'week': '本周', 'nweek': '下周', 'nweek_first': '下周初', 'month': '月底前',
-             'nmonth': '下个月', 'long': '长期', 'yearend': '全年'}
+SPEC_TEXT = {'today': '今天', 't1': '明天', 't2': '后天/1-2天', 't3': '未来几天', 't5': '近期/短期/无周期方向',
+             't10': '10天后', 'week': '本周', 'nweek': '下周', 'nweek_first': '下周初', 'month': '月底前',
+             'nmonth': '下个月', 'long': '长期'}
 IDX_SHORT = {'上证指数': '上证', '上证50': '上证50', '科创50': '科创50', '创业板指': '创业板',
              '双创': '双创', '沪深300': '沪深300', '中证500': '中证500', '中证1000': '中证1000'}
 
@@ -185,21 +185,15 @@ def period_text(spec):
 
 
 def bucket_of(r):
-    """按预测期限三档归类：信号日→验证终点的交易日数（数交易日历中间交易日，非日历相减）。
+    """按预测周期两档归类（SKILL §8）：信号日→验证终点的交易日数（数交易日历中间交易日，非日历相减）。
 
-    与 SKILL.md 输出部分「预测周期三档归类」算法一致（comparison 表1 同口径，comparison_all.py 复用本函数）：
+    与 SKILL.md 输出部分「预测周期两档归类」算法一致（comparison_all.py 复用本函数）：
     base = 发布日若为交易日，否则前一交易日；span = CAL.index(ep) − CAL.index(base)。
-    无周期方向（spec=nd）独立成档（SKILL §8：不参与三档，避免污染有明确时间点的样本）。"""
-    if r['spec'] == 'nd':
-        return '无周期方向'
+    超短期 = span ≤ 1（0-1 个交易日）；波段 = span ≥ 2（2 个交易日及以上）。"""
     pubd = r['pub'][:10]
     base = pubd if pubd in CAL_SET else prev_td(pubd)
     span = CAL.index(r['ep']) - CAL.index(base)
-    if span <= 1:
-        return '0-1个交易日（今天/明天）'
-    if span <= 5:
-        return '2-5个交易日（1周内）'
-    return '6个交易日及以上（大于1周）'
+    return '超短期（0-1个交易日）' if span <= 1 else '波段（2个交易日及以上）'
 
 
 # ---------------- 抄底/逃顶拐点（SKILL §6：拐点取自 knowledge/market_analysis.md §5.1/§5.2） ----------------
@@ -379,7 +373,7 @@ def _ep_close(idx, ep):
 
 def _calc_daily_fallback(sig):
     """无 30 分钟数据时的日线口径降级（参考价=最新已收盘日线收盘价，语义对齐 SKILL §4"最新收盘"）。
-    盘中"今天"→ ref=当日开盘、ep=当日收盘；盘前"今天"→ ref=上一交易日收盘；非交易日"今天"→ 顺延计分。"""
+    盘中"今天"→ ref=当日开盘、ep=当日收盘；盘前"今天"→ ref=上一交易日收盘；非交易日"今天"→ 报错。"""
     pub, d, idx = sig['pub'], sig['d'], normalize_idx(sig['idx'])
     spec = sig.get('spec')
     pd_, hhmm = pub[:10], pub[11:]
@@ -428,84 +422,22 @@ def _calc_daily_fallback(sig):
                 ret=ret, score=round(score, 2), note='')
 
 
-# ---------------- nd（无周期方向）未来 5 个交易日收益率单点计分（SKILL §5） ----------------
-def _nd_window_days(pub_date):
-    """nd 验证窗口 = 信号日之后第 1~5 个交易日（含终点第 5 日）。返回日期列表；覆盖不足返回 None。"""
-    days, d = [], pub_date
-    for _ in range(5):
-        d = next_td(d)
-        if d is None:
-            return None
-        days.append(d)
-    return days
-
-
-def _calc_nd(sig):
-    """无周期方向（spec=nd）：未来 5 个交易日收益率单点计分。
-    r5 = 信号日后第 5 个交易日收盘相对参考价的涨幅（与 ref 比较）；
-    ret = r5，score = d × ret × 100；ref 同 §4（30 分钟口径，无则日线降级）。
-    终点覆盖检查（第 5 个交易日超出数据 → 待验证）。"""
-    pub, d, idx = sig['pub'], sig['d'], normalize_idx(sig['idx'])
-    pd_ = pub[:10]
-    days = _nd_window_days(pd_)
-    if days is None:
-        return dict(sig, ref=None, ep=None, epc=None, ret=None, score=None, note='待验证')
-    ep = days[-1]
-    if ep > LAST[idx]:
-        return dict(sig, ref=None, ep=ep, epc=None, ret=None, score=None, note='待验证')
-    # 参考价：优先 30 分钟口径，无 30 分钟数据退回日线（与 calc 主/降级路径一致）
-    if _has_intraday(idx):
-        ref, ok = ref_price_at(idx, pub)
-    else:
-        ref_date = ref_date_of(pub)
-        ref_ok = (ref_date in IDX['创业板指'] and ref_date in IDX['科创50']) if idx == '双创' \
-            else ref_date in IDX.get(idx, {})
-        if not ref_ok:
-            return dict(sig, ref=None, ep=ep, epc=None, ret=None, score=None, note='待验证')
-        ref, ok = ref_price_of(idx, ref_date), True
-    if not ok or ref is None:
-        return dict(sig, ref=None, ep=ep, epc=None, ret=None, score=None, note='待验证')
-    # 每日收盘（15:00 bar close == 日线收盘，与 _ep_close 同口径）
-    closes = []
-    for day in days:
-        if idx == '双创':
-            if day not in IDX['创业板指'] or day not in IDX['科创50']:
-                return dict(sig, ref=round(ref, 2), ep=ep, epc=None, ret=None, score=None, note='待验证')
-            closes.append((IDX['创业板指'][day]['收盘'] + IDX['科创50'][day]['收盘']) / 2)
-        else:
-            row = IDX.get(idx, {}).get(day)
-            if row is None:
-                return dict(sig, ref=round(ref, 2), ep=ep, epc=None, ret=None, score=None, note='待验证')
-            closes.append(row['收盘'])
-    # 未来 5 个交易日收益率单点（days 恒为 5 个交易日，索引 4 = 第 5 日）
-    ret = closes[4] / ref - 1
-    return dict(sig, ref=round(ref, 2), ep=ep, epc=round(closes[4], 2),
-                ret=ret, score=round(d * ret * 100, 2), note='5日')
-
-
 def calc(sig):
     """单条信号计算（统一 30 分钟口径）。返回行 dict：计分行带 ref/ep/epc/ret/score；单列行原样带 note"""
     sig = dict(sig)
     sig.setdefault('s', 1)     # 省略 s 的信号计分时按 moderate(1) 处理
     cat = sig.get('cat', 'scored')
     spec = sig.get('spec')
-    # ① 单列不计分：新 schema unscored / spec=long / 旧数据 无预测周期·目标点位 / yearend
-    if cat in ('无预测周期', '目标点位') or cat == 'unscored' or spec in ('long', 'yearend'):
+    # ① 单列不计分：unscored / spec=long
+    if cat == 'unscored' or spec == 'long':
         return dict(sig, ref=None, ep=None, epc=None, ret=None, score=None, note='不计分')
-    # ② 旧数据 无效-日内 → 语义="今天"，按新规则重新判定（盘后/非交易日由下方有效性/顺延规则拦截）
-    if cat == '无效-日内':
-        spec = 'today'
-        sig['spec'] = 'today'                          # 写回，供报告按周期归类/逐条表展示
-    if spec is None:                                   # 防御：缺 spec 的手写单列（如 cat='待验证'）→ 无法定终点
+    if spec is None:                                   # 防御：缺 spec 的 scored 信号 → 无法定终点
         return dict(sig, ref=None, ep=None, epc=None, ret=None, score=None, note='待验证')
     pub, d, idx = sig['pub'], sig['d'], normalize_idx(sig['idx'])
     pd_, hhmm = pub[:10], pub[11:]
-    # ②b 非交易日发布的"今天" → 报错单列不计分（SKILL §3：today 必须交易日发布，否则报错；不再顺延）
+    # ② 非交易日发布的"今天" → 报错单列不计分（SKILL §3：today 必须交易日发布，否则报错；不再顺延）
     if spec == 'today' and pd_ not in CAL_SET:
         return dict(sig, ref=None, ep=None, epc=None, ret=None, score=None, note='报错')
-    if spec == 'nd':
-        # 无周期方向：未来 5 个交易日收益率单点计分，独立成档（SKILL §3/§5）
-        return _calc_nd(sig)
     ep = endpoint_of(pd_, spec)
     if ep is None:
         return dict(sig, ref=None, ep=None, epc=None, ret=None, score=None, note='待验证')
@@ -555,15 +487,6 @@ def sharpe_of(rs):
     return avg_of(rs) / v if v > 0 else None
 
 
-def t_stat_of(rs):
-    """t 值 = 平均分 / 标准误 = 平均分 / (波动率/√n)；信号不足 2 条或波动率为 0 时返回 None"""
-    n = len(rs)
-    v = vol_of(rs)
-    if n < 2 or v == 0:
-        return None
-    return avg_of(rs) / (v / (n ** 0.5))
-
-
 # ---------------- 报告生成 ----------------
 def post_count(blogger):
     """读取 posts 文件的帖子总数（报告头部用）。文件缺失/损坏返回 None。"""
@@ -584,28 +507,26 @@ def generate(blogger):
         data = json.load(f)
     rows = [calc(s) for s in data['signals']]
     scored = [r for r in rows if r['score'] is not None]
-    scored_t = [r for r in scored if r['spec'] != 'nd']   # 显式周期信号（总榜/多空/三档口径，SKILL §8）
-    nd_rows = [r for r in scored if r['spec'] == 'nd']    # 无周期方向（独立档）
     n_unc = sum(1 for r in rows if r['note'] == '不计分')
     n_day_intra = sum(1 for r in scored if r['note'] == '日内')
     n_pend = sum(1 for r in rows if r['note'] == '待验证')
     n_stale = sum(1 for r in rows if r['note'] == '无效-过时')
     n_err = sum(1 for r in rows if r['note'] == '报错')
     eligible, span_months, nsig = eligibility(blogger)
-    bottom_rows, top_rows = pivot_split(scored)           # 抄底/逃顶保留 nd（拐点定位与周期无关）
+    bottom_rows, top_rows = pivot_split(scored)
 
-    n_pos = sum(1 for r in scored_t if r['score'] > 0)
-    n_zero = sum(1 for r in scored_t if r['score'] == 0)
-    den = len(scored_t) - n_zero
+    n_pos = sum(1 for r in scored if r['score'] > 0)
+    n_zero = sum(1 for r in scored if r['score'] == 0)
+    den = len(scored) - n_zero
     acc = n_pos / den * 100 if den else 0.0
-    avg = avg_of(scored_t)
-    if scored_t:
-        mx = max(scored_t, key=lambda r: r['score'])
-        mn = min(scored_t, key=lambda r: r['score'])
-        bull = [r for r in scored_t if r['d'] == 1]
-        bear = [r for r in scored_t if r['d'] == -1]
-        strong = [r for r in scored_t if r['s'] == 2]
-        moderate = [r for r in scored_t if r['s'] == 1]
+    avg = avg_of(scored)
+    if scored:
+        mx = max(scored, key=lambda r: r['score'])
+        mn = min(scored, key=lambda r: r['score'])
+        bull = [r for r in scored if r['d'] == 1]
+        bear = [r for r in scored if r['d'] == -1]
+        strong = [r for r in scored if r['s'] == 2]
+        moderate = [r for r in scored if r['s'] == 1]
         st = acc_of(strong)
         md = acc_of(moderate)
     else:
@@ -619,7 +540,7 @@ def generate(blogger):
     L.append('')
     L.append(f'> 评估时间：{EVAL_DATE} | 方法论：SKILL.md（Direction，逐条验证，score = direction × return）')
     L.append(f'> 帖子总数：{n_posts} 条' if n_posts is not None else '> 帖子总数：未知（posts 文件缺失或不可读）')
-    L.append(f'> 信号总数：{len(rows)} 条（显式周期计分 {len(scored_t)} + 无周期方向 {len(nd_rows)} + 不计分 {n_unc} + 待验证 {n_pend} + 无效-过时 {n_stale} + 报错 {n_err}）')
+    L.append(f'> 信号总数：{len(rows)} 条（计分 {len(scored)} + 不计分 {n_unc} + 待验证 {n_pend} + 无效-过时 {n_stale} + 报错 {n_err}）')
     L.append('')
     L.append('---')
     L.append('')
@@ -635,15 +556,14 @@ def generate(blogger):
         L.append('## 📊 汇总指标')
         L.append('')
         L.append('```')
-        L.append(f'信号总数：{len(scored_t)}')
-        L.append(f'  另有：无周期方向 nd {len(nd_rows)} 条（并入总榜综合口径，未来 5 个交易日收益率单点计分，不参与多空/三档）/ unscored {n_unc} 条（spec=long）/ 无效-过时 {n_stale} 条 / 待验证 {n_pend} 条 / 报错 {n_err} 条（单列，不计分）')
+        L.append(f'信号总数：{len(scored)}')
+        L.append(f'  另有：unscored {n_unc} 条（spec=long）/ 无效-过时 {n_stale} 条 / 待验证 {n_pend} 条 / 报错 {n_err} 条（单列，不计分）')
         L.append(f'方向正确：{n_pos}（正确率 {acc:.1f}% = score>0 信号数 / {den}；score=0 计"平" {n_zero} 条，不计入分子分母）')
         L.append(f'  - strong 正确：{st[0]}/{st[1]}（正确率 {st[2]:.1f}%）' if st else '  - strong 正确：—')
         L.append(f'  - moderate 正确：{md[0]}/{md[1]}（正确率 {md[2]:.1f}%）' if md else '  - moderate 正确：—')
-        L.append(f'平均分：{avg:+.2f}（= 单信号平均收益 %，核心指标，仅显式周期信号）')
-        L.append(f'综合均分（含 nd）：{avg_of(scored):+.2f}（{len(scored)} 条）= 显式周期 + 无周期方向 nd 合并口径，总榜按 t 值排序采用')
-        L.append(f'波动率：{vol_of(scored_t):.2f}（单信号 score 样本标准差）')
-        sh = sharpe_of(scored_t)
+        L.append(f'平均分：{avg:+.2f}（= 单信号平均收益 %，核心指标）')
+        L.append(f'波动率：{vol_of(scored):.2f}（单信号 score 样本标准差）')
+        sh = sharpe_of(scored)
         L.append(f'夏普：{sh:+.2f}（= 平均分 / 波动率）' if sh is not None else '夏普：—（信号 <2 条或波动率为 0）')
         L.append(f'最高分：{mx["score"]:+.2f} / 最低分：{mn["score"]:+.2f}' if mx else '最高分：— / 最低分：—')
         L.append(f'看多平均分：{avg_of(bull):+.2f}（{len(bull)} 条）  看空平均分：{avg_of(bear):+.2f}（{len(bear)} 条）')
@@ -673,39 +593,32 @@ def generate(blogger):
     if eligible:
         # 按预测指数
         byidx = defaultdict(list)
-        for r in scored_t:
+        for r in scored:
             byidx[r['idx']].append(r)
         class_table('按预测指数分类', [(IDX_SHORT.get(k, k), v) for k, v in sorted(byidx.items())])
 
-        # 按多空（仅显式周期信号）
+        # 按预测期限（两档归类：信号日→验证终点交易日数，与 comparison 同口径，SKILL.md 输出部分）
+        horizon = defaultdict(list)
+        for r in scored:
+            horizon[bucket_of(r)].append(r)
+        groups = [(k, horizon.get(k, [])) for k in ['超短期（0-1个交易日）', '波段（2个交易日及以上）']]
+        class_table('按预测周期分类（两档：超短期=信号日→验证终点 0-1 个交易日；波段=2 个交易日及以上）', groups)
+
+        # 按多空
         class_table('按多空分类', [('看多 bullish', bull), ('　└ strong', strong), ('　└ moderate', moderate),
                                   ('看空 bearish', bear)])
-
-        # 按预测期限（三档归类：信号日→验证终点交易日数，与 comparison 表1 同口径，SKILL.md 输出部分；
-        # 无周期方向 nd 独立成档，不混入三档）
-        horizon = defaultdict(list)
-        for r in scored_t:
-            horizon[bucket_of(r)].append(r)
-        today_sub = [r for r in scored_t if r['spec'] == 'today']
-        groups = []
-        for k in ['0-1个交易日（今天/明天）', '2-5个交易日（1周内）', '6个交易日及以上（大于1周）']:
-            groups.append((k, horizon.get(k, [])))
-            if k == '0-1个交易日（今天/明天）':
-                groups.append(('　└ 其中：今天（盘前/盘中）', today_sub))
-        groups.append(('无周期方向（无明确时间点，未来 5 个交易日收益率单点计分）', nd_rows))
-        class_table('按预测周期分类（三档：信号日→验证终点交易日数 0-1/2-5/≥6；"今天（盘前/盘中）"在 0-1 档下单列子行；无周期方向独立成档）', groups)
 
         # 按抄底逃顶（SKILL §6：拐点取自 knowledge/market_analysis.md §5.1/§5.2，窗口=拐点当天+前一交易日）
         class_table('按抄底逃顶分类（底部拐点窗口内信号=抄底、顶部=逃顶，窗口=拐点当天+前一交易日）',
                     [('抄底（底部拐点窗口内）', bottom_rows), ('逃顶（顶部拐点窗口内）', top_rows)])
 
-        # 月度表现（仅显式周期信号，nd 独立成档不混入）
+        # 月度表现
         L.append('### 月度表现')
         L.append('')
         L.append('| 月份 | 信号数 | 平均分 | 胜率 | 波动率 | 夏普 |')
         L.append('|:---|:---:|:---:|:---:|:---:|:---:|')
         bymonth = defaultdict(list)
-        for r in scored_t:
+        for r in scored:
             bymonth[r['pub'][:7]].append(r)
         for mo in sorted(bymonth):
             rs = bymonth[mo]
@@ -721,18 +634,18 @@ def generate(blogger):
     else:
         # 不参与打分的博主仍展示信号时间分布（bymonth 供下方时间分布节使用）
         bymonth = defaultdict(list)
-        for r in scored_t:
+        for r in scored:
             bymonth[r['pub'][:7]].append(r)
 
-    # 信号时间分布与集中度/覆盖度分析（口径=显式周期信号，nd 独立档不计入）
+    # 信号时间分布与集中度/覆盖度分析（口径=计分信号）
     L.append('### ⏱️ 信号时间分布与集中度')
     L.append('')
-    first_d = min(r['pub'][:10] for r in scored_t) if scored_t else '-'
-    last_d = max(r['pub'][:10] for r in scored_t) if scored_t else '-'
+    first_d = min(r['pub'][:10] for r in scored) if scored else '-'
+    last_d = max(r['pub'][:10] for r in scored) if scored else '-'
     top_mo = max(bymonth.items(), key=lambda kv: len(kv[1])) if bymonth else None
     top_n = len(top_mo[1]) if top_mo else 0
-    conc = top_n / len(scored_t) * 100 if scored_t else 0
-    L.append(f'- 覆盖：{first_d} ~ {last_d}，共 {len(bymonth)} 个月，{len(scored_t)} 条显式周期计分信号（另有无周期方向 {len(nd_rows)} 条）；单月最高占比 {conc:.0f}%'
+    conc = top_n / len(scored) * 100 if scored else 0
+    L.append(f'- 覆盖：{first_d} ~ {last_d}，共 {len(bymonth)} 个月，{len(scored)} 条计分信号；单月最高占比 {conc:.0f}%'
              + (f'（{top_mo[0]} {top_n} 条）' if top_mo else ''))
     warns = []
     if len(bymonth) < 3:
@@ -766,7 +679,6 @@ def generate(blogger):
     L.append('|:---|:---|:---|:---:|:---:|:---|:---|:---:|:---:|:---:|:---:|:---:|:---|')
     D_ICO = {1: '↑', -1: '↓'}
     S_TXT = {2: 'str', 1: 'mod'}
-    CAT_PERIOD = {'无效-日内': '今天', '无预测周期': '无预测周期', '目标点位': '目标点位'}
     NOTE_TXT = {'不计分': '不计分', '无效-过时': '无效-过时', '待验证': '待验证', '报错': '报错'}
     for i, r in enumerate(rows, 1):
         ico = D_ICO.get(r['d'], '')
@@ -774,17 +686,15 @@ def generate(blogger):
         if r['score'] is not None:
             period = period_text(r['spec'])
         elif r['note'] == '不计分':
-            # spec=long → "长期"；旧数据 无预测周期/目标点位（无 spec）→ 显示原 cat 标签
-            period = period_text(r['spec']) if r.get('spec') == 'long' else CAT_PERIOD.get(r['cat'], '长期')
+            period = period_text(r['spec']) if r.get('spec') == 'long' else '长期'
         elif r['note'] in ('待验证', '无效-过时') and r.get('spec'):
             period = period_text(r['spec'])      # 单列行显示实际预测周期（如"明天"）
         else:
-            period = CAT_PERIOD.get(r['note'], r['note'])
+            period = r['note']
         idx = IDX_SHORT.get(r['idx'], r['idx'])
         ref_txt = f"{r['ref']:.2f}" if r.get('ref') is not None else '-'
         if r['score'] is not None:
             note_txt = r['note'] if r.get('note') else '—'
-            # nd 无周期方向：ep=第 5 交易日即 return 终点，直接显示真实日期（与其它行一致）
             ep_txt = r['ep'][5:]
             L.append(f"| {i} | {r['pub'][5:10]} | {r['summary']} | {ico} | {stx} | {period} | {idx} | {ref_txt} | {ep_txt} | {r['epc']:.2f} | {r['ret']*100:+.2f}% | {r['score']:+.2f} | {note_txt} |")
         elif r['note'] == '待验证':
@@ -814,8 +724,6 @@ def generate(blogger):
         if mx:
             L.append(f'- **最大单条命中**：{mx["pub"][5:10]}"{mx["summary"][:24]}"（{mx["score"]:+.2f} 分）。')
             L.append(f'- **最大单条失误**：{mn["pub"][5:10]}"{mn["summary"][:24]}"（{mn["score"]:+.2f} 分）。')
-        if nd_rows:
-            L.append(f'- **无周期方向 nd {len(nd_rows)} 条**：无明确时间点，按未来 5 个交易日收益率单点（r5）计分；平均 {avg_of(nd_rows):+.2f} 分（胜率 {acc_of(nd_rows)[2]:.1f}%），并入总榜综合口径，不参与看多看空/周期三档。')
         if n_day_intra:
             L.append(f'- **盘中"今天" {n_day_intra} 条已按 30 分钟线日内窗口计分**（参考价=所处 30 分钟 K 线开盘价，终点=当日收盘）。')
         if n_unc:
@@ -830,12 +738,12 @@ def generate(blogger):
     out = os.path.join(REPORTS_DIR, f'{blogger}_direction.md')
     with open(out, 'w', encoding='utf-8') as f:
         f.write('\n'.join(L))
-    print(f'{blogger}: 参与打分 {len(scored_t)} (+无周期方向 {len(nd_rows)}) | 正确率 {acc:.1f}% ({n_pos}/{den}) | 平均分 {avg:+.2f} | 报告已写入 {out}')
-    return {'blogger': blogger, 'scored': len(scored_t), 'nd': len(nd_rows), 'acc': acc, 'avg': avg}
+    print(f'{blogger}: 参与打分 {len(scored)} | 正确率 {acc:.1f}% ({n_pos}/{den}) | 平均分 {avg:+.2f} | 报告已写入 {out}')
+    return {'blogger': blogger, 'scored': len(scored), 'acc': acc, 'avg': avg}
 
 
 def selftest():
-    """引擎自测：锁定 SKILL §4 参考价 / §3 终点与不计分 / 三档归类边界"""
+    """引擎自测：锁定 SKILL §4 参考价 / §3 终点与不计分 / 两档归类边界"""
     errors = []
 
     def check(cond, msg):
@@ -896,85 +804,63 @@ def selftest():
     check(r['ref'] == 2449.86, f"双创today ref={r['ref']} 期望 2449.86")
     check(r['epc'] == 2439.18, f"双创today epc={r['epc']} 期望 2439.18")
 
-    # ── 不计分：新 schema unscored/long / 旧 无预测周期·目标点位 / yearend → note=不计分 score=None ──
+    # ── 不计分：unscored / spec=long → note=不计分 score=None ──
     for sig in [
         {'pub': '2026-01-07 15:08', 'd': 1, 's': 1, 'idx': '上证指数', 'spec': 'long', 'summary': 't', 'cat': 'unscored'},
         {'pub': '2026-01-07 15:08', 'd': 1, 's': 1, 'idx': '上证指数', 'spec': 'long', 'summary': 't', 'cat': 'scored'},
-        {'pub': '2026-01-07 15:08', 'd': 1, 's': 1, 'idx': '上证指数', 'spec': 'yearend', 'summary': 't', 'cat': 'scored'},
-        {'pub': '2026-01-07 15:08', 'd': 1, 's': 1, 'idx': '上证指数', 'summary': 't', 'cat': '无预测周期'},
-        {'pub': '2026-01-07 15:08', 'd': 1, 's': 1, 'idx': '上证指数', 'summary': 't', 'cat': '目标点位'},
     ]:
         r = calc(sig)
         check(r['note'] == '不计分', f"不计分失败 cat={sig['cat']} spec={sig.get('spec')} note={r['note']}")
         check(r['score'] is None, f"不计分却有score cat={sig['cat']} spec={sig.get('spec')}")
 
-    # endpoint_of 对 long/yearend 返回 None 且不抛异常
+    # endpoint_of 对 long 返回 None 且不抛异常
     check(endpoint_of('2026-01-07', 'long') is None, 'endpoint_of(long) 应为 None')
-    check(endpoint_of('2026-01-07', 'yearend') is None, 'endpoint_of(yearend) 应为 None')
-
-    # ── 旧数据兼容：cat=无效-日内 → 推断 spec=today：盘中计分 / 盘后无效-过时 / 非交易日顺延 ──
-    r = calc({'pub': '2026-02-02 11:35', 'd': 1, 's': 1, 'idx': '上证指数', 'summary': '午后大概率震荡回升', 'cat': '无效-日内'})
-    check(r['score'] is not None, f"旧无效-日内盘中未计分 note={r['note']}")
-    check(r['note'] == '日内', f"旧无效-日内盘中 note={r['note']}")
-    check(r['spec'] == 'today', f"旧无效-日内未写回 spec={r.get('spec')}")
-    r = calc({'pub': '2026-02-02 15:06', 'd': 1, 's': 1, 'idx': '上证指数', 'summary': '今天收红', 'cat': '无效-日内'})
-    check(r['note'] == '无效-过时', f"旧无效-日内盘后未判无效-过时 note={r['note']}")
-    r = calc({'pub': '2026-01-31 15:00', 'd': 1, 's': 1, 'idx': '上证指数', 'summary': '今天', 'cat': '无效-日内'})
-    check(r['note'] == '报错', f"旧无效-日内非交易日未判报错 note={r['note']}")
-    check(r['score'] is None, '旧无效-日内非交易日不应有score')
 
     # 缺 spec 防御：scored 信号无 spec → 无法定终点 → 待验证（不崩溃）
     r = calc({'pub': '2026-01-07 15:08', 'd': 1, 'idx': '上证指数', 'summary': 'test', 'cat': 'scored'})
     check(r['note'] == '待验证', f"缺 spec 防御失败 note={r['note']}")
 
-    # ── bucket_of 三档归类（信号日→验证终点交易日数，SKILL.md/comparison 表1 同口径，全角标签）──
+    # ── bucket_of 两档归类（信号日→验证终点交易日数，SKILL.md/comparison 同口径，全角标签）──
     r = calc({'pub': '2026-01-28 10:06', 'd': 1, 's': 1, 'idx': '上证指数', 'spec': 'today', 'summary': 'test', 'cat': 'scored'})
-    check(bucket_of(r) == '0-1个交易日（今天/明天）', f"bucket 盘中today={bucket_of(r)}")
+    check(bucket_of(r) == '超短期（0-1个交易日）', f"bucket 盘中today={bucket_of(r)}")
     r = calc({'pub': '2026-01-07 15:08', 'd': -1, 's': 1, 'idx': '上证指数', 'spec': 't1', 'summary': 'test', 'cat': 'scored'})
-    check(bucket_of(r) == '0-1个交易日（今天/明天）', f"bucket t1={bucket_of(r)}")
+    check(bucket_of(r) == '超短期（0-1个交易日）', f"bucket t1={bucket_of(r)}")
     r = calc({'pub': '2026-01-24 14:44', 'd': 1, 's': 1, 'idx': '上证指数', 'spec': 'nweek', 'summary': 'test', 'cat': 'scored'})
-    check(bucket_of(r) == '2-5个交易日（1周内）', f"bucket 周六nweek={bucket_of(r)}")
+    check(bucket_of(r) == '波段（2个交易日及以上）', f"bucket 周六nweek={bucket_of(r)}")
     r = calc({'pub': '2026-01-07 15:08', 'd': 1, 's': 1, 'idx': '上证指数', 'spec': 't10', 'summary': 'test', 'cat': 'scored'})
-    check(bucket_of(r) == '6个交易日及以上（大于1周）', f"bucket t10={bucket_of(r)}")
+    check(bucket_of(r) == '波段（2个交易日及以上）', f"bucket t10={bucket_of(r)}")
 
-    # ── nd 无周期方向：独立成档 bucket + 未来 5 个交易日收益率单点计分（ep=第 5 交易日，note=5日） ──
-    r = calc({'pub': '2026-01-07 15:08', 'd': 1, 's': 1, 'idx': '上证指数', 'spec': 'nd', 'summary': 'test', 'cat': 'scored'})
-    check(bucket_of(r) == '无周期方向', f"bucket nd={bucket_of(r)}")
-    check(r['score'] is not None, 'nd 无 score')
-    check(r['note'] == '5日', f"nd note={r['note']}")
-    days = _nd_window_days('2026-01-07')
-    check(days is not None and len(days) == 5, f"_nd_window_days 窗口长度={None if days is None else len(days)}")
-    check(r['ep'] == days[-1], f"nd ep={r['ep']} 期望 {days[-1]}")
-    closes = [IDX['上证指数'][d]['收盘'] for d in days]
-    expect_epc = round(closes[4], 2)
-    check(r['epc'] == expect_epc, f"nd epc={r['epc']} 期望 {expect_epc}（第 5 日收盘）")
-    # ret = r5（未来 5 个交易日单点）；r 用未取整的 ref 计算（仅显示 ref 取整），与 calc 主路径一致
-    ref_raw, _ = ref_price_at('上证指数', '2026-01-07 15:08')
-    expect_ret = closes[4] / ref_raw - 1
-    check(abs(r['ret'] - expect_ret) < 1e-9, f"nd ret={r['ret']} 与手算不符（期望 {expect_ret}）")
-    # 覆盖不足（信号日离数据末日不足 5 个交易日）→ 待验证
-    r2 = calc({'pub': '2026-08-25 15:08', 'd': 1, 's': 1, 'idx': '上证指数', 'spec': 'nd', 'summary': 'test', 'cat': 'scored'})
-    check(r2['note'] == '待验证', f"nd 覆盖不足未判待验证 note={r2['note']}")
-    check(r2['score'] is None, 'nd 覆盖不足不应有 score')
+    # ── t5（"近期/短期"/无周期但有方向）→ ep=信号日后第 5 个交易日，span=5 → 波段 ──
+    r = calc({'pub': '2026-01-07 15:08', 'd': 1, 's': 1, 'idx': '上证指数', 'spec': 't5', 'summary': 'test', 'cat': 'scored'})
+    check(r['score'] is not None, 't5 无 score')
+    check(r['note'] == '', f"t5 note={r['note']} 期望空（正常信号）")
+    days = ['2026-01-08', '2026-01-09', '2026-01-12', '2026-01-13', '2026-01-14']
+    check(r['ep'] == days[-1], f"t5 ep={r['ep']} 期望 {days[-1]}")
+    check(r['epc'] == IDX['上证指数'][days[-1]]['收盘'], f"t5 epc={r['epc']} 期望第 5 日收盘")
+    check(bucket_of(r) == '波段（2个交易日及以上）', f"bucket t5={bucket_of(r)}")
+    # 覆盖不足（信号日=数据末日，第 5 个交易日超出数据）→ 待验证
+    r2 = calc({'pub': EVAL_DATE + ' 15:08', 'd': 1, 's': 1, 'idx': '上证指数', 'spec': 't5', 'summary': 'test', 'cat': 'scored'})
+    check(r2['note'] == '待验证', f"t5 覆盖不足未判待验证 note={r2['note']}")
+    check(r2['score'] is None, 't5 覆盖不足不应有 score')
     # ── 边界锁定（审计确认的正确"反直觉"落位，防未来回归改错）──
-    # 非交易日"明天"→base=前一交易日，ep=下周一，span=1 → 0-1 档（SKILL.md 边界示例）
+    # 非交易日"明天"→base=前一交易日，ep=下周一，span=1 → 超短期（SKILL.md 边界示例）
     r = calc({'pub': '2026-01-24 09:00', 'd': 1, 's': 1, 'idx': '上证指数', 'spec': 't1', 'summary': 'test', 'cat': 'scored'})
-    check(bucket_of(r) == '0-1个交易日（今天/明天）', f"bucket 非交易日t1={bucket_of(r)}")
-    # 周五发"本周"→ep=当天，span=0 → 0-1 档
+    check(bucket_of(r) == '超短期（0-1个交易日）', f"bucket 非交易日t1={bucket_of(r)}")
+    # 周五发"本周"→ep=当天，span=0 → 超短期
     r = calc({'pub': '2026-02-06 14:19', 'd': 1, 's': 1, 'idx': '上证指数', 'spec': 'week', 'summary': 'test', 'cat': 'scored'})
-    check(bucket_of(r) == '0-1个交易日（今天/明天）', f"bucket 周五week={bucket_of(r)}")
-    # 周三发"本周"→ep=次日(周四)，span=1 → 0-1 档
+    check(bucket_of(r) == '超短期（0-1个交易日）', f"bucket 周五week={bucket_of(r)}")
+    # 周三发"本周"→ep=次日(周四)，span=1 → 超短期
     r = calc({'pub': '2026-04-29 12:11', 'd': 1, 's': 1, 'idx': '上证指数', 'spec': 'week', 'summary': 'test', 'cat': 'scored'})
-    check(bucket_of(r) == '0-1个交易日（今天/明天）', f"bucket 周三week={bucket_of(r)}")
-    # 月底前最后交易日当天发→ep=当天，span=0 → 0-1 档
+    check(bucket_of(r) == '超短期（0-1个交易日）', f"bucket 周三week={bucket_of(r)}")
+    # 月底前最后交易日当天发→ep=当天，span=0 → 超短期
     r = calc({'pub': '2026-02-27 13:20', 'd': 1, 's': 1, 'idx': '上证指数', 'spec': 'month', 'summary': 'test', 'cat': 'scored'})
-    check(bucket_of(r) == '0-1个交易日（今天/明天）', f"bucket 月末month={bucket_of(r)}")
-    # 周三发"下周"、隔春节长假→span=8 → ≥6 档（数交易日非日历相减）
+    check(bucket_of(r) == '超短期（0-1个交易日）', f"bucket 月末month={bucket_of(r)}")
+    # 周三发"下周"、隔春节长假→span=8 → 波段（数交易日非日历相减）
     r = calc({'pub': '2026-02-04 13:33', 'd': 1, 's': 1, 'idx': '上证指数', 'spec': 'nweek', 'summary': 'test', 'cat': 'scored'})
-    check(bucket_of(r) == '6个交易日及以上（大于1周）', f"bucket 隔长假nweek={bucket_of(r)}")
-    # 后天 t2→ep=后第2交易日，span=2 → 2-5 档
+    check(bucket_of(r) == '波段（2个交易日及以上）', f"bucket 隔长假nweek={bucket_of(r)}")
+    # 后天 t2→ep=后第2交易日，span=2 → 波段
     r = calc({'pub': '2026-01-07 15:08', 'd': 1, 's': 1, 'idx': '上证指数', 'spec': 't2', 'summary': 'test', 'cat': 'scored'})
-    check(bucket_of(r) == '2-5个交易日（1周内）', f"bucket t2={bucket_of(r)}")
+    check(bucket_of(r) == '波段（2个交易日及以上）', f"bucket t2={bucket_of(r)}")
 
     # ── 抄底/逃顶窗口（拐点取自 market_analysis.md §5.1/§5.2，窗口=拐点当天+前一交易日）──
     check(('M7', '2026-07-20', 'bottom') in PIVOTS, f"PIVOTS 缺 M7 底部拐点：{[p for p in PIVOTS if p[0]=='M7']}")
@@ -986,13 +872,6 @@ def selftest():
     check(pivot_bucket('2026-05-14') == '逃顶', f"M6顶部当天未判逃顶：{pivot_bucket('2026-05-14')}")
     check(pivot_bucket('2026-05-13') == '逃顶', f"M6顶部前一天未判逃顶：{pivot_bucket('2026-05-13')}")
     check(pivot_bucket('2026-06-01') is None, f"非拐点日不应归入抄底/逃顶：{pivot_bucket('2026-06-01')}")
-
-    # ── t 值（平均分/标准误；n<2 或波动率=0 → None）──
-    check(t_stat_of([{'score': 1.0}]) is None, 't_stat_of n<2 应返回 None')
-    check(t_stat_of([{'score': 2.0}, {'score': 2.0}]) is None, 't_stat_of 波动率=0 应返回 None')
-    rs_t = [{'score': 1.0}, {'score': 3.0}, {'score': 2.0}]
-    # avg=2, 样本std=1, n=3 → t = 2/(1/√3) = 2√3 ≈ 3.4641
-    check(abs(t_stat_of(rs_t) - 2 * (3 ** 0.5)) < 1e-9, f"t_stat_of 手算不符: {t_stat_of(rs_t)}")
 
     if errors:
         print('❌ 自测失败:')
