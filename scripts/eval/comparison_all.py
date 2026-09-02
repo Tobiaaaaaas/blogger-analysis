@@ -27,6 +27,7 @@ BUCKET_MIN_SIGNALS = 10    # 三档/方向榜单资格：该组信号 ≥ 10 条
 TOP_N = 10                 # 三档/方向榜单仅取前 10 名上榜
 AVG_MIN = 0.1              # 分榜（三档/方向/无周期方向榜）资格：平均分 > 0.1（统计无意义者不上榜）
 RANK_AVG_MIN = 0.0         # 总榜资格：综合平均分 > 0（2026-09-01 放宽口径）
+RANK_BY_AVG = True         # 2026-09-02 暂用：总榜排序改按综合均分（新博主信号少时 t 值偏保守，排名失真；待追踪稳定后改回 t 值）
 
 # 跳过 _ 前缀文件：_<名>_run.json 是提取脚本的 gitignored 运行溯源（signals 为 int 计数），非信号文件
 ALL_BLOGGERS = sorted(f[:-5] for f in os.listdir(eng.DATA_DIR) if f.endswith('.json') and not f.startswith('_'))
@@ -169,10 +170,10 @@ def emit_dir_leaderboard(title, pred):
 
 
 L = []
-L.append('# 全部博主 Direction 横向对比（平均分 = 单信号平均收益 %；总榜综合口径按 t 值排序）')
+L.append('# 全部博主 Direction 横向对比（平均分 = 单信号平均收益 %；总榜综合口径暂按综合均分排序）')
 L.append('')
 L.append(f'> 数据截止 {eng.EVAL_DATE} | 参与打分博主 {len(ELIGIBLE)} 位（帖子跨度≥6 月 且 2026 以来信号>50）| '
-         f'总榜资格：综合计分信号（显式周期 + 无周期方向 nd）≥ {RANK_MIN_SIGNALS} 条 且 综合平均分 > 0，按 t 值排序 | '
+         f'总榜资格：综合计分信号（显式周期 + 无周期方向 nd）≥ {RANK_MIN_SIGNALS} 条 且 综合平均分 > 0，按综合均分排序（暂用） | '
          f'分榜资格：该组 ≥ {BUCKET_MIN_SIGNALS} 条 且 平均分 > {AVG_MIN}（仅取前 {TOP_N}）| '
          f'无周期方向（nd，无明确时间点）并入总榜综合口径；三档/方向榜单仍为显式周期信号口径')
 L.append('')
@@ -185,13 +186,16 @@ if INELIGIBLE:
              + '、'.join(parts))
     L.append('')
 
-# ── 总榜（口径=综合：显式周期 + 无周期方向 nd 合并，按 t 值排序）──
-L.append('## 🏆 总榜（综合口径 = 显式周期 + 无周期方向 nd，按 t 值排序；综合计分信号 ≥ 30 条 且 综合平均分 > 0 才参与排名）')
+# ── 总榜（口径=综合：显式周期 + 无周期方向 nd 合并；排序看 RANK_BY_AVG：True=综合均分降序(暂用)，False=t 值降序）──
+L.append('## 🏆 总榜（综合口径 = 显式周期 + 无周期方向 nd，暂按综合均分排序；综合计分信号 ≥ 30 条 且 综合平均分 > 0 才参与排名）')
 L.append('')
 L.append('| 排名 | 博主 | 计分信号 | 正确率 | **t 值** | **综合均分** | 波动率 | 夏普 | 看多 | 看空 |')
 L.append('|:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|')
 ranked = [b for b in ELIGIBLE if qualifies(b, allrows, RANK_MIN_SIGNALS, RANK_AVG_MIN)]
-ranked.sort(key=lambda b: -(eng.t_stat_of(rows_all[b]) or -999.0))
+if RANK_BY_AVG:
+    ranked.sort(key=lambda b: -eng.avg_of(rows_all[b]))          # 暂用：按综合均分降序
+else:
+    ranked.sort(key=lambda b: -(eng.t_stat_of(rows_all[b]) or -999.0))  # 原口径：按 t 值降序
 for i, b in enumerate(ranked, 1):
     L.append(fmt_row_t(i, b, rows_all[b]))
 L.append('')

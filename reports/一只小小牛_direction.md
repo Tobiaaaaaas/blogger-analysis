@@ -1,6 +1,6 @@
 # 一只小小牛 方向预测评估（Direction）
 
-> 评估时间：2026-08-28 | 方法论：SKILL.md（Direction，逐条验证，score = direction × return）
+> 评估时间：2026-09-02 | 方法论：SKILL.md（Direction，逐条验证，score = direction × return）
 > 帖子总数：408 条
 > 信号总数：90 条（显式周期计分 74 + 无周期方向 3 + 不计分 11 + 待验证 2 + 无效-过时 0 + 报错 0）
 

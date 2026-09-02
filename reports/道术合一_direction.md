@@ -1,6 +1,6 @@
 # 道术合一 方向预测评估（Direction）
 
-> 评估时间：2026-08-28 | 方法论：SKILL.md（Direction，逐条验证，score = direction × return）
+> 评估时间：2026-09-02 | 方法论：SKILL.md（Direction，逐条验证，score = direction × return）
 > 帖子总数：347 条
 > 信号总数：135 条（显式周期计分 46 + 无周期方向 31 + 不计分 58 + 待验证 0 + 无效-过时 0 + 报错 0）
 

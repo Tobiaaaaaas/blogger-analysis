@@ -1,6 +1,6 @@
 # 禅壹 方向预测评估（Direction）
 
-> 评估时间：2026-08-28 | 方法论：SKILL.md（Direction，逐条验证，score = direction × return）
+> 评估时间：2026-09-02 | 方法论：SKILL.md（Direction，逐条验证，score = direction × return）
 > 帖子总数：144 条
 > 信号总数：39 条（显式周期计分 17 + 无周期方向 3 + 不计分 18 + 待验证 1 + 无效-过时 0 + 报错 0）
 
