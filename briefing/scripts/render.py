@@ -61,9 +61,10 @@ def fmt_post_time(ts):
 
 
 def _fmt_key_blogger(x):
-    """两行式：#rank 🔴 **名字** 看多·强·近几日｜“quote”（时间）\n　· 画像风格。
+    """两行式（博主观点展示 v4）：#rank 🟢 **名字** · 画像风格\n看空·强·近几日｜“quote”（时间）。
 
-    用户确认的版式：第一行信号+引文+时间（括号），第二行缩进画像风格；风格取画像档案 style。
+    用户确认：第一行=博主名+风格（画像 style），换行第二行=博主观点；多个博主用空行隔开（调用处 join "\n\n"）。
+    风格取画像档案 style；立场 emoji 放在名字前便于扫读，观点行带立场文字+周期+引文+帖子时间。
     """
     name = x.get("name") or "?"
     rank = _rank_of(name)
@@ -73,18 +74,39 @@ def _fmt_key_blogger(x):
     horizon = HORIZON_BADGE.get(x.get("horizon"), x.get("horizon") or "")
     quote = x.get("quote") or ""
     t = fmt_post_time(x.get("pub_ts"))
-    line = f"#{rank} " if rank else ""
-    line += f"{emoji} **{name}** {stext}{strength}"
-    if horizon:
-        line += f"·{horizon}"
-    if quote:
-        line += f"｜“{quote}”"
-    if t:
-        line += f"（{t}）"
     style = (x.get("style") or "").strip()
+
+    line1 = f"#{rank} " if rank else ""
+    line1 += f"{emoji} **{name}**"
     if style:
-        line += f"\n　· {style}"
-    return line
+        line1 += f" · {style}"
+
+    line2 = f"{stext}{strength}"
+    if horizon:
+        line2 += f"·{horizon}"
+    if quote:
+        line2 += f"｜“{quote}”"
+    if t:
+        line2 += f"（{t}）"
+    return f"{line1}\n{line2}"
+
+
+def _fmt_takeaway(t):
+    """本期要点一条：一句完整总结句（如"全板偏空，空头占优，短期以防守为主"）。
+
+    兼容旧 {theme, detail, action} dict（历史卡重渲染）→ 压成一句。
+    """
+    if isinstance(t, dict):
+        bits = [str(t.get("theme") or "").strip()]
+        d = str(t.get("detail") or "").strip()
+        a = str(t.get("action") or "").strip()
+        if d:
+            bits.append(d)
+        line = "，".join(b for b in bits if b)
+        if a and a not in line:
+            line += f"；{a}"
+        return line
+    return str(t or "").strip()
 
 
 def _date_header(date_str, slot_label):
@@ -93,6 +115,9 @@ def _date_header(date_str, slot_label):
 
 def build_card_payload(card, market_text, slot_label, date_str, window_txt=""):
     """card JSON → 飞书 interactive card payload。window_txt 如"自 14:00 以来"。
+
+    大结构（v2，用户确认保留）：窗口 → 行情 → 共识 → 重点博主 → 分歧 → 风险 → 活动角标 → 关注点。
+    关注点（该关注的若干点）放末尾总结位；重点博主=博主名+风格行 / 观点行，博主间空行隔开。
     """
     c = card["consensus"]
     elements = []
@@ -106,21 +131,23 @@ def build_card_payload(card, market_text, slot_label, date_str, window_txt=""):
     elements.append({"tag": "markdown", "content": f"📈 {market_text}"})
     elements.append({"tag": "hr"})
 
-    # 共识
+    # 共识（立场行 + 丰富分析段落，恢复 v2 长段落式全板共识）
     bull, bear, neutral = c["bull"], c["bear"], c["neutral"]
     cons_line = f"🧭 **共识：{c['stance']}**（{bull}多 / {bear}空 / {neutral}中性）"
     if c.get("summary"):
         cons_line += f"\n{c['summary']}"
+    if c.get("evolution"):
+        cons_line += f"\n（演变）{c['evolution']}"
     elements.append({"tag": "markdown", "content": cons_line})
 
-    # 重点博主（总榜 Top N，两行式：信号+引文+时间 / 画像风格）
+    # 重点博主（总榜 Top N；博主名+风格行 / 观点行，博主间空行隔开）
     if card.get("key_bloggers"):
         sel, total = select_key_bloggers(card)
         header = "⭐ **重点博主**"
         if total > len(sel):
             header += f"（总榜 Top {len(sel)}）"
         lines = [header] + [_fmt_key_blogger(x) for x in sel]
-        elements.append({"tag": "markdown", "content": "\n".join(lines)})
+        elements.append({"tag": "markdown", "content": "\n\n".join(lines)})
 
     # 分歧
     div = card.get("divergences") or []
@@ -141,7 +168,7 @@ def build_card_payload(card, market_text, slot_label, date_str, window_txt=""):
                              + (f" {r.get('note', '')}" if r.get('note') else ""))
         elements.append({"tag": "markdown", "content": "\n".join(lines)})
 
-    # 博主动态（全板口径：每位博主一近期观点，随时更新）
+    # 活动角标（全板口径：每位博主一近期观点，随时更新）
     act = card.get("activity") or {}
     if act.get("posting") is not None:
         foot = f"📋 全板 {act.get('posting')} 位博主有近期观点"
@@ -152,10 +179,11 @@ def build_card_payload(card, market_text, slot_label, date_str, window_txt=""):
             foot += "：· " + " · ".join(str(b) for b in bloggers[:8])
         elements.append({"tag": "note", "elements": [{"tag": "plain_text", "content": foot}]})
 
-    # 末尾总结（挑重点）
-    takeaways = card.get("takeaways") or []
+    # 本期要点（收尾总结：整板凝结成若干点，每点一句总结句，不拆行）
+    takeaways = card.get("takeaways") or card.get("focus") or []
     if takeaways:
-        lines = ["🎯 **本期要点**"] + [f"· {t}" for t in takeaways]
+        lines = ["🎯 **本期要点**"]
+        lines += [f"· {_fmt_takeaway(t)}" for t in takeaways[:5] if _fmt_takeaway(t)]
         elements.append({"tag": "markdown", "content": "\n".join(lines)})
 
     return {

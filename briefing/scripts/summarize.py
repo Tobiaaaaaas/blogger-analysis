@@ -57,30 +57,37 @@ SYNTH_SYSTEM_PROMPT = """你是股票市场观点综合分析助手。输入包�
 
 核心概念——全板观点模型：每个博主维护一个"近期观点"（其最新一篇有观点帖的立场），博主发新帖则其近期观点更新；没发新帖的博主，其近期观点保持不变。**全板** = 所有追踪博主近期观点的集合。统计与综合必须基于**全板**，而不是只看本期新帖。发帖超过 7 天的观点视为过时（该博主退出统计，只看时效内观点）。
 
-任务：把**全板近期观点**综合成一份**全板简报**。读者要能一眼看出"现在全板观点版图如何、相对上期哪些博主变了"。硬性要求：
+任务：把**全板近期观点**综合成一份**全板简报**。读者要能一眼看出"现在全板观点版图如何、相对上期哪些博主变了、**我该关注什么**"。硬性要求：
 
 【时间】
 - 每条观点带发帖时间（输入已给），共识里点明本期时间背景（时段/窗口），不要脱离时间泛泛而谈。
 - 只在时效内（发帖≤7 天）的观点上做统计与判断；过时博主的观点不出现、不参与。
 
-【全板态势】（重中之重）
-- 共识 stance 反映全板多空力量对比；summary **必须**以"较上期……"开头：先点出上期全板结论，再给本期全板结论，明确演变（维持/转强/转弱/转向/出现新对立）。重点说明**本期更新了观点的博主**带来的变化（哪些博主新发观点、方向如何）。首期则明确说"首期无基准"。
+【共识】（全板态势，重中之重）
+- consensus.summary：**丰富的一段全板共识分析**（4~7 句，写成流畅段落，不要只给结论），**以"较上期……"开头**：先点出上期全板结论，再给本期全板结论与演变。段落必须覆盖：① 本期时间背景（时段/窗口与行情状态）；② 多空力量对比与占优方；③ **本期更新观点的博主**带来的变化（点名谁新发观点、方向如何、代表观点）；④ 中性观望者的态度；⑤ 整体风险偏好。首期则开头写"较上期：首期无基准"。
 - 多空统计由系统按全板计算，**你不需要也不能输出数字**——只描述态势与演变。
 
-【其他】
+【本期要点】（收尾总结，把整板凝结成读者该关注的若干点）
+- takeaways 数组 **3~5 条**（通常 4 条），每条**一句总结句**（≤35字，完整成句、可独立读），像"全板偏空，空头占优，短期以防守为主"这样的收束句。**不拆分主题/说明/行动**，不堆博主名与风格后缀，可点名个别关键博主但以观点概括为主。
+- 必须综合全板提炼，覆盖：整体共识结论（含短期操作取向）、最关键的多空对立、最重要的变化（谁转多转空）、明日/短期最关键的触发点或点位、最需警惕的风险。
+
+【分歧】
 - 分歧：全板观点冲突或逻辑矛盾，写成简短条目（可含本期更新观点的博主）。
+
+【风险】
 - 风险：全板极端预测、情绪化表态、与共识背离的强观点，标注博主与其风格画像备注。
+
+【其他】
 - 中性观点（当前无明确方向）计入全板活动但不算入多空力量。
 - 不输出重点博主（重点博主由系统按总榜排名自动选取 Top 5），也不输出多空数字。
 
-输出严格 JSON（divergences/risks 可为空数组）：
+输出严格 JSON（divergences/risks 可为空数组，takeaways 至少 3 条）：
 {
-  "consensus": {"stance": "偏多|偏空|均衡|未明", "summary": "以'较上期'开头的全板共识概括，含时间背景与整体演变"},
+  "consensus": {"stance": "偏多|偏空|均衡|未明", "summary": "以'较上期……'开头的丰富全板共识分析段落(4~7句)"},
   "divergences": ["分歧1", "分歧2"],
   "risks": [{"blogger": "...", "desc": "风险观点", "note": "画像备注(风格)"}],
-  "takeaways": ["本期要点1", "本期要点2", "本期要点3"]
+  "takeaways": ["总结句1(≤35字)", "总结句2", "总结句3", "总结句4"]
 }
-- takeaways：**报告末尾的总览总结**，2~4 条、每条 ≤30 字，浓缩成行动级要点（整体结论 / 最重要的变化 / 最需警惕的风险），不重复前面小节原文。
 - 只输出 JSON，无其他文字"""
 
 
@@ -187,17 +194,18 @@ def _build_profile_subset(profiles, bloggers):
 
 
 def _normalize_synth_result(result):
-    """模型偶发把 consensus 拍平到顶层（顶层就是 {stance, summary}，无 consensus 键）。
+    """模型偶发把 consensus 拍平到顶层（顶层就是 {stance, summary, evolution}，无 consensus 键）。
 
     包回标准结构；其余段若也在顶层则原样保留。
     """
     if isinstance(result, dict) and not isinstance(result.get("consensus"), dict) and "stance" in result:
         flat = result
         result = {
-            "consensus": {"stance": flat.get("stance"), "summary": flat.get("summary")},
+            "consensus": {"stance": flat.get("stance"), "summary": flat.get("summary"),
+                          "evolution": flat.get("evolution")},
             "divergences": flat.get("divergences") or [],
             "risks": flat.get("risks") or [],
-            "takeaways": flat.get("takeaways") or [],
+            "takeaways": flat.get("takeaways") or flat.get("focus") or [],
         }
     return result
 
@@ -212,7 +220,7 @@ def _synth_result_ok(card):
         return False
     if c.get("stance") not in ("偏多", "偏空", "均衡", "未明") or not c.get("summary"):
         return False
-    return bool(card.get("takeaways") or card.get("divergences") or card.get("risks"))
+    return bool(card.get("takeaways") or card.get("focus") or card.get("divergences") or card.get("risks"))
 
 
 def synthesize(board, updated, market_text, prev_state, profiles, slot_label, date_str, window_txt=""):
@@ -272,10 +280,33 @@ def _sanitize_card(card):
         "bull": int(consensus.get("bull") or 0),
         "bear": int(consensus.get("bear") or 0),
         "neutral": int(consensus.get("neutral") or 0),
-        "summary": (consensus.get("summary") or "").strip(),
+        "summary": (consensus.get("summary") or "").strip()[:400],
+        "evolution": (consensus.get("evolution") or "").strip()[:120],
     }
     for key in ("divergences", "risks"):
         card[key] = [x for x in (card.get(key) or []) if isinstance(x, (str, dict))]
-    card["takeaways"] = [str(x).strip()[:40] for x in (card.get("takeaways") or [])
-                         if isinstance(x, (str, int, float)) and str(x).strip()][:4]
+    card["takeaways"] = _norm_takeaways(card.get("takeaways") or card.get("focus") or [])
+    card.pop("focus", None)  # 本期要点统一存 takeaways（旧 focus 结构在 _norm_takeaways 中压成一句）
     return card
+
+
+def _norm_takeaways(items):
+    """本期要点归一化为字符串数组（≤60字/条，最多 5 条）。兼容旧 {theme,detail,action} dict → 压成一句。"""
+    out = []
+    for x in items:
+        if isinstance(x, dict):
+            bits = [str(x.get("theme") or "").strip()]
+            d = str(x.get("detail") or "").strip()
+            a = str(x.get("action") or "").strip()
+            if d:
+                bits.append(d)
+            text = "，".join(b for b in bits if b)
+            if a and a not in text:
+                text += f"；{a}"
+        elif isinstance(x, str):
+            text = x.strip()
+        else:
+            text = str(x).strip()
+        if text:
+            out.append(text[:60])
+    return out[:5]

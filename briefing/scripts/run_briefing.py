@@ -199,7 +199,9 @@ def _save_history(date_str, slot_label, payload, preview):
 
 def _previous_from_card(card):
     c = card["consensus"]
+    # summary 即丰富共识段落（自带"较上期……"前缀）；evolution 旧字段已并入 summary，不再单独拼
     cons = f"{c['stance']}（{c['bull']}多/{c['bear']}空） {c.get('summary','')}".strip()
+    cons = cons[:600]
     sel, _ = render.select_key_bloggers(card)  # 与卡片展示一致：只取总榜排名靠前者
     kbs = []
     for x in sel:
@@ -387,7 +389,7 @@ def _run(args):
 
 
 def _preview_text(card, mkt_text, slot_label, date_str, window_txt=""):
-    from .render import _date_header, _fmt_key_blogger, select_key_bloggers
+    from .render import _date_header, _fmt_key_blogger, _fmt_takeaway, select_key_bloggers
     lines = [_date_header(date_str, slot_label)]
     if window_txt:
         lines.append(f"🕐 本期覆盖：{window_txt}")
@@ -401,8 +403,9 @@ def _preview_text(card, mkt_text, slot_label, date_str, window_txt=""):
         header = "⭐ 重点博主"
         if total > len(sel):
             header += f"（总榜 Top {len(sel)}）"
-        lines.append(header)
-        lines += [_fmt_key_blogger(x) for x in sel]
+        kb_lines = [header] + [_fmt_key_blogger(x) for x in sel]
+        lines.append("\n\n".join(kb_lines))  # 与卡片 payload 一致：博主间空行隔开
+        lines.append("")
     for d in card.get("divergences") or []:
         lines.append(f"⚔️ 分歧：{d if isinstance(d, str) else d.get('desc', d)}")
     for r in card.get("risks") or []:
@@ -413,8 +416,11 @@ def _preview_text(card, mkt_text, slot_label, date_str, window_txt=""):
     act = card.get("activity") or {}
     if act.get("posting") is not None:
         lines.append(f"📋 全板 {act.get('posting')} 位博主有近期观点（{act.get('no_view')} 中性）")
-    for t in card.get("takeaways") or []:
-        lines.append(f"🎯 要点：{t}")
+    takeaways = card.get("takeaways") or card.get("focus") or []
+    if takeaways:
+        lines.append("")
+        lines.append("🎯 本期要点")
+        lines += [f"· {_fmt_takeaway(t)}" for t in takeaways[:5] if _fmt_takeaway(t)]
     return "\n".join(lines)
 
 
