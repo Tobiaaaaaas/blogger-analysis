@@ -32,7 +32,7 @@ PANELS = {"short": PANEL_SHORT, "swing": PANEL_SWING}
 # 板块展示元信息（标题/emoji/空板块提示）
 BOARD_META = {
     "short": {"label": "超短(0-1日)", "emoji": "⏱️",
-              "empty_note": "（近3日无人给出超短方向观点）"},
+              "empty_note": "（暂无超短表态：无指向今/下一交易日的观点）"},
     "swing": {"label": "波段(2日+)", "emoji": "🌊",
               "empty_note": "（近7日无人给出波段方向观点）"},
 }

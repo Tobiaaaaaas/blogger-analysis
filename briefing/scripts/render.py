@@ -44,19 +44,17 @@ def select_key_bloggers(card, top=KEY_BLOGGERS_TOP):
 
 
 def fmt_post_time(ts):
-    """帖子的相对时间标注：今日HH:MM / 昨日HH:MM / MM-DD HH:MM（北京时）。"""
+    """帖子的绝对时间标注：MM-DD HH:MM（北京时）。
+
+    v12 起不再用 今日/昨日 相对速览——引文是昨天/前天的帖子，其相对词要靠
+    真实日期才对得上（"昨天说的明天"）。一律按发帖真实日期标注。
+    """
     if not ts:
         return ""
     try:
         dt = datetime.fromtimestamp(int(ts), tz=BEIJING_TZ)
     except (TypeError, ValueError, OSError):
         return ""
-    now = datetime.now(BEIJING_TZ)
-    today, yest = now.date(), now.date() - timedelta(days=1)
-    if dt.date() == today:
-        return f"今日{dt.strftime('%H:%M')}"
-    if dt.date() == yest:
-        return f"昨日{dt.strftime('%H:%M')}"
     return dt.strftime("%m-%d %H:%M")
 
 
@@ -249,16 +247,19 @@ _MAX_MD_BYTES = 30000  # 单 markdown 元素上限粗估；超长按行拆成多
 def _fmt_board_row(name, row):
     """板块内单博主行（无编号）：标题行 + 重点原话(发帖时间) + 摘要。
 
-    row 字段见 summarize._row_from_board_llm：blogger/has_view/stance/horizon/
-    summary/quote/quote_ts。只列窗口内有该板块周期方向观点的博主；
-    horizon 为该板块周期原话词（今天/明天；近日/本周/…/未提），未提 不打印。
+    row 字段见 summarize：blogger/has_view/stance/horizon/anchor/summary/quote/
+    quote_ts（anchor 由 resolve_anchors 日期锚定：超短=目标日 MM-DD；波段=周词+
+    周日期段；未提=空 不打印）。旧行无 anchor 时回退 horizon 周期词。
     """
     emoji = STANCE_EMOJI.get(row.get("stance"), "")
     stext = STANCE_TEXT.get(row.get("stance"), row.get("stance") or "")
     line1 = f"{emoji} **{name}** {stext}"
-    horizon = row.get("horizon") or "未提"
-    if horizon != "未提":
-        line1 += f" · {horizon}"
+    anchor = row.get("anchor")
+    if anchor is None:  # 兜底：未锚定的历史行退回周期词
+        horizon = row.get("horizon") or "未提"
+        anchor = "" if horizon == "未提" else horizon
+    if anchor:
+        line1 += f" · {anchor}"
     lines = [line1]
     if row.get("quote"):
         t = fmt_post_time(row.get("quote_ts"))

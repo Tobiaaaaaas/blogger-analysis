@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
-"""简报编排器（v11：超短板块 + 波段板块 双固定名单 · 交易日三推）。
+"""简报编排器（v11 双固定名单 · v12 日期锚定：板块行头/引文时间以绝对日期为准）。
 
 流程：抓新帖 → 行情 → 按板块 LLM 行抽取（超短近3交易日 / 波段近7自然日）→
+resolve_anchors 把相对词换算成绝对目标日/周并按卡片日剔已过期表态 →
 卡尾跨板块收敛总结 → 飞书推送。
 - 超短板块（17 人）：只认 今天/明天(0-1日) 方向观点，回看近 SHORT_WINDOW_TRADING_DAYS 个交易日。
 - 波段板块（21 人）：只认 近日/本周/下周/更长(2日+) 方向观点，回看近 SWING_WINDOW_CAL_DAYS 个自然日。
@@ -34,7 +35,8 @@ import time
 from datetime import datetime, timedelta, timezone
 
 from . import calendar, config, market, paths, render, scrape_merge, state
-from .summarize import board_counts, extract_board_rows, summarize_boards
+from .summarize import (board_counts, extract_board_rows, resolve_anchors,
+                        summarize_boards)
 
 log = logging.getLogger("briefing")
 
@@ -215,7 +217,7 @@ def _run(args):
     slot_key = _resolve_slot(args, now)
     slot_time, slot_label = config.SLOTS[slot_key]
     date_str = _date_str(now)
-    log.info("== 简报 v11 %s %s（slot=%s）==", date_str, slot_time, slot_key)
+    log.info("== 简报 v12(日期锚定) %s %s（slot=%s）==", date_str, slot_time, slot_key)
 
     if not _acquire_lock():
         return 0  # 已有进程在跑（防重叠）
@@ -264,6 +266,11 @@ def _run(args):
             log.warning("[%s] 行抽取失败博主（该板块不显示、不计数）：%s", key, errs)
         rows_by_board[key] = rows
 
+    # 3.5) 日期锚定（v12）：把博主原话里的相对词换算成绝对目标日/周。
+    #      超短只保留 目标日=卡片当天或下一交易日 的表态（已兑现/过期自动剔除）；
+    #      波段剔除目标周已整体过去的表态。行带上 anchor（渲染行头/总结快照用）。
+    rows_by_board = resolve_anchors(rows_by_board, now)
+
     # 4) 系统计数（每板块 bull/bear/shown/members；未表态者不计）——卡片头行与总结的权威数字
     counts = board_counts(rows_by_board)
     for key in config.PANEL_KEYS:
@@ -276,7 +283,7 @@ def _run(args):
     #    零方向日 → 最小卡（健康信号），不调总结 LLM。
     if directed > 0:
         summary_text = summarize_boards(rows_by_board, counts, mkt_text, slot_label,
-                                        date_str, window_txt=window_txt)
+                                        date_str, window_txt=window_txt, now=now)
         payload = render.build_board_card_payload(
             rows_by_board, counts, mkt_text, slot_label, date_str,
             window_txt=window_txt, summary_text=summary_text)

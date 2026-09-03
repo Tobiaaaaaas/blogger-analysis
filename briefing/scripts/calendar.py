@@ -76,6 +76,20 @@ def latest_trading_day(d: date) -> date:
     return cur
 
 
+def next_trading_day(d: date) -> date:
+    """d 之后最近一个交易日（跨周末/节假自动顺延）。
+
+    解析博主"明天"等以发帖日为基准的相对词（v12 日期锚定）。
+    14 天内找不到（理论上不会）则退回 d+1。
+    """
+    cur = d + timedelta(days=1)
+    for _ in range(14):
+        if is_trading_day(cur):
+            return cur
+        cur += timedelta(days=1)
+    return d + timedelta(days=1)
+
+
 def trading_days(d: date, n: int) -> list:
     """截至 d 最近 n 个交易日（含），升序返回 [date, ...]。
 
