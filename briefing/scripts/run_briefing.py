@@ -29,7 +29,7 @@ import time
 from datetime import datetime, timedelta, timezone
 
 from . import calendar, config, market, paths, render, scrape_merge, state
-from .summarize import extract_window_rows, summarize_window
+from .summarize import count_rows, extract_window_rows, summarize_window
 
 log = logging.getLogger("briefing")
 
@@ -113,22 +113,8 @@ def _migrate_state_v2(st):
 
 
 def _row_counts(rows):
-    """18 行口径计数：多/空/观望（有发帖未明确表态）/无更新（近 3 日无可读观点）。断言合计=18。"""
-    c = {"bull": 0, "bear": 0, "neutral": 0, "none": 0}
-    for name in config.ROSTER:
-        r = rows.get(name) or {}
-        if r.get("has_view") and r.get("stance") == "多":
-            c["bull"] += 1
-        elif r.get("has_view") and r.get("stance") == "空":
-            c["bear"] += 1
-        elif r.get("n_posts"):
-            c["neutral"] += 1
-        else:
-            c["none"] += 1
-    if sum(c.values()) != len(config.ROSTER):
-        log.warning("计数异常：多%d 空%d 观望%d 无更新%d ≠ %d",
-                    c["bull"], c["bear"], c["neutral"], c["none"], len(config.ROSTER))
-    return c
+    """v10：分档计数（超短/波段各自多空 + 观望 + 无更新）→ summarize.count_rows（断言合计=18）。"""
+    return count_rows(rows)
 
 
 def _save_history(date_str, slot_label, payload, preview):
@@ -267,11 +253,13 @@ def _run(args):
     if row_errors:
         log.warning("行抽取失败博主（降级占位）：%s", row_errors)
 
-    # 5) 系统计数（多空/观望/无更新）——卡片与总结引用的权威数字
+    # 5) 系统分档计数（超短/波段各多空 + 观望/无更新）——卡片与总结引用的权威数字
     counts = _row_counts(rows)
-    log.info("行抽取完成：%d 多 / %d 空 / 观望 %d / 无更新 %d",
-             counts["bull"], counts["bear"], counts["neutral"], counts["none"])
-    directed = counts["bull"] + counts["bear"]
+    s, w = counts["short"], counts["swing"]
+    log.info("行抽取完成：超短 %d多/%d空 波段 %d多/%d空 · 观望 %d · 无更新 %d",
+             s["bull"], s["bear"], w["bull"], w["bear"],
+             counts["neutral"], counts["none"])
+    directed = s["bull"] + s["bear"] + w["bull"] + w["bear"]
 
     # 6) 渲染：有方向观点 → 全卡 + 卡底收敛总结（仅此分支调总结 LLM）；
     #    零方向日 → 最小卡（健康信号），不调总结 LLM。
@@ -314,22 +302,18 @@ def _run(args):
 
 
 def _preview_text(rows, counts, mkt_text, slot_label, date_str, summary_text="", window_txt=""):
-    """dry-run 预览：与卡片 payload 同构的纯文本（每行=卡内一个 markdown 块）。"""
-    from .render import _CN_NUMS, _date_header, _fmt_roster_row
+    """dry-run 预览：与卡片 payload 同构的纯文本（分段 18 行 + 分档计数角标）。"""
+    from .render import _date_header, _roster_section_lines
     lines = [_date_header(date_str, slot_label)]
     if window_txt:
         lines.append(f"🕐 覆盖：{window_txt}")
     lines.append("📈 " + mkt_text)
     lines.append("")
-    for i, name in enumerate(config.ROSTER):
-        row = dict(rows.get(name) or {})
-        row.setdefault("blogger", name)
-        lines.append(f"{_CN_NUMS[i]} {_fmt_roster_row(row)}")
+    lines.extend(_roster_section_lines(rows))
     lines.append("")
     if summary_text:
         lines.append(f"🧭 {summary_text}")
-    lines.append(f"（多空 {counts['bull']}多/{counts['bear']}空 · "
-                 f"观望 {counts['neutral']} · 无更新 {counts['none']}）")
+    lines.append(f"（{config.format_counts(counts)}）")
     return "\n".join(lines)
 
 

@@ -517,21 +517,67 @@ def extract_window_rows(by_blogger):
 
 
 # =====================================================================
-# v9：卡底收敛总结（18 行快照 + 系统多空计数 → 一段散文）
+# v9：卡底收敛总结（18 行快照 + 系统分档计数 → 一段散文）
 # =====================================================================
 
-SUMMARY_SYSTEM_PROMPT = """你是财经观点收敛总结助手。给你近 3 个交易日内多位追踪博主的方向观点快照：每位博主一行（博主名/多空/超短或波段/周期原话标签/一句核心/引文发帖时间），外加**系统统计的权威计数**（多/空各几位、观望、无更新）与当前大盘行情。
+SUMMARY_SYSTEM_PROMPT = """你是财经观点收敛总结助手。给你近 3 个交易日内 18 位追踪博主的方向观点快照：每位一行（博主名/多空/周期原话词/一句核心/引文发帖时间），外加**系统统计的分档权威计数**（超短(0-1日) 几多几空、波段(2日+) 几多几空、观望、无更新）与当前大盘行情。
 
-任务：输出**一段收敛总结**（≤220 字，中文流畅段落；不要分点、不要列表、不要小标题）：
-① 开头一句给多空版图（**用系统给的计数**，不要自行重算、不要编造数字）；
-② 中间点出最鲜明的多空对立与多头/空头各自的代表性观点（可点名 1~2 位，只点快照里出现过的）；
-③ 结尾落到操作参考：超短(0-1日)方向一句 + 波段(2日+)情绪一句。
+周期分层视角（最重要的原则）：观点按周期分两层——「超短(0-1日)」= 博主指今天/明天；「波段(2日+)」= 近日/本周/下周/更远。**跨周期的不同方向不是对立，而是层叠**：
+- 例：超短多人看"今日/明日反弹"，同时波段多人看空"调整未结束/还要寻底"——两层完全兼容：反弹常是波段调整中的反抽/减仓窗口，不代表反转。此时应写层叠关系（"波段偏弱下，超短反弹更像反抽而非反转信号"），**严禁**用"多空对立/对峙/拉锯/分歧显著/多空阵营 X 比 X"描述跨周期组合。
+- 只有**同周期内真反向**（如同为超短：有人看今天反弹、有人看今天续跌）才算方向分歧，才可点出。
+- 同周期同方向但操作取向相反（都看今天反弹，一个持有待涨、一个提示反弹减仓）→ 写"反弹共识下的操作分化"，不算方向对立。
+
+输出**一段收敛总结**（≤240 字，中文流畅一段；不要分点/列表/小标题）：
+① 开头按层陈述版图，用系统给的**分档计数**，不要合并成总比数、不要重算、不要编造（如：超短 X 多 Y 空、多数看今日/明日反弹；波段 U 多 V 空、多数认为调整未结束）。
+② 中间给层内代表观点（每层可点名 1~2 位，只点快照里出现过的）；若两层方向相反，解释它们的层叠关系（怎么兼容、落点差异）；只在同周期真反向时用"分歧"。
+③ 结尾落到操作参考：超短(0-1日) 一句 + 波段(2日+) 一句。
 禁止复述引文原话；禁止提快照之外的博主或内容。
-输出严格 JSON：{"summary": "收敛总结一段(≤220字)"}。只输出 JSON，无其他文字。"""
+输出严格 JSON：{"summary": "收敛总结一段(≤240字)"}。只输出 JSON，无其他文字。"""
+
+
+def count_rows(rows):
+    """18 行口径**分档**计数（v10：超短/波段各自多空，废弃跨周期合并总比数）。
+
+    rows: {博主: row}（字段见 _row_from_llm）。每博主必落一格：
+      多/空 + bucket∈{超短(0-1日), 波段(2日+)} → short/swing 对应格；
+      has_view=False 且 n_posts>0 → neutral（有发帖未明确表态）；
+      否则 → none（无更新）。断言合计=18。
+    """
+    c = {"short": {"bull": 0, "bear": 0},
+         "swing": {"bull": 0, "bear": 0},
+         "neutral": 0, "none": 0}
+    for name in config.ROSTER:
+        r = rows.get(name) or {}
+        if not r.get("has_view"):
+            if r.get("n_posts"):
+                c["neutral"] += 1
+            else:
+                c["none"] += 1
+            continue
+        stance = r.get("stance")
+        if stance not in ("多", "空"):
+            if r.get("n_posts"):
+                c["neutral"] += 1
+            else:
+                c["none"] += 1
+            continue
+        key = "bull" if stance == "多" else "bear"
+        bucket = r.get("bucket")
+        c["short" if bucket == config.BUCKET_SHORT else "swing"][key] += 1
+    total = (c["short"]["bull"] + c["short"]["bear"] + c["swing"]["bull"] + c["swing"]["bear"]
+             + c["neutral"] + c["none"])
+    if total != len(config.ROSTER):
+        log.warning("计数异常：超短%d多/%d空 波段%d多/%d空 观望%d 无更新%d ≠ %d",
+                    c["short"]["bull"], c["short"]["bear"], c["swing"]["bull"],
+                    c["swing"]["bear"], c["neutral"], c["none"], len(config.ROSTER))
+    return c
 
 
 def summarize_window(rows, counts, market_text, slot_label, date_str, window_txt=""):
-    """18 行方向快照 → 一段收敛总结。多空计数系统权威注入，模型只写散文；失败兜底返回计数行文案。"""
+    """18 行方向快照 → 一段收敛总结（周期分层视角）。分档计数系统权威注入，模型只写散文。
+
+    counts 为 count_rows 的分档 shape；失败兜底返回分档计数行文案。
+    """
     ext = _extract()
     snap = []
     for b in config.ROSTER:
@@ -542,10 +588,10 @@ def summarize_window(rows, counts, market_text, slot_label, date_str, window_txt
         t = datetime.fromtimestamp(int(ts), tz=BEIJING).strftime("%m-%d %H:%M") if ts else ""
         snap.append(f"▍{b}：{r['stance']}·{r.get('bucket')}｜{r.get('horizon')}｜{r.get('summary')}｜引文 {t}")
     snapshot_txt = "\n".join(snap) if snap else "（无方向观点）"
-    counts_txt = (f"{counts['bull']} 多 / {counts['bear']} 空 / 观望 {counts['neutral']} / 无更新 {counts['none']}")
+    counts_txt = config.format_counts(counts)
     user_msg = f"""【时段】{date_str} {slot_label}（{window_txt or '近3个交易日'}）
 【行情】{market_text}
-【系统统计（权威，勿重算）】{counts_txt}
+【系统统计（权威，勿重算勿合并）】{counts_txt}
 【博主方向快照】
 {snapshot_txt}"""
     for _attempt in range(ROW_MAX_ATTEMPTS):
@@ -555,4 +601,4 @@ def summarize_window(rows, counts, market_text, slot_label, date_str, window_txt
         s = (result.get("summary") or "").strip()
         if s:
             return s[:300]
-    return f"多空版图：{counts_txt}"
+    return f"多空版图（分档）：{counts_txt}"

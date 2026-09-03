@@ -40,3 +40,18 @@ def slot_for(now: datetime, trading_day: bool) -> str | None:
         if abs(now_min - slot_min) <= SLOT_TOLERANCE_MIN:
             return key
     return None
+
+
+def format_counts(counts: dict) -> str:
+    """分档计数 → 角标/兜底文案（超短/波段各自多空 + 观望 + 无更新）。
+
+    全链路唯一文案源：render 角标、dry-run 预览、总结失败兜底共用，保证口径不漂移。
+    counts shape 见 summarize.count_rows：{"short":{"bull","bear"}, "swing":{"bull","bear"},
+    "neutral", "none"}。缺键按 0 兜底。
+    """
+    counts = counts or {}
+    s = counts.get("short") or {}
+    w = counts.get("swing") or {}
+    return (f"超短(0-1日) {s.get('bull', 0)}多/{s.get('bear', 0)}空 · "
+            f"波段(2日+) {w.get('bull', 0)}多/{w.get('bear', 0)}空 · "
+            f"观望 {counts.get('neutral', 0)} · 无更新 {counts.get('none', 0)}")

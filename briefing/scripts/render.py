@@ -248,11 +248,13 @@ _CN_NUMS = ["①", "②", "③", "④", "⑤", "⑥", "⑦", "⑧", "⑨", "⑩"
 _MAX_MD_BYTES = 30000  # 单 markdown 元素上限粗估；超长则把 18 行拆成两段
 
 
-def _fmt_roster_row(row):
+def _fmt_roster_row(row, inline_bucket=True):
     """单博主行：观点行（1 行头 + 重点原话 + 摘要）或占位行（近3日无观点更新）。
 
     row 字段见 summarize._row_from_llm：blogger/has_view/stance/bucket/horizon/
     summary/quote/quote_ts/n_posts。占位行区分"无帖"与"有帖未明确表态"。
+    inline_bucket=False：行不打印周期档标签（v10 按档分段后段标题已表意，行首只留
+    周期原话词 今日/明日/本周… 避免重复）。
     """
     name = row.get("blogger") or "?"
     if not row.get("has_view"):
@@ -263,7 +265,7 @@ def _fmt_roster_row(row):
     emoji = STANCE_EMOJI.get(row.get("stance"), "")
     stext = STANCE_TEXT.get(row.get("stance"), "")
     line1 = f"{emoji} **{name}** {stext}"
-    if row.get("bucket"):
+    if inline_bucket and row.get("bucket"):
         line1 += f" · {row['bucket']}"
     if row.get("horizon") and row["horizon"] != "未提":
         line1 += f" · {row['horizon']}"
@@ -276,14 +278,50 @@ def _fmt_roster_row(row):
     return "\n".join(lines)
 
 
+_BUCKET_HEAD = {
+    config.BUCKET_SHORT: "⏱️ **超短(0-1日)**",
+    config.BUCKET_SWING: "🌊 **波段(2日+)**",
+}
+_NO_DIRECTION_HEAD = "📭 **无明确方向**"
+
+
+def _roster_section_lines(rows):
+    """18 行按周期分段的渲染块序列（v10）。
+
+    段 = 超短(0-1日) / 波段(2日+) / 无明确方向（观望 + 无更新 博主尾段）。
+    段内按 config.ROSTER 原序；编号 ①–⑱ = 原名单位次不变（博主挪段编号不变，便于对位）。
+    空段不渲染标题；无方向博主必有尾段。每块是段标题或一个博主行（含其内部换行）。
+    同一逻辑块同时供卡 payload 与 dry-run 预览使用（run_briefing._preview_text 调用），防止两处漂移。
+    """
+    sections = {config.BUCKET_SHORT: [], config.BUCKET_SWING: []}
+    tail = []
+    for i, name in enumerate(config.ROSTER):
+        row = dict(rows.get(name) or {})
+        row.setdefault("blogger", name)
+        line = f"{_CN_NUMS[i]} {_fmt_roster_row(row, inline_bucket=False)}"
+        if row.get("has_view") and row.get("bucket") in sections:
+            sections[row["bucket"]].append(line)
+        else:
+            tail.append(line)
+    lines = []
+    for bucket in (config.BUCKET_SHORT, config.BUCKET_SWING):
+        if sections[bucket]:
+            lines.append(_BUCKET_HEAD[bucket])
+            lines.extend(sections[bucket])
+    if tail:
+        lines.append(_NO_DIRECTION_HEAD)
+        lines.extend(tail)
+    return lines
+
+
 def build_roster_card_payload(rows, market_text, slot_label, date_str, window_txt="",
                               summary_text="", counts=None):
-    """v9 主卡：header + 覆盖窗口 + 行情 + ①–⑱ 固定 18 行 + 卡底收敛总结 + 多空计数角标。
+    """v10 主卡：header + 覆盖窗口 + 行情 + 按周期分段的 18 行 + 卡底收敛总结 + 分档计数角标。
 
-    rows: {博主: row}，按 config.ROSTER 固定序渲染（缺的博主按占位行兜底）。
-    counts: {bull, bear, neutral, none}，系统权威计数，作角标与总结上下文。
+    rows: {博主: row}（缺的博主按占位行兜底，18 行必齐）。
+    counts: 分档 shape（见 summarize.count_rows），作角标与总结上下文。
     """
-    counts = counts or {"bull": 0, "bear": 0, "neutral": 0, "none": 18}
+    counts = counts or {}
     elements = []
     if window_txt:
         elements.append({"tag": "note", "elements": [
@@ -291,11 +329,7 @@ def build_roster_card_payload(rows, market_text, slot_label, date_str, window_tx
     elements.append({"tag": "markdown", "content": f"📈 {market_text}"})
     elements.append({"tag": "hr"})
 
-    blocks = []
-    for i, name in enumerate(config.ROSTER):
-        row = dict(rows.get(name) or {})
-        row.setdefault("blogger", name)
-        blocks.append(f"{_CN_NUMS[i]} {_fmt_roster_row(row)}")
+    blocks = _roster_section_lines(rows)
 
     roster_md = "\n\n".join(blocks)
     if len(roster_md.encode("utf-8", "replace")) > _MAX_MD_BYTES:
@@ -306,12 +340,12 @@ def build_roster_card_payload(rows, market_text, slot_label, date_str, window_tx
         elements.append({"tag": "markdown", "content": roster_md})
     elements.append({"tag": "hr"})
 
-    # 卡底收敛总结（无总结文案时降级为计数一行，保证卡片信息完整）
-    foot = f"🧭 {summary_text}" if summary_text else \
-        f"🧭 多空版图：{counts['bull']} 多 / {counts['bear']} 空 / 观望 {counts['neutral']} / 无更新 {counts['none']}"
+    # 卡底收敛总结（无总结文案时降级为分档计数一行，保证卡片信息完整）
+    counts_line = config.format_counts(counts)
+    foot = f"🧭 {summary_text}" if summary_text else f"🧭 多空版图：{counts_line}"
     elements.append({"tag": "markdown", "content": foot})
     elements.append({"tag": "note", "elements": [
-        {"tag": "plain_text", "content": f"多空 {counts['bull']}多/{counts['bear']}空 · 观望 {counts['neutral']} · 无更新 {counts['none']}"}]})
+        {"tag": "plain_text", "content": counts_line}]})
 
     return {
         "msg_type": "interactive",
@@ -325,10 +359,8 @@ def build_roster_card_payload(rows, market_text, slot_label, date_str, window_tx
 
 
 def build_minimal_card_payload(market_text, slot_label, date_str, window_txt="", note_text="", counts=None):
-    """零方向日（bull+bear==0）的最小交互卡：确认系统存活 + 计数角标，不渲染 18 行空表。"""
-    counts = counts or {}
-    counts_txt = (f"多空 {counts.get('bull', 0)}多/{counts.get('bear', 0)}空 · "
-                  f"观望 {counts.get('neutral', 0)} · 无更新 {counts.get('none', 18)}")
+    """零方向日的最小交互卡：确认系统存活 + 分档计数角标，不渲染 18 行空表。"""
+    counts_txt = config.format_counts(counts or {})
     elements = []
     if window_txt:
         elements.append({"tag": "note", "elements": [
