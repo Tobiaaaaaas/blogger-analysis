@@ -1,11 +1,16 @@
 # -*- coding: utf-8 -*-
-"""简报编排器（v9：18 人窗口速览卡 · 交易日三推）。
+"""简报编排器（v11：超短板块 + 波段板块 双固定名单 · 交易日三推）。
 
-流程：抓新帖 → 行情 → LLM 逐博主行抽取（近 3 交易日方向观点）→ 卡底收敛总结 → 飞书推送。
-展示窗口 = 滚动「近 3 个交易日」（现读合并主文件 data/posts，按发帖时间过滤，不依赖上次推送）；
+流程：抓新帖 → 行情 → 按板块 LLM 行抽取（超短近3交易日 / 波段近7自然日）→
+卡尾跨板块收敛总结 → 飞书推送。
+- 超短板块（17 人）：只认 今天/明天(0-1日) 方向观点，回看近 SHORT_WINDOW_TRADING_DAYS 个交易日。
+- 波段板块（21 人）：只认 近日/本周/下周/更长(2日+) 方向观点，回看近 SWING_WINDOW_CAL_DAYS 个自然日。
+- 两板块前 8 位"双板块博主"重复上榜：读帖/抽取各按所属板块窗口与口径独立执行一次，两块可各自成行。
+- 板块内只显示窗口内有该周期方向观点的博主；未表态者不点名不计数。
+展示窗口 = 现读合并主文件 data/posts（按发帖时间过滤，不依赖上次推送）；
 抓取窗口 = 增量 since state.last_run（只补主文件里还没有的新帖）。
 每档推送前先抓新帖；每档对窗口内帖子做全量 LLM 重读（不按 post_id 缓存引文）。
-只发一张固定 18 行的 roster 卡；旧 v8 共识卡 / 心跳已移出热路径（代码仍留作 LEGACY）。
+只发一张双板块 roster 卡；旧 v8 共识卡 / 心跳已移出热路径（代码仍留作 LEGACY）。
 
 用法：
   python -m briefing.scripts.run_briefing --push                       # cron 真实推送（自动判定时段）
@@ -29,7 +34,7 @@ import time
 from datetime import datetime, timedelta, timezone
 
 from . import calendar, config, market, paths, render, scrape_merge, state
-from .summarize import count_rows, extract_window_rows, summarize_window
+from .summarize import board_counts, extract_board_rows, summarize_boards
 
 log = logging.getLogger("briefing")
 
@@ -70,14 +75,14 @@ def _resolve_slot(args, now):
 
 
 def _beijing_midnight_epoch(d) -> int:
-    """某日期（北京时）00:00 的 epoch 秒。作展示窗口下界：首交易日 00:00 ≤ 帖子发帖时刻。"""
+    """某日期（北京时）00:00 的 epoch 秒。作展示窗口下界：下界当日 00:00 ≤ 帖子发帖时刻。"""
     return int(datetime(d.year, d.month, d.day, tzinfo=BEIJING_TZ).timestamp())
 
 
 def _read_window_posts(blogger, start_ts, now_ts):
     """现读合并主文件，返回该博主窗口内 [start_ts, now_ts] 的可读帖（新→旧）。
 
-    过滤 [视频帖]/无正文短帖（与 extract_window_rows 口径一致），每博主只取最新
+    过滤 [视频帖]/无正文短帖（与 extract_board_rows 口径一致），每博主只取最新
     ROWS_MAX_POSTS 条喂 LLM——行抽取只依赖这同一个列表，下标即引文来源。
     """
     fp = os.path.join(paths.POSTS_DIR, f"{blogger}.json")
@@ -100,7 +105,7 @@ def _read_window_posts(blogger, start_ts, now_ts):
 
 
 def _migrate_state_v2(st):
-    """旧 v8 state（recent_views/board_prev/previous）→ v9 形状：只留 last_run/last_slot/seen。
+    """旧 v8 state（recent_views/board_prev/previous）→ 新形状：只留 last_run/last_slot/seen。
 
     幂等，仅改内存态；落地由 _run 末尾统一原子写。last_run 复用为爬虫增量 since。
     """
@@ -110,11 +115,6 @@ def _migrate_state_v2(st):
             del st[k]
             changed = True
     return changed
-
-
-def _row_counts(rows):
-    """v10：分档计数（超短/波段各自多空 + 观望 + 无更新）→ summarize.count_rows（断言合计=18）。"""
-    return count_rows(rows)
 
 
 def _save_history(date_str, slot_label, payload, preview):
@@ -183,6 +183,25 @@ def _release_lock():
         pass
 
 
+def _board_windows(now):
+    """双板块展示窗口（北京时）：返回 {key: start_ts} 与合并窗口说明文本。
+
+    short：近 SHORT_WINDOW_TRADING_DAYS 个交易日（下界=首交易日 00:00）；
+    swing：近 SWING_WINDOW_CAL_DAYS 个自然日（下界=当日 00:00，覆盖周末）。
+    """
+    short_days = calendar.trading_days(now.date(), config.SHORT_WINDOW_TRADING_DAYS)
+    swing_start_date = now.date() - timedelta(days=config.SWING_WINDOW_CAL_DAYS)
+    starts = {
+        "short": _beijing_midnight_epoch(short_days[0]),
+        "swing": _beijing_midnight_epoch(swing_start_date),
+    }
+    window_txt = (f"超短板块：近{config.SHORT_WINDOW_TRADING_DAYS}个交易日"
+                  f"（{short_days[0]:%m-%d}—{short_days[-1]:%m-%d}） · "
+                  f"波段板块：近{config.SWING_WINDOW_CAL_DAYS}个自然日"
+                  f"（{swing_start_date:%m-%d} 起）")
+    return starts, window_txt
+
+
 def _run(args):
     paths.load_env()
     _setup_logging()
@@ -196,7 +215,7 @@ def _run(args):
     slot_key = _resolve_slot(args, now)
     slot_time, slot_label = config.SLOTS[slot_key]
     date_str = _date_str(now)
-    log.info("== 简报 v9 %s %s（slot=%s）==", date_str, slot_time, slot_key)
+    log.info("== 简报 v11 %s %s（slot=%s）==", date_str, slot_time, slot_key)
 
     if not _acquire_lock():
         return 0  # 已有进程在跑（防重叠）
@@ -205,79 +224,71 @@ def _run(args):
     st = state.load_state()
     _migrate_state_v2(st)  # v8 残留键清理（内存态，落盘在末尾）
 
-    # 展示窗口：滚动近 3 个交易日，下界=首交易日 00:00（北京）；每次推送现读主文件
-    win_days = calendar.trading_days(now.date(), config.WINDOW_TRADING_DAYS)
-    start_ts = _beijing_midnight_epoch(win_days[0])
+    # 双板块展示窗口（滚动；每次推送现读主文件）＋ 抓取增量下界
+    board_start, window_txt = _board_windows(now)
     now_ts = int(now.timestamp())
-    window_txt = (f"近{config.WINDOW_TRADING_DAYS}个交易日"
-                  f"（{win_days[0]:%m-%d}—{win_days[-1]:%m-%d}）")
-    log.info("展示窗口 %s（start_ts=%d）", window_txt, start_ts)
-
-    # 抓取窗口：增量 since state.last_run（首跑/缺 → 窗口首日 00:00，兼容 v8 残留 last_run）
+    log.info("展示窗口 %s", window_txt)
     since_str = (st.get("last_run")
-                 or datetime.fromtimestamp(start_ts, tz=BEIJING_TZ).strftime("%Y-%m-%d %H:%M"))
+                 or datetime.fromtimestamp(min(board_start.values()),
+                                           tz=BEIJING_TZ).strftime("%Y-%m-%d %H:%M"))
     log.info("爬虫增量 since=%s", since_str)
 
     # 1) 抓新帖（只补主文件缺的新帖；展示窗口单独现读，不依赖抓取结果）
-    errors = []
+    window_posters = set()  # 两板块窗口内有可读帖的博主（区分"无人发帖"与"有帖无观点"）
     if args.no_scrape:
         log.info("--no-scrape：不抓取，直接读已合并主文件")
     else:
         results, errors = scrape_merge.fetch_all_new_posts(
-            config.ROSTER, since_str, max_bloggers=args.max_bloggers,
+            config.ALL_BLOGGERS, since_str, max_bloggers=args.max_bloggers,
             per_timeout=args.timeout, workers=args.workers)
         if errors:
             log.warning("本轮抓取失败博主：%s", errors)
 
-    # 2) 读展示窗口帖子（滚动 3 交易日，现读合并主文件 data/posts/<b>.json）
-    by_blogger = {}
-    for name in config.ROSTER:
-        win = _read_window_posts(name, start_ts, now_ts)
-        if win:
-            by_blogger[name] = win
-            log.info("  %s 窗口内可读帖 %d 条", name, len(win))
-    log.info("窗口内有帖博主 %d/%d", len(by_blogger), len(config.ROSTER))
-
-    # 3) 行情
+    # 2) 行情
     quotes = market.fetch_quotes()
     mkt_text = market.market_line(quotes)
     log.info("行情: %s", mkt_text)
 
-    # 4) LLM 行抽取：每博主近 3 交易日方向观点 → 摘要 + 逐字原话（引文时间系统回填）。
-    #    无帖/全视频帖博主不进 extract（由它直接占位）；此处把 18 人补齐成确定集合。
-    rows, row_errors = extract_window_rows(by_blogger)
-    for name in config.ROSTER:
-        if name not in rows:
-            rows[name] = {"blogger": name, "has_view": False, "stance": "", "horizon": "",
-                          "bucket": "", "summary": "", "quote": "", "quote_ts": None, "n_posts": 0}
-    if row_errors:
-        log.warning("行抽取失败博主（降级占位）：%s", row_errors)
+    # 3) 按板块读窗口帖子 → LLM 行抽取（每板块独立口径/窗口；共享 8 位博主两板块各抽一次）
+    rows_by_board, directed = {}, 0
+    for key in config.PANEL_KEYS:
+        by_member = {}
+        for name in config.PANELS[key]:
+            win = _read_window_posts(name, board_start[key], now_ts)
+            if win:
+                by_member[name] = win
+                window_posters.add(name)
+        log.info("[%s] 窗口内有帖博主 %d/%d", key, len(by_member), len(config.PANELS[key]))
+        rows, errs = extract_board_rows(key, by_member)
+        if errs:
+            log.warning("[%s] 行抽取失败博主（该板块不显示、不计数）：%s", key, errs)
+        rows_by_board[key] = rows
 
-    # 5) 系统分档计数（超短/波段各多空 + 观望/无更新）——卡片与总结引用的权威数字
-    counts = _row_counts(rows)
-    s, w = counts["short"], counts["swing"]
-    log.info("行抽取完成：超短 %d多/%d空 波段 %d多/%d空 · 观望 %d · 无更新 %d",
-             s["bull"], s["bear"], w["bull"], w["bear"],
-             counts["neutral"], counts["none"])
-    directed = s["bull"] + s["bear"] + w["bull"] + w["bear"]
+    # 4) 系统计数（每板块 bull/bear/shown/members；未表态者不计）——卡片头行与总结的权威数字
+    counts = board_counts(rows_by_board)
+    for key in config.PANEL_KEYS:
+        c = counts[key]
+        log.info("板块 %s：%d多/%d空（%d/%d 表态）", key, c["bull"], c["bear"],
+                 c["shown"], c["members"])
+    directed = counts["short"]["shown"] + counts["swing"]["shown"]
 
-    # 6) 渲染：有方向观点 → 全卡 + 卡底收敛总结（仅此分支调总结 LLM）；
+    # 5) 渲染：有方向观点 → 全卡 + 卡尾跨板块收敛总结（仅此分支调总结 LLM）；
     #    零方向日 → 最小卡（健康信号），不调总结 LLM。
     if directed > 0:
-        summary_text = summarize_window(rows, counts, mkt_text, slot_label, date_str,
-                                        window_txt=window_txt)
-        payload = render.build_roster_card_payload(
-            rows, mkt_text, slot_label, date_str,
-            window_txt=window_txt, summary_text=summary_text, counts=counts)
+        summary_text = summarize_boards(rows_by_board, counts, mkt_text, slot_label,
+                                        date_str, window_txt=window_txt)
+        payload = render.build_board_card_payload(
+            rows_by_board, counts, mkt_text, slot_label, date_str,
+            window_txt=window_txt, summary_text=summary_text)
     else:
         summary_text = ""
-        note = ("近 3 个交易日各博主均无明确方向观点" if counts["none"] < len(config.ROSTER)
-                else "近 3 个交易日无博主发帖更新")
+        note = ("超短/波段板块窗口内均无博主发帖更新" if not window_posters
+                else "超短/波段板块窗口内均无人给出方向观点")
         payload = render.build_minimal_card_payload(
             mkt_text, slot_label, date_str,
             window_txt=window_txt, note_text=note, counts=counts)
 
-    # 7) 推送 / 落盘
+    # 6) 推送 / 落盘
     if args.push:
         ok, resp = render.post_webhook(payload)
         log.info("简报推送 %s: %s", "成功" if ok else "失败", resp)
@@ -292,7 +303,7 @@ def _run(args):
         return 0 if ok else 1
 
     # dry-run：落盘预览，不改状态
-    preview = _preview_text(rows, counts, mkt_text, slot_label, date_str,
+    preview = _preview_text(rows_by_board, counts, mkt_text, slot_label, date_str,
                             summary_text=summary_text, window_txt=window_txt)
     fp = _save_history(date_str, slot_label, payload, preview)
     print(preview)
@@ -301,24 +312,26 @@ def _run(args):
     return 0
 
 
-def _preview_text(rows, counts, mkt_text, slot_label, date_str, summary_text="", window_txt=""):
-    """dry-run 预览：与卡片 payload 同构的纯文本（分段 18 行 + 分档计数角标）。"""
-    from .render import _date_header, _roster_section_lines
+def _preview_text(rows_by_board, counts, mkt_text, slot_label, date_str,
+                  summary_text="", window_txt=""):
+    """dry-run 预览：与卡 payload 同构的纯文本（双板块计数头行 + 名单行 + 卡尾总结）。"""
+    from .render import _board_section_lines, _date_header
     lines = [_date_header(date_str, slot_label)]
     if window_txt:
         lines.append(f"🕐 覆盖：{window_txt}")
     lines.append("📈 " + mkt_text)
     lines.append("")
-    lines.extend(_roster_section_lines(rows))
-    lines.append("")
+    for key in config.PANEL_KEYS:
+        lines.extend(_board_section_lines(key, rows_by_board.get(key) or {},
+                                          counts.get(key) or {}))
+        lines.append("")
     if summary_text:
         lines.append(f"🧭 {summary_text}")
-    lines.append(f"（{config.format_counts(counts)}）")
     return "\n".join(lines)
 
 
 def main():
-    ap = argparse.ArgumentParser(description="18 人博主观点窗口速览卡 → 飞书（v9）")
+    ap = argparse.ArgumentParser(description="双板块博主观点速览卡 → 飞书（v11）")
     ap.add_argument("--push", action="store_true", help="真实推送到飞书并推进状态（cron 用）")
     ap.add_argument("--dry-run", action="store_true", help="只落盘预览，不推送、不改状态")
     ap.add_argument("--slot", default="", help="指定时段 key（默认按当前时刻自动判定）")

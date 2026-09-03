@@ -240,35 +240,25 @@ def post_webhook(payload, webhook_url=None, retries=3):
 
 
 # =====================================================================
-# v9：18 人窗口速览卡（固定名单行式表格 + 卡底收敛总结）
+# v11：双板块速览卡（超短板块 + 波段板块 固定名单 × 各自窗口/周期口径）
 # =====================================================================
 
-_CN_NUMS = ["①", "②", "③", "④", "⑤", "⑥", "⑦", "⑧", "⑨", "⑩",
-            "⑪", "⑫", "⑬", "⑭", "⑮", "⑯", "⑰", "⑱"]
-_MAX_MD_BYTES = 30000  # 单 markdown 元素上限粗估；超长则把 18 行拆成两段
+_MAX_MD_BYTES = 30000  # 单 markdown 元素上限粗估；超长按行拆成多段
 
 
-def _fmt_roster_row(row, inline_bucket=True):
-    """单博主行：观点行（1 行头 + 重点原话 + 摘要）或占位行（近3日无观点更新）。
+def _fmt_board_row(name, row):
+    """板块内单博主行（无编号）：标题行 + 重点原话(发帖时间) + 摘要。
 
-    row 字段见 summarize._row_from_llm：blogger/has_view/stance/bucket/horizon/
-    summary/quote/quote_ts/n_posts。占位行区分"无帖"与"有帖未明确表态"。
-    inline_bucket=False：行不打印周期档标签（v10 按档分段后段标题已表意，行首只留
-    周期原话词 今日/明日/本周… 避免重复）。
+    row 字段见 summarize._row_from_board_llm：blogger/has_view/stance/horizon/
+    summary/quote/quote_ts。只列窗口内有该板块周期方向观点的博主；
+    horizon 为该板块周期原话词（今天/明天；近日/本周/…/未提），未提 不打印。
     """
-    name = row.get("blogger") or "?"
-    if not row.get("has_view"):
-        base = f"**{name}**：{config.ROWS_NO_VIEW_TEXT}"
-        if row.get("n_posts"):
-            base += "（有发帖未明确表态）"
-        return base
     emoji = STANCE_EMOJI.get(row.get("stance"), "")
-    stext = STANCE_TEXT.get(row.get("stance"), "")
+    stext = STANCE_TEXT.get(row.get("stance"), row.get("stance") or "")
     line1 = f"{emoji} **{name}** {stext}"
-    if inline_bucket and row.get("bucket"):
-        line1 += f" · {row['bucket']}"
-    if row.get("horizon") and row["horizon"] != "未提":
-        line1 += f" · {row['horizon']}"
+    horizon = row.get("horizon") or "未提"
+    if horizon != "未提":
+        line1 += f" · {horizon}"
     lines = [line1]
     if row.get("quote"):
         t = fmt_post_time(row.get("quote_ts"))
@@ -278,50 +268,58 @@ def _fmt_roster_row(row, inline_bucket=True):
     return "\n".join(lines)
 
 
-_BUCKET_HEAD = {
-    config.BUCKET_SHORT: "⏱️ **超短(0-1日)**",
-    config.BUCKET_SWING: "🌊 **波段(2日+)**",
-}
-_NO_DIRECTION_HEAD = "📭 **无明确方向**"
+def _board_section_lines(board_key, rows, counts):
+    """单个板块渲染块序列（v11）：计数头行 + 按名单序的成员行 / 空板块提示。
 
-
-def _roster_section_lines(rows):
-    """18 行按周期分段的渲染块序列（v10）。
-
-    段 = 超短(0-1日) / 波段(2日+) / 无明确方向（观望 + 无更新 博主尾段）。
-    段内按 config.ROSTER 原序；编号 ①–⑱ = 原名单位次不变（博主挪段编号不变，便于对位）。
-    空段不渲染标题；无方向博主必有尾段。每块是段标题或一个博主行（含其内部换行）。
-    同一逻辑块同时供卡 payload 与 dry-run 预览使用（run_briefing._preview_text 调用），防止两处漂移。
+    rows: 该板块 {博主: row}（仅 has_view）；counts: board_counts[board_key]。
+    同一块序列同时供卡 payload 与 dry-run 预览（run_briefing._preview_text）调用，
+    单一来源防漂移。未表态成员不占行。
     """
-    sections = {config.BUCKET_SHORT: [], config.BUCKET_SWING: []}
-    tail = []
-    for i, name in enumerate(config.ROSTER):
-        row = dict(rows.get(name) or {})
-        row.setdefault("blogger", name)
-        line = f"{_CN_NUMS[i]} {_fmt_roster_row(row, inline_bucket=False)}"
-        if row.get("has_view") and row.get("bucket") in sections:
-            sections[row["bucket"]].append(line)
-        else:
-            tail.append(line)
-    lines = []
-    for bucket in (config.BUCKET_SHORT, config.BUCKET_SWING):
-        if sections[bucket]:
-            lines.append(_BUCKET_HEAD[bucket])
-            lines.extend(sections[bucket])
-    if tail:
-        lines.append(_NO_DIRECTION_HEAD)
-        lines.extend(tail)
+    meta = config.BOARD_META[board_key]
+    c = counts or {}
+    head = (f"{meta['emoji']} **{meta['label']}**"
+            f" · {c.get('bull', 0)}多/{c.get('bear', 0)}空"
+            f"（{c.get('shown', 0)}/{c.get('members', 0)} 表态）")
+    lines = [head]
+    shown = 0
+    for name in config.PANELS[board_key]:
+        row = rows.get(name)
+        if not row:
+            continue
+        lines.append(_fmt_board_row(name, row))
+        shown += 1
+    if not shown:
+        lines.append(meta["empty_note"])
     return lines
 
 
-def build_roster_card_payload(rows, market_text, slot_label, date_str, window_txt="",
-                              summary_text="", counts=None):
-    """v10 主卡：header + 覆盖窗口 + 行情 + 按周期分段的 18 行 + 卡底收敛总结 + 分档计数角标。
+def _chunk_lines(lines, cap=_MAX_MD_BYTES):
+    """行序列按 UTF-8 字节上限切成若干块（每块单独成 markdown 元素）。"""
+    if not lines:
+        return []
+    joined = "\n\n".join(lines)
+    if len(joined.encode("utf-8", "replace")) <= cap:
+        return [joined]
+    chunks, cur, cur_bytes = [], [], 0
+    for ln in lines:
+        nb = len(ln.encode("utf-8", "replace")) + 2
+        if cur and cur_bytes + nb > cap:
+            chunks.append("\n\n".join(cur))
+            cur, cur_bytes = [], 0
+        cur.append(ln)
+        cur_bytes += nb
+    if cur:
+        chunks.append("\n\n".join(cur))
+    return chunks
 
-    rows: {博主: row}（缺的博主按占位行兜底，18 行必齐）。
-    counts: 分档 shape（见 summarize.count_rows），作角标与总结上下文。
+
+def build_board_card_payload(rows_by_board, counts, market_text, slot_label, date_str,
+                             window_txt="", summary_text=""):
+    """v11 主卡：header + 覆盖窗口 + 行情 + 双板块（各自计数头行 + 名单行） + 卡尾收敛总结。
+
+    rows_by_board: {key: {博主: row}}；counts: summarize.board_counts。
+    summary_text 为空 → 降级为系统计数一行（多空版图）。
     """
-    counts = counts or {}
     elements = []
     if window_txt:
         elements.append({"tag": "note", "elements": [
@@ -329,23 +327,16 @@ def build_roster_card_payload(rows, market_text, slot_label, date_str, window_tx
     elements.append({"tag": "markdown", "content": f"📈 {market_text}"})
     elements.append({"tag": "hr"})
 
-    blocks = _roster_section_lines(rows)
+    for key in config.PANEL_KEYS:
+        section = _board_section_lines(key, rows_by_board.get(key) or {},
+                                       counts.get(key) or {})
+        for chunk in _chunk_lines(section):
+            elements.append({"tag": "markdown", "content": chunk})
+        elements.append({"tag": "hr"})
 
-    roster_md = "\n\n".join(blocks)
-    if len(roster_md.encode("utf-8", "replace")) > _MAX_MD_BYTES:
-        half = len(blocks) // 2
-        elements.append({"tag": "markdown", "content": "\n\n".join(blocks[:half])})
-        elements.append({"tag": "markdown", "content": "\n\n".join(blocks[half:])})
-    else:
-        elements.append({"tag": "markdown", "content": roster_md})
-    elements.append({"tag": "hr"})
-
-    # 卡底收敛总结（无总结文案时降级为分档计数一行，保证卡片信息完整）
-    counts_line = config.format_counts(counts)
-    foot = f"🧭 {summary_text}" if summary_text else f"🧭 多空版图：{counts_line}"
-    elements.append({"tag": "markdown", "content": foot})
-    elements.append({"tag": "note", "elements": [
-        {"tag": "plain_text", "content": counts_line}]})
+    if not summary_text:
+        summary_text = f"多空版图：{config.format_board_counts(counts)}"
+    elements.append({"tag": "markdown", "content": f"🧭 {summary_text}"})
 
     return {
         "msg_type": "interactive",
@@ -359,8 +350,8 @@ def build_roster_card_payload(rows, market_text, slot_label, date_str, window_tx
 
 
 def build_minimal_card_payload(market_text, slot_label, date_str, window_txt="", note_text="", counts=None):
-    """零方向日的最小交互卡：确认系统存活 + 分档计数角标，不渲染 18 行空表。"""
-    counts_txt = config.format_counts(counts or {})
+    """零方向日的最小交互卡：确认系统存活 + 系统计数一行，不渲染双板块空表。"""
+    counts_txt = config.format_board_counts(counts or {})
     elements = []
     if window_txt:
         elements.append({"tag": "note", "elements": [

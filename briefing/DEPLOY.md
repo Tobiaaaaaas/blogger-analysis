@@ -31,7 +31,7 @@ python -m briefing.scripts.run_briefing --dry-run --slot morning --no-scrape
 # 确认卡片内容 OK 后再真实推送一次验证 webhook：
 python -m briefing.scripts.run_briefing --push --slot morning
 ```
-> v9（2026-09）起简报 = 固定 18 人窗口速览卡：交易日 **3 推**（09:30 早盘 / 13:00 午后 / 14:30 尾盘），每档 = 一张交互卡（行情 + ①–⑱ 固定 18 行 + 卡底收敛总结）。v8 的博主画像（profiles.json）已不再参与渲染，首次部署无需生成。
+> v11（2026-09-03）起简报 = **超短板块 + 波段板块** 双固定名单速览卡：交易日 **3 推**（09:30 早盘 / 13:00 午后 / 14:30 尾盘），每档 = 一张交互卡（行情 + ⏱️ 超短(0-1日) 17 人 / 🌊 波段(2日+) 21 人两板块各自计数头行 + 卡尾跨板块收敛总结）。名单 = `reports/top20_值得关注博主.md` 双榜（前 8 位双板块博主两块都上榜）。v8 的博主画像（profiles.json）已不再参与渲染，首次部署无需生成。
 
 ## 定时任务（cron）
 
@@ -56,9 +56,9 @@ crontab -e
 ## 监控
 
 - 日志：`briefing/data/briefing.log`、`data/cron.log`
-- 状态：`briefing/data/state.json`（v9：`last_run / last_slot / seen`；`recent_views / board_prev / previous` 已由脚本首跑自动清除）
+- 状态：`briefing/data/state.json`（简报：`last_run / last_slot / seen`；v8 的 `recent_views / board_prev / previous` 已由脚本首跑自动清除）
 - 历史简报：`briefing/data/briefings/*.json`
-- 每档都推一张卡：18 人全部有方向观点 → 全卡（含收敛总结）；全无方向 → 最小卡（确认系统存活，不发心跳）；任一步失败推错误文本。
+- 每档都推一张卡：超短/波段两板块合计有方向观点 → 全卡（两板块 + 卡尾收敛总结）；全零方向 → 最小卡（确认系统存活，不发心跳）；任一步失败推错误文本。
 
 ---
 
@@ -120,7 +120,7 @@ C:\Users\24966\AppData\Local\Programs\Python\Python311\python.exe -m briefing.sc
 ```
 
 > **bat 必须 ASCII + CRLF**：中文 Windows 的 cmd 按 GBK/OEM 码页解析批处理，UTF-8 中文（尤其 `rem` 注释里）会把后续行拆成乱命令；LF 行尾同样危险。改动 bat 后务必 `cmd /c ...\bat <slot>` 手动验证无 `'xxx' 不是内部或外部命令` 报错且面包屑落盘。
-> **bat 字节不变（2026-09 v9）**：它只透传 `--slot %1`，键名不在 bat 里；上面 rem 注释仍列 v8 槽位仅为历史说明。任务注册见下方 3 条（morning/afternoon/late）。
+> **bat 字节不变（2026-09 v9 冻结，v10/v11 亦未动）**：它只透传 `--slot %1`，键名不在 bat 里；上面 rem 注释仍列 v8 槽位仅为历史说明。任务注册见下方 3 条（morning/afternoon/late）。
 
 ```bash
 :: 2026-09-02 v9：删旧 7 档任务，建新 3 档（morning 09:30 / afternoon 13:00 / late 14:30）
@@ -140,7 +140,7 @@ schtasks /create /tn BriefingLate      /tr "C:\Users\24966\blogger_ana\briefing\
 
 - 日志：`C:\Users\24966\blogger_ana\briefing\data\briefing.log`
 - 任务：`schtasks /query /fo list | findstr Briefing`
-- 每档都推卡：18 人全有方向 → 全卡；全无方向 → 最小卡（健康信号，取代 v8 心跳）；失败推错误文本
+- 每档都推卡：超短/波段两板块合计有方向 → 全卡；全零方向 → 最小卡（健康信号，取代 v8 心跳）；失败推错误文本
 
 ## Windows 已知注意
 

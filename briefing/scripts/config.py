@@ -1,15 +1,46 @@
 # -*- coding: utf-8 -*-
-"""简报系统配置：推送名单、推送时段、时段标签、展示窗口常量。"""
+"""简报系统配置：双板块名单、板块口径、推送时段、窗口常量。
+
+v11（2026-09-03）：速览卡 =「超短板块 + 波段板块」两个固定名单。
+  - 超短板块：只取 今天/明天(0-1日) 表态，回看近 SHORT_WINDOW_TRADING_DAYS 个交易日。
+  - 波段板块：只取 近日/本周/下周/更长(结构性中期) 表态，回看近 SWING_WINDOW_CAL_DAYS 个自然日。
+  - 两板块前 8 位"双板块博主"重复出现：对同一博主按各自板块口径独立抽取，两块都可成行。
+名单来自 reports/top20_值得关注博主.md 双榜（超短榜 / 中期榜）；顺序即板块内展示顺序。
+"""
 from datetime import datetime
 
-# ── 推送名单（18 人固定，2026-09 快照；"衡山佛曰论股"以"曰"为准）──
-ROSTER = [
-    "云帆观市", "时间轨迹", "山顶望星空的诗人", "一只小小牛", "孙万林",
-    "衡山佛曰论股", "四十二流光", "三粒光", "波段研究师", "强哥解盘",
-    "知情达理星空hnR", "顺应周期", "白猫财眼", "股评老陈", "大盘蜂向标",
-    "红红火火的老牛哥", "微风3241", "爱生活的荷叶Rp",
+# ── 超短板块（17）：只看 今天/明天 方向观点 ──
+PANEL_SHORT = [
+    "云帆观市", "红红火火的老牛哥", "白猫财眼", "大盘蜂向标", "一只小小牛",
+    "孙万林", "顺应周期", "山顶望星空的诗人",
+    "入竹风拂面画船听雨眠", "大白白", "龙五", "三粒光", "麟老哥",
+    "波段研究师", "纽约音乐厨房", "股傲", "要有心态",
 ]
-TRACKED = ROSTER  # LEGACY：旧 v8 共识卡/画像曾引用 config.TRACKED，保持同指 18 人
+
+# ── 波段板块（21）：只看 波段(近日/本周/下周/更长) 方向观点 ──
+PANEL_SWING = [
+    "云帆观市", "红红火火的老牛哥", "白猫财眼", "大盘蜂向标", "一只小小牛",
+    "孙万林", "顺应周期", "山顶望星空的诗人",
+    "香满衣", "智由智哉", "股评老陈", "趋势巡航", "谭阿坤", "时间轨迹",
+    "刘海娃娃", "四十二流光", "诸葛不亮", "衡山佛曰论股", "微风3241",
+    "爱生活的荷叶Rp", "江河之水终有入海之日",
+]
+
+PANEL_KEYS = ("short", "swing")
+PANELS = {"short": PANEL_SHORT, "swing": PANEL_SWING}
+
+# 板块展示元信息（标题/emoji/空板块提示）
+BOARD_META = {
+    "short": {"label": "超短(0-1日)", "emoji": "⏱️",
+              "empty_note": "（近3日无人给出超短方向观点）"},
+    "swing": {"label": "波段(2日+)", "emoji": "🌊",
+              "empty_note": "（近7日无人给出波段方向观点）"},
+}
+
+# 抓取/读帖全集：两板块去重（超短板块原序 + 波段板块新增第 9 位起）
+ALL_BLOGGERS = PANEL_SHORT + [b for b in PANEL_SWING if b not in PANEL_SHORT]
+
+TRACKED = ALL_BLOGGERS  # LEGACY：旧 v8 共识卡/画像曾引用 config.TRACKED，泛指"跟踪名单"
 
 # ── 推送时段（交易日 3 推；非交易日不推）──
 # slot_key: (HH:MM, 卡片标题用词)
@@ -22,13 +53,11 @@ SLOTS = {
 SLOT_TOLERANCE_MIN = 6  # cron 触发时间与槽位时间 ±6 分钟内视为命中
 
 # ── 展示窗口 / 行抽取常量 ──
-WINDOW_TRADING_DAYS = 3      # 每博主取"过去 N 个交易日"内发表的观点
-ROWS_MAX_POSTS = 5           # 每博主喂给 LLM 的窗口内帖子上限（最新 N 条，新→旧）
-ROWS_BATCH_BLOGGERS = 2      # summarize 每次 DeepSeek 调用放进几位博主
-ROWS_WORKERS = 3             # 行抽取并行线程数
-ROWS_NO_VIEW_TEXT = "近3日无观点更新"
-BUCKET_SHORT = "超短(0-1日)"  # 今天/明天
-BUCKET_SWING = "波段(2日+)"   # 后天及更远 / 本周 / 下周 / 更长 / 有方向无周期
+SHORT_WINDOW_TRADING_DAYS = 3   # 超短板块：回看近 N 个交易日
+SWING_WINDOW_CAL_DAYS = 7       # 波段板块：回看近 N 个自然日（覆盖周末，约 5-6 交易日）
+ROWS_MAX_POSTS = 8              # 每博主喂给 LLM 的窗口内帖子上限（最新 N 条，新→旧）
+ROWS_BATCH_BLOGGERS = 2         # summarize 每次 DeepSeek 调用放进几位博主
+ROWS_WORKERS = 3                # 行抽取并行线程数
 
 
 def slot_for(now: datetime, trading_day: bool) -> str | None:
@@ -42,16 +71,16 @@ def slot_for(now: datetime, trading_day: bool) -> str | None:
     return None
 
 
-def format_counts(counts: dict) -> str:
-    """分档计数 → 角标/兜底文案（超短/波段各自多空 + 观望 + 无更新）。
+def format_board_counts(counts: dict) -> str:
+    """双板块计数 → 文本（摘要注入/兜底/最小卡）。
 
-    全链路唯一文案源：render 角标、dry-run 预览、总结失败兜底共用，保证口径不漂移。
-    counts shape 见 summarize.count_rows：{"short":{"bull","bear"}, "swing":{"bull","bear"},
-    "neutral", "none"}。缺键按 0 兜底。
+    全链路唯一文案源之一：板块头行见 render._board_header；此处是"汇总一行"版。
+    counts shape 见 summarize.board_counts：{key: {"bull","bear","shown","members"}}。
     """
     counts = counts or {}
     s = counts.get("short") or {}
     w = counts.get("swing") or {}
-    return (f"超短(0-1日) {s.get('bull', 0)}多/{s.get('bear', 0)}空 · "
-            f"波段(2日+) {w.get('bull', 0)}多/{w.get('bear', 0)}空 · "
-            f"观望 {counts.get('neutral', 0)} · 无更新 {counts.get('none', 0)}")
+    return (f"超短(0-1日) {s.get('bull', 0)}多/{s.get('bear', 0)}空"
+            f"（{s.get('shown', 0)}/{s.get('members', 0)} 表态） · "
+            f"波段(2日+) {w.get('bull', 0)}多/{w.get('bear', 0)}空"
+            f"（{w.get('shown', 0)}/{w.get('members', 0)} 表态）")
