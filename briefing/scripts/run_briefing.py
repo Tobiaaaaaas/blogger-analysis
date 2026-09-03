@@ -1,29 +1,36 @@
 # -*- coding: utf-8 -*-
-"""简报编排器（v11 双固定名单 · v12 日期锚定：板块行头/引文时间以绝对日期为准）。
+"""简报编排器 v13：超短/波段拆两群两卡 · 盘中 30 分档 · 行缓存增量复用。
 
-流程：抓新帖 → 行情 → 按板块 LLM 行抽取（超短近3交易日 / 波段近7自然日）→
-resolve_anchors 把相对词换算成绝对目标日/周并按卡片日剔已过期表态 →
-卡尾跨板块收敛总结 → 飞书推送。
-- 超短板块（17 人）：只认 今天/明天(0-1日) 方向观点，回看近 SHORT_WINDOW_TRADING_DAYS 个交易日。
-- 波段板块（21 人）：只认 近日/本周/下周/更长(2日+) 方向观点，回看近 SWING_WINDOW_CAL_DAYS 个自然日。
-- 两板块前 8 位"双板块博主"重复上榜：读帖/抽取各按所属板块窗口与口径独立执行一次，两块可各自成行。
-- 板块内只显示窗口内有该周期方向观点的博主；未表态者不点名不计数。
-展示窗口 = 现读合并主文件 data/posts（按发帖时间过滤，不依赖上次推送）；
-抓取窗口 = 增量 since state.last_run（只补主文件里还没有的新帖）。
-每档推送前先抓新帖；每档对窗口内帖子做全量 LLM 重读（不按 post_id 缓存引文）。
-只发一张双板块 roster 卡；旧 v8 共识卡 / 心跳已移出热路径（代码仍留作 LEGACY）。
+节奏与调度：
+- 交易日盘中每 30 分钟一档（config.TRADING_TICKS：09:30…15:00）。墙钟命中网格才跑；
+  门禁在抓取/锁之前（12:00/12:30/15:30 等伪 tick 与 StartWhenAvailable 离网格补跑
+  → log 后 exit 0，不碰锁不碰状态）。
+- 超短板块每档推一张卡；波段板块仅在 config.SWING_TICKS（09:30/11:00/14:30）三档额外
+  推一张。两板块各自读帖→抽取→锚定→计数→收敛总结，各推各群
+  （render.webhook_for 读 config.WEBHOOK_ENV；该板块 webhook 缺失按失败处理，**不回落**
+  FEISHU_WEBHOOK_URL——防波段卡误发超短群）。
+- 窗口：超短近 2 自然日、波段近 5 自然日（config.WINDOW_CAL_DAYS，下界=北京时
+  now.date()-K 当天 00:00）。已知取舍：周一早晨不含上周五"看周一"帖（用户确认接受）。
+- 每档必发：板块有方向观点→全卡 + 本板块收敛总结；空→单板块最小卡（区分近窗口
+  无人发帖 / 有人发帖但无该板块方向观点）；内容没变也发；不加 🆕 标记。
+
+状态 / 增量（2026-09 v13）：
+- fetched_at（爬虫水位：抓取+merge 完成即写，不等待推送成败）与 last_run（推送水位：
+  全板块推完才写）分离——避免推送失败下一档重抓已抓过的增量。
+- rows_cache.json（行抽取缓存）：某博主窗口帖集合未变 → 跳过 DeepSeek 复用缓存行。
+- 历史文件名 {wall:%Y%m%d}_{HHMM}_{board_key}.json（09:30 同秒双卡靠 board_key 互不覆盖；
+  同档重跑幂等覆盖）。
 
 用法：
-  python -m briefing.scripts.run_briefing --push                       # cron 真实推送（自动判定时段）
-  python -m briefing.scripts.run_briefing --dry-run --slot morning --no-scrape   # 复用已抓数据试跑
-  python -m briefing.scripts.run_briefing --dry-run --slot morning --skip-calendar   # 非交易日强制试跑
-  python -m briefing.scripts.run_briefing --push --slot late --max-bloggers 3      # 冒烟
+  python -m briefing.scripts.run_briefing --push                          # 墙钟调度（auto 门禁+自动判板块）
+  python -m briefing.scripts.run_briefing --push --time 09:30 --board both # 暖场/手动补推
+  python -m briefing.scripts.run_briefing --dry-run --time 11:00 --board swing --no-scrape
+  python -m briefing.scripts.run_briefing --dry-run --time 09:30 --board short --no-scrape --skip-calendar
+  python -m briefing.scripts.run_briefing --push --board short --max-bloggers 3   # 冒烟
 
-调度（交易日 3 推；非交易日脚本自行 exit 0，weekday 宽松即可，节假日/调休由日历精确判定）：
-  30 9 * * 1-5   morning  早盘 09:30
-  0 13 * * 1-5   afternoon  午后 13:00
-  30 14 * * 1-5  late      尾盘 14:30
-  Windows：Task Scheduler 建 3 个每日任务透传 --slot（见 DEPLOY.md）。
+--time 只覆盖"决策时刻"（窗口/锚定/标题/总结措辞）；state/历史文件名/水位一律用真实
+墙钟 wall —— 防止模拟档回拨爬虫水位或把假日期写进历史。
+Windows：单任务 BriefingIntraday 盘中每 30 分运行 --push（见 DEPLOY.md）。
 """
 import argparse
 import atexit
@@ -36,7 +43,7 @@ from datetime import datetime, timedelta, timezone
 
 from . import calendar, config, market, paths, render, scrape_merge, state
 from .summarize import (board_counts, extract_board_rows, resolve_anchors,
-                        summarize_boards)
+                        summarize_board)
 
 log = logging.getLogger("briefing")
 
@@ -58,27 +65,70 @@ def _date_str(now: datetime) -> str:
     return f"{now.strftime('%m-%d')} 周{WD[now.weekday()]}"
 
 
-def _resolve_slot(args, now):
+def _parse_hhmm(s):
+    """'HH:MM' → (h, m)；非法退出。"""
+    try:
+        h, m = s.strip().split(":", 1)
+        return int(h), int(m)
+    except Exception:
+        raise SystemExit(f"--time 需 HH:MM 格式（收到 {s!r}）")
+
+
+def _explicit_boards(word):
+    if word == "short":
+        return ["short"]
+    if word == "swing":
+        return ["swing"]
+    if word == "both":
+        return ["short", "swing"]
+    raise SystemExit(f"--board 需 auto|short|swing|both（收到 {word!r}）")
+
+
+def _resolve_boards(args, wall):
+    """返回应推板块列表与决策时刻 now。auto 不在档 → exit 0（在锁/抓取之前）。
+
+    now = wall，除非给 --time（只改决策时刻，改日期仍用墙钟当天）；模拟档同样过门禁，
+    使 --time 12:00 / 09:00 / 15:30 / 10:13 等 off-grid 时刻也能复现"跳过"路径。
+    """
+    now = wall
+    if args.time:
+        h, m = _parse_hhmm(args.time)
+        now = wall.replace(hour=h, minute=m, second=0, microsecond=0)
+    if args.board and args.board != "auto":
+        # 显式指定板块：不门禁（测试/暖场用）；非交易日强制真推危险 → 拒绝并 exit 0。
+        if not (args.skip_calendar or calendar.is_trading_day(now.date())):
+            if args.push:
+                log.warning("非交易日 %s 强制 --board %s：拒绝真实推送", now.date(), args.board)
+                raise SystemExit(0)
+            log.info("非交易日 %s 强制 --board %s：dry-run 放行测试", now.date(), args.board)
+        return _explicit_boards(args.board), now
+    # auto：交易日 + 盘中 30 分网格
     trading = True if args.skip_calendar else calendar.is_trading_day(now.date())
-    if args.slot:
-        key = args.slot.strip().lower()  # 大小写容错：Task Scheduler / bat 传 Morning 也能命中
-        if key not in config.SLOTS:
-            raise SystemExit(f"未知 slot: {args.slot}，可选 {list(config.SLOTS)}")
-        if not trading:
-            log.info("非交易日，跳过槽 %s", key)
-            raise SystemExit(0)
-        return key
-    key = config.slot_for(now, trading)
-    if key is None:
-        log.info("当前时刻（%s，%s）不在推送时段，跳过",
-                 now, "交易日" if trading else "非交易日")
+    if not trading:
+        log.info("非交易日（%s），跳过", now.date())
         raise SystemExit(0)
-    return key
+    if not config.in_intraday_grid(now):
+        log.info("时刻 %s 不在盘中 30 分网格，跳过", now.strftime("%H:%M"))
+        raise SystemExit(0)
+    return config.due_boards(now), now
 
 
 def _beijing_midnight_epoch(d) -> int:
     """某日期（北京时）00:00 的 epoch 秒。作展示窗口下界：下界当日 00:00 ≤ 帖子发帖时刻。"""
     return int(datetime(d.year, d.month, d.day, tzinfo=BEIJING_TZ).timestamp())
+
+
+def _window_start_ts(key, now):
+    """某板块展示窗口下界（北京时 now.date()-K 当天 00:00），K=config.WINDOW_CAL_DAYS[key]。"""
+    start = now.date() - timedelta(days=config.WINDOW_CAL_DAYS[key])
+    return _beijing_midnight_epoch(start)
+
+
+def _window_txt(key, now):
+    """某板块覆盖窗口说明（进卡/总结）。如 '超短板块近2个自然日（09-02 起）'。"""
+    start = now.date() - timedelta(days=config.WINDOW_CAL_DAYS[key])
+    return (f"{config.BOARD_WORD[key]}板块近{config.WINDOW_CAL_DAYS[key]}个自然日"
+            f"（{start:%m-%d} 起）")
 
 
 def _read_window_posts(blogger, start_ts, now_ts):
@@ -109,7 +159,7 @@ def _read_window_posts(blogger, start_ts, now_ts):
 def _migrate_state_v2(st):
     """旧 v8 state（recent_views/board_prev/previous）→ 新形状：只留 last_run/last_slot/seen。
 
-    幂等，仅改内存态；落地由 _run 末尾统一原子写。last_run 复用为爬虫增量 since。
+    幂等，仅改内存态；落地由 _run 末尾统一原子写。
     """
     changed = False
     for k in ("recent_views", "board_prev", "previous"):
@@ -119,10 +169,25 @@ def _migrate_state_v2(st):
     return changed
 
 
-def _save_history(date_str, slot_label, payload, preview):
-    fn = f"{datetime.now().strftime('%Y%m%d_%H%M%S')}_{slot_label}.json"
+def _migrate_state_v3(st):
+    """v12→v13：爬虫水位 fetched_at 回填。幂等，仅改内存态。
+
+    旧版只有 last_run（爬虫 since 与推送同源）：首跑 v13 若无 fetched_at 而 last_run
+    非空 → 回填 fetched_at=last_run，既不漏抓 last_run 之前的旧帖也不重抓太多。
+    """
+    changed = False
+    if not st.get("fetched_at") and st.get("last_run"):
+        st["fetched_at"] = st["last_run"]
+        changed = True
+    return changed
+
+
+def _save_history(wall, hm, board_key, payload, preview):
+    """历史文件名 {wall:%Y%m%d}_{HHMM}_{board_key}.json（HHMM 无冒号，Windows 文件名安全）。"""
+    fn = f"{wall:%Y%m%d}_{hm.replace(':', '')}_{board_key}.json"
     with open(os.path.join(paths.BRIEFINGS_HIST_DIR, fn), "w", encoding="utf-8") as f:
-        json.dump({"date": date_str, "slot": slot_label, "payload": payload, "preview": preview},
+        json.dump({"date": f"{wall:%m-%d} 周{WD[wall.weekday()]}", "hm": hm,
+                   "board": board_key, "payload": payload, "preview": preview},
                   f, ensure_ascii=False, indent=2)
     return os.path.join(paths.BRIEFINGS_HIST_DIR, fn)
 
@@ -185,23 +250,60 @@ def _release_lock():
         pass
 
 
-def _board_windows(now):
-    """双板块展示窗口（北京时）：返回 {key: start_ts} 与合并窗口说明文本。
+def _preview_lines(board_key, counts, rows, mkt_text, date_str, hm,
+                   window_txt="", summary_text=""):
+    """dry-run 预览：单板块标题 + 覆盖 + 行情 + 名单（与卡同构，_board_section_lines 单源）。"""
+    from .render import _board_section_lines
+    lines = [config.board_title(board_key, date_str, hm)]
+    if window_txt:
+        lines.append(f"🕐 覆盖：{window_txt}")
+    lines.append("📈 " + mkt_text)
+    lines.append("")
+    lines.extend(_board_section_lines(board_key, rows, counts))
+    if summary_text:
+        lines.append("")
+        lines.append(f"🧭 {summary_text}")
+    return "\n".join(lines)
 
-    short：近 SHORT_WINDOW_TRADING_DAYS 个交易日（下界=首交易日 00:00）；
-    swing：近 SWING_WINDOW_CAL_DAYS 个自然日（下界=当日 00:00，覆盖周末）。
+
+def _process_board(key, mkt_text, now, date_str, hm):
+    """单板块全链路：读窗口帖 → 抽取(缓存) → 锚定 → 计数 → 全卡/最小卡。返回 (payload, preview)。
+
+    抽取按板块传 window_start_ts（缓存行引文落窗的二道防御）；resolve_anchors 每轮对
+    （缓存复用的）行重锚——目标日随卡片日变。空板区分 近窗口无人发帖 / 有人无方向观点。
     """
-    short_days = calendar.trading_days(now.date(), config.SHORT_WINDOW_TRADING_DAYS)
-    swing_start_date = now.date() - timedelta(days=config.SWING_WINDOW_CAL_DAYS)
-    starts = {
-        "short": _beijing_midnight_epoch(short_days[0]),
-        "swing": _beijing_midnight_epoch(swing_start_date),
-    }
-    window_txt = (f"超短板块：近{config.SHORT_WINDOW_TRADING_DAYS}个交易日"
-                  f"（{short_days[0]:%m-%d}—{short_days[-1]:%m-%d}） · "
-                  f"波段板块：近{config.SWING_WINDOW_CAL_DAYS}个自然日"
-                  f"（{swing_start_date:%m-%d} 起）")
-    return starts, window_txt
+    start_ts = _window_start_ts(key, now)
+    now_ts = int(now.timestamp())
+    by_member, posters = {}, set()
+    for name in config.PANELS[key]:
+        win = _read_window_posts(name, start_ts, now_ts)
+        if win:
+            by_member[name] = win
+            posters.add(name)
+    log.info("[%s] 窗口内有帖博主 %d/%d", key, len(by_member), len(config.PANELS[key]))
+
+    rows_raw, errs = extract_board_rows(key, by_member, window_start_ts=start_ts)
+    if errs:
+        log.warning("[%s] 行抽取失败博主（该板块不显示、不计数）：%s", key, errs)
+    anchored = resolve_anchors({key: rows_raw}, now)[key]  # 单板块包装；锚定+剔已过目标
+    c = board_counts({key: anchored})[key]
+    log.info("[%s] %d多/%d空（%d/%d 表态）", key, c["bull"], c["bear"], c["shown"], c["members"])
+
+    win_txt = _window_txt(key, now)
+    if c["shown"] > 0:
+        summary_text = summarize_board(key, anchored, c, mkt_text, date_str,
+                                       window_txt=win_txt, now=now)
+        payload = render.build_board_card_payload(key, anchored, c, mkt_text, date_str, hm,
+                                                  window_txt=win_txt, summary_text=summary_text)
+    else:
+        summary_text = ""
+        note = (f"近{config.WINDOW_CAL_DAYS[key]}自然日窗口内无博主发帖" if not posters
+                else config.BOARD_META[key]["empty_note"])
+        payload = render.build_minimal_card_payload(key, c, mkt_text, date_str, hm,
+                                                    window_txt=win_txt, note_text=note)
+    preview = _preview_lines(key, c, anchored, mkt_text, date_str, hm,
+                             window_txt=win_txt, summary_text=summary_text)
+    return payload, preview
 
 
 def _run(args):
@@ -213,135 +315,100 @@ def _run(args):
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     except Exception:
         pass
-    now = datetime.now(BEIJING_TZ)
-    slot_key = _resolve_slot(args, now)
-    slot_time, slot_label = config.SLOTS[slot_key]
+    wall = datetime.now(BEIJING_TZ)          # 真实墙钟：状态/历史名/水位一律用它
+    boards, now = _resolve_boards(args, wall)  # 决策时刻：窗口/锚定/标题/措辞
     date_str = _date_str(now)
-    log.info("== 简报 v12(日期锚定) %s %s（slot=%s）==", date_str, slot_time, slot_key)
+    hm = now.strftime("%H:%M")
+    log.info("== 简报 v13(双卡·30分网格) %s %s 板块=%s ==", date_str, hm, ",".join(boards))
 
     if not _acquire_lock():
         return 0  # 已有进程在跑（防重叠）
     atexit.register(_release_lock)  # 正常退出删锁；被杀/断电残留由下一轮自动接管
 
     st = state.load_state()
-    _migrate_state_v2(st)  # v8 残留键清理（内存态，落盘在末尾）
+    _migrate_state_v2(st)  # v8 残留键清理
+    _migrate_state_v3(st)  # v13：无 fetched_at → 回填旧 last_run（内存态，落盘在末尾）
 
-    # 双板块展示窗口（滚动；每次推送现读主文件）＋ 抓取增量下界
-    board_start, window_txt = _board_windows(now)
-    now_ts = int(now.timestamp())
-    log.info("展示窗口 %s", window_txt)
-    since_str = (st.get("last_run")
-                 or datetime.fromtimestamp(min(board_start.values()),
-                                           tz=BEIJING_TZ).strftime("%Y-%m-%d %H:%M"))
-    log.info("爬虫增量 since=%s", since_str)
-
-    # 1) 抓新帖（只补主文件缺的新帖；展示窗口单独现读，不依赖抓取结果）
-    window_posters = set()  # 两板块窗口内有可读帖的博主（区分"无人发帖"与"有帖无观点"）
+    # 1) 一次抓取（since=爬虫水位 fetched_at；无则回退最旧板块窗口下界）。
+    #    merge 完成即写 fetched_at=wall——本档推送成败不影响下一档增量下界。
     if args.no_scrape:
         log.info("--no-scrape：不抓取，直接读已合并主文件")
     else:
+        since_str = st.get("fetched_at")
+        if not since_str:
+            oldest = min(_window_start_ts(k, now) for k in config.PANEL_KEYS)
+            since_str = datetime.fromtimestamp(oldest, tz=BEIJING_TZ).strftime("%Y-%m-%d %H:%M")
+        log.info("爬虫增量 since=%s", since_str)
         results, errors = scrape_merge.fetch_all_new_posts(
             config.ALL_BLOGGERS, since_str, max_bloggers=args.max_bloggers,
             per_timeout=args.timeout, workers=args.workers)
         if errors:
             log.warning("本轮抓取失败博主：%s", errors)
+        if args.push:
+            st["fetched_at"] = wall.strftime("%Y-%m-%d %H:%M")
+            state.save_state(st)
+            log.info("爬虫水位已推进 fetched_at=%s", st["fetched_at"])
 
-    # 2) 行情
+    # 2) 行情一次（全板块共用同一份）
     quotes = market.fetch_quotes()
     mkt_text = market.market_line(quotes)
     log.info("行情: %s", mkt_text)
 
-    # 3) 按板块读窗口帖子 → LLM 行抽取（每板块独立口径/窗口；共享 8 位博主两板块各抽一次）
-    rows_by_board, directed = {}, 0
-    for key in config.PANEL_KEYS:
-        by_member = {}
-        for name in config.PANELS[key]:
-            win = _read_window_posts(name, board_start[key], now_ts)
-            if win:
-                by_member[name] = win
-                window_posters.add(name)
-        log.info("[%s] 窗口内有帖博主 %d/%d", key, len(by_member), len(config.PANELS[key]))
-        rows, errs = extract_board_rows(key, by_member)
-        if errs:
-            log.warning("[%s] 行抽取失败博主（该板块不显示、不计数）：%s", key, errs)
-        rows_by_board[key] = rows
+    # 3) 逐板块处理 + 各自 webhook 推送；单板块异常不拖垮另一板块。
+    ok_all = True
+    for key in boards:
+        try:
+            payload, preview = _process_board(key, mkt_text, now, date_str, hm)
+        except Exception as e:
+            log.exception("[%s] 板块处理异常：%s", key, e)
+            if args.push:
+                url = render.webhook_for(key)
+                if url:
+                    render.post_webhook(
+                        render.build_board_error_payload(str(e), key, date_str, hm),
+                        webhook_url=url)
+                else:
+                    log.error("[%s] 板块异常且未配置 webhook，无错误心跳", key)
+            ok_all = False
+            continue
 
-    # 3.5) 日期锚定（v12）：把博主原话里的相对词换算成绝对目标日/周。
-    #      超短只保留 目标日=卡片当天或下一交易日 的表态（已兑现/过期自动剔除）；
-    #      波段剔除目标周已整体过去的表态。行带上 anchor（渲染行头/总结快照用）。
-    rows_by_board = resolve_anchors(rows_by_board, now)
+        if args.push:
+            url = render.webhook_for(key)
+            if url is None:
+                ok, resp = False, f"未配置 {config.WEBHOOK_ENV[key]}（不回落旧群）"
+            else:
+                ok, resp = render.post_webhook(payload, webhook_url=url)
+                if not ok:
+                    render.post_webhook(
+                        render.build_board_error_payload(resp, key, date_str, hm),
+                        webhook_url=url)
+            log.info("[%s] 推送 %s: %s", key, "成功" if ok else "失败", resp)
+            ok_all = ok_all and ok
+            fp = _save_history(wall, hm, key, payload, resp if ok else "")
+            log.info("[%s] 历史已存 %s", key, fp)
+        else:
+            fp = _save_history(wall, hm, key, payload, preview)
+            print(preview)
+            print("\n[预览已存]", fp)
+            print("[dry-run 未推送、未改状态]")
+            ok_all = ok_all and True
 
-    # 4) 系统计数（每板块 bull/bear/shown/members；未表态者不计）——卡片头行与总结的权威数字
-    counts = board_counts(rows_by_board)
-    for key in config.PANEL_KEYS:
-        c = counts[key]
-        log.info("板块 %s：%d多/%d空（%d/%d 表态）", key, c["bull"], c["bear"],
-                 c["shown"], c["members"])
-    directed = counts["short"]["shown"] + counts["swing"]["shown"]
-
-    # 5) 渲染：有方向观点 → 全卡 + 卡尾跨板块收敛总结（仅此分支调总结 LLM）；
-    #    零方向日 → 最小卡（健康信号），不调总结 LLM。
-    if directed > 0:
-        summary_text = summarize_boards(rows_by_board, counts, mkt_text, slot_label,
-                                        date_str, window_txt=window_txt, now=now)
-        payload = render.build_board_card_payload(
-            rows_by_board, counts, mkt_text, slot_label, date_str,
-            window_txt=window_txt, summary_text=summary_text)
-    else:
-        summary_text = ""
-        note = ("超短/波段板块窗口内均无博主发帖更新" if not window_posters
-                else "超短/波段板块窗口内均无人给出方向观点")
-        payload = render.build_minimal_card_payload(
-            mkt_text, slot_label, date_str,
-            window_txt=window_txt, note_text=note, counts=counts)
-
-    # 6) 推送 / 落盘
+    # 4) 全板块推完推进推送水位（板块级失败已发错误心跳；下一档不再重发同一批增量）
     if args.push:
-        ok, resp = render.post_webhook(payload)
-        log.info("简报推送 %s: %s", "成功" if ok else "失败", resp)
-        if not ok:
-            render.post_webhook(render.build_error_payload(resp, date_str, slot_label))
-        # 无论成败都推进 last_run/last_slot（失败已发错误心跳；下轮不再重发同一批增量）
-        st["last_run"] = now.strftime("%Y-%m-%d %H:%M")
-        st["last_slot"] = slot_key
+        st["last_run"] = wall.strftime("%Y-%m-%d %H:%M")
+        st["last_slot"] = ",".join(boards)
         state.save_state(st)
-        fp = _save_history(date_str, slot_label, payload, resp if ok else "")
-        log.info("简报历史已存 %s", fp)
-        return 0 if ok else 1
-
-    # dry-run：落盘预览，不改状态
-    preview = _preview_text(rows_by_board, counts, mkt_text, slot_label, date_str,
-                            summary_text=summary_text, window_txt=window_txt)
-    fp = _save_history(date_str, slot_label, payload, preview)
-    print(preview)
-    print("\n[预览已存]", fp)
-    print("[dry-run 未推送、未改状态]")
-    return 0
-
-
-def _preview_text(rows_by_board, counts, mkt_text, slot_label, date_str,
-                  summary_text="", window_txt=""):
-    """dry-run 预览：与卡 payload 同构的纯文本（双板块计数头行 + 名单行 + 卡尾总结）。"""
-    from .render import _board_section_lines, _date_header
-    lines = [_date_header(date_str, slot_label)]
-    if window_txt:
-        lines.append(f"🕐 覆盖：{window_txt}")
-    lines.append("📈 " + mkt_text)
-    lines.append("")
-    for key in config.PANEL_KEYS:
-        lines.extend(_board_section_lines(key, rows_by_board.get(key) or {},
-                                          counts.get(key) or {}))
-        lines.append("")
-    if summary_text:
-        lines.append(f"🧭 {summary_text}")
-    return "\n".join(lines)
+        log.info("推送水位已推进 last_run=%s（boards=%s）", st["last_run"], st["last_slot"])
+    return 0 if ok_all else 1
 
 
 def main():
-    ap = argparse.ArgumentParser(description="双板块博主观点速览卡 → 飞书（v11）")
-    ap.add_argument("--push", action="store_true", help="真实推送到飞书并推进状态（cron 用）")
+    ap = argparse.ArgumentParser(description="超短/波段 双群盘中速览卡 → 飞书（v13）")
+    ap.add_argument("--push", action="store_true", help="真实推送到飞书并推进状态（调度用）")
     ap.add_argument("--dry-run", action="store_true", help="只落盘预览，不推送、不改状态")
-    ap.add_argument("--slot", default="", help="指定时段 key（默认按当前时刻自动判定）")
+    ap.add_argument("--time", default="", help="模拟决策时刻 HH:MM（跳过墙钟，只影响窗口/锚定/标题；不加则用墙钟）")
+    ap.add_argument("--board", default="auto",
+                    help="auto|short|swing|both（auto=按墙钟判板块；显式=强制，仅供测试/暖场）")
     ap.add_argument("--no-scrape", action="store_true", help="不爬取，直接读已合并主文件（试跑用）")
     ap.add_argument("--skip-calendar", action="store_true",
                     help="忽略交易日历，把今天当交易日跑（仅 dry-run 冒烟用）")

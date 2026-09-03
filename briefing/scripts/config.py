@@ -1,10 +1,14 @@
 # -*- coding: utf-8 -*-
-"""简报系统配置：双板块名单、板块口径、推送时段、窗口常量。
+"""简报系统配置：双板块名单、板块口径、盘中 30 分网格、双 webhook、窗口常量。
 
-v11（2026-09-03）：速览卡 =「超短板块 + 波段板块」两个固定名单。
-  - 超短板块：只取 今天/明天(0-1日) 表态，回看近 SHORT_WINDOW_TRADING_DAYS 个交易日。
-  - 波段板块：只取 近日/本周/下周/更长(结构性中期) 表态，回看近 SWING_WINDOW_CAL_DAYS 个自然日。
-  - 两板块前 8 位"双板块博主"重复出现：对同一博主按各自板块口径独立抽取，两块都可成行。
+v13（2026-09-03）：超短/波段拆成两群两卡、节奏不同、各自独立收敛总结。
+  - 超短板块（17）：扫近 WINDOW_CAL_DAYS["short"]=2 个自然日内的 今天/明天 表态，
+    只显示 目标日∈{卡片日,下一交易日} 者；盘中每 30 分钟一档（TRADING_TICKS 10 档）。
+  - 波段板块（21）：扫近 WINDOW_CAL_DAYS["swing"]=5 个自然日内的
+    近日/本周/下周/更长 表态，本周/下周 锚定发帖日所在周一~五周、目标周已过剔除；
+    仅在 SWING_TICKS（09:30/11:00/14:30）三档推送。
+  - 两板块各自一张卡、各自收敛总结，各推各的飞书群（WEBHOOK_ENV）。
+  - 已知取舍：短窗口按自然日 2 天算，周一早晨会把上周五"看周一"的帖漏掉（用户已确认接受）。
 名单来自 reports/top20_值得关注博主.md 双榜（超短榜 / 中期榜）；顺序即板块内展示顺序。
 """
 from datetime import datetime
@@ -28,13 +32,14 @@ PANEL_SWING = [
 
 PANEL_KEYS = ("short", "swing")
 PANELS = {"short": PANEL_SHORT, "swing": PANEL_SWING}
+BOARD_WORD = {"short": "超短", "swing": "波段"}  # 卡标题用词（区别于 label 里的括号周期说明）
 
 # 板块展示元信息（标题/emoji/空板块提示）
 BOARD_META = {
     "short": {"label": "超短(0-1日)", "emoji": "⏱️",
-              "empty_note": "（暂无超短表态：无指向今/下一交易日的观点）"},
+              "empty_note": "（近2日无指向今/下一交易日的超短表态）"},
     "swing": {"label": "波段(2日+)", "emoji": "🌊",
-              "empty_note": "（近7日无人给出波段方向观点）"},
+              "empty_note": "（近5日无人给出波段方向观点）"},
 }
 
 # 抓取/读帖全集：两板块去重（超短板块原序 + 波段板块新增第 9 位起）
@@ -42,44 +47,75 @@ ALL_BLOGGERS = PANEL_SHORT + [b for b in PANEL_SWING if b not in PANEL_SHORT]
 
 TRACKED = ALL_BLOGGERS  # LEGACY：旧 v8 共识卡/画像曾引用 config.TRACKED，泛指"跟踪名单"
 
-# ── 推送时段（交易日 3 推；非交易日不推）──
-# slot_key: (HH:MM, 卡片标题用词)
-SLOTS = {
-    "morning":   ("09:30", "早盘"),
-    "afternoon": ("13:00", "午后"),
-    "late":      ("14:30", "尾盘"),
-}
+# ── 展示窗口（v13）：自然日回看天数，下界 = 北京时 now.date()-K 当天 00:00 ──
+# 注意：超短按 2 自然日扫描（周一早晨不含上周五帖——用户确认接受）。
+WINDOW_CAL_DAYS = {"short": 2, "swing": 5}
 
-SLOT_TOLERANCE_MIN = 6  # cron 触发时间与槽位时间 ±6 分钟内视为命中
+# ── 盘中 30 分网格（v13，取代 v12 的 3 档 SLOTS）──
+# 连续竞价时段 09:30–11:30 与 13:00–15:00，每 30 分钟整点一档（10 档）。
+TRADING_TICKS = ["09:30", "10:00", "10:30", "11:00", "11:30",
+                 "13:00", "13:30", "14:00", "14:30", "15:00"]
+SWING_TICKS = {"09:30", "11:00", "14:30"}  # 波段仅在这 3 档额外推（⊂ TRADING_TICKS）
 
-# ── 展示窗口 / 行抽取常量 ──
-SHORT_WINDOW_TRADING_DAYS = 3   # 超短板块：回看近 N 个交易日
-SWING_WINDOW_CAL_DAYS = 7       # 波段板块：回看近 N 个自然日（覆盖周末，约 5-6 交易日）
+# 波段各档的标题用词（swing 只在 3 档出现；超短一律"盘中"+时刻）
+_SWING_TICK_WORD = {"09:30": "早盘", "11:00": "午前", "14:30": "尾盘"}
+
+# ── 双 webhook（v13）：各板块推各群的飞书机器人 ──
+WEBHOOK_ENV = {"short": "FEISHU_WEBHOOK_URL",     # 旧群（原综合卡群 → 现收超短卡）
+               "swing": "FEISHU_WEBHOOK_URL_SWING"}  # 新群（波段卡）
+
+# ── 行抽取常量 ──
 ROWS_MAX_POSTS = 8              # 每博主喂给 LLM 的窗口内帖子上限（最新 N 条，新→旧）
 ROWS_BATCH_BLOGGERS = 2         # summarize 每次 DeepSeek 调用放进几位博主
 ROWS_WORKERS = 3                # 行抽取并行线程数
 
 
-def slot_for(now: datetime, trading_day: bool) -> str | None:
-    """给定时刻 + 是否交易日，返回应触发的 slot_key；非交易日恒 None。"""
-    now_min = now.hour * 60 + now.minute
-    for key, (slot_hm, _label) in SLOTS.items():
-        h, m = map(int, slot_hm.split(":"))
-        slot_min = h * 60 + m
-        if abs(now_min - slot_min) <= SLOT_TOLERANCE_MIN:
-            return key
-    return None
+def in_intraday_grid(dt: datetime) -> bool:
+    """快速门禁：给定北京时时刻是否落在盘中 30 分网格上（:00/:30 且 ∈盘中两段）。
+
+    用于调度伪 tick 挡板：12:00/12:30/15:30、StartWhenAvailable 离网格补跑，
+    都在抓取/锁之前由此 exit 0（本函数不自行 exit，交给调用方判断）。
+    """
+    if dt.minute not in (0, 30):
+        return False
+    m = dt.hour * 60 + dt.minute
+    return (570 <= m <= 690) or (780 <= m <= 900)  # 09:30–11:30 / 13:00–15:00 闭区间
+
+
+def due_boards(dt: datetime) -> list:
+    """墙钟（已过 in_intraday_grid 门禁）→ 应推板块：超短每档都推；波段仅 SWING_TICKS。"""
+    boards = ["short"]
+    if dt.strftime("%H:%M") in SWING_TICKS:
+        boards.append("swing")
+    return boards
+
+
+def board_title(board_key: str, date_str: str, hm: str) -> str:
+    """单板块卡标题：含板块与时刻。如 '📊 超短盘中 10:00 · 09-03 周四' /
+    '📊 波段尾盘 14:30 · 09-03 周四'。hm = 'HH:MM'。"""
+    if board_key == "swing":
+        seg = _SWING_TICK_WORD.get(hm, "盘中")
+    else:
+        seg = "盘中"
+    return f"📊 {BOARD_WORD[board_key]}{seg} {hm} · {date_str}"
+
+
+def format_board_count(board_key: str, c: dict) -> str:
+    """单板块计数行（v13 全链路唯一文案源之一）：板块头行见 render._board_section_lines。
+
+    c 形如 {bull,bear,shown,members}（summarize.board_counts 单板块子集）。
+    例：'⏱️ 超短(0-1日) 3多/2空（5/17 表态）'
+    """
+    meta = BOARD_META[board_key]
+    return (f"{meta['emoji']} {meta['label']} "
+            f"{c.get('bull', 0)}多/{c.get('bear', 0)}空"
+            f"（{c.get('shown', 0)}/{c.get('members', 0)} 表态）")
 
 
 def format_board_counts(counts: dict) -> str:
-    """双板块计数 → 文本（摘要注入/兜底/最小卡）。
-
-    全链路唯一文案源之一：板块头行见 render._board_header；此处是"汇总一行"版。
-    counts shape 见 summarize.board_counts：{key: {"bull","bear","shown","members"}}。
-    """
-    counts = counts or {}
-    s = counts.get("short") or {}
-    w = counts.get("swing") or {}
+    """LEGACY：v12 双板块合并一行计数（超短…/波段…），v13 单板块卡不再用（保留供历史复刻）。"""
+    s = (counts or {}).get("short") or {}
+    w = (counts or {}).get("swing") or {}
     return (f"超短(0-1日) {s.get('bull', 0)}多/{s.get('bear', 0)}空"
             f"（{s.get('shown', 0)}/{s.get('members', 0)} 表态） · "
             f"波段(2日+) {w.get('bull', 0)}多/{w.get('bear', 0)}空"

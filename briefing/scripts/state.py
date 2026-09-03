@@ -1,13 +1,15 @@
 # -*- coding: utf-8 -*-
 """简报状态持久化。
 
-state.json 结构（2026-09 redesign v9：18 人窗口速览卡）：
+state.json 结构（2026-09 v13：双板块两卡 + 盘中 30 分档）：
 {
-  "last_run": "2026-09-02 09:30",   # 最近一次成功跑完的档（用作下一档爬虫增量 since）
-  "last_slot": "morning",
-  "seen": { "<博主>": { "<post_id>": <publish_time>, ... } }   # 保留：爬虫去重用（旧 v8 遗留）
+  "fetched_at": "2026-09-03 14:30",  # 爬虫水位：抓取+merge 成功即写（不等推送成败）；下一档 since
+  "last_run":   "2026-09-03 14:30",  # 推送水位：本档全部板块推送尝试后写
+  "last_slot":  "short,swing",       # v12 遗留键保留；v13 语义 = 本档推送的板块串（仅展示）
+  "seen": { "<博主>": { "<post_id>": <publish_time>, ... } }   # 保留：旧 v8 遗留
 }
 旧 v8 的 recent_views / board_prev / previous 已被 v9 移除（见 run_briefing._migrate_state_v2）。
+Windows 首次跑 v13 时若无 fetched_at，迁移函数回填 fetched_at = 旧 last_run（见 run_briefing._migrate_state_v3）。
 """
 import json
 import os
@@ -16,7 +18,7 @@ from . import paths
 
 
 def default_state() -> dict:
-    return {"last_run": "", "last_slot": "", "seen": {}}
+    return {"fetched_at": "", "last_run": "", "last_slot": "", "seen": {}}
 
 
 def load_state() -> dict:
@@ -26,6 +28,7 @@ def load_state() -> dict:
     except Exception:
         st = default_state()
     st.setdefault("seen", {})
+    st.setdefault("fetched_at", "")
     st.setdefault("last_run", "")
     st.setdefault("last_slot", "")
     return st

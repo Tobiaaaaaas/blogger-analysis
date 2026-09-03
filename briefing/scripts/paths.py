@@ -29,6 +29,7 @@ EXTRACT_MOD = os.path.join(REPO_ROOT, "scripts", "pipeline", "extract_signals_di
 DATA_DIR = os.path.join(BRIEFING_DIR, "data")
 BRIEFINGS_HIST_DIR = os.path.join(DATA_DIR, "briefings")
 STATE_FILE = os.path.join(DATA_DIR, "state.json")
+ROWS_CACHE_FILE = os.path.join(DATA_DIR, "rows_cache.json")  # 行抽取缓存（DeepSeek 增量复用）
 LOCK_FILE = os.path.join(DATA_DIR, "run.lock")
 PROFILES_FILE = os.path.join(DATA_DIR, "profiles.json")
 LOG_FILE = os.path.join(DATA_DIR, "briefing.log")

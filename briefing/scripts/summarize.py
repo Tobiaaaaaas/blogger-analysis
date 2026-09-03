@@ -4,18 +4,22 @@
 复用父仓库 scripts/pipeline/extract_signals_direction.py 的 DeepSeek 调用底座
 （call_json / parse_response / watchdog 硬超时），保证与信号提取同一套稳定链路。
 
-v11（2026-09-03 redesign：超短板块 + 波段板块 双固定名单）主路径：
-  1. extract_board_rows：按板块抽取——超短板块只认 今天/明天 表态（近3交易日），
-     波段板块只认 近日/本周/下周/更长 表态（近7自然日）。两板块前 8 位双板块博主
-     独立按各自板块口径各抽一次，同一博主两块可各有其最新该周期表态。
-  2. board_counts：每板块多空计数（shown/members 覆盖度）。
-  3. summarize_boards：两板块快照 + 系统计数 → 一段跨板块收敛总结。
+v13（2026-09-03 redesign：超短/波段拆两群两卡 + 盘中 30 分档）主路径：
+  1. extract_board_rows(board_key, by_member, window_start_ts)：按板块抽取——超短只认
+     今天/明天（扫近 2 自然日）、波段只认 近日/本周/下周/更长（扫近 5 自然日）。
+     带 rows_cache 增量：窗口帖集合（含正文指纹）未变 → 跳过 DeepSeek 复用缓存行。
+  2. resolve_anchors：按引文发帖日锚定绝对目标（超短剔已过/未指今明，波段剔目标周已过）。
+  3. board_counts：单板块多空计数。
+  4. summarize_board(board_key, …)：单板块快照 + 本板块计数 → 一段本板块收敛总结。
+v12 跨板块 summarize_boards / SUMMARY_SYSTEM_PROMPT 保留作 LEGACY（不再接线，供历史复刻）。
 旧 v8 全板共识路径（POINTS_SYSTEM_PROMPT / SYNTH_SYSTEM_PROMPT / extract_points / synthesize）
-已不再被 run_briefing 调用，仅保留作 LEGACY；v9/v10 的 18 行名单路径已整段替换为 v11。
+亦 LEGACY；v9/v10 的 18 行名单路径已整段替换。
 """
+import hashlib
 import importlib.util
 import json
 import logging
+import os
 import re
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
@@ -403,7 +407,7 @@ def _norm_takeaways(items):
 # 每板块 system prompt：只认该板块周期——超短板块只认 今天/明天(0-1日)，
 # 波段板块只认 近日/本周/下周/更长/结构性中期。一条帖同含两层时只引本板块那层。
 # quote_post_n 只回帖子下标，发帖时间由系统按该帖真实 publish_time 回填（模型不誊写时间）。
-SHORT_ROW_SYSTEM_PROMPT = """你是财经观点摘要助手。给你若干位「超短板块」博主近 3 个交易日内的帖子：每位博主名下若干条，按发帖时间从新到旧排列，每条前有编号 [0][1]… 并带发帖时间。任务：判定每人在窗口内是否对 上证指数/大盘/主要指数 给出过 **超短(0-1日，今天/明天)** 的明确方向观点，若有则产出该人最新一条超短方向表态。
+SHORT_ROW_SYSTEM_PROMPT = """你是财经观点摘要助手。给你若干位「超短板块」博主近 2 个自然日内的帖子：每位博主名下若干条，按发帖时间从新到旧排列，每条前有编号 [0][1]… 并带发帖时间。任务：判定每人在窗口内是否对 上证指数/大盘/主要指数 给出过 **超短(0-1日，今天/明天)** 的明确方向观点，若有则产出该人最新一条超短方向表态。
 
 时间口径（重要）：每条帖里的"今天/明天"都以**该帖自己的发帖日**为基准（帖子昨日发，则它说的"今天"=昨日、"明天"=今日）；目标日不在卡片当天/下一交易日的表态由系统自动剔除，你无需推算卡片是哪天，只按发帖日判断词义。
 
@@ -428,7 +432,7 @@ SHORT_ROW_SYSTEM_PROMPT = """你是财经观点摘要助手。给你若干位「
 只输出 JSON，无其他文字。"""
 
 
-SWING_ROW_SYSTEM_PROMPT = """你是财经观点摘要助手。给你若干位「波段板块」博主近 7 天内的帖子：每位博主名下若干条，按发帖时间从新到旧排列，每条前有编号 [0][1]… 并带发帖时间。任务：判定每人在窗口内是否对 上证指数/大盘/主要指数 给出过 **波段(2日+)** 的明确方向观点，若有则产出该人最新一条波段表态。
+SWING_ROW_SYSTEM_PROMPT = """你是财经观点摘要助手。给你若干位「波段板块」博主近 5 个自然日内的帖子：每位博主名下若干条，按发帖时间从新到旧排列，每条前有编号 [0][1]… 并带发帖时间。任务：判定每人在窗口内是否对 上证指数/大盘/主要指数 给出过 **波段(2日+)** 的明确方向观点，若有则产出该人最新一条波段表态。
 
 时间口径（重要）：每条帖里的 本周/下周 以**该帖自己的发帖日**为基准（本周=发帖日所在周（周一~周五），下周=其后一周）；目标周已整体过去的表态由系统自动剔除，你无需推算卡片是哪天，只按发帖日判断词义。
 
@@ -509,11 +513,56 @@ def _row_from_board_llm(blogger, board_key, d, posts):
             "quote_ts": quote_ts}
 
 
-def extract_board_rows(board_key, by_member):
+# ── v13：行抽取缓存（rows_cache.json，DeepSeek 增量复用）──
+# 高频盘中档（30 分/档）若每档都把窗口帖重抽一遍 DeepSeek 太贵；某博主窗口帖
+# 集合（含正文指纹）与上次一致 → 直接复用缓存行。缓存 key=博主；指纹必须含正文
+# 内容（正文 done-dict 回填会让同 post_id 从标题帖变全文，只比 post_id 会命中
+# 过期缓存）。缓存的是"未锚定行"：目标日随卡片日变，引用侧每轮仍 resolve_anchors。
+_ROWS_CACHE_VERSION = 1
+
+
+def _post_sig(p):
+    """单帖内容指纹：标题+正文的前 8 位 sha1（正文回填 = 同 post_id 内容变了）。"""
+    raw = ((p.get("title") or "") + "\n" + (p.get("content") or "")).encode("utf-8")
+    return hashlib.sha1(raw).hexdigest()[:8]
+
+
+def _fingerprint(posts):
+    """窗口帖集合指纹：每帖 f"{post_id}:{sig}"，顺序 = 喂给 LLM 的新→旧。"""
+    return [f"{p.get('post_id') or i}:{_post_sig(p)}" for i, p in enumerate(posts)]
+
+
+def _load_rows_cache():
+    """rows_cache.json → {"version":1,"boards":{...}}；缺失/损坏返回空结构。"""
+    try:
+        with open(paths.ROWS_CACHE_FILE, encoding="utf-8") as f:
+            data = json.load(f)
+        if isinstance(data, dict) and isinstance(data.get("boards"), dict):
+            return data
+    except Exception:
+        pass
+    return {"version": _ROWS_CACHE_VERSION, "boards": {}}
+
+
+def _save_rows_cache(cache):
+    """原子写 rows_cache.json（先临时文件再 os.replace）。"""
+    paths.ensure_dirs()
+    tmp = paths.ROWS_CACHE_FILE + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(cache, f, ensure_ascii=False, indent=2)
+    os.replace(tmp, paths.ROWS_CACHE_FILE)
+
+
+def extract_board_rows(board_key, by_member, window_start_ts=None):
     """某板块行抽取：{博主: [窗口内帖子 新→旧]} → (rows, errors)。
 
     只保留 has_view 的板块行；无该周期观点 / 无帖 / 抽取失败 → 不入 rows
     （板块不显示、不计数）。同一博主在 超短/波段 两板块各调一次、互不串扰。
+
+    v13 增量缓存：博主窗口帖集合指纹命中 → 跳过 DeepSeek 复用缓存行（含
+    has_view=false 的 null 缓存，省一档重抽）；LLM 失败不写缓存（下档重试）。
+    window_start_ts = 本板块窗口下界 epoch（北京时 now.date()-K 当天 00:00），
+    缓存行引文早于它 → 判失效重抽（防御；指纹一致时理论上恒不触发）。
     """
     ext = _extract()
     system_prompt = PANEL_ROW_PROMPT[board_key]
@@ -532,8 +581,35 @@ def extract_board_rows(board_key, by_member):
     if not work:
         return rows, errors
 
-    items = sorted(work.items())  # 确定序，便于 batch 对齐
+    cache = _load_rows_cache()
+    bc = cache["boards"].setdefault(board_key, {})
+    fps = {}
+    hits, todo = 0, []
+    for b, posts in work.items():
+        fp = _fingerprint(posts)
+        fps[b] = fp
+        ent = bc.get(b)
+        if isinstance(ent, dict) and ent.get("posts") == fp:
+            crow = ent.get("row")
+            if crow is None:
+                hits += 1          # 缓存判定：该博主无本板块观点 → 命中跳过
+                continue
+            if isinstance(crow, dict) and crow.get("quote_ts"):
+                q = int(crow["quote_ts"])
+                if window_start_ts is None or q >= window_start_ts:
+                    rows[b] = crow  # 缓存行复用（resolve_anchors 每轮重锚）
+                    hits += 1
+                    continue
+        todo.append(b)
+    if not todo:
+        log.info("  [%s] 行缓存：%d 位博主全部命中，跳过 DeepSeek", board_key, hits)
+        return rows, errors
+    if hits:
+        log.info("  [%s] 行缓存：复用 %d / 需新抽 %d", board_key, hits, len(todo))
+
+    items = [(b, work[b]) for b in sorted(todo)]  # 确定序，便于 batch 对齐
     bsize = config.ROWS_BATCH_BLOGGERS
+    now_txt = datetime.now(BEIJING).strftime("%Y-%m-%d %H:%M")
 
     def _call_group(group):
         user_msg = "\n\n----\n\n".join(_fmt_window_posts(b, posts) for b, posts in group)
@@ -544,12 +620,13 @@ def extract_board_rows(board_key, by_member):
                 return result, group
         return None, group
 
+    wrote = False
     groups = [items[i:i + bsize] for i in range(0, len(items), bsize)]
     with ThreadPoolExecutor(max_workers=config.ROWS_WORKERS) as pool:
         for result, group in pool.map(_call_group, groups):
             if result is None:
                 for b, _posts in group:
-                    errors.append(b)
+                    errors.append(b)   # LLM 失败不写缓存，下档整组重试
                 continue
             got = result.get("rows") or []
             for j, (b, _posts) in enumerate(group):
@@ -557,6 +634,11 @@ def extract_board_rows(board_key, by_member):
                 row = _row_from_board_llm(b, board_key, d, work[b])
                 if row:
                     rows[b] = row
+                bc[b] = {"posts": fps[b], "row": row, "at": now_txt}  # row=None 也缓存（无观点）
+                wrote = True
+    if wrote:
+        _save_rows_cache(cache)
+        log.info("  [%s] 行缓存已更新：共 %d 条", board_key, len(bc))
     return rows, errors
 
 
@@ -683,7 +765,7 @@ def resolve_anchors(rows_by_board, now):
 
 
 # =====================================================================
-# v11：双板块计数 + 跨板块收敛总结
+# v11/v12：双板块计数 + LEGACY 跨板块收敛总结（v13 单板块总结见文件尾）
 # =====================================================================
 
 def board_counts(rows_by_board):
@@ -723,8 +805,10 @@ SUMMARY_SYSTEM_PROMPT = """你是财经观点收敛总结助手。给你当前�
 
 def summarize_boards(rows_by_board, counts, market_text, slot_label, date_str,
                      window_txt="", now=None):
-    """两板块方向快照 + 系统计数 → 一段跨板块收敛总结（板块即两层）。
+    """LEGACY（v12 跨板块两层收敛总结）：v13 已拆成单板块 summarize_board，
+    本函数不再被 run_briefing 接线，仅保留供历史复刻/回退。
 
+    两板块方向快照 + 系统计数 → 一段跨板块收敛总结（板块即两层）。
     rows_by_board/counts 形状见 extract_board_rows/board_counts（rows 应已过
     resolve_anchors 日期锚定）；now 为北京时 datetime（决定卡片日与"今天/明日"措辞）。
     失败兜底返回双板块计数行。
@@ -772,4 +856,104 @@ def summarize_boards(rows_by_board, counts, market_text, slot_label, date_str,
         s = (result.get("summary") or "").strip()
         if s:
             return s[:320]
+    return f"多空版图：{counts_txt}"
+
+
+# =====================================================================
+# v13：单板块收敛总结（超短/波段 各推各群、各自一段，无跨板块层叠）
+# =====================================================================
+# 与 LEGACY 跨板块 prompt 的区别：快照只注入本板块名单行、计数用单板块
+# format_board_count、日期纪律按板块收窄（short：今日/明日 = 卡片日/下一交易
+# 日；swing：波段目标不可能是今明，本周/下周 周段见锚点）、无任何"板块即两层 /
+# 前 8 位双板块博主 / 跨板块层叠禁对立"等跨板块句子。
+
+SHORT_SUMMARY_SYSTEM_PROMPT = """你是财经观点收敛总结助手。给你「超短板块」博主的方向观点快照：每行 = 一位博主的最新**超短(0-1日)**表态 —— 多/空 · 目标日(anchor，如 ·09-03) · 一句核心 · 引文发帖时间；外加**系统统计的本板块权威计数**（X 多/Y 空、N/M 人表态）与大盘行情。
+
+口径（本卡只有超短这一层，不存在另一板块）：
+- 快照成员都是只对 今天/明天 做过方向表态、且目标日落在【日期锚点】的 卡片日/下一交易日 的博主；行头 anchor 即系统按发帖日换算的绝对目标日（如 ·09-03），引文时间为发帖时刻。
+- 同板块内真反向（同对今/明：有人看反弹、有人看续跌）才算方向分歧、才可点出；清一色同向、或仅 1~2 人表态时直接陈述方向，不要为凑"分歧"而硬造。
+- 同方向但操作取向相反（都看反弹、一个持有、一个反弹减仓）→ 写"反弹共识下的操作分化"，不算方向对立。
+- **日期纪律**：卡片日与下一交易日见【日期锚点】。涉及某位博主的目标日**只能照抄该行 anchor 或引文日期**，禁止自己用 今天/明天/今日 等词推算任何博主表态所指的日子（原话再怎么写也别展开）；拿不准就只讲方向/逻辑/应对。板块整体措辞可写 今日/明日，但必须对应【日期锚点】的 卡片日/下一交易日；结尾操作句不必带日期。
+
+输出**一段收敛总结**（≤240 字，中文流畅一段；不要分点/列表/小标题）：
+① 开头用系统给的**本板块计数**陈述版图（如：超短板块 X 多 Y 空、N 人表态，多数看今日反弹…）；
+② 中间点 1~2 位代表博主（只点快照里出现过的，讲观点要点与操作取向）；
+③ 结尾一句超短(0-1日)操作参考。
+禁止复述引文原话；禁止提快照之外的博主或内容；禁止编造计数。
+输出严格 JSON：{"summary": "收敛总结一段(≤240字)"}。只输出 JSON，无其他文字。"""
+
+
+SWING_SUMMARY_SYSTEM_PROMPT = """你是财经观点收敛总结助手。给你「波段板块」博主的方向观点快照：每行 = 一位博主的最新**波段(2日+)**表态 —— 多/空 · 目标周/周期(anchor，如 本周 08-31~09-04，或 近日/更长 原词) · 一句核心 · 引文发帖时间；外加**系统统计的本板块权威计数**（X 多/Y 空、N/M 人表态）与大盘行情。
+
+口径（本卡只有波段这一层，不存在另一板块）：
+- 快照成员都是对 近日/本周/下周/更长 做过方向表态、且目标周未整体过去的博主；行头 anchor 是系统按发帖日锚定的绝对周段（本周/下周 = 周一~周五日期段）或 近日/更长 原词。
+- 同板块内真反向才算方向分歧、才可点出；清一色同向、或仅 1~2 人表态时直接陈述方向，不要为凑"分歧"而硬造。
+- 同方向但操作取向相反（都看震荡调整、一个减仓、一个等待低吸）→ 写"共识下的操作分化"，不算方向对立。
+- **日期纪律**：卡片日与 本周/下周 周段见【日期锚点】。波段目标不可能是 今天/明天 这类超短词——涉及某位博主的目标周**只能照抄该行 anchor 或引文日期**，禁止自己用 本周/下周/周X 推算；近日/更长 表态只讲方向逻辑、不补具体日期。板块整体可写 本周/下周，但必须对应【日期锚点】的周段；结尾操作句不必带日期。
+
+输出**一段收敛总结**（≤240 字，中文流畅一段；不要分点/列表/小标题）：
+① 开头用系统给的**本板块计数**陈述版图（如：波段板块 X 多 Y 空、N 人表态，多数认为…）；
+② 中间点 1~2 位代表博主（只点快照里出现过的，讲观点要点）；
+③ 结尾一句波段(2日+)操作参考。
+禁止复述引文原话；禁止提快照之外的博主或内容；禁止编造计数。
+输出严格 JSON：{"summary": "收敛总结一段(≤240字)"}。只输出 JSON，无其他文字。"""
+
+
+PANEL_SUMMARY_PROMPT = {
+    "short": SHORT_SUMMARY_SYSTEM_PROMPT,
+    "swing": SWING_SUMMARY_SYSTEM_PROMPT,
+}
+
+
+def summarize_board(board_key, rows, counts, market_text, date_str,
+                    window_txt="", now=None):
+    """单板块方向快照 + 本板块计数 → 一段本板块收敛总结（v13 主路径）。
+
+    rows = 该板块 {博主: 已过 resolve_anchors 的规整行}；counts = 该板块单键计数
+    {bull,bear,shown,members}；now 为北京时 datetime（决定卡片日 / 本周周段措辞）。
+    失败兜底返回 config.format_board_count 单板块计数行。
+    """
+    now = now or datetime.now(BEIJING)
+    card = now.date()
+    wd = ("一", "二", "三", "四", "五", "六", "日")[card.weekday()]
+    if board_key == "short":
+        nm = calendar.next_trading_day(card)
+        anchor_note = f"卡片日={card:%m-%d}（周{wd}）｜下一交易日(明日)={nm:%m-%d}"
+    else:
+        cw = _week_monday(card)
+        anchor_note = (f"卡片日={card:%m-%d}（周{wd}）｜"
+                       f"本周={_fmt_week_range(cw)}｜下周={_fmt_week_range(cw + timedelta(days=7))}")
+    meta = config.BOARD_META[board_key]
+    c = counts or {}
+    lines = [f"【{meta['label']} · {c.get('bull', 0)}多/{c.get('bear', 0)}空"
+             f"（{c.get('shown', 0)}/{c.get('members', 0)} 表态）】"]
+    for b in config.PANELS[board_key]:
+        r = rows.get(b)
+        if not r:
+            continue
+        ts = r.get("quote_ts")
+        t = datetime.fromtimestamp(int(ts), tz=BEIJING).strftime("%m-%d %H:%M") if ts else ""
+        lab = r.get("anchor")
+        if lab is None:  # 兜底：未锚定的历史行退回周期词
+            h = r.get("horizon") or "未提"
+            lab = "" if h == "未提" else h
+        lines.append(f"▍{b}：{r['stance']}" + (f"·{lab}" if lab else "")
+                     + f"｜{r.get('summary')}｜引文 {t}")
+    snapshot_txt = "\n".join(lines)
+    counts_txt = config.format_board_count(board_key, c)
+    user_msg = f"""【时段】{date_str}（{window_txt or '本期'}）
+【日期锚点】{anchor_note}
+【行情】{market_text}
+【系统统计（权威，勿重算）】{counts_txt}
+【{meta['label']}方向快照】
+{snapshot_txt}"""
+    ext = _extract()
+    prompt = PANEL_SUMMARY_PROMPT[board_key]
+    for _attempt in range(ROW_MAX_ATTEMPTS):
+        result, raw = ext.call_json(None, prompt, user_msg, f"briefing:summarize:{board_key}")
+        if result is None:
+            continue
+        s = (result.get("summary") or "").strip()
+        if s:
+            return s[:240]
     return f"多空版图：{counts_txt}"

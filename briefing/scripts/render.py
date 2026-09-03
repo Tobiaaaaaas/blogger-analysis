@@ -3,6 +3,10 @@
 
 自定义机器人 webhook：POST https://open.feishu.cn/open-apis/bot/v2/hook/<token>
 卡片为 msg_type=interactive（富文本分节），心跳为 msg_type=text。
+
+v13（2026-09-03）：超短/波段拆两群两卡。每板块一张独立卡（标题含板块+时刻，
+见 config.board_title），各推各群 webhook（webhook_for 读 config.WEBHOOK_ENV）——
+webhook 未配置该板块按失败处理，**绝不回落** FEISHU_WEBHOOK_URL（防波段卡误发旧群）。
 """
 import json
 import logging
@@ -109,6 +113,33 @@ def _fmt_takeaway(t):
 
 def _date_header(date_str, slot_label):
     return f"📊 {slot_label}简报 · {date_str}"
+
+
+# =====================================================================
+# v13：webhook 路由 + 板块错误心跳（两群两卡）
+# =====================================================================
+
+def webhook_for(board_key):
+    """本板块应推的飞书 webhook URL（config.WEBHOOK_ENV[key] 对应 env）。
+
+    未配置 → 返回 None，调用方须按"该板块推送失败"处理；**绝不回落**
+    FEISHU_WEBHOOK_URL——否则波段卡会误发到超短群。
+    """
+    env = config.WEBHOOK_ENV.get(board_key)
+    url = os.environ.get(env) if env else None
+    if not url:
+        log.error("  webhook 未配置：env %s 缺失（板块 %s 不推送，也不回落旧群）", env, board_key)
+    return url
+
+
+def build_board_error_payload(err, board_key, date_str, hm):
+    """某板块生成失败的文本心跳（走该板块自己的 webhook）。"""
+    title = config.board_title(board_key, date_str, hm)
+    return {
+        "msg_type": "text",
+        "content": {"text": f"⚠️ {title} 生成失败：{err}\n"
+                            f"详情见服务器日志 briefing.log"},
+    }
 
 
 # ── LEGACY（v8 全板共识卡；2026-09 redesign 后 run_briefing 不再调用，仅保留供历史卡重渲染）──
@@ -238,7 +269,9 @@ def post_webhook(payload, webhook_url=None, retries=3):
 
 
 # =====================================================================
-# v11：双板块速览卡（超短板块 + 波段板块 固定名单 × 各自窗口/周期口径）
+# 板块行渲染原语（_fmt_board_row/_board_section_lines/_chunk_lines）：供 v13 单板块卡
+# （build_board_card_payload / build_minimal_card_payload）与 LEGACY 双板块版共用，
+# 单一来源防漂移。
 # =====================================================================
 
 _MAX_MD_BYTES = 30000  # 单 markdown 元素上限粗估；超长按行拆成多段
@@ -314,12 +347,12 @@ def _chunk_lines(lines, cap=_MAX_MD_BYTES):
     return chunks
 
 
-def build_board_card_payload(rows_by_board, counts, market_text, slot_label, date_str,
-                             window_txt="", summary_text=""):
-    """v11 主卡：header + 覆盖窗口 + 行情 + 双板块（各自计数头行 + 名单行） + 卡尾收敛总结。
+def build_boards_card_payload_LEGACY(rows_by_board, counts, market_text, slot_label, date_str,
+                                     window_txt="", summary_text=""):
+    """LEGACY（v12 双板块一卡）：v13 拆两群两卡后不再接线，保留供历史复刻/回退。
 
     rows_by_board: {key: {博主: row}}；counts: summarize.board_counts。
-    summary_text 为空 → 降级为系统计数一行（多空版图）。
+    summary_text 为空 → 降级为系统计数一行（双板块合并，多空版图）。
     """
     elements = []
     if window_txt:
@@ -350,8 +383,51 @@ def build_board_card_payload(rows_by_board, counts, market_text, slot_label, dat
     }
 
 
-def build_minimal_card_payload(market_text, slot_label, date_str, window_txt="", note_text="", counts=None):
-    """零方向日的最小交互卡：确认系统存活 + 系统计数一行，不渲染双板块空表。"""
+def _board_card_elements(board_key, rows, counts, market_text, window_txt, summary_text):
+    """单板块卡主体元素（覆盖→行情→本板块名单→🧭 本板块总结）。
+
+    与 LEGACY 双板块版不同：只渲染 board_key 一块名单（_board_section_lines 单块）、
+    总结降级用单板块 format_board_count —— 杜绝双板块计数混入单板块卡。
+    """
+    elements = []
+    if window_txt:
+        elements.append({"tag": "note", "elements": [
+            {"tag": "plain_text", "content": f"🕐 覆盖：{window_txt}"}]})
+    elements.append({"tag": "markdown", "content": f"📈 {market_text}"})
+    elements.append({"tag": "hr"})
+    for chunk in _chunk_lines(_board_section_lines(board_key, rows, counts)):
+        elements.append({"tag": "markdown", "content": chunk})
+    elements.append({"tag": "hr"})
+    if not summary_text:
+        summary_text = f"多空版图：{config.format_board_count(board_key, counts or {})}"
+    elements.append({"tag": "markdown", "content": f"🧭 {summary_text}"})
+    return elements
+
+
+def build_board_card_payload(board_key, rows, counts, market_text, date_str, hm,
+                             window_txt="", summary_text=""):
+    """v13 单板块主卡：header(板块+时刻) + 覆盖窗口 + 行情 + 本板块名单 + 🧭 本板块总结。
+
+    rows = 该板块 {博主: row}（仅 has_view，已 resolve_anchors）；counts = 该板块单键
+    计数 {bull,bear,shown,members}；hm='HH:MM'（与 date_str 一起进标题，config.board_title）。
+    summary_text 空 → 降级为单板块计数行。
+    """
+    elements = _board_card_elements(board_key, rows, counts, market_text, window_txt, summary_text)
+    return {
+        "msg_type": "interactive",
+        "card": {
+            "config": {"wide_screen_mode": True},
+            "header": {"template": HEADER_TEMPLATE,
+                       "title": {"tag": "plain_text",
+                                  "content": config.board_title(board_key, date_str, hm)}},
+            "elements": elements,
+        },
+    }
+
+
+def build_minimal_card_payload_LEGACY(market_text, slot_label, date_str, window_txt="",
+                                      note_text="", counts=None):
+    """LEGACY（v12 双板块空板）：v13 空板也按单板块发最小卡，本函数不再接线。"""
     counts_txt = config.format_board_counts(counts or {})
     elements = []
     if window_txt:
@@ -367,6 +443,33 @@ def build_minimal_card_payload(market_text, slot_label, date_str, window_txt="",
             "config": {"wide_screen_mode": True},
             "header": {"template": HEADER_TEMPLATE,
                        "title": {"tag": "plain_text", "content": _date_header(date_str, slot_label)}},
+            "elements": elements,
+        },
+    }
+
+
+def build_minimal_card_payload(board_key, counts, market_text, date_str, hm,
+                               window_txt="", note_text=""):
+    """v13 单板块零方向最小卡：确认存活 + 本板块计数一行，不渲染空名单。
+
+    note_text 区分空档原因（近窗口无人发帖 / 有人发帖但无该板块方向观点）。
+    """
+    counts_txt = config.format_board_count(board_key, counts or {})
+    elements = []
+    if window_txt:
+        elements.append({"tag": "note", "elements": [
+            {"tag": "plain_text", "content": f"🕐 覆盖：{window_txt}"}]})
+    elements.append({"tag": "markdown", "content": f"📈 {market_text}"})
+    if note_text:
+        elements.append({"tag": "markdown", "content": f"💤 {note_text}"})
+    elements.append({"tag": "note", "elements": [{"tag": "plain_text", "content": counts_txt}]})
+    return {
+        "msg_type": "interactive",
+        "card": {
+            "config": {"wide_screen_mode": True},
+            "header": {"template": HEADER_TEMPLATE,
+                       "title": {"tag": "plain_text",
+                                  "content": config.board_title(board_key, date_str, hm)}},
             "elements": elements,
         },
     }
