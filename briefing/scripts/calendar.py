@@ -112,3 +112,27 @@ def trading_days(d: date, n: int) -> list:
         while not is_trading_day(cur):
             cur -= timedelta(days=1)
     return sorted(out)
+
+
+def n_trading_days_ago(d: date, n: int) -> date:
+    """d 往前数第 n 个交易日那天（v14 交易日窗口起点；n=1 → 前一交易日）。
+
+    d 非交易日先取最近交易日 ≤ d 作参考；只数交易日，跨周末/节假日自动跳过。
+    边界示例：n_trading_days_ago(2026-09-07(周一), 1) → 2026-09-04(上周五)；
+              n_trading_days_ago(2026-09-07(周一), 3) → 2026-09-02(上周三)。
+    """
+    anchor = latest_trading_day(d)
+    days = _load_calendar()
+    if days:
+        i = bisect.bisect_right(days, anchor.strftime("%Y-%m-%d")) - 1
+        j = i - n
+        if j >= 0:
+            return date.fromisoformat(days[j])
+        return date.fromisoformat(days[0])
+    # akshare 缓存不可用 → 用 is_trading_day 回退向前数
+    cur = anchor
+    for _ in range(n):
+        cur -= timedelta(days=1)
+        while not is_trading_day(cur):
+            cur -= timedelta(days=1)
+    return cur

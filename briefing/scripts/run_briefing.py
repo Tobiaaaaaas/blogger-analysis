@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""简报编排器 v13：超短/波段拆两群两卡 · 盘中 30 分档 · 行缓存增量复用。
+"""简报编排器 v14：超短/波段拆两群两卡 · 盘中 30 分档 · 行缓存增量复用 · 交易日窗口。
 
 节奏与调度：
 - 交易日盘中每 30 分钟一档（config.TRADING_TICKS：09:30…15:00）。墙钟命中网格才跑；
@@ -9,9 +9,10 @@
   推一张。两板块各自读帖→抽取→锚定→计数→收敛总结，各推各群
   （render.webhook_for 读 config.WEBHOOK_ENV；该板块 webhook 缺失按失败处理，**不回落**
   FEISHU_WEBHOOK_URL——防波段卡误发超短群）。
-- 窗口：超短近 2 自然日、波段近 5 自然日（config.WINDOW_CAL_DAYS，下界=北京时
-  now.date()-K 当天 00:00）。已知取舍：周一早晨不含上周五"看周一"帖（用户确认接受）。
-- 每档必发：板块有方向观点→全卡 + 本板块收敛总结；空→单板块最小卡（区分近窗口
+- 窗口（v14 交易日口径）：超短 = 前一交易日 00:00 至 now、波段 = 前 3 个交易日 00:00 至 now
+  （config.WINDOW_TRADING_DAYS；起点用 calendar.n_trading_days_ago，非自然日相减）。
+  由此周一早晨窗口含上周五帖（消除 v13 自然日取舍）。
+- 每档必发：板块有方向观点→全卡 + 本板块收敛总结；空→单板块最小卡（区分窗口
   无人发帖 / 有人发帖但无该板块方向观点）；内容没变也发；不加 🆕 标记。
 
 状态 / 增量（2026-09 v13）：
@@ -119,16 +120,20 @@ def _beijing_midnight_epoch(d) -> int:
 
 
 def _window_start_ts(key, now):
-    """某板块展示窗口下界（北京时 now.date()-K 当天 00:00），K=config.WINDOW_CAL_DAYS[key]。"""
-    start = now.date() - timedelta(days=config.WINDOW_CAL_DAYS[key])
+    """某板块展示窗口下界（v14 交易日口径）= 前一/前N个交易日 00:00（北京时 epoch 秒）。
+
+    N = config.WINDOW_TRADING_DAYS[key]；起点日由 calendar.n_trading_days_ago 按交易日
+    回看得到，上界仍 ≤ now。周末/盘前模拟（now 非交易日）按最近交易日取参考日。
+    """
+    start = calendar.n_trading_days_ago(now.date(), config.WINDOW_TRADING_DAYS[key])
     return _beijing_midnight_epoch(start)
 
 
 def _window_txt(key, now):
-    """某板块覆盖窗口说明（进卡/总结）。如 '超短板块近2个自然日（09-02 起）'。"""
-    start = now.date() - timedelta(days=config.WINDOW_CAL_DAYS[key])
-    return (f"{config.BOARD_WORD[key]}板块近{config.WINDOW_CAL_DAYS[key]}个自然日"
-            f"（{start:%m-%d} 起）")
+    """某板块覆盖窗口说明（进卡/总结）。如 '超短板块 前1个交易日到现在（09-03 起）'。"""
+    start = calendar.n_trading_days_ago(now.date(), config.WINDOW_TRADING_DAYS[key])
+    return (f"{config.BOARD_WORD[key]}板块 前{config.WINDOW_TRADING_DAYS[key]}个交易日"
+            f"到现在（{start:%m-%d} 起）")
 
 
 def _read_window_posts(blogger, start_ts, now_ts):
@@ -297,7 +302,7 @@ def _process_board(key, mkt_text, now, date_str, hm):
                                                   window_txt=win_txt, summary_text=summary_text)
     else:
         summary_text = ""
-        note = (f"近{config.WINDOW_CAL_DAYS[key]}自然日窗口内无博主发帖" if not posters
+        note = (f"前{config.WINDOW_TRADING_DAYS[key]}个交易日起窗口内无博主发帖" if not posters
                 else config.BOARD_META[key]["empty_note"])
         payload = render.build_minimal_card_payload(key, c, mkt_text, date_str, hm,
                                                     window_txt=win_txt, note_text=note)
