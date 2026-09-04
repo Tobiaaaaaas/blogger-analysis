@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
-"""research/validate.py — 回测验证（B4）：无未来函数 / poll 可复现 / 填单模式与费率敏感性。
+"""research/backtest/validate.py — 回测验证（B4）：无未来函数 / poll 可复现 / 填单模式与费率敏感性。
 
-用法：python -m research.validate
+用法：python -m research.backtest.validate
 """
 import datetime
 import json
 
-from . import config
+from .. import config
 from . import backtest as bt
-from . import poll as pollmod
+from .. import poll as pollmod
 
 
 def audit_no_future_and_determinism(board, allow_short=False):

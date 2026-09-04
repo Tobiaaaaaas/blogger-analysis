@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-"""research/backtest.py — 板块信号 >2/3 逐档跟随回测（状态机 + 净值/指标）。
+"""research/backtest/backtest.py — 板块信号 >2/3 逐档跟随回测（状态机 + 净值/指标）。
 
 规则（用户锁定口径，勿擅自放宽）：
-  · 板块信号 = poll_tick 的板块快照（交易日窗口 + 每博主最新且目标未过 + mixed 不计数 +
-    语料覆盖缺口成员不计——见 poll.py docstring）。
+  · 板块信号 = poll_tick 的板块快照（交易日窗口 + 每博主取时间序最新一条且目标未过 +
+    swing 剔 spec=long、无 mixed 概念 + 语料覆盖缺口成员不计——见 poll.py docstring）。
   · 触发 = 表态者(多+空) ≥ MIN_EXPRESSED 且 多/(多+空) > 2/3（严格）→ 持多；否则空仓。
   · 决策频率 = 逐档跟随：short 10 档/日、swing 3 档/日；每档以「当时已发帖」判定。
   · 成交 = 决策时刻价（30 分 bar 起点 = bar open 成交，时段末档 = 该档 close）。
@@ -11,15 +11,19 @@
   · 费率 --cost 每边（默认 0）。
   · 样本 = 语料 100% 覆盖的干净决策日区间（right-edge 漏抽成员当日整档剔除）。
 
+可选 decide：run(..., decide=None) —— None=现行 2/3 口径；非 None 时以 decide(snap)->"L"/"S"/"F"
+取代 trigger_long/trigger_short 判定（供组合规则寻优 research/combo 用）。decide=None 输出与现状
+逐字节一致；ticks 里的 trigger/trigger_short 恒记基线快照布尔，候选规则的实际持仓走 state/action。
+
 输出：{board, 统计 dict, daily 序列, trades[], ticks[]}。纯计算、无副作用（写报告在别处）。
 """
 import datetime
 import math
 from datetime import date, datetime as _dt
 
-from . import config
-from . import poll as pollmod
-from . import trading_cal as tc
+from .. import config
+from .. import poll as pollmod
+from .. import trading_cal as tc
 
 BEIJING = config.BEIJING_TZ
 _LABEL_NEXT = {"09:30": "10:00", "10:00": "10:30", "10:30": "11:00", "11:00": "11:30",
@@ -130,9 +134,11 @@ def clean_days(index, board, start=config.START_DATE, end=config.END_DATE):
 
 def run(board, cost=config.COST_DEFAULT, fill_mode="instant",
         start=config.START_DATE, end=config.END_DATE, index=None, _bars=None,
-        allow_short=False):
+        allow_short=False, decide=None):
     """allow_short=False（默认）：看空 >2/3 只平多仓持币（用户锁定口径）；
-    allow_short=True：看空 >2/3 改开空仓（对称双向），其余仍持币。"""
+    allow_short=True：看空 >2/3 改开空仓（对称双向），其余仍持币。
+    decide=None（默认）= 现行 2/3 口径；decide(snap)->"L"/"S"/"F" 时以它取代 trigger 判定
+    （看空开空仍受 allow_short 约束：decide 返回 "S" 而 allow_short=False → 回落持币）。"""
     index = index or pollmod.CorpusIndex()
     days = clean_days(index, board, start, end)
     if not days:
@@ -155,7 +161,11 @@ def run(board, cost=config.COST_DEFAULT, fill_mode="instant",
             assert snap["clean"], f"{dstr} {hm} {board}: 非干净日进入回测（{snap['gaps']}）"
             px = decision_price(bars, dstr, hm, fill_mode)
             before = book.state
-            if snap["trigger_long"]:
+            if decide is not None:
+                want = decide(snap)
+                if want == "S" and not allow_short:
+                    want = "F"        # 看空开空仅在 allow_short 下生效，否则回落持币（同默认语义）
+            elif snap["trigger_long"]:
                 want = "L"
             elif allow_short and snap["trigger_short"]:
                 want = "S"

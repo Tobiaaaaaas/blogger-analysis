@@ -1,0 +1,5 @@
+﻿rule,variant,variant_word,q_open,q_exit,mode,mode_word,total_return,annualized,buyhold_return,excess,sharpe,bh_sharpe,mdd,n_roundtrips,n_long_rt,n_short_rt,win_rate,in_market_legs,in_market_frac,avg_hold_legs,n_days
+滞回,Q10,滞回·开/平双门Q10,10,10,long_only,仅做多,0.047532,0.081137,-0.010133,0.057665,1.016,-0.0285,0.054694,7,7,0,0.8571,55,0.3691,7.86,150
+滞回,Q10,滞回·开/平双门Q10,10,10,long_and_short,多空双向,0.075539,0.130139,-0.010133,0.085672,1.2339,-0.0285,0.054694,9,7,2,0.7778,64,0.4295,7.11,150
+滞回,fixed,滞回·无门槛,0,0,long_only,仅做多,0.086557,0.149656,-0.010133,0.09669,1.8308,-0.0285,0.034479,8,8,0,0.875,54,0.3624,6.75,150
+滞回,fixed,滞回·无门槛,0,0,long_and_short,多空双向,0.115607,0.201763,-0.010133,0.12574,1.857,-0.0285,0.034479,10,8,2,0.8,63,0.4228,6.3,150

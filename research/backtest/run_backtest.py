@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-"""research/run_backtest.py — 回测 CLI。
+"""research/backtest/run_backtest.py — 回测 CLI（单元① trade-PnL）。
 
 用法：
-  python -m research.run_backtest --board short|swing|both [--cost 0.0005] [--fill instant|delayed]
-输出：research/reports/{board}_report.md + {board}_ticks.csv + {board}_trades.csv（--fill delayed 加后缀）。
+  python -m research.backtest.run_backtest --board short|swing|both [--cost 0.0005] [--fill instant|delayed]
+输出：research/backtest/reports/{board}_report.md + {board}_ticks.csv + {board}_trades.csv（--fill delayed 加后缀）。
 
 不含任何外部调用/密钥；语料与行情均离线。
 """
@@ -12,10 +12,10 @@ import csv
 import os
 from collections import OrderedDict
 
-from . import config
+from .. import config
 from . import backtest as bt
-from . import poll as pollmod
-from . import trading_cal as tc
+from .. import poll as pollmod
+from .. import trading_cal as tc
 
 
 def _fmt_pct(x, nd=2):
@@ -73,7 +73,8 @@ def build_report(res):
         L.append("- 做空口径：指数期货式线性收益（px 跌 d% 名义仓赚 d%，非反向杠杆复利）；未计融券费/保证金/借券；"
                  "直接翻转（多→空/空→多）按平旧+开新双边计费。")
     L.append(f"- 成交：决策档 30 分 bar open（{res['fill_mode']} 模式）；费率每边 {res['cost']}。"
-             f"目标未过才计票；同一博主同板双向并存按 mixed(中性) 不计数；语料覆盖缺口成员不计数。")
+             f"目标未过才计票；每博主取窗口内时间序最新一条、swing 剔 spec=long（无 mixed 概念）；"
+             f"语料覆盖缺口成员不计数。")
     L.append("")
     L.append("## 净值概览（基准 = 同期买入持有上证）")
     L.append("")

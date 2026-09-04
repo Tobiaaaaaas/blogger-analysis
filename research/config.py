@@ -12,6 +12,7 @@ ROOT/briefing 与 ROOT 加进 sys.path 以便 import briefing.scripts.*。
 import os
 import sys
 import datetime
+from fractions import Fraction
 
 RESEARCH_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(RESEARCH_DIR)
@@ -28,6 +29,14 @@ THRESHOLD = 2 / 3          # 看多占比 > 2/3 触发持多（严格大于）
 MIN_EXPRESSED = 3          # 当日有方向表态者 ≥3 才算有效轮次（分母 = 当日表态者 多+空）
 IDX_DEFAULT = "上证指数"    # 默认只计上证指数信号（探针：换 any 口径结果几乎不变）
 COST_DEFAULT = 0.0          # 每边费率（小数，如 0.0005）；默认 0
+
+# ---- 滞回共识策略参数（单源；规格 docs/hysteresis_consensus_spec.md §1）----
+# 所有开/平/持条件只落「看多比例 ρ = 多方观点/e」一根轴；空头阈值 = 1−多头 镜像派生。
+HYST_TO_LONG = Fraction(2, 3)    # 看多开仓线 ρ>TO_LONG → 开多（严格）
+HYST_TX_LONG = Fraction(1, 2)    # 多腿平仓线 ρ<TX_LONG（且 e>Q_exit）→ 平多；恰 1/2 续持
+HYST_Q_OPEN = 10                 # 开仓法定人数：需 e > Q_open（严格，至少 Q+1 人表态）；不足 → 当日不开、持币
+HYST_Q_EXIT = 10                 # 平仓法定人数：需 e > Q_exit；不足 → 当日不平、持仓走滞回
+HYST_WINDOW = 5                  # 滞回验证决策窗口 w（交易日）；run_hyst 启动时置入 WINDOW_TRADING_DAYS["swing"]
 
 # 决策区间（direction_signals 自 2026-01 起、行情至 2026-09-02 的可行交集）
 START_DATE = "2026-01-05"
@@ -51,7 +60,7 @@ POSTS_DIR = os.path.join(ROOT, "data", "posts")                       # 原始�
 INTRADAY_FILE = os.path.join(ROOT, "data", "market", "intraday", f"{IDX_DEFAULT}_30min.json")
 DAILY_FILE = os.path.join(ROOT, "data", "market", "market_data.json")
 SIGNALS_OUT_DIR = os.path.join(RESEARCH_DIR, "signals")               # 规范化语料输出
-REPORTS_DIR = os.path.join(RESEARCH_DIR, "reports")                   # 回测报告输出
+REPORTS_DIR = os.path.join(RESEARCH_DIR, "backtest", "reports")       # 单元①回测产物（backtest/ 子包自带 reports/）
 
 
 def ensure_dirs():

@@ -1,18 +1,22 @@
 # -*- coding: utf-8 -*-
-"""research/poll.py — 逐档表态重建：对给定决策时刻 dt，按 v14 简报快照口径
-（交易日窗口 + 窗口内每博主最新一条且目标未过）重建「该板块当时会推什么」的计数。
+"""research/poll.py — 逐档表态重建：对给定决策时刻 dt，按快照口径
+（交易日窗口 + 窗口内每博主**时间序最新一条板块候选**且目标未过）重建「该板块当时会推什么」的计数。
 
 输出 per-tick：{dt, board, expressed, bull, bear, bull_frac, bear_frac,
-               trigger_long, trigger_short, votes:[...]}。纯函数、可复用、无副作用。
+               trigger_long, trigger_short, votes:[...], mixed:0, mixed_votes:[]}。
+纯函数、可复用、无副作用。
 
-口径（与 v14 简报一致，勿擅自改动）：
+口径（与滞回策略规格 docs/hysteresis_consensus_spec.md 一致，勿擅自改动）：
   窗口 = [n_trading_days_ago(决策日, N[board]) 的 00:00, dt)（wall-clock 内含周末帖）
-  候选 = 板块周期归属匹配（short=today/t1；swing=其余 scored + unscored=long）
+  候选 = 板块周期归属匹配（short=today/t1；swing=其余含 long）
+         且 **swing 剔除 spec=long**（长线/年度目标不算波段观点；short 板 long 天然不匹配）
          且 idx 匹配（默认上证指数）且 pub ∈ 窗口
-  有效 = target 为 None（long/unscored 恒活）或 target >= 决策日（未过期）
-  投票 = 每博主窗口内最新一条（pub 最大）有效候选 → 一票 d
-  计数 = expressed=投票人数、bull=看多人数、bear=看空人数
-  触发 = expressed ≥ MIN_EXPRESSED 且 bull/(bull+bear) > 2/3（严格）
+  有效 = target 为 None（unscored 恒活）或 target >= 决策日（未过期）
+  投票 = 每博主窗口内**时间序最新一条**有效候选 → 一票 d（同 pub 无秒级时间，按语料行序取最后一条）
+  —— 单条即票，**无 mixed / 无双向组概念**（v14 早期「最新一组双向并存 → 中性」已取消）；
+     mixed/mixed_votes 键保留恒空以兼容下游校验读取。
+  计数 = expressed=投票人数、bull=看多人数、bear=看空人数（分母 e = 当日有板块观点的博主数）
+  触发 = expressed ≥ MIN_EXPRESSED 且 bull/(bull+bear) > 2/3（严格；见 backtest 默认口径）
 """
 import bisect
 import datetime
@@ -119,47 +123,36 @@ def _lookup(index: CorpusIndex, blogger, dt, wstart):
 def poll_tick(index: CorpusIndex, board: str, dt):
     """dt: tz-aware 北京时决策时刻。返回该时刻板块快照 dict。
 
-    每博主投票规则（与 v14 逐条一致）：
-      · 窗口内候选 = 该板块 spec + 目标未过（long/unscored 恒活）且 pub ∈ [窗口起点, dt)；
-      · 取 pub 最新一组；该组同板同向 → 一票 d；该组同板**双向并存** → 该博主对板块
-        立场不明确（如"今天涨/明天跌"、"收上 X 看涨否则跌"），计 mixed（中性），
-        不入 expressed / 不多空力量 —— 对齐实时卡"中性不计入多空力量"。
+    每博主投票规则（单条 last，规格 docs/hysteresis_consensus_spec.md §4）：
+      · 窗口内候选 = 该板块 spec 且目标未过且 pub ∈ [窗口起点, dt)；
+        swing 另剔除 spec=long（长线不算波段观点；short 板 long 天然不匹配板块）；
+      · 取 pub **最新的一条**候选（pub 最大；同 pub 无秒级时间 → 语料行序最后一条）→ 一票 d；
+      · 窗口内无候选 → 无观点（不进 expressed）。单条即票 → 构造上无 mixed/双向组。
     """
     d = dt.date()
     wstart = _window_start_ts(d, board)
-    votes, mixed, gaps = [], [], []
+    votes, gaps = [], []
     gap_set = set(index.uncovered(board, d))          # 窗口未被完整捕获 → 不作表态（避免把漏抽当弃权）
     for blogger in config.PANELS[board]:
         if blogger in gap_set:
             gaps.append(blogger)
             continue
-        group = []                    # pub 最新一组的有效候选
-        for r in _lookup(index, blogger, dt, wstart):
+        chosen = None                 # 单条 last：最新一条命中即票
+        for r in _lookup(index, blogger, dt, wstart):   # pub 最新 → 最旧；同 pub 行序最后先遇到
             if config.board_of_spec(r["spec"]) != board:
-                continue
+                continue              # today/t1→short；其余（含 long）→swing
+            if board == "swing" and r["spec"] == "long":
+                continue              # 波段投票候选剔除 long（长线/年度目标不是波段观点）
             if r["_target"] is not None and r["_target"] < d:
-                continue            # 目标已过（短：目标日≠今/明；波：目标周已过）
-            if not group:
-                group = [r]
-            elif r["pub"] == group[0]["pub"]:
-                group.append(r)
-            else:
-                break                # 已越过最新 pub → 不再有同组
-        if not group:
+                continue              # 目标已过（短：目标日≠今/明；波：目标周已过）
+            chosen = r
+            break
+        if chosen is None:
             continue
-        ds = {r["d"] for r in group}
-        if len(ds) > 1:
-            mixed.append({
-                "blogger": blogger, "d": list(ds), "spec": "/".join(sorted({r["spec"] for r in group})),
-                "target": group[0]["target"], "target_txt": group[0]["target_txt"],
-                "pub": group[0]["pub"], "summary": group[0]["summary"], "cat": "/".join(sorted({r["cat"] for r in group})),
-            })
-            continue
-        r = group[0]
         votes.append({
-            "blogger": blogger, "d": r["d"], "spec": r["spec"],
-            "target": r["target"], "target_txt": r["target_txt"],
-            "pub": r["pub"], "summary": r["summary"], "cat": r["cat"],
+            "blogger": blogger, "d": chosen["d"], "spec": chosen["spec"],
+            "target": chosen["target"], "target_txt": chosen["target_txt"],
+            "pub": chosen["pub"], "summary": chosen["summary"], "cat": chosen["cat"],
         })
     bull = sum(1 for v in votes if v["d"] == 1)
     bear = sum(1 for v in votes if v["d"] == -1)
@@ -170,11 +163,11 @@ def poll_tick(index: CorpusIndex, board: str, dt):
         "dt": dt, "date": d.isoformat(), "time": dt.strftime("%H:%M"),
         "board": board,
         "clean": not gaps, "gaps": gaps,
-        "expressed": expressed, "bull": bull, "bear": bear, "mixed": len(mixed),
+        "expressed": expressed, "bull": bull, "bear": bear, "mixed": 0,
         "bull_frac": bull_frac, "bear_frac": bear_frac,
         "trigger_long": expressed >= _MIN and bull > config.THRESHOLD * expressed,
         "trigger_short": expressed >= _MIN and bear > config.THRESHOLD * expressed,
-        "votes": votes, "mixed_votes": mixed,
+        "votes": votes, "mixed_votes": [],
     }
 
 
