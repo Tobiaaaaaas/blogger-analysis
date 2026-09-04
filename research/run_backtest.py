@@ -22,6 +22,11 @@ def _fmt_pct(x, nd=2):
     return "—" if x is None or x != x else f"{x * 100:.{nd}f}%"
 
 
+def _fmt_num(x, nd=2):
+    """非百分比量（如夏普）纯数字格式化。"""
+    return "—" if x is None or x != x else f"{x:.{nd}f}"
+
+
 def write_csv(path, rows, fields):
     with open(path, "w", encoding="utf-8-sig", newline="") as f:
         w = csv.DictWriter(f, fieldnames=fields)
@@ -69,6 +74,7 @@ def build_report(res):
     L.append(f"| 累计收益 | {_fmt_pct(s['total_return'])} | {_fmt_pct(s['buyhold_return'])} |")
     L.append(f"| 年化(252日) | {_fmt_pct(s['annualized'])} | {_fmt_pct(s['buyhold_annualized'])} |")
     L.append(f"| 超额 | {_fmt_pct(s['excess_vs_buyhold'])} | — |")
+    L.append(f"| 夏普(日,252) | {_fmt_num(s['sharpe'])} | {_fmt_num(s['bh_sharpe'])} |")
     L.append(f"| 最大回撤(日净值) | {_fmt_pct(s['max_drawdown'])} | — |")
     L.append("")
     L.append("## 仓位与交易")

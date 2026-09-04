@@ -14,6 +14,7 @@
 输出：{board, 统计 dict, daily 序列, trades[], ticks[]}。纯计算、无副作用（写报告在别处）。
 """
 import datetime
+import math
 from datetime import date, datetime as _dt
 
 from . import config
@@ -71,6 +72,18 @@ def decision_price(bars, day, hm, mode="instant"):
     if nxt is None:                     # 11:30 / 15:00 时段终
         return bar_price(bars, day, hm, "close")
     return bar_price(bars, day, nxt, "open")
+
+
+def _sharpe(navs):
+    """日净值序列的年度化夏普（rf=0）：日均收益/样本波动 * sqrt(252)。"""
+    rs = [a / b - 1.0 for b, a in zip(navs[:-1], navs[1:])]
+    n = len(rs)
+    if n < 2:
+        return float("nan")
+    mu = sum(rs) / n
+    var = sum((x - mu) ** 2 for x in rs) / (n - 1)
+    sd = var ** 0.5
+    return mu / sd * math.sqrt(252) if sd > 0 else float("nan")
 
 
 class _Book:
@@ -185,6 +198,11 @@ def compute_stats(board, d0, d1, days, daily_series, trades, ticks,
     # buy & hold 基准：首交易日开盘买入 → 末交易日收盘
     bh_ret = last_close / first_open - 1.0
     bh_ann = ((1 + bh_ret) ** (252 / max(n_days, 1)) - 1.0) if bh_ret > -1 else -1.0
+    # 夏普（日净值，rf=0，年化 252）：策略 vs 买持（同一决策日网格的上证日收盘）
+    sharpe = _sharpe(navs)
+    day_set = {d.isoformat() for d in days}
+    closes = [load_daily()[k]["收盘"] for k in sorted(k for k in load_daily() if k in day_set)]  # 按日期升序
+    bh_sharpe = _sharpe(closes) if len(closes) >= 2 else float("nan")
     # 最大回撤（日净值序列）
     peak, mdd = -1e9, 0.0
     for n in navs:
@@ -216,6 +234,7 @@ def compute_stats(board, d0, d1, days, daily_series, trades, ticks,
         "buyhold_return": bh_ret, "buyhold_annualized": bh_ann,
         "excess_vs_buyhold": total_ret - bh_ret,
         "max_drawdown": mdd,
+        "sharpe": sharpe, "bh_sharpe": bh_sharpe,
         "n_days": n_days, "long_days": long_days, "in_market_days": long_days / n_days,
         "n_ticks": n_tick, "long_ticks": long_ticks, "in_market_ticks": long_ticks / n_tick,
         "n_trades": len(entries), "n_roundtrips": len(closed),
