@@ -87,25 +87,35 @@ def _sharpe(navs):
 
 
 class _Book:
-    """0/1 全仓账本：flat → cash=nav；long → shares=nav/(1-c)/px。"""
+    """0/1 全仓账本（仿射：nav(px)=base+pos*px）。state ∈ F/L/S：
+    L 持多 q 股、S 做空 q 股（q=入市净值*(1-c)/入市价，与多头同名义），F 持币。
+    成本 c 每边按当边名义计：开仓扣 c，平仓再扣 c；直接翻转 L↔S = 平旧+开新，扣双边。
+    做空按"指数期货式线性收益"计：px 跌 d% → 名义仓赚 d%（非反向杠杆复利），px 涨翻倍 → 名义全损。"""
 
     def __init__(self, cost):
         self.cost = cost
-        self.state = "F"                 # F flat / L long
-        self.shares = 0.0
-        self.cash = 1.0                  # 初始 1.0
+        self.state = "F"
+        self.pos = 0.0     # 多头股数（正）/ 空头股数（负）
+        self.base = 1.0    # 初始净值 1.0；nav(px) = base + pos*px
 
     def nav(self, px):
-        return self.cash if self.state == "F" else self.shares * px
+        return self.base + self.pos * px
 
-    def buy(self, px):
-        self.shares = self.cash * (1 - self.cost) / px
-        self.cash = 0.0
+    def open_long(self, px):
+        q = self.nav(px) * (1 - self.cost) / px
+        self.pos = q
+        self.base = 0.0
         self.state = "L"
 
-    def sell(self, px):
-        self.cash = self.shares * px * (1 - self.cost)
-        self.shares = 0.0
+    def open_short(self, px):
+        q = self.nav(px) * (1 - self.cost) / px
+        self.pos = -q
+        self.base = 2 * q * px          # nav(px0) = 2q·px0 − q·px0 = q·px0 = 入市净值*(1-c)
+        self.state = "S"
+
+    def close(self, px):
+        self.base = self.nav(px) - self.cost * abs(self.pos) * px
+        self.pos = 0.0
         self.state = "F"
 
 
@@ -119,7 +129,10 @@ def clean_days(index, board, start=config.START_DATE, end=config.END_DATE):
 
 
 def run(board, cost=config.COST_DEFAULT, fill_mode="instant",
-        start=config.START_DATE, end=config.END_DATE, index=None, _bars=None):
+        start=config.START_DATE, end=config.END_DATE, index=None, _bars=None,
+        allow_short=False):
+    """allow_short=False（默认）：看空 >2/3 只平多仓持币（用户锁定口径）；
+    allow_short=True：看空 >2/3 改开空仓（对称双向），其余仍持币。"""
     index = index or pollmod.CorpusIndex()
     days = clean_days(index, board, start, end)
     if not days:
@@ -133,92 +146,109 @@ def run(board, cost=config.COST_DEFAULT, fill_mode="instant",
     ticks, trades = [], []
     daily_series = []                    # (date, day-end nav @15:00, state_at_end)
     open_tr = None                       # 未平仓记录
-    long_ticks = long_days = 0
 
     for di, day in enumerate(days):
         dstr = day.isoformat()
-        day_open = daily_all[dstr]["开盘"] if not di else None   # 仅首日用
-        first = (di == 0)
         for hm in pollmod.tick_times(board):
             dt = _dt.strptime(f"{dstr} {hm}", "%Y-%m-%d %H:%M").replace(tzinfo=BEIJING)
             snap = pollmod.poll_tick(index, board, dt)
             assert snap["clean"], f"{dstr} {hm} {board}: 非干净日进入回测（{snap['gaps']}）"
             px = decision_price(bars, dstr, hm, fill_mode)
             before = book.state
-            act = "hold"
-            want_long = snap["trigger_long"]
-            if before == "F" and want_long:
-                book.buy(px); act = "buy"
-                open_tr = {"entry_dt": dt, "entry_px": px, "entry_nav": book.nav(px)}
-            elif before == "L" and not want_long:
-                book.sell(px); act = "sell"
-                open_tr.update(exit_dt=dt, exit_px=px)
-                trades.append(open_tr); open_tr = None
+            if snap["trigger_long"]:
+                want = "L"
+            elif allow_short and snap["trigger_short"]:
+                want = "S"
+            else:
+                want = "F"
+            act, parts = "hold", []
+            if before != want:
+                if before != "F":        # 平掉旧仓（L 卖 / S 买回平空）
+                    book.close(px)
+                    parts.append("cover" if before == "S" else "sell")
+                    open_tr.update(exit_dt=dt, exit_px=px)
+                    trades.append(open_tr); open_tr = None
+                if want != "F":          # 开新仓（买多 / 开空）
+                    if want == "L":
+                        book.open_long(px); parts.append("buy")
+                    else:
+                        book.open_short(px); parts.append("open_short")
+                    open_tr = {"side": want, "entry_dt": dt, "entry_px": px,
+                               "entry_nav": round(book.nav(px), 6)}
+                act = "+".join(parts)
             nav = book.nav(px)
-            long_ticks += (book.state == "L")
             ticks.append({
                 "date": dstr, "time": hm, "dt": dt.isoformat(sep=" "),
                 "board": board, "state": book.state, "action": act, "price": px,
                 "nav": round(nav, 6), "expressed": snap["expressed"],
                 "bull": snap["bull"], "bear": snap["bear"], "mixed": snap["mixed"],
                 "bull_frac": round(snap["bull_frac"], 4),
-                "trigger": snap["trigger_long"], "gaps": len(snap["gaps"]),
+                "trigger": snap["trigger_long"], "trigger_short": snap["trigger_short"],
+                "gaps": len(snap["gaps"]),
             })
         # 日终 15:00 盯市（波段末档 14:30 之后仍持币/持仓都按日收标一次）
         close_px = decision_price(bars, dstr, "15:00", "instant")
         nav_close = book.nav(close_px)
         daily_series.append((dstr, nav_close, book.state))
-        if book.state == "L":
-            long_days += 1
     # 样本末日强制平仓（若有持仓）@ 当日 15:00 收盘
-    if book.state == "L":
+    if book.state != "F":
         px = close_px
-        book.sell(px)
+        book.close(px)
         open_tr.update(exit_dt=_dt.strptime(f"{d1} 15:00", "%Y-%m-%d %H:%M").replace(tzinfo=BEIJING),
                        exit_px=px)
         trades.append(open_tr); open_tr = None
     final_nav = book.nav(close_px)
 
     stats = compute_stats(board, d0, d1, days, daily_series, trades, ticks,
-                          long_days, long_ticks, first_open=daily_all[d0]["开盘"],
-                          last_close=d1_close, final_nav=final_nav)
+                          first_open=daily_all[d0]["开盘"],
+                          last_close=d1_close, final_nav=final_nav,
+                          allow_short=allow_short)
     return {"board": board, "cost": cost, "fill_mode": fill_mode,
+            "allow_short": allow_short,
             "start": d0, "end": d1, "n_days": len(days),
             "stats": stats, "daily": daily_series, "trades": trades, "ticks": ticks}
 
 
 def compute_stats(board, d0, d1, days, daily_series, trades, ticks,
-                  long_days, long_ticks, first_open, last_close, final_nav):
+                  first_open, last_close, final_nav, allow_short=False):
+    def _signed_mv(t):
+        """往返的方向性毛收益：多 = 出/入−1；空 = 1−出/入（price 跌则正）。"""
+        g = t["exit_px"] / t["entry_px"] - 1.0
+        return g if t.get("side", "L") == "L" else -g
+
     n_days = len(days)
-    # 日净值（含末日强平后的最终值）
     navs = [round(n, 6) for _d, n, _s in daily_series]
     navs[-1] = round(final_nav, 6)
     total_ret = final_nav - 1.0
     ann = (final_nav ** (252 / max(n_days, 1)) - 1.0) if final_nav > 0 else -1.0
-    # buy & hold 基准：首交易日开盘买入 → 末交易日收盘
     bh_ret = last_close / first_open - 1.0
     bh_ann = ((1 + bh_ret) ** (252 / max(n_days, 1)) - 1.0) if bh_ret > -1 else -1.0
-    # 夏普（日净值，rf=0，年化 252）：策略 vs 买持（同一决策日网格的上证日收盘）
     sharpe = _sharpe(navs)
     day_set = {d.isoformat() for d in days}
     closes = [load_daily()[k]["收盘"] for k in sorted(k for k in load_daily() if k in day_set)]  # 按日期升序
     bh_sharpe = _sharpe(closes) if len(closes) >= 2 else float("nan")
-    # 最大回撤（日净值序列）
     peak, mdd = -1e9, 0.0
     for n in navs:
         peak = max(peak, n)
         mdd = max(mdd, (peak - n) / peak if peak > 0 else 0.0)
-    # 交易统计
-    entries = list(trades)
-    closed = [t for t in trades if "exit_px" in t]
-    wins = [t for t in closed if t["exit_px"] > t["entry_px"]]
-    hold_days = [(t["exit_dt"].date() - t["entry_dt"].date()).days for t in closed]
-    # 触发/表态分布（仅干净档位）
+    # 状态/交易统计（L 多、S 空、F 持币）
+    long_days = sum(1 for _d, _n, st in daily_series if st == "L")
+    short_days = sum(1 for _d, _n, st in daily_series if st == "S")
     n_tick = len(ticks)
+    long_ticks = sum(1 for t in ticks if t["state"] == "L")
+    short_ticks = sum(1 for t in ticks if t["state"] == "S")
+    closed = [t for t in trades if "exit_px" in t]
+    wins = [t for t in closed if _signed_mv(t) > 0]
+    hold_days = [(t["exit_dt"].date() - t["entry_dt"].date()).days for t in closed]
+    n_long_rt = sum(1 for t in closed if t.get("side", "L") == "L")
+    n_short_rt = sum(1 for t in closed if t.get("side", "L") == "S")
+    # 触发/表态分布（仅干净档位）
     trig = sum(1 for t in ticks if t["trigger"])
+    trig_s = sum(1 for t in ticks if t.get("trigger_short"))
     ex3 = sum(1 for t in ticks if t["expressed"] >= config.MIN_EXPRESSED)
     avg_expr = sum(t["expressed"] for t in ticks) / n_tick if n_tick else 0
     avg_bull_trig = (sum(t["bull_frac"] for t in ticks if t["trigger"]) / trig) if trig else 0
+    avg_bear_trig = (sum(1 - t["bull_frac"] for t in ticks if t.get("trigger_short")) / trig_s) if trig_s else 0
     # 逐月收益（首日基 = 初始净值 1.0）
     monthly = {}
     prev = 1.0
@@ -235,15 +265,22 @@ def compute_stats(board, d0, d1, days, daily_series, trades, ticks,
         "excess_vs_buyhold": total_ret - bh_ret,
         "max_drawdown": mdd,
         "sharpe": sharpe, "bh_sharpe": bh_sharpe,
-        "n_days": n_days, "long_days": long_days, "in_market_days": long_days / n_days,
-        "n_ticks": n_tick, "long_ticks": long_ticks, "in_market_ticks": long_ticks / n_tick,
-        "n_trades": len(entries), "n_roundtrips": len(closed),
+        "n_days": n_days, "long_days": long_days, "short_days": short_days,
+        "in_market_days": (long_days + short_days) / n_days,
+        "n_ticks": n_tick, "long_ticks": long_ticks, "short_ticks": short_ticks,
+        "in_market_ticks": (long_ticks + short_ticks) / n_tick,
+        "n_trades": len(trades), "n_roundtrips": len(closed),
+        "n_long_rt": n_long_rt, "n_short_rt": n_short_rt,
         "win_rate": len(wins) / len(closed) if closed else float("nan"),
-        "avg_trade_move": (sum(t["exit_px"] / t["entry_px"] - 1 for t in closed) / len(closed)) if closed else float("nan"),
+        "avg_trade_move": (sum(_signed_mv(t) for t in closed) / len(closed)) if closed else float("nan"),
         "avg_hold_days": sum(hold_days) / len(hold_days) if hold_days else float("nan"),
-        "trigger_ticks": trig, "trig_per_day": trig / max(n_days, 1),
+        "trigger_ticks": trig, "trigger_short_ticks": trig_s,
+        "trig_per_day": trig / max(n_days, 1),
+        "trig_short_per_day": trig_s / max(n_days, 1),
         "expressed_ge3_ticks": ex3,
         "avg_expressed": avg_expr,
         "avg_bull_frac_on_trig": avg_bull_trig,
+        "avg_bear_frac_on_trig_s": avg_bear_trig,
+        "allow_short": allow_short,
         "monthly": monthly,
     }
