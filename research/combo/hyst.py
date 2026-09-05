@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """research/combo/hyst.py — 滞回共识平仓规则（每日一票 · 收盘成交）。
 
-策略规格主档 = docs/hysteresis_consensus_spec.md（活文档），本模块按 §2 状态机实现：
+策略规格主档 = .claude/skills/analyze-blogger/Swing_Timing.md（活文档），本模块按 §2 状态机实现：
   · 判定节奏：每"干净交易日"一次 14:30 快照 → 当日 15:00 收盘成交；投票 = poll 单条 last
     （swing 剔 spec=long、无 mixed 概念，见 poll.py），分母 e = 当日有波段观点的博主数。
   · 唯一自变量 = **看多比例 ρ = bull/e**（看空比例 = 1−ρ 互补；不引入"支持率"叫法）。
@@ -44,23 +44,30 @@ def _rho_lt(b, e, thr):
     return b * thr.denominator < thr.numerator * e        # b/e < thr 严格
 
 
-def _decide(e, b, pos, mode, q_open, q_exit):
+def _decide(e, b, pos, mode, q_open, q_exit, to_long=None, tx_long=None):
     """核心判定（纯整数）：当日 (e, bull) + 现持仓 → 收盘目标持仓。供 hyst_policy 与边界测试直用。
 
     平仓门先看持仓腿（防薄日把退潮误当可动作）：e ≤ q_exit → 该日不平、走滞回续持。
     开仓/换向门：e > q_open 才看方向；两门都过且与原仓反向 → 同收盘换向。
+
+    to_long / tx_long = 多头开/平线（可选，缺省回落模块常量 config.HYST_*）；空腿恒 = 1−多头镜像派生
+    （TO_SHORT=1−to_long 等），与模块级语义一致。扫描/扩展走显式参数，现役调用不传 → 零漂移。
     """
-    if pos == 1 and e > q_exit and _rho_lt(b, e, TX_LONG):
+    to_l = to_long if to_long is not None else TO_LONG
+    tx_l = tx_long if tx_long is not None else TX_LONG
+    to_s = Fraction(1, 1) - to_l        # 空头开仓线（镜像）
+    tx_s = Fraction(1, 1) - tx_l        # 空头平仓线（镜像）
+    if pos == 1 and e > q_exit and _rho_lt(b, e, tx_l):
         pos = 0                        # 持多 ρ<TX_LONG 且 e>Q_exit → 平多
-    elif pos == -1 and e > q_exit and _rho_gt(b, e, TX_SHORT):
+    elif pos == -1 and e > q_exit and _rho_gt(b, e, tx_s):
         pos = 0                        # 持空 ρ>TX_SHORT 且 e>Q_exit → 平空
     if pos in (1, -1):
         return pos                     # 未平（e≤Q_exit，或 ρ 仍 ≥ TX_LONG / ≤ TX_SHORT）→ 续持（含恰 50%）
     if e > q_open:                     # 空仓/刚平 → 开仓门：人数不足则不动作、持币
-        if _rho_gt(b, e, TO_LONG):
-            return 1                   # ρ>2/3 → 开多
-        if mode == "both" and _rho_lt(b, e, TO_SHORT):
-            return -1                  # both 且 ρ<1/3（= 看空比例>2/3）→ 开空；long 模式不开空
+        if _rho_gt(b, e, to_l):
+            return 1                   # ρ>TO_LONG → 开多
+        if mode == "both" and _rho_lt(b, e, to_s):
+            return -1                  # both 且 ρ<TO_SHORT（= 看空比例>1−TO_LONG）→ 开空；long 不开空
     return 0
 
 
@@ -68,7 +75,7 @@ def hyst_policy(c, pos, mode, q_open, q_exit):
     """滞回目标持仓判定：输入当前持仓 pos(∈{0,±1}) + 当日 14:30 快照 → 收盘目标。
 
     pos 现持仓；mode ∈ {'long','both'}；q_open/q_exit = 开/平法定人数（e 严格 > 才过门）。
-    语义见模块 docstring 与 docs/hysteresis_consensus_spec.md §2。
+    语义见模块 docstring 与 .claude/skills/analyze-blogger/Swing_Timing.md §2。
     """
     return _decide(c.expressed, c.bull, pos, mode, q_open, q_exit)
 
@@ -94,11 +101,19 @@ def assert_policy_edges():
         ("e=0 空仓不开", 0, "both", 10, 10, 0, 0, 0),
         ("空方 ρ=3/12<1/3 → both 开空", 0, "both", 10, 10, 12, 3, -1),
         ("空方超 2/3 → long 不开空（空仓保持持币）", 0, "long", 10, 10, 12, 3, 0),
+        # ---- 显式阈值（to_long/tx_long 覆盖；验证参数化不漂移）----
+        ("显式 TO=3/4：ρ=9/11>3/4 开多", 0, "both", 10, 10, 11, 9, 1, Fraction(3, 4), None),
+        ("显式 TO=3/4：ρ 恰 3/4（4b==3e）不开多", 0, "both", 10, 10, 12, 9, 0, Fraction(3, 4), None),
+        ("显式 TX=2/5：持多 ρ=4/9∈(2/5,1/2) 续持（默认 1/2 会平）", 1, "both", 10, 10, 9, 4, 1, Fraction(3, 5), Fraction(2, 5)),
+        ("显式 TO=3/5/TX=2/5：long 持多 ρ=1/3<TX 平到 0 持币", 1, "long", 10, 10, 12, 4, 0, Fraction(3, 5), Fraction(2, 5)),
     ]
-    for desc, pos, mode, qo, qe, e, b, want in cases:
-        got = _decide(e, b, pos, mode, qo, qe)
+    for row in cases:
+        desc, pos, mode, qo, qe, e, b, want = row[:8]
+        to_long, tx_long = (row[8], row[9]) if len(row) > 8 else (None, None)
+        got = _decide(e, b, pos, mode, qo, qe, to_long, tx_long)
         if got != want:
-            errs.append(f"{desc}：期望 {want} 得 {got}（pos={pos} mode={mode} Q=({qo},{qe}) e={e} bull={b}）")
+            errs.append(f"{desc}：期望 {want} 得 {got}（pos={pos} mode={mode} Q=({qo},{qe}) "
+                        f"e={e} bull={b} to={to_long} tx={tx_long}）")
     return errs
 
 

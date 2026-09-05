@@ -48,6 +48,7 @@ python -m research.combo.run_sweep --check          # ① 全网格扫描 → re
 python -m research.combo.run_confirm --check        # ② 短名单 PnL（long-only）→ reports/ 2 产物
 python -m research.combo.run_confirm --allow-short  # ② 另加"看空开空"双向对照（指数期货式，未计融券）
 python -m research.combo.run_hyst --check           # ③ 滞回平仓规则验证（long-only / 双向）
+python -m research.combo.run_hyst_sweep --check     # ③b 滞回参数敏感性 OAT（w×Q×开/平阈值，绕基线）
 ```
 
 | 产物（combo/reports/，UTF-8；csv 用 utf-8-sig） | 内容 |
@@ -60,12 +61,14 @@ python -m research.combo.run_hyst --check           # ③ 滞回平仓规则验�
 | `combo_hyst_daily.csv` | 日净值曲线（long/both 两模式逐日 nav + 持仓态） |
 | `combo_hyst_trades.csv` | both 滞回逐笔往返明细 |
 | `combo_hyst_pnl.png` | PnL 图（Q10 双门 both/long 实线 + 无门槛 fixed 对照虚线 + 买持） |
+| `combo_hyst_sweep.md` / `.csv` | 滞回参数敏感性（**单轴 OAT+角格**：w∈{3,5,7,10} × Q 对称/不对称 × TO/TX 阈值，23 cell × long/both 46 行，绕基线 w5·Q10·TO2/3·TX1/2；单样本勿改 live 口径） |
 
 ## 附加研究③：滞回平仓规则验证（hyst）
 
-滞回共识的**规格与结果主档**见 [docs/hysteresis_consensus_spec.md](../../docs/hysteresis_consensus_spec.md)（活文档：
-口径/状态机/结果随迭代更新，本 README 不复述）。跑法 `python -m research.combo.run_hyst --check`（每日一票 · 收盘成交，
-产物入 reports/，见上表）。
+滞回共识的**口径主档**见 [.claude/skills/analyze-blogger/Swing_Timing.md](../../.claude/skills/analyze-blogger/Swing_Timing.md)
+（活文档：口径/状态机随迭代更新，本 README 不复述）；含当前结果/复现的完整旧版已归档
+[_archive/docs/hysteresis_consensus_spec.md](../_archive/docs/hysteresis_consensus_spec.md)（参考）。跑法
+`python -m research.combo.run_hyst --check`（每日一票 · 收盘成交，产物入 reports/，见上表）。
 
 ## 回归护栏（run_confirm 每次必跑，不过拒写）
 
