@@ -73,7 +73,7 @@ combo = `combo_sweep_*` + `combo_confirm.*`（前缀固定，标各自产物）�
 2. 每博主在窗口内取 **时间序最新一条**该板块有效候选（目标未过）→ 一票多/空；swing 投票候选
    **剔除 spec=long**（长线/年度目标不算波段观点；超短 today/t1 天然不含 long）。单条即票 →
    **无 mixed / 无"双向组"概念**（同 pub 无秒级时间，按语料行序取最后一条）。
-   该语义是 research **全局统一**新口径（滞回规格 docs/hysteresis_consensus_spec.md 同网格），
+   该语义是 research **全局统一**新口径（口径主档 .claude/skills/analyze-blogger/Swing_Timing.md 同网格），
    所有消费方（backtest / quality / combo sweep·confirm·hyst）同一 poll 实现、无第二份投票。
 4. idx 口径默认只计 `上证指数`（探针显示换 any 几乎不变，config 可调）。
 5. **覆盖缺口门**：方向抽取止于某博主最近信号日、而 `data/posts` 显示其后仍发帖（右侧漏抽），
@@ -131,9 +131,10 @@ python -m research.combo.run_sweep --check          # 全网格 → reports/comb
 python -m research.combo.run_confirm --check        # 短名单 PnL → reports/combo_confirm.{md,csv}（--allow-short 加双向）
 ```
 
-**附加研究③ · 滞回平仓规则**（每日一票·收盘成交、开/平双门无填充、w=5）：规格与结果主档在仓库根
-[docs/hysteresis_consensus_spec.md](../docs/hysteresis_consensus_spec.md)（活文档：口径/状态机/当前结果表，
-随迭代更新），产物在 combo/reports/combo_hyst.*，本 README 不复述。
+**附加研究③ · 滞回平仓规则**（每日一票·收盘成交、开/平双门无填充、w=5）：口径主档 =
+[.claude/skills/analyze-blogger/Swing_Timing.md](../.claude/skills/analyze-blogger/Swing_Timing.md)（活文档，
+随迭代更新）；含当前结果/复现/待办的完整旧版已归档 [_archive/docs/hysteresis_consensus_spec.md](_archive/docs/hysteresis_consensus_spec.md)
+（参考），产物在 combo/reports/combo_hyst.*，本 README 不复述。
 
 **当前景观（探索性，非显著性）**：阈值越严 → N 越少、样本内均分/PnL 往往越好。q=7/10,k=3（N=30，
 质量均分 +0.98 / 夏普 +0.60）两关都优于基线 2/3（N=46：质量 +0.75 / +0.46；PnL 仅做多 +2.92% vs +1.96%、

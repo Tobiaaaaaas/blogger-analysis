@@ -6,7 +6,7 @@
                trigger_long, trigger_short, votes:[...], mixed:0, mixed_votes:[]}。
 纯函数、可复用、无副作用。
 
-口径（与滞回策略规格 docs/hysteresis_consensus_spec.md 一致，勿擅自改动）：
+口径（与滞回策略规格 .claude/skills/analyze-blogger/Swing_Timing.md §1 一致，勿擅自改动）：
   窗口 = [n_trading_days_ago(决策日, N[board]) 的 00:00, dt)（wall-clock 内含周末帖）
   候选 = 板块周期归属匹配（short=today/t1；swing=其余含 long）
          且 **swing 剔除 spec=long**（长线/年度目标不算波段观点；short 板 long 天然不匹配）
@@ -123,7 +123,7 @@ def _lookup(index: CorpusIndex, blogger, dt, wstart):
 def poll_tick(index: CorpusIndex, board: str, dt):
     """dt: tz-aware 北京时决策时刻。返回该时刻板块快照 dict。
 
-    每博主投票规则（单条 last，规格 docs/hysteresis_consensus_spec.md §4）：
+    每博主投票规则（单条 last，口径 .claude/skills/analyze-blogger/Swing_Timing.md §1「波段观点」）：
       · 窗口内候选 = 该板块 spec 且目标未过且 pub ∈ [窗口起点, dt)；
         swing 另剔除 spec=long（长线不算波段观点；short 板 long 天然不匹配板块）；
       · 取 pub **最新的一条**候选（pub 最大；同 pub 无秒级时间 → 语料行序最后一条）→ 一票 d；

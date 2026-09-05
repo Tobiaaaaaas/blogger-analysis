@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """research/combo/run_hyst.py — CLI：滞回共识平仓规则回测（每日一票 · 收盘成交）。
 
-策略规格主档 = docs/hysteresis_consensus_spec.md（活文档，勿在 README 复述口径）。本跑法按 §1/§2：
+策略规格主档 = .claude/skills/analyze-blogger/Swing_Timing.md（活文档，勿在 README 复述口径）。本跑法按 §1/§2：
   · swing 波段板共识 · 上证指数 · 窗口 w=5 交易日（本 CLI 启动时自动置 config.WINDOW_TRADING_DAYS["swing"]）。
   · 投票 = poll 单条 last（swing 剔 spec=long、无 mixed 概念）；分母 e = 当日有波段观点者（多+空）。
   · 唯一自变量 = 看多比例 ρ = bull/e（看空比例 = 1−ρ 互补；不引入"支持率"叫法）。
@@ -115,7 +115,7 @@ def render_md(ctxs, sims, guard_ok):
     L.append("")
     L.append(f"在 **swing 波段板共识**（上证指数 · 窗口 w={config.HYST_WINDOW} 交易日 · 干净日 "
              f"{d0} → {d1} 共 {n} 日）上按滞回策略主档 "
-             f"[docs/hysteresis_consensus_spec.md](../../docs/hysteresis_consensus_spec.md) 回测："
+             f"[.claude/skills/analyze-blogger/Swing_Timing.md](../../../.claude/skills/analyze-blogger/Swing_Timing.md) 回测："
              f"每博主取窗口内**时间序最新一条波段观点**（剔 spec=long、无 mixed），"
              f"看多比例 **ρ = 多方观点/e** 唯一自变量——ρ>2/3（严格）开盘开多、both 且 ρ<1/3 开空，"
              f"此后**持腿 ρ<1/2（多）/ ρ>1/2（空）才平**，中间 ρ∈[1/2, 2/3] 滞回带继续持有。")

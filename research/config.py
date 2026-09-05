@@ -30,7 +30,7 @@ MIN_EXPRESSED = 3          # 当日有方向表态者 ≥3 才算有效轮次（
 IDX_DEFAULT = "上证指数"    # 默认只计上证指数信号（探针：换 any 口径结果几乎不变）
 COST_DEFAULT = 0.0          # 每边费率（小数，如 0.0005）；默认 0
 
-# ---- 滞回共识策略参数（单源；规格 docs/hysteresis_consensus_spec.md §1）----
+# ---- 滞回共识策略参数（单源；规格 .claude/skills/analyze-blogger/Swing_Timing.md §1）----
 # 所有开/平/持条件只落「看多比例 ρ = 多方观点/e」一根轴；空头阈值 = 1−多头 镜像派生。
 HYST_TO_LONG = Fraction(2, 3)    # 看多开仓线 ρ>TO_LONG → 开多（严格）
 HYST_TX_LONG = Fraction(1, 2)    # 多腿平仓线 ρ<TX_LONG（且 e>Q_exit）→ 平多；恰 1/2 续持
