@@ -1,6 +1,6 @@
 # 股评老陈 方向预测评估（Direction）
 
-> 评估时间：2026-09-02 | 方法论：SKILL.md（Direction，逐条验证，score = direction × return）
+> 评估时间：2026-09-04 | 方法论：SKILL.md（Direction，逐条验证，score = direction × return）
 > 帖子总数：481 条
 > 信号总数：360 条（计分 349 + 不计分 10 + 待验证 0 + 无效-过时 1 + 报错 0）
 

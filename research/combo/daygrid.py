@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
-"""research/combo/daygrid.py — 全干净日 14:30 快照一次预计算（规则无关），供全部 (q,k) 格共享。
+"""research/combo/daygrid.py — 全干净日 14:30 快照一次预计算（规则无关），供 combo 各 runner 共享。
 
-每个干净决策日只 poll 一次（同一份 expressed/bull/bear + 参考/终点收盘），所有候选规则在
-同一份上下文上打分 —— 保证 42 格之间唯一差异是 q×k 判定本身，避免每格重复快照引入的偏差。
+每个干净决策日只 poll 一次（同一份 expressed/bull/bear + 上证/中证1000 收盘），所有候选规则
+（滞回变体/参数扫描/换池）在同一批上下文上判定，避免各 runner 重复快照引入偏差。
 
-DayContext.clean_idx = 干净决策日序（从 0 起）；上/下半期按干净日序切半（现 150 日 → 界 75），
-与信号日 N（各格自己的触发数）是两个概念。
+DayContext.clean_idx = 干净决策日序（从 0 起）；上/下半期按干净日序切半（随成员覆盖动态，
+现 149 日 → 界 74）。ref/raw_ret = 决策日上证 15:00 收盘 → +5 交易日验证（打分用，评"上证观点
+对错"）；px = 决策日交易标的中证1000 收盘（Swing_Timing §1：净值/成交/买持基准走交易标的）。
 """
 import datetime
 from dataclasses import dataclass

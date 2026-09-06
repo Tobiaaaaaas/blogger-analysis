@@ -1,6 +1,6 @@
 # 远峰战略2025 方向预测评估（Direction）
 
-> 评估时间：2026-09-02 | 方法论：SKILL.md（Direction，逐条验证，score = direction × return）
+> 评估时间：2026-09-04 | 方法论：SKILL.md（Direction，逐条验证，score = direction × return）
 > 帖子总数：1063 条
 > 信号总数：243 条（计分 155 + 不计分 88 + 待验证 0 + 无效-过时 0 + 报错 0）
 

@@ -1,9 +1,12 @@
 # -*- coding: utf-8 -*-
-"""research/backtest/run_backtest.py — 回测 CLI（单元① trade-PnL）。
+"""research/backtest/run_backtest.py — 回测 CLI（单元① short 板块 trade-PnL）。
 
 用法：
-  python -m research.backtest.run_backtest --board short|swing|both [--cost 0.0005] [--fill instant|delayed]
-输出：research/backtest/reports/{board}_report.md + {board}_ticks.csv + {board}_trades.csv（--fill delayed 加后缀）。
+  python -m research.backtest.run_backtest --board short [--cost 0.0005] [--fill instant|delayed] [--allow-short]
+输出：research/backtest/reports/short_report.md + short_ticks.csv + short_trades.csv（--fill delayed 加后缀，--allow-short 落 _2way.*）。
+
+注（2026-09-06）：swing 逐档跟随（A 口径）已下线——swing 收益只看
+research/combo 滞回（Swing_Timing.md / run_hyst），本 CLI 不再接受 swing 板块。
 
 不含任何外部调用/密钥；语料与行情均离线。
 """
@@ -56,8 +59,7 @@ def _bh_monthly(start, end):
 def build_report(res):
     s = res["stats"]; b = res["board"]; bw = config.BOARD_WORD[b]
     two = bool(res.get("allow_short"))
-    ticks_txt = f"{config.GRID_TICKS['short'][0]}~{config.GRID_TICKS['short'][-1]} 十档" if b == "short" \
-        else "/".join(config.GRID_TICKS['swing']) + " 三档"
+    ticks_txt = f"{config.GRID_TICKS['short'][0]}~{config.GRID_TICKS['short'][-1]} 十档"
     L = []
     title = f"{bw}板块（{b}）信号 >2/3 逐档跟随回测" + ("（双向：看空 >2/3 亦开空，对照）" if two else "")
     L.append(f"# {title}")
@@ -148,7 +150,6 @@ def build_report(res):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--board", default="both", choices=["short", "swing", "both"])
     ap.add_argument("--cost", type=float, default=config.COST_DEFAULT)
     ap.add_argument("--fill", default="instant", choices=["instant", "delayed"])
     ap.add_argument("--allow-short", action="store_true",
@@ -159,7 +160,7 @@ def main():
 
     config.ensure_dirs()
     idx = pollmod.CorpusIndex()
-    boards = ["short", "swing"] if args.board == "both" else [args.board]
+    boards = ["short"]   # swing 逐档跟随（A 口径）已下线：本 CLI 只回测 short 板块
     for b in boards:
         res = bt.run(b, cost=args.cost, fill_mode=args.fill, start=args.start, end=args.end,
                      index=idx, allow_short=args.allow_short)

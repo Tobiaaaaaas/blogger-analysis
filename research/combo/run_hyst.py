@@ -231,8 +231,8 @@ def render_md(ctxs, sims, guard_ok):
              "留住（往返少、在场长）。换更碎、假突破多的行情，滞回也可能把失去多数前的亏损单拿更久。")
     L.append("- 每日一票 · 收盘成交：14:30 定调后当日新帖（14:30~15:00）不入快照；"
              "收盘成交假设整仓可在收盘价成交（无冲击/滑点/费率）。")
-    L.append("- 本表为 w=5（run_hyst 自动置入）的滞回口径，与 3 档盘中引擎（combo_confirm）及 w=3 的 "
-             "quality/backtest 属不同时态/窗口，不逐位对比。")
+    L.append("- 本表为 w=5（run_hyst 自动置入）的滞回口径（每日一票 · 收盘成交）——swing 波段板收益以本口径"
+             "为唯一基准（旧的 3 档逐档跟随引擎已下线）。quality 成员质量打分与 live 盘中推送属不同口径，不逐位对比。")
     return "\n".join(L)
 
 
@@ -363,7 +363,7 @@ def plot_png(ctxs, sims):
     ax.axhline(0, color="#aaa", lw=0.7, ls=":")
     ax.set_ylabel("累计收益 (%)")
     ax.set_title(f"滞回共识（看多比例 ρ>2/3 开多 · ρ<1/3 开空 · 持腿 ρ<1/2 平 · 开/平双门 e>10 无填充）"
-                 f"每日收盘成交 PnL  --  swing 21 人共识（信号=上证指数 · 交易=中证1000）· w={config.HYST_WINDOW}\n"
+                 f"每日收盘成交 PnL  --  swing {len(config.PANELS['swing'])} 人共识（信号=上证指数 · 交易=中证1000）· w={config.HYST_WINDOW}\n"
                  "实线 = Q10（e>10 才动作）；虚线 = 无门槛（每日按 ρ 判，对照）")
     ax.legend(loc="upper left")
     ax.grid(alpha=0.3)

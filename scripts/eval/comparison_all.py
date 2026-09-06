@@ -7,7 +7,7 @@
 结构：参与打分博主清单 → 总榜 → 两档分榜 → 方向榜单（看多/看空）→ 覆盖/集中度警告
 
 排名资格（SKILL §8 横向对比）：
-- 仅纳入参与打分的博主（帖子跨度≥6 月 且 2026 以来信号>50）；不参与打分者单列注明
+- 仅纳入参与打分的博主（帖子跨度≥6 月 且 2026 以来信号>10）；不参与打分者单列注明
 - 总榜：全部计分信号 ≥ 30 条 且 平均分 > 0；按夏普降序，仅取前 20 名上榜；不足者不参与排名、单列注明（统计无意义）
 - 两档分榜 / 方向榜单：该组信号 ≥ 10 条 且 平均分 > 0.1，仅取前 20 名上榜；表格同总榜形式
 - 方向榜单：看多=d=1、看空=d=-1；子集方向固定故不含看多/看空列
@@ -37,7 +37,7 @@ for b in ALL_BLOGGERS:
     meta[b] = {'signals': len(data['signals']), 'scored': len(scored)}
 
 
-# 参与打分资格（跨度≥6月 且 2026以来信号>50）：仅合格者进入榜单，不合格者单列注明
+# 参与打分资格（跨度≥6月 且 2026以来信号>10）：仅合格者进入榜单，不合格者单列注明
 ELIGIBLE, INELIGIBLE = [], []
 for b in ALL_BLOGGERS:
     ok, span, n = eng.eligibility(b)
@@ -135,7 +135,7 @@ def emit_dir_leaderboard(title, pred):
 L = []
 L.append('# 全部博主 Direction 横向对比（平均分 = 单信号平均收益 %；总榜按夏普排序）')
 L.append('')
-L.append(f'> 数据截止 {eng.EVAL_DATE} | 参与打分博主 {len(ELIGIBLE)} 位（帖子跨度≥6 月 且 2026 以来信号>50）| '
+L.append(f'> 数据截止 {eng.EVAL_DATE} | 参与打分博主 {len(ELIGIBLE)} 位（帖子跨度≥6 月 且 2026 以来信号>10）| '
          f'总榜资格：计分信号 ≥ {RANK_MIN_SIGNALS} 条 且 平均分 > {RANK_AVG_MIN:.0f}，按夏普降序，仅取前 {TOP_N} 名上榜 | '
          f'分榜资格：该组 ≥ {BUCKET_MIN_SIGNALS} 条 且 平均分 > {AVG_MIN}（仅取前 {TOP_N}）')
 L.append('')
@@ -144,7 +144,7 @@ if INELIGIBLE:
     for b in INELIGIBLE:
         ok, span, n = eng.eligibility(b)
         parts.append(f'{b}（跨度 {span:.1f} 月，2026 信号 {n} 条）')
-    L.append(f'> **不参与打分与排名**（帖子跨度<6 月 或 2026 以来信号≤50，共 {len(INELIGIBLE)} 位）：'
+    L.append(f'> **不参与打分与排名**（帖子跨度<6 月 或 2026 以来信号≤10，共 {len(INELIGIBLE)} 位）：'
              + '、'.join(parts))
     L.append('')
 

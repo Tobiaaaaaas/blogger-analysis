@@ -1,6 +1,6 @@
 # 山顶望星空的诗人 方向预测评估（Direction）
 
-> 评估时间：2026-09-02 | 方法论：SKILL.md（Direction，逐条验证，score = direction × return）
+> 评估时间：2026-09-04 | 方法论：SKILL.md（Direction，逐条验证，score = direction × return）
 > 帖子总数：153 条
 > 信号总数：112 条（计分 84 + 不计分 24 + 待验证 3 + 无效-过时 1 + 报错 0）
 

@@ -5,9 +5,9 @@
 每次只动一个轴 + 少量**跨轴角格**，模式全含 long/both。阈值一律 fractions.Fraction、整数式比较（复用
 hyst._decide 的显式 to_long/tx_long 参数化），空腿恒 = 1−多头镜像（spec §1 语义），不动 hyst 默认路径。
 
-样本与 canonical 同源：swing 21 人 · 信号=上证指数 · 交易=中证1000 · 干净日取样（w∈{3,5,7,10} 下日期集不变，右侧漏抽主导端界 →
-150 日 2026-01-05→08-17）；w 只改每博主"窗口内最新一条"与 e/bull 计数。每个 w 重建 CorpusIndex +
-daygrid.build_contexts 一次，全部 cell 共享同批 ctxs（run_sweep 同款"一份快照多规则"）。
+样本与 canonical 同源：swing 30 人 · 信号=上证指数 · 交易=中证1000 · 干净日取样（w∈{3,5,7,10} 下日期集不变，右侧漏抽主导端界 →
+149 日 2026-01-05→08-14）；w 只改每博主"窗口内最新一条"与 e/bull 计数。每个 w 重建 CorpusIndex +
+daygrid.build_contexts 一次，全部 cell 共享同批 ctxs（"一份快照多规则"）。
 
 **不改 canonical 产物**：本 CLI 只写 combo_hyst_sweep.md/.csv。
 
@@ -255,7 +255,7 @@ def main():
 
     out, ctxs_by_w = run_all()
 
-    # w 侧 e 分布（验证 150 不变、e 随窗宽上移）
+    # w 侧 e 分布（验证干净日集随窗宽不变（现 149）、e 随窗宽上移）
     for w in WS:
         e_all = [c.expressed for c in ctxs_by_w[w]]
         n = len(e_all)
@@ -303,7 +303,7 @@ def render_header(body, ctxs_by_w, bh):
     L.append("")
     L.append("## 口径与读法")
     L.append("")
-    L.append(f"- 样本 = 150 个干净决策日（{d0}→{d1}）；买持基准恒 **{rh._fmt_sign(bh,2,pct=True)}**（随样本固定），"
+    L.append(f"- 样本 = {n} 个干净决策日（{d0}→{d1}）；买持基准恒 **{rh._fmt_sign(bh,2,pct=True)}**（随样本固定），"
              f"故下表只列“超额”（累计−买持），不再逐行列基准。")
     L.append(f"- w=5 下 e 分布 **{min(e5)}..{max(e5)}**（均值 {sum(e5) / len(e5):.1f}），其余 w 见 w 轴块内注。"
              f"所有比较严格不等（Fraction 整数式），恰阈值不触发。")
@@ -312,10 +312,10 @@ def render_header(body, ctxs_by_w, bh):
     L.append(f"- 本扫描不改 canonical combo_hyst.*（Q10/fixed 基细胞与 canonical 逐格校验一致后才写本产物）。")
     L.append("")
     warnings = [
-        "- 单一样本（150 日、一段行情）+ 23 cell × 2 模式 ≈ 46 行同时比较 → **多重比较风险**："
+        "- 单一样本（约 7 个月、一段行情）+ 23 cell × 2 模式 ≈ 46 行同时比较 → **多重比较风险**："
         "'最优格'的领先量只有 1~2 笔往返的分量，换行情可能反转。",
         "- Q 门本质 = '表态人少时比例不可信 → 当日不动'：Q 抬升减少动作次数、增加滞回持有，有利有弊视行情。",
-        "- 阈值越严（TO 大 / Q 大）→ 动作越少、单笔越挑 —— 与 repo 42 格扫描同一规律，属择优回填表象，非普适信号。",
+        "- 阈值越严（TO 大 / Q 大）→ 动作越少、单笔越挑 —— 属样本内择优回填表象、非普适信号，跨时段大概率均值回归。",
         "- 多空双向为指数期货式线性、未计融券费/保证金，仅为上限对照；做空腿对费率敏感。",
         "- 本表 w 各列在不同窗口宽度下比（w 改变每博主'窗口内最新一条'及 e 分布），其余轴全部在 w5 同批 ctxs 上比。",
     ]

@@ -46,7 +46,7 @@ def sensitivity(allow_short=False):
     """fill instant vs delayed、费率 0 vs 0.0005 → 头部指标对比表（默认只做多，allow_short 时双向）。"""
     idx = pollmod.CorpusIndex()
     rows = []
-    for b in ("short", "swing"):
+    for b in ("short",):
         for fm in ("instant", "delayed"):
             for cost in (0.0, 0.0005):
                 r = bt.run(b, cost=cost, fill_mode=fm, index=idx, allow_short=allow_short)
@@ -62,7 +62,7 @@ def sensitivity(allow_short=False):
 
 if __name__ == "__main__":
     ok = True
-    for b in ("short", "swing"):
+    for b in ("short",):
         for as_ in (False, True):
             _r, good = audit_no_future_and_determinism(b, allow_short=as_)
             ok = ok and good

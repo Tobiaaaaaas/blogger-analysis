@@ -1,13 +1,15 @@
 # -*- coding: utf-8 -*-
-"""research/combo — 单元③：swing 板块共识的组合规则寻优（阈值 q × 表态规模 k 网格）。
+"""research/combo — 单元③：swing 波段板共识的滞回组合回测（策略主档 Swing_Timing）。
 
-把"看多占比 >2/3 且表态者≥3"泛化成网格扫描，问有没有更好的组合方式。两关：
-  第一关 run_sweep —— 每日一票 @14:30 → +5 交易日质量评估，扫 q×k 全网格（含基线格），
-    行为去重后同表呈现，附资格门槛 N≥20 与上/下半期稳健列。
-  第二关 run_confirm —— 从网格短名单（基线 + N≥30/20 均分最优 + N≥20 夏普最优）跑 swing
-    trade-PnL 确认是否真赚钱。
-成员口径 = PANELS["swing"] 21 人（swing 板 2/3 票的投票人）。纯研究、离线、无密钥、不改
-live briefing 口径。产物写本包 reports/（combo_* 前缀）。
+把"波段板看多比例 ρ 阈值 + 滞回平仓"规则化。规格活文档 =
+.claude/skills/analyze-blogger/Swing_Timing.md（信号=上证指数观点 · 交易=中证1000）。
+  · hyst.py + daygrid.py —— 滞回状态机与逐日共享上下文（每博主窗口内时间序最新一条，无 mixed）。
+  · run_hyst.py —— canonical：每日 14:30 快照 → 15:00 收盘成交；开多 ρ>2/3 / both 开空 ρ<1/3；
+    持腿跌破 1/2 才平（滞回带）；Q10（开/平双门 e>10）与无门槛对照 × long/both → combo_hyst.*。
+  · run_hyst_sweep.py —— w / Q / 开平阈值单轴 OAT + 精选角格敏感性 → combo_hyst_sweep.*。
+  · run_hyst_pool.py —— 波段委员会换池对照（S0 = 现役 30 人，护栏 Q10 四行 == canonical）→ combo_hyst_pool.*。
+成员口径 = PANELS["swing"] 30 人。纯研究、离线、无密钥、不改 live briefing 口径。
+产物写本包 reports/（combo_hyst* 前缀）。
 """
 import os
 

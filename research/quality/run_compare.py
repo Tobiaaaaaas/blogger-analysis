@@ -151,7 +151,8 @@ def render_compare(quals, unquals, composite, comp_rows, coverage, n_days):
              f"{n_days} 个信号日），全部在行情覆盖内、可打分。")
     L.append("- 榜单资格：N≥10 且 平均分>0.1（对齐 comparison_all 波段档），按**平均分**降序；"
              "未达标列榜尾。综合信号本质=固定 span5 的波段信号，同类可比。")
-    L.append("- ⚠️ 口径不对称：综合=swing21 人共识·上证指数·t5 固定端点；成员=各自 spec/自身目标指数。"
+    L.append(f"- ⚠️ 口径不对称：综合=swing {len(config.PANELS['swing'])} 人共识·上证指数·t5 固定端点；"
+             "成员=各自 spec/自身目标指数。"
              "同表排序比的是**方向性质量**，不是同一标的同一期限。看空腿仅 10 条，结论请以均分/正确率措辞。")
     L.append("")
     L.append("## 波段专项榜")

@@ -16,7 +16,7 @@ Direction 评估引擎 v6 — 严格按 SKILL.md 最新规则实现（nd 并入 
   §7 备注     : — / 日内 / 不计分 / 待验证 / 无效-过时 / 报错（非交易日"今天"）
   §8 报告     : 汇总指标（无最大回撤）+ 四个分类表（指数/周期两档/多空/抄底逃顶）
                 + 月度表现 + 时间分布 + 逐条表 + 观察要点；
-                参与打分资格（帖子跨度≥6月 且 2026以来信号>50）不满足者省略汇总/分类表
+                参与打分资格（帖子跨度≥6月 且 2026以来信号>10）不满足者省略汇总/分类表
 
 用法:
   python scripts/eval/run_direction.py [博主名 ...]    # 不传参数 = 全部
@@ -273,10 +273,10 @@ def signals_since_2026(blogger):
 
 
 def eligibility(blogger):
-    """是否参与打分：帖子跨度≥6个月 且 2026以来信号>50。返回 (ok, span_months, signal_count)。"""
+    """是否参与打分：帖子跨度≥6个月 且 2026以来信号>10。返回 (ok, span_months, signal_count)。"""
     span = posts_span_months(blogger)
     n = signals_since_2026(blogger)
-    return (span >= 6 and n > 50), span, n
+    return (span >= 6 and n > 10), span, n
 
 
 # ---------------- 30 分钟线完整性检查（SKILL §2 前置条件） ----------------
@@ -545,9 +545,9 @@ def generate(blogger):
     L.append('---')
     L.append('')
     if not eligible:
-        L.append('> ⚠️ **不满足参与打分资格**（帖子跨度 ≥6 个月且 2026 以来信号 >50 条才参与打分）：')
+        L.append('> ⚠️ **不满足参与打分资格**（帖子跨度 ≥6 个月且 2026 以来信号 >10 条才参与打分）：')
         L.append(f'> 帖子跨度 {span_months:.1f} 个月' + ('（达标）' if span_months >= 6 else '（< 6 个月，不达标）') +
-                 f'；2026 以来信号 {nsig} 条' + ('（达标）' if nsig > 50 else '（≤ 50 条，不达标）'))
+                 f'；2026 以来信号 {nsig} 条' + ('（达标）' if nsig > 10 else '（≤ 10 条，不达标）'))
         L.append('> 该博主**不参与打分与排名**，以下仅展示原始信号概览（无汇总指标/分类表）。')
         L.append('')
         L.append('---')
