@@ -27,10 +27,11 @@ class DayContext:
     expressed: int
     bull: int
     bear: int
-    ref: float               # 决策日上证 15:00 收盘（参考价）
+    ref: float               # 决策日信号标的上证 15:00 收盘（打分参考价/回看）
     ep: object               # 终点 date
-    ep_close: float          # 终点日收盘
+    ep_close: float          # 终点日收盘（上证；score = d×raw_ret 评"上证观点对错"）
     raw_ret: float           # ep_close/ref − 1（未签名，乘 d 得 score）
+    px: float = None         # 决策日交易标的中证1000 15:00 收盘（Swing_Timing §1 交易/基准用；旧 ctx 缺省回落 None）
 
 
 def _snapshot(index, day):
@@ -45,16 +46,20 @@ def build_contexts(index=None, start=config.START_DATE, end=config.END_DATE):
     """→ (ctxs, n_clean)。ctxs 每干净日一条（行情可打分才保留；当前全保留）；
     n_clean = 干净决策日总数（半期切界 = n_clean//2）。"""
     index = index or pollmod.CorpusIndex()
-    daily = load_daily()
+    daily = load_daily()                            # 信号标的上证（打分 ref/ep/raw_ret）
+    daily_trade = load_daily(config.IDX_TRADE)      # 交易标的中证1000（hyst 净值/成交/买持基准）
     ctxs, n_clean = [], 0
     for day in clean_days(index, BOARD, start, end):
         clean_idx = n_clean
         n_clean += 1
         snap = _snapshot(index, day)
         ds = day.isoformat()
-        ref = daily.get(ds, {}).get("收盘")        # 决策日 15:00 日线收盘
+        ref = daily.get(ds, {}).get("收盘")        # 决策日信号标的上证 15:00 日线收盘
         if ref is None:
             continue                                # 防御：决策日无行情
+        px = daily_trade.get(ds, {}).get("收盘")   # 决策日交易标的中证1000 收盘（hyst 用）
+        if px is None:
+            continue                                # 防御：交易标的数据缺口（现两指数同日历不应发生）
         ep = tc.endpoint_of(ds, PERIOD)
         ep_s = ep.isoformat() if ep else None
         epc = daily.get(ep_s, {}).get("收盘") if ep_s else None
@@ -62,5 +67,6 @@ def build_contexts(index=None, start=config.START_DATE, end=config.END_DATE):
             continue                                # 终点未到/无行情 → 不可打分（现快照不应发生）
         ctxs.append(DayContext(date=day, clean_idx=clean_idx,
                                expressed=snap["expressed"], bull=snap["bull"], bear=snap["bear"],
-                               ref=ref, ep=ep, ep_close=epc, raw_ret=epc / ref - 1.0))
+                               ref=ref, ep=ep, ep_close=epc, raw_ret=epc / ref - 1.0,
+                               px=px))
     return ctxs, n_clean

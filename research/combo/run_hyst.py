@@ -2,7 +2,7 @@
 """research/combo/run_hyst.py — CLI：滞回共识平仓规则回测（每日一票 · 收盘成交）。
 
 策略规格主档 = .claude/skills/analyze-blogger/Swing_Timing.md（活文档，勿在 README 复述口径）。本跑法按 §1/§2：
-  · swing 波段板共识 · 上证指数 · 窗口 w=5 交易日（本 CLI 启动时自动置 config.WINDOW_TRADING_DAYS["swing"]）。
+  · swing 波段板共识（信号=上证指数 · 交易=中证1000）· 窗口 w=5 交易日（本 CLI 启动时自动置 config.WINDOW_TRADING_DAYS["swing"]）。
   · 投票 = poll 单条 last（swing 剔 spec=long、无 mixed 概念）；分母 e = 当日有波段观点者（多+空）。
   · 唯一自变量 = 看多比例 ρ = bull/e（看空比例 = 1−ρ 互补；不引入"支持率"叫法）。
   · 开多 ρ>2/3（TO_LONG，严格）；both 开空 ρ<1/3（= 看空比例>2/3）。
@@ -113,7 +113,7 @@ def render_md(ctxs, sims, guard_ok):
     L = []
     L.append("# 滞回共识回测：看多比例 ρ>2/3 开多 · ρ<1/3 开空 · 持腿 ρ<1/2 平 · 开/平双门 Q10（每日一票 · 收盘成交）")
     L.append("")
-    L.append(f"在 **swing 波段板共识**（上证指数 · 窗口 w={config.HYST_WINDOW} 交易日 · 干净日 "
+    L.append(f"在 **swing 波段板共识**（信号=上证指数 · 交易=中证1000 · 窗口 w={config.HYST_WINDOW} 交易日 · 干净日 "
              f"{d0} → {d1} 共 {n} 日）上按滞回策略主档 "
              f"[.claude/skills/analyze-blogger/Swing_Timing.md](../../../.claude/skills/analyze-blogger/Swing_Timing.md) 回测："
              f"每博主取窗口内**时间序最新一条波段观点**（剔 spec=long、无 mixed），"
@@ -130,7 +130,8 @@ def render_md(ctxs, sims, guard_ok):
              f"e 不足对应门 = 该日不动作：空仓持币 / 持仓走滞回续持）。对照列“无门槛”= (0,0) 每日按 ρ 判。")
     L.append("- 模式：**仅做多**（看空比例 >2/3 只平多持币）/ **多空双向**（看空比例 >2/3 开空，"
              "指数期货式线性收益，未计融券费/保证金——仅上限对照）。成本 0、全仓 0/1。")
-    L.append("- 净值 = 收盘到收盘；样本末持仓以末日收盘强制平仓。买持基准 = 同期首/末干净日收盘。")
+    L.append("- 标的分离（Swing_Timing §1）：信号/投票 = 上证指数观点；净值/成交/买持基准 = **交易标的中证1000**"
+             "收盘到收盘。样本末持仓以末日收盘强制平仓。买持基准 = 中证1000 同期首/末干净日收盘。")
     L.append("- 回归护栏：" + ("✓" if guard_ok else "✗——拒写") + " 确定性双跑 + 结构不变式 + §2 整数边界断言。")
     L.append("")
     L.append("## 表现（Q10 双门 vs 无门槛对照）")
@@ -148,9 +149,9 @@ def render_md(ctxs, sims, guard_ok):
                      f"{_fmt(m['max_drawdown'],1,pct=True)} | {m['n_roundtrips']} ({m['n_long_rt']}/{m['n_short_rt']}) | "
                      f"{_fmt(m['win_rate'],1,pct=True)} | {m['in_market_days']} | {_fmt(m['avg_hold_legs'],1)} |")
     L.append("")
-    L.append(f"- 基准买持 = 上证 {d0} 收盘 → {d1} 收盘："
+    L.append(f"- 基准买持 = 中证1000 {d0} 收盘 → {d1} 收盘："
              f"{_fmt_sign(sims[('Q10', 'long')][1]['buyhold_return'],2,pct=True)}"
-             f"（首日开盘→末日收盘锚定会略不同）。")
+             f"（信号为上证指数观点；首日开盘→末日收盘锚定会略不同）。")
     L.append("- 两组都是滞回规则（>2/3 开 · 持腿跌破 1/2 平），唯一区别 = 是否要求 e 严格过 Q_open/Q_exit。")
     L.append("")
     L.append("## 逐行读数")
@@ -347,8 +348,8 @@ def plot_png(ctxs, sims):
     plt.rcParams["axes.unicode_minus"] = False
 
     dates = [c.date for c in ctxs]
-    ref0 = ctxs[0].ref
-    bh = [c.ref / ref0 for c in ctxs]
+    p0 = ctxs[0].px if ctxs[0].px is not None else ctxs[0].ref
+    bh = [(c.px if c.px is not None else c.ref) / p0 for c in ctxs]   # 买持基准 = 中证1000
     curves = [
         (sims[("Q10", "both")][0]["navs"], "#cf222e", 2.3, "-", "滞回·Q10 · 多空双向（锁定）"),
         (sims[("Q10", "long")][0]["navs"], "#1a7f37", 1.9, "-", "滞回·Q10 · 仅做多"),
@@ -362,7 +363,7 @@ def plot_png(ctxs, sims):
     ax.axhline(0, color="#aaa", lw=0.7, ls=":")
     ax.set_ylabel("累计收益 (%)")
     ax.set_title(f"滞回共识（看多比例 ρ>2/3 开多 · ρ<1/3 开空 · 持腿 ρ<1/2 平 · 开/平双门 e>10 无填充）"
-                 f"每日收盘成交 PnL  --  swing 21 人共识 · 上证指数 · w={config.HYST_WINDOW}\n"
+                 f"每日收盘成交 PnL  --  swing 21 人共识（信号=上证指数 · 交易=中证1000）· w={config.HYST_WINDOW}\n"
                  "实线 = Q10（e>10 才动作）；虚线 = 无门槛（每日按 ρ 判，对照）")
     ax.legend(loc="upper left")
     ax.grid(alpha=0.3)

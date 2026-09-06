@@ -15,11 +15,14 @@
   · 整数比较、不用 float（改阈值即同步换分母，见 config.HYST_*）。
 
 时态说明：本模块是**日线收盘到收盘**的净值模拟，不是 backtest.py 的 3 档/日盘中引擎——
-决策次数少、开关更少、成交只在收盘；二者本就该逐位不同。参考基准 = 同期买持（ref0→refN）。
+决策次数少、开关更少、成交只在收盘；二者本就该逐位不同。参考基准 = 同期买持（px0→pxN）。
+
+标的分离（Swing_Timing §1）：**信号/投票 = 上证指数观点**（poll 已按 idx 过滤，见 poll.py），
+**交易/净值/成交/买持基准 = 中证1000 日收盘**（DayContext.px；daygrid 逐干净日同时取两标的收盘）。
 
 复用：ctxs 来自 daygrid.build_contexts（每干净日一次 14:30 poll 快照，全变体共享）；
-日线收盘 ref 来自同一 DayContext.ref。指标公式镜像 backtest.compute_stats（total/
-ann/sharpe/MDD/逐月），保证口径可比。纯计算、无副作用。
+交易收盘 px 来自同一 DayContext.px（缺省回落 ref 保旧兼容）。指标公式镜像 backtest.compute_stats
+（total/ann/sharpe/MDD/逐月），保证口径可比。纯计算、无副作用。
 """
 import math
 from fractions import Fraction
@@ -120,12 +123,12 @@ def assert_policy_edges():
 def simulate(ctxs, policy):
     """在干净日收盘序列上跑策略 → 净值/持仓/往返统计 dict。
 
-    净值口径：nav 记在每日 15:00 收盘。close_i → close_{i+1} 的涨跌由 close_i 收盘后的
-    目标持仓承担；当日 14:30 定调 → 收盘成交，故决策日自己那根 K 线不承担该日涨跌。
+    净值口径：nav 记在每日 15:00 收盘（交易标的中证1000）。close_i → close_{i+1} 的涨跌由 close_i
+    收盘后的目标持仓承担；当日 14:30 定调 → 收盘成交，故决策日自己那根 K 线不承担该日涨跌。
     持仓在样本末日收盘若未平 → 视作以末日收盘强制平仓（与 backtest 同语义）。
     """
     n = len(ctxs)
-    closes = [c.ref for c in ctxs]
+    closes = [c.px if c.px is not None else c.ref for c in ctxs]   # 交易收盘 = 中证1000（旧 ctx 回落上证 ref）
     navs = [1.0] * n
     pos = 0
     pos_after = []                  # 每收盘后的目标持仓（承担下一根 K）

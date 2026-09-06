@@ -27,7 +27,8 @@ BEIJING_TZ = datetime.timezone(datetime.timedelta(hours=8))
 # ---- 回测参数（用户锁定口径，勿擅自放宽）----
 THRESHOLD = 2 / 3          # 看多占比 > 2/3 触发持多（严格大于）
 MIN_EXPRESSED = 3          # 当日有方向表态者 ≥3 才算有效轮次（分母 = 当日表态者 多+空）
-IDX_DEFAULT = "上证指数"    # 默认只计上证指数信号（探针：换 any 口径结果几乎不变）
+IDX_DEFAULT = "上证指数"    # 信号标的：默认只计上证指数信号（探针：换 any 口径结果几乎不变）
+IDX_TRADE = "中证1000"     # 交易标的（Swing_Timing §1 信号/交易标的分离）：信号=上证观点，回测净值/成交/买持基准走中证1000 增弹性
 COST_DEFAULT = 0.0          # 每边费率（小数，如 0.0005）；默认 0
 
 # ---- 滞回共识策略参数（单源；规格 .claude/skills/analyze-blogger/Swing_Timing.md §1）----

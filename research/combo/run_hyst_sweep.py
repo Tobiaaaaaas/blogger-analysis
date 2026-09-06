@@ -5,7 +5,7 @@
 每次只动一个轴 + 少量**跨轴角格**，模式全含 long/both。阈值一律 fractions.Fraction、整数式比较（复用
 hyst._decide 的显式 to_long/tx_long 参数化），空腿恒 = 1−多头镜像（spec §1 语义），不动 hyst 默认路径。
 
-样本与 canonical 同源：swing 21 人 · 上证 · 干净日取样（w∈{3,5,7,10} 下日期集不变，右侧漏抽主导端界 →
+样本与 canonical 同源：swing 21 人 · 信号=上证指数 · 交易=中证1000 · 干净日取样（w∈{3,5,7,10} 下日期集不变，右侧漏抽主导端界 →
 150 日 2026-01-05→08-17）；w 只改每博主"窗口内最新一条"与 e/bull 计数。每个 w 重建 CorpusIndex +
 daygrid.build_contexts 一次，全部 cell 共享同批 ctxs（run_sweep 同款"一份快照多规则"）。
 
@@ -293,7 +293,8 @@ def render_header(body, ctxs_by_w, bh):
     L = []
     L.append("# 滞回策略参数敏感性：窗口 w × 法定人数 Q × 开/平阈值（单轴 OAT + 角格）")
     L.append("")
-    L.append(f"在 swing 波段板共识（上证指数 · 干净日 {d0} → {d1} 共 {n} 日，w∈{{3,5,7,10}} 下日期集不变）上，"
+    L.append(f"在 swing 波段板共识（信号=上证指数 · 交易=中证1000 · 干净日 {d0} → {d1} 共 {n} 日，"
+             f"w∈{{3,5,7,10}} 下日期集不变）上，"
              f"绕基线 **w5 · Q_open=Q_exit=10 · TO_LONG=2/3 · TX_LONG=1/2**（= canonical combo_hyst.md 那套）"
              f"做单轴 OAT + 精选跨轴角格。口径同 "
              f"[Swing_Timing.md](../../../.claude/skills/analyze-blogger/Swing_Timing.md)：每博主窗口内时间序最新一条"

@@ -44,10 +44,14 @@ def load_intraday():
     return idx, labels
 
 
-def load_daily():
-    """上证日线 → {date_str: {open, close}}。"""
+def load_daily(name=None):
+    """日线 → {date_str: {open, close}}。name = market_data.json 标的 key；缺省 = 信号标的上证指数。
+
+    打分/方向评估默认读上证（评博主"对上证观点的对错"）；交易/净值走中证1000 时显式传
+    config.IDX_TRADE（Swing_Timing §1 信号/交易标的分离）。
+    """
     import json
-    data = json.load(open(config.DAILY_FILE, encoding="utf-8"))[config.IDX_DEFAULT]
+    data = json.load(open(config.DAILY_FILE, encoding="utf-8"))[name or config.IDX_DEFAULT]
     return {r["日期"]: r for r in data}
 
 

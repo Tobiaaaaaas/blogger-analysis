@@ -49,6 +49,7 @@ python -m research.combo.run_confirm --check        # ② 短名单 PnL（long-o
 python -m research.combo.run_confirm --allow-short  # ② 另加"看空开空"双向对照（指数期货式，未计融券）
 python -m research.combo.run_hyst --check           # ③ 滞回平仓规则验证（long-only / 双向）
 python -m research.combo.run_hyst_sweep --check     # ③b 滞回参数敏感性 OAT（w×Q×开/平阈值，绕基线）
+python -m research.combo.run_hyst_pool --check      # ③c 波段委员会换池（质量先验梯度 × 默认参数，固定 150 干净日；单样本勿改 live PANEL_SWING）
 ```
 
 | 产物（combo/reports/，UTF-8；csv 用 utf-8-sig） | 内容 |
@@ -62,6 +63,7 @@ python -m research.combo.run_hyst_sweep --check     # ③b 滞回参数敏感性
 | `combo_hyst_trades.csv` | both 滞回逐笔往返明细 |
 | `combo_hyst_pnl.png` | PnL 图（Q10 双门 both/long 实线 + 无门槛 fixed 对照虚线 + 买持） |
 | `combo_hyst_sweep.md` / `.csv` | 滞回参数敏感性（**单轴 OAT+角格**：w∈{3,5,7,10} × Q 对称/不对称 × TO/TX 阈值，23 cell × long/both 46 行，绕基线 w5·Q10·TO2/3·TX1/2；单样本勿改 live 口径） |
+| `combo_hyst_pool.md` / `.csv` | 滞回**波段委员会换池**（默认参数不动，只换 swing 博主池：现役 21 → X1/X2/X3 逐步剔除 → SWAP21a/b 替换 → TK12..24 质量 top-k，11 池 × long/both 22 行；固定公共 150 干净日，先验来源注，单样本勿改 live PANEL_SWING） |
 
 ## 附加研究③：滞回平仓规则验证（hyst）
 
